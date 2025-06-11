@@ -1706,6 +1706,12 @@ ul.headIc li>* {
 
 .mobMn li {
     display: flex;
+    justify-content: space-between;
+    flex: 1 0 26%
+}
+
+.foursec li {
+    display: flex;
     justify-content: center;
     flex: 1 0 28%
 }
