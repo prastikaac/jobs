@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot with Google Generative AI</title>
+    <style>
+        body {
+            font-family: Poppins !important;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 95vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .chat-container {
+            border-radius: 15px;
+            width: 100%;
+            height: 87vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            margin-top: 60px;
+        }
+
+        .message-container {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .message-wrapper {
+            display: flex;
+            margin-left: -10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .profile-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .message {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            max-width: 70%;
+        }
+
+        .user-message {
+            background-color: #6d747d;
+            color: #fff;
+        }
+
+        .bot-message {
+            background-color: #eee;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: transparent;
+            border: none;
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: poppins !important;
+        }
+
+        .back {
+            padding: 4px;
+            border-radius: 50px;
+            border: none;
+            margin-top: 10px;
+            font-family: poppins !important;
+            background-color: #e6e6e6;
+            padding-right: 50px;
+            box-sizing: border-box;
+        }
+
+        ::-webkit-scrollbar {
+            background: transparent;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        svg {
+            margin-left: 10px;
+            margin-right: -35px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+
+        .bot-typing {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .bot-typing span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 4px;
+            background-color: #0c0c0c;
+            animation: typing 1s infinite;
+        }
+
+        .initial-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+            z-index: 1;
+        }
+
+        .initial-message svg {
+            width: 100px;
+            height: 100px;
+        }
+
+        .initial-message p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .round-img {
+            width: 100px;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            background-color: #ffffff;
+        }
+
+        header h2 {
+            margin-left: 20px;
+        }
+
+        @keyframes typing {
+            0% {
+                background-color: #525252;;
+            }
+
+            50% {
+                background-color: #ccc;
+            }
+
+            100% {
+                background-color: #2e2e2e;;
+            }
+        }
+
+        .line {
+            width: 100px;
+            height: 50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5) inset;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h2>NoteSwift's AI</h2>
+    </header>
+
+    <div class="chat-container">
+        <div class="initial-message" id="initialMessage">
+            <img class="round-img" src="https://app.noteswift.in/images/ai.png" alt="">
+            <p style="text-align: center;">Hey, Wassup! <br> How may I assist you today?</p>
+        </div>
+
+        <div class="message-container" id="messageContainer">
+            <!-- Messages will be displayed here -->
+        </div>
+
+        <div style="box-shadow: 20px -2px 20px rgba(163, 163, 163, 0.399);">
+            <div class="back" style=" display: flex; align-items: center; width: 100%;">
+                <input type="text" id="userMessage" placeholder="Ask your question here....">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="send">
+                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                    <path d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+
+        const API_KEY = "AIzaSyDgjD1yf7hvx2lUGoD-DtvMW7PRbFxFSok"; // Replace with your API key
+        const genAI = new GoogleGenerativeAI(API_KEY);
+
+        let messageHistory = []; // Array to store chat messages
+
+        function storeMessage(message, type) {
+            const timestamp = new Date().getTime(); // Get current timestamp
+            const messageData = { message, type, timestamp };
+            messageHistory.push(messageData);
+            localStorage.setItem('chatHistory', JSON.stringify(messageHistory)); // Store chat history in local storage
+        }
+
+        function loadChatHistory() {
+            const storedHistory = localStorage.getItem('chatHistory');
+            if (storedHistory) {
+                messageHistory = JSON.parse(storedHistory);
+                // Loop through messageHistory array to display chat messages
+                messageHistory.forEach((messageData, index) => {
+                    const { message, type } = messageData;
+                    sendMessage(message, type);
+                    // Hide initial message only if there are existing chat messages
+                    if (index === messageHistory.length - 1) {
+                        const initialMessage = document.getElementById("initialMessage");
+                        if (initialMessage) {
+                            initialMessage.style.display = "none";
+                        }
+                    }
+                });
+            }
+        }
+
+        function clearExpiredMessages() {
+            const currentTime = new Date().getTime();
+            const thirtyMinutesInMillis = 30 * 60 * 1000; // 30 minutes in milliseconds
+            const updatedHistory = messageHistory.filter(messageData => {
+                return currentTime - messageData.timestamp < thirtyMinutesInMillis;
+            });
+            messageHistory = updatedHistory;
+            localStorage.setItem('chatHistory', JSON.stringify(messageHistory)); // Update local storage
+        }
+
+        // Call loadChatHistory when the page loads to display previous messages
+        loadChatHistory();
+
+        // Call clearExpiredMessages every minute to remove messages older than 30 minutes
+        setInterval(clearExpiredMessages, 60 * 1000); // Run every minute
+
+        // Function to send a user message
+        function sendMessage(message, type) {
+            const messageContainer = document.getElementById("messageContainer");
+            const messageWrapper = document.createElement("div");
+            const profileImage = document.createElement("img");
+            const messageElement = document.createElement("div");
+
+            profileImage.src = type === "user" ? "https://app.noteswift.in/images/user.png" : "https://app.noteswift.in/images/ai.png";
+            profileImage.alt = type === "user" ? "User Profile" : "Bot Profile";
+            profileImage.classList.add("profile-image");
+
+            messageElement.textContent = message;
+            messageElement.classList.add("message", type === "user" ? "user-message" : "bot-message");
+
+            messageWrapper.appendChild(type === "user" ? messageElement : profileImage);
+            messageWrapper.appendChild(type === "user" ? profileImage : messageElement);
+            messageWrapper.classList.add("message-wrapper");
+
+            if (type === "user") {
+                messageWrapper.style.justifyContent = "flex-end";
+            }
+
+            messageContainer.appendChild(messageWrapper);
+
+            // Use requestAnimationFrame to ensure the message is rendered before scrolling
+            requestAnimationFrame(() => {
+                messageContainer.scrollTop = messageContainer.scrollHeight;
+            });
+        }
+
+        // Function to generate a reply from the bot
+        async function generateReply(userMessage) {
+            const messageContainer = document.getElementById("messageContainer");
+            const typingDots = document.createElement("div");
+            typingDots.classList.add("bot-typing");
+            typingDots.innerHTML = '<span></span><span></span><span></span>';
+
+            const messageWrapper = document.createElement("div");
+            const profileImage = document.createElement("img");
+            const messageElement = document.createElement("div");
+
+            profileImage.src = "https://app.noteswift.in/images/ai.png";
+            profileImage.alt = "Bot Profile";
+            profileImage.classList.add("profile-image");
+
+            messageElement.appendChild(typingDots);
+            messageElement.classList.add("message", "bot-message");
+
+            messageWrapper.appendChild(profileImage);
+            messageWrapper.appendChild(messageElement);
+            messageWrapper.classList.add("message-wrapper");
+
+            messageContainer.appendChild(messageWrapper);
+
+            const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+            const result = await model.generateContent(userMessage);
+            const botReply = await result.response.text();
+
+            // Remove typing dots and replace with bot's response
+            messageElement.removeChild(typingDots);
+            messageElement.textContent = botReply;
+
+            // Scroll to the bottom after bot's reply is rendered
+            requestAnimationFrame(() => {
+                messageContainer.scrollTop = messageContainer.scrollHeight;
+            });
+
+            // Store the bot's reply in message history
+            storeMessage(botReply, "bot");
+        }
+
+        // Function to handle sending a message
+        function handleSendMessage() {
+            const initialMessage = document.getElementById("initialMessage");
+            if (initialMessage) {
+                initialMessage.style.display = "none";
+            }
+
+            const userMessageInput = document.getElementById("userMessage");
+            const userMessage = userMessageInput.value;
+            if (userMessage.trim() !== "") {
+                sendMessage(userMessage, "user");
+                generateReply(userMessage);
+                userMessageInput.value = "";
+                storeMessage(userMessage, "user"); // Store user's message in message history
+            }
+        }
+
+        // Event listener for clicking the send button
+        document.getElementById("send").addEventListener("click", handleSendMessage);
+
+        // Event listener for pressing Enter key
+        document.getElementById("userMessage").addEventListener("keydown", function (event) {
+            if (event.key === "Enter" && !event.shiftKey) {
+                event.preventDefault();
+                handleSendMessage();
+            }
+        });
+
+    </script>
+ <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed:', error);
+            });
+        }
+      </script>
+   <script src="js/gt.min.js" data-gt-widget-id="43217984"></script>
+</body>
+
+
+</html>

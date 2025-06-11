@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noteswift Dashboard</title>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-compat.js"></script>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="profile">
+            <div class="avatar-container">
+                <img src="https://app.noteswift.in/images/student-avatar.png" alt="Profile Picture"
+                    id="studentAvatar" class="profile-picture">
+                <div class="camera-icon" onclick="document.getElementById('fileInput').click()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-camera" viewBox="0 0 16 16">
+                        <path
+                            d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+                        <path
+                            d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                    </svg>
+                </div>
+            </div>
+            <div class="profile-details">
+                <h2 id="full-name"></h2>
+                <p id="email"></p>
+                <p id="class"><span id="user-class"></span></p>
+                <p id="loading-message" style="display: block;">Fetching student details...</p>
+                <input type="file" id="fileInput" style="display: none;" onchange="uploadProfilePicture(event)" accept="image/*">
+            </div>
+        </div>
+
+
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .dashboard {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            cursor: pointer;
+            /* Make it look clickable */
+        }
+
+        .profile-details h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .profile-details p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+
+        .courses h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #courses-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #courses-list li {
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .avatar-container {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .camera-icon {
+            position: absolute;
+            bottom: -13px;
+            /* Adjust to position within the avatar */
+            right: 25px;
+            /* Adjust to position within the avatar */
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            /* Ensures a circular shape */
+            width: 30px;
+            /* Set a fixed width */
+            height: 30px;
+            /* Set a fixed height to match width */
+            display: flex;
+            /* Use flexbox to center the icon */
+            align-items: center;
+            /* Vertical centering */
+            justify-content: center;
+            /* Horizontal centering */
+            cursor: pointer;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Optional: Add a subtle shadow */
+        }
+
+        .camera-icon:hover {
+            background: rgba(0, 0, 0, 0.8);
+            /* Darken on hover */
+        }
+    </style>
+
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBiVc598fJn7WmgGVivUvZyKRBNfrug75U",
+            authDomain: "noteswift-login.firebaseapp.com",
+            projectId: "noteswift-login",
+            storageBucket: "noteswift-login.appspot.com",
+            messagingSenderId: "227729152808",
+            appId: "1:227729152808:web:445ffda231ae7baf8a4e1d",
+            measurementId: "G-Y3GZ6HDWF4"
+        };
+
+        var firebaseApp = firebase.initializeApp(firebaseConfig);
+        var isLoggingOut = false; // Variable to track logout state
+
+
+
+        // Check if user is logged in
+        firebaseApp.auth().onAuthStateChanged(user => {
+            if (user) {
+                displayUserInfo(user); // Display user information
+                fetchEnrolledCourses(user); // Fetch enrolled courses
+            } else if (!isLoggingOut) {
+                window.location.replace("https://app.noteswift.in/sign-in"); // Redirect to login page
+            }
+        });
+
+        // Display user information
+        function displayUserInfo(user) {
+            var fullNameElement = document.getElementById("full-name");
+            var emailElement = document.getElementById("email");
+            var userClassElement = document.getElementById("user-class");
+            var loadingMessageElement = document.getElementById("loading-message");
+            var studentAvatar = document.getElementById("studentAvatar");
+
+            // Fetch user data from the database
+            var userRef = firebaseApp.database().ref('users/' + user.uid);
+            userRef.once('value', snapshot => {
+                var userData = snapshot.val();
+                if (userData) {
+                    var fullName = userData.fullName;
+                    var email = user.email;
+                    var userClass = userData.class;
+                    var avatarUrl = userData.avatarUrl || "https://app.noteswift.in/images/student-avatar.png";
+
+                    loadingMessageElement.style.display = "none"; // Hide the loading message
+                    studentAvatar.style.display = "inline-block";
+
+                    // Update HTML elements with user data
+                    fullNameElement.textContent = fullName;
+                    emailElement.textContent = email;
+                    userClassElement.textContent = userClass;
+                    studentAvatar.src = avatarUrl; // Set the profile picture
+                } else {
+                    console.error('User data not found');
+                }
+            });
+
+            // Display the loading message initially
+            loadingMessageElement.style.display = "block";
+        }
+
+
+
+
+        // Upload profile picture
+        function uploadProfilePicture(event) {
+            var user = firebaseApp.auth().currentUser;
+            if (user && event.target.files[0]) {
+                var file = event.target.files[0];
+                var storageRef = firebaseApp.storage().ref('profile_pictures/' + user.uid + '/' + file.name);
+
+                // Upload file to Firebase Storage
+                var uploadTask = storageRef.put(file);
+
+                uploadTask.on('state_changed', snapshot => {
+                    // Optional: Monitor upload progress (e.g., progress bar)
+                }, error => {
+                    console.error("Error uploading file:", error);
+                }, () => {
+                    // Once uploaded, get the download URL
+                    uploadTask.snapshot.ref.getDownloadURL().then(downloadURL => {
+                        // Update the user's avatar URL in the database
+                        var userRef = firebaseApp.database().ref('users/' + user.uid);
+                        userRef.update({ avatarUrl: downloadURL });
+
+                        // Update the profile picture on the page
+                        var studentAvatar = document.getElementById("studentAvatar");
+                        studentAvatar.src = downloadURL; // Update in the UI
+                    });
+                });
+            }
+        }
+
+        // Logout function
+        function logout() {
+            isLoggingOut = true;
+            firebaseApp.auth().signOut().then(() => {
+                window.location.replace("https://app.noteswift.in/sign-in"); // Redirect to login page
+            }).catch(error => {
+                console.error('Error signing out: ', error);
+            });
+        }
+    </script>
+
+
+ <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed:', error);
+            });
+        }
+      </script>
+   <script src="js/gt.min.js" data-gt-widget-id="43217984"></script>
+</body>
+
+
+</html>

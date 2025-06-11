@@ -1,0 +1,26 @@
+
+
+  @media screen and (min-width: 768px) {
+
+    .blogM {
+        justify-content: left !important;
+        margin-left: 15px !important;
+      }
+
+      .tbHd>* {
+        padding: 12px 90px !important;
+      }
+
+      .pEnt {
+        margin-top: 0px !important;
+      }
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+
+
+  }
+
