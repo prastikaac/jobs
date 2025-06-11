@@ -309,8 +309,6 @@
   }
 
 
-
-
 }
 
 .profile-picture {
@@ -578,4 +576,9 @@ body.drK .gt_white_content {
 
 body.drK .gt_white_content .gt_languages a {
   color: white;
+}
+
+
+body.drK .gt_white_content .gt_languages a .icon .fill {
+  fill: white;
 }
