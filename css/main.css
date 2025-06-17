@@ -582,3 +582,13 @@ body.drK .gt_white_content .gt_languages a {
 body.drK .gt_white_content .gt_languages a .icon .fill {
   fill: white;
 }
+
+
+
+.foursec {
+  background: white;
+}
+
+body.drK.foursec {
+  background: #2d2d30;
+}
