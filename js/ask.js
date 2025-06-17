@@ -36,9 +36,9 @@ function createProfileCard(name, imageUrl, linkUrl) {
 }
 
 // Create multiple profile cards
-createProfileCard("NoteSwift AI ChatBot", 'https://app.noteswift.in/images/ai.png', 'https://app.noteswift.in/ai');
-createProfileCard("NEB Class 10 Group", 'https://app.noteswift.in/images/class-10-png.png', 'http://chat.whatsapp.com/CXIMt0enPDf1W1aCEkijYB');
-createProfileCard("NEB Class 11 Group", 'https://app.noteswift.in/images/class-11-png.png', 'http://chat.whatsapp.com/BXVAxLYFXhY80Z36rcXJH6');
-createProfileCard("NEB Class 12 Group", 'https://app.noteswift.in/images/class-12-png.png', 'http://chat.whatsapp.com/BXVAxLYFXhY80Z36rcXJH6');
+createProfileCard("NoteSwift AI ChatBot", 'https://findjobsinfinland.fi/images/ai.png', 'https://findjobsinfinland.fi/ai');
+createProfileCard("NEB Class 10 Group", 'https://findjobsinfinland.fi/images/class-10-png.png', 'http://chat.whatsapp.com/CXIMt0enPDf1W1aCEkijYB');
+createProfileCard("NEB Class 11 Group", 'https://findjobsinfinland.fi/images/class-11-png.png', 'http://chat.whatsapp.com/BXVAxLYFXhY80Z36rcXJH6');
+createProfileCard("NEB Class 12 Group", 'https://findjobsinfinland.fi/images/class-12-png.png', 'http://chat.whatsapp.com/BXVAxLYFXhY80Z36rcXJH6');
 
 // Add more profile cards as needed
