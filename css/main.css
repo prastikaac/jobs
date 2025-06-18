@@ -292,7 +292,7 @@ body.drK.foursec {
 @media screen and (min-width: 768px) {
 
 
-
+  
   .book {
     width: 70px;
     height: 55px;
@@ -403,13 +403,7 @@ body.drK.foursec {
     margin-left: 40px;
   }
 
-  .fotname {
-    font-size: 1.9em;
-  }
 
-  .fotmail {
-    font-size: 13px;
-  }
 
 }
 
@@ -418,13 +412,7 @@ body.drK.foursec {
 
 @media screen and (max-width: 767px) {
 
-  .fotmail {
-    font-size: 12.5px;
-  }
 
-  .fotname {
-    font-size: 24px;
-  }
 
   .book {
     width: 60px;
@@ -625,3 +613,5 @@ button.logout-cancel:hover {
 #notification-icon {
   display: none !important;
 }
+
+
