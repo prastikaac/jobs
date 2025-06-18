@@ -191,8 +191,8 @@
 
 
 
-               <div class="widget BlogSearch" data-version="2" id="BlogSearch1">
-               <form class="srchF" onsubmit="return false;" target="_top">
+              <div class="widget BlogSearch" data-version="2" id="BlogSearch1">
+                <form class="srchF" onsubmit="return false;" target="_top">
                   <input aria-label="Search this blog" autocomplete="off" id="searchIn" name="q"
                     placeholder="Search 'your interested job here'" required />
                   <span class="sb">
@@ -204,6 +204,7 @@
                     </svg>
                   </span>
                   <button aria-label="Clear" class="sb clearsearch" data-text="âœ•" type="reset"></button>
+                  <span class="fCls"></span>
                 </form>
               </div>
 
@@ -918,28 +919,47 @@
                       const resetButton = document.querySelector('button[type="reset"]');
                       const articles = document.querySelectorAll("article.ntry");
 
+                      // Utility to extract searchable text from article
                       function getSearchableText(article) {
-                        const textParts = [];
-                        const keywords = article.getAttribute("data-keywords");
-                        if (keywords) textParts.push(keywords);
-                        const pCntn = article.querySelector(".pCntn");
-                        if (pCntn) textParts.push(pCntn.innerText);
-                        return textParts.join(" ").toLowerCase();
+                        const parts = [];
+
+                        // Location text
+                        const locationTag = article.querySelector(".pLbls a");
+                        if (locationTag) {
+                          parts.push(locationTag.textContent.trim());
+                          parts.push(locationTag.getAttribute("data-text") || "");
+                        }
+
+                        // Job title
+                        const jobTitleTag = article.querySelector("h2 a");
+                        if (jobTitleTag) {
+                          parts.push(jobTitleTag.textContent.trim());
+                          parts.push(jobTitleTag.getAttribute("data-text") || "");
+                        }
+
+                        // Description
+                        const snippet = article.querySelector(".pSnpt");
+                        if (snippet) {
+                          parts.push(snippet.textContent.trim());
+                        }
+
+                        return parts.join(" ").toLowerCase();
                       }
 
+                      // Filter visible articles based on input
                       function filterArticles(query) {
-                        const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+                        const keywords = query.toLowerCase().split(/\s+/).filter(Boolean);
                         articles.forEach(article => {
                           const text = getSearchableText(article);
-                          const matched = words.every(w => text.includes(w));
+                          const matched = keywords.every(word => text.includes(word));
                           article.style.display = matched ? "block" : "none";
                         });
                       }
 
-                      // Read search query from URL like /filter?helsinki
+                      // Load initial filter from URL
                       function updateFromURL() {
                         if (window.location.pathname.toLowerCase() === "/filter") {
-                          let query = window.location.search.substring(1) || ""; // remove ?
+                          let query = window.location.search.substring(1); // removes ?
                           query = decodeURIComponent(query).replace(/-/g, " ").trim();
                           searchInput.value = query;
                           if (query.length >= 3) {
@@ -948,12 +968,12 @@
                             articles.forEach(a => (a.style.display = "none"));
                           }
                         } else {
-                          // Hide all if not on /filter
                           searchInput.value = "";
                           articles.forEach(a => (a.style.display = "none"));
                         }
                       }
 
+                      // Handle input typing
                       searchInput.addEventListener("input", () => {
                         const query = searchInput.value.trim();
                         if (query.length >= 3) {
@@ -968,6 +988,14 @@
                         }
                       });
 
+                      // ✅ Hide mobile keyboard when user presses enter
+                      searchInput.addEventListener("keydown", function (e) {
+                        if (e.key === "Enter") {
+                          searchInput.blur(); // Hides keyboard
+                        }
+                      });
+
+                      // Handle reset (clear button)
                       resetButton.addEventListener("click", () => {
                         searchInput.value = "";
                         const baseUrl = `${window.location.origin}/filter`;
@@ -975,10 +1003,11 @@
                         articles.forEach(a => (a.style.display = "none"));
                       });
 
+                      // Initial run
                       updateFromURL();
                     });
-
                   </script>
+
 
 
 
@@ -1013,14 +1042,14 @@
                     </li>
                     <li class="mS">
                       <label aria-label="Search" data-text="Search" for="searchIn">
-                       <svg style="stroke-width: 3px; opacity: 1;" class="line" viewBox="0 0 24 24" fill="none"
+                        <svg style="stroke-width: 3px; opacity: 1;" class="line" viewBox="0 0 24 24" fill="none"
                           stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
                           <g>
                             <circle cx="11.36167" cy="11.36167" r="9.36167" />
                             <line x1="22" x2="19.9332" y1="22" y2="19.9332" />
                           </g>
-                        </svg> 
-                         </label>
+                        </svg>
+                      </label>
                     </li>
                     <li class="mN">
                       <a aria-label="Home" data-text="Home" href="https://findjobsinfinland.fi" role="button">
