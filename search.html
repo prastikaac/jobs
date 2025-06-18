@@ -540,56 +540,6 @@
             <div class="widget LinkList" data-version="2" id="LinkList001">
               <nav class="navS scrlH">
                 <div class="secIn">
-                  <ul>
-                    <li>
-                      <a aria-label="All Jobs" class="l" data-text="All Jobs" style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/all-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="Cleaning" class="l" data-text="Cleaning" style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/cleaning-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="Cooking" class="l" data-text="Cooking" style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/cooking-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="Nursing" class="l" data-text="Nursing" style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/nursing-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="IT & Software" class="l" data-text="IT & Software" style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/it-and-software-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="Engineering" class="l" data-text="Engineering"
-                        style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/engineering-and-construction-jobs">
-                      </a>
-                    </li>
-                     <li>
-                      <a aria-label="Construction & Labor" class="l" data-text="Construction & Labor"
-                        style="font-size: 13.5px;"
-                        href="https://findjobsinfinland.fi/engineering-and-construction-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="Hospitality & Service" class="l" data-text="Hospitality & Service"
-                        style="font-size: 13.5px;" href="https://findjobsinfinland.fi/hospitality-and-service-jobs">
-                      </a>
-                    </li>
-                    <li>
-                      <a aria-label="Education & Teaching" class="l" data-text="Education & Teaching"
-                        style="font-size: 13.5px;" href="https://findjobsinfinland.fi/education-and-teaching-jobs">
-                      </a>
-                    </li>
-
-                  </ul>
                 </div>
               </nav>
             </div>
@@ -711,58 +661,10 @@
                 }
               </style>
 
-              <div class="container">
-                <div class="content">
-                  <h1 class="startf">Explore a wide range of job opportunities across Finland!</h1>
-                  <p class="ptext" style="text-align: left;">From part-time roles to full-time careers, tailored for
-                    immigrants and locals alike. Start your journey with trusted employers, real-time listings, and
-                    support every step of the way!</p>
 
-                  <a class="button" href="#startsearching" style="padding: 11px 20px; font-size: 13px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                      class="bi bi-search" style=" fill: white !important;" fill="white">
-                      <g transform="scale(-1,1) translate(-16,0)">
-                        <path
-                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                      </g>
-                    </svg>
-
-
-                    <span>&nbsp; Start searching for a Job </span>
-                  </a>
-                </div>
-
-
-                <div class="image">
-                  <img src="images/side-bg.png" alt="Placeholder Image">
-                </div>
-              </div>
 
               <main class="blogItm mainbar">
 
-
-
-
-
-
-
-
-                <h2 class="pop" style="text-align: center; font-weight: 00 !important;">Available Jobs</h2>
-
-
-
-
-                <p style="text-align:center; font-size: 17px; margin-bottom: -60px;">
-                  Part-time or full-time – Real
-                  listings.
-                  <br>
-                  Apply today, start tomorrow!
-
-
-
-                </p>
-
-                <div id="startsearching"></div>
                 <div class="section" id="top-widget">
                   <div class="widget FeaturedPost" data-version="2" id="FeaturedPost1">
 
@@ -817,7 +719,7 @@
 
                 <div class="blogPts">
 
-                  <article class="ntry" data-keywords="cleaning jobs Office and shop cleaner">
+                  <article class="ntry">
                     <div class="pThmb iyt">
                       <a class="thmb"
                         href="https://findjobsinfinland.fi/courses/office-and-shop-cleaner-siskon-siivous">
@@ -874,7 +776,7 @@
                       </div>
                   </article>
 
-                  <article class="ntry" data-keywords="On Call Cleaner">
+                  <article class="ntry">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/on-call-cleaner-siskon-siivous">
                         <img alt="On Call Cleaner" class="imgThm lazy loaded" src="images/on-call-cleaner.png"
@@ -930,7 +832,7 @@
                   </article>
 
 
-                  <article class="ntry" data-keywords="Junior ICT Specialist">
+                  <article class="ntry">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/junior-ict-specialist">
                         <img alt="Junior ICT Specialist" class="imgThm lazy loaded" src="images/junior-ict.png"
@@ -1699,6 +1601,38 @@
       </script>
 
 
+
+
+      <script>
+        // Function to get query parameters
+        function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+
+        // Function to filter posts by keyword
+        function filterPostsByKeyword(keyword) {
+          const posts = document.querySelectorAll('.ntry');
+          const lowerKeyword = keyword.toLowerCase();
+
+          posts.forEach(post => {
+            const dataKeywords = post.getAttribute('data-keywords').toLowerCase();
+            if (dataKeywords.includes(lowerKeyword)) {
+              post.style.display = ''; // Show matching post
+            } else {
+              post.style.display = 'none'; // Hide non-matching post
+            }
+          });
+        }
+
+        // Run on page load if search query exists
+        document.addEventListener('DOMContentLoaded', () => {
+          const query = getQueryParam('q');
+          if (query) {
+            filterPostsByKeyword(query);
+          }
+        });
+      </script>
 
 
 
