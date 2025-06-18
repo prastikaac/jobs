@@ -615,3 +615,8 @@ button.logout-cancel:hover {
 }
 
 
+
+
+body.lgT .clearsearch {
+  color: #2d2d30;
+}
