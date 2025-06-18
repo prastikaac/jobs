@@ -204,7 +204,7 @@
                     </svg>
                   </span>
                   <button aria-label="Clear" class="sb clearsearch" data-text="âœ•" type="reset"></button>
-                  <span class="fCls"></span>
+                <span class="fCls"></span>
                 </form>
               </div>
 
@@ -803,7 +803,7 @@
                       </div>
                   </article>
 
-                  <article class="ntry" data-keywords="on call cleaner cleaning espoo uusima">
+                  <article class="ntry" data-keywords="hanuman on call cleaner cleaning espoo uusima">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/on-call-cleaner-siskon-siivous">
                         <img alt="On Call Cleaner" class="imgThm lazy loaded" src="images/on-call-cleaner.png"
@@ -919,47 +919,35 @@
                       const resetButton = document.querySelector('button[type="reset"]');
                       const articles = document.querySelectorAll("article.ntry");
 
-                      // Utility to extract searchable text from article
                       function getSearchableText(article) {
-                        const parts = [];
-
-                        // Location text
-                        const locationTag = article.querySelector(".pLbls a");
-                        if (locationTag) {
-                          parts.push(locationTag.textContent.trim());
-                          parts.push(locationTag.getAttribute("data-text") || "");
-                        }
-
-                        // Job title
-                        const jobTitleTag = article.querySelector("h2 a");
-                        if (jobTitleTag) {
-                          parts.push(jobTitleTag.textContent.trim());
-                          parts.push(jobTitleTag.getAttribute("data-text") || "");
-                        }
-
-                        // Description
-                        const snippet = article.querySelector(".pSnpt");
-                        if (snippet) {
-                          parts.push(snippet.textContent.trim());
-                        }
-
-                        return parts.join(" ").toLowerCase();
+                        const textParts = [];
+                        const keywords = article.getAttribute("data-keywords");
+                        if (keywords) textParts.push(keywords);
+                        const pCntn = article.querySelector(".pCntn");
+                        if (pCntn) textParts.push(pCntn.innerText);
+                        return textParts.join(" ").toLowerCase();
                       }
 
-                      // Filter visible articles based on input
                       function filterArticles(query) {
-                        const keywords = query.toLowerCase().split(/\s+/).filter(Boolean);
+                        const words = query.toLowerCase().split(/\s+/).filter(Boolean);
                         articles.forEach(article => {
                           const text = getSearchableText(article);
-                          const matched = keywords.every(word => text.includes(word));
+                          const matched = words.every(w => text.includes(w));
                           article.style.display = matched ? "block" : "none";
                         });
                       }
 
-                      // Load initial filter from URL
+                           // ✅ Hide mobile keyboard when user presses enter
+                      searchInput.addEventListener("keydown", function (e) {
+                        if (e.key === "Enter") {
+                          searchInput.blur(); // Hides keyboard
+                        }
+                      });
+
+                      // Read search query from URL like /filter?helsinki
                       function updateFromURL() {
                         if (window.location.pathname.toLowerCase() === "/filter") {
-                          let query = window.location.search.substring(1); // removes ?
+                          let query = window.location.search.substring(1) || ""; // remove ?
                           query = decodeURIComponent(query).replace(/-/g, " ").trim();
                           searchInput.value = query;
                           if (query.length >= 3) {
@@ -968,12 +956,12 @@
                             articles.forEach(a => (a.style.display = "none"));
                           }
                         } else {
+                          // Hide all if not on /filter
                           searchInput.value = "";
                           articles.forEach(a => (a.style.display = "none"));
                         }
                       }
 
-                      // Handle input typing
                       searchInput.addEventListener("input", () => {
                         const query = searchInput.value.trim();
                         if (query.length >= 3) {
@@ -988,14 +976,6 @@
                         }
                       });
 
-                      // ✅ Hide mobile keyboard when user presses enter
-                      searchInput.addEventListener("keydown", function (e) {
-                        if (e.key === "Enter") {
-                          searchInput.blur(); // Hides keyboard
-                        }
-                      });
-
-                      // Handle reset (clear button)
                       resetButton.addEventListener("click", () => {
                         searchInput.value = "";
                         const baseUrl = `${window.location.origin}/filter`;
@@ -1003,11 +983,10 @@
                         articles.forEach(a => (a.style.display = "none"));
                       });
 
-                      // Initial run
                       updateFromURL();
                     });
-                  </script>
 
+                  </script>
 
 
 
