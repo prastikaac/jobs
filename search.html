@@ -219,28 +219,28 @@
 
 
               <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const resetButton = document.querySelector('.srchF button[type="reset"]');
-    const searchInput = document.getElementById('jobSearchInput');
-    const articles = document.querySelectorAll("article.ntry");
+                document.addEventListener("DOMContentLoaded", function () {
+                  const resetButton = document.querySelector('.srchF button[type="reset"]');
+                  const searchInput = document.getElementById('jobSearchInput');
+                  const articles = document.querySelectorAll("article.ntry");
 
-    if (resetButton) {
-      resetButton.addEventListener("click", function () {
-        // Clear input value
-        searchInput.value = '';
+                  if (resetButton) {
+                    resetButton.addEventListener("click", function () {
+                      // Clear input value
+                      searchInput.value = '';
 
-        // Clear URL query
-        const newUrl = `${window.location.origin}${window.location.pathname}`;
-        window.history.replaceState(null, '', newUrl);
+                      // Clear URL query
+                      const newUrl = `${window.location.origin}${window.location.pathname}`;
+                      window.history.replaceState(null, '', newUrl);
 
-        // Hide all articles (or show all if you prefer)
-        articles.forEach(article => {
-          article.style.display = "none";
-        });
-      });
-    }
-  });
-</script>
+                      // Hide all articles (or show all if you prefer)
+                      articles.forEach(article => {
+                        article.style.display = "none";
+                      });
+                    });
+                  }
+                });
+              </script>
 
 
 
@@ -919,65 +919,65 @@
                       </div>
                   </article>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const searchInput = document.getElementById("jobSearchInput");
-      const articles = document.querySelectorAll("article.ntry");
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const searchInput = document.getElementById("jobSearchInput");
+                      const articles = document.querySelectorAll("article.ntry");
 
-      function getSearchableText(article) {
-        const pCntn = article.querySelector(".pCntn");
-        if (!pCntn) return "";
+                      function getSearchableText(article) {
+                        const pCntn = article.querySelector(".pCntn");
+                        if (!pCntn) return "";
 
-        let combinedText = "";
-        const locationLink = pCntn.querySelector(".pLbls a");
-        if (locationLink) {
-          combinedText += locationLink.getAttribute("data-text") + " ";
-          combinedText += locationLink.textContent.trim() + " ";
-        }
+                        let combinedText = "";
+                        const locationLink = pCntn.querySelector(".pLbls a");
+                        if (locationLink) {
+                          combinedText += locationLink.getAttribute("data-text") + " ";
+                          combinedText += locationLink.textContent.trim() + " ";
+                        }
 
-        const anchors = pCntn.querySelectorAll("a");
-        anchors.forEach(a => {
-          combinedText += a.textContent.trim() + " ";
-        });
+                        const anchors = pCntn.querySelectorAll("a");
+                        anchors.forEach(a => {
+                          combinedText += a.textContent.trim() + " ";
+                        });
 
-        return combinedText.toLowerCase().trim();
-      }
+                        return combinedText.toLowerCase().trim();
+                      }
 
-      function filterArticles(query) {
-        const words = query.toLowerCase().split(/\s+/);
+                      function filterArticles(query) {
+                        const words = query.toLowerCase().split(/\s+/);
 
-        articles.forEach(article => {
-          const text = getSearchableText(article);
-          const keywords = (article.getAttribute("data-keywords") || "").toLowerCase();
-          const matches = words.every(word => keywords.includes(word) || text.includes(word));
-          article.style.display = matches ? "block" : "none";
-        });
-      }
+                        articles.forEach(article => {
+                          const text = getSearchableText(article);
+                          const keywords = (article.getAttribute("data-keywords") || "").toLowerCase();
+                          const matches = words.every(word => keywords.includes(word) || text.includes(word));
+                          article.style.display = matches ? "block" : "none";
+                        });
+                      }
 
-      function updateFromURL() {
-        const params = new URLSearchParams(window.location.search);
-        let query = params.get("q") || "";
-        query = query.replace(/-/g, ' ');
-        searchInput.value = query;
-        if (query.length >= 3) filterArticles(query);
-      }
+                      function updateFromURL() {
+                        const params = new URLSearchParams(window.location.search);
+                        let query = params.get("q") || "";
+                        query = query.replace(/-/g, ' ');
+                        searchInput.value = query;
+                        if (query.length >= 3) filterArticles(query);
+                      }
 
-      updateFromURL();
+                      updateFromURL();
 
-      searchInput.addEventListener("input", function () {
-        const query = this.value.trim();
-        const urlQuery = query.replace(/\s+/g, '-');
-        const newUrl = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(urlQuery)}`;
-        window.history.replaceState(null, '', newUrl);
+                      searchInput.addEventListener("input", function () {
+                        const query = this.value.trim();
+                        const urlQuery = query.replace(/\s+/g, '-');
+                        const newUrl = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(urlQuery)}`;
+                        window.history.replaceState(null, '', newUrl);
 
-        if (query.length >= 3) {
-          filterArticles(query);
-        } else {
-          articles.forEach(article => article.style.display = "none");
-        }
-      });
-    });
-  </script>
+                        if (query.length >= 3) {
+                          filterArticles(query);
+                        } else {
+                          articles.forEach(article => article.style.display = "none");
+                        }
+                      });
+                    });
+                  </script>
 
 
                 </div>
