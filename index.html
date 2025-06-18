@@ -717,18 +717,29 @@
                     immigrants and locals alike. Start your journey with trusted employers, real-time listings, and
                     support every step of the way!</p>
 
-                  <a class="button" href="#startsearching" style="padding: 11px 20px; font-size: 13px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                      class="bi bi-search" style=" fill: white !important;" fill="white">
-                      <g transform="scale(-1,1) translate(-16,0)">
-                        <path
-                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                      </g>
-                    </svg>
+            <a class="button" href="#startsearching" style="padding: 11px 20px; font-size: 13px;"
+   onclick="handleSearchClick(event)">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+    class="bi bi-search" style="fill: white !important;" fill="white">
+    <g transform="scale(-1,1) translate(-16,0)">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+    </g>
+  </svg>
+  <span>&nbsp; Start searching for a Job </span>
+</a>
 
+<script>
+  function handleSearchClick(event) {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      event.preventDefault(); // prevent href action on mobile
+      const label = document.querySelector('.mS label');
+      if (label) label.click();
+    }
+    // else, let default href="#startsearching" run on PC
+  }
+</script>
 
-                    <span>&nbsp; Start searching for a Job </span>
-                  </a>
                 </div>
 
 
