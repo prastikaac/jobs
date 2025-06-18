@@ -29,6 +29,12 @@
   <link href="images/favicon.png" rel="icon" type="image/x-icon" />
   <link href="https://findjobsinfinland.fi/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+
+  <style>
+    article.ntry {
+      display: none;
+    }
+  </style>
   <!-- Social media preview -->
   <!-- Max file size: 5 MB
     Minimum image dimensions: 1200 (w) x 627 (h) pixels
@@ -192,12 +198,14 @@
                 }
               </script>
 
+
+
               <div class="widget BlogSearch" data-version="2" id="BlogSearch1">
-                <form onsubmit="submitSearch(); return false;" class="srchF" target="_top">
-                  <input aria-label="Search this blog" autocomplete="off" id="searchIn" minlength="3" name="q"
-                    placeholder="Search 'your intrested job here'" required="required" />
+                <form class="srchF" onsubmit="return false;" target="_top">
+                  <input aria-label="Search this blog" autocomplete="off" id="jobSearchInput" name="q"
+                    placeholder="Search 'your interested job here'" />
                   <span class="sb">
-                    <svg class="line" viewbox="0 0 24 24">
+                    <svg class="line" viewBox="0 0 24 24">
                       <g>
                         <circle cx="11.36167" cy="11.36167" r="9.36167"></circle>
                         <line class="svgC" x1="22" x2="19.9332" y1="22" y2="19.9332"></line>
@@ -208,6 +216,31 @@
                   <span class="fCls"></span>
                 </form>
               </div>
+
+
+              <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const resetButton = document.querySelector('.srchF button[type="reset"]');
+    const searchInput = document.getElementById('jobSearchInput');
+    const articles = document.querySelectorAll("article.ntry");
+
+    if (resetButton) {
+      resetButton.addEventListener("click", function () {
+        // Clear input value
+        searchInput.value = '';
+
+        // Clear URL query
+        const newUrl = `${window.location.origin}${window.location.pathname}`;
+        window.history.replaceState(null, '', newUrl);
+
+        // Hide all articles (or show all if you prefer)
+        articles.forEach(article => {
+          article.style.display = "none";
+        });
+      });
+    }
+  });
+</script>
 
 
 
@@ -719,7 +752,7 @@
 
                 <div class="blogPts">
 
-                  <article class="ntry">
+                  <article class="ntry" data-keywords="cleaning office shop cleaner cleaning helsinki uusima">
                     <div class="pThmb iyt">
                       <a class="thmb"
                         href="https://findjobsinfinland.fi/courses/office-and-shop-cleaner-siskon-siivous">
@@ -776,7 +809,7 @@
                       </div>
                   </article>
 
-                  <article class="ntry">
+                  <article class="ntry" data-keywords="on call cleaner cleaning espoo uusima">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/on-call-cleaner-siskon-siivous">
                         <img alt="On Call Cleaner" class="imgThm lazy loaded" src="images/on-call-cleaner.png"
@@ -832,7 +865,7 @@
                   </article>
 
 
-                  <article class="ntry">
+                  <article class="ntry" data-keywords="junior ict specialist pasila uusima it technology">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/junior-ict-specialist">
                         <img alt="Junior ICT Specialist" class="imgThm lazy loaded" src="images/junior-ict.png"
@@ -885,6 +918,67 @@
                         </div>
                       </div>
                   </article>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("jobSearchInput");
+      const articles = document.querySelectorAll("article.ntry");
+
+      function getSearchableText(article) {
+        const pCntn = article.querySelector(".pCntn");
+        if (!pCntn) return "";
+
+        let combinedText = "";
+        const locationLink = pCntn.querySelector(".pLbls a");
+        if (locationLink) {
+          combinedText += locationLink.getAttribute("data-text") + " ";
+          combinedText += locationLink.textContent.trim() + " ";
+        }
+
+        const anchors = pCntn.querySelectorAll("a");
+        anchors.forEach(a => {
+          combinedText += a.textContent.trim() + " ";
+        });
+
+        return combinedText.toLowerCase().trim();
+      }
+
+      function filterArticles(query) {
+        const words = query.toLowerCase().split(/\s+/);
+
+        articles.forEach(article => {
+          const text = getSearchableText(article);
+          const keywords = (article.getAttribute("data-keywords") || "").toLowerCase();
+          const matches = words.every(word => keywords.includes(word) || text.includes(word));
+          article.style.display = matches ? "block" : "none";
+        });
+      }
+
+      function updateFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        let query = params.get("q") || "";
+        query = query.replace(/-/g, ' ');
+        searchInput.value = query;
+        if (query.length >= 3) filterArticles(query);
+      }
+
+      updateFromURL();
+
+      searchInput.addEventListener("input", function () {
+        const query = this.value.trim();
+        const urlQuery = query.replace(/\s+/g, '-');
+        const newUrl = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(urlQuery)}`;
+        window.history.replaceState(null, '', newUrl);
+
+        if (query.length >= 3) {
+          filterArticles(query);
+        } else {
+          articles.forEach(article => article.style.display = "none");
+        }
+      });
+    });
+  </script>
+
 
                 </div>
                 <br> <br>
@@ -1603,37 +1697,27 @@
 
 
 
-      <script>
-        // Function to get query parameters
-        function getQueryParam(param) {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get(param);
-        }
 
-        // Function to filter posts by keyword
+      <script>
         function filterPostsByKeyword(keyword) {
           const posts = document.querySelectorAll('.ntry');
           const lowerKeyword = keyword.toLowerCase();
+          let matchFound = false;
 
           posts.forEach(post => {
             const dataKeywords = post.getAttribute('data-keywords').toLowerCase();
             if (dataKeywords.includes(lowerKeyword)) {
-              post.style.display = ''; // Show matching post
+              post.style.display = '';
+              matchFound = true;
             } else {
-              post.style.display = 'none'; // Hide non-matching post
+              post.style.display = 'none';
             }
           });
+
+          // Show "No Results" message if no matches
+          document.getElementById('noResults').style.display = matchFound ? 'none' : 'block';
         }
-
-        // Run on page load if search query exists
-        document.addEventListener('DOMContentLoaded', () => {
-          const query = getQueryParam('q');
-          if (query) {
-            filterPostsByKeyword(query);
-          }
-        });
       </script>
-
 
 
 
