@@ -191,14 +191,23 @@
 
 
 
-              <div class="widget BlogSearch" data-version="2" id="BlogSearch1">
-                <form onsubmit="handleSearchSubmit(event)" class="srchF" target="_top">
+               <div class="widget BlogSearch" data-version="2" id="BlogSearch1">
+               <form class="srchF" onsubmit="return false;" target="_top">
                   <input aria-label="Search this blog" autocomplete="off" id="searchIn" name="q"
                     placeholder="Search 'your interested job here'" required />
-                  <button aria-label="Clear" class="sb" type="reset"></button>
+                  <span class="sb">
+                    <svg class="line" viewbox="0 0 24 24">
+                      <g>
+                        <circle cx="11.36167" cy="11.36167" r="9.36167"></circle>
+                        <line class="svgC" x1="22" x2="19.9332" y1="22" y2="19.9332"></line>
+                      </g>
+                    </svg>
+                  </span>
+                  <button aria-label="Clear" class="sb clearsearch" data-text="âœ•" type="reset"></button>
                 </form>
-
               </div>
+
+
 
 
 
@@ -927,22 +936,6 @@
                         });
                       }
 
-                      function handleSearchSubmit(event) {
-                        event.preventDefault(); // Stop form from reloading page
-
-                        const query = searchInput.value.trim();
-                        if (query.length >= 3) {
-                          const urlQuery = query.replace(/\s+/g, "-");
-                          const newUrl = `${window.location.origin}/filter?${encodeURIComponent(urlQuery)}`;
-                          window.history.replaceState(null, "", newUrl);
-                          filterArticles(query);
-
-                          // ❗️Try to hide keyboard manually (if still open)
-                          searchInput.blur(); // This removes focus from the input field, hiding the keyboard
-                        }
-                      }
-
-
                       // Read search query from URL like /filter?helsinki
                       function updateFromURL() {
                         if (window.location.pathname.toLowerCase() === "/filter") {
@@ -1020,14 +1013,14 @@
                     </li>
                     <li class="mS">
                       <label aria-label="Search" data-text="Search" for="searchIn">
-                        <svg style="stroke-width: 3px; opacity: 1;" class="line" viewBox="0 0 24 24" fill="none"
+                       <svg style="stroke-width: 3px; opacity: 1;" class="line" viewBox="0 0 24 24" fill="none"
                           stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
                           <g>
                             <circle cx="11.36167" cy="11.36167" r="9.36167" />
                             <line x1="22" x2="19.9332" y1="22" y2="19.9332" />
                           </g>
-                        </svg>
-                      </label>
+                        </svg> 
+                         </label>
                     </li>
                     <li class="mN">
                       <a aria-label="Home" data-text="Home" href="https://findjobsinfinland.fi" role="button">
