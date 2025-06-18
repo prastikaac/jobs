@@ -911,86 +911,73 @@
                       </div>
                   </article>
 
-                  <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                      const searchInput = document.getElementById("searchIn");
-                      const resetButton = document.querySelector('.srchF button[type="reset"]');
-                      const articles = document.querySelectorAll("article.ntry");
+                <script>
+                  document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchIn");
+  const resetButton = document.querySelector('button[type="reset"]');
+  const articles = document.querySelectorAll("article.ntry");
 
-                      // Extract searchable text from each article
-                      function getSearchableText(article) {
-                        const pCntn = article.querySelector(".pCntn");
-                        if (!pCntn) return "";
+  function getSearchableText(article) {
+    const textParts = [];
+    const keywords = article.getAttribute("data-keywords");
+    if (keywords) textParts.push(keywords);
+    const pCntn = article.querySelector(".pCntn");
+    if (pCntn) textParts.push(pCntn.innerText);
+    return textParts.join(" ").toLowerCase();
+  }
 
-                        let combinedText = "";
-                        const locationLink = pCntn.querySelector(".pLbls a");
-                        if (locationLink) {
-                          combinedText += (locationLink.getAttribute("data-text") || "") + " ";
-                          combinedText += (locationLink.textContent || "").trim() + " ";
-                        }
+  function filterArticles(query) {
+    const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    articles.forEach(article => {
+      const text = getSearchableText(article);
+      const matched = words.every(w => text.includes(w));
+      article.style.display = matched ? "block" : "none";
+    });
+  }
 
-                        const anchors = pCntn.querySelectorAll("a");
-                        anchors.forEach(a => {
-                          combinedText += (a.textContent || "").trim() + " ";
-                        });
+  // Read search query from URL like /filter?helsinki
+  function updateFromURL() {
+    if (window.location.pathname.toLowerCase() === "/filter") {
+      let query = window.location.search.substring(1) || ""; // remove ?
+      query = decodeURIComponent(query).replace(/-/g, " ").trim();
+      searchInput.value = query;
+      if (query.length >= 3) {
+        filterArticles(query);
+      } else {
+        articles.forEach(a => (a.style.display = "none"));
+      }
+    } else {
+      // Hide all if not on /filter
+      searchInput.value = "";
+      articles.forEach(a => (a.style.display = "none"));
+    }
+  }
 
-                        return combinedText.toLowerCase().trim();
-                      }
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim();
+    if (query.length >= 3) {
+      const urlQuery = query.replace(/\s+/g, "-");
+      const newUrl = `${window.location.origin}/filter?${encodeURIComponent(urlQuery)}`;
+      window.history.replaceState(null, "", newUrl);
+      filterArticles(query);
+    } else {
+      const baseUrl = `${window.location.origin}/filter`;
+      window.history.replaceState(null, "", baseUrl);
+      articles.forEach(a => (a.style.display = "none"));
+    }
+  });
 
-                      // Filter articles by matching keywords or text
-                      function filterArticles(query) {
-                        const words = query.toLowerCase().split(/\s+/);
-                        articles.forEach(article => {
-                          const text = getSearchableText(article);
-                          const keywords = (article.getAttribute("data-keywords") || "").toLowerCase();
-                          const matches = words.every(word => keywords.includes(word) || text.includes(word));
-                          article.style.display = matches ? "block" : "none";
-                        });
-                      }
+  resetButton.addEventListener("click", () => {
+    searchInput.value = "";
+    const baseUrl = `${window.location.origin}/filter`;
+    window.history.replaceState(null, "", baseUrl);
+    articles.forEach(a => (a.style.display = "none"));
+  });
 
-                      // Handle URL path like /filter/keyword
-                      function updateFromURL() {
-                        const pathParts = window.location.pathname.split('/');
-                        const filterIndex = pathParts.indexOf('filter');
-                        let query = '';
+  updateFromURL();
+});
 
-                        if (filterIndex !== -1 && pathParts.length > filterIndex + 1) {
-                          query = decodeURIComponent(pathParts[filterIndex + 1].replace(/-/g, ' '));
-                          searchInput.value = query;
-                          if (query.length >= 3) {
-                            filterArticles(query);
-                          }
-                        } else {
-                          articles.forEach(article => article.style.display = "none");
-                        }
-                      }
-
-                      // Input event: update URL and filter results
-                      searchInput.addEventListener("input", function () {
-                        const query = this.value.trim();
-                        const urlQuery = query.replace(/\s+/g, '-');
-                        const newUrl = `${window.location.origin}/filter/${encodeURIComponent(urlQuery)}`;
-                        window.history.replaceState(null, '', newUrl);
-
-                        if (query.length >= 3) {
-                          filterArticles(query);
-                        } else {
-                          articles.forEach(article => article.style.display = "none");
-                        }
-                      });
-
-                      // Reset button: clear input, reset URL, hide articles
-                      resetButton.addEventListener("click", function () {
-                        searchInput.value = '';
-                        const newUrl = `${window.location.origin}/filter/`;
-                        window.history.replaceState(null, '', newUrl);
-                        articles.forEach(article => article.style.display = "none");
-                      });
-
-                      // Run search on page load
-                      updateFromURL();
-                    });
-                  </script>
+                </script>
 
 
 
