@@ -185,7 +185,7 @@
 
               <script>
                 function submitSearch() {
-                  var baseUrl = "https://findjobsinfinland.fi/filter/";
+                  var baseUrl = "https://findjobsinfinland.fi/filter?";
                   var searchValue = document.getElementById("searchIn").value.trim().toLowerCase();
                   var searchUrl = baseUrl + encodeURIComponent(searchValue);
                   window.location.href = searchUrl;
