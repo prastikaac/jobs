@@ -1998,7 +1998,7 @@ footer .aboutLinks {
 }
 
 footer .aboutLinks li:not(:last-child) {
-    margin-right: 5px
+    margin-right: 9px
 }
 
 footer .LinkList .aboutLinks a svg.line {
