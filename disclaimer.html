@@ -1,315 +1,278 @@
+ <style>
+                  .dropdown {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0.5em 1em 0.5em 0;
+                  }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 1em;
-    }
+                  .dropdown-toggle {
+                    background-color: rgba(179, 183, 187, 0.248);
+                    border-radius: 5px;
+                    font-size: 15px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    min-width: 200px;
+                    padding: 0.5em 0.75em;
+                    box-sizing: border-box;
+                  }
 
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      margin: 0.5em 1em 0.5em 0;
-    }
+                  .dropdown-label {
+                    flex-grow: 1;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
 
-    .dropdown-toggle {
-      padding: 0.6em 1em;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5em;
-    }
+                  .clear-filter {
+                    background: none;
+                    border: none;
+                    font-size: 1.2em;
+                    cursor: pointer;
+                    color: #888;
+                    padding: 0;
+                    margin-left: 0.5em;
+                    display: none;
+                    line-height: 1;
+                  }
 
-    .dropdown-label {
-      flex-grow: 1;
-    }
+                  .clear-filter:hover {
+                    color: #000;
+                  }
 
-    .clear-filter {
-      background: none;
-      border: none;
-      font-size: 1.2em;
-      cursor: pointer;
-      color: #888;
-      display: none;
-    }
+                  .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 110%;
+                    left: 0;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                    z-index: 10;
+                    width: 100%;
+                    max-height: 250px;
+                    overflow-y: auto;
+                    box-sizing: border-box;
+                  }
 
-    .clear-filter:hover {
-      color: #000;
-    }
+                  .dropdown.open .dropdown-menu {
+                    display: block;
+                  }
 
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 110%;
-      left: 0;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      z-index: 10;
-      width: 200px;
-      max-height: 250px;
-      overflow-y: auto;
-    }
+                  .dropdown-menu div {
+                    padding: 0.6em 1em;
+                    cursor: pointer;
+                    font-size: 0.95em;
+                    white-space: nowrap;
+                  }
 
-    .dropdown.open .dropdown-menu {
-      display: block;
-    }
+                  .dropdown-menu div:hover {
+                    background-color: #f0f0f0;
+                  }
 
-    .dropdown-menu div {
-      padding: 0.6em 1em;
-      cursor: pointer;
-    }
+                  /* Filter tag styling */
+                  .selected-filters {
+                    margin: 1em 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5em;
+                  }
 
-    .dropdown-menu div:hover {
-      background-color: #f0f0f0;
-    }
+                  .filter-tag {
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 6px 15px;
+                    background-color: rgba(179, 183, 187, 0.248);
+                    border-radius: 5px;
+                    font-size: 15px;
+                    cursor: pointer;
+                    width: fit-content;
+                    transition: background-color 0.2s ease-in-out;
+                  }
 
-    .selected-filters {
-      margin: 1em 0;
-    }
+                  .filter-tag button {
+                    margin-left: 0.5em;
+                    font-weight: bold;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    color: #718096;
+                    font-size: 1em;
+                    padding: 0;
+                  }
 
-    .filter-tag {
-      display: inline-block;
-      margin: 0.3em 0.5em 0.3em 0;
-      background: #eee;
-      padding: 0.3em 0.6em;
-      border-radius: 5px;
-    }
+                  .filter-tag button:hover {
+                    color: #2d3748;
+                  }
 
-    .filter-tag button {
-      border: none;
-      background: none;
-      cursor: pointer;
-      font-weight: bold;
-      margin-left: 0.5em;
-    }
+                  .filter-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 9px 15px;
+                    background-color: rgba(179, 183, 187, 0.248);
+                    border-radius: 5px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    width: fit-content;
+                  }
 
-    .ntry {
-      display: none;
-      margin: 1em 0;
-      padding: 1em;
-      border: 1px solid #ccc;
-    }
+                  .filter-button svg {
+                    width: 15px;
+                    height: 15px;
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                  }
 
-    input[type='text'] {
-      padding: 0.5em;
-      width: 250px;
-      margin-right: 1em;
-    }
-  </style>
-</head>
-<body>
+                  .filter-text {
+                    font-size: 15px;
+                  }
 
-  <form id="filterForm">
-    <input type="text" id="searchIn" placeholder="Search keyword (e.g. cleaning)" name="q" />
+                  .filter-row {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                  }
 
-    <div class="dropdown" id="categoryDropdown">
-      <div class="dropdown-toggle">
-        <span class="dropdown-label">Select Category</span>
-        <button type="button" class="clear-filter">×</button>
-      </div>
-      <div class="dropdown-menu">
-        <div data-value="">All Categories</div>
-        <div data-value="it-software">IT & Software</div>
-        <div data-value="engineering">Engineering</div>
-        <div data-value="nursing">Nursing</div>
-        <div data-value="construction-labor">Construction & Labor</div>
-        <div data-value="logistics-delivery">Logistics & Delivery</div>
-        <div data-value="customer-service">Customer Service Support</div>
-        <div data-value="internships">Internships & Traineeships</div>
-        <div data-value="cleaning">Cleaning</div>
-        <div data-value="housekeeping">Housekeeping</div>
-        <div data-value="cooking">Cooking</div>
-        <div data-value="hospitality">Hospitality & Service</div>
-        <div data-value="education">Education & Teaching</div>
-        <div data-value="finance">Finance & Accounting</div>
-        <div data-value="sales">Sales & Marketing</div>
-      </div>
-    </div>
+                  .filter-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+                  }
 
-    <div class="dropdown" id="locationDropdown">
-      <div class="dropdown-toggle">
-        <span class="dropdown-label">Select Location</span>
-        <button type="button" class="clear-filter">×</button>
-      </div>
-      <div class="dropdown-menu">
-        <div data-value="">All Locations</div>
-        <div data-value="helsinki">Helsinki</div>
-        <div data-value="espoo">Espoo</div>
-        <div data-value="tampere">Tampere</div>
-        <div data-value="turku">Turku</div>
-        <div data-value="oulu">Oulu</div>
-        <div data-value="jyvaskyla">Jyväskylä</div>
-        <div data-value="lahti">Lahti</div>
-        <div data-value="vaasa">Vaasa</div>
-        <div data-value="rovaniemi">Rovaniemi</div>
-        <div data-value="pori">Pori</div>
-      </div>
-    </div>
 
-    <input type="hidden" id="categorySelect" name="category" />
-    <input type="hidden" id="locationSelect" name="location" />
-  </form>
+                  .filter-top-row {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    align-items: flex-start;
+                  }
 
-  <div class="selected-filters" id="selectedFilters"></div>
+                  .filter-top-pair {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    flex: 1;
+                  }
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("filterForm");
-  const searchInput = document.getElementById("searchIn");
-  const categorySelect = document.getElementById("categorySelect");
-  const locationSelect = document.getElementById("locationSelect");
-  const selectedFilters = document.getElementById("selectedFilters");
-  const articles = document.querySelectorAll(".ntry");
+                  .filter-bottom-pair {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    margin-top: 10px;
+                  }
 
-  function getParams() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return {
-      q: urlParams.get("q") || "",
-      category: urlParams.get("category") || "",
-      location: urlParams.get("location") || ""
-    };
-  }
+                  @media (max-width: 600px) {
+                    .filter-top-row {
+                      flex-direction: column;
+                      width: 100%;
+                    }
 
-  function buildURL(q, category, location) {
-    let params = new URLSearchParams();
-    if (q) params.append("q", q);
-    if (category) params.append("category", category);
-    if (location) params.append("location", location);
-    return params.toString();
-  }
+                    .filter-top-pair {
+                      flex-direction: row;
+                      width: 100%;
+                      justify-content: space-between;
+                    }
 
-  function updateFiltersFromURL() {
-    const { q, category, location } = getParams();
-    searchInput.value = q;
-    categorySelect.value = category;
-    locationSelect.value = location;
+                    .filter-top-pair .dropdown,
+                    .filter-button {
+                      flex: 1;
+                    }
 
-    document.querySelector("#categoryDropdown .dropdown-label").textContent = category || "Select Category";
-    document.querySelector("#locationDropdown .dropdown-label").textContent = location || "Select Location";
-    document.querySelector("#categoryDropdown .clear-filter").style.display = category ? "inline" : "none";
-    document.querySelector("#locationDropdown .clear-filter").style.display = location ? "inline" : "none";
+                    .filter-bottom-pair {
+                      flex-direction: row;
+                      width: 100%;
+                    }
 
-    renderFilterTags(q, category, location);
-    filterArticles(q, category, location);
-  }
+                    .filter-bottom-pair .dropdown {
+                      flex: 1;
+                    }
+                  }
+                </style>
 
-  function filterArticles(q, category, location) {
-    articles.forEach(article => {
-      const title = article.dataset.title.toLowerCase();
-      const cat = article.dataset.category;
-      const loc = article.dataset.location;
-      const matches =
-        (q === "" || title.includes(q.toLowerCase())) &&
-        (category === "" || cat === category) &&
-        (location === "" || loc === location);
-      article.style.display = matches ? "block" : "none";
-    });
-  }
+                <div class="filter-row">
+                  <div class="filter-button">
+                    <svg viewBox="0 0 24 24">
+                      <line x1="4" y1="6" x2="14" y2="6" />
+                      <circle cx="17" cy="6" r="2" />
+                      <line x1="20" y1="6" x2="24" y2="6" />
+                      <line x1="4" y1="18" x2="10" y2="18" />
+                      <circle cx="13" cy="18" r="2" />
+                      <line x1="16" y1="18" x2="24" y2="18" />
+                    </svg>
+                    <div class="filter-text">Filter</div>
+                  </div>
 
-  function renderFilterTags(q, category, location) {
-    selectedFilters.innerHTML = '';
-    if (q) selectedFilters.appendChild(createTag("q", q));
-    if (category) selectedFilters.appendChild(createTag("category", category));
-    if (location) selectedFilters.appendChild(createTag("location", location));
-  }
+                  <form id="filterForm">
+                    <div class="dropdown" id="categoryDropdown">
+                      <div class="dropdown-toggle">
+                        <span class="dropdown-label">Select Category</span>
+                        <button type="button" class="clear-filter">×</button>
+                      </div>
+                      <div class="dropdown-menu">
+                        <div data-value="">All Categories</div>
+                        <div data-value="it-software">IT & Software</div>
+                        <div data-value="engineering">Engineering</div>
+                        <div data-value="nursing">Nursing</div>
+                        <div data-value="construction-labor">Construction & Labor</div>
+                        <div data-value="logistics-delivery">Logistics & Delivery</div>
+                        <div data-value="customer-service">Customer Service Support</div>
+                        <div data-value="internships">Internships & Traineeships</div>
+                        <div data-value="cleaning">Cleaning</div>
+                        <div data-value="housekeeping">Housekeeping</div>
+                        <div data-value="cooking">Cooking</div>
+                        <div data-value="hospitality">Hospitality & Service</div>
+                        <div data-value="education">Education & Teaching</div>
+                        <div data-value="finance">Finance & Accounting</div>
+                        <div data-value="sales">Sales & Marketing</div>
+                      </div>
+                    </div>
 
-  function createTag(type, value) {
-    const tag = document.createElement("span");
-    tag.className = "filter-tag";
-    tag.textContent = `${value}`;
-    const closeBtn = document.createElement("button");
-    closeBtn.textContent = "×";
-    closeBtn.onclick = () => {
-      if (type === "q") searchInput.value = "";
-      if (type === "category") {
-        categorySelect.value = "";
-        document.querySelector("#categoryDropdown .dropdown-label").textContent = "Select Category";
-        document.querySelector("#categoryDropdown .clear-filter").style.display = "none";
-      }
-      if (type === "location") {
-        locationSelect.value = "";
-        document.querySelector("#locationDropdown .dropdown-label").textContent = "Select Location";
-        document.querySelector("#locationDropdown .clear-filter").style.display = "none";
-      }
-      updateURLandFilter();
-    };
-    tag.appendChild(closeBtn);
-    return tag;
-  }
+                    <div class="dropdown" id="locationDropdown">
+                      <div class="dropdown-toggle">
+                        <span class="dropdown-label">Select Location</span>
+                        <button type="button" class="clear-filter">×</button>
+                      </div>
+                      <div class="dropdown-menu">
+                        <div data-value="">All Locations</div>
+                        <div data-value="helsinki">Helsinki</div>
+                        <div data-value="espoo">Espoo</div>
+                        <div data-value="tampere">Tampere</div>
+                        <div data-value="turku">Turku</div>
+                        <div data-value="oulu">Oulu</div>
+                        <div data-value="jyvaskyla">Jyväskylä</div>
+                        <div data-value="lahti">Lahti</div>
+                        <div data-value="vaasa">Vaasa</div>
+                        <div data-value="rovaniemi">Rovaniemi</div>
+                        <div data-value="pori">Pori</div>
+                      </div>
+                    </div>
 
-  function updateURLandFilter() {
-    const q = searchInput.value.trim();
-    const category = categorySelect.value;
-    const location = locationSelect.value;
-    const query = buildURL(q, category, location);
-    window.history.replaceState(null, "", window.location.pathname + (query ? "?" + query : ""));
-    renderFilterTags(q, category, location);
-    filterArticles(q, category, location);
-  }
+                    <input type="hidden" id="categorySelect" name="category" />
+                    <input type="hidden" id="locationSelect" name="location" />
 
-  document.querySelectorAll(".dropdown").forEach(dropdown => {
-    const toggle = dropdown.querySelector(".dropdown-toggle");
-    const label = toggle.querySelector(".dropdown-label");
-    const clearBtn = toggle.querySelector(".clear-filter");
-    const menu = dropdown.querySelector(".dropdown-menu");
+                    <div class="dropdown" id="availabilityDropdown">
+                      <div class="dropdown-toggle">
+                        <span class="dropdown-label">Select Type</span>
+                        <button type="button" class="clear-filter">×</button>
+                      </div>
+                      <div class="dropdown-menu">
+                        <div data-value="">All Types</div>
+                        <div data-value="full-time">Full-time</div>
+                        <div data-value="part-time">Part-time</div>
+                        <div data-value="temporary">Temporary</div>
+                        <div data-value="internship">Internship</div>
+                      </div>
+                    </div>
+                    <input type="hidden" id="availabilitySelect" name="availability" />
 
-    toggle.addEventListener("click", (e) => {
-      if (e.target === clearBtn) return;
-      dropdown.classList.toggle("open");
-    });
-
-    clearBtn.addEventListener("click", () => {
-      if (dropdown.id === "categoryDropdown") {
-        categorySelect.value = "";
-        label.textContent = "Select Category";
-      } else {
-        locationSelect.value = "";
-        label.textContent = "Select Location";
-      }
-      clearBtn.style.display = "none";
-      updateURLandFilter();
-    });
-
-    menu.querySelectorAll("div").forEach(option => {
-      option.addEventListener("click", () => {
-        const value = option.getAttribute("data-value");
-        if (dropdown.id === "categoryDropdown") {
-          categorySelect.value = value;
-          label.textContent = option.textContent;
-          clearBtn.style.display = value ? "inline" : "none";
-        } else {
-          locationSelect.value = value;
-          label.textContent = option.textContent;
-          clearBtn.style.display = value ? "inline" : "none";
-        }
-        dropdown.classList.remove("open");
-        updateURLandFilter();
-      });
-    });
-  });
-
-  document.addEventListener("click", (e) => {
-    document.querySelectorAll(".dropdown").forEach(dropdown => {
-      if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
-    });
-  });
-
-  searchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      updateURLandFilter();
-      searchInput.blur();
-    }
-  });
-
-  updateFiltersFromURL();
-});
-</script>
-
-</body>
-</html>
+                  </form>
+                </div>
