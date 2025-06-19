@@ -189,6 +189,115 @@
 
 
 
+              <style>
+                .dropdown {
+                  position: relative;
+                  display: inline-block;
+                  margin: 0.5em 1em 0.5em 0;
+                }
+
+                .dropdown-toggle {
+                  background-color: #f0f0f0;
+                  border: 1px solid #ccc;
+                  cursor: pointer;
+                  border-radius: 4px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  min-width: 200px;
+                  padding: 0.5em 0.75em;
+                  box-sizing: border-box;
+                }
+
+                .dropdown-label {
+                  flex-grow: 1;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+
+                .clear-filter {
+                  background: none;
+                  border: none;
+                  font-size: 1.2em;
+                  cursor: pointer;
+                  color: #888;
+                  padding: 0;
+                  margin-left: 0.5em;
+                  display: none;
+                  line-height: 1;
+                }
+
+                .clear-filter:hover {
+                  color: #000;
+                }
+
+                .dropdown-menu {
+                  display: none;
+                  position: absolute;
+                  top: 110%;
+                  left: 0;
+                  background-color: #fff;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                  z-index: 10;
+                  width: 100%;
+                  max-height: 250px;
+                  overflow-y: auto;
+                  box-sizing: border-box;
+                }
+
+                .dropdown.open .dropdown-menu {
+                  display: block;
+                }
+
+                .dropdown-menu div {
+                  padding: 0.6em 1em;
+                  cursor: pointer;
+                  font-size: 0.95em;
+                  white-space: nowrap;
+                }
+
+                .dropdown-menu div:hover {
+                  background-color: #f0f0f0;
+                }
+
+                /* Filter tag styling */
+                .selected-filters {
+                  margin: 1em 0;
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 0.5em;
+                }
+
+                .filter-tag {
+                  display: inline-flex;
+                  align-items: center;
+                  background-color: #e2e8f0;
+                  color: #2d3748;
+                  padding: 0.35em 0.75em;
+                  border-radius: 9999px;
+                  font-size: 0.85em;
+                  transition: background-color 0.2s ease-in-out;
+                }
+
+                .filter-tag button {
+                  margin-left: 0.5em;
+                  font-weight: bold;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  color: #718096;
+                  font-size: 1em;
+                  padding: 0;
+                }
+
+                .filter-tag button:hover {
+                  color: #2d3748;
+                }
+              </style>
+
 
 
               <div class="widget BlogSearch" data-version="2" id="BlogSearch1">
@@ -204,47 +313,62 @@
                     </svg>
                   </span>
                   <button aria-label="Clear" class="sb clearsearch" data-text="âœ•" type="reset"></button>
-                <span class="fCls"></span>
+                  <span class="fCls"></span>
                 </form>
               </div>
-
-
-
-
-
-              <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  const resetButton = document.querySelector('.srchF button[type="reset"]');
-                  const searchInput = document.getElementById('searchIn');
-                  const articles = document.querySelectorAll("article.ntry");
-
-                  if (resetButton) {
-                    resetButton.addEventListener("click", function () {
-                      // Clear input value
-                      searchInput.value = '';
-
-                      // Clear URL query
-                      const newUrl = `${window.location.origin}${window.location.pathname}`;
-                      window.history.replaceState(null, '', newUrl);
-
-                      // Hide all articles (or show all if you prefer)
-                      articles.forEach(article => {
-                        article.style.display = "none";
-                      });
-                    });
-                  }
-                });
-              </script>
-
-
-
-
             </div>
+            <form id="filterForm">
+              <div class="dropdown" id="categoryDropdown">
+                <div class="dropdown-toggle">
+                  <span class="dropdown-label">Select Category</span>
+                  <button type="button" class="clear-filter">×</button>
+                </div>
+                <div class="dropdown-menu">
+                  <div data-value="">All Categories</div>
+                  <div data-value="it-software">IT & Software</div>
+                  <div data-value="engineering">Engineering</div>
+                  <div data-value="nursing">Nursing</div>
+                  <div data-value="construction-labor">Construction & Labor</div>
+                  <div data-value="logistics-delivery">Logistics & Delivery</div>
+                  <div data-value="customer-service">Customer Service Support</div>
+                  <div data-value="internships">Internships & Traineeships</div>
+                  <div data-value="cleaning">Cleaning</div>
+                  <div data-value="housekeeping">Housekeeping</div>
+                  <div data-value="cooking">Cooking</div>
+                  <div data-value="hospitality">Hospitality & Service</div>
+                  <div data-value="education">Education & Teaching</div>
+                  <div data-value="finance">Finance & Accounting</div>
+                  <div data-value="sales">Sales & Marketing</div>
+                </div>
+              </div>
+
+              <div class="dropdown" id="locationDropdown">
+                <div class="dropdown-toggle">
+                  <span class="dropdown-label">Select Location</span>
+                  <button type="button" class="clear-filter">×</button>
+                </div>
+                <div class="dropdown-menu">
+                  <div data-value="">All Locations</div>
+                  <div data-value="helsinki">Helsinki</div>
+                  <div data-value="espoo">Espoo</div>
+                  <div data-value="tampere">Tampere</div>
+                  <div data-value="turku">Turku</div>
+                  <div data-value="oulu">Oulu</div>
+                  <div data-value="jyvaskyla">Jyväskylä</div>
+                  <div data-value="lahti">Lahti</div>
+                  <div data-value="vaasa">Vaasa</div>
+                  <div data-value="rovaniemi">Rovaniemi</div>
+                  <div data-value="pori">Pori</div>
+                </div>
+              </div>
+
+              <input type="hidden" id="categorySelect" name="category" />
+              <input type="hidden" id="locationSelect" name="location" />
+            </form>
             <div class="headP section" id="header-icon">
               <div class="widget TextList" data-version="2" id="TextList000">
                 <ul class="headIc">
                   <li>
-
 
 
 
@@ -743,10 +867,15 @@
               </div>
               <div class="widget Blog" data-version="2" id="Blog1">
 
+                <div class="selected-filters" id="selectedFilters"></div>
+
+
 
                 <div class="blogPts">
 
-                  <article class="ntry" data-keywords="cleaning office shop cleaner cleaning helsinki uusima">
+
+
+                  <article class="ntry" data-title="cleaning" data-category="cleaning" data-location="helsinki">
                     <div class="pThmb iyt">
                       <a class="thmb"
                         href="https://findjobsinfinland.fi/courses/office-and-shop-cleaner-siskon-siivous">
@@ -803,7 +932,7 @@
                       </div>
                   </article>
 
-                  <article class="ntry" data-keywords="hanuman on call cleaner cleaning espoo uusima">
+                  <article class="ntry" data-title="engineering" data-category="engineering" data-location="tampere">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/on-call-cleaner-siskon-siivous">
                         <img alt="On Call Cleaner" class="imgThm lazy loaded" src="images/on-call-cleaner.png"
@@ -859,7 +988,7 @@
                   </article>
 
 
-                  <article class="ntry" data-keywords="junior ict specialist pasila uusima it technology">
+                  <article class="ntry" data-title="it" data-category="it-software" data-location="espoo">
                     <div class="pThmb iyt">
                       <a class="thmb" href="https://findjobsinfinland.fi/courses/junior-ict-specialist">
                         <img alt="Junior ICT Specialist" class="imgThm lazy loaded" src="images/junior-ict.png"
@@ -913,79 +1042,160 @@
                       </div>
                   </article>
 
+
+
                   <script>
                     document.addEventListener("DOMContentLoaded", () => {
+                      const form = document.getElementById("filterForm");
                       const searchInput = document.getElementById("searchIn");
-                      const resetButton = document.querySelector('button[type="reset"]');
-                      const articles = document.querySelectorAll("article.ntry");
+                      const categorySelect = document.getElementById("categorySelect");
+                      const locationSelect = document.getElementById("locationSelect");
+                      const selectedFilters = document.getElementById("selectedFilters");
+                      const articles = document.querySelectorAll(".ntry");
 
-                      function getSearchableText(article) {
-                        const textParts = [];
-                        const keywords = article.getAttribute("data-keywords");
-                        if (keywords) textParts.push(keywords);
-                        const pCntn = article.querySelector(".pCntn");
-                        if (pCntn) textParts.push(pCntn.innerText);
-                        return textParts.join(" ").toLowerCase();
+                      function getParams() {
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return {
+                          q: urlParams.get("q") || "",
+                          category: urlParams.get("category") || "",
+                          location: urlParams.get("location") || ""
+                        };
                       }
 
-                      function filterArticles(query) {
-                        const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+                      function buildURL(q, category, location) {
+                        let params = new URLSearchParams();
+                        if (q) params.append("q", q);
+                        if (category) params.append("category", category);
+                        if (location) params.append("location", location);
+                        return params.toString();
+                      }
+
+                      function updateFiltersFromURL() {
+                        const { q, category, location } = getParams();
+                        searchInput.value = q;
+                        categorySelect.value = category;
+                        locationSelect.value = location;
+
+                        document.querySelector("#categoryDropdown .dropdown-label").textContent = category || "Select Category";
+                        document.querySelector("#locationDropdown .dropdown-label").textContent = location || "Select Location";
+                        document.querySelector("#categoryDropdown .clear-filter").style.display = category ? "inline" : "none";
+                        document.querySelector("#locationDropdown .clear-filter").style.display = location ? "inline" : "none";
+
+                        renderFilterTags(q, category, location);
+                        filterArticles(q, category, location);
+                      }
+
+                      function filterArticles(q, category, location) {
                         articles.forEach(article => {
-                          const text = getSearchableText(article);
-                          const matched = words.every(w => text.includes(w));
-                          article.style.display = matched ? "block" : "none";
+                          const title = article.dataset.title.toLowerCase();
+                          const cat = article.dataset.category;
+                          const loc = article.dataset.location;
+                          const matches =
+                            (q === "" || title.includes(q.toLowerCase())) &&
+                            (category === "" || cat === category) &&
+                            (location === "" || loc === location);
+                          article.style.display = matches ? "block" : "none";
                         });
                       }
 
-                           // ✅ Hide mobile keyboard when user presses enter
-                      searchInput.addEventListener("keydown", function (e) {
-                        if (e.key === "Enter") {
-                          searchInput.blur(); // Hides keyboard
-                        }
-                      });
-
-                      // Read search query from URL like /filter?helsinki
-                      function updateFromURL() {
-                        if (window.location.pathname.toLowerCase() === "/filter") {
-                          let query = window.location.search.substring(1) || ""; // remove ?
-                          query = decodeURIComponent(query).replace(/-/g, " ").trim();
-                          searchInput.value = query;
-                          if (query.length >= 3) {
-                            filterArticles(query);
-                          } else {
-                            articles.forEach(a => (a.style.display = "none"));
-                          }
-                        } else {
-                          // Hide all if not on /filter
-                          searchInput.value = "";
-                          articles.forEach(a => (a.style.display = "none"));
-                        }
+                      function renderFilterTags(q, category, location) {
+                        selectedFilters.innerHTML = '';
+                        if (q) selectedFilters.appendChild(createTag("q", q));
+                        if (category) selectedFilters.appendChild(createTag("category", category));
+                        if (location) selectedFilters.appendChild(createTag("location", location));
                       }
 
-                      searchInput.addEventListener("input", () => {
-                        const query = searchInput.value.trim();
-                        if (query.length >= 3) {
-                          const urlQuery = query.replace(/\s+/g, "-");
-                          const newUrl = `${window.location.origin}/filter?${encodeURIComponent(urlQuery)}`;
-                          window.history.replaceState(null, "", newUrl);
-                          filterArticles(query);
-                        } else {
-                          const baseUrl = `${window.location.origin}/filter`;
-                          window.history.replaceState(null, "", baseUrl);
-                          articles.forEach(a => (a.style.display = "none"));
+                      function createTag(type, value) {
+                        const tag = document.createElement("span");
+                        tag.className = "filter-tag";
+                        tag.textContent = `${value}`;
+                        const closeBtn = document.createElement("button");
+                        closeBtn.textContent = "×";
+                        closeBtn.onclick = () => {
+                          if (type === "q") searchInput.value = "";
+                          if (type === "category") {
+                            categorySelect.value = "";
+                            document.querySelector("#categoryDropdown .dropdown-label").textContent = "Select Category";
+                            document.querySelector("#categoryDropdown .clear-filter").style.display = "none";
+                          }
+                          if (type === "location") {
+                            locationSelect.value = "";
+                            document.querySelector("#locationDropdown .dropdown-label").textContent = "Select Location";
+                            document.querySelector("#locationDropdown .clear-filter").style.display = "none";
+                          }
+                          updateURLandFilter();
+                        };
+                        tag.appendChild(closeBtn);
+                        return tag;
+                      }
+
+                      function updateURLandFilter() {
+                        const q = searchInput.value.trim();
+                        const category = categorySelect.value;
+                        const location = locationSelect.value;
+                        const query = buildURL(q, category, location);
+                        window.history.replaceState(null, "", window.location.pathname + (query ? "?" + query : ""));
+                        renderFilterTags(q, category, location);
+                        filterArticles(q, category, location);
+                      }
+
+                      document.querySelectorAll(".dropdown").forEach(dropdown => {
+                        const toggle = dropdown.querySelector(".dropdown-toggle");
+                        const label = toggle.querySelector(".dropdown-label");
+                        const clearBtn = toggle.querySelector(".clear-filter");
+                        const menu = dropdown.querySelector(".dropdown-menu");
+
+                        toggle.addEventListener("click", (e) => {
+                          if (e.target === clearBtn) return;
+                          dropdown.classList.toggle("open");
+                        });
+
+                        clearBtn.addEventListener("click", () => {
+                          if (dropdown.id === "categoryDropdown") {
+                            categorySelect.value = "";
+                            label.textContent = "Select Category";
+                          } else {
+                            locationSelect.value = "";
+                            label.textContent = "Select Location";
+                          }
+                          clearBtn.style.display = "none";
+                          updateURLandFilter();
+                        });
+
+                        menu.querySelectorAll("div").forEach(option => {
+                          option.addEventListener("click", () => {
+                            const value = option.getAttribute("data-value");
+                            if (dropdown.id === "categoryDropdown") {
+                              categorySelect.value = value;
+                              label.textContent = option.textContent;
+                              clearBtn.style.display = value ? "inline" : "none";
+                            } else {
+                              locationSelect.value = value;
+                              label.textContent = option.textContent;
+                              clearBtn.style.display = value ? "inline" : "none";
+                            }
+                            dropdown.classList.remove("open");
+                            updateURLandFilter();
+                          });
+                        });
+                      });
+
+                      document.addEventListener("click", (e) => {
+                        document.querySelectorAll(".dropdown").forEach(dropdown => {
+                          if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
+                        });
+                      });
+
+                      searchInput.addEventListener("keydown", (e) => {
+                        if (e.key === "Enter") {
+                          e.preventDefault();
+                          updateURLandFilter();
+                          searchInput.blur();
                         }
                       });
 
-                      resetButton.addEventListener("click", () => {
-                        searchInput.value = "";
-                        const baseUrl = `${window.location.origin}/filter`;
-                        window.history.replaceState(null, "", baseUrl);
-                        articles.forEach(a => (a.style.display = "none"));
-                      });
-
-                      updateFromURL();
+                      updateFiltersFromURL();
                     });
-
                   </script>
 
 
