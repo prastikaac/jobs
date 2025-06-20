@@ -608,6 +608,10 @@ button.logout-cancel:hover {
   .logout-buttons {
     gap: 20px;
   }
+
+  .translator {
+    display: block;
+  }
 }
 
 #notification-icon {
@@ -620,3 +624,5 @@ button.logout-cancel:hover {
 body.lgT .clearsearch {
   color: #2d2d30;
 }
+
+
