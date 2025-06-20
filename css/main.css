@@ -627,6 +627,18 @@ body.lgT .clearsearch {
 }
 
 
+.moresvg {
+  stroke: black;
+  /* default color */
+}
+
+body.drK .moresvg {
+  stroke: white;
+  /* dark mode */
+}
+
+
+
 .translator {
   display: block;
 }
