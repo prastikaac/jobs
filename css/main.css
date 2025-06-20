@@ -413,6 +413,9 @@ body.drK.foursec {
 @media screen and (max-width: 767px) {
 
 
+  .fvrts {
+    display: none;
+  }
 
   .book {
     width: 60px;
@@ -609,9 +612,7 @@ button.logout-cancel:hover {
     gap: 20px;
   }
 
-  .translator {
-    display: block;
-  }
+
 }
 
 #notification-icon {
@@ -626,3 +627,6 @@ body.lgT .clearsearch {
 }
 
 
+.translator {
+  display: block;
+}
