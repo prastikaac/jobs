@@ -292,6 +292,15 @@ body.drK.foursec {
 @media screen and (min-width: 768px) {
 
 
+  .selected-filters {
+    margin-top: -10px !important;
+    margin-bottom: 25px !important;
+  }
+
+  #noResultsMessage {
+    font-size: 20px;
+  }
+
 
   .book {
     width: 70px;
@@ -412,6 +421,15 @@ body.drK.foursec {
 
 @media screen and (max-width: 767px) {
 
+  
+  .selected-filters {
+    margin-top: -20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  #noResultsMessage {
+    font-size: 17px;
+  }
 
   .fvrts {
     display: none;
@@ -462,6 +480,8 @@ body.drK.foursec {
   .secwid {
     margin-top: -50px;
   }
+
+
 
 
 }
@@ -611,7 +631,6 @@ button.logout-cancel:hover {
   .logout-buttons {
     gap: 20px;
   }
-
 
 }
 

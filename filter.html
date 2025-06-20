@@ -29,12 +29,6 @@
   <link href="images/favicon.png" rel="icon" type="image/x-icon" />
   <link href="https://findjobsinfinland.fi/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-
-  <style>
-    article.ntry {
-      display: none;
-    }
-  </style>
   <!-- Social media preview -->
   <!-- Max file size: 5 MB
     Minimum image dimensions: 1200 (w) x 627 (h) pixels
@@ -609,13 +603,9 @@
                     margin-top: 20px;
                   }
 
+
                 }
 
-
-
-                .selected-filters {
-                  display: none !important;
-                }
 
 
 
@@ -908,7 +898,7 @@
                   <form id="filterForm">
                     <div class="dropdown" id="categoryDropdown">
                       <div class="dropdown-toggle">
-                        <span class="dropdown-label">Select Category</span>
+                        <span class="dropdown-label">All Categories</span>
                         <button type="button" class="clear-filter">×</button>
                       </div>
                       <div class="dropdown-menu">
@@ -932,7 +922,7 @@
 
                     <div class="dropdown" id="locationDropdown">
                       <div class="dropdown-toggle">
-                        <span class="dropdown-label">Select Location</span>
+                        <span class="dropdown-label">All Locations</span>
                         <button type="button" class="clear-filter">×</button>
                       </div>
                       <div class="dropdown-menu">
@@ -955,7 +945,7 @@
 
                     <div class="dropdown" id="availabilityDropdown">
                       <div class="dropdown-toggle">
-                        <span class="dropdown-label">Select Type</span>
+                        <span class="dropdown-label">All Types</span>
                         <button type="button" class="clear-filter">×</button>
                       </div>
                       <div class="dropdown-menu">
@@ -975,9 +965,16 @@
                 <div class="selected-filters" id="selectedFilters"></div>
 
 
+                <div id="noResultsMessage"
+                  style="display: none; text-align: center; margin-top: 20px; font-weight: bold;">
+                  No jobs found.
+                </div>
+
 
                 <div class="blogPts">
 
+
+                  
 
 
                   <article class="ntry" data-title="cleaning" data-category="cleaning" data-location="helsinki"
@@ -1079,7 +1076,7 @@
                       </div>
                       <h2 class="pTtl aTtl sml h1font">
                         <a data-text="On Call Cleaner"
-                          href="https://findjobsinfinland.fi/courses/on-call-cleaner-siskon-siivous-ram" rel="bookmark">
+                          href="https://findjobsinfinland.fi/courses/on-call-cleaner-siskon-siivous" rel="bookmark">
                           On Call Cleaner
                         </a>
                       </h2>
@@ -1152,231 +1149,239 @@
                       </div>
                   </article>
 
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      const searchInput = document.getElementById("searchIn");
-                      const categorySelect = document.getElementById("categorySelect");
-                      const locationSelect = document.getElementById("locationSelect");
-                      const availabilitySelect = document.getElementById("availabilitySelect");
-                      const selectedFilters = document.getElementById("selectedFilters");
-                      const articles = document.querySelectorAll(".ntry");
 
-                      function isMobileDevice() {
-                        return window.innerWidth <= 768;
-                      }
+             <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("searchIn");
+    const categorySelect = document.getElementById("categorySelect");
+    const locationSelect = document.getElementById("locationSelect");
+    const availabilitySelect = document.getElementById("availabilitySelect");
+    const selectedFilters = document.getElementById("selectedFilters");
+    const articles = document.querySelectorAll(".ntry");
+    const noResultsMessage = document.getElementById("noResultsMessage");
 
-                      function capitalizeFirst(value) {
-                        return value ? value.charAt(0).toUpperCase() + value.slice(1) : "";
-                      }
+    function isMobileDevice() {
+      return window.innerWidth <= 768;
+    }
 
-                      function updateDropdownUI(selector, value, defaultText) {
-                        const label = document.querySelector(`${selector} .dropdown-label`);
-                        const clearBtn = document.querySelector(`${selector} .clear-filter`);
-                        label.textContent = value ? capitalizeFirst(value) : defaultText;
-                        clearBtn.style.display = value ? "inline" : "none";
-                      }
+    function capitalizeFirst(value) {
+      return value ? value.charAt(0).toUpperCase() + value.slice(1) : "";
+    }
 
-                      function getParamsFromURL() {
-                        const urlParams = new URLSearchParams(window.location.search);
-                        return {
-                          q: urlParams.get("q") || "",
-                          category: urlParams.get("category") || "",
-                          location: urlParams.get("location") || "",
-                          availability: urlParams.get("availability") || ""
-                        };
-                      }
+    // Updated function to show All Categories/Locations/Types text when value is empty
+    function updateDropdownUI(selector, value, defaultText) {
+      const label = document.querySelector(`${selector} .dropdown-label`);
+      const clearBtn = document.querySelector(`${selector} .clear-filter`);
 
-                      function buildURL(q, category, location, availability) {
-                        const params = new URLSearchParams();
-                        if (q) params.append("q", q);
-                        if (category) params.append("category", category);
-                        if (location) params.append("location", location);
-                        if (availability) params.append("availability", availability);
-                        return params.toString();
-                      }
+      let displayText = defaultText;
+      if (value === "") {
+        if (selector === "#categoryDropdown") displayText = "All Categories";
+        else if (selector === "#locationDropdown") displayText = "All Locations";
+        else if (selector === "#availabilityDropdown") displayText = "All Types";
+      } else {
+        displayText = capitalizeFirst(value);
+      }
 
-                      function updateURL() {
-                        const q = searchInput.value.trim();
-                        const category = categorySelect.value;
-                        const location = locationSelect.value;
-                        const availability = availabilitySelect.value;
-                        const query = buildURL(q, category, location, availability);
-                        const newURL = window.location.pathname + (query ? "?" + query : "");
-                        window.history.replaceState({}, "", newURL);
-                      }
+      label.textContent = displayText;
+      clearBtn.style.display = value ? "inline" : "none";
+    }
 
-                      function filterArticles() {
-                        const q = searchInput.value.trim().toLowerCase();
-                        const category = categorySelect.value;
-                        const location = locationSelect.value;
-                        const availability = availabilitySelect.value;
+    function getParamsFromURL() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return {
+        q: urlParams.get("q") || "",
+        category: urlParams.get("category") || "",
+        location: urlParams.get("location") || "",
+        availability: urlParams.get("availability") || ""
+      };
+    }
 
-                        articles.forEach(article => {
-                          const title = article.dataset.title?.toLowerCase() || "";
-                          const cat = article.dataset.category;
-                          const loc = article.dataset.location;
-                          const avail = article.dataset.availability;
+    function buildURL(q, category, location, availability) {
+      const params = new URLSearchParams();
+      if (q) params.append("q", q);
+      if (category) params.append("category", category);
+      if (location) params.append("location", location);
+      if (availability) params.append("availability", availability);
+      return params.toString();
+    }
 
-                          const titleText = article.querySelector("h2 a")?.textContent.toLowerCase() || "";
-                          const titleDataText = article.querySelector("h2 a")?.dataset.text?.toLowerCase() || "";
-                          const titleHref = article.querySelector("h2 a")?.href.toLowerCase() || "";
-                          const snippet = article.querySelector(".pSnpt")?.textContent.toLowerCase() || "";
+    function updateURL() {
+      const q = searchInput.value.trim();
+      const category = categorySelect.value;
+      const location = locationSelect.value;
+      const availability = availabilitySelect.value;
+      const query = buildURL(q, category, location, availability);
+      const newURL = window.location.pathname + (query ? "?" + query : "");
+      window.history.replaceState({}, "", newURL);
+    }
 
-                          const searchString = [
-                            title, cat, loc, avail,
-                            titleText,
-                            titleDataText,
-                            titleHref,
-                            snippet
-                          ].join(" ");
+    function filterArticles() {
+      const q = searchInput.value.trim().toLowerCase();
+      const category = categorySelect.value;
+      const location = locationSelect.value;
+      const availability = availabilitySelect.value;
 
-                          const matches =
-                            (q === "" || searchString.includes(q)) &&
-                            (category === "" || cat === category) &&
-                            (location === "" || loc === location) &&
-                            (availability === "" || avail === availability);
+      let anyVisible = false;
 
-                          article.style.display = matches ? "block" : "none";
-                        });
+      articles.forEach(article => {
+        const title = article.dataset.title?.toLowerCase() || "";
+        const cat = article.dataset.category;
+        const loc = article.dataset.location;
+        const avail = article.dataset.availability;
 
-                        renderFilterTags(q, category, location, availability);
-                        updateFilterButtonBackground();
-                        updateURL();
-                      }
+        const titleText = article.querySelector("h2 a")?.textContent.toLowerCase() || "";
+        const titleDataText = article.querySelector("h2 a")?.dataset.text?.toLowerCase() || "";
+        const titleHref = article.querySelector("h2 a")?.href.toLowerCase() || "";
+        const snippet = article.querySelector(".pSnpt")?.textContent.toLowerCase() || "";
 
-                      function renderFilterTags(q, category, location, availability) {
-                        selectedFilters.innerHTML = '';
-                        if (q) selectedFilters.appendChild(createTag("q", q));
-                        if (category) selectedFilters.appendChild(createTag("category", category));
-                        if (location) selectedFilters.appendChild(createTag("location", location));
-                        if (availability) selectedFilters.appendChild(createTag("availability", availability));
-                      }
+        const searchString = [
+          title, cat, loc, avail,
+          titleText,
+          titleDataText,
+          titleHref,
+          snippet
+        ].join(" ");
 
-                      function createTag(type, value) {
-                        const tag = document.createElement("span");
-                        tag.className = "filter-tag";
-                        tag.textContent = capitalizeFirst(value);
-                        const closeBtn = document.createElement("button");
-                        closeBtn.textContent = "×";
-                        closeBtn.onclick = () => {
-                          if (type === "q") searchInput.value = "";
-                          if (type === "category") {
-                            categorySelect.value = "";
-                            updateDropdownUI("#categoryDropdown", "", "Select Category");
-                          }
-                          if (type === "location") {
-                            locationSelect.value = "";
-                            updateDropdownUI("#locationDropdown", "", "Select Location");
-                          }
-                          if (type === "availability") {
-                            availabilitySelect.value = "";
-                            updateDropdownUI("#availabilityDropdown", "", "Select Type");
-                          }
-                          filterArticles();
-                        };
-                        tag.appendChild(closeBtn);
-                        return tag;
-                      }
+        const matches =
+          (q === "" || searchString.includes(q)) &&
+          (category === "" || cat === category) &&
+          (location === "" || loc === location) &&
+          (availability === "" || avail === availability);
 
-                      function updateFilterButtonBackground() {
-                        const category = categorySelect.value;
-                        const location = locationSelect.value;
-                        const availability = availabilitySelect.value;
-                        const filterBtn = document.querySelector(".filter-button");
-                        const isActive = category || location || availability;
-                        filterBtn.style.backgroundColor = isActive ? "rgb(69 78 87 / 25%)" : "";
-                      }
+        article.style.display = matches ? "block" : "none";
+        if (matches) anyVisible = true;
+      });
 
-                      // Dropdown logic
-                      document.querySelectorAll(".dropdown").forEach(dropdown => {
-                        const toggle = dropdown.querySelector(".dropdown-toggle");
-                        const clearBtn = toggle.querySelector(".clear-filter");
-                        const menu = dropdown.querySelector(".dropdown-menu");
+      if (noResultsMessage) {
+        noResultsMessage.style.display = anyVisible ? "none" : "block";
+      }
 
-                        toggle.addEventListener("click", (e) => {
-                          if (e.target === clearBtn) return;
-                          dropdown.classList.toggle("open");
-                        });
+      renderFilterTags(q); // only show q
+      updateFilterButtonBackground();
+      updateURL();
+    }
 
-                        clearBtn.addEventListener("click", () => {
-                          if (dropdown.id === "categoryDropdown") {
-                            categorySelect.value = "";
-                            updateDropdownUI("#categoryDropdown", "", "Select Category");
-                          } else if (dropdown.id === "locationDropdown") {
-                            locationSelect.value = "";
-                            updateDropdownUI("#locationDropdown", "", "Select Location");
-                          } else if (dropdown.id === "availabilityDropdown") {
-                            availabilitySelect.value = "";
-                            updateDropdownUI("#availabilityDropdown", "", "Select Type");
-                          }
-                          filterArticles();
-                        });
+    function renderFilterTags(q) {
+      selectedFilters.innerHTML = '';
+      if (q) selectedFilters.appendChild(createTag("q", q));
+    }
 
-                        menu.querySelectorAll("div").forEach(option => {
-                          option.addEventListener("click", () => {
-                            const value = option.getAttribute("data-value");
-                            if (dropdown.id === "categoryDropdown") {
-                              categorySelect.value = value;
-                              updateDropdownUI("#categoryDropdown", value, "Select Category");
-                            } else if (dropdown.id === "locationDropdown") {
-                              locationSelect.value = value;
-                              updateDropdownUI("#locationDropdown", value, "Select Location");
-                            } else if (dropdown.id === "availabilityDropdown") {
-                              availabilitySelect.value = value;
-                              updateDropdownUI("#availabilityDropdown", value, "Select Type");
-                            }
-                            dropdown.classList.remove("open");
-                            filterArticles();
-                          });
-                        });
-                      });
+    function createTag(type, value) {
+      const tag = document.createElement("span");
+      tag.className = "filter-tag";
+      tag.textContent = capitalizeFirst(value);
+      const closeBtn = document.createElement("button");
+      closeBtn.textContent = "×";
+      closeBtn.onclick = () => {
+        if (type === "q") searchInput.value = "";
+        filterArticles();
+      };
+      tag.appendChild(closeBtn);
+      return tag;
+    }
 
-                      // Close dropdowns on outside click
-                      document.addEventListener("click", (e) => {
-                        document.querySelectorAll(".dropdown").forEach(dropdown => {
-                          if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
-                        });
-                      });
+    function updateFilterButtonBackground() {
+      const category = categorySelect.value;
+      const location = locationSelect.value;
+      const availability = availabilitySelect.value;
+      const filterBtn = document.querySelector(".filter-button");
+      const isActive = category || location || availability;
+      filterBtn.style.backgroundColor = isActive ? "rgb(69 78 87 / 25%)" : "";
+    }
 
-                      // ✅ Search handling for mobile vs desktop
-                      if (isMobileDevice()) {
-                        searchInput.addEventListener("keydown", (e) => {
-                          if (e.key === "Enter") {
-                            e.preventDefault();
-                            filterArticles();
-                            searchInput.blur();
-                          }
-                        });
-                      } else {
-                        searchInput.addEventListener("input", () => {
-                          filterArticles();
-                        });
-                      }
+    // Dropdown logic
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      const clearBtn = toggle.querySelector(".clear-filter");
+      const menu = dropdown.querySelector(".dropdown-menu");
 
-                      // Filter button triggers filtering
-                      document.querySelector(".filter-button").addEventListener("click", () => {
-                        document.querySelectorAll(".dropdown").forEach(dropdown => {
-                          dropdown.classList.remove("open");
-                        });
-                        filterArticles();
-                      });
+      toggle.addEventListener("click", (e) => {
+        if (e.target === clearBtn) return;
+        dropdown.classList.toggle("open");
+      });
 
-                      // Load filters from URL
-                      const { q, category, location, availability } = getParamsFromURL();
-                      searchInput.value = q;
-                      categorySelect.value = category;
-                      locationSelect.value = location;
-                      availabilitySelect.value = availability;
+      clearBtn.addEventListener("click", () => {
+        if (dropdown.id === "categoryDropdown") {
+          categorySelect.value = "";
+          updateDropdownUI("#categoryDropdown", "", "Select Category");
+        } else if (dropdown.id === "locationDropdown") {
+          locationSelect.value = "";
+          updateDropdownUI("#locationDropdown", "", "Select Location");
+        } else if (dropdown.id === "availabilityDropdown") {
+          availabilitySelect.value = "";
+          updateDropdownUI("#availabilityDropdown", "", "Select Type");
+        }
+        filterArticles();
+      });
 
-                      updateDropdownUI("#categoryDropdown", category, "Select Category");
-                      updateDropdownUI("#locationDropdown", location, "Select Location");
-                      updateDropdownUI("#availabilityDropdown", availability, "Select Type");
+      menu.querySelectorAll("div").forEach(option => {
+        option.addEventListener("click", () => {
+          const value = option.getAttribute("data-value");
+          if (dropdown.id === "categoryDropdown") {
+            categorySelect.value = value;
+            updateDropdownUI("#categoryDropdown", value, "Select Category");
+          } else if (dropdown.id === "locationDropdown") {
+            locationSelect.value = value;
+            updateDropdownUI("#locationDropdown", value, "Select Location");
+          } else if (dropdown.id === "availabilityDropdown") {
+            availabilitySelect.value = value;
+            updateDropdownUI("#availabilityDropdown", value, "Select Type");
+          }
+          dropdown.classList.remove("open");
+          filterArticles();
+        });
+      });
+    });
 
-                      filterArticles(); // initial run
-                    });
-                  </script>
+    // Close dropdowns on outside click
+    document.addEventListener("click", (e) => {
+      document.querySelectorAll(".dropdown").forEach(dropdown => {
+        if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
+      });
+    });
 
+    // Search input behavior
+    if (isMobileDevice()) {
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          filterArticles();
+          searchInput.blur();
+        }
+      });
+    } else {
+      searchInput.addEventListener("input", () => {
+        filterArticles();
+      });
+    }
 
+    // Filter button click
+    document.querySelector(".filter-button").addEventListener("click", () => {
+      document.querySelectorAll(".dropdown").forEach(dropdown => {
+        dropdown.classList.remove("open");
+      });
+      filterArticles();
+    });
+
+    // Load initial filters from URL
+    const { q, category, location, availability } = getParamsFromURL();
+    searchInput.value = q;
+    categorySelect.value = category;
+    locationSelect.value = location;
+    availabilitySelect.value = availability;
+
+    updateDropdownUI("#categoryDropdown", category, "Select Category");
+    updateDropdownUI("#locationDropdown", location, "Select Location");
+    updateDropdownUI("#availabilityDropdown", availability, "Select Type");
+
+ 
+
+    // Only run filterArticles if any filter is active
+    if (q || category || location || availability) {
+      filterArticles();
+    }
+  });
+</script>
 
 
 
@@ -1435,17 +1440,15 @@
 
                     <li class="mS">
                       <label aria-label="Menu" data-text="Menu" for="offNav">
-                        <svg class="moresvg" style="height: 30px; width: 27px; margin-top: 3px;" 
-     xmlns="http://www.w3.org/2000/svg" 
-     width="3000" height="3000"
-     viewBox="0 0 45 45" fill="none" stroke-width="5" stroke-linecap="round"
-     stroke-linejoin="round">
-  <circle cx="8" cy="8" r="5" />
-  <circle cx="28" cy="8" r="5" />
-  <circle cx="8" cy="28" r="5" />
-  <line x1="28" y1="24" x2="28" y2="34" />
-  <line x1="24" y1="28" x2="34" y2="28" />
-</svg>
+                        <svg class="moresvg" style="height: 30px; width: 27px; margin-top: 3px;"
+                          xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 45 45" fill="none"
+                          stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="8" cy="8" r="5" />
+                          <circle cx="28" cy="8" r="5" />
+                          <circle cx="8" cy="28" r="5" />
+                          <line x1="28" y1="24" x2="28" y2="34" />
+                          <line x1="24" y1="28" x2="34" y2="28" />
+                        </svg>
 
                       </label>
                     </li>
