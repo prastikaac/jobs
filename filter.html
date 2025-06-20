@@ -974,7 +974,7 @@
                 <div class="blogPts">
 
 
-                  
+
 
 
                   <article class="ntry" data-title="cleaning" data-category="cleaning" data-location="helsinki"
@@ -1150,238 +1150,238 @@
                   </article>
 
 
-             <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const searchInput = document.getElementById("searchIn");
-    const categorySelect = document.getElementById("categorySelect");
-    const locationSelect = document.getElementById("locationSelect");
-    const availabilitySelect = document.getElementById("availabilitySelect");
-    const selectedFilters = document.getElementById("selectedFilters");
-    const articles = document.querySelectorAll(".ntry");
-    const noResultsMessage = document.getElementById("noResultsMessage");
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      const searchInput = document.getElementById("searchIn");
+                      const categorySelect = document.getElementById("categorySelect");
+                      const locationSelect = document.getElementById("locationSelect");
+                      const availabilitySelect = document.getElementById("availabilitySelect");
+                      const selectedFilters = document.getElementById("selectedFilters");
+                      const articles = document.querySelectorAll(".ntry");
+                      const noResultsMessage = document.getElementById("noResultsMessage");
 
-    function isMobileDevice() {
-      return window.innerWidth <= 768;
-    }
+                      function isMobileDevice() {
+                        return window.innerWidth <= 768;
+                      }
 
-    function capitalizeFirst(value) {
-      return value ? value.charAt(0).toUpperCase() + value.slice(1) : "";
-    }
+                      function capitalizeFirst(value) {
+                        return value ? value.charAt(0).toUpperCase() + value.slice(1) : "";
+                      }
 
-    // Updated function to show All Categories/Locations/Types text when value is empty
-    function updateDropdownUI(selector, value, defaultText) {
-      const label = document.querySelector(`${selector} .dropdown-label`);
-      const clearBtn = document.querySelector(`${selector} .clear-filter`);
+                      // Updated function to show All Categories/Locations/Types text when value is empty
+                      function updateDropdownUI(selector, value, defaultText) {
+                        const label = document.querySelector(`${selector} .dropdown-label`);
+                        const clearBtn = document.querySelector(`${selector} .clear-filter`);
 
-      let displayText = defaultText;
-      if (value === "") {
-        if (selector === "#categoryDropdown") displayText = "All Categories";
-        else if (selector === "#locationDropdown") displayText = "All Locations";
-        else if (selector === "#availabilityDropdown") displayText = "All Types";
-      } else {
-        displayText = capitalizeFirst(value);
-      }
+                        let displayText = defaultText;
+                        if (value === "") {
+                          if (selector === "#categoryDropdown") displayText = "All Categories";
+                          else if (selector === "#locationDropdown") displayText = "All Locations";
+                          else if (selector === "#availabilityDropdown") displayText = "All Types";
+                        } else {
+                          displayText = capitalizeFirst(value);
+                        }
 
-      label.textContent = displayText;
-      clearBtn.style.display = value ? "inline" : "none";
-    }
+                        label.textContent = displayText;
+                        clearBtn.style.display = value ? "inline" : "none";
+                      }
 
-    function getParamsFromURL() {
-      const urlParams = new URLSearchParams(window.location.search);
-      return {
-        q: urlParams.get("q") || "",
-        category: urlParams.get("category") || "",
-        location: urlParams.get("location") || "",
-        availability: urlParams.get("availability") || ""
-      };
-    }
+                      function getParamsFromURL() {
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return {
+                          q: urlParams.get("q") || "",
+                          category: urlParams.get("category") || "",
+                          location: urlParams.get("location") || "",
+                          availability: urlParams.get("availability") || ""
+                        };
+                      }
 
-    function buildURL(q, category, location, availability) {
-      const params = new URLSearchParams();
-      if (q) params.append("q", q);
-      if (category) params.append("category", category);
-      if (location) params.append("location", location);
-      if (availability) params.append("availability", availability);
-      return params.toString();
-    }
+                      function buildURL(q, category, location, availability) {
+                        const params = new URLSearchParams();
+                        if (q) params.append("q", q);
+                        if (category) params.append("category", category);
+                        if (location) params.append("location", location);
+                        if (availability) params.append("availability", availability);
+                        return params.toString();
+                      }
 
-    function updateURL() {
-      const q = searchInput.value.trim();
-      const category = categorySelect.value;
-      const location = locationSelect.value;
-      const availability = availabilitySelect.value;
-      const query = buildURL(q, category, location, availability);
-      const newURL = window.location.pathname + (query ? "?" + query : "");
-      window.history.replaceState({}, "", newURL);
-    }
+                      function updateURL() {
+                        const q = searchInput.value.trim();
+                        const category = categorySelect.value;
+                        const location = locationSelect.value;
+                        const availability = availabilitySelect.value;
+                        const query = buildURL(q, category, location, availability);
+                        const newURL = window.location.pathname + (query ? "?" + query : "");
+                        window.history.replaceState({}, "", newURL);
+                      }
 
-    function filterArticles() {
-      const q = searchInput.value.trim().toLowerCase();
-      const category = categorySelect.value;
-      const location = locationSelect.value;
-      const availability = availabilitySelect.value;
+                      function filterArticles() {
+                        const q = searchInput.value.trim().toLowerCase();
+                        const category = categorySelect.value;
+                        const location = locationSelect.value;
+                        const availability = availabilitySelect.value;
 
-      let anyVisible = false;
+                        let anyVisible = false;
 
-      articles.forEach(article => {
-        const title = article.dataset.title?.toLowerCase() || "";
-        const cat = article.dataset.category;
-        const loc = article.dataset.location;
-        const avail = article.dataset.availability;
+                        articles.forEach(article => {
+                          const title = article.dataset.title?.toLowerCase() || "";
+                          const cat = article.dataset.category;
+                          const loc = article.dataset.location;
+                          const avail = article.dataset.availability;
 
-        const titleText = article.querySelector("h2 a")?.textContent.toLowerCase() || "";
-        const titleDataText = article.querySelector("h2 a")?.dataset.text?.toLowerCase() || "";
-        const titleHref = article.querySelector("h2 a")?.href.toLowerCase() || "";
-        const snippet = article.querySelector(".pSnpt")?.textContent.toLowerCase() || "";
+                          const titleText = article.querySelector("h2 a")?.textContent.toLowerCase() || "";
+                          const titleDataText = article.querySelector("h2 a")?.dataset.text?.toLowerCase() || "";
+                          const titleHref = article.querySelector("h2 a")?.href.toLowerCase() || "";
+                          const snippet = article.querySelector(".pSnpt")?.textContent.toLowerCase() || "";
 
-        const searchString = [
-          title, cat, loc, avail,
-          titleText,
-          titleDataText,
-          titleHref,
-          snippet
-        ].join(" ");
+                          const searchString = [
+                            title, cat, loc, avail,
+                            titleText,
+                            titleDataText,
+                            titleHref,
+                            snippet
+                          ].join(" ");
 
-        const matches =
-          (q === "" || searchString.includes(q)) &&
-          (category === "" || cat === category) &&
-          (location === "" || loc === location) &&
-          (availability === "" || avail === availability);
+                          const matches =
+                            (q === "" || searchString.includes(q)) &&
+                            (category === "" || cat === category) &&
+                            (location === "" || loc === location) &&
+                            (availability === "" || avail === availability);
 
-        article.style.display = matches ? "block" : "none";
-        if (matches) anyVisible = true;
-      });
+                          article.style.display = matches ? "block" : "none";
+                          if (matches) anyVisible = true;
+                        });
 
-      if (noResultsMessage) {
-        noResultsMessage.style.display = anyVisible ? "none" : "block";
-      }
+                        if (noResultsMessage) {
+                          noResultsMessage.style.display = anyVisible ? "none" : "block";
+                        }
 
-      renderFilterTags(q); // only show q
-      updateFilterButtonBackground();
-      updateURL();
-    }
+                        renderFilterTags(q); // only show q
+                        updateFilterButtonBackground();
+                        updateURL();
+                      }
 
-    function renderFilterTags(q) {
-      selectedFilters.innerHTML = '';
-      if (q) selectedFilters.appendChild(createTag("q", q));
-    }
+                      function renderFilterTags(q) {
+                        selectedFilters.innerHTML = '';
+                        if (q) selectedFilters.appendChild(createTag("q", q));
+                      }
 
-    function createTag(type, value) {
-      const tag = document.createElement("span");
-      tag.className = "filter-tag";
-      tag.textContent = capitalizeFirst(value);
-      const closeBtn = document.createElement("button");
-      closeBtn.textContent = "×";
-      closeBtn.onclick = () => {
-        if (type === "q") searchInput.value = "";
-        filterArticles();
-      };
-      tag.appendChild(closeBtn);
-      return tag;
-    }
+                      function createTag(type, value) {
+                        const tag = document.createElement("span");
+                        tag.className = "filter-tag";
+                        tag.textContent = capitalizeFirst(value);
+                        const closeBtn = document.createElement("button");
+                        closeBtn.textContent = "×";
+                        closeBtn.onclick = () => {
+                          if (type === "q") searchInput.value = "";
+                          filterArticles();
+                        };
+                        tag.appendChild(closeBtn);
+                        return tag;
+                      }
 
-    function updateFilterButtonBackground() {
-      const category = categorySelect.value;
-      const location = locationSelect.value;
-      const availability = availabilitySelect.value;
-      const filterBtn = document.querySelector(".filter-button");
-      const isActive = category || location || availability;
-      filterBtn.style.backgroundColor = isActive ? "rgb(69 78 87 / 25%)" : "";
-    }
+                      function updateFilterButtonBackground() {
+                        const category = categorySelect.value;
+                        const location = locationSelect.value;
+                        const availability = availabilitySelect.value;
+                        const filterBtn = document.querySelector(".filter-button");
+                        const isActive = category || location || availability;
+                        filterBtn.style.backgroundColor = isActive ? "rgb(69 78 87 / 25%)" : "";
+                      }
 
-    // Dropdown logic
-    document.querySelectorAll(".dropdown").forEach(dropdown => {
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const clearBtn = toggle.querySelector(".clear-filter");
-      const menu = dropdown.querySelector(".dropdown-menu");
+                      // Dropdown logic
+                      document.querySelectorAll(".dropdown").forEach(dropdown => {
+                        const toggle = dropdown.querySelector(".dropdown-toggle");
+                        const clearBtn = toggle.querySelector(".clear-filter");
+                        const menu = dropdown.querySelector(".dropdown-menu");
 
-      toggle.addEventListener("click", (e) => {
-        if (e.target === clearBtn) return;
-        dropdown.classList.toggle("open");
-      });
+                        toggle.addEventListener("click", (e) => {
+                          if (e.target === clearBtn) return;
+                          dropdown.classList.toggle("open");
+                        });
 
-      clearBtn.addEventListener("click", () => {
-        if (dropdown.id === "categoryDropdown") {
-          categorySelect.value = "";
-          updateDropdownUI("#categoryDropdown", "", "Select Category");
-        } else if (dropdown.id === "locationDropdown") {
-          locationSelect.value = "";
-          updateDropdownUI("#locationDropdown", "", "Select Location");
-        } else if (dropdown.id === "availabilityDropdown") {
-          availabilitySelect.value = "";
-          updateDropdownUI("#availabilityDropdown", "", "Select Type");
-        }
-        filterArticles();
-      });
+                        clearBtn.addEventListener("click", () => {
+                          if (dropdown.id === "categoryDropdown") {
+                            categorySelect.value = "";
+                            updateDropdownUI("#categoryDropdown", "", "Select Category");
+                          } else if (dropdown.id === "locationDropdown") {
+                            locationSelect.value = "";
+                            updateDropdownUI("#locationDropdown", "", "Select Location");
+                          } else if (dropdown.id === "availabilityDropdown") {
+                            availabilitySelect.value = "";
+                            updateDropdownUI("#availabilityDropdown", "", "Select Type");
+                          }
+                          filterArticles();
+                        });
 
-      menu.querySelectorAll("div").forEach(option => {
-        option.addEventListener("click", () => {
-          const value = option.getAttribute("data-value");
-          if (dropdown.id === "categoryDropdown") {
-            categorySelect.value = value;
-            updateDropdownUI("#categoryDropdown", value, "Select Category");
-          } else if (dropdown.id === "locationDropdown") {
-            locationSelect.value = value;
-            updateDropdownUI("#locationDropdown", value, "Select Location");
-          } else if (dropdown.id === "availabilityDropdown") {
-            availabilitySelect.value = value;
-            updateDropdownUI("#availabilityDropdown", value, "Select Type");
-          }
-          dropdown.classList.remove("open");
-          filterArticles();
-        });
-      });
-    });
+                        menu.querySelectorAll("div").forEach(option => {
+                          option.addEventListener("click", () => {
+                            const value = option.getAttribute("data-value");
+                            if (dropdown.id === "categoryDropdown") {
+                              categorySelect.value = value;
+                              updateDropdownUI("#categoryDropdown", value, "Select Category");
+                            } else if (dropdown.id === "locationDropdown") {
+                              locationSelect.value = value;
+                              updateDropdownUI("#locationDropdown", value, "Select Location");
+                            } else if (dropdown.id === "availabilityDropdown") {
+                              availabilitySelect.value = value;
+                              updateDropdownUI("#availabilityDropdown", value, "Select Type");
+                            }
+                            dropdown.classList.remove("open");
+                            filterArticles();
+                          });
+                        });
+                      });
 
-    // Close dropdowns on outside click
-    document.addEventListener("click", (e) => {
-      document.querySelectorAll(".dropdown").forEach(dropdown => {
-        if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
-      });
-    });
+                      // Close dropdowns on outside click
+                      document.addEventListener("click", (e) => {
+                        document.querySelectorAll(".dropdown").forEach(dropdown => {
+                          if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
+                        });
+                      });
 
-    // Search input behavior
-    if (isMobileDevice()) {
-      searchInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          filterArticles();
-          searchInput.blur();
-        }
-      });
-    } else {
-      searchInput.addEventListener("input", () => {
-        filterArticles();
-      });
-    }
+                      // Search input behavior
+                      if (isMobileDevice()) {
+                        searchInput.addEventListener("keydown", (e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            filterArticles();
+                            searchInput.blur();
+                          }
+                        });
+                      } else {
+                        searchInput.addEventListener("input", () => {
+                          filterArticles();
+                        });
+                      }
 
-    // Filter button click
-    document.querySelector(".filter-button").addEventListener("click", () => {
-      document.querySelectorAll(".dropdown").forEach(dropdown => {
-        dropdown.classList.remove("open");
-      });
-      filterArticles();
-    });
+                      // Filter button click
+                      document.querySelector(".filter-button").addEventListener("click", () => {
+                        document.querySelectorAll(".dropdown").forEach(dropdown => {
+                          dropdown.classList.remove("open");
+                        });
+                        filterArticles();
+                      });
 
-    // Load initial filters from URL
-    const { q, category, location, availability } = getParamsFromURL();
-    searchInput.value = q;
-    categorySelect.value = category;
-    locationSelect.value = location;
-    availabilitySelect.value = availability;
+                      // Load initial filters from URL
+                      const { q, category, location, availability } = getParamsFromURL();
+                      searchInput.value = q;
+                      categorySelect.value = category;
+                      locationSelect.value = location;
+                      availabilitySelect.value = availability;
 
-    updateDropdownUI("#categoryDropdown", category, "Select Category");
-    updateDropdownUI("#locationDropdown", location, "Select Location");
-    updateDropdownUI("#availabilityDropdown", availability, "Select Type");
+                      updateDropdownUI("#categoryDropdown", category, "Select Category");
+                      updateDropdownUI("#locationDropdown", location, "Select Location");
+                      updateDropdownUI("#availabilityDropdown", availability, "Select Type");
 
- 
 
-    // Only run filterArticles if any filter is active
-    if (q || category || location || availability) {
-      filterArticles();
-    }
-  });
-</script>
+
+                      // Only run filterArticles if any filter is active
+                      if (q || category || location || availability) {
+                        filterArticles();
+                      }
+                    });
+                  </script>
 
 
 
