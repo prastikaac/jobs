@@ -421,7 +421,7 @@ body.drK.foursec {
 
 @media screen and (max-width: 767px) {
 
-  
+
   .selected-filters {
     margin-top: -20px !important;
     margin-bottom: 20px !important;
@@ -660,4 +660,26 @@ body.drK .moresvg {
 
 .translator {
   display: block;
+}
+
+
+@media (min-width: 768px) {
+  .rdtx {
+    margin-left: 8px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .bkmrk,
+  .opensidebar {
+    display: none !important;
+  }
+
+  .jobsin {
+    margin-left: -32px;
+  }
 }

@@ -1637,7 +1637,7 @@ ul.headIc li>* {
 .mobMn li {
   display: flex;
   justify-content: center;
-  flex: 1 0 20%
+  flex: 1 0 28%
 }
 
 .mobMn li>* {
@@ -1922,7 +1922,7 @@ footer .aboutLinks {
 }
 
 footer .aboutLinks li:not(:last-child) {
-  margin-right: 5px
+  margin-right: 9px;
 }
 
 footer .LinkList .aboutLinks a svg.line {
