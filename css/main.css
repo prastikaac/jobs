@@ -683,3 +683,10 @@ body.drK .moresvg {
     margin-left: -32px;
   }
 }
+
+.unclicklocation {
+  pointer-events: none;   /* Disable all mouse events */
+  cursor: default;        /* Change cursor to default arrow */
+  color: inherit;         /* Optional: keep text color same */
+  text-decoration: none;  /* Optional: remove underline */
+}
