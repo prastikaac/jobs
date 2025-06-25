@@ -91,12 +91,11 @@ Use h3 for other small tags after title
 
 
 
-Now Write a complete set of HTML <meta> and <title> tags for the <head> section of a job website called findjobsinfinland, which helps immigrants, students, and locals find work opportunities in Finland.
+Write a complete set of HTML <meta> and <title> tags for this job.
 
 Use the following structure and include:
 
-1. A <title> tag with a keyword-rich, SEO-friendly title like:
-Find Jobs In Finland – Work in Finland
+
 
 2. A well-written <meta name="description"> (under 160 characters), describing that the website provides job listings in Finland for locals, students, and foreigners.
 
@@ -144,5 +143,14 @@ facebook:card, facebook:image:src, etc.
 
 Keep everything in valid HTML format, ready to paste inside the <head> section.
 Do not include <head> or <html> tags — just the content.
+
+
+
+Now, Please create the top H1, H2, and H3 heading tags for this job. These headings should be included in the HTML with the class hidden applied (I have already done the CSS for this class). They will not be visible on the screen but must still be accessible to screen readers and indexed by search engines.
+
+
+
+Now make Structured Data (JSON-LD) for this job using the schema.org/JobPosting format. Include key fields like title, description, hiring organization, job location, date posted, employment type, and valid through date. Add mainEntityOfPage to JSON-LD and Add job benefits also and Keep it clean and optimized for SEO.
+
 
 

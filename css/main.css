@@ -685,10 +685,14 @@ body.drK .moresvg {
 }
 
 .unclicklocation {
-  pointer-events: none;   /* Disable all mouse events */
-  cursor: default;        /* Change cursor to default arrow */
-  color: inherit;         /* Optional: keep text color same */
-  text-decoration: none;  /* Optional: remove underline */
+  pointer-events: none;
+  /* Disable all mouse events */
+  cursor: default;
+  /* Change cursor to default arrow */
+  color: inherit;
+  /* Optional: keep text color same */
+  text-decoration: none;
+  /* Optional: remove underline */
 }
 
 
@@ -702,4 +706,20 @@ body.drK .moresvg {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+
+.button:hover {
+  color: white;
+}
+
+
+body.drK .job-card {
+  background-color: #2d2d30;
+}
+
+body.drK .job-card__title,
+body.drK .job-card__label,
+body.drK .job-card__value {
+  color: #ffffff;
 }
