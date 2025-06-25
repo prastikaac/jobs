@@ -1,0 +1,148 @@
+Write a complete job post in HTML format for my website findjobsinfinland.fi based on the following structure.
+
+> ❗ Do **not** include `<html>`, `<head>`, `<body>`, or any CSS styling.
+> Only provide the **raw HTML content** using headings, paragraphs, bullet points, and semantic HTML tags.
+
+> Use the following components : , 
+Use h3 for other small tags after title
+
+> 1. **Catchy Title** (SEO-friendly + click-worthy). Examples:
+
+* **Office & Shop Cleaner Jobs in Finland – Apply Today!**
+* **Hiring Now: Cleaner Jobs in Shops & Offices Across Finland**
+* **Cleaning Jobs in Finland – Offices & Stores Hiring in 2025**
+
+> 4. **Introduction**
+>    Write a short overview about this job opportunity. Mention who it’s ideal for (e.g., students, foreigners, skilled/unskilled workers), the benefits, and the type of roles available.
+
+> 5. **Key Job Information**
+>    Present key job info clearly using bullet points or icons:
+>
+> * **Job Type**
+>
+> * **Location**
+>
+> * **Work Hours**
+>
+> * **Experience Needed**
+>
+> * **Language Requirements**
+>
+> * **Salary Range**
+
+> 6. **Responsibilities**
+>    List the most common tasks or duties for this type of job. Keep them clear and helpful for applicants.
+
+> 7. **How to Apply?**
+>    ➡️ *Visit: \[Link to the official job portal or company page]*
+
+>
+> 8. **Tips to Get the Job**
+>    Give practical advice to help job seekers succeed, like:
+
+> * Customize your CV
+>
+> * Highlight your past experience
+>
+> * Show flexibility in work hours
+>
+> * Be punctual and professional
+>
+> * Learn basic Finnish phrases
+
+
+> 9. **Why This Job Is a Good Opportunity in Finland**
+>    Add 3–4 bullet points explaining the benefits of working in Finland, such as:
+
+> * Fair wages and work-life balance
+> * Entry-level jobs don’t require a degree
+> * Great for students and new immigrants
+> * Potential to grow into long-term or full-time roles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now Write a complete set of HTML <meta> and <title> tags for the <head> section of a job website called findjobsinfinland, which helps immigrants, students, and locals find work opportunities in Finland.
+
+Use the following structure and include:
+
+1. A <title> tag with a keyword-rich, SEO-friendly title like:
+Find Jobs In Finland – Work in Finland
+
+2. A well-written <meta name="description"> (under 160 characters), describing that the website provides job listings in Finland for locals, students, and foreigners.
+
+3. Meta Keywords:
+
+Use a <meta name="keywords"> tag
+
+Include as many job-related keywords as possible
+
+Pull keywords from all major categories and also put : 
+
+General job search terms
+
+Job titles (e.g. cleaner, developer, nurse, etc.)
+
+City/region names in Finland
+
+Jobs for specific groups (students, foreigners, by nationality)
+
+English-speaking jobs, visa sponsorship jobs
+
+Questions/phrases used in job searches (e.g., how to find a job in Finland, is it easy to get a job in Finland, etc.)
+
+Use relevant terms from this sample set (and expand where possible):  jobs in finland, open jobs in finland, work in finland open jobs, available jobs in finland, jobs available in finland, get jobs in finland, how to get a job in finland, how to find jobs in finland, how to find a job in finland, where to find jobs in finland, where to apply jobs in finland, what are jobs in finland, are jobs available in finland, how are jobs in finland, how many jobs in finland, is it easy to get a job in finland, is getting a job in finland hard, how easy is it to find a job in finland, can't find job in finland, do jobs in finland pay well, work in finland com open jobs for foreigners, work in finland open jobs for pakistani, work in finland open jobs for indian, english jobs in finland, jobs in finland for english speakers, english speaking jobs in finland, jobs in finland for english speakers with visa sponsorship, jobs in finland for english speakers salary, jobs in finland english, jobs in finland english speaking
+
+
+
+
+4. Open Graph and Facebook meta tags for social sharing:
+
+og:title
+
+og:description
+
+og:image (leave blank or placeholder)
+
+og:url
+
+og:type
+
+og:image:alt
+
+facebook:card, facebook:image:src, etc.
+
+
+Keep everything in valid HTML format, ready to paste inside the <head> section.
+Do not include <head> or <html> tags — just the content.
+
+

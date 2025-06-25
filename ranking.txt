@@ -1,0 +1,10 @@
+| Location                            | Importance | Description                                                                          |
+| ----------------------------------- | ---------- | ------------------------------------------------------------------------------------ |
+| **Page Title** (`<title>`)          | ⭐⭐⭐⭐       | One of the strongest signals. Appears in browser tab and Google result headline.     |
+| **Meta Description**                | ⭐⭐⭐        | Appears in search snippets. Not a ranking factor but affects **click-through rate**. |
+| **URL / Slug**                      | ⭐⭐⭐        | Keywords in the URL help rank and indicate page topic (e.g. `/jobs-in-finland`).     |
+| **Headings** (`<h1>`, `<h2>`, etc.) | ⭐⭐⭐⭐       | Very important. Keywords here signal structure and importance.                       |
+| **First 100 words of content**      | ⭐⭐⭐⭐       | Google scans the beginning of your page for context.                                 |
+| **Image `alt` attributes**          | ⭐⭐         | Helps in image search and improves accessibility/SEO.                                |
+| **Anchor Text (links)**             | ⭐⭐         | Helps Google understand the topic of linked content.                                 |
+| **Structured Data (JSON-LD)**       | ⭐⭐         | Helps Google interpret job postings, events, etc. precisely.                         |
