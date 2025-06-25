@@ -672,6 +672,94 @@ body.drK .moresvg {
 
 
 
+
+
+
+
+
+
+.job-card {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.113);
+  border-radius: 10px;
+  max-width: 780px;
+  margin: 2rem auto;
+  padding: 1.8rem 2rem;
+  background-color: #ffffff;
+
+}
+
+.job-card__title {
+  margin-bottom: 2rem !important;
+  margin-top: 0px !important;
+  font-size: 1.6rem !important;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.job-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.job-card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.job-card__label {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.job-card__value {
+  font-size: 1rem;
+  font-family: Google Sans Text, Arial, Helvetica, sans-serif;
+  color: #000000;
+  line-height: 1.5;
+}
+
+@media (min-width: 430px) {
+  .job-card__item {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .job-card__label {
+    width: 180px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .job-card__title {
+    margin-left: 10px !important;
+  }
+
+  .job-card__label {
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
 
   .bkmrk,
