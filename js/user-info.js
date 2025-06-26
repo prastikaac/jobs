@@ -11,7 +11,7 @@ window.gtranslateSettings["43217984"] = {
     flag_style: "2d",
     flag_size: 24,
     horizontal_position: "inline",
-    flags_location: "images/flags/"
+    flags_location: "https://findjobsinfinland.fi/images/flags/"
 };
 
 // Dropdown Toggle Logic
