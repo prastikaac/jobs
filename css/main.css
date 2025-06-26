@@ -632,6 +632,11 @@ button.logout-cancel:hover {
     gap: 20px;
   }
 
+  .publishlogo {
+    width: 32px;
+    height: 32px;
+  }
+
 }
 
 #notification-icon {
