@@ -414,6 +414,14 @@ body.drK.foursec {
 
 
 
+   .longbtns::after {
+    position: relative;      /* back in normal flow (opposite of absolute) */
+    transform: scaleX(1);    /* fully visible, no horizontal shrink */
+    height: auto;            /* let content determine height */
+    background-color: transparent; /* no solid background */
+  }
+
+
 }
 
 
@@ -480,6 +488,7 @@ body.drK.foursec {
   .secwid {
     margin-top: -50px;
   }
+
 
 
 
@@ -688,6 +697,8 @@ body.drK .moresvg {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 
 }
+
+
 
 
 
