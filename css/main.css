@@ -633,10 +633,14 @@ button.logout-cancel:hover {
   }
 
   .publishlogo {
-    width: 32px;
-    height: 32px;
+    width: 32px !important;
+    height: 32px !important;
   }
 
+
+  .gt_white_content {
+    width: 150px !important;
+  }
 }
 
 #notification-icon {
