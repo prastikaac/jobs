@@ -67,4 +67,29 @@
     </image:image>
   </url>
 
+  <url>
+  <loc>https://findjobsinfinland.fi/blogs/tips-and-tricks-for-interview-in-finland</loc>
+  <lastmod>2025-06-25T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+  <image:image>
+    <image:loc>https://findjobsinfinland.fi/images/tips-and-tricks-for-interview.png</image:loc>
+    <image:caption>Interview Tips and Tricks for Jobs in Finland</image:caption>
+    <image:title>Interview Tips in Finland</image:title>
+  </image:image>
+</url>
+
+<url>
+  <loc>https://findjobsinfinland.fi/blogs/industry-wise-minimum-wages-in-finland</loc>
+  <lastmod>2025-06-24T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+  <image:image>
+    <image:loc>https://findjobsinfinland.fi/images/industry-wise-minimum-wages.png</image:loc>
+    <image:caption>Industry-Wise Minimum Wages in Finland</image:caption>
+    <image:title>Minimum Wages in Finland by Industry</image:title>
+  </image:image>
+</url>
+
+
 </urlset>
