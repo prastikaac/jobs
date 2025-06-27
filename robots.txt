@@ -48,11 +48,12 @@ Disallow:
 
 User-agent: *
 Disallow: /cgi-bin/
-
 Disallow: /*?q=*
+Disallow: /*?category=*
+Disallow: /*?location=*
+Disallow: /*?availability=*
 
 Allow: /jobs/$
 Allow: /jobs/
-
 
 Sitemap: https://findjobsinfinland.fi/sitemap.xml
