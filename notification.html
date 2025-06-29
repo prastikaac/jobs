@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FCM Push Notification Test</title>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging-compat.js"></script>
+</head>
+<body>
+  <h2>Push Notification Setup Test</h2>
+  <button id="login">Login with Google</button>
+  <button id="enablePush">Enable Push Notifications</button>
+
+  <script>
+    // 1. Initialize Firebase
+    firebase.initializeApp({
+      apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+      authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+      projectId: "findjobsinfinland-3c061",
+      storageBucket: "findjobsinfinland-3c061.firebasestorage.app",
+      messagingSenderId: "575437446165",
+      appId: "1:575437446165:web:51922bc01fd291b09b821c"
+    });
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const messaging = firebase.messaging();
+
+    // 2. Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/firebase-messaging-sw.js')
+        .then((reg) => {
+          messaging.useServiceWorker(reg);
+          console.log("Service Worker Registered");
+        }).catch((err) => {
+          console.error("Service Worker Error:", err);
+        });
+    }
+
+    // 3. Google Login
+    document.getElementById("login").onclick = async () => {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      try {
+        const result = await auth.signInWithPopup(provider);
+        alert("Logged in as " + result.user.email);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    // 4. Request permission and save FCM token
+    document.getElementById("enablePush").onclick = async () => {
+      const user = auth.currentUser;
+      if (!user) {
+        alert("Login first!");
+        return;
+      }
+
+      try {
+        const token = await messaging.getToken({
+          vapidKey: "BND7vCMB0EMsNO6lSlzFEvUBqJNgmiyU-kUFxCZlqdp0GFvQxVZ0kYkSFGPIdRuNwt7GPK0QZn1pWEvN2DU-93s"
+        });
+
+        if (token) {
+          await db.collection("users").doc(user.uid).set({
+            fcmToken: token
+          }, { merge: true });
+
+          localStorage.setItem("fcmToken", token);
+          alert("Push notifications enabled!");
+        }
+      } catch (error) {
+        console.error("Push permission error", error);
+      }
+    };
+
+    // 5. Foreground message handler
+    messaging.onMessage(payload => {
+      alert("New Notification: " + payload.notification.title);
+    });
+  </script>
+</body>
+</html>

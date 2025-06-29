@@ -4,6 +4,9 @@ Meta description is a bit short (138 characters) — aim for 140-160 characters.
 
 Description : 150–160 characters 
 
+firebase deploy --only functions
+
+
 1. Use Keywords Naturally
   - Include primary and secondary keywords in:
   - Title tag (max 60 characters)

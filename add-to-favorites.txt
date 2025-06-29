@@ -1,72 +1,90 @@
+I have a joblisting website named findjobsinfinland.fi and now in its firestore database user system is ike like : 
+  inside users>EPggpmGlziSuu8ES0ngvq4srK7w1>email
+"acharyaprasiddha6@gmail.com"
+(string)
 
 
-2049387156293480715
-
-1839045721037594862
-
-5920374861573049182
-
-3928574106293478150
-
-5928430517062394815
-
-3847501926845039271
-
-9401825763912854703
-
-4857301926845930217
-
-3957201486720349185
-
-2937401583672049851
-
-4058193726845012937
-
-1293475082195734680
-
-5824910375629301478
-
-5029418375684012397
-
-5948203761928430517
-
-7392048516372910485
-
-1947380526319402875
-
-5820479163492573018
-
-7239015846309124578
-
-2910347581620394857
-
-4920876315297038145
-
-5720948136942083751
-
-7205813469573120483
-
-4912873065149038725
-
-3857204916827340519
-
-4729031856419382075
-
-6948215037183624905
-
-2017489356720348915
-
-5827309142635479018
+fullName
+"qeww"
+(string)
 
 
-8204675139852743019
+jobCategory: ["engineering", "nursing"]
+jobLocation: ["espoo", "jarvenpaa"]
 
-5713948203621048579
 
-8415092873641023957
 
-3094857126475198230
+phoneNumber
+"31424t"
+(string)
 
-4912865730219458307
 
-3728105946382571049
+uid
+"EPggpmGlziSuu8ES0ngvq4srK7w1"
+(string)
+
+
+
+and jobs is like : jobs>RLdtNfVpZ9tOsXqIKB4X>createdAt
+June 29, 2025 at 3:45:02 PM UTC+3
+(timestamp)
+
+
+description
+"fsd"
+(string)
+
+
+imageUrl
+"https://firebasestorage.googleapis.com/v0/b/findjobsinfinland-3c061.firebasestorage.app/o/jobImages%2F1751201100797_here.png?alt=media&token=49cd5382-205e-4159-b335-0808872bdf82"
+(string)
+
+
+jobCategory
+"it-tech"
+(string)
+
+
+jobLocation
+"helsinki"
+(string)
+
+
+title
+"IT Manager"
+
+
+
+
+
+🔔 Push Notifications (Using FCM) 
+I want to use Firebase Cloud Messaging (FCM) to send push notifications to the user’s browser/device.
+
+Notifications should:
+
+Be based on the user’s stored job category and location
+
+Open a specific page in Chrome (especially mobile) or any default browser
+
+the users prefePush preferences should be saved on the device (localStorage / IndexedDB) and also in Firestore under the same user ID.
+
+ 
+
+
+
+For the first time user will asked his/her email and after email they will be asked the details if they are not signed up in the next page other wise they will be asked the password and if they entered the password then they will get logged in and keep them logged in forever and save the logged user data in the local storage, but dont store the 
+
+
+
+
+
+Trigger email + push notifications to users whose profile matches
+
+📬 Notification System Setup
+
+Enable browser push notifications
+
+Store push token + preferences
+
+Handle click event to open page in Chrome
+
