@@ -237,96 +237,97 @@
 
     <div id="successMessage">🎉 Signup successful! You will receive job alerts based on your preferences.</div>
 
-   <script type="module">
-  // Firebase Config
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import {
-    getAuth,
-    createUserWithEmailAndPassword
-  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-  import {
-    getFirestore,
-    doc,
-    setDoc
-  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    <script type="module">
+        // Firebase Config
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword
+        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import {
+            getFirestore,
+            doc,
+            setDoc
+        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-    authDomain: "findjobsinfinland-3c061.firebaseapp.com",
-    projectId: "findjobsinfinland-3c061",
-    storageBucket: "findjobsinfinland-3c061.appspot.com",
-    messagingSenderId: "575437446165",
-    appId: "1:575437446165:web:51922bc01fd291b09b821c"
-  };
+        const firebaseConfig = {
+            apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+            authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+            projectId: "findjobsinfinland-3c061",
+            storageBucket: "findjobsinfinland-3c061.appspot.com",
+            messagingSenderId: "575437446165",
+            appId: "1:575437446165:web:51922bc01fd291b09b821c"
+        };
 
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const db = getFirestore(app);
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
 
-  // 🔁 Get selected values, including "All" logic
-  function getSelectedValues(containerId) {
-    const container = document.getElementById(containerId);
-    const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+        // 🔁 Get selected values, including "All" logic
+        function getSelectedValues(containerId) {
+            const container = document.getElementById(containerId);
+            const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
 
-    const allCheckbox = container.querySelector('input[value=""]');
-    const allSelected = allCheckbox && allCheckbox.checked;
+            const allCheckbox = container.querySelector('input[value=""]');
+            const allSelected = allCheckbox && allCheckbox.checked;
 
-    let selected = [];
+            let selected = [];
 
-    if (allSelected) {
-      const allValues = container.querySelectorAll('input[type="checkbox"]');
-      allValues.forEach(cb => {
-        const val = cb.value.trim();
-        if (val !== "") selected.push(val);
-      });
-    } else {
-      checkboxes.forEach(cb => {
-        const val = cb.value.trim();
-        if (val !== "") selected.push(val);
-      });
-    }
+            if (allSelected) {
+                const allValues = container.querySelectorAll('input[type="checkbox"]');
+                allValues.forEach(cb => {
+                    const val = cb.value.trim();
+                    if (val !== "") selected.push(val);
+                });
+            } else {
+                checkboxes.forEach(cb => {
+                    const val = cb.value.trim();
+                    if (val !== "") selected.push(val);
+                });
+            }
 
-    return selected;
-  }
+            return selected;
+        }
 
-  // 🔐 Signup
-  document.getElementById("signupForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+        // 🔐 Signup Handler
+        document.getElementById("signupForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
 
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const phoneNumber = document.getElementById("phoneNumber").value.trim();
-    const jobCategory = getSelectedValues("categoryBox");
-    const jobLocation = getSelectedValues("locationBox");
+            const fullName = document.getElementById("fullName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const phoneNumber = document.getElementById("phoneNumber").value.trim();
+            const jobCategory = getSelectedValues("categoryBox");
+            const jobLocation = getSelectedValues("locationBox");
 
-    try {
-      // Create user
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const uid = userCredential.user.uid;
+            try {
+                // Create Firebase Auth user
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const uid = userCredential.user.uid;
 
-      // Save user profile to Firestore
-      await setDoc(doc(db, "users", uid), {
-        uid,
-        fullName,
-        email,
-        phoneNumber,
-        jobCategory: jobCategory.join(", "),
-        jobLocation: jobLocation.join(", ")
-      });
+                // Save profile to Firestore with jobCategory & jobLocation as arrays
+                await setDoc(doc(db, "users", uid), {
+                    uid,
+                    fullName,
+                    email,
+                    phoneNumber,
+                    jobCategory: jobCategory,   // stored as array
+                    jobLocation: jobLocation    // stored as array
+                });
 
-      alert("Signup successful!");
-      window.location.href = "/thank-you.html"; // Optional redirect
-    } catch (error) {
-      if (error.code === "auth/email-already-in-use") {
-        alert("This email is already registered.");
-      } else {
-        console.error("Signup error:", error);
-        alert("Signup failed. Please try again.");
-      }
-    }
-  });
-</script>
+                alert("Signup successful!");
+                window.location.href = "/thank-you.html";
+            } catch (error) {
+                if (error.code === "auth/email-already-in-use") {
+                    alert("This email is already registered.");
+                } else {
+                    console.error("Signup error:", error);
+                    alert("Signup failed. Please try again.");
+                }
+            }
+        });
+    </script>
+
 
 </body>
 
