@@ -2,31 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Post a Job | Find Jobs in Finland</title>
-  <style>
-    input[readonly] { background:#f3f3f3; cursor:text; }
-  </style>
 </head>
 <body>
   <h1>Post a New Job</h1>
 
   <form id="jobForm">
-    <!-- ‑‑ Basic job details ‑‑ -->
-    <label>Job Title<br><input type="text" id="jobTitle" required></label><br><br>
-    <label>Job Description<br><textarea id="jobDescription" required></textarea></label><br><br>
+    <label>Job Title<br/>
+      <input type="text" id="jobTitle" required>
+    </label><br/><br/>
 
-    <label>Job Category<br>
+    <label>Job Description<br/>
+      <textarea id="jobDescription" required></textarea>
+    </label><br/><br/>
+
+    <label>Job Category<br/>
       <select id="jobCategory" required>
-        <option value="it-tech">IT & Tech</option>
+        <option value="it-tech">IT & Tech</option>
         <option value="engineering">Engineering</option>
         <option value="nursing">Nursing</option>
-        <option value="construction-labor">Construction & Labor</option>
+        <option value="construction-labor">Construction & Labor</option>
         <option value="cleaning">Cleaning</option>
       </select>
-    </label><br><br>
+    </label><br/><br/>
 
-    <label>Job Location<br>
+    <label>Job Location<br/>
       <select id="jobLocation" required>
         <option value="helsinki">Helsinki</option>
         <option value="espoo">Espoo</option>
@@ -34,95 +35,78 @@
         <option value="tampere">Tampere</option>
         <option value="turku">Turku</option>
       </select>
-    </label><br><br>
+    </label><br/><br/>
 
-    <!-- ‑‑ Image upload & URL preview ‑‑ -->
-    <label>Job Image<br>
+    <label>Job Image<br/>
       <input type="file" id="jobImage" accept="image/*">
-    </label><br><br>
+    </label><br/><br/>
 
-    <!-- Read‑only field that will contain the download URL -->
-    <label>Image URL (auto‑filled after upload)<br>
-      <input type="text" id="imageUrlField" readonly>
-    </label><br><br>
-
-    <button type="submit">Post Job</button>
+    <button type="submit">Post Job</button>
   </form>
 
-  <!-- Firebase v10 Modular SDK -->
+  <!-- Firebase Modular SDK -->
   <script type="module">
-    import { initializeApp }                       from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-    import { getFirestore, collection, addDoc,
-             serverTimestamp }                     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-    import { getStorage, ref, uploadBytes,
-             getDownloadURL }                      from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+    import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 
-    /* ==== 1. initialise Firebase ================================================= */
-    const firebaseConfig = {
-      apiKey:            "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-      authDomain:        "findjobsinfinland-3c061.firebaseapp.com",
-      projectId:         "findjobsinfinland-3c061",
-      storageBucket:     "findjobsinfinland-3c061.appspot.com",
-      messagingSenderId: "575437446165",
-      appId:             "1:575437446165:web:51922bc01fd291b09b821c"
-    };
+   const firebaseConfig = {
+  apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+  authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+  projectId: "findjobsinfinland-3c061",
+  storageBucket: "findjobsinfinland-3c061.appspot.com", // ✅ CORRECT: ends with .appspot.com
+  messagingSenderId: "575437446165",
+  appId: "1:575437446165:web:51922bc01fd291b09b821c"
+};
+
 
     const app     = initializeApp(firebaseConfig);
     const db      = getFirestore(app);
     const storage = getStorage(app);
 
-    /* ==== 2. form submit handler ================================================== */
-    document.getElementById("jobForm").addEventListener("submit", async e => {
+    // 📨 Handle Form
+    document.getElementById("jobForm").addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      /* → Grab core field values */
       const title       = document.getElementById("jobTitle").value.trim();
       const description = document.getElementById("jobDescription").value.trim();
       const category    = document.getElementById("jobCategory").value;
       const location    = document.getElementById("jobLocation").value;
       const file        = document.getElementById("jobImage").files[0];
 
-      let imageURL = "";
+      let imageUrl = "";
 
-      /* → If an image was chosen, upload it first */
       if (file) {
         try {
-          const path     = `jobImages/${Date.now()}_${file.name}`;
-          const imageRef = ref(storage, path);
-          await uploadBytes(imageRef, file);             // upload
-          imageURL = await getDownloadURL(imageRef);     // grab URL
-
-          /* Show the URL to the user */
-          document.getElementById("imageUrlField").value = imageURL;
-        }
-        catch (err) {
+          const filename = `jobImages/${Date.now()}_${file.name}`;
+          const imageRef = ref(storage, filename);
+          await uploadBytes(imageRef, file);
+          imageUrl = await getDownloadURL(imageRef);
+        } catch (err) {
           console.error("Image upload failed:", err);
-          alert("Image upload failed — please try again.");
-          return; // stop, don’t write half‑complete record
+          alert("Failed to upload image. Please try again.");
+          return;
         }
       }
 
-      /* → Build job object & send to Firestore */
-      try {
-        await addDoc(collection(db, "jobs"), {
-          title,
-          description,
-          category,
-          location,
-          image: imageURL,           // 🔑 saved as “image”
-          createdAt: serverTimestamp()
-        });
+      const jobData = {
+        title,
+        description,
+        category,
+        location,
+        imageUrl,  // ✅ stored in Firestore
+        createdAt: serverTimestamp()
+      };
 
+      try {
+        await addDoc(collection(db, "jobs"), jobData);
         alert("Job posted successfully!");
-        e.target.reset();                         // clear form
-        document.getElementById("imageUrlField").value = ""; // clear URL box
-      }
-      catch (err) {
-        console.error("Failed to save job:", err);
+        e.target.reset();
+      } catch (error) {
+        console.error("Failed to post job:", error);
         alert("Error saving job to Firestore.");
       }
     });
   </script>
 </body>
 </html>
-
