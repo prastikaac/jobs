@@ -3,62 +3,19 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Signup - Find Jobs in Finland</title>
     <style>
-        body {
-            font-family: sans-serif;
-            max-width: 500px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        input,
-        button {
-            display: block;
-            width: 100%;
-            margin-bottom: 12px;
-            padding: 10px;
-            font-size: 1rem;
-        }
-
-        h3 {
-            margin-top: 30px;
-        }
-
-        .select-box {
-            max-height: 250px;
-            overflow-y: auto;
-            border-radius: 12px;
-            border: 1px solid #eee;
-            background: #fff;
-            padding: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .option-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 10px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .option-row:last-child {
-            border-bottom: none;
-        }
-
+        /* Simple styles for switches */
         .switch {
             position: relative;
             display: inline-block;
-            width: 44px;
-            height: 24px;
+            width: 40px;
+            height: 20px;
         }
 
         .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
+            display: none;
         }
 
         .slider {
@@ -69,35 +26,32 @@
             right: 0;
             bottom: 0;
             background-color: #ccc;
-            border-radius: 24px;
-            transition: 0.4s;
+            transition: .4s;
+            border-radius: 20px;
         }
 
         .slider:before {
             position: absolute;
             content: "";
-            height: 18px;
-            width: 18px;
-            left: 3px;
-            bottom: 3px;
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
             background-color: white;
+            transition: .4s;
             border-radius: 50%;
-            transition: 0.4s;
         }
 
         input:checked+.slider {
-            background-color: #ff2d7b;
+            background-color: #2196F3;
         }
 
         input:checked+.slider:before {
             transform: translateX(20px);
         }
 
-        #successMessage {
-            display: none;
-            color: green;
-            font-weight: bold;
-            margin-top: 20px;
+        .option-row {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -144,7 +98,6 @@
             <div class="option-row"><span>Sales & Marketing</span><label class="switch"><input type="checkbox"
                         value="sales" /><span class="slider"></span></label></div>
         </div>
-        <input type="hidden" id="jobCategory" required />
 
         <!-- Job Locations -->
         <h3>Where do you want to work?</h3>
@@ -227,28 +180,20 @@
                         value="kokkola" /><span class="slider"></span></label></div>
             <div class="option-row"><span>Joensuu</span><label class="switch"><input type="checkbox"
                         value="joensuu" /><span class="slider"></span></label></div>
-
-
         </div>
-        <input type="hidden" id="jobLocation" required />
 
         <button type="submit">Sign Up</button>
     </form>
 
-    <div id="successMessage">🎉 Signup successful! You will receive job alerts based on your preferences.</div>
+    <div id="successMessage" style="display:none; color: green; font-weight: bold; margin-top: 20px;">
+        🎉 Signup successful! You will receive job alerts based on your preferences.
+    </div>
 
     <script type="module">
-        // Firebase Config
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import {
-            getAuth,
-            createUserWithEmailAndPassword
-        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-        import {
-            getFirestore,
-            doc,
-            setDoc
-        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import { getFirestore, doc, setDoc, updateDoc, arrayUnion, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+        import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
@@ -262,8 +207,9 @@
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
         const db = getFirestore(app);
+        const messaging = getMessaging(app);
 
-        // 🔁 Get selected values, including "All" logic
+        // Helper to get selected checkbox values (handles "All" logic)
         function getSelectedValues(containerId) {
             const container = document.getElementById(containerId);
             const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
@@ -289,7 +235,66 @@
             return selected;
         }
 
-        // 🔐 Signup Handler
+        // Register service worker for FCM
+        async function registerServiceWorker() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+                    console.log("Service Worker Registered");
+                    return registration;
+                } catch (error) {
+                    console.error("Service Worker registration failed:", error);
+                    return null;
+                }
+            } else {
+                console.warn("Service Worker not supported");
+                return null;
+            }
+        }
+
+        async function getFcmToken() {
+            try {
+                const registration = await registerServiceWorker();
+                if (!registration) return null;
+
+                const token = await getToken(messaging, {
+                    vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+                    serviceWorkerRegistration: registration
+                });
+                return token;
+            } catch (error) {
+                console.error("Error getting FCM token:", error);
+                return null;
+            }
+        }
+
+        // Add FCM token to user's fcmTokens array (if not already added)
+        async function addFcmTokenToUser(uid, token) {
+            if (!token) return;
+
+            const userRef = doc(db, "users", uid);
+            const userSnap = await getDoc(userRef);
+
+            if (!userSnap.exists()) {
+                console.warn("User doc doesn't exist when adding token");
+                return;
+            }
+
+            const data = userSnap.data();
+            const tokens = data.fcmTokens || [];
+
+            if (!tokens.includes(token)) {
+                // Add token to array
+                await updateDoc(userRef, {
+                    fcmTokens: arrayUnion(token)
+                });
+                console.log("FCM token added to user document");
+            } else {
+                console.log("FCM token already exists in user document");
+            }
+        }
+
+        // Signup form handler
         document.getElementById("signupForm").addEventListener("submit", async (e) => {
             e.preventDefault();
 
@@ -301,22 +306,34 @@
             const jobLocation = getSelectedValues("locationBox");
 
             try {
-                // Create Firebase Auth user
+                // Create Firebase user with email/password
                 const userCredential = await createUserWithEmailAndPassword(auth, email, password);
                 const uid = userCredential.user.uid;
 
-                // Save profile to Firestore with jobCategory & jobLocation as arrays
-                await setDoc(doc(db, "users", uid), {
+                // Request notification permission & get FCM token
+                const fcmToken = await getFcmToken();
+
+                // Prepare user data object
+                const userData = {
                     uid,
                     fullName,
                     email,
                     phoneNumber,
-                    jobCategory: jobCategory,   // stored as array
-                    jobLocation: jobLocation    // stored as array
-                });
+                    jobCategory,
+                    jobLocation,
+                    fcmTokens: fcmToken ? [fcmToken] : []
+                };
 
-                alert("Signup successful!");
-                window.location.href = "/thank-you.html";
+                // Save user data to Firestore
+                await setDoc(doc(db, "users", uid), userData);
+
+                // Save user data to localStorage
+                localStorage.setItem("user", JSON.stringify(userData));
+
+                // Show success message
+                document.getElementById("successMessage").style.display = "block";
+
+
             } catch (error) {
                 if (error.code === "auth/email-already-in-use") {
                     alert("This email is already registered.");
@@ -327,8 +344,6 @@
             }
         });
     </script>
-
-
 </body>
 
 </html>

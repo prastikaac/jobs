@@ -1,14 +1,14 @@
 
-// Every time do : firebase deploy --only functions after editing this file
+// Every time do : firebase deploy --only functions : after editing this file
 
-const {onDocumentCreated} = require('firebase-functions/v2/firestore');
-const {setGlobalOptions} = require('firebase-functions/v2');
-const {initializeApp} = require('firebase-admin/app');
-const {getFirestore} = require('firebase-admin/firestore');
+const { onDocumentCreated } = require('firebase-functions/v2/firestore');
+const { setGlobalOptions } = require('firebase-functions/v2');
+const { initializeApp } = require('firebase-admin/app');
+const { getFirestore } = require('firebase-admin/firestore');
+const { getMessaging } = require('firebase-admin/messaging');
 const { Resend } = require('resend');
 
-// Set region to match Firestore (Europe North)
-setGlobalOptions({region: 'europe-north1'});
+setGlobalOptions({ region: 'europe-north1' });
 
 initializeApp();
 
@@ -21,18 +21,37 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
   const jobLocation = jobData.jobLocation;
 
   const db = getFirestore();
+  const messaging = getMessaging();
+
   const usersSnapshot = await db.collection('users').get();
 
   const matchedEmails = [];
+  const pushPromises = [];
 
   usersSnapshot.forEach((doc) => {
     const user = doc.data();
-
     const hasCategory = user.jobCategory?.includes(jobCategory);
     const hasLocation = user.jobLocation?.includes(jobLocation);
+    const fcmToken = user.fcmToken;
 
     if (hasCategory && hasLocation) {
-      matchedEmails.push(user.email);
+      if (user.email) matchedEmails.push(user.email);
+
+      // push notification
+      if (fcmToken) {
+        const message = {
+          token: fcmToken,
+          notification: {
+            title: `🚀 New ${jobCategory} Job!`,
+            body: `${jobData.title} in ${jobLocation}`,
+            imageUrl: jobData.imageUrl || undefined
+          },
+          data: {
+            jobId: event.params.jobId,
+          },
+        };
+        pushPromises.push(messaging.send(message));
+      }
     }
   });
 
@@ -41,7 +60,7 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
     return;
   }
 
-  // Send job alert email to matched users
+  // Send job alert email
   const emailPromises = matchedEmails.map((email) => {
     return resend.emails.send({
       from: 'Find Jobs In Finland <jobs@findjobsinfinland.fi>',
@@ -59,8 +78,9 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
   });
 
   await Promise.all(emailPromises);
+  await Promise.all(pushPromises);
 
-  // Send summary to owner (you)
+  // Send summary to owner
   await resend.emails.send({
     from: 'Find Jobs In Finland <jobs@findjobsinfinland.fi>',
     to: 'acharyaprasiddha6@gmail.com',
@@ -70,12 +90,15 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
       <ul>
         ${matchedEmails.map((email) => `<li>${email}</li>`).join('')}
       </ul>
-      <p><strong>Total:</strong> ${matchedEmails.length} users.</p>
+      <p><strong>Total emails:</strong> ${matchedEmails.length}</p>
+      <p><strong>Total push notifications:</strong> ${pushPromises.length}</p>
     `,
   });
 
   console.log(`Emails sent to: ${matchedEmails.join(", ")}`);
+  console.log(`Push notifications sent: ${pushPromises.length}`);
 });
 
 
-// Every time do : firebase deploy --only functions after editing this file
+
+// Every time do : firebase deploy --only functions : after editing this file

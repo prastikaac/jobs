@@ -2,84 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FCM Push Notification Test</title>
-  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging-compat.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FCM Push with Email Sign-In and User Info</title>
 </head>
 <body>
-  <h2>Push Notification Setup Test</h2>
-  <button id="login">Login with Google</button>
-  <button id="enablePush">Enable Push Notifications</button>
+  <h2>Firebase Push Notification Test</h2>
 
-  <script>
-    // 1. Initialize Firebase
-    firebase.initializeApp({
+  <div id="userInfo" style="margin-bottom: 20px;">
+    <p><strong>User:</strong> <span id="userName">Not signed in</span></p>
+    <p><strong>Email:</strong> <span id="userEmail">-</span></p>
+  </div>
+
+  <button id="enablePushBtn">Enable Push Notifications</button>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+    import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+    import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging.js";
+
+    const firebaseConfig = {
       apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
       authDomain: "findjobsinfinland-3c061.firebaseapp.com",
       projectId: "findjobsinfinland-3c061",
       storageBucket: "findjobsinfinland-3c061.firebasestorage.app",
       messagingSenderId: "575437446165",
       appId: "1:575437446165:web:51922bc01fd291b09b821c"
-    });
-
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-    const messaging = firebase.messaging();
-
-    // 2. Register service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/firebase-messaging-sw.js')
-        .then((reg) => {
-          messaging.useServiceWorker(reg);
-          console.log("Service Worker Registered");
-        }).catch((err) => {
-          console.error("Service Worker Error:", err);
-        });
-    }
-
-    // 3. Google Login
-    document.getElementById("login").onclick = async () => {
-      const provider = new firebase.auth.GoogleAuthProvider();
-      try {
-        const result = await auth.signInWithPopup(provider);
-        alert("Logged in as " + result.user.email);
-      } catch (err) {
-        console.error(err);
-      }
     };
 
-    // 4. Request permission and save FCM token
-    document.getElementById("enablePush").onclick = async () => {
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const messaging = getMessaging(app);
+
+    const userNameElem = document.getElementById('userName');
+    const userEmailElem = document.getElementById('userEmail');
+    const enablePushBtn = document.getElementById('enablePushBtn');
+
+    // Update user info on auth state change
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        userNameElem.textContent = user.displayName || '(No name set)';
+        userEmailElem.textContent = user.email || '(No email)';
+        enablePushBtn.disabled = false;
+      } else {
+        userNameElem.textContent = 'Not signed in';
+        userEmailElem.textContent = '-';
+        enablePushBtn.disabled = true;
+      }
+    });
+
+    enablePushBtn.onclick = async () => {
       const user = auth.currentUser;
       if (!user) {
-        alert("Login first!");
+        alert('You must be signed in with email/password to enable notifications.');
         return;
       }
 
       try {
-        const token = await messaging.getToken({
+        const token = await getToken(messaging, {
           vapidKey: "BND7vCMB0EMsNO6lSlzFEvUBqJNgmiyU-kUFxCZlqdp0GFvQxVZ0kYkSFGPIdRuNwt7GPK0QZn1pWEvN2DU-93s"
         });
 
         if (token) {
-          await db.collection("users").doc(user.uid).set({
-            fcmToken: token
-          }, { merge: true });
+          alert('Push notifications enabled! Token saved.');
+          console.log('FCM token:', token);
 
-          localStorage.setItem("fcmToken", token);
-          alert("Push notifications enabled!");
+          // Save token to Firestore under user document
+          await setDoc(doc(db, "users", user.uid), {
+            fcmToken: token,
+            email: user.email,
+            fullName: user.displayName || ""
+          }, { merge: true });
+        } else {
+          alert('No token received — check notification permission');
         }
       } catch (error) {
-        console.error("Push permission error", error);
+        console.error('Error getting token:', error);
+        alert('Error enabling push notifications — see console');
       }
     };
 
-    // 5. Foreground message handler
-    messaging.onMessage(payload => {
-      alert("New Notification: " + payload.notification.title);
+    // Handle foreground messages
+    onMessage(messaging, payload => {
+      alert(`Notification: ${payload.notification.title}\n${payload.notification.body}`);
     });
   </script>
 </body>
