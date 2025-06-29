@@ -48,66 +48,66 @@
 
     <!-- Firebase Modular SDK -->
     <script type="module">
-     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+        import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-    authDomain: "findjobsinfinland-3c061.firebaseapp.com",
-    projectId: "findjobsinfinland-3c061",
-    storageBucket: "findjobsinfinland-3c061.firebasestorage.app",
-    messagingSenderId: "575437446165",
-    appId: "1:575437446165:web:51922bc01fd291b09b821c"
-};
+        const firebaseConfig = {
+            apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+            authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+            projectId: "findjobsinfinland-3c061",
+            storageBucket: "findjobsinfinland-3c061.firebasestorage.app",
+            messagingSenderId: "575437446165",
+            appId: "1:575437446165:web:51922bc01fd291b09b821c"
+        };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const storage = getStorage(app);
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const storage = getStorage(app);
 
-// 📨 Handle Form
-document.getElementById("jobForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+        // 📨 Handle Form
+        document.getElementById("jobForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
 
-    const title = document.getElementById("jobTitle").value.trim();
-    const description = document.getElementById("jobDescription").value.trim();
-    const category = document.getElementById("jobCategory").value;
-    const location = document.getElementById("jobLocation").value;
-    const file = document.getElementById("jobImage").files[0];
+            const title = document.getElementById("jobTitle").value.trim();
+            const description = document.getElementById("jobDescription").value.trim();
+            const category = document.getElementById("jobCategory").value;
+            const location = document.getElementById("jobLocation").value;
+            const file = document.getElementById("jobImage").files[0];
 
-    let imageUrl = "";
+            let imageUrl = "";
 
-    if (file) {
-        try {
-            const filename = `jobImages/${Date.now()}_${file.name}`;
-            const imageRef = ref(storage, filename);
-            await uploadBytes(imageRef, file);
-            imageUrl = await getDownloadURL(imageRef);
-        } catch (err) {
-            console.error("Image upload failed:", err);
-            alert("Failed to upload image. Please try again.");
-            return;
-        }
-    }
+            if (file) {
+                try {
+                    const filename = `jobImages/${Date.now()}_${file.name}`;
+                    const imageRef = ref(storage, filename);
+                    await uploadBytes(imageRef, file);
+                    imageUrl = await getDownloadURL(imageRef);
+                } catch (err) {
+                    console.error("Image upload failed:", err);
+                    alert("Failed to upload image. Please try again.");
+                    return;
+                }
+            }
 
-    const jobData = {
-        title,
-        description,
-        jobCategory: category,  // <--- renamed here
-        jobLocation: location,  // <--- renamed here
-        imageUrl,
-        createdAt: serverTimestamp()
-    };
+            const jobData = {
+                title,
+                description,
+                jobCategory: category,  // <--- renamed here
+                jobLocation: location,  // <--- renamed here
+                imageUrl,
+                createdAt: serverTimestamp()
+            };
 
-    try {
-        await addDoc(collection(db, "jobs"), jobData);
-        alert("Job posted successfully!");
-        e.target.reset();
-    } catch (error) {
-        console.error("Failed to post job:", error);
-        alert("Error saving job to Firestore.");
-    }
-});
+            try {
+                await addDoc(collection(db, "jobs"), jobData);
+                alert("Job posted successfully!");
+                e.target.reset();
+            } catch (error) {
+                console.error("Failed to post job:", error);
+                alert("Error saving job to Firestore.");
+            }
+        });
 
     </script>
 </body>
