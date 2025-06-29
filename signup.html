@@ -189,161 +189,185 @@
         🎉 Signup successful! You will receive job alerts based on your preferences.
     </div>
 
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-        import { getFirestore, doc, setDoc, updateDoc, arrayUnion, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-        import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+ <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import { getFirestore, doc, setDoc, updateDoc, arrayUnion, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+  import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-            authDomain: "findjobsinfinland-3c061.firebaseapp.com",
-            projectId: "findjobsinfinland-3c061",
-            storageBucket: "findjobsinfinland-3c061.appspot.com",
-            messagingSenderId: "575437446165",
-            appId: "1:575437446165:web:51922bc01fd291b09b821c"
-        };
+  const firebaseConfig = {
+    apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+    authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+    projectId: "findjobsinfinland-3c061",
+    storageBucket: "findjobsinfinland-3c061.appspot.com",
+    messagingSenderId: "575437446165",
+    appId: "1:575437446165:web:51922bc01fd291b09b821c"
+  };
 
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const db = getFirestore(app);
-        const messaging = getMessaging(app);
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const messaging = getMessaging(app);
 
-        // Helper to get selected checkbox values (handles "All" logic)
-        function getSelectedValues(containerId) {
-            const container = document.getElementById(containerId);
-            const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+  // Helper: Get selected values from checkbox list
+  function getSelectedValues(containerId) {
+    const container = document.getElementById(containerId);
+    const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+    const allCheckbox = container.querySelector('input[value=""]');
+    const allSelected = allCheckbox && allCheckbox.checked;
+    let selected = [];
 
-            const allCheckbox = container.querySelector('input[value=""]');
-            const allSelected = allCheckbox && allCheckbox.checked;
+    if (allSelected) {
+      const allValues = container.querySelectorAll('input[type="checkbox"]');
+      allValues.forEach(cb => {
+        const val = cb.value.trim();
+        if (val !== "") selected.push(val);
+      });
+    } else {
+      checkboxes.forEach(cb => {
+        const val = cb.value.trim();
+        if (val !== "") selected.push(val);
+      });
+    }
 
-            let selected = [];
+    return selected;
+  }
 
-            if (allSelected) {
-                const allValues = container.querySelectorAll('input[type="checkbox"]');
-                allValues.forEach(cb => {
-                    const val = cb.value.trim();
-                    if (val !== "") selected.push(val);
-                });
-            } else {
-                checkboxes.forEach(cb => {
-                    const val = cb.value.trim();
-                    if (val !== "") selected.push(val);
-                });
-            }
+  // Register service worker
+  async function registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+      try {
+        const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+        console.log("✅ Service Worker Registered");
+        return registration;
+      } catch (error) {
+        console.error("❌ Service Worker registration failed:", error);
+        return null;
+      }
+    } else {
+      console.warn("⚠️ Service Worker not supported");
+      return null;
+    }
+  }
 
-            return selected;
-        }
+  // Get FCM token
+  async function getFcmToken() {
+    try {
+      const registration = await registerServiceWorker();
+      if (!registration) return null;
 
-        // Register service worker for FCM
-        async function registerServiceWorker() {
-            if ('serviceWorker' in navigator) {
-                try {
-                    const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
-                    console.log("Service Worker Registered");
-                    return registration;
-                } catch (error) {
-                    console.error("Service Worker registration failed:", error);
-                    return null;
-                }
-            } else {
-                console.warn("Service Worker not supported");
-                return null;
-            }
-        }
+      const token = await getToken(messaging, {
+        vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+        serviceWorkerRegistration: registration
+      });
 
-        async function getFcmToken() {
-            try {
-                const registration = await registerServiceWorker();
-                if (!registration) return null;
+      console.log("✅ FCM Token:", token);
+      return token;
+    } catch (error) {
+      console.error("❌ Error getting FCM token:", error);
+      return null;
+    }
+  }
 
-                const token = await getToken(messaging, {
-                    vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-                    serviceWorkerRegistration: registration
-                });
-                return token;
-            } catch (error) {
-                console.error("Error getting FCM token:", error);
-                return null;
-            }
-        }
+  // Add token to Firestore user document if it's not already there
+  async function addFcmTokenToUser(uid, token) {
+    if (!token) return;
 
-        // Add FCM token to user's fcmTokens array (if not already added)
-        async function addFcmTokenToUser(uid, token) {
-            if (!token) return;
+    const userRef = doc(db, "users", uid);
+    const userSnap = await getDoc(userRef);
 
-            const userRef = doc(db, "users", uid);
-            const userSnap = await getDoc(userRef);
+    if (!userSnap.exists()) {
+      console.warn("⚠️ User document does not exist");
+      return;
+    }
 
-            if (!userSnap.exists()) {
-                console.warn("User doc doesn't exist when adding token");
-                return;
-            }
+    const data = userSnap.data();
+    const tokens = data.fcmTokens || [];
 
-            const data = userSnap.data();
-            const tokens = data.fcmTokens || [];
+    if (!tokens.includes(token)) {
+      await updateDoc(userRef, {
+        fcmTokens: arrayUnion(token)
+      });
+      console.log("✅ FCM token added to user");
+    } else {
+      console.log("ℹ️ FCM token already exists for user");
+    }
+  }
 
-            if (!tokens.includes(token)) {
-                // Add token to array
-                await updateDoc(userRef, {
-                    fcmTokens: arrayUnion(token)
-                });
-                console.log("FCM token added to user document");
-            } else {
-                console.log("FCM token already exists in user document");
-            }
-        }
+  // Signup form handler
+  document.getElementById("signupForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-        // Signup form handler
-        document.getElementById("signupForm").addEventListener("submit", async (e) => {
-            e.preventDefault();
+    const fullName = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const phoneNumber = document.getElementById("phoneNumber").value.trim();
+    const jobCategory = getSelectedValues("categoryBox");
+    const jobLocation = getSelectedValues("locationBox");
 
-            const fullName = document.getElementById("fullName").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const password = document.getElementById("password").value.trim();
-            const phoneNumber = document.getElementById("phoneNumber").value.trim();
-            const jobCategory = getSelectedValues("categoryBox");
-            const jobLocation = getSelectedValues("locationBox");
+    try {
+      // Create Firebase user
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const uid = userCredential.user.uid;
 
-            try {
-                // Create Firebase user with email/password
-                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-                const uid = userCredential.user.uid;
+      // Get FCM token
+      const fcmToken = await getFcmToken();
 
-                // Request notification permission & get FCM token
-                const fcmToken = await getFcmToken();
+      // Save user data to Firestore
+      const userData = {
+        uid,
+        fullName,
+        email,
+        phoneNumber,
+        jobCategory,
+        jobLocation,
+        fcmTokens: fcmToken ? [fcmToken] : []
+      };
 
-                // Prepare user data object
-                const userData = {
-                    uid,
-                    fullName,
-                    email,
-                    phoneNumber,
-                    jobCategory,
-                    jobLocation,
-                    fcmTokens: fcmToken ? [fcmToken] : []
-                };
+      await setDoc(doc(db, "users", uid), userData);
 
-                // Save user data to Firestore
-                await setDoc(doc(db, "users", uid), userData);
+      // Add token again with arrayUnion in case it's not saved properly
+      await addFcmTokenToUser(uid, fcmToken);
 
-                // Save user data to localStorage
-                localStorage.setItem("user", JSON.stringify(userData));
+      // Save user locally
+      localStorage.setItem("user", JSON.stringify(userData));
 
-                // Show success message
-                document.getElementById("successMessage").style.display = "block";
+      // Show confirmation
+      document.getElementById("successMessage").style.display = "block";
+      console.log("🎉 Signup successful");
 
+    } catch (error) {
+      if (error.code === "auth/email-already-in-use") {
+        alert("This email is already registered.");
+      } else {
+        console.error("Signup failed:", error);
+        alert("Signup failed. Please try again.");
+      }
+    }
+  });
 
-            } catch (error) {
-                if (error.code === "auth/email-already-in-use") {
-                    alert("This email is already registered.");
-                } else {
-                    console.error("Signup error:", error);
-                    alert("Signup failed. Please try again.");
-                }
-            }
-        });
-    </script>
+  // Ask notification permission on every page load if not granted
+window.addEventListener('load', async () => {
+  if (Notification.permission !== 'granted') {
+    try {
+      const permission = await Notification.requestPermission();
+      if (permission === 'granted') {
+        console.log("✅ Notification permission granted.");
+        // Optionally get token here, or wait until signup
+        await getFcmToken();
+      } else {
+        console.warn("🚫 Notification permission denied.");
+      }
+    } catch (err) {
+      console.error("Error requesting notification permission:", err);
+    }
+  } else {
+    console.log("🔔 Notification permission already granted.");
+  }
+});
+
+</script>
+
  <script src="/js/sw-register.js"></script>
 </body>
 
