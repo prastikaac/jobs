@@ -13,7 +13,7 @@
     <p><strong>Email:</strong> <span id="userEmail">-</span></p>
   </div>
 
-  <button id="enablePushBtn">Enable Push Notifications</button>
+  <button id="enablePushBtn" disabled>Enable Push Notifications</button>
 
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
@@ -59,18 +59,28 @@
         return;
       }
 
+      // Request Notification permission first
+      if (Notification.permission !== 'granted') {
+        const permission = await Notification.requestPermission();
+        if (permission !== 'granted') {
+          alert('Notification permission denied. Cannot enable push notifications.');
+          return;
+        }
+      }
+
       try {
         const token = await getToken(messaging, {
-          vapidKey: "BND7vCMB0EMsNO6lSlzFEvUBqJNgmiyU-kUFxCZlqdp0GFvQxVZ0kYkSFGPIdRuNwt7GPK0QZn1pWEvN2DU-93s"
+          vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY"
         });
 
         if (token) {
           alert('Push notifications enabled! Token saved.');
           console.log('FCM token:', token);
 
-          // Save token to Firestore under user document
-          await setDoc(doc(db, "users", user.uid), {
-            fcmToken: token,
+          // Save token to Firestore under user document, add to array if not exists
+          const userRef = doc(db, "users", user.uid);
+          await setDoc(userRef, {
+            fcmTokens: firebase.firestore.FieldValue.arrayUnion(token),
             email: user.email,
             fullName: user.displayName || ""
           }, { merge: true });
@@ -83,10 +93,18 @@
       }
     };
 
-    // Handle foreground messages
+    // Show real browser notifications on foreground messages
     onMessage(messaging, payload => {
-      alert(`Notification: ${payload.notification.title}\n${payload.notification.body}`);
+      console.log('Message received. ', payload);
+      const { title, body, icon } = payload.notification || {};
+      if (Notification.permission === 'granted') {
+        new Notification(title || 'New Notification', {
+          body: body || '',
+          icon: icon || '/firebase-logo.png',
+        });
+      }
     });
   </script>
+ <script src="/js/sw-register.js" data-gt-widget-id="43217984"></script>
 </body>
 </html>
