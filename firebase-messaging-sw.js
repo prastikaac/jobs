@@ -1,5 +1,3 @@
-// /firebase-messaging-sw.js
-
 importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js');
 
@@ -20,8 +18,35 @@ messaging.onBackgroundMessage((payload) => {
   const notificationTitle = payload.notification.title || 'New Notification';
   const notificationOptions = {
     body: payload.notification.body || '',
-    icon: '/firebase-logo.png' // Optional: your app icon path
+    icon: '/images/icon.png', // Optional app icon
+    image: payload.notification.image || undefined, // Show job image if available
+    data: {
+      jobLink: payload.data?.jobLink || null // Save job URL for click event
+    }
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
+});
+
+// Handle notification click to open the job URL
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+
+  const jobUrl = event.notification.data?.jobLink;
+  if (jobUrl) {
+    event.waitUntil(
+      clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+        for (const client of clientList) {
+          // If the job URL is already open, focus that tab
+          if (client.url === jobUrl && 'focus' in client) {
+            return client.focus();
+          }
+        }
+        // Otherwise, open a new tab with the job URL
+        if (clients.openWindow) {
+          return clients.openWindow(jobUrl);
+        }
+      })
+    );
+  }
 });

@@ -39,8 +39,12 @@
             </select>
         </label><br /><br />
 
-        <label>Job Image<br />
-            <input type="file" id="jobImage" accept="image/*">
+        <label>Job Image URL<br />
+            <input type="url" id="jobImageUrl" placeholder="https://example.com/image.png" required>
+        </label><br /><br />
+
+        <label>Job Link (URL)<br />
+            <input type="url" id="jobLink" placeholder="https://example.com/job-posting" required>
         </label><br /><br />
 
         <button type="submit">Post Job</button>
@@ -50,7 +54,6 @@
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
         import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-        import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
@@ -63,9 +66,7 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
-        const storage = getStorage(app);
 
-        // 📨 Handle Form
         document.getElementById("jobForm").addEventListener("submit", async (e) => {
             e.preventDefault();
 
@@ -73,29 +74,35 @@
             const description = document.getElementById("jobDescription").value.trim();
             const category = document.getElementById("jobCategory").value;
             const location = document.getElementById("jobLocation").value;
-            const file = document.getElementById("jobImage").files[0];
+            const imageUrl = document.getElementById("jobImageUrl").value.trim();
+            const jobLink = document.getElementById("jobLink").value.trim();
 
-            let imageUrl = "";
-
-            if (file) {
+            // Simple URL validation (optional)
+            function isValidUrl(string) {
                 try {
-                    const filename = `jobImages/${Date.now()}_${file.name}`;
-                    const imageRef = ref(storage, filename);
-                    await uploadBytes(imageRef, file);
-                    imageUrl = await getDownloadURL(imageRef);
-                } catch (err) {
-                    console.error("Image upload failed:", err);
-                    alert("Failed to upload image. Please try again.");
-                    return;
+                    new URL(string);
+                    return true;
+                } catch (_) {
+                    return false;
                 }
+            }
+
+            if (!isValidUrl(imageUrl)) {
+                alert("Please enter a valid image URL.");
+                return;
+            }
+            if (!isValidUrl(jobLink)) {
+                alert("Please enter a valid job link URL.");
+                return;
             }
 
             const jobData = {
                 title,
                 description,
-                jobCategory: category,  // <--- renamed here
-                jobLocation: location,  // <--- renamed here
+                jobCategory: category,
+                jobLocation: location,
                 imageUrl,
+                jobLink,
                 createdAt: serverTimestamp()
             };
 
@@ -108,9 +115,8 @@
                 alert("Error saving job to Firestore.");
             }
         });
-
     </script>
- <script src="/js/sw-register.js" data-gt-widget-id="43217984"></script>
+
 </body>
 
 </html>

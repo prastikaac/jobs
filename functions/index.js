@@ -1,4 +1,4 @@
-// Every time do : firebase deploy --only functions after editing this file
+// Every time do : firebase deploy --only functions : after editing this file
 
 const { onDocumentCreated } = require('firebase-functions/v2/firestore');
 const { setGlobalOptions } = require('firebase-functions/v2');
@@ -45,10 +45,11 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
           notification: {
             title: `🚀 New ${jobCategory} Job!`,
             body: `${jobData.title} in ${jobLocation}`,
-            imageUrl: jobData.imageUrl || undefined
+            image: jobData.imageUrl || undefined   // Use "image" here
           },
           data: {
             jobId: event.params.jobId,
+            jobLink: jobData.jobLink || ""         // Send job URL in data payload
           },
         };
         pushPromises.push(messaging.send(message));
@@ -73,7 +74,7 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
         <p><strong>Category:</strong> ${jobCategory}</p>
         <p><strong>Location:</strong> ${jobLocation}</p>
         <img src="${jobData.imageUrl}" alt="Job Image" width="400"/>
-        <p><a href="https://findjobsinfinland.fi">Apply Now →</a></p>
+        <p><a href="${jobData.jobLink}">Apply Now →</a></p>
       `,
     });
   });
@@ -99,3 +100,6 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
   console.log(`Emails sent to: ${matchedEmails.join(", ")}`);
   console.log(`Push notifications sent: ${pushPromises.length}`);
 });
+
+
+// Every time do : firebase deploy --only functions : after editing this file
