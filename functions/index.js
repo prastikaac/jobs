@@ -1,4 +1,4 @@
-// Every time do : firebase deploy --only functions : after editing this file
+// Every time do : firebase deploy --only functions after editing this file
 
 const { onDocumentCreated } = require('firebase-functions/v2/firestore');
 const { setGlobalOptions } = require('firebase-functions/v2');
@@ -45,11 +45,12 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
           notification: {
             title: `🚀 New ${jobCategory} Job!`,
             body: `${jobData.title} in ${jobLocation}`,
-            image: jobData.imageUrl || undefined   // Use "image" here
+            image: jobData.imageUrl || undefined // big image banner
           },
           data: {
             jobId: event.params.jobId,
-            jobLink: jobData.jobLink || ""         // Send job URL in data payload
+            jobLink: jobData.jobLink || "",
+            imageUrl: jobData.imageUrl || ""
           },
         };
         pushPromises.push(messaging.send(message));
@@ -100,6 +101,3 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
   console.log(`Emails sent to: ${matchedEmails.join(", ")}`);
   console.log(`Push notifications sent: ${pushPromises.length}`);
 });
-
-
-// Every time do : firebase deploy --only functions : after editing this file

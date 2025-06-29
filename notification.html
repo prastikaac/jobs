@@ -18,7 +18,7 @@
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
     import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
-    import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+    import { getFirestore, doc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
     import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging.js";
 
     const firebaseConfig = {
@@ -39,7 +39,6 @@
     const userEmailElem = document.getElementById('userEmail');
     const enablePushBtn = document.getElementById('enablePushBtn');
 
-    // Update user info on auth state change
     onAuthStateChanged(auth, (user) => {
       if (user) {
         userNameElem.textContent = user.displayName || '(No name set)';
@@ -59,7 +58,6 @@
         return;
       }
 
-      // Request Notification permission first
       if (Notification.permission !== 'granted') {
         const permission = await Notification.requestPermission();
         if (permission !== 'granted') {
@@ -77,13 +75,13 @@
           alert('Push notifications enabled! Token saved.');
           console.log('FCM token:', token);
 
-          // Save token to Firestore under user document, add to array if not exists
+          // Save token to Firestore under user doc with updateDoc + arrayUnion
           const userRef = doc(db, "users", user.uid);
-          await setDoc(userRef, {
-            fcmTokens: firebase.firestore.FieldValue.arrayUnion(token),
+          await updateDoc(userRef, {
+            fcmTokens: arrayUnion(token),
             email: user.email,
             fullName: user.displayName || ""
-          }, { merge: true });
+          });
         } else {
           alert('No token received — check notification permission');
         }
@@ -93,18 +91,28 @@
       }
     };
 
-    // Show real browser notifications on foreground messages
     onMessage(messaging, payload => {
       console.log('Message received. ', payload);
+
       const { title, body, icon } = payload.notification || {};
+      const jobLink = payload.data?.jobLink || null;
+      const imageUrl = payload.data?.imageUrl || null;
+
       if (Notification.permission === 'granted') {
-        new Notification(title || 'New Notification', {
+        const notification = new Notification(title || 'New Notification', {
           body: body || '',
-          icon: icon || '/firebase-logo.png',
+          icon: icon || '/images/icon.png',
+          image: imageUrl || undefined
         });
+
+        notification.onclick = () => {
+          if (jobLink && jobLink.startsWith('http')) {
+            window.open(jobLink, '_blank');
+          }
+        };
       }
     });
   </script>
- <script src="/js/sw-register.js" data-gt-widget-id="43217984"></script>
+  <script src="/js/sw-register.js"></script>
 </body>
 </html>
