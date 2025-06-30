@@ -1,96 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-  <url>
-    <loc>https://findjobsinfinland.fi/</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.00</priority>
-  </url>
-
-  <url>
-    <loc>https://findjobsinfinland.fi/jobs</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.00</priority>
-  </url>
-
-  <url>
-    <loc>https://findjobsinfinland.fi/disclaimer</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <url>
-    <loc>https://findjobsinfinland.fi/privacy-policy</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <url>
-    <loc>https://findjobsinfinland.fi/terms-and-conditions</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-
-  <url>
-    <loc>https://findjobsinfinland.fi/about-us</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <url>
-    <loc>https://findjobsinfinland.fi/contact-us</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <url>
-    <loc>https://findjobsinfinland.fi/jobs/cleaning/office-cleaner-in-helsinki-siskon-siivous</loc>
-    <lastmod>2025-06-26T16:10:42+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://findjobsinfinland.fi/images/office-cleaner-in-helsinki.png</image:loc>
-      <image:caption>Office Cleaner Job in Helsinki | Siskon Siivous</image:caption>
-      <image:title>Office Cleaner in Helsinki</image:title>
-    </image:image>
-  </url>
-
-  <url>
-  <loc>https://findjobsinfinland.fi/blogs/tips-and-tricks-for-interview-in-finland</loc>
-  <lastmod>2025-06-25T00:00:00+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-  <image:image>
-    <image:loc>https://findjobsinfinland.fi/images/tips-and-tricks-for-interview.png</image:loc>
-    <image:caption>Interview Tips and Tricks for Jobs in Finland</image:caption>
-    <image:title>Interview Tips in Finland</image:title>
-  </image:image>
-</url>
-
-<url>
-  <loc>https://findjobsinfinland.fi/blogs/industry-wise-minimum-wages-in-finland</loc>
-  <lastmod>2025-06-24T00:00:00+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-  <image:image>
-    <image:loc>https://findjobsinfinland.fi/images/industry-wise-minimum-wages.png</image:loc>
-    <image:caption>Industry-Wise Minimum Wages in Finland</image:caption>
-    <image:title>Minimum Wages in Finland by Industry</image:title>
-  </image:image>
-</url>
-
-
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://findjobsinfinland.fi/sitemap-jobs.xml</loc>
+    <lastmod>2025-06-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://findjobsinfinland.fi/sitemap-pages.xml</loc>
+    <lastmod>2025-06-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://findjobsinfinland.fi/sitemap-blogs.xml</loc>
+    <lastmod>2025-06-26</lastmod>
+  </sitemap>
+</sitemapindex>
