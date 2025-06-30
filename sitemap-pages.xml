@@ -1,33 +1,9 @@
-  <?xml version="1.0" encoding="UTF-8"?>
-      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        <url>
-          <loc>https://findjobsinfinland.fi/</loc>
-          <lastmod>2025-06-26</lastmod>
-          <priority>1.0</priority>
-        </url>
-        <url>
-          <loc>https://findjobsinfinland.fi/disclaimer</loc>
-          <lastmod>2025-06-26</lastmod>
-          <priority>0.8</priority>
-        </url>
-        <url>
-          <loc>https://findjobsinfinland.fi/privacy-policy</loc>
-          <lastmod>2025-06-26</lastmod>
-          <priority>0.8</priority>
-        </url>
-        <url>
-          <loc>https://findjobsinfinland.fi/terms-and-conditions</loc>
-          <lastmod>2025-06-26</lastmod>
-          <priority>0.8</priority>
-        </url>
-        <url>
-          <loc>https://findjobsinfinland.fi/about-us</loc>
-          <lastmod>2025-06-26</lastmod>
-          <priority>0.8</priority>
-        </url>
-        <url>
-          <loc>https://findjobsinfinland.fi/contact-us</loc>
-          <lastmod>2025-06-26</lastmod>
-          <priority>0.8</priority>
-        </url>
-      </urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://findjobsinfinland.fi/</loc><lastmod>2025-06-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://findjobsinfinland.fi/disclaimer</loc><lastmod>2025-06-26</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://findjobsinfinland.fi/privacy-policy</loc><lastmod>2025-06-26</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://findjobsinfinland.fi/terms-and-conditions</loc><lastmod>2025-06-26</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://findjobsinfinland.fi/about-us</loc><lastmod>2025-06-26</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://findjobsinfinland.fi/contact-us</loc><lastmod>2025-06-26</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+</urlset>
