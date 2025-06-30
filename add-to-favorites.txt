@@ -72,7 +72,160 @@ the users prefePush preferences should be saved on the device (localStorage / In
 
 
 
-For the first time user will asked his/her email and after email they will be asked the details if they are not signed up in the next page other wise they will be asked the password and if they entered the password then they will get logged in and keep them logged in forever and save the logged user data in the local storage, but dont store the 
+write a clear clean prompt for this, dont miss anything and further suggest me what could be the updates to this :  if the user is not signed in For the first time a popup will appear on the screen with a text like want to get job alerts ? and with yes no option if clicked on yes then ask for the notification permission and if notification is not allowed then show text like please enable notification otherwise we cant send you job alerts and if notification permission allowed then start to show in the popup the user will be asked his/her email only as step one and after user entered the email, the system will check wether the email is already in the firebase database or not if they are not signed up in the and the new email then in the step two they will be asked the other details like phone no name...  other wise in the step two they will be simply asked the password and if they entered the password then they will get logged in and the popup will disappear and keep them logged in forever and also save the logged user data in the local storage along with the firestore database
+
+
+
+
+
+
+Build a smart popup system for **non-signed-in users** that encourages job alert subscription and guides them through a smooth, validated 2-step login or signup process. The system uses **Firebase Authentication**, **Firestore**, **FCM Notifications**, and ensures persistent login and excellent UX.
+
+---
+
+### 📜 Full Feature Requirements
+
+#### 🔔 Step 1: Notification Prompt
+
+* On website load (only for users **not signed in**):
+
+  * Show a modal popup:
+
+    ```
+    “Want to get job alerts?”
+    [Yes] [No]
+    ```
+* If **“Yes”** is clicked:
+
+  * Request notification permission using Firebase Cloud Messaging (FCM).
+  * If **denied**:
+
+    * Show:
+
+      ```
+      “Please enable notifications to receive job alerts.”
+      ```
+  * If **granted**:
+
+    * Proceed to Step 2: Email Input.
+
+---
+
+#### 📩 Step 2: Email Input & User Check
+
+* Ask the user to enter their **email address**.
+* Validate:
+
+  * Proper email format (`example@email.com`)
+* Check Firebase Authentication or Firestore to see if email is already registered.
+
+---
+
+#### 🔐 Step 3: Conditional Flow
+
+* If **email is already registered**:
+
+  * Ask only for **password**.
+  * Validate password input.
+  * Attempt login using Firebase Auth.
+  * If successful:
+
+    * Save user info in `localStorage`.
+    * Hide popup.
+    * User stays logged in even after page reload (use session persistence).
+  * If login fails:
+
+    * Show error: **“Incorrect password, please try again.”**
+
+* If **email is new (not registered)**:
+
+  * Proceed to collect:
+
+    * Full Name
+    * Phone Number
+    * Password (with minimum strength requirement)
+  * Register the user using Firebase Auth (Email/Password).
+  * Store the user’s data in Firestore under collection `users`.
+  * Save notification token(s) linked to the user.
+  * Save session in `localStorage` and keep the user logged in.
+  * Hide the popup after successful registration.
+
+---
+
+### 🔄 Technical Details & Enhancements
+
+#### ✅ 1. Token Expiry Handling
+
+* Implement check and auto-refresh if Firebase session token expires.
+* Use `onAuthStateChanged()` to detect current login status and auto-login.
+
+#### ✅ 3. Validation & UX
+
+* All fields should be validated:
+
+  * Email → Must be in valid format.
+  * Password → Min 6 characters or more.
+  * Phone → Only digits, optional "+".
+  * Name → Not empty.
+* Use inline error messages and loading indicators for async actions.
+
+#### ✅ 5. Session Persistence
+
+* Use:
+
+  ```js
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+  ```
+
+  to maintain login state even after browser is closed.
+
+#### ✅ 7. UI Enhancements
+
+* Use animated modal/popup with step indicator:
+
+  * Step 1 → Notifications
+  * Step 2 → Email
+  * Step 3 → Login or Signup
+* Add smooth transitions, inline error messages, and real-time form validation.
+* Optional: Add a spinner/loading icon during API calls.
+* Snackbar/toast-style messages instead of alert().
+
+---
+
+### 📦 Data to Store in Firestore
+
+* **Collection**: `users`
+* **Fields**:
+
+  * `email`
+  * `name`
+  * `phone`
+  * `createdAt` (timestamp)
+  * `fcmTokens` (array)
+  * `lastLogin` (timestamp)
+
+---
+
+### 💾 localStorage Keys (Example)
+
+```js
+localStorage.setItem("userEmail", user.email);
+localStorage.setItem("userID", user.uid);
+localStorage.setItem("isLoggedIn", true);
+```
+
+---
+
+### ✅ Optional: Don’t Show Popup Again
+
+* If user closes the popup or clicks “No”, store:
+
+  ```js
+  localStorage.setItem("popupDismissed", true);
+  ```
+
+  and skip the popup on next page load (optional timeout expiration).
+
 
 
 
