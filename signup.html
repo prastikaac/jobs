@@ -134,7 +134,7 @@
   <button id="logoutBtn" style="position: fixed; top: 10px; right: 10px;">Logout</button>
 
 
-  <script type="module">
+<script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
   import {
     getFirestore, collection, query, where, getDocs,
@@ -160,23 +160,26 @@
   const auth = getAuth(app);
   const messaging = getMessaging(app);
 
+  const LS_TOKEN_KEY = "currentFcmToken";
   let emailExists = false;
 
-  const LS_TOKEN_KEY = "currentFcmToken";
-
+  // Check if FCM is supported on current browser/device
   async function fcmSupported() {
     return "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
   }
 
+  // Get or create FCM token, caching in localStorage
   async function getOrCreateFcmToken() {
     if (!(await fcmSupported())) {
-      console.warn("Web-FCM not supported on this browser/device.");
+      console.warn("Web FCM not supported on this browser/device.");
       return null;
     }
 
+    // Return cached token if available
     const cached = localStorage.getItem(LS_TOKEN_KEY);
     if (cached) return cached;
 
+    // Request permission if not already granted
     if (Notification.permission === "default") {
       const permission = await Notification.requestPermission();
       if (permission !== "granted") return null;
@@ -184,12 +187,14 @@
 
     if (Notification.permission !== "granted") return null;
 
+    // Register service worker if not already registered
     let registration = await navigator.serviceWorker.getRegistration('/');
     if (!registration) {
       await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
       registration = await navigator.serviceWorker.ready;
     }
 
+    // Get FCM token
     const token = await getToken(messaging, {
       vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
       serviceWorkerRegistration: registration
@@ -199,6 +204,43 @@
     return token;
   }
 
+  // Sync current FCM token with Firestore for given uid
+  async function syncFcmTokenWithFirestore(uid) {
+    if (!uid) return;
+
+    try {
+      const registration = await navigator.serviceWorker.ready;
+      const currentToken = await getToken(messaging, {
+        vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+        serviceWorkerRegistration: registration
+      });
+      if (!currentToken) return;
+
+      const userRef = doc(db, "users", uid);
+      const docSnap = await getDoc(userRef);
+      if (!docSnap.exists()) return;
+
+      const userData = docSnap.data();
+      const existingTokens = userData.fcmTokens || [];
+
+      if (!existingTokens.includes(currentToken)) {
+        await updateDoc(userRef, {
+          fcmTokens: arrayUnion(currentToken)
+        });
+
+        // Update localStorage user copy
+        let storedUser = JSON.parse(localStorage.getItem("user"));
+        if (storedUser && storedUser.uid === uid) {
+          storedUser.fcmTokens = [...existingTokens, currentToken];
+          localStorage.setItem("user", JSON.stringify(storedUser));
+        }
+      }
+    } catch (error) {
+      console.warn("Error syncing FCM token:", error);
+    }
+  }
+
+  // Popup show logic on load for non-logged-in users
   window.addEventListener("load", async () => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user && !localStorage.getItem("jobAlertPopupShown")) {
@@ -206,17 +248,11 @@
     }
 
     if (user && user.uid) {
-      const token = await getOrCreateFcmToken();
-      if (token && (!user.fcmTokens || !user.fcmTokens.includes(token))) {
-        await updateDoc(doc(db, "users", user.uid), {
-          fcmTokens: arrayUnion(token)
-        });
-        user.fcmTokens = [...(user.fcmTokens || []), token];
-        localStorage.setItem("user", JSON.stringify(user));
-      }
+      await syncFcmTokenWithFirestore(user.uid);
     }
   });
 
+  // User clicks "Yes" on popup - don't request permission here anymore, permission will be requested on login/signup only
   window.handlePopupYes = () => {
     document.getElementById("popupStep1").style.display = "none";
     document.getElementById("popupStep2").style.display = "block";
@@ -242,6 +278,7 @@
     }
   };
 
+  // Signup user
   window.signupUser = async () => {
     const name = document.getElementById("popupName").value.trim();
     const phone = document.getElementById("popupPhone").value.trim();
@@ -251,10 +288,19 @@
     const jobLocation = getSelectedValues("locationBox");
 
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const uid = userCredential.user.uid;
+      // Request notification permission here before signup
+      if (Notification.permission !== "granted") {
+        const permission = await Notification.requestPermission();
+        if (permission !== "granted") {
+          alert("Please enable notifications to get job alerts.");
+          return;
+        }
+      }
 
       const fcmToken = await getOrCreateFcmToken();
+
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const uid = userCredential.user.uid;
 
       const userData = {
         uid,
@@ -270,6 +316,9 @@
 
       await setDoc(doc(db, "users", uid), userData);
       localStorage.setItem("user", JSON.stringify(userData));
+
+      await syncFcmTokenWithFirestore(uid);
+
       closePopup();
     } catch (error) {
       console.error("Signup error:", error);
@@ -277,35 +326,46 @@
     }
   };
 
+  // Login user
   window.loginUser = async () => {
     const email = document.getElementById("popupEmailLogin").value.trim();
     const password = document.getElementById("popupPasswordLogin").value.trim();
 
     try {
+      // Request notification permission here before login
+      if (Notification.permission !== "granted") {
+        const permission = await Notification.requestPermission();
+        if (permission !== "granted") {
+          alert("Please enable notifications to get job alerts.");
+          return;
+        }
+      }
+
+      const fcmToken = await getOrCreateFcmToken();
+
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const uid = userCredential.user.uid;
       const userRef = doc(db, "users", uid);
       const docSnap = await getDoc(userRef);
 
       if (docSnap.exists()) {
-        const userData = docSnap.data();
-        const fcmToken = await getOrCreateFcmToken();
+        let userData = docSnap.data();
 
+        // Update lastLogin and add token if new
         const updateData = {
           lastLogin: Timestamp.now()
         };
-
         if (fcmToken) {
           updateData.fcmTokens = arrayUnion(fcmToken);
         }
-
         await updateDoc(userRef, updateData);
 
+        // Update local copy
         if (fcmToken && (!userData.fcmTokens || !userData.fcmTokens.includes(fcmToken))) {
           userData.fcmTokens = [...(userData.fcmTokens || []), fcmToken];
         }
-
         userData.lastLogin = updateData.lastLogin;
+
         localStorage.setItem("user", JSON.stringify(userData));
         closePopup();
       }
@@ -315,6 +375,21 @@
     }
   };
 
+  // Logout button handler
+  document.getElementById("logoutBtn")?.addEventListener("click", async () => {
+    try {
+      await auth.signOut();
+      localStorage.removeItem("user");
+      localStorage.removeItem("jobAlertPopupShown");
+      alert("Logged out successfully.");
+      location.reload();
+    } catch (error) {
+      console.error("Logout failed:", error);
+      alert("Logout failed. Try again.");
+    }
+  });
+
+  // Utility to get selected checkboxes in a container
   function getSelectedValues(containerId) {
     const container = document.getElementById(containerId);
     const checkboxes = container?.querySelectorAll('input[type="checkbox"]:checked') || [];
@@ -337,21 +412,8 @@
 
     return selected;
   }
-
-  document.getElementById("logoutBtn").addEventListener("click", async () => {
-  try {
-    await auth.signOut();
-    localStorage.removeItem("user");
-    localStorage.removeItem("jobAlertPopupShown");  // <== clear this too
-    alert("Logged out successfully.");
-    location.reload();
-  } catch (error) {
-    console.error("Logout failed:", error);
-    alert("Logout failed. Try again.");
-  }
-});
-
 </script>
+
 
 
 </body>
