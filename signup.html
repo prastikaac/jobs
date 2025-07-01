@@ -2,384 +2,292 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Signup - Find Jobs in Finland</title>
-    <style>
-        /* Simple styles for switches */
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 40px;
-            height: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Signup - Find Jobs in Finland</title>
+  <style>
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
-        .switch input {
-            display: none;
-        }
+    .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 20px;
-        }
+    .popup-content input,
+    .popup-content button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
 
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 2px;
-            bottom: 2px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+    }
 
-        input:checked+.slider {
-            background-color: #2196F3;
-        }
+    .switch input {
+      display: none;
+    }
 
-        input:checked+.slider:before {
-            transform: translateX(20px);
-        }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 20px;
+    }
 
-        .option-row {
-            margin-bottom: 8px;
-        }
-    </style>
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DRFHS58ET"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    input:checked+.slider {
+      background-color: #2196F3;
+    }
 
-    gtag('config', 'G-7DRFHS58ET');
-  </script>
-  
+    input:checked+.slider:before {
+      transform: translateX(20px);
+    }
+
+    .option-row {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Sign Up for Job </h2>
-    <form id="signupForm">
-        <input type="text" id="fullName" placeholder="Full Name" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="tel" id="phoneNumber" placeholder="Phone Number" required />
-        <input type="password" id="password" placeholder="Password" required />
-
-        <!-- Job Categories -->
-        <h3>What kind of jobs are you interested in?</h3>
-        <div class="select-box" id="categoryBox">
-            <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox"
-                        value="" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
-                        value="it-tech" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Engineering</span><label class="switch"><input type="checkbox"
-                        value="engineering" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Nursing</span><label class="switch"><input type="checkbox"
-                        value="nursing" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Construction & Labor</span><label class="switch"><input type="checkbox"
-                        value="construction-labor" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Logistics & Delivery</span><label class="switch"><input type="checkbox"
-                        value="logistics-delivery" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Customer Service Support</span><label class="switch"><input type="checkbox"
-                        value="customer-service" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Internships & Traineeships</span><label class="switch"><input type="checkbox"
-                        value="internships" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Cleaning</span><label class="switch"><input type="checkbox"
-                        value="cleaning" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Housekeeping</span><label class="switch"><input type="checkbox"
-                        value="housekeeping" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Cooking</span><label class="switch"><input type="checkbox"
-                        value="cooking" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Hospitality & Service</span><label class="switch"><input type="checkbox"
-                        value="hospitality" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Education & Teaching</span><label class="switch"><input type="checkbox"
-                        value="education" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Finance & Accounting</span><label class="switch"><input type="checkbox"
-                        value="finance" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Sales & Marketing</span><label class="switch"><input type="checkbox"
-                        value="sales" /><span class="slider"></span></label></div>
-        </div>
-
-        <!-- Job Locations -->
-        <h3>Where do you want to work?</h3>
-        <div class="select-box" id="locationBox">
-            <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox"
-                        value="" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
-                        value="helsinki" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Espoo</span><label class="switch"><input type="checkbox" value="espoo" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Vantaa</span><label class="switch"><input type="checkbox"
-                        value="vantaa" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Kauniainen</span><label class="switch"><input type="checkbox"
-                        value="kauniainen" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Järvenpää</span><label class="switch"><input type="checkbox"
-                        value="jarvenpaa" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Kerava</span><label class="switch"><input type="checkbox"
-                        value="kerava" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Tuusula</span><label class="switch"><input type="checkbox"
-                        value="tuusula" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Sipoo</span><label class="switch"><input type="checkbox" value="sipoo" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Kirkkonummi</span><label class="switch"><input type="checkbox"
-                        value="kirkkonummi" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Lohja</span><label class="switch"><input type="checkbox" value="lohja" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Nurmijärvi</span><label class="switch"><input type="checkbox"
-                        value="nurmijarvi" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Hyvinkää</span><label class="switch"><input type="checkbox"
-                        value="hyvinkaa" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Inkoo</span><label class="switch"><input type="checkbox" value="inkoo" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Pasila</span><label class="switch"><input type="checkbox"
-                        value="pasila" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Malmi</span><label class="switch"><input type="checkbox" value="malmi" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Tikkurila</span><label class="switch"><input type="checkbox"
-                        value="tikkurila" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Leppävaara</span><label class="switch"><input type="checkbox"
-                        value="leppavaara" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Matinkylä</span><label class="switch"><input type="checkbox"
-                        value="matinkyla" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Myyrmäki</span><label class="switch"><input type="checkbox"
-                        value="myyrmaki" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Kamppi</span><label class="switch"><input type="checkbox"
-                        value="kamppi" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Kallio</span><label class="switch"><input type="checkbox"
-                        value="kallio" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Tapiola</span><label class="switch"><input type="checkbox"
-                        value="tapiola" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Itäkeskus</span><label class="switch"><input type="checkbox"
-                        value="itakeskus" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Lauttasaari</span><label class="switch"><input type="checkbox"
-                        value="lauttasaari" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Tampere</span><label class="switch"><input type="checkbox"
-                        value="tampere" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Turku</span><label class="switch"><input type="checkbox" value="turku" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Oulu</span><label class="switch"><input type="checkbox" value="oulu" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Jyväskylä</span><label class="switch"><input type="checkbox"
-                        value="jyvaskyla" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Kuopio</span><label class="switch"><input type="checkbox"
-                        value="kuopio" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Lahti</span><label class="switch"><input type="checkbox" value="lahti" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Vaasa</span><label class="switch"><input type="checkbox" value="vaasa" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Seinäjoki</span><label class="switch"><input type="checkbox"
-                        value="seinajoki" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Rovaniemi</span><label class="switch"><input type="checkbox"
-                        value="rovaniemi" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Kotka</span><label class="switch"><input type="checkbox" value="kotka" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Lappeenranta</span><label class="switch"><input type="checkbox"
-                        value="lappeenranta" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Pori</span><label class="switch"><input type="checkbox" value="pori" /><span
-                        class="slider"></span></label></div>
-            <div class="option-row"><span>Kokkola</span><label class="switch"><input type="checkbox"
-                        value="kokkola" /><span class="slider"></span></label></div>
-            <div class="option-row"><span>Joensuu</span><label class="switch"><input type="checkbox"
-                        value="joensuu" /><span class="slider"></span></label></div>
-        </div>
-
-        <button type="submit">Sign Up</button>
-    </form>
-
-    <div id="successMessage" style="display:none; color: green; font-weight: bold; margin-top: 20px;">
-        🎉 Signup successful! You will receive job alerts based on your preferences.
+  <div id="jobAlertPopup" class="popup" style="display:none">
+    <div class="popup-content" id="popupStep1">
+      <p>Want to get job alerts?</p>
+      <button onclick="handlePopupYes()">Yes</button>
+      <button onclick="closePopup()">No</button>
     </div>
 
- <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-  import { getFirestore, doc, setDoc, updateDoc, arrayUnion, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-  import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+    <div class="popup-content" id="popupStep2" style="display:none">
+      <p id="notifMsg"></p>
+      <input type="email" id="popupEmail" placeholder="Enter your email" required />
+      <button onclick="checkEmailExistence()">Continue</button>
+    </div>
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-    authDomain: "findjobsinfinland-3c061.firebaseapp.com",
-    projectId: "findjobsinfinland-3c061",
-    storageBucket: "findjobsinfinland-3c061.appspot.com",
-    messagingSenderId: "575437446165",
-    appId: "1:575437446165:web:51922bc01fd291b09b821c"
-  };
+    <div class="popup-content" id="popupStep3Signup" style="display:none">
+      <input type="text" id="popupName" placeholder="Full Name" required />
+      <input type="tel" id="popupPhone" placeholder="Phone Number" required />
+      <input type="password" id="popupPasswordNew" placeholder="Create Password" required />
 
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const db = getFirestore(app);
-  const messaging = getMessaging(app);
+      <!-- Job Categories -->
+      <h3>What kind of jobs are you interested in?</h3>
+      <div class="select-box" id="categoryBox">
+        <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox" value="" /><span class="slider"></span></label></div>
+        <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox" value="it-tech" /><span class="slider"></span></label></div>
+      </div>
 
-  // Helper: Get selected values from checkbox list
-  function getSelectedValues(containerId) {
-    const container = document.getElementById(containerId);
-    const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
-    const allCheckbox = container.querySelector('input[value=""]');
-    const allSelected = allCheckbox && allCheckbox.checked;
-    let selected = [];
+      <!-- Job Locations -->
+      <h3>Where do you want to work?</h3>
+      <div class="select-box" id="locationBox">
+        <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox" value="" /><span class="slider"></span></label></div>
+        <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox" value="helsinki" /><span class="slider"></span></label></div>
+      </div>
 
-    if (allSelected) {
-      const allValues = container.querySelectorAll('input[type="checkbox"]');
-      allValues.forEach(cb => {
-        const val = cb.value.trim();
-        if (val !== "") selected.push(val);
-      });
-    } else {
-      checkboxes.forEach(cb => {
-        const val = cb.value.trim();
-        if (val !== "") selected.push(val);
-      });
-    }
+      <button onclick="signupUser()">Sign Up</button>
+    </div>
 
-    return selected;
-  }
+    <div class="popup-content" id="popupStep3Login" style="display:none">
+      <input type="email" id="popupEmailLogin" readonly />
+      <input type="password" id="popupPasswordLogin" placeholder="Enter Password" required />
+      <button onclick="loginUser()">Login</button>
+    </div>
+  </div>
 
-  // Register service worker
-  async function registerServiceWorker() {
-    if ('serviceWorker' in navigator) {
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import {
+      getFirestore, collection, query, where, getDocs,
+      doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+    import {
+      getAuth, createUserWithEmailAndPassword,
+      signInWithEmailAndPassword
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+      authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+      projectId: "findjobsinfinland-3c061",
+      storageBucket: "findjobsinfinland-3c061.appspot.com",
+      messagingSenderId: "575437446165",
+      appId: "1:575437446165:web:51922bc01fd291b09b821c"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+    const messaging = getMessaging(app);
+
+    let fcmToken = null;
+    let emailExists = false;
+
+    window.addEventListener("load", () => {
+      const user = localStorage.getItem("user");
+      if (!user && !localStorage.getItem("jobAlertPopupShown")) {
+        document.getElementById("jobAlertPopup").style.display = "flex";
+      }
+    });
+
+    window.handlePopupYes = async () => {
+      const permission = await Notification.requestPermission();
+      if (permission !== 'granted') {
+        document.getElementById("notifMsg").textContent = "Please enable notifications otherwise we can't send you job alerts.";
+      } else {
+        fcmToken = await getFcmToken();
+        document.getElementById("popupStep1").style.display = "none";
+        document.getElementById("popupStep2").style.display = "block";
+      }
+    };
+
+    window.closePopup = () => {
+      localStorage.setItem("jobAlertPopupShown", "true");
+      document.getElementById("jobAlertPopup").style.display = "none";
+    };
+
+    async function getFcmToken() {
       try {
         const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
-        console.log("✅ Service Worker Registered");
-        return registration;
+        return await getToken(messaging, {
+          vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+          serviceWorkerRegistration: registration
+        });
       } catch (error) {
-        console.error("❌ Service Worker registration failed:", error);
+        console.error("FCM token error", error);
         return null;
       }
-    } else {
-      console.warn("⚠️ Service Worker not supported");
-      return null;
-    }
-  }
-
-  // Get FCM token
-  async function getFcmToken() {
-    try {
-      const registration = await registerServiceWorker();
-      if (!registration) return null;
-
-      const token = await getToken(messaging, {
-        vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-        serviceWorkerRegistration: registration
-      });
-
-      console.log("✅ FCM Token:", token);
-      return token;
-    } catch (error) {
-      console.error("❌ Error getting FCM token:", error);
-      return null;
-    }
-  }
-
-  // Add token to Firestore user document if it's not already there
-  async function addFcmTokenToUser(uid, token) {
-    if (!token) return;
-
-    const userRef = doc(db, "users", uid);
-    const userSnap = await getDoc(userRef);
-
-    if (!userSnap.exists()) {
-      console.warn("⚠️ User document does not exist");
-      return;
     }
 
-    const data = userSnap.data();
-    const tokens = data.fcmTokens || [];
+    window.checkEmailExistence = async () => {
+      const email = document.getElementById("popupEmail").value.trim();
+      const q = query(collection(db, "users"), where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+      emailExists = !querySnapshot.empty;
 
-    if (!tokens.includes(token)) {
-      await updateDoc(userRef, {
-        fcmTokens: arrayUnion(token)
-      });
-      console.log("✅ FCM token added to user");
-    } else {
-      console.log("ℹ️ FCM token already exists for user");
-    }
-  }
-
-  // Signup form handler
-  document.getElementById("signupForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const phoneNumber = document.getElementById("phoneNumber").value.trim();
-    const jobCategory = getSelectedValues("categoryBox");
-    const jobLocation = getSelectedValues("locationBox");
-
-    try {
-      // Create Firebase user
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const uid = userCredential.user.uid;
-
-      // Get FCM token
-      const fcmToken = await getFcmToken();
-
-      // Save user data to Firestore
-      const userData = {
-        uid,
-        fullName,
-        email,
-        phoneNumber,
-        jobCategory,
-        jobLocation,
-        fcmTokens: fcmToken ? [fcmToken] : []
-      };
-
-      await setDoc(doc(db, "users", uid), userData);
-
-      // Add token again with arrayUnion in case it's not saved properly
-      await addFcmTokenToUser(uid, fcmToken);
-
-      // Save user locally
-      localStorage.setItem("user", JSON.stringify(userData));
-
-      // Show confirmation
-      document.getElementById("successMessage").style.display = "block";
-      console.log("🎉 Signup successful");
-
-    } catch (error) {
-      if (error.code === "auth/email-already-in-use") {
-        alert("This email is already registered.");
+      document.getElementById("popupStep2").style.display = "none";
+      if (emailExists) {
+        document.getElementById("popupStep3Login").style.display = "block";
+        document.getElementById("popupEmailLogin").value = email;
       } else {
-        console.error("Signup failed:", error);
-        alert("Signup failed. Please try again.");
+        document.getElementById("popupStep3Signup").style.display = "block";
       }
-    }
-  });
+    };
 
-  // Ask notification permission on every page load if not granted
-window.addEventListener('load', async () => {
-  if (Notification.permission !== 'granted') {
-    try {
-      const permission = await Notification.requestPermission();
-      if (permission === 'granted') {
-        console.log("✅ Notification permission granted.");
-        // Optionally get token here, or wait until signup
-        await getFcmToken();
+    window.signupUser = async () => {
+      const name = document.getElementById("popupName").value.trim();
+      const phone = document.getElementById("popupPhone").value.trim();
+      const email = document.getElementById("popupEmail").value.trim();
+      const password = document.getElementById("popupPasswordNew").value.trim();
+      const jobCategory = getSelectedValues("categoryBox");
+      const jobLocation = getSelectedValues("locationBox");
+
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const uid = userCredential.user.uid;
+
+        const userData = {
+          uid,
+          fullName: name,
+          email,
+          phoneNumber: phone,
+          jobCategory,
+          jobLocation,
+          fcmTokens: fcmToken ? [fcmToken] : [],
+          createdAt: Timestamp.now(),
+          lastLogin: Timestamp.now()
+        };
+
+        await setDoc(doc(db, "users", uid), userData);
+        localStorage.setItem("user", JSON.stringify(userData));
+        closePopup();
+      } catch (error) {
+        console.error("Signup error:", error);
+        alert("Signup failed. Email may already be in use.");
+      }
+    };
+
+    window.loginUser = async () => {
+      const email = document.getElementById("popupEmailLogin").value.trim();
+      const password = document.getElementById("popupPasswordLogin").value.trim();
+
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        const uid = userCredential.user.uid;
+        const userRef = doc(db, "users", uid);
+        const docSnap = await getDoc(userRef);
+
+        if (docSnap.exists()) {
+          const userData = docSnap.data();
+          await updateDoc(userRef, {
+            lastLogin: Timestamp.now(),
+            fcmTokens: arrayUnion(fcmToken)
+          });
+          localStorage.setItem("user", JSON.stringify(userData));
+          closePopup();
+        }
+      } catch (error) {
+        console.error("Login failed:", error);
+        alert("Login failed. Incorrect credentials or user not found.");
+      }
+    };
+
+    function getSelectedValues(containerId) {
+      const container = document.getElementById(containerId);
+      const checkboxes = container?.querySelectorAll('input[type="checkbox"]:checked') || [];
+      const allCheckbox = container?.querySelector('input[value=""]');
+      const allSelected = allCheckbox && allCheckbox.checked;
+      let selected = [];
+
+      if (allSelected) {
+        const allValues = container.querySelectorAll('input[type="checkbox"]');
+        allValues.forEach(cb => {
+          const val = cb.value.trim();
+          if (val !== "") selected.push(val);
+        });
       } else {
-        console.warn("🚫 Notification permission denied.");
+        checkboxes.forEach(cb => {
+          const val = cb.value.trim();
+          if (val !== "") selected.push(val);
+        });
       }
-    } catch (err) {
-      console.error("Error requesting notification permission:", err);
+
+      return selected;
     }
-  } else {
-    console.log("🔔 Notification permission already granted.");
-  }
-});
-
-</script>
-
- <script src="/js/sw-register.js"></script>
+  </script>
 </body>
 
 </html>

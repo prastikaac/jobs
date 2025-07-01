@@ -72,9 +72,26 @@ the users prefePush preferences should be saved on the device (localStorage / In
 
 
 
-write a clear clean prompt for this, dont miss anything and further suggest me what could be the updates to this :  if the user is not signed in For the first time a popup will appear on the screen with a text like want to get job alerts ? and with yes no option if clicked on yes then ask for the notification permission and if notification is not allowed then show text like please enable notification otherwise we cant send you job alerts and if notification permission allowed then start to show in the popup the user will be asked his/her email only as step one and after user entered the email, the system will check wether the email is already in the firebase database or not if they are not signed up in the and the new email then in the step two they will be asked the other details like phone no name...  other wise in the step two they will be simply asked the password and if they entered the password then they will get logged in and the popup will disappear and keep them logged in forever and also save the logged user data in the local storage along with the firestore database
+write a clear clean prompt for this, dont miss anything and further suggest me what could be the updates to this : 
+
+here if the user is not signed in For the first time a popup will appear on the screen with a text like want to get job alerts ? and with yes no option if clicked on yes then ask for the notification permission and if notification is not allowed then show text like please enable notification otherwise we cant send you job alerts and if notification permission allowed then start to show in the popup the user will be asked his/her email only as step one and after user entered the email, checks whether a user email already exists in the Firestore database without using Firebase Authentication.
+
+The Firestore database structure is:
+
+pgsql
+Copy
+Edit
+users > {user-uid like B6EP1nh6VBQBs31FEG6BYPI1ZLq1}
+  - email: "sacharyaprasiddha6@gmail.com" (string)
+  - name: "Pacaisii" (string)
+  - phone: "Pacaisii" (string)
+  - createdAt: (timestamp)
+  - lastLogin: (timestamp)
+  - other arrays and fields
 
 
+
+if there is no email in the firestore database and the new email then in the step two they will be asked the other details like phone no name...  other wise in the step two they will be simply asked the password and if they entered the password then they will get logged in and the popup will disappear and keep them logged in forever and also save the logged user data in the local storage along with the firestore database
 
 
 
