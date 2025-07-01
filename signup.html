@@ -131,6 +131,9 @@
     </div>
   </div>
 
+  <button id="logoutBtn" style="position: fixed; top: 10px; right: 10px;">Logout</button>
+
+
   <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
   import {
@@ -334,6 +337,20 @@
 
     return selected;
   }
+
+  document.getElementById("logoutBtn").addEventListener("click", async () => {
+  try {
+    await auth.signOut();
+    localStorage.removeItem("user");
+    localStorage.removeItem("jobAlertPopupShown");  // <== clear this too
+    alert("Logged out successfully.");
+    location.reload();
+  } catch (error) {
+    console.error("Logout failed:", error);
+    alert("Logout failed. Try again.");
+  }
+});
+
 </script>
 
 
