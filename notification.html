@@ -25,6 +25,7 @@
   </div>
 
   <button id="enablePushBtn" disabled>Enable Push Notifications</button>
+  <button id="logoutBtn" style="margin-left: 10px;" disabled>Logout</button>
 
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
@@ -49,16 +50,19 @@
     const userNameElem = document.getElementById('userName');
     const userEmailElem = document.getElementById('userEmail');
     const enablePushBtn = document.getElementById('enablePushBtn');
+    const logoutBtn = document.getElementById('logoutBtn');
 
     onAuthStateChanged(auth, (user) => {
       if (user) {
         userNameElem.textContent = user.displayName || '(No name set)';
         userEmailElem.textContent = user.email || '(No email)';
         enablePushBtn.disabled = false;
+        logoutBtn.disabled = false;
       } else {
         userNameElem.textContent = 'Not signed in';
         userEmailElem.textContent = '-';
         enablePushBtn.disabled = true;
+        logoutBtn.disabled = true;
       }
     });
 
@@ -99,6 +103,16 @@
       } catch (error) {
         console.error('Error getting token:', error);
         alert('Error enabling push notifications — see console');
+      }
+    };
+
+    logoutBtn.onclick = async () => {
+      try {
+        await auth.signOut();
+        alert('Logged out successfully.');
+      } catch (error) {
+        console.error('Logout failed:', error);
+        alert('Error during logout.');
       }
     };
 
