@@ -85,11 +85,33 @@
 </head>
 
 <body>
+  <!-- POPUP HTML -->
   <div id="jobAlertPopup" class="popup" style="display:none">
     <div class="popup-content" id="popupStep1">
       <p>Want to get job alerts?</p>
       <button onclick="handlePopupYes()">Yes</button>
-      <button onclick="closePopup()">No</button>
+      <button onclick="handlePopupNo()">No</button>
+    </div>
+
+    <div class="popup-content" id="popupStep1b" style="display:none">
+      <p>
+        Are you sure you don’t want job alerts? Since you pressed ‘No’, you won’t be notified about new jobs matching
+        your interests.<br><br>
+        Otherwise, we instantly update you via email and notifications whenever relevant jobs are posted.<br><br>
+        Stay ahead — enable alerts to never miss an opportunity.
+      </p>
+      <button onclick="handleNoSkipAlerts()">No, skip alerts</button>
+
+      <button onclick="handlePopupYes()">Yes, notify me</button>
+    </div>
+
+    <div class="popup-content" id="popupStep1c" style="display:none">
+      <p>Are you absolutely sure you want to skip job alerts?</p>
+      <label style="display:flex;align-items:center;justify-content:center;margin-top:10px;">
+        <input type="checkbox" id="neverShowAgain" style="margin-right:10px;"> Never show this message again
+      </label>
+      <button onclick="confirmFinalNo(true)">Yes, I’m sure</button>
+      <button onclick="handlePopupYes()">No, go back</button>
     </div>
 
     <div class="popup-content" id="popupStep2" style="display:none">
@@ -102,8 +124,9 @@
       <input type="text" id="popupName" placeholder="Full Name" required />
       <input type="tel" id="popupPhone" placeholder="Phone Number" required />
       <input type="password" id="popupPasswordNew" placeholder="Create Password" required />
+      <input type="password" id="popupConfirmPassword" placeholder="Confirm Password" required />
+      <div id="signupError" style="color:red; margin-top: 8px;"></div>
 
-      <!-- Job Categories -->
       <h3>What kind of jobs are you interested in?</h3>
       <div class="select-box" id="categoryBox">
         <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox" value="" /><span
@@ -112,7 +135,6 @@
               value="it-tech" /><span class="slider"></span></label></div>
       </div>
 
-      <!-- Job Locations -->
       <h3>Where do you want to work?</h3>
       <div class="select-box" id="locationBox">
         <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox" value="" /><span
@@ -133,289 +155,383 @@
 
   <button id="logoutBtn" style="position: fixed; top: 10px; right: 10px;">Logout</button>
 
-
+  <!-- JS MODULE HERE -->
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import {
-      getFirestore, collection, query, where, getDocs,
-      doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp
-    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-    import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
-    import {
-      getAuth, createUserWithEmailAndPassword,
-      signInWithEmailAndPassword
-    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {
+  getFirestore, collection, query, where, getDocs,
+  doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+import {
+  getAuth, createUserWithEmailAndPassword,
+  signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-      authDomain: "findjobsinfinland-3c061.firebaseapp.com",
-      projectId: "findjobsinfinland-3c061",
-      storageBucket: "findjobsinfinland-3c061.appspot.com",
-      messagingSenderId: "575437446165",
-      appId: "1:575437446165:web:51922bc01fd291b09b821c"
-    };
+const firebaseConfig = {
+  apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+  authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+  projectId: "findjobsinfinland-3c061",
+  storageBucket: "findjobsinfinland-3c061.appspot.com",
+  messagingSenderId: "575437446165",
+  appId: "1:575437446165:web:51922bc01fd291b09b821c"
+};
 
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    const auth = getAuth(app);
-    const messaging = getMessaging(app);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+const messaging = getMessaging(app);
 
-    const LS_TOKEN_KEY = "currentFcmToken";
-    let emailExists = false;
+const LS_TOKEN_KEY = "currentFcmToken";
+const LS_SKIP_NO_CONFIRM = "skipNoConfirm";
 
-    // Check if FCM is supported on current browser/device
-    async function fcmSupported() {
-      return "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+let emailExists = false;
+
+function showPopupStep(stepId) {
+  const steps = ["popupStep1", "popupStep1b", "popupStep1c", "popupStep2", "popupStep3Signup", "popupStep3Login"];
+  steps.forEach(id => {
+    document.getElementById(id).style.display = id === stepId ? "block" : "none";
+  });
+  document.getElementById("jobAlertPopup").style.display = "flex";
+}
+
+function closePopup() {
+  localStorage.setItem("jobAlertPopupShown", "true");
+  document.getElementById("jobAlertPopup").style.display = "none";
+}
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function validatePhone(phone) {
+  const re = /^[0-9+\-() ]{6,20}$/;
+  return re.test(phone);
+}
+
+function validatePassword(password) {
+  return password.length >= 6;
+}
+
+function validateName(name) {
+  return name.length > 0;
+}
+
+function getSelectedValues(containerId) {
+  const container = document.getElementById(containerId);
+  const checkboxes = container?.querySelectorAll('input[type="checkbox"]:checked') || [];
+  const allCheckbox = container?.querySelector('input[value=""]');
+  const allSelected = allCheckbox && allCheckbox.checked;
+  let selected = [];
+
+  if (allSelected) {
+    const allValues = container.querySelectorAll('input[type="checkbox"]');
+    allValues.forEach(cb => {
+      const val = cb.value.trim();
+      if (val !== "") selected.push(val);
+    });
+  } else {
+    checkboxes.forEach(cb => {
+      const val = cb.value.trim();
+      if (val !== "") selected.push(val);
+    });
+  }
+  return selected;
+}
+
+// Handlers for popup buttons
+
+window.handlePopupYes = () => {
+  showPopupStep("popupStep2");
+  document.getElementById("notifMsg").textContent = "Enter your email to get job alerts.";
+};
+
+window.handlePopupNo = () => {
+  const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
+  if (skipNoConfirm === "true") {
+    closePopup();
+    return;
+  }
+  showPopupStep("popupStep1b");
+};
+
+window.handleNoSkipAlerts = () => {
+  showPopupStep("popupStep1c");
+};
+
+window.confirmFinalNo = () => {
+  const neverShowCheckbox = document.getElementById("neverShowAgain");
+  if (neverShowCheckbox && neverShowCheckbox.checked) {
+    localStorage.setItem(LS_SKIP_NO_CONFIRM, "true");
+  }
+  closePopup();
+};
+
+window.checkEmailExistence = async () => {
+  const emailInput = document.getElementById("popupEmail");
+  const email = emailInput.value.trim();
+
+  if (!validateEmail(email)) {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+    return;
+  }
+
+  const q = query(collection(db, "users"), where("email", "==", email));
+  const querySnapshot = await getDocs(q);
+  emailExists = !querySnapshot.empty;
+
+  if (emailExists) {
+    document.getElementById("popupEmailLogin").value = email;
+    showPopupStep("popupStep3Login");
+  } else {
+    showPopupStep("popupStep3Signup");
+  }
+};
+
+window.signupUser = async () => {
+  const nameInput = document.getElementById("popupName");
+  const phoneInput = document.getElementById("popupPhone");
+  const emailInput = document.getElementById("popupEmail");
+  const passInput = document.getElementById("popupPasswordNew");
+  const confirmPassInput = document.getElementById("popupConfirmPassword");
+  const errorDiv = document.getElementById("signupError");
+
+  const name = nameInput.value.trim();
+  const phone = phoneInput.value.trim();
+  const email = emailInput.value.trim();
+  const password = passInput.value;
+  const confirmPassword = confirmPassInput.value;
+
+  errorDiv.textContent = "";
+
+  if (!validateName(name)) {
+    errorDiv.textContent = "Please enter your full name.";
+    nameInput.focus();
+    return;
+  }
+  if (!validatePhone(phone)) {
+    errorDiv.textContent = "Please enter a valid phone number.";
+    phoneInput.focus();
+    return;
+  }
+  if (!validateEmail(email)) {
+    errorDiv.textContent = "Please enter a valid email address.";
+    emailInput.focus();
+    return;
+  }
+  if (!validatePassword(password)) {
+    errorDiv.textContent = "Password must be at least 6 characters.";
+    passInput.focus();
+    return;
+  }
+  if (password !== confirmPassword) {
+    errorDiv.textContent = "Passwords do not match.";
+    confirmPassInput.focus();
+    return;
+  }
+
+  const jobCategory = getSelectedValues("categoryBox");
+  const jobLocation = getSelectedValues("locationBox");
+
+  if (jobCategory.length === 0) {
+    errorDiv.textContent = "Please select at least one job category.";
+    return;
+  }
+  if (jobLocation.length === 0) {
+    errorDiv.textContent = "Please select at least one job location.";
+    return;
+  }
+
+  try {
+    if (Notification.permission !== "granted") {
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") {
+        alert("Please enable notifications to get job alerts.");
+        return;
+      }
     }
 
-    // Get or create FCM token, caching in localStorage
-    async function getOrCreateFcmToken() {
-      if (!(await fcmSupported())) {
-        console.warn("Web FCM not supported on this browser/device.");
-        return null;
+    const fcmToken = await getOrCreateFcmToken();
+
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    const uid = userCredential.user.uid;
+
+    const userData = {
+      uid,
+      fullName: name,
+      email,
+      phoneNumber: phone,
+      jobCategory,
+      jobLocation,
+      fcmTokens: fcmToken ? [fcmToken] : [],
+      createdAt: Timestamp.now(),
+      lastLogin: Timestamp.now()
+    };
+
+    await setDoc(doc(db, "users", uid), userData);
+    localStorage.setItem("user", JSON.stringify(userData));
+
+    await syncFcmTokenWithFirestore(uid);
+
+    closePopup();
+  } catch (error) {
+    console.error("Signup error:", error);
+    alert("Signup failed. Email may already be in use.");
+  }
+};
+
+window.loginUser = async () => {
+  const emailInput = document.getElementById("popupEmailLogin");
+  const passInput = document.getElementById("popupPasswordLogin");
+  const email = emailInput.value.trim();
+  const password = passInput.value;
+
+  if (!validatePassword(password)) {
+    alert("Please enter a valid password (min 6 chars).");
+    passInput.focus();
+    return;
+  }
+
+  try {
+    if (Notification.permission !== "granted") {
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") {
+        alert("Please enable notifications to get job alerts.");
+        return;
       }
+    }
 
-      // Return cached token if available
-      const cached = localStorage.getItem(LS_TOKEN_KEY);
-      if (cached) return cached;
+    const fcmToken = await getOrCreateFcmToken();
 
-      // Request permission if not already granted
-      if (Notification.permission === "default") {
-        const permission = await Notification.requestPermission();
-        if (permission !== "granted") return null;
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const uid = userCredential.user.uid;
+    const userRef = doc(db, "users", uid);
+    const docSnap = await getDoc(userRef);
+
+    if (docSnap.exists()) {
+      let userData = docSnap.data();
+
+      const updateData = { lastLogin: Timestamp.now() };
+      if (fcmToken) {
+        updateData.fcmTokens = arrayUnion(fcmToken);
       }
+      await updateDoc(userRef, updateData);
 
-      if (Notification.permission !== "granted") return null;
-
-      // Register service worker if not already registered
-      let registration = await navigator.serviceWorker.getRegistration('/');
-      if (!registration) {
-        await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
-        registration = await navigator.serviceWorker.ready;
+      if (fcmToken && (!userData.fcmTokens || !userData.fcmTokens.includes(fcmToken))) {
+        userData.fcmTokens = [...(userData.fcmTokens || []), fcmToken];
       }
+      userData.lastLogin = updateData.lastLogin;
 
-      // Get FCM token
-      const token = await getToken(messaging, {
-        vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-        serviceWorkerRegistration: registration
+      localStorage.setItem("user", JSON.stringify(userData));
+      closePopup();
+    }
+  } catch (error) {
+    console.error("Login failed:", error);
+    alert("Login failed. Incorrect credentials or user not found.");
+  }
+};
+
+document.getElementById("logoutBtn")?.addEventListener("click", async () => {
+  try {
+    await auth.signOut();
+    localStorage.removeItem("user");
+    localStorage.removeItem("jobAlertPopupShown");
+    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
+    alert("Logged out successfully.");
+    location.reload();
+  } catch (error) {
+    console.error("Logout failed:", error);
+    alert("Logout failed. Try again.");
+  }
+});
+
+async function fcmSupported() {
+  return "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+}
+
+async function getOrCreateFcmToken() {
+  if (!(await fcmSupported())) {
+    console.warn("Web FCM not supported on this browser/device.");
+    return null;
+  }
+  const cached = localStorage.getItem(LS_TOKEN_KEY);
+  if (cached) return cached;
+
+  if (Notification.permission === "default") {
+    const permission = await Notification.requestPermission();
+    if (permission !== "granted") return null;
+  }
+
+  if (Notification.permission !== "granted") return null;
+
+  let registration = await navigator.serviceWorker.getRegistration('/');
+  if (!registration) {
+    await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
+    registration = await navigator.serviceWorker.ready;
+  }
+
+  const token = await getToken(messaging, {
+    vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+    serviceWorkerRegistration: registration
+  });
+
+  if (token) localStorage.setItem(LS_TOKEN_KEY, token);
+  return token;
+}
+
+async function syncFcmTokenWithFirestore(uid) {
+  if (!uid) return;
+  try {
+    const registration = await navigator.serviceWorker.ready;
+    const currentToken = await getToken(messaging, {
+      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+      serviceWorkerRegistration: registration
+    });
+    if (!currentToken) return;
+
+    const userRef = doc(db, "users", uid);
+    const docSnap = await getDoc(userRef);
+    if (!docSnap.exists()) return;
+
+    const userData = docSnap.data();
+    const existingTokens = userData.fcmTokens || [];
+
+    if (!existingTokens.includes(currentToken)) {
+      await updateDoc(userRef, {
+        fcmTokens: arrayUnion(currentToken)
       });
 
-      if (token) localStorage.setItem(LS_TOKEN_KEY, token);
-      return token;
-    }
-
-    // Sync current FCM token with Firestore for given uid
-    async function syncFcmTokenWithFirestore(uid) {
-      if (!uid) return;
-
-      try {
-        const registration = await navigator.serviceWorker.ready;
-        const currentToken = await getToken(messaging, {
-          vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-          serviceWorkerRegistration: registration
-        });
-        if (!currentToken) return;
-
-        const userRef = doc(db, "users", uid);
-        const docSnap = await getDoc(userRef);
-        if (!docSnap.exists()) return;
-
-        const userData = docSnap.data();
-        const existingTokens = userData.fcmTokens || [];
-
-        if (!existingTokens.includes(currentToken)) {
-          await updateDoc(userRef, {
-            fcmTokens: arrayUnion(currentToken)
-          });
-
-          // Update localStorage user copy
-          let storedUser = JSON.parse(localStorage.getItem("user"));
-          if (storedUser && storedUser.uid === uid) {
-            storedUser.fcmTokens = [...existingTokens, currentToken];
-            localStorage.setItem("user", JSON.stringify(storedUser));
-          }
-        }
-      } catch (error) {
-        console.warn("Error syncing FCM token:", error);
+      let storedUser = JSON.parse(localStorage.getItem("user"));
+      if (storedUser && storedUser.uid === uid) {
+        storedUser.fcmTokens = [...existingTokens, currentToken];
+        localStorage.setItem("user", JSON.stringify(storedUser));
       }
     }
+  } catch (error) {
+    console.warn("Error syncing FCM token:", error);
+  }
+}
 
-    // Popup show logic on load for non-logged-in users
-    window.addEventListener("load", async () => {
-      const user = JSON.parse(localStorage.getItem("user"));
-      if (!user && !localStorage.getItem("jobAlertPopupShown")) {
-        document.getElementById("jobAlertPopup").style.display = "flex";
-      }
+window.addEventListener("load", async () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
 
-      if (user && user.uid) {
-        await syncFcmTokenWithFirestore(user.uid);
-      }
-    });
+  if (user && user.uid) {
+    await syncFcmTokenWithFirestore(user.uid);
+    // Your logged-in user notification permission logic here if any
+  }
 
-    // User clicks "Yes" on popup - don't request permission here anymore, permission will be requested on login/signup only
-    window.handlePopupYes = () => {
-      document.getElementById("popupStep1").style.display = "none";
-      document.getElementById("popupStep2").style.display = "block";
-    };
+  // Show popup only if user not logged in AND has not chosen "never show again"
+  if (!user && skipNoConfirm !== "true") {
+    showPopupStep("popupStep1");
+  } else {
+    closePopup();
+  }
+});
 
-    window.closePopup = () => {
-      localStorage.setItem("jobAlertPopupShown", "true");
-      document.getElementById("jobAlertPopup").style.display = "none";
-    };
-
-    window.checkEmailExistence = async () => {
-      const email = document.getElementById("popupEmail").value.trim();
-      const q = query(collection(db, "users"), where("email", "==", email));
-      const querySnapshot = await getDocs(q);
-      emailExists = !querySnapshot.empty;
-
-      document.getElementById("popupStep2").style.display = "none";
-      if (emailExists) {
-        document.getElementById("popupStep3Login").style.display = "block";
-        document.getElementById("popupEmailLogin").value = email;
-      } else {
-        document.getElementById("popupStep3Signup").style.display = "block";
-      }
-    };
-
-    // Signup user
-    window.signupUser = async () => {
-      const name = document.getElementById("popupName").value.trim();
-      const phone = document.getElementById("popupPhone").value.trim();
-      const email = document.getElementById("popupEmail").value.trim();
-      const password = document.getElementById("popupPasswordNew").value.trim();
-      const jobCategory = getSelectedValues("categoryBox");
-      const jobLocation = getSelectedValues("locationBox");
-
-      try {
-        // Request notification permission here before signup
-        if (Notification.permission !== "granted") {
-          const permission = await Notification.requestPermission();
-          if (permission !== "granted") {
-            alert("Please enable notifications to get job alerts.");
-            return;
-          }
-        }
-
-        const fcmToken = await getOrCreateFcmToken();
-
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        const uid = userCredential.user.uid;
-
-        const userData = {
-          uid,
-          fullName: name,
-          email,
-          phoneNumber: phone,
-          jobCategory,
-          jobLocation,
-          fcmTokens: fcmToken ? [fcmToken] : [],
-          createdAt: Timestamp.now(),
-          lastLogin: Timestamp.now()
-        };
-
-        await setDoc(doc(db, "users", uid), userData);
-        localStorage.setItem("user", JSON.stringify(userData));
-
-        await syncFcmTokenWithFirestore(uid);
-
-        closePopup();
-      } catch (error) {
-        console.error("Signup error:", error);
-        alert("Signup failed. Email may already be in use.");
-      }
-    };
-
-    // Login user
-    window.loginUser = async () => {
-      const email = document.getElementById("popupEmailLogin").value.trim();
-      const password = document.getElementById("popupPasswordLogin").value.trim();
-
-      try {
-        // Request notification permission here before login
-        if (Notification.permission !== "granted") {
-          const permission = await Notification.requestPermission();
-          if (permission !== "granted") {
-            alert("Please enable notifications to get job alerts.");
-            return;
-          }
-        }
-
-        const fcmToken = await getOrCreateFcmToken();
-
-        const userCredential = await signInWithEmailAndPassword(auth, email, password);
-        const uid = userCredential.user.uid;
-        const userRef = doc(db, "users", uid);
-        const docSnap = await getDoc(userRef);
-
-        if (docSnap.exists()) {
-          let userData = docSnap.data();
-
-          // Update lastLogin and add token if new
-          const updateData = {
-            lastLogin: Timestamp.now()
-          };
-          if (fcmToken) {
-            updateData.fcmTokens = arrayUnion(fcmToken);
-          }
-          await updateDoc(userRef, updateData);
-
-          // Update local copy
-          if (fcmToken && (!userData.fcmTokens || !userData.fcmTokens.includes(fcmToken))) {
-            userData.fcmTokens = [...(userData.fcmTokens || []), fcmToken];
-          }
-          userData.lastLogin = updateData.lastLogin;
-
-          localStorage.setItem("user", JSON.stringify(userData));
-          closePopup();
-        }
-      } catch (error) {
-        console.error("Login failed:", error);
-        alert("Login failed. Incorrect credentials or user not found.");
-      }
-    };
-
-    // Logout button handler
-    document.getElementById("logoutBtn")?.addEventListener("click", async () => {
-      try {
-        await auth.signOut();
-        localStorage.removeItem("user");
-        localStorage.removeItem("jobAlertPopupShown");
-        alert("Logged out successfully.");
-        location.reload();
-      } catch (error) {
-        console.error("Logout failed:", error);
-        alert("Logout failed. Try again.");
-      }
-    });
-
-    // Utility to get selected checkboxes in a container
-    function getSelectedValues(containerId) {
-      const container = document.getElementById(containerId);
-      const checkboxes = container?.querySelectorAll('input[type="checkbox"]:checked') || [];
-      const allCheckbox = container?.querySelector('input[value=""]');
-      const allSelected = allCheckbox && allCheckbox.checked;
-      let selected = [];
-
-      if (allSelected) {
-        const allValues = container.querySelectorAll('input[type="checkbox"]');
-        allValues.forEach(cb => {
-          const val = cb.value.trim();
-          if (val !== "") selected.push(val);
-        });
-      } else {
-        checkboxes.forEach(cb => {
-          const val = cb.value.trim();
-          if (val !== "") selected.push(val);
-        });
-      }
-
-      return selected;
-    }
   </script>
-
-
-
 </body>
 
 </html>
