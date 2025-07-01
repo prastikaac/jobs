@@ -106,15 +106,19 @@
       <!-- Job Categories -->
       <h3>What kind of jobs are you interested in?</h3>
       <div class="select-box" id="categoryBox">
-        <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox" value="" /><span class="slider"></span></label></div>
-        <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox" value="it-tech" /><span class="slider"></span></label></div>
+        <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox" value="" /><span
+              class="slider"></span></label></div>
+        <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+              value="it-tech" /><span class="slider"></span></label></div>
       </div>
 
       <!-- Job Locations -->
       <h3>Where do you want to work?</h3>
       <div class="select-box" id="locationBox">
-        <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox" value="" /><span class="slider"></span></label></div>
-        <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox" value="helsinki" /><span class="slider"></span></label></div>
+        <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox" value="" /><span
+              class="slider"></span></label></div>
+        <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
+              value="helsinki" /><span class="slider"></span></label></div>
       </div>
 
       <button onclick="signupUser()">Sign Up</button>
@@ -153,7 +157,6 @@
     const auth = getAuth(app);
     const messaging = getMessaging(app);
 
-    let fcmToken = null;
     let emailExists = false;
 
     window.addEventListener("load", () => {
@@ -163,15 +166,9 @@
       }
     });
 
-    window.handlePopupYes = async () => {
-      const permission = await Notification.requestPermission();
-      if (permission !== 'granted') {
-        document.getElementById("notifMsg").textContent = "Please enable notifications otherwise we can't send you job alerts.";
-      } else {
-        fcmToken = await getFcmToken();
-        document.getElementById("popupStep1").style.display = "none";
-        document.getElementById("popupStep2").style.display = "block";
-      }
+    window.handlePopupYes = () => {
+      document.getElementById("popupStep1").style.display = "none";
+      document.getElementById("popupStep2").style.display = "block";
     };
 
     window.closePopup = () => {
@@ -181,15 +178,45 @@
 
     async function getFcmToken() {
       try {
-        const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
-        return await getToken(messaging, {
+        // Re‑use an existing registration if one exists
+        let registration = await navigator.serviceWorker.getRegistration('/');
+        if (!registration) {
+          // Register and give it a ROOT scope
+          await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
+        }
+
+        // Wait until the SW is activated
+        const readyReg = await navigator.serviceWorker.ready;
+
+        const token = await getToken(messaging, {
           vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-          serviceWorkerRegistration: registration
+          serviceWorkerRegistration: readyReg
         });
-      } catch (error) {
-        console.error("FCM token error", error);
+
+        console.log('FCM token:', token);
+        return token;                 // may be null if user blocked permission
+      } catch (err) {
+        console.error('FCM token error →', err);
         return null;
       }
+    }
+
+
+    async function ensureNotificationPermission() {
+      try {
+        if (Notification.permission === "granted") {
+          return await getFcmToken();
+        }
+        if (Notification.permission === "default") {
+          const permission = await Notification.requestPermission();
+          if (permission === "granted") {
+            return await getFcmToken();
+          }
+        }
+      } catch (err) {
+        console.error("Notification permission error", err);
+      }
+      return null;
     }
 
     window.checkEmailExistence = async () => {
@@ -218,6 +245,8 @@
       try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const uid = userCredential.user.uid;
+
+        const fcmToken = await ensureNotificationPermission();
 
         const userData = {
           uid,
@@ -252,10 +281,23 @@
 
         if (docSnap.exists()) {
           const userData = docSnap.data();
-          await updateDoc(userRef, {
-            lastLogin: Timestamp.now(),
-            fcmTokens: arrayUnion(fcmToken)
-          });
+          const fcmToken = await ensureNotificationPermission();
+
+          const updateData = {
+            lastLogin: Timestamp.now()
+          };
+
+          if (fcmToken) {
+            updateData.fcmTokens = arrayUnion(fcmToken);
+          }
+
+          await updateDoc(userRef, updateData);
+
+          if (fcmToken && (!userData.fcmTokens || !userData.fcmTokens.includes(fcmToken))) {
+            userData.fcmTokens = [...(userData.fcmTokens || []), fcmToken];
+          }
+
+          userData.lastLogin = updateData.lastLogin;
           localStorage.setItem("user", JSON.stringify(userData));
           closePopup();
         }
@@ -288,6 +330,7 @@
       return selected;
     }
   </script>
+
 </body>
 
 </html>

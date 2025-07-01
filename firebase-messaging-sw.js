@@ -1,45 +1,41 @@
-// firebase-messaging-sw.js
-importScripts('https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js');
-importScripts('https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging-compat.js');
+// /firebase-messaging-sw.js
+importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js');
 
 firebase.initializeApp({
-  apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-  authDomain: "findjobsinfinland-3c061.firebaseapp.com",
-  projectId: "findjobsinfinland-3c061",
-  storageBucket: "findjobsinfinland-3c061.appspot.com", // also fix the typo here
+  apiKey:            "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+  authDomain:        "findjobsinfinland-3c061.firebaseapp.com",
+  projectId:         "findjobsinfinland-3c061",
+  storageBucket:     "findjobsinfinland-3c061.appspot.com",
   messagingSenderId: "575437446165",
-  appId: "1:575437446165:web:51922bc01fd291b09b821c"
+  appId:             "1:575437446165:web:51922bc01fd291b09b821c"
 });
 
 const messaging = firebase.messaging();
 
-messaging.onBackgroundMessage(function(payload) {
-  console.log('[firebase-messaging-sw.js] Received background message ', payload);
+self.addEventListener('install', () => self.skipWaiting());   // activate immediately
+self.addEventListener('activate', () => self.clients.claim()); // control open pages
 
-  const notificationTitle = payload.notification.title || 'New Notification';
-  const notificationOptions = {
-    body: payload.notification.body,
-    icon: payload.notification.icon || '/images/icon.png',
-    image: payload.data?.imageUrl || undefined,
-    data: { url: payload.data?.jobLink || '/' }
-  };
+messaging.onBackgroundMessage(payload => {
+  const { title = 'New notification', body, icon } = payload.notification ?? {};
+  const { imageUrl, jobLink = '/' } = payload.data ?? {};
 
-  self.registration.showNotification(notificationTitle, notificationOptions);
+  self.registration.showNotification(title, {
+    body,
+    icon: icon || '/images/icon.png',
+    image: imageUrl ?? undefined,
+    data: { url: jobLink }
+  });
 });
 
-// Optional: handle notification click
-self.addEventListener('notificationclick', function(event) {
+self.addEventListener('notificationclick', event => {
   event.notification.close();
   event.waitUntil(
-    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clientList => {
-      for (const client of clientList) {
-        if (client.url === event.notification.data.url && 'focus' in client) {
-          return client.focus();
-        }
-      }
-      if (clients.openWindow) {
-        return clients.openWindow(event.notification.data.url);
-      }
-    })
+    clients.matchAll({ type: 'window', includeUncontrolled: true })
+           .then(clientsArr => {
+             for (const c of clientsArr)
+               if (c.url === event.notification.data.url && 'focus' in c) return c.focus();
+             if (clients.openWindow) return clients.openWindow(event.notification.data.url);
+           })
   );
 });
