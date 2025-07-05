@@ -427,6 +427,11 @@ body.drK.foursec {
 
 
 
+
+
+
+
+
 @media screen and (max-width: 767px) {
 
 
@@ -857,4 +862,8 @@ body.drK .job-card__title,
 body.drK .job-card__label,
 body.drK .job-card__value {
   color: #ffffff;
+}
+
+.logsinpop {
+  display: noned;
 }

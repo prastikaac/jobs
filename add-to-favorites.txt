@@ -54,6 +54,9 @@ title
 "IT Manager"
 
 
+make to ask for notifications at last only when user clicks login or signup
+
+
 
 
 
@@ -70,6 +73,28 @@ the users prefePush preferences should be saved on the device (localStorage / In
 
  
 
+
+I’ve attached an image showing my desired UI design.
+
+I already have an HTML structure with a popup element like #popupStep1.
+
+Please inject the UI from the image into this existing popup, without removing the ID or structure unless necessary.
+
+Requirements:
+
+Match the design in the image as closely as possible (layout, spacing, fonts, colors, buttons, etc.).
+
+Make the popup clean and responsive:
+
+On mobile, it should be compact and look natural.
+
+On desktop, it should appear as a centered modal/popup.
+
+I’ve also included other popup steps like #popupStep2 in the image.
+
+Design these popups to match the UI style shown, using the correct id attributes.
+
+Provide the CSS (and optional minimal HTML adjustments) needed to achieve this, directly usable in my existing page. and remember give css only by id
 
 
 write a clear clean prompt for this, dont miss anything and further suggest me what could be the updates to this : 
@@ -91,7 +116,7 @@ users > {user-uid like B6EP1nh6VBQBs31FEG6BYPI1ZLq1}
 
 
 
-if there is no email in the firestore database and the new email then in the step two they will be asked the other details like phone no name...  other wise in the step two they will be simply asked the password and if they entered the password then they will get logged in and the popup will disappear and keep them logged in forever and also save the logged user data in the local storage along with the firestore database
+if there is no email in the firestore database and the new email then in the step two they will be asked the other details like phone no name...  other wise in the step two they will be simply asked the password, and dont hide email in step 2 if its signin page and if they entered the password then they will get logged in and the popup will disappear and keep them logged in forever and also save the logged user data in the local storage along with the firestore database
 
 
 

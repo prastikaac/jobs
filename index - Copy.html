@@ -282,6 +282,19 @@
                     </label>
                   </li>
 
+                  <li class="askpc" id="logsinpop">
+                    <label aria-label="Contact" data-text="Contact" for="forcontact">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                        <path fill-rule="evenodd"
+                          d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                      </svg>
+                    </label>
+                  </li>
+
+
 
                   <li class="isDrk">
                     <label aria-label="Mode" class="navM tDark tIc tDL bIc" for="onMode" role="button">
@@ -649,15 +662,7 @@
                   line-height: 1.5;
                 }
 
-                button {
-                  padding: 10px 20px;
-                  font-size: 16px;
-                  border: none;
-                  background-color: #007bff;
-                  color: white;
-                  cursor: pointer;
-                  border-radius: 5px;
-                }
+
 
                 .image img {
                   max-width: 90%;
@@ -1030,6 +1035,1124 @@
 
 
                 <br>
+
+
+
+                <div class="pCmnts" id="comment" style="background-color: transparent; box-shadow: none;">
+                  <input class="cmSh fixi hidden" id="forcontact" type="checkbox" />
+                  <div class="cmShw">
+
+                  </div>
+
+                  <p style="color: transparent; font-size: 1px;">
+
+
+                  </p>
+                  <style>
+                    #jobAlertPopup {
+                      position: fixed;
+                      top: 0;
+                      left: 0;
+                      z-index: 9999;
+                      width: 100vw;
+                      height: 100vh;
+                      backdrop-filter: blur(5px);
+                      background-color: rgba(0, 0, 0, 0.2);
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      font-family: "Poppins", sans-serif;
+                      padding: 20px;
+                      box-sizing: border-box;
+                    }
+
+                    #jobAlertPopup .popup-content-unique {
+                      width: 100%;
+                      max-width: 680px;
+                      max-height: calc(100% - 60px);
+                      border-radius: 12px;
+                      transition: inherit;
+                      z-index: 3;
+                      display: flex;
+                      overflow: hidden;
+                      position: relative;
+                      margin: 0 auto;
+                      background-color: #fff;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      padding: 32px 24px;
+                      text-align: left;
+                      box-sizing: border-box;
+                    }
+
+                    @media (min-width: 780px) {
+                      #jobAlertPopup .popup-content-unique {
+                        padding: 35px 35px;
+                      }
+                    }
+
+                    #jobAlertPopup .popup-content-unique.active {
+                      display: flex;
+                    }
+
+                    #popupStep1b,
+                    #popupStep1c {
+                      max-width: 680px !important;
+                    }
+
+                    .popup-heading-unique {
+                      font-size: 23px;
+                      font-weight: 600;
+                      margin-bottom: 16px;
+                      color: #333;
+                      width: 100%;
+                    }
+
+
+                    .popup-heading-unique {
+                      font-family: "Poppins", sans-serif;
+                    }
+
+                    .popup-description-for-pc-unique {
+                      font-size: 15px;
+                      color: #444;
+                      margin-bottom: 20px;
+                      width: 100%;
+                    }
+
+                    .popup-buttons-unique,
+                    .finalbuttons-unique {
+                      display: flex;
+                      flex-wrap: nowrap;
+                      gap: 12px;
+                      justify-content: flex-start;
+                      margin-top: 20px;
+                      width: 100%;
+                    }
+
+                    .popup-buttons-unique button,
+                    .finalbuttons-unique button,
+                    .nobtn-unique,
+                    .yesbtn-unique {
+                      flex: 1 1 auto;
+                      color: white;
+                      padding: 12px 20px;
+                      border: none;
+                      border-radius: 30px;
+                      font-size: 15px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: background 0.3s ease;
+                      max-width: 100%;
+                    }
+
+                    .popup-buttons-unique button.yes-btn-unique,
+                    .finalbuttons-unique button.no-go-back-btn,
+                    .nobtn-unique {
+                      background-color: #0055ff;
+                    }
+
+                    .popup-buttons-unique button.yes-btn-unique:hover,
+                    .finalbuttons-unique button.no-go-back-btn:hover,
+                    .nobtn-unique:hover {
+                      background-color: #0044cc;
+                    }
+
+                    .popup-buttons-unique button.no-btn-unique,
+                    .finalbuttons-unique button.yes-skip-btn,
+                    .yesbtn-unique {
+                      background-color: #ed6755;
+                    }
+
+                    .popup-buttons-unique button.no-btn-unique:hover,
+                    .finalbuttons-unique button.yes-skip-btn:hover,
+                    .yesbtn-unique:hover {
+                      background-color: #d55444;
+                    }
+
+                    .toggle-label-unique {
+                      font-size: 14px;
+                      color: #333;
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 10px;
+                      margin-top: -10px;
+                      width: 100%;
+                    }
+
+                    .toggle-switch-unique {
+                      position: relative;
+                      display: inline-block;
+                      width: 32px;
+                      height: 18px;
+                    }
+
+                    .toggle-switch-unique input {
+                      opacity: 0;
+                      width: 0;
+                      height: 0;
+                    }
+
+                    .slider-unique {
+                      position: absolute;
+                      cursor: pointer;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background-color: #ccc;
+                      border-radius: 20px;
+                      transition: 0.4s;
+                    }
+
+                    .slider-unique:before {
+                      position: absolute;
+                      content: "";
+                      height: 13px !important;
+                      width: 13px !important;
+                      left: 2px;
+                      bottom: 2px;
+                      background-color: white;
+                      border-radius: 50%;
+                      transition: 0.4s;
+                    }
+
+                    .toggle-switch-unique input:checked+.slider-unique {
+                      background-color: #ed6755;
+                    }
+
+                    .toggle-switch-unique input:checked+.slider-unique:before {
+                      transform: translateX(14px);
+                    }
+
+                    @media (max-width: 768px) {
+                      #jobAlertPopup .popup-content-unique {
+                        text-align: center;
+                        align-items: center;
+                      }
+
+                      .popup-buttons-unique,
+                      .finalbuttons-unique {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                      }
+
+                      .popup-heading-unique,
+                      .popup-description-for-pc-unique,
+                      .toggle-label-unique {
+                        text-align: center;
+                      }
+
+                      .popup-buttons-unique button,
+                      .finalbuttons-unique button,
+                      .nobtn-unique,
+                      .yesbtn-unique {
+                        width: 100%;
+                        max-width: none;
+                      }
+                    }
+
+                    @media (max-width: 768px) {
+
+                      .popup-buttons-unique,
+                      .finalbuttons-unique {
+                        flex-wrap: nowrap !important;
+                        flex-direction: row !important;
+                        gap: 12px;
+                        justify-content: center;
+                      }
+
+                      .popup-buttons-unique button,
+                      .finalbuttons-unique button,
+                      .nobtn-unique,
+                      .yesbtn-unique {
+                        width: auto !important;
+                        flex: 1 1 0 !important;
+                        max-width: 100%;
+                        font-size: 13px !important;
+                        font-weight: normal !important;
+                      }
+
+                      .popup-heading-unique,
+                      .popup-description-for-pc-unique,
+                      .toggle-label-unique {
+                        font-size: 23px !important;
+                      }
+
+                      .toggle-label-unique {
+                        font-size: 14px !important;
+                        justify-content: center;
+                      }
+                    }
+
+                    @media (max-width: 768px) {
+                      .popup-image-mobile-unique {
+                        display: block;
+                        width: 100%;
+                        max-width: 280px;
+                        height: auto;
+                        margin: 12px auto 20px;
+                        object-fit: contain;
+                        border-radius: 8px;
+                      }
+
+                      .popup-description-for-mobile-unique {
+                        display: block !important;
+                        font-size: 13px;
+                      }
+
+                      .popup-description-for-pc-unique {
+                        display: none;
+                      }
+                    }
+
+                    @media (min-width: 769px) {
+                      .popup-image-mobile-unique {
+                        display: none;
+                      }
+                    }
+
+                    .popup-description-for-mobile-unique {
+                      display: none;
+                    }
+                  </style>
+
+                  <div id="jobAlertPopup" style="display:none;">
+                    <div class="popup-content-unique" id="popupStep1">
+                      <h3 class="popup-heading-unique">Want to get Personalised Job alerts?</h3>
+                      <img src="images/job-alert.png" class="popup-image-mobile-unique" alt="Job Alert" />
+                      <p class="popup-description-for-pc-unique">
+                        We’ll securely save your job preferences and notify you instantly via email and push
+                        notifications whenever new job postings match your selected interests, categories, or preferred
+                        locations. <br><br> Stay ahead and never miss an opportunity that fits your career goals.
+                      </p>
+                      <p class="popup-description-for-mobile-unique">
+                        We’ll save your job preferences and notify you instantly via email and notifications about new
+                        job postings that match your preferences.
+                      </p>
+                      <div class="popup-buttons-unique">
+                        <button class="yes-btn-unique" onclick="handlePopupYes(); clickLabelOnYes()">Yes</button>
+                        <button class="no-btn-unique" onclick="handlePopupNo()">No</button>
+                      </div>
+                    </div>
+
+                    <div class="popup-content-unique" id="popupStep1b" style="display:none;">
+                      <h3 class="popup-heading-unique">Oops! Did you pressed ‘No’ by mistake?</h3>
+                      <img src="images/second-step.png" class="popup-image-mobile-unique" alt="No Notifications" />
+                      <p class="popup-description-for-pc-unique">
+                        Since you pressed ‘No’, you will not receive notifications about new job opportunities that
+                        match your interests. When enabled, we instantly alert you via email and notifications whenever
+                        relevant jobs are posted. <br><br> Without job alerts, you might miss out on awesome
+                        opportunities perfectly matched to you. So, Lets stay ahead — enable alerts to never miss an
+                        opportunity.
+                      </p>
+                      <p class="popup-description-for-mobile-unique">
+                        Since you pressed ‘No’, you won’t get notifications about new jobs matching your interests.
+                        Would you like us to notify you instantly via email and notifications?
+                      </p>
+                      <div class="finalbuttons-unique">
+                        <button class="yesbtn-unique" onclick="handleNoSkipAlerts()">No, skip alerts</button>
+                        <button class="nobtn-unique" onclick="handlePopupYes(); clickLabelOnYes()">Yes, notify
+                          me</button>
+                      </div>
+                    </div>
+
+                    <div class="popup-content-unique" id="popupStep1c" style="display:none;">
+                      <h3 class="popup-heading-unique">Are you sure you don't want to get job alerts?</h3>
+                      <img src="images/last-step.png" class="popup-image-mobile-unique" alt="Last Step" />
+                      <p class="popup-description-for-pc-unique">
+                        One last step to re-consider. By skipping this, you won’t receive timely notifications about new
+                        jobs tailored specifically to your interests and skills.<br><br> You still have a chance to go
+                        back if you change your mind.<br><br>
+                      </p>
+                      <p class="popup-description-for-mobile-unique">
+                        If you skip this, you won’t receive timely alerts about jobs tailored to your interests and
+                        skills. You can still go back now if you’ve changed your mind.
+                        <br><br>
+                      </p>
+                      <label class="toggle-label-unique" for="neverShowAgainToggle">
+                        Never show this message again
+                        <span class="toggle-switch-unique">
+                          <input type="checkbox" id="neverShowAgainToggle" />
+                          <span class="slider-unique"></span>
+                        </span>
+                      </label>
+                      <div class="finalbuttons-unique">
+                        <button class="yesbtn-unique" onclick="confirmFinalNo(true)">Yes, I’m sure</button>
+                        <button class="nobtn-unique" onclick="handlePopupYes(); clickLabelOnYes()">No, go back</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <script>
+                    function clickLabelOnYes() {
+                      try {
+                        const label = document.getElementById('logsinpop')?.getElementsByTagName('label')[0];
+                        if (label) {
+                          label.click();
+                        } else {
+                          console.warn("Label element not found inside #logsinpop.");
+                        }
+                      } catch (e) {
+                        console.error("Error clicking label:", e);
+                      }
+                    }
+
+                    function handlePopupYes() {
+                      console.log('Popup Yes button clicked');
+                      // Proceed to next step if needed
+                    }
+
+                    function handlePopupNo() {
+                      document.getElementById('popupStep1').style.display = 'none';
+                      document.getElementById('popupStep1b').style.display = 'block';
+                    }
+
+                    function handleNoSkipAlerts() {
+                      document.getElementById('popupStep1b').style.display = 'none';
+                      document.getElementById('popupStep1c').style.display = 'block';
+                    }
+
+                    function confirmFinalNo(confirmed) {
+                      if (confirmed) {
+                        document.getElementById('jobAlertPopup').style.display = 'none';
+                        console.log('User opted out completely');
+                      }
+                    }
+                  </script>
+
+
+
+
+
+                  <section class="cm cmBr fixL" data-embed="true" data-num-comments="0" id="comments">
+                    <div class="cmBri mty">
+                      <div class="cmBrs fixLs">
+                        <div class="bkmH fixH fixT" data-text="Ask">
+                          <label aria-label="" class="c katta" for="forcontact"></label>
+                          <style>
+                            .katta::after {
+                              line-height: 50px !important;
+                              font-size: 15px !important;
+                              margin-right: 10px;
+                            }
+
+                            .ask-button {
+                              padding: 5px 16px !important;
+                              margin-top: 0px !important;
+                            }
+
+                            #popupStep2 {
+                              padding: 25px 10px;
+                            }
+
+
+
+                            /* Heading: Log In */
+                            #popupStep2 h2.popup-heading {
+                              font-size: 20px;
+                              font-weight: bold;
+                              margin-bottom: 6px;
+                              color: #222;
+                            }
+
+                            /* Subheading/Description */
+                            #popupStep2 p.popup-description {
+                              font-size: 14px;
+                              color: #666;
+                              margin-bottom: 24px;
+                            }
+
+
+
+
+
+
+
+
+
+                            /* Resize embedded SVG if needed */
+                            #popupStep2 .icon-wrapper svg {
+                              width: 18px;
+                              height: 18px;
+                              fill: #888;
+                            }
+
+                            /* Button styling */
+                            #popupStep2 button.continue-btn {
+                              width: 100%;
+                              background-color: #0055ff;
+                              color: white;
+                              padding: 14px;
+                              border: none;
+                              border-radius: 40px;
+                              font-size: 16px;
+                              font-weight: bold;
+                              cursor: pointer;
+                              transition: background 0.3s ease;
+                              margin-bottom: -20px;
+                            }
+
+                            #popupStep2 button.continue-btn:hover {
+                              background-color: #0055ff;
+                            }
+
+
+
+
+                            /* Input wrapper */
+                            #popupStep2 .input-wrapper {
+                              display: flex;
+                              align-items: center;
+                              position: relative;
+                              margin-bottom: 6px;
+                              /* small space below input before error */
+                            }
+
+                            /* Email input */
+                            #popupStep2 input[type="email"] {
+                              flex: 1;
+                              padding: 14px 16px 14px 53px;
+                              border-radius: 28px;
+                              border: 1px solid #ccc;
+                              font-size: 14px;
+                              background-color: #f9f9f9;
+                              outline: none;
+                              transition: border-color 0.3s ease, background-color 0.3s ease;
+                              width: 100%;
+                              box-sizing: border-box;
+                            }
+
+                            /* Focus state */
+                            #popupStep2 input[type="email"]:focus {
+                              border-color: #4a90e2;
+                              background-color: #fff;
+                            }
+
+                            /* Icon inside input */
+                            #popupStep2 .icon-wrapper {
+                              position: absolute;
+                              left: 23px;
+                              top: 51%;
+                              transform: translateY(-50%);
+                              height: 18px;
+                              width: 18px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              pointer-events: none;
+                            }
+
+                            #popupStep2 .icon-wrapper svg {
+                              width: 18px;
+                              height: 18px;
+                              fill: #888;
+                            }
+
+                            /* Error message below input */
+                            #popupEmailError {
+                              color: red;
+                              font-size: 13px;
+                              line-height: 1.4;
+                              margin: 6px 0 16px 12px;
+                              /* spacing from input + spacing to button */
+                            }
+
+
+
+
+
+
+
+                            #popupStep3Login {
+                              padding: 25px 10px;
+                            }
+
+                            #popupStep3Login label {
+                              display: block;
+                              font-weight: 600;
+                              margin-bottom: 6px;
+                              margin-left: 5px;
+                              color: #333;
+                              font-size: 14px;
+                            }
+
+                            #popupStep3Login .input-group {
+                              margin-bottom: 18px;
+                              margin-left: -4px;
+                            }
+
+                            #popupStep3Login .input-wrapper {
+                              display: flex;
+                              align-items: center;
+                              background-color: #f9f9f9;
+                              border: 1px solid #ccc;
+                              border-radius: 50px;
+                              padding: 0 16px;
+                              transition: border-color 0.3s, background-color 0.3s;
+                              height: 44px;
+                              box-sizing: border-box;
+                            }
+
+                            #popupStep3Login .input-wrapper:focus-within {
+                              border-color: #007bff;
+                              background-color: #fff;
+                            }
+
+                            #popupStep3Login .input-wrapper svg {
+                              margin-right: 10px;
+                              margin-left: 3px;
+                              flex-shrink: 0;
+                              fill: #888;
+                              width: 19px;
+                              height: 19px;
+                              display: block;
+                            }
+
+                            #popupStep3Login input {
+                              flex: 1;
+                              border: none;
+                              outline: none;
+                              font-size: 14px;
+                              padding: 0;
+                              background-color: transparent;
+                              height: 100%;
+                              line-height: 44px;
+                            }
+
+                            #popupStep3Login .toggle-password {
+                              margin-left: 10px;
+                              font-size: 13px;
+                              cursor: pointer;
+                              color: #007bff;
+                              font-weight: 500;
+                              background: none;
+                              border: none;
+                              padding: 0;
+                              height: 100%;
+                              display: flex;
+                              align-items: center;
+                              line-height: 1;
+                            }
+
+                            #popupStep3Login .error-message {
+                              color: red;
+                              font-size: 13px;
+                              margin-top: 6px;
+                              margin-left: 10px;
+                            }
+
+                            #popupStep3Login button {
+                              width: 100%;
+                              background-color: #0055ff;
+                              color: white;
+                              padding: 14px;
+                              border: none;
+                              border-radius: 40px;
+                              font-size: 16px;
+                              font-weight: bold;
+
+                              cursor: pointer;
+                              transition: background 0.3s ease;
+                              margin-bottom: -20px;
+                            }
+
+                            #popupStep3Login button:hover {
+                              background-color: #0044dd;
+                            }
+
+                            #popupStep3Login #forgotPasswordLink {
+                              display: block;
+                              font-size: 13px;
+                              margin-top: 10px;
+                              margin-left: 10px;
+                              color: #007bff;
+                              text-decoration: none;
+                              cursor: pointer;
+                            }
+
+
+                            #popupStep3Login #forgotPasswordLink:hover {
+                              text-decoration: underline;
+                            }
+
+                            .info-message {
+                              margin-top: 8px;
+                              font-size: 13px;
+                              margin-left: 3px;
+                              display: block;
+                            }
+
+                            .info-message.success {
+                              color: green !important;
+                              padding: 4px 6px;
+                            }
+
+                            .info-message.error {
+                              color: red;
+                            }
+
+                            .loginpasspt {
+                              margin-bottom: 8px;
+                            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            #popupStep3Signup1 {
+                              padding: 25px 8px;
+                            }
+
+                            #popupStep3Signup1 label {
+                              display: block;
+                              font-weight: 600;
+                              margin-bottom: 6px;
+                              margin-left: 5px;
+                              color: #333;
+                              font-size: 14px;
+                            }
+
+                            #popupStep3Signup1 .input-group {
+                              margin-bottom: 10px;
+                            }
+
+                            #popupStep3Signup1 .input-wrapper {
+                              display: flex;
+                              align-items: center;
+                              background-color: #f9f9f9;
+                              border: 1px solid #ccc;
+                              border-radius: 50px;
+                              padding: 0 16px;
+                              transition: border-color 0.3s, background-color 0.3s;
+                              height: 44px;
+                              /* fixes vertical movement */
+                              box-sizing: border-box;
+                            }
+
+                            #popupStep3Signup1 .input-wrapper svg {
+                              margin-right: 10px;
+                              fill: #616161;
+                              flex-shrink: 0;
+                              height: 20px;
+                              width: 20px;
+                              display: block;
+                            }
+
+                            #popupStep3Signup1 input {
+                              flex: 1;
+                              border: none;
+                              outline: none;
+                              font-size: 14px;
+                              padding: 0;
+                              background-color: transparent;
+                              height: 100%;
+                              line-height: 44px;
+                            }
+
+                            #popupStep3Signup1 .toggle-password {
+                              margin-left: 10px;
+                              font-size: 13px;
+                              cursor: pointer;
+                              color: #007bff;
+                              font-weight: 500;
+                              background: none;
+                              border: none;
+                              padding: 0;
+                              height: 100%;
+                              display: flex;
+                              align-items: center;
+                              line-height: 1;
+                            }
+
+
+
+                            #popupStep3Signup1 .error-message {
+                              color: red;
+                              font-size: 13px;
+                              margin-top: 6px;
+                              margin-left: 10px;
+                            }
+
+                            #popupStep3Signup1 button {
+                              width: 100%;
+                              background-color: #0055ff;
+                              color: white;
+                              padding: 14px;
+                              border: none;
+                              border-radius: 40px;
+                              font-size: 16px;
+                              font-weight: bold;
+                              margin-top: 10px;
+                              cursor: pointer;
+                              transition: background 0.3s ease;
+                              margin-bottom: -20px;
+                            }
+
+
+
+
+
+                            #popupStep3Signup1 button:hover {
+                              background-color: #0044dd;
+                            }
+                          </style>
+
+
+
+                          <style>
+                            @media screen and (max-width: 767px) {
+                              #popupStep3Signup2 {
+                                padding: 25px 10px !important;
+                              }
+                            }
+
+                            #popupStep3Signup2 {
+                              padding: 25px 15px;
+                              padding-left: 20px;
+
+                            }
+
+                            #popupStep3Signup2 h3 {
+                              font-size: 18px;
+                              margin-bottom: 12px;
+                              font-weight: 600;
+                              color: #333;
+                            }
+
+
+
+                            .lasthead {
+                              font-size: 1.7em !important;
+                            }
+
+
+
+
+                            #popupStep3Signup2 .error-message {
+                              color: red;
+                              font-size: 13px;
+                              margin-top: -25px;
+                              margin-bottom: 20px;
+                              padding-left: 5px;
+                            }
+
+                            #popupStep3Signup2 button {
+                              width: 100%;
+                              background-color: #0055ff;
+                              color: white;
+                              padding: 14px;
+                              border: none;
+                              border-radius: 40px;
+                              font-size: 16px;
+                              font-weight: bold;
+                              cursor: pointer;
+                              transition: background 0.3s ease;
+                              margin-bottom: -20px;
+                            }
+
+                            #popupStep3Signup2 button:hover {
+                              background-color: #0044dd;
+                            }
+
+
+
+
+
+                            .select-box {
+                              max-height: 185px;
+                              overflow-y: auto;
+                              border-radius: 12px;
+                              border: 1px solid #eee;
+                              background: #fff;
+                              padding: 10px;
+                              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                              margin-bottom: 50px;
+                            }
+
+                            .option-row {
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              padding: 12px 10px;
+                              border-bottom: 1px solid #f0f0f0;
+                            }
+
+                            .option-row:last-child {
+                              border-bottom: none;
+                            }
+
+                            .switch {
+                              position: relative;
+                              display: inline-block;
+                              width: 44px;
+                              height: 24px;
+                            }
+
+                            .switch input {
+                              opacity: 0;
+                              width: 0;
+                              height: 0;
+                            }
+
+                            .slider {
+                              position: absolute;
+                              cursor: pointer;
+                              top: 0;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
+                              background-color: #ccc;
+                              border-radius: 24px;
+                              transition: 0.4s;
+                            }
+
+                            .slider:before {
+                              position: absolute;
+                              content: "";
+                              height: 18px;
+                              width: 18px;
+                              left: 3px;
+                              bottom: 3px;
+                              background-color: white;
+                              border-radius: 50%;
+                              transition: 0.4s;
+                            }
+
+                            input:checked+.slider {
+                              background-color: #ff2d7b;
+                            }
+
+                            input:checked+.slider:before {
+                              transform: translateX(20px);
+                            }
+
+                            #successMessage {
+                              display: none;
+                              color: green;
+                              font-weight: bold;
+                              margin-top: 20px;
+                            }
+                          </style>
+
+                        </div>
+
+
+
+
+
+                        <div id="profile-card-container">
+
+                          <div class="popup-content" id="popupStep2" style="display:none">
+                            <h3 class="popup-heading">Get Started</h3>
+                            <p class="popup-description">Enter your email address to get the latest job openings that
+                              matches your job preferences.</p>
+                            <div class="input-wrapper">
+                              <input type="email" id="popupEmail" placeholder="Enter your email" required />
+                              <span class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                  <path
+                                    d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                                </svg>
+                              </span>
+                            </div>
+                            <div id="popupEmailError" class="error-message"></div>
+                            <button class="continue-btn" onclick="checkEmailExistence()">Next</button>
+                          </div>
+
+
+                          <div class="popup-content" id="popupStep3Signup1" style="display:none">
+                            <h3 class="popup-heading">Create Your Profile</h3>
+                            <p class="popup-description">Tell us a bit more about yourself to set up your profile and
+                              personalize your experience.
+                            </p>
+
+                            <!-- Full Name -->
+                            <div class="input-group">
+                              <label for="popupName">Full Name</label>
+                              <div class="input-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-person" viewBox="0 0 16 16">
+                                  <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                </svg>
+                                <input type="text" id="popupName" placeholder="Enter your full name" required />
+                              </div>
+                              <div id="popupNameError" class="error-message"></div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="input-group">
+                              <label for="popupPhone">Phone Number</label>
+                              <div class="input-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-telephone" viewBox="0 0 16 16">
+                                  <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z" />
+                                </svg>
+                                <input type="tel" id="popupPhone" placeholder="Enter your phone number" required />
+                              </div>
+                              <div id="popupPhoneError" class="error-message"></div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="input-group">
+                              <label for="popupPasswordNew">Password</label>
+                              <div class="input-wrapper">
+                                <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg"
+                                  fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                    d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+                                </svg>
+                                <input type="password" id="popupPasswordNew" placeholder="Create a strong password"
+                                  required />
+                                <span class="toggle-password" onclick="togglePassword(this)">Show</span>
+                              </div>
+                              <div id="popupPasswordError" class="error-message"></div>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="input-group">
+                              <label for="popupConfirmPassword">Confirm Password</label>
+                              <div class="input-wrapper">
+                                <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg"
+                                  fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                    d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+                                </svg>
+                                <input type="password" id="popupConfirmPassword" placeholder="Confirm your password"
+                                  required />
+                                <span class="toggle-password" onclick="togglePassword(this)">Show</span>
+                              </div>
+                              <div id="popupConfirmPasswordError" class="error-message"></div>
+                            </div>
+
+                            <div id="signupError" style="color:red; margin-top: 8px;"></div>
+                            <button onclick="goToJobPreferenceStep()">Continue</button>
+                          </div>
+
+
+                          <div class="popup-content" id="popupStep3Signup2" style="display:none">
+                            <h3 class="popup-heading lasthead">Select Job & Location</h3>
+                            <p class="popup-description" style="margin-top: -2px; margin-bottom: 25px;">Choose the types
+                              of jobs you're interested in and the locations where you'd like to work.</p>
+
+                            <h3>I. What kind of jobs are you interested in?</h3>
+                            <div class="select-box" id="categoryBox">
+                              <div class="option-row"><span>All Categories</span><label class="switch"><input
+                                    type="checkbox" value="" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox"
+                                    value="it-tech" /><span class="slider"></span></label></div>
+                            </div>
+                            <div id="categoryError" class="error-message"></div>
+
+
+                            <h3>II. Where do you want to work?</h3>
+                            <div class="select-box" id="locationBox">
+                              <div class="option-row"><span>All Locations</span><label class="switch"><input
+                                    type="checkbox" value="" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
+                                    value="helsinki" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
+                                    value="helsinki" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
+                                    value="helsinki" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
+                                    value="helsinki" /><span class="slider"></span></label></div>
+                              <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox"
+                                    value="helsinki" /><span class="slider"></span></label></div>
+
+                            </div>
+                            <div id="locationError" class="error-message"></div>
+                            <div id="signupPrefError" style="color:red; margin-top: 8px;"></div>
+                            <button onclick="signupUser()">Sign Up</button>
+                          </div>
+
+                          <div class="popup-content" id="popupStep3Login" style="display:none">
+                            <h3 class="popup-heading">Welcome Back</h3>
+                            <p class="popup-description">
+                              We've found an account linked to this email. Please enter your password to continue.
+                            </p>
+
+                            <!-- Email Field -->
+                            <div class="input-group">
+                              <div class="input-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                  <path
+                                    d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                                </svg>
+                                <input type="email" id="popupEmailLogin" placeholder="Enter your email" required />
+                              </div>
+                              <div id="popupEmailLoginError" class="error-message"></div>
+
+                            </div>
+
+                            <!-- Password Field -->
+                            <div class="input-group">
+                              <div class="input-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                  class="bi bi-lock" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                    d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+                                </svg>
+                                <input type="password" id="popupPasswordLogin" placeholder="Enter your password"
+                                  required />
+                                <span class="toggle-password" onclick="togglePassword(this)">Show</span>
+                              </div>
+                              <div id="popupPasswordLoginError" class="error-message"></div>
+                              <span id="forgotPasswordLink">Forgot Password?</span>
+                              <div id="forgotPasswordMessage" class="info-message"></div>
+
+                            </div>
+
+                            <!-- Button -->
+                            <button onclick="loginUser()">Login</button>
+                          </div>
+
+                        </div>
+
+
+                        <button id="logoutBtn" style="position: fixed; top: 10px; right: 10px;">Logout</button>
+
+                        <script type="module" src="js/popupLogic.js"></script>
+
+
+
+                      </div>
+                    </div>
+                    <label class="fCls" for="forcontact"></label>
+                  </section>
+                  <script
+                    type="text/javascript">/*<![CDATA[*/ var observerK = new MutationObserver(function (mutations, me) { var cekkomen = getid('comment-editor'); if (cekkomen) { var b = getid("comment-editor"), d = b.getAttribute("data-src"); if (b.setAttribute("src", d), 1 == comment) { var f = getclass("rpTo"), c = getid("commentForm"), h = f.length, k = function (b, d, e, f) { b.addEventListener("click", function () { var c = b.getAttribute("data-reply-to"); getid("c" + c).appendChild(d); getid("commentForm").className = 'cmRbox'; getid("addCm").className = 'commentsReply'; e.src = f + "&parentID=" + c }) }; for (i = 0; i < h; i++)k(f[i], c, b, d); var l = getclass("cmFrm")[0]; getid("addCm").addEventListener("click", function () { l.appendChild(c); getid("commentForm").className = 'comment-replybox-thread'; getid("addCm").className = 'hidden'; b.src = d }) }; me.disconnect(); return } }); observerK.observe(document, { childList: true, subtree: true }); var bscom = getid('forcontact'), bskom = getid('iCmn'); if (bscom !== null) { bscom.addEventListener('click', function () { if (bscom.checked == true) { if (bskom !== null) { bskom.click() }; } }) }; /*]]>*/</script>
+                  <script
+                    type="text/javascript">/*<![CDATA[*/ /* Comment tag, license: dte.web.id/teknis/paket-javascript-fitur-manipulasi */ function repText(id) { var a = document.getElementById(id); if (!a) return; var b = a.innerHTML; b = b.replace(/<i rel="image">(.*?)<\/i>/ig, "<img class='lazy' data-src='$1' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' alt='Image Comment' \/>"); a.innerHTML = b; } repText('cmHolder'); /*]]>*/</script>
+                </div>
 
 
 
@@ -1679,7 +2802,7 @@
 
       <script src="js/gt.min.js" data-gt-widget-id="43217984"></script>
       <script src="/js/sw-register.js"></script>
-      
+
 
 
 
