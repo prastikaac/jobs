@@ -11,22 +11,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 
-
-function clickLabelOnYes() {
-  try {
-    const label = document.getElementById('logsinpop')?.getElementsByTagName('label')[0];
-    if (label) {
-      label.click();
-    } else {
-      console.warn("Label element not found inside #logsinpop.");
-    }
-  } catch (e) {
-    console.error("Error clicking label:", e);
-  }
-}
-
-
-
 const firebaseConfig = {
   apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
   authDomain: "findjobsinfinland-3c061.firebaseapp.com",
@@ -546,3 +530,16 @@ window.togglePassword = function (el) {
   }
 };
 
+
+window.clickLabelOnYes = function () {
+  try {
+    const label = document.getElementById('logsinpop')?.getElementsByTagName('label')[0];
+    if (label) {
+      label.click();
+    } else {
+      console.warn("Label element not found inside #logsinpop.");
+    }
+  } catch (e) {
+    console.error("Error clicking label:", e);
+  }
+};
