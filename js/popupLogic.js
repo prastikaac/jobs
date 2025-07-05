@@ -101,11 +101,21 @@ function getSelectedValues(containerId) {
   return selected;
 }
 
-window.handlePopupYes = () => {
-  // Show the next step in the popup (either go to login/signup)
+window.handlePopupYes = async () => {
+  try {
+    if ("Notification" in window) {
+      const permission = Notification.permission;
+      if (permission === "default") {
+        const result = await Notification.requestPermission();
+        console.log("Notification permission result:", result);
+      }
+    }
+  } catch (e) {
+    console.warn("Notification permission check failed:", e);
+  }
+
   showPopupStep("popupStep2");
 
-  // Hide the job alert popup and show the profile card container
   document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 };
@@ -269,6 +279,7 @@ function clearAllErrors() {
   });
 }
 
+
 window.signupUser = async () => {
   clearAllErrors();
 
@@ -286,6 +297,7 @@ window.signupUser = async () => {
 
   let hasError = false;
 
+  // Validate fields
   if (!validateName(name)) {
     showFieldError(nameInput, "Please enter your full name.");
     nameInput.focus();
@@ -316,9 +328,6 @@ window.signupUser = async () => {
     hasError = true;
   }
 
-  if (hasError) return;
-
-  // Continue to preferences step
   const jobCategory = getSelectedValues("categoryBox");
   const jobLocation = getSelectedValues("locationBox");
 
@@ -327,6 +336,7 @@ window.signupUser = async () => {
     if (categoryError) categoryError.textContent = "Please select at least one job category.";
     hasError = true;
   }
+
   if (jobLocation.length === 0) {
     const locationError = document.getElementById("locationError");
     if (locationError) locationError.textContent = "Please select at least one job location.";
@@ -336,11 +346,60 @@ window.signupUser = async () => {
   if (hasError) return;
 
   try {
-    // Further processing...
+    // 1. Create the user in Firebase Auth
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+
+    const timestampNow = Timestamp.now();
+
+    // 2. Get the FCM token properly
+    let fcmToken = "";
+    try {
+      fcmToken = await getOrCreateFcmToken();
+      console.log("Signup FCM token obtained:", fcmToken);
+    } catch (e) {
+      console.warn("Unable to get FCM token during signup:", e);
+    }
+
+    // 3. Store user details in Firestore with all requested fields
+    await setDoc(doc(db, "users", user.uid), {
+      uid: user.uid,
+      email: user.email,
+      phoneNumber: phone,
+      fullName: name,
+      jobCategory: jobCategory,
+      jobLocation: jobLocation,
+      createdAt: timestampNow,
+      lastLogin: timestampNow,
+      fcmTokens: fcmToken ? [fcmToken] : [] // array
+    });
+
+    // 4. Save to localStorage
+    localStorage.setItem("user", JSON.stringify({
+      uid: user.uid,
+      email: user.email
+    }));
+
+    // 5. Also ensure token in arrayUnion for consistency
+    if (fcmToken) {
+      await updateDoc(doc(db, "users", user.uid), {
+        fcmTokens: arrayUnion(fcmToken)
+      });
+    }
+
+    // 6. Finalize
+    document.getElementById("jobAlertPopup").style.display = "none";
+    document.getElementById("profile-card-container").style.display = "block";
+
+    console.log("Signup completed with FCM token stored for:", user.uid);
+
   } catch (error) {
     console.error("Signup error:", error);
+    const signupError = document.getElementById("signupPrefError");
+    if (signupError) signupError.textContent = error.message || "Signup failed. Please try again.";
   }
 };
+
 
 window.loginUser = async () => {
   clearAllErrors();
