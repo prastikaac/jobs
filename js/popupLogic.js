@@ -532,3 +532,38 @@ window.togglePassword = function (el) {
 
 
 
+
+function clickLabelOnYes() {
+  try {
+    const label = document.getElementById('logsinpop')?.getElementsByTagName('label')[0];
+    if (label) {
+      label.click();
+    } else {
+      console.warn("Label element not found inside #logsinpop.");
+    }
+  } catch (e) {
+    console.error("Error clicking label:", e);
+  }
+}
+
+function handlePopupYes() {
+  console.log('Popup Yes button clicked');
+  // Proceed to next step if needed
+}
+
+function handlePopupNo() {
+  document.getElementById('popupStep1').style.display = 'none';
+  document.getElementById('popupStep1b').style.display = 'block';
+}
+
+function handleNoSkipAlerts() {
+  document.getElementById('popupStep1b').style.display = 'none';
+  document.getElementById('popupStep1c').style.display = 'block';
+}
+
+function confirmFinalNo(confirmed) {
+  if (confirmed) {
+    document.getElementById('jobAlertPopup').style.display = 'none';
+    console.log('User opted out completely');
+  }
+}
