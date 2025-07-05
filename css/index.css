@@ -1105,7 +1105,7 @@ header svg.line {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .headI {
     height: 100%;
@@ -7960,44 +7960,44 @@ img.goog-te-gadget-icon,
 
 
 .iFxd {
-  position: absolute;
-  z-index: 9;
-  /* Set a high z-index value to ensure it's displayed on top */
-  /* Add any other styling you need */
+    position: absolute;
+    z-index: 9;
+    /* Set a high z-index value to ensure it's displayed on top */
+    /* Add any other styling you need */
 }
 
 .productimg {
-  transition: filter 0.3s ease, transform 0.3s ease;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .productimg:hover {
-  filter: grayscale(40%);
-  transform: scale(1.1);
+    filter: grayscale(40%);
+    transform: scale(1.1);
 }
 
 .productimg {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 
 .bkmC .pThmb>::before {
-    -webkit-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
     content: '' !important;
 }
 
 .ask {
     margin-right: -25px !important;
-  }
-  
-  .frts {
-     margin-right: -60px !important;
-  }
-  
-  .crs {
-     margin-right: 0px !important;
-  }
-  
-  .hms {
-    margin-left: 7px !important; 
+}
+
+.frts {
+    margin-right: -60px !important;
+}
+
+.crs {
+    margin-right: 0px !important;
+}
+
+.hms {
+    margin-left: 7px !important;
     margin-right: -35px;
-  }
+}
