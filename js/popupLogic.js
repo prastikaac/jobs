@@ -357,11 +357,35 @@ window.loginUser = async () => {
   }
 
   try {
-    // Continue with login...
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+
+    // Save user in localStorage if needed
+    localStorage.setItem("user", JSON.stringify({
+      uid: user.uid,
+      email: user.email
+    }));
+
+    await syncFcmTokenWithFirestore(user.uid);
+
+    // Hide popup and show the profile
+    document.getElementById("jobAlertPopup").style.display = "none";
+    document.getElementById("profile-card-container").style.display = "block";
+
   } catch (error) {
     console.error("Login failed:", error);
+    if (error.code === "auth/wrong-password") {
+      showFieldError(passInput, "The password you entered is incorrect. Please try again.");
+      passInput.focus();
+    } else if (error.code === "auth/user-not-found") {
+      showFieldError(emailInput, "No account found with this email.");
+      emailInput.focus();
+    } else {
+      showFieldError(passInput, "Login failed. Please check your credentials and try again.");
+    }
   }
 };
+
 
 
 document.getElementById("logoutBtn")?.addEventListener("click", async () => {
