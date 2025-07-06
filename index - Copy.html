@@ -1903,6 +1903,98 @@
                             #popupStep3Login h3 {
                               font-family: 'Poppins', sans-serif;
                             }
+
+
+
+                            /* Signup Success Popup */
+                            #popupSignupSuccess {
+                              padding: 0px 15px;
+                              text-align: center;
+                              margin-bottom: 10px;
+                            }
+
+
+
+                            #popupSignupSuccess .popup-heading {
+                              font-size: 24px;
+                              font-weight: 600;
+                              margin-bottom: 16px;
+                              color: #333;
+                            }
+
+                            #popupSignupSuccess .popup-description {
+                              font-size: 14px;
+                              color: #666;
+                            }
+
+                            #popupSignupSuccess button {
+                              width: 100%;
+                              background-color: #0055ff;
+                              color: white;
+                              padding: 14px;
+                              border: none;
+                              border-radius: 40px;
+                              font-size: 16px;
+                              font-weight: bold;
+                              cursor: pointer;
+                              transition: background 0.3s ease;
+                              margin-top: 10px;
+                            }
+
+                            #popupSignupSuccess button:hover {
+                              background-color: #0044dd;
+                            }
+
+                            /* Login Success Popup */
+                            #popupLoginSuccess {
+                              padding: 0px 15px;
+                              text-align: center;
+                            }
+
+                            #popupLoginSuccess .popup-heading {
+                              font-size: 24px;
+                              font-weight: 600;
+                              margin-bottom: 16px;
+                              color: #333;
+                            }
+
+                            #popupLoginSuccess .popup-description {
+                              font-size: 14px;
+                              color: #666;
+                            }
+
+                            #popupLoginSuccess button {
+                              width: 100%;
+                              background-color: #0055ff;
+                              color: white;
+                              padding: 14px;
+                              border: none;
+                              border-radius: 40px;
+                              font-size: 16px;
+                              font-weight: bold;
+                              cursor: pointer;
+                              transition: background 0.3s ease;
+                              margin-top: 10px;
+                              margin-bottom: 10px;
+                            }
+
+                            #popupLoginSuccess button:hover {
+                              background-color: #0044dd;
+                            }
+
+
+
+
+
+                            .popup-image-pc-and-mobile {
+                              display: block;
+                              width: 100%;
+                              max-width: 280px;
+                              height: auto;
+                              margin: 12px auto 20px;
+                              object-fit: contain;
+                              border-radius: 8px;
+                            }
                           </style>
 
                         </div>
@@ -2047,7 +2139,7 @@
                             </div>
                             <div id="locationError" class="error-message"></div>
                             <div id="signupPrefError" style="color:red; margin-top: 8px;"></div>
-                            <button onclick="signupUser()">Sign Up</button>
+                            <button id="signupButton" onclick="signupUser()">Sign Up</button>
                           </div>
 
                           <div class="popup-content" id="popupStep3Login" style="display:none">
@@ -2088,14 +2180,36 @@
 
                             </div>
 
-                            <!-- Button -->
                             <button onclick="loginUser()">Login</button>
+                          </div>
+
+
+                          <!-- New Popup: Signup Success -->
+                          <div class="popup-content" id="popupSignupSuccess"
+                            style="display:none;">
+                            <img class="popup-image-pc-and-mobile" src="images/sucessfully.png" alt="Signed Up Success">
+                            <h3 class="popup-heading">Signup Successful!</h3>
+                            <p class="popup-description">All set to go. You’ll now receive personalized job alerts based
+                              on your
+                              interests and location.</p>
+                            <button id="closeSignupPopupButton">Close</button> <!-- New Button for Signup -->
+                          </div>
+
+                          <!-- New Popup: Login Success -->
+                          <div id="popupLoginSuccess" class="popup" style="display:none;">
+                            <img class="popup-image-pc-and-mobile" src="images/sucessfully.png" alt="Login Success">
+                            <h3 class="popup-heading">Login Successful!</h3>
+                            <p class="popup-description">Welcome back. You’ll now receive personalized job alerts based
+                              on your interests and location.</p>
+                            <button id="closeLoginPopupButton">Close</button> <!-- Renamed Button -->
+
                           </div>
 
                         </div>
 
 
                         <button id="logoutBtn" style="position: fixed; top: 10px; right: 10px;">Logout</button>
+
 
                         <script type="module" src="js/popupLogic.js"></script>
 

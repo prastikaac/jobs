@@ -38,7 +38,9 @@ function showPopupStep(stepId) {
     "popupStep2",
     "popupStep3Signup1",
     "popupStep3Signup2",
-    "popupStep3Login"
+    "popupStep3Login",
+    "popupSignupSuccess",
+    "popupLoginSuccess"
   ];
 
   steps.forEach(id => {
@@ -279,8 +281,10 @@ function clearAllErrors() {
   });
 }
 
-
 window.signupUser = async () => {
+  const signupButton = document.getElementById("signupButton");  // Get the signup button
+  signupButton.disabled = true;  // Disable the button after click
+
   clearAllErrors();
 
   const nameInput = document.getElementById("popupName");
@@ -343,7 +347,10 @@ window.signupUser = async () => {
     hasError = true;
   }
 
-  if (hasError) return;
+  if (hasError) {
+    signupButton.disabled = false;  // Re-enable the button in case of error
+    return;
+  }
 
   try {
     // 1. Create the user in Firebase Auth
@@ -387,63 +394,162 @@ window.signupUser = async () => {
       });
     }
 
-    // 6. Finalize
-    document.getElementById("jobAlertPopup").style.display = "none";
-    document.getElementById("profile-card-container").style.display = "block";
+    // 6. Finalize - Show signup success popup
+    showPopupStep("popupSignupSuccess");
 
     console.log("Signup completed with FCM token stored for:", user.uid);
+
+    // **Hide the signup success popup after 5 seconds, and unclick the label**
+    setTimeout(() => {
+      // Unclick the <label> inside #logsinpop
+      const signupLabel = document.getElementById('logsinpop')?.querySelector('label');
+      if (signupLabel) {
+        signupLabel.click();  // Simulate unchecking the label
+      }
+
+      // Hide the signup success popup after 5 seconds
+      const signupPopup = document.getElementById('popupSignupSuccess');
+      if (signupPopup) {
+        signupPopup.style.display = 'none';  // Hide the popup
+      }
+
+      // Re-enable the signup button after the process is complete
+      signupButton.disabled = false;
+
+    }, 5000);  // 5-second delay before hiding the popup
 
   } catch (error) {
     console.error("Signup error:", error);
     const signupError = document.getElementById("signupPrefError");
     if (signupError) signupError.textContent = error.message || "Signup failed. Please try again.";
+
+    // Re-enable the button in case of error
+    signupButton.disabled = false;
   }
 };
 
 
-window.loginUser = async () => {
-  clearAllErrors();
 
+window.loginUser = async () => {
   const emailInput = document.getElementById("popupEmailLogin");
   const passInput = document.getElementById("popupPasswordLogin");
+
   const email = emailInput.value.trim();
   const password = passInput.value;
+
+  let hasError = false;
+
+  // Validate the email and password first
+  if (!validateEmail(email)) {
+    showFieldError(emailInput, "Please enter a valid email address.");
+    emailInput.focus();
+    hasError = true;
+  }
 
   if (!validatePassword(password)) {
     showFieldError(passInput, "Please enter a valid password (min 6 chars).");
     passInput.focus();
-    return;
+    hasError = true;
   }
 
+  if (hasError) return;
+
   try {
+    // Attempt to sign in using Firebase Authentication
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // Save user in localStorage if needed
-    localStorage.setItem("user", JSON.stringify({
-      uid: user.uid,
-      email: user.email
-    }));
+    console.log("Login successful! User:", user);
 
-    await syncFcmTokenWithFirestore(user.uid);
+    // Now check the Firestore database for the user's additional details
+    const userRef = doc(db, "users", user.uid);
+    const docSnap = await getDoc(userRef);
 
-    // Hide popup and show the profile
-    document.getElementById("jobAlertPopup").style.display = "none";
-    document.getElementById("profile-card-container").style.display = "block";
+    if (docSnap.exists()) {
+      const userData = docSnap.data();
+      console.log("User data retrieved from Firestore:", userData);
+
+      // You can save this data to localStorage, or use it in your app
+      localStorage.setItem("user", JSON.stringify({
+        uid: user.uid,
+        email: user.email,
+        fullName: userData.fullName,
+        phoneNumber: userData.phoneNumber,
+        createdAt: userData.createdAt,
+        lastLogin: userData.lastLogin
+      }));
+
+      // Optionally, you can show a success message and move to the next page
+      showPopupStep("popupLoginSuccess");
+      console.log("User logged in and data fetched successfully.");
+
+      // First, unclick the <label> inside #logsinpop, then hide the popup after 5 seconds
+      setTimeout(() => {
+        // Unclick the <label> inside #logsinpop
+        const loginLabel = document.getElementById("logsinpop")?.querySelector('label');
+        if (loginLabel) {
+          loginLabel.click();  // This simulates a "click" to uncheck it
+        }
+
+        // Hide the login success popup after unclicking
+        document.getElementById("popupLoginSuccess").style.display = "none";
+      }, 5000);
+
+    } else {
+      console.log("No user data found in Firestore for the logged-in user.");
+    }
 
   } catch (error) {
     console.error("Login failed:", error);
-    if (error.code === "auth/wrong-password") {
-      showFieldError(passInput, "The password you entered is incorrect. Please try again.");
-      passInput.focus();
-    } else if (error.code === "auth/user-not-found") {
-      showFieldError(emailInput, "No account found with this email.");
-      emailInput.focus();
-    } else {
-      showFieldError(passInput, "Login failed. Please check your credentials and try again.");
-    }
+    const passwordErrorDiv = document.getElementById("popupPasswordLoginError");
+    showFieldError(passInput, "Login failed. Please check your credentials and try again.");
   }
 };
+
+
+
+// Function to close the login popup and unclick the label
+function closeLoginPopup() {
+  const loginLabel = document.getElementById('logsinpop')?.querySelector('label');
+  if (loginLabel) {
+    loginLabel.click();  // Simulate unchecking the label
+  }
+
+  const loginPopup = document.getElementById('popupLoginSuccess');
+  if (loginPopup) {
+    loginPopup.style.display = 'none';  // Hide the popup
+  }
+}
+
+// Function to close the signup popup and unclick the label
+function closeSignupPopup() {
+  const signupLabel = document.getElementById('logsinpop')?.querySelector('label');
+  if (signupLabel) {
+    signupLabel.click();  // Simulate unchecking the label
+  }
+
+  const signupPopup = document.getElementById('popupSignupSuccess');
+  if (signupPopup) {
+    signupPopup.style.display = 'none';  // Hide the popup
+  }
+}
+
+// Wait for the DOM to be fully loaded before adding event listeners
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the close button for login and attach event listener
+  const closeLoginButton = document.getElementById('closeLoginPopupButton');
+  if (closeLoginButton) {
+    closeLoginButton.addEventListener('click', closeLoginPopup);
+  }
+
+  // Get the close button for signup and attach event listener
+  const closeSignupButton = document.getElementById('closeSignupPopupButton');
+  if (closeSignupButton) {
+    closeSignupButton.addEventListener('click', closeSignupPopup);
+  }
+});
+
+
 
 
 
