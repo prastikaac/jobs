@@ -1,0 +1,1435 @@
+#jobAlertPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#jobAlertPopup .popup-content-unique {
+    width: 100%;
+    max-width: 680px;
+    max-height: calc(100% - 60px);
+    border-radius: 12px;
+    transition: inherit;
+    z-index: 3;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+@media (min-width: 780px) {
+    #jobAlertPopup .popup-content-unique {
+        padding: 35px 35px;
+    }
+}
+
+#jobAlertPopup .popup-content-unique.active {
+    display: flex;
+}
+
+#popupStep1b,
+#popupStep1c {
+    max-width: 680px !important;
+}
+
+.popup-heading-unique {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    width: 100%;
+}
+
+
+
+.popup-heading-unique {
+    font-family: "Poppins", sans-serif;
+}
+
+.popup-description-for-pc-unique {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.popup-buttons-unique,
+.finalbuttons-unique {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.popup-buttons-unique button,
+.finalbuttons-unique button,
+.nobtn-unique,
+.yesbtn-unique {
+    flex: 1 1 auto;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    max-width: 100%;
+}
+
+.popup-buttons-unique button.yes-btn-unique,
+.finalbuttons-unique button.no-go-back-btn,
+.nobtn-unique {
+    background-color: #0055ff;
+}
+
+.popup-buttons-unique button.yes-btn-unique:hover,
+.finalbuttons-unique button.no-go-back-btn:hover,
+.nobtn-unique:hover {
+    background-color: #0044cc;
+}
+
+.popup-buttons-unique button.no-btn-unique,
+.finalbuttons-unique button.yes-skip-btn,
+.yesbtn-unique {
+    background-color: #ed6755;
+}
+
+.popup-buttons-unique button.no-btn-unique:hover,
+.finalbuttons-unique button.yes-skip-btn:hover,
+.yesbtn-unique:hover {
+    background-color: #d55444;
+}
+
+.toggle-label-unique {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.toggle-switch-unique {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 18px;
+}
+
+.toggle-switch-unique input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-unique {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.slider-unique:before {
+    position: absolute;
+    content: "";
+    height: 13px !important;
+    width: 13px !important;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.toggle-switch-unique input:checked+.slider-unique {
+    background-color: #ed6755;
+}
+
+.toggle-switch-unique input:checked+.slider-unique:before {
+    transform: translateX(14px);
+}
+
+@media (max-width: 768px) {
+    #jobAlertPopup .popup-content-unique {
+        text-align: center;
+        align-items: center;
+    }
+
+    .popup-buttons-unique,
+    .finalbuttons-unique {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .popup-heading-unique,
+    .popup-description-for-pc-unique,
+    .toggle-label-unique {
+        text-align: center;
+    }
+
+    .popup-buttons-unique button,
+    .finalbuttons-unique button,
+    .nobtn-unique,
+    .yesbtn-unique {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .popup-buttons-unique,
+    .finalbuttons-unique {
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .popup-buttons-unique button,
+    .finalbuttons-unique button,
+    .nobtn-unique,
+    .yesbtn-unique {
+        width: auto !important;
+        flex: 1 1 0 !important;
+        max-width: 100%;
+        font-size: 13px !important;
+    }
+
+    .popup-heading-unique,
+    .popup-description-for-pc-unique,
+    .toggle-label-unique {
+        font-size: 23px !important;
+    }
+
+    .toggle-label-unique {
+        font-size: 14px !important;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .popup-image-mobile-unique {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 12px auto 20px;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .popup-description-for-mobile-unique {
+        display: block !important;
+        font-size: 14px;
+    }
+
+    .popup-description-for-pc-unique {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .popup-image-mobile-unique {
+        display: none;
+    }
+}
+
+.popup-description-for-mobile-unique {
+    display: none;
+}
+
+/* Button styling */
+.blockclosebtn {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: -10px;
+}
+
+.blockclosebtn:hover {
+    background-color: #0055ff;
+}
+
+
+.blockedbuttons {
+    flex: 1 1 auto;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    max-width: 100%;
+    margin-top: -10px;
+
+}
+
+.blockeddescription {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Mobile: buttons one below the other with margin */
+@media (max-width: 768px) {
+    .finalbuttons-unique {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .finalbuttons-unique .blockedbuttons {
+        width: 100% !important;
+    }
+
+    .finalbuttons-unique .blockedbuttons:not(:last-child) {
+        margin-bottom: 10px !important;
+    }
+}
+
+.steps-list-mobile {
+    padding-left: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.steps-list-mobile li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.4;
+    list-style-type: circle;
+    word-break: break-word;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .steps-list-mobile li {
+        font-size: 15px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .inline-icon {
+        vertical-align: middle !important;
+    }
+}
+
+.popdesc {
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+/* Dark Mode */
+body.drK #jobAlertPopup {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background */
+}
+
+body.drK #jobAlertPopup .popup-content-unique {
+    background-color: #2d2d30;
+    /* Dark background for the popup content */
+    color: #fff;
+    /* White text for readability */
+}
+
+body.drK .popup-heading-unique {
+    color: #fff;
+    /* White text for headings */
+}
+
+body.drK .popup-description-for-pc-unique {
+    color: #ccc;
+    /* Light gray text for description */
+}
+
+body.drK .popup-buttons-unique button.yes-btn-unique,
+body.drK .finalbuttons-unique button.no-go-back-btn,
+body.drK .nobtn-unique {
+    background-color: #0055ff;
+    /* Blue background for buttons */
+}
+
+body.drK .popup-buttons-unique button.yes-btn-unique:hover,
+body.drK .finalbuttons-unique button.no-go-back-btn:hover,
+body.drK .nobtn-unique:hover {
+    background-color: #0044cc;
+    /* Darker blue on hover */
+}
+
+body.drK .popup-buttons-unique button.no-btn-unique,
+body.drK .finalbuttons-unique button.yes-skip-btn,
+body.drK .yesbtn-unique {
+    background-color: #ed6755;
+    /* Red background for 'No' and 'Yes, Skip' buttons */
+}
+
+body.drK .popup-buttons-unique button.no-btn-unique:hover,
+body.drK .finalbuttons-unique button.yes-skip-btn:hover,
+body.drK .yesbtn-unique:hover {
+    background-color: #d55444;
+    /* Darker red on hover */
+}
+
+body.drK .toggle-label-unique {
+    color: #fff;
+    /* White text for toggle labels */
+}
+
+body.drK .toggle-switch-unique .slider-unique {
+    background-color: #656565;
+}
+
+/* SVG Icon Styling */
+body.drK svg.icon.inline-icon {
+    fill: #ccc !important;
+    /* Light gray fill color for the icon */
+    transition: fill 0.3s ease !important;
+    /* Smooth transition for fill color */
+}
+
+
+body.drK .toggle-switch-unique input:checked+.slider-unique {
+    background-color: #ed6755;
+    /* Red when checked */
+}
+
+body.drK .toggle-switch-unique input:checked+.slider-unique:before {
+    background-color: #fff;
+    /* White circle for checked state */
+}
+
+body.drK .blockclosebtn {
+    background-color: #0055ff;
+    /* Blue for block close button */
+}
+
+body.drK .blockclosebtn:hover {
+    background-color: #0044cc;
+    /* Darker blue on hover */
+}
+
+body.drK .popup-image-mobile-unique {
+    border-radius: 8px;
+    border: 1px solid #444;
+    /* Light border around images in dark mode */
+}
+
+/* Mobile: buttons one below the other with margin */
+@media (max-width: 768px) {
+    body.drK .finalbuttons-unique {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    body.drK .finalbuttons-unique .blockedbuttons {
+        width: 100% !important;
+    }
+
+    body.drK .finalbuttons-unique .blockedbuttons:not(:last-child) {
+        margin-bottom: 10px !important;
+    }
+}
+
+body.drK .steps-list-mobile li {
+    color: #ccc;
+    /* Light gray text for steps list */
+}
+
+body.drK .popup-image-mobile-unique {
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+body.drK .popup-description-for-mobile-unique {
+    color: #ccc;
+    /* Light gray for mobile description */
+}
+
+
+
+
+
+
+
+
+/* Login-Signup popup css */
+
+
+
+#popupStep2 {
+    padding: 0px 15px;
+}
+
+.popup-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    width: 100%;
+}
+
+
+/* Subheading/Description */
+#popupStep2 p.popup-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* Resize embedded SVG if needed */
+#popupStep2 .icon-wrapper svg {
+    width: 18px;
+    height: 18px;
+    fill: #888;
+}
+
+/* Button styling */
+#popupStep2 button.continue-btn {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 5px;
+}
+
+#popupStep2 button.continue-btn:hover {
+    background-color: #0055ff;
+}
+
+/* Input wrapper */
+#popupStep2 .input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 6px;
+    /* small space below input before error */
+}
+
+/* Email input */
+#popupStep2 input[type="email"] {
+    flex: 1;
+    padding: 14px 16px 14px 53px;
+    border-radius: 28px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Focus state */
+#popupStep2 input[type="email"]:focus {
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+/* Icon inside input */
+#popupStep2 .icon-wrapper {
+    position: absolute;
+    left: 23px;
+    top: 51%;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+#popupStep2 .icon-wrapper svg {
+    width: 18px;
+    height: 18px;
+    fill: #888;
+}
+
+/* Error message below input */
+#popupEmailError {
+    color: red;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 6px 0 16px 12px;
+    /* spacing from input + spacing to button */
+}
+
+
+
+
+
+
+
+#popupStep3Login {
+    padding: 5px 15px;
+}
+
+#popupStep3Login label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+#popupStep3Login .input-group {
+    margin-bottom: 18px;
+    margin-left: -4px;
+}
+
+#popupStep3Login .input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 0 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+    height: 44px;
+    box-sizing: border-box;
+}
+
+#popupStep3Login .input-wrapper:focus-within {
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+#popupStep3Login .input-wrapper svg {
+    margin-right: 10px;
+    margin-left: 3px;
+    flex-shrink: 0;
+    fill: #888;
+    width: 19px;
+    height: 19px;
+    display: block;
+}
+
+#popupStep3Login input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0;
+    background-color: transparent;
+    height: 100%;
+    line-height: 44px;
+}
+
+#popupStep3Login .toggle-password {
+    margin-left: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: 500;
+    background: none;
+    border: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+#popupStep3Login .error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+#popupStep3Login button {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 5px;
+}
+
+#popupStep3Login button:hover {
+    background-color: #0044dd;
+}
+
+#popupStep3Login #forgotPasswordLink {
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#popupStep3Login #forgotPasswordLink:hover {
+    text-decoration: underline;
+}
+
+.info-message {
+    margin-top: 8px;
+    font-size: 13px;
+    margin-left: 3px;
+    display: block;
+}
+
+.info-message.success {
+    color: green !important;
+    padding: 4px 6px;
+}
+
+.info-message.error {
+    color: red;
+}
+
+.loginpasspt {
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popupStep3Signup1 {
+    padding: 0px 10px;
+}
+
+#popupStep3Signup1 label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+#popupStep3Signup1 .input-group {
+    margin-bottom: 10px;
+}
+
+#popupStep3Signup1 .input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 0 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+    height: 44px;
+    /* fixes vertical movement */
+    box-sizing: border-box;
+}
+
+#popupStep3Signup1 .input-wrapper svg {
+    margin-right: 10px;
+    fill: #616161;
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+#popupStep3Signup1 input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0;
+    background-color: transparent;
+    height: 100%;
+    line-height: 44px;
+}
+
+#popupStep3Signup1 .toggle-password {
+    margin-left: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: 500;
+    background: none;
+    border: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+
+
+#popupStep3Signup1 .error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+#popupStep3Signup1 button {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+#popupStep3Signup1 button:hover {
+    background-color: #0044dd;
+}
+
+@media screen and (max-width: 767px) {
+    #popupStep3Signup2 {
+        padding: 0px 10px !important;
+    }
+}
+
+#popupStep3Signup2 {
+    padding: 5px 15px;
+    padding-left: 20px;
+
+}
+
+#popupStep3Signup2 h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+.lasthead {
+    font-size: 1.7em !important;
+}
+
+#popupStep3Signup2 .error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+#popupStep3Signup2 button {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 5px;
+}
+
+#popupStep3Signup2 button:hover {
+    background-color: #0044dd;
+}
+
+
+
+
+
+.select-box {
+    max-height: 185px;
+    overflow-y: auto;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+}
+
+.option-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.option-row:last-child {
+    border-bottom: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #ff2d7b;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+#successMessage {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#popupStep2 h3,
+#popupStep3Signup1 h3,
+#popupStep3Signup2 h3,
+#popupStep3Login h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Signup Success Popup */
+#popupSignupSuccess {
+    padding: 0px 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+#popupSignupSuccess .popup-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+#popupSignupSuccess .popup-description {
+    font-size: 14px;
+    color: #666;
+}
+
+#popupSignupSuccess button {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+#popupSignupSuccess button:hover {
+    background-color: #0044dd;
+}
+
+/* Login Success Popup */
+#popupLoginSuccess {
+    padding: 0px 15px;
+    text-align: center;
+}
+
+#popupLoginSuccess .popup-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+#popupLoginSuccess .popup-description {
+    font-size: 14px;
+    color: #666;
+}
+
+#popupLoginSuccess button {
+    width: 100%;
+    background-color: #0055ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#popupLoginSuccess button:hover {
+    background-color: #0044dd;
+}
+
+
+
+
+
+.popup-image-pc-and-mobile {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 12px auto 20px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* Dark Mode for Popup Step 2 */
+body.drK #popupStep2 {
+    padding: 0px 15px;
+}
+
+body.drK #popupStep2 .popup-heading {
+    color: #fff;
+    /* White text for headings */
+}
+
+body.drK #popupStep2 p.popup-description {
+    color: #ccc;
+    /* Light gray text for description */
+}
+
+body.drK #popupStep2 .icon-wrapper svg {
+    fill: #bbb;
+    /* Light gray for icons */
+}
+
+/* Dark Mode Button Styling */
+body.drK #popupStep2 button.continue-btn {
+    background-color: #0055ff;
+    color: white;
+}
+
+body.drK #popupStep2 button.continue-btn:hover {
+    background-color: #0044cc;
+    /* Darker blue on hover */
+}
+
+/* Dark Mode Input Wrapper */
+body.drK #popupStep2 .input-wrapper {
+    background-color: #333;
+    /* Dark background for inputs */
+    border: 1px solid #444;
+    /* Dark border */
+}
+
+body.drK #popupStep2 input[type="email"] {
+    background-color: #555;
+    /* Dark input field background */
+    border: 1px solid #444;
+    /* Dark border */
+    color: #fff;
+    /* White text for input */
+}
+
+body.drK #popupStep2 input[type="email"]:focus {
+    border-color: #4a90e2;
+    /* Highlight border on focus */
+    background-color: #666;
+    /* Slightly lighter input background */
+}
+
+/* Icon inside input */
+body.drK #popupStep2 .icon-wrapper svg {
+    fill: #bbb;
+    /* Light gray icons inside inputs */
+}
+
+/* Error message below input */
+body.drK #popupEmailError {
+    color: #f44336;
+    /* Red error messages */
+}
+
+/* Dark Mode Step 3 Login */
+body.drK #popupStep3Login {
+    padding: 5px 15px;
+}
+
+body.drK #popupStep3Login label {
+    color: #fff;
+    /* White label text */
+}
+
+body.drK #popupStep3Login .input-wrapper {
+    background-color: #333;
+    /* Dark background for input wrapper */
+    border: 1px solid #444;
+    /* Dark border */
+}
+
+body.drK #popupStep3Login .input-wrapper:focus-within {
+    border-color: #007bff;
+    background-color: #444;
+    /* Slightly lighter dark background on focus */
+}
+
+body.drK #popupStep3Login input {
+    color: #fff;
+    /* White text in inputs */
+}
+
+body.drK #popupStep3Login button {
+    background-color: #0055ff;
+    /* Blue buttons */
+    color: white;
+}
+
+body.drK #popupStep3Login button:hover {
+    background-color: #0044cc;
+}
+
+body.drK #popupStep3Login .error-message {
+    color: #f44336;
+    /* Red for error messages */
+}
+
+body.drK #popupStep3Login #forgotPasswordLink {
+    color: #007bff;
+    /* Blue link */
+}
+
+body.drK #popupStep3Login #forgotPasswordLink:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Step 3 Signup */
+body.drK #popupStep3Signup1 {
+    padding: 0px 10px;
+}
+
+body.drK #popupStep3Signup1 label {
+    color: #fff;
+    /* White text for labels */
+}
+
+body.drK #popupStep3Signup1 .input-wrapper {
+    background-color: #333;
+    /* Dark background */
+    border: 1px solid #444;
+    /* Dark border */
+}
+
+body.drK #popupStep3Signup1 input {
+    color: #fff;
+    /* White text */
+}
+
+body.drK #popupStep3Signup1 button {
+    background-color: #0055ff;
+    color: white;
+}
+
+body.drK #popupStep3Signup1 button:hover {
+    background-color: #0044cc;
+}
+
+/* Dark Mode Step 3 Signup 2 */
+body.drK #popupStep3Signup2 {
+    padding: 5px 15px;
+}
+
+body.drK #popupStep3Signup2 h3 {
+    color: #fff;
+    /* White heading */
+}
+
+body.drK #popupStep3Signup2 .error-message {
+    color: #f44336;
+    /* Red error messages */
+}
+
+body.drK #popupStep3Signup2 button {
+    background-color: #0055ff;
+    color: white;
+}
+
+body.drK #popupStep3Signup2 button:hover {
+    background-color: #0044cc;
+}
+
+/* Dark Mode Select Box */
+body.drK .select-box {
+    background: #333;
+    /* Dark background */
+    border: 1px solid #444;
+    /* Dark border */
+}
+
+body.drK .option-row {
+    color: #ccc;
+    /* Light gray text */
+}
+
+
+body.drK .info-message.success {
+    color: #aef7ae !important;
+}
+
+/* Forgot Password Link Styling */
+body.drK #popupStep3Login #forgotPasswordLink {
+    color: #64afff !important;
+    /* Lighter blue color for forgot password link */
+}
+
+body.drK #popupStep3Login #forgotPasswordLink:hover {
+    text-decoration: underline !important;
+}
+
+/* Placeholder and Icon Lighter Colors */
+body.drK input::placeholder {
+    color: #aaa !important;
+    /* Lighter placeholder text */
+}
+
+/* Custom SVG Styling */
+body.drK #popupStep3Signup1 .input-wrapper svg {
+    width: 20px !important;
+    /* Set width */
+    height: 20px !important;
+    /* Set height */
+    fill: #bbb !important;
+    /* Light gray color */
+    transition: fill 0.3s ease !important;
+    /* Smooth transition for color change */
+}
+
+/* Optional: Change icon color on focus of input */
+body.drK #popupStep3Signup1 .input-wrapper input:focus+.icon-wrapper svg {
+    fill: #4a90e2 !important;
+    /* Change to blue on input focus */
+}
+
+/* Toggle Password Text Styling */
+body.drK .toggle-password {
+    color: #64afff !important;
+    /* Set color to #64afff */
+    cursor: pointer !important;
+    /* Change cursor to pointer */
+    font-weight: 500 !important;
+    /* Optional: Add some weight to the font */
+    transition: color 0.3s ease !important;
+    /* Smooth transition for color change */
+}
+
+/* Optional: Change color on hover */
+body.drK .toggle-password:hover {
+    color: #4a90e2 !important;
+    /* Darker blue on hover */
+}
+
+
+/* Slider Styling */
+body.drK .slider {
+    background-color: #6e6e6e !important;
+    /* Lighter gray for the slider */
+}
+
+
+/* Dark Mode Switch */
+body.drK .switch input:checked+.slider {
+    background-color: #ff2d7b;
+    /* Pink on checked */
+}
+
+body.drK .switch .slider:before {
+    background-color: #fff;
+    /* White circle on switch */
+}
+
+/* Dark Mode Signup Success Popup */
+body.drK #popupSignupSuccess {
+    padding: 0px 15px;
+    text-align: center;
+}
+
+body.drK #popupSignupSuccess .popup-heading {
+    color: #fff;
+    /* White text for heading */
+}
+
+body.drK #popupSignupSuccess .popup-description {
+    color: #ccc;
+    /* Light gray text */
+}
+
+body.drK #popupSignupSuccess button {
+    background-color: #0055ff;
+    color: white;
+}
+
+body.drK #popupSignupSuccess button:hover {
+    background-color: #0044cc;
+}
+
+/* Dark Mode Login Success Popup */
+body.drK #popupLoginSuccess {
+    padding: 0px 15px;
+    text-align: center;
+}
+
+body.drK #popupLoginSuccess .popup-heading {
+    color: #fff;
+    /* White text for heading */
+}
+
+body.drK #popupLoginSuccess .popup-description {
+    color: #ccc;
+    /* Light gray text */
+}
+
+body.drK #popupLoginSuccess button {
+    background-color: #0055ff;
+    color: white;
+}
+
+body.drK #popupLoginSuccess button:hover {
+    background-color: #0044cc;
+}
+
+/* Dark Mode Image */
+body.drK .popup-image-pc-and-mobile {
+    filter: brightness(0.8);
+    /* Slightly dim the images */
+}
+
+
+/* Dark Mode Input Styling */
+body.drK input[type="email"] {
+    background-color: #555 !important;
+    /* Dark background */
+    color: #fff !important;
+    /* White text */
+    border: 1px solid #444 !important;
+    /* Dark border */
+    outline: none !important;
+    /* Remove the default focus outline */
+}
+
+/* Fix for autofill background */
+body.drK input:-webkit-autofill {
+    background-color: #555 !important;
+    /* Keep the background dark when autofilled */
+    color: #fff !important;
+    /* White text for autofilled fields */
+}
+
+/* Remove outline when autofilled */
+body.drK input:-webkit-autofill:focus {
+    box-shadow: none !important;
+    /* Remove box-shadow (outline) */
+    border-color: #4a90e2 !important;
+    /* Optional: add a custom border color on focus */
+}
+
+/* Remove autofill highlight color */
+body.drK input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #555 inset !important;
+    /* Match the background */
+}
