@@ -790,12 +790,6 @@ window.addEventListener("load", async () => {
 
 
 
-
-
-
-
-
-
 window.addEventListener("DOMContentLoaded", () => {
   const skipNoConfirm = localStorage.getItem("LS_SKIP_NO_CONFIRM");
 
@@ -829,3 +823,8 @@ document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
   document.getElementById("popupEnableNotifications").style.display = "none";
   document.getElementById("jobAlertPopup").style.display = "none";
 });
+
+
+
+
+
