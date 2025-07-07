@@ -32,36 +32,51 @@ let emailExists = false;
 
 function showPopupStep(stepId) {
   const steps = [
-    "popupStep1",
-    "popupStep1b",
-    "popupStep1c",
-    "popupStep2",
-    "popupStep3Signup1",
-    "popupStep3Signup2",
-    "popupStep3Login",
-    "popupSignupSuccess",
-    "popupLoginSuccess"
+    "popupStep1",              // Step 1: Job alert preference popup
+    "popupStep1b",             // Step 1b: Re-enable notifications step
+    "popupStep1c",             // Step 1c: Confirmation or next action
+    "popupStep2",              // Other steps in your flow
+    "popupStep3Signup1",       // Signup Step 1
+    "popupStep3Signup2",       // Signup Step 2
+    "popupStep3Login",         // Login Step
+    "popupSignupSuccess",      // Success after signup
+    "popupLoginSuccess",       // Success after login
+    "popupBlockedNotifications", // Blocked Notifications (New Popup)
+    "popupEnableNotifications"
   ];
 
+  // Loop through all steps to show/hide them
   steps.forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.style.display = (id === stepId) ? "block" : "none";
+    if (el) {
+      el.style.display = (id === stepId) ? "block" : "none";  // Show the stepId popup, hide others
+    }
   });
 
-  // Show the jobAlertPopup only for steps "popupStep1", "popupStep1b", "popupStep1c"
-  if (["popupStep1", "popupStep1b", "popupStep1c"].includes(stepId)) {
+  // Handle special popup display logic for the job alert container
+  if (["popupStep1", "popupStep1b", "popupStep1c", "popupBlockedNotifications", "popupEnableNotifications"].includes(stepId)) {
+    // Show the jobAlertPopup only for relevant steps
     document.getElementById("jobAlertPopup").style.display = "flex";
   } else {
-    // Hide jobAlertPopup for other steps
+    // Hide the jobAlertPopup for other steps
     document.getElementById("jobAlertPopup").style.display = "none";
   }
 }
 
 
+
 function closePopup() {
+  // If browser supports notifications and permission is explicitly denied
+  if ("Notification" in window && Notification.permission === "denied") {
+    console.log("Notification permission denied. closePopup() will not execute.");
+    return; // Stop here, don't hide the popup or set localStorage
+  }
+
+  // Otherwise, proceed to close the popup normally
   localStorage.setItem("jobAlertPopupShown", "true");
   document.getElementById("jobAlertPopup").style.display = "none";
 }
+
 
 function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -708,3 +723,109 @@ window.clickLabelOnYes = function () {
     console.error("Error clicking label:", e);
   }
 };
+
+
+window.checkNotificationPermissionAndUpdateToken = async () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (user && user.uid) {
+    try {
+      // Check if the user has already granted permission for notifications
+      if (Notification.permission === "default") {
+        // Ask the user for notification permission
+        const permission = await Notification.requestPermission();
+        if (permission === "granted") {
+          console.log("Notification permission granted.");
+          // Fetch and update the FCM token after permission is granted
+          await updateFcmToken(user.uid);
+        } else {
+          console.log("Notification permission denied.");
+        }
+      } else if (Notification.permission === "granted") {
+        // If permission is already granted, just update the FCM token
+        await updateFcmToken(user.uid);
+      }
+    } catch (error) {
+      console.error("Error while requesting notification permission or updating token:", error);
+    }
+  }
+};
+
+async function updateFcmToken(uid) {
+  try {
+    // Get or create the FCM token
+    const fcmToken = await getOrCreateFcmToken();
+
+    if (fcmToken) {
+      // Sync the token with Firestore
+      await syncFcmTokenWithFirestore(uid);
+
+      // Update the local storage to keep track of the FCM token
+      localStorage.setItem(LS_TOKEN_KEY, fcmToken);
+      console.log("FCM token updated:", fcmToken);
+    } else {
+      console.warn("Failed to obtain FCM token.");
+    }
+  } catch (error) {
+    console.error("Error while updating FCM token:", error);
+  }
+}
+
+// Call this function when the page is loaded or after login
+window.addEventListener("load", async () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
+
+  if (user && user.uid) {
+    // Check and request notification permission if needed and update token
+    await checkNotificationPermissionAndUpdateToken(user.uid);
+  }
+
+  if (!user && skipNoConfirm !== "true") {
+    showPopupStep("popupStep1");
+  } else {
+    closePopup();
+  }
+});
+
+
+
+
+
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const skipNoConfirm = localStorage.getItem("LS_SKIP_NO_CONFIRM");
+
+  if (!("Notification" in window)) return;
+
+  setTimeout(() => {
+    if (Notification.permission === "denied" && skipNoConfirm !== "true") {
+      const blockedPopup = document.getElementById("popupBlockedNotifications");
+
+      if (blockedPopup) {
+        document.getElementById("jobAlertPopup").style.display = "flex";
+        blockedPopup.style.display = "flex";
+      }
+    }
+  }, 100); // Slight delay improves permission reliability
+});
+
+document.getElementById("yesButtonBlockedNotifications")?.addEventListener("click", () => {
+  localStorage.setItem("LS_SKIP_NO_CONFIRM", "true");
+  document.getElementById("popupBlockedNotifications").style.display = "none";
+  document.getElementById("jobAlertPopup").style.display = "none";
+});
+
+document.getElementById("noButtonBlockedNotifications")?.addEventListener("click", () => {
+  document.getElementById("popupBlockedNotifications").style.display = "none";
+  document.getElementById("popupEnableNotifications").style.display = "flex";
+  document.getElementById("jobAlertPopup").style.display = "flex";
+});
+
+document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
+  document.getElementById("popupEnableNotifications").style.display = "none";
+  document.getElementById("jobAlertPopup").style.display = "none";
+});

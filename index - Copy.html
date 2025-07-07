@@ -1265,7 +1265,7 @@
                       .finalbuttons-unique {
                         flex-wrap: nowrap !important;
                         flex-direction: row !important;
-                        gap: 12px;
+                        gap: 15px;
                         justify-content: center;
                       }
 
@@ -1321,10 +1321,97 @@
                     .popup-description-for-mobile-unique {
                       display: none;
                     }
+
+                    /* Button styling */
+                    .blockclosebtn {
+                      width: 100%;
+                      background-color: #0055ff;
+                      color: white;
+                      padding: 14px;
+                      border: none;
+                      border-radius: 40px;
+                      font-size: 16px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: background 0.3s ease;
+                      margin-bottom: -10px;
+                    }
+
+                    .blockclosebtn:hover {
+                      background-color: #0055ff;
+                    }
+
+
+                    .blockedbuttons {
+                      flex: 1 1 auto;
+                      color: white;
+                      padding: 12px 20px;
+                      border: none;
+                      border-radius: 30px;
+                      font-size: 14px !important;
+                      font-weight: bold;
+                      cursor: pointer;
+                      transition: background 0.3s ease;
+                      max-width: 100%;
+                      margin-top: -10px;
+
+                    }
+
+                    .blockeddescription {
+                      margin-top: 0px;
+                      margin-bottom: 10px;
+                    }
+
+                    /* Mobile: buttons one below the other with margin */
+                    @media (max-width: 768px) {
+                      .finalbuttons-unique {
+                        flex-direction: column !important;
+                        align-items: stretch !important;
+                      }
+
+                      .finalbuttons-unique .blockedbuttons {
+                        width: 100% !important;
+                      }
+
+                      .finalbuttons-unique .blockedbuttons:not(:last-child) {
+                        margin-bottom: 10px !important;
+                      }
+                    }
+
+                    .steps-list-mobile {
+                      padding-left: 20px;
+                      margin-top: 1rem;
+                      margin-bottom: 1rem;
+                    }
+
+                    .steps-list-mobile li {
+                      margin-bottom: 12px;
+                      font-size: 16px;
+                      line-height: 1.4;
+                      list-style-type: circle;
+                      word-break: break-word;
+                      text-align: left;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                      .steps-list-mobile li {
+                        font-size: 15px;
+                        padding-left: 0;
+                        margin-left: 0;
+                      }
+
+                      .inline-icon {
+                        vertical-align: middle !important;
+                      }
+                    }
+
+                    .popdesc {
+                      margin-top: 0px;
+                    }
                   </style>
 
                   <div id="jobAlertPopup" style="display:none;">
-                    <div class="popup-content-unique" id="popupStep1">
+                    <div class="popup-content-unique" id="popupStep1" style="display:none;">
                       <h3 class="popup-heading-unique">Want to get Personalised Job alerts?</h3>
                       <img src="images/job-alert.png" class="popup-image-mobile-unique" alt="Job Alert" />
                       <p class="popup-description-for-pc-unique">
@@ -1388,11 +1475,72 @@
                         <button class="nobtn-unique" onclick="handlePopupYes(); clickLabelOnYes()">No, go back</button>
                       </div>
                     </div>
+
+
+                    <div class="popup-content-unique" id="popupBlockedNotifications" style="display:none;">
+                      <h3 class="popup-heading-unique" id="headingBlockedNotifications">Did you accidentally blocked
+                        notifications?</h3>
+
+                      <p class="popup-description-unique popdesc" id="descriptionPCBlockedNotifications">
+                        If notifications are not enabled, you will not receive personalized job alerts based on your
+                        interests and locations. <br><br>
+                        If you're overwhelmed by notifications and prefer to only receive updates via email, you can opt
+                        for email notifications instead.
+                      </p>
+
+                      <div class="finalbuttons-unique" id="buttonsBlockedNotifications">
+                        <button class="blockedbuttons yesbtn-unique" id="yesButtonBlockedNotifications">Yes, I only want
+                          email
+                          notifications</button>
+                        <button class="blockedbuttons nobtn-unique" id="noButtonBlockedNotifications">No, I want to
+                          enable
+                          notifications</button>
+                      </div>
+                    </div>
+
+                    <!-- Popup Step 1b (Steps to Enable Notifications) -->
+                    <div class="popup-content-unique" id="popupEnableNotifications" style="display:none;">
+                      <h3 class="popup-heading-unique" id="headingEnableNotifications">Re-enable Job alert Notifications
+                      </h3>
+                      <p class="popup-description-for-pc-unique blockeddescription"
+                        id="descriptionPCEnableNotifications">
+                        If you’d like to start receiving personalized job alerts and updates in real time, you’ll need
+                        to re-enable browser notifications for this site. It’s quick and easy—just follow the steps
+                        below:
+                      </p>
+
+                      <p class="popup-description-for-mobile-unique blockeddescription"
+                        id="descriptionPCEnableNotifications">
+                        If you'd like to re-enable notifications to start receiving personalized job alerts and updates,
+                        follow these steps:
+                      </p>
+
+                      <!-- Ordered List Container -->
+                      <ol class="steps-list-mobile">
+                        <li id="step1Enable">
+                          Click the &nbsp;
+                          <svg class="icon inline-icon" xmlns="http://www.w3.org/2000/svg" version="1.0" width="20px"
+                            height="20px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                              stroke="none">
+                              <path
+                                d="M1490 4365 c-197 -40 -378 -147 -498 -295 -59 -73 -134 -213 -157 -292 l-16 -58 -333 0 -332 0 -50 -25 c-75 -38 -99 -80 -99 -175 0 -95 24 -137 99 -175 l50 -25 332 0 333 0 16 -57 c22 -79 94 -212 155 -289 85 -106 219 -202 356 -255 240 -92 512 -72 739 56 83 46 185 133 245 208 56 70 133 218 151 290 l11 47 1238 0 1238 0 53 28 c39 20 58 38 76 71 27 51 31 133 9 184 -17 41 -66 88 -108 104 -25 8 -346 12 -1268 12 l-1235 1 -23 72 c-70 222 -260 430 -475 521 -147 61 -355 83 -507 52z m365 -440 c92 -44 166 -118 213 -214 36 -74 37 -77 37 -190 -1 -139 -19 -194 -92 -286 -55 -67 -119 -114 -201 -147 -81 -32 -232 -32 -314 1 -302 118 -394 495 -179 734 134 149 354 191 536 102z" />
+                              <path
+                                d="M3310 2446 c-183 -34 -324 -111 -456 -247 -104 -108 -163 -206 -203 -339 l-17 -55 -1250 -5 c-903 -4 -1256 -8 -1274 -16 -38 -17 -88 -73 -101 -112 -6 -19 -9 -60 -7 -92 5 -73 36 -120 99 -155 l47 -25 1238 0 1239 0 23 -71 c108 -344 449 -589 818 -589 248 0 514 126 665 316 60 75 131 209 154 289 l16 55 337 0 337 0 51 30 c64 36 94 91 94 168 0 63 -17 107 -56 145 -55 55 -67 57 -430 57 l-333 0 -16 55 c-22 77 -92 209 -149 284 -109 142 -307 264 -487 301 -106 22 -239 24 -339 6z m252 -397 c246 -53 408 -299 354 -542 -27 -121 -94 -219 -194 -284 -197 -128 -462 -88 -605 91 -83 105 -119 237 -97 358 46 259 293 430 542 377z" />
+                            </g>
+                          </svg>
+                          &nbsp; icon next to the website link in the address bar.
+                        </li>
+                        <li id="step2Enable">Select <strong>"Permissions"</strong> & Click on <strong>"Reset
+                            Permissions"</strong></li>
+                        <li id="step3Enable">Press <strong>"Reset"</strong> and refresh the page.</li>
+                      </ol>
+
+                      <button class="blockclosebtn">Close</button>
+                    </div>
+
+
                   </div>
-
-
-
-
 
 
 
@@ -1404,6 +1552,13 @@
                       <div class="cmBrs fixLs">
                         <div class="bkmH fixH fixT">
                           <style>
+                            .inline-icon {
+                              display: inline-block !important;
+                              vertical-align: middle !important;
+                              margin-bottom: 2px !important;
+                              /* Adjust if needed */
+                            }
+
                             .katta::after {
                               line-height: 50px !important;
                               font-size: 15px !important;
@@ -2185,8 +2340,7 @@
 
 
                           <!-- New Popup: Signup Success -->
-                          <div class="popup-content" id="popupSignupSuccess"
-                            style="display:none;">
+                          <div class="popup-content" id="popupSignupSuccess" style="display:none;">
                             <img class="popup-image-pc-and-mobile" src="images/sucessfully.png" alt="Signed Up Success">
                             <h3 class="popup-heading">Signup Successful!</h3>
                             <p class="popup-description">All set to go. You’ll now receive personalized job alerts based
