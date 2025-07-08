@@ -10,6 +10,8 @@ import {
   signInWithEmailAndPassword, sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
+let ignoreNextOutsideClick = false;
+let allowPopupClose = false;
 
 const firebaseConfig = {
   apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
@@ -416,22 +418,29 @@ window.signupUser = async () => {
 
     // **Hide the signup success popup after 5 seconds, and unclick the label**
     setTimeout(() => {
-      // Unclick the <label> inside #logsinpop
-      const signupLabel = document.getElementById('logsinpop')?.querySelector('label');
-      if (signupLabel) {
-        signupLabel.click();  // Simulate unchecking the label
+      const commentSection = document.getElementById("comments");
+      const fixedLabel = document.getElementById("neverhiddenpopup");
+
+      if (commentSection) {
+        commentSection.classList.add("hide-slide-down");
+        commentSection.addEventListener("animationend", () => {
+          commentSection.style.visibility = "hidden";
+          commentSection.classList.remove("hide-slide-down");
+        }, { once: true });
       }
 
-      // Hide the signup success popup after 5 seconds
-      const signupPopup = document.getElementById('popupSignupSuccess');
-      if (signupPopup) {
-        signupPopup.style.display = 'none';  // Hide the popup
+      if (fixedLabel) {
+        fixedLabel.classList.add("hide-slide-down");
+        fixedLabel.addEventListener("animationend", () => {
+          fixedLabel.style.visibility = "hidden";
+          fixedLabel.classList.remove("hide-slide-down");
+        }, { once: true });
       }
 
-      // Re-enable the signup button after the process is complete
-      signupButton.disabled = false;
+      // Keep popupSignupSuccess visible or handle separately
+    }, 5000);
 
-    }, 5000);  // 5-second delay before hiding the popup
+
 
   } catch (error) {
     console.error("Signup error:", error);
@@ -500,15 +509,31 @@ window.loginUser = async () => {
 
       // First, unclick the <label> inside #logsinpop, then hide the popup after 5 seconds
       setTimeout(() => {
-        // Unclick the <label> inside #logsinpop
-        const loginLabel = document.getElementById("logsinpop")?.querySelector('label');
-        if (loginLabel) {
-          loginLabel.click();  // This simulates a "click" to uncheck it
+        const commentSection = document.getElementById("comments");
+        const fixedLabel = document.getElementById("neverhiddenpopup");
+
+        if (commentSection) {
+          commentSection.classList.add("hide-slide-down");
+
+          // After animation ends, set visibility to hidden (extra safety)
+          commentSection.addEventListener("animationend", () => {
+            commentSection.style.visibility = "hidden";
+            commentSection.classList.remove("hide-slide-down");
+          }, { once: true });
         }
 
-        // Hide the login success popup after unclicking
-        document.getElementById("popupLoginSuccess").style.display = "none";
+        if (fixedLabel) {
+          fixedLabel.classList.add("hide-slide-down");
+          fixedLabel.addEventListener("animationend", () => {
+            fixedLabel.style.visibility = "hidden";
+            fixedLabel.classList.remove("hide-slide-down");
+          }, { once: true });
+        }
+
+        // Note: Do not hide the success popup here if you want it to stay visible
       }, 5000);
+
+
 
     } else {
       console.log("No user data found in Firestore for the logged-in user.");
@@ -522,32 +547,74 @@ window.loginUser = async () => {
 };
 
 
+function hideSectionAndLabelWithAnimation(callback) {
+  const commentSection = document.getElementById("comments");
+  const fixedLabel = document.getElementById("neverhiddenpopup");
 
-// Function to close the login popup and unclick the label
+  let animCount = 0;
+  const totalAnim = (commentSection ? 1 : 0) + (fixedLabel ? 1 : 0);
+
+  function onAnimEnd() {
+    animCount++;
+    if (animCount === totalAnim) {
+      callback();
+    }
+  }
+
+  if (commentSection) {
+    commentSection.classList.add("hide-slide-down");
+    commentSection.addEventListener("animationend", () => {
+      commentSection.style.visibility = "hidden";
+      commentSection.classList.remove("hide-slide-down");
+      onAnimEnd();
+    }, { once: true });
+  }
+
+  if (fixedLabel) {
+    fixedLabel.classList.add("hide-slide-down");
+    fixedLabel.addEventListener("animationend", () => {
+      fixedLabel.style.visibility = "hidden";
+      fixedLabel.classList.remove("hide-slide-down");
+      onAnimEnd();
+    }, { once: true });
+  }
+
+  // If neither element exists, call callback immediately
+  if (totalAnim === 0) {
+    callback();
+  }
+}
+
 function closeLoginPopup() {
-  const loginLabel = document.getElementById('logsinpop')?.querySelector('label');
-  if (loginLabel) {
-    loginLabel.click();  // Simulate unchecking the label
-  }
+  hideSectionAndLabelWithAnimation(() => {
+    // Then unclick label and hide popup after animation finishes
+    const loginLabel = document.getElementById('logsinpop')?.querySelector('label');
+    if (loginLabel) {
+      loginLabel.click();
+    }
 
-  const loginPopup = document.getElementById('popupLoginSuccess');
-  if (loginPopup) {
-    loginPopup.style.display = 'none';  // Hide the popup
-  }
+    const loginPopup = document.getElementById('popupLoginSuccess');
+    if (loginPopup) {
+      loginPopup.style.display = 'none';
+    }
+  });
 }
 
-// Function to close the signup popup and unclick the label
 function closeSignupPopup() {
-  const signupLabel = document.getElementById('logsinpop')?.querySelector('label');
-  if (signupLabel) {
-    signupLabel.click();  // Simulate unchecking the label
-  }
+  hideSectionAndLabelWithAnimation(() => {
+    const signupLabel = document.getElementById('logsinpop')?.querySelector('label');
+    if (signupLabel) {
+      signupLabel.click();
+    }
 
-  const signupPopup = document.getElementById('popupSignupSuccess');
-  if (signupPopup) {
-    signupPopup.style.display = 'none';  // Hide the popup
-  }
+    const signupPopup = document.getElementById('popupSignupSuccess');
+    if (signupPopup) {
+      signupPopup.style.display = 'none';
+    }
+  });
 }
+
+
 
 // Wait for the DOM to be fully loaded before adding event listeners
 document.addEventListener("DOMContentLoaded", function () {
@@ -827,4 +894,19 @@ document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
 
 
 
+document.addEventListener('click', function (e) {
+  const popup = document.querySelector('.fixL');
+  const checkbox = document.getElementById('forcontact');
+  const isVisible = popup && window.getComputedStyle(popup).visibility === 'visible';
 
+  // Allow hiding popup if triggered by success popup close
+  if (allowPopupClose) {
+    allowPopupClose = false;
+    return; // Don't force checkbox checked
+  }
+
+  if (isVisible && !popup.contains(e.target)) {
+    e.stopPropagation();
+    checkbox.checked = true;
+  }
+});

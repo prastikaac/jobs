@@ -283,3 +283,36 @@ Store push token + preferences
 
 Handle click event to open page in Chrome
 
+
+
+
+
+
+this is my full html code and here when the fixi checked, a popup if visible as shown in the image and these css were applied to the respective elements and whenever user taps on the screen outside the popup these css gets hidden and popup also gets hidden main thing is its visibility gets hidden 
+<section class="cm cmBr fixL" data-embed="true" data-num-comments="0" id="comments"> 
+
+.fixi:checked~.fixL, #comment:target .fixL {
+    margin-bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+  <div class="cmBri mty">
+
+visibility: visible;
+
+
+
+
+<label class="fCls" for="forcontact"></label>
+                     .fixi:checked~.fixL .fCls, #comment:target .fixL .fCls, .BlogSearch input:focus~.fCls {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0, 0, 0, .2);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+

@@ -1181,8 +1181,7 @@
                             Click the &nbsp;
                             <svg class="icon inline-icon" xmlns="http://www.w3.org/2000/svg" version="1.0" width="20px"
                               height="20px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-                              <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" 
-                                stroke="none">
+                              <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                                 <path
                                   d="M1490 4365 c-197 -40 -378 -147 -498 -295 -59 -73 -134 -213 -157 -292 l-16 -58 -333 0 -332 0 -50 -25 c-75 -38 -99 -80 -99 -175 0 -95 24 -137 99 -175 l50 -25 332 0 333 0 16 -57 c22 -79 94 -212 155 -289 85 -106 219 -202 356 -255 240 -92 512 -72 739 56 83 46 185 133 245 208 56 70 133 218 151 290 l11 47 1238 0 1238 0 53 28 c39 20 58 38 76 71 27 51 31 133 9 184 -17 41 -66 88 -108 104 -25 8 -346 12 -1268 12 l-1235 1 -23 72 c-70 222 -260 430 -475 521 -147 61 -355 83 -507 52z m365 -440 c92 -44 166 -118 213 -214 36 -74 37 -77 37 -190 -1 -139 -19 -194 -92 -286 -55 -67 -119 -114 -201 -147 -81 -32 -232 -32 -314 1 -302 118 -394 495 -179 734 134 149 354 191 536 102z" />
                                 <path
@@ -1455,7 +1454,7 @@
 
                         </div>
 
-                      
+
 
                         <script type="module" src="js/popupLogic.js"></script>
 
@@ -1463,7 +1462,12 @@
 
                       </div>
                     </div>
-                    <label class="fCls" for="forcontact"></label>
+                    <label class="fCls" id="neverhiddenpopup" onclick="event.stopPropagation();" for="forcontact"></label>
+                    
+
+                   
+
+
                   </section>
                   <script
                     type="text/javascript">/*<![CDATA[*/ var observerK = new MutationObserver(function (mutations, me) { var cekkomen = getid('comment-editor'); if (cekkomen) { var b = getid("comment-editor"), d = b.getAttribute("data-src"); if (b.setAttribute("src", d), 1 == comment) { var f = getclass("rpTo"), c = getid("commentForm"), h = f.length, k = function (b, d, e, f) { b.addEventListener("click", function () { var c = b.getAttribute("data-reply-to"); getid("c" + c).appendChild(d); getid("commentForm").className = 'cmRbox'; getid("addCm").className = 'commentsReply'; e.src = f + "&parentID=" + c }) }; for (i = 0; i < h; i++)k(f[i], c, b, d); var l = getclass("cmFrm")[0]; getid("addCm").addEventListener("click", function () { l.appendChild(c); getid("commentForm").className = 'comment-replybox-thread'; getid("addCm").className = 'hidden'; b.src = d }) }; me.disconnect(); return } }); observerK.observe(document, { childList: true, subtree: true }); var bscom = getid('forcontact'), bskom = getid('iCmn'); if (bscom !== null) { bscom.addEventListener('click', function () { if (bscom.checked == true) { if (bskom !== null) { bskom.click() }; } }) }; /*]]>*/</script>

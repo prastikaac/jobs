@@ -356,6 +356,22 @@
 
 
 
+@keyframes slideDownFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+    visibility: hidden;
+  }
+}
+
+.hide-slide-down {
+  animation: slideDownFadeOut 0.1s forwards;
+}
 
 
 
