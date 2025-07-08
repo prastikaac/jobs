@@ -307,7 +307,8 @@ visibility: visible;
 
 
 
-<label class="fCls" for="forcontact"></label>
+<label class="fCls" id="neverhiddenpopup" onclick="event.stopPropagation();"
+                      for="forcontact"></label>
                      .fixi:checked~.fixL .fCls, #comment:target .fixL .fCls, .BlogSearch input:focus~.fCls {
     opacity: 1;
     visibility: visible;

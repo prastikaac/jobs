@@ -728,7 +728,8 @@
 
                                     </div>
                                   </div>
-                                  <label class="fCls" for="forcontact"></label>
+                                  <label class="fCls" id="neverhiddenpopup" onclick="event.stopPropagation();"
+                      for="forcontact"></label>
                                 </section>
                                 <script
                                   type="text/javascript">/*<![CDATA[*/ var observerK = new MutationObserver(function (mutations, me) { var cekkomen = getid('comment-editor'); if (cekkomen) { var b = getid("comment-editor"), d = b.getAttribute("data-src"); if (b.setAttribute("src", d), 1 == comment) { var f = getclass("rpTo"), c = getid("commentForm"), h = f.length, k = function (b, d, e, f) { b.addEventListener("click", function () { var c = b.getAttribute("data-reply-to"); getid("c" + c).appendChild(d); getid("commentForm").className = 'cmRbox'; getid("addCm").className = 'commentsReply'; e.src = f + "&parentID=" + c }) }; for (i = 0; i < h; i++)k(f[i], c, b, d); var l = getclass("cmFrm")[0]; getid("addCm").addEventListener("click", function () { l.appendChild(c); getid("commentForm").className = 'comment-replybox-thread'; getid("addCm").className = 'hidden'; b.src = d }) }; me.disconnect(); return } }); observerK.observe(document, { childList: true, subtree: true }); var bscom = getid('forcontact'), bskom = getid('iCmn'); if (bscom !== null) { bscom.addEventListener('click', function () { if (bscom.checked == true) { if (bskom !== null) { bskom.click() }; } }) }; /*]]>*/</script>
