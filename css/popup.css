@@ -721,12 +721,12 @@ body.drK .popup-description-for-mobile-unique {
 }
 
 #popupStep3Login #forgotPasswordLink {
-    display: block;
+    display: inline; /* or inline-block */
     font-size: 13px;
     margin-top: 10px;
     margin-left: 10px;
     color: #007bff;
-    text-decoration: none;
+    text-decoration: underline; /* optional for better UX */
     cursor: pointer;
 }
 
