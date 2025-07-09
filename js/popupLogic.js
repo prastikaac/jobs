@@ -155,12 +155,14 @@ window.handleNoSkipAlerts = () => {
 };
 
 window.confirmFinalNo = () => {
-  const neverShowCheckbox = document.getElementById("neverShowAgain");
+  const neverShowCheckbox = document.getElementById("neverShowAgainToggle");
   if (neverShowCheckbox && neverShowCheckbox.checked) {
-    localStorage.setItem(LS_SKIP_NO_CONFIRM, "true");
+    localStorage.setItem("neverShowJobAlertPopup", "true");
   }
+  localStorage.setItem(LS_SKIP_NO_CONFIRM, "true");
   closePopup();
 };
+
 
 window.checkEmailExistence = async () => {
   const emailInput = document.getElementById("popupEmail");
@@ -894,19 +896,3 @@ document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
 
 
 
-document.addEventListener('click', function (e) {
-  const popup = document.querySelector('.fixL');
-  const checkbox = document.getElementById('forcontact');
-  const isVisible = popup && window.getComputedStyle(popup).visibility === 'visible';
-
-  // Allow hiding popup if triggered by success popup close
-  if (allowPopupClose) {
-    allowPopupClose = false;
-    return; // Don't force checkbox checked
-  }
-
-  if (isVisible && !popup.contains(e.target)) {
-    e.stopPropagation();
-    checkbox.checked = true;
-  }
-});
