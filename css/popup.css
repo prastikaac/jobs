@@ -697,8 +697,9 @@ body.drK .popup-description-for-mobile-unique {
 #popupStep3Login .error-message {
     color: red;
     font-size: 13px;
-    margin-top: 6px;
+    margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 #popupStep3Login button {
@@ -726,7 +727,6 @@ body.drK .popup-description-for-mobile-unique {
     margin-top: 10px;
     margin-left: 10px;
     color: #007bff;
-    text-decoration: underline; /* optional for better UX */
     cursor: pointer;
 }
 

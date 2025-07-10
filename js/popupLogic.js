@@ -544,7 +544,7 @@ window.loginUser = async () => {
   } catch (error) {
     console.error("Login failed:", error);
     const passwordErrorDiv = document.getElementById("popupPasswordLoginError");
-    showFieldError(passInput, "Login failed. Please check your credentials and try again.");
+    showFieldError(passInput, "Incorrect password. Please try again or reset your password.");
   }
 };
 
