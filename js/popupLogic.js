@@ -896,3 +896,19 @@ document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
 
 
 
+document.addEventListener('click', function (e) {
+  const popup = document.querySelector('.fixL');
+  const checkbox = document.getElementById('forcontact');
+  const isVisible = popup && window.getComputedStyle(popup).visibility === 'visible';
+
+  // Allow hiding popup if triggered by success popup close
+  if (allowPopupClose) {
+    allowPopupClose = false;
+    return; // Don't force checkbox checked
+  }
+
+  if (isVisible && !popup.contains(e.target)) {
+    e.stopPropagation();
+    checkbox.checked = true;
+  }
+});
