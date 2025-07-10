@@ -397,8 +397,10 @@ window.signupUser = async () => {
       jobLocation: jobLocation,
       createdAt: timestampNow,
       lastLogin: timestampNow,
-      fcmTokens: fcmToken ? [fcmToken] : [] // array
+      fcmTokens: fcmToken ? [fcmToken] : [],
+      profilePictureUrl: ""  // 👈 default blank profile picture
     });
+
 
     // 4. Save to localStorage
     localStorage.setItem("user", JSON.stringify({
@@ -485,6 +487,12 @@ window.loginUser = async () => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
+    // Update lastLogin timestamp after successful login
+    await updateDoc(doc(db, "users", user.uid), {
+      lastLogin: Timestamp.now()
+    });
+
+
     console.log("Login successful! User:", user);
 
     // Now check the Firestore database for the user's additional details
@@ -502,7 +510,8 @@ window.loginUser = async () => {
         fullName: userData.fullName,
         phoneNumber: userData.phoneNumber,
         createdAt: userData.createdAt,
-        lastLogin: userData.lastLogin
+        lastLogin: Timestamp.now()
+
       }));
 
       // Optionally, you can show a success message and move to the next page
@@ -910,5 +919,78 @@ document.addEventListener('click', function (e) {
   if (isVisible && !popup.contains(e.target)) {
     e.stopPropagation();
     checkbox.checked = true;
+  }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Close buttons already handled...
+
+  // ENTER KEY SUPPORT
+  // 1. Enter on Email Check (popupStep2)
+  const emailInput = document.getElementById("popupEmail");
+  if (emailInput) {
+    emailInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        window.checkEmailExistence();
+      }
+    });
+  }
+
+  // 2. Enter on Login Form (popupStep3Login)
+  const loginEmail = document.getElementById("popupEmailLogin");
+  const loginPassword = document.getElementById("popupPasswordLogin");
+  if (loginEmail && loginPassword) {
+    [loginEmail, loginPassword].forEach(input => {
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          window.loginUser();
+        }
+      });
+    });
+  }
+
+  // 3. Enter on Signup Info Step 1 (popupStep3Signup1 → name, phone, pass)
+  const nameInput = document.getElementById("popupName");
+  const phoneInput = document.getElementById("popupPhone");
+  const passInput = document.getElementById("popupPasswordNew");
+  const confirmInput = document.getElementById("popupConfirmPassword");
+
+  if (nameInput && phoneInput && passInput && confirmInput) {
+    [nameInput, phoneInput, passInput, confirmInput].forEach(input => {
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          window.goToJobPreferenceStep();
+        }
+      });
+    });
+  }
+
+  // 4. Enter on Signup Final Step (popupStep3Signup2 → category/location checkboxes)
+  const categoryBox = document.getElementById("categoryBox");
+  const locationBox = document.getElementById("locationBox");
+  const signupButton = document.getElementById("signupButton");
+
+  if (categoryBox && locationBox && signupButton) {
+    [categoryBox, locationBox].forEach(container => {
+      container.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          window.signupUser();
+        }
+      });
+    });
+
+    // Also allow Enter on the button itself (for accessibility)
+    signupButton.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        window.signupUser();
+      }
+    });
   }
 });

@@ -357,20 +357,21 @@
 
 
 @keyframes slideDownFadeOut {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(50px);
-    visibility: hidden;
-  }
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+        visibility: hidden;
+    }
 }
 
 .hide-slide-down {
-  animation: slideDownFadeOut 0.1s forwards;
+    animation: slideDownFadeOut 0.1s forwards;
 }
 
 
@@ -722,7 +723,8 @@ body.drK .popup-description-for-mobile-unique {
 }
 
 #popupStep3Login #forgotPasswordLink {
-    display: inline; /* or inline-block */
+    display: inline;
+    /* or inline-block */
     font-size: 13px;
     margin-top: 10px;
     margin-left: 10px;

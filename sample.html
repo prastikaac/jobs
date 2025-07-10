@@ -1,55 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-  <div class="container">
-    <!-- Initial Question -->
-    <div id="initial-question">
-      <h1>Did you accidentally block notifications?</h1>
-      If notifications are not enabled, you will not receive personalized job alerts based on your interests and
-      locations.<br><br>
-      If you're overwhelmed by notifications and prefer to only receive updates via email, you can opt for email
-      notifications instead.<br><br>
-      <button class="button" id="yes-button">Yes, I only want email notifications</button>
-      <button class="button" id="no-button">No, I want to enable notifications</button>
+    .profile-card {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      margin: 50px auto;
+      gap: 20px;
+    }
+
+    .profile-image-wrapper {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      flex-shrink: 0;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f0f0f0;
+    }
+
+    .camera-icon {
+      position: absolute;
+      bottom: 0;
+      left: 52%;
+      transform: translateX(-50%) translateY(50%);
+      background: #ffffff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .camera-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #555;
+    }
+
+    .profile-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+    }
+
+    .profile-field {
+      background: #f8f8f8;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      word-break: break-word;
+    }
+
+    .profile-field svg {
+      flex-shrink: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="profile-card">
+    <div class="profile-image-wrapper">
+      <img src="images/user.png" alt="Profile" class="profile-image" id="profileImage" />
+      <div class="camera-icon" id="cameraIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+        </svg>
+      </div>
+      <input type="file" id="imageUploadInput" accept="image/*" style="display: none;" />
+
     </div>
-
-    <!-- Re-enable Notifications Steps (shown only if user clicks "No") -->
-    <div id="re-enable-steps" class="hidden">
-      <h1>Follow the steps to Re-enable Notifications</h1>
-      <p>If you'd like to enable notifications, follow these steps:</p>
-
-      <ol>
-        <li class="step">
-
-          <strong>Click the icon &nbsp; <svg class="icon" xmlns="http://www.w3.org/2000/svg" version="1.0" width="20px"
-              height="20px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-                <path
-                  d="M1490 4365 c-197 -40 -378 -147 -498 -295 -59 -73 -134 -213 -157 -292 l-16 -58 -333 0 -332 0 -50 -25 c-75 -38 -99 -80 -99 -175 0 -95 24 -137 99 -175 l50 -25 332 0 333 0 16 -57 c22 -79 94 -212 155 -289 85 -106 219 -202 356 -255 240 -92 512 -72 739 56 83 46 185 133 245 208 56 70 133 218 151 290 l11 47 1238 0 1238 0 53 28 c39 20 58 38 76 71 27 51 31 133 9 184 -17 41 -66 88 -108 104 -25 8 -346 12 -1268 12 l-1235 1 -23 72 c-70 222 -260 430 -475 521 -147 61 -355 83 -507 52z m365 -440 c92 -44 166 -118 213 -214 36 -74 37 -77 37 -190 -1 -139 -19 -194 -92 -286 -55 -67 -119 -114 -201 -147 -81 -32 -232 -32 -314 1 -302 118 -394 495 -179 734 134 149 354 191 536 102z" />
-                <path
-                  d="M3310 2446 c-183 -34 -324 -111 -456 -247 -104 -108 -163 -206 -203 -339 l-17 -55 -1250 -5 c-903 -4 -1256 -8 -1274 -16 -38 -17 -88 -73 -101 -112 -6 -19 -9 -60 -7 -92 5 -73 36 -120 99 -155 l47 -25 1238 0 1239 0 23 -71 c108 -344 449 -589 818 -589 248 0 514 126 665 316 60 75 131 209 154 289 l16 55 337 0 337 0 51 30 c64 36 94 91 94 168 0 63 -17 107 -56 145 -55 55 -67 57 -430 57 l-333 0 -16 55 c-22 77 -92 209 -149 284 -109 142 -307 264 -487 301 -106 22 -239 24 -339 6z m252 -397 c246 -53 408 -299 354 -542 -27 -121 -94 -219 -194 -284 -197 -128 -462 -88 -605 91 -83 105 -119 237 -97 358 46 259 293 430 542 377z" />
-              </g>
-            </svg> &nbsp;</strong> next to the website link in the address bar.
-        </li>
-        <li><strong>Select "Permissions" & Click on "Reset Permissions" </strong></li>
-
-        <li><strong>Press "Reset" and refresh the page.</strong></li>
-        <li></li>
-      </ol>
-
-
+    <div class="profile-details">
+      <div class="profile-field" id="userName">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+          </path>
+        </svg>
+        <span id="nameText">Loading...</span>
+      </div>
+      <div class="profile-field" id="userEmail">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm13.5-.5H2.5a.5.5 0 0 0-.5.5v.217l6 3.6 6-3.6V4a.5.5 0 0 0-.5-.5zm.5 2.383-5.857 3.514a.5.5 0 0 1-.286.083.5.5 0 0 1-.286-.083L1 5.883V12a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V5.883z" />
+        </svg>
+        <span id="emailText">Loading...</span>
+      </div>
+      <div class="profile-field" id="userPhone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z">
+          </path>
+        </svg>
+        <span id="phoneText">Loading...</span>
+      </div>
     </div>
   </div>
 
-  <script>
-    // Handling the user response
-    document.getElementById("yes-button").onclick = function () {
-      document.getElementById("initial-question").style.display = "none";  // Hide initial question
-      document.getElementById("re-enable-steps").style.display = "none";  // Don't show steps
+  <!-- Firebase -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import {
+      getFirestore,
+      doc,
+      getDoc,
+      updateDoc
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+    import {
+      getStorage,
+      ref,
+      uploadBytes,
+      getDownloadURL
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+      authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+      projectId: "findjobsinfinland-3c061",
+      storageBucket: "findjobsinfinland-3c061.firebasestorage.app",
+      messagingSenderId: "575437446165",
+      appId: "1:575437446165:web:51922bc01fd291b09b821c"
     };
 
-    document.getElementById("no-button").onclick = function () {
-      document.getElementById("initial-question").style.display = "none";  // Hide initial question
-      document.getElementById("re-enable-steps").style.display = "block"; // Show the steps
-    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const storage = getStorage(app);
+
+    const cameraIcon = document.getElementById("cameraIcon");
+    const imageUploadInput = document.getElementById("imageUploadInput");
+    const profileImage = document.getElementById("profileImage");
+
+    let currentUID = null;
+
+    onAuthStateChanged(auth, async (user) => {
+      if (!user) return alert("Not logged in");
+      currentUID = user.uid;
+      const userRef = doc(db, "users", currentUID);
+      const snap = await getDoc(userRef);
+      if (snap.exists()) {
+        const data = snap.data();
+        profileImage.src = data.profilePictureUrl?.trim() || "images/user.png";
+        document.getElementById("nameText").textContent = data.fullName || "No Name";
+        document.getElementById("emailText").textContent = data.email || "No Email";
+        document.getElementById("phoneText").textContent = data.phoneNumber || "No Phone";
+      }
+    });
+
+    cameraIcon.addEventListener("click", () => {
+      imageUploadInput.click();
+    });
+
+   imageUploadInput.addEventListener("change", async (event) => {
+  const file = event.target.files[0];
+  if (!file || !currentUID) return;
+
+  // Show local preview immediately
+  const localUrl = URL.createObjectURL(file);
+  profileImage.src = localUrl;
+
+  // Upload to Firebase Storage in background
+  const filePath = `profilePictures/${currentUID}`;
+  const storageRef = ref(storage, filePath);
+
+  try {
+    await uploadBytes(storageRef, file);
+    const downloadURL = await getDownloadURL(storageRef);
+    console.log("Profile image uploaded. URL:", downloadURL);
+
+    const userDocRef = doc(db, "users", currentUID);
+    await updateDoc(userDocRef, {
+      profilePictureUrl: downloadURL
+    });
+
+    // Optional: revoke the object URL to free memory
+    URL.revokeObjectURL(localUrl);
+
+  } catch (err) {
+    console.error("Failed to upload image or update user document:", err);
+  }
+});
+
   </script>
 
+</body>
+
+</html>
