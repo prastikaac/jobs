@@ -994,3 +994,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
+  e.preventDefault(); // just in case
+  try {
+    await auth.signOut();
+    localStorage.removeItem("user");
+    localStorage.removeItem("jobAlertPopupShown");
+    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
+    location.reload();
+  } catch (error) {
+    console.error("Logout failed:", error);
+  }
+});

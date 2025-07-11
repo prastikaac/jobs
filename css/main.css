@@ -486,7 +486,7 @@ body.drK.foursec {
 
 
   .dispc {
-    display: none;
+    display: none !important;
   }
 
 
@@ -867,3 +867,10 @@ body.drK .job-card__value {
 .logsinpop {
   display: noned;
 }
+
+
+ @media screen and (max-width: 767px) {
+                      .pconly {
+                        display: none !important;
+                      }
+                    }

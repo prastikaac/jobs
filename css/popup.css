@@ -1451,3 +1451,177 @@ body.drK input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #555 inset !important;
     /* Match the background */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Profile Card CSS */
+
+#pp-card-wrapper .pp-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+#pp-card-wrapper .pp-image-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+#pp-card-wrapper .pp-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0f0f0;
+}
+
+#pp-card-wrapper .camera-icon {
+    position: absolute;
+    bottom: 0;
+    left: 52%;
+    transform: translateX(-50%) translateY(50%);
+    background: #ffffff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#pp-card-wrapper .camera-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #555;
+}
+
+#pp-card-wrapper .pp-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+#pp-card-wrapper .pp-field {
+    background: #f8f8f8;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    word-break: break-word;
+}
+
+#pp-card-wrapper .pp-field svg {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 600px) {
+    #pp-card-wrapper .pp-card {
+        padding: 5px;
+        margin: 20px auto;
+        gap: 12px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        margin-top: -10px;
+    }
+
+    #pp-card-wrapper .pp-image-wrapper {
+        width: 100px;
+        height: 100px;
+        margin-top: -25px;
+    }
+
+    #pp-card-wrapper .camera-icon {
+        width: 28px;
+        height: 28px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #pp-card-wrapper .camera-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    #pp-card-wrapper .pp-details {
+        gap: 8px;
+    }
+
+    #pp-card-wrapper .pp-field {
+        padding: 8px 12px;
+        font-size: 13px;
+        border-radius: 8px;
+        gap: 8px;
+        font-weight: bold;
+    }
+
+    #pp-card-wrapper .pp-field svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Dark Mode Overrides */
+body.drK #pp-card-wrapper .pp-card {
+    background: #222;
+}
+
+body.drK #pp-card-wrapper .pp-image {
+    border-color: #444;
+}
+
+body.drK #pp-card-wrapper .camera-icon {
+    background: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+body.drK #pp-card-wrapper .camera-icon svg {
+    fill: #bbb;
+}
+
+body.drK #pp-card-wrapper .pp-field {
+    background: #333;
+    color: #ddd;
+}
+
+body.drK #pp-card-wrapper .pp-field svg {
+    fill: #ddd;
+}
