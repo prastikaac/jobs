@@ -1625,3 +1625,146 @@ body.drK #pp-card-wrapper .pp-field {
 body.drK #pp-card-wrapper .pp-field svg {
     fill: #ddd;
 }
+
+
+
+
+@media (min-width: 768px) {
+
+    /* Popup wrapper hidden by default */
+    #pp-card-wrapper {
+        display: none;
+        /* hide initially */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        padding: 20px;
+    }
+
+    /* Show popup wrapper */
+    #pp-card-wrapper.show {
+        display: flex;
+        /* show and center */
+    }
+
+    .pp-card {
+        position: relative;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px 50px !important;
+        max-width: 600px !important;
+        width: 100%;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        gap: 30px;
+        z-index: 9999 !important;
+    }
+
+    .pp-image-wrapper {
+        width: 140px;
+        height: 140px;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .pp-details {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        flex-grow: 1;
+    }
+
+    .pp-field {
+        background: #f8f8f8;
+        padding: 14px 20px;
+        border-radius: 12px;
+        font-size: 15px;
+        color: #333;
+        display: flex !important;
+        align-items: center;
+        gap: 10px;
+        font-weight: normal;
+    }
+
+    .pp-field svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .camera-icon {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        background: #fff;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .camera-icon svg {
+        width: 18px;
+        height: 18px;
+        fill: #555;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        font-size: 18px;
+        color: #aaa;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+
+    .close-btn:hover {
+        color: #333;
+    }
+}
+
+#pp-card-wrapper .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    /* Smaller size */
+    color: #888888d4;
+    /* Lighter color */
+    cursor: pointer;
+    font-weight: normal;
+    /* Not bold */
+    z-index: 1001;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+#pp-card-wrapper .close-btn:hover {
+    color: #333;
+}
+
+/* Default: hide popup wrapper */
+#pp-card-wrapper.hidden {
+    display: none !important;
+    /* force hide */
+}
+
+
+#pcuserdetails {
+    cursor: pointer;
+}

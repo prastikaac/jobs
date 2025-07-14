@@ -395,7 +395,7 @@ body.drK.foursec {
   }
 
   .dismob {
-    display: none;
+    display: none !important;
   }
 
   .loading-overlay {

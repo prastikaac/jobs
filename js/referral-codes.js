@@ -19,7 +19,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
   authDomain: "findjobsinfinland-3c061.firebaseapp.com",
   projectId: "findjobsinfinland-3c061",
-  storageBucket: "findjobsinfinland-3c061.appspot.com", // fixed to proper storageBucket
+  storageBucket: "findjobsinfinland-3c061.appspot.com",
   messagingSenderId: "575437446165",
   appId: "1:575437446165:web:51922bc01fd291b09b821c"
 };
@@ -36,18 +36,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const imageUploadInput = document.getElementById("imageUploadInput");
   const profileImage = document.getElementById("profileImage");
   const ppCard = document.getElementById("pp-card");
+  const editButton = document.getElementById("edit-pp-information");
+  const signOutButton = document.getElementById("signout-btn");
+  const dissignElements = document.querySelectorAll(".dissign");
 
   let currentUID = null;
 
   onAuthStateChanged(auth, async (user) => {
     if (!user) {
-      // User not logged in — hide profile card
-      ppCard.style.display = "none";
+      // User not logged in — hide profile and related elements
+      if (ppCard) ppCard.style.display = "none";
+      if (editButton) editButton.style.display = "none";
+      if (signOutButton) signOutButton.style.display = "none";
+      dissignElements.forEach(el => el.style.display = "none");
       return;
     }
 
-    // User logged in — show profile card
-    ppCard.style.display = "flex";
+    // User logged in — show profile and related elements
+    if (ppCard) ppCard.style.display = "flex";
+    if (editButton) editButton.style.display = "block";
+    if (signOutButton) signOutButton.style.display = "block";
+    dissignElements.forEach(el => el.style.display = "block");
+
     currentUID = user.uid;
 
     const userRef = doc(db, "users", currentUID);
@@ -95,3 +105,46 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+
+  
+document.addEventListener("DOMContentLoaded", () => {
+  const popupWrapper = document.getElementById("pp-card-wrapper");
+  const closeBtn = document.getElementById("pp-card-closebtn");
+  const pcUserDetails = document.getElementById("pcuserdetails");
+  const header = document.getElementById("header");
+
+  function setZIndexZero() {
+    if (header) header.style.zIndex = "0";
+    const iFxdElementsNow = document.querySelectorAll(".iFxd");
+    iFxdElementsNow.forEach(el => el.style.zIndex = "0");
+  }
+
+  function resetZIndex() {
+    if (header) header.style.zIndex = "";
+    const iFxdElementsNow = document.querySelectorAll(".iFxd");
+    iFxdElementsNow.forEach(el => el.style.zIndex = "");
+  }
+
+  pcUserDetails.addEventListener("click", (e) => {
+    e.preventDefault();
+    popupWrapper.classList.add("show");
+    setZIndexZero();
+  });
+
+  function closePopup() {
+    popupWrapper.classList.remove("show");
+    resetZIndex();
+  }
+
+  closeBtn.addEventListener("click", closePopup);
+
+  popupWrapper.addEventListener("click", (event) => {
+    if (event.target === popupWrapper) {
+      closePopup();
+    }
+  });
+});
+
