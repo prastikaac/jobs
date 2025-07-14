@@ -414,11 +414,15 @@ body.drK.foursec {
 
 
 
-   .longbtns::after {
-    position: relative;      /* back in normal flow (opposite of absolute) */
-    transform: scaleX(1);    /* fully visible, no horizontal shrink */
-    height: auto;            /* let content determine height */
-    background-color: transparent; /* no solid background */
+  .longbtns::after {
+    position: relative;
+    /* back in normal flow (opposite of absolute) */
+    transform: scaleX(1);
+    /* fully visible, no horizontal shrink */
+    height: auto;
+    /* let content determine height */
+    background-color: transparent;
+    /* no solid background */
   }
 
 
@@ -865,12 +869,12 @@ body.drK .job-card__value {
 }
 
 .logsinpop {
-  display: noned;
+  display: none !important;
 }
 
 
- @media screen and (max-width: 767px) {
-                      .pconly {
-                        display: none !important;
-                      }
-                    }
+@media screen and (max-width: 767px) {
+  .pconly {
+    display: none !important;
+  }
+}
