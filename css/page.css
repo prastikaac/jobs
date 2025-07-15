@@ -9318,12 +9318,16 @@ img.goog-te-gadget-icon,
 
 .cmBri {
   max-width: 680px !important;
-  border-radius: 22px 22px 0 0 !important;
+
 }
 
 
+#profile-card-container {
+  margin-top: -45px !important;
+}
+
 @media screen and (max-width: 768px) {
-  #profile-card-container {
-    margin-top: -45px !important;
+  .cmBri {
+    border-radius: 22px 22px 0 0 !important;
   }
 }
