@@ -75,7 +75,10 @@ function closePopup() {
   }
 
   // Otherwise, proceed to close the popup normally
-  localStorage.setItem("jobAlertPopupShown", "true");
+  if (localStorage.getItem("neverShowJobAlertPopup") === "true") {
+    localStorage.setItem("jobAlertPopupShown", "true");
+  }
+
   document.getElementById("jobAlertPopup").style.display = "none";
 }
 
@@ -141,27 +144,34 @@ window.handlePopupYes = async () => {
 
 
 window.handlePopupNo = () => {
-  const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
-  if (skipNoConfirm === "true") {
-    closePopup();
-    return;
-  }
-  // Show the confirmation step to skip alerts
-  showPopupStep("popupStep1b");
+  // Directly show the next step if "No" is pressed
+  showPopupStep("popupStep1b"); // Or any other next step you want
 };
 
 window.handleNoSkipAlerts = () => {
+  // This will show the confirmation step to skip alerts
   showPopupStep("popupStep1c");
 };
 
+
+
 window.confirmFinalNo = () => {
   const neverShowCheckbox = document.getElementById("neverShowAgainToggle");
+
+  // If the checkbox is checked, set localStorage to remember it
   if (neverShowCheckbox && neverShowCheckbox.checked) {
     localStorage.setItem("neverShowJobAlertPopup", "true");
+  } else {
+    // If checkbox is not checked, set skipNoConfirm flag
+    localStorage.setItem(LS_SKIP_NO_CONFIRM, "true");
   }
-  localStorage.setItem(LS_SKIP_NO_CONFIRM, "true");
+
+  // Close the popup regardless of the checkbox state
   closePopup();
 };
+
+
+
 
 
 window.checkEmailExistence = async () => {
@@ -730,14 +740,19 @@ async function syncFcmTokenWithFirestore(uid) {
 window.addEventListener("load", async () => {
   const user = JSON.parse(localStorage.getItem("user"));
   const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
+  const neverShowPopup = localStorage.getItem("neverShowJobAlertPopup") === "true"; // Check if 'never show again' is set
 
   if (user && user.uid) {
     await syncFcmTokenWithFirestore(user.uid);
+    await checkNotificationPermissionAndUpdateToken(user.uid);
   }
 
-  if (!user && skipNoConfirm !== "true") {
+
+  if (!neverShowPopup) {
+    // Show the job alert popup if 'never show again' is not checked
     showPopupStep("popupStep1");
   } else {
+    // Hide the job alert popup if 'never show again' is checked
     closePopup();
   }
 });
@@ -849,22 +864,7 @@ async function updateFcmToken(uid) {
   }
 }
 
-// Call this function when the page is loaded or after login
-window.addEventListener("load", async () => {
-  const user = JSON.parse(localStorage.getItem("user"));
-  const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
 
-  if (user && user.uid) {
-    // Check and request notification permission if needed and update token
-    await checkNotificationPermissionAndUpdateToken(user.uid);
-  }
-
-  if (!user && skipNoConfirm !== "true") {
-    showPopupStep("popupStep1");
-  } else {
-    closePopup();
-  }
-});
 
 
 
