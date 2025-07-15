@@ -9321,6 +9321,9 @@ img.goog-te-gadget-icon,
   border-radius: 22px 22px 0 0 !important;
 }
 
-#profile-card-container {
-  margin-top: -45px !important;
+
+@media screen and (min-width: 768px) {
+  #profile-card-container {
+    margin-top: -45px !important;
+  }
 }
