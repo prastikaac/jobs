@@ -9,6 +9,9 @@ import {
   getAuth, createUserWithEmailAndPassword,
   signInWithEmailAndPassword, sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
 
 let ignoreNextOutsideClick = false;
 let allowPopupClose = false;
@@ -737,25 +740,27 @@ async function syncFcmTokenWithFirestore(uid) {
   }
 }
 
-window.addEventListener("load", async () => {
-  const user = JSON.parse(localStorage.getItem("user"));
-  const skipNoConfirm = localStorage.getItem(LS_SKIP_NO_CONFIRM);
-  const neverShowPopup = localStorage.getItem("neverShowJobAlertPopup") === "true"; // Check if 'never show again' is set
+window.addEventListener("load", () => {
+  const neverShowPopup = localStorage.getItem("neverShowJobAlertPopup") === "true";
 
-  if (user && user.uid) {
-    await syncFcmTokenWithFirestore(user.uid);
-    await checkNotificationPermissionAndUpdateToken(user.uid);
-  }
-
-
-  if (!neverShowPopup) {
-    // Show the job alert popup if 'never show again' is not checked
-    showPopupStep("popupStep1");
-  } else {
-    // Hide the job alert popup if 'never show again' is checked
-    closePopup();
-  }
+  onAuthStateChanged(auth, async (user) => {
+    if (user) {
+      // User is signed in
+      await syncFcmTokenWithFirestore(user.uid);
+      await checkNotificationPermissionAndUpdateToken(user.uid);
+      // DO NOT show popupStep1 if user is logged in
+    } else {
+      // Only show popupStep1 if not logged in and neverShowPopup is false
+      if (!neverShowPopup) {
+        showPopupStep("popupStep1");
+      } else {
+        closePopup();
+      }
+    }
+  });
 });
+
+
 
 
 

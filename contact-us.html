@@ -74,15 +74,14 @@
 
     gtag('config', 'G-7DRFHS58ET');
   </script>
-  
 
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="MN-3 mobS HD-2 flT hdMn bD onItm onPs Find Jobs In Finland  ?"
-  id="mainCont">
+<body class="MN-3 mobS HD-2 flT hdMn bD onItm onPs Find Jobs In Finland  ?" id="mainCont">
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
     nonce="E4Y7rLjw"></script>
@@ -321,7 +320,7 @@
                       <dl class="sInf">
 
 
-                         
+
                         <script src="js/translator.js"></script>
 
 
@@ -425,7 +424,7 @@
 
 
 
-                   
+
 
                   <li class="hm">
                     <a class="a" href="https://findjobsinfinland.fi/jobs" itemprop="url">
@@ -447,7 +446,8 @@
 
 
                   <li class="hm">
-                    <a class="a" href="https://findjobsinfinland.fi/jobs?availability=summer-jobs" class="seasonal-jobs" itemprop="url">
+                    <a class="a" href="https://findjobsinfinland.fi/jobs?availability=summer-jobs" class="seasonal-jobs"
+                      itemprop="url">
                       <svg style="width: 25px;  height: 25px;  margin-left: 2px;" xmlns="http://www.w3.org/2000/svg"
                         fill="#000000" width="800px" height="800px" viewBox="0 0 1000 1000">
                         <path
@@ -589,76 +589,137 @@
                                     <div class="ContactForm" style="margin-bottom: -60px;">
 
 
-
-
-
                                       <style>
-                                        /* Styles for the popup */
-                                        .popup {
-                                          display: none;
-                                          position: fixed;
-                                          top: 50%;
-                                          left: 50%;
-                                          transform: translate(-50%, -50%);
-                                          background-color: #ffffff;
-                                          padding: 20px;
-                                          border-radius: 10px;
-                                          box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
-                                          z-index: 9999;
-                                          max-width: 335px;
-                                          width: 90%;
-                                          text-align: center;
-                                        }
-
-                                        .popup-content {
-                                          text-align: center;
-                                        }
-
-                                        .popup-background {
-                                          display: none;
+                                        .popup-overlay {
                                           position: fixed;
                                           top: 0;
                                           left: 0;
                                           width: 100%;
                                           height: 100%;
-                                          background: rgba(255, 255, 255, 0.5);
-                                          /* Adjust the opacity as needed */
+                                          background-color: rgba(255, 255, 255, 0.2);
                                           backdrop-filter: blur(5px);
-                                          /* Adjust the blur radius as needed */
-                                          z-index: 9998;
+                                          -webkit-backdrop-filter: blur(10px);
+                                          display: none;
+                                          justify-content: center;
+                                          align-items: center;
+                                          z-index: 9999;
                                         }
 
-                                        .popup p {
-                                          margin-bottom: 20px;
-                                          font-size: 16px;
-                                          color: #333333;
+                                        .popup-card {
+                                          background: #fff;
+                                          border-radius: 16px;
+                                          padding: 30px 20px;
+                                          text-align: center;
+                                          max-width: 680px;
+                                          width: 90%;
+                                          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.204);
+                                          animation: slideUpFade 0.1s ease-out;
+
                                         }
 
-                                        .popup button {
-                                          background-color: #4CAF50;
-                                          color: white;
+                                        .popup-image {
+                                          width: 100%;
+                                          max-width: 260px;
+                                          height: auto;
+                                          object-fit: contain;
+                                          border-radius: 8px;
+
+                                        }
+
+                                        .popup-title {
+                                          font-size: 22px;
+                                          font-weight: bold;
+                                          margin-bottom: 10px !important;
+                                          margin-top: 5px !important;
+                                          color: #222;
+                                        }
+
+                                        .popup-text {
+                                          font-size: 14px;
+                                          color: #666;
+                                          margin-bottom: 25px !important;
+                                          margin-top: 0px !important;
+                                          padding: 0 10px;
+                                        }
+
+                                        .popup-close {
+                                          background-color: #005eff;
+                                          color: #fff;
+                                          font-weight: bold;
+                                          padding: 12px 0;
+                                          width: 100%;
                                           border: none;
-                                          border-radius: 5px;
-                                          padding: 10px 25px;
+                                          border-radius: 999px;
                                           cursor: pointer;
                                           transition: background-color 0.3s ease;
                                         }
 
-                                        .popup-content {
-                                          padding: 10px;
+                                        .popup-close:hover {
+                                          background-color: #0046c7;
                                         }
 
-                                        .popup button:hover {
-                                          background-color: #45a049;
+                                        @keyframes slideUpFade {
+                                          from {
+                                            opacity: 0;
+                                            transform: translateY(100px);
+                                          }
+
+                                          to {
+                                            opacity: 1;
+                                            transform: translateY(0);
+                                          }
                                         }
 
-                                        /* Style for validation messages */
-                                        .validation-message {
-                                          color: red;
-                                          font-size: 14px;
-                                          margin-top: 5px;
+
+                                        @keyframes slideDownFade {
+                                          from {
+                                            opacity: 1;
+                                            transform: translateY(0);
+                                          }
+
+                                          to {
+                                            opacity: 0;
+                                            transform: translateY(100px);
+                                          }
+                                        }
+
+
+                                        @media screen and (max-width: 480px) {
+                                          .popup-card {
+                                            padding: 25px 15px;
+                                          }
+
+                                          .popup-title {
+                                            font-size: 20px;
+                                          }
+
+                                          .popup-text {
+                                            font-size: 13px;
+                                            line-height: 1.5;
+                                            margin-bottom: 20px !important;
+                                          }
+
+                                          .popup-image {
+                                            max-width: 190px;
+                                            margin-bottom: 15px;
+                                          }
                                         }
                                       </style>
+
+
+
+
+                                      <style>
+                                        .validation-message {
+                                          color: red;
+                                          font-size: 13px;
+                                          margin-top: 4px;
+                                        }
+                                      </style>
+
+
+
+
 
                                       <form name="cForm" id="cForm">
                                         <div class="cArea">
@@ -695,14 +756,116 @@
                                         </div>
                                       </form>
 
+                                      <!-- Updated Popup -->
+                                      <div id="thankYouPopup" class="popup-overlay">
+                                        <div class="popup-card">
+                                          <img src="images/sent.png" alt="Success" class="popup-image" />
+                                          <h2 class="popup-title">Message sent successfully!</h2>
+                                          <p class="popup-text">Thank you for reaching out. We appreciate your message
+                                            and will get back to you shortly.
+                                          </p>
+                                          <button onclick="closeThankYouPopup()" class="popup-close">Close</button>
+                                        </div>
+                                      </div>
 
 
 
-                               
+
+                                      <script>
+                                        document.getElementById("submitButton").addEventListener("click", function () {
+                                          const name = document.getElementById("name").value.trim();
+                                          const email = document.getElementById("useremail").value.trim();
+                                          const message = document.getElementById("message").value.trim();
+
+                                          // Set current time
+                                          const currentTime = new Date().toLocaleString();
+                                          document.getElementById("time").value = currentTime;
+
+                                          // Error containers
+                                          const nameError = document.getElementById("nameError");
+                                          const emailError = document.getElementById("emailError");
+                                          const messageError = document.getElementById("messageError");
+
+                                          // Clear previous error messages
+                                          nameError.textContent = "";
+                                          emailError.textContent = "";
+                                          messageError.textContent = "";
+
+                                          let isValid = true;
+
+                                          // Validate Name
+                                          if (name === "") {
+                                            nameError.textContent = "Name is required";
+                                            isValid = false;
+                                          }
+
+                                          // Validate Email
+                                          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                          if (email === "") {
+                                            emailError.textContent = "Email is required";
+                                            isValid = false;
+                                          } else if (!emailPattern.test(email)) {
+                                            emailError.textContent = "Please enter a valid email";
+                                            isValid = false;
+                                          }
+
+                                          // Validate Message
+                                          if (message === "") {
+                                            messageError.textContent = "Message is required";
+                                            isValid = false;
+                                          }
+
+                                          if (!isValid) return;
+
+                                          // ✅ Show popup immediately
+                                          showThankYouPopup();
+
+                                          // 🔁 Submit to Google Sheets in background
+                                          const formData = new FormData(document.getElementById("cForm"));
+
+                                          fetch("https://script.google.com/macros/s/AKfycbySMPvtZPNrsFG__LYohZS70RWo1rGl3tCAqkgdTBjrfZ-_Rmk-G37z2nUWiBzGJ6h7/exec", {
+                                            method: "POST",
+                                            body: formData
+                                          })
+                                            .then(response => {
+                                              if (response.ok) {
+                                                document.getElementById("cForm").reset();
+                                              } else {
+                                                console.error("Google Sheet submission failed.");
+                                              }
+                                            })
+                                            .catch(error => {
+                                              console.error("Error submitting form: " + error.message);
+                                            });
+                                        });
+
+                                        function showThankYouPopup() {
+                                          const popup = document.getElementById("thankYouPopup");
+                                          popup.style.display = "flex";
+
+                                          setTimeout(() => {
+                                            closeThankYouPopup();
+                                          }, 5000);
+
+                                        }
+
+                                        function closeThankYouPopup() {
+                                          const popup = document.getElementById("thankYouPopup");
+                                          const card = popup.querySelector(".popup-card");
+
+                                          // Add closing animation class
+                                          card.style.animation = "slideDownFade 0.1s ease-in forwards";
+
+                                          // After animation ends, hide popup and reset animation
+                                          card.addEventListener("animationend", () => {
+                                            popup.style.display = "none";
+                                            card.style.animation = "slideUpFade 0.1s ease-out"; // reset to opening animation for next time
+                                          }, { once: true });
+                                        }
+
+                                      </script>
 
 
-
-                               
 
 
 
@@ -725,80 +888,80 @@
                       </article>
                     </div>
                   </div>
-                    <div class="pCmnts" id="comment" style="background-color: transparent; box-shadow: none;">
-                  <input class="cmSh fixi hidden" id="forcontact" type="checkbox" />
-                  <div class="cmShw">
+                  <div class="pCmnts" id="comment" style="background-color: transparent; box-shadow: none;">
+                    <input class="cmSh fixi hidden" id="forcontact" type="checkbox" />
+                    <div class="cmShw">
 
-                  </div>
-
-
-
-
-
-                  <div id="job-alert-popup-content">
-                  </div>
-
-
-
-
-
-
-
-
-                  <section class="cm cmBr fixL" data-embed="true" data-num-comments="0" id="comments">
-                    <div class="cmBri mty">
-                      <div class="cmBrs fixLs">
-                        <div class="bkmH fixH fixT">
-                          <style>
-                            .inline-icon {
-                              display: inline-block !important;
-                              vertical-align: middle !important;
-                              margin-bottom: 2px !important;
-                              /* Adjust if needed */
-                            }
-
-                            .katta::after {
-                              line-height: 50px !important;
-                              font-size: 15px !important;
-                              margin-right: 10px;
-                            }
-
-                            .ask-button {
-                              padding: 5px 16px !important;
-                              margin-top: 0px !important;
-                            }
-
-                            .popup-content {
-                              text-align: left;
-                            }
-                          </style>
-                        </div>
-
-
-
-
-                        <div id="login-signup-popup-content">
-                        </div>
-
-
-
-
-
-
-                      </div>
                     </div>
-                    <label class="fCls" id="neverhiddenpopup" for="forcontact"></label>
 
 
 
 
 
-                  </section>
-                  <script
-                    type="text/javascript">/*<![CDATA[*/ var observerK = new MutationObserver(function (mutations, me) { var cekkomen = getid('comment-editor'); if (cekkomen) { var b = getid("comment-editor"), d = b.getAttribute("data-src"); if (b.setAttribute("src", d), 1 == comment) { var f = getclass("rpTo"), c = getid("commentForm"), h = f.length, k = function (b, d, e, f) { b.addEventListener("click", function () { var c = b.getAttribute("data-reply-to"); getid("c" + c).appendChild(d); getid("commentForm").className = 'cmRbox'; getid("addCm").className = 'commentsReply'; e.src = f + "&parentID=" + c }) }; for (i = 0; i < h; i++)k(f[i], c, b, d); var l = getclass("cmFrm")[0]; getid("addCm").addEventListener("click", function () { l.appendChild(c); getid("commentForm").className = 'comment-replybox-thread'; getid("addCm").className = 'hidden'; b.src = d }) }; me.disconnect(); return } }); observerK.observe(document, { childList: true, subtree: true }); var bscom = getid('forcontact'), bskom = getid('iCmn'); if (bscom !== null) { bscom.addEventListener('click', function () { if (bscom.checked == true) { if (bskom !== null) { bskom.click() }; } }) }; /*]]>*/</script>
-                  <script
-                    type="text/javascript">/*<![CDATA[*/ /* Comment tag, license: dte.web.id/teknis/paket-javascript-fitur-manipulasi */ function repText(id) { var a = document.getElementById(id); if (!a) return; var b = a.innerHTML; b = b.replace(/<i rel="image">(.*?)<\/i>/ig, "<img class='lazy' data-src='$1' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' alt='Image Comment' \/>"); a.innerHTML = b; } repText('cmHolder'); /*]]>*/</script>
-                </div>
+                    <div id="job-alert-popup-content">
+                    </div>
+
+
+
+
+
+
+
+
+                    <section class="cm cmBr fixL" data-embed="true" data-num-comments="0" id="comments">
+                      <div class="cmBri mty">
+                        <div class="cmBrs fixLs">
+                          <div class="bkmH fixH fixT">
+                            <style>
+                              .inline-icon {
+                                display: inline-block !important;
+                                vertical-align: middle !important;
+                                margin-bottom: 2px !important;
+                                /* Adjust if needed */
+                              }
+
+                              .katta::after {
+                                line-height: 50px !important;
+                                font-size: 15px !important;
+                                margin-right: 10px;
+                              }
+
+                              .ask-button {
+                                padding: 5px 16px !important;
+                                margin-top: 0px !important;
+                              }
+
+                              .popup-content {
+                                text-align: left;
+                              }
+                            </style>
+                          </div>
+
+
+
+
+                          <div id="login-signup-popup-content">
+                          </div>
+
+
+
+
+
+
+                        </div>
+                      </div>
+                      <label class="fCls" id="neverhiddenpopup" for="forcontact"></label>
+
+
+
+
+
+                    </section>
+                    <script
+                      type="text/javascript">/*<![CDATA[*/ var observerK = new MutationObserver(function (mutations, me) { var cekkomen = getid('comment-editor'); if (cekkomen) { var b = getid("comment-editor"), d = b.getAttribute("data-src"); if (b.setAttribute("src", d), 1 == comment) { var f = getclass("rpTo"), c = getid("commentForm"), h = f.length, k = function (b, d, e, f) { b.addEventListener("click", function () { var c = b.getAttribute("data-reply-to"); getid("c" + c).appendChild(d); getid("commentForm").className = 'cmRbox'; getid("addCm").className = 'commentsReply'; e.src = f + "&parentID=" + c }) }; for (i = 0; i < h; i++)k(f[i], c, b, d); var l = getclass("cmFrm")[0]; getid("addCm").addEventListener("click", function () { l.appendChild(c); getid("commentForm").className = 'comment-replybox-thread'; getid("addCm").className = 'hidden'; b.src = d }) }; me.disconnect(); return } }); observerK.observe(document, { childList: true, subtree: true }); var bscom = getid('forcontact'), bskom = getid('iCmn'); if (bscom !== null) { bscom.addEventListener('click', function () { if (bscom.checked == true) { if (bskom !== null) { bskom.click() }; } }) }; /*]]>*/</script>
+                    <script
+                      type="text/javascript">/*<![CDATA[*/ /* Comment tag, license: dte.web.id/teknis/paket-javascript-fitur-manipulasi */ function repText(id) { var a = document.getElementById(id); if (!a) return; var b = a.innerHTML; b = b.replace(/<i rel="image">(.*?)<\/i>/ig, "<img class='lazy' data-src='$1' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' alt='Image Comment' \/>"); a.innerHTML = b; } repText('cmHolder'); /*]]>*/</script>
+                  </div>
               </main>
 
               <aside class="blogItm sidebar">
@@ -815,9 +978,9 @@
             </div>
             </aside>
           </div>
-          <br> <br> 
+          <br> <br>
 
-        <div class="mobMn section foursec" id="mobile-menu" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);">
+          <div class="mobMn section foursec" id="mobile-menu" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);">
             <div class="widget TextList" data-version="2" id="TextList99">
               <ul>
                 <li class="mH">
@@ -935,7 +1098,8 @@
                       <div class="widget HTML" data-version="2" id="HTML77">
 
                         <div class="widget-content abtU" data-text="findjobsinfinland.fi">
-                          <div style="display: flex;"><img src="https://findjobsinfinland.fi/images/icon.png" alt="findjobsinfinland logo" style="    flex: 0 0 70px;
+                          <div style="display: flex;"><img src="https://findjobsinfinland.fi/images/icon.png"
+                              alt="findjobsinfinland logo" style="    flex: 0 0 70px;
                     width: 80px;
                     height: 80px; margin-top: -5px;" alt="">
                             <div class="lazy abtL loaded"
@@ -1102,16 +1266,22 @@
                       <ul>
                         <li><a href="https://findjobsinfinland.fi/jobs?q=it+and+software" rel="nofollow"><span>IT &
                               Software</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=engineering" rel="nofollow"><span>Engineering</span></a>
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=engineering"
+                            rel="nofollow"><span>Engineering</span></a>
                         </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=nursing" rel="nofollow"><span>Nursing</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=construction+and+labor" rel="nofollow"><span>Construction
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=nursing"
+                            rel="nofollow"><span>Nursing</span></a></li>
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=construction+and+labor"
+                            rel="nofollow"><span>Construction
                               & Labor</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=logistics+and+delivery" rel="nofollow"><span>Logistics &
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=logistics+and+delivery"
+                            rel="nofollow"><span>Logistics &
                               Delivery</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=customer+service+support" rel="nofollow"><span>Customer
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=customer+service+support"
+                            rel="nofollow"><span>Customer
                               Service Support</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=internships+and+traineeships" rel="nofollow"><span>Internships
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=internships+and+traineeships"
+                            rel="nofollow"><span>Internships
                               & Traineeships</span></a></li>
                       </ul>
                     </div>
@@ -1127,17 +1297,24 @@
                     </h3>
                     <div class="widget-content">
                       <ul>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=cleaning" rel="nofollow"><span>Cleaning</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=housekeeping" rel="nofollow"><span>Housekepping</span></a>
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=cleaning"
+                            rel="nofollow"><span>Cleaning</span></a></li>
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=housekeeping"
+                            rel="nofollow"><span>Housekepping</span></a>
                         </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=cooking" rel="nofollow"><span>Cooking</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=hospitality+and+service" rel="nofollow"><span>Hospitality
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=cooking"
+                            rel="nofollow"><span>Cooking</span></a></li>
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=hospitality+and+service"
+                            rel="nofollow"><span>Hospitality
                               & Service</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=education+and+teaching" rel="nofollow"><span>Education &
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=education+and+teaching"
+                            rel="nofollow"><span>Education &
                               Teaching</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=finance+and+accounting" rel="nofollow"><span>Finance &
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=finance+and+accounting"
+                            rel="nofollow"><span>Finance &
                               Accounting</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=sales+and+marketing" rel="nofollow"><span>Sales &
+                        <li><a href="https://findjobsinfinland.fi/jobs?q=sales+and+marketing" rel="nofollow"><span>Sales
+                              &
                               Marketing</span></a></li>
                       </ul>
                     </div>
@@ -1469,11 +1646,11 @@
     }
   </script>
   <script src="/js/gt.min.js" data-gt-widget-id="43217984"></script>
- <script src="/js/sw-register.js"></script>
-   <script type="module" src="/js/popupLogic.js"></script>
+  <script src="/js/sw-register.js"></script>
+  <script type="module" src="/js/popupLogic.js"></script>
   <script src="/js/jobalertpopup.js"></script>
   <script src="/js/signin-signup-popup.js"></script>
-  
+
 
   <script src="/js/profile-card.js"></script>
   <script type="module" src="/js/profileLogic.js"></script>

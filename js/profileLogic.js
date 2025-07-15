@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (snap.exists()) {
       const data = snap.data();
-      profileImage.src = data.profilePictureUrl?.trim() || "images/user.png";
+      profileImage.src = data.profilePictureUrl?.trim() || "/images/user.png";
       document.getElementById("nameText").textContent = data.fullName || "No Name";
       document.getElementById("emailText").textContent = data.email || "No Email";
       document.getElementById("phoneText").textContent = data.phoneNumber || "No Phone";
@@ -144,15 +144,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-function resetZIndex() {
-  if (header) header.style.zIndex = "";
+  function resetZIndex() {
+    if (header) header.style.zIndex = "";
 
-  const iFxdElementsNow = document.querySelectorAll(".iFxd");
-  iFxdElementsNow.forEach(el => el.style.zIndex = "");
+    const iFxdElementsNow = document.querySelectorAll(".iFxd");
+    iFxdElementsNow.forEach(el => el.style.zIndex = "");
 
-  const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index");
-  hiddenZIndexElements.forEach(el => el.style.zIndex = "");
-}
+    const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index");
+    hiddenZIndexElements.forEach(el => el.style.zIndex = "");
+  }
 
 
   pcUserDetails.addEventListener("click", (e) => {
