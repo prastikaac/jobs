@@ -17,3 +17,36 @@ Customisable Notification
 
 
 Search bar recommendations
+
+
+
+
+fcm token not being updated on logins
+
+
+
+i made this only for case iff user didn't allowed notification while signing up or logging in dont make it work on that two thing means usually signup and login function automatically saves the token, make it : window.checkNotificationPermissionAndUpdateToken = async () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (user && user.uid) {
+    try {
+      // Check if the user has already granted permission for notifications
+      if (Notification.permission === "default") {
+        // Ask the user for notification permission
+        const permission = await Notification.requestPermission();
+        if (permission === "granted") {
+          console.log("Notification permission granted.");
+          // Fetch and update the FCM token after permission is granted
+          await updateFcmToken(user.uid);
+        } else {
+          console.log("Notification permission denied.");
+        }
+      } else if (Notification.permission === "granted") {
+        // If permission is already granted, just update the FCM token
+        await updateFcmToken(user.uid);
+      }
+    } catch (error) {
+      console.error("Error while requesting notification permission or updating token:", error);
+    }
+  }
+};

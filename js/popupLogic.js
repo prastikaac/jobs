@@ -516,6 +516,7 @@ window.loginUser = async () => {
       const userData = docSnap.data();
       console.log("User data retrieved from Firestore:", userData);
 
+      // You can save this data to localStorage, or use it in your app
       localStorage.setItem("user", JSON.stringify({
         uid: user.uid,
         email: user.email,
@@ -523,14 +524,11 @@ window.loginUser = async () => {
         phoneNumber: userData.phoneNumber,
         createdAt: userData.createdAt,
         lastLogin: Timestamp.now()
+
       }));
 
-      // ✅ Add this to ensure FCM token is updated after login
-      await updateFcmToken(user.uid);
-
-      // Optionally, show popup etc.
+      // Optionally, you can show a success message and move to the next page
       showPopupStep("popupLoginSuccess");
-
       console.log("User logged in and data fetched successfully.");
 
       // First, unclick the <label> inside #logsinpop, then hide the popup after 5 seconds
