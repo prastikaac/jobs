@@ -134,23 +134,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("header");
 
   function setZIndexZero() {
+    const header = document.getElementById("header");
     if (header) header.style.zIndex = "0";
 
     const iFxdElementsNow = document.querySelectorAll(".iFxd");
     iFxdElementsNow.forEach(el => el.style.zIndex = "0");
 
-    const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index");
+    const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index, #hidden-z-index");
     hiddenZIndexElements.forEach(el => el.style.zIndex = "0");
   }
 
-
   function resetZIndex() {
+    const header = document.getElementById("header");
     if (header) header.style.zIndex = "";
 
     const iFxdElementsNow = document.querySelectorAll(".iFxd");
     iFxdElementsNow.forEach(el => el.style.zIndex = "");
 
-    const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index");
+    const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index, #hidden-z-index");
     hiddenZIndexElements.forEach(el => el.style.zIndex = "");
   }
 

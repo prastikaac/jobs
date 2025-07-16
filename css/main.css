@@ -877,4 +877,18 @@ body.drK .job-card__value {
   .pconly {
     display: none !important;
   }
+
+  .LI-profile-badge iframe {
+      max-width: 110% !important;
+      margin-left: auto !important;
+      margin-bottom: -15px !important;
+    }
+
 }
+
+.LI-profile-badge iframe {
+  max-width: 110%;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
