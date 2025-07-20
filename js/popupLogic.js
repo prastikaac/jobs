@@ -42,27 +42,34 @@ async function initMessaging() {
       messaging = getMessaging(app);
 
       // 🔽 Place onMessage HERE, after messaging is initialized
-      onMessage(messaging, (payload) => {
-        console.log('Message received:', payload);
+    onMessage(messaging, (payload) => {
+  console.log('Message received:', payload);
 
-        if (Notification.permission === 'granted') {
-          const { title, body, icon } = payload.notification || {};
-          const jobLink = payload.data?.jobLink || null;
-          const imageUrl = payload.data?.imageUrl || null;
+  // Only proceed if this tab is focused
+  if (!document.hasFocus()) {
+    console.log("Tab not focused. Skipping notification.");
+    return;
+  }
 
-          const notification = new Notification(title || 'New Notification', {
-            body: body || '',
-            icon: icon || '/images/icon.png',
-            image: imageUrl || undefined
-          });
+  if (Notification.permission === 'granted') {
+    const { title, body, icon } = payload.notification || {};
+    const jobLink = payload.data?.jobLink || null;
+    const imageUrl = payload.data?.imageUrl || null;
 
-          notification.onclick = () => {
-            if (jobLink && jobLink.startsWith('http')) {
-              window.open(jobLink, '_blank');
-            }
-          };
-        }
-      });
+    const notification = new Notification(title || 'New Notification', {
+      body: body || '',
+      icon: icon || '/images/icon.png',
+      image: imageUrl || undefined
+    });
+
+    notification.onclick = () => {
+      if (jobLink && jobLink.startsWith('http')) {
+        window.open(jobLink, '_blank');
+      }
+    };
+  }
+});
+
 
     } catch (error) {
       console.error('Service Worker registration failed:', error);
@@ -903,12 +910,10 @@ window.addEventListener("load", () => {
       // User is signed in
       // Initialize messaging and log FCM token for the signed-in user
       try {
-        await initMessaging();
         const token = await getOrCreateFcmToken();
         if (token) {
           console.log("FCM token:", token);
         } else {
-          console.warn("No FCM token obtained");
         }
       } catch (error) {
         console.error("Error initializing messaging or getting token:", error);
