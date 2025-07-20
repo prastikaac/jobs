@@ -37,40 +37,40 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
             if (user.email) matchedEmails.push(user.email);
 
             // Send push notifications to all user's devices
-     fcmTokens.forEach(token => {
-    if (!token) return;
+            fcmTokens.forEach(token => {
+                if (!token) return;
 
-    const message = {
-        token: token,
-        notification: {
-            title: `New ${jobData.title} Job!`,
-            body: `${jobData.description}`,
-            image: jobData.imageUrl || undefined
-        },
-        data: {
-            jobId: event.params.jobId,
-            jobLink: jobData.jobLink || "",
-            imageUrl: jobData.imageUrl || ""
-        },
-    };
-    pushPromises.push(
-    messaging.send(message).catch(async (error) => {
-        console.error(`Error sending to token ${token}:`, error.message);
+                const message = {
+                    token: token,
+                    notification: {
+                        title: `New ${jobData.title} Job!`,
+                        body: `${jobData.description}`,
+                        image: jobData.imageUrl || undefined
+                    },
+                    data: {
+                        jobId: event.params.jobId,
+                        jobLink: jobData.jobLink || "",
+                        imageUrl: jobData.imageUrl || ""
+                    },
+                };
+                pushPromises.push(
+                    messaging.send(message).catch(async (error) => {
+                        console.error(`Error sending to token ${token}:`, error.message);
 
-        if (
-            error.code === 'messaging/registration-token-not-registered' ||
-            error.message.includes('Requested entity was not found')
-        ) {
-            const newTokens = fcmTokens.filter(t => t !== token);
-            await db.collection('users').doc(doc.id).update({
-                fcmTokens: newTokens
+                        if (
+                            error.code === 'messaging/registration-token-not-registered' ||
+                            error.message.includes('Requested entity was not found')
+                        ) {
+                            const newTokens = fcmTokens.filter(t => t !== token);
+                            await db.collection('users').doc(doc.id).update({
+                                fcmTokens: newTokens
+                            });
+                            console.log(`Removed invalid token for user ${doc.id}`);
+                        }
+                    })
+                );
+
             });
-            console.log(`Removed invalid token for user ${doc.id}`);
-        }
-    })
-);
-
-});
 
         }
     });
@@ -115,6 +115,7 @@ exports.sendJobAlertEmails = onDocumentCreated('jobs/{jobId}', async (event) => 
     `,
     });
 
-    console.log(`Emails sent to: ${matchedEmails.join(", ")}`);
-    console.log(`Push notifications sent: ${pushPromises.length}`);
+    console.log(`Emails sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`);
+    console.log(`Push notifications sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`);
+
 });

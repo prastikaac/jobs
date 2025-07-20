@@ -21,32 +21,34 @@ Search bar recommendations
 
 
 
-fcm token not being updated on logins
 
 
 
-i made this only for case iff user didn't allowed notification while signing up or logging in dont make it work on that two thing means usually signup and login function automatically saves the token, make it : window.checkNotificationPermissionAndUpdateToken = async () => {
-  const user = JSON.parse(localStorage.getItem("user"));
 
-  if (user && user.uid) {
-    try {
-      // Check if the user has already granted permission for notifications
-      if (Notification.permission === "default") {
-        // Ask the user for notification permission
-        const permission = await Notification.requestPermission();
-        if (permission === "granted") {
-          console.log("Notification permission granted.");
-          // Fetch and update the FCM token after permission is granted
-          await updateFcmToken(user.uid);
-        } else {
-          console.log("Notification permission denied.");
-        }
-      } else if (Notification.permission === "granted") {
-        // If permission is already granted, just update the FCM token
-        await updateFcmToken(user.uid);
-      }
-    } catch (error) {
-      console.error("Error while requesting notification permission or updating token:", error);
-    }
-  }
-};
+
+
+again threee tokens being sent at once during login fix it
+
+while log outing its not removing the fcm token from the database and localstorage
+
+
+make to check the fcm token in the respective users database and if its empty then make to show the popupBlockedNotifications
+
+
+
+
+If your tokens change too frequently, you might want to:
+
+Clear old tokens periodically or during sign-out
+
+Store only the latest token if your app logic allows it
+
+Log token changes in console to debug
+
+
+
+
+
+
+
+i have a logic of sending email and push notification via firebase function and i have stored user infromation in firestore database, and whenever a new job is posted a notification is send to all of the user who have the selected category and location now can i make a data sheet like google sheet in downloadable format for it that how many notificaitons have sent to how many users with individual user names
