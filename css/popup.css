@@ -1770,3 +1770,7 @@ body.drK #pp-card-wrapper .pp-field svg {
 #pcuserdetails {
     cursor: pointer;
 }
+
+#logoffbtn {
+    cursor: pointer;
+}

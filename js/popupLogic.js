@@ -752,7 +752,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.getElementById("logoffbtn")?.addEventListener("click", async () => {
+document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
+  e.preventDefault();
+
   try {
     const user = auth.currentUser;
     const token = localStorage.getItem("currentFcmToken") || localStorage.getItem(LS_TOKEN_KEY);
@@ -764,37 +766,35 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
         await updateDoc(userRef, {
           fcmTokens: arrayRemove(token)
         });
-        console.log("FCM token removed from Firestore.");
+        console.log("✅ FCM token removed from Firestore");
 
         // 2. Delete token from Firebase Messaging
         const deleted = await deleteToken(messaging);
         if (deleted) {
-          console.log("FCM token deleted from Firebase Messaging.");
+          console.log("✅ FCM token deleted from Firebase Messaging");
         } else {
-          console.warn("FCM token could not be deleted.");
+          console.warn("⚠️ FCM token could not be deleted");
         }
       } catch (err) {
-        console.error("Error removing FCM token during logout:", err);
+        console.error("❌ Error during FCM token removal:", err);
       }
     }
 
-    // 3. Clear tokens from localStorage
+    // 3. Clear localStorage
     localStorage.removeItem("currentFcmToken");
     localStorage.removeItem(LS_TOKEN_KEY);
-
-    // 4. Logout user
-    await auth.signOut();
-
-    // 5. Clear session data
     localStorage.removeItem("user");
     localStorage.removeItem("jobAlertPopupShown");
-    localStorage.removeItem("LS_SKIP_NO_CONFIRM");
+    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
 
-    // 6. Reload page
+    // 4. Sign out user
+    await auth.signOut();
+
+    // 5. Reload
     location.reload();
 
   } catch (error) {
-    console.error("Logout failed:", error);
+    console.error("❌ Logout failed:", error);
   }
 });
 
@@ -1203,16 +1203,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
-  e.preventDefault(); // just in case
-  try {
-    await auth.signOut();
-    localStorage.removeItem("user");
-    localStorage.removeItem("jobAlertPopupShown");
-    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
-    location.reload();
-  } catch (error) {
-    console.error("Logout failed:", error);
-  }
-});
