@@ -16,6 +16,4 @@ const messaging = firebase.messaging();
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', () => self.clients.claim());
 
-// ❌ No notification logic here
-// No onBackgroundMessage
-// No notificationclick handler
+
