@@ -42,33 +42,33 @@ async function initMessaging() {
       messaging = getMessaging(app);
 
       // 🔽 Place onMessage HERE, after messaging is initialized
-    onMessage(messaging, (payload) => {
-  console.log('Message received:', payload);
+      onMessage(messaging, (payload) => {
+        console.log('Message received:', payload);
 
-  // Only proceed if this tab is focused
-  if (!document.hasFocus()) {
-    console.log("Tab not focused. Skipping notification.");
-    return;
-  }
+        // Only proceed if this tab is focused
+        if (!document.hasFocus()) {
+          console.log("Tab not focused. Skipping notification.");
+          return;
+        }
 
-  if (Notification.permission === 'granted') {
-    const { title, body, icon } = payload.notification || {};
-    const jobLink = payload.data?.jobLink || null;
-    const imageUrl = payload.data?.imageUrl || null;
+        if (Notification.permission === 'granted') {
+          const { title, body, icon } = payload.notification || {};
+          const jobLink = payload.data?.jobLink || null;
+          const imageUrl = payload.data?.imageUrl || null;
 
-    const notification = new Notification(title || 'New Notification', {
-      body: body || '',
-      icon: icon || '/images/icon.png',
-      image: imageUrl || undefined
-    });
+          const notification = new Notification(title || 'New Notification', {
+            body: body || '',
+            icon: icon || '/images/icon.png',
+            image: imageUrl || undefined
+          });
 
-    notification.onclick = () => {
-      if (jobLink && jobLink.startsWith('http')) {
-        window.open(jobLink, '_blank');
-      }
-    };
-  }
-});
+          notification.onclick = () => {
+            if (jobLink && jobLink.startsWith('http')) {
+              window.open(jobLink, '_blank');
+            }
+          };
+        }
+      });
 
 
     } catch (error) {
@@ -752,9 +752,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
-  e.preventDefault();
-
+document.getElementById("logoffbtn")?.addEventListener("click", async () => {
   try {
     const user = auth.currentUser;
     const token = localStorage.getItem("currentFcmToken") || localStorage.getItem(LS_TOKEN_KEY);
@@ -766,35 +764,37 @@ document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
         await updateDoc(userRef, {
           fcmTokens: arrayRemove(token)
         });
-        console.log("✅ FCM token removed from Firestore");
+        console.log("FCM token removed from Firestore.");
 
         // 2. Delete token from Firebase Messaging
         const deleted = await deleteToken(messaging);
         if (deleted) {
-          console.log("✅ FCM token deleted from Firebase Messaging");
+          console.log("FCM token deleted from Firebase Messaging.");
         } else {
-          console.warn("⚠️ FCM token could not be deleted");
+          console.warn("FCM token could not be deleted.");
         }
       } catch (err) {
-        console.error("❌ Error during FCM token removal:", err);
+        console.error("Error removing FCM token during logout:", err);
       }
     }
 
-    // 3. Clear localStorage
+    // 3. Clear tokens from localStorage
     localStorage.removeItem("currentFcmToken");
     localStorage.removeItem(LS_TOKEN_KEY);
-    localStorage.removeItem("user");
-    localStorage.removeItem("jobAlertPopupShown");
-    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
 
-    // 4. Sign out user
+    // 4. Logout user
     await auth.signOut();
 
-    // 5. Reload
+    // 5. Clear session data
+    localStorage.removeItem("user");
+    localStorage.removeItem("jobAlertPopupShown");
+    localStorage.removeItem("LS_SKIP_NO_CONFIRM");
+
+    // 6. Reload page
     location.reload();
 
   } catch (error) {
-    console.error("❌ Logout failed:", error);
+    console.error("Logout failed:", error);
   }
 });
 
@@ -1078,7 +1078,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
         // Hide both the popup and job alert popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
         document.getElementById("jobAlertPopup").style.display = "none";
-        
+
         // Update the FCM token
         await updateFcmToken(user.uid);
       } else {
@@ -1203,3 +1203,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
+  e.preventDefault(); // just in case
+  try {
+    await auth.signOut();
+    localStorage.removeItem("user");
+    localStorage.removeItem("jobAlertPopupShown");
+    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
+    location.reload();
+  } catch (error) {
+    console.error("Logout failed:", error);
+  }
+});

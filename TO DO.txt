@@ -26,24 +26,16 @@ Search bar recommendations
 
 
 
-
-again threee tokens being sent at once during login fix it
-
 while log outing its not removing the fcm token from the database and localstorage
 
 
 make to check the fcm token in the respective users database and if its empty then make to show the popupBlockedNotifications
 
 
-
-
-If your tokens change too frequently, you might want to:
-
 Clear old tokens periodically or during sign-out
 
-Store only the latest token if your app logic allows it
+Periodically update the tokens and automatically update them in localstorage and database
 
-Log token changes in console to debug
 
 
 
