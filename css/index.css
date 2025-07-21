@@ -1681,7 +1681,7 @@ ul.headIc li>* {
     bottom: 0;
     border-top: 1px solid var(--mobL);
     border-radius: var(--mobBr) var(--mobBr) 0 0;
-    background: var(--mobB);
+    background: #ffffff;
     color: var(--mobT);
     padding: 0 20px;
     box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, .1);
