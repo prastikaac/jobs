@@ -755,7 +755,16 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("logoffbtn")?.addEventListener("click", async () => {
   try {
     const user = auth.currentUser;
-    const token = localStorage.getItem("currentFcmToken") || localStorage.getItem(LS_TOKEN_KEY);
+    let token = localStorage.getItem("currentFcmToken") || localStorage.getItem(LS_TOKEN_KEY);
+    console.log("Logging out FCM token:", token);
+
+    // Ensure messaging is initialized
+    if (!messaging) {
+      const registration = await navigator.serviceWorker.getRegistration();
+      if (registration) {
+        messaging = getMessaging(app);
+      }
+    }
 
     if (user && token && messaging) {
       try {
@@ -764,17 +773,17 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
         await updateDoc(userRef, {
           fcmTokens: arrayRemove(token)
         });
-        console.log("FCM token removed from Firestore.");
+        console.log("✅ FCM token removed from Firestore.");
 
         // 2. Delete token from Firebase Messaging
-        const deleted = await deleteToken(messaging);
+        const deleted = await deleteToken({ token });
         if (deleted) {
-          console.log("FCM token deleted from Firebase Messaging.");
+          console.log("✅ FCM token deleted from Firebase Messaging.");
         } else {
-          console.warn("FCM token could not be deleted.");
+          console.warn("⚠️ FCM token could not be deleted.");
         }
       } catch (err) {
-        console.error("Error removing FCM token during logout:", err);
+        console.error("🔥 Error removing FCM token during logout:", err);
       }
     }
 
@@ -797,6 +806,7 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
     console.error("Logout failed:", error);
   }
 });
+
 
 
 
@@ -1204,15 +1214,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.getElementById("logoffbtn")?.addEventListener("click", async (e) => {
-  e.preventDefault(); // just in case
-  try {
-    await auth.signOut();
-    localStorage.removeItem("user");
-    localStorage.removeItem("jobAlertPopupShown");
-    localStorage.removeItem(LS_SKIP_NO_CONFIRM);
-    location.reload();
-  } catch (error) {
-    console.error("Logout failed:", error);
-  }
-});
