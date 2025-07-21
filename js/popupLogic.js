@@ -15,8 +15,12 @@ import { getMessaging, getToken, onMessage, deleteToken } from "https://www.gsta
 
 
 
+
 let ignoreNextOutsideClick = false;
 let allowPopupClose = false;
+
+
+const bc = new BroadcastChannel('notification-control');
 
 
 const firebaseConfig = {
@@ -43,32 +47,10 @@ async function initMessaging() {
 
       // 🔽 Place onMessage HERE, after messaging is initialized
       onMessage(messaging, (payload) => {
-        console.log('Message received:', payload);
-
-        // Only proceed if this tab is focused
-        if (!document.hasFocus()) {
-          console.log("Tab not focused. Skipping notification.");
-          return;
-        }
-
-        if (Notification.permission === 'granted') {
-          const { title, body, icon } = payload.notification || {};
-          const jobLink = payload.data?.jobLink || null;
-          const imageUrl = payload.data?.imageUrl || null;
-
-          const notification = new Notification(title || 'New Notification', {
-            body: body || '',
-            icon: icon || '/images/icon.png',
-            image: imageUrl || undefined
-          });
-
-          notification.onclick = () => {
-            if (jobLink && jobLink.startsWith('http')) {
-              window.open(jobLink, '_blank');
-            }
-          };
-        }
+        console.log("FCM received in tab, broadcasting to others:", payload);
+        bc.postMessage({ type: "incoming-notification", payload });
       });
+
 
 
     } catch (error) {
@@ -81,6 +63,29 @@ async function initMessaging() {
 
 initMessaging(); // ✅ Make sure this is called on load
 
+bc.onmessage = (event) => {
+  if (event.data?.type === "incoming-notification") {
+    // OPTIONAL: only allow focused tab to show notification
+    if (!document.hasFocus()) return;
+
+    const payload = event.data.payload;
+    const { title, body, icon } = payload.notification || {};
+    const jobLink = payload.data?.jobLink || null;
+    const imageUrl = payload.data?.imageUrl || undefined;
+
+    const notification = new Notification(title || "New Notification", {
+      body: body || "",
+      icon: icon || "/images/icon.png",
+      image: imageUrl || undefined
+    });
+
+    notification.onclick = () => {
+      if (jobLink && jobLink.startsWith("http")) {
+        window.open(jobLink, "_blank");
+      }
+    };
+  }
+};
 
 
 async function logFcmToken() {
