@@ -38,6 +38,30 @@ const auth = getAuth(app);
 
 let messaging;
 
+async function refreshFcmTokenIfNeeded() {
+  try {
+    const permission = Notification.permission;
+    if (permission !== 'granted') return;
+
+    const messaging = getMessaging(app);
+    const newToken = await getToken(messaging, { vapidKey: 'BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY' });
+    if (!newToken) return;
+
+    const lastToken = localStorage.getItem('lastFcmToken');
+    if (newToken !== lastToken) {
+      console.log('🔄 New FCM token detected. Updating Firestore...');
+      await updateFcmToken(newToken); // already deduplicates
+      localStorage.setItem('lastFcmToken', newToken);
+    } else {
+      console.log('✅ FCM token unchanged');
+    }
+  } catch (error) {
+    console.error('FCM token refresh failed:', error);
+  }
+}
+
+
+
 async function initMessaging() {
   if ('serviceWorker' in navigator) {
     try {
@@ -921,8 +945,15 @@ window.addEventListener("load", () => {
 
   onAuthStateChanged(auth, async (user) => {
     if (user) {
-      // User is signed in
-      // Initialize messaging and log FCM token for the signed-in user
+      // Start refresh immediately
+      refreshFcmTokenIfNeeded();
+
+      // Run every 24 hours
+      setInterval(() => {
+        console.log('⏰ 24h FCM refresh running...');
+        refreshFcmTokenIfNeeded();
+      }, 24 * 60 * 60 * 1000); // 24 hours
+      
       try {
         const token = await getOrCreateFcmToken();
         if (token) {
