@@ -23,24 +23,19 @@ Search bar recommendations
 
 
 
+show user details exactly after login
 
 
 
-while log outing its not removing the fcm token from the database and localstorage
-
-
-make to check the fcm token in the respective users database and if its empty then make to show the popupBlockedNotifications
-
-
-Clear old tokens periodically or during sign-out
-
-Periodically update the tokens and automatically update them in localstorage and database
-
-
-
-
-
-
+make to show the popupBlockedNotifications if the fcmTokens array is empty in the respected logged in users firebase datastore
 
 
 i have a logic of sending email and push notification via firebase function and i have stored user infromation in firestore database, and whenever a new job is posted a notification is send to all of the user who have the selected category and location now can i make a data sheet like google sheet in downloadable format for it that how many notificaitons have sent to how many users with individual user names
+
+
+
+
+
+
+
+

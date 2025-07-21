@@ -1,6 +1,6 @@
 // Firebase imports
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore,
   doc,
@@ -28,7 +28,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-const storage = getStorage(app);
+const storage = getStorage(app, "gs://findjobsinfinland-3c061.firebasestorage.app");
 
 // DOM logic after everything is loaded
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,41 +42,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentUID = null;
 
-
+  // Sign-out logic
   signOutButton.addEventListener("click", () => {
     signOut(auth).then(() => {
       // Hide profile and related elements on sign-out
-      const ppCard = document.getElementById("pp-card");
-      const editButton = document.getElementById("edit-pp-information");
-      const dissignElements = document.querySelectorAll(".dissign");
-
-      if (ppCard) ppCard.style.display = "none";
-      if (editButton) editButton.style.display = "none";
+      ppCard.style.display = "none";
+      editButton.style.display = "none";
+      signOutButton.style.display = "none";
       dissignElements.forEach(el => el.style.display = "none");
     }).catch((error) => {
       console.error("Sign-out error:", error);
     });
   });
 
-
+  // Check user authentication state
   onAuthStateChanged(auth, async (user) => {
     if (!user) {
       // User not logged in — hide profile and related elements
-      if (ppCard) ppCard.style.display = "none";
-      if (editButton) editButton.style.display = "none";
-      if (signOutButton) signOutButton.style.display = "none";
+      ppCard.style.display = "none";
+      editButton.style.display = "none";
+      signOutButton.style.display = "none";
       dissignElements.forEach(el => el.style.display = "none");
       return;
     }
 
     // User logged in — show profile and related elements
-    if (ppCard) ppCard.style.display = "flex";
-    if (editButton) editButton.style.display = "block";
-    if (signOutButton) signOutButton.style.display = "block";
+    ppCard.style.display = "flex";
+    editButton.style.display = "block";
+    signOutButton.style.display = "block";
     dissignElements.forEach(el => el.style.display = "block");
 
     currentUID = user.uid;
 
+    // Fetch user data from Firestore
     const userRef = doc(db, "users", currentUID);
     const snap = await getDoc(userRef);
 
@@ -123,10 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const popupWrapper = document.getElementById("pp-card-wrapper");
   const closeBtn = document.getElementById("pp-card-closebtn");
@@ -135,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setZIndexZero() {
     const header = document.getElementById("header");
-    if (header) header.style.zIndex = "0";
+    if (header) header.style.zIndex = "1";
 
     const iFxdElementsNow = document.querySelectorAll(".iFxd");
     iFxdElementsNow.forEach(el => el.style.zIndex = "0");
@@ -154,7 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const hiddenZIndexElements = document.querySelectorAll(".hidden-z-index, #hidden-z-index");
     hiddenZIndexElements.forEach(el => el.style.zIndex = "");
   }
-
 
   pcUserDetails.addEventListener("click", (e) => {
     e.preventDefault();
@@ -175,4 +168,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-

@@ -953,6 +953,7 @@ window.addEventListener("load", () => {
         console.log('⏰ 24h FCM refresh running...');
         refreshFcmTokenIfNeeded();
       }, 24 * 60 * 60 * 1000); // 24 hours
+
       
       try {
         const token = await getOrCreateFcmToken();
