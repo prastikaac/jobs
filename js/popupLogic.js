@@ -20,6 +20,8 @@ let ignoreNextOutsideClick = false;
 let allowPopupClose = false;
 
 
+const bc = new BroadcastChannel('notification-control');
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
@@ -43,7 +45,34 @@ async function initMessaging() {
       console.log('Service Worker registered:', registration);
       messaging = getMessaging(app);
 
-    
+      // 🔽 Place onMessage HERE, after messaging is initialized
+      onMessage(messaging, (payload) => {
+        console.log('Message received:', payload);
+
+        // Only proceed if this tab is focused
+        if (!document.hasFocus()) {
+          console.log("Tab not focused. Skipping notification.");
+          return;
+        }
+
+        if (Notification.permission === 'granted') {
+          const { title, body, icon } = payload.notification || {};
+          const jobLink = payload.data?.jobLink || null;
+          const imageUrl = payload.data?.imageUrl || null;
+
+          const notification = new Notification(title || 'New Notification', {
+            body: body || '',
+            icon: icon || '/images/icon.png',
+            image: imageUrl || undefined
+          });
+
+          notification.onclick = () => {
+            if (jobLink && jobLink.startsWith('http')) {
+              window.open(jobLink, '_blank');
+            }
+          };
+        }
+      });
 
 
     } catch (error) {
@@ -59,7 +88,7 @@ initMessaging(); // ✅ Make sure this is called on load
 
 
 async function logFcmToken() {
-  if (!messaging) { 
+  if (!messaging) {
     console.warn('Messaging is not initialized yet');
     return;
   }
