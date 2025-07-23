@@ -3,7 +3,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getFirestore, collection, query, where, getDocs,
-  doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp, deleteField, arrayRemove,
+  doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp, deleteField, arrayRemove, addDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import {
   getAuth, createUserWithEmailAndPassword,
@@ -38,27 +38,81 @@ const auth = getAuth(app);
 
 let messaging;
 
+
+
+// Function to fetch the current FCM token and check/update it in Firestore if needed
 async function refreshFcmTokenIfNeeded() {
   try {
     const permission = Notification.permission;
     if (permission !== 'granted') return;
 
     const messaging = getMessaging(app);
-    const newToken = await getToken(messaging, { vapidKey: 'BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY' });
-    if (!newToken) return;
 
-    const lastToken = localStorage.getItem('lastFcmToken');
-    if (newToken !== lastToken) {
-      console.log('🔄 New FCM token detected. Updating Firestore...');
-      await updateFcmToken(newToken); // already deduplicates
-      localStorage.setItem('lastFcmToken', newToken);
-    } else {
-      console.log('✅ FCM token unchanged');
+    // Fetch the current token from Firebase (this doesn't refresh or generate a new token)
+    const currentToken = await getToken(messaging, { vapidKey: 'BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY' });
+    if (!currentToken) {
+      console.log('Failed to fetch current FCM token.');
+      return;
     }
+
+    // Fetch the current logged-in user from Firebase Authentication
+    const user = getAuth().currentUser;
+    if (!user) {
+      console.log('No user is logged in');
+      return;
+    }
+
+    const userId = user.uid;  // Get the user ID from Firebase Authentication
+    const userRef = doc(db, 'users', userId);  // Reference to the user's document
+
+    // Fetch the user's document
+    const userDoc = await getDoc(userRef);
+
+    if (userDoc.exists()) {
+      const userData = userDoc.data();
+      const fcmTokens = userData.fcmTokens || [];  // Get the existing fcmTokens array or initialize it as empty
+
+      // Check if the token already exists in the fcmTokens array
+      if (fcmTokens.includes(currentToken)) {
+        console.log('✅ FCM token already exists in Firestore.');
+      } else {
+        console.log('🔄 FCM token not found in Firestore. Adding token...');
+        // Add the token to the fcmTokens array in Firestore using arrayUnion to prevent duplicates
+        await addFcmToken(userId, currentToken);
+        console.log('✅ FCM token added to Firestore');
+      }
+    } else {
+      console.log('User document does not exist in Firestore.');
+    }
+
+    // Optionally, store the token in localStorage
+    localStorage.setItem('lastFcmToken', currentToken);
   } catch (error) {
-    console.error('FCM token refresh failed:', error);
+    console.error('Error checking or syncing FCM token:', error);
   }
 }
+
+// Function to add the FCM token to Firestore inside the fcmTokens array
+async function addFcmToken(userId, newToken) {
+  try {
+    // Reference to the user's document in the "users" collection
+    const userRef = doc(db, 'users', userId);
+
+    // Use arrayUnion to safely add the new token to the fcmTokens array without duplicates
+    await updateDoc(userRef, {
+      fcmTokens: arrayUnion(newToken),  // Add token to the fcmTokens array
+      lastUpdated: serverTimestamp()  // Optionally track when the token was last updated
+    });
+
+    console.log('FCM token successfully added to Firestore');
+  } catch (error) {
+    console.error('Error adding token to Firestore:', error);
+  }
+}
+
+
+
+
 
 
 
@@ -779,7 +833,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 document.getElementById("logoffbtn")?.addEventListener("click", async () => {
   try {
     const user = auth.currentUser;
@@ -799,12 +852,12 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
         // 1. Remove token from Firestore
         const userRef = doc(db, "users", user.uid);
         await updateDoc(userRef, {
-          fcmTokens: arrayRemove(token)
+          fcmTokens: arrayRemove(token)  // Remove the current token from Firestore
         });
         console.log("✅ FCM token removed from Firestore.");
 
-        // 2. Delete token from Firebase Messaging
-        const deleted = await deleteToken({ token });
+        // 2. Remove the token from Firebase Messaging
+        const deleted = await deleteToken(messaging);
         if (deleted) {
           console.log("✅ FCM token deleted from Firebase Messaging.");
         } else {
@@ -907,39 +960,6 @@ async function getOrCreateFcmToken() {
 
 
 
-async function syncFcmTokenWithFirestore(uid) {
-  if (!uid) return;
-  try {
-    const registration = await navigator.serviceWorker.ready;
-    const currentToken = await getToken(messaging, {
-      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-      serviceWorkerRegistration: registration
-    });
-    if (!currentToken) return;
-
-    const userRef = doc(db, "users", uid);
-    const docSnap = await getDoc(userRef);
-    if (!docSnap.exists()) return;
-
-    const userData = docSnap.data();
-    const existingTokens = userData.fcmTokens || [];
-
-    if (!existingTokens.includes(currentToken)) {
-      await updateDoc(userRef, {
-        fcmTokens: arrayUnion(currentToken)
-      });
-
-      let storedUser = JSON.parse(localStorage.getItem("user"));
-      if (storedUser && storedUser.uid === uid) {
-        storedUser.fcmTokens = [...existingTokens, currentToken];
-        localStorage.setItem("user", JSON.stringify(storedUser));
-      }
-    }
-  } catch (error) {
-    console.warn("Error syncing FCM token:", error);
-  }
-}
-
 window.addEventListener("load", () => {
   const neverShowPopup = localStorage.getItem("neverShowJobAlertPopup") === "true";
 
@@ -948,13 +968,14 @@ window.addEventListener("load", () => {
       // Start refresh immediately
       refreshFcmTokenIfNeeded();
 
-      // Run every 24 hours
+      // Run every 24 hours (24 hours = 24 * 60 * 60 * 1000 milliseconds)
       setInterval(() => {
         console.log('⏰ 24h FCM refresh running...');
         refreshFcmTokenIfNeeded();
       }, 24 * 60 * 60 * 1000); // 24 hours
 
-      
+
+
       try {
         const token = await getOrCreateFcmToken();
         if (token) {

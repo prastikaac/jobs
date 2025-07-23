@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f7f7f7;
+            padding: 40px;
+        }
+
+        .profile-container {
+            background: #fff;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .profile-img {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .profile-img img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .camera-icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #fff;
+            border-radius: 50%;
+            padding: 6px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .info-box {
+            flex: 1;
+        }
+
+        .info-item {
+            background: #f4f4f4;
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .info-text {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+
+        svg {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+
+        .dropdown-section {
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .dropdown-section h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .dropdown {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            max-height: 220px;
+            /* Adjust height as needed */
+            overflow-y: auto;
+            scrollbar-width: thin;
+            /* Firefox */
+            scrollbar-color: #ccc transparent;
+        }
+
+        /* Optional scrollbar styling for WebKit browsers */
+        .dropdown::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .dropdown::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+
+        .dropdown div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .dropdown div:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Switch style using label::after */
+        .dropdown label {
+            position: relative;
+            padding-left: 0;
+            flex: 1;
+            cursor: pointer;
+        }
+
+        .dropdown label::after {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 22px;
+            background-color: #ccc;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+            position: absolute;
+            right: 0;
+            top: 59%;
+            transform: translateY(-50%);
+        }
+
+        .dropdown input[type="checkbox"]:checked+label::after {
+            background-color: #ff2d7b;
+        }
+
+        .dropdown label::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            top: 2px;
+            right: 20px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+            z-index: 1;
+        }
+
+        .dropdown input[type="checkbox"]:checked+label::before {
+            transform: translateX(18px);
+        }
+
+
+        /* Job Subscription Section */
+        .job-subscription {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Title for Job Subscription */
+        .job-subscription h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Description text for Job Subscription */
+        .job-subscription p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Flex container for notification options (Email & Push Notification) */
+        .notification-options {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Label for each checkbox */
+        .notification-options label {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* Styling for the checkbox */
+        .notification-options input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>User information</h3>
+    <p>Review and update your basic information as needed.</p>
+    <div class="profile-container">
+        <div class="profile-img">
+            <img id="profileImage" src="images/user.png" alt="Profile" />
+            <div class="camera-icon" id="uploadIcon">
+                <!-- Camera SVG icon instead of emoji -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                    <path
+                        d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z">
+                    </path>
+                </svg>
+            </div>
+            <input type="file" id="uploadInput" accept="image/*" />
+        </div>
+        <div class="info-box">
+            <div class="info-item">
+                <div class="info-text">
+                    <!-- User SVG instead of user emoji -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="bi bi-person"
+                        fill="currentColor" width="20"
+                        height="20"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z" />
+                    </svg>
+                    <span id="fullName">—</span>
+                </div>
+                <div id="editFullName">
+                    <!-- Pen SVG for editing -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"
+                        class="bi bi-envelope" width="20"
+                        height="20"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z" />
+                    </svg>
+                    <span id="email">—</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"
+                        class="fa-solid fa-phone" width="20"
+                        height="20"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z" />
+                    </svg>
+                    <span id="phone">—</span>
+                </div>
+                <div id="editPhone">
+                    <!-- Phone edit SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JOB CATEGORY -->
+    <div class="dropdown-section">
+        <h3>Preferred Job Types</h3>
+        <p>Let us know the job roles and industries you are most interested in. This information will be used to
+            customize your job alert notifications and job search suggestions.</p>
+        <div class="dropdown" id="jobCategoryDropdown">
+            <div>
+                <input type="checkbox" id="cat-all" value="all" />
+                <label for="cat-all">All Categories</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cat-it" value="it-tech" />
+                <label for="cat-it">IT & Tech</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cat-eng" value="engineering" />
+                <label for="cat-eng">Engineering</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cat-nursing" value="nursing" />
+                <label for="cat-nursing">Nursing</label>
+            </div>
+            <!-- Add more if needed -->
+        </div>
+    </div>
+
+    <!-- JOB LOCATION -->
+    <div class="dropdown-section">
+        <h3>Preferred Job Location</h3>
+        <p>Let us know where you would like to work. This information will assist in providing you with job
+            opportunities in your desired locations.</p>
+        <div class="dropdown" id="jobLocationDropdown">
+            <div>
+                <input type="checkbox" id="loc-all" value="all" />
+                <label for="loc-all">All Locations</label>
+            </div>
+            <div>
+                <input type="checkbox" id="loc-helsinki" value="helsinki" />
+                <label for="loc-helsinki">Helsinki</label>
+            </div>
+            <div>
+                <input type="checkbox" id="loc-espoo" value="espoo" />
+                <label for="loc-espoo">Espoo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="loc-vantaa" value="vantaa" />
+                <label for="loc-vantaa">Vantaa</label>
+            </div>
+
+
+            <!-- Add more if needed -->
+        </div>
+    </div>
+
+
+    <!-- Job Subscription Section -->
+    <div class="dropdown-section">
+        <h3>Job Alerts Subscription</h3>
+        <p>Stay updated with the latest job opportunities via email and web notifications. Choose from the available
+            notification types or customize your preferences.</p>
+
+        <!-- Notification Options (Email and Push Notification) -->
+        <div class="dropdown" id="notificationTypes">
+            <div>
+                <input type="checkbox" id="email-notification" value="email" />
+                <label for="email-notification">Email</label>
+            </div>
+            <div>
+                <input type="checkbox" id="push-notification" value="pushNotification" />
+                <label for="push-notification">Push Notification</label>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Save Preferences Button -->
+    <button id="saveBtn"
+        style="padding: 10px 20px; background: brown; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Save
+    </button>
+
+    <div id="successMessage" style="color: green; font-weight: bold; text-align: center;"></div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import {
+            getFirestore, doc, getDoc, updateDoc, Timestamp
+        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+        import {
+            getStorage, ref, uploadBytes, getDownloadURL
+        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+            authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+            projectId: "findjobsinfinland-3c061",
+            storageBucket: "findjobsinfinland-3c061.appspot.com",
+            messagingSenderId: "575437446165",
+            appId: "1:575437446165:web:51922bc01fd291b09b821c"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const storage = getStorage(app, "gs://findjobsinfinland-3c061.firebasestorage.app");
+
+        const profileImage = document.getElementById("profileImage");
+        const fileInput = document.getElementById("uploadInput");
+        let userRef, uid;
+
+        let originalCategories = [];
+        let originalLocations = [];
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                uid = user.uid;
+                userRef = doc(db, "users", uid);
+
+                const snap = await getDoc(userRef);
+                const data = snap.data();
+
+                profileImage.src = data.profilePictureUrl || "images/user.png";
+                document.getElementById("fullName").textContent = data.fullName || "—";
+                document.getElementById("email").textContent = data.email || "—";
+                document.getElementById("phone").textContent = data.phoneNumber || "—";
+
+                // Fetch the job subscription preferences from Firestore
+                const jobSubscription = data?.jobSubscription || {};
+
+                document.getElementById("email-notification").checked = jobSubscription.emailNotification || false;
+                document.getElementById("push-notification").checked = jobSubscription.pushNotification || false;
+
+                originalCategories = data.jobCategory || [];
+                originalLocations = data.jobLocation || [];
+
+                checkValues("jobCategoryDropdown", originalCategories);
+                checkValues("jobLocationDropdown", originalLocations);
+
+                handleAllCheckbox("jobCategoryDropdown");
+                handleAllCheckbox("jobLocationDropdown");
+            }
+        });
+
+        fileInput.addEventListener("change", async (e) => {
+            const file = e.target.files[0];
+            if (!file || !uid) return;
+
+            // Show the image immediately by reading it locally
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                // Set the profile image src to the local image URL (before uploading)
+                profileImage.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+
+            // Detect the file extension based on the MIME type
+            let fileExtension = file.name.split('.').pop();  // Use the file's original extension
+
+            // Set the storage reference with the correct path structure
+            const storageRef = ref(storage, `profilePictures/${uid}/${file.name}`);
+
+            try {
+                // Upload the file to Firebase Storage
+                await uploadBytes(storageRef, file);
+
+                // Get the download URL after the file is uploaded
+                const url = await getDownloadURL(storageRef);
+
+                // Update the profile image URL in Firestore
+                await updateDoc(userRef, {
+                    profilePictureUrl: url,
+                    lastUpdated: Timestamp.now()
+                });
+            } catch (error) {
+                console.error("Error uploading profile picture:", error);
+            }
+        });
+
+
+
+        // Enable inline editing
+        function makeEditable(fieldId, key) {
+            const span = document.getElementById(fieldId);
+            const oldValue = span.textContent;
+            const input = document.createElement("input");
+            input.type = "text";
+            input.value = oldValue;
+            input.style.width = "100%";
+            span.replaceWith(input);
+            input.focus();
+
+            const save = async () => {
+                const newValue = input.value.trim();
+                if (newValue && newValue !== oldValue) {
+                    await updateDoc(userRef, {
+                        [key]: newValue,
+                        lastUpdated: Timestamp.now()
+                    });
+                }
+                input.replaceWith(span);
+                span.textContent = newValue || oldValue;
+            };
+
+            input.addEventListener("blur", save);
+            input.addEventListener("keydown", (e) => {
+                if (e.key === "Enter") input.blur();
+            });
+        }
+
+        // Edit button events
+        document.getElementById("editFullName").onclick = () => makeEditable("fullName", "fullName");
+        document.getElementById("editPhone").onclick = () => makeEditable("phone", "phoneNumber");
+        document.getElementById("uploadIcon").onclick = () => fileInput.click();
+
+        // Pre-check values from Firestore
+        function checkValues(containerId, valuesFromDB) {
+            if (!valuesFromDB) return;
+
+            const checkboxes = document.querySelectorAll(`#${containerId} input[type="checkbox"]`);
+            let count = 0;
+            checkboxes.forEach(cb => {
+                if (cb.value !== "all" && valuesFromDB.includes(cb.value)) {
+                    cb.checked = true;
+                    count++;
+                }
+            });
+
+            const allCheckbox = document.querySelector(`#${containerId} input[value="all"]`);
+            if (count === checkboxes.length - 1) {
+                allCheckbox.checked = true;
+            }
+        }
+
+        // Get current selections
+        function getCheckedValues(containerId) {
+            return [...document.querySelectorAll(`#${containerId} input[type="checkbox"]:not([value="all"])`)]
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+        }
+
+        // Handle All/Individual logic
+        function handleAllCheckbox(containerId) {
+            const container = document.getElementById(containerId);
+            const allCheckbox = container.querySelector('input[value="all"]');
+            const others = [...container.querySelectorAll('input[type="checkbox"]:not([value="all"])')];
+
+            allCheckbox.addEventListener("change", () => {
+                others.forEach(cb => cb.checked = allCheckbox.checked);
+            });
+
+            container.addEventListener("change", () => {
+                const checkedCount = others.filter(cb => cb.checked).length;
+                allCheckbox.checked = checkedCount === others.length;
+            });
+        }
+
+        // Compare old vs new
+        function updateSaveState(original, containerId) {
+            const current = getCheckedValues(containerId);
+            return JSON.stringify(original.sort()) !== JSON.stringify(current.sort());
+        }
+
+        // Check for changes
+        function hasChanges() {
+            return updateSaveState(originalCategories, "jobCategoryDropdown") ||
+                updateSaveState(originalLocations, "jobLocationDropdown");
+        }
+
+        // Get the Save button and Success message container
+        const saveBtn = document.getElementById("saveBtn");
+        const successMessageContainer = document.getElementById("successMessage");
+
+        // Save Preferences logic
+        saveBtn.addEventListener("click", async () => {
+            if (!uid || !userRef) return;
+
+            const newCategories = getCheckedValues("jobCategoryDropdown");
+            const newLocations = getCheckedValues("jobLocationDropdown");
+
+            // Update job categories and locations if changed
+            if (hasChanges()) {
+                await updateDoc(userRef, {
+                    jobCategory: newCategories,
+                    jobLocation: newLocations,
+                    lastUpdated: Timestamp.now()
+                });
+
+                // Update original values to prevent unnecessary saves in future
+                originalCategories = [...newCategories];
+                originalLocations = [...newLocations];
+            }
+
+            // Update job subscription preferences (email and push notifications)
+            const emailNotification = document.getElementById("email-notification").checked;
+            const pushNotification = document.getElementById("push-notification").checked;
+
+            await updateDoc(userRef, {
+                jobSubscription: {
+                    emailNotification,
+                    pushNotification
+                },
+                lastUpdated: Timestamp.now()
+            });
+
+            // Show success message after saving both job subscription and preferences
+            successMessageContainer.textContent = "Changes Saved Successfully!";
+
+            // Hide the success message after 3 seconds
+            setTimeout(() => {
+                successMessageContainer.textContent = '';
+            }, 3000);  // 3000ms = 3 seconds
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

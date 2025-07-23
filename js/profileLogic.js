@@ -101,14 +101,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const localUrl = URL.createObjectURL(file);
     profileImage.src = localUrl;
 
-    const filePath = `profilePictures/${currentUID}`;
+    // Set file path including the filename "image.png"
+    const filePath = `profilePictures/${currentUID}/image.png`;
     const storageRef = ref(storage, filePath);
 
     try {
+      // Upload the file to Firebase Storage
       await uploadBytes(storageRef, file);
+
+      // Get the download URL for the uploaded file
       const downloadURL = await getDownloadURL(storageRef);
 
-      // Update Firestore with image URL
+      // Update Firestore with the new image URL
       await updateDoc(doc(db, "users", currentUID), {
         profilePictureUrl: downloadURL
       });
@@ -119,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Upload or Firestore update failed:", err);
     }
   });
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
