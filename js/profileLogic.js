@@ -42,18 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentUID = null;
 
-  // Sign-out logic
-  signOutButton.addEventListener("click", () => {
-    signOut(auth).then(() => {
-      // Hide profile and related elements on sign-out
-      ppCard.style.display = "none";
-      editButton.style.display = "none";
-      signOutButton.style.display = "none";
-      dissignElements.forEach(el => el.style.display = "none");
-    }).catch((error) => {
-      console.error("Sign-out error:", error);
-    });
+// Sign-out logic
+signOutButton.addEventListener("click", () => {
+  signOut(auth).then(() => {
+    // Hide profile and related elements on sign-out
+    ppCard.style.display = "none";
+    editButton.style.display = "none";
+    signOutButton.style.display = "none";
+    dissignElements.forEach(el => el.style.display = "none");
+
+    // Reload the page after sign-out
+    location.reload();
+  }).catch((error) => {
+    console.error("Sign-out error:", error);
   });
+});
+
 
   // Check user authentication state
   onAuthStateChanged(auth, async (user) => {

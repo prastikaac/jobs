@@ -65,8 +65,6 @@
 
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="MZE+977ZL9HBz1R4NjCElw" async></script>
 
-  <link rel="stylesheet" href="/css/popup.css">
-
   <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging-compat.js"></script>
 
@@ -89,7 +87,7 @@
 
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Times">
-  
+  <link rel="stylesheet" href="/css/popup.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/ask.css">
   <link rel="stylesheet" href="css/index.css">
@@ -106,7 +104,8 @@
 
 
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -287,6 +286,7 @@
                   </li>
 
 
+
                   <li class="askpc" id="logsinpop">
                     <label aria-label="Contact" data-text="Contact" for="forcontact">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -298,6 +298,7 @@
                       </svg>
                     </label>
                   </li>
+
 
 
                   <li class="isDrk">
@@ -394,7 +395,7 @@
             <div class="mnMob section" id="nav-widget-1">
               <div class="widget PageList" data-version="2" id="PageList002" style="margin-bottom: -10px;">
 
-                <label style="margin-left: 75px; cursor: pointer;" class="tNav tIc bIc dispc" for="offNav"
+                <label style="margin-left: 75px; cursor: pointer;" class="tNav tIc bIc dispc pconly" for="offNav"
                   onclick="vibRate(50)">
                   <style>
                     .rotate {
@@ -467,10 +468,6 @@
               <div class="widget HTML" data-version="2" id="HTML000">
                 <ul class="mnMn" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 
-
-
-                   
-
                   <li class="hm">
                     <a class="a" href="https://findjobsinfinland.fi/jobs" itemprop="url">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
@@ -505,14 +502,6 @@
 
                   <li class="br">
                   </li>
-
-
-
-
-
-
-
-
 
 
                   <li>
@@ -656,15 +645,7 @@
                   line-height: 1.5;
                 }
 
-                button {
-                  padding: 10px 20px;
-                  font-size: 16px;
-                  border: none;
-                  background-color: #007bff;
-                  color: white;
-                  cursor: pointer;
-                  border-radius: 5px;
-                }
+
 
                 .image img {
                   max-width: 90%;
@@ -1037,6 +1018,79 @@
 
 
                 <br>
+
+
+
+                <div class="pCmnts" id="comment" style="background-color: transparent; box-shadow: none;">
+                  <input class="cmSh fixi hidden" id="forcontact" type="checkbox" />
+                  <div class="cmShw">
+
+                  </div>
+
+
+
+
+
+                  <div id="job-alert-popup-content">
+                  </div>
+
+
+
+
+
+
+
+
+                  <section class="cm cmBr fixL" data-embed="true" data-num-comments="0" id="comments">
+                    <div class="cmBri mty">
+                      <div class="cmBrs fixLs">
+                        <div class="bkmH fixH fixT">
+                          <style>
+                            .inline-icon {
+                              display: inline-block !important;
+                              vertical-align: middle !important;
+                              margin-bottom: 2px !important;
+                              /* Adjust if needed */
+                            }
+
+                            .katta::after {
+                              line-height: 50px !important;
+                              font-size: 15px !important;
+                              margin-right: 10px;
+                            }
+
+                            .ask-button {
+                              padding: 5px 16px !important;
+                              margin-top: 0px !important;
+                            }
+                          </style>
+                        </div>
+
+
+
+
+                        <div id="login-signup-popup-content">
+                        </div>
+
+
+
+
+
+
+                      </div>
+                    </div>
+                    <label class="fCls" id="neverhiddenpopup" for="forcontact"></label>
+
+
+
+
+
+                  </section>
+                  <script
+                    type="text/javascript">/*<![CDATA[*/ var observerK = new MutationObserver(function (mutations, me) { var cekkomen = getid('comment-editor'); if (cekkomen) { var b = getid("comment-editor"), d = b.getAttribute("data-src"); if (b.setAttribute("src", d), 1 == comment) { var f = getclass("rpTo"), c = getid("commentForm"), h = f.length, k = function (b, d, e, f) { b.addEventListener("click", function () { var c = b.getAttribute("data-reply-to"); getid("c" + c).appendChild(d); getid("commentForm").className = 'cmRbox'; getid("addCm").className = 'commentsReply'; e.src = f + "&parentID=" + c }) }; for (i = 0; i < h; i++)k(f[i], c, b, d); var l = getclass("cmFrm")[0]; getid("addCm").addEventListener("click", function () { l.appendChild(c); getid("commentForm").className = 'comment-replybox-thread'; getid("addCm").className = 'hidden'; b.src = d }) }; me.disconnect(); return } }); observerK.observe(document, { childList: true, subtree: true }); var bscom = getid('forcontact'), bskom = getid('iCmn'); if (bscom !== null) { bscom.addEventListener('click', function () { if (bscom.checked == true) { if (bskom !== null) { bskom.click() }; } }) }; /*]]>*/</script>
+                  <script
+                    type="text/javascript">/*<![CDATA[*/ /* Comment tag, license: dte.web.id/teknis/paket-javascript-fitur-manipulasi */ function repText(id) { var a = document.getElementById(id); if (!a) return; var b = a.innerHTML; b = b.replace(/<i rel="image">(.*?)<\/i>/ig, "<img class='lazy' data-src='$1' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' alt='Image Comment' \/>"); a.innerHTML = b; } repText('cmHolder'); /*]]>*/</script>
+                </div>
 
 
 
@@ -1685,18 +1739,18 @@
 
 
       <script src="/js/gt.min.js" data-gt-widget-id="43217984"></script>
-      <script src="/js/sw-register.js"></script>
-      
+      <script type="module" src="/js/sw-register.js"></script>
 
 
+      <script type="module" src="/js/popupLogic.js"></script>
+      <script src="/js/jobalertpopup.js"></script>
+      <script src="/js/signin-signup-popup.js"></script>
 
-   <script type="module" src="/js/popupLogic.js"></script>
-  <script src="/js/jobalertpopup.js"></script>
-  <script src="/js/signin-signup-popup.js"></script>
-  
 
-  <script src="/js/profile-card.js"></script>
-  <script type="module" src="/js/profileLogic.js"></script>
+      <script src="/js/profile-card.js"></script>
+      <script type="module" src="/js/profileLogic.js"></script>
+
+
 </body>
 
 </html>
