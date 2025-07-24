@@ -960,9 +960,13 @@
                                   display: none !important;
                                 }
 
-                                .br.dissign.dispc {
+                                .br.dissign.dispc,
+                                .hm.popli,
+                                .dissign.dismob {
                                   display: none !important;
                                 }
+
+
 
 
                                 @media (min-width: 768px) {
@@ -1006,6 +1010,12 @@
                                     text-overflow: ellipsis;
                                   }
 
+                                  .camera-icon {
+                                    bottom: -5px;
+                                    width: 30px;
+                                    height: 30px;
+                                  }
+
                                   #editFullName,
                                   #editPhone {
                                     margin-top: 0;
@@ -1013,6 +1023,10 @@
 
                                   #savedMessage {
                                     text-align: center !important;
+                                  }
+
+                                  #logoffbtn {
+                                    margin-top: -15px;
                                   }
                                 }
 
@@ -1453,7 +1467,8 @@
                               </div>
 
                               <button class="button full-width-btn" id="saveBtn"
-                                style="padding: 11px 20px; font-size: 14px; margin-top: 40px !important; cursor: pointer;" target="_blank">
+                                style="padding: 11px 20px; font-size: 14px; margin-top: 40px !important; cursor: pointer;"
+                                target="_blank">
                                 <span>Save Changes</span>
                               </button>
 
