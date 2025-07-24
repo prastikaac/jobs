@@ -564,6 +564,10 @@ window.signupUser = async () => {
       fullName: name,
       jobCategory: jobCategory,
       jobLocation: jobLocation,
+      jobSubscription: {
+        emailNotification: true,  // Always true for email notifications
+        pushNotification: true,  // Always true for push notifications
+      },
       createdAt: timestampNow,
       lastLogin: timestampNow,
       fcmTokens: [],  // Ensure this array is always created
@@ -1271,3 +1275,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Function to update the "All Categories" or "All Locations" checkbox based on individual selections
+function updateAllCheckboxStatus(containerId) {
+  const container = document.getElementById(containerId);
+  const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+  const allCheckbox = checkboxes[0]; // The first checkbox is the "All" checkbox
+
+  // Count how many checkboxes are checked (excluding the "All" checkbox)
+  const checkedCount = Array.from(checkboxes).slice(1).filter(checkbox => checkbox.checked).length;
+
+  // If all checkboxes (except "All") are checked, check the "All" checkbox
+  if (checkedCount === checkboxes.length - 1) {
+    allCheckbox.checked = true;
+  } else {
+    allCheckbox.checked = false;
+  }
+}
+
+// Function to handle "All Categories" or "All Locations" checkbox click
+function handleAllCheckboxClick(containerId) {
+  const container = document.getElementById(containerId);
+  const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+  const allCheckbox = checkboxes[0]; // The first checkbox is the "All" checkbox
+
+  // If "All" is checked, select all checkboxes (excluding "All")
+  if (allCheckbox.checked) {
+    checkboxes.forEach(checkbox => checkbox.checked = true);
+  } else {
+    // If "All" is unchecked, deselect all checkboxes (excluding "All")
+    checkboxes.forEach(checkbox => checkbox.checked = false);
+  }
+}
+
+// Add event listeners to handle changes on category and location checkboxes
+document.getElementById("categoryBox").addEventListener("change", function (e) {
+  if (e.target.value === "") { // If the "All Categories" checkbox is clicked
+    handleAllCheckboxClick("categoryBox");
+  } else {
+    updateAllCheckboxStatus("categoryBox");
+  }
+});
+
+document.getElementById("locationBox").addEventListener("change", function (e) {
+  if (e.target.value === "") { // If the "All Locations" checkbox is clicked
+    handleAllCheckboxClick("locationBox");
+  } else {
+    updateAllCheckboxStatus("locationBox");
+  }
+});
