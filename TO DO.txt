@@ -20,7 +20,9 @@ Search bar recommendations
 
 
 
-Profile edit seo, User information title, notification preference in database
+make to show popup only after 10 seconds on the page, 
+
+User information title, notification preference in database
 
 
 i have a logic of sending email and push notification via firebase function and i have stored user infromation in firestore database, and whenever a new job is posted a notification is send to all of the user who have the selected category and location now can i make a webpage displaying all these datas like just show user full name in outside and after clicking on it show all of the user details, and 
