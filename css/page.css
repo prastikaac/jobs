@@ -9332,6 +9332,7 @@ img.goog-te-gadget-icon,
   }
 }
 
+
 .linkedin-card {
   width: 260px;
   border-radius: 10px;
@@ -9371,7 +9372,7 @@ img.goog-te-gadget-icon,
 }
 
 .profile-section {
-    margin-bottom: -25px;
+  margin-bottom: -25px;
 }
 
 .profile-section img {
@@ -9424,6 +9425,55 @@ img.goog-te-gadget-icon,
   background-color: #e6f0fb;
 }
 
+/* Responsive Design */
+@media (max-width: 600px) {
+  .linkedin-card {
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .linkedin-header a {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .view-profile {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .linkedin-header {
+    padding: 10px;
+  }
+
+  .profile-section img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 11px;
+  }
+
+  .view-profile {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
 /* DARK MODE STYLES */
 body.drK .linkedin-card {
   background-color: #2d2d30;
@@ -9455,7 +9505,6 @@ body.drK .view-profile {
 body.drK .view-profile:hover {
   background-color: #1c1c1f;
 }
-
 
 
 .instagram-post-card {
@@ -9553,6 +9602,94 @@ body.drK .view-profile:hover {
   font-size: 11px;
   padding: 2px 6px;
   border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .instagram-post-card {
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .top-instagram-logo {
+    padding: 8px;
+  }
+
+  .top-instagram-logo img.text-logo {
+    width: 90px;
+  }
+
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 14px 4px;
+  }
+
+  .post-caption {
+    font-size: 12px;
+  }
+
+  .pagination-overlay {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .user-info span.name {
+    font-size: 12px;
+  }
+
+  .user-info span.date {
+    font-size: 10.5px;
+  }
+
+  .user-avatar img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .three-dots {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-instagram-logo {
+    padding: 6px;
+  }
+
+  .top-instagram-logo img.text-logo {
+    width: 80px;
+  }
+
+  .post-header {
+    padding: 8px 14px 4px;
+  }
+
+  .post-caption {
+    font-size: 11px;
+  }
+
+  .pagination-overlay {
+    font-size: 9px;
+    padding: 2px 4px;
+  }
+
+  .user-info span.name {
+    font-size: 11px;
+  }
+
+  .user-info span.date {
+    font-size: 9.5px;
+  }
+
+  .user-avatar img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .three-dots {
+    font-size: 16px;
+  }
 }
 
 /* ===== DARK MODE ===== */

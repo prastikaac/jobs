@@ -38,8 +38,6 @@ const auth = getAuth(app);
 
 let messaging;
 
-
-
 // Function to fetch the current FCM token and check/update it in Firestore if needed
 async function refreshFcmTokenIfNeeded() {
   try {
@@ -836,7 +834,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 document.getElementById("logoffbtn")?.addEventListener("click", async () => {
   try {
     const user = auth.currentUser;
@@ -853,45 +850,44 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
 
     if (user && token && messaging) {
       try {
-        // 1. Remove token from Firestore
+        // 1. Remove the current FCM token from Firestore's fcmTokens array
         const userRef = doc(db, "users", user.uid);
         await updateDoc(userRef, {
-          fcmTokens: arrayRemove(token)  // Remove the current token from Firestore
+          fcmTokens: arrayRemove(token)  // Remove only the current token
         });
-        console.log("✅ FCM token removed from Firestore.");
+        console.log("✅ Current FCM token removed from Firestore.");
 
-        // 2. Remove the token from Firebase Messaging
+        // 2. Remove the current FCM token from Firebase Messaging
         const deleted = await deleteToken(messaging);
         if (deleted) {
-          console.log("✅ FCM token deleted from Firebase Messaging.");
+          console.log("✅ Current FCM token deleted from Firebase Messaging.");
         } else {
           console.warn("⚠️ FCM token could not be deleted.");
         }
       } catch (err) {
-        console.error("🔥 Error removing FCM token during logout:", err);
+        console.error("🔥 Error removing current FCM token during logout:", err);
       }
     }
 
-    // 3. Clear tokens from localStorage
+    // 3. Clear current FCM token from localStorage
     localStorage.removeItem("currentFcmToken");
     localStorage.removeItem(LS_TOKEN_KEY);
 
-    // 4. Logout user
-    await auth.signOut();
-
-    // 5. Clear session data
+    // 4. Clear other user-related data from localStorage
     localStorage.removeItem("user");
     localStorage.removeItem("jobAlertPopupShown");
     localStorage.removeItem("LS_SKIP_NO_CONFIRM");
 
-    // 6. Reload page
+    // 5. Logout the user from Firebase Authentication
+    await auth.signOut();
+
+    // 6. Reload the page to reflect logged-out state
     location.reload();
 
   } catch (error) {
     console.error("Logout failed:", error);
   }
 });
-
 
 
 
@@ -994,9 +990,12 @@ window.addEventListener("load", () => {
     } else {
       // Only show popupStep1 if not logged in and neverShowPopup is false
       if (!neverShowPopup) {
-        showPopupStep("popupStep1");
+        // Show popupStep1 after 5 seconds of user on the page after load
+        setTimeout(() => {
+          showPopupStep("popupStep1")
+        }, 8000)
       } else {
-        closePopup();
+        closePopup()
       }
     }
   });

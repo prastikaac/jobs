@@ -92,8 +92,9 @@ wrapper.innerHTML = `
 
       <h3>I. What kind of jobs are you interested in?</h3>
       <div class="select-box" id="categoryBox">
-     <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox" value="all" /><span class="slider"></span></label></div>
-<div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox" value="it-tech" /><span class="slider"></span></label></div>
+     <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox"
+                        value="" /><span class="slider"></span></label></div>
+                        <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox" value="it-tech" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Engineering</span><label class="switch"><input type="checkbox" value="engineering" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Nursing</span><label class="switch"><input type="checkbox" value="nursing" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Construction & Labor</span><label class="switch"><input type="checkbox" value="construction-labor" /><span class="slider"></span></label></div>
@@ -113,7 +114,8 @@ wrapper.innerHTML = `
 
       <h3>II. Where do you want to work?</h3>
       <div class="select-box" id="locationBox">
-       <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox" value="all" /><span class="slider"></span></label></div>
+         <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox"
+                        value="" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox" value="helsinki" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Espoo</span><label class="switch"><input type="checkbox" value="espoo" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Vantaa</span><label class="switch"><input type="checkbox" value="vantaa" /><span class="slider"></span></label></div>

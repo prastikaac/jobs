@@ -49,6 +49,24 @@
     max-width: 680px !important;
 }
 
+/* Fast animation for popupStep1 */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%); /* Start from below the screen */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Slide into the normal position */
+        opacity: 1;
+    }
+}
+
+/* Apply fast animation with no delay */
+#popupStep1 {
+    animation: slideInFromBottom 0.15s ease-out forwards; /* 0.3s duration for fast animation */
+    opacity: 0; /* Start with no opacity */
+}
+
 .popup-heading-unique {
     font-size: 23px;
     font-weight: 600;
