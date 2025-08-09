@@ -213,7 +213,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                                     <tr>
                                                         <td style="padding: 20px; text-align: center; ">
                                                             <a href="${jobData.jobLink || "#"}" style="display: block; text-decoration: none;">
-                                                                <img src="${jobData.imageUrl || "https://findjobsinfinland.fi/images/it-and-tech-jobs.png"}" alt="Job Image" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; border-radius: 12px; display: block; cursor: pointer;">
+                                                                <img src="${jobData.imageUrl || "https://findjobsinfinland.fi/images/jobs/it-and-tech-jobs.png"}" alt="Job Image" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; border-radius: 12px; display: block; cursor: pointer;">
                                                             </a>
                                                         </td>
                                                     </tr>
