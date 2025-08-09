@@ -97,7 +97,7 @@ Use h3 for other small tags after title
 
 
 
-Write a complete set of HTML <meta> and <title> tags for this job.
+Write a below tags for this job.
 
 Use the following structure and include:
 
@@ -146,17 +146,89 @@ og:image:alt
 
 facebook:card, facebook:image:src, etc.
 
+  <!-- Twitter Meta Tags -->
+
 
 Keep everything in valid HTML format, ready to paste inside the <head> section.
 Do not include <head> or <html> tags — just the content.
 
 
 
-Now, Please create the top H1, H2, and H3 heading tags for this job. These headings should be included in the HTML with the class hidden applied (I have already done the CSS for this class). They will not be visible on the screen but must still be accessible to screen readers and indexed by search engines.
+
+Now make Structured Data (JSON-LD) for this job using the schema.org/JobPosting format. Include key fields like title, description, hiring organization, job location, date posted, employment type, and valid through date. Add mainEntityOfPage to JSON-LD and Add job benefits also and Keep it clean and optimized for SEO. like this one :   <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Cleaner - Healthcare Sector",
+  "description": "Siskon Siivous is hiring part-time and full-time cleaners in the Helsinki area for healthcare sector locations. The job involves maintaining cleanliness, hygiene compliance, and customer-oriented service at various client sites. Experience in cleaning services, Finnish language skills, and a clean criminal record required. Competitive hourly wage of €12.26 and a supportive, fair work environment. Apply now and join our team!",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Siskon Siivous",
+    "value": "cleaner-healthcare-helsinki-2025"
+  },
+  "datePosted": "2025-08-01",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Siskon Siivous Oy",
+    "sameAs": "https://www.siskonsiivous.fi",
+    "logo": "https://findjobsinfinland.fi/images/siskon-siivous.png"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Helsinki",
+      "addressRegion": "Uusimaa",
+      "postalCode": "00100",
+      "addressCountry": "FI"
+    }
+  },
+  "employmentType": "PART_TIME, FULL_TIME",
+  "workHours": "Monday to Friday, between 06:00 and 00:00",
+  "salaryCurrency": "EUR",
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "EUR",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 12.26,
+      "unitText": "HOUR"
+    }
+  },
+  "validThrough": "2025-09-01T23:59",
+  "applicantLocationRequirements": {
+    "@type": "Country",
+    "name": "Finland"
+  },
+  "industry": "Cleaning Services",
+  "experienceRequirements": "Experience in cleaning services or valid Puhtauspassi preferred. Minimum of 1 year continuous work experience in similar tasks required.",
+  "qualifications": "At least A1 level Finnish language skills, vaccination protection, tuberculosis screening, and a clean criminal record required.",
+  "jobBenefits": "Comprehensive induction, flexible working hours, environmentally friendly products, fair employer, professional team",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findjobsinfinland.fi/job/cleaning/cleaner-healthcare-siskon-siivous-helsinki"
+  }
+}
+</script>
 
 
 
-Now make Structured Data (JSON-LD) for this job using the schema.org/JobPosting format. Include key fields like title, description, hiring organization, job location, date posted, employment type, and valid through date. Add mainEntityOfPage to JSON-LD and Add job benefits also and Keep it clean and optimized for SEO.
+
+
+Now, Please create 5-6 the top H1, H2, and H3 heading tags for this job. These headings should be included in the HTML with the class hidden applied (I have already done the CSS for this class). They will not be visible on the screen but must still be accessible to screen readers and indexed by search engines.
+ For example :   <h1 class="hidden">Office Cleaner Job in Helsinki at Siskon Siivous</h1>
+
+  <h2 class="hidden">Part-Time Cleaning Job Opportunity in Helsinki</h2>
+  <h2 class="hidden">Join Siskon Siivous – Trusted Cleaning Employer in Finland</h2>
+
+  <h3 class="hidden">Responsibilities of an Office Cleaner in Helsinki</h3>
+  <h3 class="hidden">Requirements and Qualifications for the Cleaning Position</h3>
+  <h3 class="hidden">Working Hours, Salary, and Benefits for the Cleaner Role</h3>
+
+
+
+
+- Add to Favorites change
 
 
 
