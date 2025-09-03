@@ -1,3 +1,5 @@
+// firebase deploy --only functions
+
 const { onDocumentCreated } = require("firebase-functions/v2/firestore")
 const { setGlobalOptions } = require("firebase-functions/v2")
 const { initializeApp } = require("firebase-admin/app")
@@ -114,22 +116,38 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
     // Helper function to get the formatted location string
     const getFormattedLocation = (location) => {
         if (!location) return "Finland"
-        // Normalize the input location (e.g., "vaasa" -> "Vaasa") to match map keys
-        const normalizedLocation = location.charAt(0).toUpperCase() + location.slice(1).toLowerCase()
-        return locationMap[normalizedLocation] || `${normalizedLocation}, Finland` // Fallback if not found in map
+
+        const strLocation = String(location).trim()
+        if (!strLocation) return "Finland"
+
+        const normalizedLocation =
+            strLocation.charAt(0).toUpperCase() + strLocation.slice(1).toLowerCase()
+
+        return locationMap[normalizedLocation] || `${normalizedLocation}, Finland`
     }
 
-    const formattedJobLocation = getFormattedLocation(jobLocation)
+
+    const formattedJobLocations = (Array.isArray(jobLocation) ? jobLocation : [jobLocation])
+        .map(loc => getFormattedLocation(loc))
+        .join(", ")
+
 
     const usersSnapshot = await db.collection("users").get()
     const matchedEmails = []
     const pushPromises = []
 
+    // Make sure jobData values are always arrays
+    const jobCategories = Array.isArray(jobData.jobCategory) ? jobData.jobCategory : [jobData.jobCategory]
+    const jobLocations = Array.isArray(jobData.jobLocation) ? jobData.jobLocation : [jobData.jobLocation]
+
     usersSnapshot.forEach((doc) => {
         const user = doc.data()
-        const hasCategory = user.jobCategory?.includes(jobCategory)
-        // Keep jobLocation as is for matching user preferences, as it might be just the city name
-        const hasLocation = user.jobLocation?.includes(jobLocation)
+        const userCategories = user.jobCategory || []
+        const userLocations = user.jobLocation || []
+
+        // Check if there's at least one match
+        const hasCategory = jobCategories.some(cat => userCategories.includes(cat))
+        const hasLocation = jobLocations.some(loc => userLocations.includes(loc))
         const fcmTokens = user.fcmTokens || []
         const jobSubscription = user.jobSubscription || {}
         const emailNotificationEnabled = jobSubscription.emailNotification ?? true
@@ -276,7 +294,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                                             <!-- Mobile Location (Right after image, before title) -->
                                                             <div class="job-footer-mobile" style="display: none; text-align: left; margin-bottom: 15px;">
                                                                 <span style="font-size: 13px; color: #666666; font-weight: bold;">
-                                                                    In ${formattedJobLocation}
+                                                                    In ${formattedJobLocations}
                                                                 </span>
                                                             </div>
                                                             <h2 style="font-size: 20px; font-weight: bold; margin: 0 0 10px 0; color: #005effff;">${jobData.title}</h2>
@@ -287,7 +305,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                                                     <tr>
                                                                         <td style="vertical-align: middle;">
                                                                             <span style="font-size: 15px; color: #005effff; font-weight: bold;">
-                                                                                📍 ${formattedJobLocation}
+                                                                               📍 ${formattedJobLocations}
                                                                             </span>
                                                                         </td>
                                                                         <td style="text-align: right; vertical-align: middle;">
@@ -371,3 +389,6 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
     console.log(`Emails sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`)
     console.log(`Push notifications sent to: ${pushPromises.length} users.`)
 })
+
+
+// Always do firebase deploy --only functions after editing this file.
