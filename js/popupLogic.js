@@ -1273,7 +1273,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 // Function to update the "All Categories" or "All Locations" checkbox based on individual selections
 function updateAllCheckboxStatus(containerId) {
   const container = document.getElementById(containerId);
@@ -1284,11 +1283,7 @@ function updateAllCheckboxStatus(containerId) {
   const checkedCount = Array.from(checkboxes).slice(1).filter(checkbox => checkbox.checked).length;
 
   // If all checkboxes (except "All") are checked, check the "All" checkbox
-  if (checkedCount === checkboxes.length - 1) {
-    allCheckbox.checked = true;
-  } else {
-    allCheckbox.checked = false;
-  }
+  allCheckbox.checked = (checkedCount === checkboxes.length - 1);
 }
 
 // Function to handle "All Categories" or "All Locations" checkbox click
@@ -1297,27 +1292,80 @@ function handleAllCheckboxClick(containerId) {
   const checkboxes = container.querySelectorAll('input[type="checkbox"]');
   const allCheckbox = checkboxes[0]; // The first checkbox is the "All" checkbox
 
-  // If "All" is checked, select all checkboxes (excluding "All")
-  if (allCheckbox.checked) {
-    checkboxes.forEach(checkbox => checkbox.checked = true);
-  } else {
-    // If "All" is unchecked, deselect all checkboxes (excluding "All")
-    checkboxes.forEach(checkbox => checkbox.checked = false);
-  }
+  checkboxes.forEach((checkbox, index) => {
+    // Apply same state to all (except the "All" checkbox is already handled)
+    if (index > 0) {
+      checkbox.checked = allCheckbox.checked;
+    }
+  });
 }
 
-// Add event listeners to handle changes on category and location checkboxes
+// Add event listeners to handle changes on category checkboxes
 document.getElementById("categoryBox").addEventListener("change", function (e) {
-  if (e.target.value === "") { // If the "All Categories" checkbox is clicked
+  if (e.target.value === "all-categories") { // If the "All Categories" checkbox is clicked
     handleAllCheckboxClick("categoryBox");
   } else {
     updateAllCheckboxStatus("categoryBox");
   }
 });
 
+// Add event listeners to handle changes on location checkboxes
 document.getElementById("locationBox").addEventListener("change", function (e) {
-  if (e.target.value === "") { // If the "All Locations" checkbox is clicked
+  if (e.target.value === "all-location") { // If the "All Locations" checkbox is clicked
     handleAllCheckboxClick("locationBox");
+  } else {
+    updateAllCheckboxStatus("locationBox");
+  }
+});
+
+// Map of regions to their respective locations
+const regions = {
+  "uusimaa-region": [
+    "helsinki", "espoo", "vantaa",
+    "lohja", "kerava", "jarvenpaa", "tuusula",
+    "nurmijarvi", "sipoo", "kirkkonummi", "hyvinkaa",
+    "mantsala", "pornais", "vihti", "karkkila",
+    "siuntio", "inkoo", "lapinjarvi", "askola",
+    "myrskyla", "porvoo", "loviisa", "hanko",
+    "kamppi", "kallio", "pasila", "malmi", "kontula",
+    "vuosaari", "itakeskus", "lauttasaari", "herttoniemi",
+    "kalasatama", "punavuori", "taka-toolo", "etelaesplanadi",
+    "sornaeinen", "arabianranta", "munkkiniemi", "vuosaari",
+    "tapiola", "otaniemi", "leppavaara", "matinkyla",
+    "espoo centre", "kauklahti", "olari", "nokkala",
+    "nuuksio", "tikkurila", "myyrmaki", "korso", "hakkila",
+    "aviapolis", "koivukyla", "hakunila", "kivisto", "kauniainen centre",
+    "lohja centre", "sammatti", "nummi-pusula", "karjalohja", "porvoo centre", "old town porvoo", "tolkkinen", "siuntio centre", "inkoo harbour", "mantsala centre",
+    "askola village", "myrskyla village", "lapinjärvi village",
+    "karkkila centre", "hanko harbour", "fiskars village",
+    "vihti kirkonkyla", "kirkkonummi centre", "sipoo centre"
+  ]
+};
+
+// Function to handle region selection
+function handleRegionSelection(regionId) {
+  const container = document.getElementById("locationBox");
+  const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+
+  // Check/uncheck all locations inside the region
+  if (regions[regionId]) {
+    checkboxes.forEach(cb => {
+      if (regions[regionId].includes(cb.value)) {
+        cb.checked = true;
+      }
+    });
+  }
+
+  // Also update "All Locations" checkbox
+  updateAllCheckboxStatus("locationBox");
+}
+
+// Add event listener to region checkbox
+document.getElementById("locationBox").addEventListener("change", function (e) {
+  if (e.target.value === "all-location") {
+    handleAllCheckboxClick("locationBox");
+  } else if (e.target.value === "uusimaa-region") {
+    handleRegionSelection("uusimaa-region");
   } else {
     updateAllCheckboxStatus("locationBox");
   }

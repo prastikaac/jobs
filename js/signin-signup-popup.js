@@ -93,7 +93,7 @@ wrapper.innerHTML = `
       <h3>I. What kind of jobs are you interested in?</h3>
       <div class="select-box" id="categoryBox">
      <div class="option-row"><span>All Categories</span><label class="switch"><input type="checkbox"
-                        value="" /><span class="slider"></span></label></div>
+                        value="all-categories" /><span class="slider"></span></label></div>
                         <div class="option-row"><span>IT & Tech</span><label class="switch"><input type="checkbox" value="it-tech" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Engineering</span><label class="switch"><input type="checkbox" value="engineering" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Nursing</span><label class="switch"><input type="checkbox" value="nursing" /><span class="slider"></span></label></div>
@@ -104,7 +104,9 @@ wrapper.innerHTML = `
 <div class="option-row"><span>Cleaning</span><label class="switch"><input type="checkbox" value="cleaning" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Housekeeping</span><label class="switch"><input type="checkbox" value="housekeeping" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Cooking</span><label class="switch"><input type="checkbox" value="cooking" /><span class="slider"></span></label></div>
+<div class="option-row"><span>Restaurant</span><label class="switch"><input type="checkbox" value="restaurant" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Hospitality & Service</span><label class="switch"><input type="checkbox" value="hospitality-service" /><span class="slider"></span></label></div>
+<div class="option-row"><span>Caregiver</span><label class="switch"><input type="checkbox" value="caregiver" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Education & Teaching</span><label class="switch"><input type="checkbox" value="education-teaching" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Finance & Accounting</span><label class="switch"><input type="checkbox" value="finance-accounting" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Sales & Marketing</span><label class="switch"><input type="checkbox" value="sales-marketing" /><span class="slider"></span></label></div>
@@ -115,7 +117,14 @@ wrapper.innerHTML = `
       <h3>II. Where do you want to work?</h3>
       <div class="select-box" id="locationBox">
          <div class="option-row"><span>All Locations</span><label class="switch"><input type="checkbox"
-                        value="" /><span class="slider"></span></label></div>
+                        value="all-location" /><span class="slider"></span></label></div>
+                        <div class="option-row">
+  <span>Uusimaa Region</span>
+  <label class="switch">
+    <input type="checkbox" value="uusimaa-region" />
+    <span class="slider"></span>
+  </label>
+</div>
 <div class="option-row"><span>Helsinki</span><label class="switch"><input type="checkbox" value="helsinki" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Espoo</span><label class="switch"><input type="checkbox" value="espoo" /><span class="slider"></span></label></div>
 <div class="option-row"><span>Vantaa</span><label class="switch"><input type="checkbox" value="vantaa" /><span class="slider"></span></label></div>
