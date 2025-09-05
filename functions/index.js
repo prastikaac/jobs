@@ -362,7 +362,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
         </html>`
     const emailPromises = matchedEmails.map((email) => {
         return resend.emails.send({
-            from: "findjobsinfinland.fi <jobs@findjobsinfinland.fi>",
+            from: "Find Jobs In Finland <job-alert@findjobsinfinland.fi>",
             to: email,
             subject: jobData.title,
             html: emailHTML,
@@ -374,7 +374,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
 
     // Send summary to owner
     await resend.emails.send({
-        from: "findjobsinfinland.fi <jobs@findjobsinfinland.fi>",
+        from: "Find Jobs In Finland <job-alert@findjobsinfinland.fi>",
         to: "acharyaprasiddha6@gmail.com",
         subject: `✅ Job Alert Sent for ${jobData.title}`,
         html: `
