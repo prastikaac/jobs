@@ -163,7 +163,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                     const message = {
                         token: token,
                         notification: {
-                            title: `New ${jobData.title} Job!`,
+                             title: jobData.title, // only job title now
                             body: `${jobData.description}`,
                             image: jobData.imageUrl || undefined,
                         },
@@ -276,7 +276,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                         <tr>
                                             <td style="padding: 25px 30px;">
                                                 <p style="font-size: 15px; color: #555555; line-height: 1.6; margin-bottom: 20px;">
-                                                    Dear Prasiddha, <br> <br> We are excited to let you know that we have a new job opportunity that matches your job preferences.
+                                                    Dear user, <br> <br> We are excited to let you know that we have a new job opportunity that matches your job preferences.
                                                 </p>
                                                 <!-- Job Card -->
                                                 <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 5px 35px rgba(0, 0, 0, .07); margin-bottom: 30px; border: 1px solid #e0e0e0;">
@@ -362,9 +362,9 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
         </html>`
     const emailPromises = matchedEmails.map((email) => {
         return resend.emails.send({
-            from: "Find Jobs In Finland <jobs@findjobsinfinland.fi>",
+            from: "findjobsinfinland.fi <jobs@findjobsinfinland.fi>",
             to: email,
-            subject: `New Job Alert: ${jobData.title}`,
+            subject: jobData.title,
             html: emailHTML,
         })
     })
@@ -374,7 +374,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
 
     // Send summary to owner
     await resend.emails.send({
-        from: "Find Jobs In Finland <jobs@findjobsinfinland.fi>",
+        from: "findjobsinfinland.fi <jobs@findjobsinfinland.fi>",
         to: "acharyaprasiddha6@gmail.com",
         subject: `✅ Job Alert Sent for ${jobData.title}`,
         html: `
