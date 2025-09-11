@@ -1286,6 +1286,9 @@ function updateAllCheckboxStatus(containerId) {
   allCheckbox.checked = (checkedCount === checkboxes.length - 1);
 }
 
+
+
+
 // Function to handle "All Categories" or "All Locations" checkbox click
 function handleAllCheckboxClick(containerId) {
   const container = document.getElementById(containerId);
