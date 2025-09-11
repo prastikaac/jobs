@@ -993,7 +993,7 @@ window.addEventListener("load", () => {
         // Show popupStep1 after 5 seconds of user on the page after load
         setTimeout(() => {
           showPopupStep("popupStep1")
-        }, 8000)
+        }, 1000)
       } else {
         closePopup()
       }
