@@ -22,4 +22,15 @@
       <image:title>Minimum Wages in Finland by Industry</image:title>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://findjobsinfinland.fi/blogs/top-ten-in-demand-jobs-in-finland</loc>
+    <lastmod>2025-09-13</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://findjobsinfinland.fi/images/blogs/top-ten-in-demand-jobs-in-finland.png</image:loc>
+      <image:caption>Top 10 In-Demand Jobs in Finland</image:caption>
+      <image:title>High demand jobs in Finland </image:title>
+    </image:image>
+  </url>
 </urlset>
