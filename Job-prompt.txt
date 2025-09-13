@@ -357,7 +357,7 @@ Now make Structured Data (JSON-LD) for this job using the schema.org/JobPosting 
   "jobBenefits": "Comprehensive induction, flexible working hours, environmentally friendly products, fair employer, professional team",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://findjobsinfinland.fi/job/cleaning/cleaner-healthcare-siskon-siivous-helsinki"
+    "@id": "https://findjobsinfinland.fi/jobs/cleaning/cleaners-for-healthcare-sites-in-helsinki"
   }
 }
 </script>
