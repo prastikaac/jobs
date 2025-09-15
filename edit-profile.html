@@ -79,12 +79,15 @@
 
   <!-- Google tag (gtag.js) -->
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KHPRR956');</script>
-<!-- End Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHPRR956');</script>
+  <!-- End Google Tag Manager -->
 
 
 
@@ -94,9 +97,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body class="MN-3 mobS HD-2 flT hdMn bD onItm onPs Find Jobs In Finland" id="mainCont">
 
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPRR956"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPRR956" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 
   <!---h1 content-->
@@ -439,10 +442,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="mnMen section" id="nav-widget-2">
               <div class="widget HTML" data-version="2" id="HTML000">
+
                 <ul class="mnMn" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 
+                  <li class="dispc">
+                    <a class="a" href="https://findjobsinfinland.fi" itemprop="url">
+                      <svg style="width: 25px; height: 25px; margin-left: 2px;" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                          d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z" />
+                      </svg>
+                      <span class="n" itemprop="name">Home</span>
+                    </a>
+                  </li>
+                  <li class="dispc br">
+                  </li>
 
-
+                  <span class="insertafterthis"></span>
 
 
                   <li class="hm">
@@ -1648,6 +1665,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                               </script>
 
+
+                              <script>
+                                /** Utility: return all checkboxes inside container except selector */
+                                function getCheckboxes(container, exceptSelector) {
+                                  return [...container.querySelectorAll(`input[type="checkbox"]:not(${exceptSelector})`)];
+                                }
+
+                                /** Handles “All” checkboxes (All Categories / All Locations) */
+                                function handleAllCheckbox(containerId) {
+                                  const container = document.getElementById(containerId);
+                                  if (!container) return;
+
+                                  const allCheckbox = container.querySelector('[value="all-categories"],[value="all-location"]');
+                                  if (!allCheckbox) return;
+
+                                  const others = getCheckboxes(container, '[value="all-categories"],[value="all-location"]');
+
+                                  // clicking All toggles all others
+                                  allCheckbox.addEventListener("change", () => {
+                                    others.forEach(cb => cb.checked = allCheckbox.checked);
+                                  });
+
+                                  // clicking others updates All
+                                  container.addEventListener("change", () => {
+                                    const checkedCount = others.filter(cb => cb.checked).length;
+                                    allCheckbox.checked = checkedCount === others.length;
+                                  });
+                                }
+
+                                /** Handles region checkbox + its sublocations */
+                                function handleRegionGroup(regionCheckboxId, subLocationIds) {
+                                  const regionCheckbox = document.getElementById(regionCheckboxId);
+                                  const subCheckboxes = subLocationIds
+                                    .map(id => document.getElementById(id))
+                                    .filter(Boolean);
+
+                                  if (!regionCheckbox || !subCheckboxes.length) return;
+
+                                  // Clicking region toggles all its sublocations
+                                  regionCheckbox.addEventListener("change", () => {
+                                    subCheckboxes.forEach(cb => cb.checked = regionCheckbox.checked);
+                                  });
+
+                                  // Clicking subs updates region
+                                  subCheckboxes.forEach(cb => {
+                                    cb.addEventListener("change", () => {
+                                      regionCheckbox.checked = subCheckboxes.every(c => c.checked);
+                                    });
+                                  });
+                                }
+
+                                /** Initialise when DOM ready */
+                                document.addEventListener("DOMContentLoaded", () => {
+                                  // All categories / locations
+                                  handleAllCheckbox("jobCategoryDropdown");
+                                  handleAllCheckbox("jobLocationDropdown");
+
+                                  // Uusimaa Region sublocations
+                                  handleRegionGroup("loc-uusimaa-region", [
+                                    "loc-helsinki",
+                                    "loc-espoo",
+                                    "loc-vantaa",
+                                    "loc-kauniainen",
+                                    "loc-jarvenpaa",
+                                    "loc-kerava",
+                                    "loc-tuusula",
+                                    "loc-sipoo",
+                                    "loc-kirkkonummi",
+                                    "loc-lohja",
+                                    "loc-nurmijarvi",
+                                    "loc-hyvinkaa",
+                                    "loc-inkoo",
+                                    "loc-pasila",
+                                    "loc-malmi",
+                                    "loc-tikkurila",
+                                    "loc-leppavaara",
+                                    "loc-matinkyla",
+                                    "loc-myyrmaki",
+                                    "loc-kamppi",
+                                    "loc-kallio",
+                                    "loc-tapiola",
+                                    "loc-itakeskus",
+                                    "loc-lauttasaari"
+                                  ]);
+                                });
+                              </script>
 
 
 

@@ -1,7 +1,6 @@
-
-  const ulElement = document.querySelector('ul.mnMn[itemscope][itemtype="https://schema.org/SiteNavigationElement"]');
-if (ulElement) {
-  const htmlToInsert = `
+ const insertAfterSpan = document.querySelector('span.insertafterthis');
+  if (insertAfterSpan) {
+    const htmlToInsert = `
     <li class="hm popli">
       <div id="pp-card-wrapper" class="">
         <div class="pp-card" id="pp-card">
@@ -67,5 +66,5 @@ if (ulElement) {
       <li class="br dissign">
                   </li>
   `;
-  ulElement.insertAdjacentHTML('afterbegin', htmlToInsert);
-}
+  insertAfterSpan.insertAdjacentHTML('afterend', htmlToInsert);
+  }
