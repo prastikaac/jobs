@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon</title>
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 450px;
+      padding: 40px 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    /* Animated dots */
+    .dots::after {
+      content: "";
+      animation: dots 1.5s steps(4, end) infinite;
+      display: inline-block;
+      width: 1.2em;
+      /* Reserve space */
+      text-align: left;
+    }
+
+    @keyframes dots {
+      0% {
+        content: "";
+      }
+
+      25% {
+        content: ".";
+      }
+
+      50% {
+        content: "..";
+      }
+
+      75%,
+      100% {
+        content: "...";
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+      opacity: 0.85;
+      font-weight: 400;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHPRR956');</script>
+<!-- End Google Tag Manager -->
+  
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPRR956"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+  <div class="container" role="main" aria-labelledby="coming-soon-title">
+    <h1 id="coming-soon-title">Coming Soon<span class="dots"></span></h1>
+    <p>This page is under construction. We’re working hard to launch soon.</p>
+    <footer>Stay tuned &copy; findjobsinfinland.fi - 2025</footer>
+  </div>
+ <script src="/js/sw-register.js"></script>
+   <script type="module" src="/js/popupLogic.js"></script>
+  <!-- Here will be the <script src="/js/jobalertpopup.js"></script> -->
+  <script src="/js/signin-signup-popup.js"></script>
+  
+
+  <script src="/js/profile-card.js"></script>
+  <script type="module" src="/js/profileLogic.js"></script>
+</body>
+
+</html>
