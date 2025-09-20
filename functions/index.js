@@ -247,7 +247,11 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                     .text-xs-pc { font-size: 13px !important; }
                 }
             </style>
-        </head>
+        
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4599169847292038"
+     crossorigin="anonymous"></script>
+
+</head>
         <body style="font-family: 'Poppins', sans-serif; margin: 0; margin-top: 20px; margin-left: 5px; background-color: #f4f4f4; border-radius: 12px;">
             <!-- Outer table for max-width and centering on PC -->
             <table cellpadding="0" cellspacing="0" border="0" width="100%">
