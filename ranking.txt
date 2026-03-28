@@ -1,0 +1,137 @@
+Meta title is a bit short (38 characters) — aim for 50-60 characters.
+
+Meta description is a bit short (138 characters) — aim for 140-160 characters.
+
+Description : 150–160 characters 
+
+firebase deploy --only functions
+
+
+1. Use Keywords Naturally
+  - Include primary and secondary keywords in:
+  - Title tag (max 60 characters)
+  - Meta description (120–160 characters)
+  - H1, H2, and H3 tags
+  - First 100 words of content
+  - Image alt tags and filenames
+
+2. H1–H3 Optimization (Hidden Headings)
+Make H1–H3 for SEO optimization with class hidden
+- Place right after <body> tag or at the top of content section:
+<h1 class="hidden">Cleaner Jobs in Helsinki – Apply Today</h1>
+<h2 class="hidden">Open Cleaning Job Positions in Finland</h2>
+<h3 class="hidden">How to Apply for Cleaning Work in Helsinki</h3>
+
+--------------------------------------------------------------
+
+3. Fix Crawl Errors & Redirect Chains
+- Job Posting Schema Markup (JSON-LD)
+- Helps Google show your jobs in job search results (Google Jobs)'
+- Go to https://www.deadlinkchecker.com/ and check the broken links
+
+4. Update in Sitemap
+- Update /sitemap-jobs.xml
+- Submit to Google Search Console
+
+5. Job Expiry Dates
+- Add valid expiry dates to each job
+- Automatically remove or hide expired jobs
+
+
+6. Social Sharing
+- Share job posts regularly on your social media pages
+
+--------------------------------------------------------------
+
+OFF-PAGE SEO / LINK BUILDING
+
+7. Submit Jobs to Aggregators
+- Submit job feeds or XML to:
+  - Indeed
+  - Jooble
+  - Monster
+  - CareerJet
+  - WorkInFinland
+  - Duunitori
+
+8. Local Directory Listings
+- Submit to Finnish directories, business portals, immigrant resources
+
+9. Guest Posting & PR
+- Collaborate with bloggers or journalists to get backlinks from articles like:
+  - “Best Job Boards in Finland”
+  - “Where to Find Jobs in Helsinki”
+
+
+---------------------------------------------------------------
+
+10. Email Notifications
+  - Send job alerts for :
+  - New jobs by category/location
+  - Weekly job digests
+  - Application updates
+
+11. Push Notifications (Optional)
+- Browser notifications for new job posts or urgent roles
+
+
+12. Live Chat or Chatbot
+- Help users find jobs or answer questions instantly
+
+
+13. Offer content in English and Finnish
+- Use hreflang tags to target languages correctly
+
+
+14. Install Google Analytics & Google Search Console
+- Track traffic, keywords, and SEO performance
+
+
+
+Most In-Demand Jobs in Finland
+
+
+Best Time of the Year to Apply for Jobs in Finland
+
+
+
+
+
+
+
+
+
+
+
+| Location                            | Importance | Description                                                                          |
+| ----------------------------------- | ---------- | ------------------------------------------------------------------------------------ |
+| **Page Title** (`<title>`)          | ⭐⭐⭐⭐       | One of the strongest signals. Appears in browser tab and Google result headline.     |
+| **Meta Description**                | ⭐⭐⭐        | Appears in search snippets. Not a ranking factor but affects **click-through rate**. |
+| **URL / Slug**                      | ⭐⭐⭐        | Keywords in the URL help rank and indicate page topic (e.g. `/jobs-in-finland`).     |
+| **Headings** (`<h1>`, `<h2>`, etc.) | ⭐⭐⭐⭐       | Very important. Keywords here signal structure and importance.                       |
+| **First 100 words of content**      | ⭐⭐⭐⭐       | Google scans the beginning of your page for context.                                 |
+| **Image `alt` attributes**          | ⭐⭐         | Helps in image search and improves accessibility/SEO.                                |
+| **Anchor Text (links)**             | ⭐⭐         | Helps Google understand the topic of linked content.                                 |
+| **Structured Data (JSON-LD)**       | ⭐⭐         | Helps Google interpret job postings, events, etc. precisely.                         |
+
+Clean URLs:
+✅ https://findjobinfinland.fi/job/office-cleaner-siskon-siivous-helsinki
+❌ https://findjobinfinland.fi/job?id=1234&ref=cleaningjob
+
+
+User Engagement Metrics
+
+Google uses signals like:
+
+Click-through rate (CTR)
+
+Bounce rate
+
+Time on page
+
+
+
+
+
+
+

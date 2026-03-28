@@ -1,0 +1,190 @@
+FEATURE: FULLY AUTOMATED JOB WEBSITE + ALERT SYSTEM (HYBRID: GITHUB + FIREBASE)
+
+Objective:
+Build a fully automated job platform where:
+- Jobs are scraped, processed, and published as static HTML pages via GitHub Pages
+- Firebase is used ONLY for sending job alerts (email + push notifications)
+- System runs automatically every hour
+
+---
+
+SYSTEM ARCHITECTURE:
+
+1. GitHub Actions (Main Engine)
+2. Static Website (GitHub Pages)
+3. Firebase (Users + Notifications only)
+
+
+PROCESS:
+
+1. JOB SCRAPER (Runs every hour via GitHub Actions)
+
+- Scrape latest jobs
+- Translate to English if needed
+- Normalize data:
+  - title
+  - description
+  - jobCategory (array)
+  - jobLocation (array)
+  - jobLink
+
+- Compare with existing jobs.json
+- Detect NEW jobs only
+
+---
+
+
+2. IMAGE GENERATOR
+
+- For each job:
+  - Detect job category
+  - Select random image from:
+    /images/{category}/
+  - Resize/crop to **1280×630 px**
+  - Save inside job folder as:
+    image.png
+
+---
+
+4. HTML PAGE GENERATOR
+
+- For each job:
+  - Create folder using slug:
+    /jobs/cleaner-helsinki-123/
+
+  Inside folder:
+    - index.html
+    - image.png
+
+- HTML uses template + job data
+
+---
+
+5. UPDATE MAIN PAGES
+
+- Regenerate:
+  - index.html
+  - jobs.html
+
+- Include ALL active jobs:
+  - title
+  - location
+  - company (optional)
+  - image
+  - link to job page
+
+---
+
+6. JOB EXPIRATION LOGIC
+
+- For each job:
+  IF (current_date - date_posted > expiration_days):
+    → Remove job from jobs.json
+    → Delete corresponding job folder
+
+- Only active jobs remain on site
+
+---
+
+7. FIREBASE ALERT INTEGRATION (IMPORTANT)
+
+- Firebase is used ONLY for:
+  - Users
+  - Email notifications
+  - Push notifications
+
+- For each NEW job (only once):
+  → Send minimal data to Firebase
+
+---
+
+FIREBASE JOB FORMAT:
+
+{
+  "title": "Cleaner",
+  "description": "Office cleaning job",
+  "jobCategory": ["Cleaning"],
+  "jobLocation": ["Helsinki"],
+  "jobLink": "https://example.com/job",
+  "imageUrl": "https://yourdomain.com/jobs/cleaner-helsinki-123/image.png"
+}
+
+---
+
+RULES FOR FIREBASE:
+
+- Send ONLY new jobs (avoid duplicates)
+- jobCategory and jobLocation MUST be arrays
+- imageUrl MUST be public (GitHub Pages URL)
+- Do NOT send full jobs.json
+- Do NOT store jobs in Firebase (only trigger alerts)
+
+---
+
+8. FIREBASE TRIGGER
+
+- When new job is added to:
+  collection: "jobs"
+
+→ Existing Firebase Function:
+  - Matches users by category + location
+  - Sends emails
+  - Sends push notifications
+
+---
+
+9. GITHUB ACTIONS WORKFLOW
+
+Runs every hour:
+
+- Step 1: Scrape jobs
+- Step 2: Detect new jobs
+- Step 3: Update jobs.json
+- Step 4: Generate images
+- Step 5: Generate job HTML pages
+- Step 6: Update index.html & jobs.html
+- Step 7: Remove expired jobs
+- Step 8: Send NEW jobs to Firebase
+- Step 9: Commit & push to GitHub
+
+---
+
+OUTPUT:
+
+- Static website hosted on GitHub Pages
+- Each job has its own folder:
+  /jobs/job-slug/index.html
+  /jobs/job-slug/image.png
+
+- Main pages updated automatically
+- Expired jobs removed automatically
+- Users receive instant job alerts via Firebase
+
+---
+
+SECURITY & BEST PRACTICES:
+
+- Store Firebase credentials in GitHub Secrets
+- Validate and sanitize all scraped data
+- Escape HTML content
+- Use slugified folder names
+- Prevent duplicate job alerts (use unique job IDs)
+- Remove all <script> tags from email content
+- Static site is safe (read-only for users)
+
+---
+
+AUTOMATION:
+
+- Entire pipeline runs automatically every hour
+- No manual work required
+- No Firebase database dependency for jobs
+- Fully scalable and cost-efficient
+
+---
+
+FINAL RULE:
+
+Website (jobs, HTML, images) → GitHub  
+Users + Notifications → Firebase  
+

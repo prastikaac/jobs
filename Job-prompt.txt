@@ -1,0 +1,417 @@
+Write a complete job post in HTML format for my website findjobinfinland.fi based on the following structure.
+
+> ❗ Do **not** include `<html>`, `<head>`, `<body>`, or any CSS styling.
+> Only provide the **raw HTML content** using headings, paragraphs, bullet points, and semantic HTML tags.
+
+
+- Write unique and helpful job descriptions
+- Add FAQs, company info, benefits, and how to apply
+- Use bullet points, short paragraphs, bold important keywords
+
+
+> Use the following components : , 
+Use h3 for other small tags after title
+
+> 1. **Catchy Title** (SEO-friendly + click-worthy). Examples:
+
+* **Office & Shop Cleaner Jobs in Finland – Apply Today!**
+* **Hiring Now: Cleaner Jobs in Shops & Offices Across Finland**
+* **Cleaning Jobs in Finland – Offices & Stores Hiring in 2025**
+
+> 4. **Introduction**
+>    Write a short overview about this job opportunity. Mention who it’s ideal for (e.g., students, foreigners, skilled/unskilled workers), the benefits, and the type of roles available.
+
+> 5. **Key Job Information**
+>    Present key job info clearly using bullet points or icons:
+>
+> * **Job Type**
+>
+> * **Location**
+>
+> * **Work Hours**
+>
+> * **Experience Needed**
+>
+> * **Language Requirements**
+>
+> * **Salary Range**
+
+> 6. **Responsibilities**
+>    List the most common tasks or duties for this type of job. Keep them clear and helpful for applicants.
+
+> 7. **How to Apply?**
+>    ➡️ *Visit: \[Link to the official job portal or company page]*
+
+>
+> 8. **Tips to Get the Job**
+>    Give practical advice to help job seekers succeed, like:
+
+> * Customize your CV
+>
+> * Highlight your past experience
+>
+> * Show flexibility in work hours
+>
+> * Be punctual and professional
+>
+> * Learn basic Finnish phrases
+
+
+> 9. **Why This Job Is a Good Opportunity in Finland**
+>    Add 3–4 bullet points explaining the benefits of working in Finland, such as:
+
+> * Fair wages and work-life balance
+> * Entry-level jobs don’t require a degree
+> * Great for students and new immigrants
+> * Potential to grow into long-term or full-time roles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+this is an example : 
+                                <section>
+                                  <h2 style="font-size: 18px; font-weight: normal;">You’ve landed in the perfect spot if
+                                    you’re seeking for a <strong>Cleaner job in Helsinki,
+                                      Finland</strong></h2>
+                                  <p><strong>Siskon Siivous Oy</strong> is seeking motivated cleaners who value quality,
+                                    responsibility, and teamwork. Enjoy a fair hourly wage, flexible weekday shifts, and
+                                    a supportive work environment with eco-friendly products. Apply now to be part of a
+                                    professional cleaning team dedicated to excellence and well-being!</p>
+
+                                  <p>This cleaning job in Helsinki is ideal for skilled or unskilled workers, students,
+                                    and newcomers to Finland looking for their first job. With regular working hours and
+                                    training provided, you’ll be well-equipped to contribute to creating safe, clean,
+                                    and welcoming spaces in health centers, offices, and more.</p>
+                                </section>
+
+                                <section class="job-card">
+                                  <h3 class="job-card__title">JOB INFORMATION</h3>
+                                  <ul class="job-card__list">
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Job Type</span>
+                                      <span class="job-card__value">Part-time, Permanent Position</span>
+                                    </li>
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Location</span>
+                                      <span class="job-card__value">Helsinki, Finland</span>
+                                    </li>
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Work Hours</span>
+                                      <span class="job-card__value">Flexible hours, Mon–Fri, 06:00–23:00</span>
+                                    </li>
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Experience</span>
+                                      <span class="job-card__value">Cleaning experience is a plus, but not
+                                        required</span>
+                                    </li>
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Language</span>
+                                      <span class="job-card__value">A1 level Finnish or English</span>
+                                    </li>
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Salary</span>
+                                      <span class="job-card__value">€12.26/hour (according to the Finnish Collective
+                                        Agreement)</span>
+                                    </li>
+                                  </ul>
+                                </section>
+
+                                <section>
+                                  <h3>Job Responsibilities</h3>
+                                  <p>As a cleaner at Siskon Siivous, your duties will ensure the cleanliness and safety
+                                    of our client locations. You will:</p>
+                                  <ul>
+                                    <li>Perform general cleaning tasks such as dusting, vacuuming, mopping, and surface
+                                      cleaning</li>
+                                    <li>Clean restrooms, kitchens, and office spaces</li>
+                                    <li>Empty trash bins and replace liners regularly</li>
+                                    <li>Maintain cleaning equipment and ensure it’s properly stored and cleaned</li>
+                                    <li>Adhere to safety and hygiene regulations in all tasks</li>
+                                    <li>Report any damage or maintenance issues to your supervisor</li>
+                                    <li>Work both independently and with a team, ensuring a high standard of cleanliness
+                                    </li>
+                                  </ul>
+                                </section>
+
+
+
+                                <section>
+                                  <h3>Tips to Help You Get This Job</h3>
+                                  <p>Want to improve your chances of getting hired for this cleaning job? Here are some
+                                    tips:</p>
+                                  <ul>
+                                    <li>Customize your CV to highlight any cleaning, hospitality, or service experience,
+                                      even if gained abroad</li>
+                                    <li>Be honest and flexible with your availability</li>
+                                    <li>Emphasize your ability to work independently and manage your tasks</li>
+                                    <li>Make a positive first impression by being professional and punctual</li>
+                                    <li>Learn basic Finnish phrases to show your commitment to integrating into the
+                                      local culture</li>
+                                  </ul>
+                                </section>
+
+                                <section>
+                                  <h3>Why This Job Is a Great Opportunity in Finland</h3>
+                                  <ul>
+                                    <li>Finland offers fair wages, and all contracts comply with national collective
+                                      agreements, ensuring worker rights</li>
+                                    <li>It’s an entry-level job, so no degree is required—perfect for students or
+                                      newcomers</li>
+                                    <li>Flexible work hours allow you to balance other commitments or studies</li>
+                                    <li>Siskon Siivous Oy offers training, support, and the potential for long-term
+                                      employment</li>
+                                  </ul>
+                                </section>
+
+                                <section>
+                                  <h3>How to Apply?</h3>
+                                  <p>If you are interested in applying for this cleaning job in Helsinki, you will need
+                                    to apply through the official company recruitment page.</p>
+                                  There you will find full details about the job, eligibility criteria, and the
+                                  application form. Please note that the company only accepts applications submitted
+                                  through their official company recruitment website. Be sure to have your updated CV
+                                  and any necessary documents ready before applying.<br> <br>
+                                  <a class="button full-width-btn"
+                                    href="https://rekry.siskonsiivous.fi/jobs/6162868-siivooja-terveydenhoitoalan-kohteisiin-helsinkiin-cleaners-for-healthcare-sites-in-helsinki"
+                                    style="padding: 11px 20px; font-size: 14px;" target="_blank">
+                                    <span>Click Here to Apply for This Job</span>
+                                  </a>
+                                </section>
+
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Replace the http://127.0.0.1:5500/ with https://findjobinfinland.fi/ and also remove .html from the url and The webpage url is :http://127.0.0.1:5500/jobs/restaurant/bartender-and-cook-in-helsinki.html
+
+and the image url is  :   https://findjobinfinland.fi/images/jobs/bartender-and-cook-in-helsinki.png
+
+
+Write a below tags for the above job.
+
+Use the following structure and include:
+
+
+
+2. A well-written <meta name="description"> (under 160 characters), describing about the job
+3. Meta Keywords:
+
+Use a <meta name="keywords"> tag
+
+Include as many job-related keywords as possible
+
+Pull keywords from all major categories and also put : 
+
+General job search terms
+
+Job titles (e.g. cleaner, developer, nurse, etc.)
+
+City/region names in Finland
+
+Jobs for specific groups (students, foreigners, by nationality)
+
+English-speaking jobs, visa sponsorship jobs
+
+Questions/phrases used in job searches (e.g., how to find a job in Finland, is it easy to get a job in Finland, etc.)
+
+Use relevant terms from this sample set (and expand where possible):  jobs in finland, open jobs in finland, work in finland open jobs, available jobs in finland, jobs available in finland, get jobs in finland, how to get a job in finland, how to find jobs in finland, how to find a job in finland, where to find jobs in finland, where to apply jobs in finland, what are jobs in finland, are jobs available in finland, how are jobs in finland, how many jobs in finland, is it easy to get a job in finland, is getting a job in finland hard, how easy is it to find a job in finland, can't find job in finland, do jobs in finland pay well, work in finland com open jobs for foreigners, work in finland open jobs for pakistani, work in finland open jobs for indian, english jobs in finland, jobs in finland for english speakers, english speaking jobs in finland, jobs in finland for english speakers with visa sponsorship, jobs in finland for english speakers salary, jobs in finland english, jobs in finland english speaking
+
+
+
+
+4. Open Graph and Facebook meta tags for social sharing:
+
+og:title
+
+og:description
+
+og:image (leave blank or placeholder)
+
+og:url
+
+og:type
+
+og:image:alt
+
+facebook:card, facebook:image:src, etc.
+
+  <!-- Twitter Meta Tags -->
+
+
+Keep everything in valid HTML format, ready to paste inside the <head> section.
+Do not include <head> or <html> tags — just the content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now make Structured Data (JSON-LD) for this job using the schema.org/JobPosting format. Include key fields like title, description, hiring organization, job location, date posted, employment type, and valid through date. Add mainEntityOfPage to JSON-LD and Add job benefits also and Keep it clean and optimized for SEO. like this one :   <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Cleaner - Healthcare Sector",
+  "description": "Siskon Siivous is hiring part-time and full-time cleaners in the Helsinki area for healthcare sector locations. The job involves maintaining cleanliness, hygiene compliance, and customer-oriented service at various client sites. Experience in cleaning services, Finnish language skills, and a clean criminal record required. Competitive hourly wage of €12.26 and a supportive, fair work environment. Apply now and join our team!",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Siskon Siivous",
+    "value": "cleaner-healthcare-helsinki-2025"
+  },
+  "datePosted": "2025-08-01",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Siskon Siivous Oy"
+     },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Helsinki",
+      "addressRegion": "Uusimaa",
+      "postalCode": "00100",
+      "addressCountry": "FI"
+    }
+  },
+  "employmentType": "PART_TIME, FULL_TIME",
+  "workHours": "Monday to Friday, between 06:00 and 00:00",
+  "salaryCurrency": "EUR",
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "EUR",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 12.26,
+      "unitText": "HOUR"
+    }
+  },
+  "validThrough": "2025-09-01T23:59",
+  "applicantLocationRequirements": {
+    "@type": "Country",
+    "name": "Finland"
+  },
+  "industry": "Cleaning Services",
+  "experienceRequirements": "Experience in cleaning services or valid Puhtauspassi preferred. Minimum of 1 year continuous work experience in similar tasks required.",
+  "qualifications": "At least A1 level Finnish language skills, vaccination protection, tuberculosis screening, and a clean criminal record required.",
+  "jobBenefits": "Comprehensive induction, flexible working hours, environmentally friendly products, fair employer, professional team",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findjobinfinland.fi/jobs/cleaning/cleaners-for-healthcare-sites-in-helsinki"
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now, Please create 5-6 the top H1, H2, and H3 heading tags for this job. These headings should be included in the HTML with the class hidden applied (I have already done the CSS for this class). They will not be visible on the screen but must still be accessible to screen readers and indexed by search engines.
+ For example :   <h1 class="hidden"></h1>
+
+  <h2 class="hidden"></h2>
+  <h2 class="hidden"></h2>
+
+  <h3 class="hidden"></h3>
+  <h3 class="hidden"></h3>
+  <h3 class="hidden"></h3>
+
+
+
+
+
+
+
+
+
+
+- Add to Favorites code change
+
+- Alt Texts
+
+
+
+
+
+- Create an article like this, remember to put Uusimaa in he data-location if the area is inside ussima region and also if there is any finnish alphabet rather then English then only in the data-location put the alphabet in the English for example leppävaara - leppavaara
+
+- Update in the sitemaps
+
+
+
+

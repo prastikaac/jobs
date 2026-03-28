@@ -1,0 +1,162 @@
+PROJECT CONCEPT: AUTOMATED JOB AGGREGATOR WEBSITE
+
+Objective:
+Build a fully automated job aggregator system that collects job listings from external websites, stores them in a database, generates static HTML pages for each job, and publishes them using GitHub Pages.
+
+---
+
+SYSTEM OVERVIEW:
+
+The system consists of three main components:
+
+1. Job Scraper Tool
+2. Database (Firebase Firestore)
+3. Static HTML Page Generator + GitHub Deployment
+
+---
+
+1. JOB SCRAPER TOOL:
+
+Purpose:
+Automatically collect job listings from selected websites.
+
+Functionality:
+- Search and scrape job listings from target websites
+- Extract structured data such as:
+  - Job Title
+  - Company Name
+  - Location
+  - Salary (if available)
+  - Job Description
+  - Apply Link
+  - Date Posted
+
+- Store the extracted data into Firebase Firestore
+- Avoid duplicate entries by checking unique fields (e.g., job link or ID)
+
+Automation:
+- Runs every 1 hour using a scheduler (e.g., cron or GitHub Actions)
+
+---
+
+2. DATABASE (FIREBASE FIRESTORE):
+
+Purpose:
+Act as the central storage for all job data.
+
+Structure Example:
+
+jobs/
+  job_id_001:
+    title: "Cleaner"
+    company: "ABC Cleaning"
+    location: "Helsinki"
+    salary: "12€/hour"
+    description: "Office cleaning tasks"
+    apply_link: "https://example.com/job1"
+    created_at: timestamp
+
+Notes:
+- Each job must have a unique identifier
+- Used as the source for generating HTML pages
+
+---
+
+3. STATIC HTML PAGE GENERATOR:
+
+Purpose:
+Automatically create one HTML page per job using a predefined template.
+
+Input:
+- Job data from Firebase
+- HTML template file with placeholders
+
+Template Example:
+
+<h1>{{job_title}}</h1>
+<p>Company: {{company}}</p>
+<p>Location: {{location}}</p>
+<p>Salary: {{salary}}</p>
+<div>{{description}}</div>
+<a href="{{apply_link}}">Apply Now</a>
+
+Process:
+- Load template
+- Replace placeholders with actual job data
+- Generate a unique HTML file for each job
+
+Output:
+- /jobs/cleaner-helsinki.html
+- /jobs/waiter-espoo.html
+
+---
+
+4. GITHUB PAGES DEPLOYMENT:
+
+Purpose:
+Host the generated static HTML pages.
+
+Process:
+- Generated HTML files are saved into a GitHub repository
+- Changes are committed and pushed automatically
+- GitHub Pages publishes the website
+
+Website Structure:
+
+/jobs/
+  job1.html
+  job2.html
+/index.html
+/style.css
+
+---
+
+5. AUTOMATION WORKFLOW:
+
+1. Scheduler triggers scraper (every hour)
+2. Scraper fetches new jobs and updates Firebase
+3. Page generator reads updated data
+4. New HTML pages are created
+5. Files are pushed to GitHub
+6. Website updates automatically
+
+---
+
+KEY FEATURES:
+
+- Fully automated pipeline
+- Scalable to thousands of job pages
+- SEO-friendly static pages
+- No manual updates required after setup
+
+---
+
+IMPORTANT CONSIDERATIONS:
+
+- Avoid duplicate job entries
+- Handle expired or outdated jobs
+- Ensure scraping complies with website terms
+- Optimize page titles and metadata for SEO
+- Monitor scraper for website structure changes
+
+---
+
+FUTURE IMPROVEMENTS:
+
+- City-based job pages (e.g., /jobs/helsinki/)
+- Search and filter functionality
+- User job alerts and subscriptions
+- Admin dashboard for monitoring jobs
+- Integration with job APIs instead of scraping
+
+---
+
+END OF CONCEPT
+
+
+
+
+
+
+
+a separate folder for each job inside which there will be a html (index.html) file and a image file and outside folder name will be the job title name
