@@ -104,7 +104,7 @@ def scrape_duunitori(
                 continue
 
             raw_text, apply_url = detail_res
-            card["raw_text"]      = _sanitise(raw_text)
+            card["jobcontent"]      = _sanitise(raw_text)
             card["jobapply_link"] = apply_url or link
 
             job = normalise_raw_job(card)

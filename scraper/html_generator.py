@@ -160,21 +160,6 @@ def generate_job_page(job: dict) -> bool:
             rich_html.append(f"<li>{_esc(item)}</li>")
         rich_html.append("</ul></section>")
 
-    # Experience
-    if job.get("experience"):
-        items = job["experience"]
-        if isinstance(items, str):
-            items = [items]
-        rich_html.append(
-            "<section>"
-            "<h3>Experience</h3>"
-            "<p>The knowledge, skills, and professional background that candidates bring to the role, "
-            "which help them contribute effectively and grow within the organization, are as mentioned below:</p>"
-            "<ul>"
-        )
-        for item in items:
-            rich_html.append(f"<li>{_esc(item)}</li>")
-        rich_html.append("</ul></section>")
 
     # Who is this for
     if job.get("who_is_this_for"):

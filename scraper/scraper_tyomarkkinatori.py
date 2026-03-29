@@ -200,7 +200,6 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         what_we_expect: list = []
         job_responsibilities: list = []
         what_we_offer: list = []
-        experience: list = []
         employment_type: list = []
         raw_text = ""
 
@@ -271,10 +270,6 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                         "we offer", "what we offer", "tarjoamme", "meillä saat",
                         "lupaamme", "benefits", "you will receive",
                     ],
-                    "experience": [
-                        "experience", "background", "kokemus", "koulutus",
-                        "education", "qualification",
-                    ],
                 }
                 current_sec = None
                 _parsed: dict = {k: [] for k in _sec_kw}
@@ -311,8 +306,6 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                     what_we_expect = _parsed["requirements"][:10]
                 if _parsed["offers"]:
                     what_we_offer = _parsed["offers"][:10]
-                if _parsed["experience"]:
-                    experience = _parsed["experience"][:6]
 
         # Fallback description from search result
         if not description:
@@ -356,14 +349,13 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             "date_posted":           posted,
             "date_expires":          expires,
             "description":           description,
-            "raw_text":              raw_text,
+            "jobcontent":            raw_text,
             "salary":                salary,
             "employment_type":       employment_type,
             "language_requirements": langs,
             "what_we_expect":        what_we_expect,
             "job_responsibilities":  job_responsibilities,
             "what_we_offer":         what_we_offer,
-            "experience":            experience,
             "source":                "tyomarkkinatori",
             "id":                    job_id_raw,
         }

@@ -21,7 +21,7 @@ REM ── Git: commit + push to GitHub ─────────────�
 echo [%DATE% %TIME%] Committing and pushing to GitHub...
 cd /d "%~dp0.."
 
-git add data/jobs.json data/rawjobs.json jobs/ sitemap-jobs.xml sitemap.xml
+git add scraper/data/jobs.json scraper/data/rawjobs.json jobs/ sitemap-jobs.xml sitemap.xml
 git commit -m "Auto-update jobs [%DATE% %TIME%]"
 if %ERRORLEVEL% NEQ 0 (
     echo [%DATE% %TIME%] Git commit failed or nothing to commit.

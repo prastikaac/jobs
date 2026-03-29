@@ -240,7 +240,7 @@ def scrape_jobly(
                 "jobapply_link": apply_link,
                 "date_posted":   date_posted,
                 "description":   "",
-                "raw_text":      _sanitise(raw_text),
+                "jobcontent":    _sanitise(raw_text),
                 "salary":        None,
                 "source":        "jobly",
             }

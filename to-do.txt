@@ -224,3 +224,41 @@ okay then make this like first run scraper and then run pipeline like at 10 am t
 2. Duunitori
 3. Jobly
 and after thatt pipeline will run 
+
+ai model : The Best "Fast & Smart" Models For Your PC:
+⭐ 1. qwen2.5:3b (The Smartest Small Model)
+This is currently the absolute king of small models. Despite being less than half the weight of llama3.1 (it only uses 2GB of RAM), it is incredibly smart at outputting perfect JSON formats and is very good at Finnish-to-English translation.
+
+Speed on your PC: ~30 to 60 seconds per job
+Command: ollama pull qwen2.5:3b
+⚡ 2. llama3.2 (Meta's New Fast Model)
+Meta specifically built llama3.2 (3 Billion parameters) a few months ago just for standard CPUs and mobile devices. It is extremely fast, highly reliable at strict formatting, but slightly worse at Finnish than Qwen.
+
+Speed on your PC: ~20 to 50 seconds per job
+Command: ollama pull llama3.2
+
+
+
+8) Warm the model before the loop
+
+Ollama often has a cold-start penalty.
+
+Before processing jobs, do one tiny warm-up call.
+
+Example:
+
+
+only one point for experience "what_we_expect        "job_responsibilities"  "what_we_offer   "who_is_this_for"
+
+i have a logic like what if we start storing finnish words that were found in the jobs in a file while scraping and later i will put the english translations of that file manually and then use it as our own local finnish to english dictionary
+
+
+
+Competitive hourly wage based on Finnish collective agreements
+
+ ai should decide a category by examining the content of the job and  python to decide salary by searching on job content and if there is not then put Competitive hourly wage based on Finnish collective agreementsandother company and links, company and location is also determined by python looking on the job content, and translate all the text to englsih, ai should make the correct experience, job category, what we expect and what we offer by looking in the job content
+
+
+ still its not creating proper job_responsibilities what_we_expect and what_we_offer, 
+
+ job category is not working properly

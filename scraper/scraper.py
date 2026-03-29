@@ -244,7 +244,7 @@ def fetch_job_detail(job_url: str) -> tuple[str, str]:
 def analyse_job_content(text: str, title: str = "") -> dict:
     """
     Analyse the full job page text and return a rich structured dict.
-    Extracts: salary, employment_type, positions, experience, responsibilities,
+    Extracts: salary, employment_type, positions, responsibilities,
     language_requirements, what_we_expect, what_we_offer, who_is_this_for, description.
     """
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
@@ -370,12 +370,7 @@ def analyse_job_content(text: str, title: str = "") -> dict:
     # Flatten responsibilities for simplicity
     job_responsibilities = responsibilities
 
-    # ── Experience per role ──────────────────────────────────────────────────
-    experience_lines = [ln for ln in what_we_expect if any(
-        k in ln.lower() for k in ["experience", "background", "knowledge", "skill", "degree", "education", "qualification"]
-    )]
-    # Flatten experience for simplicity
-    experience = experience_lines
+
 
     # ── Clean description (3-paragraph summary) ──────────────────────────────
     # Paragraph 1: company + role overview (first meaningful sentences)
@@ -400,7 +395,6 @@ def analyse_job_content(text: str, title: str = "") -> dict:
         "salary_range":           salary_range,
         "employment_type":        employment_type,
         "positions":              positions,
-        "experience":             experience,
         "language_requirements":  language_requirements,
         "job_responsibilities":   job_responsibilities,
         "what_we_expect":         what_we_expect,
@@ -428,7 +422,6 @@ def unified_ai_processor(text: str, fallback_category: str = "Other") -> dict:
     default_res = {
         "category": [fallback_category],
         "description_html": "",
-        "experience_html": "",
         "what_we_expect_html": "",
         "responsibilities_html": "",
         "what_we_offer_html": "",
@@ -447,7 +440,6 @@ def unified_ai_processor(text: str, fallback_category: str = "Other") -> dict:
         "{\n"
         '  "category": "Choose exactly one from: Cleaning, Restaurant, Caregiver, Driver, Logistics, Security, IT, Sales, Construction, Hospitality, Other",\n'
         '  "description_html": "HTML formatted job overview using <p> and <ul>",\n'
-        '  "experience_html": "HTML formatted experience requirements",\n'
         '  "what_we_expect_html": "HTML formatted expectations",\n'
         '  "responsibilities_html": "HTML formatted job responsibilities",\n'
         '  "what_we_offer_html": "HTML formatted benefits/offers",\n'
@@ -486,7 +478,6 @@ def unified_ai_processor(text: str, fallback_category: str = "Other") -> dict:
                 parsed_res = {
                     "category": [cat],
                     "description_html": parsed.get("description_html") or "",
-                    "experience_html": parsed.get("experience_html") or "",
                     "what_we_expect_html": parsed.get("what_we_expect_html") or "",
                     "responsibilities_html": parsed.get("responsibilities_html") or "",
                     "what_we_offer_html": parsed.get("what_we_offer_html") or "",
@@ -576,14 +567,12 @@ def normalise_raw_job(raw: dict) -> dict:
         "salary_range":         salary,
         "employment_type":      raw.get("employment_type") or analysed["employment_type"],
         "language_requirements": raw.get("language_requirements") or analysed["language_requirements"],
-        "experience":           raw.get("experience") or analysed["experience"],
         "what_we_expect":       raw.get("what_we_expect") or analysed["what_we_expect"],
         "job_responsibilities": raw.get("job_responsibilities") or analysed["job_responsibilities"],
         "what_we_offer":        raw.get("what_we_offer") or analysed["what_we_offer"],
         "who_is_this_for":      raw.get("who_is_this_for") or analysed["who_is_this_for"],
         # ── Raw content for AI Phase 2 ────────────────────────────────────────
         "jobcontent":           raw_text,
-        "raw_text":             raw_text,
     }
 
 

@@ -1,292 +1,251 @@
 [
   {
-    "scrape_timestamp": "2026-03-28 23:01:39",
+    "scrape_timestamp": "2026-03-30 01:23:52",
     "jobs": [
       {
-        "id": "56a21367",
-        "job_id": "taxi-driver-finland-56a21367",
+        "id": "1f2163ac",
+        "job_id": "early-education-teacher-a-nursery-in-the-meadow-finland-1f2163ac",
         "processed": true,
-        "title": "Taxi Driver",
-        "company": "Sähköpalvelu Sillanpää Oy, Kokemäki",
-        "job_category": "transportation-and-driving",
+        "title": "Early Education Teacher, A Nursery in the Meadow",
+        "company": "Espoon kaupunki",
+        "job_category": "education-and-teaching",
         "jobLocation": [
           "Finland"
         ],
-        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/13ebbdc4-4a48-4ded-912c-3946669107e4/en",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/13ebbdc4-4a48-4ded-912c-3946669107e4/en",
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/ESPOO-03-554-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4a242b2c-e147-4e41-b7c1-24cbd69c3607/en",
         "job_employer_email": "",
-        "jobUrl": "https://findjobinfinland.fi/jobs/transportation-and-driving/taxi-driver-finland-56a21367",
-        "date_posted": "2026-03-28",
-        "date_expires": "2026-04-30",
-        "scraped_at": "2026-03-28 23:01:39",
-        "salary_range": "Not specified",
-        "employment_type": [
-          "Full-time"
-        ],
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Job description for a taxi driver position at Sähköpalvelu Sillanpää Oy, Kokemäki. Responsibilities include driving in the city and assisting passengers.",
-        "description": "This job involves operating taxis within the city of Kokemäki. You will be responsible for providing reliable transportation services to customers, maintaining your vehicle's condition, and ensuring customer satisfaction. The company offers training programs for new drivers and provides a comfortable taxi service equipped with modern communication devices. As part of our team, you will have access to various benefits such as a driver’s allowance and opportunities for career development.",
-        "experience": [
-          "Experience in driving is required",
-          "Knowledge of local traffic rules and regulations"
-        ],
-        "what_we_expect": [
-          "Passionate about customer service",
-          "Good communication skills",
-          "Ability to work independently"
-        ],
-        "job_responsibilities": [
-          "Provide reliable taxi services within the city of Kokemäki",
-          "Ensure vehicle maintenance and safety",
-          "Communicate with customers via phone or in person",
-          "Assist passengers with their luggage and provide directions",
-          "Adhere to company policies and procedures"
-        ],
-        "what_we_offer": [
-          "Driver's allowance for daily use of the taxi service",
-          "Opportunities for career development within the company",
-          "Training programs for new drivers",
-          "Opportunity to join special groups for driver training",
-          "Company culture that values hard work and dedication"
-        ],
-        "who_is_this_for": [
-          "Passionate individuals who enjoy interacting with customers",
-          "People who value customer service"
-        ],
-        "search_keywords": "taxi-driver, Kokemäki, transportation-service, driver-training",
-        "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/transportation-and-driving/5.png"
-      },
-      {
-        "id": "6c1628d3",
-        "job_id": "signaalidata-analyst-finland-6c1628d3",
-        "processed": true,
-        "title": "Signaalidata-analyst",
-        "company": "Saranen Consulting Oy, Kuopion Toimipaikka",
-        "job_category": "IT",
-        "jobLocation": [
-          "Finland"
-        ],
-        "jobapply_link": "https://www.saranen.fi/tyonhakijalle/toihin-koulutuksesta/future-skills-academy-pohjois-savo#hae-mukaan",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5d1f6d37-1c9e-4014-9bf9-ea61c2ec14e5/en",
-        "job_employer_email": "",
-        "jobUrl": "https://findjobinfinland.fi/jobs/it/signaalidata-analyst-finland-6c1628d3",
-        "date_posted": "2026-03-28",
-        "date_expires": "2026-05-29",
-        "scraped_at": "2026-03-28 23:01:39",
-        "salary_range": "Not specified",
-        "employment_type": [
-          "Full-time"
-        ],
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Data analyst position at Saranen Consulting Oy, focusing on signal and data analysis for process projects.",
-        "description": "APL Systems is seeking a data analyst with development experience to grow into a full-time role in the field of operational data. The ideal candidate will join Future Skills Academy's team, which is designed for unemployed job seekers and those leaving unemployment. This position involves analyzing various data sets, interpreting signal and process data, and creating Excel-based analyses and tools. You'll produce clear reports and visualizations while collaborating with experienced analysts. We expect candidates to be passionate about data analysis and eager to learn new skills. Basic understanding of data or signal processing is required, along with experience in a technical field such as signal processing. During the training program, you will develop your knowledge in signal processing, data analytics, and Excel-based tools, and learn how to present findings clearly both internally and externally.",
-        "experience": [
-          "Experience in data analysis",
-          "Technical background in signal processing or related fields"
-        ],
-        "what_we_expect": [
-          "Passion for data analysis",
-          "Basic understanding of data or signal processing",
-          "Experience with Excel-based tools"
-        ],
-        "job_responsibilities": [
-          "Analyze various data sets and interpret signal and process data",
-          "Create Excel-based analyses and tools",
-          "Develop clear reports and visualizations"
-        ],
-        "what_we_offer": [
-          "Modern work environment",
-          "Opportunities to use AI solutions",
-          "Projects that allow you to grow into a full-time analyst role"
-        ],
-        "who_is_this_for": [
-          "Unemployed job seekers",
-          "Those leaving unemployment"
-        ],
-        "search_keywords": "data analyst, signal processing, Excel-based tools, Future Skills Academy",
-        "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/other/26.png"
-      },
-      {
-        "id": "e975055b",
-        "job_id": "ammattitaitoinen-kiinalainen-kokki-finland-e975055b",
-        "processed": true,
-        "title": "Ammattitaitoinen Kiinalainen kokki",
-        "company": "He Xing Finland Oy, Joensuu",
-        "job_category": "food-production-industry",
-        "jobLocation": [
-          "Finland"
-        ],
-        "jobapply_link": "mailto:xiaoqing.lv83@gmail.com?subject=Application for the Job - Ammattilainen Kiinalainen kokki",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f54be77a-cf0c-4d1c-a85e-1bf1b05009c4/en",
-        "job_employer_email": "xiaoqing.lv83@gmail.com",
-        "jobUrl": "https://findjobinfinland.fi/jobs/food-production-industry/ammattitaitoinen-kiinalainen-kokki-finland-e975055b",
-        "date_posted": "2026-03-28",
+        "jobUrl": "https://findjobinfinland.fi/jobs/education-and-teaching/early-education-teacher-a-nursery-in-the-meadow-finland-1f2163ac",
+        "date_posted": "2026-03-29",
         "date_expires": "2026-04-13",
-        "scraped_at": "2026-03-28 23:01:39",
-        "salary_range": "2800€ per month",
-        "employment_type": [
-          "Full-time"
-        ],
-        "language_requirements": [
-          "English",
-          "Chinese (Mandarin)"
-        ],
-        "meta_description": "A detailed job description for a Finnish chef with experience in preparing traditional Chinese dishes and managing a kitchen team.",
-        "description": "We are seeking an experienced Chinese chef to design and prepare meals for our customers. This role requires seasoned Chinese dishes, at least three years of experience in a Chinese restaurant, extensive knowledge of the wok cooking technique, passing a formal Chinese cook’s certification, reliable work ethic, ability to independently design menus, produce food, and serve meals. Additionally, this position requires attention to detail and physical stamina. We offer an international working environment, development opportunities, and flexible scheduling.",
-        "experience": [
-          "At least three years of experience in a Chinese restaurant",
-          "Extensive knowledge of the wok cooking technique",
-          "Passing a formal Chinese cook’s certification",
-          "Reliable work ethic"
-        ],
-        "what_we_expect": [
-          "Attention to detail and physical stamina",
-          "Ability to independently design menus, produce food, and serve meals"
-        ],
-        "job_responsibilities": [
-          "Design and prepare traditional Chinese dishes for customers",
-          "Manage a kitchen team",
-          "Maintain a clean, hygienic, and safe working environment",
-          "Use wok cooking equipment",
-          "Monitor the temperature of kitchen appliances",
-          "Work in teams focused on dining, construction or maintenance"
-        ],
-        "what_we_offer": [
-          "International work environment",
-          "Development opportunities",
-          "Flexible scheduling"
-        ],
-        "who_is_this_for": [
-          "Individuals with experience in Chinese cuisine and a reliable work ethic",
-          "Candidates who can independently design menus and produce food"
-        ],
-        "search_keywords": "Chinese chef, traditional dishes, kitchen management, wok cooking, flexible scheduling",
-        "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/food-production-industry/24.png"
-      },
-      {
-        "id": "7b2231d0",
-        "job_id": "kokenut-pyörämekaanikko-asap-finland-7b2231d0",
-        "processed": true,
-        "title": "Kokenut pyörämekaanikko ASAP",
-        "company": "Linnet Bikes, Helsinki",
-        "job_category": "mechanical-and-metal-work",
-        "jobLocation": [
-          "Finland"
-        ],
-        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d6156bbf-f19f-4eea-8eae-e0c0514c6586/en",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d6156bbf-f19f-4eea-8eae-e0c0514c6586/en",
-        "job_employer_email": "",
-        "jobUrl": "https://findjobinfinland.fi/jobs/mechanical-and-metal-work/kokenut-pyörämekaanikko-asap-finland-7b2231d0",
-        "date_posted": "2026-03-28",
-        "date_expires": "2026-04-30",
-        "scraped_at": "2026-03-28 23:01:39",
-        "salary_range": "Competitive salary within the industry. Additionally, we offer free coffee whenever you need it!",
+        "scraped_at": "2026-03-30 01:23:52",
+        "salary_range": "Palkka: 3177,50 €/kk",
         "employment_type": [
           "Full-time",
-          "Part-time"
+          "Permanent"
         ],
         "language_requirements": [
-          "Finnish language skills are required."
+          "Finnish"
         ],
-        "meta_description": "Mechanical technician position at Linnet Bikes in Helsinki, providing maintenance and repair services for bicycles.",
-        "description": "At our small bicycle maintenance company located in Itä-Helsinki, we specialize in repairing various types of bicycles including city bikes, touring bikes, and hybrid bikes. Our mission is to provide high-quality service and a friendly experience so that customers can rely on us! We are currently looking for part-time or full-time technicians who can work flexible hours (8-38h/week). What do we offer as part of our team? We provide a comfortable working environment, a pleasant atmosphere, and the best available equipment. For example, we use electric bike stands with large windows, and you don't need to stand at the entrance while riding. Flexible work schedules are possible within reason. We have an anonymous mechanic but it's a key part of our team. Direct customer contact is included in your daily tasks.",
-        "experience": [
-          "Previous experience working on bicycle repairs is required.",
-          "Fluent Finnish language skills are essential as you will be directly interacting with customers.",
-          "Part-time or full-time availability is preferred."
-        ],
+        "meta_description": "Early Education Teacher, A Nursery in the Meadow at Espoon kaupunki. Explore this opportunity in Finland.",
+        "description": "We are looking for an early-childhood teacher to join our small, warm-minded day care home that offers open interaction and a happy atmosphere. Located near Tapiola city centre, we provide support through a mentoring program.",
         "what_we_expect": [
-          "We expect our team members to be reliable and have previous experience with bicycle repairs.",
-          "Fluent Finnish language skills are essential as you will be directly interacting with customers.",
-          "Flexible work schedules are possible within reason."
+          "38 h 15 min / week",
+          "permanent job"
         ],
         "job_responsibilities": [
-          "Provide maintenance and repair services for bicycles.",
-          "Use electric bike stands with large windows.",
-          "Work flexible hours (8-38h/week).",
-          "Have direct customer contact included in your daily tasks."
+          "teaching children aged between 1 and 5 in different groups",
+          "camping trips every week"
         ],
         "what_we_offer": [
-          "A comfortable working environment.",
-          "A pleasant atmosphere.",
-          "The best available equipment.",
-          "Flexible work schedules within reason.",
-          "Free coffee whenever you need it!"
+          "supportive environment for professional growth",
+          "mentoring program to familiarize with early education"
         ],
         "who_is_this_for": [
-          "Previous experience with bicycle repairs is required.",
-          "Fluent Finnish language skills are essential as you will be directly interacting with customers.",
-          "Flexible work schedules are possible within reason."
+          "English-speaking candidates interested in early childhood education"
         ],
-        "search_keywords": "Mechanical technician, bicycle maintenance, Linnet Bikes, Helsinki",
+        "search_keywords": "Early Education Teacher, A Nursery in the Meadow Espoon kaupunki Finland other",
         "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/mechanical-and-metal-work/9.png"
+        "image_url": "https://findjobinfinland.fi/images/jobs/education-and-teaching/20.png"
+      },
+      {
+        "id": "fc2dea1c",
+        "job_id": "carpenter-with-a-van-capital-region-finland-fc2dea1c",
+        "processed": true,
+        "title": "Carpenter with a Van - Capital Region",
+        "company": "Amiko Helsinki Oy",
+        "job_category": "construction-cleaning",
+        "jobLocation": [
+          "Finland"
+        ],
+        "jobapply_link": "http://amiko.likeit.fi/apply/106292845",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14990f9d-55e1-450b-bd51-638bed2fea09/en",
+        "job_employer_email": "",
+        "jobUrl": "https://findjobinfinland.fi/jobs/construction-cleaning/carpenter-with-a-van-capital-region-finland-fc2dea1c",
+        "date_posted": "2026-03-29",
+        "date_expires": "2026-04-10",
+        "scraped_at": "2026-03-30 01:23:52",
+        "salary_range": "TES:in mukaisen palkkauksen-palkkausjärjestelmämme on kannustava, joskus jopa suure",
+        "employment_type": [
+          "Full-time",
+          "Permanent"
+        ],
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Carpenter with a Van - Capital Region at Amiko Helsinki Oy. Explore this opportunity in Finland.",
+        "description": "We are looking for a motivated and professional carpenter with a van for various renovation sites in the capital region. Competitive pay, high-quality tools, appropriate work clothes, and team skills expected.",
+        "what_we_expect": [
+          "35 years of experience",
+          "building expertise",
+          "occupational safety card"
+        ],
+        "job_responsibilities": [
+          "Kirvesmiehet ja rakennuspuusepät"
+        ],
+        "what_we_offer": [
+          "competitive pay",
+          "long-term employment opportunities",
+          "multi-faceted tasks at different sites",
+          "high-quality tools and appropriate work clothes"
+        ],
+        "who_is_this_for": [
+          "motivated professionals with carpentry skills, experience in renovation sites"
+        ],
+        "search_keywords": "carpenter van capital region, renovation site carpenter, skilled carpenter job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "eb0bc8c6",
+        "job_id": "spotter-structural-costs-finland-eb0bc8c6",
+        "processed": true,
+        "title": "SPOTTER / STRUCTURAL COSTS",
+        "company": "Amiko Helsinki Oy",
+        "job_category": "other",
+        "jobLocation": [
+          "Finland"
+        ],
+        "jobapply_link": "http://amiko.likeit.fi/apply/106292195",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/499ba831-9d60-4229-b497-330dd621a4db/en",
+        "job_employer_email": "",
+        "jobUrl": "https://findjobinfinland.fi/jobs/other/spotter-structural-costs-finland-eb0bc8c6",
+        "date_posted": "2026-03-29",
+        "date_expires": "2026-04-11",
+        "scraped_at": "2026-03-30 01:23:52",
+        "salary_range": "TES:in mukaisen palkkauksen-palkkausjärjestelmämme on kannustava, joskus jopa suure",
+        "employment_type": [
+          "Full-time",
+          "Temporary"
+        ],
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "SPOTTER / STRUCTURAL COSTS at Amiko Helsinki Oy. Explore this opportunity in Finland.",
+        "description": "We are looking for spotters and building aid workers to work on a data center site in Vihti, covering 19 hectares. Ensure smooth and safe operations.",
+        "what_we_expect": [
+          "Experience with construction sites",
+          "Understanding safe working distances and movements of heavy machinery",
+          "Existing occupational safety card or readiness to perform it before work begins",
+          "Good cooperation skills and responsible attitude"
+        ],
+        "job_responsibilities": [
+          "* Control and control of heavy machinery and vehicles in the site area.",
+          "* Ensure occupational safety, for example, by warning workers and drivers about obstacles, people working in the vicinity or other potential risks.",
+          "* General safety and smooth traffic management in the site area."
+        ],
+        "what_we_offer": [
+          "Competitive pay according to experience",
+          "Required work equipment"
+        ],
+        "who_is_this_for": [
+          "Construction workers with construction site experience"
+        ],
+        "search_keywords": "SPOTTER / STRUCTURAL COSTS Amiko Helsinki Oy Finland other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "583e3c82",
+        "job_id": "traffic-controllers-for-construction-sites-in-pirkanmaa-tamp-finland-583e3c82",
+        "processed": true,
+        "title": "Traffic Controllers for Construction Sites in Pirkanmaa, Tampere and Surrounding Areas",
+        "company": "Ramudden Oy Ab, Liikenteenohjaus Ja Tienpäällystys",
+        "job_category": "other",
+        "jobLocation": [
+          "Finland"
+        ],
+        "jobapply_link": "https://www.recright.com/careers/fi/ramudden-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f32ee6f8-2718-44ed-b926-0e84671cfed6/en",
+        "job_employer_email": "evi.ahtola@ramudden.fi",
+        "jobUrl": "https://findjobinfinland.fi/jobs/other/traffic-controllers-for-construction-sites-in-pirkanmaa-tamp-finland-583e3c82",
+        "date_posted": "2026-03-29",
+        "date_expires": "2026-04-12",
+        "scraped_at": "2026-03-30 01:23:52",
+        "salary_range": "Asfalttialan TES",
+        "employment_type": [
+          "Full-time",
+          "Permanent"
+        ],
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Traffic Controllers for Construction Sites in Pirkanmaa, Tampere and Surrounding Areas at Ramudden Oy Ab, Liikenteenohjaus Ja Tienpäällystys. Explore this...",
+        "description": "We are looking for traffic controllers on several sites in Pirkanmaa! Ensure safe passage through construction sites as part of a team. Full-time position with asphalt wages.",
+        "what_we_expect": [
+          "Full age",
+          "Normal senses: vision, hearing and ability to react",
+          "At least an AM121 or B driving licence"
+        ],
+        "job_responsibilities": [
+          "Ensure safe passage and progress of traffic through the site as long as the site is in place. Traffic control usually works in pairs and takes turns controlling traffic.",
+          "Take care of colleagues."
+        ],
+        "what_we_offer": [
+          "A safe and professional work community",
+          "High quality tools and equipment",
+          "Fair and equal treatment",
+          "Variable sites and working days (seasonal work)"
+        ],
+        "who_is_this_for": [
+          "Traffic controllers with full age, normal senses, at least an AM121 or B driving licence"
+        ],
+        "search_keywords": "traffic controller Pirkanmaa Tampere construction site",
+        "display_mode": "fallback",
+        "image_url": "https://findjobinfinland.fi/images/jobs/other/7.png"
       }
     ]
   },
 
   {
-    "scrape_timestamp": "2026-03-28 23:01:40",
+    "scrape_timestamp": "2026-03-30 01:23:53",
     "jobs": [
       {
-        "id": "ca7499d5",
-        "job_id": "accountantbookkeeper-finland-ca7499d5",
+        "id": "9c1850d3",
+        "job_id": "building-cleaners-in-helsinki-finland-9c1850d3",
         "processed": true,
-        "title": "Accountant/bookkeeper",
-        "company": "Easy Crew, Helsinki",
-        "job_category": "finance-and-accounting",
+        "title": "Building Cleaners in Helsinki",
+        "company": "Amiko Helsinki Oy",
+        "job_category": "cleaning",
         "jobLocation": [
           "Finland"
         ],
-        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/98f1118f-4ea8-43d5-88d7-c0177a28961b/en",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/98f1118f-4ea8-43d5-88d7-c0177a28961b/en",
+        "jobapply_link": "http://amiko.likeit.fi/apply/106293514",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a57f1991-cd71-4630-9370-13bff22c0d95/en",
         "job_employer_email": "",
-        "jobUrl": "https://findjobinfinland.fi/jobs/finance-and-accounting/accountantbookkeeper-finland-ca7499d5",
-        "date_posted": "2026-03-28",
-        "date_expires": "2026-04-15",
-        "scraped_at": "2026-03-28 23:01:40",
-        "salary_range": "Not specified",
+        "jobUrl": "https://findjobinfinland.fi/jobs/cleaning/building-cleaners-in-helsinki-finland-9c1850d3",
+        "date_posted": "2026-03-29",
+        "date_expires": "2026-04-10",
+        "scraped_at": "2026-03-30 01:23:53",
+        "salary_range": "Palkka 13,00-15,00€/h",
         "employment_type": [
-          "Full-time"
+          "Full-time",
+          "Permanent"
         ],
         "language_requirements": [
-          "Finnish",
-          "English"
+          "Finnish"
         ],
-        "meta_description": "Looking for an accountant/bookkeeper to work as a subcontractor with Easy Crew, handling small-scale client invoices from home.",
-        "description": "We are seeking an experienced accountant/bookkeeper to join our team of subcontractors. The ideal candidate will have at least 1-2 years of experience in accounting and bookkeeping. They will be responsible for processing invoices, maintaining financial records, and providing support as needed. This position is remote and can be done from home.",
-        "experience": [
-          "at least 1-2 years of work experience in accounting or bookkeeping",
-          "familiarity with small-scale client invoicing"
-        ],
+        "meta_description": "Building Cleaners in Helsinki at Amiko Helsinki Oy. Explore this opportunity in Finland.",
+        "description": "We are looking for a building cleaner with previous experience in cleaning and especially in building cleaning. Motivated, unafraid attitude, good physical fitness, excellent Finnish language skills, and team skills are required.",
         "what_we_expect": [
-          "ability to handle financial transactions independently",
-          "strong attention to detail and accuracy in record-keeping",
-          "knowledge of accounting software"
+          "motivated",
+          "unafraid attitude",
+          "good physical fitness",
+          "excellent Finnish language skills"
         ],
         "job_responsibilities": [
-          "processing client invoices",
-          "maintaining financial records",
-          "providing support as needed"
+          "cleaning tables and protecting them",
+          "arranging working hours on weekdays"
         ],
         "what_we_offer": [
-          "competitive salary",
-          "flexible remote work schedule",
-          "professional development opportunities"
+          "salary of 13,00 -15,00 €/ h"
         ],
         "who_is_this_for": [
-          "individuals with experience in accounting and bookkeeping who are looking for a full-time remote position"
+          "candidates with previous experience in cleaning and especially building cleaning"
         ],
-        "search_keywords": "accountant, bookkeeper, subcontractor, small-scale client invoicing, financial records",
+        "search_keywords": "building cleaner, Helsinki, cleaning, building maintenance",
         "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/finance-and-accounting/8.png"
+        "image_url": "https://findjobinfinland.fi/images/jobs/cleaning/21.png"
       }
     ]
   }
