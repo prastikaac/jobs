@@ -77,6 +77,14 @@ def save_jobs(jobs: list[dict]) -> None:
     logger.info("Saved %d jobs across %d scrape sessions to jobs.json", len(jobs), len(output_data))
 
 
+def save_translated_jobs(jobs: list[dict]) -> None:
+    """Save a flat list of formatted jobs to translated_jobs.json."""
+    os.makedirs(config.DATA_DIR, exist_ok=True)
+    with open(config.TRANSLATED_JOBS_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(jobs, f, indent=2, ensure_ascii=False, default=str)
+    logger.info("Saved %d flat job records to translated_jobs.json", len(jobs))
+
+
 # ── Merge ─────────────────────────────────────────────────────────────────────
 
 def get_existing_ids(jobs: list[dict]) -> set[str]:

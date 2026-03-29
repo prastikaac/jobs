@@ -261,4 +261,35 @@ Competitive hourly wage based on Finnish collective agreements
 
  still its not creating proper job_responsibilities what_we_expect and what_we_offer, 
 
- job category is not working properly
+ job category is not working properly, you can check it from here :  "occupations": [
+      {
+        "uri": "http://data.europa.eu/esco/isco/C7115",
+        "prefLabel": {
+          "en": "Carpenters and joiners",
+          "fi": "Kirvesmiehet ja rakennuspuusepät",
+          "sv": "Timmermän och byggnadssnickare"
+        },
+        "altLabel": {
+          "en": [],
+          "fi": [],
+          "sv": []
+        }
+      },
+      {
+        "uri": "http://data.europa.eu/esco/isco/C7115",
+        "prefLabel": {
+          "en": "Carpenters and joiners",
+          "fi": "Kirvesmiehet ja rakennuspuusepät",
+          "sv": "Timmermän och byggnadssnickare"
+        },
+        "altLabel": {
+          "en": [],
+          "fi": [],
+          "sv": []
+        }
+      }
+    ],
+
+
+
+ 

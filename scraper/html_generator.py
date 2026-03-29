@@ -7,6 +7,7 @@ Also regenerates sitemap-jobs.xml for SEO.
 """
 
 import html
+import json
 import logging
 import os
 import re
@@ -16,6 +17,21 @@ from typing import List
 import config
 
 logger = logging.getLogger("html_generator")
+
+# Load municipality codes and build a name -> region map for display enrichment
+MUNICIPALITY_MAP = {}
+try:
+    map_path = os.path.join(os.path.dirname(__file__), "municipalities_codes.json")
+    if os.path.exists(map_path):
+        with open(map_path, "r", encoding="utf-8") as f:
+            muni_data = json.load(f)
+            for code, data in muni_data.items():
+                name = data.get("KUNTANIMIFI")
+                region = data.get("MAAKUNTANIMIFI")
+                if name:
+                    MUNICIPALITY_MAP[name.lower()] = region
+except Exception as e:
+    logger.warning("Could not load municipalities_codes.json for HTML generation: %s", e)
 
 
 # ── Utilities ─────────────────────────────────────────────────────────────────
@@ -54,7 +70,23 @@ def _category_label(job: dict) -> str:
 
 def _location_label(job: dict) -> str:
     locs = job.get("jobLocation", ["Finland"])
-    return ", ".join(locs[:2])
+    if not locs or (len(locs) == 1 and locs[0].lower() == "finland"):
+        return "Finland"
+    
+    # Filter out 'finland' from cities list if present for cleaner joining
+    clean_cities = [c for c in locs if c.lower() != "finland"]
+    if not clean_cities:
+        return "Finland"
+    
+    unique_regions = []
+    for city in clean_cities:
+        region = MUNICIPALITY_MAP.get(city.lower())
+        if region and region not in unique_regions:
+            unique_regions.append(region)
+    
+    # Combine cities, unique regions, and Finland
+    parts = clean_cities + unique_regions + ["Finland"]
+    return ", ".join(parts)
 
 
 # ── Step 4: Individual job page ───────────────────────────────────────────────
@@ -195,12 +227,22 @@ def generate_job_page(job: dict) -> bool:
         is_email_apply = True
 
     if is_email_apply and employer_email:
+        contact_name = job.get("job_employer_name", "")
+        contact_phone = job.get("job_employer_phone_no", "")
+        
+        contact_info = ""
+        if contact_name or contact_phone:
+            name_part = f" : {contact_name}" if contact_name else ""
+            phone_part = f" ({contact_phone})" if contact_phone else ""
+            contact_info = f" Also, you may reach out to the Contact person for the job{_esc(name_part)}{_esc(phone_part)}."
+
         email_instructions = (
             f"<p>\n"
             f"Since there is no direct online application portal for this position, "
-            f"interested candidates are encouraged to submit their applications, "
+            f"interested candidates are encouraged to submit their application, "
             f"including a cover letter and CV, via email to "
-            f"<b><a href=\"mailto:{_esc(employer_email)}\">{_esc(employer_email)}</a></b>.\n"
+            f"<b><a href=\"mailto:{_esc(employer_email)}\">{_esc(employer_email)}</a></b>."
+            f"{contact_info}\n"
             f"</p>"
         )
         job_link = f"mailto:{_esc(employer_email)}"
@@ -210,8 +252,11 @@ def generate_job_page(job: dict) -> bool:
     replacements = {
         # Title
         "{-job title-}": title,
+        # Open Positions
+        "{-job open position-}": str(job.get("job_open_position", 1)),
         # Company
         "{-company name-}": company,
+        "{-company-}": company,
         # Meta description (short, SEO — used in <meta>, OG, Twitter, JSON-LD)
         "{-meta_description-}": desc_meta,
         # Job description (long, 2-3 paragraphs — used in page body)
@@ -290,18 +335,26 @@ def _job_card(job: dict) -> str:
     
     # Determine region-aware data-location for frontend filtering
     import re
-    locs_lower = [str(l).lower().strip() for l in job.get("jobLocation", ["Finland"])]
+    locs_raw = job.get("jobLocation", ["Finland"])
+    locs_lower = [str(l).lower().strip() for l in locs_raw]
     
     parts = []
+    # 1. Add Cities
     for loc in locs_lower:
-        if loc and loc not in ("finland", "uusimaa", "uusimaa region"):
+        if loc and loc not in ("finland",):
             slug = re.sub(r'[^a-z0-9]+', '-', loc).strip('-')
             if slug and slug not in parts:
                 parts.append(slug)
                 
-    if any(loc in config.UUSIMAA_CITIES_LOWER for loc in locs_lower) and "uusimaa" not in parts:
-        parts.append("uusimaa")
-        
+    # 2. Add Regions (dynamic lookup from municipalities_codes.json)
+    for city in locs_lower:
+        region = MUNICIPALITY_MAP.get(city)
+        if region:
+            r_slug = re.sub(r'[^a-z0-9]+', '-', region.lower()).strip('-')
+            if r_slug and r_slug not in parts:
+                parts.append(r_slug)
+                
+    # 3. Add Finland
     if "finland" not in parts:
         parts.append("finland")
         

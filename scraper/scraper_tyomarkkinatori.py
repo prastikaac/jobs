@@ -5,7 +5,9 @@ Uses the public JSON REST API to search listings (POST) and fetch job details (G
 Returns normalised raw job dicts ready for rawjobs_store.
 """
 
+import json
 import logging
+import os
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -24,6 +26,17 @@ TYOMARKKINATORI_API            = "https://tyomarkkinatori.fi/api/jobpostingfullt
 TYOMARKKINATORI_BASE           = "https://tyomarkkinatori.fi"
 TYOMARKKINATORI_DETAIL_PATTERN = "/en/personal-customers/vacancies/{job_id}/en"
 TYOMARKKINATORI_DETAIL_API     = "https://tyomarkkinatori.fi/api/jobposting-new/v1/public/jobpostings/"
+
+# ── Municipality Codes ────────────────────────────────────────────────────────
+
+MUNICIPALITY_CODES = {}
+_codes_path = os.path.join(os.path.dirname(__file__), "municipalities_codes.json")
+if os.path.exists(_codes_path):
+    try:
+        with open(_codes_path, "r", encoding="utf-8") as f:
+            MUNICIPALITY_CODES = json.load(f)
+    except Exception as e:
+        logger.warning("Failed to load municipalities_codes.json: %s", e)
 
 
 # ── Private helpers ───────────────────────────────────────────────────────────
@@ -154,9 +167,23 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         if not raw_location and isinstance(loc_data, dict) and "municipalities" in loc_data:
             munis = loc_data["municipalities"]
             if isinstance(munis, list) and munis:
-                m = munis[0]
-                if isinstance(m, dict) and "label" in m:
-                    raw_location = _extract_lang_string(m["label"])
+                resolved_names = []
+                for m in munis:
+                    # If it's a code (string like "257")
+                    if isinstance(m, str):
+                        m_data = MUNICIPALITY_CODES.get(m)
+                        if m_data and "KUNTANIMIFI" in m_data:
+                            resolved_names.append(m_data["KUNTANIMIFI"])
+                        else:
+                            resolved_names.append(m) # fallback to code if not found
+                    # If it's a dict with a label (Tyomarkkinatori sometimes does this)
+                    elif isinstance(m, dict) and "label" in m:
+                        resolved_names.append(_extract_lang_string(m["label"]))
+                
+                raw_location = "; ".join(filter(None, resolved_names))
+
+        if not raw_location or raw_location.lower() in ["", "none", "undetermined", "not specified"]:
+            raw_location = "Finland"
 
         # Dates
         published_raw = str(item.get("publishedAt") or item.get("publicationDate") or date.today())
@@ -183,6 +210,11 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         detail_path = TYOMARKKINATORI_DETAIL_PATTERN.format(job_id=job_id_raw)
         job_link    = str(TYOMARKKINATORI_BASE + detail_path)
 
+        # Open Positions
+        open_positions = item.get("application", {}).get("openPositions") or item.get("openPositions") or 1
+        if detail and detail.get("application", {}).get("openPositions"):
+            open_positions = detail["application"]["openPositions"]
+
         # 1. Determine Direct Application URL (from detail or search result)
         direct_apply_url = ""
         if detail:
@@ -201,19 +233,26 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         job_responsibilities: list = []
         what_we_offer: list = []
         employment_type: list = []
-        raw_text = ""
+        job_content_raw = ""
 
         if detail:
             pos        = detail.get("position") or {}
             desc_text  = _extract_lang_string(pos.get("jobDescription"), "fi")
-            wage_info  = _extract_lang_string(pos.get("wagePrincipleInfo"), "fi")
-            marketing  = _extract_lang_string(pos.get("marketingDescription"), "fi")
-            help_raw   = detail.get("application", {}).get("helpText")
-            help_text  = _extract_lang_string(help_raw, "fi")
+            wage_info   = _extract_lang_string(pos.get("wagePrincipleInfo"), "fi")
+            wage_code   = str(pos.get("wagePrinciple") or pos.get("wagePrincipleCode") or "").strip()
+            marketing   = _extract_lang_string(pos.get("marketingDescription"), "fi")
+            help_raw    = detail.get("application", {}).get("helpText")
+            help_text   = _extract_lang_string(help_raw, "fi")
 
             description = desc_text or ""
-            raw_text    = "\n\n".join(filter(None, [desc_text, marketing, help_text]))
-            salary      = wage_info or ""
+            job_content_raw = "\n\n".join(filter(None, [desc_text, marketing, help_text]))
+            
+            if wage_info:
+                salary = wage_info
+            elif wage_code in ["01", "0101"]:
+                salary = "Competitive hourly wage based on Finnish collective agreements."
+            else:
+                salary = ""
 
             # ESCO Skills → what_we_expect
             for s in pos.get("skills", []):
@@ -315,17 +354,31 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                 or item.get("jobPostingDescription")
             )
             description = _extract_lang_string(desc_raw, "fi")
-            raw_text    = description
+            job_content_raw = description
 
-        # Employer email from helpText
+        # Recruiter contact info
         employer_email = ""
+        employer_name  = ""
+        employer_phone = ""
         if detail:
-            help_raw  = detail.get("application", {}).get("helpText")
-            help_text = _extract_lang_string(help_raw, "fi")
-            if help_text:
-                m = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', help_text)
-                if m:
-                    employer_email = m.group(0)
+            # 1. Try contacts list
+            contacts = detail.get("recruiter", {}).get("contacts")
+            if contacts and isinstance(contacts, list):
+                c = contacts[0]
+                employer_email = str(c.get("email") or "").strip()
+                fname = str(c.get("firstName") or "").strip()
+                lname = str(c.get("lastName") or "").strip()
+                employer_name = f"{fname} {lname}".strip()
+                employer_phone = str(c.get("telephone") or "").strip()
+
+            # 2. Fallback to helpText if email still empty
+            if not employer_email:
+                help_raw  = detail.get("application", {}).get("helpText")
+                help_text = _extract_lang_string(help_raw, "fi")
+                if help_text:
+                    m = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', help_text)
+                    if m:
+                        employer_email = m.group(0)
 
         # FINAL APPLY LINK LOGIC
         # 1. If we have a direct application URL, use it
@@ -340,16 +393,19 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             apply_link = job_link
 
         return {
+            "job_open_position":     open_positions,
             "title":                 title,
             "company":               company,
             "location":              raw_location,
             "jobLink":               job_link,
             "jobapply_link":         apply_link,
             "job_employer_email":    employer_email,
+            "job_employer_name":     employer_name,
+            "job_employer_phone_no": employer_phone,
             "date_posted":           posted,
             "date_expires":          expires,
             "description":           description,
-            "jobcontent":            raw_text,
+            "jobcontent":            job_content_raw,
             "salary":                salary,
             "employment_type":       employment_type,
             "language_requirements": langs,

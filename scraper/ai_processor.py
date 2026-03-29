@@ -327,28 +327,36 @@ def _extract_salary_from_text(raw_job: dict) -> str:
     If not found, return the fixed default text.
     """
     raw_salary = _clean_text(raw_job.get("salary_range", ""))
-    if raw_salary:
-        return raw_salary
-
     text = _clean_text(raw_job.get("jobcontent", ""))
+
+    # Use existing if numeric, otherwise we might need to translate it
+    if raw_salary and any(char.isdigit() for char in raw_salary):
+        return raw_salary
 
     salary_patterns = [
         r"(\d{1,3}(?:[.,]\d{1,2})?\s*[-–]\s*\d{1,3}(?:[.,]\d{1,2})?\s*€/h)",
         r"(\d{1,3}(?:[.,]\d{1,2})?\s*€/h)",
         r"(\d{1,5}(?:[.,]\d{1,2})?\s*[-–]\s*\d{1,5}(?:[.,]\d{1,2})?\s*€/kk)",
         r"(\d{1,5}(?:[.,]\d{1,2})?\s*€/kk)",
-        r"(palkka[:\s]+[^.]{1,80})",
-        r"(salary[:\s]+[^.]{1,80})",
-        r"(according to collective agreement[^.]{0,80})",
-        r"(TES[^.]{0,80})",
+        r"(palkka[:\s]+[^.]{1,40})",
+        r"(salary[:\s]+[^.]{1,40})",
+        r"(TES[:\s]+[^.]{1,40})",
+        r"(according to collective agreement[^.]{0,40})",
     ]
 
+    matched_salary = ""
     for pattern in salary_patterns:
         match = re.search(pattern, text, flags=re.IGNORECASE)
         if match:
-            value = _clean_text(match.group(1))
-            if value:
-                return value
+            matched_salary = _clean_text(match.group(1))
+            break
+
+    # If we have a Finnish looking salary or broad text, translate it
+    final_salary = matched_salary or raw_salary
+    if final_salary:
+        if _looks_finnish(final_salary):
+            return translator.translate_fi_to_en(final_salary)
+        return final_salary
 
     return DEFAULT_SALARY_TEXT
 

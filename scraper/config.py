@@ -18,6 +18,7 @@ WEBSITE_DIR = BASE_DIR
 DATA_DIR = os.path.join(BASE_DIR, "scraper", "data")
 
 JOBS_JSON_PATH = os.path.join(DATA_DIR, "jobs.json")
+TRANSLATED_JOBS_JSON_PATH = os.path.join(DATA_DIR, "translated_jobs.json")
 RAWJOBS_JSON_PATH = os.path.join(DATA_DIR, "rawjobs.json")
 SENT_ALERTS_PATH = os.path.join(DATA_DIR, "sent_alerts.json")
 

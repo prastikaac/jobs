@@ -128,7 +128,7 @@ def detect_locations(raw_location: str) -> list[str]:
         "Helsingin seutu"  → ["Helsinki"]
         "Koko Suomi"       → ["Finland"]
     """
-    if not raw_location:
+    if not raw_location or str(raw_location).lower() in ["none", "", "undetermined", "not specified"]:
         return ["Finland"]
 
     # Normalise separators

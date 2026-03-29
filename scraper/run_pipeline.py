@@ -457,6 +457,7 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     if not dry_run:
         logger.info("── Saving jobs.json ──")
         jobs_store.save_jobs(all_jobs)
+        jobs_store.save_translated_jobs(all_jobs)
 
     _print_summary(all_jobs, actually_new, img_count, alert_count)
 
