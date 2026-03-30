@@ -269,18 +269,19 @@ def analyse_job_content(text: str, title: str = "") -> dict:
             break
 
     # ── Employment type ──────────────────────────────────────────────────────
-    employment_type = []
+    work_time = "Full-time"  # default
+    continuity_of_work = "Permanent"  # default
     haystack_low = text.lower()
-    if any(k in haystack_low for k in ["full-time", "full time", "kokopäivä", "kokoaikainen"]):
-        employment_type.append("Full-time")
     if any(k in haystack_low for k in ["part-time", "part time", "osa-aikainen", "osa-aika"]):
-        employment_type.append("Part-time")
-    if any(k in haystack_low for k in ["temporary", "määräaikainen", "fixed-term"]):
-        employment_type.append("Temporary")
-    if any(k in haystack_low for k in ["permanent", "pysyvä", "toistaiseksi voimassa"]):
-        employment_type.append("Permanent")
-    if not employment_type:
-        employment_type = ["Full-time"]
+        work_time = "Part-time"
+    if any(k in haystack_low for k in ["summer job", "kesätyö", "kesatyö"]):
+        continuity_of_work = "Summer job"
+    elif any(k in haystack_low for k in ["seasonal", "kausityö", "kausityöntekijä"]):
+        continuity_of_work = "Seasonal work"
+    elif any(k in haystack_low for k in ["temporary", "määräaikainen", "fixed-term"]):
+        continuity_of_work = "Temporary"
+    elif any(k in haystack_low for k in ["permanent", "pysyvä", "toistaiseksi voimassa"]):
+        continuity_of_work = "Permanent"
 
     # ── Language requirements ────────────────────────────────────────────────
     language_requirements = []
@@ -393,7 +394,8 @@ def analyse_job_content(text: str, title: str = "") -> dict:
 
     return {
         "salary_range":           salary_range,
-        "employment_type":        employment_type,
+        "work_time":              work_time,
+        "continuity_of_work":     continuity_of_work,
         "positions":              positions,
         "language_requirements":  language_requirements,
         "job_responsibilities":   job_responsibilities,
@@ -560,12 +562,17 @@ def normalise_raw_job(raw: dict) -> dict:
         "jobapply_link":        apply,
         "jobLink":              link,
         "job_employer_email":   raw.get("job_employer_email") or "",
+        "job_employer_name":    raw.get("job_employer_name") or "",
+        "job_employer_phone_no": raw.get("job_employer_phone_no") or "",
         "date_posted":          posted,
         "date_expires":         expires,
         "scraped_at":           datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        # ── Open positions ────────────────────────────────────────────────────
+        "open_positions":       int(raw.get("open_positions") or 1),
         # ── Structured fields (lightweight, no AI) ────────────────────────────
         "salary_range":         salary,
-        "employment_type":      raw.get("employment_type") or analysed["employment_type"],
+        "workTime":             raw.get("workTime") or analysed["work_time"],
+        "continuityOfWork":     raw.get("continuityOfWork") or analysed["continuity_of_work"],
         "language_requirements": raw.get("language_requirements") or analysed["language_requirements"],
         "what_we_expect":       raw.get("what_we_expect") or analysed["what_we_expect"],
         "job_responsibilities": raw.get("job_responsibilities") or analysed["job_responsibilities"],

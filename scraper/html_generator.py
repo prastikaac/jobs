@@ -211,7 +211,8 @@ def generate_job_page(job: dict) -> bool:
 
     # Job Info values
     language_req = ", ".join(job.get("language_requirements") or []) or "Finnish or English"
-    employment_type = ", ".join(job.get("employment_type") or []) or "Full-time, Permanent"
+    work_time = job.get("workTime") or "Full-time"
+    continuity_of_work = job.get("continuityOfWork") or "Permanent"
     salary = job.get("salary_range") or job.get("salary") or "Competitive hourly wage based on Finnish collective agreements"
 
     # ── Application method: direct URL or email-only ─────────────────────────
@@ -232,20 +233,29 @@ def generate_job_page(job: dict) -> bool:
         
         contact_info = ""
         if contact_name or contact_phone:
-            name_part = f" : {contact_name}" if contact_name else ""
-            phone_part = f" ({contact_phone})" if contact_phone else ""
-            contact_info = f" Also, you may reach out to the Contact person for the job{_esc(name_part)}{_esc(phone_part)}."
+            c_name = _esc(contact_name) if contact_name else ""
+            c_phone = f" ({_esc(contact_phone)})" if contact_phone else ""
+            colon = " : " if c_name or c_phone else ""
+            contact_info = f" Also, you may reach out to the Contact person for the job{colon}{c_name}{c_phone}."
+
+        import urllib.parse
+        subject_raw = f"Application for the Job - {title}"
+        body_raw = f"Dear Hiring Manager,\n\nI hope this message finds you well.\n\nI am writing to express my interest in the {title}. I am motivated, reliable, and eager to contribute my skills and experience to your team.\n\nI have experience in relevant tasks and a strong ability to adapt quickly to new environments. I take pride in being hardworking, detail-oriented, and maintaining a positive attitude at work. I am confident that I can add value to your organization.\n\nPlease find my CV & Cover Letter attached for your review. I would welcome the opportunity to discuss how my skills and experience align with your needs.\n\nThank you for your time and consideration. I look forward to hearing from you.\n\nKind regards,\nYOUR_NAME"
+        
+        subject_encoded = urllib.parse.quote(subject_raw)
+        body_encoded = urllib.parse.quote(body_raw)
+        mailto_link = f"mailto:{_esc(employer_email)}?subject={subject_encoded}&body={body_encoded}"
 
         email_instructions = (
             f"<p>\n"
             f"Since there is no direct online application portal for this position, "
             f"interested candidates are encouraged to submit their application, "
             f"including a cover letter and CV, via email to "
-            f"<b><a href=\"mailto:{_esc(employer_email)}\">{_esc(employer_email)}</a></b>."
+            f"<b><a href=\"{mailto_link}\">{_esc(employer_email)}</a></b>."
             f"{contact_info}\n"
             f"</p>"
         )
-        job_link = f"mailto:{_esc(employer_email)}"
+        job_link = mailto_link
     else:
         email_instructions = ""
 
@@ -253,7 +263,7 @@ def generate_job_page(job: dict) -> bool:
         # Title
         "{-job title-}": title,
         # Open Positions
-        "{-job open position-}": str(job.get("job_open_position", 1)),
+        "{-job open position-}": str(job.get("open_positions", 1)),
         # Company
         "{-company name-}": company,
         "{-company-}": company,
@@ -281,8 +291,11 @@ def generate_job_page(job: dict) -> bool:
         "{-job language-}": _esc(language_req),
         # Salary
         "{-job salary-}": _esc(salary),
-        # Job type
-        "{-job type-}": _esc(employment_type),
+        # Work time / continuity (template placeholders)
+        "{-workTime-}": _esc(work_time),
+        "{-continuityOfWork-}": _esc(continuity_of_work),
+        # Legacy placeholder — kept blank so it doesn't appear in output
+        "{-job type-}": _esc(f"{work_time}, {continuity_of_work}"),
         # URL / slug used in breadcrumbs
         "{-job url-}": job_id,
         # Full canonical page URL
@@ -290,6 +303,14 @@ def generate_job_page(job: dict) -> bool:
         # Email instructions (conditional)
         "{-email_instructions-}": email_instructions,
         "{-job-employer-email-}": _esc(employer_email),
+        
+        # New Recruiter Information Section
+        "{-job_employer_name-}": _esc(job.get("job_employer_name", "")),
+        "{-employer_email-}": _esc(employer_email),
+        "{-job_employer_phone_no-}": _esc(job.get("job_employer_phone_no", "")),
+        "{-display_contact_person-}": "" if job.get("job_employer_name", "") else 'style="display: none;"',
+        "{-display_employer_email-}": "" if employer_email else 'style="display: none;"',
+        "{-display_employer_phone-}": "" if job.get("job_employer_phone_no", "") else 'style="display: none;"',
     }
 
     for key, val in replacements.items():
@@ -330,7 +351,7 @@ def _job_card(job: dict) -> str:
     job_link   = _esc(job.get("jobapply_link", ""))
     job_id     = _esc(job.get("job_id", job.get("id", "")))
     
-    emp_type       = ", ".join(job.get("employment_type") or []) or "full-time"
+    work_time_card = (job.get("workTime") or "Full-time").lower()
     search_keywords = _esc(job.get("search_keywords") or title.lower())
     
     # Determine region-aware data-location for frontend filtering
@@ -360,8 +381,10 @@ def _job_card(job: dict) -> str:
         
     data_loc = "-".join(parts)
 
+    continuity_card = (job.get("continuityOfWork") or "Permanent").lower().replace(" ", "-")
+
     return f"""
-        <article class="ntry" data-availability="{_esc(emp_type).lower()}" data-category="{category.lower()}"
+        <article class="ntry" data-availability="{_esc(work_time_card)}" data-continuityofwork="{_esc(continuity_card)}" data-category="{category.lower()}"
                  data-location="{data_loc}" data-title="{search_keywords}">
 
           <div class="pThmb iyt">

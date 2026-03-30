@@ -321,6 +321,15 @@ def _translate_title_direct(raw_title: str) -> str:
     return translator.translate_fi_to_en(title)
 
 
+_COLLECTIVE_AGREEMENT_SALARY = "Competitive hourly wage based on Finnish collective agreements."
+
+# Finnish salary phrases that mean "collective agreement wage" — normalize them immediately
+_TES_PHRASES = [
+    "tes:", "tes ", " tes", "ovtes", "ov-tes", "tessi", "asfalttialan", "kaupan alan",
+    "tyoehtosopimus", "työehtosopimus", "mukaisesti", "perustuva", "palkkausjärjestelmä"
+]
+
+
 def _extract_salary_from_text(raw_job: dict) -> str:
     """
     Decide salary in Python from raw structured fields or jobcontent.
@@ -329,8 +338,25 @@ def _extract_salary_from_text(raw_job: dict) -> str:
     raw_salary = _clean_text(raw_job.get("salary_range", ""))
     text = _clean_text(raw_job.get("jobcontent", ""))
 
+    # Normalize Finnish collective-agreement salary phrases to a clean English string
+    if raw_salary:
+        raw_salary_low = raw_salary.lower()
+        # If it contains "TES" (or related phrases) AND doesn't have clear digits (like EUR amounts)
+        # or if it's a very known pattern like "TES:n mukaisesti"
+        if any(phrase in raw_salary_low for phrase in _TES_PHRASES):
+            # Exception: if it contains actual numbers like "15,50 €/h", keep it for extraction
+            if not any(char.isdigit() for char in raw_salary if char not in "0123456789"): 
+                # This is a bit too complex, let's simplify: 
+                # if it contains EUR or digits in a range pattern, keep it. 
+                # Otherwise, if it has 'TES', it's almost certainly collective agreement.
+                if "€" not in raw_salary and not re.search(r"\d+[\s.-]+\d+", raw_salary):
+                    return _COLLECTIVE_AGREEMENT_SALARY
+            # If it's a very short or specific TES-only string
+            if len(raw_salary) < 30 and ("tes" in raw_salary_low or "ovtes" in raw_salary_low):
+                return _COLLECTIVE_AGREEMENT_SALARY
+
     # Use existing if numeric, otherwise we might need to translate it
-    if raw_salary and any(char.isdigit() for char in raw_salary):
+    if raw_salary and any(char.isdigit() for char in raw_salary) and "€" in raw_salary:
         return raw_salary
 
     salary_patterns = [
@@ -354,6 +380,10 @@ def _extract_salary_from_text(raw_job: dict) -> str:
     # If we have a Finnish looking salary or broad text, translate it
     final_salary = matched_salary or raw_salary
     if final_salary:
+        # Normalize collective-agreement phrases caught from jobcontent too
+        final_salary_low = final_salary.lower()
+        if any(phrase in final_salary_low for phrase in _TES_PHRASES):
+            return _COLLECTIVE_AGREEMENT_SALARY
         if _looks_finnish(final_salary):
             return translator.translate_fi_to_en(final_salary)
         return final_salary
@@ -494,7 +524,8 @@ def _sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cat
     if not who_is_this_for:
         who_is_this_for = _extract_field_items_from_raw_text(jobcontent, "who_is_this_for")
 
-    employment_type = _clean_list_field(raw_job.get("employment_type") or [], max_items=3)
+    work_time = _clean_text(raw_job.get("workTime") or "Full-time")
+    continuity_of_work = _clean_text(raw_job.get("continuityOfWork") or "Permanent")
     language_requirements = _clean_list_field(raw_job.get("language_requirements") or [], max_items=4)
 
     search_keywords = _clean_text(parsed.get("search_keywords", ""))
@@ -509,7 +540,8 @@ def _sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cat
         "meta_description": meta_description,
         "description": description,
         "salary_range": salary_range,
-        "employment_type": employment_type[:3],
+        "workTime": work_time,
+        "continuityOfWork": continuity_of_work,
         "language_requirements": language_requirements[:4],
         "what_we_expect": what_we_expect[:4],
         "job_responsibilities": job_responsibilities[:4],
@@ -539,7 +571,8 @@ def _build_fallback_ai_data(raw_job: dict, fallback_category: str, valid_categor
         "meta_description": meta_description,
         "description": description,
         "salary_range": _extract_salary_from_text(raw_job),
-        "employment_type": _clean_list_field(raw_job.get("employment_type", []), max_items=3),
+        "workTime": _clean_text(raw_job.get("workTime") or "Full-time"),
+        "continuityOfWork": _clean_text(raw_job.get("continuityOfWork") or "Permanent"),
         "language_requirements": _clean_list_field(raw_job.get("language_requirements", []), max_items=4),
         "what_we_expect": _clean_list_field(raw_job.get("what_we_expect", [])) or _extract_field_items_from_raw_text(jobcontent, "what_we_expect"),
         "job_responsibilities": _clean_list_field(raw_job.get("job_responsibilities", [])) or _extract_field_items_from_raw_text(jobcontent, "job_responsibilities"),
@@ -554,21 +587,30 @@ def _build_fallback_ai_data(raw_job: dict, fallback_category: str, valid_categor
 
 # ── Ollama calls ──────────────────────────────────────────────────────────────
 
-def _call_ollama_for_category(text: str) -> tuple[str, bool, str]:
+def _call_ollama_for_category(job: dict) -> tuple[str, bool, str]:
     """
     AI chooses the category from the allowed list by reading the job content.
     """
     valid_categories = config.VALID_CATEGORIES + (["other"] if "other" not in config.VALID_CATEGORIES else [])
     cats_str = ", ".join(valid_categories)
 
+    text = job.get("jobcontent", "")
+    title = job.get("title", "")
+    occupations = ", ".join(job.get("job_occupations_en", []))
+    
+    context_str = f"Job Title: {title}\n"
+    if occupations:
+        context_str += f"Official Occupations: {occupations}\n"
+    context_str += f"Job content:\n{text[:MAX_INPUT_CHARS]}"
+
     prompt = (
-        "Read the job content and choose the single best matching category from the allowed category list.\n"
+        "Read the job information and choose the single best matching category from the allowed category list.\n"
         "Return ONLY the exact category string.\n"
         "Do not explain.\n"
         "Do not return multiple categories.\n"
         "Do not invent a new category.\n\n"
         f"Allowed categories:\n{cats_str}\n\n"
-        f"Job content:\n{text[:MAX_INPUT_CHARS]}"
+        f"{context_str}"
     )
 
     payload = {
@@ -621,8 +663,10 @@ def _call_ollama_for_content(text: str, raw_job: dict | None = None, ai_category
         raw_context_lines.append(f"RAW LOCATION: {raw_job['jobLocation']}")
     if raw_job.get("salary_range"):
         raw_context_lines.append(f"RAW SALARY: {raw_job['salary_range']}")
-    if raw_job.get("employment_type"):
-        raw_context_lines.append(f"RAW EMPLOYMENT TYPE: {raw_job['employment_type']}")
+    if raw_job.get("workTime") or raw_job.get("continuityOfWork"):
+        wt = raw_job.get("workTime", "Full-time")
+        cow = raw_job.get("continuityOfWork", "Permanent")
+        raw_context_lines.append(f"RAW JOB TYPE: {wt}, {cow}")
     if raw_job.get("language_requirements"):
         raw_context_lines.append(f"RAW LANGUAGES: {raw_job['language_requirements']}")
 
@@ -644,6 +688,8 @@ def _call_ollama_for_content(text: str, raw_job: dict | None = None, ai_category
 
         "STRICT RULES:\n"
         "- description must be exactly 1 paragraph, max 500 characters.\n"
+        "- EVERYTHING must be in English. No Finnish snippets.\n"
+        "- Do NOT include prefixes like 'Source job details:', 'Job description:', or 'RAW TITLE:'.\n"
         "- Arrays must contain only specific, supported facts from the source text.\n"
         "- Do not include deadlines, dates, phone numbers, email addresses, or apply instructions in arrays.\n\n"
 
@@ -769,13 +815,17 @@ def _build_formatted_job(raw_job: dict, ai_data: dict) -> dict:
         "jobapply_link": raw_job.get("jobapply_link", raw_job.get("jobLink", "")),
         "jobLink": raw_job.get("jobLink", ""),
         "job_employer_email": raw_job.get("job_employer_email", ""),
+        "job_employer_name": raw_job.get("job_employer_name", ""),
+        "job_employer_phone_no": raw_job.get("job_employer_phone_no", ""),
         "jobUrl": f"{config.GITHUB_PAGES_BASE_URL}{job_path}",
         "date_posted": raw_job.get("date_posted", ""),
         "date_expires": raw_job.get("date_expires", ""),
         "scraped_at": raw_job.get("scraped_at", ""),
+        "open_positions": int(raw_job.get("open_positions") or 1),
 
         "salary_range": _extract_salary_from_text(raw_job),
-        "employment_type": _clean_list_field(raw_job.get("employment_type") or [], max_items=3),
+        "workTime": _clean_text(raw_job.get("workTime") or "Full-time"),
+        "continuityOfWork": _clean_text(raw_job.get("continuityOfWork") or "Permanent"),
         "language_requirements": _clean_list_field(raw_job.get("language_requirements") or [], max_items=4),
 
         "meta_description": meta_desc,
@@ -818,6 +868,18 @@ def apply_manual_fixes(job: dict) -> dict:
 
     for field in ["what_we_expect", "job_responsibilities", "what_we_offer", "who_is_this_for"]:
         job[field] = _clean_list_field(job.get(field, []))
+
+    # Fix any existing jobs that still carry raw Finnish collective-agreement salary text
+    existing_salary = _clean_text(job.get("salary_range", ""))
+    if existing_salary:
+        sal_low = existing_salary.lower()
+        # Much more aggressive check for manual fixes
+        if any(phrase in sal_low for phrase in _TES_PHRASES) or (
+            "tes" in sal_low and "€" not in existing_salary
+        ):
+            job["salary_range"] = _COLLECTIVE_AGREEMENT_SALARY
+        elif existing_salary == "TES" or existing_salary == "OVTES":
+             job["salary_range"] = _COLLECTIVE_AGREEMENT_SALARY
 
     return job
 
@@ -874,7 +936,13 @@ def process_raw_jobs(
 
         # 4. If not found, send the TRANSLATED content to the AI to decide
         if not found_category:
-            ai_category, cat_ok, cat_err = _call_ollama_for_category(translated_content)
+            # Create a context object with translated content and official occupations
+            cat_context = {
+                "title": title,
+                "jobcontent": translated_content,
+                "job_occupations_en": raw.get("job_occupations_en", [])
+            }
+            ai_category, cat_ok, cat_err = _call_ollama_for_category(cat_context)
             if not cat_ok:
                 logger.warning("AI category selection failed for '%s' (translated text): %s", title, cat_err)
             

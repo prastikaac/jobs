@@ -292,4 +292,51 @@ Competitive hourly wage based on Finnish collective agreements
 
 
 
- 
+
+- Firebase alerts 
+
+
+
+
+- update municipalities codes for  "049",
+      "091",
+      "092"
+      extract the municipalities name from the tyomarkkinatori website
+
+
+
+
+
+- things to put in filter for job search
+ -  job published time 
+ - job application deadline
+ - Working language for job search
+ - Job Type 
+ - Working Time
+
+
+
+
+
+    
+
+
+
+
+still some jobs content are not translated properly:  jobs\other\spray-painter-loimaa-281f1864.html
+
+
+
+
+
+
+
+
+
+
+
+- subject not being appended to mailto link
+
+
+
+- AI hallucination detected improve prompt

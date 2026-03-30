@@ -257,8 +257,9 @@ CATEGORY_KEYWORDS = {
         "roofer", "roofing", "kattotyö", "roof installer"
     ],
     "earthworks-and-infrastructure": [
-        "maanrakennus", "maanrakennustyöntekijä", "earthworks", "road construction",
-        "excavator", "groundworks", "infrastructure"
+        "maanrakennus", "maanrakentaja", "maanrakennustyöntekijä", "earthworks", "road construction",
+        "excavator", "groundworks", "infrastructure", "asfaltti", "asphalt",
+        "liikenteenohjaaja", "traffic control", "liikenteenohjaus", "putkitaitoinen", "pipe-skilled"
     ],
     "surveying-and-site-engineering": [
         "surveying", "land surveyor", "site engineer", "measurement technician"

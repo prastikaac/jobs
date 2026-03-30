@@ -232,7 +232,9 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         what_we_expect: list = []
         job_responsibilities: list = []
         what_we_offer: list = []
-        employment_type: list = []
+        work_time = ""
+        continuity_of_work = ""
+        job_occupations_en: list = []
         job_content_raw = ""
 
         if detail:
@@ -248,7 +250,12 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             job_content_raw = "\n\n".join(filter(None, [desc_text, marketing, help_text]))
             
             if wage_info:
-                salary = wage_info
+                # Normalize specific Finnish salary strings to English requested by user
+                w_info_low = wage_info.lower()
+                if "asfalttialan tes" in w_info_low or "tes:in mukaisen" in w_info_low:
+                    salary = "Competitive hourly wage based on Finnish collective agreements."
+                else:
+                    salary = wage_info
             elif wage_code in ["01", "0101"]:
                 salary = "Competitive hourly wage based on Finnish collective agreements."
             else:
@@ -260,11 +267,14 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                 if s_label and s_label not in what_we_expect:
                     what_we_expect.append(s_label)
 
-            # ESCO Occupations → job_responsibilities
+            # ESCO Occupations → job_responsibilities + local categorization help
             for o in pos.get("occupations", []):
-                o_label = _extract_lang_string(o.get("prefLabel"), "fi")
-                if o_label and o_label not in job_responsibilities:
-                    job_responsibilities.append(o_label)
+                o_label_fi = _extract_lang_string(o.get("prefLabel"), "fi")
+                o_label_en = _extract_lang_string(o.get("prefLabel"), "en")
+                if o_label_fi and o_label_fi not in job_responsibilities:
+                    job_responsibilities.append(o_label_fi)
+                if o_label_en and o_label_en not in job_occupations_en:
+                    job_occupations_en.append(o_label_en)
 
             # Language requirements
             work_langs = pos.get("workLanguages") or []
@@ -272,26 +282,26 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                 cmap  = {"fi": "Finnish", "en": "English", "sv": "Swedish"}
                 langs = [cmap.get(l, l.capitalize()) for l in work_langs if l]
 
-            # Employment type (workTime + continuityOfWork)
-            wt = str(pos.get("workTime") or "").strip()
-            wt_label = {"01": "Full-time", "02": "Part-time"}.get(wt)
-            if wt_label:
-                employment_type.append(wt_label)
+            # Work time (workTime code → human-readable)
+            _wt_map = {"01": "Full-time", "02": "Part-time"}
+            wt_code = str(pos.get("workTime") or "").strip()
+            work_time = _wt_map.get(wt_code, "Full-time")
 
-            cont_map = {"01": "Permanent", "02": "Temporary"}
+            # Continuity of work (continuityOfWork code → human-readable)
+            _cont_map = {
+                "01": "Permanent",
+                "02": "Temporary",
+                "0201": "Seasonal work",
+                "0202": "Summer job",
+            }
             continuity = pos.get("continuityOfWork") or []
-            if isinstance(continuity, list):
-                for code in continuity:
-                    lbl = cont_map.get(str(code).strip())
-                    if lbl and lbl not in employment_type:
-                        employment_type.append(lbl)
-            elif isinstance(continuity, str):
-                lbl = cont_map.get(continuity.strip())
-                if lbl:
-                    employment_type.append(lbl)
-
-            if not employment_type:
-                employment_type = ["Full-time"]
+            continuity_of_work = "Permanent"  # default
+            if isinstance(continuity, list) and continuity:
+                # Use the first code (most specific)
+                first_code = str(continuity[0]).strip()
+                continuity_of_work = _cont_map.get(first_code, "Permanent")
+            elif isinstance(continuity, str) and continuity.strip():
+                continuity_of_work = _cont_map.get(continuity.strip(), "Permanent")
 
             # Markdown section parser — fills gaps not covered by ESCO
             if desc_text:
@@ -393,7 +403,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             apply_link = job_link
 
         return {
-            "job_open_position":     open_positions,
+            "open_positions":        open_positions,
             "title":                 title,
             "company":               company,
             "location":              raw_location,
@@ -407,10 +417,12 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             "description":           description,
             "jobcontent":            job_content_raw,
             "salary":                salary,
-            "employment_type":       employment_type,
+            "workTime":              work_time,
+            "continuityOfWork":      continuity_of_work,
             "language_requirements": langs,
             "what_we_expect":        what_we_expect,
             "job_responsibilities":  job_responsibilities,
+            "job_occupations_en":    job_occupations_en,
             "what_we_offer":         what_we_offer,
             "source":                "tyomarkkinatori",
             "id":                    job_id_raw,

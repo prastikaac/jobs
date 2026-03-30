@@ -1,0 +1,12 @@
+{
+    "workTime": {
+        "01": "Full-time",
+        "02": "Part-time"
+    },
+    "continuityOfWork": {
+        "01": "Permanent",
+        "02": "Temporary",
+        "0201": "Seasonal work",
+        "0202": "Summer job"
+    }
+}

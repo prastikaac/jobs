@@ -1,268 +1,262 @@
 [
   {
-    "scrape_timestamp": "2026-03-30 02:44:32",
+    "scrape_timestamp": "2026-03-30 20:36:15",
     "jobs": [
       {
-        "id": "fc2dea1c",
-        "job_id": "carpenter-with-a-van-helsinki-finland-fc2dea1c",
+        "id": "03ec4dab",
+        "job_id": "lecturer-in-physics-and-chemistry-raisio-03ec4dab",
         "processed": true,
-        "title": "Carpenter with a Van - Helsinki",
-        "company": "Amiko Helsinki Oy",
-        "job_category": "carpentry",
-        "jobLocation": [
-          "Finland"
-        ],
-        "jobapply_link": "http://amiko.likeit.fi/apply/106292845",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14990f9d-55e1-450b-bd51-638bed2fea09/en",
-        "job_employer_email": "mikko.karimaa@amiko.fi",
-        "jobUrl": "https://findjobinfinland.fi/jobs/carpentry/carpenter-with-a-van-helsinki-finland-fc2dea1c",
-        "date_posted": "2026-03-29",
-        "date_expires": "2026-04-10",
-        "scraped_at": "2026-03-30 02:44:32",
-        "salary_range": "TES:in mukaisen palkkauksen-palkkausjärjeste",
-        "employment_type": [
-          "Full-time",
-          "Permanent"
-        ],
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "A carpenter needed for renovation sites in the capital region.",
-        "description": "We are looking for a motivated and professional carpenter with a van for various renovation sites in the capital region. Competitive pay based on Finnish collective agreements, high quality tools, appropriate work clothes, multi-faceted tasks at different sites, existing occupational safety card, good Finnish language skills and team skills.",
-        "what_we_expect": [
-          "35 years of experience",
-          "building expertise",
-          "occupational safety card",
-          "Finnish language skills"
-        ],
-        "job_responsibilities": [
-          "carpentry work",
-          "site visits",
-          "teamwork"
-        ],
-        "what_we_offer": [
-          "competitive pay",
-          "long-term employment opportunities",
-          "tools and appropriate work clothes",
-          "multi-faceted tasks at different sites"
-        ],
-        "who_is_this_for": [
-          "professionals with experience in carpentry and van work"
-        ],
-        "search_keywords": "carpenter, renovation site, capital region, Amiko Helsinki Oy",
-        "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/carpentry/10.png"
-      },
-      {
-        "id": "eb0bc8c6",
-        "job_id": "spottelates-structural-costs-to-marry-karkkila-eb0bc8c6",
-        "processed": true,
-        "title": "SPOTTELATES / STRUCTURAL COSTS To marry",
-        "company": "Amiko Helsinki Oy",
-        "job_category": "other",
-        "jobLocation": [
-          "Karkkila",
-          "Kirkkonummi",
-          "Lohja",
-          "Nurmijärvi",
-          "Sipoo",
-          "Hyvinkää",
-          "Mäntsälä",
-          "Tuusula",
-          "Vihti"
-        ],
-        "jobapply_link": "http://amiko.likeit.fi/apply/106292195",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/499ba831-9d60-4229-b497-330dd621a4db/en",
-        "job_employer_email": "mikko.karimaa@amiko.fi",
-        "jobUrl": "https://findjobinfinland.fi/jobs/other/spottelates-structural-costs-to-marry-karkkila-eb0bc8c6",
-        "date_posted": "2026-03-29",
-        "date_expires": "2026-04-11",
-        "scraped_at": "2026-03-30 02:44:32",
-        "salary_range": "TES:in mukaisen palkkauksen-palkkausjärjeste",
-        "employment_type": [
-          "Full-time",
-          "Temporary"
-        ],
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "SPOTTELATES / STRUCTURAL COSTS To marry at Amiko Helsinki Oy in Karkkila. Explore this opportunity in Finland.",
-        "description": "We are looking for SPOTTENEA / STRUCTURAL COSTS To the data center site in Vihti! As a Spotter, you are responsible for monitoring and controlling the movements of heavy machinery and vehicles on the site. You work in close cooperation with drivers and other site personnel, ensuring that everyone moves in a controlled and safe manner.",
-        "what_we_expect": [
-          "experience with construction sites",
-          "understanding safe working distances and movements of heavy machinery",
-          "existing occupational safety card or readiness to perform it before work begins",
-          "good cooperation skills and responsible attitude"
-        ],
-        "job_responsibilities": [
-          "control and control of heavy machinery and vehicles in the site area",
-          "ensure occupational safety, for example, by warning workers and drivers about obstacles, people working in the vicinity or other potential risks",
-          "general safety and smooth traffic management in the site area"
-        ],
-        "what_we_offer": [
-          "competitive hours based on Finnish collective agreements",
-          "Vihti"
-        ],
-        "who_is_this_for": [
-          "construction workers",
-          "site personnel",
-          "heavy machinery drivers"
-        ],
-        "search_keywords": "SPOTTENEA, structural costs, data center site, Vihti",
-        "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/other/22.png"
-      },
-      {
-        "id": "1f2163ac",
-        "job_id": "early-education-teacher-a-nursery-in-the-meadow-finland-1f2163ac",
-        "processed": true,
-        "title": "Early Education Teacher, A Nursery in the Meadow",
-        "company": "Espoon kaupunki",
+        "title": "Lecturer in Physics and Chemistry",
+        "company": "Raision kaupunki",
         "job_category": "education-and-teaching",
         "jobLocation": [
-          "Finland"
+          "Raisio"
         ],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/ESPOO-03-554-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4a242b2c-e147-4e41-b7c1-24cbd69c3607/en",
-        "job_employer_email": "etunimi.sukunimi@espoo.fi",
-        "jobUrl": "https://findjobinfinland.fi/jobs/education-and-teaching/early-education-teacher-a-nursery-in-the-meadow-finland-1f2163ac",
-        "date_posted": "2026-03-29",
-        "date_expires": "2026-04-13",
-        "scraped_at": "2026-03-30 02:44:32",
-        "salary_range": "Palkka: 3177,50 €/kk",
-        "employment_type": [
-          "Full-time",
-          "Permanent"
-        ],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/716360/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e0512a36-54b5-4d7d-bff2-90fef4217285/en",
+        "job_employer_email": "janne.ahlqvist@raisio.fi",
+        "job_employer_name": "Janne Ahlqvist",
+        "job_employer_phone_no": "0400445616",
+        "jobUrl": "https://findjobinfinland.fi/jobs/education-and-teaching/lecturer-in-physics-and-chemistry-raisio-03ec4dab",
+        "date_posted": "2026-03-30",
+        "date_expires": "2026-04-14",
+        "scraped_at": "2026-03-30 20:36:15",
+        "open_positions": 2,
+        "salary_range": "Palkka: 3 294,02€ + Raisio-lisä, mahdolliset määrävuosikorotukset ja mahdolliset TVA-lisät.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Early Education Teacher, A Nursery in the Meadow at Espoon kaupunki. Explore this opportunity in Finland.",
-        "description": "We are looking for an early-childhood teacher to join our small, warm-minded day care home that offers open interaction and a happy atmosphere. Located near Tapiola city centre, we provide support through a mentoring program.",
+        "meta_description": "Lecturer in Physics and Chemistry at Raision kaupunki in Raisio. Explore this opportunity in Finland.",
+        "description": "The post of Professor of Physics and Chemistry is available at the Information Park School, Raisio. The salary includes a supplement from Raisio, possible annual increases, and possible TVA supplements.",
         "what_we_expect": [
-          "38 h 15 min / week",
-          "permanent job"
+          "English language skills",
+          "management of teaching material content",
+          "interpersonal skills"
         ],
         "job_responsibilities": [
-          "teaching children aged between 1 and 5 in different groups",
-          "camping trips every week"
+          "teaching physics and chemistry classes",
+          "class director tasks",
+          "CLIL pedagogy in English"
         ],
         "what_we_offer": [
-          "supportive environment for professional growth",
-          "mentoring program to familiarize with early education"
+          "modern teaching equipment",
+          "Chromebook access for students",
+          "up-to-date TV skills"
         ],
         "who_is_this_for": [
-          "English-speaking candidates interested in early childhood education"
+          "qualified individuals with a degree in Physics or Chemistry"
         ],
-        "search_keywords": "Early Education Teacher, A Nursery in the Meadow Espoon kaupunki Finland other",
+        "search_keywords": "Lecturer in Physics and Chemistry Raision kaupunki Raisio other",
         "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/education-and-teaching/29.png"
+        "image_url": "https://findjobinfinland.fi/images/jobs/education-and-teaching/27.png"
       },
       {
-        "id": "583e3c82",
-        "job_id": "traffic-controllers-for-construction-sites-in-pirkanmaa-tamp-ylöjärvi-583e3c82",
+        "id": "ecff5d9b",
+        "job_id": "excavator-driver-in-espoo-finland-ecff5d9b",
         "processed": true,
-        "title": "Traffic Controllers for Construction Sites in Pirkanmaa, Tampere and Surrounding Areas",
-        "company": "Ramudden Oy Ab, Liikenteenohjaus Ja Tienpäällystys",
+        "title": "Excavator Driver in Espoo",
+        "company": "Takuurekry Oy",
+        "job_category": "engineering",
+        "jobLocation": [
+          "Finland"
+        ],
+        "jobapply_link": "https://urat.takuurekry.fi/jobs/7486656-kaivinkoneenkuljettaja-espooseen/applications/new?promotion=1921533-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9e2db2d6-1002-4315-8b03-edd023a86fe1/en",
+        "job_employer_email": "jukka.saarijarvi@takuurekry.fi",
+        "job_employer_name": "Jukka Saarijärvi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobinfinland.fi/jobs/engineering/excavator-driver-in-espoo-finland-ecff5d9b",
+        "date_posted": "2026-03-30",
+        "date_expires": "2026-04-13",
+        "scraped_at": "2026-03-30 20:36:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Excavator Driver in Espoo at Takuurekry Oy. Explore this opportunity in Finland.",
+        "description": "We are seeking an excavator driver for municipal engineering projects in Espoo. Previous experience with a wheelbase excavator and 3-D control system management is required.",
+        "what_we_expect": [
+          "Previous experience with a wheelbase excavator",
+          "3-D control system management",
+          "Professional skills",
+          "Smooth cooperation with the other working group"
+        ],
+        "job_responsibilities": [
+          "Excavation work on municipal engineering projects in Espoo",
+          "Work independently and smoothly as part of a team"
+        ],
+        "what_we_offer": [
+          "Interesting job opportunity for local technology worksites",
+          "Long-term project in a well-defined and responsible role",
+          "Professional working environment with trust, quality, and genuine partnership"
+        ],
+        "who_is_this_for": [
+          "Excavator drivers interested in municipal engineering projects",
+          "Municipal engineers looking for new opportunities"
+        ],
+        "search_keywords": "excavator driver Espoo, excavator driver municipal engineering, municipal engineer job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobinfinland.fi/images/jobs/engineering/16.png"
+      },
+      {
+        "id": "25c06f7e",
+        "job_id": "cook-youth-centre-piispalu-to-kannonkoski-äänekoski-25c06f7e",
+        "processed": true,
+        "title": "Cook Youth Centre Piispalu to Kannonkoski",
+        "company": "OivaTyö Oy",
         "job_category": "other",
         "jobLocation": [
-          "Ylöjärvi",
-          "Nokia",
-          "Tampere"
+          "Äänekoski",
+          "Karstula",
+          "Kannonkoski",
+          "Viitasaari",
+          "Saarijarvi"
         ],
-        "jobapply_link": "https://www.recright.com/careers/fi/ramudden-oy",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f32ee6f8-2718-44ed-b926-0e84671cfed6/en",
-        "job_employer_email": "evi.ahtola@ramudden.fi",
-        "jobUrl": "https://findjobinfinland.fi/jobs/other/traffic-controllers-for-construction-sites-in-pirkanmaa-tamp-ylöjärvi-583e3c82",
-        "date_posted": "2026-03-29",
-        "date_expires": "2026-04-12",
-        "scraped_at": "2026-03-30 02:44:32",
-        "salary_range": "Asfalttialan TES",
-        "employment_type": [
-          "Full-time",
-          "Permanent"
-        ],
+        "jobapply_link": "https://oivatyo.rekrytointi.com/paikat/index.php?o=A_A&jid=327&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d590c8e4-2ebb-4db7-a672-fdf3543823a9/en",
+        "job_employer_email": "oiva@oivatyo.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobinfinland.fi/jobs/other/cook-youth-centre-piispalu-to-kannonkoski-äänekoski-25c06f7e",
+        "date_posted": "2026-03-30",
+        "date_expires": "2026-04-15",
+        "scraped_at": "2026-03-30 20:36:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
         "language_requirements": [
           "Finnish"
         ],
         "meta_description": "short English SEO sentence",
-        "description": "We are looking for traffic controllers on several sites in Pirkanmaa! Ensure safe passage through construction sites as a team effort. Full-time position with asphalt wages.",
+        "description": "The Bishop is Finland's largest youth centre located in the middle of Finland, offering delicious and healthy food for guests and staff. The position requires a professional chef with experience and good communication skills.",
         "what_we_expect": [
-          "Full age",
-          "Normal senses: vision, hearing and ability to react",
-          "At least an AM121 or B driving licence"
+          "training or solid experience in the field of chef's work",
+          "self-employed, organisational and pressure-sensitive",
+          "good cooperation and interaction skills",
+          "customer-driven thinking and behaviour"
         ],
         "job_responsibilities": [
-          "Ensure safe passage of traffic through the site as long as it is in place. Traffic control usually works in pairs and takes turns controlling traffic.",
-          "Take care of colleagues."
+          "prepare meals for guests and staff",
+          "work at busy times with up to 400 people at lunch"
         ],
         "what_we_offer": [
-          "A safe and professional work community",
-          "High quality tools and equipment",
-          "Fair and equal treatment",
-          "Variable sites and working days (seasonal work)"
+          "great food benefit in the restaurant of Piispala and leisure period",
+          "opportunity to engage in varied indoor and outdoor sports"
         ],
         "who_is_this_for": [
-          "Traffic controllers with full age, normal senses, and at least an AM121 or B driving licence"
+          "professional chefs looking for a challenging position in a beautiful location"
         ],
-        "search_keywords": "traffic controller, construction site, Pirkanmaa, Tampere",
+        "search_keywords": "youth centre, chef, piispalu, kannonkoski",
         "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/other/8.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-03-30 02:44:33",
-    "jobs": [
+        "image_url": "https://findjobinfinland.fi/images/jobs/other/15.png"
+      },
       {
-        "id": "0337d890",
-        "job_id": "haemme-putkitaitoisia-maanrakentajia-espooseen-finland-0337d890",
+        "id": "3e6edad7",
+        "job_id": "municipal-secretary-konnevesi-3e6edad7",
         "processed": true,
-        "title": "Haemme PUTKITAITOISIA MAANRAKENTAJIA Espooseen",
-        "company": "Amiko Helsinki Oy",
-        "job_category": "welding",
+        "title": "Municipal Secretary",
+        "company": "Konneveden kunta",
+        "job_category": "other",
         "jobLocation": [
-          "Finland"
+          "Konnevesi"
         ],
-        "jobapply_link": "http://amiko.likeit.fi/apply/106292081",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7694838b-8b2d-4acf-ac89-257cf01a2012/en",
-        "job_employer_email": "mikko.karimaa@amiko.fi",
-        "jobUrl": "https://findjobinfinland.fi/jobs/welding/haemme-putkitaitoisia-maanrakentajia-espooseen-finland-0337d890",
-        "date_posted": "2026-03-29",
-        "date_expires": "2026-04-11",
-        "scraped_at": "2026-03-30 02:44:33",
-        "salary_range": "* Kilpailukykyisen palkan kokemuksesi mukaan(13,00-17,00€/h)",
-        "employment_type": [
-          "Full-time",
-          "Temporary"
-        ],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/716325/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f4dcb80d-55c5-49f3-8662-934fd99e3259/en",
+        "job_employer_email": "heli.lehtinen@konnevesi.fi",
+        "job_employer_name": "Heli Lehtinen",
+        "job_employer_phone_no": "0406619137",
+        "jobUrl": "https://findjobinfinland.fi/jobs/other/municipal-secretary-konnevesi-3e6edad7",
+        "date_posted": "2026-03-30",
+        "date_expires": "2026-04-15",
+        "scraped_at": "2026-03-30 20:36:15",
+        "open_positions": 1,
+        "salary_range": "tasopalkka 2664,71€ (ei sis.työkokemus- ja henkilökohtaista lisää)+ tietosuojavastaavan tasolisä 100€",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Haemme PUTKITAITOISIA MAANRAKENTAJIA Espooseen at Amiko Helsinki Oy. Explore this opportunity in Finland.",
-        "description": "We are looking for country builders to work at the Microsoft data center site in Espoo. Tasks include processing and transfer of building materials, earth-moving and soil-processing work with shovel, general cleanliness and order of the site, ensuring safety at work and managing transport arrangements.",
+        "meta_description": "Municipal Secretary at Konneveden kunta in Konnevesi. Explore this opportunity in Finland.",
+        "description": "Municipal Secretary position at Konneveden kunta. Source job details: ICT-alan osaaja - tule meille ICT-tukihenkilöksi! Etsimme joukkoomme ICT-alan rautaista ammatilaista. Haemme osaavaa ja palveluhenkistä ICT-tukihenkilöä varmistamaan Konneveden kunnan toimipisteiden sujuvan arjen. Tehtävässäsi huolehdit käyttäjätuen...",
         "what_we_expect": [
-          "Experience in land construction or construction",
-          "Welding plastic tube, laser interest rates, welding competence",
-          "Occupational safety card or readiness to perform it before work begins",
-          "Good cooperation skills and responsible attitude"
+          "ICT-alan osaaja - tule meille ICT-tukihenkilöksi!",
+          "Etsimme joukkoomme ICT-alan rautaista ammatilaista.",
+          "Haemme osaavaa ja palveluhenkistä ICT-tukihenkilöä varmistamaan Konneveden kunnan toimipisteiden sujuvan arjen.",
+          "Työ sisältää myös lähituen tehtäviä eri toimipisteissä koko kunnan alueella."
         ],
         "job_responsibilities": [
-          "Tasks include processing and transfer of building materials, earth-moving and soil-processing work with shovel, general cleanliness and order of the site, ensuring safety at work and managing transport arrangements"
+          "ICT-asiakaspalvelija"
         ],
         "what_we_offer": [
-          "Competitive pay according to your experience (13,00 -17,00 €/ h)",
-          "Required work equipment (safety shoes, helmet, etc.)",
-          "Professional team support and fair employer",
-          "Work starts when suitable persons are found"
+          "ICT-alan osaaja - tule meille ICT-tukihenkilöksi!",
+          "Etsimme joukkoomme ICT-alan rautaista ammatilaista.",
+          "Haemme osaavaa ja palveluhenkistä ICT-tukihenkilöä varmistamaan Konneveden kunnan toimipisteiden sujuvan arjen.",
+          "Työ sisältää myös lähituen tehtäviä eri toimipisteissä koko kunnan alueella."
         ],
         "who_is_this_for": [
-          "English-speaking candidates with relevant skills"
+          "ICT-alan osaaja - tule meille ICT-tukihenkilöksi!",
+          "Etsimme joukkoomme ICT-alan rautaista ammatilaista.",
+          "Haemme osaavaa ja palveluhenkistä ICT-tukihenkilöä varmistamaan Konneveden kunnan toimipisteiden sujuvan arjen.",
+          "Työ sisältää myös lähituen tehtäviä eri toimipisteissä koko kunnan alueella."
         ],
-        "search_keywords": "country builder, Microsoft data center, Espoo, land construction, welding plastic tube",
+        "search_keywords": "Municipal Secretary Konneveden kunta Konnevesi other",
         "display_mode": "fallback",
-        "image_url": "https://findjobinfinland.fi/images/jobs/other/20.png"
+        "image_url": "https://findjobinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "f6346bb7",
+        "job_id": "bar-waiter-hemingways-turku-turku-f6346bb7",
+        "processed": true,
+        "title": "Bar Waiter, Hemingway's Turku",
+        "company": "Tehoa Henkilöstöpalvelut Oy",
+        "job_category": "restaurant",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobapply_link": "http://tehoa.likeit.fi/apply/2758533",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/28236d41-b885-45e8-8e62-63c4b28a1f7a/en",
+        "job_employer_email": "marko@tehoahp.fi",
+        "job_employer_name": "Marko Melamies",
+        "job_employer_phone_no": "0400761399",
+        "jobUrl": "https://findjobinfinland.fi/jobs/restaurant/bar-waiter-hemingways-turku-turku-f6346bb7",
+        "date_posted": "2026-03-30",
+        "date_expires": "2026-05-01",
+        "scraped_at": "2026-03-30 20:36:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bar Waiter, Hemingway's Turku at Tehoa Henkilöstöpalvelut Oy in Turku. Explore this opportunity in Finland.",
+        "description": "Interested in whiskey and beer? We're looking for a skilled bar waiter to help elevate our restaurant.",
+        "what_we_expect": [
+          "Previous experience in bar serving and cashwork is considered to be of great benefit.",
+          "Genuine interest, burning desire to learn new and the ability to recommend products to customers is essential."
+        ],
+        "job_responsibilities": [
+          "Free hands: You will have relatively free hands to plan and develop both our whiskey and beer range. You can take advantage of your own expertise and vision of what Turku's best whiskey list and the most interesting beer app look like.",
+          "Hours of work: We offer work at least 90 hours / 3 weeks",
+          "Remuneration: Contract"
+        ],
+        "what_we_offer": [
+          "Free hands to plan and develop both our whiskey and beer range. You can take advantage of your own expertise and vision of what Turku's best whiskey list and the most interesting beer app look like.",
+          "Hours of work at least 90 hours / 3 weeks",
+          "Remuneration: Contract"
+        ],
+        "who_is_this_for": [
+          "Genuine interest in whiskey and beer, previous experience in bar serving and cashwork is considered to be of great benefit."
+        ],
+        "search_keywords": "bar waiter, Hemingway's Turku, skilled bartender, bar service, restaurant management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobinfinland.fi/images/jobs/restaurant/8.png"
       }
     ]
   }
