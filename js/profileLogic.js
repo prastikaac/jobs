@@ -17,9 +17,9 @@ import {
 // Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
-  authDomain: "findjobinfinland-3c061.firebaseapp.com",
-  projectId: "findjobinfinland-3c061",
-  storageBucket: "findjobinfinland-3c061.appspot.com",
+  authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+  projectId: "findjobsinfinland-3c061",
+  storageBucket: "findjobsinfinland-3c061.appspot.com",
   messagingSenderId: "575437446165",
   appId: "1:575437446165:web:51922bc01fd291b09b821c"
 };
@@ -28,7 +28,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-const storage = getStorage(app, "gs://findjobinfinland-3c061.firebasestorage.app");
+const storage = getStorage(app, "gs://findjobsinfinland-3c061.firebasestorage.app");
 
 // DOM logic after everything is loaded
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,21 +42,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentUID = null;
 
-// Sign-out logic
-signOutButton.addEventListener("click", () => {
-  signOut(auth).then(() => {
-    // Hide profile and related elements on sign-out
-    ppCard.style.display = "none";
-    editButton.style.display = "none";
-    signOutButton.style.display = "none";
-    dissignElements.forEach(el => el.style.display = "none");
+  // Sign-out logic
+  signOutButton.addEventListener("click", () => {
+    signOut(auth).then(() => {
+      // Hide profile and related elements on sign-out
+      ppCard.style.display = "none";
+      editButton.style.display = "none";
+      signOutButton.style.display = "none";
+      dissignElements.forEach(el => el.style.display = "none");
 
-    // Reload the page after sign-out
-    location.reload();
-  }).catch((error) => {
-    console.error("Sign-out error:", error);
+      // Reload the page after sign-out
+      location.reload();
+    }).catch((error) => {
+      console.error("Sign-out error:", error);
+    });
   });
-});
 
 
   // Check user authentication state

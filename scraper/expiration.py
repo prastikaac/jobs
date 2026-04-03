@@ -1,8 +1,8 @@
 """
-expiration.py — Job expiration logic (Step 6 of the pipeline).
+expiration.py — Job expiration logic.
 
-Removes jobs older than EXPIRATION_DAYS from jobs.json
-and deletes their corresponding /jobs/{id}/ folders from the website.
+Removes jobs older than EXPIRATION_DAYS from the active formatted job store
+and deletes their corresponding /jobs/{category}/{job_id}/ folders.
 """
 
 import logging
@@ -13,7 +13,6 @@ from datetime import date, datetime
 import config
 
 logger = logging.getLogger("expiration")
-
 
 
 def _parse_date(date_str: str) -> date | None:
@@ -31,16 +30,22 @@ def remove_expired_jobs(jobs: list[dict]) -> tuple[list[dict], list[dict]]:
     Returns:
         (active_jobs, expired_jobs)
 
-    Also deletes the folder /jobs/{id}/ for each expired job.
+    Expiration uses:
+    1. date_posted if valid
+    2. otherwise scraped_at if valid
+    3. otherwise keeps the job to be safe
     """
-    today     = date.today()
-    active    = []
-    expired   = []
+    today = date.today()
+    active = []
+    expired = []
 
     for job in jobs:
         posted = _parse_date(job.get("date_posted"))
+
         if posted is None:
-            # Can't parse date — keep the job to be safe
+            posted = _parse_date(job.get("scraped_at"))
+
+        if posted is None:
             logger.warning("Cannot parse date for job %s — keeping it.", job.get("id"))
             active.append(job)
             continue
@@ -67,15 +72,25 @@ def remove_expired_jobs(jobs: list[dict]) -> tuple[list[dict], list[dict]]:
 
 
 def _delete_job_folder(job: dict) -> None:
-    """Delete the /jobs/{category}/{job_id}/ directory if it exists."""
-    job_id = job["id"]
-    categories = job.get("jobCategory", ["Other"])
-    if isinstance(categories, list):
-        cat_slug = categories[0].lower().replace(" ", "-") if categories else "other"
-    else:
-        cat_slug = categories.lower().replace(" ", "-")
-    
+    """
+    Delete the /jobs/{category-slug}/{job_id}/ directory if it exists.
+
+    New pipeline uses:
+    - job_category
+    - job_id
+
+    Falls back safely if one is missing.
+    """
+    job_id = str(job.get("job_id") or job.get("id") or "").strip()
+    if not job_id:
+        logger.warning("Cannot delete job folder: missing job_id/id in job %s", job)
+        return
+
+    category = str(job.get("job_category") or "other").strip().lower()
+    cat_slug = config.slugify_category(category) if category else "other"
+
     folder = os.path.join(config.JOBS_OUTPUT_DIR, cat_slug, job_id)
+
     if os.path.exists(folder):
         try:
             shutil.rmtree(folder)

@@ -1,8 +1,6 @@
 Every time run job scrap : python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
 
 
- Now here the job category is being false like job category is not correctly classified, eg. job that need to be in sales category is being in caregiver category, so use Ollama ai to analayse the whole job content and set the job category accordingly the job content 
-
 🗓️ Job Scraping Timetable
 
 Monday – Friday
@@ -27,73 +25,7 @@ Saturday   | —                      | ❌ Off
 Sunday     | —                      | ❌ Off
 
 
-I have verified that all job titles are successfully translated to English, specifically addressing issues like "Kattomyyjä & Asiakashankkija", and job listings are now assigned a random image strictly from their respective 30-image sets within category folders.
 
-Additionally, I've confirmed that the meta_description is used correctly as the snippet text in jobs.html and index.html, and individual job pages are correctly generated as jobs/category/slug.html rather than inside separate folders. The site generator and jobs.json data have been fully patched and synced with these logic changes. Are there any other tweaks you'd like to apply?
-
-
-Over the last two days, we have successfully transformed your scraping process from a collection of manual scripts into a fully automated, unified pipeline.
-
-Here is a summary of everything that has been accomplished:
-
-1. Unified Pipeline Orchestration (
-
-run_pipeline.py
-)
-Consolidated Logic: Merged five separate standalone scripts (
-
-patch_titles.py
-, fix_categories.py, update_image_urls.py, 
-
-reset_raw.py
-, and 
-
-rename_dirs.py
-) into the main pipeline.
-Maintenance Phase: Added an automatic "Maintenance" step that runs every time you scrape. It refreshes all 200+ jobs in your database, applying any new title patches or category fixes instantly site-wide.
-New Utility Flags: Added the --reset-raw flag to the main script so you can trigger a full AI re-process of all jobs without needing extra files.
-2. Category & URL Standardization
-Hyphenated Slugs: Updated the site-wide convention to use hyphens instead of underscores (e.g., /jobs/sales-and-marketing/ instead of /jobs/sales_and_marketing/).
-Centralized Slugifier: Created a single source of truth in 
-
-config.py
- for all URL and folder naming logic.
-Auto-Migration: Built logic into the pipeline that automatically detects and renames old underscore-based category folders to the new hyphenated format on disk.
-3. Data Consistency & AI Refinements
-Manual Title Patches: Integrated a system in 
-
-ai_processor.py
- to fix specific Finnish titles that the AI missed (e.g., "Kattomyyjä" is now always "Roofing Sales Representative").
-Improved Formatting: Refined the AI prompt to ensure job descriptions are 4-6 sentences long and that experience requirements are always listed as a clean bulleted list.
-URL & Image Sync: Ensured that the jobUrl and image_url fields in your data are always perfectly synchronized with the category and ID of the job.
-4. Verification & Site Generation
-Full Site Refresh: Successfully re-processed your 
-
-rawjobs.json
- to verify that the new English titles, hyphenated URLs, and category-specific images are all appearing correctly.
-HTML Regeneration: Improved the site generator to refresh all job pages whenever structural changes (like the hyphen naming) are made, ensuring 100% consistency across 
-
-index.html
- and jobs.html.
-Next Steps: You now only need to run python run_pipeline.py to keep the entire site updated. If you find a new Finnish title that needs a specific English translation, just add it to the title_patches dictionary in 
-
-ai_processor.py
- and run the pipeline!
-
- 
-homepage
-. The job cards now show more relevant images and use cleaner, SEO-friendly URLs.
-
-
-
-
-- Immediate in job search
-
-
-
-
-
-now  scrap 10 jobs fro tyomarkkinatori as test 
 
 - make to update sitemaps.xml each time a job updates
 
@@ -105,93 +37,12 @@ now  scrap 10 jobs fro tyomarkkinatori as test
 
 
 
-Now while scraping from tyomarkkinatori, you got to something url like https://tyomarkkinatori.fi/api/jobposting-new/v1/public/jobpostings/ecc74766-c608-471d-85dd-1ad0fc44d4b3 and get value like : {"languages":["fi"],"descriptionsContentType":"markdown","metadata":{"externalId":"ecc74766-c608-471d-85dd-1ad0fc44d4b3","status":"4","created":"2026-03-25T20:01:18.534379Z","createdSource":"TMT","lastModified":"20 26-03-25T20:02:12.324886Z","lastModifiedSource":"TMT","etag":"61609759-77e6-4999-aea3-c7e4146fbf90"},"client":{"companyVisible":false},"recruiter":{"contacts":[],"contactInfoVisible":false},"position":{"reemployment. lationship":"01","continuityOfWork":["01"],"wagePrinciple":"0101","workLanguages":["fi"],"workTime":"01","workTimeDetails":["01","02","06"],"criminalRecordVerification":["1"],"drivingLicenses":[],"permitCards":[],"m ainOccupation":"http://data.europa.eu/esco/occupation/55d60ead-0343-4008-b9e4-fb4b5a179c83","occupations":[ {"uri":"http://data.europa.eu/esco/occupation/55d60ead-0343-4008-b9e4-fb4b5a179c83","prefLabel":{"en":"early years teacher","fi":"varhaiskasvatuksen opettaja","sv":"förskollärare"},"altLabel":{"en":["kindergarten teacher","nursery teacher","preprimary school teacher","preschool teacher"],"fi":["esikouluopettaja","esilukoonopettaja","lastentarhan opettaja","lastentarhanopettaja"],"sv":[]}}],"skills":[{"uri":"http://data.europa.eu/esco/skill/edff6d20-660d-4d33-b412-9a5b664a14be","prefLabel":{"en":"curriculum objectives","fi":"opetusuinliman täyttään","sv":"mål i läroplanen"},"altLabel":{"en":["curriculum objectives","curriculum aims","curriculum goals","curriculum objective","curriculum targets"],"fi":[],"sv":["mål i kursplanen"]}},{"uri":"http://data.europa.eu/esco/skill/efe801a5-8704-4def-8a96-c32f7a6cb9fb","prefLabel":{"en":"maintain relations with children's parents","fi":"maintain relations with children's parents","sv":"upprätthålla kontakter med Barnens fállar"},"altLabel":{"en":["inform children's parents","keep relations with children's parents","maintain relationship with children's parents","maintain relationship with children's relatives","maintain relations with children's mother and father","maintain relations with children's relatives","maintain relations with legal guardians","stay in contact with children's parents"],"fi":[],"sv":[]}},{"uri":"http://data.europa.eu/esco/skill/a65fb963-6faf-47b2-a3d9-c4e5e4d833c5","prefLabel":{"en":"support children's wellbeing","fi":"tukea lasten huyvändviintia","sv":"främja barns välbefinnande"},"altLabel":{"en":["stimulate children's wellbeing","support children's mental wellbeing","support children's resilience"],"fi":[],"sv":[]}}],"title":{"fi":"We are looking for early childhood teachers for our Loimaa daycare centers"},"jobDescription":{"fi":"Are you an early childhood teacher who wants to influence, develop and build something new? With us, you don't follow a set pattern, you get to influence and create an inclusive and inspiring everyday life, where the learning and well-being of every child are at the center.\n\nWe are the largest Finnish-owned early childhood education service provider, where the joy, learning and well-being of the child guide all our activities. Our work is based on community-based pedagogy, where play, interaction and learning together create a strong foundation for learning skills, well-being and the prevention of exclusion.\n\nJoin our team and build early childhood education with us that really makes a difference to the everyday lives of children and families.\n\n\nYour role as an early childhood education teacher:\n- As an early childhood education teacher, you are a team leader, pedagogical leader and community builder.\n\n\nYour tasks are:\n- Lead the team and ensure the organization of everyday life in such a way that the activities support the learning, development and well-being of children in accordance with the goals of the Early Childhood Education Act.\n- Build with your team learning environments where curiosity and joy are visible and felt in every corner.\n- Plan activities where every child can be met and heard as themselves.\n- Create an everyday life that supports the development of emotional skills, interaction and cooperation, and launch proactive support measures quickly.\n- Develop pedagogy with colleagues, strengthening a supportive atmosphere and a developing operating culture.\n- Actively collaborate with guardians, multi-professional networks and local actors in a genuine spirit of partnership.\n\n\nWe offer you:\n- A permanent employment relationship and the opportunity to influence your own work.\n- A community where inclusion, learning together and pedagogical courage are everyday life.\n- A culture where you can grow professionally and try new ways of working.\n- An employment relationship that is flexible to different life situations.\n- Good employment benefits.\n\n\nWe expect from you:\n- Qualifications for the position of early childhood education teacher and fluent Finnish language skills.\n- Ability to lead and inspire a team and harness its various strengths.\n- Desire to make early childhood education inspiring and implemented with heart.\n- Pedagogical courage, active development approach and ability to think outside the box.\n- Ability to genuinely meet a child and see an opportunity in every child.\n\nLocalities and daycare centers Loimaa\n- Nappulakoski, Wittenberginkatu 4, 32200 Loimaa\n- Nappulapelto, Pajukuja 2, 32200 Loimaa\n\nIf necessary, please contact Regional Manager Raija Teiksala:\np. 050 542 3123\nraija.teiksala@verkanappulat.fi"},"wagePrincipleInfo":{"fi":"The salary is determined in accordance with the collective agreement for the private early childhood education sector"},"partTimeInfo":{"fi":""},"marketingDescription":{"fi":"Nappulakoski daycare center is located in the Kartanonmäki area, near the center of Loimaa. Our daycare center has four groups of children and we can offer your child an early childhood education path from one year old until the start of school.\n\nThere is plenty of space and safe equipment in the yard of our daycare center for outdoor play. Our everyday life is functional and we make great use of the opportunities in the local environment: we go with children to nearby playgrounds and forest trips, for example. In our activities, we take into account children's expectations and interests and include experiential learning, joy, cuddles and play. \n\nNappulapello daycare center is located in the Suopello area, near the center of Loimaa. Our daycare has three groups of children and we can offer your child an early childhood education path from the age of one until the start of school.\n\nThere is plenty of space and safe equipment in our daycare yard for outdoor play. Our everyday life is functional and we make great use of the opportunities in the local environment: we go with the children to nearby playgrounds, forest trips, sports fields, sports or ice rinks and libraries. In our activities, we take into account the children's expectations and interests and include experiential learning, joy, cuddles and play. \n\nFor more information, please visit our website www.verkanappulat.fi"},"permitCardsDescription":{"fi":""}},"owner":{"employerType":"Organization","businessId":"2905627-8","industryCode":"85100","officeCode":"2905627-8-4","officeName":"Verkanappulat Oy, Päiväkoti Nappulakoski","company":{"fi":"Verkanappulat Oy"}},"location":{"countries":[],"regions":[],"municipalities":["430"],"requiresTravelling":false,"workplaceName":{"fi":""}},"application":{"extraVisibility":["EURES_TRANSFER"],"published":"2026-03-25T20:02:12.458137Z","expires":"2026-04-08T20:59:00Z","openPositions":2,"helpText":{"fi":"Send your application and CV as soon as possible, but no later than 8.4.2026 to rekry@verkanappulat.fi.\n\nWrite in the subject field of the application message: \"APPLICATION Early Childhood Education Teacher (location / daycare center you are applying to)\". For example: APPLICATION Early Childhood Education Teacher (Loimaa/ Nappulapelto)"},"url":{"fi":""}},"externalLinks":[]}
-
-so now from this value use the following method to extract and record the values : 
-  TARGET KEY (English) | SOURCE PATH (Original JSON) | SOURCE VALUE (Finnish)
------------------------------------------------------------------------------------------------------------------------------
-title                | position > title > fi          | "Haemme varhaiskasvatuksen opettajia Loimaan päiväkoteihimme"
-company              | owner > officeName             | "Verkanappulat Oy, Päiväkoti Nappulakoski"
-date_posted          | application > published         | "2026-03-25T20:02:12.458137Z"
-date_expires         | application > expires           | "2026-04-08T20:59:00Z"
-salary_range         | position > wagePrincipleInfo > fi | "Palkka määräytyy yksityisen varhaiskasvatualan työehtosopimuksen mukaisesti"
-employment_type      | position > employmentRelationship | ["01"]
-language_requirements| position > workLanguages        | ["fi"]
-description          | position > jobDescription > fi | "Oletko varhaiskasvatuksen opettaja, joka haluaa vaikuttaa..."
-
-experience, what_we_expect, job_responsibilities, job_responsibilities : theese may be available in the job listing as well record if available and if not then  make them using the job description with the help of ollama ai
 
 
 
 
 
 
-
-
-
-
-
-Now while scraping from tyomarkkinatori
-
-  🔹 1. Check for Direct Application URL
-
-From the job data:
-application -> url -> fi1
-
-✅ If a valid URL exists (non-empty), use it as the job apply link.  
-❌ If the URL is empty (""), follow the fallback process below.
-
-
-🔹 2. Extract Employer Email (Fallback Case)
-
-If no direct application URL is available:
-
-Extract the employer’s email from:
-application -> helpText -> fi
-
-and put it in jobs.json in the field ""job_employer_email"
-
-Example format in helpText:
-Instructions for application:
-Please send your application by email to joosa.kurvinen@gmail.com
-
-Extract:
-joosa.kurvinen@gmail.com
-
-
-🔹 3. Update HTML Content
-
-A. Add Instruction Text
-
-Insert this paragraph immediately after:
-
-<p>If you are interested in joining our team and taking the next step in your
-professional journey, please follow the instructions below to submit your
-application.</p>
-
- Add:
-
-<p>
-Since there is no direct online application portal for this position, interested candidates are encouraged to submit their applications, including a cover letter and CV, via email to {-job-employer-email-}.
-</p>
-
-
-B. Update Apply Button
-
-Replace the apply button link:
-
-<a class="button full-width-btn" href="mailto:{-job-employer-email-}"
-   style="padding: 11px 20px; font-size: 14px;" target="_blank">
-   <span>Click Here to Apply for This Job</span>
-</a>
-
-
-🔹 5. Summary Logic
-
-Condition                          Action  
-application.url.fi exists          Use it as apply link  
-application.url.fi is empty        Extract email from helpText  
-Email found                        Use mailto: link + update HTML + store in JSON
 
 
 
@@ -220,22 +71,6 @@ Right now, the system will sit idle and won't scrape or process anything in the 
 
 
 
-okay then make this like first run scraper and then run pipeline like at 10 am the scraper will run on order like 1. Työmarkkinatori
-2. Duunitori
-3. Jobly
-and after thatt pipeline will run 
-
-ai model : The Best "Fast & Smart" Models For Your PC:
-⭐ 1. qwen2.5:3b (The Smartest Small Model)
-This is currently the absolute king of small models. Despite being less than half the weight of llama3.1 (it only uses 2GB of RAM), it is incredibly smart at outputting perfect JSON formats and is very good at Finnish-to-English translation.
-
-Speed on your PC: ~30 to 60 seconds per job
-Command: ollama pull qwen2.5:3b
-⚡ 2. llama3.2 (Meta's New Fast Model)
-Meta specifically built llama3.2 (3 Billion parameters) a few months ago just for standard CPUs and mobile devices. It is extremely fast, highly reliable at strict formatting, but slightly worse at Finnish than Qwen.
-
-Speed on your PC: ~20 to 50 seconds per job
-Command: ollama pull llama3.2
 
 
 
@@ -245,23 +80,24 @@ Ollama often has a cold-start penalty.
 
 Before processing jobs, do one tiny warm-up call.
 
-Example:
-
-
-only one point for experience "what_we_expect        "job_responsibilities"  "what_we_offer   "who_is_this_for"
-
-i have a logic like what if we start storing finnish words that were found in the jobs in a file while scraping and later i will put the english translations of that file manually and then use it as our own local finnish to english dictionary
 
 
 
-Competitive hourly wage based on Finnish collective agreements
+- subject not being appended to jobapply_link : 
 
- ai should decide a category by examining the content of the job and  python to decide salary by searching on job content and if there is not then put Competitive hourly wage based on Finnish collective agreementsandother company and links, company and location is also determined by python looking on the job content, and translate all the text to englsih, ai should make the correct experience, job category, what we expect and what we offer by looking in the job content
+now here if the email is the  "jobapply_link": "mailto:mll.savonlinna@gmail.com?subject=Application for the Job - Perhekeskusohjaaja", then the link should be this : mailto:your@email.com?subject=Application%20for%20the%20Job%20-%20JOB_TITLE&body=Dear%20Hiring%20Manager,%0A%0A
+I%20hope%20this%20message%20finds%20you%20well.%0A%0A
+I%20am%20writing%20to%20express%20my%20interest%20in%20the%20JOB_TITLE.%20I%20am%20motivated,%20reliable,%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0A
+I%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking,%20detail-oriented,%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0A
+Please%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0A
+Thank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0A
+Kind%20regards,%0A
+YOUR_NAME : and here replace Job Title witth the actual job title 
 
 
- still its not creating proper job_responsibilities what_we_expect and what_we_offer, 
 
- job category is not working properly, you can check it from here :  "occupations": [
+job category is not working properly, you can check it from here : 
+  "occupations": [
       {
         "uri": "http://data.europa.eu/esco/isco/C7115",
         "prefLabel": {
@@ -293,50 +129,153 @@ Competitive hourly wage based on Finnish collective agreements
 
 
 
+now update the JOB CATEGORY DETERMINATION LOGIC
+
+Overview:
+Job categories are determined using a rule-based scoring system supported by keyword matching.
+The system prioritizes accuracy, consistency, and explainability.
+AI is only used as a fallback when the system is uncertain.
+
+--------------------------------------------------
+
+1. KEYWORD MATCHING (INITIAL DETECTION)
+
+Each job category contains a predefined list of English keywords.
+
+The system scans:
+- Job title
+- Job content
+
+Rules:
+- A category is valid only if multiple keywords match
+- Minimum requirement: at least 2–3 relevant keyword matches
+- A single keyword match is NOT sufficient
+
+Example:
+"Software Developer, frontend, backend, full stack"
+→ Matches multiple keywords → Category: it-and-tech
+
+If no category meets the minimum threshold:
+→ Assign category: "other"
+
+--------------------------------------------------
+
+2. SCORING-BASED CLASSIFICATION
+
+All categories are scored. The highest score wins.
+
+Scoring factors:
+- Title exact match: +12
+- Title partial match: +8
+- Content keyword match (repeated): +3 each
+- ESCO / occupation mapping: +20
+- Source taxonomy match: +15
+- Negative keyword conflict: -8
+- Generic keyword only: +1
+
+--------------------------------------------------
+
+3. PRIORITY OF SIGNALS
+
+Importance order:
+1. Structured data (ESCO / occupation codes) → Highest
+2. Job title → Very high importance
+3. Job content → Supportive only
+
+--------------------------------------------------
+
+4. TITLE DOMINANCE RULE
+
+The job title is the strongest signal.
+
+Examples:
+Cleaner → cleaning-and-facility-services
+Practical Nurse → healthcare-and-social-care
+Sales Manager → business-and-finance
+Waiter → food-and-restaurant
+Carpenter → construction-and-trades
+
+If the title clearly indicates a category, it overrides weaker signals.
+
+--------------------------------------------------
+
+5. NOISE HANDLING (JOB CONTENT)
+
+Ignore:
+- Generic company descriptions
+- Soft skills (teamwork, communication, etc.)
+- Irrelevant text
+
+Only count relevant job-specific keywords.
+
+--------------------------------------------------
+
+6. CATEGORY SELECTION
+
+All categories compete.
+The category with the highest score is selected.
+
+Example:
+it-and-tech → 31
+business-and-finance → 11
+
+→ Selected: it-and-tech
+
+--------------------------------------------------
+
+7. CONFIDENCE-BASED DECISION
+
+Strong match:
+Top1 = 31, Top2 = 11 → Clear winner → Select Top1
+
+Weak/ambiguous match:
+Top1 = 18, Top2 = 17 → Too close → Low confidence
+
+--------------------------------------------------
+
+8. AI USAGE (OPTIONAL TIE-BREAKER)
+
+AI is NOT used for primary classification.
+
+Use AI only when:
+- Scores are too close
+- Confidence is low
+- Multiple categories overlap
+
+Rules for AI:
+- Only choose from top candidate categories
+- Prioritize job title over content
+
+--------------------------------------------------
+
+9. FALLBACK RULE
+
+If:
+- No category meets keyword threshold
+- Or scores are too weak
+
+→ Assign category: "other"
+
+--------------------------------------------------
+
+CORE PRINCIPLES
+
+- Do NOT rely on a single keyword
+- Do NOT select the first match
+- Always use scoring and comparison
+- Prioritize title over content
+- Use AI only as a tie-breaker
+- Prefer correct broad category over wrong specific one
+
+
+
+
+
+
+
+- add filters in edit-profile.html and while signing up
+
 - Firebase alerts 
 
 
-
-
-- update municipalities codes for  "049",
-      "091",
-      "092"
-      extract the municipalities name from the tyomarkkinatori website
-
-
-
-
-
-- things to put in filter for job search
- -  job published time 
- - job application deadline
- - Working language for job search
- - Job Type 
- - Working Time
-
-
-
-
-
-    
-
-
-
-
-still some jobs content are not translated properly:  jobs\other\spray-painter-loimaa-281f1864.html
-
-
-
-
-
-
-
-
-
-
-
-- subject not being appended to mailto link
-
-
-
-- AI hallucination detected improve prompt
+- scrape from all sources, jobly not updated

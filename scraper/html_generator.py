@@ -156,9 +156,7 @@ def generate_job_page(job: dict) -> bool:
         rich_html.append(
             "<section>"
             "<h3>What We Offer</h3>"
-            "<p>The benefits, resources, and supportive opportunities we provide to our employees "
-            "to ensure a positive work experience, professional development, and long-term growth "
-            "within the organization are as mentioned below:</p>"
+            "<p>The benefits, resources, and opportunities we offer to support a positive work experience and long-term growth are listed below:</p>"
             "<ul>"
         )
         for item in job["what_we_offer"]:
@@ -170,8 +168,7 @@ def generate_job_page(job: dict) -> bool:
         rich_html.append(
             "<section>"
             "<h3>What We Expect</h3>"
-            "<p>The qualities, work ethics, attitudes, and professional standards we expect from our team members "
-            "to maintain a respectful, productive, and high-performing workplace environment are as mentioned below:</p>"
+            "<p>The qualities, work ethics, and standards we expect to maintain a productive and respectful workplace are listed below:</p>"
             "<ul>"
         )
         for item in job["what_we_expect"]:
@@ -183,9 +180,7 @@ def generate_job_page(job: dict) -> bool:
         rich_html.append(
             "<section>"
             "<h3>Responsibilities</h3>"
-            "<p>The primary duties, responsibilities, and contributions expected from individuals in this role "
-            "to support daily operations, maintain organizational standards, and contribute to overall team "
-            "and company success are as mentioned below:</p>"
+            "<p>This opportunity is for motivated, responsible individuals eager to learn and thrive in a team-oriented environment, who possess the qualities mentioned below:</p>"
             "<ul>"
         )
         for item in job["job_responsibilities"]:
@@ -198,9 +193,7 @@ def generate_job_page(job: dict) -> bool:
         rich_html.append(
             "<section>"
             "<h3>Who Is This For?</h3>"
-            "<p>This opportunity is intended for individuals who demonstrate motivation, responsibility, "
-            "and a willingness to learn, and who possess the qualities and interests suitable for working "
-            "in a professional and team-oriented environment, as mentioned below:</p>"
+            "<p>This opportunity is for motivated, responsible individuals eager to learn and thrive in a team-oriented environment, who possess the qualities mentioned below:</p>"
             "<ul>"
         )
         for item in job["who_is_this_for"]:
@@ -222,6 +215,11 @@ def generate_job_page(job: dict) -> bool:
     # Detect email-based applications: either the apply link is already mailto:
     # (set by the scraper), or there's no useful apply URL but we have an email.
     is_email_apply = raw_apply.startswith("mailto:")
+    if is_email_apply and not employer_email:
+        import urllib.parse
+        extracted = raw_apply[7:].split('?')[0]
+        employer_email = urllib.parse.unquote(extracted).strip()
+
     if not is_email_apply and employer_email and (
         not raw_apply or "tyomarkkinatori.fi" in raw_apply
     ):
@@ -236,7 +234,7 @@ def generate_job_page(job: dict) -> bool:
             c_name = _esc(contact_name) if contact_name else ""
             c_phone = f" ({_esc(contact_phone)})" if contact_phone else ""
             colon = " : " if c_name or c_phone else ""
-            contact_info = f" Also, you may reach out to the Contact person for the job{colon}{c_name}{c_phone}."
+            contact_info = f" Also, you may reach out to the contact person for the job{colon}{c_name}{c_phone}."
 
         import urllib.parse
         subject_raw = f"Application for the Job - {title}"
@@ -382,10 +380,15 @@ def _job_card(job: dict) -> str:
     data_loc = "-".join(parts)
 
     continuity_card = (job.get("continuityOfWork") or "Permanent").lower().replace(" ", "-")
+    date_published = _esc(job.get("date_posted", ""))
+    date_deadline = _esc(job.get("date_expires", ""))
+    language_req = _esc(", ".join(job.get("language_requirements") or []) or "Finnish or English")
 
     return f"""
-        <article class="ntry" data-availability="{_esc(work_time_card)}" data-continuityofwork="{_esc(continuity_card)}" data-category="{category.lower()}"
-                 data-location="{data_loc}" data-title="{search_keywords}">
+        <article class="ntry" data-category="{category.lower()}"
+                 data-location="{data_loc}" data-published="{date_published}"
+                 data-time="{_esc(work_time_card)}" data-language="{language_req}"
+                 data-continuityofwork="{_esc(continuity_card)}" data-title="{search_keywords}">
 
           <div class="pThmb iyt">
             <a class="thmb" href="{page_url}">
@@ -429,6 +432,48 @@ def _job_card(job: dict) -> str:
 
 # ── Step 5: Update index.html + jobs.html ─────────────────────────────────────
 
+def _inject_index_cards(html_path: str, sections_data: dict, page_name: str) -> bool:
+    """Find specific HTML comments and replace the content immediately after them until the next comment."""
+    if not os.path.exists(html_path):
+        logger.warning("%s not found at %s", page_name, html_path)
+        return False
+
+    try:
+        from bs4 import BeautifulSoup, Comment
+        with open(html_path, "r", encoding="utf-8") as f:
+            soup = BeautifulSoup(f, "html.parser")
+            
+        comments = soup.find_all(string=lambda text: isinstance(text, Comment))
+        for c in comments:
+            # Normalize whitespace/case (e.g. 'Nursing Jobs  ' -> 'nursing jobs')
+            key = c.strip().lower()
+            key = " ".join(key.split())
+            
+            if key in sections_data:
+                # Remove existing articles immediately after this comment
+                sibling = c.next_sibling
+                while sibling:
+                    next_sib = sibling.next_sibling
+                    if sibling.name == 'article':
+                        sibling.extract()
+                    elif isinstance(sibling, Comment):
+                        break # Stop if we hit another comment
+                    sibling = next_sib
+                
+                # Insert new content
+                new_content = BeautifulSoup(sections_data[key], "html.parser")
+                c.insert_after(new_content)
+                
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(str(soup))
+            
+        logger.info("Updated %s with specific sections", page_name)
+        return True
+    except Exception as exc:
+        logger.error("Failed to update index logic: %s", exc)
+        return False
+
+
 def _inject_cards(html_path: str, container_class: str, cards_html: str, page_name: str) -> bool:
     """Find a div by class and replace its children with new cards HTML."""
     if not os.path.exists(html_path):
@@ -462,23 +507,43 @@ def _inject_cards(html_path: str, container_class: str, cards_html: str, page_na
 def update_main_pages(jobs: List[dict]) -> None:
     """
     Step 5 — Regenerate job listings in index.html and jobs.html.
-    Uses the most recent 50 jobs for index, all jobs for jobs.html.
+    Uses categorical sections for index.html, all jobs for jobs.html.
     """
+    import random
+    
     # Sort by date_posted descending
     sorted_jobs = sorted(jobs, key=lambda j: j.get("date_posted", ""), reverse=True)
 
-    cards_all    = "\n".join(_job_card(j) for j in sorted_jobs)
-    cards_recent = "\n".join(_job_card(j) for j in sorted_jobs[:50])
+    cards_all = "\n".join(_job_card(j) for j in sorted_jobs)
+    
+    # 1) Top jobs: random categories, max length 25 titles, up to 9
+    short_title_jobs = [j for j in sorted_jobs if len(j.get("title", "")) <= 25]
+    random.shuffle(short_title_jobs)
+    top_jobs = short_title_jobs[:9]
+
+    # 2) Specific category buckets
+    it_jobs = [j for j in sorted_jobs if j.get("job_category") == "it-and-tech"][:6]
+    nursing_jobs = [j for j in sorted_jobs if j.get("job_category") == "healthcare-and-social-care"][:6]
+    cleaning_jobs = [j for j in sorted_jobs if j.get("job_category") == "cleaning-and-facility-services"][:6]
+    restaurant_jobs = [j for j in sorted_jobs if j.get("job_category") == "food-and-restaurant"][:6]
+
+    sections_data = {
+        "top jobs": "\n".join(_job_card(j) for j in top_jobs),
+        "it & technology jobs": "\n".join(_job_card(j) for j in it_jobs),
+        "nursing jobs": "\n".join(_job_card(j) for j in nursing_jobs),
+        "cleaning jobs": "\n".join(_job_card(j) for j in cleaning_jobs),
+        "restaurant jobs": "\n".join(_job_card(j) for j in restaurant_jobs)
+    }
 
     website = config.WEBSITE_DIR
-    _inject_cards(os.path.join(website, "index.html"), "blogPts", cards_recent, "index.html")
-    _inject_cards(os.path.join(website, "jobs.html"),  "blogPts", cards_all,    "jobs.html")
+    _inject_index_cards(os.path.join(website, "index.html"), sections_data, "index.html")
+    _inject_cards(os.path.join(website, "jobs.html"),  "blogPts", cards_all, "jobs.html")
 
 
 # ── Sitemap ───────────────────────────────────────────────────────────────────
 
 def update_sitemap(jobs: List[dict]) -> None:
-    """Regenerate sitemap-jobs.xml with all active jobs."""
+    """Regenerate sitemap-jobs.xml with all active jobs and update master sitemap.xml."""
     base = config.GITHUB_PAGES_BASE_URL
     today = str(date.today())
 
@@ -510,4 +575,20 @@ def update_sitemap(jobs: List[dict]) -> None:
             f.write(sitemap_xml)
         logger.info("Updated sitemap-jobs.xml with %d entries", len(entries))
     except OSError as exc:
-        logger.error("Failed to write sitemap: %s", exc)
+        logger.error("Failed to write sitemap-jobs.xml: %s", exc)
+
+    # Automatically also update the master sitemap.xml lastmod dates
+    master_sitemap_path = os.path.join(config.WEBSITE_DIR, "sitemap.xml")
+    try:
+        if os.path.exists(master_sitemap_path):
+            with open(master_sitemap_path, "r", encoding="utf-8") as f:
+                master_content = f.read()
+            
+            import re
+            master_content = re.sub(r"<lastmod>.*?</lastmod>", f"<lastmod>{today}</lastmod>", master_content)
+            
+            with open(master_sitemap_path, "w", encoding="utf-8") as f:
+                f.write(master_content)
+            logger.info("Updated master sitemap.xml <lastmod> flags to %s", today)
+    except Exception as exc:
+        logger.error("Failed to update master sitemap.xml: %s", exc)

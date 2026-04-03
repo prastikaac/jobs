@@ -163,7 +163,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                     const message = {
                         token: token,
                         notification: {
-                             title: jobData.title, // only job title now
+                            title: jobData.title, // only job title now
                             body: `${jobData.description}`,
                             image: jobData.imageUrl || undefined,
                         },
@@ -273,10 +273,10 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                                 <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
                                                     <tr>
                                                         <td style="vertical-align: middle;">
-                                                            <img src="https://findjobinfinland.fi/images/icon.png" alt="findjobinfinland Logo" style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;">
+                                                            <img src="https://findjobsinfinland.fi/images/icon.png" alt="findjobsinfinland Logo" style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;">
                                                         </td>
                                                         <td style="vertical-align: middle;">
-                                                            <h1 style="font-size: 23px; color: #ffffff; margin: 0; font-weight: bold;">findjobinfinland.fi</h1>
+                                                            <h1 style="font-size: 23px; color: #ffffff; margin: 0; font-weight: bold;">findjobsinfinland.fi</h1>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -294,7 +294,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                                     <tr>
                                                         <td style="padding: 20px; text-align: center; ">
                                                             <a href="${jobData.jobLink || "#"}" style="display: block; text-decoration: none;">
-                                                                <img src="${jobData.imageUrl || "https://findjobinfinland.fi/images/jobs/it-and-tech-jobs.png"}" alt="Job Image" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; border-radius: 12px; display: block; cursor: pointer;">
+                                                                <img src="${jobData.imageUrl || "https://findjobsinfinland.fi/images/jobs/it-and-tech-jobs.png"}" alt="Job Image" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; border-radius: 12px; display: block; cursor: pointer;">
                                                             </a>
                                                         </td>
                                                     </tr>
@@ -340,7 +340,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                                     <p class="text-base-mobile text-base-pc" style="font-size: 15px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">
                                                         We offer a diverse range of job openings tailored to your skills and experience. <br> <br> You may explore our other listings to find the position that best suits your professional aspirations.
                                                     </p>
-                                                    <a href="https://findjobinfinland.fi/jobs?category=${jobCategory || ""}&location=${jobLocation || ""}" style="background-color: #696969ff; color: #ffffff; padding: 12px 0; border-radius: 6px; text-decoration: none; font-weight: bold; display: block; width: 100%; text-align: center;">View Similar Job Listings</a>
+                                                    <a href="https://findjobsinfinland.fi/jobs?category=${jobCategory || ""}&location=${jobLocation || ""}" style="background-color: #696969ff; color: #ffffff; padding: 12px 0; border-radius: 6px; text-decoration: none; font-weight: bold; display: block; width: 100%; text-align: center;">View Similar Job Listings</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -348,16 +348,16 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                                         <tr>
                                             <td style="background-color: #f5f0eb; padding: 20px; text-align: center; border-radius: 0 0 12px 12px; border-top: 1px solid #e9ecef;">
                                                 <p class="text-sm-mobile text-sm-pc" style="font-size: 13px; color: #005effff; margin: 0 0 15px 0; line-height: 1.5;">
-                                                    <a href="https://findjobinfinland.fi/disclaimer" style="color: #005effff; text-decoration: none; margin: 0 5px;">Disclaimer</a>
+                                                    <a href="https://findjobsinfinland.fi/disclaimer" style="color: #005effff; text-decoration: none; margin: 0 5px;">Disclaimer</a>
                                                     <span style="color: #666666; margin: 0 5px;">|</span>
-                                                    <a href="https://findjobinfinland.fi/privacy-policy" style="color: #005effff; text-decoration: none; margin: 0 5px;">Privacy Policy</a>
+                                                    <a href="https://findjobsinfinland.fi/privacy-policy" style="color: #005effff; text-decoration: none; margin: 0 5px;">Privacy Policy</a>
                                                 </p>
                                                 <!-- Unsubscribe Text -->
                                                 <p class="text-xs-mobile text-xs-pc" style="font-size: 12px; color: #888888; line-height: 1.6; margin-top: 10px; margin-bottom: 10px; text-align: center;">
-                                                    If you would prefer not to receive any further job updates or notifications via email, you can easily opt out at any time by clicking on <a href="https://findjobinfinland.fi/edit-profile#unsubscribe" style="color: #e82c2f; text-decoration: underline;">unsubscribe</a>.
+                                                    If you would prefer not to receive any further job updates or notifications via email, you can easily opt out at any time by clicking on <a href="https://findjobsinfinland.fi/edit-profile#unsubscribe" style="color: #e82c2f; text-decoration: underline;">unsubscribe</a>.
                                                 </p>
                                                 <p class="text-xs-mobile text-xs-pc" style="font-size: 12px; color: #888888; margin: 0; line-height: 1.4;">
-                                                    © 2025 · <span style="color: #28a745; font-weight: 500;">findjobinfinland.fi</span> · All rights reserved.
+                                                    © 2025 · <span style="color: #28a745; font-weight: 500;">findjobsinfinland.fi</span> · All rights reserved.
                                                 </p>
                                             </td>
                                         </tr>
@@ -372,7 +372,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
         </html>`
     const emailPromises = matchedEmails.map((email) => {
         return resend.emails.send({
-            from: "Find Jobs In Finland <job-alert@findjobinfinland.fi>",
+            from: "findjobsinfinland <job-alert@findjobsinfinland.fi>",
             to: email,
             subject: jobData.title,
             html: emailHTML,
@@ -384,7 +384,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
 
     // Send summary to owner
     await resend.emails.send({
-        from: "Find Jobs In Finland <job-alert@findjobinfinland.fi>",
+        from: "findjobsinfinland <job-alert@findjobsinfinland.fi>",
         to: "acharyaprasiddha6@gmail.com",
         subject: `✅ Job Alert Sent for ${jobData.title}`,
         html: `

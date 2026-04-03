@@ -4593,6 +4593,12 @@ a.prfL:hover {
     height: 16px
 }
 
+#jobSummaryText {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
 .sInf .lc::after {
     content: attr(data-text);
     margin: 0 4px

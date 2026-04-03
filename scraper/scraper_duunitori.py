@@ -3,6 +3,10 @@ scraper_duunitori.py — Scraper for Duunitori (duunitori.fi).
 
 Fetches paginated job listings, then fetches each job's detail page to get
 the full description and apply URL. Returns normalised raw job dicts.
+
+Important:
+- Duunitori usually does not provide municipality codes in the same clean way
+- so raw location text is preserved as-is
 """
 
 import logging
@@ -14,7 +18,6 @@ from scraper import (
     fetch_with_retry,
     make_job_id,
     normalise_raw_job,
-    _get,
     _sanitise,
     fetch_job_detail,
     parse_listings_page,
@@ -23,8 +26,6 @@ from scraper import (
 
 logger = logging.getLogger("scraper.duunitori")
 
-
-# ── Public scraper entrypoint ─────────────────────────────────────────────────
 
 def scrape_duunitori(
     existing_ids: set,
@@ -37,20 +38,10 @@ def scrape_duunitori(
 ) -> list[dict]:
     """
     Scrape Duunitori across all configured pages.
-
-    Args:
-        existing_ids / existing_job_ids / existing_title_co / existing_links:
-            Dedup sets maintained by the main runner.
-        limit: Stop after this many NEW jobs (0 = no limit).
-        is_duplicate: callable(job, ids, job_ids, title_co, links) → bool
-        add_to_dedup: callable(job, ids, job_ids, title_co, links) → None
-
-    Returns:
-        List of normalised raw job dicts (new jobs only).
     """
     logger.info("=== [Duunitori] Scrape started ===")
     new_jobs: list[dict] = []
-    skipped     = 0
+    skipped = 0
     total_found = 0
 
     for page_num in range(1, config.MAX_PAGES + 1):
@@ -63,12 +54,12 @@ def scrape_duunitori(
             page_num, config.SEARCH_URL, urlencode(params),
         )
 
-        response = fetch_with_retry(lambda: _get(config.SEARCH_URL, params=params))
+        response = fetch_with_retry(lambda: requests_get_wrapper(config.SEARCH_URL, params=params))
         if not response:
             logger.warning("[Duunitori] No response for page %d — stopping.", page_num)
             break
 
-        html  = response.text
+        html = response.text
         cards = parse_listings_page(html)
 
         if not cards:
@@ -83,7 +74,6 @@ def scrape_duunitori(
 
             link = card["jobLink"]
 
-            # Fast pre-check before hitting the network for a detail page
             url_hash, _ = make_job_id(card["title"], card.get("location", ""), link)
             if url_hash in existing_ids:
                 logger.debug("[Duunitori] SKIP (id exists): %s", url_hash)
@@ -96,7 +86,6 @@ def scrape_duunitori(
 
             logger.info("[Duunitori] NEW: %s", card["title"])
 
-            # Fetch full description
             detail_res = fetch_with_retry(lambda: fetch_job_detail(link))
             if not detail_res:
                 logger.warning("[Duunitori] Detail fetch failed for %s — skipping.", link)
@@ -104,7 +93,7 @@ def scrape_duunitori(
                 continue
 
             raw_text, apply_url = detail_res
-            card["jobcontent"]      = _sanitise(raw_text)
+            card["jobcontent"] = _sanitise(raw_text)
             card["jobapply_link"] = apply_url or link
 
             job = normalise_raw_job(card)
@@ -131,3 +120,15 @@ def scrape_duunitori(
         total_found, skipped, len(new_jobs),
     )
     return new_jobs
+
+
+def requests_get_wrapper(url, params=None):
+    import requests
+    resp = requests.get(
+        url,
+        params=params,
+        headers=config.REQUEST_HEADERS,
+        timeout=15,
+    )
+    resp.raise_for_status()
+    return resp

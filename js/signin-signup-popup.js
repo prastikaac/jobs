@@ -206,14 +206,14 @@ wrapper.innerHTML = `
     </div>
 
     <div class="popup-content" id="popupSignupSuccess" style="display:none;">
-      <img class="popup-image-pc-and-mobile" src="http://findjobinfinland.fi/images/sucessfully.png" alt="Signed Up Success">
+      <img class="popup-image-pc-and-mobile" src="http://findjobsinfinland.fi/images/sucessfully.png" alt="Signed Up Success">
       <h3 class="popup-heading">Signup Successful!</h3>
       <p class="popup-description">All set to go. You’ll now receive personalized job alerts based on your interests and location.</p>
       <button id="closeSignupPopupButton">Close</button>
     </div>
 
     <div id="popupLoginSuccess" class="popup" style="display:none;">
-      <img class="popup-image-pc-and-mobile" src="http://findjobinfinland.fi/images/sucessfully.png" alt="Login Success">
+      <img class="popup-image-pc-and-mobile" src="http://findjobsinfinland.fi/images/sucessfully.png" alt="Login Success">
       <h3 class="popup-heading">Login Successful!</h3>
       <p class="popup-description">Welcome back. You’ll now receive personalized job alerts based on your interests and location.</p>
       <button id="closeLoginPopupButton">Close</button>

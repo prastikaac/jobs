@@ -1,22 +1,11 @@
 """
-run_pipeline.py — Post-scrape pipeline orchestrator (Phases 2 & 3).
+run_pipeline.py — Post-scrape pipeline orchestrator.
 
-Reads rawjobs.json (populated by run_scraper.py) and runs:
-  Phase 2 — AI Processor  : Ollama formats raw jobs → jobs.json
-  Phase 3 — Site Generator: Reads jobs.json → HTML pages, images, index
-
-Usage:
-  python run_pipeline.py                  # Full run (AI processing + site generation)
-  python run_pipeline.py --dry-run        # Dry run (no disk writes or AI)
-  python run_pipeline.py --reset-raw      # Reset all raw jobs to unprocessed, then run
-  python run_pipeline.py --check-expires  # Print expiry stats for jobs.json and exit
-  python run_pipeline.py --check-db       # Print Firebase Firestore document count and exit
-  python run_pipeline.py --fix-dates      # Fix title casing + date formats, regenerate HTML, and exit
-  python run_pipeline.py --migrate        # One-time migration: fix category/dates/image_url, and exit
-  python run_pipeline.py --schedule       # Run as hourly scheduler (blocks indefinitely)
-
-To scrape new jobs first, run:
-  python run_scraper.py && python run_pipeline.py
+Reads rawjobs.json and processing_state.json and runs:
+  Phase 2 — Translation   : Argos translates Finnish → English (offline)
+  Phase 3 — AI Formatting : Ollama formats translated text → structured extraction
+  Phase 4 — Job Formatter : Python locks factual fields + builds final jobs
+  Phase 5 — Site Gen      : HTML pages, images, Firebase alerts
 """
 
 import argparse
@@ -51,7 +40,9 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 import config
 import jobs_store
 import rawjobs_store
+import job_translator
 import ai_processor
+import Job_formatter
 import image_generator
 import html_generator
 import expiration
@@ -59,14 +50,23 @@ import firebase_client
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# UTILITY COMMANDS  (formerly standalone scripts)
+# UTILITY COMMANDS
 # ══════════════════════════════════════════════════════════════════════════════
 
-# ── --check-expires (was check_expires.py) ────────────────────────────────────
+def _load_grouped_jobs_file() -> list[dict]:
+    if not os.path.exists(config.JOBS_JSON_PATH):
+        return []
+    try:
+        with open(config.JOBS_JSON_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
 def cmd_check_expires() -> None:
-    """Print total job count and expiry info for the last 5 jobs in jobs.json."""
-    data = json.load(open(config.JOBS_JSON_PATH, encoding="utf-8"))
-    jobs = [j for s in data for j in s.get("jobs", [])]
+    data = _load_grouped_jobs_file()
+    jobs = [j for s in data for j in s.get("jobs", [])] if data else []
     print(f"Total jobs: {len(jobs)}")
     for j in jobs[-5:]:
         print(
@@ -76,18 +76,16 @@ def cmd_check_expires() -> None:
         )
 
 
-# ── --check-db (was check_db.py) ──────────────────────────────────────────────
 def cmd_check_db() -> None:
-    """Connect to Firebase Firestore and print document count + first 10 IDs."""
     try:
         firebase_client.init_firebase()
-        db         = firebase_client._db
+        db = firebase_client._db
         collection = config.FIREBASE_ALERT_COLLECTION
 
-        print(f"Connecting to Firebase project...")
+        print("Connecting to Firebase project...")
         print(f"Collection: {collection}")
 
-        docs     = db.collection(collection).get()
+        docs = db.collection(collection).get()
         doc_list = list(docs)
         print(f"TOTAL DOCUMENTS: {len(doc_list)}")
 
@@ -101,9 +99,7 @@ def cmd_check_db() -> None:
         traceback.print_exc()
 
 
-# ── --fix-dates (was fix_dates.py) ────────────────────────────────────────────
 def _fix_title_and_date(job: dict) -> dict:
-    """Fix title casing and Finnish short-date format in a single job dict."""
     title = job.get("title", "")
     if title.isupper() or title.islower():
         job["title"] = title.capitalize()
@@ -122,8 +118,7 @@ def _fix_title_and_date(job: dict) -> dict:
 
 
 def cmd_fix_dates() -> None:
-    """Fix title casing + date formats across jobs.json, then regenerate HTML."""
-    data     = json.load(open(config.JOBS_JSON_PATH, encoding="utf-8"))
+    data = _load_grouped_jobs_file()
     all_jobs = []
 
     for session in data:
@@ -141,7 +136,6 @@ def cmd_fix_dates() -> None:
     print(f"Fixed {len(all_jobs)} jobs — dates, titles, and HTML regenerated.")
 
 
-# ── --migrate (was migrate_jobs.py) ───────────────────────────────────────────
 _CATEGORY_PRIORITY = [
     "Cleaning", "Restaurant", "Caregiver", "Driver", "Logistics",
     "Security", "IT", "Sales", "Construction", "Hospitality", "Other",
@@ -174,13 +168,10 @@ def _parse_finnish_date(posted: str) -> datetime | None:
 
 
 def _migrate_job(job: dict) -> dict:
-    """Bring a single job record up to current format (idempotent)."""
-    # 1. Single jobCategory
     cats = job.get("jobCategory", ["Other"])
     if isinstance(cats, list):
         job["jobCategory"] = _best_category(cats)
 
-    # 2. date_expires
     if not job.get("date_expires"):
         posted_dt = _parse_finnish_date(job.get("date_posted", ""))
         if posted_dt:
@@ -188,30 +179,22 @@ def _migrate_job(job: dict) -> dict:
         else:
             job["date_expires"] = (date.today() + timedelta(days=30)).strftime("%Y-%m-%d")
 
-    # 3. salary default
     if not job.get("salary"):
         job["salary"] = "Competitive hourly wage based on Finnish collective agreements"
 
-    # 4. jobApplyLink
     if not job.get("jobApplyLink"):
         job["jobApplyLink"] = job.get("jobLink", "")
 
-    # 5. jobUrl
     cat_slug = job["jobCategory"].lower().replace(" ", "-")
-    job_id   = job.get("id")
+    job_id = job.get("id")
     job["jobUrl"] = f"/jobs/{cat_slug}/{job_id}/"
-
-    # 6. image_url
-    job["image_url"] = (
-        f"{config.GITHUB_PAGES_BASE_URL}/jobs/{cat_slug}/{job_id}/image.png"
-    )
+    job["image_url"] = f"{config.GITHUB_PAGES_BASE_URL}/jobs/{cat_slug}/{job_id}/image.png"
 
     return job
 
 
 def cmd_migrate() -> None:
-    """One-time migration: fix jobCategory, dates, salary, links, image URLs."""
-    data  = json.load(open(config.JOBS_JSON_PATH, encoding="utf-8"))
+    data = _load_grouped_jobs_file()
     total = 0
 
     for session in data:
@@ -225,28 +208,26 @@ def cmd_migrate() -> None:
     print(f"Migrated {total} jobs in {len(data)} session(s).")
 
 
-# ── --reset (was reset_jobs.py) ──────────────────────────────────────────────
 def cmd_reset() -> None:
-    """Reset all raw jobs to unprocessed AND clear jobs.json to empty list."""
-    raw_jobs_path = config.RAWJOBS_JSON_PATH
-    jobs_path     = config.JOBS_JSON_PATH
-
-    with open(raw_jobs_path, "r", encoding="utf-8") as f:
-        raw_jobs = json.load(f)
+    raw_jobs = rawjobs_store.load_raw_jobs()
+    state = rawjobs_store.load_processing_state()
+    state = rawjobs_store.reset_processing_state(raw_jobs, state=state, reset_translation=True)
 
     for job in raw_jobs:
-        job["processed"] = False
+        job.pop("translated_content", None)
 
-    with open(raw_jobs_path, "w", encoding="utf-8") as f:
-        json.dump(raw_jobs, f, indent=2, ensure_ascii=False)
+    rawjobs_store.save_raw_jobs(raw_jobs)
+    rawjobs_store.save_processing_state(state)
+    jobs_store.save_formatted_jobs_flat([])
+    jobs_store.save_jobs([])
 
-    with open(jobs_path, "w", encoding="utf-8") as f:
-        json.dump([], f, indent=2, ensure_ascii=False)
+    if os.path.exists(config.TRANSLATED_RAW_JOBS_JSON_PATH):
+        with open(config.TRANSLATED_RAW_JOBS_JSON_PATH, "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
 
-    print(f"Reset {len(raw_jobs)} raw jobs to unprocessed and cleared jobs.json.")
+    print(f"Reset {len(raw_jobs)} raw jobs, cleared processing state, and emptied job outputs.")
 
 
-# ── --patch-titles (was patch_titles.py) ──────────────────────────────────────
 _TITLE_PATCHES = {
     "Kattomyyjä & Asiakashankkija": "Roofing Sales Representative & Customer Acquisition Specialist",
     "Haussa myyjiä Helsinkiin, Tampereelle ja Turkuun": "Sales Representatives for Helsinki, Tampere and Turku",
@@ -254,9 +235,7 @@ _TITLE_PATCHES = {
 
 
 def cmd_patch_titles() -> None:
-    """Patch specific hardcoded Finnish titles in jobs.json and regenerate HTML."""
-    with open(config.JOBS_JSON_PATH, "r", encoding="utf-8") as f:
-        jobs_data = json.load(f)
+    jobs_data = _load_grouped_jobs_file()
 
     patched = 0
     all_jobs = []
@@ -278,9 +257,7 @@ def cmd_patch_titles() -> None:
     print(f"Patched {patched} title(s). Regenerated HTML for {len(all_jobs)} jobs.")
 
 
-# ── --schedule (was scheduler.py) ─────────────────────────────────────────────
 def cmd_schedule() -> None:
-    """Run the full pipeline immediately, then repeat every hour (blocking)."""
     try:
         import schedule as schedule_lib
     except ImportError:
@@ -313,16 +290,18 @@ def cmd_schedule() -> None:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def sync_category_dirs() -> None:
-    """Rename category directories from underscores to hyphens to match new slug logic."""
     import shutil
+
     for parent in [config.IMAGES_JOBS_DIR, config.JOBS_OUTPUT_DIR]:
         if not os.path.exists(parent):
             continue
+
         for dirname in os.listdir(parent):
             full_path = os.path.join(parent, dirname)
             if os.path.isdir(full_path) and "_" in dirname:
                 new_name = dirname.replace("_", "-")
                 new_path = os.path.join(parent, new_name)
+
                 if os.path.exists(new_path) and new_path != full_path:
                     logger.info("Merging %s into %s", dirname, new_name)
                     for item in os.listdir(full_path):
@@ -336,31 +315,45 @@ def sync_category_dirs() -> None:
                     os.rename(full_path, new_path)
 
 
+def _load_phase2_input_jobs(raw_jobs: list[dict], ai_only: bool) -> list[dict]:
+    if ai_only:
+        translated_raw_jobs = jobs_store.load_translated_raw_jobs()
+        return translated_raw_jobs if translated_raw_jobs else raw_jobs
+    return raw_jobs
+
+
 def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -> None:
     logger.info("=" * 60)
-    logger.info("PIPELINE STARTED  (dry_run=%s)", dry_run)
+    logger.info("PIPELINE STARTED  (dry_run=%s, ai_only=%s)", dry_run, ai_only)
     logger.info("=" * 60)
 
-    # ── Load existing stores ──────────────────────────────────────────────────
+    # ── Load stores ───────────────────────────────────────────────────────────
     logger.info("── Loading stores ──")
-    raw_jobs         = rawjobs_store.load_raw_jobs()
-    existing_jobs    = jobs_store.load_jobs()
-    existing_ids     = jobs_store.get_existing_ids(existing_jobs)
+    raw_jobs = rawjobs_store.load_raw_jobs()
+    processing_state = rawjobs_store.ensure_processing_state(raw_jobs, rawjobs_store.load_processing_state())
+    existing_jobs = jobs_store.load_formatted_jobs_flat()
+    if not existing_jobs:
+        existing_jobs = jobs_store.load_jobs()
 
     logger.info(
-        "Raw jobs: %d | Formatted jobs: %d",
-        len(raw_jobs), len(existing_jobs),
+        "Raw jobs: %d | Processing state entries: %d | Active formatted jobs: %d",
+        len(raw_jobs), len(processing_state), len(existing_jobs),
     )
 
-    # ── Reset raw jobs if requested ───────────────────────────────────────────
+    # ── Reset if requested ────────────────────────────────────────────────────
     if reset_raw:
-        logger.info("── Resetting all raw jobs to unprocessed ──")
+        logger.info("── Resetting processing state for all raw jobs ──")
+        processing_state = rawjobs_store.reset_processing_state(raw_jobs, state=processing_state, reset_translation=True)
+
         for rj in raw_jobs:
-            rj["processed"] = False
+            rj.pop("translated_content", None)
+
         if not dry_run:
             rawjobs_store.save_raw_jobs(raw_jobs)
+            rawjobs_store.save_processing_state(processing_state)
+            jobs_store.save_translated_raw_jobs([])
+            jobs_store.save_formatted_jobs_flat([])
 
-    # Always ensure category directories match current slug logic
     if not dry_run:
         sync_category_dirs()
 
@@ -368,36 +361,103 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     if not dry_run:
         logger.info("── Expiring old jobs ──")
         existing_jobs, expired = expiration.remove_expired_jobs(existing_jobs)
-        existing_ids = jobs_store.get_existing_ids(existing_jobs)
-        logger.info(
-            "Removed %d expired jobs. Active: %d", len(expired), len(existing_jobs)
-        )
+        logger.info("Removed %d expired jobs. Active: %d", len(expired), len(existing_jobs))
+        
+        if expired:
+            expired_ids = {j.get("id") for j in expired if j.get("id")}
+            if expired_ids:
+                logger.info("Removing %d expired jobs from raw/processing stores", len(expired_ids))
+                
+                # Update rawjobs
+                raw_jobs = [rj for rj in raw_jobs if rj.get("id") not in expired_ids]
+                rawjobs_store.save_raw_jobs(raw_jobs)
+                
+                # Update processing state
+                processing_state = {k: v for k, v in processing_state.items() if k not in expired_ids}
+                rawjobs_store.save_processing_state(processing_state)
+                
+                # Update translated internal jobs
+                translated_raw_jobs = jobs_store.load_translated_raw_jobs()
+                if translated_raw_jobs:
+                    translated_raw_jobs = [rj for rj in translated_raw_jobs if rj.get("id") not in expired_ids]
+                    jobs_store.save_translated_raw_jobs(translated_raw_jobs)
 
     # ─────────────────────────────────────────────────────────────────────────
-    # PHASE 2 — AI format unprocessed rawjobs → jobs.json
+    # PHASE 2 — Translation
+    # ─────────────────────────────────────────────────────────────────────────
+    translated_raw_jobs = []
+
+    if not dry_run and not ai_only:
+        logger.info("═" * 60)
+        logger.info("── Phase 2: Argos Translation ──")
+
+        phase2_input = _load_phase2_input_jobs(raw_jobs, ai_only=False)
+        raw_jobs = job_translator.run_phase2(phase2_input)
+
+        translated_raw_jobs = jobs_store.load_translated_raw_jobs()
+        if not translated_raw_jobs:
+            translated_raw_jobs = raw_jobs
+
+        logger.info("Phase 2 complete. Translated raw jobs available: %d", len(translated_raw_jobs))
+    elif not dry_run and ai_only:
+        translated_raw_jobs = jobs_store.load_translated_raw_jobs()
+        if not translated_raw_jobs:
+            logger.warning("AI-only mode requested but translated_raw_jobs.json is empty. Falling back to rawjobs.")
+            translated_raw_jobs = raw_jobs
+    else:
+        logger.info("[DRY-RUN] Skipping Phase 2 (translation).")
+        translated_raw_jobs = jobs_store.load_translated_raw_jobs() or raw_jobs
+
+    # Refresh processing state after Phase 2
+    processing_state = rawjobs_store.ensure_processing_state(translated_raw_jobs, processing_state)
+    translated_raw_jobs_with_state = rawjobs_store.attach_processing_state(translated_raw_jobs, processing_state)
+
+    # ─────────────────────────────────────────────────────────────────────────
+    # PHASE 3 — AI Formatting
     # ─────────────────────────────────────────────────────────────────────────
     newly_formatted = []
-    if not dry_run:
-        pending_count = len(rawjobs_store.get_unprocessed_jobs(raw_jobs))
-        logger.info("── Phase 2: AI processing %d unprocessed raw jobs ──", pending_count)
+    all_jobs = existing_jobs
+    actually_new = []
 
-        newly_formatted, raw_jobs = ai_processor.process_raw_jobs(
-            raw_jobs,
+    if not dry_run:
+        pending_count = len(rawjobs_store.get_unprocessed_jobs(translated_raw_jobs_with_state, processing_state))
+        logger.info("═" * 60)
+        logger.info("── Phase 3: AI Formatting (%d unprocessed jobs) ──", pending_count)
+
+        newly_processed_translated, updated_translated_jobs = ai_processor.format_translated_jobs(
+            translated_raw_jobs_with_state,
             batch_size=config.AI_BATCH_SIZE,
         )
-        logger.info("AI formatted: %d jobs", len(newly_formatted))
+        logger.info("Phase 3 AI extraction complete. Processed: %d jobs", len(newly_processed_translated))
+
+        processing_state = rawjobs_store.sync_processing_state_from_jobs(updated_translated_jobs, processing_state)
+        rawjobs_store.save_processing_state(processing_state)
+
+        # Keep translated_raw_jobs.json as Phase 2 output only
+        jobs_store.save_translated_raw_jobs(translated_raw_jobs)
+
+        # ─────────────────────────────────────────────────────────────────────
+        # PHASE 4 — Python factual fields formatting
+        # ─────────────────────────────────────────────────────────────────────
+        logger.info("═" * 60)
+        logger.info("── Phase 4: Job Formatter ──")
+
+        newly_formatted = Job_formatter.format_jobs(newly_processed_translated)
+        logger.info("Phase 4 complete. Formatted: %d jobs", len(newly_formatted))
 
         if newly_formatted:
             all_jobs, actually_new = jobs_store.merge_new_jobs(existing_jobs, newly_formatted)
             logger.info("Actually new (post-merge dedup): %d", len(actually_new))
-            rawjobs_store.save_raw_jobs(raw_jobs)
         else:
-            all_jobs     = existing_jobs
+            all_jobs = existing_jobs
             actually_new = []
+
+        jobs_store.save_formatted_jobs_flat(all_jobs)
+        rawjobs_store.save_raw_jobs(raw_jobs)
     else:
-        all_jobs     = existing_jobs
+        logger.info("[DRY-RUN] Skipping Phase 3 / Phase 4.")
+        all_jobs = existing_jobs
         actually_new = []
-        logger.info("[DRY-RUN] Skipping AI processing.")
 
     # ─────────────────────────────────────────────────────────────────────────
     # MAINTENANCE — Apply manual fixes to ALL jobs
@@ -405,7 +465,9 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     if not dry_run:
         logger.info("── Maintenance: Applying fixes to all %d jobs ──", len(all_jobs))
         for job in all_jobs:
-            ai_processor.apply_manual_fixes(job)
+            Job_formatter.apply_manual_fixes(job)
+
+        jobs_store.save_formatted_jobs_flat(all_jobs)
 
     always_regenerate = True
 
@@ -417,24 +479,25 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
         return
 
     # ─────────────────────────────────────────────────────────────────────────
-    # PHASE 3 — Static Site Generation
+    # PHASE 5 — Static Site Generation + Notifications
     # ─────────────────────────────────────────────────────────────────────────
-    img_count  = 0
+    img_count = 0
     page_count = 0
 
     if not dry_run and (actually_new or always_regenerate):
-        logger.info("── Phase 3: Generating images ──")
-        target_jobs = actually_new if not always_regenerate else all_jobs
-        img_count   = image_generator.generate_images_for_jobs(target_jobs)
-        logger.info("Images generated: %d", img_count)
+        logger.info("═" * 60)
+        logger.info("── Phase 5: Site Generation ──")
 
-        logger.info("── Phase 3: Generating HTML job pages ──")
-        page_count = html_generator.generate_job_pages(
-            all_jobs if always_regenerate else actually_new
-        )
-        logger.info("Pages generated: %d", page_count)
+        logger.info("  Generating images…")
+        target_jobs = all_jobs if always_regenerate else actually_new
+        img_count = image_generator.generate_images_for_jobs(target_jobs)
+        logger.info("  Images generated: %d", img_count)
 
-        logger.info("── Phase 3: Updating main pages ──")
+        logger.info("  Generating HTML job pages…")
+        page_count = html_generator.generate_job_pages(all_jobs if always_regenerate else actually_new)
+        logger.info("  Pages generated: %d", page_count)
+
+        logger.info("  Updating main pages…")
         html_generator.update_main_pages(all_jobs)
         html_generator.update_sitemap(all_jobs)
     elif dry_run:
@@ -444,7 +507,7 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     # ── Firebase alerts ───────────────────────────────────────────────────────
     alert_count = 0
     if not dry_run and actually_new:
-        logger.info("── Sending Firebase alerts ──")
+        logger.info("  Sending Firebase alerts…")
         try:
             firebase_client.init_firebase()
             alert_count = firebase_client.send_new_job_alerts(actually_new, dry_run=False)
@@ -453,19 +516,18 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     elif dry_run:
         alert_count = firebase_client.send_new_job_alerts(actually_new, dry_run=True)
 
-    # ── Persist jobs.json ─────────────────────────────────────────────────────
+    # ── Persist grouped jobs.json ─────────────────────────────────────────────
     if not dry_run:
         logger.info("── Saving jobs.json ──")
         jobs_store.save_jobs(all_jobs)
-        jobs_store.save_translated_jobs(all_jobs)
 
     _print_summary(all_jobs, actually_new, img_count, alert_count)
 
 
 def _finalize(all_jobs: list[dict]) -> None:
-    """Update pages + save even when no new jobs were found."""
     html_generator.update_main_pages(all_jobs)
     html_generator.update_sitemap(all_jobs)
+    jobs_store.save_formatted_jobs_flat(all_jobs)
     jobs_store.save_jobs(all_jobs)
 
 
@@ -483,25 +545,23 @@ def _print_summary(all_jobs, new_jobs, img_count, alert_count):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Job aggregator pipeline (3-phase) + utility commands",
+        description="Job aggregator pipeline + utility commands",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 
-    # ── Pipeline flags ────────────────────────────────────────────────────────
     parser.add_argument(
         "--dry-run", action="store_true",
-        help="Scrape and print, but make NO changes to disk or Firebase",
+        help="Run pipeline without disk writes or Firebase writes",
     )
     parser.add_argument(
         "--ai-only", action="store_true",
-        help="Skip scraping — only run AI processing + site generation",
+        help="Skip translation and only run AI processing + formatter + site generation",
     )
     parser.add_argument(
         "--reset-raw", action="store_true",
-        help="Reset all raw jobs to unprocessed status before running",
+        help="Reset all raw jobs to untranslated/unprocessed before running",
     )
 
-    # ── Utility subcommands ───────────────────────────────────────────────────
     parser.add_argument(
         "--check-expires", action="store_true",
         help="Print expiry/date stats for the last 5 jobs in jobs.json and exit",
@@ -524,7 +584,7 @@ def main():
     )
     parser.add_argument(
         "--reset", action="store_true",
-        help="Reset all raw jobs to unprocessed AND clear jobs.json to [], then exit",
+        help="Reset raw state and clear output stores, then exit",
     )
     parser.add_argument(
         "--patch-titles", action="store_true",
@@ -533,7 +593,6 @@ def main():
 
     args = parser.parse_args()
 
-    # ── Dispatch utility commands first ───────────────────────────────────────
     if args.check_expires:
         cmd_check_expires()
         return
@@ -562,7 +621,6 @@ def main():
         cmd_patch_titles()
         return
 
-    # ── Default: run the 3-phase pipeline ────────────────────────────────────
     run(dry_run=args.dry_run, ai_only=args.ai_only, reset_raw=args.reset_raw)
 
 

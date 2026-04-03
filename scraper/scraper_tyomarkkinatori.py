@@ -1,5 +1,5 @@
-"""
-scraper_tyomarkkinatori.py — Scraper for Työmarkkinatori (tyomarkkinatori.fi).
+﻿"""
+scraper_tyomarkkinatori.py ÔÇö Scraper for Ty├Âmarkkinatori (tyomarkkinatori.fi).
 
 Uses the public JSON REST API to search listings (POST) and fetch job details (GET).
 Returns normalised raw job dicts ready for rawjobs_store.
@@ -20,14 +20,14 @@ from scraper import fetch_with_retry, normalise_raw_job
 
 logger = logging.getLogger("scraper.tyomarkkinatori")
 
-# ── Constants ─────────────────────────────────────────────────────────────────
+# ÔöÇÔöÇ Constants ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 
 TYOMARKKINATORI_API            = "https://tyomarkkinatori.fi/api/jobpostingfulltext/search/v2/search"
 TYOMARKKINATORI_BASE           = "https://tyomarkkinatori.fi"
 TYOMARKKINATORI_DETAIL_PATTERN = "/en/personal-customers/vacancies/{job_id}/en"
 TYOMARKKINATORI_DETAIL_API     = "https://tyomarkkinatori.fi/api/jobposting-new/v1/public/jobpostings/"
 
-# ── Municipality Codes ────────────────────────────────────────────────────────
+# ÔöÇÔöÇ Municipality Codes ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 
 MUNICIPALITY_CODES = {}
 _codes_path = os.path.join(os.path.dirname(__file__), "municipalities_codes.json")
@@ -39,10 +39,10 @@ if os.path.exists(_codes_path):
         logger.warning("Failed to load municipalities_codes.json: %s", e)
 
 
-# ── Private helpers ───────────────────────────────────────────────────────────
+# ÔöÇÔöÇ Private helpers ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 
 def _tyo_fetch_detail(job_id: str) -> dict | None:
-    """Fetch full job JSON from the Työmarkkinatori public detail API."""
+    """Fetch full job JSON from the Ty├Âmarkkinatori public detail API."""
     url = f"{TYOMARKKINATORI_DETAIL_API}{job_id}"
     headers = {
         "Accept": "application/json",
@@ -57,7 +57,7 @@ def _tyo_fetch_detail(job_id: str) -> dict | None:
 
 
 def _tyo_post(page: int = 0, size: int = 100) -> dict | None:
-    """POST to Työmarkkinatori search API and return parsed JSON response."""
+    """POST to Ty├Âmarkkinatori search API and return parsed JSON response."""
     payload = {
         "query": "",
         "filters": {},
@@ -91,7 +91,7 @@ def _tyo_post(page: int = 0, size: int = 100) -> dict | None:
 
 def _extract_lang_string(data, preferred: str = "en") -> str:
     """
-    Extract a single string from Työmarkkinatori language dicts.
+    Extract a single string from Ty├Âmarkkinatori language dicts.
     Handles:
       - "string"
       - {"fi": "...", "en": "..."}
@@ -116,7 +116,7 @@ def _extract_lang_string(data, preferred: str = "en") -> str:
 
 def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
     """
-    Convert a Työmarkkinatori API item to a raw job card dict ready for
+    Convert a Ty├Âmarkkinatori API item to a raw job card dict ready for
     normalise_raw_job(). If 'detail' is provided, extracts rich fields
     (description, company, languages, employment type, etc.).
     """
@@ -232,9 +232,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         what_we_expect: list = []
         job_responsibilities: list = []
         what_we_offer: list = []
-        work_time = ""
-        continuity_of_work = ""
-        job_occupations_en: list = []
+        employment_type: list = []
         job_content_raw = ""
 
         if detail:
@@ -250,31 +248,23 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             job_content_raw = "\n\n".join(filter(None, [desc_text, marketing, help_text]))
             
             if wage_info:
-                # Normalize specific Finnish salary strings to English requested by user
-                w_info_low = wage_info.lower()
-                if "asfalttialan tes" in w_info_low or "tes:in mukaisen" in w_info_low:
-                    salary = "Competitive hourly wage based on Finnish collective agreements."
-                else:
-                    salary = wage_info
+                salary = wage_info
             elif wage_code in ["01", "0101"]:
                 salary = "Competitive hourly wage based on Finnish collective agreements."
             else:
                 salary = ""
 
-            # ESCO Skills → what_we_expect
+            # ESCO Skills ÔåÆ what_we_expect
             for s in pos.get("skills", []):
                 s_label = _extract_lang_string(s.get("prefLabel"), "fi")
                 if s_label and s_label not in what_we_expect:
                     what_we_expect.append(s_label)
 
-            # ESCO Occupations → job_responsibilities + local categorization help
+            # ESCO Occupations ÔåÆ job_responsibilities
             for o in pos.get("occupations", []):
-                o_label_fi = _extract_lang_string(o.get("prefLabel"), "fi")
-                o_label_en = _extract_lang_string(o.get("prefLabel"), "en")
-                if o_label_fi and o_label_fi not in job_responsibilities:
-                    job_responsibilities.append(o_label_fi)
-                if o_label_en and o_label_en not in job_occupations_en:
-                    job_occupations_en.append(o_label_en)
+                o_label = _extract_lang_string(o.get("prefLabel"), "fi")
+                if o_label and o_label not in job_responsibilities:
+                    job_responsibilities.append(o_label)
 
             # Language requirements
             work_langs = pos.get("workLanguages") or []
@@ -282,47 +272,47 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                 cmap  = {"fi": "Finnish", "en": "English", "sv": "Swedish"}
                 langs = [cmap.get(l, l.capitalize()) for l in work_langs if l]
 
-            # Work time (workTime code → human-readable)
-            _wt_map = {"01": "Full-time", "02": "Part-time"}
-            wt_code = str(pos.get("workTime") or "").strip()
-            work_time = _wt_map.get(wt_code, "Full-time")
+            # Employment type (workTime + continuityOfWork)
+            wt = str(pos.get("workTime") or "").strip()
+            wt_label = {"01": "Full-time", "02": "Part-time"}.get(wt)
+            if wt_label:
+                employment_type.append(wt_label)
 
-            # Continuity of work (continuityOfWork code → human-readable)
-            _cont_map = {
-                "01": "Permanent",
-                "02": "Temporary",
-                "0201": "Seasonal work",
-                "0202": "Summer job",
-            }
+            cont_map = {"01": "Permanent", "02": "Temporary"}
             continuity = pos.get("continuityOfWork") or []
-            continuity_of_work = "Permanent"  # default
-            if isinstance(continuity, list) and continuity:
-                # Use the first code (most specific)
-                first_code = str(continuity[0]).strip()
-                continuity_of_work = _cont_map.get(first_code, "Permanent")
-            elif isinstance(continuity, str) and continuity.strip():
-                continuity_of_work = _cont_map.get(continuity.strip(), "Permanent")
+            if isinstance(continuity, list):
+                for code in continuity:
+                    lbl = cont_map.get(str(code).strip())
+                    if lbl and lbl not in employment_type:
+                        employment_type.append(lbl)
+            elif isinstance(continuity, str):
+                lbl = cont_map.get(continuity.strip())
+                if lbl:
+                    employment_type.append(lbl)
 
-            # Markdown section parser — fills gaps not covered by ESCO
+            if not employment_type:
+                employment_type = ["Full-time"]
+
+            # Markdown section parser ÔÇö fills gaps not covered by ESCO
             if desc_text:
                 _sec_kw = {
                     "responsibilities": [
-                        "your tasks", "your role", "tehtäväsi", "tehtäviin kuuluu",
-                        "työnkuva", "vastuut", "mitä teet", "what is the job", "duties",
+                        "your tasks", "your role", "teht├ñv├ñsi", "teht├ñviin kuuluu",
+                        "ty├Ânkuva", "vastuut", "mit├ñ teet", "what is the job", "duties",
                     ],
                     "requirements": [
-                        "we expect", "what we expect", "odotamme", "edellytämme",
+                        "we expect", "what we expect", "odotamme", "edellyt├ñmme",
                         "vaatimukset", "toivomme", "etsimme", "qualifications",
                         "requirements", "skills required",
                     ],
                     "offers": [
-                        "we offer", "what we offer", "tarjoamme", "meillä saat",
+                        "we offer", "what we offer", "tarjoamme", "meill├ñ saat",
                         "lupaamme", "benefits", "you will receive",
                     ],
                 }
                 current_sec = None
                 _parsed: dict = {k: [] for k in _sec_kw}
-                bullet_re    = re.compile(r'^[-•*#>]+\s*')
+                bullet_re    = re.compile(r'^[-ÔÇó*#>]+\s*')
 
                 for line in desc_text.splitlines():
                     line = line.strip()
@@ -339,7 +329,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                         continue
                     if current_sec and 5 < len(line) < 300:
                         # Skip if it looks like a deadline, email, or URL to keep lists clean
-                        if any(x in line_low for x in ["@", "http", ".fi", ".com", " mennessä", "viim."]):
+                        if any(x in line_low for x in ["@", "http", ".fi", ".com", " menness├ñ", "viim."]):
                             continue
                         # If a date like 30.4. or 2024 is in the line, skip it for experience/requirements
                         if re.search(r'\d{1,2}\.\d{1,2}\.', line) or re.search(r'202[4-6]', line):
@@ -403,7 +393,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             apply_link = job_link
 
         return {
-            "open_positions":        open_positions,
+            "job_open_position":     open_positions,
             "title":                 title,
             "company":               company,
             "location":              raw_location,
@@ -417,12 +407,10 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             "description":           description,
             "jobcontent":            job_content_raw,
             "salary":                salary,
-            "workTime":              work_time,
-            "continuityOfWork":      continuity_of_work,
+            "employment_type":       employment_type,
             "language_requirements": langs,
             "what_we_expect":        what_we_expect,
             "job_responsibilities":  job_responsibilities,
-            "job_occupations_en":    job_occupations_en,
             "what_we_offer":         what_we_offer,
             "source":                "tyomarkkinatori",
             "id":                    job_id_raw,
@@ -432,7 +420,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         return None
 
 
-# ── Public scraper entrypoint ─────────────────────────────────────────────────
+# ÔöÇÔöÇ Public scraper entrypoint ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 
 def scrape_tyomarkkinatori(
     existing_ids: set,
@@ -444,19 +432,19 @@ def scrape_tyomarkkinatori(
     add_to_dedup=None,
 ) -> list[dict]:
     """
-    Scrape Työmarkkinatori using the JSON API (POST search + GET detail).
+    Scrape Ty├Âmarkkinatori using the JSON API (POST search + GET detail).
 
     Args:
         existing_ids / existing_job_ids / existing_title_co / existing_links:
             Dedup sets maintained by the main runner.
         limit: Stop after this many NEW jobs (0 = no limit).
-        is_duplicate: callable(job, ids, job_ids, title_co, links) → bool
-        add_to_dedup: callable(job, ids, job_ids, title_co, links) → None
+        is_duplicate: callable(job, ids, job_ids, title_co, links) ÔåÆ bool
+        add_to_dedup: callable(job, ids, job_ids, title_co, links) ÔåÆ None
 
     Returns:
         List of normalised raw job dicts (new jobs only).
     """
-    logger.info("=== [Työmarkkinatori] Scrape started ===")
+    logger.info("=== [Ty├Âmarkkinatori] Scrape started ===")
     new_jobs: list[dict] = []
     skipped    = 0
     total_found = 0
@@ -469,16 +457,16 @@ def scrape_tyomarkkinatori(
         if limit > 0 and len(new_jobs) >= limit:
             break
 
-        logger.info("[Työmarkkinatori] Fetching page=%d size=%d", page, size)
+        logger.info("[Ty├Âmarkkinatori] Fetching page=%d size=%d", page, size)
         data = _tyo_post(page=page, size=size)
 
         if not data:
-            logger.warning("[Työmarkkinatori] No data returned for page %d — stopping.", page)
+            logger.warning("[Ty├Âmarkkinatori] No data returned for page %d ÔÇö stopping.", page)
             break
 
         hits = data.get("content") if isinstance(data, dict) else []
         if not hits:
-            logger.info("[Työmarkkinatori] Empty page %d — end of results.", page)
+            logger.info("[Ty├Âmarkkinatori] Empty page %d ÔÇö end of results.", page)
             break
 
         total_found += len(hits)
@@ -503,7 +491,7 @@ def scrape_tyomarkkinatori(
             continue
 
         # Fetch detail pages in parallel for new candidates
-        logger.info("[Työmarkkinatori] Fetching details for %d candidates …", len(candidates))
+        logger.info("[Ty├Âmarkkinatori] Fetching details for %d candidates ÔÇª", len(candidates))
         with ThreadPoolExecutor(max_workers=5) as executor:
             future_map = {executor.submit(_tyo_fetch_detail, i.get("id")): i for i in candidates}
             for future in as_completed(future_map):
@@ -527,13 +515,13 @@ def scrape_tyomarkkinatori(
                     new_jobs.append(job)
                     if add_to_dedup:
                         add_to_dedup(job, existing_ids, existing_job_ids, existing_title_co, existing_links)
-                    logger.info("[Työ] NEW: %s @ %s", job.get("title"), job.get("company"))
+                    logger.info("[Ty├Â] NEW: %s @ %s", job.get("title"), job.get("company"))
 
                     if limit > 0 and len(new_jobs) >= limit:
                         executor.shutdown(wait=False, cancel_futures=True)
                         break
                 except Exception as exc:
-                    logger.warning("[Työmarkkinatori] Detail error for %s: %s", item.get("id"), exc)
+                    logger.warning("[Ty├Âmarkkinatori] Detail error for %s: %s", item.get("id"), exc)
                     skipped += 1
 
         if len(hits) < size:
@@ -542,7 +530,7 @@ def scrape_tyomarkkinatori(
         time.sleep(config.REQUEST_DELAY_SECONDS)
 
     logger.info(
-        "=== [Työmarkkinatori] Done. Found: %d | Skipped: %d | New: %d ===",
+        "=== [Ty├Âmarkkinatori] Done. Found: %d | Skipped: %d | New: %d ===",
         total_found, skipped, len(new_jobs),
     )
     return new_jobs

@@ -879,10 +879,10 @@ body.drK .job-card__value {
   }
 
   .LI-profile-badge iframe {
-      max-width: 110% !important;
-      margin-left: auto !important;
-      margin-bottom: -15px !important;
-    }
+    max-width: 110% !important;
+    margin-left: auto !important;
+    margin-bottom: -15px !important;
+  }
 
 }
 
@@ -899,4 +899,8 @@ body.drK .job-card__value {
 #morejobs {
   padding: 10px 22px !important;
   cursor: pointer;
+}
+
+#header-search {
+  margin-left: 20px;
 }

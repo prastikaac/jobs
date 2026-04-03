@@ -1,107 +1,20 @@
 [
   {
-    "id": "03ec4dab",
-    "job_id": "fysiikan-ja-kemian-lehtori-raisio-03ec4dab",
-    "processed": true,
-    "title": "Fysiikan ja kemian lehtori",
-    "company": "Raision kaupunki",
+    "id": "41fb4e2c",
+    "job_id": "kaivinkoneenkuljettaja-kajaani-41fb4e2c",
+    "title": "Kaivinkoneenkuljettaja",
+    "company": "Nordrec Henkilöstöpalvelut Oy",
     "jobLocation": [
-      "Raisio"
+      "Kajaani"
     ],
-    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/716360/fi_FI",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e0512a36-54b5-4d7d-bff2-90fef4217285/en",
-    "job_employer_email": "janne.ahlqvist@raisio.fi",
-    "job_employer_name": "Janne Ahlqvist",
-    "job_employer_phone_no": "0400445616",
-    "date_posted": "2026-03-30",
-    "date_expires": "2026-04-14",
-    "scraped_at": "2026-03-30 20:36:15",
-    "open_positions": 2,
-    "salary_range": "Palkka: 3 294,02€ + Raisio-lisä, mahdolliset määrävuosikorotukset ja mahdolliset TVA-lisät.",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [],
-    "job_responsibilities": [
-      "opettaja, yläluokat ja lukio"
-    ],
-    "what_we_offer": [],
-    "who_is_this_for": [],
-    "jobcontent": "Raision kaupungin sivistyskeskuksessa on haettavana fysiikan ja kemian lehtorin virka 1.8.2026 alkaen. Tehtävän ensimmäinen sijoituspaikka on Tiedonpuiston koulussa. Tehtävään voi sisältyä myös luokanohjajaajan tehtävät. \r\n\r\nPalkka: 3 294,02€ + Raisio-lisä, mahdolliset määrävuosikorotukset ja mahdolliset TVA-lisät.\r\n\r\nRaisio-lisä on perusopetuksen opettajille maksettava lisäkorvaus peruspalkan lisäksi, joka on tällä hetkellä suuruudeltaan 156,43 euroa.\r\n\r\nPärjääminen fysiikan ja kemian lehtorin tehtävässä edellyttää hyvää opetuksen ainesisältöjen hallintaa ja hyviä ihmissuhdetaitoja. Myös oppilaan kohtaamisen taitoja arvostetaan koulussamme korkealle. Valinnassa kiinnitetään huomiota kelpoisuuden lisäksi henkilön soveltuvuuteen työyhteisöön sekä fysiikan ja kemian lehtorin tehtävään.\r\n\r\nTiedonpuiston koulussa annetaan opetusta myös CLIL-pedagogiikan mukaisesti. Tehtävässä katsotaan eduksi fysiikan ja kemian ainesisältöjen osaamisen lisäksi opettajan kyky ja kiinnostus opettaa CLIL-luokkia englannin kielellä. CLIL-luokkien opettamisesta englannin kielellä maksetaan Raision TVA-järjestelmän mukainen lisäkorvaus.\r\n\r\nVaisaaren koulussa kaikilla oppilailla on käytössään henkilökohtainen Chromebook. Tiedonpuiston koulussa on myös jokaisessa opetustilassa nykyaikainen opetusteknologinen laitteisto. Hakijalle katsotaankin eduksi ajantasaiset tvt-taidot, kiinnostus opetuksen kehittämiseen sekä digitaalisen oppimateriaalin hyödyntämiseen opetuksessa.\r\n\r\nKelpoisuusvaatimuksena on fysiikan ja kemian opettajan kelpoisuus.\r\n\r\nRaisiossa sinua odottaa innostunut, motivoitunut ja tiivis työyhteisö, jossa arvostetaan hyvää työilmapiiriä. Tuemme työssä kehittymistä kouluttautumismahdollisuuksilla ja huolehdimme työhyvinvoinnistasi mm. erilaisilla liikunta- ja kulttuurieduilla. Pääset maksutta Raision uintikeskus Ulpukkaan ja kuntosalille. Lisäksi saat käyttöösi Epassi-edun ja aktiivisen virkistystoimikunnan tarjoamat harrastusmahdollisuudet. \r\n \r\nKelpoisuusehdot määräytyvät opetustoimen henkilöstön kelpoisuusvaatimuksista annetun asetuksen 986/1998 mukaisesti. Kelpoisuuden osoittavat alkuperäiset tutkintotodistukset ja työtodistukset esitetään mahdollisen haastattelun yhteydessä.\r\n\r\nValitun on esitettävä hyväksyttävä lääkärintodistus terveydentilastaan ja lasten ja nuorten kanssa työskentelevien rikostaustan selvittämisestä annetun lain (504/2002) mukainen rekisteriote. Viran täytössä noudatetaan kuuden kuukauden koeaikaa. Raision kaupunki on savuton työpaikka.\r\n\r\nHakemukset toimitetaan sähköisesti Kuntarekry.fi -rekrytointijärjestelmän kautta 14.4.2026 klo 15.00 mennessä. Haastattelut järjestetään tiistaina 21.4. klo 12.00-15.00.\r\n\r\nTervetuloa joukkoomme!",
-    "source": "tyomarkkinatori",
-    "scraped": true,
-    "ai_processed": true,
-    "ai_status": "success",
-    "retry_count": 0,
-    "max_retries": 3,
-    "ai_retry_needed": false,
-    "last_ai_error": "",
-    "display_mode": "ideal"
-  },
-  {
-    "id": "ecff5d9b",
-    "job_id": "kaivinkoneenkuljettaja-espoose-049-091-092-ecff5d9b",
-    "processed": true,
-    "title": "Kaivinkoneenkuljettaja Espooseen",
-    "company": "Takuurekry Oy",
-    "jobLocation": [
-      "Finland"
-    ],
-    "jobapply_link": "https://urat.takuurekry.fi/jobs/7486656-kaivinkoneenkuljettaja-espooseen/applications/new?promotion=1921533-tyomarkkinatori",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9e2db2d6-1002-4315-8b03-edd023a86fe1/en",
-    "job_employer_email": "jukka.saarijarvi@takuurekry.fi",
-    "job_employer_name": "Jukka Saarijärvi",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-03-30",
-    "date_expires": "2026-04-13",
-    "scraped_at": "2026-03-30 20:36:15",
-    "open_positions": 1,
-    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [],
-    "job_responsibilities": [
-      "kaivinkoneenkuljettaja"
-    ],
-    "what_we_offer": [],
-    "who_is_this_for": [],
-    "jobcontent": "Asiakasyrityksemme hakee kaivinkoneenkuljettajaa Espooseen työskentelemään uuden asuinalueen kunnallistekniikan parissa. Työssä ajat pyöräalustaista kaivinkonetta ja osallistut monipuolisiin maanrakennustöihin työmaalla, jossa arvostetaan oma-aloitteista otetta, huolellista työskentelyä ja sujuvaa yhteistyötä muun työryhmän kanssa.Tehtävässä menestyminen edellyttää aiempaa kokemusta pyöräalustaisesta kaivinkoneesta sekä 3-D ohjausjärjestelmän hallintaa. Etsimme tekijää, joka tarttuu työhön ammattitaidolla ja pystyy työskentelemään itsenäisesti muuttuvissakin työmaan tilanteissa.Mitä odotammeKokemusta pyöräalustaisella kaivinkoneella työskentelystä3-D ohjausjärjestelmän osaamistaAiempaa kokemusta kunnallistekniikan työmailtaAmmattitaitoista, itsenäistä ja huolellista työotettaKykyä toimia sujuvasti osana työryhmääMitä tarjoammeMielenkiintoisen työn uuden asuinalueen kunnallistekniikan parissaMahdollisuuden työskennellä pitkäkestoisessa projektissaSelkeän ja vastuullisen roolin ammattitaitoisessa työympäristössäTyön, jossa pääset hyödyntämään osaamistasi monipuolisestiMuut tiedotTyö alkaa viikolla 15. Työkohde sijaitsee Espoossa. Työsuhde kestää vuoden loppuun saakka.Ota yhteyttäRekrytointitiimip. 03 4109 3853s-posti: tyonhakijat@takuurekry.fiMiksi Takuurekry?Takuurekry Oy on henkilöstöalan asiantuntija, jonka toiminnan ytimessä ovat luottamus, laatu ja aito kumppanuus. Autamme yrityksiä ja työntekijöitä kohtaamaan onnistuneesti olipa kyse vuokratyöstä tai suorarekrytoinnista. Toimimme valtakunnallisesti ja rakennamme pitkäjänteisesti parempaa työelämää koko Suomessa.",
-    "source": "tyomarkkinatori",
-    "scraped": true,
-    "ai_processed": true,
-    "ai_status": "success",
-    "retry_count": 0,
-    "max_retries": 3,
-    "ai_retry_needed": false,
-    "last_ai_error": "",
-    "display_mode": "ideal"
-  },
-  {
-    "id": "25c06f7e",
-    "job_id": "kokki-nuorisokeskus-piispalaan-äänekoski-karstula-k-25c06f7e",
-    "processed": true,
-    "title": "Kokki Nuorisokeskus Piispalaan Kannonkoskelle",
-    "company": "OivaTyö Oy",
-    "jobLocation": [
-      "Äänekoski",
-      "Karstula",
-      "Kannonkoski",
-      "Viitasaari",
-      "Saarijarvi"
-    ],
-    "jobapply_link": "https://oivatyo.rekrytointi.com/paikat/index.php?o=A_A&jid=327&jbid=15",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d590c8e4-2ebb-4db7-a672-fdf3543823a9/en",
-    "job_employer_email": "oiva@oivatyo.fi",
-    "job_employer_name": "",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-03-30",
-    "date_expires": "2026-04-15",
-    "scraped_at": "2026-03-30 20:36:15",
+    "jobapply_link": "http://nordrec.likeit.fi/apply/12571056",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1474b911-7a62-4066-86fb-14055ba0d12d/en",
+    "job_employer_email": "antti.paakkonen@nordrec.fi",
+    "job_employer_name": "Antti Pääkkönen",
+    "job_employer_phone_no": "+358504444467",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-12",
+    "scraped_at": "2026-04-03 18:04:53",
     "open_positions": 1,
     "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
     "workTime": "Full-time",
@@ -110,87 +23,69 @@
       "Finnish"
     ],
     "what_we_expect": [
-      "valmistaa ruokaa kaloista ja äyriäisistä",
-      "valmistaa ruokaa meijerituotteista",
-      "valmistaa erikoisruokavalioon sopivia aterioita",
-      "valmistaa jälkiruoat",
-      "valmistaa kasvisruokia",
-      "valmistaa liharuokia"
+      "Aikaisempaa kokemusta kaivinkoneenkuljettajan töistä",
+      "3D-koneohjausosaamista",
+      "Voimassa olevaa työturvakorttia",
+      "Hyvää työasennetta ja vastuullisuutta"
     ],
     "job_responsibilities": [
-      "kokki"
+      "kaivinkoneenkuljettaja"
     ],
-    "what_we_offer": [],
+    "what_we_offer": [
+      "Työt Sotkamossa kaivosalueella",
+      "Majoituksen tarvittaessa",
+      "Työn aloituksen pikaisesti",
+      "Töitä syksyyn saakka",
+      "Kilpailukykyisen palkan kokemuksen mukaan",
+      "Kiinnostuitko? Lähetä hakemuksesi ja kerro osaamisestasi mahdollisimman pian.",
+      "Lisätietoja saat pyydettäessä Antti Pääkkönen 050 444 4467"
+    ],
     "who_is_this_for": [],
-    "jobcontent": "Piispala on Suomen suurin nuorisokeskus! Sijainti Kannonkoskella on mitä mainioin keskellä kauneinta Suomea, puhtaan Kivijärven rannalla.\nPiispalan asiakaskunta koostuu lapsista ja nuorista, urheilijoista, perhe- ja järjestölomalaisista, hyvinvointipäiviin osallistuvista työyhteisöistä, senioreista ja omatoimimatkailijoista.\n\nTuhannet liikkujat, majoittujat ja ruokailijat vuosittain sen kertovat; Piispala on mahtava paikka. Piispalaan tullaan uudelleen!\n\nTutustu Piispalaan www.piispala.fi\n\nOivaTyö Oy etsii rekrytointitoimeksiantona Nuorisokeskus Piispalaan ammattitaitoista KOKKIA kesäsesongin ajalle.\n\nKokilta edellytetään:\n\n- alan koulutusta tai vankkaa kokemusta kokin työstä\n- omatoimisuutta sekä organisointi- ja paineensietokykyä\n- hyviä yhteistyö- ja vuorovaikutustaitoja\n- asiakaslähtöistä ajattelu- ja toimintatapaa\n- joustavuutta ja mahdollisuutta työskennellä myös iltaisin ja viikonloppuisin\n- perus IT-taitoja\n- hygieniapassia\n\nPiispalan ravintola tarjoaa maittavaa ja terveellistä ruokaa majoittuville, henkilökunnalle ja muille Piispalaan syömään pistäytyville. Tarjolla on aamupala, lounas, päivällinen ja iltapala. Työ on ajoittain hektistä, kiireisimpinä aikoina lounaalla on jopa 400 ruokailijaa.\n\nPiispalan ravintolan henkilökunta on ammattitaitoista, joten ympärillesi saat osaavan ja kannustavan tiimin sekä työhösi hyvän perehdytyksen.\n\nTyösuhteessa sovelletaan kunta-alan työehtosopimusta KVTES.\n\nPalkan lisäksi työntekijöille on tarjolla ravintoetu verotusarvolla maittavien patojen äärelle Piispalan ravintolaan sekä vapaa-ajalle upeat puitteet ja mahdollisuudet harrastaa monipuolista sisä- ja ulkoliikuntaa.\n\nLisätietoja työpaikasta saat OivaTyöstä puhelimitse 044 4388330 tai sähköpostilla oiva@oivatyo.fi\n\nHakuaikaa on 15.04.2026 saakka mutta haastatteluja ja valinta voidaan tehdä jo hakuaikana. Työ alkaa toukokuun alussa ja työtä on tarjolla elo-syyskuun vaihteeseen.\n\nJätä hakemuksesi klikkaamalla linkkiä tai verkkosivujemme kautta www.oivatyo.fi/avoimet-tyopaikat",
+    "jobcontent": "Kaivinkoneenkuljettaja Sotkamo (kaivosalue)\n\nEtsimme ammattitaitoista kaivinkoneenkuljettajaa työskentelemään kaivosalueelle Sotkamoon. Tarjolla on määräaikainen työ nopealla aloituksella syksyyn saakka.\n\nTyönkuva:\nTyötehtäviin kuuluu kaivinkoneen käyttö kaivosalueen maanrakennustöissä. Työ vaatii huolellisuutta, turvallisuusmääräysten noudattamista sekä kykyä työskennellä itsenäisesti vaihtelevissa olosuhteissa.\n\nEdellytämme:\n\n * Aikaisempaa kokemusta kaivinkoneenkuljettajan töistä\n * 3D-koneohjausosaamista\n * Voimassa olevaa työturvakorttia\n * Hyvää työasennetta ja vastuullisuutta\n\nTarjoamme:\n\n * Työt Sotkamossa kaivosalueella\n * Majoituksen tarvittaessa\n * Työn aloituksen pikaisesti\n * Töitä syksyyn saakka\n * Kilpailukykyisen palkan kokemuksen mukaan\n\nKiinnostuitko? Lähetä hakemuksesi ja kerro osaamisestasi mahdollisimman pian.\n\nLisätietoja saat pyydettäessä Antti Pääkkönen 050 444 4467\n\nNordrec on vuonna 2022 perustettu henkilöstöpalvelualan yritys. Meillä Nordrecilaisilla on vankka kokemus rekrytoinneista, henkilöstövuokrauksesta sekä yrittäjyydestä. Emme harrasta turhia korulauseita, vaan puhumme asioista suoraan, toimimme joustavasti, läpinäkyvästi ja luotettavasti. Haluamme kasvaa ja menestyä asiakkaidemme ja työntekijöidemme kanssa yhdessä. Palvelemme asiakkaita ja työnhakijoita ympäri Suomen, jonka lisäksi työmahdollisuuksia löytyy projekteissa EU-maissa ja Norjassa.",
     "source": "tyomarkkinatori",
-    "scraped": true,
-    "ai_processed": true,
-    "ai_status": "success",
-    "retry_count": 0,
-    "max_retries": 3,
-    "ai_retry_needed": false,
-    "last_ai_error": "",
-    "display_mode": "ideal"
-  },
-  {
-    "id": "3e6edad7",
-    "job_id": "kunnansihteeri-konnevesi-3e6edad7",
-    "processed": false,
-    "title": "Kunnansihteeri",
-    "company": "Konneveden kunta",
-    "jobLocation": [
-      "Konnevesi"
+    "translated_content": "Excavator driver\n\nExcavator driver Sotkamo (mining area)\n\nWe are looking for a professional excavator driver to work in the mining area in Sotkamo. Temporary work is available with a quick start until autumn.\n\nJob description:\nThe tasks include using an excavator in the earthworks of the mining area. The work requires care, compliance with safety regulations and the ability to work independently in varying conditions.\n\nWe require:\n\n * Previous experience as an excavator driver\n * 3D machine control skills\n * A valid work security card\n * Good work attitude and responsibility\n\nWe offer:\n\n * Works in Sotkamo in the mining area\n * Accommodation if necessary\n * Start work quickly\n * Work until autumn\n * Competitive salary based on experience\n\nWere you interested? Send your application and tell us about your skills as soon as possible.\n\nFor more information, please contact Antti Pääkkönen on 050 444 4467\n\nNordrec is a personnel services company founded in 2022. At Nordrecilais, we have solid experience in recruitment, personnel leasing and entrepreneurship. We don't indulge in useless phrases, but we talk about things directly, we act flexibly, transparently and reliably. We want to grow and succeed together with our customers and employees. We serve customers and job seekers all over Finland, and in addition, there are job opportunities in projects in EU countries and Norway.",
+    "translated_what_we_expect": [
+      "Previous experience as an excavator driver",
+      "3D machine control skills",
+      "A valid employment security card",
+      "Good work attitude and responsibility"
     ],
-    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/716325/fi_FI",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f4dcb80d-55c5-49f3-8662-934fd99e3259/en",
-    "job_employer_email": "heli.lehtinen@konnevesi.fi",
-    "job_employer_name": "Heli Lehtinen",
-    "job_employer_phone_no": "0406619137",
-    "date_posted": "2026-03-30",
-    "date_expires": "2026-04-15",
-    "scraped_at": "2026-03-30 20:36:15",
-    "open_positions": 1,
-    "salary_range": "tasopalkka 2664,71€ (ei sis.työkokemus- ja henkilökohtaista lisää)+ tietosuojavastaavan tasolisä 100€",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
+    "translated_job_responsibilities": [
+      "excavator driver"
+    ],
+    "translated_what_we_offer": [
+      "Works in Sotkamo in the mining area",
+      "Accommodation if needed",
+      "Start work soon",
+      "Work until autumn",
+      "Competitive salary based on experience",
+      "Were you interested? Send your application and tell us about your skills as soon as possible.",
+      "For more information, please contact Antti Pääkkönen on 050 444 4467"
+    ],
+    "translated_language_requirements": [
       "Finnish"
     ],
-    "what_we_expect": [],
-    "job_responsibilities": [
-      "ICT-asiakaspalvelija"
-    ],
-    "what_we_offer": [],
-    "who_is_this_for": [],
-    "jobcontent": "ICT-alan osaaja - tule meille ICT-tukihenkilöksi! \r\n\r\nEtsimme joukkoomme ICT-alan rautaista ammatilaista. Haemme osaavaa ja palveluhenkistä ICT-tukihenkilöä varmistamaan Konneveden kunnan toimipisteiden sujuvan arjen. Tehtävässäsi huolehdit käyttäjätuen, laitehallinnan ja perusjärjestelmien toimintavarmuudesta sekä osallistut tietohallinnon palveluiden kehittämiseen. Työ sisältää myös lähituen tehtäviä eri toimipisteissä koko kunnan alueella. Toimit myös kunnan tietosuojavastaavana.\r\n\r\nICT-tukihenkilönä tehtäväsi onkin pistää asiat rullaamaan, oli kyse sitten Microsoft-ympäristön työasematuesta, ohjelmistojen, laitteiden ja tietojärjestelmien käytöntuesta tai muista yleisistä IT-ympäristöihin liittyvistä työtehtävistä. Tehtävässä käytetään mm. seuraavia tietojärjestelmiä ja -ohjelmia: Microsoft Office, Microsoft Admin, Microsoft Entra, Microsoft Intune / Intune for Education, Ivanti Mobile Iron, Canon Therefore sekä lukuisia muita kuntapuolen ohjelmistoja. \r\n\r\nICT-tehtävien lisäksi työnkuvaasi kuuluu myös muita työnantajan osoittamia työtehtäviä. \r\n \r\nKyseessä on toistaiseksi voimassa oleva työsuhde. Tehtävä on pääsäätöisesti päivätyötä, mutta tehtävä sisältää ajoittain ilta- ja viikonlopputyötä.\r\n\r\nEdellytämme hakijalta ICT-alan peruskoulutusta ja aiempaa kokemusta ICT-alan tukitehtävistä. Eduksi katsomme kokemuksen kuntaorganisaatiosta. Tehtävän menestyksellinen hoitaminen edellyttää palvelualttiutta, hyviä yhteistyö- ja viestintätaitoja sekä ahkeraa ja itsenäistä työskentelyotetta. Teknisen osaamisen lisäksi ICT-tukihenkilön tehtävässä vaaditaan joustavuutta, hyviä ongelmanratkaisutaitoja ja paineensietokykyä. \r\n\r\nTyösuhteen ehdot ja palkkaus määräytyvät KVTES:n mukaan (1ICT60). Tehtävässä vaaditaan hyvää suomen kielen taitoa. Tehtävän täyttämisessä noudatetaan 6kk koeaikaa. Valitun on ennen tehtävän vastaanottamista esitettävä työnantajalle hyväksyttävä todistus terveydentilasta sekä rikosrekisterilain 6.2 §:n mukainen rikosrekisteriote, sillä ICT-tukihenkilön tehtävässä toimitaan lasten ja alle 18- vuotiaiden kanssa. Liikkuvan työn vuoksi eduksi katsotaan B-luokan ajokortti.\r\n\r\nHaastattelut järjestetetään 22.4.26. Tehtävä alkaa sopimuksen mukaan.",
-    "source": "tyomarkkinatori",
-    "scraped": true,
-    "ai_processed": false,
-    "ai_status": "irrelevant",
-    "retry_count": 1,
-    "max_retries": 3,
-    "ai_retry_needed": true,
-    "last_ai_error": "AI hallucination detected",
-    "display_mode": "fallback"
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Temporary"
   },
   {
-    "id": "f6346bb7",
-    "job_id": "baaritarjoilija-hemingways-tur-turku-f6346bb7",
-    "processed": true,
-    "title": "Baaritarjoilija, Hemingway´s Turku",
-    "company": "Tehoa Henkilöstöpalvelut Oy",
+    "id": "fac67f68",
+    "job_id": "työnjohtaja-rakennuslogistiikk-espoo-fac67f68",
+    "title": "Työnjohtaja rakennuslogistiikkaan Espoo",
+    "company": "RTK-Henkilöstöpalvelu Helsinki",
     "jobLocation": [
-      "Turku"
+      "Espoo",
+      "Helsinki",
+      "Vantaa"
     ],
-    "jobapply_link": "http://tehoa.likeit.fi/apply/2758533",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/28236d41-b885-45e8-8e62-63c4b28a1f7a/en",
-    "job_employer_email": "marko@tehoahp.fi",
-    "job_employer_name": "Marko Melamies",
-    "job_employer_phone_no": "0400761399",
-    "date_posted": "2026-03-30",
-    "date_expires": "2026-05-01",
-    "scraped_at": "2026-03-30 20:36:15",
+    "jobapply_link": "http://rtk.likeit.fi/apply/51493597",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6dfe34c8-49e1-49ad-a18f-2c1b3405c6b1/en",
+    "job_employer_email": "emma.liukkonen@rtkhenkilostopalvelu.fi",
+    "job_employer_name": "Emma Liukkonen",
+    "job_employer_phone_no": "0444124189",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-16",
+    "scraped_at": "2026-04-03 18:04:53",
     "open_positions": 1,
     "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
     "workTime": "Full-time",
@@ -199,31 +94,499 @@
       "Finnish"
     ],
     "what_we_expect": [
-      "Kiinnostusta viskeihin ja oluisiin: Tämä on avainasemassa. Sinun ei tarvitse olla vielä valmis \"connoisseur\" kummankaan suhteen, mutta aito kiinnostus, palava halu oppia uutta ja kyky suositella tuotteita asiakkaille on välttämätöntä.",
-      "Kokemusta: Aikaisempi kokemus baaritarjoilusta ja kassatyöskentelystä katsotaan suureksi eduksi.",
-      "Asennetta: Olet oma-aloitteinen, hymy ei hyydy kiireessäkään ja hoidat tonttisi luotettavasti.",
-      "Lisätietoja:",
-      "Marko Melamies",
-      "0400 761399"
+      "Kokemusta rakennuslogistiikan työnjohdosta",
+      "Ymmärrystä nostureiden kanssa työskentelystä sekä kokemusta työmailta, joilla on käytetty kurottajia ja kuukulkijoita",
+      "Hyviä organisointi- ja johtamistaitoja",
+      "Ratkaisukeskeistä ja oma-aloitteista työotetta",
+      "Hyvää suomen ja englannin kielen taitoa"
     ],
     "job_responsibilities": [
-      "tarjoilija",
-      "cocktail-baarimikko"
+      "Rakennusalantyönjohtajat"
     ],
     "what_we_offer": [
-      "Palkkaus: Sopimuksen mukaan",
-      "Työyhteisö: Pääset osaksi rentoa ja ammattitaitoista porukkaamme Turun ytimessä."
+      "Vastuullisen ja itsenäisen roolin mielenkiintoisessa työmaakohteessa",
+      "Pitkäkestoisen projektin sekä mahdollisuuden pidempään työsuhteeseen",
+      "Mahdollisuuden vaikuttaa työmaan käytäntöihin ja kehittämiseen",
+      "Palkkaus sopimuksen mukaan, riippuen aiemmasta kokemuksestasi. Työt on tarkoitus aloittaa toukokuun aikana.",
+      "RTK-Henkilöstöpalvelu auttaa työntekijöitä ja työnantajia löytämään toisensa nopeasti ja suoraviivaisesti. Tunnemme työelämän tarpeet erinomaisesti, mikä mahdollistaa erinomaisen osumatarkkuutemme. Näin autamme asiakkaitamme menestymään muuttuvassa työelämässä."
     ],
     "who_is_this_for": [],
-    "jobcontent": "Hemingway´s Turku etsii tiimiinsä osaavaa ja innostunutta baaritarjoilijaa!\r\n\r\n \r\n\r\nOletko asiakaspalvelun ammattilainen, jonka sydän sykkii laadukkaille juomille? Etsimme tekijää, joka ei ainoastaan kaada juomia lasiin, vaan haluaa olla mukana luomassa elämyksiä asiakkaillemme.\r\n\r\n \r\n\r\nMitä tarjoamme sinulle? Tämä ei ole ihan tavallinen rivitarjoilijan pesti. Meillä pääset vaikuttamaan. Haluamme nostaa ravintolamme viski- ja oluttarjonnan uudelle tasolle, ja etsimmekin henkilöä ottamaan tästä kopin.\r\n\r\n \r\n * Vapaat kädet: Saat suhteellisen vapaat kädet suunnitella ja kehittää sekä viski- että olutvalikoimaamme. Pääset hyödyntämään omaa asiantuntemustasi ja visiotasi siitä, miltä Turun paras viskilista ja mielenkiintoisin olutkaappi näyttävät.\r\n * Työtunnit: Tarjoamme työtä vähintään 90 tuntia / 3 viikkoa\r\n * Palkkaus: Sopimuksen mukaan\r\n * Työyhteisö: Pääset osaksi rentoa ja ammattitaitoista porukkaamme Turun ytimessä.\r\n\r\nMitä toivomme sinulta?\r\n * Kiinnostusta viskeihin ja oluisiin: Tämä on avainasemassa. Sinun ei tarvitse olla vielä valmis \"connoisseur\" kummankaan suhteen, mutta aito kiinnostus, palava halu oppia uutta ja kyky suositella tuotteita asiakkaille on välttämätöntä.\r\n * Kokemusta: Aikaisempi kokemus baaritarjoilusta ja kassatyöskentelystä katsotaan suureksi eduksi.\r\n * Asennetta: Olet oma-aloitteinen, hymy ei hyydy kiireessäkään ja hoidat tonttisi luotettavasti.\r\n\r\n \r\n\r\nKiinnostuitko? Haluamme kuulla sinusta ja visioistasi lisää! Hae: Tästä <https://tehoa.likeit.fi/apply/2758533>\r\n\r\n \r\n\r\nLisätietoja:\r\n\r\nMarko Melamies\r\n\r\nmarko@tehoahp.fi <mailto:marko@tehoahp.fi>\r\n\r\n0400 761399",
+    "jobcontent": "Etsimme asiakkaallemme kokenutta työnjohtajaa rakennuslogistiikan tehtäviin Espooseen. Tehtävässä vastaat rakennustyömaan logistiikkatyön johtamisesta ja organisoinnista tiiviissä yhteistyössä kohteen muiden sidosryhmien kanssa. Toimit keskeisessä roolissa työmaan arjen sujuvuuden varmistamisessa ja vastaat pääosin työmaalla tapahtuvasta päivittäisestä kommunikoinnista.\n\nTyötehtäviisi kuuluvat mm.:\n\n * Materiaalivirtojen hallinta ja koordinointi\n * Työmaalla käytettävien järjestelmien käytön ja hallinnan vastuu\n * Haalausten, raivausten ja jätehuollon organisointi\n * Työmaan siisteyden ja turvallisuuden ylläpitäminen\n * Työmaapalveluiden käytännön johtaminen\n * Päivittäinen kommunikointi työmaan eri osapuolten kuten pääurakoitsijan kanssa\n\nOdotamme sinulta:\n\n * Kokemusta rakennuslogistiikan työnjohdosta\n * Ymmärrystä nostureiden kanssa työskentelystä sekä kokemusta työmailta, joilla on käytetty kurottajia ja kuukulkijoita\n * Hyviä organisointi- ja johtamistaitoja\n * Ratkaisukeskeistä ja oma-aloitteista työotetta\n * Hyvää suomen ja englannin kielen taitoa\n\nTarjoamme sinulle:\n\n * Vastuullisen ja itsenäisen roolin mielenkiintoisessa työmaakohteessa\n * Pitkäkestoisen projektin sekä mahdollisuuden pidempään työsuhteeseen\n * Mahdollisuuden vaikuttaa työmaan käytäntöihin ja kehittämiseen\n\nPalkkaus sopimuksen mukaan, riippuen aiemmasta kokemuksestasi. Työt on tarkoitus aloittaa toukokuun aikana.\n\nJos tehtävä herätti mielenkiintosi, jätä hakemuksesi, CV:si ja palkkatoiveesi oheisen linkin kautta. Lisätietoja tehtävästä antaa HR-asiantuntijamme Emma Liukkonen, emma.liukkonen@rtkhenkilostopalvelu.fi <mailto:emma.janhonen@rtkhenkilostopalvelu.fi> / puh. 044 412 4189\n\nRTK-Henkilöstöpalvelu auttaa työntekijöitä ja työnantajia löytämään toisensa nopeasti ja suoraviivaisesti. Tunnemme työelämän tarpeet erinomaisesti, mikä mahdollistaa erinomaisen osumatarkkuutemme. Näin autamme asiakkaitamme menestymään muuttuvassa työelämässä.\n\nOlemme työntekijöillemme luotettava ja joustava työnantaja, joka valvoo etuasi ja on läsnä ja tukena arjessasi. Tuemme työntekijöittemme omaehtoista virkistystoimintaa tarjoamalla Edenred liikunta- ja kulttuurietua. Lisäksi työntekijät saavat käyttöönsä laajan henkilöstöetuohjelman ja aina uusia työtarjouksia tarpeen tullen.\n\nMeillä on aina haku päällä tutustu työpaikkojen kirjoon, täytä hakemus tai ota yhteyttä ja anna meidän hoitaa loput: www.rtkhenkilostopalvelu.fi/avoimet-tyopaikat/ <http://www.rtkhenkilostopalvelu.fi/avoimet-tyopaikat/>",
     "source": "tyomarkkinatori",
-    "scraped": true,
-    "ai_processed": true,
-    "ai_status": "success",
-    "retry_count": 0,
-    "max_retries": 3,
-    "ai_retry_needed": false,
-    "last_ai_error": "",
-    "display_mode": "ideal"
+    "translated_content": "Project manager for construction logistics Espoo\n\nWe are looking for an experienced foreman for our client for construction logistics tasks in Espoo. In this position, you are responsible for managing and organizing the logistics work of the construction site in close cooperation with other stakeholders of the site. You play a central role in ensuring the smoothness of everyday life on the construction site and are mainly responsible for the daily communication on the construction site.\n\nYour duties include e.g.:\n\n * Management and coordination of material flows\n * Responsibility for the use and management of the systems used on the site\n * Organization of hauling, clearing and waste management\n * Maintaining the cleanliness and safety of the construction site\n * Practical management of site services\n * Daily communication with different parties on the site, such as the main contractor\n\nWe expect from you:\n\n * Experience in construction logistics management\n * Understanding of working with cranes and experience on sites where reachers and moonwalkers have been used\n * Good organizational and management skills\n * Solution-oriented and self-initiated approach\n * Good knowledge of Finnish and English\n\nWe offer you:\n\n * Responsible and independent role in an interesting construction site\n * A long-term project and the possibility of a longer employment relationship\n * The opportunity to influence the practices and development of the site\n\nSalary by agreement, depending on your previous experience. The work is supposed to start during May.\n\nIf the position piqued your interest, submit your application, CV and salary expectations via the attached link. For more information about the position, please contact our HR expert Emma Liukkonen, emma.liukkonen@rtkhenkistopalvelu.fi <mailto:emma.janhonen@rtkhenkistopalvelu.fi> / tel. 044 412 4189\n\nRTK-Henkilöstöpalvelu helps employees and employers find each other quickly and straightforwardly. We know the needs of working life very well, which enables our excellent hit accuracy. This is how we help our customers succeed in a changing working life.\n\nFor our employees, we are a reliable and flexible employer that monitors your interests and is present and supportive in your everyday life. We support our employees' voluntary recreational activities by offering the Edenred exercise and culture benefit. In addition, employees have access to an extensive personnel benefit program and always new job offers when necessary.\n\nWe are always looking for jobs, check out the range of jobs, fill out an application or contact us and let us take care of the rest: www.rtkhenkilostopalvelu.fi/avoimet-tyopakait/ <http://www.rtkhenkilostopalvelu.fi/avoimet-tyopalikat/>",
+    "translated_what_we_expect": [
+      "Experience in construction logistics management",
+      "Understanding of working with cranes and experience on sites where reachers and moonwalkers have been used",
+      "Good organizational and management skills",
+      "Solution-oriented and self-initiated approach",
+      "Good Finnish and English language skills"
+    ],
+    "translated_job_responsibilities": [
+      "Construction foremen"
+    ],
+    "translated_what_we_offer": [
+      "A responsible and independent role in an interesting construction site",
+      "A long-term project and the possibility of a longer employment relationship",
+      "The opportunity to influence the practices and development of the site",
+      "Salary by agreement, depending on your previous experience. The work is supposed to start during May.",
+      "RTK-Henkilöstöpalvelu helps employees and employers find each other quickly and straightforwardly. We know the needs of working life very well, which enables our excellent hit accuracy. This is how we help our customers succeed in a changing working life."
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "194fb108",
+    "job_id": "chef-malay-cuisine-helsinki-194fb108",
+    "title": "Chef (Malay Cuisine)",
+    "company": "Street Canteen",
+    "jobLocation": [
+      "Helsinki"
+    ],
+    "jobapply_link": "mailto:ni.nguyen@streetcanteen.fi?subject=Application for the Job - Chef (Malay Cuisine)",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f2c42256-d894-45f1-88b3-e51bee1236d6/en",
+    "job_employer_email": "ni.nguyen@streetcanteen.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-03",
+    "scraped_at": "2026-04-03 18:04:53",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "English",
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "työskennellä ryhmässä matkailu-, majoitus- tai ravitsemisalalla",
+      "käyttää elintarvikkeiden leikkaustyökaluja"
+    ],
+    "job_responsibilities": [
+      "kokki"
+    ],
+    "what_we_offer": [
+      "Vakituinen kokoaikainen työsuhde",
+      "Kilpailukykyinen palkka kokemuksen mukaan"
+    ],
+    "who_is_this_for": [],
+    "jobcontent": "Street Canteen on malesialaiseen katuruokaan erikoistunut ravintola Suomessa. Tavoitteenamme on tarjota aitoja makuja ja perinteisiä valmistusmenetelmiä. Keittiötämme johtavat kokit, joilla on vahva tausta malesialaisessa keittiössä. Etsimme kokeneita kokkeja Malesiasta, joilla on vahva käytännön osaaminen autenttisesta malesialaisesta ruoasta. Tehtävä sopii henkilöille, joilla on koulutusta ja/tai pitkä työkokemus juuri malesialaisesta keittiöstä.\n\n**Työtehtävät**\n\n- Valmistaa autenttisia malesialaisia ruokia korkealla laadulla\n \n- Hallita perinteiset reseptit, mausteseokset ja valmistustekniikat\n \n- Ylläpitää tasalaatuista laatua ja hygieniaa päivittäisessä työssä\n \n- Työskennellä yhdessä keittiömestarin kanssa ruokalistan kehittämisessä\n \n\n**Vaatimukset**\n\n- **Työkokemus malesialaisesta keittiöstä**\n \n- Kokemus perinteisten ruokien valmistuksesta, kuten nasi lemak, char kway teow, laksa, rendang, roti canai jne.\n \n- Vahva tuntemus malesialaisista raaka-aineista, mausteista ja valmistustekniikoista\n \n- Alan koulutus tai vastaava käytännön kokemus malesialaisissa keittiöissä\n \n- Kyky työskennellä kiireisessä ympäristössä\n \n- Perustason englannin kielen taito\n \n\n**Tarjoamme**\n\n- Vakituinen kokoaikainen työsuhde\n \n- Kilpailukykyinen palkka kokemuksen mukaan\n\nLähetä hakemuksesi ja CV osoitteeseen: ni.nguyen@streetcanteen.fi\n\n- Yksityiskohtainen työkokemus malesialaisesta keittiöstä\n \n- Lista ruokalajeista, joita osaat valmistaa\n \n- Suosittelijat aiemmista työpaikoista",
+    "source": "tyomarkkinatori",
+    "translated_content": "Chef (Malay Cuisine)\n\nStreet Canteen is a restaurant in Finland specializing in Malaysian street food. Our goal is to offer authentic flavors and traditional manufacturing methods. Our kitchen is run by chefs with a strong background in Malaysian cuisine. We are looking for experienced chefs from Malaysia with strong practical knowledge of authentic Malaysian food. The position is suitable for people with education and/or long work experience specifically in Malaysian cuisine.\n\n**Job Duties**\n\n- Prepares authentic Malaysian dishes with high quality\n \n- Master traditional recipes, spice mixes and preparation techniques\n \n- Maintains consistent quality and hygiene in daily work\n \n- Work together with the chef in developing the menu\n \n\n**Requirements**\n\n- **Work experience in Malaysian cuisine**\n \n- Experience in preparing traditional dishes such as nasi lemak, char kway teow, laksa, rendang, roti canai, etc.\n \n- Strong knowledge of Malaysian ingredients, spices and manufacturing techniques\n \n- Education in the field or similar practical experience in Malaysian kitchens\n \n- Ability to work in a busy environment\n \n- Basic English language skills\n \n\n**We offer**\n\n- Permanent full-time employment\n \n- Competitive salary depending on experience\n\nSend your application and CV to: ni.nguyen@streetcanteen.fi\n\n- Detailed work experience in Malaysian cuisine\n \n- List of dishes you know how to cook\n \n- Recommenders from previous jobs",
+    "translated_what_we_expect": [
+      "work in a group in the tourism, accommodation or catering sector",
+      "use food cutting tools"
+    ],
+    "translated_job_responsibilities": [
+      "cook"
+    ],
+    "translated_what_we_offer": [
+      "Permanent full-time employment",
+      "Competitive salary depending on experience"
+    ],
+    "translated_language_requirements": [
+      "English",
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "9e221be1",
+    "job_id": "kaivinkoneenkuljettaja-helsinki-9e221be1",
+    "title": "Kaivinkoneenkuljettaja",
+    "company": "Nordrec Henkilöstöpalvelut Oy",
+    "jobLocation": [
+      "Helsinki"
+    ],
+    "jobapply_link": "http://nordrec.likeit.fi/apply/12571043",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3b9b7c5d-3dbb-4e11-91bf-32bdb5f5e139/en",
+    "job_employer_email": "antti.paakkonen@nordrec.fi",
+    "job_employer_name": "Antti Pääkkönen",
+    "job_employer_phone_no": "+358504444467",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-12",
+    "scraped_at": "2026-04-03 18:04:53",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "Aikaisempaa kokemusta katutyömaista",
+      "3D-koneohjausosaamista",
+      "Voimassa olevaa työturvakorttia",
+      "Voimassa olevaa tieturvakorttia",
+      "Hyvää työasennetta ja luotettavuutta"
+    ],
+    "job_responsibilities": [
+      "kaivinkoneenkuljettaja"
+    ],
+    "what_we_offer": [
+      "Työt Helsingissä",
+      "Majoituksen työntekijälle",
+      "Työn aloituksen pikaisesti",
+      "Töitä vähintään vuodeksi (mahdollisuus pidempään työsuhteeseen)",
+      "Kilpailukykyisen palkan kokemuksen mukaan",
+      "Kiinnostuitko? Lähetä hakemuksesi ja kerro osaamisestasi mahdollisimman pian."
+    ],
+    "who_is_this_for": [],
+    "jobcontent": "Kaivinkoneenkuljettaja Helsinki\n\nEtsimme osaavaa kaivinkoneenkuljettajia työskentelemään katutyömaille Helsinkiin. Tarjoamme pitkäaikaisen työn vakaassa ympäristössä sekä mahdollisuuden aloittaa työt nopeasti.\n\nTyönkuva:\nTyötehtäviin kuuluu kaivinkoneen käyttö erilaisissa katutyömaiden maanrakennus- ja kunnallisteknisissä töissä. Työ edellyttää tarkkuutta, itsenäistä työotetta sekä kykyä toimia osana työryhmää.\n\nEdellytämme:\n\n * Aikaisempaa kokemusta katutyömaista\n * 3D-koneohjausosaamista\n * Voimassa olevaa työturvakorttia\n * Voimassa olevaa tieturvakorttia\n * Hyvää työasennetta ja luotettavuutta\n\nTarjoamme:\n\n * Työt Helsingissä\n * Majoituksen työntekijälle\n * Työn aloituksen pikaisesti\n * Töitä vähintään vuodeksi (mahdollisuus pidempään työsuhteeseen)\n * Kilpailukykyisen palkan kokemuksen mukaan\n\nKiinnostuitko? Lähetä hakemuksesi ja kerro osaamisestasi mahdollisimman pian.\n\nLisätietoja saat Antti Pääkköseltä 050 444 4467 antti.paakkonen@nordrec.fi\n\nNordrec on vuonna 2022 perustettu henkilöstöpalvelualan yritys. Meillä Nordrecilaisilla on vankka kokemus rekrytoinneista, henkilöstövuokrauksesta sekä yrittäjyydestä. Emme harrasta turhia korulauseita, vaan puhumme asioista suoraan, toimimme joustavasti, läpinäkyvästi ja luotettavasti. Haluamme kasvaa ja menestyä asiakkaidemme ja työntekijöidemme kanssa yhdessä. Palvelemme asiakkaita ja työnhakijoita ympäri Suomen, jonka lisäksi työmahdollisuuksia löytyy projekteissa EU-maissa ja Norjassa.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Excavator driver\n\nExcavator driver Helsinki\n\nWe are looking for skilled excavator drivers to work on street sites in Helsinki. We offer long-term work in a stable environment and the opportunity to start work quickly.\n\nJob description:\nThe tasks include the use of an excavator in various earthworks and municipal engineering works at street sites. The work requires accuracy, an independent approach to work and the ability to work as part of a work group.\n\nWe require:\n\n * Previous experience in street works\n * 3D machine control skills\n * A valid work security card\n * Valid road safety card\n * Good work attitude and reliability\n\nWe offer:\n\n * Works in Helsinki\n * Accommodation for the employee\n * Start work quickly\n * Work for at least one year (possibility of longer employment)\n * Competitive salary based on experience\n\nWere you interested? Send your application and tell us about your skills as soon as possible.\n\nFor more information, contact Antti Pääkkö on 050 444 4467 antti.paakkonen@nordrec.fi\n\nNordrec is a personnel services company founded in 2022. At Nordrecilais, we have solid experience in recruitment, personnel leasing and entrepreneurship. We don't indulge in useless phrases, but we talk about things directly, we act flexibly, transparently and reliably. We want to grow and succeed together with our customers and employees. We serve customers and job seekers all over Finland, and in addition, there are job opportunities in projects in EU countries and Norway.",
+    "translated_what_we_expect": [
+      "Previous experience in street jobs",
+      "3D machine control skills",
+      "A valid employment security card",
+      "A valid road safety card",
+      "Good work attitude and reliability"
+    ],
+    "translated_job_responsibilities": [
+      "excavator driver"
+    ],
+    "translated_what_we_offer": [
+      "Jobs in Helsinki",
+      "Accommodation for the employee",
+      "Start work soon",
+      "Work for at least one year (possibility of longer employment)",
+      "Competitive salary based on experience",
+      "Were you interested? Send your application and tell us about your skills as soon as possible."
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "5cf078e4",
+    "job_id": "maalareita-ja-hiekkapuhaltajia-turku-5cf078e4",
+    "title": "Maalareita ja hiekkapuhaltajia laivanrakennusteollisuuteen",
+    "company": "Suomen Vuokramestarit Oy, Kempele",
+    "jobLocation": [
+      "Turku"
+    ],
+    "jobapply_link": "https://jobs.svm.fi/jobs/6617339-maalareita-ja-hiekkapuhaltajia-laivateollisuuteen",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2c99ba5c-88e0-44e0-888f-5d778c1337f2/en",
+    "job_employer_email": "",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-07-31",
+    "scraped_at": "2026-04-03 18:04:53",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "English",
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "puhaltaa pintoja",
+      "maalata pintoja",
+      "poistaa maalia",
+      "puhdistaa maalausvälineet"
+    ],
+    "job_responsibilities": [
+      "hiekkapuhaltaja",
+      "rakennusmaalari"
+    ],
+    "what_we_offer": [],
+    "who_is_this_for": [],
+    "jobcontent": "Haemme ammattitaitoisia maalareita ja hiekkapuhaltajia työskentelemään laivanrakennusteollisuudessa Turun ja Rauman telakoilla. Työtehtävät koostuvat laivajen sisä-ja ulkopintojen maalaustehtävistä.\n\nHakijalta edellytetään aikaisempaa kokemusta maalaus- ja hiekkapuhallustöistä (mielellään telakalla/laivateollisuudessa) sekä tarkkuutta, huolellisuutta ja turvallisuusohjeiden noudattamista. Työ vaatii hyvää fyysistä kuntoa ja valmiutta vuorotyöhön. Lisäksi arvostamme hyviä tiimityötaitoja ja kykyä toimia tehokkaasti osana työryhmää. Työaika on noin 40 tuntia viikossa. Työturvallisuuskortti tulee olla voimassa.\n\nHae työpaikkaa alla olevan linkin kautta.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Painters and sandblasters for the shipbuilding industry\n\nWe are looking for skilled painters and sandblasters to work in the shipbuilding industry at Turku and Rauma shipyards. The tasks consist of painting the interior and exterior surfaces of ships.\n\nThe applicant is required to have previous experience in painting and sandblasting work (preferably in a shipyard/ship industry) as well as accuracy, care and compliance with safety instructions. The job requires good physical condition and readiness for shift work. In addition, we value good teamwork skills and the ability to work effectively as part of a work group. The working time is about 40 hours a week. The occupational safety card must be valid.\n\nApply for a job via the link below.",
+    "translated_what_we_expect": [
+      "blowing surfaces",
+      "paint surfaces",
+      "remove paint",
+      "cleans painting tools"
+    ],
+    "translated_job_responsibilities": [
+      "sandblaster",
+      "construction painter"
+    ],
+    "translated_language_requirements": [
+      "English",
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "ad755bc9",
+    "job_id": "pysäköinninvalvoja-oulun-aluee-oulu-ad755bc9",
+    "title": "Pysäköinninvalvoja Oulun alueelle",
+    "company": "ParkkiPate Oy, Helsinki",
+    "jobLocation": [
+      "Oulu"
+    ],
+    "jobapply_link": "https://www.parkkipate.fi/rekry/pysakoinninvalvoja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2c828578-6a04-417c-95ff-4757d9215a19/en",
+    "job_employer_email": "rekry@parkkipate.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-10",
+    "scraped_at": "2026-04-03 18:13:18",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "olla valpas",
+      "huolehtia yleisestä turvallisuudesta",
+      "työskennellä vuoroissa",
+      "pysäköintimääräykset",
+      "työskennellä itsenäisesti",
+      "noudattaa sääntelyä",
+      "työskennellä tehokkaasti"
+    ],
+    "job_responsibilities": [
+      "pysäköinnintarkastaja",
+      "vartija"
+    ],
+    "what_we_offer": [],
+    "who_is_this_for": [],
+    "jobcontent": "Kiinnostaako sinua itsenäinen ja vastuullinen työ? Nyt sinulla on mahdollisuus ryhtyä pysäköinninvalvojaksi ja vaikuttaa kaupunkiympäristömme turvallisuuteen ja liikkumisen sujuvuuteen! Työ tarjoaa merkityksellistä tekemistä sinua tukevan työyhteisön kanssa. \n\nHarva meistä on pysäköinninvalvoja jo syntyessään. \n\nMeitä yksilöitä on moneen junaan. Siksi haluamme sinut osaksi yhteisöämme juuri sellaisena kuin olet ja loistopalautetta saaneet kouluttajamme perehdyttävät sinut huolellisesti. Saat meiltä hyvät valmiudet, tsemppaavat kaverit ja esihenkilön tuen työssä kehittymiseesi. \n\nTyönkuva ja palkkaus \n\nTyössäsi pääosin puutut väärinpysäköintiin kiertämällä ja valvomalla monia kohteitamme. Saat haltuusi erilaisia piirejä sitä mukaa kuin homma alkaa sujumaan, joten päivät eivät ole toistensa kanssa samanlaisia. Kohteita ParkkiPatella on monenlaisia kuten esimerkiksi hotelleja, sairaaloita, kauppakeskuksia ja liikekiinteistöjä. \n\nTeemme jatkuvaa kehitystyötä pysäköintialan modernisoimiseksi kaikilla eri tasoilla. Meille palvelun laatu on kunnia-asia. Tieto kulkeekin nopeasti hyvien järjestelmiemme avulla ja työ kentälläkin on sujuvampaa. Lisäksi saat lounasedun ja ajoneuvonasi on vähäpäästöinen Toyota-hybrid. \n\nTyö on vuorotyötä ja vuorot sijoittuvat pääsääntöisesti kello 6-14 & 14-22 väleille. Sinulla tulee olemaan myös vähintään yksi vapaa viikonloppu kuukaudessa. Pyrimme säännöllisyyteen vuorosuunnittelussa ja ottamaan toiveita vastaan niin hyvin kuin tasapuolisesti voi. Valvojalla on tuntipalkka ja palkan suuruuteen vaikuttaa valvojan aikaisempi hyväksi luettu kokemus pysäköinninvalvojan tai piirivartijan tehtävistä. Mahdollisia lisäansioita voi myös tavoitella tehden koulutusvuoroja tai ylitöitä. \n\nOlisiko sinusta hyväksi pysäköinninvalvojaksi? \n\nTässä työssä tärkeää on huolellisuus ja tarkkuus. Ethän myöskään ahdistu asiakastilanteista ja pärjäät hyvin ihmisten kanssa. Työ vaatii erinomaista Suomen kielen osaamista (puhutun ja luetun). Työhön sisältyy luonnollisesti myös ajamista jonkin verran joten edellytämme hakijalta täysi-ikäisyyttä ja vähintään vuoden ajokokemusta ajoneuvolla tehtävästä työstä. Vaihtoehtoisesti sinulla voi olla ollut ajokortti ainakin kaksi vuotta ja ajokokemuksesi on ollut säännöllistä, esim. päivittäiset työmatkat ajoneuvolla. Pysäköinninvalvojaa tarvitaan pitämään pelastustiet vapaina, liikuntaesteisten paikat käytössä niitä tarvitseville, asukkaiden sekä vieras- ja asiakaspaikat heidän käytössään. Autat tekemään pysäköinnistä helppoa ja sujuvaa kaikille. \n\nJos kiinnostuit tehtävästä voit täyttää vaivattomasti hakulomakkeen osoitteessa https://www.parkkipate.fi/rekry/pysakoinninvalvoja \n\nHaethan pian, koska haastatteluja suoritetaan jo hakuajan puitteissa ja paikka täytetään heti sopivan henkilön löydyttyä. Jos se olet sinä, emme malta odottaa, että liityt energiseen ja toimeliaaseen joukkoomme!\n\nParkkiPate on valtakunnallisesti toimiva pysäköintiratkaisujen tuottaja. Asiakaskuntaamme kuuluu kasvava joukko mm. hotelleja, sairaaloita, kauppakeskuksia ja liikekiinteistöjä. Olemme toimittaneet vuodesta 2010 asti pysäköinnin kokonaisratkaisuja asiakkaillemme ympäri Suomen.\n\nMeillä on ilo palvella teitä noin 200 hengen alalle koulutetun ja ammattitaitoisen henkilökuntamme voimin. Liikevaihtomme oli 2024 päättyneellä tilikaudella yli 15 miljoonaa euroa.\n\nKäytäthän hakulomaketta tehtävää hakiessasi. Lomakkeelle voit liittää CV:n tai vaihtoehtoisesti täyttää työkokemuksesi manuaalisesti. Kerro itsestäsi ja miksi juuri sinusta tulisi hyvä pysäköinninvalvoja? Palaillaan!",
+    "source": "tyomarkkinatori",
+    "translated_content": "Parking supervisor for the Oulu area\n\nAre you interested in independent and responsible work? Now you have the opportunity to become a parking supervisor and influence the safety of our urban environment and the smoothness of movement! The work offers meaningful work with a working community that supports you. \n\nFew of us are born parking attendants. \n\nThere are many of us individuals. That's why we want you to be a part of our community exactly as you are, and our trainers who have received great feedback will familiarize you carefully. From us, you get good skills, great friends and the support of a supervisor for your development at work. \n\nJob description and salary \n\nIn your work, you mainly deal with illegal parking by going around and monitoring many of our sites. You get to take over different circuits as things start to flow, so no two days are the same. There are many types of destinations in ParkkiPate, such as hotels, hospitals, shopping centers and commercial properties. \n\nWe do continuous development work to modernize the parking sector at all different levels. For us, service quality is a matter of honor. Information travels quickly thanks to our good systems, and work in the field is also smoother. In addition, you get a lunch allowance and your vehicle is a low-emission Toyota hybrid. \n\nThe work is shift work and the shifts are generally between 6am and 2pm and 2pm and 10pm. You will also have at least one free weekend per month. We strive for regularity in shift planning and to accommodate requests as equally as possible. The supervisor has an hourly salary, and the size of the salary is influenced by the supervisor's previous experience as a parking supervisor or district guard. Possible additional earnings can also be pursued by doing training shifts or overtime. \n\nWould you be good for a parking attendant? \n\nCare and precision are important in this work. You also don't get anxious about customer situations and you get along well with people. The job requires excellent knowledge of the Finnish language (spoken and read). Naturally, the job also includes driving to some extent, so we require the applicant to be of legal age and have at least one year of driving experience in a vehicle. Alternatively, you may have had a driver's license for at least two years and your driving experience has been regular, e.g. daily work trips by vehicle. A parking supervisor is needed to keep the escape routes free, the places for disabled people in use for those who need them, and the residents', guest's and customer's places in their use. You help make parking easy and smooth for everyone. \n\nIf you are interested in the position, you can easily fill out the application form at https://www.parkkipate.fi/rekry/pysakoinninvalvoja \n\nPlease apply soon, because interviews will already be conducted within the application period and the position will be filled as soon as a suitable person is found. If that's you, we can't wait for you to join our energetic and busy team!\n\nParkkiPate is a nationwide producer of parking solutions. Our customer base includes a growing number of e.g. hotels, hospitals, shopping centers and commercial properties. Since 2010, we have delivered complete parking solutions to our customers all over Finland.\n\nWe are happy to serve you with our 200 trained and professional staff. Our turnover in the fiscal year ending in 2024 was more than 15 million euros.\n\nPlease use the application form when applying for a position. You can attach your CV to the form or alternatively fill in your work experience manually. Tell us about yourself and why you would make a good parking supervisor? Let's go back!",
+    "translated_what_we_expect": [
+      "be alert",
+      "to take care of public safety",
+      "work in shifts",
+      "parking regulations",
+      "work independently",
+      "comply with the regulation",
+      "to work efficiently"
+    ],
+    "translated_job_responsibilities": [
+      "parking inspector",
+      "guard"
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "6dcf23c8",
+    "job_id": "parturi-seinäjoki-6dcf23c8",
+    "title": "Parturi",
+    "company": "Happy Parturi Oy, Seinäjoki",
+    "jobLocation": [
+      "Seinäjoki"
+    ],
+    "jobapply_link": "mailto:hama.delzy@gmail.com?subject=Application for the Job - Parturi",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b6ac1a3d-08cb-476d-babc-88d8c57c036b/en",
+    "job_employer_email": "hama.delzy@gmail.com",
+    "job_employer_name": "Mohammad Mustafa Sharif",
+    "job_employer_phone_no": "0404436782",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-06-30",
+    "scraped_at": "2026-04-03 18:13:23",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "what_we_expect": [
+      "parturoida kasvojen karvoja",
+      "myydä hiustuotteita",
+      "hiusten värjäys",
+      "käyttää hiustenleikkuutaitoja",
+      "kihartaa hiuksia",
+      "suunnitella hiustyyli",
+      "parturointitekniikat",
+      "pestä hiuksia",
+      "opastaa hiustyylissä",
+      "muotoilla hiukset"
+    ],
+    "job_responsibilities": [
+      "parturi",
+      "parturi-kampaaja",
+      "hiusstylisti"
+    ],
+    "what_we_offer": [],
+    "who_is_this_for": [],
+    "jobcontent": "Haemme nyt 2 parturia joukkoomme. Palvelumme kuuluuvat mm. Hiusten leikkaus ja -muotoilu, parran muotoilu ja parran leikkaus veitsellä. Toivomme sinulta parturipalvelujen hallintaa ja osaamista, erilaisten hius- ja partatyylien muotoilun hallintaa. Koulutusta ei vaadita\n\nOta yhteyttä: puh: 0404436782 tai lähetä työhakemuksesi osoitteeseen hama.delzy@gmail.com",
+    "source": "tyomarkkinatori",
+    "translated_content": "A barber\n\nWe are now looking for 2 barbers to join us. Our services include e.g. Hair cutting and styling, beard styling and beard cutting with a knife. We expect from you the management and know-how of barber services, the management of styling different hair and beard styles. No training is required\n\nContact us: phone: 0404436782 or send your job application to hama.delzy@gmail.com",
+    "translated_what_we_expect": [
+      "shave facial hair",
+      "sell hair products",
+      "hair dyeing",
+      "use hair cutting skills",
+      "curls hair",
+      "design a Hairstyle",
+      "barbering techniques",
+      "wash hair",
+      "instructs in hairstyle",
+      "style the hair"
+    ],
+    "translated_job_responsibilities": [
+      "barber",
+      "barber-hairdresser",
+      "hair stylist"
+    ],
+    "translated_language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "c65c8f26",
+    "job_id": "katsastaja-lapin-katsastuspalv-keminmaa-c65c8f26",
+    "title": "Katsastaja, Lapin Katsastuspalvelu Oy, Keminmaa",
+    "company": "Wippii Work Oy, Vantaa",
+    "jobLocation": [
+      "Keminmaa"
+    ],
+    "jobapply_link": "https://rekry.wippiiwork.com/jobs/7151478-katsastaja-lapin-katsastuspalvelu-oy-keminmaa",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/064329a9-ea91-4479-8255-91efe81b8362/en",
+    "job_employer_email": "",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-24",
+    "scraped_at": "2026-04-03 18:13:23",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Part-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "tehdä ajoneuvotestejä"
+    ],
+    "job_responsibilities": [
+      "ajoneuvokatsastaja"
+    ],
+    "what_we_offer": [],
+    "who_is_this_for": [],
+    "jobcontent": "Lapin Katsastuspalvelu Oy on yksityinen katsastusasema Keminmaalla, joka tarjoaa ajoneuvojen katsastuspalveluita nykyaikaisella kalustolla ja asiakaslähtöisellä otteella. \nLapin Katsastuspalvelu palvelee paikallisesti ja joustavasti.\n\nEtsinnässä nyt asiakkaallemme Lapin Katsastuspalvelulle reipas ja joustava osa-aikainen kevyen kaluston katsastaja! \n\nKatsastajana pääset työskentelemään ajoneuvojen määräaikaistarkastusten ja katsastusten parissa, arvioimaan ajoneuvojen kuntoa ja turvallisuutta sekä dokumentoimaan katsastuspäätökset. Työ on itsenäistä ja vastuullista.\n\nTyö on osa-aikaista ja tuntimäärä on noin 80 tuntia kuukaudessa ja näin ollen helposti yhdistettävissä erilaisiin elämäntilanteisiin, johon toimistotyöaika ei jostain syystä sovi. \nTyövuorot ovat parillisilla viikoilla perjantaisin ja lauantaisin klo 8.0018.00, \nparittomilla viikoilla maanantaisin ja lauantaisin klo 8.0018.00, ja halutessaan voi tehdä myös sunnuntaivuoroja. Mahdollisuus on tehdä myös iltavuoroja klo 18.0021.00, jolloin kuukausituntimäärä kasvaa. Myöhemmin on mahdollista siirtyä kokopäiväiseksi työntekijäksi uuden toimitilan valmistuessa.\n\nSinulta odotetaan:\n-kevyen kaluston MAK-lupia\n-tarkkaa ja huolellista työotetta\n-hyviä vuorovaikutus- ja asiakaspalvelutaitoja\n-kyky toimia järjestelmällisesti ja itsenäisesti\n-kokemus katsastustehtävistä katsotaan eduksi.\n\nTehtävään valitulle tarjotaan:\n-nykyaikaiset laitteet ja moderni työympäristö\n-itsensä johtavaa työtä mukavassa ja kannustavassa tiimissä\n-mahdollisuus joustavaan työaikaan ja tuntien kasvattamiseen\n-mahdollisuus siirtyä myöhemmin kokopäiväiseksi työntekijäksi\n-asunnon hankinnassa avustetaan tarvittaessa\n-palkka kokemuksen ja osaamisen mukaan + mahdollinen bonus.\n\nHakeminen:\nJätäthän hakemuksesi mahdollisimman pian Wippii Workin rekrytointijärjestelmän kautta, sillä haastattelemme hakijoita jo hakuaikana ja paikka täytetään heti sopivan henkilön löydyttyä.\n\nLisätietoja tehtävästä antaa:\nHR-asiantuntija Tita Vuoksenturja\n +358 40 843 2149\n tita.vuoksenturja@wippiiwork.com\n\nHae tehtävään oheisen linkin kautta.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Surveyor, Lapland Katsastuspalvelu Oy, Keminmaa\n\nLapin Katsastuspalvelu Oy is a private inspection station in Keminmaa that offers vehicle inspection services with modern equipment and a customer-oriented approach. \nLapland's Inspection Service serves locally and flexibly.\n\nNow looking for a brisk and flexible part-time light vehicle inspector for our client Lapin Katsastuspalvelu! \n\nAs an inspector, you get to work on periodic inspections and inspections of vehicles, assess the condition and safety of vehicles, and document inspection decisions. The work is independent and responsible.\n\nThe work is part-time and the number of hours is about 80 hours per month, and therefore can be easily combined with various life situations, for which the office working time does not fit for some reason. \nWork shifts are on even-numbered weeks on Fridays and Saturdays from 8:00 a.m. to 8:00 p.m., \non odd-numbered weeks on Mondays and Saturdays from 8:00 to 18:00, and if you wish, you can also do Sunday shifts. It is also possible to do evening shifts at 18:00-21:00, which increases the number of monthly hours. Later, it is possible to become a full-time employee when the new office is completed.\n\nYou are expected to:\n- MAK permits for light equipment\n- precise and careful approach\n-good interaction and customer service skills\n- the ability to work systematically and independently\n-experience in inspection tasks is considered an advantage.\n\nThe person selected for the position will be offered:\n- modern equipment and a modern work environment\n- self-directed work in a nice and encouraging team\n- the possibility of flexible working hours and increasing hours\n- the possibility to later become a full-time employee\n-assisting in the purchase of an apartment if necessary\n-salary according to experience and skills + possible bonus.\n\nApplying:\nPlease submit your application as soon as possible through Wippii Work's recruitment system, because we interview applicants already during the application period and the position will be filled as soon as a suitable person is found.\n\nMore information about the task is given by:\nHR expert Tita Vuoksenturja\n +358 40 843 2149\n tita.vuoksenturja@wippiiwork.com\n\nApply for the position via the attached link.",
+    "translated_what_we_expect": [
+      "conduct vehicle tests"
+    ],
+    "translated_job_responsibilities": [
+      "vehicle inspector"
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Part-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "d3eda7d8",
+    "job_id": "työnjohtajaprojektipäällikkö-t-parainen-d3eda7d8",
+    "title": "Työnjohtaja/projektipäällikkö, Turun Sähkö ja Automaatio Oy, Parainen",
+    "company": "Wippii Work Oy, Vantaa",
+    "jobLocation": [
+      "Parainen"
+    ],
+    "jobapply_link": "https://rekry.wippiiwork.com/jobs/7192070-tyonjohtaja-projektipaallikko-turun-sahko-ja-automaatio-oy-parainen",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/375f7ece-52a3-4dbf-8ad5-da9a3f7d2a74/en",
+    "job_employer_email": "",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-24",
+    "scraped_at": "2026-04-03 18:13:23",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "hallita projektitietoja"
+    ],
+    "job_responsibilities": [
+      "työnjohtaja, sähkötyöt"
+    ],
+    "what_we_offer": [],
+    "who_is_this_for": [],
+    "jobcontent": "Turun Sähkö ja Automaatio Oy on Varsinais-Suomessa toimiva sähköalan yritys, joka toteuttaa sähköasennuksia laaja-alaisesti teollisuudesta liiketiloihin, oppilaitoksiin, kerrostaloihin, saneerauskohteisiin sekä laivapuolen projekteihin. Yritys tunnetaan erityisesti luotettavasta ja asiakaslähtöisestä toimintatavastaan.\n\nEtsimme nyt asiakkaallemme kokenutta sähköalan työnjohtajaa / projektipäällikköä vakituiseen työsuhteeseen.\n\nTyössä vastaat sähköprojektien- ja urakoiden etenemisestä alusta loppuun, osallistut urakkalaskentaan ja tarjouspyyntöihin sekä kehität ja ylläpidät asiakassuhteita, mukaan lukien uusasiakashankinta. Toimit linkkinä asentajien ja johdon välillä ja varmistat, että työmaat etenevät aikataulussa ja resurssit ovat kunnossa. Arjessa hallitset useita projekteja samanaikaisesti ja pystyt pitämään kokonaisuuden kasassa myös kiireen keskellä.\n\nOdotamme sinulta:\n-sähköalan koulutusta ja kokemusta työnjohdollisista tehtävistä tai projektien vetämisestä\n-asiakaslähtöistä ja jämäkkää työotetta sekä hyviä vuorovaikutustaitoja\n-sujuvaa suomen kieltä ja teknisen englannin ymmärrystä\n\nEduksi katsomme:\n-suunnitteluosaamisen tai kokemuksen sähkösuunnittelusta\n-kokemuksen Admicom-laskentaohjelmasta\n-ruotsin kielen osaamisen\n\nTehtävään valitulle tarjotaan vastuullinen ja vaihteleva rooli vakaassa yrityksessä, jossa on joustava työaika, vapaa-ajan tapaturmavakuutus sekä mahdollisuus vaikuttaa omaan työnkuvaan. Palkka määräytyy kokemuksen ja osaamisen mukaan, ja tehtävän vaativuustaso huomioidaan palkkauksessa. Perehdytys tapahtuu Paraisilla, ja työmaat sijaitsevat pääasiassa Varsinais-Suomen alueella.\n\n Kiinnostuitko?\nJätäthän hakemuksesi mahdollisimman pian rekrytointijärjestelmämme kautta, sillä haastattelemme hakijoita jo hakuaikana ja paikka täytetään heti sopivan henkilön löydyttyä. Kyseessä on suorarekrytointi, ja tehtävään valittava henkilö työllistyy asiakasyrityksemme palvelukseen.\n\nLisätietoja tehtävästä antaa:\nHR-asiantuntija Tita Vuoksenturja\n +358 40 843 2149\n tita.vuoksenturja@wippiiwork.com\n\nHae tehtävään oheisen linkin kautta.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Foreman/project manager, Turun Sähkö ja Automaatio Oy, Parainen\n\nTurun Sähkö ja Automaatio Oy is an electrical company operating in Varsinais-Finland, which carries out electrical installations in a wide range of areas, from industry to commercial premises, educational institutions, apartment buildings, renovation projects and ship-side projects. The company is particularly known for its reliable and customer-oriented way of working.\n\nWe are now looking for an experienced electrical foreman / project manager for our client for a permanent employment.\n\nAt work, you are responsible for the progress of electrical projects and contracts from start to finish, you participate in contract calculations and tender requests, and you develop and maintain customer relationships, including new customer acquisition. You act as a link between the installers and the management and ensure that the construction sites progress on schedule and that the resources are in order. In everyday life, you manage several projects at the same time and are able to keep the whole thing together even in the midst of a rush.\n\nWe expect from you:\n-education in the electrical field and experience in managerial tasks or leading projects\n-customer-oriented and strong work ethic and good communication skills\n- fluent Finnish and understanding of technical English\n\nTo our advantage, we consider:\n-design expertise or experience in electrical design\n-experience with the Admicom calculation program\n-knowledge of the Swedish language\n\nThe person selected for the position will be offered a responsible and varied role in a stable company with flexible working hours, leisure time accident insurance and the opportunity to influence their own job description. The salary is determined according to experience and skills, and the level of difficulty of the task is taken into account in the salary. Orientation takes place in Paraini, and the work sites are mainly located in the Varsinais-Suomi region.\n\n Were you interested?\nPlease submit your application as soon as possible through our recruitment system, because we interview applicants already during the application period and the position will be filled as soon as a suitable person is found. It is a direct recruitment, and the person selected for the position will be employed by our client company.\n\nMore information about the task is given by:\nHR expert Tita Vuoksenturja\n +358 40 843 2149\n tita.vuoksenturja@wippiiwork.com\n\nApply for the position via the attached link.",
+    "translated_what_we_expect": [
+      "manage project information"
+    ],
+    "translated_job_responsibilities": [
+      "foreman, electrical work"
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "9b0c490e",
+    "job_id": "sähköasentaja-turun-sähkö-ja-a-parainen-9b0c490e",
+    "title": "Sähköasentaja, Turun Sähkö ja Automaatio Oy, Parainen",
+    "company": "Wippii Work Oy, Vantaa",
+    "jobLocation": [
+      "Parainen"
+    ],
+    "jobapply_link": "https://rekry.wippiiwork.com/jobs/7193910-sahkoasentaja-turun-sahko-ja-automaatio-oy-parainen",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/445025d2-86b8-4e96-aec6-944f1b135f59/en",
+    "job_employer_email": "",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-03",
+    "date_expires": "2026-04-24",
+    "scraped_at": "2026-04-03 18:13:23",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "asentaa sähkökatkaisijoita",
+      "asentaa pistorasioita"
+    ],
+    "job_responsibilities": [
+      "sähköasentaja"
+    ],
+    "what_we_offer": [],
+    "who_is_this_for": [],
+    "jobcontent": "Turun Sähkö ja Automaatio Oy on Varsinais-Suomessa toimiva sähköalan yritys, joka toteuttaa sähköasennuksia laaja-alaisesti teollisuudesta liiketiloihin, oppilaitoksiin, kerrostaloihin, saneerauskohteisiin sekä laivapuolen projekteihin. Yritys tunnetaan erityisesti luotettavasta ja asiakaslähtöisestä toimintatavastaan.\n\nEtsimme nyt asiakkaallemme kokenutta sähköasentajaa vakituiseen työsuhteeseen.\n\nTyössä toimit osana työryhmää erilaisissa sähköasennus- ja urakkakohteissa Varsinais-Suomen alueella. Kohteet vaihtelevat pienemmistä huoltokeikoista laajoihin urakoihin, joten pääset hyödyntämään osaamistasi monipuolisesti. Urakkatyön ymmärtäminen ja kyky työskennellä urakkatahdissa ovat tehtävässä tärkeitä, sillä työ tehdään tiiviissä yhteistyössä muun tiimin kanssa. Tarvittaessa työskentelet myös itsenäisesti pienemmissä asennuksissa.\n\nOdotamme sinulta:\n-sähköalan koulutusta ja aikaisempaa asentajakokemusta\n-piirustusten lukutaitoa ja turvallista työotetta\n-valmiutta työskennellä tiimissä sekä kykyä hoitaa keikkoja myös itsenäisesti\n-voimassa olevia sähkö- ja työturvallisuuskortteja (tai valmiutta päivittää ne)\n\nEduksi katsomme:\n-kokemuksen urakkatyöstä\n-laaja-alaisen kokemuksen erilaisista asennuskohteista\n\nTehtävään valitulle tarjotaan vakituinen työ vakaassa yrityksessä, jossa työtä riittää ympäri vuoden. Palkkaus määräytyy sähköalan TESin mukaisesti kokemuksen ja osaamisen perusteella, ja urakkakohteissa on mahdollisuus bonuksiin. Lisäksi Paraisten Valo tarjoaa vapaa-ajan tapaturmavakuutuksen, monipuoliset kohteet Varsinais-Suomen alueella sekä mukavan ja kannustavan työyhteisön.\n\n Kiinnostuitko?\nJätäthän hakemuksesi mahdollisimman pian rekrytointijärjestelmämme kautta, sillä haastattelemme hakijoita jo hakuaikana ja paikka täytetään heti sopivan henkilön löydyttyä. Kyseessä on suorarekrytointi, ja tehtävään valittava henkilö työllistyy asiakasyrityksemme palvelukseen.\n\nLisätietoja tehtävästä antaa:\nHR-asiantuntija Tita Vuoksenturja\n +358 40 843 2149\n tita.vuoksenturja@wippiiwork.com\n\nHae työpaikkaa oheisen linkin kautta.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Electrician, Turun Sähkö ja Automaatio Oy, Parainen\n\nTurun Sähkö ja Automaatio Oy is an electrical company operating in Varsinais-Finland, which carries out electrical installations in a wide range of areas, from industry to commercial premises, educational institutions, apartment buildings, renovation projects and ship-side projects. The company is particularly known for its reliable and customer-oriented way of working.\n\nWe are now looking for an experienced electrician for our client for a permanent employment relationship.\n\nAt work, you work as part of a work group in various electrical installation and contract sites in the Varsinais-Suomi region. The targets vary from smaller maintenance gigs to extensive contracts, so you get to use your skills in a variety of ways. Understanding contract work and the ability to work at the contract pace are important in the task, as the work is done in close cooperation with the rest of the team. If necessary, you also work independently in smaller installations.\n\nWe expect from you:\n-electrical education and previous experience as an installer\n-ability to read drawings and a safe work grip\n-willingness to work in a team as well as the ability to manage gigs independently\n- valid electricity and occupational safety cards (or readiness to update them)\n\nTo our advantage, we consider:\n-experience in contract work\n-extensive experience in various installation sites\n\nThe person selected for the position will be offered a permanent job in a stable company where there is enough work all year round. Salary is determined according to the TES of the electrical industry, based on experience and competence, and there is a possibility of bonuses in contract sites. In addition, Paraisten Valo offers leisure accident insurance, versatile destinations in the Varsinais-Suomi region, and a comfortable and supportive work community.\n\n Were you interested?\nPlease submit your application as soon as possible through our recruitment system, because we interview applicants already during the application period and the position will be filled as soon as a suitable person is found. It is a direct recruitment, and the person selected for the position will be employed by our client company.\n\nMore information about the task is given by:\nHR expert Tita Vuoksenturja\n +358 40 843 2149\n tita.vuoksenturja@wippiiwork.com\n\nApply for a job via the attached link.",
+    "translated_what_we_expect": [
+      "install circuit breakers",
+      "install sockets"
+    ],
+    "translated_job_responsibilities": [
+      "electrician"
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
   }
 ]
