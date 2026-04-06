@@ -2,8 +2,8 @@ import json
 import sys
 import os
 
-# Add scraper to path so absolute imports work
-sys.path.insert(0, os.path.abspath('.'))
+# Add root to path so absolute imports work
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from scraper import firebase_client
 
