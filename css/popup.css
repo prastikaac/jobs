@@ -1792,3 +1792,14 @@ body.drK #pp-card-wrapper .pp-field svg {
 #logoffbtn {
     cursor: pointer;
 }
+
+/* Region headers inside the location popup */
+.region-header span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #222;
+}
+
+body.drK .region-header span {
+    color: #fff;
+}

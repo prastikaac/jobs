@@ -26,33 +26,6 @@ Sunday     | —                      | ❌ Off
 
 
 
-
-- make to update sitemaps.xml each time a job updates
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 I have just disabled the scheduled task for you so it is temporarily turned off.
 
 To turn the automation back on later, you have two options:
@@ -71,17 +44,11 @@ Right now, the system will sit idle and won't scrape or process anything in the 
 
 
 
-
-
-
 8) Warm the model before the loop
 
 Ollama often has a cold-start penalty.
 
 Before processing jobs, do one tiny warm-up call.
-
-
-
 
 - subject not being appended to jobapply_link : 
 
@@ -93,6 +60,47 @@ Please%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.
 Thank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0A
 Kind%20regards,%0A
 YOUR_NAME : and here replace Job Title witth the actual job title 
+
+
+- Expired jobs logic
+
+This is very important.
+
+Rule:
+
+If a job is expired, it must be:
+
+removed from job folder
+removed from job card in both index and jobs.html
+removed from sitemap-jobs.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -273,51 +281,41 @@ CORE PRINCIPLES
 
 
 
+
+
+
+
+
+
+
 - add filters in edit-profile.html and while signing up
 
 - Firebase alerts 
-
 
 - scrape from all sources, jobly not updated
 
 
 
-5. Expired jobs logic
-
-This is very important.
-
-Rule:
-
-If a job is expired, it must be:
-
-removed from job folder
-removed from job card in both index and jobs.html
-removed from sitemap-jobs.xml
 
 
+and while sending the job to Firebase send it in this style it needs to trigger the functions\index.js and send push and email notifications to the respective users with the selected job preferences and this needs to be done every time the job updates in firebase 
+
+- now set a logic to send job alerts on the basis of user's jobSubscription and jobAlertFrequency, job alert frequency VALUE is 'instantly' for instantly when a matching job is published, 'daily' for daily, 'weekly' for weekly, 'monthly' for monthly, and job subscription value is jobSubscription
+(map)
 
 
-and while sending the job to Firebase send it in this style :
-createdAt: April 6, 2026 at 10:26:03 PM UTC+3  (timestamp)
-
-description: "Test"  (string)
-
-imageUrl: "http://test.com/"  (string)
-
-jobCategory: [  (array)
-  "construction-labor"
-]
-
-jobLink: "http://test.com/"  (string)
-
-jobLocation: [  (array)
-  "joensuu"
-]
-
-title: "Test"  (string)
+emailNotification
+true or false
+(boolean)
 
 
-and this needs to trigger the functions\index.js which is already uploaded on firebase and it needs to be triggered every time the job updates in firebase 
+pushNotification
+true or false
 
 
-here remove .html from sitemap while generating it
+
+
+
+
+
+- reduce job scrap time

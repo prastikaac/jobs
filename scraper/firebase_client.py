@@ -92,6 +92,26 @@ def send_job_alert(job: dict) -> str:
     # description — short for email/push body
     description = (job.get("description") or "")[:300]
 
+    # Map jobTimes (frontend: "full-time", "part-time")
+    work_time_str = job.get("workTime", "").lower()
+    job_times = []
+    if "full" in work_time_str: job_times.append("full-time")
+    elif "part" in work_time_str: job_times.append("part-time")
+    
+    # Map jobType (frontend: "permanent", "temporary", "seasonal", "summer")
+    continuity_str = job.get("continuityOfWork", "").lower()
+    job_type = []
+    if "permanent" in continuity_str or "continuous" in continuity_str or "regular" in continuity_str:
+        job_type.append("permanent")
+    else:
+        if "temp" in continuity_str or "fixed" in continuity_str: job_type.append("temporary")
+        if "season" in continuity_str: job_type.append("seasonal")
+        if "summer" in continuity_str: job_type.append("summer")
+    
+    # Map jobLanguage (frontend: "finnish", "english", "swedish")
+    langs = job.get("language_requirements") or []
+    job_language = [str(l).lower() for l in langs if str(l).lower() in ["finnish", "english", "swedish"]]
+
     alert_doc = {
         "createdAt":   fs.SERVER_TIMESTAMP,
         "description": description,
@@ -100,6 +120,9 @@ def send_job_alert(job: dict) -> str:
         "jobLink":     job_link,
         "jobLocation": job_location,
         "title":       job.get("title", ""),
+        "jobLanguage": job_language,
+        "jobTimes":    job_times,
+        "jobType":     job_type,
     }
 
     # Use add() so Firestore generates a fresh doc ID → always fires onDocumentCreated

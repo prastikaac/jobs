@@ -61,7 +61,7 @@ def _job_page_url(job: dict) -> str:
     category = _category_label(job)
     cat_slug = config.slugify_category(category)
     job_id = job.get("job_id", job.get("id", "unknown"))
-    return f"{config.GITHUB_PAGES_BASE_URL}/jobs/{cat_slug}/{job_id}.html"
+    return f"{config.GITHUB_PAGES_BASE_URL}/jobs/{cat_slug}/{job_id}"
 
 
 def _category_label(job: dict) -> str:

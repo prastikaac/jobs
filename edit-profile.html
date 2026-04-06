@@ -809,7 +809,8 @@
                                   border-bottom: none;
                                 }
 
-                                .dropdown input[type="checkbox"] {
+                                .dropdown input[type="checkbox"],
+                                .dropdown input[type="radio"] {
                                   display: none;
                                 }
 
@@ -817,6 +818,7 @@
                                 .dropdown label {
                                   position: relative;
                                   padding-left: 0;
+                                  padding-right: 50px;
                                   flex: 1;
                                   cursor: pointer;
                                 }
@@ -831,11 +833,12 @@
                                   transition: background-color 0.3s;
                                   position: absolute;
                                   right: 0;
-                                  top: 39%;
+                                  top: 50%;
                                   transform: translateY(-50%);
                                 }
 
-                                .dropdown input[type="checkbox"]:checked+label::after {
+                                .dropdown input[type="checkbox"]:checked+label::after,
+                                .dropdown input[type="radio"]:checked+label::after {
                                   background-color: #ff2d7b;
                                 }
 
@@ -844,16 +847,18 @@
                                   position: absolute;
                                   width: 18px;
                                   height: 18px;
-                                  top: 2px;
+                                  top: 50%;
                                   right: 20px;
+                                  transform: translateY(-50%);
                                   background-color: white;
                                   border-radius: 50%;
                                   transition: transform 0.3s;
                                   z-index: 1;
                                 }
 
-                                .dropdown input[type="checkbox"]:checked+label::before {
-                                  transform: translateX(18px);
+                                .dropdown input[type="checkbox"]:checked+label::before,
+                                .dropdown input[type="radio"]:checked+label::before {
+                                  transform: translate(18px, -50%);
                                 }
 
 
@@ -1155,255 +1160,20 @@
                               <!-- JOB CATEGORY -->
                               <div class="dropdown-section">
                                 <h4>Preferred Job Types</h4>
-                                <p class="descp">Let us know the job roles and industries you are most interested in.
-                                  This information
-                                  will be used to
-                                  customize your job alert notifications and job search suggestions.</p>
+                                <p class="descp">Choose the job industries that interest you the most. We’ll
+                                  use this to personalize your job alerts and recommendations.</p>
                                 <div class="dropdown" id="jobCategoryDropdown">
-                                  <div>
-                                    <input type="checkbox" id="cat-all" value="all-categories" />
-                                    <label for="cat-all">All Categories</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-it" value="it-tech" />
-                                    <label for="cat-it">IT & Tech</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-eng" value="engineering" />
-                                    <label for="cat-eng">Engineering</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-nursing" value="nursing" />
-                                    <label for="cat-nursing">Nursing</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-construction" value="construction-labor" />
-                                    <label for="cat-construction">Construction & Labor</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-logistics" value="logistics-delivery" />
-                                    <label for="cat-logistics">Logistics & Delivery</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-customer" value="customer-service-support" />
-                                    <label for="cat-customer">Customer Service Support</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-internship" value="internships-traineeships" />
-                                    <label for="cat-internship">Internships & Traineeships</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-cleaning" value="cleaning" />
-                                    <label for="cat-cleaning">Cleaning</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-housekeeping" value="housekeeping" />
-                                    <label for="cat-housekeeping">Housekeeping</label>
-                                  </div>
-
-                                  <div>
-                                    <input type="checkbox" id="cat-cooking" value="cooking" />
-                                    <label for="cat-cooking">Cooking</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-restaurant" value="restaurant" />
-                                    <label for="cat-restaurant">Restaurant</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-hospitality" value="hospitality-service" />
-                                    <label for="cat-hospitality">Hospitality & Service</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-caregiver" value="caregiver" />
-                                    <label for="cat-caregiver">Caregiver</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-education" value="education-teaching" />
-                                    <label for="cat-education">Education & Teaching</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-finance" value="finance-accounting" />
-                                    <label for="cat-finance">Finance & Accounting</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="cat-sales" value="sales-marketing" />
-                                    <label for="cat-sales">Sales & Marketing</label>
-                                  </div>
-
-                                  <!-- Add more if needed -->
+                                  <!-- Dynamically loaded -->
                                 </div>
                               </div>
 
                               <!-- JOB LOCATION -->
                               <div class="dropdown-section">
                                 <h4>Preferred Job Location</h4>
-                                <p class="descp">Let us know where you would like to work. This information will assist
-                                  in providing
-                                  you with job
-                                  opportunities in your desired locations.</p>
+                                <p class="descp">Select the locations where you want to work. This helps us show jobs
+                                  that match your preferred areas.</p>
                                 <div class="dropdown" id="jobLocationDropdown">
-                                  <div>
-                                    <input type="checkbox" id="loc-all" value="all-location" />
-                                    <label for="loc-all">All Locations</label>
-                                  </div>
-
-                                  <div>
-                                    <input type="checkbox" id="loc-uusimaa-region" value="uusimaa-region" />
-                                    <label for="loc-uusimaa-region">Uusimaa Region</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-helsinki" value="helsinki" />
-                                    <label for="loc-helsinki">Helsinki</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-espoo" value="espoo" />
-                                    <label for="loc-espoo">Espoo</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-vantaa" value="vantaa" />
-                                    <label for="loc-vantaa">Vantaa</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kauniainen" value="kauniainen" />
-                                    <label for="loc-kauniainen">Kauniainen</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-jarvenpaa" value="jarvenpaa" />
-                                    <label for="loc-jarvenpaa">Järvenpää</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kerava" value="kerava" />
-                                    <label for="loc-kerava">Kerava</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-tuusula" value="tuusula" />
-                                    <label for="loc-tuusula">Tuusula</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-sipoo" value="sipoo" />
-                                    <label for="loc-sipoo">Sipoo</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kirkkonummi" value="kirkkonummi" />
-                                    <label for="loc-kirkkonummi">Kirkkonummi</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-lohja" value="lohja" />
-                                    <label for="loc-lohja">Lohja</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-nurmijarvi" value="nurmijarvi" />
-                                    <label for="loc-nurmijarvi">Nurmijärvi</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-hyvinkaa" value="hyvinkaa" />
-                                    <label for="loc-hyvinkaa">Hyvinkää</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-inkoo" value="inkoo" />
-                                    <label for="loc-inkoo">Inkoo</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-pasila" value="pasila" />
-                                    <label for="loc-pasila">Pasila</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-malmi" value="malmi" />
-                                    <label for="loc-malmi">Malmi</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-tikkurila" value="tikkurila" />
-                                    <label for="loc-tikkurila">Tikkurila</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-leppavaara" value="leppavaara" />
-                                    <label for="loc-leppavaara">Leppävaara</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-matinkyla" value="matinkyla" />
-                                    <label for="loc-matinkyla">Matinkylä</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-myyrmaki" value="myyrmaki" />
-                                    <label for="loc-myyrmaki">Myyrmäki</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kamppi" value="kamppi" />
-                                    <label for="loc-kamppi">Kamppi</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kallio" value="kallio" />
-                                    <label for="loc-kallio">Kallio</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-tapiola" value="tapiola" />
-                                    <label for="loc-tapiola">Tapiola</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-itakeskus" value="itakeskus" />
-                                    <label for="loc-itakeskus">Itäkeskus</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-lauttasaari" value="lauttasaari" />
-                                    <label for="loc-lauttasaari">Lauttasaari</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-tampere" value="tampere" />
-                                    <label for="loc-tampere">Tampere</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-turku" value="turku" />
-                                    <label for="loc-turku">Turku</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-oulu" value="oulu" />
-                                    <label for="loc-oulu">Oulu</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-jyvaskyla" value="jyvaskyla" />
-                                    <label for="loc-jyvaskyla">Jyväskylä</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kuopio" value="kuopio" />
-                                    <label for="loc-kuopio">Kuopio</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-lahti" value="lahti" />
-                                    <label for="loc-lahti">Lahti</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-vaasa" value="vaasa" />
-                                    <label for="loc-vaasa">Vaasa</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-seinajoki" value="seinajoki" />
-                                    <label for="loc-seinajoki">Seinäjoki</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-rovaniemi" value="rovaniemi" />
-                                    <label for="loc-rovaniemi">Rovaniemi</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kotka" value="kotka" />
-                                    <label for="loc-kotka">Kotka</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-lappeenranta" value="lappeenranta" />
-                                    <label for="loc-lappeenranta">Lappeenranta</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-pori" value="pori" />
-                                    <label for="loc-pori">Pori</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-kokkola" value="kokkola" />
-                                    <label for="loc-kokkola">Kokkola</label>
-                                  </div>
-                                  <div>
-                                    <input type="checkbox" id="loc-joensuu" value="joensuu" />
-                                    <label for="loc-joensuu">Joensuu</label>
-                                  </div>
-
+                                  <!-- Dynamically loaded -->
                                   <div id="unsubscribe"></div>
 
                                   <!-- Add more if needed -->
@@ -1411,13 +1181,57 @@
                               </div>
 
 
+
+                              <!-- JOB TIMES -->
+                              <div class="dropdown-section">
+                                <h4>Preferred Working Times</h4>
+                                <p class="descp">Pick the working hours that suit your schedule. We’ll filter jobs based
+                                  on your availability.</p>
+                                <div class="dropdown" id="jobTimesDropdown">
+                                  <div><input type="checkbox" id="time-full" value="full-time" /><label
+                                      for="time-full">Full-time</label></div>
+                                  <div><input type="checkbox" id="time-part" value="part-time" /><label
+                                      for="time-part">Part-time</label></div>
+                                </div>
+                              </div>
+
+                              <!-- WORKING LANGUAGES -->
+                              <div class="dropdown-section">
+                                <h4>Preferred Working Languages</h4>
+                                <p class="descp">Select the languages you’re comfortable using at work. This ensures you
+                                  see jobs that match your language skills.</p>
+                                <div class="dropdown" id="jobLangsDropdown">
+                                  <div><input type="checkbox" id="lang-fi" value="finnish" /><label
+                                      for="lang-fi">Finnish</label></div>
+                                  <div><input type="checkbox" id="lang-en" value="english" /><label
+                                      for="lang-en">English</label></div>
+                                  <div><input type="checkbox" id="lang-sv" value="swedish" /><label
+                                      for="lang-sv">Swedish</label></div>
+                                </div>
+                              </div>
+
+                              <!-- JOB TYPE -->
+                              <div class="dropdown-section">
+                                <h4>Preferred Job Type</h4>
+                                <p class="descp">Choose the type of employment you are looking for. We’ll recommend jobs
+                                  that fit your preferred work style.</p>
+                                <div class="dropdown" id="jobTypeDropdown">
+                                  <div><input type="checkbox" id="type-perm" value="permanent" /><label
+                                      for="type-perm">Permanent</label></div>
+                                  <div><input type="checkbox" id="type-temp" value="temporary" /><label
+                                      for="type-temp">Temporary</label></div>
+                                  <div><input type="checkbox" id="type-season" value="seasonal" /><label
+                                      for="type-season">Seasonal work</label></div>
+                                  <div><input type="checkbox" id="type-summer" value="summer" /><label
+                                      for="type-summer">Summer job</label></div>
+                                </div>
+                              </div>
+
                               <!-- Job Subscription Section -->
                               <div class="dropdown-section">
                                 <h4>Job Alerts Subscription</h4>
-                                <p class="descp">Stay updated with the latest job opportunities via email and web
-                                  notifications.
-                                  Choose from the available
-                                  notification types & customize your preferences.</p>
+                                <p class="descp">Select how you want to receive job updates. Stay informed through your
+                                  preferred notification method.</p>
 
                                 <!-- Notification Options (Email and Push Notification) -->
                                 <div class="dropdown" id="notificationTypes">
@@ -1432,8 +1246,29 @@
                                 </div>
                               </div>
 
+
+                              <!-- JOB ALERTS FREQUENCY -->
+                              <div class="dropdown-section">
+                                <h4>Job Alerts Frequency</h4>
+                                <p class="descp">Choose how often you want to get job alerts. We’ll send updates based
+                                  on your selected frequency.</p>
+                                <div class="dropdown" id="jobAlertFreqDropdown">
+                                  <div><input type="radio" id="freq-instantly" name="jobFreqProfile" value="instantly"
+                                      checked /><label for="freq-instantly">Instantly when a matching job is
+                                      published</label></div>
+                                  <div><input type="radio" id="freq-daily" name="jobFreqProfile" value="daily" /><label
+                                      for="freq-daily">Once a day</label></div>
+                                  <div><input type="radio" id="freq-weekly" name="jobFreqProfile"
+                                      value="weekly" /><label for="freq-weekly">Once a week</label></div>
+                                  <div><input type="radio" id="freq-monthly" name="jobFreqProfile"
+                                      value="monthly" /><label for="freq-monthly">Once a month</label></div>
+                                </div>
+                              </div>
+
+
+
                               <button class="button full-width-btn" id="saveBtn"
-                                style="padding: 11px 20px; font-size: 14px; margin-top: 40px !important; cursor: pointer;"
+                                style="padding: 11px 20px; font-size: 14px; margin-top: 15px !important; cursor: pointer;"
                                 target="_blank">
                                 <span>Save Changes</span>
                               </button>
@@ -1444,6 +1279,49 @@
                               </div>
 
                               <script type="module">
+                                async function loadPopupOptions() {
+                                  try {
+                                    const catRes = await fetch('/scraper/all_jobs_cat.json');
+                                    const catData = await catRes.json();
+                                    const categories = catData.categories || [];
+
+                                    function slugToDisplay(slug) {
+                                      return slug.split('-').map(w => {
+                                        if (w.toLowerCase() === 'it') return 'IT';
+                                        if (['and', 'of', 'the'].includes(w.toLowerCase())) return w.toLowerCase();
+                                        return w.charAt(0).toUpperCase() + w.slice(1);
+                                      }).join(' ');
+                                    }
+
+                                    let catHtml = '<div><input type="checkbox" id="cat-all" value="all" /><label for="cat-all">All Categories</label></div>';
+                                    categories.forEach(slug => {
+                                      catHtml += `<div><input type="checkbox" id="cat-${slug}" value="${slug}" /><label for="cat-${slug}">${slugToDisplay(slug)}</label></div>`;
+                                    });
+                                    const catDrop = document.getElementById('jobCategoryDropdown');
+                                    if (catDrop) catDrop.innerHTML = catHtml;
+
+                                    const locRes = await fetch('/scraper/all_jobs_loc.json');
+                                    const locData = await locRes.json();
+
+                                    let locHtml = '<div><input type="checkbox" id="loc-all" value="all" /><label for="loc-all">All Locations</label></div>';
+                                    for (const [region, cities] of Object.entries(locData)) {
+                                      const regionSlug = region.toLowerCase();
+                                      locHtml += `<div><input type="checkbox" id="loc-${regionSlug}" value="${regionSlug}" /><label for="loc-${regionSlug}" style="font-weight:bold; font-size:16px;">${region}</label></div>`;
+                                      const sortedCities = [...cities].sort();
+                                      sortedCities.forEach(city => {
+                                        const citySlug = city.toLowerCase();
+                                        locHtml += `<div><input type="checkbox" id="loc-${citySlug}" value="${citySlug}" /><label for="loc-${citySlug}">${city}</label></div>`;
+                                      });
+                                    }
+                                    const locDrop = document.getElementById('jobLocationDropdown');
+                                    if (locDrop) locDrop.innerHTML = locHtml;
+                                  } catch (e) {
+                                    console.error("Error loading dropdown options:", e);
+                                  }
+                                }
+
+                                await loadPopupOptions();
+
                                 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
                                 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
                                 import {
@@ -1473,6 +1351,11 @@
 
                                 let originalCategories = [];
                                 let originalLocations = [];
+                                let originalTimes = [];
+                                let originalLangs = [];
+                                let originalTypes = [];
+                                let originalFreq = "instantly";
+
 
                                 onAuthStateChanged(auth, async (user) => {
                                   if (user) {
@@ -1495,6 +1378,18 @@
 
                                     originalCategories = data.jobCategory || [];
                                     originalLocations = data.jobLocation || [];
+                                    originalTimes = data.jobTimes || [];
+                                    originalLangs = data.jobLanguages || [];
+                                    originalTypes = data.jobType || [];
+                                    originalFreq = data.jobAlertFrequency || "instantly";
+
+                                    checkValues("jobTimesDropdown", originalTimes);
+                                    checkValues("jobLangsDropdown", originalLangs);
+                                    checkValues("jobTypeDropdown", originalTypes);
+
+                                    const freqInput = document.querySelector(`input[name="jobFreqProfile"][value="${originalFreq}"]`);
+                                    if (freqInput) freqInput.checked = true;
+
 
                                     checkValues("jobCategoryDropdown", originalCategories);
                                     checkValues("jobLocationDropdown", originalLocations);
@@ -1589,7 +1484,7 @@
                                   });
 
                                   const allCheckbox = document.querySelector(`#${containerId} input[value="all"]`);
-                                  if (count === checkboxes.length - 1) {
+                                  if (allCheckbox && count === checkboxes.length - 1) {
                                     allCheckbox.checked = true;
                                   }
                                 }
@@ -1625,8 +1520,13 @@
 
                                 // Check for changes
                                 function hasChanges() {
+                                  const newFreq = document.querySelector('input[name="jobFreqProfile"]:checked')?.value || "instantly";
                                   return updateSaveState(originalCategories, "jobCategoryDropdown") ||
-                                    updateSaveState(originalLocations, "jobLocationDropdown");
+                                    updateSaveState(originalLocations, "jobLocationDropdown") ||
+                                    updateSaveState(originalTimes, "jobTimesDropdown") ||
+                                    updateSaveState(originalLangs, "jobLangsDropdown") ||
+                                    updateSaveState(originalTypes, "jobTypeDropdown") ||
+                                    originalFreq !== newFreq;
                                 }
 
                                 // Get the Save button and Success message container
@@ -1639,18 +1539,30 @@
 
                                   const newCategories = getCheckedValues("jobCategoryDropdown");
                                   const newLocations = getCheckedValues("jobLocationDropdown");
+                                  const newTimes = getCheckedValues("jobTimesDropdown");
+                                  const newLangs = getCheckedValues("jobLangsDropdown");
+                                  const newTypes = getCheckedValues("jobTypeDropdown");
+                                  const newFreq = document.querySelector('input[name="jobFreqProfile"]:checked')?.value || "instantly";
 
                                   // Update job categories and locations if changed
                                   if (hasChanges()) {
                                     await updateDoc(userRef, {
                                       jobCategory: newCategories,
                                       jobLocation: newLocations,
+                                      jobTimes: newTimes,
+                                      jobLanguages: newLangs,
+                                      jobType: newTypes,
+                                      jobAlertFrequency: newFreq,
                                       lastUpdated: Timestamp.now()
                                     });
 
                                     // Update original values to prevent unnecessary saves in future
                                     originalCategories = [...newCategories];
                                     originalLocations = [...newLocations];
+                                    originalTimes = [...newTimes];
+                                    originalLangs = [...newLangs];
+                                    originalTypes = [...newTypes];
+                                    originalFreq = newFreq;
                                   }
 
                                   // Update job subscription preferences (email and push notifications)
@@ -1666,7 +1578,7 @@
                                   });
 
                                   // Show success message after saving both job subscription and preferences
-                                  savedMessageContainer.textContent = "Changes Saved Successfully!";
+                                  savedMessageContainer.textContent = "Changes saved successfully!";
 
                                   // Hide the success message after 3 seconds
                                   setTimeout(() => {

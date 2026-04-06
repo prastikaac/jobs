@@ -260,23 +260,17 @@ function validateName(name) {
 
 function getSelectedValues(containerId) {
   const container = document.getElementById(containerId);
-  const checkboxes = container?.querySelectorAll('input[type="checkbox"]:checked') || [];
-  const allCheckbox = container?.querySelector('input[value=""]');
-  const allSelected = allCheckbox && allCheckbox.checked;
+  if (!container) return [];
+  const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked') || [];
   let selected = [];
 
-  if (allSelected) {
-    const allValues = container.querySelectorAll('input[type="checkbox"]');
-    allValues.forEach(cb => {
-      const val = cb.value.trim();
-      if (val !== "") selected.push(val);
-    });
-  } else {
-    checkboxes.forEach(cb => {
-      const val = cb.value.trim();
-      if (val !== "") selected.push(val);
-    });
-  }
+  checkboxes.forEach(cb => {
+    const val = cb.value.trim();
+    if (val !== "" && val !== "all-categories" && val !== "all-location" && val !== "all-job-types" && val !== "all") {
+      selected.push(val);
+    }
+  });
+
   return selected;
 }
 
@@ -459,7 +453,12 @@ function clearAllErrors() {
     "popupEmailError",
     "signupError",
     "categoryError",
-    "locationError"
+    "locationError",
+    "jobTimesError",
+    "jobLangsError",
+    "jobTypeError",
+    "jobAlertSubError",
+    "jobAlertFreqError"
   ];
   errorDivs.forEach(id => {
     const el = document.getElementById(id);
@@ -533,6 +532,43 @@ window.signupUser = async () => {
     hasError = true;
   }
 
+  const jobTimes = getSelectedValues("jobTimesBox");
+  const jobLangs = getSelectedValues("jobLangsBox");
+  const jobType = getSelectedValues("jobTypeBox");
+  const jobAlertSub = getSelectedValues("jobAlertSubBox");
+  const jobFreqElement = document.querySelector('input[name="jobFreq"]:checked');
+  const jobAlertFrequency = jobFreqElement ? jobFreqElement.value : "instantly";
+
+  if (jobTimes.length === 0) {
+    const err = document.getElementById("jobTimesError");
+    if (err) err.textContent = "Please select at least one working time.";
+    hasError = true;
+  }
+  
+  if (jobLangs.length === 0) {
+    const err = document.getElementById("jobLangsError");
+    if (err) err.textContent = "Please select at least one working language.";
+    hasError = true;
+  }
+
+  if (jobType.length === 0) {
+    const err = document.getElementById("jobTypeError");
+    if (err) err.textContent = "Please select at least one job type.";
+    hasError = true;
+  }
+
+  if (jobAlertSub.length === 0) {
+    const err = document.getElementById("jobAlertSubError");
+    if (err) err.textContent = "Please select at least one subscription method.";
+    hasError = true;
+  }
+
+  if (!jobFreqElement) {
+    const err = document.getElementById("jobAlertFreqError");
+    if (err) err.textContent = "Please select a job alert frequency.";
+    hasError = true;
+  }
+
   if (hasError) {
     signupButton.disabled = false;  // Re-enable the button in case of error
     return;
@@ -562,9 +598,13 @@ window.signupUser = async () => {
       fullName: name,
       jobCategory: jobCategory,
       jobLocation: jobLocation,
+      jobTimes: jobTimes,
+      jobLanguages: jobLangs,
+      jobType: jobType,
+      jobAlertFrequency: jobAlertFrequency,
       jobSubscription: {
-        emailNotification: true,  // Always true for email notifications
-        pushNotification: true,  // Always true for push notifications
+        emailNotification: jobAlertSub.includes("email"),
+        pushNotification: jobAlertSub.includes("pushNotification"),
       },
       createdAt: timestampNow,
       lastLogin: timestampNow,
@@ -1312,64 +1352,72 @@ document.getElementById("categoryBox").addEventListener("change", function (e) {
   }
 });
 
-// Add event listeners to handle changes on location checkboxes
-document.getElementById("locationBox").addEventListener("change", function (e) {
-  if (e.target.value === "all-location") { // If the "All Locations" checkbox is clicked
-    handleAllCheckboxClick("locationBox");
-  } else {
-    updateAllCheckboxStatus("locationBox");
-  }
-});
+// Add event listeners to handle changes on job type checkboxes
+const jobTypeBoxCheckboxContainer = document.getElementById("jobTypeBox");
+if (jobTypeBoxCheckboxContainer) {
+  jobTypeBoxCheckboxContainer.addEventListener("change", function (e) {
+    if (e.target.value === "all-job-types") { 
+      handleAllCheckboxClick("jobTypeBox");
+    } else {
+      updateAllCheckboxStatus("jobTypeBox");
+    }
+  });
+}
 
-// Map of regions to their respective locations
-const regions = {
-  "uusimaa-region": [
-    "helsinki", "espoo", "vantaa",
-    "lohja", "kerava", "jarvenpaa", "tuusula",
-    "nurmijarvi", "sipoo", "kirkkonummi", "hyvinkaa",
-    "mantsala", "pornais", "vihti", "karkkila",
-    "siuntio", "inkoo", "lapinjarvi", "askola",
-    "myrskyla", "porvoo", "loviisa", "hanko",
-    "kamppi", "kallio", "pasila", "malmi", "kontula",
-    "vuosaari", "itakeskus", "lauttasaari", "herttoniemi",
-    "kalasatama", "punavuori", "taka-toolo", "etelaesplanadi",
-    "sornaeinen", "arabianranta", "munkkiniemi", "vuosaari",
-    "tapiola", "otaniemi", "leppavaara", "matinkyla",
-    "espoo centre", "kauklahti", "olari", "nokkala",
-    "nuuksio", "tikkurila", "myyrmaki", "korso", "hakkila",
-    "aviapolis", "koivukyla", "hakunila", "kivisto", "kauniainen centre",
-    "lohja centre", "sammatti", "nummi-pusula", "karjalohja", "porvoo centre", "old town porvoo", "tolkkinen", "siuntio centre", "inkoo harbour", "mantsala centre",
-    "askola village", "myrskyla village", "lapinjärvi village",
-    "karkkila centre", "hanko harbour", "fiskars village",
-    "vihti kirkonkyla", "kirkkonummi centre", "sipoo centre"
-  ]
-};
+// Dynamic regions map loaded from JSON
+let popupRegions = {};
+
+async function initDynamicRegions() {
+  try {
+    const resp = await fetch('/scraper/all_jobs_loc.json');
+    if (!resp.ok) return;
+    const data = await resp.json();
+    for (const [region, cities] of Object.entries(data)) {
+        // use lowercased region name as slug, same as popup options
+        popupRegions[region.toLowerCase()] = cities.map(c => c.toLowerCase());
+    }
+  } catch(e) {
+    console.error("Error loading dynamic regions:", e);
+  }
+}
+initDynamicRegions();
 
 // Function to handle region selection
-function handleRegionSelection(regionId) {
-  const container = document.getElementById("locationBox");
+function handleRegionSelection(regionId, containerId="locationBox") {
+  const container = document.getElementById(containerId);
+  if (!container) return;
   const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+  
+  // Find the exact checked state of the region checkbox that was just clicked
+  let isChecked = false;
+  checkboxes.forEach(cb => {
+    if (cb.value === regionId) {
+      isChecked = cb.checked;
+    }
+  });
 
-  // Check/uncheck all locations inside the region
-  if (regions[regionId]) {
+  // Check/uncheck all locations inside the region based on the parent region checkbox
+  if (popupRegions[regionId]) {
     checkboxes.forEach(cb => {
-      if (regions[regionId].includes(cb.value)) {
-        cb.checked = true;
+      if (popupRegions[regionId].includes(cb.value)) {
+        cb.checked = isChecked;
       }
     });
   }
 
-  // Also update "All Locations" checkbox
-  updateAllCheckboxStatus("locationBox");
+  // Also update "All Locations" checkbox status
+  updateAllCheckboxStatus(containerId);
 }
 
-// Add event listener to region checkbox
+// Unified event listener to handle changes on location checkboxes including regions
 document.getElementById("locationBox").addEventListener("change", function (e) {
-  if (e.target.value === "all-location") {
+  if (e.target.value === "all-location") { 
     handleAllCheckboxClick("locationBox");
-  } else if (e.target.value === "uusimaa-region") {
-    handleRegionSelection("uusimaa-region");
+  } else if (popupRegions[e.target.value]) {
+    // If a region header is clicked, select/deselect all its sub-cities dynamically
+    handleRegionSelection(e.target.value, "locationBox");
   } else {
+    // Standard city checkbox toggle
     updateAllCheckboxStatus("locationBox");
   }
 });

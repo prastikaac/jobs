@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updated_at": "2026-04-03 23:37:17",
+  "updated_at": "2026-04-07 00:55:25",
   "jobs": {
-    "21156486": {
+    "bf037e15": {
       "translated": true,
       "translated_at": "",
       "ai_processed": true,
@@ -11,9 +11,9 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-03 23:31:27"
+      "formatted_at": "2026-04-07 00:24:49"
     },
-    "0b76d8c1": {
+    "d4053db0": {
       "translated": true,
       "translated_at": "",
       "ai_processed": true,
@@ -22,9 +22,9 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-03 23:33:11"
+      "formatted_at": "2026-04-07 00:26:52"
     },
-    "509efda0": {
+    "0f17a7e6": {
       "translated": true,
       "translated_at": "",
       "ai_processed": true,
@@ -33,9 +33,9 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-03 23:34:38"
+      "formatted_at": "2026-04-07 00:28:44"
     },
-    "42c15d3b": {
+    "00d8dfc0": {
       "translated": true,
       "translated_at": "",
       "ai_processed": true,
@@ -44,9 +44,9 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-03 23:36:07"
+      "formatted_at": "2026-04-07 00:30:25"
     },
-    "fe36a4d4": {
+    "1832d4ef": {
       "translated": true,
       "translated_at": "",
       "ai_processed": true,
@@ -55,7 +55,62 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-03 23:37:17"
+      "formatted_at": "2026-04-07 00:31:54"
+    },
+    "8a719d65": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-07 00:45:55"
+    },
+    "20e826ff": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-07 00:47:13"
+    },
+    "103a8e92": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-07 00:50:31"
+    },
+    "f93a5e1b": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-07 00:53:26"
+    },
+    "eb7e5974": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-07 00:55:25"
     }
   }
 }
