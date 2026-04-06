@@ -47,41 +47,68 @@ def _require_db() -> None:
 
 def send_job_alert(job: dict) -> str:
     """
-    Write a minimal job document to the Firebase 'jobs' collection.
-    This triggers the Cloud Function (index.js) which sends email + push alerts.
+    Write a job document to the Firebase 'jobs' collection.
+    This triggers the Cloud Function (index.js) via onDocumentCreated,
+    which sends email + push alerts to matched users.
+
+    Document shape matches exactly what index.js reads:
+        createdAt   : SERVER_TIMESTAMP  (Timestamp)
+        description : str               (truncated to 300 chars)
+        imageUrl    : str
+        jobCategory : list[str]
+        jobLink     : str
+        jobLocation : list[str]
+        title       : str
 
     Only called ONCE per job (tracked via sent_alerts.json).
-
-    Args:
-        job: normalised job dict from jobs.json (must include 'id')
-
-    Returns:
-        Firestore document ID used for the alert.
-
-    Raises:
-        RuntimeError if Firebase is not initialised.
     """
     _require_db()
 
     from firebase_admin import firestore as fs
 
-    job_id     = job["id"]
-    image_url  = job.get("image_url", "")
+    job_id = job["id"]
 
-    # Minimal payload — exactly what concept.txt specifies
+    # jobCategory — always a list
+    job_category = job.get("job_category") or job.get("jobCategory") or []
+    if isinstance(job_category, str):
+        job_category = [job_category]
+
+    # jobLocation — always a list
+    job_location = job.get("jobLocation") or []
+    if isinstance(job_location, str):
+        job_location = [job_location]
+
+    # jobLink — pipeline stores apply link as 'jobapply_link'
+    job_link = (
+        job.get("jobapply_link")
+        or job.get("jobLink")
+        or job.get("jobUrl")
+        or ""
+    )
+
+    # imageUrl
+    image_url = job.get("image_url") or job.get("imageUrl") or ""
+
+    # description — short for email/push body
+    description = (job.get("description") or "")[:300]
+
     alert_doc = {
-        "title":       job.get("title", ""),
-        "description": (job.get("description") or "")[:300],  # keep email short
-        "jobCategory": job.get("jobCategory", []),
-        "jobLocation": job.get("jobLocation", []),
-        "jobLink":     job.get("jobLink", ""),
+        "createdAt":   fs.SERVER_TIMESTAMP,
+        "description": description,
         "imageUrl":    image_url,
-        "created_at":  fs.SERVER_TIMESTAMP,
+        "jobCategory": job_category,
+        "jobLink":     job_link,
+        "jobLocation": job_location,
+        "title":       job.get("title", ""),
     }
 
+    # Use add() so Firestore generates a fresh doc ID → always fires onDocumentCreated
     _db.collection(config.FIREBASE_ALERT_COLLECTION).document(job_id).set(alert_doc)
     jobs_store.mark_alert_sent(job_id)
-    logger.info("Firebase alert sent for job [%s]: %s", job_id[:12], job.get("title"))
+    logger.info(
+        "Firebase alert sent for job [%s]: %s | category=%s | location=%s",
+        job_id[:12], job.get("title"), job_category, job_location,
+    )
     return job_id
 
 

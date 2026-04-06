@@ -120,7 +120,6 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
             "what_we_expect",
             "job_responsibilities",
             "what_we_offer",
-            "who_is_this_for",
             "language_requirements",
         ]:
             val = raw.get(field)
@@ -145,7 +144,6 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
                 "what_we_expect",
                 "job_responsibilities",
                 "what_we_offer",
-                "who_is_this_for",
                 "language_requirements",
                 "workTime",
                 "continuityOfWork",

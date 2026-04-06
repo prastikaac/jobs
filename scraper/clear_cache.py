@@ -14,8 +14,7 @@ if os.path.exists(raw_path):
         keys_to_delete = [
             "translated_what_we_expect",
             "translated_job_responsibilities",
-            "translated_what_we_offer",
-            "translated_who_is_this_for"
+            "translated_what_we_offer"
         ]
         for key in keys_to_delete:
             if key in job:

@@ -24,7 +24,7 @@ if os.path.exists(_MUNI_CODES_PATH):
     except Exception as _e:
         logger.warning("Failed to load municipalities_codes.json: %s", _e)
 
-MAX_DESCRIPTION_CHARS = 500
+MAX_DESCRIPTION_CHARS = 9999  # No hard limit on description length
 MAX_META_DESCRIPTION_CHARS = 160
 
 PLACEHOLDER_PATTERNS = [
@@ -215,10 +215,6 @@ def _extract_field_items_from_raw_text(jobcontent: str, field_name: str, max_ite
         "what_we_offer": [
             "tarjoamme", "etu", "edut", "we offer", "benefits", "offer"
         ],
-        "who_is_this_for": [
-            "sinulle joka", "etsimme", "sopii sinulle", "ideal candidate",
-            "who is this for", "you are", "we are looking for"
-        ],
     }
 
     markers = heading_map.get(field_name, [])
@@ -256,143 +252,55 @@ def _extract_field_items_from_raw_text(jobcontent: str, field_name: str, max_ite
     return _dedupe_preserve_order(backup)[:max_items]
 
 
-def _build_meta_description(title: str, company: str, location: str, description: str) -> str:
-    title = _clean_text(title)
-    company = _clean_text(company)
-    location = _clean_text(location)
 
-    parts = []
-    if title:
-        parts.append(title)
-    if company:
-        parts.append(f"at {company}")
-    if location and location.lower() != "finland":
-        parts.append(f"in {location}")
 
-    base = " ".join(parts).strip()
+    # ── Helper: lowercase first char for mid-sentence usage ───────────────────
+    def _lc(text: str) -> str:
+        if not text:
+            return text
+        if len(text) > 1 and text[0].isupper() and text[1:2].isupper():
+            return text
+        return text[0].lower() + text[1:]
 
-    if base:
-        meta = f"{base}. View job details, responsibilities, requirements, and benefits for this opportunity in Finland."
-    elif description:
-        meta = description
-    else:
-        meta = "View job details, responsibilities, requirements, and benefits for this opportunity in Finland."
+    # ── Gather material ────────────────────────────────────────────────────────
+    responsibilities = [_clean_text(r) for r in (d.get("job_responsibilities") or []) if _clean_text(r)]
+    what_we_offer    = [_clean_text(o) for o in (d.get("what_we_offer")        or []) if _clean_text(o)]
+
+    loc_str      = location if location and location.lower() != "finland" else "Finland"
+    work_time    = _clean_text(d.get("workTime") or "Full-time")
+    work_env     = f"{loc_str}, {work_time}" if work_time else loc_str
+
+    variables = {
+        "job_title": title or "this position",
+        "location": loc_str,
+        "key_benefit_1": _lc(what_we_offer[0]) if len(what_we_offer) > 0 else "competitive salary",
+        "key_benefit_2": _lc(what_we_offer[1]) if len(what_we_offer) > 1 else "career growth",
+        "benefits_list": _lc(_join_list(what_we_offer, 2, "competitive benefits")),
+        "key_responsibility_1": _lc(responsibilities[0]) if len(responsibilities) > 0 else "supporting daily operations",
+        "key_responsibility_2": _lc(responsibilities[1]) if len(responsibilities) > 1 else "contributing to team goals",
+        "main_purpose_of_role": _lc(_join_list(responsibilities, 2, "delivering quality service")),
+        "work_environment": work_env
+    }
+
+    # ── Pick template randomly ──────────────────────────────────────────────
+    template = random.choice(templates)
+    try:
+        meta = template.format_map(variables)
+    except KeyError as e:
+        logger.warning("Missing meta template variable %s, using fallback", e)
+        class _SafeDict(dict):
+            def __missing__(self, key):
+                return "{" + key + "}"
+        meta = template.format_map(_SafeDict(variables))
 
     meta = _clean_text(meta)
-
-    if len(meta) > MAX_META_DESCRIPTION_CHARS:
-        meta = _truncate_safely(meta, MAX_META_DESCRIPTION_CHARS, suffix="")
-
-    if len(meta) < 150:
-        filler_options = [
-            " Updated job opening in Finland.",
-            " Explore this current role in Finland.",
-            " Find more details about this role in Finland.",
-        ]
-        for filler in filler_options:
-            candidate = _clean_text(meta.rstrip(".") + "." + filler)
-            if len(candidate) <= MAX_META_DESCRIPTION_CHARS:
-                meta = candidate
-                if len(meta) >= 150:
-                    break
-
-    if len(meta) < 150:
-        while len(meta) < 150:
-            extra = " Role"
-            if len(meta) + len(extra) <= MAX_META_DESCRIPTION_CHARS:
-                meta += extra
-            else:
-                break
-
     return _truncate_safely(meta, MAX_META_DESCRIPTION_CHARS, suffix="")
 
 
-def _build_description_from_text(jobcontent: str, title: str, company: str, location: str = "") -> str:
-    title = _clean_text(title)
-    company = _clean_text(company)
-    location = _clean_text(location)
-    jobcontent = _clean_text(jobcontent)
-    low = jobcontent.lower()
 
-    intro_parts = []
-    if title:
-        intro_parts.append(f"{title} position")
-    else:
-        intro_parts.append("Job opportunity")
 
-    if company:
-        intro_parts.append(f"at {company}")
 
-    if location and location.lower() != "finland":
-        intro_parts.append(f"in {location}")
 
-    intro = " ".join(intro_parts).strip() + "."
-
-    role_summary = ""
-    role_keywords = []
-
-    if "inspection" in low or "inspector" in low:
-        role_keywords.append("conducting inspections")
-        role_keywords.append("assessing condition and safety")
-        role_keywords.append("documenting inspection decisions")
-    elif "customer service" in low or "customer" in low:
-        role_keywords.append("supporting customers")
-        role_keywords.append("handling service-related tasks")
-        role_keywords.append("contributing to daily operations")
-    elif "cleaning" in low or "cleaner" in low or "clean" in low:
-        role_keywords.append("maintaining cleanliness")
-        role_keywords.append("following workplace standards")
-        role_keywords.append("supporting daily operations")
-    elif "nurse" in low or "care" in low or "healthcare" in low:
-        role_keywords.append("supporting care-related duties")
-        role_keywords.append("maintaining service quality")
-        role_keywords.append("working responsibly in daily operations")
-    elif "driver" in low or "delivery" in low or "transport" in low:
-        role_keywords.append("handling transport-related duties")
-        role_keywords.append("working responsibly and independently")
-        role_keywords.append("supporting reliable daily operations")
-
-    if role_keywords:
-        if len(role_keywords) == 1:
-            role_summary = f"This role involves {role_keywords[0]}."
-        else:
-            role_summary = "This role involves " + ", ".join(role_keywords[:-1]) + f", and {role_keywords[-1]}."
-    else:
-        snippet = _truncate_safely(jobcontent, 220)
-        role_summary = f"Source job details include: {snippet}"
-
-    para1 = f"{intro} {role_summary}".strip()
-
-    benefit_bits = []
-
-    if "part-time" in low or "80 hours" in low:
-        benefit_bits.append("part-time working hours")
-    if "full-time" in low:
-        benefit_bits.append("the possibility of moving into a full-time role later")
-    if "flexible" in low:
-        benefit_bits.append("flexibility in scheduling")
-    if "modern" in low:
-        benefit_bits.append("a modern work environment")
-    if "team" in low:
-        benefit_bits.append("a supportive team environment")
-    if "evening shift" in low or "evening shifts" in low:
-        benefit_bits.append("opportunities for additional evening shifts")
-    if "salary" in low or "bonus" in low:
-        benefit_bits.append("salary based on experience and skills")
-
-    if benefit_bits:
-        if len(benefit_bits) == 1:
-            para2 = f"The position offers {benefit_bits[0]}."
-        else:
-            para2 = "The position offers " + ", ".join(benefit_bits[:-1]) + f", and {benefit_bits[-1]}."
-    else:
-        para2 = (
-            "The role offers an opportunity to work in a professional environment "
-            "with responsibilities that support service quality and daily operations."
-        )
-
-    full = f"{para1}\n\n{para2}"
-    return _truncate_safely(full, MAX_DESCRIPTION_CHARS)
 
 
 # Soft skills and generic terms that should not contribute to category scoring
@@ -651,26 +559,6 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
     location = _clean_text(location_list[0] if location_list else "Finland")
     salary_range = patch_salary.extract_salary_from_text(raw_job)
 
-    description = _build_description_from_text(
-        jobcontent,
-        ai_title or raw_title,
-        company,
-        location,
-    )
-    description = _truncate_safely(description, MAX_DESCRIPTION_CHARS)
-    if _looks_finnish(description):
-        description = _translate_text_direct(description)
-
-    meta_description = _build_meta_description(
-        ai_title or raw_title,
-        company,
-        location,
-        description,
-    )
-    meta_description = _truncate_safely(meta_description, MAX_META_DESCRIPTION_CHARS, suffix="")
-    if _looks_finnish(meta_description):
-        meta_description = _translate_text_direct(meta_description)
-
     def _sanitize_and_translate_list(ai_list, raw_list, field_name, min_items: int = 3):
         cleaned = _clean_list_field(ai_list, max_items=6)
         if not cleaned or any(_looks_finnish(x) for x in cleaned):
@@ -696,7 +584,6 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
                 "what_we_expect": ["Positive attitude and reliability", "Ability to work effectively", "Willingness to learn"],
                 "job_responsibilities": ["Daily operational tasks", "Supporting the team", "Ensuring quality service"],
                 "what_we_offer": ["Professional work environment", "Supportive team", "Valuable experience"],
-                "who_is_this_for": ["Motivated individual", "Responsible professional", "Team player"]
             }
             needed = min_items - len(cleaned)
             for f_item in fallbacks.get(field_name, [])[:needed]:
@@ -719,11 +606,6 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
         raw_job.get("what_we_offer"),
         "what_we_offer"
     )
-    who_is_this_for = _sanitize_and_translate_list(
-        parsed.get("who_is_this_for"),
-        raw_job.get("who_is_this_for"),
-        "who_is_this_for"
-    )
 
     work_time = _clean_text(raw_job.get("workTime") or "Full-time")
     continuity_of_work = _clean_text(raw_job.get("continuityOfWork") or "Permanent")
@@ -738,8 +620,8 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
         "title": ai_title or raw_title,
         "company": company,
         "job_category": category,
-        "meta_description": meta_description,
-        "description": description,
+        "meta_description": "",
+        "formatted_description": "",
         "salary_range": salary_range,
         "workTime": work_time,
         "continuityOfWork": continuity_of_work,
@@ -747,7 +629,6 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
         "what_we_expect": what_we_expect[:6],
         "job_responsibilities": job_responsibilities[:6],
         "what_we_offer": what_we_offer[:6],
-        "who_is_this_for": who_is_this_for[:6],
         "search_keywords": search_keywords,
         "job_location": location or "Finland",
         "job_regions": regions_list,
@@ -768,8 +649,8 @@ def build_fallback_ai_data(raw_job: dict, fallback_category: str, valid_categori
         "title": title,
         "company": company,
         "job_category": category,
-        "meta_description": _build_meta_description(title, company, location, ""),
-        "description": _build_description_from_text(jobcontent, title, company, location),
+        "meta_description": "",
+        "formatted_description": _clean_text(jobcontent),
         "salary_range": patch_salary.extract_salary_from_text(raw_job),
         "workTime": _translate_text_direct(_clean_text(raw_job.get("workTime") or "Full-time")),
         "continuityOfWork": _translate_text_direct(_clean_text(raw_job.get("continuityOfWork") or "Permanent")),
@@ -777,7 +658,6 @@ def build_fallback_ai_data(raw_job: dict, fallback_category: str, valid_categori
         "what_we_expect": _translate_list_direct(_clean_list_field(raw_job.get("what_we_expect", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "what_we_expect")),
         "job_responsibilities": _translate_list_direct(_clean_list_field(raw_job.get("job_responsibilities", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "job_responsibilities")),
         "what_we_offer": _translate_list_direct(_clean_list_field(raw_job.get("what_we_offer", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "what_we_offer")),
-        "who_is_this_for": _translate_list_direct(_clean_list_field(raw_job.get("who_is_this_for", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "who_is_this_for")),
         "search_keywords": _clean_text(f"{title} {company} {location} {category}"),
         "job_location": location or "Finland",
         "job_regions": _extract_regions_from_python(raw_job),
@@ -807,18 +687,14 @@ def _build_formatted_job(raw_job: dict, ai_data: dict) -> dict:
     english_job_id = f"{title_slug}-{loc_slug}-{hash_id}"
     job_path = f"/jobs/{cat_slug}/{english_job_id}"
 
-    desc = ai_data.get("description", "")
+    desc = ai_data.get("formatted_description") or ai_data.get("description", "")
     if isinstance(desc, list):
         desc = " ".join(str(x) for x in desc if str(x).strip())
-    desc = _truncate_safely(desc, MAX_DESCRIPTION_CHARS)
 
     meta_desc = ai_data.get("meta_description", "")
     if isinstance(meta_desc, list):
         meta_desc = " ".join(str(x) for x in meta_desc if str(x).strip())
     meta_desc = _truncate_safely(meta_desc, MAX_META_DESCRIPTION_CHARS, suffix="")
-    if not meta_desc and desc:
-        meta_desc = _build_meta_description(eng_title, _extract_company_from_python(raw_job), loc_base, desc)
-
     safe_slug = config.get_safe_category_slug(category)
     random_num = random.randint(1, 30)
     image_url = f"{config.GITHUB_PAGES_BASE_URL}/images/jobs/{safe_slug}/{random_num}.png"
@@ -889,7 +765,6 @@ def _build_formatted_job(raw_job: dict, ai_data: dict) -> dict:
         "what_we_expect": _clean_list_field(ai_data.get("what_we_expect", []), max_items=6),
         "job_responsibilities": _clean_list_field(ai_data.get("job_responsibilities", []), max_items=6),
         "what_we_offer": _clean_list_field(ai_data.get("what_we_offer", []), max_items=6),
-        "who_is_this_for": _clean_list_field(ai_data.get("who_is_this_for", []), max_items=6),
         "search_keywords": ai_data.get("search_keywords", ""),
         "display_mode": raw_job.get("display_mode", "fallback"),
         "image_url": image_url,
@@ -931,10 +806,9 @@ def apply_manual_fixes(job: dict) -> dict:
     if isinstance(job.get("company"), str) and job["company"].isupper():
         job["company"] = job["company"].title()
 
-    job["description"] = _truncate_safely(job.get("description", ""), MAX_DESCRIPTION_CHARS)
     job["meta_description"] = _truncate_safely(job.get("meta_description", ""), MAX_META_DESCRIPTION_CHARS, suffix="")
 
-    for field in ["what_we_expect", "job_responsibilities", "what_we_offer", "who_is_this_for"]:
+    for field in ["what_we_expect", "job_responsibilities", "what_we_offer"]:
         job[field] = [_capitalize_sentences(item) for item in _clean_list_field(job.get(field, []), max_items=6)]
 
     existing_salary = _clean_text(job.get("salary_range", ""))
@@ -957,7 +831,7 @@ def _sweep_finnish_from_job(job: dict) -> dict:
                 job[field] = translated
 
     list_fields = ["what_we_expect", "job_responsibilities", "what_we_offer",
-                   "who_is_this_for", "language_requirements", "jobRegions", "jobLocation"]
+                   "language_requirements", "jobRegions", "jobLocation"]
     for field in list_fields:
         items = job.get(field, [])
         if not isinstance(items, list):
@@ -989,18 +863,9 @@ def format_jobs(raw_jobs: list[dict]) -> list[dict]:
 
             fallback_data = {
                 "title": fallback_title,
-                "description": _build_description_from_text(
-                    translated_content,
-                    fallback_title,
-                    fallback_company,
-                    fallback_location,
-                ),
-                "meta_description": _build_meta_description(
-                    fallback_title,
-                    fallback_company,
-                    fallback_location,
-                    "",
-                ),
+                "description": _clean_text(translated_content),
+                "formatted_description": _clean_text(translated_content),
+                "meta_description": "",
                 "job_category": "other",
                 "job_regions": _extract_regions_from_python(raw),
             }

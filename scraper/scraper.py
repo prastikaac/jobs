@@ -310,10 +310,6 @@ def analyse_job_content(text: str, title: str = "") -> dict:
             "tarjoamme", "lupaamme", "mitä tarjoamme", "meillä saat", "saat meiltä", "edut",
             "mitä me tarjoamme", "työsuhde-edut",
         ],
-        "who_for": [
-            "who is this for", "are you", "this job is for", "ideal candidate", "who we're looking for",
-            "kenelle", "sopii sinulle", "kaipaatko", "haluatko",
-        ],
     }
 
     current_section = None
@@ -349,7 +345,6 @@ def analyse_job_content(text: str, title: str = "") -> dict:
     what_we_expect = _merge_colon_lines(sections["requirements"])[:12]
     what_we_offer = _merge_colon_lines(sections["benefits"])[:12]
     responsibilities = _merge_colon_lines(sections["responsibilities"])[:15]
-    who_is_this_for = _merge_colon_lines(sections["who_for"])[:8]
 
     overview_lines = [ln for ln in lines if len(ln) > 30 and len(ln) < 300][:5]
     para1 = " ".join(overview_lines[:2]).strip()
@@ -375,7 +370,6 @@ def analyse_job_content(text: str, title: str = "") -> dict:
         "job_responsibilities": responsibilities,
         "what_we_expect": what_we_expect,
         "what_we_offer": what_we_offer,
-        "who_is_this_for": who_is_this_for,
         "description": description,
     }
 
@@ -461,7 +455,6 @@ def normalise_raw_job(raw: dict) -> dict:
         "what_we_expect": raw.get("what_we_expect") or analysed["what_we_expect"],
         "job_responsibilities": raw.get("job_responsibilities") or analysed["job_responsibilities"],
         "what_we_offer": raw.get("what_we_offer") or analysed["what_we_offer"],
-        "who_is_this_for": raw.get("who_is_this_for") or analysed["who_is_this_for"],
 
         "jobcontent": raw_text,
     }

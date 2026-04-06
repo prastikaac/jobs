@@ -279,3 +279,45 @@ CORE PRINCIPLES
 
 
 - scrape from all sources, jobly not updated
+
+
+
+5. Expired jobs logic
+
+This is very important.
+
+Rule:
+
+If a job is expired, it must be:
+
+removed from job folder
+removed from job card in both index and jobs.html
+removed from sitemap-jobs.xml
+
+
+
+
+and while sending the job to Firebase send it in this style :
+createdAt: April 6, 2026 at 10:26:03 PM UTC+3  (timestamp)
+
+description: "Test"  (string)
+
+imageUrl: "http://test.com/"  (string)
+
+jobCategory: [  (array)
+  "construction-labor"
+]
+
+jobLink: "http://test.com/"  (string)
+
+jobLocation: [  (array)
+  "joensuu"
+]
+
+title: "Test"  (string)
+
+
+and this needs to trigger the functions\index.js which is already uploaded on firebase and it needs to be triggered every time the job updates in firebase 
+
+
+here remove .html from sitemap while generating it

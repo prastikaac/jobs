@@ -1,162 +1,237 @@
-PROJECT CONCEPT: AUTOMATED JOB AGGREGATOR WEBSITE
+use this logic for sitemaps
+# Complete logic for multiple sitemaps
 
-Objective:
-Build a fully automated job aggregator system that collects job listings from external websites, stores them in a database, generates static HTML pages for each job, and publishes them using GitHub Pages.
+## Goal
 
----
+Use:
 
-SYSTEM OVERVIEW:
-
-The system consists of three main components:
-
-1. Job Scraper Tool
-2. Database (Firebase Firestore)
-3. Static HTML Page Generator + GitHub Deployment
+* `sitemap.xml` → main sitemap index
+* `sitemap-jobs.xml` → all active job pages
+* `sitemap-pages.xml` → homepage + static pages + category pages
+* `sitemap-blogs.xml` → blog pages
 
 ---
 
-1. JOB SCRAPER TOOL:
+# 1. Main idea
 
-Purpose:
-Automatically collect job listings from selected websites.
+Your pipeline already does:
 
-Functionality:
-- Search and scrape job listings from target websites
-- Extract structured data such as:
-  - Job Title
-  - Company Name
-  - Location
-  - Salary (if available)
-  - Job Description
-  - Apply Link
-  - Date Posted
+...
+* Phase 4 → generate HTML pages
 
-- Store the extracted data into Firebase Firestore
-- Avoid duplicate entries by checking unique fields (e.g., job link or ID)
+After that, add:
 
-Automation:
-- Runs every 1 hour using a scheduler (e.g., cron or GitHub Actions)
+* Step 5 → generate all sitemap files
+* Step 6 → optionally ping Google
 
 ---
 
-2. DATABASE (FIREBASE FIRESTORE):
 
-Purpose:
-Act as the central storage for all job data.
 
-Structure Example:
+# 3. What each sitemap should contain
 
-jobs/
-  job_id_001:
-    title: "Cleaner"
-    company: "ABC Cleaning"
-    location: "Helsinki"
-    salary: "12€/hour"
-    description: "Office cleaning tasks"
-    apply_link: "https://example.com/job1"
-    created_at: timestamp
+## A. `sitemap.xml` = sitemap index
 
-Notes:
-- Each job must have a unique identifier
-- Used as the source for generating HTML pages
+This file does **not** contain job URLs directly.
 
----
+It only contains links to the other sitemap files.
 
-3. STATIC HTML PAGE GENERATOR:
+Example:
 
-Purpose:
-Automatically create one HTML page per job using a predefined template.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://findjobsinfinland.fi/sitemap-jobs.xml</loc>
+    <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://findjobsinfinland.fi/sitemap-pages.xml</loc>
+    <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+  </sitemap>
+</sitemapindex>
+```
 
-Input:
-- Job data from Firebase
-- HTML template file with placeholders
-
-Template Example:
-
-<h1>{{job_title}}</h1>
-<p>Company: {{company}}</p>
-<p>Location: {{location}}</p>
-<p>Salary: {{salary}}</p>
-<div>{{description}}</div>
-<a href="{{apply_link}}">Apply Now</a>
-
-Process:
-- Load template
-- Replace placeholders with actual job data
-- Generate a unique HTML file for each job
-
-Output:
-- /jobs/cleaner-helsinki.html
-- /jobs/waiter-espoo.html
+<sitemap>
+  <loc>https://findjobsinfinland.fi/sitemap-blogs.xml</loc>
+  <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+</sitemap>
+```
 
 ---
 
-4. GITHUB PAGES DEPLOYMENT:
+## B. `sitemap-jobs.xml`
 
-Purpose:
-Host the generated static HTML pages.
+This contains:
 
-Process:
-- Generated HTML files are saved into a GitHub repository
-- Changes are committed and pushed automatically
-- GitHub Pages publishes the website
+* all active job detail pages only
 
-Website Structure:
+Each entry should look like:
 
-/jobs/
-  job1.html
-  job2.html
-/index.html
-/style.css
+```xml
+<url>
+  <loc>https://findjobsinfinland.fi/jobs/construction-and-trades/electrician-finland-9b0c490e</loc>
+  <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+</url>
+```
 
----
+### Rules:
 
-5. AUTOMATION WORKFLOW:
-
-1. Scheduler triggers scraper (every hour)
-2. Scraper fetches new jobs and updates Firebase
-3. Page generator reads updated data
-4. New HTML pages are created
-5. Files are pushed to GitHub
-6. Website updates automatically
+* include only active jobs
+* exclude expired jobs
+* exclude deleted jobs
+* exclude broken URLs
+* use final public URL only
+* no duplicate URLs
 
 ---
 
-KEY FEATURES:
+## C. `sitemap-pages.xml`
 
-- Fully automated pipeline
-- Scalable to thousands of job pages
-- SEO-friendly static pages
-- No manual updates required after setup
+This contains non-job pages, for example:
+
+* homepage `/`
+* main jobs page `/jobs/`
+* category pages like `/jobs/construction-and-trades/`
+* about page
+* contact page
+* privacy page
+* any other real static pages
+
+Example:
+
+```xml
+<url>
+  <loc>https://findjobsinfinland.fi/</loc>
+  <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+</url>
+<url>
+  <loc>https://findjobsinfinland.fi/jobs/</loc>
+  <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+</url>
+<url>
+  <loc>https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/</loc>
+  <lastmod>2026-04-06T18:00:00+03:00</lastmod>
+</url>
+```
 
 ---
 
-IMPORTANT CONSIDERATIONS:
+## D. `sitemap-blogs.xml`
 
-- Avoid duplicate job entries
-- Handle expired or outdated jobs
-- Ensure scraping complies with website terms
-- Optimize page titles and metadata for SEO
-- Monitor scraper for website structure changes
+contains pages from blogs/
+---
+
+# 4. Source of data for each sitemap
+
+## For `sitemap-jobs.xml`
+
+Use:
+
+* `jobs.json`
+
+From each valid job, get:
+
+job url
+
+* job expiry date
+
+
+
+
+# 5. Expired jobs logic
+
+This is very important.
+
+## Rule:
+
+If a job is expired, it must be:
+
+* removed from job folder
+removed from job card in both index and jobs.html
+* removed from `sitemap-jobs.xml`
+
+
+### So the check should be:
+
+Before adding a job to sitemap:
+
+```text
+if job is active and public and not expired:
+    include in sitemap-jobs.xml
+else:
+    skip
+```
 
 ---
 
-FUTURE IMPROVEMENTS:
+# 6. Datetime logic for `lastmod`
 
-- City-based job pages (e.g., /jobs/helsinki/)
-- Search and filter functionality
-- User job alerts and subscriptions
-- Admin dashboard for monitoring jobs
-- Integration with job APIs instead of scraping
+Since your site updates multiple times per day, use:
+
+```text
+YYYY-MM-DDTHH:MM:SS+03:00
+```
+
+Example:
+
+```xml
+<lastmod>2026-04-06T18:00:00+03:00</lastmod>
+```
+
+## Best practice for your case:
+
+Use the current pipeline run time for all sitemap entries generated during that run.
+
+That means:
+
+* simpler
+* consistent
+* good enough for Google
 
 ---
 
-END OF CONCEPT
+# 7. Duplicate prevention logic
+
+Before writing URLs into any sitemap:
+
+* normalize URLs
+* remove duplicate entries
+* ensure trailing slash policy is consistent
+* ensure `.html` is not mixed with non-`.html` version unless your site truly uses it as canonical format
+
+## Example:
+
+Choose one format only:
+
+Good:
+
+```text
+https://findjobsinfinland.fi/jobs/other/a-barber-seinäjoki-6dcf23c8
+```
+
+Do not also include:
+
+```text
+https://findjobsinfinland.fi/jobs/other/a-barber-seinäjoki-6dcf23c8.html
+```
+
+unless that is your only real public URL.
+
+---
 
 
 
 
+# 13. Simple XML rules
 
+For every sitemap file:
 
+* start with XML declaration
+* use correct sitemap namespace
+* escape XML special characters in URLs if needed
+* keep valid UTF-8
+* no script tags
+* no browser extension junk
+* no malformed tags
 
-a separate folder for each job inside which there will be a html (index.html) file and a image file and outside folder name will be the job title name

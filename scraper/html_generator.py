@@ -188,18 +188,7 @@ def generate_job_page(job: dict) -> bool:
         rich_html.append("</ul></section>")
 
 
-    # Who is this for
-    if job.get("who_is_this_for"):
-        rich_html.append(
-            "<section>"
-            "<h3>Who Is This For?</h3>"
-            "<p>This opportunity is for motivated, responsible individuals eager to learn and thrive in a team-oriented environment, who possess the qualities mentioned below:</p>"
-            "<ul>"
-        )
-        for item in job["who_is_this_for"]:
-            rich_html.append(f"<li>{_esc(item)}</li>")
-        rich_html.append("</ul></section>")
-
+    # Optional Description
     rich_content_str = "\n".join(rich_html)
 
     # Job Info values
@@ -419,7 +408,7 @@ def _job_card(job: dict) -> str:
             <div class="pSnpt">
               {desc_prev}
               <div class="pInf pSml" style="color:red;font-weight:bold;">
-                <time class="aTtmp pTtmp pbl" data-text="Full-Time"
+                <time class="aTtmp pTtmp pbl" data-text="{date_str}"
                       datetime="{job.get('scraped_at', job.get('date_posted', ''))[:10]}"
                       title="Posted: {scraped_at}"></time>
                 <a aria-label="Apply Now" class="pJmp" data-text="Apply Now" href="{page_url}"></a>
@@ -542,53 +531,239 @@ def update_main_pages(jobs: List[dict]) -> None:
 
 # ── Sitemap ───────────────────────────────────────────────────────────────────
 
-def update_sitemap(jobs: List[dict]) -> None:
-    """Regenerate sitemap-jobs.xml with all active jobs and update master sitemap.xml."""
-    base = config.GITHUB_PAGES_BASE_URL
-    today = str(date.today())
+def _xml_escape_url(url: str) -> str:
+    """Escape XML special characters in a URL string."""
+    return (
+        url.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace("'", "&apos;")
+        .replace('"', "&quot;")
+    )
 
+
+def _is_job_active(job: dict) -> bool:
+    """Check if a job is active, public, and not expired."""
+    today = date.today()
+    # Check date_expires
+    expires_str = job.get("date_expires", "")
+    if expires_str:
+        try:
+            expires_dt = datetime.strptime(str(expires_str)[:10], "%Y-%m-%d").date()
+            if expires_dt < today:
+                return False
+        except (ValueError, TypeError):
+            pass
+    # Fallback: check date_posted + EXPIRATION_DAYS
+    posted_str = job.get("date_posted", "")
+    if posted_str:
+        try:
+            from datetime import timedelta
+            posted_dt = datetime.strptime(str(posted_str)[:10], "%Y-%m-%d").date()
+            if (today - posted_dt).days > config.EXPIRATION_DAYS:
+                return False
+        except (ValueError, TypeError):
+            pass
+    return True
+
+
+def _get_lastmod_now() -> str:
+    """Return current datetime in ISO 8601 format with Finland timezone (+03:00)."""
+    now = datetime.now()
+    return now.strftime("%Y-%m-%dT%H:%M:%S") + "+03:00"
+
+
+def _generate_sitemap_jobs(jobs: List[dict], lastmod: str) -> str:
+    """Generate sitemap-jobs.xml content with all active job pages."""
+    base = config.GITHUB_PAGES_BASE_URL
+    seen_urls = set()
     entries = []
+
     for job in jobs:
-        cat = job.get("jobCategory", ["Other"])[0]
-        cat_slug = cat.lower().replace(" ", "-")
+        if not _is_job_active(job):
+            continue
+
+        category = _category_label(job)
+        cat_slug = config.slugify_category(category)
         job_id = job.get("job_id", job.get("id", "unknown"))
-        url = f"{base}/jobs/{cat_slug}/{job_id}.html"
+
+        if not job_id or job_id == "unknown":
+            continue
+
+        # Canonical URL without .html
+        url = f"{base}/jobs/{cat_slug}/{job_id}"
+
+        # Verify the HTML file actually exists
+        html_path = os.path.join(config.JOBS_OUTPUT_DIR, cat_slug, f"{job_id}.html")
+        if not os.path.exists(html_path):
+            continue
+
+        # Deduplicate
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+
+        escaped_url = _xml_escape_url(url)
         entries.append(
             f"  <url>\n"
-            f"    <loc>{_esc(url)}</loc>\n"
-            f"    <lastmod>{job.get('date_posted', today)[:10]}</lastmod>\n"
-            f"    <changefreq>weekly</changefreq>\n"
-            f"    <priority>0.8</priority>\n"
+            f"    <loc>{escaped_url}</loc>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
             f"  </url>"
         )
 
-    sitemap_xml = (
+    return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "\n".join(entries) +
-        "\n</urlset>\n"
+        + "\n".join(entries)
+        + "\n</urlset>\n"
     )
 
-    sitemap_path = os.path.join(config.WEBSITE_DIR, "sitemap-jobs.xml")
+
+def _generate_sitemap_pages(jobs: List[dict], lastmod: str) -> str:
+    """Generate sitemap-pages.xml with homepage, static pages, and category pages."""
+    base = config.GITHUB_PAGES_BASE_URL
+    seen_urls = set()
+    entries = []
+
+    # Static pages (homepage + known pages)
+    static_pages = [
+        (f"{base}/", lastmod),
+        (f"{base}/jobs/", lastmod),
+        (f"{base}/about-us", lastmod),
+        (f"{base}/contact-us", lastmod),
+        (f"{base}/privacy-policy", lastmod),
+        (f"{base}/disclaimer", lastmod),
+        (f"{base}/terms-and-conditions", lastmod),
+    ]
+
+    for url, mod in static_pages:
+        if url not in seen_urls:
+            seen_urls.add(url)
+            entries.append(
+                f"  <url>\n"
+                f"    <loc>{_xml_escape_url(url)}</loc>\n"
+                f"    <lastmod>{mod}</lastmod>\n"
+                f"  </url>"
+            )
+
+    # Discover category pages dynamically from active jobs
+    active_categories = set()
+    for job in jobs:
+        if _is_job_active(job):
+            category = _category_label(job)
+            cat_slug = config.slugify_category(category)
+            active_categories.add(cat_slug)
+
+    for cat_slug in sorted(active_categories):
+        url = f"{base}/jobs/{cat_slug}/"
+        if url not in seen_urls:
+            seen_urls.add(url)
+            entries.append(
+                f"  <url>\n"
+                f"    <loc>{_xml_escape_url(url)}</loc>\n"
+                f"    <lastmod>{lastmod}</lastmod>\n"
+                f"  </url>"
+            )
+
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(entries)
+        + "\n</urlset>\n"
+    )
+
+
+def _generate_sitemap_blogs(lastmod: str) -> str:
+    """Generate sitemap-blogs.xml by scanning the blogs/ directory."""
+    base = config.GITHUB_PAGES_BASE_URL
+    blogs_dir = os.path.join(config.WEBSITE_DIR, "blogs")
+    entries = []
+    seen_urls = set()
+
+    if os.path.exists(blogs_dir):
+        for filename in sorted(os.listdir(blogs_dir)):
+            if filename.endswith(".html"):
+                slug = filename.replace(".html", "")
+                url = f"{base}/blogs/{slug}"
+                if url not in seen_urls:
+                    seen_urls.add(url)
+                    entries.append(
+                        f"  <url>\n"
+                        f"    <loc>{_xml_escape_url(url)}</loc>\n"
+                        f"    <lastmod>{lastmod}</lastmod>\n"
+                        f"  </url>"
+                    )
+
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(entries)
+        + "\n</urlset>\n"
+    )
+
+
+def _generate_sitemap_index(lastmod: str) -> str:
+    """Generate the master sitemap.xml (sitemap index)."""
+    base = config.GITHUB_PAGES_BASE_URL
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"  <sitemap>\n"
+        f"    <loc>{base}/sitemap-jobs.xml</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        f"  </sitemap>\n"
+        f"  <sitemap>\n"
+        f"    <loc>{base}/sitemap-pages.xml</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        f"  </sitemap>\n"
+        f"  <sitemap>\n"
+        f"    <loc>{base}/sitemap-blogs.xml</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        f"  </sitemap>\n"
+        '</sitemapindex>\n'
+    )
+
+
+def update_sitemap(jobs: List[dict]) -> None:
+    """Regenerate all sitemap files: sitemap.xml, sitemap-jobs.xml, sitemap-pages.xml, sitemap-blogs.xml."""
+    lastmod = _get_lastmod_now()
+    website = config.WEBSITE_DIR
+
+    # 1. sitemap-jobs.xml — active job pages only
+    jobs_xml = _generate_sitemap_jobs(jobs, lastmod)
+    jobs_count = jobs_xml.count("<url>")
     try:
-        with open(sitemap_path, "w", encoding="utf-8") as f:
-            f.write(sitemap_xml)
-        logger.info("Updated sitemap-jobs.xml with %d entries", len(entries))
+        with open(os.path.join(website, "sitemap-jobs.xml"), "w", encoding="utf-8") as f:
+            f.write(jobs_xml)
+        logger.info("Updated sitemap-jobs.xml with %d entries", jobs_count)
     except OSError as exc:
         logger.error("Failed to write sitemap-jobs.xml: %s", exc)
 
-    # Automatically also update the master sitemap.xml lastmod dates
-    master_sitemap_path = os.path.join(config.WEBSITE_DIR, "sitemap.xml")
+    # 2. sitemap-pages.xml — homepage, static pages, category pages
+    pages_xml = _generate_sitemap_pages(jobs, lastmod)
+    pages_count = pages_xml.count("<url>")
     try:
-        if os.path.exists(master_sitemap_path):
-            with open(master_sitemap_path, "r", encoding="utf-8") as f:
-                master_content = f.read()
-            
-            import re
-            master_content = re.sub(r"<lastmod>.*?</lastmod>", f"<lastmod>{today}</lastmod>", master_content)
-            
-            with open(master_sitemap_path, "w", encoding="utf-8") as f:
-                f.write(master_content)
-            logger.info("Updated master sitemap.xml <lastmod> flags to %s", today)
-    except Exception as exc:
-        logger.error("Failed to update master sitemap.xml: %s", exc)
+        with open(os.path.join(website, "sitemap-pages.xml"), "w", encoding="utf-8") as f:
+            f.write(pages_xml)
+        logger.info("Updated sitemap-pages.xml with %d entries", pages_count)
+    except OSError as exc:
+        logger.error("Failed to write sitemap-pages.xml: %s", exc)
+
+    # 3. sitemap-blogs.xml — blog pages
+    blogs_xml = _generate_sitemap_blogs(lastmod)
+    blogs_count = blogs_xml.count("<url>")
+    try:
+        with open(os.path.join(website, "sitemap-blogs.xml"), "w", encoding="utf-8") as f:
+            f.write(blogs_xml)
+        logger.info("Updated sitemap-blogs.xml with %d entries", blogs_count)
+    except OSError as exc:
+        logger.error("Failed to write sitemap-blogs.xml: %s", exc)
+
+    # 4. sitemap.xml — master sitemap index
+    index_xml = _generate_sitemap_index(lastmod)
+    try:
+        with open(os.path.join(website, "sitemap.xml"), "w", encoding="utf-8") as f:
+            f.write(index_xml)
+        logger.info("Updated master sitemap.xml with lastmod %s", lastmod)
+    except OSError as exc:
+        logger.error("Failed to write sitemap.xml: %s", exc)
