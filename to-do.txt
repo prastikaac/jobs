@@ -17,12 +17,15 @@ Scrapers Order:
 🔴 Saturday & Sunday
 ❌ No scraping
 
-⚡ Summary
-Day        | Times                   | Scraper Run
------------|------------------------|-------------
-Mon–Fri    | 10:00, 13:30, 17:00    | All 3 sequentially
-Saturday   | —                      | ❌ Off
-Sunday     | —                      | ❌ Off
+Weekly Schedule:
+Mon  → 10:00, 13:30, 17:00
+Tue  → 10:00, 13:30, 17:00
+Wed  → 10:00, 13:30, 17:00
+Thu  → 10:00, 13:30, 17:00
+Fri  → 10:00, 13:30, 17:00
+Sat  → ❌ Off
+Sun  → ❌ Off
+
 
 
 
@@ -30,17 +33,12 @@ I have just disabled the scheduled task for you so it is temporarily turned off.
 
 To turn the automation back on later, you have two options:
 
-1. Tell Me
-Just write to me:
+now we have already made an automated Enable the job scraper file, so now turn it on and tell me its timing
 
-"Enable the job scraper schedule" (or anything similar!) And I will instantly run the enable command for you.
+- now will all the pipline and all the system works fully automatic now in the scheduled time ? 
 
-2. Do it Yourself
-Open a PowerShell terminal and paste this single line:
 
-powershell
-Enable-ScheduledTask -TaskName "JobScraper_Daily"
-Right now, the system will sit idle and won't scrape or process anything in the background until you are ready!
+
 
 
 
@@ -319,3 +317,5 @@ true or false
 
 
 - reduce job scrap time
+ 
+- putting limit on generation of job description and meta description
