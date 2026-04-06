@@ -9,7 +9,7 @@ jobAlertPopup.style.display = "none";
 jobAlertPopup.innerHTML = `
     <div class="popup-content-unique" id="popupStep1" style="display:none;">
       <h3 class="popup-heading-unique">Want to get Personalised Job alerts?</h3>
-      <img src="http://findjobsinfinland.fi/images/job-alert.png" class="popup-image-mobile-unique" alt="Job Alert" />
+      <img src="https://findjobsinfinland.fi/images/job-alert.png" class="popup-image-mobile-unique" alt="Job Alert" />
       <p class="popup-description-for-pc-unique">
         We’ll securely save your job preferences and notify you instantly via email and push
         notifications whenever new job postings match your selected interests, categories, or
@@ -27,7 +27,7 @@ jobAlertPopup.innerHTML = `
 
     <div class="popup-content-unique" id="popupStep1b" style="display:none;">
       <h3 class="popup-heading-unique">Oops! Did you pressed ‘No’ by mistake?</h3>
-      <img src="http://findjobsinfinland.fi/images/second-step.png" class="popup-image-mobile-unique" alt="No Notifications" />
+      <img src="https://findjobsinfinland.fi/images/second-step.png" class="popup-image-mobile-unique" alt="No Notifications" />
       <p class="popup-description-for-pc-unique">
         Since you pressed ‘No’, you will not receive notifications about new job opportunities that
         match your interests. When enabled, we instantly alert you via email and notifications whenever
@@ -47,7 +47,7 @@ jobAlertPopup.innerHTML = `
 
     <div class="popup-content-unique" id="popupStep1c" style="display:none;">
       <h3 class="popup-heading-unique">Are you sure you don't want to get job alerts?</h3>
-      <img src="http://findjobsinfinland.fi/images/last-step.png" class="popup-image-mobile-unique" alt="Last Step" />
+      <img src="https://findjobsinfinland.fi/images/last-step.png" class="popup-image-mobile-unique" alt="Last Step" />
       <p class="popup-description-for-pc-unique">
         One last step to re-consider. By skipping this, you won’t receive timely notifications about
         new jobs tailored specifically to your interests and skills.<br><br> You still have a chance to go
