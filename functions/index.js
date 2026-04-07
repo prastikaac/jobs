@@ -166,11 +166,8 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7655905411010514"
      crossorigin="anonymous"></script>
 
-  <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-  <script>
-    window.ezstandalone = window.ezstandalone || {};
-    ezstandalone.cmd = ezstandalone.cmd || [];
-  </script>
+  <script async src=""></script>
+   
 
 </head>
         <body style="font-family: 'Poppins', sans-serif; margin: 0; margin-top: 20px; margin-left: 5px; background-color: #f4f4f4; border-radius: 12px;">
