@@ -1,9 +1,13 @@
-Updating Category/Location
+Updating Category: 
+- Update in scraper\all_jobs_cat.json
+- Update in scraper\job_categories.json
 
-- Update in jobs.html
-- Update in sign-in/sing-up popup
-- Update in jobposting.html
-- Update in edit-profile.html
+Updating Location
+
+- Update in scraper\all_jobs_loc.json
+- Update in scraper\municipalities_codes.json
+- Update in functions\all_jobs_loc.json
+
 
 - Automatic runner file : 
 scraper\run_all_jobs.bat
