@@ -6,7 +6,13 @@ Firebase Cloud Messaging (FCM) is used to notify users about new jobs.
 """
 
 import logging
+from datetime import datetime, timedelta, timezone
 from typing import Optional
+
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo  # Python < 3.9
 
 import config
 import jobs_store
@@ -14,6 +20,27 @@ import jobs_store
 logger = logging.getLogger("firebase_client")
 
 _db = None
+FINLAND_TZ = ZoneInfo("Europe/Helsinki")
+
+
+def _parse_expires_at(date_expires: str) -> datetime | None:
+    """
+    Convert a 'YYYY-MM-DD' date_expires string to a UTC datetime representing
+    the START of the NEXT day in Finland time (i.e. 2026-04-15 → 2026-04-16 00:00 EET → UTC).
+    Returns None if parsing fails.
+    """
+    if not date_expires:
+        return None
+    try:
+        expire_date = datetime.strptime(date_expires[:10], "%Y-%m-%d").date()
+        # Midnight of the day AFTER date_expires in Finland time
+        next_day = expire_date + timedelta(days=1)
+        finland_midnight = datetime(next_day.year, next_day.month, next_day.day,
+                                    0, 0, 0, tzinfo=FINLAND_TZ)
+        return finland_midnight.astimezone(timezone.utc)
+    except Exception as exc:
+        logger.warning("Failed to parse date_expires '%s': %s", date_expires, exc)
+        return None
 
 
 # ── Initialisation ────────────────────────────────────────────────────────────
@@ -78,19 +105,19 @@ def send_job_alert(job: dict) -> str:
     if isinstance(job_location, str):
         job_location = [job_location]
 
-    # jobLink — pipeline stores apply link as 'jobapply_link'
+    # jobLink — pipeline stores internal jobUrl, source as jobLink
     job_link = (
-        job.get("jobapply_link")
+        job.get("jobUrl")
+        or job.get("jobapply_link")
         or job.get("jobLink")
-        or job.get("jobUrl")
         or ""
     )
 
     # imageUrl
     image_url = job.get("image_url") or job.get("imageUrl") or ""
 
-    # description — short for email/push body
-    description = (job.get("description") or "")[:300]
+    # description — use meta_description for concise notifications
+    description = job.get("meta_description") or (job.get("description") or "")[:300]
 
     # Map jobTimes (frontend: "full-time", "part-time")
     work_time_str = job.get("workTime", "").lower()
@@ -112,8 +139,14 @@ def send_job_alert(job: dict) -> str:
     langs = job.get("language_requirements") or []
     job_language = [str(l).lower() for l in langs if str(l).lower() in ["finnish", "english", "swedish"]]
 
+    date_expires_str = job.get("date_expires", "")
+    expires_at_utc = _parse_expires_at(date_expires_str)
+
     alert_doc = {
         "createdAt":   fs.SERVER_TIMESTAMP,
+        "expiresAt":   expires_at_utc if expires_at_utc else fs.SERVER_TIMESTAMP,
+        "date_posted": job.get("date_posted", ""),
+        "date_expires": date_expires_str,
         "description": description,
         "imageUrl":    image_url,
         "jobCategory": job_category,

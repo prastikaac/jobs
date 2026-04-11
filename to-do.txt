@@ -92,16 +92,6 @@ removed from sitemap-jobs.xml
 
 
 
-
-
-
-
-
-
-
-
-
-
 job category is not working properly, you can check it from here : 
   "occupations": [
       {
@@ -131,6 +121,60 @@ job category is not working properly, you can check it from here :
         }
       }
     ],
+
+
+
+
+
+
+
+A. Merge these 3 into 1 call : merge content + description + meta into one AI call
+
+Combine:
+
+_call_ollama_for_content()
+description generation
+meta generation
+
+
+
+
+
+Reuse one requests.Session()
+
+B. Use SESSION = requests.Session()
+
+Very easy win.
+
+
+
+
+
+9. Parallelize carefully
+
+If your machine can handle it, run a small worker pool for Ollama requests.
+
+For example:
+
+max_workers=2 or 3, not too high
+Why not too high
+
+Local LLMs can become slower if too many requests compete for CPU/RAM/GPU.
+But 2 concurrent jobs is often faster than strict serial processing.
+
+Good candidates:
+
+parallelize full content generation per job
+but keep it small
+
+If your machine is modest, start with 2.
+
+
+
+
+
+
+
 
 
 
@@ -275,47 +319,6 @@ CORE PRINCIPLES
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-- add filters in edit-profile.html and while signing up
-
-- Firebase alerts 
-
-- scrape from all sources, jobly not updated
-
-
-
-
-
-and while sending the job to Firebase send it in this style it needs to trigger the functions\index.js and send push and email notifications to the respective users with the selected job preferences and this needs to be done every time the job updates in firebase 
-
-- now set a logic to send job alerts on the basis of user's jobSubscription and jobAlertFrequency, job alert frequency VALUE is 'instantly' for instantly when a matching job is published, 'daily' for daily, 'weekly' for weekly, 'monthly' for monthly, and job subscription value is jobSubscription
-(map)
-
-
-emailNotification
-true or false
-(boolean)
-
-
-pushNotification
-true or false
-
-
-
-
-
-
+- Translator disabled for specific texts
 
 - reduce job scrapping ai processing time
- 
-- putting limit on generation of job description and meta description

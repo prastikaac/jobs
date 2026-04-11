@@ -1,4 +1,4 @@
-﻿"""
+"""
 scraper_tyomarkkinatori.py ÔÇö Scraper for Ty├Âmarkkinatori (tyomarkkinatori.fi).
 
 Uses the public JSON REST API to search listings (POST) and fetch job details (GET).
@@ -479,6 +479,7 @@ def scrape_tyomarkkinatori(
                 skipped += 1
                 continue
             job = normalise_raw_job(card)
+
             if is_duplicate and is_duplicate(job, existing_ids, existing_job_ids, existing_title_co, existing_links):
                 skipped += 1
                 continue

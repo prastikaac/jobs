@@ -1,6 +1,6 @@
 # Job Aggregator Architecture
 
-This document outlines the complete architecture, data flow, and functional mechanisms of the Job Aggregator system. The system fetches jobs from multiple Finnish job boards, deduplicates them, translates them using an offline translation model (Argos), formats them using a local AI (Ollama), and generates static HTML pages for a fast frontend experience.
+This document outlines the complete architecture, data flow, and functional mechanisms of the Job Aggregator system. The system fetches jobs from multiple Finnish job boards, deduplicates them, translates them using Google Translate (via deep-translator), formats them using a local AI (Ollama), and generates static HTML pages for a fast frontend experience.
 
 ---
 
@@ -13,8 +13,8 @@ The pipeline operates in a fully automated, scheduled loop, split into **four di
 │  Phase 1      │──▶│  Phase 2          │──▶│  Phase 3          │──▶│  Phase 4           │
 │  SCRAPING     │   │  TRANSLATION      │   │  AI FORMATTING    │   │  SITE GENERATION   │
 │               │   │                   │   │                   │   │                    │
-│  Duunitori    │   │  Argos FI→EN      │   │  Ollama formats   │   │  HTML pages        │
-│  Työmkturi    │   │  (offline model)  │   │  structured JSON  │   │  index/jobs.html   │
+│  Duunitori    │   │  Google FI→EN     │   │  Ollama formats   │   │  HTML pages        │
+│  Työmkturi    │   │  (deep-translator)│   │  structured JSON  │   │  index/jobs.html   │
 │  Jobly        │   │                   │   │  Python locks     │   │  sitemap-jobs.xml  │
 │               │   │  Translates:      │   │  factual fields   │   │  OG images         │
 │  → rawjobs    │   │  title+jobcontent │   │  Finnish sweep    │   │  Firebase alerts   │
@@ -72,7 +72,7 @@ Scraping is orchestrated by `scraper/run_scraper.py`, using a centralized `Dedup
 
 ## 3. Phase 2: Translation (`job_translator.py`)
 
-**Purpose**: Translate all raw Finnish job text to English using the offline Argos model. This phase runs completely offline with no network calls.
+**Purpose**: Translate all raw Finnish job text to English using Google Translate via deep-translator.
 
 **File**: `scraper/job_translator.py`
 
@@ -80,7 +80,7 @@ Scraping is orchestrated by `scraper/run_scraper.py`, using a centralized `Dedup
 1. `run_phase2()` is called by the pipeline.
 2. Scans all raw jobs for those missing a `translated_content` field.
 3. For each untranslated job, concatenates `title + jobcontent` into a single text block.
-4. Passes the text through `translator.translate_fi_to_en()` (ArgosTranslate FI→EN model).
+4. Passes the text through `translator.translate_fi_to_en()` (Google Translator logic).
 5. Stores the result in the `translated_content` field on the raw job.
 6. Saves the updated `rawjobs.json` (with translations cached).
 7. **Saves `translated_jobs.json`** — a snapshot of the raw jobs with their translations, available for inspection before Phase 3.
@@ -92,7 +92,7 @@ Scraping is orchestrated by `scraper/run_scraper.py`, using a centralized `Dedup
 | `run_phase2(raw_jobs)` | Full Phase 2: translate + save to rawjobs.json + translated_jobs.json |
 
 ### Key Design Decisions
-- **Offline**: No network required. ArgosTranslate runs locally.
+- **Online**: Uses deep-translator to fetch translations via Google Translate API with built-in retries.
 - **Cached**: Once translated, the `translated_content` field persists across pipeline runs. Only new/untranslated jobs are processed.
 - **Decoupled**: Translation is completely separate from AI formatting. If the AI fails in Phase 3, the translation is still saved.
 - **Inspectable**: `translated_jobs.json` is written at the end of Phase 2 so you can verify translations before AI formatting.
@@ -158,10 +158,9 @@ Pre-translated English text (from Phase 2)
 │  - title (clean English)            │
 │  - description (1 paragraph, ≤500c) │
 │  - meta_description (SEO, ≤160c)    │
-│  - job_responsibilities [2-4 items] │
-│  - what_we_expect [2-4 items]       │
-│  - what_we_offer [2-4 items]        │
-│  - who_is_this_for [2-4 items]      │
+│  - job_responsibilities [3-6 items] │
+│  - what_we_expect [3-6 items]       │
+│  - what_we_offer [3-6 items]        │
 │  - search_keywords (5-8 keywords)   │
 │                                     │
 │  AI does NOT translate — only       │
@@ -169,7 +168,7 @@ Pre-translated English text (from Phase 2)
 │                                     │
 │  If AI fails → _build_fallback_     │
 │  ai_data() uses Python extraction   │
-│  + Argos translation as fallback.   │
+│  + Google translation as fallback.  │
 └──────────────┬──────────────────────┘
                │ structured ai_data
                ▼
@@ -194,7 +193,7 @@ Pre-translated English text (from Phase 2)
 │  Scans ALL text fields for Finnish  │
 │  words using _looks_finnish().      │
 │  If detected → retranslates with    │
-│  Argos automatically.               │
+│  Google Translate automatically.    │
 │                                     │
 │  Exempt fields (kept as-is):        │
 │  - company                          │
@@ -213,10 +212,10 @@ Pre-translated English text (from Phase 2)
 
 | Component | Responsibility |
 |-----------|---------------|
-| **Argos** (Phase 2) | **Translation**: Finnish → English. Runs offline, cached in `translated_content`. |
+| **Google Translate** (Phase 2) | **Translation**: Finnish → English. Uses deep-translator, cached in `translated_content`. |
 | **Ollama** (Phase 3) | **Formatting**: Reads English text, extracts structured fields. Also picks category if string-match fails. |
 | **Python** (Phase 3) | **Factual fields**: Company, location, salary, links, dates. Never delegated to AI. |
-| **`_sweep_finnish_from_job()`** | **Safety net**: Catches any remaining Finnish after AI formatting and retranslates via Argos. |
+| **`_sweep_finnish_from_job()`** | **Safety net**: Catches any remaining Finnish after AI formatting and retranslates via Google Translate. |
 
 ### Salary Normalization
 - Managed centrally by `patch_salary.py`:
@@ -281,7 +280,7 @@ Pre-translated English text (from Phase 2)
 4. Expire old jobs (> EXPIRATION_DAYS)
 ───────────────────────────────────
 5. PHASE 2: job_translator.run_phase2()
-   → Argos translate untranslated raw jobs
+   → Translate untranslated raw jobs
    → Save rawjobs.json (with translated_content)
    → Save translated_jobs.json (raw + translations)
 ───────────────────────────────────
@@ -314,9 +313,9 @@ Pre-translated English text (from Phase 2)
 
 ## 8. Translation Layer (`translator.py`)
 
-- Wraps `argostranslate` for offline Finnish → English translation.
-- Loads the FI→EN language model once, caches it for subsequent calls.
-- Falls back silently to original text if model is missing or translation fails.
+- Wraps `deep-translator` for Finnish → English translation over Google Translate.
+- Handles chunking for strings larger than 4900 characters due to Google limits.
+- Features retry logic and backoff. Falls back to original text if translation fails completely.
 - Pre-processes text (removes excessive blank lines, unescapes HTML entities).
 
 ---
@@ -345,7 +344,7 @@ Fields exempt from Finnish detection (kept as-is):
 | `CITY_KEYWORDS` | All Finnish cities/districts for location detection |
 | `UUSIMAA_CITIES` | Capital region cities for regional filtering |
 | `MAX_PAGES` | Max scraping pages per site (default: 10) |
-| `AI_BATCH_SIZE` | Jobs per AI batch (default: 10) |
+| `AI_BATCH_SIZE` | Jobs per AI batch (default: 0 = unlimited) |
 | `EXPIRATION_DAYS` | Days before a job expires (default: 30) |
 | `GITHUB_PAGES_BASE_URL` | `https://findjobsinfinland.fi` |
 
@@ -380,10 +379,10 @@ JobsInFinland/
 └── scraper/
     ├── run_scraper.py           # Phase 1: Scraper entrypoint
     ├── run_pipeline.py          # Phases 2, 3 & 4: Pipeline CLI
-    ├── job_translator.py        # Phase 2: Argos FI→EN translation
+    ├── job_translator.py        # Phase 2: Google FI→EN translation
     ├── ai_processor.py          # Phase 3: AI formatting + factual fields
     ├── patch_salary.py          # Phase 3: Centralized salary extraction logic
-    ├── translator.py            # ArgosTranslate FI→EN wrapper
+    ├── translator.py            # deep-translator FI→EN wrapper
     ├── html_generator.py        # Phase 4: Static site builder
     ├── image_generator.py       # Phase 4: OG image generator
     ├── config.py                # All configuration & category keywords

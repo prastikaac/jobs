@@ -111,11 +111,18 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
     when translated_content is available.
     """
     translated_output = []
+    total = len(raw_jobs)
+    bulk_calls = 0
 
-    for raw in raw_jobs:
+    logger.info("Building translated output for %d jobs…", total)
+
+    for i, raw in enumerate(raw_jobs):
         out_job = dict(raw)
+        
+        # Gather small fields that need translation to do them in a single bulk request
+        texts_to_translate = []
+        map_back = [] # (field, is_list)
 
-        # Ensure translated helper fields exist if source fields exist
         for field in [
             "what_we_expect",
             "job_responsibilities",
@@ -125,13 +132,43 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
             val = raw.get(field)
             t_key = f"translated_{field}"
             if val and isinstance(val, list) and t_key not in raw:
-                raw[t_key] = [translator.translate_fi_to_en(str(v)) for v in val if v]
+                for v in val:
+                    s_val = str(v).strip()
+                    if s_val:
+                        texts_to_translate.append(s_val)
+                        map_back.append((field, True))
 
         for field in ["workTime", "continuityOfWork"]:
             val = raw.get(field)
             t_key = f"translated_{field}"
             if val and isinstance(val, str) and t_key not in raw:
-                raw[t_key] = translator.translate_fi_to_en(val)
+                if val.strip():
+                    texts_to_translate.append(val.strip())
+                    map_back.append((field, False))
+
+        # Bulk translate fields to save API requests and prevent rate limits
+        if texts_to_translate:
+            bulk_text = "\n\n---\n\n".join(texts_to_translate)
+            translated_bulk = translator.translate_fi_to_en(bulk_text)
+            bulk_calls += 1
+            
+            # Use regex to safely split around the --- delimiter, even if spaces were added
+            import re
+            parts = [p.strip() for p in re.split(r'\n*-{2,}\n*', translated_bulk)]
+            
+            if len(parts) == len(texts_to_translate):
+                parsed = {}
+                for idx, (field, is_list) in enumerate(map_back):
+                    t_key = f"translated_{field}"
+                    if t_key not in parsed:
+                        parsed[t_key] = [] if is_list else ""
+                        
+                    if is_list:
+                        parsed[t_key].append(parts[idx])
+                    else:
+                        parsed[t_key] = parts[idx]
+                
+                raw.update(parsed)
 
         translated_text = raw.get("translated_content", "")
         if translated_text:
@@ -152,7 +189,6 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
                 if t_key in raw:
                     out_job[field] = raw[t_key]
 
-        # Keep translated_content because Phase 3 reads it
         # Remove transient translated_* helper keys from the phase2 output
         for key in list(out_job.keys()):
             if key.startswith("translated_") and key != "translated_content":
@@ -160,6 +196,10 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
 
         translated_output.append(out_job)
 
+        if (i + 1) % 50 == 0 or (i + 1) == total:
+            logger.info("  [%d/%d] Supplementary fields processed (%d bulk API calls so far)", i + 1, total, bulk_calls)
+
+    logger.info("Translated output built. %d jobs, %d bulk translation calls.", total, bulk_calls)
     return translated_output
 
 
@@ -178,10 +218,13 @@ def run_phase2(raw_jobs: list[dict]) -> list[dict]:
 
     raw_jobs = translate_raw_jobs(raw_jobs, processing_state=processing_state)
 
+    # Compile the output FIRST so any dynamic translation appended to `raw_jobs` gets captured.
+    translated_output = _build_translated_raw_output(raw_jobs)
+    
+    # Save AFTER building output, so that translated_* extra fields are saved to cache forever!
     rawjobs_store.save_raw_jobs(raw_jobs)
     rawjobs_store.save_processing_state(processing_state)
 
-    translated_output = _build_translated_raw_output(raw_jobs)
     jobs_store.save_translated_raw_jobs(translated_output)
 
     logger.info("Phase 2 saved to rawjobs.json + translated_raw_jobs.json.")

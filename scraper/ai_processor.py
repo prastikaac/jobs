@@ -15,7 +15,7 @@ logger = logging.getLogger("ai_processor")
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "qwen2.5:1.5b"
 
-BATCH_SIZE = 10
+BATCH_SIZE = 0
 TIMEOUT_SECS = 300
 CATEGORY_TIMEOUT_SECS = 60
 MAX_RETRIES = 2
@@ -38,36 +38,105 @@ def _normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "")).strip()
 
 
+def _strip_wrapping_quotes(text: str) -> str:
+    text = (text or "").strip()
+
+    # Remove repeated wrapping quotes if the whole output is quoted
+    while len(text) >= 2 and (
+        (text[0] == '"' and text[-1] == '"') or
+        (text[0] == "'" and text[-1] == "'") or
+        (text[0] == "“" and text[-1] == "”") or
+        (text[0] == "‘" and text[-1] == "’")
+    ):
+        text = text[1:-1].strip()
+
+    return text
+
+
+def _clean_leading_punctuation(text: str) -> str:
+    text = (text or "").strip()
+    text = re.sub(r'^[\s"\'“”‘’:;,\-–—]+', "", text)
+    return text.strip()
+
+
 def _sanitize_plain_output(text: str) -> str:
     text = (text or "").strip()
     text = re.sub(r"^```(?:text)?", "", text).strip()
     text = re.sub(r"```$", "", text).strip()
+    text = _normalize_whitespace(text)
+    text = _strip_wrapping_quotes(text)
+    text = _clean_leading_punctuation(text)
+    return _normalize_whitespace(text)
+
+
+def _clean_meta_text(text: str) -> str:
+    text = _sanitize_plain_output(text)
+
+    # Remove accidental escaped quotes at the beginning/end
+    text = re.sub(r'^\\"+', "", text).strip()
+    text = re.sub(r'\\"+$', "", text).strip()
+
+    # Remove any remaining leading quote-like characters again
+    text = re.sub(r'^[\'"“”‘’]+', "", text).strip()
+    text = re.sub(r'[\'"“”‘’]+$', "", text).strip()
+
     return _normalize_whitespace(text)
 
 
 def _trim_to_sentence_boundary(text: str, min_len: int = 150, max_len: int = 160) -> str:
-    text = _normalize_whitespace(text)
+    text = _clean_meta_text(text)
 
     if not text:
         return ""
 
-    if min_len <= len(text) <= max_len:
-        return text
-
-    if len(text) < min_len:
+    if len(text) <= max_len:
         return text
 
     truncated = text[:max_len]
 
-    last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
-    if last_punct >= min_len - 1:
+    # Prefer ending at the last full sentence within the limit
+    sentence_endings = [truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?")]
+    last_punct = max(sentence_endings)
+
+    if last_punct >= 0 and (last_punct + 1) >= min_len:
         return truncated[: last_punct + 1].strip()
 
+    # Otherwise, trim at the last safe space so words are not cut in half
     last_space = truncated.rfind(" ")
     if last_space > 0:
-        return truncated[:last_space].rstrip(" ,;-") + "..."
+        trimmed = truncated[:last_space].rstrip(" ,;:-")
+        if len(trimmed) >= min_len:
+            return trimmed
 
-    return truncated[: max_len - 3].rstrip() + "..."
+    # Final fallback
+    return truncated.rstrip(" ,;:-").strip()
+
+
+def _trim_description_safely(text: str, max_len: int = 800) -> str:
+    text = _sanitize_plain_output(text)
+
+    if not text:
+        return ""
+
+    if len(text) <= max_len:
+        return text
+
+    truncated = text[:max_len]
+
+    # Prefer full sentence ending
+    sentence_endings = [truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?")]
+    last_punct = max(sentence_endings)
+
+    # Keep reasonably sized full sentence if found
+    if last_punct >= int(max_len * 0.6):
+        return truncated[: last_punct + 1].strip()
+
+    # Fallback: trim at last safe space, no mid-word cut
+    last_space = truncated.rfind(" ")
+    if last_space > 0:
+        return truncated[:last_space].rstrip(" ,;:-").strip()
+
+    return truncated.rstrip(" ,;:-").strip()
 
 
 def _make_meta_fallback(job: dict, formatted_description: str) -> str:
@@ -75,24 +144,22 @@ def _make_meta_fallback(job: dict, formatted_description: str) -> str:
     location = Job_formatter._clean_text(", ".join(job.get("jobLocation", [])))
     company = Job_formatter._clean_text(job.get("company", ""))
 
-    intro_parts = []
-    if title:
-        intro_parts.append(title)
-    if location:
-        intro_parts.append(f"in {location}")
-    if company:
-        intro_parts.append(f"at {company}")
+    if company and title:
+        intro = f"{company} is seeking a {title}"
+    elif title:
+        intro = f"Join our team as a {title}"
+    else:
+        intro = "Explore this exciting job opportunity"
 
-    intro = " ".join(intro_parts).strip()
-    if intro:
-        intro += ". "
+    if location:
+        intro += f" in {location}"
+
+    intro += ". "
 
     base = _normalize_whitespace(intro + formatted_description)
 
     if len(base) < 150:
-        extra = " Apply now for this opportunity in Finland."
-        if extra not in base:
-            base += extra
+        base += " Apply now for this opportunity in Finland."
 
     return _trim_to_sentence_boundary(base, 150, 160)
 
@@ -369,10 +436,15 @@ def _build_description_prompt(raw_job: dict) -> str:
         "- Write ONLY one single paragraph.\n"
         "- Make it read smoothly and professionally, like a polished job summary.\n"
         "- Keep it concise but informative.\n"
+        "- Maximum length: 800 characters.\n"
+        "- End with a complete sentence.\n"
+        "- Do not cut off the paragraph mid-sentence.\n"
         "- Do not use bullet points.\n"
         "- Do not use headings.\n"
         "- Do not use HTML.\n"
         "- Do not use markdown.\n"
+        "- Do not wrap the result in quotes.\n"
+        "- Do not start with punctuation, quotation marks, or a colon.\n"
         "- Do not copy broken links, raw URLs, mailto text, duplicate lines, or messy formatting.\n"
         "- Do not invent facts that are not present.\n"
         "- Preserve important details such as role, duties, requirements, benefits, salary if available, and start timing if available.\n"
@@ -400,16 +472,24 @@ def _build_meta_prompt(raw_job: dict, formatted_description: str) -> str:
 
     return (
         "Write a concise SEO meta description for a job posting.\n\n"
-        "Rules:\n"
+
+        "STRICT RULES:\n"
         "- Length MUST be between 150 and 160 characters.\n"
         "- Do NOT exceed 160 characters.\n"
-        "- Include the job title and location naturally if possible.\n"
-        "- Make it clear, clickable, and professional.\n"
-        "- Use natural English.\n"
-        "- Do not use quotes.\n"
-        "- Do not use HTML.\n"
-        "- Do not use markdown.\n"
-        "- Output ONLY the meta description text.\n\n"
+        "- Write in a natural, human-friendly sentence.\n"
+        "- DO NOT copy the raw title string as-is.\n"
+        "- Start naturally using one of these styles:\n"
+        "  • '[Company] is seeking a [Job Title]...'\n"
+        "  • 'Join [Company] as a [Job Title]...'\n"
+        "  • 'Apply now for [Job Title]...'\n"
+        "- Include location naturally, not as a list dump.\n"
+        "- End with a complete sentence.\n"
+        "- Do not cut the sentence in the middle.\n"
+        "- Do not use quotes, escaped quotes, HTML, markdown, labels, or JSON.\n"
+        "- Do not wrap the output in quotation marks.\n"
+        "- Do not start with any quotation mark, colon, dash, or punctuation.\n"
+        "- Output ONLY the final meta description sentence.\n\n"
+
         f"Job Title: {title}\n"
         f"Company: {company}\n"
         f"Location: {location}\n\n"
@@ -458,13 +538,13 @@ def _call_ollama_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, num_p
 
 def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
     translated_text = raw_job.get("translated_content") or raw_job.get("jobcontent", "")
-    fallback_description = _normalize_whitespace(translated_text)
+    fallback_description = _trim_description_safely(_normalize_whitespace(translated_text), 800)
 
     desc_prompt = _build_description_prompt(raw_job)
     formatted_description, desc_ok, desc_err = _call_ollama_plain_text(
         desc_prompt,
         timeout_secs=TIMEOUT_SECS,
-        num_predict=260,
+        num_predict=320,
     )
 
     if not desc_ok or not formatted_description:
@@ -474,14 +554,17 @@ def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
             desc_err,
         )
         formatted_description = fallback_description
+    else:
+        formatted_description = _trim_description_safely(formatted_description, 800)
 
     meta_prompt = _build_meta_prompt(raw_job, formatted_description)
     meta_description, meta_ok, meta_err = _call_ollama_plain_text(
         meta_prompt,
         timeout_secs=120,
-        num_predict=80,
+        num_predict=100,
     )
 
+    meta_description = _clean_meta_text(meta_description)
     meta_description = _trim_to_sentence_boundary(meta_description, 150, 160)
 
     if not meta_ok or not meta_description or len(meta_description) < 150:
@@ -557,7 +640,7 @@ def format_translated_jobs(
         if success:
             formatted_description, meta_description = _generate_description_and_meta(raw)
         else:
-            fallback_description = _normalize_whitespace(translated_text)
+            fallback_description = _trim_description_safely(_normalize_whitespace(translated_text), 800)
             formatted_description = fallback_description
             meta_description = _make_meta_fallback(raw, fallback_description)
 
@@ -568,7 +651,7 @@ def format_translated_jobs(
         raw["ai_data"] = ai_data
         raw["ai_status"] = "success" if success else status
 
-        logger.info("  Description: %s", formatted_description[:220])
+        logger.info("  Description (%d chars): %s", len(formatted_description), formatted_description[:220])
         logger.info("  Meta (%d chars): %s", len(meta_description), meta_description)
 
         return raw, success, status, err
@@ -578,7 +661,7 @@ def format_translated_jobs(
 
     pending = rawjobs_store.get_unprocessed_jobs(raw_jobs)
     pending.sort(key=lambda j: j.get("retry_count", 0))
-    batch = pending[:batch_size]
+    batch = pending if batch_size == 0 else pending[:batch_size]
 
     if not batch:
         logger.info("Phase 3: No unprocessed jobs to format.")

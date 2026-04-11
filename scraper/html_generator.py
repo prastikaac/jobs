@@ -298,6 +298,7 @@ def generate_job_page(job: dict) -> bool:
         "{-display_contact_person-}": "" if job.get("job_employer_name", "") else 'style="display: none;"',
         "{-display_employer_email-}": "" if employer_email else 'style="display: none;"',
         "{-display_employer_phone-}": "" if job.get("job_employer_phone_no", "") else 'style="display: none;"',
+        "{-display_recruiter_info-}": "" if (job.get("job_employer_name", "") or employer_email or job.get("job_employer_phone_no", "")) else 'style="display: none;"',
     }
 
     for key, val in replacements.items():
@@ -381,7 +382,10 @@ def _job_card(job: dict) -> str:
 
           <div class="pThmb iyt">
             <a class="thmb" href="{page_url}">
-              <img alt="{title}" class="imgThm lazy" src="{image_url}" data-src="{image_url}" loading="lazy" />
+              <img alt="{title}" class="imgThm lazy loaded" data-src="{image_url}" lazied="" src="{image_url}"/>
+              <noscript>
+                <img alt="{title}" class="imgThm" src="{image_url}"/>
+              </noscript>
             </a>
             <div class="iFxd" style="z-index:1;">
               <span aria-label="Add to favorites" bm-id="{job_id}"

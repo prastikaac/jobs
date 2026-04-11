@@ -1,1613 +1,470 @@
 [
   {
-    "scrape_timestamp": "2026-04-07 00:22:51",
+    "scrape_timestamp": "2026-04-10 23:42:07",
     "jobs": [
       {
-        "id": "bf037e15",
-        "job_id": "local-nurse-for-part-time-work-for-home-care-in-lohja-lohja-bf037e15",
+        "id": "ebbb3e89",
+        "job_id": "reach-driver-to-lappeenranta-summer-job-lappeenranta-ebbb3e89",
         "processed": true,
-        "title": "Local nurse for part-time work for home care in Lohja",
-        "company": "Sam's Care Oy, Lohja",
-        "job_category": "healthcare-and-social-care",
-        "jobLocation": [
-          "Lohja"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:info@samscare.fi?subject=Application%20for%20the%20Job%20-%20Local%20nurse%20for%20part-time%20work%20for%20home%20care%20in%20Lohja&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Local%20nurse%20for%20part-time%20work%20for%20home%20care%20in%20Lohja.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d67ea97d-7b3f-424b-babb-9c5aea3f872a/en",
-        "job_employer_email": "info@samscare.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare-and-social-care/local-nurse-for-part-time-work-for-home-care-in-lohja-lohja-bf037e15",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-12",
-        "scraped_at": "2026-04-07 00:22:51",
-        "open_positions": 1,
-        "salary_range": "€16-18/h plus possible shift bonuses and 9% holiday pay",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Local nurse for part-time work in Lohja: Apply now! 🏠✨ Requirements include a nursing degree, excellent language skills, and previous catheter change...",
-        "description": "We are looking for skilled local nurses with experience in home care, specifically for part-time work in Lohja. Our team provides comprehensive assistance to elderly customers, including daily activities, basic care, medication administration, catheter changes, and more. Ideal candidates will thrive in a multicultural healthcare environment, ensuring the safety of our clients. A nursing degree is required, along with excellent oral and written Finnish language skills. Previous experience in changing catheters is essential. We offer competitive salaries ranging from 16 to 18 euros per hour plus flexible working hours and a 9% commission on sales. Additionally, we provide varied training opportunities and good orientation programs. If you're interested in joining our growing team, please apply by email to info@samscare.fi.",
-        "what_we_expect": [
-          "Nursing degree",
-          "Good oral and written Finnish language skills. Studies in Finnish or Swedish, or B2 level language certificate",
-          "LOP/LOVe medical license",
-          "B driver's license"
-        ],
-        "job_responsibilities": [
-          "Assisting customers in their daily activities",
-          "Basic care",
-          "Performing procedures and medication",
-          "Changing the catheter"
-        ],
-        "what_we_offer": [
-          "Competitive basic salary",
-          "Flexible working hours",
-          "Varied trainings",
-          "Good orientation"
-        ],
-        "search_keywords": "Local nurse for part-time work for home care in Lohja Sam's Care Oy, Lohja Lohja healthcare-and-social-care",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
-      },
-      {
-        "id": "d4053db0",
-        "job_id": "stair-cleaner-for-the-capital-region-helsinki-d4053db0",
-        "processed": true,
-        "title": "Stair Cleaner for the capital region",
-        "company": "Huiput ei Hosu Oy",
-        "job_category": "cleaning-and-facility-services",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://huiput.likeit.fi/apply/994519",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6fc6c873-5c22-4dc5-8c9f-7dbccb317502/en",
-        "job_employer_email": "arto.lappalainen@huiput.com",
-        "job_employer_name": "Arto Lappalainen",
-        "job_employer_phone_no": "+358407089884",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/stair-cleaner-for-the-capital-region-helsinki-d4053db0",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 00:22:51",
-        "open_positions": 1,
-        "salary_range": "salary based on your experience * A good introd",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Stair cleaner opportunity in Helsinki's capital region, starting spring. Competitive wages and excellent working conditions await. Apply now by clicking",
-        "description": "We are looking for a stair cleaner in Helsinki's capital region, where you'll enjoy working independently while taking responsibility for the quality of your tasks. Seasonal and starting already in spring according to the contract, this role offers competitive wages based on experience, a good introduction to cleaning duties, a comfortable working environment, and support from a competent team and an employer who cares about their employees. Apply now by clicking the \"Apply for a job\" button or sending an email to karita.kotamaki@huiput.com; we're in contact with interviewees already during the application period.",
-        "what_we_expect": [
-          "Previous experience in cleaning work, especially stair cleaning",
-          "Careful, reliable, and conscientious worker",
-          "Able to work independently and take responsibility for the quality of your work",
-          "Speaks good and fluent Finnish"
-        ],
-        "job_responsibilities": [
-          "Cleaning work, especially stair cleaning",
-          "Removal and application of wax",
-          "Washing windows"
-        ],
-        "what_we_offer": [
-          "Competitive salary based on experience",
-          "Good introduction to tasks",
-          "Comfortable working environment",
-          "Supportive team and employer who takes care of employees"
-        ],
-        "search_keywords": "cleaning, stair cleaner, apartment building, capital region",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
-      },
-      {
-        "id": "0f17a7e6",
-        "job_id": "planning-assistant-rauma-0f17a7e6",
-        "processed": true,
-        "title": "Planning Assistant",
-        "company": "Rauman kaupunki",
-        "job_category": "administrative-and-support-services",
-        "jobLocation": [
-          "Rauma"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/RAU-45-16-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/39428fce-fa48-4b3a-aca2-9936c5403fa2/en",
-        "job_employer_email": "juha.eskolin@rauma.fi",
-        "job_employer_name": "Juha Eskolin",
-        "job_employer_phone_no": "0447933660",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/administrative-and-support-services/planning-assistant-rauma-0f17a7e6",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-05-11",
-        "scraped_at": "2026-04-07 00:22:51",
-        "open_positions": 1,
-        "salary_range": "TS:n mukaan",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Planning Assistant | Rauman kaupunki - Join our dedicated team in Rauma! 🏙️💼 Are you passionate about urban development and creative problem-solving? We're...",
-        "description": "We are looking for a zoning assistant at Rauman kaupunki to join our dedicated team of professionals in the planning and world heritage unit. This permanent position offers meaningful work tasks that contribute to the smooth daily life of residents and the overall development of the city, making it an ideal choice for someone seeking a fulfilling career. With a focus on administrative office tasks related to drawing up formulas, such as financial management and case management, this role provides ample opportunities for growth and skill enhancement within a vibrant maritime and cultural setting. Located in Rauma, a bright, maritime and cultural city of approximately 39,000 inhabitants, the team collaborates with over ten people. The unit is part of the technical industry and works closely with two world heritage sites: the sea, an archipelago, and a large harbor. As such, this role requires someone who can effectively manage multiple projects and assist in the interaction procedures related to plan planning. To apply for this position, please submit your application electronically through www.rauma.fi/rekry. For more information or to contact the planning director Juha Eskolin (tel: 044 793 3660, email: juha.eskolin@rauma.fi) or the planning architect Outi Virol",
-        "what_we_expect": [
-          "Professional qualification suitable for the position",
-          "Submitting an application: Electronically through the system (www.rauma.fi/rekry)",
-          "Positive attitude and reliability"
-        ],
-        "job_responsibilities": [
-          "Assisting in the interaction procedures related to plan planning",
-          "Submitting an application: Electronically through the system (www.rauma.fi/rekry)",
-          "Daily operational tasks"
-        ],
-        "what_we_offer": [
-          "Meaningful work tasks with which we influence the everyday life of the residents and the development of the entire city",
-          "Investment in the well-being and competence of the personnel",
-          "Submitting an application: Electronically through the system (www.rauma.fi/rekry)"
-        ],
-        "search_keywords": "zoning assistant, planning assistant, administrative office tasks, financial management, case management, auxiliary tasks, interaction procedures, plan planning, professional qualification, meaningful work tasks, investment in the well-being and competence of the personnel",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
-      },
-      {
-        "id": "00d8dfc0",
-        "job_id": "summer-pharmacist-at-pohja-pharmacy-raasepori-00d8dfc0",
-        "processed": true,
-        "title": "Summer pharmacist at Pohja pharmacy",
-        "company": "Raaseporin 3. Apteekki, Raasepori",
-        "job_category": "healthcare-and-social-care",
-        "jobLocation": [
-          "Raasepori"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:mari.torronen@apteekit.net?subject=Application%20for%20the%20Job%20-%20Summer%20pharmacist%20at%20Pohja%20pharmacy&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Summer%20pharmacist%20at%20Pohja%20pharmacy.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/01406421-1c08-4abd-8152-bf887d50ce8f/en",
-        "job_employer_email": "mari.torronen@apteekit.net",
-        "job_employer_name": "Mari Törrönen",
-        "job_employer_phone_no": "0408427709",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare-and-social-care/summer-pharmacist-at-pohja-pharmacy-raasepori-00d8dfc0",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-20",
-        "scraped_at": "2026-04-07 00:22:51",
-        "open_positions": 1,
-        "salary_range": "https://www.farmasialiitto.fi/wp-content/uploads/2025/11/Farmaseuttisen-henkiloston-tyoehtosopimus-2025-2028.pdf",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish",
-          "Swedish"
-        ],
-        "meta_description": "Summer pharmacist opportunity at Raaseporin 3. Apteekki, Pohja branch in Raasepori! Part-time employment from July-August. Serving customers weekdays and...",
-        "description": "Pohja apteekki, Raasepori, is seeking a summer pharmacist for July-August at their Pohja branch. Located in the middle of Ruukki villages, this position offers part-time employment with a focus on serving customers from 9 a.m. to 5 p.m. weekdays and Saturdays from 9 a.m. to 1 p.m., complemented by a Maxx pharmacy program. The pharmacist will work alongside two pharmacists and medical technicians in Pohja's pharmacy, providing pharmaceutical customer service and possibly dose distribution tasks. With Swedish-speaking residents, the position offers an energetic and community-oriented environment. Interested applicants should apply with resumes by April 20th to mari.torronen@apteekit.net for more information.",
-        "what_we_expect": [
-          "Energetic, customer service-minded and self-starting.",
-          "Swedish language proficiency (at least moderately fluent)",
-          "As a summer pharmacist at the Pohja pharmacy in the middle of the Ruukki villages"
-        ],
-        "job_responsibilities": [
-          "Pharmaceutical customer service and possibly tasks related to dose distribution.",
-          "As a summer pharmacist at the Pohja pharmacy in the middle of the Ruukki villages",
-          "Applications with resumes please send 20.4. By to mari.torronen@apteekit.net"
-        ],
-        "what_we_offer": [
-          "Quiet village pharmacy",
-          "Nice working community",
-          "As a summer pharmacist at the Pohja pharmacy in the middle of the Ruukki villages"
-        ],
-        "search_keywords": "summer pharmacist, Pohja pharmacy, Swedish language, quiet village pharmacy, nice working community",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
-      },
-      {
-        "id": "1832d4ef",
-        "job_id": "early-childhood-education-teacher-helsinki-1832d4ef",
-        "processed": true,
-        "title": "Early childhood education teacher",
-        "company": "New Nordic School Suomi Oy, Helsinki",
-        "job_category": "education-and-public-sector",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:mira.slawinski@tinywonders.fi?subject=Application%20for%20the%20Job%20-%20Early%20childhood%20education%20teacher&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Early%20childhood%20education%20teacher.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a1ac108-aadb-4e56-ac3c-dd4df047388d/en",
-        "job_employer_email": "mira.slawinski@tinywonders.fi",
-        "job_employer_name": "Mira Slawinski",
-        "job_employer_phone_no": "+358453299561",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education-and-public-sector/early-childhood-education-teacher-helsinki-1832d4ef",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-19",
-        "scraped_at": "2026-04-07 00:22:51",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish",
-          "English"
-        ],
-        "meta_description": "Early Childhood Education Teacher - Helsinki, Finland | New Nordic School Suomi Oy We're seeking a warm-hearted Educator with a passion for early childhood...",
-        "description": "We are looking for a warm-hearted, enthusiastic early childhood education teacher with a strong pedagogical and developmental approach to join our team at New Nordic School Suomi Oy in Helsinki. This role involves creating a learning environment that encourages children's creativity and exploration while fostering their social development. We value teachers who can apply multicultural teaching strategies and different methods effectively. The ideal candidate should have an early childhood education teacher qualification, excellent Finnish and English language skills, strong cooperation abilities, positive problem-solving skills, and the ability to connect with children genuinely. If you possess these qualities and are eager to contribute to our commitment to Lifelong learning and Joy of discovery, we invite you to apply by emailing mira.slawinski@tinywonders.fi or contacting Mira Slawinski at +358453299561.",
-        "what_we_expect": [
-          "Early childhood education teacher qualification",
-          "Strongly pedagogical approach",
-          "Good Finnish and English language skills",
-          "Excellent cooperation skills",
-          "Positive problem solving skills"
-        ],
-        "job_responsibilities": [
-          "Responsible for the activities of a group of children aged 1-6 and cooperation with parents.",
-          "Take part in the development of our kindergarten's early childhood education plan and the operation of our unit.",
-          "Do you have"
-        ],
-        "what_we_offer": [
-          "Do you have",
-          "Early childhood education teacher qualification",
-          "Strongly pedagogical approach",
-          "Good Finnish and English language skills",
-          "Excellent cooperation skills",
-          "Positive problem solving skills"
-        ],
-        "search_keywords": "early childhood education, teaching, child development, kindergarten, childcare, early childhood education teacher",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-07 00:42:43",
-    "jobs": [
-      {
-        "id": "8a719d65",
-        "job_id": "attendance-counselor-huittinen-8a719d65",
-        "processed": true,
-        "title": "Attendance counselor",
-        "company": "Huittisten kaupunki",
-        "job_category": "education-and-public-sector",
-        "jobLocation": [
-          "Huittinen"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/HUI-03-22-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/afe93a37-2a22-42f4-a31d-e408d4bcad1e/en",
-        "job_employer_email": "maarit.malmberg@huittinen.fi",
-        "job_employer_name": "Maarit Malmberg",
-        "job_employer_phone_no": "0445604305",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education-and-public-sector/attendance-counselor-huittinen-8a719d65",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-21",
-        "scraped_at": "2026-04-07 00:42:43",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "\"Join our team as an Attendance Counselor at Huittinen City Cultural Committee! Full-time opportunity with permanent employment. Ideal for those with school...",
-        "description": "We are looking for a qualified Attendance Counselor to join our team in Huittinen, Finland. This position offers the opportunity to work full-time and enjoy permanent employment. The ideal candidate will have experience as a school guidance counselor or equivalent vocational training, along with practical skills working with children and young people. Salary is determined according to KVTES guidelines, and candidates must provide an acceptable medical certificate and criminal record extract before being confirmed for the position. Interested parties should apply using the electronic application form at www.kuntarekry.fi (search \"Huittinen\") or by sending documents via mail to Huittinen City Cultural Committee, Risto Rytin katu 36, 32700 Huittinen. The application period runs until April 21, 2026 at 12:00. For more information, contact vice-rector Katja Haavisto (tel. 044 560 4306, email: firstname.lastname@edu.huittinen.fi) or principal Maarit Malmberg (tel. 044 560 4305, email: firstname.surname@huittinen.fi). Located in the picturesque town of Huittinen, known for",
-        "what_we_expect": [
-          "Education as a school guidance counselor or suitable vocational training and practical experience working with children and young people",
-          "The application period ends on April 21, 2026 at 12:00.",
-          "Positive attitude and reliability"
-        ],
-        "job_responsibilities": [
-          "Personal school visit instructor",
-          "Team instructor",
-          "Resource instructor"
-        ],
-        "what_we_offer": [
-          "Salary and other terms of employment determined in accordance with KVTES",
-          "Temporary actions subject to a four (4) month trial period",
-          "The application period ends on April 21, 2026 at 12:00."
-        ],
-        "search_keywords": "education, teaching services, Huittinen, temporary employment, school visit instructor, team instructor, resource instructor, guidance counselor, vocational training, children and young people, salary, criminal background check, medical certificate, KVTES, smoke-free workplace",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
-      },
-      {
-        "id": "20e826ff",
-        "job_id": "construction-worker-developer-helsinki-20e826ff",
-        "processed": true,
-        "title": "Construction Worker Developer",
-        "company": "Truescape Oy, Kirkkonummi",
-        "job_category": "construction-and-trades",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:jaakko.rytsola@truescape.fi?subject=Application%20for%20the%20Job%20-%20Construction%20Worker%20Developer&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Construction%20Worker%20Developer.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ba55677e-61ee-4443-a2b3-b0340b999e13/en",
-        "job_employer_email": "jaakko.rytsola@truescape.fi",
-        "job_employer_name": "Jaakko Rytsölä",
-        "job_employer_phone_no": "+358502295",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/construction-and-trades/construction-worker-developer-helsinki-20e826ff",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-13",
-        "scraped_at": "2026-04-07 00:42:43",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Part-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Truescape Oy, Helsinki: Construction worker opportunity for escape games installation & maintenance! 🏛️💼 Competitive wages + electrical knowledge needed.",
-        "description": "Truescape Oy, located in Helsinki, Finland, is seeking an experienced construction worker for their team that specializes in the installation and maintenance of escape games. This part-time position offers competitive hourly wages based on Finnish collective agreements and includes tasks such as installing circuit breakers, sockets, extending cables, and performing light construction work. The ideal candidate should have a driver's license and possess electrical knowledge to handle low-voltage devices commonly found in escape game installations. Regularly working indoors at the company’s offices or occasional installations at other locations across Finland, this role is perfect for someone looking to combine their skills with a dynamic and growing industry.",
-        "what_we_expect": [
-          "Driver's license",
-          "Part-time job, 2-4 days a week according to agreement",
-          "You must have a driver's license."
-        ],
-        "job_responsibilities": [
-          "Electrical knowledge is important because the games often have 5V / 12V low-voltage devices and their installation and diagnosis are part of the job.",
-          "Light construction work, occasional installation of plasterboard, making boxes and doors, sanding but not actual heavy construction work.",
-          "You must have a driver's license."
-        ],
-        "what_we_offer": [
-          "Wage support considered an advantage",
-          "Nice crew installing escape games and maintenance work is varied",
-          "You must have a driver's license."
-        ],
-        "search_keywords": "construction worker developer construction maintenance escape games electrical knowledge low-voltage devices driver's license part-time job",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
-      },
-      {
-        "id": "103a8e92",
-        "job_id": "chef-tarkastamo-oulu-torinranta-oulu-103a8e92",
-        "processed": true,
-        "title": "Chef, Tarkastamo, Oulu Torinranta",
-        "company": "Tarkastamo Ravintola",
-        "job_category": "food-and-restaurant",
-        "jobLocation": [
-          "Oulu"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:rekry@tarkastamo-oulu.fi?subject=Application%20for%20the%20Job%20-%20Chef%2C%20Tarkastamo%2C%20Oulu%20Torinranta&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chef%2C%20Tarkastamo%2C%20Oulu%20Torinranta.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e988a5ec-4ccb-4d9a-bafc-dd61534ad984/en",
-        "job_employer_email": "rekry@tarkastamo-oulu.fi",
-        "job_employer_name": "Sari-Helena Forsman",
-        "job_employer_phone_no": "0207928201",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-tarkastamo-oulu-torinranta-oulu-103a8e92",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 00:42:43",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "English",
-          "Finnish"
-        ],
-        "meta_description": "\"Chef opening at Tarkastamo, event and restaurant complex in Torinranta, Oulu. Strong culinary skills, teamwork, and passion for quality needed. Permanent",
-        "description": "We are looking for chefs for permanent employment at Tarkastamo, an event and restaurant complex set to open in Torinranta, Oulu in the summer of 2026. As part of this ambitious project, we expect our chef to contribute to building something new through professional, caring, and passionate food preparation within a team that values cooperation and dedication. We are seeking someone with strong culinary skills, experience as a chef, and an understanding of how quality begins from careful work, respect for raw materials, and effective teamwork. We offer you a permanent job in a new and ambitious entity where working together can be seen every day. Our company culture emphasizes a positive atmosphere and functional cooperation, ensuring that your contributions are valued and recognized. We provide a salary according to MaRa TES, reflecting the market rate for chefs at this level. At Tarkastamo, you will have the opportunity to gain valuable work experience and develop your skills within a new restaurant and event complex where food, drink, and service form an experiential whole. You will also be part of a team that values seasons, raw materials, and regional flavors, as well as international cuisines in harmony with maritime Oulu. We offer you nice and inspiring colleagues and a work community where your efforts are recognized",
-        "what_we_expect": [
-          "You have the qualifications required for the position and a hygiene passport.",
-          "We expect from you messages openly, honestly and constructively. A good atmosphere and functional cooperation are important values ​​for us: together we are more and stronger.",
-          "We offer you nice and inspiring colleagues and a work community where work is done with a lot of heart and professional pride. You will gain valuable work experience and the opportunity to develop your skills as part of a new and ambitious restaurant and event complex."
-        ],
-        "job_responsibilities": [
-          "You have strong professional knowledge in the field and experience in the duties of a chef.",
-          "You work systematically and take responsibility for your own actions. You are ready to work as part of a team, help others and take responsibility for the joint end result.",
-          "You appreciate neat and planned working as well as safe and functional working methods."
-        ],
-        "what_we_offer": [
-          "Salary: according to MaRa TES.",
-          "We offer you a permanent job as part of a new and ambitious entity, where working together can be seen in everyday life.",
-          "Messages openly, honestly and constructively. A good atmosphere and functional cooperation are important values ​​for us: together we are more and stronger."
-        ],
-        "search_keywords": "Chef, Tarkastamo, Oulu Torinranta",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
-      },
-      {
-        "id": "f93a5e1b",
-        "job_id": "waitress-tarkastamo-oulu-torinranta-oulu-f93a5e1b",
-        "processed": true,
-        "title": "Waitress, Tarkastamo, Oulu Torinranta",
-        "company": "Tarkastamo Ravintola",
-        "job_category": "hospitality-and-tourism",
-        "jobLocation": [
-          "Oulu"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:rekry@tarkastamo-oulu.fi?subject=Application%20for%20the%20Job%20-%20Waitress%2C%20Tarkastamo%2C%20Oulu%20Torinranta&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Waitress%2C%20Tarkastamo%2C%20Oulu%20Torinranta.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ba4cb136-ebad-4489-a47d-bcafaaafb3e1/en",
-        "job_employer_email": "rekry@tarkastamo-oulu.fi",
-        "job_employer_name": "Sari-Helena Forsman",
-        "job_employer_phone_no": "0207928201",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waitress-tarkastamo-oulu-torinranta-oulu-f93a5e1b",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 00:42:43",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "English",
-          "Finnish"
-        ],
-        "meta_description": "\"Join TARKASTAMO RAVINTOLA's growing team as a Waitress at Oulu's Torinranta! Experience memorable service opportunities in an exciting new restaurant complex.",
-        "description": "We are looking for experienced waiters at Tarkastamo, an exciting new restaurant and event complex set to open in Oulu's Torinranta this summer. As part of our ambitious team, we expect you to bring your genuine passion for customer service and a strong professional background to create memorable experiences for our guests. With fluent English skills and a solid understanding of the kitchen, you'll be able to work alongside talented colleagues in a warm, inspiring environment where everyone's contribution is valued. We offer a permanent position as part of our growing entity, with opportunities for continuous growth and development within a new restaurant and event complex. Our team values hard work, pride in one’s profession, and a positive attitude towards collaboration. With a focus on quality service and an inviting atmosphere, we aim to provide a warm, relaxed dining experience that reflects the best of both local and international flavors. If you're ready to join us in creating unforgettable moments for our customers, please apply with your CV and recommenders as soon as possible.",
-        "what_we_expect": [
-          "Messages openly, honestly and constructively. Cooperation and a good atmosphere are important values ​​for us: together we are more and stronger.",
-          "You do your work with a smile on your face, you take responsibility for your own work and help your colleagues if necessary. You have a genuine interest in Tarkastamo's offer, which lives according to the seasons, you know how to tell our story and convey a good feeling to our customers.",
-          "You speak fluent Finnish and you also do well in English, so that our international guests feel welcome."
-        ],
-        "job_responsibilities": [
-          "You are a good person to join us and you approach customer service with a genuine heart, customers are always your number one priority. You have strong professional expertise in the field and have previously worked in similar, demanding customer service positions.",
-          "You speak fluent Finnish and you also do well in English, so that our international guests feel welcome.",
-          "You have the qualifications required for the position, as well as a dispensing and hygiene passport. We value wine knowledge and other evidence of drinking knowledge and the desire to further develop your knowledge."
-        ],
-        "what_we_offer": [
-          "We offer you nice and inspiring colleagues and a work community where work is done with a lot of heart and professional pride. You will gain valuable work experience and the opportunity to develop your skills as part of a new and ambitious restaurant and event complex.",
-          "We offer you a permanent job as part of a new and ambitious entity, where working together can be seen in everyday life.",
-          "Salary: according to MaRa TES."
-        ],
-        "search_keywords": "waitress, Oulu, Torinranta, hospitality",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
-      },
-      {
-        "id": "eb7e5974",
-        "job_id": "butler-inspectorate-oulu-torinranta-oulu-eb7e5974",
-        "processed": true,
-        "title": "Butler, Inspectorate, Oulu Torinranta",
-        "company": "Tarkastamo Ravintola",
-        "job_category": "business-and-finance",
-        "jobLocation": [
-          "Oulu"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:rekry@tarkastamo-oulu.fi?subject=Application%20for%20the%20Job%20-%20Butler%2C%20Inspectorate%2C%20Oulu%20Torinranta&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Butler%2C%20Inspectorate%2C%20Oulu%20Torinranta.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/01739d40-5a02-4939-99de-07db13a8f57b/en",
-        "job_employer_email": "rekry@tarkastamo-oulu.fi",
-        "job_employer_name": "Sari-Helena Forsman",
-        "job_employer_phone_no": "0207928201",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-finance/butler-inspectorate-oulu-torinranta-oulu-eb7e5974",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 00:42:43",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "English",
-          "Finnish"
-        ],
-        "meta_description": "Butler, Inspectorate, Oulu Torinranta in Oulu at TARKASTAMO RAVINTOLA. TARKASTAMO RAVINTOLA is seeking a Butler for their Oulu Torinranta event and",
-        "description": "TARKASTAMO RAVINTOLA is seeking a Butler for their Oulu Torinranta event and restaurant complex, set to open in 2026. As a Butler, you will be responsible for the operational activities of the hall, ensuring smooth and high-quality service. Your duties include managing reservations, serving efficiently, and pairing wines with food. You'll work closely with the restaurant manager, influencing the operation of the hall and developing your role through cooperation. We offer a permanent position in an ambitious new complex where responsibility is valued and expertise is recognized. Our expectations are strong experience in à la carte restaurants and the ability to take on shifts responsibly. You should lead by example, ensuring both customer satisfaction and team functionality. Knowledge of wine and drinks is essential, as you'll recommend and pair wines with food dishes. We prioritize a good atmosphere and cooperation, where customers enjoy themselves and return frequently. Our goal is to provide a warm, quality restaurant experience that harmonizes offer, service, and atmosphere. Join us in Oulu's Torinranta for an event and dining experience that blends local production with international flavors, all within the maritime environment of Tarkastamo.",
-        "what_we_expect": [
-          "Strong experience in similar work in an à la carte restaurant",
-          "Ability to take responsibility for the entire shift",
-          "Understanding of sales and profitability in everyday life",
-          "Knowledge of wine and drinks, ability to recommend and pair wines with food dishes",
-          "Openly, honestly, constructively message",
-          "Value cooperation and good atmosphere"
-        ],
-        "job_responsibilities": [
-          "Operational activities of the restaurant hall",
-          "Ensure smooth, high-quality service and customer-oriented experience",
-          "Rational and productive placement of reservations",
-          "Overall responsibility for serving on your turn",
-          "Pairing of wines with food portions as part of the experiential offering"
-        ],
-        "what_we_offer": [
-          "Permanent job as part of a new and ambitious restaurant and event complex",
-          "Salary in accordance with MaRa TES, taking into account experience and competence",
-          "Salary: in accordance with MaRa TES, taking into account experience and competence."
-        ],
-        "search_keywords": "Butler, Inspectorate, Oulu Torinranta TARKASTAMO RESTAURANT Oulu business-and-finance",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-07 01:06:46",
-    "jobs": [
-      {
-        "id": "3b1ee36d",
-        "job_id": "the-position-of-principal-of-basic-education-sauvosaari-scho-kemi-3b1ee36d",
-        "processed": true,
-        "title": "The position of principal of basic education, Sauvosaari school",
-        "company": "Tuntematon",
-        "job_category": "education-and-public-sector",
-        "jobLocation": [
-          "Kemi"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/KEMI-03-7-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14441ba5-3ac0-49d6-aaf9-0114610f68c0/en",
-        "job_employer_email": "piia.hulkkonen@kemi.fi",
-        "job_employer_name": "Piia Hulkkonen",
-        "job_employer_phone_no": "0405885735",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education-and-public-sector/the-position-of-principal-of-basic-education-sauvosaari-scho-kemi-3b1ee36d",
-        "date_posted": "2026-04-06",
-        "date_expires": "2026-04-07",
-        "scraped_at": "2026-04-07 01:06:46",
-        "open_positions": 1,
-        "salary_range": "salary is currently 5437",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "The position of principal of basic education, Sauvosaari school in Kemi at Tuntematon. We are looking for an experienced principal of basic education to join...",
-        "description": "We are looking for an experienced principal of basic education to join the Sauvosaari school in Kemi, Finland. As a permanent position starting August 1, 2026, you will manage pedagogical activities, personnel, finances, and everyday life at this multi-cultural elementary school with about 170 students in grades 1-6. You must be able to inspire, support, and lead the community while ensuring safe, effective learning environments for all students and staff members. The ideal candidate has strong administrative and financial management skills, as well as experience working in a multicultural setting. A background in school management tasks, learning support, special education, and working with Guardians and stakeholders is also highly valued. This position offers a meaningful leadership role, the opportunity to develop basic education within the city's strategic whole, a professionally competent work community, and support from Kemi for front-line work and management development. The salary of 5437.36 + TVA supplement is currently offered, with a trial period of six months when filling the position. Applications are accepted through Kuntarekry, and interviews will take place after the application period. A criminal record extract (504/2002) and an approved statement of health status must be",
-        "what_we_expect": [
-          "Experience and competence in school management tasks",
-          "Learning support and special education experience",
-          "Working in a multicultural school experience"
-        ],
-        "job_responsibilities": [
-          "Manage the Sauvosaari school's pedagogical activities, personnel, finances and everyday life holistically",
-          "Community spirit, safe everyday life, good student learning and comprehensive growth are important to us",
-          "Smooth cooperation with guardians, stakeholders and networks"
-        ],
-        "what_we_offer": [
-          "A meaningful and effective management role",
-          "The opportunity to develop the school and basic education as part of the city's strategic whole",
-          "A professionally competent and committed work community",
-          "Support from the city of Kemi for front-line work and management development, e.g. E-Passport"
-        ],
-        "search_keywords": "principal, Sauvosaari school, principal position, basic education, Kemi, teaching staff eligibility requirements",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-07 10:00:04",
-    "jobs": [
-      {
-        "id": "800517b0",
-        "job_id": "construction-worker-lappeenranta-800517b0",
-        "processed": true,
-        "title": "Construction Worker",
-        "company": "VISIO Henkilöstöratkaisut Kaakko Oy",
-        "job_category": "construction-and-trades",
+        "title": "Reach driver to Lappeenranta Summer job",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "transportation-and-logistics",
         "jobLocation": [
           "Lappeenranta"
         ],
         "jobRegions": [],
-        "jobapply_link": "http://visiohr.likeit.fi/apply/53106971",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b70c6a85-e1ea-4eb0-89a3-afe8f7c83f65/en",
-        "job_employer_email": "sami.klemi@visiohr.fi",
-        "job_employer_name": "Sami Klemi",
-        "job_employer_phone_no": "0408218840",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/construction-and-trades/construction-worker-lappeenranta-800517b0",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 10:00:04",
-        "open_positions": 1,
-        "salary_range": "Salary at work is based on previous competence",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Construction worker in Lappeenranta: Join VISIO Henkilöstöratkaisut Kaakko Oy's team for outdoor work during spring! Apply now with relevant experience",
-        "description": "We are looking for experienced construction workers in Lappeenranta to join our team during the upcoming season! Do you enjoy being outdoors and working physically? We're seeking versatile candidates with experience in municipal engineering works or challenging foundation sites. If yes, we believe you could be the ideal ground builder for our client's infrastructure projects. The work will commence when weather conditions permit, starting from April/May, with ongoing opportunities until the end of the season. Our competitive hourly wage is based on previous competence and professional skills gained through experience. To apply, please submit your resume highlighting relevant experience, valid occupational cards (work safety and road safety card), good Finnish language skills, and strong social skills to support teamwork in tight spaces. Vision's employee promise: We ensure that employment contracts and equipment are appropriate for our skilled professionals. Our salary is determined by your abilities, paid twice a month, with suitable work equipment provided, and round-the-clock support available. If you're passionate about your job and want fair compensation, we invite you to apply now through the attached link!",
-        "what_we_expect": [
-          "Experience in similar job.",
-          "Valid professional cards (work safety and road safety card).",
-          "Good Finnish language skills - the management language is Finnish.",
-          "Good social skills to get along with people even in tight spaces."
-        ],
-        "job_responsibilities": [
-          "Work on infrastructure construction sites in Lappeenranta area.",
-          "Install various tubes and perform varied work at different construction sites."
-        ],
-        "what_we_offer": [
-          "Salary determined by your skills.",
-          "Salary payment twice a month.",
-          "Work equipment suitable for each job.",
-          "Round-the-clock support in work matters."
-        ],
-        "search_keywords": "construction worker, Lappeenranta",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
-      },
-      {
-        "id": "ade54db1",
-        "job_id": "chef-helsinki-ade54db1",
-        "processed": true,
-        "title": "Chef",
-        "company": "DO'S KAHVILA OY, Helsinki",
-        "job_category": "food-and-restaurant",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:babu.vietkitchen@outlook.com?subject=Application%20for%20the%20Job%20-%20Chef&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chef.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b439d1e6-b54f-4ebf-840f-ed6215d36f25/en",
-        "job_employer_email": "babu.vietkitchen@outlook.com",
-        "job_employer_name": "Tien Hao Pham",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-helsinki-ade54db1",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-07",
-        "scraped_at": "2026-04-07 10:00:04",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "\"Join our vibrant kitchen team at DO'S KAHVILA OY in Helsinki as a Chef! Prepare Authentic Vietnamese dishes, develop new recipes, and ensure high-quality...",
-        "description": "We are looking for a passionate and skilled Vietnamese chef to join our team! As a Chef, you will be responsible for preparing authentic Vietnamese dishes such as pho soup, wok dishes, and sauces. You will also participate in the development of new recipes using seasonal ingredients and ensure that all portions meet the highest quality and hygiene standards. Working closely with other kitchen staff and guiding less experienced employees is essential, along with excellent communication skills and team collaboration abilities. Previous experience in Vietnamese cuisine or a similar culture is required. We offer competitive hourly wages based on Finnish collective agreements, as well as an adaptable work environment that values teamwork and creativity. Flexible working hours allow for a balance between work and free time. If you are passionate about Vietnamese cuisine, skilled in food preparation, and committed to quality standards, we encourage you to apply!",
-        "what_we_expect": [
-          "Previous experience of Vietnamese cuisine or a similar culture is essential.",
-          "The employee must have good communication skills and the ability to work effectively in a team.",
-          "We are looking for a passionate and skilled Vietnamese chef to join our team!"
-        ],
-        "job_responsibilities": [
-          "Food preparation: Prepare authentic Vietnamese dishes such as pho soup, wok dishes and sauces.",
-          "Menu development: Participate in the development of new recipes and the utilization of seasonal ingredients.",
-          "Quality control: Ensure that all portions meet the highest quality and hygiene standards."
-        ],
-        "what_we_offer": [
-          "Salary in line with TES",
-          "Opportunity to develop your own skills",
-          "We are looking for a passionate and skilled Vietnamese chef to join our team!"
-        ],
-        "search_keywords": "Chef, Vietnamese cuisine, food preparation, menu development, quality control, previous experience, communication skills, teamwork, salary, opportunity",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
-      },
-      {
-        "id": "312c00c9",
-        "job_id": "excavator-operator-lappeenranta-lappeenranta-312c00c9",
-        "processed": true,
-        "title": "Excavator operator, Lappeenranta",
-        "company": "VISIO Henkilöstöratkaisut Kaakko Oy",
-        "job_category": "manufacturing-and-production",
-        "jobLocation": [
-          "Lappeenranta"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://visiohr.likeit.fi/apply/53107597",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3f3e0346-3a43-4d07-babd-549f70f7399a/en",
-        "job_employer_email": "sami.klemi@visiohr.fi",
-        "job_employer_name": "Sami Klemi",
-        "job_employer_phone_no": "0408218840",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/manufacturing-and-production/excavator-operator-lappeenranta-lappeenranta-312c00c9",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 10:00:04",
-        "open_positions": 1,
-        "salary_range": "Salary at work is based on previous competence",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Excavator Operator Wanted in Lappeenranta! Join VISIO Henkilöstöratkaisut Kaakko Oy. Competitive hourly wage, 3D skills required, and valid occupational card...",
-        "description": "We are looking for an experienced excavator driver to join our customer company in Lappeenranta. This role involves working on various construction projects across the city, including street construction, municipal engineering, building foundations, and yard maintenance. The job will begin when weather conditions permit, with estimated start dates from April/May onwards until the end of the season. Our competitive hourly wage is based on previous competence and professional skills gained through experience. To apply for this position, you must have: - Experience in a similar job - Experience operating both tracked and wheeled excavators - Proficiency in 3D skills - A valid occupational card (work safety and road safety card) - Excellent Finnish language skills Vision's employee promise is at the heart of our commitment to providing fair employment opportunities. We ensure that your salary is commensurate with your skills, and we offer round-the-clock support for work matters. We are looking for a skilled worker who can contribute positively to our team. If you share our vision of making a meaningful impact in construction projects, please apply via the attached link or send an email to Sami Klemi at visiohr.fi with the subject \"Job wanted.\"",
-        "what_we_expect": [
-          "Similar job experience",
-          "Tracked and wheeled excavators experience",
-          "3D skills",
-          "Valid professional cards (work safety and road safety card)",
-          "Good Finnish language skills"
-        ],
-        "job_responsibilities": [
-          "Street construction",
-          "Municipal engineering",
-          "Building foundations",
-          "Making yards"
-        ],
-        "what_we_offer": [
-          "Salary determined by skills",
-          "Salary payment twice a month",
-          "Suitable work equipment for each job",
-          "Round-the-clock support in work matters"
-        ],
-        "search_keywords": "excavator operator, Lappeenranta, street construction, municipal engineering, building foundations, making yards, similar job experience, tracked and wheeled excavators experience, 3D skills, valid professional cards (work safety and road safety card), good Finnish language skills",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/manufacturing-and-production/24.png"
-      },
-      {
-        "id": "51b2ce23",
-        "job_id": "hvac-insulator-for-modular-construction-hämeenlinna-hattula-51b2ce23",
-        "processed": true,
-        "title": "HVAC insulator for modular construction, Hämeenlinna",
-        "company": "VISIO Henkilöstöratkaisut Pirkanmaa Oy",
-        "job_category": "construction-and-trades",
-        "jobLocation": [
-          "Hattula",
-          "Hämeenlinna",
-          "Hausjärvi"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://visiohr.likeit.fi/apply/55903532",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/84800226-2f65-4b0a-98ea-d12b2dd751e9/en",
-        "job_employer_email": "wilma.niskanen@visiohr.fi",
-        "job_employer_name": "Wilma Niskanen",
-        "job_employer_phone_no": "050 391 3188",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/construction-and-trades/hvac-insulator-for-modular-construction-hämeenlinna-hattula-51b2ce23",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-18",
-        "scraped_at": "2026-04-07 10:00:04",
-        "open_positions": 1,
-        "salary_range": "20€/h",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "HVAC Insulator Needed in Hämeenlinna: Join our modular construction factory! A long-term employment opportunity starting April 2023. Key requirements include",
-        "description": "We are looking for a competent HVAC insulator to join our modular construction factory in Hämeenlinna. This role will involve insulation work for HVAC systems during the project's several-month duration starting in April. A long-term employment relationship is available for an experienced professional who can make things go smoothly and communicate effectively with other installers and the construction team. Key requirements include a valid work safety card, Finnish language skills, and good work ethic. Vision’s employee promise includes competitive pay based on skills, long-term employment, salary payment twice a month, suitable work equipment, and daily support in work matters. If you have three years of experience in insulation work, are committed to your job, can communicate effectively, and enjoy working independently, this position could be perfect for you. Vision’s personnel solutions offer domestic personnel services with the goal of finding jobs that match employees' visions and help employers find the right people for open positions.",
-        "what_we_expect": [
-          "At least three years of experience in insulation work",
-          "Valid work safety card",
-          "Finnish language skills",
-          "Good work ethic, independent and responsible for own work footprint",
-          "Reliable employee trust as an employer"
-        ],
-        "job_responsibilities": [
-          "Insulation work for HVAC systems in factory conditions as part of modular construction",
-          "Installation of necessary protective surfaces for insulation tasks",
-          "Wilma gives more information about the tasks on weekdays from 9 am to 3 pm wilma.niskanen@visiohr.fi, 050 391 3188."
-        ],
-        "what_we_offer": [
-          "Pay 17€-20€/h commensurate with skills",
-          "Long-term employment",
-          "Salary payment twice a month",
-          "Work equipment suitable for each job",
-          "Daily support in work matters"
-        ],
-        "search_keywords": "HVAC insulator, modular construction factory, Hämeenlinna, experience, safety card, language skills, reliability, vision, salary, employment, trust, cooperation, personnel services company",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
-      },
-      {
-        "id": "5b57cea1",
-        "job_id": "stone-worker-lappeenranta-lappeenranta-5b57cea1",
-        "processed": true,
-        "title": "Stone worker, Lappeenranta",
-        "company": "VISIO Henkilöstöratkaisut Kaakko Oy",
-        "job_category": "manufacturing-and-production",
-        "jobLocation": [
-          "Lappeenranta"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://visiohr.likeit.fi/apply/53111749",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/188b7c71-9463-4ee7-8ac1-007f2a964a18/en",
-        "job_employer_email": "sami.klemi@visiohr.fi",
-        "job_employer_name": "Sami Klemi",
-        "job_employer_phone_no": "0408218840",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/manufacturing-and-production/stone-worker-lappeenranta-lappeenranta-5b57cea1",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 10:00:04",
-        "open_positions": 1,
-        "salary_range": "Salary at work is based on previous competence",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "\"Stone worker opportunity in Lappeenranta! Join our team during spring for yard construction projects. Competitive hourly wage, valid occupational cards...",
-        "description": "We are looking for a stone worker in Lappeenranta to join our team during the spring season! This role involves various stone and foundation works for yard construction projects across the area. The works will commence once weather conditions permit and run until autumn. Our competitive hourly wage is based on previous competence and professional skills gained through experience. To apply, you must have: - Experience in a similar job - Ability to read yard plans and master interest rates - Valid occupational cards (work safety and road safety card) - Proficient Finnish language skills - the management language is Finnish - High work ethic, independent, responsible for your own work footprint In this role, you will be involved in stone cutting and other related tasks. We offer a salary determined by skill levels, payment twice monthly, suitable equipment for each job, round-the-clock support, and an employee promise to enhance the employment experience. Vision Personnel Solutions is committed to supporting both professional development and career growth. If you're interested in this position or any others within our network, please submit your application via the attached link. We encourage a fair process where applications are considered only through the system provided. For more detailed information about the role, feel free to contact us at Sami Klemi/ Sami.Klemi(at",
-        "what_we_expect": [
-          "Experience in a similar job",
-          "Read yard plans and master the world of interest rates",
-          "Valid professional cards (work safety and road safety card)",
-          "Good Finnish language skills - the management language is Finnish",
-          "High work ethic"
-        ],
-        "job_responsibilities": [
-          "Stone and foundation work for yard construction",
-          "Street paving, curb stones, cobblestones, concrete stones, etc."
-        ],
-        "what_we_offer": [
-          "Salary determined by your skills",
-          "Salary payment twice a month",
-          "Suitable work equipment for each job",
-          "Round-the-clock support in work matters"
-        ],
-        "search_keywords": "stone worker, Lappeenranta, yard construction, stone and foundation work, street paving, curb stones, cobblestones, concrete stones, interest rates, Finnish language skills, work safety card, road safety card, job application, employment contract, equipment, salary, support",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/manufacturing-and-production/11.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-07 10:00:05",
-    "jobs": [
-      {
-        "id": "1ffb7a52",
-        "job_id": "receptionist-for-the-night-shift-rovaniemi-rovaniemi-1ffb7a52",
-        "processed": true,
-        "title": "Receptionist for the night shift, Rovaniemi",
-        "company": "YES Your Excellent Staff Oy",
-        "job_category": "hospitality-and-tourism",
-        "jobLocation": [
-          "Rovaniemi"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://ats.talentadore.com/apply/vastaanottovirkailija-yovuoroon-rovaniemi/Z0znrA",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/27651f8c-b487-4949-8d21-670c87a0f632/en",
-        "job_employer_email": "aino@yeshr.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/receptionist-for-the-night-shift-rovaniemi-rovaniemi-1ffb7a52",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-11",
-        "scraped_at": "2026-04-07 10:00:05",
-        "open_positions": 1,
-        "salary_range": "salary according to the collective agreement fo",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish",
-          "English",
-          "Swedish"
-        ],
-        "meta_description": "\"Join YES Your Excellent Staff Oy as a Receptionist for the night shift in Rovaniemi! Ideal for developing customer service skills and organizational abilities.",
-        "description": "At YES Your Excellent Staff Oy, we are seeking a service-minded and responsible receptionist to join our team for the night shift at Rovaniemi! Ideal candidates will enjoy independent work while providing exceptional customer experiences. Duties include managing hotel receptions, handling check-ins and outs, processing payments, and offering prompt customer service across various scenarios. Night shifts require attention to detail and a proactive approach, as well as assistance with arranging accommodation. This position offers permanent employment in a fast-paced seasonal environment, perfect for developing customer service and organizational skills. The minimum salary is €13.9115/h according to collective agreements, but we are open to discussing your desired compensation. Join us today and start your new career at YES!",
-        "what_we_expect": [
-          "Flexible and customer service-oriented attitude",
-          "Good interaction skills and problem solving ability",
-          "Ability to work independently and responsibly",
-          "Willingness to work night shifts",
-          "Fluent Finnish and English language skills, other language skills are considered an advantage"
-        ],
-        "job_responsibilities": [
-          "Managing the hotel's reception at night",
-          "Checking in and out of customers",
-          "Processing payment transactions",
-          "Customer service in various situations"
-        ],
-        "what_we_offer": [
-          "Versatile and responsible work in the hotel industry",
-          "Permanent employment in a fast-paced seasonal environment",
-          "The opportunity to develop your customer service and organizational skills",
-          "At least the salary according to the collective agreement for tourism, restaurant and leisure services is €13.9115/h, but we are happy to hear your salary wishes"
-        ],
-        "search_keywords": "night shift, hotel receptionist, Rovaniemi, customer service, independent work, problem solving, language skills, night shifts, job search, hospitality industry",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
-      },
-      {
-        "id": "a5b93753",
-        "job_id": "counterweight-forklift-operator-helsinki-a5b93753",
-        "processed": true,
-        "title": "Counterweight forklift operator",
-        "company": "SOL Logistiikkapalvelut Oy",
-        "job_category": "logistics-and-transportation",
-        "jobLocation": [
-          "Helsinki",
-          "Vantaa"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://ats.talentadore.com/apply/vastapainotrukinkuljettaja/Zy1Lwe",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/23f9f65b-b7f4-489c-8ac6-753bae44a282/en",
-        "job_employer_email": "no-reply.rekry@sol.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "020 570 0700",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/logistics-and-transportation/counterweight-forklift-operator-helsinki-a5b93753",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-09",
-        "scraped_at": "2026-04-07 10:00:05",
-        "open_positions": 1,
-        "salary_range": "The work is done in two shifts, in the morning and in the evening. Overtime is available depending on the situation during the season for those who want it. Work shifts are from 6 a.m. to 2 p.m. and from 2 p.m. to 10 p.m. Salary is according to the trade industry collective agreement (salary group B2: warehouse worker €13.33/h - €15.26/h). The work starts during March and the employment relationship is temporary until the end of October, after which an extension contract or the stabilization of the employment relationship is possible.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Temporary",
-        "language_requirements": [
-          "Finnish",
-          "English",
-          "Swedish"
-        ],
-        "meta_description": "Counterweight forklift operator in Helsinki, Vantaa at SOL Logistiikkapalvelut Oy. We are seeking a Counterweight Forklift Operator at SOL",
-        "description": "We are seeking a Counterweight Forklift Operator at SOL Logistiikkapalvelut Oy in Helsinki, Vantaa. This role involves operating a forklift to pick up and transport various building materials from an outdoor warehouse. The position offers flexible working hours, including two shifts per day, with the ability to work overtime during peak seasons. A brisk attitude, willingness to work shifts, fluency in Finnish, English, and Swedish, and previous experience using a counterbalance forklift are required. The salary is based on trade industry collective agreement (B2: €13.33/h - €15.26/h), with employment starting in March and ending in October. We offer an Epassi exercise and massage benefit after six months, as well as a supportive work environment that values ​​self-initiative, responsibility, punctuality, competence, professionalism, and diversity.",
-        "what_we_expect": [
-          "Brisk attitude to work in variable weather conditions",
-          "Fluent Finnish language skills",
-          "Certainty",
-          "Willingness to work shifts"
-        ],
-        "job_responsibilities": [
-          "Picking in an outdoor warehouse using a counterweight forklift",
-          "Collection of building materials (long and short lumber, insulation bales, metal pipes, ingots)",
-          "Work primarily at the controls of a forklift"
-        ],
-        "what_we_offer": [
-          "Epassi exercise and massage benefit after 6 months",
-          "Salary according to the trade industry collective agreement (salary group B2: warehouse worker €13.33/h - €15.26/h)",
-          "We expect the following things from the applicant"
-        ],
-        "search_keywords": "counterweight forklift, outdoor warehouse, building materials, variable weather conditions",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
-      },
-      {
-        "id": "a9f68080",
-        "job_id": "technical-assembler-saxdor-yachts-oy-larsmo-bosund-kruunupyy-a9f68080",
-        "processed": true,
-        "title": "Technical assembler - Saxdor Yachts Oy, Larsmo, Bosund",
-        "company": "Bolt.Works Oy",
-        "job_category": "manufacturing-and-production",
-        "jobLocation": [
-          "Kruunupyy",
-          "Uusikaarlepyy",
-          "Pietarsaari",
-          "Kaustinen",
-          "Pedersöre",
-          "Kannus",
-          "Veteli",
-          "Kokkola"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://q.bolt.works/application.html?advertId=1887388",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ec698dab-8861-403d-bfc6-66bdb5db7849/en",
-        "job_employer_email": "marko.potila@bolt.works",
-        "job_employer_name": "Marko Potila",
-        "job_employer_phone_no": "+358504713842",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/manufacturing-and-production/technical-assembler-saxdor-yachts-oy-larsmo-bosund-kruunupyy-a9f68080",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-05-31",
-        "scraped_at": "2026-04-07 10:00:05",
-        "open_positions": 1,
-        "salary_range": "salary commensurate with the task, your work ex",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Saxdor Yachts Oy seeks technical assemblers for production facilities in Larsmo, Finland. Ideal candidates have previous experience, read technical drawings...",
-        "description": "Saxdor Yachts Oy is seeking technical assemblers for its production facilities in Larsmo, Finland. This role involves assembling boat hulls, decks, and other structures while following detailed drawings and work instructions. The ideal candidate should have previous experience in technical assembly or industrial production, be able to read and follow technical drawings, exhibit accuracy, care, and a responsible approach to work, and possess teamwork and cooperation skills. Physical endurance is also essential for this role. Saxdor Yachts offers a comprehensive introduction to work tasks, modern facilities, professional support, competitive pay based on the customer's terms of engagement, opportunities for career development, occupational health services at Terveystalo, help with language and employment skills, and an easy application process through Bolt.Works. The company also provides excellent working conditions and a fair employer atmosphere. Apply quickly to join this dynamic team in Larsmo, Finland.",
-        "what_we_expect": [
-          "Previous experience in technical assembly, preferably in boat or industrial production",
-          "Ability to read and follow technical drawings and work instructions",
-          "Accuracy, care and responsible approach to work",
-          "Teamwork and cooperation skills",
-          "Physical endurance and a desire to do manual work"
-        ],
-        "job_responsibilities": [
-          "Assembly of boat hulls, decks and other structures",
-          "Installing the components according to the drawings and work instructions",
-          "Connecting composite and metal parts to each other",
-          "Basic installations of electrical and mechanical systems in cooperation with the electrical and motor team",
-          "Installation of boat engines and transmission systems",
-          "Making wiring and connections to motor systems"
-        ],
-        "what_we_offer": [
-          "A comprehensive introduction to work tasks and a modern work environment",
-          "The support of a team of professionals and the opportunity to develop into a top expert in the field",
-          "Pay according to the customer's TES",
-          "The possibility of a bonus for a job well done",
-          "Occupational health services at Terveystalo right from the first day of work",
-          "Help with professional and language skills and advice on employment matters"
-        ],
-        "search_keywords": "technical assembler Saxdor Yachts Oy Larsmo Bosund",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/manufacturing-and-production/10.png"
-      },
-      {
-        "id": "cce6e4e2",
-        "job_id": "städarelokalvårdare-fint-på-åland-ab-mariehamn-maarianhamina-cce6e4e2",
-        "processed": true,
-        "title": "Städare/Lokalvårdare, Fint på Åland Ab, Mariehamn",
-        "company": "Fint på Åland Ab, Maarianhamina",
-        "job_category": "business-and-finance",
-        "jobLocation": [
-          "Maarianhamina"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:katarina@fint.ax?subject=Application%20for%20the%20Job%20-%20St%C3%A4dare/Lokalv%C3%A5rdare%2C%20Fint%20p%C3%A5%20%C3%85land%20Ab%2C%20Mariehamn&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20St%C3%A4dare/Lokalv%C3%A5rdare%2C%20Fint%20p%C3%A5%20%C3%85land%20Ab%2C%20Mariehamn.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9032971-dec2-4081-964f-a64c6c6d4a08/en",
-        "job_employer_email": "katarina@fint.ax",
-        "job_employer_name": "",
-        "job_employer_phone_no": "+3584573424406",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-finance/städarelokalvårdare-fint-på-åland-ab-mariehamn-maarianhamina-cce6e4e2",
-        "date_posted": "2026-04-07",
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Reach%20driver%20to%20Lappeenranta%20Summer%20job&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Reach%20driver%20to%20Lappeenranta%20Summer%20job.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b70d0b52-4aab-4878-9a3f-49787436037b/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "Marko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/reach-driver-to-lappeenranta-summer-job-lappeenranta-ebbb3e89",
+        "date_posted": "2026-04-10",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-07 10:00:05",
+        "scraped_at": "2026-04-10 23:42:07",
         "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "salary_range": "Salary group III of the forest machinery collective agreement",
         "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Swedish"
-        ],
-        "meta_description": "Städare/Lokalvårdare, Fint på Åland Ab, Mariehamn in Maarianhamina at Fint på Åland Ab, Maarianhamina. We are looking for a responsible and efficient local...",
-        "description": "We are looking for a responsible and efficient local caretaker to join our team in Mariehamn! We have an immediate opening for full-time employment. Our ideal candidate possesses excellent organizational skills, work experience, and a strong sense of duty. They must be able to handle chemical cleaners, clean the toilets, maintain cleaning equipment, and perform outdoor tasks. Our benefits include quality, trust, and knowledge-driven operations. If you're interested in working with a small business that values engagement and motivation, send your application today to Katarina at info@fint.ax. The job involves 24/7 duties, including weekends and evenings. Fint på Åland is a growing company founded in 2011 with operations in Mariehamn.",
-        "what_we_expect": [
-          "Maintains stocks of cleaning supplies",
-          "Remove dust",
-          "Clean up",
-          "Handle chemical cleaners",
-          "Clean the toilets",
-          "Maintain cleaning equipment"
-        ],
-        "job_responsibilities": [
-          "Ward nurse",
-          "A house Cleaner",
-          "Städare/Lokalvårdare, Fint på Åland Ab, Mariehamn Är du ansvarsfull och sälvgände då har vi jobt för dig!"
-        ],
-        "what_we_offer": [
-          "Städare/Lokalvårdare, Fint på Åland Ab, Mariehamn Är du ansvarsfull och sälvgände då har vi jobt för dig!",
-          "De Aktuelle tjärtnerna galer hemstädning och företagesstädning.",
-          "Vi söker personer för heltidstjänst.",
-          "För att passa in hos oss ser vi att du är zikkeit och effikkeit, har arbetslivserfarenhet och god sämpätsögää.",
-          "Körkort är ett mueste.",
-          "Inskolning och utbildning sker på plats av vår utbildningsledare och later av vår fina team på fältet."
-        ],
-        "search_keywords": "stadare lokalvårdare fint på Åland Ab Mariehamn",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
-      },
-      {
-        "id": "a53fd679",
-        "job_id": "chefrestaurant-worker-kuopio-a53fd679",
-        "processed": true,
-        "title": "Chef/restaurant worker",
-        "company": "Veskun Grilli Oy, Kuopio",
-        "job_category": "food-and-restaurant",
-        "jobLocation": [
-          "Kuopio"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:veskungrilli@luukku.com?subject=Application%20for%20the%20Job%20-%20Chef/restaurant%20worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chef/restaurant%20worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1e54b1fc-2f87-4206-b656-6126a2effde5/en",
-        "job_employer_email": "veskungrilli@luukku.com",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chefrestaurant-worker-kuopio-a53fd679",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-05-18",
-        "scraped_at": "2026-04-07 10:00:05",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Veskun Grilli Oy in Kuopio is seeking a versatile chef/restaurant worker with experience in lunch preparation, pizza, and burger departments. Apply now at www.",
-        "description": "Veskun Grilli Oy is seeking an experienced chef/restaurant worker for their busy establishment in Kuopio. This versatile position offers the opportunity to work independently during long sick leave or secure permanent employment after that period. The ideal candidate should have experience in lunch preparation, pizza, and burger departments. Located in the heart of Maaninga, Veskun Grilli specializes in a variety of grilled dishes, burgers, and pizzas served both on weekdays and for catering services. With an emphasis on food quality and cleanliness, this position requires attention to detail and the ability to manage operations effectively. Email veskungrilli@luukku.com for more information or apply directly at www.veskun-grilli.fi.",
-        "what_we_expect": [
-          "Work independently during a long sick leave",
-          "Possibility of permanent employment after the sick leave",
-          "Chef/restaurant worker We are looking for an expert in versatile restaurant work."
-        ],
-        "job_responsibilities": [
-          "Prepare lunch",
-          "Make burgers",
-          "Make pizza and various events"
-        ],
-        "what_we_offer": [
-          "Experience in lunch preparation or pizza/burger department",
-          "Operating a restaurant in the center of Maaninga",
-          "Chef/restaurant worker We are looking for an expert in versatile restaurant work."
-        ],
-        "search_keywords": "chef, restaurant worker, versatile work, long sick leave, permanent employment, lunch preparation, pizza and burger department, Veskun kievari, Luukku.com",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-07 10:00:06",
-    "jobs": [
-      {
-        "id": "5575b3ec",
-        "job_id": "programmer-of-laser-cutting-machines-nestaaja-in-vaasa-vaasa-5575b3ec",
-        "processed": true,
-        "title": "Programmer of laser cutting machines (Nestaaja) in Vaasa",
-        "company": "Agentor Oy, Vaasa",
-        "job_category": "it-and-tech",
-        "jobLocation": [
-          "Vaasa"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://career.agentor.fi/jobs/7399650-laserleikkauskoneiden-ohjelmoija-nestaaja-vaasaan",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5a892e3c-f76b-4e9e-a2cd-a5fbac3d74ed/en",
-        "job_employer_email": "hanna.koskela@agentor.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/it-and-tech/programmer-of-laser-cutting-machines-nestaaja-in-vaasa-vaasa-5575b3ec",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-19",
-        "scraped_at": "2026-04-07 10:00:06",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Programmer of laser cutting machines (Nestaaja) in Vaasa in Vaasa at Agentor Oy, Vaasa. We are seeking a developer with experience in programming sheet metal...",
-        "description": "We are seeking a developer with experience in programming sheet metal processing centers, laser cutting machines, and demolition robots for our client in Vaasa. This role requires proficiency in Finnish language skills and English (considered an advantage). The ideal candidate should have knowledge of Trutops, JetCam, and NC-Express nesting software, as well as the ability to interpret technical documents and drawings. Self-motivated, organized, and ready for shift work, they will ensure smooth production and efficient material use. We offer versatile and responsible work, opportunities to develop with the latest technologies, and support from a participating team along with good tools. Interested? Apply today or by April 19, 2026 at the latest. Interviews start during the application period and the position is filled as soon as a suitable person is found.",
-        "what_we_expect": [
-          "Good Finnish language skills, English language skills are considered a strong advantage.",
-          "Experience in similar tasks and the ability to interpret technical documents and drawings.",
-          "Use of Trutops, JetCam and NC-Express nesting software",
-          "Self-initiative, organization and readiness for shift work"
-        ],
-        "job_responsibilities": [
-          "Programming sheet metal processing centers, laser cutting machines and a demolition robot",
-          "Ensure smooth production and efficient use of materials",
-          "Experience in similar tasks and the ability to interpret technical documents and drawings."
-        ],
-        "what_we_offer": [
-          "Versatile and responsible work",
-          "The opportunity to develop with the latest technologies",
-          "The support of the participating team and good work tools"
-        ],
-        "search_keywords": "developer programmer laser cutting machines Nestaaja Vaasa Finnish language skills English language skills experience similar tasks technical documents drawings shift work Trutops JetCam NC-Express nesting software versatile responsible development latest technologies support participating team good work tools",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/it-and-tech/27.png"
-      },
-      {
-        "id": "c4e81edf",
-        "job_id": "herdsman-karvia-c4e81edf",
-        "processed": true,
-        "title": "Herdsman",
-        "company": "Henkilöstöpalvelut Duuri-tiimi Oy",
-        "job_category": "agriculture-and-environment",
-        "jobLocation": [
-          "Karvia"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://duuritiimi.likeit.fi/apply/4100879",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7eb2d921-5b60-4493-8534-f599e2f2e667/en",
-        "job_employer_email": "konttori@duuritiimi.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/agriculture-and-environment/herdsman-karvia-c4e81edf",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-07 10:00:06",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Temporary",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "\"Join Duuri-tiimi Oy's cattle farm as a Herdsman from June to December! Full-time hours, potential extension opportunities, and competitive salaries await.",
-        "description": "We are seeking a skilled animal caretaker for our cattle farm in Karvia. This temporary position offers full-time hours from June to December with potential extension opportunities. The role involves caring for calves, monitoring daily well-being, observing health status, and contributing to general agricultural tasks on the livestock side. We expect candidates to have completed agricultural animal care training, previous experience working on a cattle farm, and the ability to work independently and responsibly. Our team offers temporary employment from June to December with potential extension options, full working hours, and competitive salaries based on TES for rural businesses, ranging from €11.54/h to negotiable depending on skills and experience. You'll have the opportunity to learn more about our client, Duuri team, and personnel benefits during an interview. Apply now with a low threshold; no need to fill in all sections of the application form. The Duuri team is highly recommended by 9.49/10 anonymous personnel survey participants. Founded on the idea that temporary work companies could offer such satisfaction as direct employment relationships, we've grown rapidly and are now involved in manager-level positions and various fields across Finland. Our model allows customers to receive both gig and permanent work through invoicing, ensuring a simple and practical approach to recruitment and working relationships. Join",
-        "what_we_expect": [
-          "Agricultural animal care training",
-          "Previous experience working on a cattle farm",
-          "Ability to work independently and responsibly"
-        ],
-        "job_responsibilities": [
-          "Care of calves",
-          "Animal feeding and daily well-being monitoring",
-          "Observing the health status of animals and identifying diseases"
-        ],
-        "what_we_offer": [
-          "Temporary work for June-December, possibility of extension",
-          "Full working hours",
-          "Salary according to the TES for rural businesses, at least €11.54/h, negotiable based on skills and experience"
-        ],
-        "search_keywords": "Herdsman Personnel Services Duuri-tiimi Oy Karvia agriculture-and-environment",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
-      },
-      {
-        "id": "d39850a0",
-        "job_id": "department-secretary-juva-d39850a0",
-        "processed": true,
-        "title": "Department Secretary",
-        "company": "Etelä-Savon hyvinvointialue",
-        "job_category": "healthcare-and-social-care",
-        "jobLocation": [
-          "Juva"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/713469/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dbbf2f5d-ff50-4b3e-bef3-3c60ace62366/en",
-        "job_employer_email": "sari.laurell@etelasavonha.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare-and-social-care/department-secretary-juva-d39850a0",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-22",
-        "scraped_at": "2026-04-07 10:00:06",
-        "open_positions": 1,
-        "salary_range": "2768,45€/kk",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Etelä-Savon hyvinvointialue Juva seeks a department secretary for June-August health center appointments, customer service, and document management. Benefits...",
-        "description": "Etelä-Savo welfare area Eloisa is seeking a department secretary to replace the summer Vacations at Juva health center from June 1st to August 9th. The role involves appointment booking, customer service, and management of patient documents. With benefits for employment exceeding six months, employees can enjoy exercise, culture, and well-being. A basic social and health care degree or equivalent is required, along with a suitable secondary professional degree or an equivalent previous degree. Previous experience in a social and healthcare secretary position is preferred. Strong oral and written Finnish language skills are essential for the job. The position requires vaccination coverage as per Section 48 of the Infectious Diseases Act and a medical report on respiratory tuberculosis under Section 55. A probationary period applies, and applications must be submitted through Kuntarekry by the end of the application period.",
-        "what_we_expect": [
-          "Basic social and health care degree suitable for the position, a suitable secondary professional degree or an equivalent previous degree",
-          "Sufficient oral and written Finnish language skills",
-          "The task of the department secretary includes e.g."
-        ],
-        "job_responsibilities": [
-          "Appointment booking and customer service at the service hatch and by phone",
-          "Management of patient documents",
-          "The task of the department secretary includes e.g."
-        ],
-        "what_we_offer": [
-          "Exercise, culture and well-being benefits",
-          "Probationary period in service relationship",
-          "The task of the department secretary includes e.g."
-        ],
-        "search_keywords": "department secretary health center Juva welfare area Eloisa job vacancies",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
-      },
-      {
-        "id": "25b38366",
-        "job_id": "qlik-specialist-vantaa-25b38366",
-        "processed": true,
-        "title": "Qlik Specialist",
-        "company": "K-ryhmä",
-        "job_category": "business-and-finance",
-        "jobLocation": [
-          "Vantaa"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://emp.jobylon.com/applications/jobs/352349/create/?utm_source=molfi&utm_medium=promotionserializer",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f1917c57-e71c-46e0-9588-6e716964f43a/en",
-        "job_employer_email": "jere.nasman@kesko.fi",
-        "job_employer_name": "Jere Näsman",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-finance/qlik-specialist-vantaa-25b38366",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-20",
-        "scraped_at": "2026-04-07 10:00:06",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "\"Join K-ryhmä in Vantaa as a Qlik Specialist for data platforms & technology. Design scalable BI solutions, collaborate with teams, and grow within an...",
-        "description": "K-ryhmä is seeking a Qlik Specialist with expertise in data platforms and technology to join their dynamic team in Vantaa. This role involves designing and developing scalable BI solutions, collaborating with various teams, and contributing to the growth of an energetic and supportive work environment. The position offers competitive hourly wages based on Finnish collective agreements and extensive employee benefits including a modern work toolset, shopping benefits, occupational health care services, and leisure time accident insurance. For more information or to apply, contact Jere Näsman at (best time to reach: phone/email).",
-        "what_we_expect": [
-          "1-2 years experience in designing and developing Qlik Sense applications",
-          "Experience in modern data technologies",
-          "Experience creating data models in Qlik Sense",
-          "Troubleshooting Qlik solutions e.g., data Reload Scripts",
-          "Good communication and collaboration skills"
-        ],
-        "job_responsibilities": [
-          "Participating in the actual design and development work for creating scalable and robust BI solutions, ensuring daily reporting is working as planned.",
-          "Focusing on car trade but working closely with various other development teams, business stakeholders, and IT partners.",
-          "We also hope you possess"
-        ],
-        "what_we_offer": [
-          "Modern work tools and numerous opportunities for professional development and career growth",
-          "Extensive employee benefits unique to the K group, including Culture & sport benefit (ePassi), shopping benefits in K Group stores and staff shops, own Occupational health care services, and leisure time accident insurance",
-          "We also hope you possess"
-        ],
-        "search_keywords": "Qlik Specialist, Data Platforms & Technology, K Group",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
-      },
-      {
-        "id": "6d4a400d",
-        "job_id": "machine-rental-employee-seinäjoki-6d4a400d",
-        "processed": true,
-        "title": "Machine Rental Employee",
-        "company": "Bolt.Works Oy",
-        "job_category": "construction-and-trades",
-        "jobLocation": [
-          "Seinäjoki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://q.bolt.works/application.html?advertId=1895449",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/509c7ace-89c8-4655-95dd-e225c9f43df1/en",
-        "job_employer_email": "maria.lehtinen@bolt.works",
-        "job_employer_name": "Maria Lehtinen",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/construction-and-trades/machine-rental-employee-seinäjoki-6d4a400d",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-12",
-        "scraped_at": "2026-04-07 10:00:06",
-        "open_positions": 1,
-        "salary_range": "salary commensurate with the task, your work ex",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Machine rental employee for Seinäjoki, Seinäjoki in Seinäjoki at Bolt.Works Oy. Bolt.Works Oy is seeking a versatile MACHINE RENTAL WORKER for their",
-        "description": "Bolt.Works Oy is seeking a versatile MACHINE RENTAL WORKER for their Seinäjoki construction machinery rental company. This role involves receiving, inspecting, cleaning, shelving, and maintaining rental equipment, as well as assisting with order management in the warehouse. The position offers opportunities to learn sales techniques and customer service skills while providing a comfortable work environment. Previous experience is preferred but not required. A flexible schedule from 7:00 am to 6:30 pm weekdays applies. Interested candidates should demonstrate initiative, knowledge of construction equipment, excellent customer service, basic IT skills, and previous rental or repair experience. The company offers a practical job description, continuous learning opportunities, a relaxed work community, potential for long-term employment, and the chance to continue working during the summer months. Apply now for immediate consideration!",
-        "what_we_expect": [
-          "Brisk and self-initiated approach to work",
-          "Interest in technology or equipment in the construction industry",
-          "Customer service spirit",
-          "Basic IT skills",
-          "Previous experience in similar tasks and technical know-how are considered an advantage"
-        ],
-        "job_responsibilities": [
-          "Receiving the rental equipment, checking its condition, cleaning and shelving, as well as small-scale maintenance and repair work",
-          "Taking care of the general order of the warehouse",
-          "Learning rental sales and guiding customers in the use of machines and equipment"
-        ],
-        "what_we_offer": [
-          "A versatile and practical job description",
-          "The opportunity to learn new things and develop at work",
-          "A nice and relaxed work community",
-          "An opportunity for a longer-term employment relationship for a good worker"
-        ],
-        "search_keywords": "machine rental, construction machinery, Seinäjoki, customer company, versatile tasks, rental sales, general order of the warehouse, technology or equipment in the construction industry, customer service spirit, basic IT skills, previous experience in similar tasks and technical know-how are considered an advantage",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-07 10:00:07",
-    "jobs": [
-      {
-        "id": "2d2bad59",
-        "job_id": "waitress-at-ikaalinen-spa-resort-summer-job-helsinki-2d2bad59",
-        "processed": true,
-        "title": "Waitress at Ikaalinen Spa & Resort, summer job",
-        "company": "Bolt.Works Oy",
-        "job_category": "hospitality-and-tourism",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://q.bolt.works/application.html?advertId=1850325",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c4922d19-9d7b-4fd1-844f-b74a5655dc5e/en",
-        "job_employer_email": "nelli.sonne@bolt.works",
-        "job_employer_name": "Nelli Sonne",
-        "job_employer_phone_no": "+358409218285",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waitress-at-ikaalinen-spa-resort-summer-job-helsinki-2d2bad59",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-05-31",
-        "scraped_at": "2026-04-07 10:00:07",
-        "open_positions": 1,
-        "salary_range": "salary commensurate with the task, your work ex",
-        "workTime": "Part-time",
         "continuityOfWork": "Summer job",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Waitress at Ikaalinen Spa & Resort, summer job, Ikaalinen in Helsinki at Bolt.Works Oy. Bolt.Works Oy is seeking versatile waiters for Ikaalinen Spa & Resort...",
-        "description": "Bolt.Works Oy is seeking versatile waiters for Ikaalinen Spa & Resort during the summer of 2026. This position offers a unique blend of culinary expertise and customer service, with responsibilities including sommelier duties, wine tasting, and bar work. Applicants must be fluent in English and at least 18 years old. The role involves working in various restaurant concepts, ensuring exceptional dining experiences for customers. Benefits include competitive hourly wages based on Finnish collective agreements, flexible hours, and a bonus for excellent performance. The employment relationship is through Bolt.Works Oy, with opportunities to continue gig-like work after the summer season.",
+        "meta_description": "Fin-Terpuu Oy is seeking a Reach Driver for Lappeenranta Summer job, offering full-time work starting in May with €15.42 - €18.02 hourly wage and collective",
+        "description": "We are looking for reach truck drivers with Finnish language proficiency for our Lappeenranta contracting location at the UPM Kaukaa pulp mill area, offering full-time summer work starting in May according to contract terms until August. Duties include versatile forklift driving duties and computer use, as well as warehouse management and time reporting programs. Experience in wood processing and heavy equipment is preferred. The hourly wage is €15.42 - €18.02 depending on years of experience, with a collective agreement-based pay group III. Fin-Terpuu Oy, part of Kajaani's logistics services for the forest industry, offers versatile work opportunities in internal transport and maintenance. Applications are due by April 30, 2026, at marko.hokkanen@fin-terpuu.fi or markku.",
         "what_we_expect": [
-          "Knowledge of wine and know-how in serving.",
-          "Fluent English language skills from the applicant.",
-          "You can visit Ikaalinen Spa's services and restaurant offerings in more detail at https://ikaalinenspa.fi."
+          "Experience and expertise in wood processing and heavy equipment is considered an advantage",
+          "Work security card and at least a B driver's license",
+          "Ability to work as part of a developing team, good team spirit, ability to take on challenges required by the job, and safety attitude"
         ],
         "job_responsibilities": [
-          "Ensure customers get the best possible restaurant experience.",
-          "Organize events such as the Kesäehtoo festival and other outdoor events on the beach.",
-          "You can visit Ikaalinen Spa's services and restaurant offerings in more detail at https://ikaalinenspa.fi."
+          "Versatile duties of a forklift driver in the Lappeenranta factory area",
+          "Machine handling skills, computer use, warehouse management and working time reporting program mastery",
+          "3 shifts 7 days a week or 13 shifts according to the factory schedule"
         ],
         "what_we_offer": [
-          "Competitive salary",
-          "Versatile personnel benefits for restaurant services, accommodations, and Ikaalinen Spa activities",
-          "You can visit Ikaalinen Spa's services and restaurant offerings in more detail at https://ikaalinenspa.fi."
+          "Versatile work with opportunities for skill development in a competent team",
+          "Hourly wage according to collective agreement of the forest machinery industry, pay group III based on years of experience (€15.42 - €18.02)",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
         ],
-        "search_keywords": "Waitress at Ikaalinen Spa & Resort, summer job Bolt.Works Oy Helsinki hospitality-and-tourism",
+        "search_keywords": "reach truck driver Lappeenranta summer job",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
       },
       {
-        "id": "fe452158",
-        "job_id": "cnc-machinist-pori-kankaanpää-fe452158",
+        "id": "3406b3cc",
+        "job_id": "dental-worker-for-a-dental-laboratory-you-do-not-need-previo-mikkeli-3406b3cc",
         "processed": true,
-        "title": "CNC machinist, Pori",
-        "company": "YES Your Excellent Staff Oy",
-        "job_category": "manufacturing-and-production",
+        "title": "Dental worker for a dental laboratory, you do not need previous experience in the field",
+        "company": "Hammas-Apu I Oy, Mikkeli",
+        "job_category": "general-labor-and-manual-work",
         "jobLocation": [
-          "Kankaanpää",
-          "Karvia",
-          "Pori"
+          "Mikkeli"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://ats.talentadore.com/apply/cnc-koneistaja-pori/Zq1y0r",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3813d3e2-61ef-43f1-8576-21206d62707e/en",
-        "job_employer_email": "katriina@yeshr.fi",
-        "job_employer_name": "Lassi Hakola",
+        "jobapply_link": "mailto:kimmo@loppukaarre.fi?subject=Application%20for%20the%20Job%20-%20Dental%20worker%20for%20a%20dental%20laboratory%2C%20you%20do%20not%20need%20previous%20experience%20in%20the%20field&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Dental%20worker%20for%20a%20dental%20laboratory%2C%20you%20do%20not%20need%20previous%20experience%20in%20the%20field.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a50406f1-c505-48fe-808a-cc085d75d334/en",
+        "job_employer_email": "kimmo@loppukaarre.fi",
+        "job_employer_name": "Kimmo Loppukaarre",
         "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/manufacturing-and-production/cnc-machinist-pori-kankaanpää-fe452158",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-19",
-        "scraped_at": "2026-04-07 10:00:07",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/dental-worker-for-a-dental-laboratory-you-do-not-need-previo-mikkeli-3406b3cc",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-17",
+        "scraped_at": "2026-04-10 23:42:07",
         "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
+        "salary_range": "ACCORDING TO THE EMPLOYMENT AGREEMENT FOR THE DENTAL LABORATORY FIELD 28.5.2025 31.1.2028",
+        "workTime": "Part-time",
+        "continuityOfWork": "Temporary",
         "language_requirements": [
-          "English",
           "Finnish"
         ],
-        "meta_description": "CNC machinist, Pori in Kankaanpää, Karvia, Pori at YES Your Excellent Staff Oy. We are looking for reliable CNC machinists with long-term employment",
-        "description": "We are looking for reliable CNC machinists with long-term employment prospects in Pori, Finland. As a CNC machinist, you will be responsible for producing metal components using modern CNC machines. Previous experience in CNC machining and programming is required, as well as proficiency in interpreting technical drawings and maintaining accuracy and teamwork skills. The salary is competitive based on Finnish collective agreements, with the possibility of long-term employment relationships and development opportunities. Interested candidates should apply via the provided application form or contact us at katriina@yeshr.fi for more information.",
+        "meta_description": "Hammas-Apu I Oy, Mikkeli is seeking a Dental worker for a dental laboratory, you do not need previous experience in the field in Mikkeli. We are looking for a",
+        "description": "We are looking for a dental laboratory assistant at Hammas-Apu I Oy in Mikkeli. This part-time position offers training and is suitable for students or those seeking flexible work arrangements. The role involves maintaining facilities, preparing equipment, and assisting in the manual manufacture of dental prostheses using materials like gypsum, light-cured plastics, acrylics, and metals. Tasks can change frequently, so adaptability and a willingness to learn are key. Previous experience is not required, but strong manual skills are preferred. Training will be provided on-site, making it ideal for those with studies or part-time commitments. The employment relationship lasts until the end of 2026, after which the situation will be reviewed again.",
         "what_we_expect": [
-          "Previous experience in CNC machining and programming. Please tell me what software you have used.",
-          "Ability to read and interpret technical drawings.",
-          "Accuracy and care in your work.",
-          "Good teamwork skills and independent work attitude."
+          "Precision",
+          "Diligence",
+          "Initiative",
+          "Pressure tolerance"
         ],
         "job_responsibilities": [
-          "Programming",
-          "Using machines and supervising the manufacturing process",
-          "We expect from you"
+          "Maintenance and preparation of facilities and equipment",
+          "Assisting other employees in the manual manufacture of dental prostheses",
+          "Precision"
         ],
         "what_we_offer": [
-          "The possibility of a long-term employment relationship",
-          "At least your previous work experience, taking into account the salary according to the TES of the technology industry. Salary wishes are also listened to!",
-          "The opportunity to develop your own skills and advance in your career.",
-          "A good working atmosphere and the support of a competent team."
+          "Part-time work at least 20 hours a week, suitable for studies or other work",
+          "Temporary employment relationship until the end of 2026",
+          "Precision"
         ],
-        "search_keywords": "CNC machinist, Pori",
+        "search_keywords": "dental worker dental laboratory manual skills patient work phone calls",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/manufacturing-and-production/29.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       },
       {
-        "id": "9d6871e4",
-        "job_id": "timpuri-jyväskylä-jyväskylä-9d6871e4",
+        "id": "fedc4d16",
+        "job_id": "wire-moped-driver-lappeenranta-summer-job-lappeenranta-fedc4d16",
         "processed": true,
-        "title": "Timpuri, Jyväskylä",
-        "company": "Total Henkilöstöpalvelut Jyväskylä",
-        "job_category": "construction-and-trades",
+        "title": "Wire moped driver Lappeenranta summer job",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "transportation-and-logistics",
         "jobLocation": [
-          "Jyväskylä"
+          "Lappeenranta"
         ],
         "jobRegions": [],
-        "jobapply_link": "http://totalhp.likeit.fi/apply/6662930",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/98baf502-206a-45cc-ac11-adc62254a518/en",
-        "job_employer_email": "marketta@totalhenkilostopalvelut.fi",
-        "job_employer_name": "Marketta Tourunen",
-        "job_employer_phone_no": "040 127 2265",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/construction-and-trades/timpuri-jyväskylä-jyväskylä-9d6871e4",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-20",
-        "scraped_at": "2026-04-07 10:00:07",
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Wire%20moped%20driver%20Lappeenranta%20summer%20job&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Wire%20moped%20driver%20Lappeenranta%20summer%20job.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f830922a-9316-4282-a81e-144598555e59/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "Marko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/wire-moped-driver-lappeenranta-summer-job-lappeenranta-fedc4d16",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-10 23:42:07",
         "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "salary_range": "salary group I in terms of its level of demand,",
         "workTime": "Full-time",
-        "continuityOfWork": "Seasonal work",
+        "continuityOfWork": "Summer job",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Timpuri, Jyväskylä in Jyväskylä at Total Personnel Services Jyväskylä. We are currently seeking a skilled tinkerer in Jyväskylä and nearby municipalities.",
-        "description": "We are currently seeking a skilled tinkerer in Jyväskylä and nearby municipalities. Your tasks will involve various timpuri work such as wall paneling, frame work, coatings, repair, and renovation projects like painting, leveling, and plastering. Tailored to your skills and customer needs, your duties can be expected to vary. Applicants must be of legal age, have previous experience in similar tasks, possess a valid occupational safety card, and ideally hold education in the field. A background in professional pride, high-quality workmanship, commitment to work, independent skills, solid professionalism, ability to visualize schedules, flexibility, initiative, and car use are highly valued. Employees often stay long-term at this company, with seasonal workers returning for future seasons. A positive team spirit is maintained. The start and duration of the work aligns with the agreement. What we expect from applicants? * Professional pride * High-quality workmanship * Commitment to work What do we offer you? * Proper work equipment and tools to perform at work * Opportunities to develop skills in your field, customer training support * Help and support throughout employment relationships How is it going? If you match the description, please submit your application and CV. We will be in touch with you soon. Leave the job search to us",
+        "meta_description": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi is seeking a Wire moped driver Lappeenranta summer job in Lappeenranta. We are looking for a wire moped driver at",
+        "description": "We are looking for a wire moped driver at Fin-Terpuu Oy's Lappeenranta contracting destination, UPM Kaukaa pulp mill area, for full-time summer work starting in May. The position requires mechanical removal of float threads and involves shift work, 2 shifts per day from 5 days a week. Experience and professionalism are valued, as well as the ability to drive a forklift or wheeled machine, possess a B driver's license, and an occupational safety card. A good team spirit, initiative, and a strong safety attitude are also appreciated. The hourly wage is in accordance with the collective agreement of the forest machinery industry, belonging to salary group I, ranging from €12.99 to €15.09 depending on years of experience.",
         "what_we_expect": [
-          "Professional pride",
-          "High-quality workmanship",
-          "Commitment to work"
+          "Experience and professionalism in the field are considered an advantage.",
+          "Ability to drive a forklift or a wheeled machine.",
+          "B driver's license and occupational safety card.",
+          "Good team spirit, initiative, ability to take on challenges required by the job, and good safety attitude."
         ],
         "job_responsibilities": [
-          "Wall paneling",
-          "Frame work",
-          "Various coatings",
-          "Repair and renovation work",
-          "Painting, leveling and plastering work"
+          "Mechanical removal of float threads.",
+          "The work is shift work, 2 shifts 5 days a week.",
+          "Experience and professionalism in the field are considered an advantage."
         ],
         "what_we_offer": [
-          "Proper work equipment and tools to perform at work",
-          "The opportunity to develop your skills in the field, our customer is happy to train more himself",
-          "The help and support of Total's personnel in all phases of your employment relationship"
+          "€12.99 €15.09 depending on years of experience in the field",
+          "Full-time and temporary summer work",
+          "The work is shift work, 2 shifts 5 days a week."
         ],
-        "search_keywords": "timpuri Jyväskylä construction-and-trades skilled tinkerer",
+        "search_keywords": "wire moped driver Lappeenranta summer job, mechanical removal of float threads, forklift or wheeled machine, B driver's license, occupational safety card, team spirit, initiative, challenges required by the job, good safety attitude, €12.99 €15.09 depending on years of experience in the field",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
       },
       {
-        "id": "bbe71c8a",
-        "job_id": "full-time-mathematics-and-physics-teacher-sipoo-bbe71c8a",
+        "id": "86a73812",
+        "job_id": "combination-vehicle-driver-lappeenranta-summer-job-lappeenranta-86a73812",
         "processed": true,
-        "title": "Full-time Mathematics and Physics Teacher",
-        "company": "Sipoon kunta",
-        "job_category": "education-and-public-sector",
+        "title": "Combination vehicle driver Lappeenranta summer job",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "transportation-and-logistics",
         "jobLocation": [
-          "Sipoo"
+          "Lappeenranta"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/716352/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cfdcbc13-9a9e-44fa-b4d8-f228f542d825/en",
-        "job_employer_email": "juha.kujanpaa@sipoo.fi",
-        "job_employer_name": "Juha Kujanpää",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education-and-public-sector/full-time-mathematics-and-physics-teacher-sipoo-bbe71c8a",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-23",
-        "scraped_at": "2026-04-07 10:00:07",
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Combination%20vehicle%20driver%20Lappeenranta%20summer%20job&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Combination%20vehicle%20driver%20Lappeenranta%20summer%20job.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5dfd71d4-7b55-430a-a89e-1d847ae59e85/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "MArko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/combination-vehicle-driver-lappeenranta-summer-job-lappeenranta-86a73812",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-10 23:42:07",
         "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
         "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
+        "continuityOfWork": "Summer job",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Full-time teacher of Physics and mathematics, Sipoo high school in Sipoo at Sipoo municipality. Sipoo high school is seeking a full-time Mathematics and",
-        "description": "Sipoo high school is seeking a full-time mathematics and physics teacher for the academic year 2026-2027. The ideal candidate will bring enthusiasm, development-oriented skills, and experience in teaching mathematical subjects to Sipoo's high school community. With over 200 students and a modern school building in Nikkilä, Sipoon offers quality education that fosters both individuality and shared experiences. Applications are invited for the position via the provided link or website until April 23, 2026, at 4:00 p.m., with an interview following. The role involves teaching high school mathematics and physics, group supervision, and participation in the LUMA line's operations and development. A certificate of health and a criminal record extract are required for employment. Sipoo offers strong opportunities for work and living, including functional working methods and high-quality services that prioritize the well-being of municipal residents and staff.",
+        "meta_description": "Fin-Terpuu Oy, Kaukas Pulp and Paper is seeking combination vehicle drivers at their Lappeenranta contracting destination UPM Kaukaa pulp mill area for",
+        "description": "We are looking for combination vehicle drivers at Fin-Terpuu Oy's Lappeenranta contracting destination UPM Kaukaa pulp mill area, offering full-time summer work starting in May. This role involves energy fraction transfer tasks with a combined vehicle and wheel machine operations. A valid combination driver's license, professional qualifications, and occupational safety card are required. Proficiency in using computers and inventory management software is also expected. The job requires 3 shifts per week, including occasional 13 shifts based on factory schedules. Experience and field professionalism are valued. Fin-Terpuu Oy offers versatile work with opportunities for skill development within a competent team. Hourly wages range from €15.42 to €18.",
         "what_we_expect": [
-          "Eligibility for the position is determined according to Decree 1998/986 on eligibility requirements for teaching personnel.",
-          "The terms of the service relationship are determined in accordance with OVTES, and the probationary period is half of the duration of the official relationship.",
-          "Sipoo high school offers its students quality and care, community and individuality, functional everyday life and shared experiences."
+          "Valid combination vehicle driver's license as well as professional qualifications and an occupational safety card",
+          "Ability to handle a vehicle, use a computer, master inventory management and working time reporting software",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
         ],
         "job_responsibilities": [
-          "Teaching high school mathematics and physics",
-          "Group supervision",
-          "Participation in LUMA line operations and development"
+          "Energy fraction transfer tasks with a combined vehicle, chips, wood and bark",
+          "Wheel machine and other machine work",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
         ],
         "what_we_offer": [
-          "Excellent opportunities for work and living",
-          "Strongly growing Sipoo offers its personnel an interesting and versatile work environment",
-          "Sipoo high school offers its students quality and care, community and individuality, functional everyday life and shared experiences."
+          "Versatile work with the opportunity to learn and develop yourself as an employee in a competent team",
+          "€15.42 €18.02 depending on years of experience in the field",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
         ],
-        "search_keywords": "mathematics physics high school teacher full-time Nikkilä",
+        "search_keywords": "combination vehicle driver Lappeenranta summer job, combination vehicle driver, Lappeenranta, UPM Kaukaa pulp mill area, full-time and temporary summer work, energy fraction transfer tasks, chips, wood and bark, wheel machine and other machine work, valid combination vehicle driver's license as well as professional qualifications and an occupational safety card, ability to handle a vehicle, use a computer, master inventory management and working time reporting software",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       },
       {
-        "id": "766259aa",
-        "job_id": "professional-instructor-lieksa-766259aa",
+        "id": "1cce2120",
+        "job_id": "water-storage-worker-lappeenranta-1cce2120",
         "processed": true,
-        "title": "Professional Instructor",
-        "company": "Riveria",
-        "job_category": "education-and-public-sector",
+        "title": "Water Storage Worker",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "general-labor-and-manual-work",
         "jobLocation": [
-          "Lieksa"
+          "Lappeenranta"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/713161/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/82bd22de-19a4-438a-973c-05044ca1203c/en",
-        "job_employer_email": "petteri.karhu@riveria.fi",
-        "job_employer_name": "Petteri Karhu",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education-and-public-sector/professional-instructor-lieksa-766259aa",
-        "date_posted": "2026-04-07",
-        "date_expires": "2026-04-21",
-        "scraped_at": "2026-04-07 10:00:07",
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Water%20Storage%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Water%20Storage%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/478c94a1-fef1-41cd-923e-92387b8e014d/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "Marko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/water-storage-worker-lappeenranta-1cce2120",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-10 23:42:07",
         "open_positions": 1,
-        "salary_range": "salary of a professional instructor is 2739",
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Fin-Terpuu Oy, Kaukas Pulp and Paper seeks water storage workers at their Lappeenranta site for summer employment in UPM Kaukaa pulp mill area. Full-time work",
+        "description": "Fin-Terpuu Oy, Kaukas Pulp Ja Paperi is seeking water storage workers for their Lappeenranta contracting site, focusing on UPM Kaukaa pulp mill area. The position offers full-time summer work starting in May and ending in August. Duties include moving Bundles of uittopuu using a bulldozer or forklift, with seasonal shifts 2 days per week. Experience in wood processing and heavy equipment is preferred. B driver's license and Occupational safety card are required. The Hourly wage is €14.35 to €16.77 based on years of experience, belonging to II pay group. Fin-Terpuu Oy specializes in logistics services for the forest industry, offering maintenance, consulting, and machine rental. Interested candidates should apply by April 30, 2026, with a CV and previous work experience attached.",
+        "what_we_expect": [
+          "Experience and expertise in wood processing and heavy equipment is considered an advantage.",
+          "Ability to drive a forklift or a wheeled machine.",
+          "B driver's license and occupational safety card.",
+          "Good team spirit, initiative, the ability to take on the challenges required by the job, and a good safety attitude."
+        ],
+        "job_responsibilities": [
+          "Moving bundles of uittopuu and arranging them with a trap.",
+          "Working in varying weather conditions from land and boats.",
+          "The work is carried out in varying weather conditions from land and boats, and it requires good cooperation and readiness for physical work."
+        ],
+        "what_we_offer": [
+          "Hourly wage in accordance with the collective agreement of the forest machinery industry",
+          "€14.35 €16.77 depending on years of experience in the field",
+          "The work is carried out in varying weather conditions from land and boats, and it requires good cooperation and readiness for physical work."
+        ],
+        "search_keywords": "water storage worker Lappeenranta Summer job, water storage worker, summer job, UPM Kaukaa pulp mill area, full-time and temporary summer work, wood processing, heavy equipment, forklift, wheeled machine, B driver's license, occupational safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 00:05:10",
+    "jobs": [
+      {
+        "id": "ac50d15e",
+        "job_id": "land-construction-assistants-espoo-ac50d15e",
+        "processed": true,
+        "title": "Land construction assistants",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329340",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4395e3e8-bb76-4f6c-a53f-96996e6b6ed2/en",
+        "job_employer_email": "aleksandr.partanen@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/land-construction-assistants-espoo-ac50d15e",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 00:05:10",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
         "workTime": "Full-time",
         "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Riveria seeks a professional instructor for its business sector in Lieksa, Finland. Ideal candidate: 2739.73 euros/month + bonus, 38.25 hours/week, secondary...",
-        "description": "Riveria is seeking a professional instructor for its business sector training unit in Lieksa, Finland. This role involves guiding students through professional studies and joint field-based courses with teachers and support staff. The salary of 2739.73 euros per month includes a work experience bonus based on years of experience. Full-time hours are 38.25 hours per week, requiring a suitable secondary vocational education or equivalent language skills in Finnish. Experience in electronic learning environments is also valued. A class B driver's license and a six-month trial period apply. Interviews will take place on May 8th at the Lieksa training unit. Certificates of study and work experience must be attached to applications, with no more than one attachment per application. The position offers versatile development opportunities, modern working environments, and comprehensive personnel benefits.",
+        "meta_description": "Join Lavonia Oy as a Land Construction Assistant in Espoo, Helsinki, and Vantaa; assist with earthworks, learn from experienced team members, and earn",
+        "description": "We are seeking experienced land construction assistants for a full-time position at Lavonia Oy, located in Espoo, Helsinki, and Vantaa. The ideal candidate will assist with auxiliary earthworks such as shoveling, spreading soil, insulation, cleaning, and erecting site fences. Previous infrastructure sector experience is highly valued but not the only requirement; a positive attitude and willingness to learn are crucial. Applicants must be in good physical condition and prepared for variable weather conditions. An occupational safety card is mandatory, and having your own car could enhance job opportunities due to varying work sites. The salary ranges from at least TES in the Infrastructure sector, negotiable based on skills and experience.",
         "what_we_expect": [
-          "Suitable secondary vocational education or vocational qualification",
-          "Good Finnish language skills",
-          "Experience in guiding and educating young people",
-          "Knowledge of the business sector",
-          "Experience in guiding in electronic learning environments",
-          "Other language skills"
+          "Previous experience in the infrastructure sector is considered an advantage",
+          "Good attitude and motivation to learn",
+          "In good physical condition",
+          "Ready to work in variable weather conditions",
+          "Occupational safety card required",
+          "Possibility of having your own car"
         ],
         "job_responsibilities": [
-          "Guiding students in professional studies in the field of business and entrepreneurship",
-          "Joint studies carried out in the unit for different fields in cooperation with teachers and study support personnel",
-          "The terms of the service relationship are determined in accordance with KVTES."
+          "Shoveling",
+          "Spreading soil",
+          "Insulation",
+          "Cleaning",
+          "Erecting site fences"
         ],
         "what_we_offer": [
-          "2739.73 euros/month salary with work experience bonus (up to 8%)",
-          "38.25 hours/week working time",
-          "Six-month trial period",
-          "Criminal record extract for the position acceptance",
-          "Quality-awarded, multidisciplinary vocational training and liberal arts organization"
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
         ],
-        "search_keywords": "business sector, entrepreneurship, professional instructor, Lieksa training unit, KVTES, work experience bonus, electronic learning environments, driver's license",
+        "search_keywords": "land construction assistants, earth construction assistants, infrastructure sector, good attitude, motivation, physical condition, occupational safety card, own car, diverse tasks, high-quality equipment, professional support, employment matters",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "366fc85a",
+        "job_id": "earth-construction-foreman-data-center-site-kirkkonummi-366fc85a",
+        "processed": true,
+        "title": "Earth construction foreman, data center site",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kirkkonummi",
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329496",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/51abb252-7706-4864-8cb4-d861f578795c/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-construction-foreman-data-center-site-kirkkonummi-366fc85a",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 00:05:10",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy seeks an Earth Construction Foreman for their Microsoft data center project in Espoo/Kirkkonummi, Finland. Previous experience in earthworks and",
+        "description": "Lavonia Oy is seeking a driven Earth Construction Foreman for their Microsoft data center project in Espoo/Kirkkonummi, Finland. This role requires previous experience in earthworks and municipal engineering, with responsibilities including coxswain's work, pipe installations, and welding. A valid occupational safety card is essential, as well as proficiency using laser tools and reading construction drawings. Previous experience operating earthmoving machines (such as Kramer, Avant, or other wheeled machines, rollers) is also preferred. The position offers competitive hourly wages based on Finnish collective agreements and a salary according to TES, with opportunities for professional development and support.",
+        "what_we_expect": [
+          "Previous experience in earthworks and municipal engineering",
+          "Occupational safety card",
+          "We offer you"
+        ],
+        "job_responsibilities": [
+          "Coxswain's work",
+          "Pipe installations and welding",
+          "Diverse tasks and projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "earth construction foreman Espoo/Kirkkonummi area earthworks worker Microsoft data center project previous experience earthworks municipal engineering laser reading construction drawings occupational safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 10:19:54",
+    "jobs": [
+      {
+        "id": "01435709",
+        "job_id": "cnc-machinist-vantaa-01435709",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Barona Teollisuus Oy",
+        "job_category": "manufacturing-and-production",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/cnc-koneistaja-osateos-oy-d0ba9850",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fd1ba3ba-0486-4b92-bf78-7b9dc2ee7520/en",
+        "job_employer_email": "ari.kumlander@barona.fi",
+        "job_employer_name": "Ari Kumlander",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/manufacturing-and-production/cnc-machinist-vantaa-01435709",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-05",
+        "scraped_at": "2026-04-11 10:19:54",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Barona Teollisuus Oy as a CNC Machinist in Vantaa! Competitive wages, flexible hours, and opportunities for skill development await you. Apply now!",
+        "description": "We are looking for a skilled CNC machinist with experience in turning and milling to join our production team at Barona Teollisuus Oy in Vantaa. This permanent employment opportunity offers competitive hourly wages based on Finnish collective agreements, working time flexibility (2-shift work), and the chance to influence your job description. With modern machinery and a stable, developing work environment, you'll have access to well-maintained machines and opportunities for skill development. The company values expertise, initiative, and a commitment to quality. Apply quickly as this position will be filled soon after suitable candidates are found.",
+        "what_we_expect": [
+          "Experience in CNC turning and/or milling.",
+          "Strong machining skills with proficiency in Fanuc, Heidenhain, or Mori controls.",
+          "Independent programming and setting capabilities.",
+          "Willingness to work independently and problem-solving skills.",
+          "A careful and high-quality approach to work."
+        ],
+        "job_responsibilities": [
+          "Work with modern machinery and utilize strong machining expertise and programming skills.",
+          "Program and machine parts on a DMG Mori NLX 2500 multifunction lathe (M730UM control) or Heidenhain controlled machining centers (TNC 530 / 620 / 640).",
+          "Optimize tool selection, perform measurements, and ensure quality assurance."
+        ],
+        "what_we_offer": [
+          "Stable and developing work environment",
+          "Modern and well-maintained machines",
+          "Opportunity to influence job description",
+          "Supportive team and development of skills in demanding machining work"
+        ],
+        "search_keywords": "CNC Machinist, CNC Turning, CNC Milling, Modern Machinery, Expertise, Initiative, Development, Engineering Company, Small Pieces, Production Development, CAD/CAM Know-How",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/manufacturing-and-production/7.png"
+      },
+      {
+        "id": "423cda05",
+        "job_id": "barber-hairdresser-joensuu-423cda05",
+        "processed": true,
+        "title": "Barber-hairdresser",
+        "company": "Parturi-Kampaamo Ykköspaikka Ky, Joensuu",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-hairdresser-joensuu-423cda05",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-31",
+        "scraped_at": "2026-04-11 10:19:54",
+        "open_positions": 1,
+        "salary_range": "Yrittäjä tulo",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Parturi-Kampaamo Ikköspaikka Ky as a Barber-Hairdresser in Joensuu! A team-driven approach ensures that no one is left alone during customer interactions",
+        "description": "We are looking for wonderful colleagues with our expanded operations, offering two positions for barber-hairdressers in Joensuu's niinivaara and core centre. New, modern premises provide a cozy environment for both hair salon and beauty salon services. Contract companies can benefit from support to get started (with the option to continue as a work trial), while students with training contracts will have access to ongoing support until graduation. A team-driven approach ensures no one is left alone during customer interactions. Business-specific trainings, 2 renovated air-conditioned offices, and an extensive selection of products are available for both customers and staff. Electronic appointment booking and checkout options enhance convenience.",
+        "what_we_expect": [
+          "Barber-hairdresser degree",
+          "A genuine desire to serve customers and develop in the field",
+          "Teamwork skills",
+          "Flexibility",
+          "Fluent Finnish language skills"
+        ],
+        "job_responsibilities": [
+          "Barber-hairdresser",
+          "For contract companies, help to get started (you can also start as a work trial)",
+          "Support for customer work and"
+        ],
+        "what_we_offer": [
+          "Help to get started",
+          "Support for customer work",
+          "E-commerce support"
+        ],
+        "search_keywords": "barber-hairdresser, expanded operations, hairdressers, modern premises, beauty salon, job content, free-form application, ykkospaikka@gmail.com",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
       }
     ]
   }

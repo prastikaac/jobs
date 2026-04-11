@@ -5,4 +5,5 @@ Updating Category/Location
 - Update in jobposting.html
 - Update in edit-profile.html
 
-
+- Automatic runner file : 
+scraper\run_all_jobs.bat
