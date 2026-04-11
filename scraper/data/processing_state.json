@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-04-11 19:32:16",
+  "updated_at": "2026-04-11 20:54:19",
   "jobs": {
     "4bcc485e": {
       "translated": true,
@@ -2205,552 +2205,552 @@
     "f40d097b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:46:34"
     },
     "96300743": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:47:32"
     },
     "2b92cb7a": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:48:54"
     },
     "7669e23b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:50:17"
     },
     "2ad73f73": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:51:43"
     },
     "205d69d0": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:52:44"
     },
     "53c02d1d": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:54:10"
     },
     "51e4c43e": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:55:04"
     },
     "490aca9f": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:56:20"
     },
     "6bf0ab11": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:57:30"
     },
     "67252415": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 19:59:05"
     },
     "9ce12de4": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:00:41"
     },
     "d0daa9a4": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:01:37"
     },
     "5a9349cb": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:02:50"
     },
     "684fb033": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:04:02"
     },
     "05079c12": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:05:40"
     },
     "d41263de": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:07:03"
     },
     "30d6d72b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:08:30"
     },
     "f82a3d6b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:09:55"
     },
     "e5e14b1b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:11:10"
     },
     "2368a03e": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:12:34"
     },
     "ff4fd86c": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:14:08"
     },
     "dadbac24": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:15:17"
     },
     "4daa033f": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:16:51"
     },
     "ec4627d1": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:18:05"
     },
     "b3a66c17": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:19:20"
     },
     "605f2a86": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:20:14"
     },
     "94fa919f": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:21:17"
     },
     "52f19dd6": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:22:42"
     },
     "170da2f9": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:24:10"
     },
     "47b4d7bc": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:25:44"
     },
     "f8a7bae4": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:27:45"
     },
     "88908176": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:28:51"
     },
     "dcbfe73c": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:30:09"
     },
     "593f2d67": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:31:40"
     },
     "f9dd4386": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:32:58"
     },
     "5c59bb1d": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:34:11"
     },
     "e7a0065c": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:35:13"
     },
     "e1c3081b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:37:03"
     },
     "01307d09": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:38:31"
     },
     "c2a028c9": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:40:24"
     },
     "d2eecbd8": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:42:20"
     },
     "9e6f58dc": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:44:03"
     },
     "9e26fbf6": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:45:51"
     },
     "547f4c29": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:47:43"
     },
     "b2c35c9f": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:49:11"
     },
     "ba4ee703": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:50:23"
     },
     "5a17587e": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:51:32"
     },
     "0034803a": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:52:59"
     },
     "c234b1e2": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-11 20:54:19"
     },
     "69a24ad7": {
       "translated": true,
@@ -14666,6 +14666,270 @@
       "formatted_at": ""
     },
     "48c895db": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "93573176": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "a53a5049": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "272c6c4c": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "de116ba7": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "ae53ec0a": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "fc4a4175": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "28e7e360": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "39bacd3e": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "9e4c700c": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "34938e47": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "bd8c5521": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "9597856e": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "337e1bb8": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "a1659d8f": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "69afc8bb": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "9b71fb0c": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "65b4182b": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "2b00e6ca": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "868bcbdf": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "3d911d5b": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "39abbe74": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "e23af130": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "6444cb08": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "35baac2d": {
       "translated": true,
       "translated_at": "",
       "ai_processed": false,
