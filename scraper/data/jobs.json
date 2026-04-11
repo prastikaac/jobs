@@ -1,56 +1,581 @@
 [
   {
-    "scrape_timestamp": "2026-04-11 10:44:57",
+    "scrape_timestamp": "2026-04-11 13:44:29",
     "jobs": [
       {
-        "id": "423cda05",
-        "job_id": "barber-hairdresser-joensuu-423cda05",
+        "id": "4bcc485e",
+        "job_id": "cashier-shelf-clerk-savonlinna-4bcc485e",
         "processed": true,
-        "title": "Barber-hairdresser",
-        "company": "Parturi-Kampaamo Ykköspaikka Ky, Joensuu",
-        "job_category": "wellness-and-beauty-care",
+        "title": "Cashier / Shelf Clerk",
+        "company": "Eezy henkilöstöpalvelut Oy",
+        "job_category": "retail-and-wholesale",
         "jobLocation": [
-          "Joensuu"
+          "Savonlinna"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
-        "job_employer_email": "",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-hairdresser-joensuu-423cda05",
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/z2QS_lxiMIIwYiLHOqzvNA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b752ea9c-e6ce-48e5-b904-7502cb211e21/en",
+        "job_employer_email": "reijo.hirvonen@eezy.fi",
+        "job_employer_name": "Reijo Hirvonen",
+        "job_employer_phone_no": "+358504631344",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/cashier-shelf-clerk-savonlinna-4bcc485e",
         "date_posted": "2026-04-11",
-        "date_expires": "2026-05-31",
-        "scraped_at": "2026-04-11 10:44:57",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:29",
         "open_positions": 1,
-        "salary_range": "Yrittäjä tulo",
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
         "workTime": "Full-time",
         "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Join Parturi-Kampaamo Ikköspaikka Ky as a Barber-Hairdresser in Joensuu! Offered support for contract companies, we provide modern facilities and training",
-        "description": "We are looking for wonderful colleagues with our expanded operations in Joensuu, Finland. We have two positions available for barber-hairdressers and offer support for contract companies starting their business (you can also start as a work trial). Our modern premises in niinivaara and core centre provide a cozy environment for both hair salon and beauty salon services. With 2 renovated air-conditioned offices, we offer a wide selection of products, websites, social media channels, electronic appointment booking, and checkout options. We support trainings tailored to our business needs. Our team is committed to providing excellent customer service and professional development opportunities.",
+        "meta_description": "Eezy personnel services Oy is seeking a Cashier / shelf clerk in Savonlinna. Eezy personnel services Oy is looking for cheerful and lively Cashiers to join",
+        "description": "Eezy personnel services Oy is looking for cheerful and lively Cashiers to join their team in Savonlinna. This gig job offers flexible work hours and competitive hourly wages based on Finnish collective agreements. Previous experience in cash handling or familiarity with a cash register system, as well as fluency in the Finnish language, are required. Applicants should be at least 18 years old and possess good communication skills, flexibility, problem-solving abilities, and an interest in learning new trade tasks. Send your application to Eezy Personnel Services / Rilas Oy for a chance to impress customers with your cashier skills!",
         "what_we_expect": [
-          "Barber-hairdresser degree",
-          "A genuine desire to serve customers and develop in the field",
-          "Teamwork skills",
-          "Flexibility",
-          "Fluent Finnish language skills"
+          "A cheerful and lively attitude",
+          "Willingness to work in different shifts during store opening hours",
+          "We require applicants"
         ],
         "job_responsibilities": [
-          "Barber-hairdresser",
-          "For contract companies, help to get started (you can also start as a work trial)",
-          "Support for customer work and"
+          "Ensure smooth service experience for customers by greeting them with a smile and paying attention to their needs.",
+          "Participate in shelving tasks as part of the job, including collection and parcel services.",
+          "We require applicants"
         ],
         "what_we_offer": [
-          "Help to get started",
-          "Support for customer work",
-          "E-commerce support"
+          "Flexible gig work that can be done flexibly according to your life situation and needs.",
+          "Supportive background for business matters related to you.",
+          "We require applicants"
         ],
-        "search_keywords": "barber-hairdresser, expanded operations, hairdressers, modern premises, beauty salon, job content, free-form application, ykkospaikka@gmail.com",
+        "search_keywords": "Cashier / Shelf Clerk Eezy personnel services Oy Savonlinna retail-and-wholesale",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/retail-and-wholesale/29.png"
+      },
+      {
+        "id": "e2935443",
+        "job_id": "köksarbetare-pedersöre-e2935443",
+        "processed": true,
+        "title": "Köksarbetare",
+        "company": "Ab Pederest Oy, Pedersöre",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Pedersöre"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:neste.pedersore@multi.fi?subject=Application%20for%20the%20Job%20-%20K%C3%B6ksarbetare&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20K%C3%B6ksarbetare.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/835cc22d-a949-471f-a727-102b5dc676de/en",
+        "job_employer_email": "neste.pedersore@multi.fi",
+        "job_employer_name": "Johanna Anderssen-Blomqvist",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/köksarbetare-pedersöre-e2935443",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-11 13:44:29",
+        "open_positions": 1,
+        "salary_range": "Lön enligt PAM Handels kollektivavtal",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish",
+          "Finnish"
+        ],
+        "meta_description": "Join Ab Pederest Oy as a Köksarbetare in Pedersöre, where you'll assist in preparing and serving lunch while maintaining a clean, hygienic, and safe working",
+        "description": "We are looking for a Köksarbetare at Ab Pederest Oy, Pedersöre, where you will assist in preparing and serving lunch. We expect you to maintain a clean, hygienic, and safe working environment while performing opening and closing procedures, processing customer orders, cleaning surfaces, washing dishes, and making sandwiches and ready meals according to the kitchen schedule. No previous experience is required; training will be provided on the job. Send your application by April 26, 2025, to neste.pedersore@multi.fi.",
+        "what_we_expect": [
+          "Making Sandwiches",
+          "Prepare ready meals",
+          "Maintains a clean, hygienic and safe working environment",
+          "Perform opening and closing procedures",
+          "Process customer orders",
+          "Clean surfaces"
+        ],
+        "job_responsibilities": [
+          "Prepare semlor and store bakery products",
+          "Help with lunchbuffé preparation",
+          "Assist in training for kitchen work"
+        ],
+        "what_we_offer": [
+          "Training provided by the company",
+          "Köksarbetare Vi söker en köksarbetare till vårt kök!",
+          "Hos oss har köksarbeteren hand om tillredning av semlor och söta bakverk."
+        ],
+        "search_keywords": "köksarbetare kök semlor söta bakverk",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/media-and-journalism/27.png"
+      },
+      {
+        "id": "a4ccfcc3",
+        "job_id": "pizza-bagare-pedersöre-a4ccfcc3",
+        "processed": true,
+        "title": "Pizza Bagare",
+        "company": "Ab Pederest Oy, Pedersöre",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Pedersöre"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:neste.pedersore@multi.fi?subject=Application%20for%20the%20Job%20-%20Pizza%20Bagare&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Pizza%20Bagare.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/78b01a75-8199-4527-8e9e-7a2bdd41b61f/en",
+        "job_employer_email": "neste.pedersore@multi.fi",
+        "job_employer_name": "Johanna Anderssen-Blomqvist",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/pizza-bagare-pedersöre-a4ccfcc3",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-11 13:44:29",
+        "open_positions": 1,
+        "salary_range": "Lön enligt PAM Handels kollektivavtal",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish",
+          "Finnish"
+        ],
+        "meta_description": "Join Ab Pederest Oy as a Pizza Bagare in Pedersöre! Prepare ready meals, wash dishes, and maintain a clean kitchen environment. Send your application by April",
+        "description": "We are looking for a pizza bagare at our Pedersöre location! We operate a Kotipizza restaurant connected to our service station and rely on the skills of our kitchen staff. The ideal candidate should be able to prepare ready meals, wash dishes, maintain a clean, hygienic, and safe working environment, process customer orders, make pizza, and assist with other tasks as needed. Previous experience in pizzabakning is preferred but we offer training at workplace. Please send your application by April 26, 2025 to neste.pedersore@multi.fi for consideration.",
+        "what_we_expect": [
+          "Requirement 1",
+          "Requirement 2",
+          "Pizza Bagare Vi söker en pizzabagare till vårt kök!"
+        ],
+        "job_responsibilities": [
+          "Duty 1",
+          "Duty 2",
+          "Pizza Bagare Vi söker en pizzabagare till vårt kök!"
+        ],
+        "what_we_offer": [
+          "Benefit 1",
+          "Benefit 2",
+          "Pizza Bagare Vi söker en pizzabagare till vårt kök!"
+        ],
+        "search_keywords": "pizza bagare, pizzabagare, kök, job, restaurant",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/food-and-restaurant/13.png"
+      },
+      {
+        "id": "436e40ce",
+        "job_id": "marketing-coordinator-helsinki-436e40ce",
+        "processed": true,
+        "title": "Marketing Coordinator",
+        "company": "HR Tukku Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://hrtukku.rekrytointi.com/paikat/index.php?o=A_A&jid=646&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6b67010a-8e5d-4bd6-afec-864dc61f1e21/en",
+        "job_employer_email": "toni@hrtukku.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/marketing-coordinator-helsinki-436e40ce",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-15",
+        "scraped_at": "2026-04-11 13:44:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join HR Tukku Oy as a Marketing Coordinator at Biomed Oy in Helsinki, Finland! This position focuses on implementing digital marketing campaigns, optimizing",
+        "description": "We are looking for a Marketing Coordinator at Biomed Oy in Helsinki, Finland. This versatile role involves implementing digital marketing campaigns, optimizing online store development, and contributing to e-commerce efforts within a growing business. The ideal candidate possesses strong skills in paid advertising, website development, and collaboration with teams. Reporting to the marketing manager, this position offers practical influence over marketing results and development. Biomed Oy is committed to providing a responsible role that combines digital campaigns, event marketing, and online store management. Experience in marketing automation, analytics, SEO, and conversion optimization is highly valued.",
+        "what_we_expect": [
+          "Experience or strong skills in practical implementation of digital marketing",
+          "Paid advertising (especially Meta / Facebook / Instagram)",
+          "Planning, implementing, and optimizing campaigns",
+          "Development of online stores or websites",
+          "Smooth cooperation with different teams and partners",
+          "Fluent Finnish and English language skills"
+        ],
+        "job_responsibilities": [
+          "Plan, implement and optimize paid advertising for e-commerce, product launches, and events",
+          "Participate in marketing and communication work of Terveys Summit and other events",
+          "Develop Biomed's website from a marketing point of view",
+          "Technical maintenance of the online store",
+          "Conversion optimization together with the team",
+          "Monitoring, analyzing, and reporting campaign results"
+        ],
+        "what_we_offer": [
+          "A versatile and responsible role where you can influence marketing results and development on a practical level",
+          "Work as part of a team supported by graphic artist, web developer, some team, service providers, and other partners",
+          "Report to the marketing manager",
+          "Combine campaign work, online store development, and digital marketing"
+        ],
+        "search_keywords": "marketing coordinator, Biomed Oy, Helsinki, paid advertising, digital marketing, e-commerce, conversion optimization, SEO, website development, event marketing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/sales-and-marketing/21.png"
+      },
+      {
+        "id": "190da904",
+        "job_id": "mechanical-maintenance-fitter-kokkola-190da904",
+        "processed": true,
+        "title": "Mechanical Maintenance Fitter",
+        "company": "Bolt.Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Kokkola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=1902996",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/02347619-3389-47f1-93e9-8762a87ea2a3/en",
+        "job_employer_email": "karoliina.hautamaki@bolt.works",
+        "job_employer_name": "Karoliina Hautamäki",
+        "job_employer_phone_no": "+358504097185",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/mechanical-maintenance-fitter-kokkola-190da904",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-24",
+        "scraped_at": "2026-04-11 13:44:29",
+        "open_positions": 1,
+        "salary_range": "salary in accordance with the collective agreem",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bolt.Works Oy is seeking a mechanical maintenance fitter for Tetra Chemicals Europe in Kokkola. Join us as a skilled technician ensuring smooth production",
+        "description": "Bolt.Works Oy is seeking a mechanical maintenance fitter for Tetra Chemicals Europe in Kokkola. This position involves ensuring smooth production with versatile maintenance tasks such as equipment maintenance and repair, preventive maintenance, fault location and repair, participation in shutdowns, cooperation with departments, technical training, industrial experience, self-initiated approach, good communication skills, commitment to safety, English language proficiency, permanent employment (7:00-15:30), international organization, competitive salary based on Finnish collective agreements, comprehensive orientation, good working atmosphere, and direct recruitment assignment. Apply now for a versatile position in an international company with excellent benefits and career opportunities.",
+        "what_we_expect": [
+          "Applicable technical training",
+          "Experience in industrial maintenance tasks",
+          "Self-initiated and responsible approach to work",
+          "Good cooperation and interaction skills",
+          "Commitment to safe working practices",
+          "Knowledge of the English language"
+        ],
+        "job_responsibilities": [
+          "Equipment maintenance and repair work",
+          "Implementation of preventive maintenance",
+          "Locating and repairing faults",
+          "Participation in maintenance and production shutdowns",
+          "Cooperation with different departments"
+        ],
+        "what_we_offer": [
+          "Permanent employment relationship (at 7.00-15.30)",
+          "Versatile and responsible position in an international organization",
+          "Competitive salary in accordance with the collective agreement of the chemical industry",
+          "Comprehensive orientation and organizational support",
+          "Good working atmosphere and personnel benefits"
+        ],
+        "search_keywords": "mechanical maintenance fitter, Tetra Chemicals, Kokkola",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/installation-and-maintenance/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:30",
+    "jobs": [
+      {
+        "id": "38d881b6",
+        "job_id": "chef-espoo-38d881b6",
+        "processed": true,
+        "title": "Chef",
+        "company": "JD Garments Oy, Espoo",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:pinoytambayan2025@gmail.com?subject=Application%20for%20the%20Job%20-%20Chef&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chef.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b87808a2-efa9-45f7-bea4-58dc30e75d8e/en",
+        "job_employer_email": "pinoytambayan2025@gmail.com",
+        "job_employer_name": "Rhodora Hämäläinen",
+        "job_employer_phone_no": "0451746042",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-espoo-38d881b6",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-31",
+        "scraped_at": "2026-04-11 13:44:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "JD Garments Oy seeks a Chef for their Espoo location, focusing on regional Filipino cuisine and traditional methods. Fluent in English required. Competitive",
+        "description": "JD Garments Oy is seeking a Chef with experience in regional Filipino cuisine and traditional cooking methods for their Espoo location. The ideal candidate will monitor kitchenware arrivals, hand over the cooking space to the next shift, use correct temperature control techniques, clean food preparation areas, prepare vegetarian dishes, and follow standard portion sizes. This position offers competitive hourly wages based on Finnish collective agreements and is a permanent role with full-time work hours. Applicants must be fluent in English.",
+        "what_we_expect": [
+          "Monitor the arrival of the ordered Kitchenware",
+          "Hand over the cooking space to the next shift",
+          "Use cooking finishing techniques",
+          "Take care of the correct temperature of the kitchen appliances",
+          "Cleans the food preparation area",
+          "Use reheating techniques"
+        ],
+        "job_responsibilities": [
+          "Cook",
+          "List specific skills",
+          "Daily operational tasks"
+        ],
+        "what_we_offer": [
+          "List specific skills",
+          "Professional work environment",
+          "Supportive team"
+        ],
+        "search_keywords": "Chef, Filipino cuisine cook, specialized cooking skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/food-and-restaurant/19.png"
+      },
+      {
+        "id": "8fc1bc83",
+        "job_id": "welder-lappeenranta-8fc1bc83",
+        "processed": true,
+        "title": "Welder",
+        "company": "Global Work",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tuntinetti.fi/job-opening?jobId=2330226245&mtId=2330228057",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/567233ab-dcb8-4dd9-8cbf-5e4b75c36ecd/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0400 835 470",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-lappeenranta-8fc1bc83",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-18",
+        "scraped_at": "2026-04-11 13:44:30",
+        "open_positions": 1,
+        "salary_range": "Salary 18-20 €/h, depending on skills.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Global Work is seeking a Welder for Lappeenranta. Apply now with your resume and salary expectations by April 19th to join this permanent position offering",
+        "description": "Global Work is seeking a dedicated Welder for their Lappeenranta facility. This permanent role involves operating TIG, MIG, and stick welding equipment to produce high-quality stainless steel pieces for the paper industry. Ideal candidates should have experience reading technical drawings and working independently on demanding projects. With an average salary of 18-20 €/h based on skills, this position offers a permanent employment contract. Interested parties can apply by filling out the job application at www.globalwork.fi and attaching their resume with salary expectations by Sunday, April 19th, 2026. For more information, contact Sami Hänninen at gsm 0400 835 470.",
+        "what_we_expect": [
+          "Salary 18-20 €/h, depending on skills.",
+          "No class or card requirements.",
+          "Read more about Global Work: www.globalwork.fi"
+        ],
+        "job_responsibilities": [
+          "Professional TIG, MIG and stick welder who knows how to make good and high-quality results.",
+          "The pieces are demanding individual pieces made of stainless steel of different sizes for the various needs of the paper industry.",
+          "The candidate must be able to read technical drawings and implement the pieces independently."
+        ],
+        "what_we_offer": [
+          "Permanent job",
+          "Read more about Global Work: www.globalwork.fi",
+          "More information about the skills required for the position"
+        ],
+        "search_keywords": "Welder, TIG, MAG, stick",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/industry-manufacturing-and-production/9.png"
+      },
+      {
+        "id": "65d58637",
+        "job_id": "mover-bc-drivers-license-helsinki-65d58637",
+        "processed": true,
+        "title": "Mover (B/C driver's license)",
+        "company": "Muutto- Ja Siivouspalvelu Reipas Oy, Järvenpää",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/32691fa0-9228-4693-9d57-4566fe3bbdcd/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/32691fa0-9228-4693-9d57-4566fe3bbdcd/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/mover-bc-drivers-license-helsinki-65d58637",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-20",
+        "scraped_at": "2026-04-11 13:44:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Muutto- Ja Siivouspalvelu Reipas Oy as a reliable mover with a B/C driver's license in the Itäkeskus area! Ideal for those seeking permanent employment in",
+        "description": "We are looking for a reliable mover with a B/C driver’s license to join our team in the Itäkeskus area. This role involves carrying furniture and loading/unloading moving loads while driving. Ideal candidates should have good physical condition, initiative, and be able to work well in teams. Knowledge of Finnish is essential due to customer service interactions. Previous experience in moving services is preferred but not required. The job primarily takes place in the Itäkeskus area, offering a permanent position with continuous employment. To apply, send your application via email, attaching a CV if available. Please ensure that your message includes brief details about yourself, work experience, and driver’s license.",
+        "what_we_expect": [
+          "B or C driver's license",
+          "Finnish language skills",
+          "Good physical condition",
+          "Reliability and punctuality"
+        ],
+        "job_responsibilities": [
+          "Carrying furniture",
+          "Loading and unloading moving loads",
+          "Driving"
+        ],
+        "what_we_offer": [
+          "B or C driver's license",
+          "Finnish language skills",
+          "Good physical condition",
+          "Reliability and punctuality"
+        ],
+        "search_keywords": "moving, mover, B/C driver's license, Finnish language, physical condition, reliability, punctuality",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/2.png"
+      },
+      {
+        "id": "4a6584d0",
+        "job_id": "welder-lappeenranta-4a6584d0",
+        "processed": true,
+        "title": "Welder",
+        "company": "Global Work",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tuntinetti.fi/job-opening?jobId=2454750036&mtId=2454758999",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c650c257-c506-4d0a-85a1-ad796daa89ec/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "(+358) 400 835 4",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/welder-lappeenranta-4a6584d0",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-18",
+        "scraped_at": "2026-04-11 13:44:30",
+        "open_positions": 1,
+        "salary_range": "- We expect that you are top experienced, and you can make difficult work independently from technical pictures, so then we can pay 18-20€/hour.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Global Work seeks a highly skilled welder in Lappeenranta for their client company in Imatra. Ideal candidates have extensive experience and education, strong",
+        "description": "Global Work is seeking a top-experienced welder for a client company in the Imatra area. Essential duties include heavy weight metal workshops with diverse tasks such as arc welding using TIG, MIG and stick methods on parts from stainless steel. The ideal candidate should have several years of experience and education, be able to interpret technical structure pictures, work in different kinds of metal industry environments, and possess good interaction skills. The salary is expected to be 18-20€/hour for top-experienced welders who can complete difficult tasks independently from technical pictures. A comfortable working environment, diverse job assignments, and thorough introduction to the tasks are offered.",
+        "what_we_expect": [
+          "Several years of diverse experience and education.",
+          "Ability to interpret technical structure pictures.",
+          "Activity and interest towards metal business.",
+          "Ability to work in different kinds of metal industry environments.",
+          "Social, unprompted, thorough.",
+          "Good interaction skills."
+        ],
+        "job_responsibilities": [
+          "Heavy weight metal workshops diverse duties: arc welding using TIG, MIG and stick methods. Parts are from stainless steel.",
+          "You must have experience example from process industry.",
+          "Keen is developing the work tasks and ready to learn new things."
+        ],
+        "what_we_offer": [
+          "Comfortable working environment",
+          "Diverse and challenging job assignments",
+          "Thorough introduction to the tasks"
+        ],
+        "search_keywords": "welding",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/28.png"
+      },
+      {
+        "id": "27c4b9b4",
+        "job_id": "sales-engineer-nokia-27c4b9b4",
+        "processed": true,
+        "title": "Sales Engineer",
+        "company": "Dexter Lifts Oy, Nokia",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Nokia"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:myynti@dexterlifts.com?subject=Application%20for%20the%20Job%20-%20Sales%20Engineer&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Sales%20Engineer.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fb374e4a-f58b-4297-b9a9-2fcf78699307/en",
+        "job_employer_email": "myynti@dexterlifts.com",
+        "job_employer_name": "Harri Plukka",
+        "job_employer_phone_no": "0443474480",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-engineer-nokia-27c4b9b4",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-11",
+        "scraped_at": "2026-04-11 13:44:30",
+        "open_positions": 1,
+        "salary_range": "salary and an encouraging bonus model - The opp",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Dexter Lifts Oy in Nokia seeks a sales engineer with technical expertise to join their growing team. Ideal candidates have an appropriate technical education",
+        "description": "Dexter Lifts Oy is seeking a sales engineer with technical expertise and strong customer relations skills to join its growing team in Nokia. The ideal candidate has an appropriate technical education, experience in B2B sales, and excellent communication and negotiation abilities. They will be responsible for selling Dexter Lifts' personal lift solutions and developing positive customer relationships. This role offers competitive compensation, a bonus model, opportunities for skill development, modern tools, and flexible working arrangements. With over 40 years of experience, Dexter Lifts is known for its high-quality products that meet customers' needs effectively.",
+        "what_we_expect": [
+          "Appropriate technical education (e.g. Engineer, AMK)",
+          "Experience in technical sales or B2B sales tasks",
+          "Ability to understand technical solutions and apply them to the customer's needs",
+          "Good interaction and negotiation skills",
+          "Self-initiated and goal-oriented approach",
+          "Fluent Finnish and English language skills (Swedish is considered an advantage)"
+        ],
+        "job_responsibilities": [
+          "Mapping customer needs and designing solutions",
+          "Sales of personal lifts and related services",
+          "Preparing offers and conducting commercial negotiations",
+          "Maintenance and development of customer relations",
+          "Market and competitor monitoring"
+        ],
+        "what_we_offer": [
+          "An interesting and responsible role in a growing company",
+          "Competitive salary and an encouraging bonus model",
+          "The opportunity to develop your skills to the top of technical sales",
+          "Modern tools and the support of a competent team",
+          "Flexible working opportunities"
+        ],
+        "search_keywords": "sales engineer, sales engineer job, sales engineer position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/sales-and-marketing/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:31",
+    "jobs": [
+      {
+        "id": "4ddf9ed4",
+        "job_id": "mechanical-fittermachine-fitter-nokia-4ddf9ed4",
+        "processed": true,
+        "title": "Mechanical Fitter/Machine Fitter",
+        "company": "Dexter Lifts Oy, Nokia",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Nokia"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:myynti@dexterlifts.com?subject=Application%20for%20the%20Job%20-%20Mechanical%20Fitter/Machine%20Fitter&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Mechanical%20Fitter/Machine%20Fitter.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/05eb2231-f233-40ad-943a-2fb9e0967e02/en",
+        "job_employer_email": "myynti@dexterlifts.com",
+        "job_employer_name": "Harri Plukka",
+        "job_employer_phone_no": "0443474480",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/mechanical-fittermachine-fitter-nokia-4ddf9ed4",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-05",
+        "scraped_at": "2026-04-11 13:44:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Dexter Lifts Oy is seeking a Mechanical Fitter/Machine Fitter for their Nokia location, offering full-time permanent employment with competitive compensation",
+        "description": "Dexter Lifts Oy is seeking a Mechanical Fitter/Machine Fitter for their Nokia location, offering full-time permanent employment with competitive compensation tailored to the candidate's education, skills, and experience. The role involves performing partial manufacturing, assembly, and final testing of personal lifts, including sub-assembly, small-scale manufacturing of hydraulic components, and assembling personal lifts from mechanical installations. The company provides comprehensive training based on continuous improvement principles but values candidates who have relevant experience in mechanical engineering, hydraulics, or periodic inspections of personal lifts.",
+        "what_we_expect": [
+          "Mechanics",
+          "Suitable education",
+          "Experience with mechanical installations in mechanical engineering"
+        ],
+        "job_responsibilities": [
+          "Part manufacturing of hydraulic components and pipelines.",
+          "Assembly of personal lifts from mechanical installations to the installation of hydraulic systems.",
+          "Final testing of finished personal lifts."
+        ],
+        "what_we_offer": [
+          "Training based on continuous improvement",
+          "Suitable education",
+          "Experience with mechanical installations in mechanical engineering"
+        ],
+        "search_keywords": "mechanical fitter machine fitter",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/industry-manufacturing-and-production/24.png"
       },
       {
         "id": "0b456caa",
@@ -71,14 +596,14 @@
         "jobUrl": "https://findjobsinfinland.fi/jobs/research-and-development/research-interviewer-tampere-0b456caa",
         "date_posted": "2026-04-11",
         "date_expires": "2026-04-20",
-        "scraped_at": "2026-04-11 10:44:57",
+        "scraped_at": "2026-04-11 13:44:31",
         "open_positions": 1,
         "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
         "workTime": "Part-time",
         "continuityOfWork": "Permanent",
         "language_requirements": [],
-        "meta_description": "Join Minado Oy as a Research Interviewer for part-time remote work across projects in Tampere. Flexible hours, no sales tasks, and native language skills",
-        "description": "We are seeking part-time researchers in our interview team to conduct telephone interviews remotely across various projects, including Korean language research. This role offers a teleworking opportunity and flexible working hours with varying project assignments. The work does not involve sales tasks, and previous experience is not required. Native language skills, a clear and polite approach to work, and a motivated attitude are essential. All tasks are completed entirely remotely on the employee's devices, requiring their own computer with a Chrome browser and headset. Working hours can be adjusted flexibly based on project needs. For inquiries, please contact interviews@minado.fi.",
+        "meta_description": "Join Minado Oy as a Research Interviewer for part-time remote work in Tampere. Conduct Korean language research via phone calls with flexible hours and",
+        "description": "We are looking for part-time researchers in our interview team to conduct telephone interviews remotely across various projects, including Korean language research. We offer a teleworking opportunity and flexible working hours with varying project assignments. The work does not involve sales tasks. Native language skills, a clear and polite approach to work, and a motivated attitude towards the job are required. The entire work is done on employees' own devices using Chrome browsers and headsets. Working hours can be adjusted flexibly based on individual needs. Previous experience is not necessary. For inquiries, please contact interviews@minado.fi.",
         "what_we_expect": [
           "Native language skills",
           "Clear and polite approach to work",
@@ -97,56 +622,7 @@
         ],
         "search_keywords": "research interview, research interviewer, part-time job, remote work, language skills, clear communication, motivated attitude",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/research-and-development/30.png"
-      },
-      {
-        "id": "8b9ec3ea",
-        "job_id": "food-development-expert-kuopio-8b9ec3ea",
-        "processed": true,
-        "title": "Food Development Expert",
-        "company": "JoTiMa Oy, Kuopio",
-        "job_category": "food-and-restaurant",
-        "jobLocation": [
-          "Kuopio"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:jotima.rekrytointi@gmail.com?subject=Application%20for%20the%20Job%20-%20Food%20Development%20Expert&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Food%20Development%20Expert.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/57a2d1c4-3b95-4b5f-b979-c107b41e74c4/en",
-        "job_employer_email": "jotima.rekrytointi@gmail.com",
-        "job_employer_name": "Yhteyshenkilö Rekrytointi",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/food-development-expert-kuopio-8b9ec3ea",
-        "date_posted": "2026-04-11",
-        "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-11 10:44:57",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish",
-          "English"
-        ],
-        "meta_description": "JoTiMa Oy, Kuopio is seeking a Food development expert in Kuopio. We are looking for a Food Development Expert at JoTiMa Oy in Kuopio. This role involves",
-        "description": "We are looking for a Food Development Expert at JoTiMa Oy in Kuopio. This role involves developing new recipes and creating healthy food products to meet the company's goal of providing nutritious, innovative solutions aligned with the growing demand for sustainable and healthier food options. The ideal candidate should have strong management principles and experience in food technology. Finnish language skills are required, as well as proficiency in English. Competitive hourly wages based on Finnish collective agreements are offered.",
-        "what_we_expect": [
-          "Grow demand for healthy and sustainable food options",
-          "Positive attitude and reliability",
-          "Ability to work effectively"
-        ],
-        "job_responsibilities": [
-          "Develop healthy food products and new recipes for the company's cafe and restaurant operations",
-          "Daily operational tasks",
-          "Supporting the team"
-        ],
-        "what_we_offer": [
-          "Healthy and innovative food solutions",
-          "Professional work environment",
-          "Supportive team"
-        ],
-        "search_keywords": "food development expert, chef, product development, healthy food products, new recipes",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/research-and-development/7.png"
       },
       {
         "id": "29eee647",
@@ -167,7 +643,7 @@
         "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/sales-assistant-raasepori-29eee647",
         "date_posted": "2026-04-11",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-11 10:44:57",
+        "scraped_at": "2026-04-11 13:44:31",
         "open_positions": 1,
         "salary_range": "Pam",
         "workTime": "Full-time",
@@ -176,8 +652,8 @@
           "Swedish",
           "Finnish"
         ],
-        "meta_description": "Sommaröstrand Kb, Raasepori is seeking a Sales assistant in Raasepori. Sommaröstrand Kb, Raasepori is seeking a versatile Sales Assistant for their traditional",
-        "description": "Sommaröstrand Kb, Raasepori is seeking a versatile Sales Assistant for their traditional village shop located in the Tammisaari archipelago. This position offers free-form applications via email, with primary responsibilities including customer service, cash register work, shelving, and cleaning. The ideal candidate should possess strong communication skills and be fluent in both Swedish and Finnish.",
+        "meta_description": "Join Sommaröstrand Kb, Raasepori as a Sales Assistant to provide exceptional customer service and contribute to the village shop's success. Apply now!",
+        "description": "Sommaröstrand Kb, Raasepori is seeking a versatile Sales Assistant for their traditional village shop located in the Tammisaari archipelago. This role involves providing excellent customer service while also handling tasks such as cash register work, shelving, and cleaning. The position offers free form application via email. A background in sales or customer service is preferred, along with proficiency in both Swedish and Finnish.",
         "what_we_expect": [
           "Customer service",
           "Sales Assistant Versatile tasks in a traditional village shop in the Tammisaari archipelago.",
@@ -197,15 +673,120 @@
         ],
         "search_keywords": "sales assistant village shop traditional archipelago e-mail application",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/retail-and-wholesale/2.png"
       },
+      {
+        "id": "8b9ec3ea",
+        "job_id": "food-development-expert-kuopio-8b9ec3ea",
+        "processed": true,
+        "title": "Food Development Expert",
+        "company": "JoTiMa Oy, Kuopio",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:jotima.rekrytointi@gmail.com?subject=Application%20for%20the%20Job%20-%20Food%20Development%20Expert&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Food%20Development%20Expert.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/57a2d1c4-3b95-4b5f-b979-c107b41e74c4/en",
+        "job_employer_email": "jotima.rekrytointi@gmail.com",
+        "job_employer_name": "Yhteyshenkilö Rekrytointi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/food-development-expert-kuopio-8b9ec3ea",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join JoTiMa Oy in Kuopio as a Food Development Expert, developing healthy food products for the cafe and restaurant operations while meeting sustainability",
+        "description": "We are looking for a Food Development Expert at JoTiMa Oy in Kuopio. This role involves developing healthy food products and new recipes for the company's cafe and restaurant operations, aligning with their goal to create nutritious tortillas and other innovative solutions that meet growing demand for sustainable and healthier food options. The ideal candidate should have strong management principles and a background as a food technologist. Finnish and English language skills are required. This is a permanent position offering competitive hourly wages based on Finnish collective agreements.",
+        "what_we_expect": [
+          "Grow demand for healthy and sustainable food options",
+          "Positive attitude and reliability",
+          "Ability to work effectively"
+        ],
+        "job_responsibilities": [
+          "Develop healthy food products and new recipes for the company's cafe and restaurant operations",
+          "Daily operational tasks",
+          "Supporting the team"
+        ],
+        "what_we_offer": [
+          "Healthy and innovative food solutions",
+          "Professional work environment",
+          "Supportive team"
+        ],
+        "search_keywords": "food development expert, chef, product development, healthy food products, new recipes",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/food-and-restaurant/11.png"
+      },
+      {
+        "id": "423cda05",
+        "job_id": "barber-hairdresser-joensuu-423cda05",
+        "processed": true,
+        "title": "Barber-hairdresser",
+        "company": "Parturi-Kampaamo Ykköspaikka Ky, Joensuu",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-hairdresser-joensuu-423cda05",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-31",
+        "scraped_at": "2026-04-11 13:44:31",
+        "open_positions": 1,
+        "salary_range": "Yrittäjä tulo",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Parturi-Kampaamo Ykköspaikka Ky, Joensuu is seeking a Barber-hairdresser in Joensuu. We are looking for Talented barber-hairdressers with our expanding",
+        "description": "We are looking for talented barber-hairdressers with our expanding operations in Joensuu's niinivaara and core center. We offer support for contract companies, customer service training, two renovated air-conditioned offices stocked with a wide selection of products, electronic appointment booking, and social media channels. Our team is eager to welcome new colleagues who share our passion for hair styling and fashion trends. Apply now by sending your free-form application to ykkospaikka@gmail.com.",
+        "what_we_expect": [
+          "Barber-hairdresser degree",
+          "A genuine desire to serve customers and develop in the field",
+          "Teamwork skills",
+          "Flexibility",
+          "Fluent Finnish language skills"
+        ],
+        "job_responsibilities": [
+          "Barber-hairdresser",
+          "For contract companies, help to get started (you can also start as a work trial)",
+          "Support for customer work and"
+        ],
+        "what_we_offer": [
+          "Help to get started",
+          "Support for customer work",
+          "E-commerce support"
+        ],
+        "search_keywords": "barber-hairdresser, expanded operations, hairdressers, modern premises, beauty salon, job content, free-form application, ykkospaikka@gmail.com",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/wellness-and-beauty-care/8.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:32",
+    "jobs": [
       {
         "id": "01435709",
         "job_id": "cnc-machinist-vantaa-01435709",
         "processed": true,
         "title": "CNC Machinist",
         "company": "Barona Teollisuus Oy",
-        "job_category": "manufacturing-and-production",
+        "job_category": "industry-manufacturing-and-production",
         "jobLocation": [
           "Vantaa"
         ],
@@ -215,10 +796,10 @@
         "job_employer_email": "ari.kumlander@barona.fi",
         "job_employer_name": "Ari Kumlander",
         "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/manufacturing-and-production/cnc-machinist-vantaa-01435709",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-vantaa-01435709",
         "date_posted": "2026-04-11",
         "date_expires": "2026-05-05",
-        "scraped_at": "2026-04-11 10:44:57",
+        "scraped_at": "2026-04-11 13:44:32",
         "open_positions": 1,
         "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
         "workTime": "Full-time",
@@ -227,28 +808,1787 @@
           "Finnish"
         ],
         "meta_description": "Barona Teollisuus Oy is seeking a CNC machinist in Vantaa. We are looking for a skilled CNC machinist with experience in turning and milling to join our",
-        "description": "We are looking for a skilled CNC machinist with experience in turning and milling to join our production team at Barona Teollisuus Oy. This permanent employment opportunity offers 2-shift work and a competitive hourly wage based on Finnish collective agreements, as well as opportunities for growth within the company. The ideal candidate will have strong machining skills, proficiency with Fanuc, Heidenhain, or Mori controls, and experience in small-scale production development and CAD/CAM know-how (e.g., Fusion 360). A commitment to working independently, problem-solving, and a high-quality approach is also valued. This position provides a stable work environment, modern machines, and the chance to influence job descriptions while developing skills through varied machining tasks.",
+        "description": "We are looking for a skilled CNC machinist with experience in turning and milling to join our production team at Barona Teollisuus Oy in Vantaa. This permanent employment opportunity offers competitive hourly wages based on Finnish collective agreements, full-time work, and 2-shift rotation. The ideal candidate will utilize modern machinery, possess strong machining skills, and be proficient with Fanuc, Heidenhain, or Mori controls. Responsibilities include programming and running CNC parts, working independently on lathe and machining center tasks, and contributing to the development of small and individual pieces. A stable work environment, access to well-maintained machines, and opportunities for skill development are offered. Apply quickly as this position is expected to fill soon.",
         "what_we_expect": [
-          "Experience in CNC turning and/or milling.",
-          "Strong machining skills with proficiency in Fanuc, Heidenhain, or Mori controls.",
-          "Independent programming and setting capabilities.",
-          "Willingness to work independently and problem-solving skills.",
-          "A careful and high-quality approach to work."
+          "Experience in CNC turning and/or milling and strong machining skills.",
+          "Master Fanuc, Heidenhain or Mori controls and capable of independent programming and setting.",
+          "Willingness to work in shifts is considered an advantage."
         ],
         "job_responsibilities": [
-          "Work with modern machinery and utilize strong machining expertise and programming skills.",
-          "Program and machine parts on a DMG Mori NLX 2500 multifunction lathe (M730UM control) or Heidenhain controlled machining centers (TNC 530 / 620 / 640).",
-          "Optimize tool selection, perform measurements, and ensure quality assurance."
+          "The work includes CNC turning and/or milling, machine settings, programming and running parts. On the turning side, you work on a modern DMG Mori NLX 2500 multifunction lathe (M730UM control) and are independently responsible for programming and machining.",
+          "On the milling side, the work includes 4-axis machining with Heidenhain controlled machining centers (TNC 530 / 620 / 640). Tasks also include tool selection and optimization, measurements and quality assurance. The manufactured pieces vary from single pieces and small series to prototypes.",
+          "We are looking for a skilled CNC machinist to strengthen the production team for versatile turning and milling tasks."
+        ],
+        "what_we_offer": [
+          "A stable and developing work environment in a reputable engineering company",
+          "Modern and well-maintained machines",
+          "The opportunity to influence your own job description",
+          "Support from a competent and supportive team",
+          "Opportunity to develop skills in demanding and varied machining work"
+        ],
+        "search_keywords": "CNC machinist, CNC turning, CNC milling, modern machinery, skilled machinist, production team, versatile tasks, DMG Mori NLX 2500 multifunction lathe, Heidenhain controlled machining centers, small and individual pieces, production development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/industry-manufacturing-and-production/5.png"
+      },
+      {
+        "id": "a1a889cd",
+        "job_id": "salesman-for-a-gas-station-loimaa-a1a889cd",
+        "processed": true,
+        "title": "Salesman for a gas station",
+        "company": "Henkilöstöpalvelut Duuri-tiimi Oy",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Loimaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://duuritiimi.likeit.fi/apply/4111177",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0958f0a8-a952-4b6b-9c8f-1d38db0e287c/en",
+        "job_employer_email": "konttori@duuritiimi.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/salesman-for-a-gas-station-loimaa-a1a889cd",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-11 13:44:32",
+        "open_positions": 1,
+        "salary_range": "Salary according to Mara Tess, at least €11",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "I joined the Personnel Services Duuri-tiimi Oy as a Salesman at our Loimaa gas station! Work as a cashier, provide exceptional customer service, and enjoy more",
+        "description": "At Henkilöstöpalvelut Duuri-tiimi Oy, we're looking for a motivated Salesman to join our Loimaa gas station team! This versatile role involves working as a cashier and ticket seller, providing exceptional customer service at the checkout. During the summer months, you'll have more opportunities to contribute with additional shifts. Our competitive Hourly wage, based on Finnish collective agreements, is €11.87/h plus shift bonuses. Join us in Loimaa for a rewarding career that offers flexible work hours and a positive team environment. Send your application today via the attached link to secure an interview opportunity!",
+        "what_we_expect": [
+          "Dispensing pass and hygiene pass can be completed at the start of the job",
+          "Salesman for a gas station, immediately 2 days a week, more in the summer, LOIMAA Come to us at the Loimaa gas station as a seller!",
+          "At the moment, work is available about two days a week, during the summer holidays you can work more shifts."
+        ],
+        "job_responsibilities": [
+          "Customer service at checkout",
+          "Work versatilely in other tasks at the gas station",
+          "Salesman for a gas station, immediately 2 days a week, more in the summer, LOIMAA Come to us at the Loimaa gas station as a seller!"
+        ],
+        "what_we_offer": [
+          "€11.87/h + shift bonuses",
+          "Good introduction to your job",
+          "Salesman for a gas station, immediately 2 days a week, more in the summer, LOIMAA Come to us at the Loimaa gas station as a seller!"
+        ],
+        "search_keywords": "gas station, sales, customer service, versatile tasks, dispensing pass, hygiene pass, temporary work, Duuri team",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/media-and-journalism/25.png"
+      },
+      {
+        "id": "27754a36",
+        "job_id": "cnc-machinist-vantaa-27754a36",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Barona Teollisuus Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/en/jobs/cnc-machinist-osateos-oy-d3576628",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a6b3dc5b-8f26-4447-8760-06de3e7c8381/en",
+        "job_employer_email": "ari.kumlander@barona.fi",
+        "job_employer_name": "Ari Kumlander",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-vantaa-27754a36",
+        "date_posted": "2026-04-11",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-04-11 13:44:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Barona Teollisuus Oy as a CNC machinist at Vantaa! Experienced in turning and milling, work with modern machinery including DMG Mori NLX 2500 lathe and",
+        "description": "We are seeking a skilled CNC machinist with experience in CNC turning and milling to join our client company Osateos Oy's production team at Vantaa. This role involves working with modern machinery, including a DMG Mori NLX 2500 multitasking lathe (M730UM control) and Heidenhain-controlled machining centers (TNC 530 / 620 / 640). Responsibilities include programming, machine setup, tool selection, measurements, quality assurance, and part production. The position offers a stable work environment with modern machinery, skilled support from a team, and the opportunity to influence job descriptions through varied machining tasks. Experience in small-batch and single-piece production is also valued. Shifts are considered a benefit for this role.",
+        "what_we_expect": [
+          "Experience in CNC turning and/or milling and strong machining expertise",
+          "Familiarity with Fanuc, Heidenhain, or Mori controls",
+          "Ability to work independently",
+          "Strong problem-solving skills",
+          "Careful, quality-oriented approach to work"
+        ],
+        "job_responsibilities": [
+          "CNC turning and/or milling, machine setup, programming, and part production.",
+          "M730UM control DMG Mori NLX 2500 multitasking lathe (independent programming and machining operations).",
+          "We are seeking a skilled CNC machinist to strengthen the production team in versatile turning and milling tasks."
         ],
         "what_we_offer": [
           "Stable and developing work environment",
-          "Modern and well-maintained machines",
+          "Modern and well-maintained machinery",
           "Opportunity to influence job description",
-          "Supportive team and development of skills in demanding machining work"
+          "Support from a skilled and encouraging team",
+          "Opportunity for professional competence development through demanding machining tasks",
+          "Valuing expertise, initiative, and desire to continuously improve operations"
         ],
-        "search_keywords": "CNC Machinist, CNC Turning, CNC Milling, Modern Machinery, Expertise, Initiative, Development, Engineering Company, Small Pieces, Production Development, CAD/CAM Know-How",
+        "search_keywords": "CNC Machinist CNC Turner Milling Machinist Osateos Oy Vantaa",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/manufacturing-and-production/17.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/industry-manufacturing-and-production/27.png"
+      },
+      {
+        "id": "e7a721dd",
+        "job_id": "cnc-saw-for-production-in-tornio-tornio-e7a721dd",
+        "processed": true,
+        "title": "CNC saw for production in Tornio",
+        "company": "Lavonia Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Tornio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329618",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0ee47182-18b7-4621-8eb7-eb57c865fb60/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/cnc-saw-for-production-in-tornio-tornio-e7a721dd",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a CNC saw for production in Tornio in Tornio. We are seeking a CNC sawyer with previous experience using basic software, reading",
+        "description": "We are seeking a CNC sawyer with previous experience using basic software, reading pictures, and operating machine tools for our client in Tornio. This solvent company specializes in manufacturing steel structures and engineering products. The position offers competitive hourly wages based on Finnish collective agreements, versatile tasks, high-quality equipment, occupational health care, professional support, and advice on employment matters. A morning shift is available as soon as a suitable candidate is found. Salary according to TES of the technology industry. For more information or to apply, please contact Kalle Lindqvist at 0408201655 or email kalle.lindqvist@lavonia.fi.",
+        "what_we_expect": [
+          "Our client is a solvent company that specializes in manufacturing various steel structures and engineering products.",
+          "We offer you",
+          "Salary according to TES, based on skills and experience."
+        ],
+        "job_responsibilities": [
+          "Aircraft assembler",
+          "Sprayer",
+          "Diverse tasks and projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care"
+        ],
+        "search_keywords": "CNC saw for production in Tornio solvent company manufacturing steel structures engineering products previous experience using basic software ability to read pictures operation of machine tools morning shift full-time rental job salary according to the TES technology industry Lavonia Group domestic personnel rental company construction and industrial sector experienced professionals early career employees fun show skills projects",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/22.png"
+      },
+      {
+        "id": "aa6f9aff",
+        "job_id": "sandblaster-spray-painter-varnisher-machine-sander-polisher--turku-aa6f9aff",
+        "processed": true,
+        "title": "Sandblaster, spray painter, varnisher, machine sander, polisher and sharpener",
+        "company": "Noa ship OÜ, Pärnu",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5e377d85-889c-4877-b327-113595f813b1/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5e377d85-889c-4877-b327-113595f813b1/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/sandblaster-spray-painter-varnisher-machine-sander-polisher--turku-aa6f9aff",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-11 13:44:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Noa Ship OÜ as a Sandblaster, Spray Painter, Varnisher, Machine Sander, Polisher, and Sharpener in Pärnu! Competitive salary and benefits package.",
+        "description": "We are looking for experienced Sandblasters, Spray Painters, Varnishers, Machine Sander, Polishers, and Sharpeners to join our team at Noa Ship OÜ in Pärnu. This is a permanent position with full-time work hours starting immediately. The salary will be competitive based on Finnish collective agreements, and we offer a great working environment and benefits package. Key Responsibilities: - Use a sandblaster - Spray paint techniques - Prepare surfaces for painting - Blow off surfaces Requirements: - At least 10 years of relevant experience - Proficiency in using lacquer paints - Experience with sandblasting cabinets - Strong hand skills and attention to detail We are committed to providing a safe, clean, and productive work environment.",
+        "what_we_expect": [
+          "Requirement 1",
+          "Requirement 2",
+          "Positive attitude and reliability"
+        ],
+        "job_responsibilities": [
+          "Duty 1",
+          "Duty 2",
+          "Daily operational tasks"
+        ],
+        "what_we_offer": [
+          "Benefit 1",
+          "Benefit 2",
+          "Professional work environment"
+        ],
+        "search_keywords": "sandblaster spray painter varnisher machine sander polisher sharpener work experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/general-labor-and-manual-work/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:33",
+    "jobs": [
+      {
+        "id": "9ed81380",
+        "job_id": "plumber-with-welding-skills-espoo-9ed81380",
+        "processed": true,
+        "title": "Plumber with welding skills",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329577",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/18a4e7df-e06c-4438-910d-fb9675e86a7e/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/plumber-with-welding-skills-espoo-9ed81380",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Plumber with welding skills in Espoo. We are seeking a skilled pipe fitter with welding experience for our client in Espoo, specializing",
+        "description": "We are seeking a skilled pipe fitter with welding experience for our client in Espoo, specializing in HVAC services across the capital region. This role involves completing site-specific projects that often include welding tasks. Previous experience as a pipe fitter is essential, along with the ability to work independently and read blueprints. A valid work safety card and hot work permit are required, and proficiency with personal transportation and tools is appreciated. We offer competitive hourly wages based on skills and experience, diverse project opportunities, high-quality equipment, occupational health care benefits, professional employment support, and a recruitment form for detailed application information.",
+        "what_we_expect": [
+          "You have worked as a pipe fitter, you are able to work independently and read pictures. A work safety card and hot work card are required, and the ability to use your own car and your own tools is considered an advantage.",
+          "We offer you",
+          "Salary according to TES, based on skills and experience."
+        ],
+        "job_responsibilities": [
+          "Plumbers",
+          "Diverse tasks and projects",
+          "We offer you"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "plumber welding skills espoo hvac company work safety card hot work card own car tools",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/7.png"
+      },
+      {
+        "id": "8f6a7709",
+        "job_id": "inner-drum-helsinki-8f6a7709",
+        "processed": true,
+        "title": "Inner drum",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1328733",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3dd09129-4744-4b00-b7fe-445eb7815c8f/en",
+        "job_employer_email": "aleksandr.partanen@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/inner-drum-helsinki-8f6a7709",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Inner drum in Helsinki. We are seeking a professional interior carpenter with experience in partition, suspended ceiling works, and",
+        "description": "We are seeking a professional interior carpenter with experience in partition, suspended ceiling works, and floor installation for our client located in the SME region. Previous experience in interior joinery work and the ability to read pictures are required, as well as previous tiling experience considered advantageous. We offer competitive hourly wages based on Finnish collective agreements, diverse and varied tasks across various projects, high-quality equipment and tools, occupational health care, professional support for employment matters, and salary according to TES determined by skills and experience. Interested candidates should submit their application via the search button, fill out a recruitment form, and provide details of previous work experience.",
+        "what_we_expect": [
+          "Previous experience in interior joinery work",
+          "Ability to read pictures",
+          "Previous tiling experience"
+        ],
+        "job_responsibilities": [
+          "Partition and suspended ceiling works",
+          "Floor installation",
+          "Diverse and varied tasks in various projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, which is determined according to your skills and experience",
+          "Diverse and varied tasks in various projects",
+          "High-quality work equipment and appropriate tools",
+          "Occupational health care",
+          "Professional support and advice in employment matters"
+        ],
+        "search_keywords": "construction interior carpenter SME region",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/14.png"
+      },
+      {
+        "id": "ac50d15e",
+        "job_id": "land-construction-assistants-espoo-ac50d15e",
+        "processed": true,
+        "title": "Land construction assistants",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329340",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4395e3e8-bb76-4f6c-a53f-96996e6b6ed2/en",
+        "job_employer_email": "aleksandr.partanen@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/land-construction-assistants-espoo-ac50d15e",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lavonia Oy as an earth construction assistant for full-time, permanent positions across Espoo, Helsinki, and Vantaa. Duties include auxiliary earthworks",
+        "description": "Lavonia Oy is seeking earth construction assistants for a full-time, permanent position at various sites across Espoo, Helsinki, and Vantaa. Duties include auxiliary earthworks such as shoveling, spreading soil, insulation, cleaning, and erecting site fences. Previous infrastructure sector experience is advantageous but motivation to learn is crucial. Physical condition and readiness for variable weather are essential. An occupational safety card is required, and the possibility of having a car is considered beneficial due to varying work sites. The salary ranges from at least TES in the Infrastructure sector with potential negotiation based on skills and experience.",
+        "what_we_expect": [
+          "Previous experience in the infrastructure sector is considered an advantage",
+          "Good attitude and motivation to learn",
+          "In good physical condition",
+          "Ready to work in variable weather conditions",
+          "Occupational safety card required",
+          "Possibility of having your own car"
+        ],
+        "job_responsibilities": [
+          "Shoveling",
+          "Spreading soil",
+          "Insulation",
+          "Cleaning",
+          "Erecting site fences"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "land construction assistants, earth construction assistants, infrastructure sector, good attitude, motivation, physical condition, occupational safety card, own car, diverse tasks, high-quality equipment, professional support, employment matters",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/3.png"
+      },
+      {
+        "id": "366fc85a",
+        "job_id": "earth-construction-foreman-data-center-site-kirkkonummi-366fc85a",
+        "processed": true,
+        "title": "Earth construction foreman, data center site",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kirkkonummi",
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329496",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/51abb252-7706-4864-8cb4-d861f578795c/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-construction-foreman-data-center-site-kirkkonummi-366fc85a",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Earth construction foreman, data center site in Kirkkonummi, Espoo. Lavonia Oy is seeking an experienced Earth Construction Foreman for",
+        "description": "Lavonia Oy is seeking an experienced Earth Construction Foreman for a data center site in Espoo, Finland. The ideal candidate will have previous experience in earthworks and municipal engineering. Duties include coxswain's work, pipe installations, and welding. A valid occupational safety card is required. Previous exposure to driving earthmoving machines (Kramer, Avant or other wheeled machines, rollers) is preferred. Salary for infra sector TES is negotiable based on professional skills. Offered benefits include a competitive hourly wage, diverse tasks and projects, high-quality equipment, occupational health care, and professional support in employment matters. To apply, please fill out the recruitment form with your previous experience and contact Lavonia Group at kalle.",
+        "what_we_expect": [
+          "Previous experience in earthworks and municipal engineering",
+          "Occupational safety card",
+          "We offer you"
+        ],
+        "job_responsibilities": [
+          "Coxswain's work",
+          "Pipe installations and welding",
+          "Diverse tasks and projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "earth construction foreman Espoo/Kirkkonummi area earthworks worker Microsoft data center project previous experience earthworks municipal engineering laser reading construction drawings occupational safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/8.png"
+      },
+      {
+        "id": "db519972",
+        "job_id": "electrician-espoo-db519972",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Lavonia Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1328692",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/58acaf5c-cf3c-43fb-bc8d-7126ce189634/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-espoo-db519972",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Electrician in Espoo, Helsinki, Vantaa. We are looking for an electrician with experience in construction, lighting track installation",
+        "description": "We are looking for an electrician with experience in construction, lighting track installation, and strong current installations to join our team at Lavonia Oy in Espoo, Helsinki, or Vantaa. This position requires training as an electrician, the ability to read electrical drawings, renovation-side electrical work experience, knowledge of Finnish language, and a valid electrical and work safety card. Previous similar positions are preferred, and candidates must be capable of working independently. We offer competitive hourly wages based on Finnish collective agreements, versatile tasks and projects, high-quality equipment, occupational health care, professional support in employment matters, and the possibility to use a car if needed.",
+        "what_we_expect": [
+          "Training as an electrician",
+          "Ability to read electrical drawings",
+          "Experience in electrical work on the renovation side",
+          "Knowledge of the Finnish language"
+        ],
+        "job_responsibilities": [
+          "Construction of conduits",
+          "Lighting track installation work",
+          "Strong current installations"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "installation-and-maintenance electrician building technology industry capital region",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/installation-and-maintenance/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:34",
+    "jobs": [
+      {
+        "id": "9c314056",
+        "job_id": "land-construction-coxswain-lohja-9c314056",
+        "processed": true,
+        "title": "Land construction coxswain",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329513",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/77589462-5c24-43ac-8c66-4bbb5ae73202/en",
+        "job_employer_email": "alina@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/land-construction-coxswain-lohja-9c314056",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lavonia Oy as a Land Construction Coxswain in Lohja! Experience earthworks and municipal engineering with our competitive hourly wages, versatile",
+        "description": "We are looking for a land construction coxswain with experience in earthworks and municipal engineering, specifically for duties related to mate work in the Lohja area. The position requires previous training in using laser and reading construction drawings, as well as driving suitable machines like Kramer, Avant or wheeled machines, rollers, etc. We offer competitive hourly wages based on Finnish collective agreements, versatile tasks and projects, high-quality equipment, occupational health care, professional support for employment matters, and salary according to TES, negotiable based on skills and experience. The possibility of doing the gig under a business name or as a small entrepreneur is also available. For more information, please contact Alina Tihonova at alina.tihonova@lavonia.",
+        "what_we_expect": [
+          "Previous experience in earthworks and municipal engineering",
+          "Training suitable for the task",
+          "Know how to use a laser and read construction drawings",
+          "Occupational safety card required"
+        ],
+        "job_responsibilities": [
+          "Earthworks for the premises",
+          "Sensors, sewer installations and installation of delay pipes",
+          "Diverse tasks and projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "land construction coxswain earthworks municipal engineering previous experience laser construction drawings occupational safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/16.png"
+      },
+      {
+        "id": "c8bd532d",
+        "job_id": "men-on-the-construction-site-espoo-c8bd532d",
+        "processed": true,
+        "title": "Men on the construction site",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329692",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6977ef9b-ea39-4e04-a338-3291ef3ff4b2/en",
+        "job_employer_email": "alina@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/men-on-the-construction-site-espoo-c8bd532d",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Men on the construction site in Espoo, Helsinki, Vantaa. We are looking for skilled construction assistants with previous experience in",
+        "description": "We are looking for skilled construction assistants with previous experience in the industry, a valid occupational safety card, and proficiency in Finnish to join our team at Lavonia Oy. As a versatile general worker on construction sites, you will be involved in various phases of projects from start to finish. Our diverse tasks include performing auxiliary works, cleaning, clearing, carrying help, demolition work, assisting professional builders, and functional lifting tasks. We offer competitive hourly wages based on Finnish collective agreements, high-quality equipment and tools, occupational health care, and professional support for employment matters. Submit your application by clicking the search button to tell us about yourself and previous work experience.",
+        "what_we_expect": [
+          "Previous experience in the construction industry",
+          "Valid occupational safety card",
+          "Finnish language skills",
+          "Qualification of the load fixer"
+        ],
+        "job_responsibilities": [
+          "Performing various auxiliary construction works",
+          "Cleaning, clearing and carrying help",
+          "Demolition work",
+          "Assisting professional builders",
+          "Functional for lifting work"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, which is determined according to your skills and experience",
+          "Diverse and varied tasks in various projects",
+          "High-quality work equipment and appropriate tools",
+          "Occupational health care",
+          "Professional support and advice in employment matters"
+        ],
+        "search_keywords": "construction, construction assistant, job openings, skilled worker",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/30.png"
+      },
+      {
+        "id": "2e6e98ab",
+        "job_id": "land-construction-coxswain-vantaa-2e6e98ab",
+        "processed": true,
+        "title": "Land construction coxswain",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329553",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/782da194-f94b-46e7-b022-a20188d052f1/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/land-construction-coxswain-vantaa-2e6e98ab",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Land construction coxswain in Vantaa. Lavonia Oy, based in Vantaa, is seeking a Land Construction Coxswain to join their team.",
+        "description": "Lavonia Oy, based in Vantaa, is seeking a Land Construction Coxswain to join their team. This role requires previous experience in earthworks and municipal engineering, with responsibilities including pipe installation and frost insulation work. The position also involves using laser technology and reading construction drawings. An occupational safety card is necessary, and the site offers good transport connections. Candidates should mention any experience driving earthmoving machines (Kramer, Avant or other wheeled machines, rollers, etc.) in their applications. Salary for infra sector TES is competitive based on skills and experience, with a negotiable hourly rate.",
+        "what_we_expect": [
+          "Previous experience in earthworks and municipal engineering",
+          "Occupational safety card required",
+          "We offer you"
+        ],
+        "job_responsibilities": [
+          "Pipe installation",
+          "Making frost insulation",
+          "Using a laser and reading construction drawings"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "land construction coxswain",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/19.png"
+      },
+      {
+        "id": "f1c1dadc",
+        "job_id": "civil-engineering-mate-plastic-welding-vihti-f1c1dadc",
+        "processed": true,
+        "title": "Civil engineering mate, Plastic welding",
+        "company": "Lavonia Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329467",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/65be257b-a903-4eca-9f60-892bf422ba82/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/civil-engineering-mate-plastic-welding-vihti-f1c1dadc",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Civil engineering mate, Plastic welding in Vihti. We are seeking an experienced civil engineering mate with proficiency in plastic",
+        "description": "We are seeking an experienced civil engineering mate with proficiency in plastic welding for our client's Microsoft data center project in Vihti. Previous experience in similar welding tasks and valid permits are essential, along with a valid occupational safety card and road safety card. Please indicate if you have driven earthmoving machines such as Kramer, Avant or other wheeled machines, rollers, etc., as this position offers salary based on TES, negotiable according to professional skills. We provide competitive hourly wages, diverse tasks and projects, high-quality equipment, occupational health care, and professional support for employment matters. To apply, please fill out the recruitment form and share your previous experience; we will contact you shortly.",
+        "what_we_expect": [
+          "Previous experience in similar welding tasks",
+          "Valid permits for the position",
+          "Occupational safety card",
+          "Road safety card"
+        ],
+        "job_responsibilities": [
+          "Plastic welding tasks in Vihti",
+          "Electrical and butt welding tasks",
+          "Diverse tasks and projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "civil engineering mate plastic welding electrical butt welding Vihti Microsoft data center project previous experience similar welding tasks valid permits occupational safety card road safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/engineering-and-design/14.png"
+      },
+      {
+        "id": "c8036c44",
+        "job_id": "construction-site-logistics-workers-for-a-long-project-espoo-c8036c44",
+        "processed": true,
+        "title": "Construction site logistics workers for a long project",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1328835",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5959f7d1-cb5c-4588-b570-c047b0002398/en",
+        "job_employer_email": "alina@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-site-logistics-workers-for-a-long-project-espoo-c8036c44",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lavonia Oy as a Construction Site Logistics Worker in Espoo, Helsinki, Vantaa! Support workers on construction sites during the spring of 2026 with",
+        "description": "We are looking for construction logistics workers for a long project in Helsinki, starting during the spring of 2026. As a logistics worker, you will support workers on construction sites at various stages of projects from start to completion. Previous experience is considered a great advantage, but attitude is decisive. A valid work safety card and fluency in Finnish are essential. We offer competitive hourly wages based on collective agreements, diverse tasks across various projects, high-quality equipment and tools, occupational health care, professional support for employment matters, and salary according to TES, which is determined by skills and experience.",
+        "what_we_expect": [
+          "Previous experience in similar tasks is considered a great advantage, but above all, attitude is decisive",
+          "A valid work safety card is necessary",
+          "Auxiliary construction works"
+        ],
+        "job_responsibilities": [
+          "Auxiliary construction works",
+          "Cleaning, clearing and carrying help",
+          "Acting as the right hand of professionals"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, which is determined according to your skills and experience",
+          "Diverse and varied tasks in various projects",
+          "High-quality work equipment and appropriate tools",
+          "Occupational health care",
+          "Professional support and advice in employment matters"
+        ],
+        "search_keywords": "construction logistics workers Helsinki spring project long-term job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/14.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:38",
+    "jobs": [
+      {
+        "id": "dc78bee2",
+        "job_id": "concrete-truck-driver-espoo-dc78bee2",
+        "processed": true,
+        "title": "Concrete Truck Driver",
+        "company": "Lavonia Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329623",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1b2a723-f92a-4d54-b007-0be4d9f02c7e/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/concrete-truck-driver-espoo-dc78bee2",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Concrete truck driver opportunity with Lavonia Oy in Espoo, Finland: skilled individual needed for transporting concrete trucks and floor screed. Competitive",
+        "description": "Concrete truck driver at Lavonia Oy in Espoo, Finland, seeking a skilled individual with previous experience in similar tasks for transporting concrete trucks to sites and pumping floor screed. Requires valid work security card and flexibility in working hours due to mobile nature of the job. The role offers competitive hourly wage based on Finnish collective agreements, diverse tasks and projects, high-quality equipment, occupational health care, professional support, and long-term employment opportunities with potential for overtime. Interested candidates should fill out the recruitment form and provide their previous experience details. For more information, contact Kalle Lindqvist at kalle.lindqvist@lavonia.fi or Aleksandr Partanen at aleksandr.partanen@lavonia.",
+        "what_we_expect": [
+          "Previous experience in similar tasks.",
+          "Valid work security card.",
+          "We offer you"
+        ],
+        "job_responsibilities": [
+          "Transporting the concrete truck to sites and pumping floor screed.",
+          "Diverse tasks and projects",
+          "We offer you"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "concrete truck driver, transportation, logistics, construction, staffing agency",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/13.png"
+      },
+      {
+        "id": "818aa1cc",
+        "job_id": "earth-builder-for-the-installation-of-concrete-pipes-espoo-818aa1cc",
+        "processed": true,
+        "title": "Earth Builder for the installation of concrete pipes",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329243",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bd876dcf-7f23-48c0-9c26-f2b9a4f51be6/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-builder-for-the-installation-of-concrete-pipes-espoo-818aa1cc",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lavonia Oy as an Earth builder for the installation of concrete pipes in Espoo, Helsinki, Vantaa. Experience in similar projects, high-quality equipment",
+        "description": "We are seeking an experienced Earth builder for the installation of concrete pipes, working on a project in Espoo that involves the installation of concrete pipes, construction of water pipes and sluices, and the use of pipe lasers. The role offers versatile tasks and projects, high-quality equipment, occupational health care, and professional support and advice on employment matters. With a focus on independent work and ability to handle variable weather conditions, this position is ideal for individuals with previous experience in similar street construction and municipal engineering tasks. Interested candidates should fill out the recruitment form and provide their previous work history. For more information about the job or to apply, please contact Kalle Lindqvist at kalle.",
+        "what_we_expect": [
+          "Good physical condition",
+          "Working in variable weather conditions",
+          "We offer you"
+        ],
+        "job_responsibilities": [
+          "Installing concrete pipes",
+          "Construction of water pipes and sluices",
+          "Using a pipe laser"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "construction concrete pipe fitter Espoo HVAC field",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/29.png"
+      },
+      {
+        "id": "d1658561",
+        "job_id": "land-construction-assistant-helsinki-d1658561",
+        "processed": true,
+        "title": "Land construction Assistant",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329450",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e7abd59e-0a6d-4c32-8e91-a0ff6efa71c7/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/land-construction-assistant-helsinki-d1658561",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Land construction assistant in Helsinki. Lavonia Oy, a leading domestic personnel rental company specializing in the construction and",
+        "description": "Lavonia Oy, a leading domestic personnel rental company specializing in the construction and industrial sector, is seeking experienced construction assistants with previous site work experience for earthworks projects in Helsinki. This full-time position offers competitive hourly rates based on Finnish collective agreements and includes versatile tasks such as shoveling, spreading wreaths, erecting fences, and assisting land developers. The ideal candidate will be ready to work in varying weather conditions and possess good physics skills. A valid employment security card is required for this role. Salary is negotiable according to professional skills within the infra sector TES.",
+        "what_we_expect": [
+          "Valid work security card",
+          "The position requires",
+          "Previous experience working on a construction site"
+        ],
+        "job_responsibilities": [
+          "Previous experience working on a construction site",
+          "Readiness to work in variable weather conditions",
+          "Good physics"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "construction, earthworks, Helsinki, construction assistant, previous experience, weather conditions, work security card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/28.png"
+      },
+      {
+        "id": "df7e0b11",
+        "job_id": "welder-pöytyä-df7e0b11",
+        "processed": true,
+        "title": "Welder",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Pöytyä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329605",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1e4d48a-cf69-4ec4-9e27-d3b859570190/en",
+        "job_employer_email": "alina@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/welder-pöytyä-df7e0b11",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy seeks a MIG/MAG welder with experience in metal structure welding and cutting for their client specializing in steel structures and engineering",
+        "description": "Lavonia Oy is seeking a MIG/MAG welder with experience in metal structure welding and cutting for their client, specializing in steel structures and engineering products. The position offers competitive hourly wages based on Finnish collective agreements, versatile tasks, high-quality equipment, occupational health care, professional support, and advice on employment matters. The morning shift full-time job is available immediately upon suitable candidate identification.",
+        "what_we_expect": [
+          "Previous experience in MIG/MAG welding of metal structures using 136 and 138 methods, assembly and cutting of metal structures",
+          "We offer you",
+          "Salary according to TES, based on skills and experience."
+        ],
+        "job_responsibilities": [
+          "MIG/MAG welding of metal structures using 136 and 138 methods",
+          "Assembly and cutting of metal structures",
+          "Diverse tasks and projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "MIG/MAG welder, solvent company, steel structures, engineering products, clean hall environment, morning shift, full-time rental job, TES of the technology industry, Lavonia Group",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/27.png"
+      },
+      {
+        "id": "f7b7516a",
+        "job_id": "pipe-welder-for-tampere-tampere-f7b7516a",
+        "processed": true,
+        "title": "Pipe welder for Tampere",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1328939",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ee7568e3-277f-4ac0-80c0-fa87e0f7ef80/en",
+        "job_employer_email": "alina.tihonova@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/pipe-welder-for-tampere-tampere-f7b7516a",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:38",
+        "open_positions": 1,
+        "salary_range": "Salary according to experience, in accordance w",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Pipe welder for Tampere in Tampere. We are seeking a skilled pipe welder for our client in Tampere, Finland. Our domestic steel",
+        "description": "We are seeking a skilled pipe welder for our client in Tampere, Finland. Our domestic steel structure manufacturer requires experience with TIG small pipe welding (black and clear) using 141 methods. The position offers full-time employment and is permanent, allowing for the possibility of securing a job on the client's books after a trial period. Salary will be competitive based on experience and technology sector collective agreements. We provide an attractive salary package including skills-based pay, diverse tasks and projects, high-quality equipment, occupational health care, professional support, and advice on employment matters. To apply, please fill out our recruitment form and share your previous welding experience; we'll get in touch with you shortly.",
+        "what_we_expect": [
+          "Our client is a domestic manufacturer of modern steel structures. For the task of TIG small pipe welding (black and clear) with 141 methods. We require previous experience in similar tasks.",
+          "The employment is full-time and permanent. Possibility to get a job on the client's books after the trial period. Salary according to experience, in accordance with the TES of the technology sector.",
+          "We offer you"
+        ],
+        "job_responsibilities": [
+          "Welders and gas cutters",
+          "Diverse tasks and projects",
+          "We offer you"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "search_keywords": "pipe welder, Tampere, domestic manufacturer of steel structures, TIG small pipe welding, previous experience, similar tasks, full-time, permanent, trial period, salary according to TES, diverse tasks, high-quality equipment, occupational health care, professional support and advice on employment matters",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:39",
+    "jobs": [
+      {
+        "id": "af62f055",
+        "job_id": "carpet-installer-for-locations-in-the-capital-region-espoo-af62f055",
+        "processed": true,
+        "title": "Carpet Installer for locations in the capital region",
+        "company": "Lavonia Oy",
+        "job_category": "research-and-development",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329085",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f27cc3cd-8361-437a-aaef-68c71d653546/en",
+        "job_employer_email": "kalle.lindqvist@lavonia.fi",
+        "job_employer_name": "Kalle Lindqvist",
+        "job_employer_phone_no": "0408201655",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/research-and-development/carpet-installer-for-locations-in-the-capital-region-espoo-af62f055",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lavonia Oy as a Carpet Installer in the capital region, offering competitive wages and diverse tasks with occupational health care and professional",
+        "description": "We are seeking experienced carpet installers for our client to work across various locations within the capital region. Previous experience, valid safety card, and ability to work independently are required. The job offers a competitive hourly wage based on TES skills and experience, diverse tasks, high-quality equipment, occupational health care, professional support, and advice on employment matters. Interested candidates should fill out the recruitment form and provide their previous experience details for immediate contact. More information about this position can be found on weekdays (9-16) at Kalle Lindqvist or via email to kalle.lindqvist@lavonia.fi.",
+        "what_we_expect": [
+          "We offer you",
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects",
+          "High-quality equipment",
+          "Occupational health care",
+          "Professional support and advice on employment matters"
+        ],
+        "job_responsibilities": [
+          "Parquet Installer",
+          "Diverse tasks and projects",
+          "We offer you"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects.",
+          "We offer you"
+        ],
+        "search_keywords": "carpet installer capital region",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/research-and-development/3.png"
+      },
+      {
+        "id": "9f7dbe21",
+        "job_id": "welders-in-outokumpu-outokumpu-9f7dbe21",
+        "processed": true,
+        "title": "Welders in Outokumpu",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Outokumpu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1329600",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f219a78a-fdef-48ca-abf6-d8094ac2db1c/en",
+        "job_employer_email": "alina@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/welders-in-outokumpu-outokumpu-9f7dbe21",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lavonia Oy is seeking a Welders in Outokumpu in Outokumpu. We are looking for welders with experience in welding metal structures, particularly thick metals",
+        "description": "We are looking for welders with experience in welding metal structures, particularly thick metals and assembling, to join our client at Outokumpu for a long-term employment relationship. The position offers competitive hourly wages based on Finnish collective agreements and includes salary according to the TES of the technology industry, diverse tasks and projects, high-quality equipment, occupational health care, and professional support in employment matters. The morning shift is full-time and takes place in a clean hall environment. Submit your application by clicking the search button; fill out a short recruitment form with details about yourself and previous work experience to be contacted soon. For more information, please contact Alina Tihonova at 0401287021 or email alina.",
+        "what_we_expect": [
+          "Our client is a solvent company that specializes in manufacturing various steel structures and engineering products.",
+          "We offer you",
+          "Salary according to TES, based on skills and experience."
+        ],
+        "job_responsibilities": [
+          "Welders and gas cutters",
+          "Diverse tasks and projects",
+          "We offer you"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, based on skills and experience.",
+          "Diverse tasks and projects.",
+          "We offer you"
+        ],
+        "search_keywords": "welder, construction, Outokumpu",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/23.png"
+      },
+      {
+        "id": "bfe2f64b",
+        "job_id": "an-ironworker-vantaa-bfe2f64b",
+        "processed": true,
+        "title": "An ironworker",
+        "company": "Lavonia Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lavonia.likeit.fi/apply/1328766",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f726269a-bc97-466e-b87b-bf7239292d2c/en",
+        "job_employer_email": "aleksandr.partanen@lavonia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/an-ironworker-vantaa-bfe2f64b",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-11 13:44:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lavonia Oy as an ironworker in Vantaa, Helsinki! Experienced rebar workers needed for a project expansion. Competitive wages, diverse tasks, and excellent",
+        "description": "We are looking for skilled rebar workers for an expansion project in Helsinki, requiring experience with reinforcement work (according to drawings), a valid work safety card and hot work card, good physical condition, diligence, self-initiative, and teamwork skills. We offer competitive hourly wages based on Finnish collective agreements, diverse tasks across various projects, high-quality equipment and tools, occupational health care, professional support in employment matters, and versatile roles suitable for experienced professionals or early-career creators. Submit your application by clicking the search button; we will contact you soon with more information. For more details, please visit lavonia.fi/hae-toiin.",
+        "what_we_expect": [
+          "Experience with reinforcement work (work according to drawings)",
+          "A valid work safety card, hot work card is considered an advantage",
+          "Good physical condition and diligence at work",
+          "Self-initiative and teamwork skills"
+        ],
+        "job_responsibilities": [
+          "Concrete Builders and rebar workers",
+          "Carpenters and Carpenters",
+          "Diverse and varied tasks in various projects"
+        ],
+        "what_we_offer": [
+          "Salary according to TES, which is determined by your skills and experience",
+          "Diverse and varied tasks in various projects",
+          "High-quality work equipment and appropriate tools",
+          "Occupational health care",
+          "Professional support and advice in employment matters"
+        ],
+        "search_keywords": "ironworker Helsinki rebar workers expansion project Finnish or English language skills salary diverse tasks professional support",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/18.png"
+      },
+      {
+        "id": "86a73812",
+        "job_id": "combination-vehicle-driver-lappeenranta-summer-job-lappeenranta-86a73812",
+        "processed": true,
+        "title": "Combination vehicle driver Lappeenranta summer job",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Combination%20vehicle%20driver%20Lappeenranta%20summer%20job&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Combination%20vehicle%20driver%20Lappeenranta%20summer%20job.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5dfd71d4-7b55-430a-a89e-1d847ae59e85/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "MArko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/combination-vehicle-driver-lappeenranta-summer-job-lappeenranta-86a73812",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Fin-Terpuu Oy, Kaukas Pulp and Paper is seeking combination vehicle drivers for their Lappeenranta contracting destination UPM Kaukaa pulp mill area during",
+        "description": "Fin-Terpuu Oy, Kaukas Pulp Ja Paperi is seeking combination vehicle drivers for their Lappeenranta contracting destination UPM Kaukaa pulp mill area during the summer months. This full-time position requires a valid combination vehicle driver's license and professional qualifications, as well as proficiency in using Inventory management software and working time reporting tools. The job involves energy fraction transfer tasks with combined vehicles, wheel machine work, and handling of chips, wood, and bark. Shifts are 3 days on/4 days off or 7 days a week, with occasional longer shifts based on factory schedule. Experience and professional skills in the field are highly valued.",
+        "what_we_expect": [
+          "Valid combination vehicle driver's license as well as professional qualifications and an occupational safety card",
+          "Ability to handle a vehicle, use a computer, master inventory management and working time reporting software",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
+        ],
+        "job_responsibilities": [
+          "Energy fraction transfer tasks with a combined vehicle, chips, wood and bark",
+          "Wheel machine and other machine work",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
+        ],
+        "what_we_offer": [
+          "Versatile work with the opportunity to learn and develop yourself as an employee in a competent team",
+          "€15.42 €18.02 depending on years of experience in the field",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
+        ],
+        "search_keywords": "combination vehicle driver Lappeenranta summer job, combination vehicle driver, Lappeenranta, UPM Kaukaa pulp mill area, full-time and temporary summer work, energy fraction transfer tasks, chips, wood and bark, wheel machine and other machine work, valid combination vehicle driver's license as well as professional qualifications and an occupational safety card, ability to handle a vehicle, use a computer, master inventory management and working time reporting software",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/30.png"
+      },
+      {
+        "id": "fedc4d16",
+        "job_id": "wire-moped-driver-lappeenranta-summer-job-lappeenranta-fedc4d16",
+        "processed": true,
+        "title": "Wire moped driver Lappeenranta summer job",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Wire%20moped%20driver%20Lappeenranta%20summer%20job&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Wire%20moped%20driver%20Lappeenranta%20summer%20job.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f830922a-9316-4282-a81e-144598555e59/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "Marko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/wire-moped-driver-lappeenranta-summer-job-lappeenranta-fedc4d16",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:39",
+        "open_positions": 1,
+        "salary_range": "salary group I in terms of its level of demand,",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Fin-Terpuu Oy seeks a Wire Moped Driver at Lappeenranta's UPM Kaukaa pulp mill for full-time summer work, starting May. Responsibilities include mechanical",
+        "description": "We are looking for a wire moped driver at Fin-Terpuu Oy's Lappeenranta contracting destination, UPM Kaukaa pulp mill area, for full-time summer work starting in May. Responsibilities include mechanical removal of float threads and shift work with 2 shifts per day from 5 days a week. Experience and professionalism are valued, as well as the ability to drive a forklift or wheeled machine, hold a B driver's license, and occupational safety card. The hourly wage is €12.99 - €15.09 depending on years of experience in the field. Fin-Terpuu Oy offers logistics services specializing in internal transport for the wood processing industry, ports, terminals, and waterway transport. Apply by 30 April 2026 with a CV and previous work experience to secure your position.",
+        "what_we_expect": [
+          "Experience and professionalism in the field are considered an advantage.",
+          "Ability to drive a forklift or a wheeled machine.",
+          "B driver's license and occupational safety card.",
+          "Good team spirit, initiative, ability to take on challenges required by the job, and good safety attitude."
+        ],
+        "job_responsibilities": [
+          "Mechanical removal of float threads.",
+          "The work is shift work, 2 shifts 5 days a week.",
+          "Experience and professionalism in the field are considered an advantage."
+        ],
+        "what_we_offer": [
+          "€12.99 €15.09 depending on years of experience in the field",
+          "Full-time and temporary summer work",
+          "The work is shift work, 2 shifts 5 days a week."
+        ],
+        "search_keywords": "wire moped driver Lappeenranta summer job, mechanical removal of float threads, forklift or wheeled machine, B driver's license, occupational safety card, team spirit, initiative, challenges required by the job, good safety attitude, €12.99 €15.09 depending on years of experience in the field",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:40",
+    "jobs": [
+      {
+        "id": "ebbb3e89",
+        "job_id": "reach-driver-to-lappeenranta-summer-job-lappeenranta-ebbb3e89",
+        "processed": true,
+        "title": "Reach driver to Lappeenranta Summer job",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Reach%20driver%20to%20Lappeenranta%20Summer%20job&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Reach%20driver%20to%20Lappeenranta%20Summer%20job.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b70d0b52-4aab-4878-9a3f-49787436037b/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "Marko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/reach-driver-to-lappeenranta-summer-job-lappeenranta-ebbb3e89",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:40",
+        "open_positions": 1,
+        "salary_range": "Salary group III of the forest machinery collective agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Fin-Terpuu Oy as a Reach Truck Driver for Lappeenranta Summer Job! Apply now to work in the UPM Kaukaa pulp mill area and earn €15.42 to €18.02 per hour",
+        "description": "We are looking for reach truck drivers with Finnish language proficiency for our Lappeenranta contracting location at the UPM Kaukaa pulp mill area, offering full-time summer work starting in May and lasting until August. Duties include versatile machine handling tasks and using a computer and warehouse management program. Experience and expertise in wood processing and heavy equipment are considered an advantage. The hourly wage is €15.42 to €18.02 depending on years of experience, with opportunities for learning and development within a competent team. Fin-Terpuu Oy, part of Kajaani's logistics services group, specializes in forest industry logistics, maintenance, consulting, and machine rental. Applications are due by April 30, 2026, at marko.hokkanen@fin-terpuu.fi or markku.",
+        "what_we_expect": [
+          "Experience and expertise in wood processing and heavy equipment is considered an advantage",
+          "Work security card and at least a B driver's license",
+          "Ability to work as part of a developing team, good team spirit, ability to take on challenges required by the job, and safety attitude"
+        ],
+        "job_responsibilities": [
+          "Versatile duties of a forklift driver in the Lappeenranta factory area",
+          "Machine handling skills, computer use, warehouse management and working time reporting program mastery",
+          "3 shifts 7 days a week or 13 shifts according to the factory schedule"
+        ],
+        "what_we_offer": [
+          "Versatile work with opportunities for skill development in a competent team",
+          "Hourly wage according to collective agreement of the forest machinery industry, pay group III based on years of experience (€15.42 - €18.02)",
+          "As a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule."
+        ],
+        "search_keywords": "reach truck driver Lappeenranta summer job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/24.png"
+      },
+      {
+        "id": "1018784a",
+        "job_id": "shelving-summer-job-porvoo-porvoo-1018784a",
+        "processed": true,
+        "title": "Shelving summer job, Porvoo",
+        "company": "Joblink Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Porvoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/hyllyttaja-kesatyo-porvoo/m5n1GY",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/84a58a22-217d-4454-89d7-bf47b6977bd0/en",
+        "job_employer_email": "marita.rusanen@joblink.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 531 3180",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/shelving-summer-job-porvoo-porvoo-1018784a",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-29",
+        "scraped_at": "2026-04-11 13:44:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Joblink Oy is seeking a Shelving summer job, Porvoo in Porvoo. JobLink Oy is seeking enthusiastic customer service-oriented shelf workers for the summer season",
+        "description": "JobLink Oy is seeking enthusiastic customer service-oriented shelf workers for the summer season in Porvoo Näsi. Ideal candidates are flexible, eager to learn, and comfortable working varied locations. Gain valuable experience in a trade professional role while enjoying a supportive environment with opportunities for advancement. Apply now at 040 531 3180 or email marita.rusanen@joblink.fi.",
+        "what_we_expect": [
+          "Lively attitude and a desire to learn",
+          "Previous grocery store experience is of course helpful, but by no means a requirement",
+          "Good social skills",
+          "At least 18 years old",
+          "Fluent Finnish language skills"
+        ],
+        "job_responsibilities": [
+          "Unload loads",
+          "Display products",
+          "Make sure that the shelves stay clean"
+        ],
+        "what_we_offer": [
+          "Salary according to the TES of the trade industry",
+          "Flexible work according to your schedules that fits many life situations",
+          "The opportunity to take a vacation whenever you want",
+          "Valuable work and customer service experience, which is useful both at work and at work",
+          "Advancement opportunities for various positions in the trade sector and permanent employment"
+        ],
+        "search_keywords": "summer job Porvoo shelving job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/general-labor-and-manual-work/8.png"
+      },
+      {
+        "id": "3406b3cc",
+        "job_id": "dental-worker-for-a-dental-laboratory-you-do-not-need-previo-mikkeli-3406b3cc",
+        "processed": true,
+        "title": "Dental worker for a dental laboratory, you do not need previous experience in the field",
+        "company": "Hammas-Apu I Oy, Mikkeli",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Mikkeli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:kimmo@loppukaarre.fi?subject=Application%20for%20the%20Job%20-%20Dental%20worker%20for%20a%20dental%20laboratory%2C%20you%20do%20not%20need%20previous%20experience%20in%20the%20field&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Dental%20worker%20for%20a%20dental%20laboratory%2C%20you%20do%20not%20need%20previous%20experience%20in%20the%20field.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a50406f1-c505-48fe-808a-cc085d75d334/en",
+        "job_employer_email": "kimmo@loppukaarre.fi",
+        "job_employer_name": "Kimmo Loppukaarre",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/dental-worker-for-a-dental-laboratory-you-do-not-need-previo-mikkeli-3406b3cc",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-17",
+        "scraped_at": "2026-04-11 13:44:40",
+        "open_positions": 1,
+        "salary_range": "ACCORDING TO THE EMPLOYMENT AGREEMENT FOR THE DENTAL LABORATORY FIELD 28.5.2025 31.1.2028",
+        "workTime": "Part-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Hammas-Apu I Oy, Mikkeli is seeking a Dental worker for a dental laboratory, you do not need previous experience in the field in Mikkeli. We are looking for a",
+        "description": "We are looking for a dental worker for our dental laboratory in Mikkeli. This part-time position offers manual skills training and is suitable for students or those seeking additional work experience. The duties include facility maintenance, equipment preparation, and assisting in the manual manufacture of dental prostheses using materials like gypsum, light-cured plastics, acrylics, and metals. Tasks can change frequently, so adaptability and a willingness to learn are essential. Previous laboratory experience is not required but previous training or interest in dentistry would be beneficial. The position offers part-time work at least 20 hours per week until the end of 2026, with opportunities for further review after that.",
+        "what_we_expect": [
+          "Precision",
+          "Diligence",
+          "Initiative",
+          "Pressure tolerance"
+        ],
+        "job_responsibilities": [
+          "Maintenance and preparation of facilities and equipment",
+          "Assisting other employees in the manual manufacture of dental prostheses",
+          "Precision"
+        ],
+        "what_we_offer": [
+          "Part-time work at least 20 hours a week, suitable for studies or other work",
+          "Temporary employment relationship until the end of 2026",
+          "Precision"
+        ],
+        "search_keywords": "dental worker dental laboratory manual skills patient work phone calls",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/general-labor-and-manual-work/8.png"
+      },
+      {
+        "id": "1cce2120",
+        "job_id": "water-storage-worker-lappeenranta-1cce2120",
+        "processed": true,
+        "title": "Water Storage Worker",
+        "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application%20for%20the%20Job%20-%20Water%20Storage%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Water%20Storage%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/478c94a1-fef1-41cd-923e-92387b8e014d/en",
+        "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
+        "job_employer_name": "Marko Hokkanen",
+        "job_employer_phone_no": "0405542794",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/water-storage-worker-lappeenranta-1cce2120",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi seeks experienced water storage workers for their Lappeenranta site, offering full-time positions in May through August",
+        "description": "Fin-Terpuu Oy, Kaukas Pulp and Paper is seeking experienced water storage workers for their Lappeenranta contracting site, UPM Kaukaa pulp mill area. Seasonal work in full-time positions with shift schedules from May through August offers a mix of physical labor and outdoor activities. Duties include moving Bundles of uittopuu using Bulldozers and forklifts, ensuring good cooperation and readiness for the demanding tasks. A background in wood processing and heavy equipment is preferred, as well as experience driving wheeled machines or having a valid driver's license and Occupational safety card. The Hourly wage is €14.35 to €16.77 based on years of experience, with benefits including continuous training and development opportunities within the forest machinery industry.",
+        "what_we_expect": [
+          "Experience and expertise in wood processing and heavy equipment is considered an advantage.",
+          "Ability to drive a forklift or a wheeled machine.",
+          "B driver's license and occupational safety card.",
+          "Good team spirit, initiative, the ability to take on the challenges required by the job, and a good safety attitude."
+        ],
+        "job_responsibilities": [
+          "Moving bundles of uittopuu and arranging them with a trap.",
+          "Working in varying weather conditions from land and boats.",
+          "The work is carried out in varying weather conditions from land and boats, and it requires good cooperation and readiness for physical work."
+        ],
+        "what_we_offer": [
+          "Hourly wage in accordance with the collective agreement of the forest machinery industry",
+          "€14.35 €16.77 depending on years of experience in the field",
+          "The work is carried out in varying weather conditions from land and boats, and it requires good cooperation and readiness for physical work."
+        ],
+        "search_keywords": "water storage worker Lappeenranta Summer job, water storage worker, summer job, UPM Kaukaa pulp mill area, full-time and temporary summer work, wood processing, heavy equipment, forklift, wheeled machine, B driver's license, occupational safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/general-labor-and-manual-work/23.png"
+      },
+      {
+        "id": "862f4b33",
+        "job_id": "chinese-professional-chef-helsinki-862f4b33",
+        "processed": true,
+        "title": "Chinese professional chef",
+        "company": "Tian Yong Oy, Helsinki",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tianxiangyong08@gmail.com?subject=Application%20for%20the%20Job%20-%20Chinese%20professional%20chef&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chinese%20professional%20chef.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/07d5ff41-d124-4c6d-a4e1-ac8b9caff82c/en",
+        "job_employer_email": "tianxiangyong08@gmail.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chinese-professional-chef-helsinki-862f4b33",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-24",
+        "scraped_at": "2026-04-11 13:44:40",
+        "open_positions": 1,
+        "salary_range": "2300e/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [],
+        "meta_description": "Tian Yong Oy is seeking a Chinese professional chef for their Helsinki-based tourism, accommodation, or catering sector. Join us as a culinary expert in",
+        "description": "Tian Yong Oy is seeking a Chinese professional chef for their Helsinki-based tourism, accommodation, or catering sector. This role involves working in groups, maintaining clean, hygienic, and safe environments, using food cutting tools, cleaning the preparation area, handing over cooking spaces to subsequent shifts, planning menus, ensuring correct kitchen appliance temperatures, storing supplies, preparing flamed dishes, utilizing cooking techniques, managing expenses, adhering to health, safety, hygiene, and other relevant legislation, and preparing the restaurant for service.",
+        "what_we_expect": [
+          "Professional chef qualification exam and a valid chef's certificate",
+          "Passive work attitude",
+          "Ability to independently plan menus, prepare dishes and prepare menus"
+        ],
+        "job_responsibilities": [
+          "Designing traditional Chinese menus",
+          "Preparing food for the restaurant's customers",
+          "Taking care of the cleanliness of the kitchen"
+        ],
+        "what_we_offer": [
+          "International work environment",
+          "Development opportunities",
+          "Permanent job"
+        ],
+        "search_keywords": "Chinese professional chef Tian Yong Oy, Helsinki Helsinki food-and-restaurant",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/food-and-restaurant/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-11 13:44:41",
+    "jobs": [
+      {
+        "id": "2c81c86a",
+        "job_id": "caregiver-or-nursing-student-would-you-come-to-home-care-in--riihimäki-2c81c86a",
+        "processed": true,
+        "title": "Caregiver or Nursing student, would you come to home care in Riihimäki or Hämeenlinna for the summer?",
+        "company": "KoskiHoiva Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Riihimäki",
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://koskihoiva.rekrytointi.com/paikat/index.php?o=A_A&jid=242&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e2686479-18b3-4cd8-985a-b8542ca8afaa/en",
+        "job_employer_email": "krista.saari@koskihoiva.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/caregiver-or-nursing-student-would-you-come-to-home-care-in--riihimäki-2c81c86a",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:41",
+        "open_positions": 1,
+        "salary_range": "We follow the collective agreement of the private social service industry, so your salary is between €14.82-16.03/h depending on your experience. As a rule, we make contracts for 90-115 h/3 weeks or 60-115 h/3 weeks. If you want, we can also make a gig contract, so you can take shifts when it suits you best.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join KoskiHoiva Oy as a Caregiver or nursing student for summer 2023 in Riihimäki or Hämeenlinna! A warm, sunny season awaits you with modern employment",
+        "description": "We are looking for skilled caregivers or nursing students who would like to join our team in Riihimäki or Hämeenlinna during the summer months. With a passion for home care and a positive attitude, you'll enjoy working with elderly clients while enjoying the warm summer evenings. Our company, founded in 2015, provides versatile services across Kanta-Häme and Pirkanmaa regions. We offer modern employment opportunities with excellent employee and customer experiences. A nursing degree (or final stages of nursing studies), a driver's license, and willingness to work in Finnish are required. You'll also benefit from the use of company vehicles during your shifts. Our team is committed to providing a relaxed atmosphere and approachable supervisors.",
+        "what_we_expect": [
+          "Nursing degree or nursing studies in final stages",
+          "Driver's license, willingness to work in Finnish",
+          "Positive attitude, good communication skills, respect customer wishes and autonomy while working at home"
+        ],
+        "job_responsibilities": [
+          "Care for the elderly",
+          "Mobile and versatile job with the elderly",
+          "Nursing degree (or Nursing studies in the final stages)"
+        ],
+        "what_we_offer": [
+          "Modern employer with excellent employee and customer experience",
+          "Use of company car for the duration of the work shift",
+          "Salary between €14.82-16.03/h depending on experience, contracts for 90-115 h/3 weeks or 60-115 h/3 weeks, gig contract available"
+        ],
+        "search_keywords": "caregiver nursing student home care Riihimäki Hämeenlinna summer job mobile versatile elderly customer satisfaction positive attitude good communication skills respect wishes autonomy work experience care services Hilkka system medical exams collective agreement private social service industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/6.png"
+      },
+      {
+        "id": "63201cd2",
+        "job_id": "technical-property-manager-paimio-63201cd2",
+        "processed": true,
+        "title": "Technical Property Manager",
+        "company": "Bolt.Works Oy",
+        "job_category": "property-and-real-estate",
+        "jobLocation": [
+          "Paimio",
+          "Turku",
+          "Naantali",
+          "Raisio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=1894028",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0000eebd-8708-4a17-bd25-e5f0f38cb267/en",
+        "job_employer_email": "essi.karhilahti@bolt.works",
+        "job_employer_name": "Essi Karhilahti",
+        "job_employer_phone_no": "+358504723900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/property-and-real-estate/technical-property-manager-paimio-63201cd2",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-19",
+        "scraped_at": "2026-04-11 13:44:41",
+        "open_positions": 1,
+        "salary_range": "Salary: According to the TES of the real estate service industry or according to the contract, depending on experience, between €15-18.00/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bolt.Works Oy seeks a PROFESSIONAL PROPERTY MANAGER for permanent employment in Turku, Finland. Ensure clients' properties remain clean, safe, and healthy",
+        "description": "Bolt.Works Oy is seeking a PROFESSIONAL PROPERTY MANAGER for permanent employment in Turku, Finland. This role ensures that clients' properties remain clean, safe, and healthy year-round. Ideal candidates are self-starters with practical skills who enjoy varied work. The job description includes maintenance, cleaning, snow removal, and greenery care. Previous experience or education is preferred but not required. Responsibilities include working independently, problem-solving, and customer service. Salary ranges from €15-18/h based on contract terms. Stable employment, diverse tasks, a good team atmosphere, and comprehensive training are offered. The location is in Turku, with permanent full-time work starting during April.",
+        "what_we_expect": [
+          "Previous experience in real estate management or suitable education (e.g. Professional qualification in real estate management), alternatively experience or education in the construction industry or building technology is considered an advantage",
+          "Good manual skills and problem solving ability",
+          "Independent and responsible approach to work and customer service spirit"
+        ],
+        "job_responsibilities": [
+          "Maintenance, maintenance and cleanliness of the exterior and interior areas of the properties",
+          "Small repairs and inspection rounds",
+          "Snow removal and sandblasting in winter, maintenance of green areas in summer"
+        ],
+        "what_we_offer": [
+          "Stable and long-term employment in a growing company",
+          "No day of the diverse and varied job description is the same",
+          "A good work team where you can always get help",
+          "Comprehensive orientation and the opportunity to develop your skills"
+        ],
+        "search_keywords": "technical property manager, permanent employment, real estate management, Turku, property maintenance, customer service, manual skills, problem solving ability",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/property-and-real-estate/27.png"
+      },
+      {
+        "id": "513c9158",
+        "job_id": "industrial-cleaning-workers-in-sotkamo-sotkamo-513c9158",
+        "processed": true,
+        "title": "Industrial cleaning workers in Sotkamo",
+        "company": "Wulff Works Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Sotkamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/45089388",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9deca636-0d92-4466-94f6-513aa73c0ee2/en",
+        "job_employer_email": "nina.lauronen@wulff.fi",
+        "job_employer_name": "Nina Lauronen",
+        "job_employer_phone_no": "0449012274",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/industrial-cleaning-workers-in-sotkamo-sotkamo-513c9158",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-23",
+        "scraped_at": "2026-04-11 13:44:41",
+        "open_positions": 1,
+        "salary_range": "Salary: The salary cap for the position is aroun",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy seeks two energetic industrial cleaning workers for Terrafame area, focusing on practical and versatile tasks within an important production",
+        "description": "Wulff Works Oy is seeking two energetic industrial cleaning workers for Terrafame area in Sotkamo, focusing on practical and versatile tasks within an important production chain. Essential duties include using high-powered vacuums to remove dust, cleaning halls, and collecting ore dust with a bobcat. The position also involves driving trucks and using vacuum trucks for washing and cleaning objects. Applicants should have a C driver's license, be physically fit, and possess good communication skills. Previous experience is not mandatory but preferred. Fixed-term work in a stable industrial environment offers versatile tasks and orientation to the position. Working hours are from 7:00 a.m. to 5:30 p.m.",
+        "what_we_expect": [
+          "C driver's license",
+          "Brisk and self-initiated approach to work",
+          "Good physical condition",
+          "Previous experience in similar tasks is considered an advantage"
+        ],
+        "job_responsibilities": [
+          "Clean various industrial sites",
+          "Remove ore dust",
+          "Use a high-powered vacuum cleaner to remove dust",
+          "Clean halls",
+          "Collect ore dust with a bobcat",
+          "Drive a truck and tipping loads"
+        ],
+        "what_we_offer": [
+          "Fixed-term work in a stable industrial environment",
+          "Versatile and practical tasks",
+          "Orientation to the position",
+          "Salary cap around €1415/h depending on skills and experience, with a bonus of €2/h for demanding conditions",
+          "Working hours from Monday to Friday from 7:00 a.m. To 5:30 p.m."
+        ],
+        "search_keywords": "cleaning-and-facility-services industrial cleaning workers Sotkamo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/4.png"
+      },
+      {
+        "id": "19140083",
+        "job_id": "nurse-would-you-come-to-the-mobile-team-in-hämeenlinna-and-r-riihimäki-19140083",
+        "processed": true,
+        "title": "Nurse, would you come to the mobile team in Hämeenlinna and Riihimäki?",
+        "company": "KoskiHoiva Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Riihimäki",
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://koskihoiva.rekrytointi.com/paikat/index.php?o=A_A&jid=241&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a6d27793-5b08-46b6-b07c-40761d5332e3/en",
+        "job_employer_email": "krista.saari@koskihoiva.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-would-you-come-to-the-mobile-team-in-hämeenlinna-and-r-riihimäki-19140083",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-11 13:44:41",
+        "open_positions": 1,
+        "salary_range": "salary depending on your experience between €16",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join KoskiHoiva as a Nurse in Hämeenlinna and Riihimäki, providing personalized care and ensuring seamless communication with healthcare professionals. 🌟",
+        "description": "We are looking for nurses who thrive in diverse environments and bring a positive attitude to our mobile team in Hämeenlinna and Riihimäki. With a nurse's degree, good Finnish language skills, and a driver’s license, you'll be part of an expanding network serving over 300 customers across Kanta-Häme and Pirkanmaa regions. Your role involves providing personalized care, updating medical records, handling wound treatments, blood samples, vaccinations, and catheter changes—all while ensuring seamless communication with healthcare professionals. Join KoskiHoiva’s team to offer excellent customer service experiences every day, committed to your well-being through regular exercise and cultural activities vouchers.",
+        "what_we_expect": [
+          "Nurse's degree",
+          "Driver's license",
+          "Good Finnish language skills",
+          "Self-initiated and positive team player",
+          "Valid medical exams",
+          "Expertise in Rai assessment"
+        ],
+        "job_responsibilities": [
+          "Work in the morning and evening shifts",
+          "Occasionally on weekends",
+          "You should have a nurse's degree and vaccination coverage according to Section 48 of the Infectious Diseases Act."
+        ],
+        "what_we_offer": [
+          "Modern and developing employer",
+          "Trusted partner for home care",
+          "Car at your disposal",
+          "Exercise and culture vouchers of €300 annually"
+        ],
+        "search_keywords": "Nurse, would you come to the mobile team in Hämeenlinna and Riihimäki? KoskiHoiva Oy Riihimäki healthcare",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/26.png"
+      },
+      {
+        "id": "9f6b4e63",
+        "job_id": "earth-construction-worker-with-pipe-installation-skills-hels-helsinki-9f6b4e63",
+        "processed": true,
+        "title": "Earth construction worker with pipe installation skills, Helsinki",
+        "company": "Collate Resources Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://valpro.likeit.fi/apply/10362515",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/61eb7768-7904-44c2-a65c-d619d205f56d/en",
+        "job_employer_email": "pekka.suhonen@valpro.fi",
+        "job_employer_name": "Pekka Suhonen",
+        "job_employer_phone_no": "+358503519288",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-construction-worker-with-pipe-installation-skills-hels-helsinki-9f6b4e63",
+        "date_posted": "2026-04-10",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-11 13:44:41",
+        "open_positions": 1,
+        "salary_range": "Salary according to skills * Good working condi",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Collate Resources Oy is seeking a Earth construction worker with pipe installation skills, Helsinki in Helsinki. Collate Resources Oy is seeking a skilled",
+        "description": "Collate Resources Oy is seeking a skilled civil engineer with pipe installation experience for an earth construction role in Helsinki. The position offers competitive hourly wages based on Finnish collective agreements, starting immediately at the prestigious Mäkelänkatu site. Key responsibilities include installing water, sewer, and stormwater pipes, preparing trenches and foundation works, and following plans according to drawings. Applicants must have previous experience in earthworks and pipe installation, drawing literacy, a careful approach to work, good physical condition, teamwork skills, and a valid occupational safety card.",
+        "what_we_expect": [
+          "Previous experience in earthworks and pipe installation work",
+          "Drawing literacy",
+          "Careful and independent approach to work",
+          "Good physical condition and teamwork skills",
+          "A valid occupational safety card"
+        ],
+        "job_responsibilities": [
+          "Installation of water, sewer and storm water pipes",
+          "Preparation of trenches and foundation works",
+          "Installation of pipelines according to plans",
+          "Reading site drawings",
+          "General earthworks on the construction site"
+        ],
+        "what_we_offer": [
+          "Work starting immediately in a prestigious destination",
+          "Salary according to skills",
+          "Good working conditions and a professional work community",
+          "Possibility of additional work as the project progresses"
+        ],
+        "search_keywords": "earth construction worker pipe installation Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/7.png"
       }
     ]
   }
