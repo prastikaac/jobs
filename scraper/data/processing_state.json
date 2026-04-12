@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-04-12 19:33:11",
+  "updated_at": "2026-04-12 19:34:12",
   "jobs": {
     "702d629d": {
       "translated": true,
@@ -18,7 +18,7 @@
       "translated_at": "",
       "ai_processed": false,
       "ai_status": "irrelevant",
-      "retry_count": 1,
+      "retry_count": 2,
       "max_retries": 3,
       "ai_retry_needed": true,
       "last_ai_error": "AI hallucination detected",
