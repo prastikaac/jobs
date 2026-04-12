@@ -1,61 +1,116 @@
 {
   "version": 1,
-  "updated_at": "2026-04-12 14:21:23",
+  "updated_at": "2026-04-12 15:16:32",
   "jobs": {
-    "f960db4b": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:17:48"
-    },
     "3ff86195": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-12 14:58:34",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:18:31"
-    },
-    "78d902eb": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:19:28"
+      "formatted_at": ""
     },
     "964d7eb7": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-12 14:58:35",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:20:11"
+      "formatted_at": ""
+    },
+    "212e3491": {
+      "translated": true,
+      "translated_at": "2026-04-12 14:58:36",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "3bf521fd": {
+      "translated": true,
+      "translated_at": "2026-04-12 14:58:38",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
     },
     "823ea00f": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-12 14:58:39",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:21:23"
+      "formatted_at": ""
+    },
+    "09151381": {
+      "translated": true,
+      "translated_at": "2026-04-12 15:16:18",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "78d902eb": {
+      "translated": true,
+      "translated_at": "2026-04-12 15:16:18",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "f960db4b": {
+      "translated": true,
+      "translated_at": "2026-04-12 15:16:22",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "8b265c61": {
+      "translated": true,
+      "translated_at": "2026-04-12 15:16:24",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "213f47fd": {
+      "translated": true,
+      "translated_at": "2026-04-12 15:16:25",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
     }
   }
 }

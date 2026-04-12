@@ -17,14 +17,14 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo [%DATE% %TIME%] All Scraping ^& Processing Complete.
 
-REM ── Git: commit + push to GitHub ─────────────────────────────────────────
-echo [%DATE% %TIME%] Committing and pushing to GitHub...
+REM ── Git: final catch-all commit + push (pipeline commits every 5 jobs already) ─
+echo [%DATE% %TIME%] Final catch-all commit and push to GitHub...
 cd /d "%~dp0.."
 
-git add scraper/data/jobs.json scraper/data/rawjobs.json jobs/ sitemap-jobs.xml sitemap.xml
-git commit -m "Auto-update jobs [%DATE% %TIME%]"
+git add scraper/data/jobs.json scraper/data/rawjobs.json scraper/data/formatted_jobs_flat.json scraper/data/processing_state.json jobs/ sitemap-jobs.xml sitemap.xml
+git commit -m "Auto-update jobs [final] [%DATE% %TIME%]"
 if %ERRORLEVEL% NEQ 0 (
-    echo [%DATE% %TIME%] Git commit failed or nothing to commit.
+    echo [%DATE% %TIME%] Git commit: nothing new to commit (batched commits already pushed everything).
     exit /b 0
 )
 

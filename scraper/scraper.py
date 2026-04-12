@@ -456,6 +456,9 @@ def normalise_raw_job(raw: dict) -> dict:
         "job_responsibilities": raw.get("job_responsibilities") or analysed["job_responsibilities"],
         "what_we_offer": raw.get("what_we_offer") or analysed["what_we_offer"],
 
+        "jobcategory_keywords": raw.get("jobcategory_keywords"),
+        "job_occupations_en": raw.get("job_occupations_en"),
+
         "jobcontent": raw_text,
     }
 

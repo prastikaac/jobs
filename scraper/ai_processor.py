@@ -16,8 +16,8 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "qwen2.5:1.5b"
 
 BATCH_SIZE = 0
-TIMEOUT_SECS = 300
-CATEGORY_TIMEOUT_SECS = 60
+TIMEOUT_SECS = 600
+CATEGORY_TIMEOUT_SECS = 120
 MAX_RETRIES = 2
 
 
@@ -224,7 +224,7 @@ def _call_ollama_for_category(job: dict, candidate_categories: list[str] | None 
 
     title = job.get("title", "")
     text = job.get("jobcontent", "")
-    occupations = ", ".join(job.get("job_occupations_en", []))
+    occupations = ", ".join(job.get("jobcategory_keywords") or job.get("job_occupations_en", []))
 
     context_str = f"Job Title: {title}\n"
     if occupations:
@@ -593,7 +593,7 @@ def format_translated_jobs(
     def _format_one(raw: dict) -> tuple[dict, bool, str, str]:
         title = raw.get("title", raw["id"])
         translated_text = raw.get("translated_content") or raw.get("jobcontent", "")
-        occupations = raw.get("job_occupations_en", [])
+        occupations = raw.get("jobcategory_keywords") or raw.get("job_occupations_en", [])
 
         top_cat, top_score, needs_ai = Job_formatter.detect_category_by_keywords(
             title,
@@ -613,7 +613,7 @@ def format_translated_jobs(
             cat_context = {
                 "title": title,
                 "jobcontent": translated_text,
-                "job_occupations_en": occupations,
+                "jobcategory_keywords": occupations,
             }
 
             ai_category, cat_ok, cat_err = _call_ollama_for_category(

@@ -1,4 +1,15 @@
 {
+    "other": [
+        "sewing, embroidery and related workers",
+        "personal services workers not elsewhere classified",
+        "travel guides",
+        "handicraft workers",
+        "other elementary workers",
+        "gardeners, horticultural and nursery growers",
+        "physical and earth science professionals",
+        "fashion and other models",
+        "handicraft workers not elsewhere classified"
+    ],
     "cleaning-and-facility-services": [
         "cleaner",
         "cleaning worker",
@@ -182,7 +193,8 @@
         "toimitilapalvelut",
         "siivoustyöntekijä",
         "cleaning staff",
-        "facility support"
+        "facility support",
+        "vehicle, window, laundry and other hand cleaning workers"
     ],
     "healthcare": [
         "healthcare",
@@ -335,7 +347,17 @@
         "farmaseuttinen",
         "healthcare worker",
         "clinical support",
-        "medical support"
+        "medical support",
+        "undertakers and embalmers",
+        "specialist medical practitioners",
+        "medical assistants",
+        "medical doctors",
+        "traditional and complementary medicine associate professionals",
+        "health associate professionals not elsewhere classified",
+        "medical and dental prosthetic technicians",
+        "medical imaging and therapeutic equipment technicians",
+        "other health professionals",
+        "health professionals not elsewhere classified"
     ],
     "social-care-services": [
         "social care",
@@ -456,7 +478,12 @@
         "personal care worker",
         "adult day service",
         "respite care worker",
-        "short break worker"
+        "short break worker",
+        "early childhood educators",
+        "home-based personal care workers",
+        "social welfare managers",
+        "child care workers and teachers’ aides",
+        "personal care workers in health services not elsewhere classified"
     ],
     "transportation-and-logistics": [
         "logistics",
@@ -627,7 +654,11 @@
         "transport administrator",
         "shipping clerk",
         "import coordinator",
-        "export coordinator"
+        "export coordinator",
+        "service station attendants",
+        "drivers and mobile plant operators",
+        "locomotive engine drivers",
+        "locomotive engine drivers and related workers"
     ],
     "warehousing-and-storage": [
         "warehouse",
@@ -749,7 +780,12 @@
         "warehouse shift manager",
         "inventory specialist",
         "stock analyst",
-        "inventory planner"
+        "inventory planner",
+        "ships’ deck crews and related workers",
+        "metal, machinery and related trades workers",
+        "glass and ceramics plant operators",
+        "fibre preparing, spinning and winding machine operators",
+        "sewing machine operators"
     ],
     "construction": [
         "construction worker",
@@ -933,7 +969,14 @@
         "talonrakentaminen",
         "building contractor",
         "fit out contractor",
-        "interior contractor"
+        "interior contractor",
+        "sheet and structural metal workers, moulders and welders, and related workers",
+        "painters, building structure cleaners and related trades workers",
+        "wood treaters, cabinet-makers and related trades workers",
+        "floor layers and tile setters",
+        "construction managers",
+        "building frame and related trades workers not elsewhere classified",
+        "roofers"
     ],
     "installation-and-maintenance": [
         "plumber",
@@ -1041,9 +1084,12 @@
         "asset register",
         "maintenance log",
         "CMMS",
-        "Maximo"
+        "Maximo",
+        "building and related electricians",
+        "electrical and electronic trades workers",
+        "air conditioning and refrigeration mechanics"
     ],
-    "manufacturing-and-production": [
+    "industry-manufacturing-and-production": [
         "manufacturing",
         "production worker",
         "factory worker",
@@ -1238,7 +1284,19 @@
         "kokoonpanotyöntekijä",
         "manufacturing operative",
         "production line operative",
-        "factory operative"
+        "factory operative",
+        "mining and quarrying labourers",
+        "chemical and physical science technicians",
+        "weaving and knitting machine operators",
+        "metal processing plant operators",
+        "mining managers",
+        "metal finishing, plating and coating machine operators",
+        "metal moulders and coremakers",
+        "manufacturing supervisors",
+        "printing trades workers",
+        "blacksmiths, hammersmiths and forging press workers",
+        "woodworking-machine tool setters and operators",
+        "pre-press technicians"
     ],
     "information-technology": [
         "software engineer",
@@ -1459,7 +1517,13 @@
         "solution designer",
         "scrum master",
         "agile coach",
-        "kanban practitioner"
+        "kanban practitioner",
+        "web technicians",
+        "information and communications technology sales professionals",
+        "translators, interpreters and other linguists",
+        "keyboard operators",
+        "mathematicians, actuaries and statisticians",
+        "photographers"
     ],
     "engineering-and-design": [
         "engineer",
@@ -1647,7 +1711,13 @@
         "chief engineer",
         "graduate engineer",
         "junior engineer",
-        "engineering technician"
+        "engineering technician",
+        "draughtspersons",
+        "interior designers and decorators",
+        "electrical engineers",
+        "civil engineers",
+        "cartographers and surveyors",
+        "industrial and production engineers"
     ],
     "technical-services": [
         "test engineer",
@@ -1731,7 +1801,8 @@
         "level 2 support",
         "level 3 support",
         "technical coordinator",
-        "technical administrator"
+        "technical administrator",
+        "electrical engineering technicians"
     ],
     "food-and-restaurant": [
         "restaurant",
@@ -1924,7 +1995,8 @@
         "ravintolatyöntekijä",
         "food preparation worker",
         "catering operative",
-        "kitchen porter"
+        "kitchen porter",
+        "tobacco preparers and tobacco products makers"
     ],
     "education": [
         "education",
@@ -2089,7 +2161,12 @@
         "private tutor",
         "online tutor",
         "swimming instructor",
-        "driving instructor"
+        "driving instructor",
+        "university and higher education teachers",
+        "sociologists, anthropologists and related professionals",
+        "primary school and early childhood teachers",
+        "teaching professionals",
+        "education methods specialists"
     ],
     "hospitality-and-tourism": [
         "hospitality",
@@ -2362,7 +2439,9 @@
         "accommodation manager",
         "hostel manager",
         "guest house manager",
-        "B&B host"
+        "B&B host",
+        "hotel receptionists",
+        "waiters"
     ],
     "energy-and-utilities": [
         "energy",
@@ -2663,7 +2742,10 @@
         "retail supervisor",
         "retail operations coordinator",
         "stock controller retail",
-        "buying coordinator"
+        "buying coordinator",
+        "street food salespersons",
+        "shop supervisors",
+        "pawnbrokers and money-lenders"
     ],
     "customer-support-and-service": [
         "customer service",
@@ -2773,7 +2855,9 @@
         "consumer advisor",
         "helpdesk coordinator",
         "support coordinator",
-        "support specialist"
+        "support specialist",
+        "customer services clerks",
+        "enquiry clerks"
     ],
     "sales-and-marketing": [
         "sales",
@@ -2885,7 +2969,11 @@
         "sales consultant",
         "area sales manager",
         "regional sales manager",
-        "national sales manager"
+        "national sales manager",
+        "sales and marketing managers",
+        "technical and medical sales professionals (excluding ict)",
+        "sales workers",
+        "sales, marketing and development managers"
     ],
     "general-labor-and-manual-work": [
         "part time",
@@ -2982,7 +3070,15 @@
         "operations assistant",
         "warehouse assistant",
         "factory assistant",
-        "site assistant"
+        "site assistant",
+        "elementary occupations",
+        "sweepers and related labourers",
+        "bicycle and related repairers",
+        "refuse workers",
+        "hand packers",
+        "refuse workers and other elementary workers",
+        "garden and horticultural labourers",
+        "cleaners and helpers"
     ],
     "business-and-administration": [
         "administration",
@@ -3159,7 +3255,15 @@
         "administrative officer",
         "executive support",
         "business administrator",
-        "office administrator"
+        "office administrator",
+        "business services and administration managers",
+        "clerical support workers",
+        "filing and copying clerks",
+        "business and administration professionals",
+        "business and administration associate professionals",
+        "general office clerks",
+        "material-recording and transport clerks",
+        "office supervisors"
     ],
     "human-resources": [
         "hr assistant",
@@ -3249,7 +3353,8 @@
         "people coordinator",
         "people partner",
         "talent development",
-        "succession planning"
+        "succession planning",
+        "personnel and careers professionals"
     ],
     "quality-assurance-and-inspection": [
         "quality inspector",
@@ -3895,7 +4000,8 @@
         "innovation manager",
         "technology manager",
         "IP specialist",
-        "patent attorney support"
+        "patent attorney support",
+        "biologists, botanists, zoologists and related professionals"
     ],
     "pharmaceutical-and-biotechnology": [
         "chemist",
@@ -3985,7 +4091,8 @@
         "pharmaceutical technician",
         "biotech scientist",
         "laboratory analyst pharma",
-        "quality analyst pharma"
+        "quality analyst pharma",
+        "medical and pharmaceutical technicians"
     ],
     "environment-and-sustainability": [
         "environmental work",
@@ -4076,7 +4183,8 @@
         "environmental engineer",
         "environmental planner",
         "climate analyst",
-        "decarbonisation specialist"
+        "decarbonisation specialist",
+        "environmental protection professionals"
     ],
     "security-and-safety": [
         "security",
@@ -4248,7 +4356,9 @@
         "safety manager",
         "loss prevention manager",
         "investigations coordinator",
-        "security coordinator"
+        "security coordinator",
+        "security guards",
+        "prison guards"
     ],
     "wellness-and-beauty-care": [
         "beauty",
@@ -4409,7 +4519,8 @@
         "holistic wellness practitioner",
         "spa coordinator",
         "beauty educator",
-        "salon educator"
+        "salon educator",
+        "hairdressers, beauticians and related workers"
     ],
     "ecommerce-and-digital-business": [
         "ecommerce",
@@ -4598,7 +4709,8 @@
         "content manager",
         "editorial manager",
         "brand journalist",
-        "thought leadership writer"
+        "thought leadership writer",
+        "journalists"
     ],
     "culture-and-arts": [
         "arts",
@@ -4826,7 +4938,8 @@
         "creative coordinator",
         "festival director",
         "festival producer",
-        "event producer"
+        "event producer",
+        "creative and performing artists"
     ],
     "agriculture-forestry-and-fisheries": [
         "agriculture",
@@ -4989,7 +5102,12 @@
         "rural worker",
         "land worker",
         "countryside officer",
-        "ecology officer"
+        "ecology officer",
+        "agricultural and forestry production managers",
+        "mobile farm and forestry plant operators",
+        "market-oriented skilled agricultural workers",
+        "farming, forestry and fisheries advisers",
+        "animal producers not elsewhere classified"
     ],
     "government-and-public-sector": [
         "government",
@@ -5179,7 +5297,9 @@
         "public employee",
         "local authority officer",
         "council officer",
-        "borough officer"
+        "borough officer",
+        "customs and border inspectors",
+        "regulatory government associate professionals not elsewhere classified"
     ],
     "law-and-legal-services": [
         "legal",
@@ -5352,7 +5472,8 @@
         "legal advisor junior",
         "associate solicitor",
         "senior associate",
-        "managing partner support"
+        "managing partner support",
+        "legal professionals not elsewhere classified"
     ],
     "management-and-leadership": [
         "account manager",
@@ -5444,7 +5565,11 @@
         "senior management",
         "leadership team",
         "c-suite",
-        "senior director"
+        "senior director",
+        "managing directors and chief executives",
+        "policy and planning managers",
+        "management and organisation analysts",
+        "services managers not elsewhere classified"
     ],
     "aviation-and-airport-services": [
         "aviation",
@@ -5622,7 +5747,8 @@
         "aviation manager",
         "airline operations coordinator",
         "airport operations coordinator",
-        "station agent"
+        "station agent",
+        "aircraft pilots and related associate professionals"
     ],
     "military-and-defense": [
         "military",
@@ -5704,7 +5830,8 @@
         "defence engineer",
         "systems engineer defence",
         "security clearance SC",
-        "DV clearance"
+        "DV clearance",
+        "non-commissioned armed forces officers"
     ],
     "gaming-and-sports": [
         "gaming",

@@ -1,0 +1,24 @@
+The website can tell the app, “this user is logged in,” and then the app can check permission state, ask for notification permission if appropriate, register for push, and store the resulting token in Firebase. Capacitor is designed for JavaScript-to-native communication through plugins, and its Push Notifications API supports checking permissions, requesting them, and registering for push.
+
+The clean flow
+User logs in on the website inside the app.
+Website sends a message to the native layer with the user identity.
+Native app verifies the message came from your domain.
+Native app checks notification permission status.
+If your own app setting says notifications are enabled and OS permission is not granted yet, ask for permission.
+If granted, register for push.
+When the registration token arrives, store it in Firebase under that logged-in user.
+On logout, remove or deactivate that token for that user. Capacitor’s push API explicitly supports permission checks and registration, and Firebase recommends managing registration tokens carefully because tokens can become stale or rotate.
+Best rule for when to ask permission
+
+Do not ask immediately on app open. Ask only after all three are true:
+
+the user is logged in
+the user has turned on your in-app “job alerts” setting
+the app sees that OS notification permission is still needed
+
+That gives you a cleaner experience and avoids asking people who do not want alerts. On Android 13+, Capacitor notes that you should explicitly check and request notification permission.
+
+How the website should notify the app
+
+Use a bridge message after login success. window.postMessage() is the standard web messaging mechanism, but it must be handled carefully and validated by origin. MDN specifically recommends postMessage for controlled message passing rather than looser approaches.

@@ -34,17 +34,16 @@ MAX_IMAGES = 50  # images per category named 1.png … 50.png
 
 # ── Category folder lookup ────────────────────────────────────────────────────
 
-def _category_to_folder(categories: list[str]) -> str:
+def _category_to_folder(category: str) -> str:
     """
-    Map a job's category list to a source-image folder name.
+    Map a job's category string to a source-image folder name.
     Uses config.get_safe_category_slug to ensure it maps to an existing folder.
     Returns 'other' as the final fallback.
     """
-    if not categories:
+    if not category:
         return "other"
     
-    # Try the first category offered
-    return config.get_safe_category_slug(categories[0])
+    return config.get_safe_category_slug(category)
 
 
 def _pick_source_image(folder: str) -> Optional[str]:
@@ -110,8 +109,8 @@ def generate_job_image(job: dict) -> Optional[str]:
     """
     Select a random image from the category folder and return its PUBLIC URL.
     """
-    categories = job.get("jobCategory", ["Other"])
-    folder = _category_to_folder(categories)
+    category = job.get("job_category", "other")
+    folder = _category_to_folder(category)
     
     number = random.randint(1, 30)
     public_url = f"{config.GITHUB_PAGES_BASE_URL}/images/jobs/{folder}/{number}.png"

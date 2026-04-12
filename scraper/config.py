@@ -71,7 +71,7 @@ GITHUB_PAGES_BASE_URL = os.getenv(
 )
 
 # ── Job lifecycle ─────────────────────────────────────────────────────────────
-EXPIRATION_DAYS = int(os.getenv("EXPIRATION_DAYS", "30"))
+EXPIRATION_DAYS = int(os.getenv("EXPIRATION_DAYS", "60"))
 
 # ── Scraping target ───────────────────────────────────────────────────────────
 BASE_URL = "https://duunitori.fi"
@@ -84,6 +84,7 @@ SEARCH_PARAMS = {
 
 MAX_PAGES = int(os.getenv("MAX_PAGES", "10"))
 AI_BATCH_SIZE = int(os.getenv("AI_BATCH_SIZE", "0"))  # 0 = unlimited (process all pending jobs)
+PIPELINE_COMMIT_BATCH_SIZE = int(os.getenv("PIPELINE_COMMIT_BATCH_SIZE", "50"))  # commit+push every N AI-processed jobs
 REQUEST_DELAY_SECONDS = float(os.getenv("REQUEST_DELAY_SECONDS", "2.0"))
 DETAIL_DELAY_SECONDS = float(os.getenv("DETAIL_DELAY_SECONDS", "1.5"))
 

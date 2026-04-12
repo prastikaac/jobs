@@ -1,375 +1,565 @@
 [
   {
-    "id": "ebbb3e89",
-    "job_id": "kurottajakuljettaja-lappeenran-lappeenranta-ebbb3e89",
-    "title": "Reach driver to Lappeenranta Summer job",
-    "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
+    "id": "3ff86195",
+    "job_id": "eläinklinikan-siivooja-jyväskylä-3ff86195",
+    "title": "Animal clinic cleaner",
+    "company": "OPTI CLEANING SERVICES OY/Jyväskylä",
     "jobLocation": [
-      "Lappeenranta"
+      "Jyväskylä"
     ],
-    "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application for the Job - Kurottajakuljettaja Lappeenrantaan Kesätyö",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b70d0b52-4aab-4878-9a3f-49787436037b/en",
-    "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
-    "job_employer_name": "Marko Hokkanen",
-    "job_employer_phone_no": "0405542794",
-    "date_posted": "2026-04-10",
+    "jobapply_link": "mailto:henkilosto@opticleaning.net?subject=Application for the Job - Eläinklinikan siivooja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/99963d45-67b1-471b-8b2a-95094f0f3635/en",
+    "job_employer_email": "henkilosto@opticleaning.net",
+    "job_employer_name": "Yhteyshenkilö Rekrytointi",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-12",
     "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-10 23:42:07",
+    "scraped_at": "2026-04-12 14:58:23",
     "open_positions": 1,
-    "salary_range": "Metsäkonealan työehtosopimuksen III palkkaryhmä",
+    "salary_range": "",
     "workTime": "Full-time",
     "continuityOfWork": "Summer job",
+    "language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "what_we_expect": [
+      "maintain cleaning equipment",
+      "cleans glass surfaces",
+      "handle chemical cleaners",
+      "maintains stocks of cleaning supplies",
+      "to clean up",
+      "clean surfaces",
+      "clean the toilets"
+    ],
+    "job_responsibilities": [
+      "facility cleaner"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "building cleaner",
+      "building caretaker",
+      "custodian",
+      "janitor",
+      "janitors manager",
+      "janitors supervisor",
+      "janitress",
+      "maintenance worker",
+      "office cleaner",
+      "super",
+      "superintendent"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Washing and cleaning floors and surfaces.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, animal clinic cleaner",
+    "source": "tyomarkkinatori",
+    "translated_content": "Animal clinic cleaner\n\nWashing and cleaning floors and surfaces.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, animal clinic cleaner"
+  },
+  {
+    "id": "964d7eb7",
+    "job_id": "elintarvikemyymälän-siivooja-riihimäki-964d7eb7",
+    "title": "Grocery store cleaner",
+    "company": "OPTI CLEANING SERVICES OY/Riihimäki",
+    "jobLocation": [
+      "Riihimäki"
+    ],
+    "jobapply_link": "mailto:henkilosto@opticleaning.net?subject=Application for the Job - Elintarvikemyymälän siivooja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/36103b68-51fb-4d3a-9935-be59d866b1ea/en",
+    "job_employer_email": "henkilosto@opticleaning.net",
+    "job_employer_name": "Yhteyshenkilö Rekrytointi",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 14:58:23",
+    "open_positions": 1,
+    "salary_range": "",
+    "workTime": "Full-time",
+    "continuityOfWork": "Summer job",
+    "language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "what_we_expect": [
+      "maintain cleaning equipment",
+      "cleans glass surfaces",
+      "handle chemical cleaners",
+      "maintains stocks of cleaning supplies",
+      "to clean up",
+      "clean surfaces",
+      "clean the toilets"
+    ],
+    "job_responsibilities": [
+      "facility cleaner"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "building cleaner",
+      "building caretaker",
+      "custodian",
+      "janitor",
+      "janitors manager",
+      "janitors supervisor",
+      "janitress",
+      "maintenance worker",
+      "office cleaner",
+      "super",
+      "superintendent"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Washing floors and surfaces, food cleaning, washing dishes.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, Riihimäki",
+    "source": "tyomarkkinatori",
+    "translated_content": "Grocery store cleaner\n\nWashing floors and surfaces, food cleaning, washing dishes.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, Riihimäki"
+  },
+  {
+    "id": "212e3491",
+    "job_id": "tiiminvetäjäsairaanhoitajan-si-oulu-212e3491",
+    "title": "Team leader/Nurse substitute Attendo Kellokas Oulu",
+    "company": "Attendo Oy",
+    "jobLocation": [
+      "Oulu"
+    ],
+    "jobapply_link": "https://ura.attendo.fi/jobs/7535982-tiiminvetaja-sairaanhoitajan-sijaisuus-attendo-kellokas-oulu/applications/new?promotion=1937010-tyomarkkinatori",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d42e675b-a809-40f0-b8ea-334b9d0e34e3/en",
+    "job_employer_email": "liisa.raiha@attendo.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 14:58:25",
+    "open_positions": 1,
+    "salary_range": "",
+    "workTime": "Full-time",
+    "continuityOfWork": "Temporary",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [],
+    "job_responsibilities": [
+      "Other healthcare workers"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "Personal care workers in health services not elsewhere classified"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "We are looking for a team leader-nurse to replace Attendo Kellokkaas in Oulu. Kellokkaas has 15 resident places for adults with developmental disabilities. Each of our residents deserves to be seen as themselves and to live a full life. As a team leader and nurse, you are a key support for both the residents and the work community. You do work where you care, guide and develop together with the team. What is your role? You lead and support the staff in their daily work and ensure the smoothness of care. with You will develop the working methods of the working community, take care of the working atmosphere and identify training needs. The work will be done on a weekday morning and we can agree on the start time of the employment relationship with you. What do we expect from you? Education in the social and health field: nurse. Experience in managing personnel and teamwork in social and health services. from the start Criminal record extract in employment for more than three months, when working with minors, elderly or disabled people Social Security professional card or readiness to obtain it We value a genuine interest in working with the disabled, a solution-oriented approach, persistence and the ability to support and motivate the team. The most important thing for us is that we are above all a home for our residents. What do we offer? Close to leadership Your supervisor is present in everyday life and supports you in practical work and development. Opportunities for development Wide range of training and support for professional development and career advancement. Flexibility The opportunity affects work shifts and the coordination of work and the rest of life.Employment benefitsFree coffee/tea and meal benefitEdenred benefit in accordance with the practice defined by the employerEmployee benefits program and discounts from several service providersComprehensive occupational health careTraining opportunities and support for skill developmentSalary and terms of employment are determined by the collective agreement of the private social service sector. Salary grade G23D and the team leader's task-specific supplement. Please note that we are a smoke-free workplace. Application and additional information The application period ends on April 30, 2026, but the position will be filled as soon as a suitable person is found, send your application soon through the recruitment system. For more information about the position, please contact the manager of the Attendo home. Attendo Future care leader. We strengthen the person and make the home a home for our residents. More information about the task is provided by: Director of Attendo home Liisa RäihäP. 044 494 4509liisa.raiha@attendo.fi\n\nAttendo The trendsetter of future care\nAttendo is the leading provider of care services in the Nordic countries. Our mission is to strengthen people so that everyone who lives with us can live a full life in their own way. We offer care and housing services for the elderly, mentally disabled, disabled, drug and mental health rehabilitators. We also offer therapy services. We are above all a home for our residents, a partner for our stakeholders and a strong force for change in society. About 17,000 of our employees serve in more than 400 offices around Finland. We strengthen people. We look forward. We solve together. We are Attendo.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Team leader/Nurse substitute Attendo Kellokas Oulu\n\nWe are looking for a team leader-nurse to replace Attendo Kellokkaas in Oulu. Kellokkaas has 15 resident places for adults with developmental disabilities. Each of our residents deserves to be seen as themselves and to live a full life. As a team leader and nurse, you are a key support for both the residents and the work community. You do work where you care, guide and develop together with the team. What is your role? You lead and support the staff in their daily work and ensure the smoothness of care. with You will develop the working methods of the working community, take care of the working atmosphere and identify training needs. The work will be done on a weekday morning and we can agree on the start time of the employment relationship with you. What do we expect from you? Education in the social and health field: nurse. Experience in managing personnel and teamwork in social and health services. from the start Criminal record extract in employment for more than three months, when working with minors, elderly or disabled people Social Security professional card or readiness to obtain it We value a genuine interest in working with the disabled, a solution-oriented approach, persistence and the ability to support and motivate the team. The most important thing for us is that we are above all a home for our residents. What do we offer? Close to leadership Your supervisor is present in everyday life and supports you in practical work and development. Opportunities for development Wide range of training and support for professional development and career advancement. Flexibility The opportunity affects work shifts and the coordination of work and the rest of life.Employment benefitsFree coffee/tea and meal benefitEdenred benefit in accordance with the practice defined by the employerEmployee benefits program and discounts from several service providersComprehensive occupational health careTraining opportunities and support for skill developmentSalary and terms of employment are determined by the collective agreement of the private social service sector. Salary grade G23D and the team leader's task-specific supplement. Please note that we are a smoke-free workplace. Application and additional information The application period ends on April 30, 2026, but the position will be filled as soon as a suitable person is found, send your application soon through the recruitment system. For more information about the position, please contact the manager of the Attendo home. Attendo Future care leader. We strengthen the person and make the home a home for our residents. More information about the task is provided by: Director of Attendo home Liisa RäihäP. 044 494 4509liisa.raiha@attendo.fi\n\nAttendo The trendsetter of future care\nAttendo is the leading provider of care services in the Nordic countries. Our mission is to strengthen people so that everyone who lives with us can live a full life in their own way. We offer care and housing services for the elderly, mentally disabled, disabled, drug and mental health rehabilitators. We also offer therapy services. We are above all a home for our residents, a partner for our stakeholders and a strong force for change in society. About 17,000 of our employees serve in more than 400 offices around Finland. We strengthen people. We look forward. We solve together. We are Attendo."
+  },
+  {
+    "id": "3bf521fd",
+    "job_id": "parturi-oulu-3bf521fd",
+    "title": "A barber",
+    "company": "Fade Style Oulu Oy, Oulu",
+    "jobLocation": [
+      "Oulu"
+    ],
+    "jobapply_link": "mailto:hussamfar1999@gmail.com?subject=Application for the Job - Parturi",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b23ef12b-68f7-4c0c-9851-5f8e0621cae4/en",
+    "job_employer_email": "hussamfar1999@gmail.com",
+    "job_employer_name": "Hussam Fares",
+    "job_employer_phone_no": "0442308542",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-07-15",
+    "scraped_at": "2026-04-12 14:58:25",
+    "open_positions": 1,
+    "salary_range": "Palkkaus kokemuksen mukaan.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "what_we_expect": [
+      "hair and skin hairs",
+      "wash hair",
+      "preparations intended for hair and facial hair",
+      "shave facial hair",
+      "use hair cutting skills",
+      "helping clients with hair problems",
+      "take care of the cleanliness of the working area"
+    ],
+    "job_responsibilities": [
+      "the barber",
+      "barber-hairdresser"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "barber",
+      "haircutter",
+      "hairdresser",
+      "cosmetologist",
+      "hair colour specialist",
+      "hair colourist",
+      "hair cutter",
+      "hair-care specialist",
+      "hairstyling specialist",
+      "scalp treatment specialist",
+      "wig stylist"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "We are looking for a professional barber.",
+    "source": "tyomarkkinatori",
+    "translated_content": "A barber\n\nWe are looking for a professional barber."
+  },
+  {
+    "id": "823ea00f",
+    "job_id": "turvalaiteasentaja-käyttölukko-vantaa-823ea00f",
+    "title": "Safety device installer Käytäslukko Oy",
+    "company": "Käyttölukko Oy, Uusimaa",
+    "jobLocation": [
+      "Vantaa"
+    ],
+    "jobapply_link": "https://kayttolukko.fi/hakulomake/",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c7042a03-eb8f-4a7b-aa54-fd44f67c9eb8/en",
+    "job_employer_email": "minna.kyto-lilja@kayttolukko.fi",
+    "job_employer_name": "Minna Kytö-Lilja",
+    "job_employer_phone_no": "0504723587",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 14:58:25",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
     "language_requirements": [
       "Finnish"
     ],
     "what_we_expect": [
-      "monitor vehicle performance",
-      "ensure the vehicle's usability",
-      "use communication devices",
-      "stay alert",
-      "use a proactive driving style"
+      "electricity",
+      "electronic locks",
+      "install lockable devices",
+      "read the technical data",
+      "maintain installed equipment",
+      "replace defective components",
+      "operating systems",
+      "the equipment used in the building's electronic access control",
+      "manage the alarm system"
     ],
     "job_responsibilities": [
-      "forklift driver"
+      "alarm system installer",
+      "locksmith"
     ],
-    "what_we_offer": [
-      "The work starts in May/according to the contract and lasts until the end of August.",
-      "The hourly wage is in accordance with the collective agreement of the forest machinery industry, a task belonging to pay group III in terms of its level of demand, €15.42 €18.02 depending on the years of experience in the field."
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "security alarm technician",
+      "burglar alarm installer",
+      "burglar alarm technician",
+      "electronic security systems installer",
+      "fire alarm installer",
+      "fire alarm technician",
+      "intruder alarm installer",
+      "intruder alarm technician",
+      "security alarm engineer",
+      "security alarm fitter",
+      "security alarm installer",
+      "security systems technician",
+      "locksmith",
+      "key and lock expert",
+      "key and lock installer",
+      "key and lock specialist",
+      "key maker"
     ],
-    "jobcontent": "**We are looking for reach truck drivers for our Lappeenranta contracting location at the UPM Kaukaa pulp mill area for full-time and temporary summer work.**\n\nYour duties include the versatile duties of a forklift driver in the Lappeenranta factory area.\n\nIn addition to machine handling skills, you are able to use a computer, you are able to master a warehouse management and working time reporting program.\n\nAs a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule.\n\nExperience and expertise in wood processing and heavy equipment is considered an advantage. Work security card and at least a B driver's license. We also value the ability to work as part of a developing team, good team spirit, the ability to take on the challenges required by the job, and a good safety attitude.\n\nWe offer versatile work with the opportunity to learn and develop yourself as an employee in a competent team.\n\nThe work starts in May/according to the contract and lasts until the end of August.\n\nThe hourly wage is in accordance with the collective agreement of the forest machinery industry, a task belonging to pay group III in terms of its level of demand, €15.42 €18.02 depending on the years of experience in the field.\n\n**Fin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.**\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period and the tasks will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application.",
+    "job_occupations_en": null,
+    "jobcontent": "As a safety device installer, you work as part of a close working community in safety technology in installation, maintenance and repair tasks. Your tasks include, for example, the installation, commissioning and maintenance of crime detectors, access control and camera surveillance systems. The customer is at the center of our operations, so you must know how to listen to the customer. You get along with different people. The systems we use represent the cutting edge of technological development in their field, and continuous training is invested in the competence of the personnel. Honesty, openness, customer orientation and reliability describe our core values, these are also expected of you. Due to the nature of the work, integrity is an absolute prerequisite.\nThe office of the assignment is located in Vantaa and the work mainly takes place in the Uusimaa area, but there are also installation sites outside of Uusimaa, so the job requires occasional travel.\n\nWe expect you to have previous work experience in security technology installation and maintenance tasks. The position also has the advantage of knowing the basics of electronic locking and telecommunications technology. The operator lock is ready to train an operator with a suitable professional background as part of the team.\n\nWe offer you the opportunity for a long-term employment relationship in an agile and adaptable family business. You get the opportunity to be at a vantage point to see and do the development of the industry, and at the same time develop yourself as a security professional. Salary according to the contract. Here is a great opportunity to become part of a growing and successful company where employees are happy!\n\nKäytöslukko Oy is a pioneer in the security industry, founded in 1988. Our company has ISO-9001 and ISO-14001 and OHSAS-18001 quality certificates. We are a design and installation company for security systems and a locksmith approved by insurance companies. We also have S2 electrical contracting rights. Our company is a member of the Finnish Entrepreneurs' and Security Contractors' Association. The company has offices in Kangasa, Hämeenlinna, Jyväskylä, Vantaa and Oulu. Read more at: www.kayttolukko.fi\n\nApplications with salary expectations https://kayttolukko.fi/hakulomake/ or hr@kayttolukko.fi\n\nMore information about the position hr@kayttolukko.fi or Minna Kytö-Lilja 050 4723587.",
     "source": "tyomarkkinatori",
-    "translated_content": "Reach driver to Lappeenranta Summer job\n\n**We are looking for reach truck drivers for our Lappeenranta contracting location at the UPM Kaukaa pulp mill area for full-time and temporary summer work.**\n\nYour duties include the versatile duties of a forklift driver in the Lappeenranta factory area.\n\nIn addition to machine handling skills, you are able to use a computer, you are able to master a warehouse management and working time reporting program.\n\nAs a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule.\n\nExperience and expertise in wood processing and heavy equipment is considered an advantage. Work security card and at least a B driver's license. We also value the ability to work as part of a developing team, good team spirit, the ability to take on the challenges required by the job, and a good safety attitude.\n\nWe offer versatile work with the opportunity to learn and develop yourself as an employee in a competent team.\n\nThe work starts in May/according to the contract and lasts until the end of August.\n\nThe hourly wage is in accordance with the collective agreement of the forest machinery industry, a task belonging to pay group III in terms of its level of demand, €15.42 €18.02 depending on the years of experience in the field.\n\n**Fin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.**\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period and the tasks will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application."
+    "translated_content": "Safety device installer Käytäslukko Oy\n\nAs a safety device installer, you work as part of a close working community in safety technology in installation, maintenance and repair tasks. Your tasks include, for example, the installation, commissioning and maintenance of crime detectors, access control and camera surveillance systems. The customer is at the center of our operations, so you must know how to listen to the customer. You get along with different people. The systems we use represent the cutting edge of technological development in their field, and continuous training is invested in the competence of the personnel. Honesty, openness, customer orientation and reliability describe our core values, these are also expected of you. Due to the nature of the work, integrity is an absolute prerequisite.\nThe office of the assignment is located in Vantaa and the work mainly takes place in the Uusimaa area, but there are also installation sites outside of Uusimaa, so the job requires occasional travel.\n\nWe expect you to have previous work experience in security technology installation and maintenance tasks. The position also has the advantage of knowing the basics of electronic locking and telecommunications technology. The operator lock is ready to train an operator with a suitable professional background as part of the team.\n\nWe offer you the opportunity for a long-term employment relationship in an agile and adaptable family business. You get the opportunity to be at a vantage point to see and do the development of the industry, and at the same time develop yourself as a security professional. Salary according to the contract. Here is a great opportunity to become part of a growing and successful company where employees are happy!\n\nKäytöslukko Oy is a pioneer in the security industry, founded in 1988. Our company has ISO-9001 and ISO-14001 and OHSAS-18001 quality certificates. We are a design and installation company for security systems and a locksmith approved by insurance companies. We also have S2 electrical contracting rights. Our company is a member of the Finnish Entrepreneurs' and Security Contractors' Association. The company has offices in Kangasa, Hämeenlinna, Jyväskylä, Vantaa and Oulu. Read more at: www.kayttolukko.fi\n\nApplications with salary expectations https://kayttolukko.fi/hakulomake/ or hr@kayttolukko.fi\n\nMore information about the position hr@kayttolukko.fi or Minna Kytö-Lilja 050 4723587."
   },
   {
-    "id": "3406b3cc",
-    "job_id": "hammastyöntekijä-hammaslaborat-mikkeli-3406b3cc",
-    "title": "Dental worker for a dental laboratory, you do not need previous experience in the field",
-    "company": "Hammas-Apu I Oy, Mikkeli",
+    "id": "09151381",
+    "job_id": "markkinointiavustaja-helsinki-09151381",
+    "title": "Marketing assistant",
+    "company": "La Chica Oy, Helsinki",
     "jobLocation": [
-      "Mikkeli"
+      "Helsinki"
     ],
-    "jobapply_link": "mailto:kimmo@loppukaarre.fi?subject=Application for the Job - Hammastyöntekijä hammaslaboratorioon, et tarvitse aiempaa kokemusta alalta",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a50406f1-c505-48fe-808a-cc085d75d334/en",
-    "job_employer_email": "kimmo@loppukaarre.fi",
-    "job_employer_name": "Kimmo Loppukaarre",
+    "jobapply_link": "http://www.lachica.fi",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7b9a7d94-98d7-4bd5-aeab-1fb8cc025474/en",
+    "job_employer_email": "hakemus@lachica.fi",
+    "job_employer_name": "",
     "job_employer_phone_no": "",
-    "date_posted": "2026-04-10",
-    "date_expires": "2026-04-17",
-    "scraped_at": "2026-04-10 23:42:07",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-25",
+    "scraped_at": "2026-04-12 15:16:11",
     "open_positions": 1,
-    "salary_range": "HAMMASLABORATORIOALAN TYÖEHTOSOPIMUKSEN 28.5.2025 31.1.2028 MUKAAN",
+    "salary_range": "",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "what_we_expect": [
+      "digital content keywords",
+      "content marketing strategy",
+      "manage content development projects",
+      "brand marketing techniques"
+    ],
+    "job_responsibilities": [
+      "marketing assistant"
+    ],
+    "what_we_offer": [
+      "Flexible cooperation as a freelancer / entrepreneur",
+      "The opportunity to influence and develop the brand",
+      "Long-term cooperation with the right person",
+      "An inspiring and growing beauty brand",
+      "Were you interested?",
+      "Send us:",
+      "A short introduction about yourself",
+      "Examples of your social media content (IG/TikTok)",
+      "Why you are the right fit for La Chica",
+      "Come join us in making La Chica even more visible and desirable"
+    ],
+    "jobcategory_keywords": [
+      "marketing assistant",
+      "general marketing assistant",
+      "marketing associate",
+      "marketing executive assistant",
+      "marketing officer",
+      "marketing operations assistant",
+      "marketing practitioner"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "**BRAND PROMOTER / MARKETING ASSISTANT (FREELANCER / ENTREPRENEUR)** La Chica beauty salons\n\nDo you want to take part in building a strong and beautiful brand in the beauty industry?\n\nWe are looking for a visual and sales brand promoter for La Chica, who will help us increase visibility and bring more customers to our stores with the help of social media and content.\n\nWhat are you going to do?\n\n- You film and produce content (Reels, TikTok, IG posts)\n \n- Ideas for campaigns and contents together with the team\n \n- You make publications that are **visually in line with the La Chica brand**\n \n- You write sales and customer-oriented texts for newsletters for customers\n \n- You produce content that **actually brings bookings and customers**\n \n\nWhat do we expect from you?\n\n- Strong visual eye (Instagram aesthetic in possession)\n \n- Experience with social media content (photography + editing)\n \n- An understanding of what sells and what works\n \n- Independent approach to work and initiative\n \n- Interest in the beauty industry\n \n\nWhat do we offer?\n\n- Flexible cooperation as a freelancer / entrepreneur\n \n- The opportunity to influence and develop the brand\n \n- Long-term cooperation with the right person\n \n- An inspiring and growing beauty brand\n \n\nWere you interested?\n\nSend us:\n\n- A short introduction about yourself\n \n- Examples of your social media content (IG/TikTok)\n \n- Why would you be the right fit for La Chica\n \n\nCome join us in making La Chica even more visible and desirable",
+    "source": "tyomarkkinatori",
+    "translated_content": "Marketing assistant\n\n**BRAND PROMOTER / MARKETING ASSISTANT (FREELANCER / ENTREPRENEUR)** La Chica beauty salons\n\nDo you want to take part in building a strong and beautiful brand in the beauty industry?\n\nWe are looking for a visual and sales brand promoter for La Chica, who will help us increase visibility and bring more customers to our stores with the help of social media and content.\n\nWhat are you going to do?\n\n- You film and produce content (Reels, TikTok, IG posts)\n \n- Ideas for campaigns and contents together with the team\n \n- You make publications that are **visually in line with the La Chica brand**\n \n- You write sales and customer-oriented texts for newsletters for customers\n \n- You produce content that **actually brings bookings and customers**\n \n\nWhat do we expect from you?\n\n- Strong visual eye (Instagram aesthetic in possession)\n \n- Experience with social media content (photography + editing)\n \n- An understanding of what sells and what works\n \n- Independent approach to work and initiative\n \n- Interest in the beauty industry\n \n\nWhat do we offer?\n\n- Flexible cooperation as a freelancer / entrepreneur\n \n- The opportunity to influence and develop the brand\n \n- Long-term cooperation with the right person\n \n- An inspiring and growing beauty brand\n \n\nWere you interested?\n\nSend us:\n\n- A short introduction about yourself\n \n- Examples of your social media content (IG/TikTok)\n \n- Why would you be the right fit for La Chica\n \n\nCome join us in making La Chica even more visible and desirable"
+  },
+  {
+    "id": "78d902eb",
+    "job_id": "puutavara-auton-kuljettaja-kemijärvi-78d902eb",
+    "title": "Lumber truck driver",
+    "company": "Kuljetus A & N Parkkinen Oy, Salla",
+    "jobLocation": [
+      "Kemijärvi"
+    ],
+    "jobapply_link": "mailto:niko@kuljetusparkkinen.com?subject=Application for the Job - Puutavara-auton kuljettaja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a969a3a-b65e-412a-951a-eb06f1b877ae/en",
+    "job_employer_email": "niko@kuljetusparkkinen.com",
+    "job_employer_name": "Niko Parkkinen",
+    "job_employer_phone_no": "040 548 3949",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 15:16:11",
+    "open_positions": 1,
+    "salary_range": "",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "control heavy vehicles",
+      "use communication devices"
+    ],
+    "job_responsibilities": [
+      "freight transport driver"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "cargo vehicle driver",
+      "HGV driver",
+      "courier",
+      "courier delivery driver",
+      "delivery driver",
+      "driver of cargo vehicles",
+      "freight driver",
+      "heavy goods vehicle driver",
+      "lorry driver",
+      "package delivery driver",
+      "teamster",
+      "truck driver",
+      "trucker",
+      "truckie",
+      "van driver"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "The tasks include loading trees with a crane and transporting them to the stations.\nAs a rule, we drive to Kemijärvi, Kuusamo and Rovaniemi stations and to Sweden.\n\nContact Niko on tel. 040 548 3949",
+    "source": "tyomarkkinatori",
+    "translated_content": "Lumber truck driver\n\nThe tasks include loading trees with a crane and transporting them to the stations.\nAs a rule, we drive to Kemijärvi, Kuusamo and Rovaniemi stations and to Sweden.\n\nContact Niko on tel. 040 548 3949"
+  },
+  {
+    "id": "f960db4b",
+    "job_id": "sairaanhoitaja-jyväskylä-f960db4b",
+    "title": "Nurse",
+    "company": "Glow Union Oy, Jyväskylä",
+    "jobLocation": [
+      "Jyväskylä"
+    ],
+    "jobapply_link": "mailto:susanna.roine@klinikkaglow.fi?subject=Application for the Job - Sairaanhoitaja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d4859155-2062-4040-9550-2905a428d6a9/en",
+    "job_employer_email": "susanna.roine@klinikkaglow.fi",
+    "job_employer_name": "Susanna Roine",
+    "job_employer_phone_no": "0405618274",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 15:16:11",
+    "open_positions": 1,
+    "salary_range": "",
     "workTime": "Part-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "provide expert care in nursing",
+      "diagnose the need for medical treatment",
+      "implements scientific decision-making in health care",
+      "advice on healthy lifestyles",
+      "provide medical advice in healthcare",
+      "analyze the quality of medical care",
+      "use the electronic patient information system in medical care",
+      "solve problems in healthcare",
+      "carry out medical care",
+      "evaluate medical care",
+      "adheres to the principles of sustainable development in healthcare",
+      "entrepreneurship"
+    ],
+    "job_responsibilities": [
+      "nurse",
+      "specialist nurse"
+    ],
+    "what_we_offer": [
+      "We offer a versatile and varied job description, the opportunity to develop in aesthetic treatments, and work in an expert and customer-oriented operating environment.",
+      "Form of work and compensation:",
+      "The position has the opportunity to work either under your own business name as a contract entrepreneur or in a part-time employment relationship with our company. Compensation is agreed separately according to the applicant's experience, skills and agreed job description."
+    ],
+    "jobcategory_keywords": [
+      "nurse responsible for general care",
+      "adult nurse",
+      "community staff nurse",
+      "district nurse",
+      "healthcare nurse",
+      "healthcarer",
+      "learning disability nurse",
+      "mental health nurse",
+      "practice nurse",
+      "ward nurse",
+      "ward sister",
+      "specialist nurse",
+      "cardiovascular nurse",
+      "company nurse",
+      "diabetes nurse",
+      "gerontological nurse practitioner",
+      "heart failure nurse",
+      "intensive care nurse",
+      "nurse heart diseases",
+      "nurse practitioner",
+      "nurse specialist",
+      "nursing specialist",
+      "paediatric nurse practitioner",
+      "specialist nurse practitioner",
+      "vascular nurse"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Klinikka Glow - aesthetic treatments and medical services\n\nWe are a private healthcare unit operating in the center of Jyväskylä, which has been offering aesthetic treatments since 2012. Our clinic is known for its long experience, established clientele, and commitment to safe, researched, effective and responsibly implemented treatments.\n\nJob duties:\n\nWe are looking for a nurse for versatile tasks at the clinic for aesthetic treatments. In addition to tasks related to aesthetic treatments, the work includes working at a specialist doctor's office and assisting with minor procedures. The position emphasizes customer service, a flexible approach to work and the desire to develop one's own skills.\n\nWe expect from the applicant:\n\nWe require nurse training and certification. We expect the applicant to have either experience in aesthetic treatments or a strong interest in training in the field. We value excellent customer service and interaction skills, initiative, responsibility and flexibility. An interest in the aesthetic field, an entrepreneurial attitude and an understanding of customer-oriented service work are considered an advantage.\n\nWe offer:\n\nWe offer a versatile and varied job description, the opportunity to develop in aesthetic treatments, and work in an expert and customer-oriented operating environment.\n\nForm of work and compensation:\n\nThe position has the opportunity to work either under your own business name as a contract entrepreneur or in a part-time employment relationship with our company. Compensation is agreed separately according to the applicant's experience, skills and agreed job description.\n\nWe are a private healthcare unit operating in the center of Jyväskylä, which has been offering aesthetic treatments since 2012. Our clinic is known for its long experience, established clientele, and commitment to safe, researched, effective and responsibly implemented treatments.\n\nApplying:\n\nSend an application and CV, where you tell about your skills, work experience and your interest in the position. Please also tell us about your possible experience with aesthetic treatments or your desire to train in the field, your desired type of work. We invite applicants to a personal job interview based on the applications.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Nurse\n\nKlinikka Glow - aesthetic treatments and medical services\n\nWe are a private healthcare unit operating in the center of Jyväskylä, which has been offering aesthetic treatments since 2012. Our clinic is known for its long experience, established clientele, and commitment to safe, researched, effective and responsibly implemented treatments.\n\nJob duties:\n\nWe are looking for a nurse for versatile tasks at the clinic for aesthetic treatments. In addition to tasks related to aesthetic treatments, the work includes working at a specialist doctor's office and assisting with minor procedures. The position emphasizes customer service, a flexible approach to work and the desire to develop one's own skills.\n\nWe expect from the applicant:\n\nWe require nurse training and certification. We expect the applicant to have either experience in aesthetic treatments or a strong interest in training in the field. We value excellent customer service and interaction skills, initiative, responsibility and flexibility. An interest in the aesthetic field, an entrepreneurial attitude and an understanding of customer-oriented service work are considered an advantage.\n\nWe offer:\n\nWe offer a versatile and varied job description, the opportunity to develop in aesthetic treatments, and work in an expert and customer-oriented operating environment.\n\nForm of work and compensation:\n\nThe position has the opportunity to work either under your own business name as a contract entrepreneur or in a part-time employment relationship with our company. Compensation is agreed separately according to the applicant's experience, skills and agreed job description.\n\nWe are a private healthcare unit operating in the center of Jyväskylä, which has been offering aesthetic treatments since 2012. Our clinic is known for its long experience, established clientele, and commitment to safe, researched, effective and responsibly implemented treatments.\n\nApplying:\n\nSend an application and CV, where you tell about your skills, work experience and your interest in the position. Please also tell us about your possible experience with aesthetic treatments or your desire to train in the field, your desired type of work. We invite applicants to a personal job interview based on the applications."
+  },
+  {
+    "id": "8b265c61",
+    "job_id": "ehkäisevän-työn-ohjaaja-tamper-tampere-8b265c61",
+    "title": "Supervisor of preventive work, Tampere",
+    "company": "SOS-Lapsikylä",
+    "jobLocation": [
+      "Tampere"
+    ],
+    "jobapply_link": "https://sos-lapsikyla.rekrytointi.com/paikat/index.php?o=A_A&jid=634&jbid=15",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ece85e64-b316-4795-958b-fd11514a2d48/en",
+    "job_employer_email": "kati.syrjaaho@sos-lapsikyla.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-26",
+    "scraped_at": "2026-04-12 15:16:11",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
     "continuityOfWork": "Temporary",
     "language_requirements": [
       "Finnish"
     ],
     "what_we_expect": [
-      "listen actively",
-      "react to changing situations in healthcare",
-      "accept own responsibility",
-      "promote inclusion"
+      "If you are interested in supporting disadvantaged children and young people and you have a productive, upbeat coaching personality, you are probably the person we are looking for.",
+      "We expect you to have an AMK-level education in social, youth or educational fields suitable for the position, as well as experience working with people of different ages. We consider experience in guiding volunteers an advantage.",
+      "The person we're looking for is open-minded, innovative, holistic and self-directed and has good communication skills. He knows how to work in a multicultural operating environment and is able to work flexibly and professionally even in fast-paced situations."
     ],
     "job_responsibilities": [
-      "laboratory assistant"
-    ],
-    "what_we_offer": [],
-    "jobcontent": "Our company manufactures dental prostheses for our customers served at our own reception. We have a Special Dental Technician and two dental workers. A special dental technician takes care of the patient work at the reception, and the dental workers work in the adjacent space in the dental laboratory. The duties of the new employee include maintenance and preparation of facilities and equipment, as well as assisting other employees in the manual manufacture of dental prostheses. Gypsum, light-cured materials, acrylic plastics and, to a small extent, metal are processed in the laboratory. The work is mainly done by hand, casting, molding, drilling and polishing the aforementioned materials. The job requires:\n\n- precision\n \n- diligence\n \n- initiative\n \n- pressure tolerance\n \n\nTasks often change during the working day and situations can change quickly. Especially at the beginning of the employment relationship, there is a lot to learn and the ability to receive feedback is important. Previous experience in dental laboratory work or training in the field is not assumed. Manual skills are an advantage for the applicant. The employee is trained for work at the workplace. The work is part-time, it is offered at least 20 hours a week, so it is well suited to studies or other work. The employment relationship is temporary until the end of 2026, after which the situation will be reviewed again. The details (working hours and duration of the contract) can be negotiated with the applicant to some extent.\n\nDue to the nature of patient work, I cannot answer phone calls. I ask you to send the application and CV by email and I will contact the applicant after familiarizing myself with them.",
-    "source": "tyomarkkinatori",
-    "translated_content": "Dental worker for a dental laboratory, you do not need previous experience in the field\n\nOur company manufactures dental prostheses for our customers served at our own reception. We have a Special Dental Technician and two dental workers. A special dental technician takes care of the patient work at the reception, and the dental workers work in the adjacent space in the dental laboratory. The duties of the new employee include maintenance and preparation of facilities and equipment, as well as assisting other employees in the manual manufacture of dental prostheses. Gypsum, light-cured materials, acrylic plastics and, to a small extent, metal are processed in the laboratory. The work is mainly done by hand, casting, molding, drilling and polishing the aforementioned materials. The job requires:\n\n- precision\n \n- diligence\n \n- initiative\n \n- pressure tolerance\n \n\nTasks often change during the working day and situations can change quickly. Especially at the beginning of the employment relationship, there is a lot to learn and the ability to receive feedback is important. Previous experience in dental laboratory work or training in the field is not assumed. Manual skills are an advantage for the applicant. The employee is trained for work at the workplace. The work is part-time, it is offered at least 20 hours a week, so it is well suited to studies or other work. The employment relationship is temporary until the end of 2026, after which the situation will be reviewed again. The details (working hours and duration of the contract) can be negotiated with the applicant to some extent.\n\nDue to the nature of patient work, I cannot answer phone calls. I ask you to send the application and CV by email and I will contact the applicant after familiarizing myself with them."
-  },
-  {
-    "id": "fedc4d16",
-    "job_id": "lankamopokuljettaja-lappeenran-lappeenranta-fedc4d16",
-    "title": "Wire moped driver Lappeenranta summer job",
-    "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
-    "jobLocation": [
-      "Lappeenranta"
-    ],
-    "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application for the Job - Lankamopokuljettaja Lappeenranta kesätyö",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f830922a-9316-4282-a81e-144598555e59/en",
-    "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
-    "job_employer_name": "Marko Hokkanen",
-    "job_employer_phone_no": "0405542794",
-    "date_posted": "2026-04-10",
-    "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-10 23:42:07",
-    "open_positions": 1,
-    "salary_range": "",
-    "workTime": "Full-time",
-    "continuityOfWork": "Summer job",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "to process timber with hand-operated machines",
-      "stack things"
-    ],
-    "job_responsibilities": [
-      "material handler"
-    ],
-    "what_we_offer": [],
-    "jobcontent": "**We are looking for a wire moped driver for our Lappeenranta contracting destination UPM Kaukaa pulp mill area, for full-time and temporary summer work**\n\nYour tasks include the mechanical removal of float threads.\n\nThe work is shift work, 2 shifts 5 days a week.\n\nExperience and professionalism in the field are considered an advantage. Ability to drive a forklift or a wheeled machine. B driver's license and occupational safety card. We also value the ability to work as part of a developing team, good team spirit, initiative, the ability to take on the challenges required by the job, and a good safety attitude.\n\nThe work starts in May/according to the contract and lasts until the end of August\n\nThe hourly wage is in accordance with the collective agreement of the forest machinery industry, a position belonging to salary group I in terms of its level of demand, €12.99 €15.09 depending on the years of experience in the field.\n\n**Fin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.**\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period and the tasks will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application.",
-    "source": "tyomarkkinatori",
-    "translated_content": "Wire moped driver Lappeenranta summer job\n\n**We are looking for a wire moped driver for our Lappeenranta contracting destination UPM Kaukaa pulp mill area, for full-time and temporary summer work**\n\nYour tasks include the mechanical removal of float threads.\n\nThe work is shift work, 2 shifts 5 days a week.\n\nExperience and professionalism in the field are considered an advantage. Ability to drive a forklift or a wheeled machine. B driver's license and occupational safety card. We also value the ability to work as part of a developing team, good team spirit, initiative, the ability to take on the challenges required by the job, and a good safety attitude.\n\nThe work starts in May/according to the contract and lasts until the end of August\n\nThe hourly wage is in accordance with the collective agreement of the forest machinery industry, a position belonging to salary group I in terms of its level of demand, €12.99 €15.09 depending on the years of experience in the field.\n\n**Fin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.**\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period and the tasks will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application."
-  },
-  {
-    "id": "86a73812",
-    "job_id": "yhdistelmäajoneuvonkuljettaja--lappeenranta-86a73812",
-    "title": "Combination vehicle driver Lappeenranta summer job",
-    "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
-    "jobLocation": [
-      "Lappeenranta"
-    ],
-    "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application for the Job - Yhdistelmäajoneuvonkuljettaja Lappeenranta kesätyö",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5dfd71d4-7b55-430a-a89e-1d847ae59e85/en",
-    "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
-    "job_employer_name": "MArko Hokkanen",
-    "job_employer_phone_no": "0405542794",
-    "date_posted": "2026-04-10",
-    "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-10 23:42:07",
-    "open_positions": 1,
-    "salary_range": "",
-    "workTime": "Full-time",
-    "continuityOfWork": "Summer job",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "mechanical components of vehicles",
-      "monitor vehicle performance",
-      "interpret traffic lights",
-      "control heavy vehicles",
-      "ensure the vehicle's usability",
-      "stay alert",
-      "park vehicles",
-      "use a proactive driving style"
-    ],
-    "job_responsibilities": [
-      "combination vehicle driver"
-    ],
-    "what_we_offer": [],
-    "jobcontent": "**We are looking for combination vehicle drivers for our Lappeenranta contracting destination UPM Kaukaa pulp mill area, full-time and temporary summer work.**\n\nYour tasks include energy fraction transfer tasks with a combined vehicle, chips, wood and bark. In addition to this, also wheel machine and other machine work\n\nThe job requires a valid combination vehicle driver's license as well as professional qualifications and an occupational safety card.\n\nIn addition to the ability to handle a vehicle, you can use a computer, you can master inventory management and working time reporting software.\n\nAs a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule.\n\nExperience and professionalism in the field are considered an advantage. We also value the ability to work as part of a developing team, good team spirit, the ability to take on the challenges required by the job, and a good safety attitude. We offer versatile work with the opportunity to learn and develop yourself as an employee in a competent team.\n\nThe work starts in May/according to the contract and lasts until the end of August.\n\nThe hourly wage is according to the collective agreement of the forest machinery industry, a task belonging to pay group III due to its demanding level, €15.42 €18.02 depending on the years of experience in the field\n\nFin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period, and the positions will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application.",
-    "source": "tyomarkkinatori",
-    "translated_content": "Combination vehicle driver Lappeenranta summer job\n\n**We are looking for combination vehicle drivers for our Lappeenranta contracting destination UPM Kaukaa pulp mill area, full-time and temporary summer work.**\n\nYour tasks include energy fraction transfer tasks with a combined vehicle, chips, wood and bark. In addition to this, also wheel machine and other machine work\n\nThe job requires a valid combination vehicle driver's license as well as professional qualifications and an occupational safety card.\n\nIn addition to the ability to handle a vehicle, you can use a computer, you can master inventory management and working time reporting software.\n\nAs a rule, the work is 3 shifts 7 days a week and occasionally 13 shifts according to the factory schedule.\n\nExperience and professionalism in the field are considered an advantage. We also value the ability to work as part of a developing team, good team spirit, the ability to take on the challenges required by the job, and a good safety attitude. We offer versatile work with the opportunity to learn and develop yourself as an employee in a competent team.\n\nThe work starts in May/according to the contract and lasts until the end of August.\n\nThe hourly wage is according to the collective agreement of the forest machinery industry, a task belonging to pay group III due to its demanding level, €15.42 €18.02 depending on the years of experience in the field\n\nFin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period, and the positions will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application."
-  },
-  {
-    "id": "1cce2120",
-    "job_id": "vesivarastotyöntekijä-lappeenr-lappeenranta-1cce2120",
-    "title": "Water storage worker Lappeenranta Summer job",
-    "company": "Fin-Terpuu Oy, Kaukas Sellu Ja Paperi",
-    "jobLocation": [
-      "Lappeenranta"
-    ],
-    "jobapply_link": "mailto:marko.hokkanen@fin-terpuu.fi?subject=Application for the Job - Vesivarastotyöntekijä Lappeenranta Kesätyö",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/478c94a1-fef1-41cd-923e-92387b8e014d/en",
-    "job_employer_email": "marko.hokkanen@fin-terpuu.fi",
-    "job_employer_name": "Marko Hokkanen",
-    "job_employer_phone_no": "0405542794",
-    "date_posted": "2026-04-10",
-    "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-10 23:42:07",
-    "open_positions": 1,
-    "salary_range": "",
-    "workTime": "Full-time",
-    "continuityOfWork": "Summer job",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "stay alert",
-      "preventive maintenance",
-      "estimate distances"
-    ],
-    "job_responsibilities": [
-      "bulldozer driver",
-      "forklift driver"
-    ],
-    "what_we_offer": [],
-    "jobcontent": "**We are looking for water storage workers for our Lappeenranta contracting site, UPM Kaukaa pulp mill area, full-time and temporary summer work**\n\nYour tasks include moving bundles of uittopuu and arranging them with a trap. The work is carried out in varying weather conditions from land and boats, and it requires good cooperation and readiness for physical work. Seasonal work is perfect for those who enjoy outdoor work and those looking for active summer work.\n\nThe work is shift work, 2 shifts 5 days a week.\n\nExperience and expertise in wood processing and heavy equipment is considered an advantage. Ability to drive a forklift or a wheeled machine. B driver's license and occupational safety card. We also value the ability to work as part of a developing team, good team spirit, initiative, the ability to take on the challenges required by the job, and a good safety attitude.\n\nThe work starts in May/according to the contract and lasts until the end of August\n\nThe hourly wage is in accordance with the collective agreement of the forest machinery industry, a task belonging to II pay group in terms of its level of demand, €14.35 €16.77 depending on the years of experience in the field.\n\n**Fin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.**\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period and the tasks will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application.",
-    "source": "tyomarkkinatori",
-    "translated_content": "Water storage worker Lappeenranta Summer job\n\n**We are looking for water storage workers for our Lappeenranta contracting site, UPM Kaukaa pulp mill area, full-time and temporary summer work**\n\nYour tasks include moving bundles of uittopuu and arranging them with a trap. The work is carried out in varying weather conditions from land and boats, and it requires good cooperation and readiness for physical work. Seasonal work is perfect for those who enjoy outdoor work and those looking for active summer work.\n\nThe work is shift work, 2 shifts 5 days a week.\n\nExperience and expertise in wood processing and heavy equipment is considered an advantage. Ability to drive a forklift or a wheeled machine. B driver's license and occupational safety card. We also value the ability to work as part of a developing team, good team spirit, initiative, the ability to take on the challenges required by the job, and a good safety attitude.\n\nThe work starts in May/according to the contract and lasts until the end of August\n\nThe hourly wage is in accordance with the collective agreement of the forest machinery industry, a task belonging to II pay group in terms of its level of demand, €14.35 €16.77 depending on the years of experience in the field.\n\n**Fin-Terpuu Oy is a group from Kajaani that offers logistics services for the forest industry. Our main industries are logistics, maintenance, consulting and rental of machines and personnel. We specialize in internal transport for the wood processing industry, ports and terminals, as well as waterway transport.**\n\nMore information and applications by 30 April 2026. Marko Hokkanen marko.hokkanen@fin-terpuu.fi tel. 0405542794 and Markku Immonen markku.immonen@fin-terpuu.fi tel. 0406757793\n\nWe interview applicants already during the application period and the tasks will be filled as soon as a suitable person is found. Attach your CV and previous experience and professional skills to the application."
-  },
-  {
-    "id": "ac50d15e",
-    "job_id": "maanrakennusapulaisia-espoo-ac50d15e",
-    "title": "Land construction assistants",
-    "company": "Lavonia Oy",
-    "jobLocation": [
-      "Espoo",
-      "Helsinki",
-      "Vantaa"
-    ],
-    "jobapply_link": "http://lavonia.likeit.fi/apply/1329340",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4395e3e8-bb76-4f6c-a53f-96996e6b6ed2/en",
-    "job_employer_email": "aleksandr.partanen@lavonia.fi",
-    "job_employer_name": "",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-04-10",
-    "date_expires": "2026-05-15",
-    "scraped_at": "2026-04-11 00:05:10",
-    "open_positions": 1,
-    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "The work includes auxiliary earthworks, such as shoveling, spreading soil, insulation, cleaning and erecting site fences.",
-      "Previous experience in the infrastructure sector is considered an advantage. However, the most important thing is a good attitude and motivation to learn. You are in good physical condition and ready to work in variable weather conditions.",
-      "An occupational safety card is required. The possibility of having your own car is considered an advantage, as the work sites vary.",
-      "Salary at least TES in the Infra sector and negotiable according to professional skills."
-    ],
-    "job_responsibilities": [
-      "Civil engineering support workers",
-      "Support workers in the construction industry"
+      "family tutor"
     ],
     "what_we_offer": [
-      "Salary according to TES, based on skills and experience.",
-      "Versatile tasks and projects",
-      "High-quality equipment",
-      "Occupational health care",
-      "Professional support and advice on employment matters",
-      "Were you interested? Submit your application by clicking the search button. Fill out a short recruitment form and tell us about yourself and your previous work experience, we will contact you soon!",
-      "For more information, please contact:"
+      "SOS-Lapsikylä supports the coping of the staff, e.g. with the possibility of comprehensive occupational health care and exercise and well-being benefits. In addition, we support lunch meals and offer our personnel leisure insurance.",
+      "We comply with the collective agreement of social sector organizations and the task belongs to demand group 4.",
+      "More information:",
+      "The application form can be found at the bottom of the page. We hope to hear from you soon! According to the contract, the work assignment will start as soon as possible. #_msocom_3#_msocom_4",
+      "The applicant for the position must present an extract from the criminal record: Act on investigating the criminal background of those working with children 504/2002.",
+      "SOS Children's Village",
+      "On the way to the dimensions of possibilities.",
+      "_msocom_5"
     ],
-    "jobcontent": "We are looking for earth construction assistants for our client for sites lasting the entire season.\n\nThe work includes auxiliary earthworks, such as shoveling, spreading soil, insulation, cleaning and erecting site fences.\n\nPrevious experience in the infrastructure sector is considered an advantage. However, the most important thing is a good attitude and motivation to learn. You are in good physical condition and ready to work in variable weather conditions.\n\nAn occupational safety card is required. The possibility of having your own car is considered an advantage, as the work sites vary. \n\nSalary at least TES in the Infra sector and negotiable according to professional skills.\n\nWe offer you:\n\n * Salary according to TES, based on skills and experience.\n * Diverse tasks and projects\n * High-quality equipment\n * Occupational health care\n * Professional support and advice on employment matters \n\nWere you interested? Submit your application by clicking the search button. Fill out a short recruitment form and tell us about yourself and your previous work experience, we will contact you soon!\n\nFor more information, please contact:\n\nKalle Lindqvist, kalle.lindqvist@lavonia.fi\n\nLavonia Group is a domestic personnel rental company in the construction and industrial sector, founded in 2008. We offer jobs all year round for experienced professionals as well as creators in the early stages of their careers. The most important thing for us is that our employees have fun and get to show their skills in projects that are just right for them.\n\nCheck out our open positions: lavonia.fi/hae-toiin <https://lavonia.fi/hae-toiin/>",
+    "jobcategory_keywords": [
+      "family support worker",
+      "children and families support worker",
+      "early help family worker",
+      "early intervention worker (families)",
+      "family advice worker",
+      "family engagement worker",
+      "family intervention worker",
+      "family service worker",
+      "family social care worker",
+      "family worker (early intervention)",
+      "intensive family support worker"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Courage | Commitment | Trust | Effectiveness | Responsibility\n\nWe at SOS-Lapsikylä bravely defend the rights of the child. Our goal is that every child and young person gets the support they need to grow to their full potential. Come and do meaningful and impactful work with us!\n\nWe are applying to SOS-Lapsikylä\n\nPreventive work instructor for the Tampere area\n\nWhat are we looking for?\n\nWe are looking for a preventive work instructor with organizational skills and know-how for the preventive work of SOS-Lapsikylä in the Tampere area. The employment is full-time and fixed-term until 31 December 2026.\n\nThe supervisor of preventive work implements and develops SOS-Lapsikylä's preventive work of general benefit in his own area of ​​operation together with the regional supervisor of preventive work. The supervisor is partly responsible for the development, planning and implementation of existing preventive work activities. In addition, the instructor participates in network work, guiding volunteers, and other planning and development work for preventive activities in the area.\n\nPreventive work activities carried out in the area include, for example, the hobby support and study support of the Dreams come true program, the involvement of SOS young developers and the Time for a Child adult friend activity.\n\nAt the beginning of the employment relationship, the task includes the following areas:\n\n- Development and implementation of the \"Time for the child\" activity for adult friends\n- Responsible for the decisions and payments of the hobby support and study support of the Dream come true program\n- Planning and supervision of SOS-Lapsikylä's local SOS developer youth participation activities\n- Representing SOS-Lapsikylä at regional events\n\nWhat do we expect from you?\n\nIf you are interested in supporting disadvantaged children and young people and you have a productive, upbeat coaching personality, you are probably the person we are looking for.\n\nWe expect you to have an AMK-level education in social, youth or educational fields suitable for the position, as well as experience working with people of different ages. We consider experience in guiding volunteers an advantage.\n\nThe person we're looking for is open-minded, innovative, holistic and self-directed and has good communication skills. He knows how to work in a multicultural operating environment and is able to work flexibly and professionally even in fast-paced situations.\n\nSince the position requires good individual and group guidance skills for children and young people, we hope that you have experience in these areas. Experience in child protection and/or youth work, knowledge of support services for families with children and management of participation methods, and experience in participation activities are an advantage. A driver's license is an advantage.\n\nWhat do we offer?\n\nWe offer you a versatile and responsible position in the expert organization of a children's organization. We use a flexible hybrid work model and you have the opportunity to work self-directed and independently with the support of the work community. SOS-Lapsikylä's electronic learning environment Village School supports your familiarization.\n\nSOS-Lapsikylä supports the coping of the staff, e.g. with the possibility of comprehensive occupational health care and exercise and well-being benefits. In addition, we support lunch meals and offer our personnel leisure insurance.\n\nWe comply with the collective agreement of social sector organizations and the task belongs to demand group 4.\n\nMore information:\n\nFor more information about the task, please contact Kati Syrjäaho, regional head of preventive work, phone: 044 761 4172, kati.syrjaaho@sos-lapsikyla.fi (Tuesday 14.4. from 12-13 and Mon. 20.4. from 13-14)\n\nThe job interviews will be held on Monday, May 4, 2026, from 12 to 4 p.m\n\nApply for the position by 26 April 2026 using the electronic application form on our website at https://sos-lapsikyla.rekrytointi.com/paikat/?o=A_A&jid=634\n\nThe application form can be found at the bottom of the page. We hope to hear from you soon! According to the contract, the work assignment will start as soon as possible. #_msocom_3#_msocom_4\n\nThe applicant for the position must present an extract from the criminal record: Act on investigating the criminal background of those working with children 504/2002.\n\nSOS Children's Village\n\nSOS-Lapsikylä is an international child protection organization that promotes children's rights. Our goal is that every child and young person gets the support they need to grow to their full potential. We are a non-profit child protection expert, service provider and helper for children, young people and families. SOS-Lapsikylä has been operating in Finland since 1962, and it is a member of the international [SOS Children's Villages organization](http://www.sos-childrensvillages.org/). The organization operates in more than 130 countries.\n\n[sos-lapsikyla.fi](https://www.sos-lapsikyla.fi/) | [LinkedIn](https://www.linkedin.com/company/sos-children's-villages-finland/) | [Facebook](https://www.facebook.com/SOSLapsikyla)\n\nOn the way to the dimensions of possibilities.\n\n#_msocom_5",
     "source": "tyomarkkinatori",
-    "translated_content": "Land construction assistants\n\nWe are looking for earth construction assistants for our client for sites lasting the entire season.\n\nThe work includes auxiliary earthworks, such as shoveling, spreading soil, insulation, cleaning and erecting site fences.\n\nPrevious experience in the infrastructure sector is considered an advantage. However, the most important thing is a good attitude and motivation to learn. You are in good physical condition and ready to work in variable weather conditions.\n\nAn occupational safety card is required. The possibility of having your own car is considered an advantage, as the work sites vary. \n\nSalary at least TES in the Infra sector and negotiable according to professional skills.\n\nWe offer you:\n\n * Salary according to TES, based on skills and experience.\n * Diverse tasks and projects\n * High-quality equipment\n * Occupational health care\n * Professional support and advice on employment matters \n\nWere you interested? Submit your application by clicking the search button. Fill out a short recruitment form and tell us about yourself and your previous work experience, we will contact you soon!\n\nFor more information, please contact:\n\nKalle Lindqvist, kalle.lindqvist@lavonia.fi\n\nLavonia Group is a domestic personnel rental company in the construction and industrial sector, founded in 2008. We offer jobs all year round for experienced professionals as well as creators in the early stages of their careers. The most important thing for us is that our employees have fun and get to show their skills in projects that are just right for them.\n\nCheck out our open positions: lavonia.fi/hae-toiin <https://lavonia.fi/hae-toiin/>"
+    "translated_content": "Supervisor of preventive work, Tampere\n\nCourage | Commitment | Trust | Effectiveness | Responsibility\n\nWe at SOS-Lapsikylä bravely defend the rights of the child. Our goal is that every child and young person gets the support they need to grow to their full potential. Come and do meaningful and impactful work with us!\n\nWe are applying to SOS-Lapsikylä\n\nPreventive work instructor for the Tampere area\n\nWhat are we looking for?\n\nWe are looking for a preventive work instructor with organizational skills and know-how for the preventive work of SOS-Lapsikylä in the Tampere area. The employment is full-time and fixed-term until 31 December 2026.\n\nThe supervisor of preventive work implements and develops SOS-Lapsikylä's preventive work of general benefit in his own area of ​​operation together with the regional supervisor of preventive work. The supervisor is partly responsible for the development, planning and implementation of existing preventive work activities. In addition, the instructor participates in network work, guiding volunteers, and other planning and development work for preventive activities in the area.\n\nPreventive work activities carried out in the area include, for example, the hobby support and study support of the Dreams come true program, the involvement of SOS young developers and the Time for a Child adult friend activity.\n\nAt the beginning of the employment relationship, the task includes the following areas:\n\n- Development and implementation of the \"Time for the child\" activity for adult friends\n- Responsible for the decisions and payments of the hobby support and study support of the Dream come true program\n- Planning and supervision of SOS-Lapsikylä's local SOS developer youth participation activities\n- Representing SOS-Lapsikylä at regional events\n\nWhat do we expect from you?\n\nIf you are interested in supporting disadvantaged children and young people and you have a productive, upbeat coaching personality, you are probably the person we are looking for.\n\nWe expect you to have an AMK-level education in social, youth or educational fields suitable for the position, as well as experience working with people of different ages. We consider experience in guiding volunteers an advantage.\n\nThe person we're looking for is open-minded, innovative, holistic and self-directed and has good communication skills. He knows how to work in a multicultural operating environment and is able to work flexibly and professionally even in fast-paced situations.\n\nSince the position requires good individual and group guidance skills for children and young people, we hope that you have experience in these areas. Experience in child protection and/or youth work, knowledge of support services for families with children and management of participation methods, and experience in participation activities are an advantage. A driver's license is an advantage.\n\nWhat do we offer?\n\nWe offer you a versatile and responsible position in the expert organization of a children's organization. We use a flexible hybrid work model and you have the opportunity to work self-directed and independently with the support of the work community. SOS-Lapsikylä's electronic learning environment Village School supports your familiarization.\n\nSOS-Lapsikylä supports the coping of the staff, e.g. with the possibility of comprehensive occupational health care and exercise and well-being benefits. In addition, we support lunch meals and offer our personnel leisure insurance.\n\nWe comply with the collective agreement of social sector organizations and the task belongs to demand group 4.\n\nMore information:\n\nFor more information about the task, please contact Kati Syrjäaho, regional head of preventive work, phone: 044 761 4172, kati.syrjaaho@sos-lapsikyla.fi (Tuesday 14.4. from 12-13 and Mon. 20.4. from 13-14)\n\nThe job interviews will be held on Monday, May 4, 2026, from 12 to 4 p.m\n\nApply for the position by 26 April 2026 using the electronic application form on our website at https://sos-lapsikyla.rekrytointi.com/paikat/?o=A_A&jid=634\n\nThe application form can be found at the bottom of the page. We hope to hear from you soon! According to the contract, the work assignment will start as soon as possible. #_msocom_3#_msocom_4\n\nThe applicant for the position must present an extract from the criminal record: Act on investigating the criminal background of those working with children 504/2002.\n\nSOS Children's Village\n\nSOS-Lapsikylä is an international child protection organization that promotes children's rights. Our goal is that every child and young person gets the support they need to grow to their full potential. We are a non-profit child protection expert, service provider and helper for children, young people and families. SOS-Lapsikylä has been operating in Finland since 1962, and it is a member of the international [SOS Children's Villages organization](http://www.sos-childrensvillages.org/). The organization operates in more than 130 countries.\n\n[sos-lapsikyla.fi](https://www.sos-lapsikyla.fi/) | [LinkedIn](https://www.linkedin.com/company/sos-children's-villages-finland/) | [Facebook](https://www.facebook.com/SOSLapsikyla)\n\nOn the way to the dimensions of possibilities.\n\n#_msocom_5"
   },
   {
-    "id": "366fc85a",
-    "job_id": "maanrakennuksen-perämies-datak-kirkkonummi-366fc85a",
-    "title": "Earth construction foreman, data center site",
-    "company": "Lavonia Oy",
+    "id": "213f47fd",
+    "job_id": "timlärare-i-huvudsyssla-för-ut-närpiö-213f47fd",
+    "title": "Timlärare i huvudsyssla för utbildning som handler för examensutbildning (Hux)",
+    "company": "Svenska Österbottens förbund för utbildning och kultur",
     "jobLocation": [
-      "Kirkkonummi",
-      "Espoo"
+      "Närpiö"
     ],
-    "jobapply_link": "http://lavonia.likeit.fi/apply/1329496",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/51abb252-7706-4864-8cb4-d861f578795c/en",
-    "job_employer_email": "kalle.lindqvist@lavonia.fi",
-    "job_employer_name": "",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-04-10",
-    "date_expires": "2026-05-15",
-    "scraped_at": "2026-04-11 00:05:10",
+    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/718427/sv_SE",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bc6e2b15-efbe-4582-9833-51d8b8e438ff/en",
+    "job_employer_email": "brita.brannbacka-brunell@yrkesakademin.fi",
+    "job_employer_name": "Brita Brännbacka-Brunell",
+    "job_employer_phone_no": "0503694626",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-26",
+    "scraped_at": "2026-04-12 15:16:12",
     "open_positions": 1,
-    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "salary_range": "Enligt UKTA del C",
     "workTime": "Full-time",
     "continuityOfWork": "Permanent",
     "language_requirements": [
-      "Finnish"
+      "Swedish"
     ],
-    "what_we_expect": [
-      "Please mention in your application if you have driven earthmoving machines (Kramer, Avant or other wheeled machines, rollers, etc.)",
-      "Salary for infra sector TES and negotiable according to professional skills."
-    ],
+    "what_we_expect": [],
     "job_responsibilities": [
-      "Civil engineering support workers"
-    ],
-    "what_we_offer": [
-      "Salary according to TES, based on skills and experience.",
-      "Versatile tasks and projects",
-      "High-quality equipment",
-      "Occupational health care",
-      "Professional support and advice on employment matters",
-      "Fill out the recruitment form and tell us about yourself and your previous experience, and we will contact you!",
-      "More information about the job can be found on weekdays (9-16):",
-      "Lavonia Group, founded in 2008, is a strong domestic staffing agency in the construction and industrial sector. With us you can find the best jobs all year round. See all open positions:"
-    ],
-    "jobcontent": "For our client, we are looking for an earthworks worker for the duties of mate in the Espoo/Kirkkonummi area.\n\nIt is a Microsoft data center project. The position requires previous experience in earthworks and municipal engineering. As a rule, the work tasks include coxswain's work, pipe installations and welding. You have experience suitable for the task, you know how to use a laser and read construction drawings. An occupational safety card is required.\n\nPlease mention in your application if you have driven earthmoving machines (Kramer, Avant or other wheeled machines, rollers, etc.)\n\nSalary for infra sector TES and negotiable according to professional skills.\n\nWe offer you:\n\n * Salary according to TES, based on skills and experience.\n * Diverse tasks and projects\n * High-quality equipment\n * Occupational health care\n * Professional support and advice on employment matters \n\nFill out the recruitment form and tell us about yourself and your previous experience, and we will contact you!\n\nMore information about the job can be found on weekdays (9-16):\n\nKalle Lindqvist, kalle.lindqvist@lavonia.fi\n\nLavonia Group, founded in 2008, is a strong domestic staffing agency in the construction and industrial sector. With us you can find the best jobs all year round. See all open positions:\n\nhttps://lavonia.fi/hae-toihin/ <https://lavonia.fi/hae-toihin/>",
-    "source": "tyomarkkinatori",
-    "translated_content": "Earth construction foreman, data center site\n\nFor our client, we are looking for an earthworks worker for the duties of mate in the Espoo/Kirkkonummi area.\n\nIt is a Microsoft data center project. The position requires previous experience in earthworks and municipal engineering. As a rule, the work tasks include coxswain's work, pipe installations and welding. You have experience suitable for the task, you know how to use a laser and read construction drawings. An occupational safety card is required.\n\nPlease mention in your application if you have driven earthmoving machines (Kramer, Avant or other wheeled machines, rollers, etc.)\n\nSalary for infra sector TES and negotiable according to professional skills.\n\nWe offer you:\n\n * Salary according to TES, based on skills and experience.\n * Diverse tasks and projects\n * High-quality equipment\n * Occupational health care\n * Professional support and advice on employment matters \n\nFill out the recruitment form and tell us about yourself and your previous experience, and we will contact you!\n\nMore information about the job can be found on weekdays (9-16):\n\nKalle Lindqvist, kalle.lindqvist@lavonia.fi\n\nLavonia Group, founded in 2008, is a strong domestic staffing agency in the construction and industrial sector. With us you can find the best jobs all year round. See all open positions:\n\nhttps://lavonia.fi/hae-toihin/ <https://lavonia.fi/hae-toihin/>"
-  },
-  {
-    "id": "01435709",
-    "job_id": "cnc-koneistaja-vantaa-01435709",
-    "title": "CNC machinist",
-    "company": "Barona Teollisuus Oy",
-    "jobLocation": [
-      "Vantaa"
-    ],
-    "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/cnc-koneistaja-osateos-oy-d0ba9850",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fd1ba3ba-0486-4b92-bf78-7b9dc2ee7520/en",
-    "job_employer_email": "ari.kumlander@barona.fi",
-    "job_employer_name": "Ari Kumlander",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-04-11",
-    "date_expires": "2026-05-05",
-    "scraped_at": "2026-04-11 10:19:54",
-    "open_positions": 1,
-    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "We consider experience in the manufacture of small and individual pieces, production development and CAD/CAM know-how (e.g. Fusion 360) an advantage. Willingness to work in shifts is considered an advantage.",
-      "Working time and employment relationship",
-      "As a rule, the work is 2-shift work. The employment relationship is permanent and starts according to the contract."
-    ],
-    "job_responsibilities": [
-      "lathe"
+      "professional teacher"
     ],
     "what_we_offer": [],
-    "jobcontent": "For our client company Osateos Oy, we are looking for a turner/miller for a permanent employment in Vantaa, with good transport links.\n\nWe are looking for a skilled CNC machinist to strengthen the production team for versatile turning and milling tasks. You work with modern machinery and you get to utilize your strong machining expertise and programming skills. Depending on your skills, the task can be focused on either multitasking turning or machining center work\n\nJob duties\n\nThe work includes CNC turning and/or milling, machine settings, programming and running parts. On the turning side, you work on a modern DMG Mori NLX 2500 multifunction lathe (M730UM control) and are independently responsible for programming and machining. On the milling side, the work includes 4-axis machining with Heidenhain controlled machining centers (TNC 530 / 620 / 640). Tasks also include tool selection and optimization, measurements and quality assurance. The manufactured pieces vary from single pieces and small series to prototypes.\n\nWe expect from you\n\nWe expect you to have experience in CNC turning and/or milling and strong machining skills. You master Fanuc, Heidenhain or Mori controls and are capable of independent programming and setting. We value the ability to work independently, problem-solving skills and a careful and high-quality approach to work.\n\nWe consider experience in the manufacture of small and individual pieces, production development and CAD/CAM know-how (e.g. Fusion 360) an advantage. Willingness to work in shifts is considered an advantage.\n\nWorking time and employment relationship\n\nAs a rule, the work is 2-shift work. The employment relationship is permanent and starts according to the contract.\n\nWe offer you\n\nWe offer a stable and developing work environment in a reputable engineering company, modern and well-maintained machines, and the opportunity to influence your own job description. You get support from a competent and supportive team and the opportunity to develop your skills in demanding and varied machining work. The company values ​​expertise, initiative and the desire to develop operations.\n\nIf you are interested in the position, please apply for the position quickly because the position will be filled as soon as a suitable person is found. For more information about the position, please email ari.kumlander@barona.fi. Please note that we do not process applications sent by e-mail for data security reasons, so please apply for a position via the attached link.",
+    "jobcategory_keywords": [
+      "vocational teacher",
+      "career and technology teacher",
+      "technical institute teacher",
+      "technological institute teacher",
+      "vocational college lecturer",
+      "vocational college teacher",
+      "vocational education teacher",
+      "vocational educator",
+      "vocational instructor",
+      "vocational lecturer",
+      "vocational teaching assistant",
+      "vocational tutor",
+      "vocational university teacher",
+      "vocational university tutor"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "We are looking for you who like to handle, are flexible and can take your own initiative, who like to work with different types of students and are good at collaborating and building a network. \nVi värdesätter kunnande i particular stöt, kännedom om utbildningssystemet och olika yrkens yrkeskrav samt vilja och käggi att mångsidigt handleda studeranden inom ramen för HUX-utbildningen. \n\nBehörighetskrav enligt örðurning om behörighetsvíllor (986/1998). \nAnställningsvillor enligt UKTA del C\nEnligt lagen om control av brottslig background hos personer som arbeiter med barn (504/2002) bör den som vähls uppvisa ett straffregisterutdrag för att valet ska vinna laga kraft.\n\nPlaceringsorten som nämns i annonsenen är placingringsorten vid anställnings präger.\n\nRekryteringen är anonym rekrytering för att förmår rätvis och jämilk behandling av ansökningar under hela rekryteringsprocessen. \nI Anonyma rekryteringar betalilas ansökningar anonymt tills man har goryot interviewvalen. Since the recruitment is anonymous, no bilagor bifogas application, utan de uppvisas först vid eventual interview. Undvik even such information in the application som kan ge closer information om din identit.\n\nYA is part of the samkommunen Svenska Österbottens förbund för utbildning och kultur with fixed operating points in Närpes, Vasa, Pedersöre and Jakobstad. Yrkesakademin i Österbotten has approx. 190 employees and approx. 2600 students.\n\nUtbildningschef Brita Brännbacka-Brunell, phone 050-369 46 26, brita.brannbacka-brunell@yrkesakademin.fi",
     "source": "tyomarkkinatori",
-    "translated_content": "CNC machinist\n\nFor our client company Osateos Oy, we are looking for a turner/miller for a permanent employment in Vantaa, with good transport links.\n\nWe are looking for a skilled CNC machinist to strengthen the production team for versatile turning and milling tasks. You work with modern machinery and you get to utilize your strong machining expertise and programming skills. Depending on your skills, the task can be focused on either multitasking turning or machining center work\n\nJob duties\n\nThe work includes CNC turning and/or milling, machine settings, programming and running parts. On the turning side, you work on a modern DMG Mori NLX 2500 multifunction lathe (M730UM control) and are independently responsible for programming and machining. On the milling side, the work includes 4-axis machining with Heidenhain controlled machining centers (TNC 530 / 620 / 640). Tasks also include tool selection and optimization, measurements and quality assurance. The manufactured pieces vary from single pieces and small series to prototypes.\n\nWe expect from you\n\nWe expect you to have experience in CNC turning and/or milling and strong machining skills. You master Fanuc, Heidenhain or Mori controls and are capable of independent programming and setting. We value the ability to work independently, problem-solving skills and a careful and high-quality approach to work.\n\nWe consider experience in the manufacture of small and individual pieces, production development and CAD/CAM know-how (e.g. Fusion 360) an advantage. Willingness to work in shifts is considered an advantage.\n\nWorking time and employment relationship\n\nAs a rule, the work is 2-shift work. The employment relationship is permanent and starts according to the contract.\n\nWe offer you\n\nWe offer a stable and developing work environment in a reputable engineering company, modern and well-maintained machines, and the opportunity to influence your own job description. You get support from a competent and supportive team and the opportunity to develop your skills in demanding and varied machining work. The company values ​​expertise, initiative and the desire to develop operations.\n\nIf you are interested in the position, please apply for the position quickly because the position will be filled as soon as a suitable person is found. For more information about the position, please email ari.kumlander@barona.fi. Please note that we do not process applications sent by e-mail for data security reasons, so please apply for a position via the attached link."
-  },
-  {
-    "id": "423cda05",
-    "job_id": "parturi-kampaaja-joensuu-423cda05",
-    "title": "Barber-hairdresser",
-    "company": "Parturi-Kampaamo Ykköspaikka Ky, Joensuu",
-    "jobLocation": [
-      "Joensuu"
-    ],
-    "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2ca85af0-ef60-4efb-ba1a-de405461adda/en",
-    "job_employer_email": "",
-    "job_employer_name": "",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-04-11",
-    "date_expires": "2026-05-31",
-    "scraped_at": "2026-04-11 10:19:54",
-    "open_positions": 1,
-    "salary_range": "Yrittäjä tulo",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "style the hair",
-      "sell hair products",
-      "hair dyeing",
-      "use hair care products",
-      "wash hair",
-      "organizes the display of products",
-      "use hair cutting skills",
-      "barbering techniques",
-      "curls hair",
-      "dye hair",
-      "design a Hairstyle",
-      "stay up to date with hair fashion"
-    ],
-    "job_responsibilities": [
-      "barber-hairdresser"
-    ],
-    "what_we_offer": [
-      "Help for a contract company to start (you can also start as a work trial)",
-      "Support for customer work and",
-      "for trying",
-      "With the support of a wonderful team, no one is left alone",
-      "Business-specific trainings",
-      "2 renovated air-conditioned offices, with a wide selection of products.",
-      "website, social media channels, electronic appointment booking and checkout."
-    ],
-    "jobcontent": "We are looking for wonderful colleagues with our expanded operations. Places for 2 hairdressers.\nIt is also possible for a 2- or 3-year barber-hairdresser student to start with a training contract for the rest of the school and continue with us after graduation.\nNew, fresh, modern premises in Joensuu's niinivaara and core centre. A barber-hair salon and a beauty salon operate in both premises.\nWe offer\n- For contract companies, help to get started (you can also start as a work trial)\n- Support for customer work and\nfor trying\n- With the support of a wonderful team, no one is left alone with us\n- Business-specific trainings\n- 2 renovated air-conditioned offices, with a wide selection of products.\n- websites, social media channels, electronic appointment booking and checkout.\n\nWe hope from you\n- barber-hairdresser degree\n- a genuine desire to serve customers and develop in the field\n- teamwork skills\n- flexibility\n- fluent Finnish language skills\nPositions will be filled as soon as suitable applicants are found. Start of work immediately or by agreement.\nSend a free-form application to ykkospaikka@gmail.com\nMore information 0503553771",
-    "source": "tyomarkkinatori",
-    "translated_content": "Barber-hairdresser\n\nWe are looking for wonderful colleagues with our expanded operations. Places for 2 hairdressers.\nIt is also possible for a 2- or 3-year barber-hairdresser student to start with a training contract for the rest of the school and continue with us after graduation.\nNew, fresh, modern premises in Joensuu's niinivaara and core centre. A barber-hair salon and a beauty salon operate in both premises.\nWe offer\n- For contract companies, help to get started (you can also start as a work trial)\n- Support for customer work and\nfor trying\n- With the support of a wonderful team, no one is left alone with us\n- Business-specific trainings\n- 2 renovated air-conditioned offices, with a wide selection of products.\n- websites, social media channels, electronic appointment booking and checkout.\n\nWe hope from you\n- barber-hairdresser degree\n- a genuine desire to serve customers and develop in the field\n- teamwork skills\n- flexibility\n- fluent Finnish language skills\nPositions will be filled as soon as suitable applicants are found. Start of work immediately or by agreement.\nSend a free-form application to ykkospaikka@gmail.com\nMore information 0503553771"
+    "translated_content": "Timlärare i huvudsyssla för utbildning som handler för examensutbildning (Hux)\n\nWe are looking for you who like to handle, are flexible and can take your own initiative, who like to work with different types of students and are good at collaborating and building a network. \nVi värdesätter kunnande i particular stöt, kännedom om utbildningssystemet och olika yrkens yrkeskrav samt vilja och käggi att mångsidigt handleda studeranden inom ramen för HUX-utbildningen. \n\nBehörighetskrav enligt örðurning om behörighetsvíllor (986/1998). \nAnställningsvillor enligt UKTA del C\nEnligt lagen om control av brottslig background hos personer som arbeiter med barn (504/2002) bör den som vähls uppvisa ett straffregisterutdrag för att valet ska vinna laga kraft.\n\nPlaceringsorten som nämns i annonsenen är placingringsorten vid anställnings präger.\n\nRekryteringen är anonym rekrytering för att förmår rätvis och jämilk behandling av ansökningar under hela rekryteringsprocessen. \nI Anonyma rekryteringar betalilas ansökningar anonymt tills man har goryot interviewvalen. Since the recruitment is anonymous, no bilagor bifogas application, utan de uppvisas först vid eventual interview. Undvik even such information in the application som kan ge closer information om din identit.\n\nYA is part of the samkommunen Svenska Österbottens förbund för utbildning och kultur with fixed operating points in Närpes, Vasa, Pedersöre and Jakobstad. Yrkesakademin i Österbotten has approx. 190 employees and approx. 2600 students.\n\nUtbildningschef Brita Brännbacka-Brunell, phone 050-369 46 26, brita.brannbacka-brunell@yrkesakademin.fi"
   }
 ]

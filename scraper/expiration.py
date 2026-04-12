@@ -23,46 +23,52 @@ def _parse_date(date_str: str) -> date | None:
         return None
 
 
+def is_job_expired(job: dict) -> bool:
+    """
+    Check if a job is expired based on explicit date_expires,
+    falling back to age based on posting date.
+    """
+    today = date.today()
+    
+    # Priority 1: Explicit expiration date
+    expires = _parse_date(job.get("date_expires"))
+    if expires:
+        return expires < today
+        
+    # Priority 2: Fallback to posting date + config.EXPIRATION_DAYS
+    posted = _parse_date(job.get("date_posted"))
+    if posted is None:
+        posted = _parse_date(job.get("scraped_at"))
+        
+    if posted is None:
+        logger.warning("Cannot parse date for job %s — treating as not expired.", job.get("id"))
+        return False
+        
+    age_days = (today - posted).days
+    return age_days > config.EXPIRATION_DAYS
+
+
 def remove_expired_jobs(jobs: list[dict]) -> tuple[list[dict], list[dict]]:
     """
-    Filter out jobs older than config.EXPIRATION_DAYS.
+    Filter out jobs using the is_job_expired logic.
 
     Returns:
         (active_jobs, expired_jobs)
-
-    Expiration uses:
-    1. date_posted if valid
-    2. otherwise scraped_at if valid
-    3. otherwise keeps the job to be safe
     """
-    today = date.today()
     active = []
     expired = []
 
     for job in jobs:
-        posted = _parse_date(job.get("date_posted"))
-
-        if posted is None:
-            posted = _parse_date(job.get("scraped_at"))
-
-        if posted is None:
-            logger.warning("Cannot parse date for job %s — keeping it.", job.get("id"))
-            active.append(job)
-            continue
-
-        age_days = (today - posted).days
-
-        if age_days > config.EXPIRATION_DAYS:
+        if is_job_expired(job):
             expired.append(job)
-            _delete_job_folder(job)
+            _delete_job_html(job)
         else:
             active.append(job)
 
     if expired:
         logger.info(
-            "Expired %d jobs (older than %d days): %s",
+            "Expired %d jobs: %s",
             len(expired),
-            config.EXPIRATION_DAYS,
             [j.get("id") for j in expired],
         )
     else:
@@ -70,10 +76,9 @@ def remove_expired_jobs(jobs: list[dict]) -> tuple[list[dict], list[dict]]:
 
     return active, expired
 
-
-def _delete_job_folder(job: dict) -> None:
+def _delete_job_html(job: dict) -> None:
     """
-    Delete the /jobs/{category-slug}/{job_id}/ directory if it exists.
+    Delete the /jobs/{category-slug}/{job_id}.html file if it exists.
 
     New pipeline uses:
     - job_category
@@ -83,19 +88,19 @@ def _delete_job_folder(job: dict) -> None:
     """
     job_id = str(job.get("job_id") or job.get("id") or "").strip()
     if not job_id:
-        logger.warning("Cannot delete job folder: missing job_id/id in job %s", job)
+        logger.warning("Cannot delete job file: missing job_id/id in job %s", job)
         return
 
     category = str(job.get("job_category") or "other").strip().lower()
     cat_slug = config.slugify_category(category) if category else "other"
 
-    folder = os.path.join(config.JOBS_OUTPUT_DIR, cat_slug, job_id)
+    file_path = os.path.join(config.JOBS_OUTPUT_DIR, cat_slug, f"{job_id}.html")
 
-    if os.path.exists(folder):
+    if os.path.exists(file_path):
         try:
-            shutil.rmtree(folder)
-            logger.info("Deleted expired job folder: %s", folder)
+            os.remove(file_path)
+            logger.info("Deleted expired job html: %s", file_path)
         except OSError as exc:
-            logger.error("Failed to delete folder %s: %s", folder, exc)
+            logger.error("Failed to delete file %s: %s", file_path, exc)
     else:
-        logger.debug("Folder not found (already deleted?): %s", folder)
+        logger.debug("File not found (already deleted?): %s", file_path)

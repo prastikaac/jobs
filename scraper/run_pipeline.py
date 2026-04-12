@@ -12,6 +12,7 @@ import argparse
 import json
 import logging
 import re
+import subprocess
 import sys
 import os
 import time
@@ -175,9 +176,9 @@ def _migrate_job(job: dict) -> dict:
     if not job.get("date_expires"):
         posted_dt = _parse_finnish_date(job.get("date_posted", ""))
         if posted_dt:
-            job["date_expires"] = (posted_dt + timedelta(days=30)).strftime("%Y-%m-%d")
+            job["date_expires"] = (posted_dt + timedelta(days=60)).strftime("%Y-%m-%d")
         else:
-            job["date_expires"] = (date.today() + timedelta(days=30)).strftime("%Y-%m-%d")
+            job["date_expires"] = (date.today() + timedelta(days=60)).strftime("%Y-%m-%d")
 
     if not job.get("salary"):
         job["salary"] = "Competitive hourly wage based on Finnish collective agreements"
@@ -413,115 +414,169 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     translated_raw_jobs_with_state = rawjobs_store.attach_processing_state(translated_raw_jobs, processing_state)
 
     # ─────────────────────────────────────────────────────────────────────────
-    # PHASE 3 — AI Formatting
+    # PHASE 3 → 4 → 5 — Batched AI + Format + HTML + Git commit loop
     # ─────────────────────────────────────────────────────────────────────────
-    newly_formatted = []
     all_jobs = existing_jobs
-    actually_new = []
+    total_actually_new: list[dict] = []
+    total_img_count = 0
+    total_alert_count = 0
+    batch_size = config.PIPELINE_COMMIT_BATCH_SIZE
 
     if not dry_run:
-        pending_count = len(rawjobs_store.get_unprocessed_jobs(translated_raw_jobs_with_state, processing_state))
-        logger.info("═" * 60)
-        logger.info("── Phase 3: AI Formatting (%d unprocessed jobs) ──", pending_count)
+        pending_jobs = rawjobs_store.get_unprocessed_jobs(translated_raw_jobs_with_state, processing_state)
+        pending_jobs.sort(key=lambda j: j.get("retry_count", 0))
+        total_pending = len(pending_jobs)
 
-        newly_processed_translated, updated_translated_jobs = ai_processor.format_translated_jobs(
-            translated_raw_jobs_with_state,
-            batch_size=config.AI_BATCH_SIZE,
+        logger.info("═" * 60)
+        logger.info(
+            "── Phase 3–5: Batched processing (%d unprocessed, batch=%d) ──",
+            total_pending, batch_size,
         )
-        logger.info("Phase 3 AI extraction complete. Processed: %d jobs", len(newly_processed_translated))
 
-        processing_state = rawjobs_store.sync_processing_state_from_jobs(updated_translated_jobs, processing_state)
-        rawjobs_store.save_processing_state(processing_state)
+        batch_num = 0
+        processed_so_far = 0
 
-        # Keep translated_raw_jobs.json as Phase 2 output only
-        jobs_store.save_translated_raw_jobs(translated_raw_jobs)
+        while True:
+            # Refresh pending list each iteration (state updated in-place)
+            processing_state = rawjobs_store.ensure_processing_state(translated_raw_jobs, processing_state)
+            translated_raw_jobs_with_state = rawjobs_store.attach_processing_state(translated_raw_jobs, processing_state)
+            pending_jobs = rawjobs_store.get_unprocessed_jobs(translated_raw_jobs_with_state, processing_state)
+            pending_jobs.sort(key=lambda j: j.get("retry_count", 0))
 
-        # ─────────────────────────────────────────────────────────────────────
-        # PHASE 4 — Python factual fields formatting
-        # ─────────────────────────────────────────────────────────────────────
-        logger.info("═" * 60)
-        logger.info("── Phase 4: Job Formatter ──")
+            if not pending_jobs:
+                logger.info("Phase 3: No more unprocessed jobs. Batched loop complete.")
+                break
 
-        newly_formatted = Job_formatter.format_jobs(newly_processed_translated)
-        logger.info("Phase 4 complete. Formatted: %d jobs", len(newly_formatted))
+            batch_num += 1
+            chunk = pending_jobs[:batch_size]
+            logger.info(
+                "═" * 60
+            )
+            logger.info(
+                "── Batch %d: AI formatting %d job(s) (total done so far: %d/%d) ──",
+                batch_num, len(chunk), processed_so_far, total_pending,
+            )
 
-        if newly_formatted:
-            all_jobs, actually_new = jobs_store.merge_new_jobs(existing_jobs, newly_formatted)
-            logger.info("Actually new (post-merge dedup): %d", len(actually_new))
-        else:
-            all_jobs = existing_jobs
-            actually_new = []
+            # ── Phase 3: AI on this chunk ─────────────────────────────────
+            newly_processed_translated, updated_translated_jobs = ai_processor.format_translated_jobs(
+                chunk,
+                batch_size=len(chunk),
+            )
+            processed_so_far += len(chunk)
 
-        jobs_store.save_formatted_jobs_flat(all_jobs)
-        rawjobs_store.save_raw_jobs(raw_jobs)
+            processing_state = rawjobs_store.sync_processing_state_from_jobs(updated_translated_jobs, processing_state)
+            rawjobs_store.save_processing_state(processing_state)
+            jobs_store.save_translated_raw_jobs(translated_raw_jobs)
+
+            # ── Phase 4: Python formatter ─────────────────────────────────
+            logger.info("── Batch %d / Phase 4: Job Formatter ──", batch_num)
+            newly_formatted_batch = Job_formatter.format_jobs(newly_processed_translated)
+            logger.info("Batch %d Phase 4 complete. Formatted: %d jobs", batch_num, len(newly_formatted_batch))
+
+            if newly_formatted_batch:
+                all_jobs, batch_actually_new = jobs_store.merge_new_jobs(all_jobs, newly_formatted_batch)
+                total_actually_new.extend(batch_actually_new)
+                logger.info("Batch %d: Actually new (post-merge dedup): %d", batch_num, len(batch_actually_new))
+            else:
+                batch_actually_new = []
+
+            # Maintenance fixes
+            for job in all_jobs:
+                Job_formatter.apply_manual_fixes(job)
+
+            # Saving to disk will happen after image generation to ensure image_urls are saved
+
+            # ── Phase 5: Site Generation ──────────────────────────────────
+            logger.info("── Batch %d / Phase 5: Site Generation ──", batch_num)
+
+            if newly_formatted_batch:
+                batch_img_count = image_generator.generate_images_for_jobs(newly_formatted_batch)
+                total_img_count += batch_img_count
+                logger.info("  Batch %d images generated: %d", batch_num, batch_img_count)
+
+                batch_page_count = html_generator.generate_job_pages(newly_formatted_batch)
+                logger.info("  Batch %d pages generated: %d", batch_num, batch_page_count)
+
+            html_generator.update_main_pages(all_jobs)
+            html_generator.update_sitemap(all_jobs)
+            jobs_store.save_formatted_jobs_flat(all_jobs)
+            rawjobs_store.save_raw_jobs(raw_jobs)
+            jobs_store.save_jobs(all_jobs)
+
+            # Firebase alerts for this batch
+            if batch_actually_new:
+                try:
+                    firebase_client.init_firebase()
+                    batch_alert_count = firebase_client.send_new_job_alerts(batch_actually_new, dry_run=False)
+                    total_alert_count += batch_alert_count
+                    logger.info("  Batch %d Firebase alerts sent: %d", batch_num, batch_alert_count)
+                except Exception as exc:
+                    logger.error("Firebase alert error in batch %d: %s", batch_num, exc)
+
+            # ── Git commit + push for this batch ──────────────────────────
+            logger.info("── Batch %d: Committing and pushing to GitHub ──", batch_num)
+            _git_commit_and_push(
+                message=f"Auto-update jobs batch {batch_num} [+{len(batch_actually_new)} new]"
+            )
+
     else:
-        logger.info("[DRY-RUN] Skipping Phase 3 / Phase 4.")
-        all_jobs = existing_jobs
-        actually_new = []
+        logger.info("[DRY-RUN] Skipping Phase 3 / Phase 4 / Phase 5.")
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # MAINTENANCE — Apply manual fixes to ALL jobs
-    # ─────────────────────────────────────────────────────────────────────────
-    if not dry_run:
-        logger.info("── Maintenance: Applying fixes to all %d jobs ──", len(all_jobs))
-        for job in all_jobs:
-            Job_formatter.apply_manual_fixes(job)
+    # ── Final summary ─────────────────────────────────────────────────────────
+    _print_summary(all_jobs, total_actually_new, total_img_count, total_alert_count)
 
-        jobs_store.save_formatted_jobs_flat(all_jobs)
 
-    always_regenerate = True
+def _git_commit_and_push(message: str) -> None:
+    """Run git add → commit → push from the repo root. Failures are logged, not raised."""
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    files_to_add = [
+        "index.html",
+        "jobs.html",
+        "sitemap.xml",
+        "sitemap-jobs.xml",
+        "sitemap-pages.xml",
+        "sitemap-blogs.xml",
+        "jobs/",
+        "images/jobs/",
+        "scraper/data/jobs.json",
+        "scraper/data/rawjobs.json",
+        "scraper/data/formatted_jobs_flat.json",
+        "scraper/data/processing_state.json",
+    ]
 
-    if not newly_formatted and not always_regenerate:
-        logger.info("No new jobs. Updating main pages and exiting.")
-        if not dry_run:
-            _finalize(all_jobs)
-        _print_summary(all_jobs, [], 0, 0)
-        return
+    try:
+        subprocess.run(
+            ["git", "add"] + files_to_add,
+            cwd=repo_root,
+            check=True,
+            capture_output=True,
+        )
+        result = subprocess.run(
+            ["git", "commit", "-m", message],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            if "nothing to commit" in result.stdout or "nothing to commit" in result.stderr:
+                logger.info("Git: nothing new to commit in this batch — skipping push.")
+                return
+            logger.warning("Git commit failed: %s", result.stderr.strip())
+            return
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # PHASE 5 — Static Site Generation + Notifications
-    # ─────────────────────────────────────────────────────────────────────────
-    img_count = 0
-    page_count = 0
+        push_result = subprocess.run(
+            ["git", "push", "origin", "main"],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+        )
+        if push_result.returncode == 0:
+            logger.info("Git push successful: %s", message)
+        else:
+            logger.warning("Git push failed: %s", push_result.stderr.strip())
 
-    if not dry_run and (actually_new or always_regenerate):
-        logger.info("═" * 60)
-        logger.info("── Phase 5: Site Generation ──")
-
-        logger.info("  Generating images…")
-        target_jobs = all_jobs if always_regenerate else actually_new
-        img_count = image_generator.generate_images_for_jobs(target_jobs)
-        logger.info("  Images generated: %d", img_count)
-
-        logger.info("  Generating HTML job pages…")
-        page_count = html_generator.generate_job_pages(all_jobs if always_regenerate else actually_new)
-        logger.info("  Pages generated: %d", page_count)
-
-        logger.info("  Updating main pages…")
-        html_generator.update_main_pages(all_jobs)
-        html_generator.update_sitemap(all_jobs)
-    elif dry_run:
-        for job in actually_new:
-            logger.info("[DRY-RUN] Would generate page for: %s (%s)", job["id"], job["title"])
-
-    # ── Firebase alerts ───────────────────────────────────────────────────────
-    alert_count = 0
-    if not dry_run and actually_new:
-        logger.info("  Sending Firebase alerts…")
-        try:
-            firebase_client.init_firebase()
-            alert_count = firebase_client.send_new_job_alerts(actually_new, dry_run=False)
-        except Exception as exc:
-            logger.error("Firebase alert error: %s", exc)
-    elif dry_run:
-        alert_count = firebase_client.send_new_job_alerts(actually_new, dry_run=True)
-
-    # ── Persist grouped jobs.json ─────────────────────────────────────────────
-    if not dry_run:
-        logger.info("── Saving jobs.json ──")
-        jobs_store.save_jobs(all_jobs)
-
-    _print_summary(all_jobs, actually_new, img_count, alert_count)
+    except Exception as exc:
+        logger.warning("Git commit+push error: %s", exc)
 
 
 def _finalize(all_jobs: list[dict]) -> None:

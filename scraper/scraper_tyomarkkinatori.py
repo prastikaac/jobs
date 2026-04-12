@@ -233,6 +233,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
         job_responsibilities: list = []
         what_we_offer: list = []
         employment_type: list = []
+        occupation_keywords: list = []   # ESCO English prefLabel/altLabel for category mapping
         job_content_raw = ""
 
         if detail:
@@ -255,16 +256,35 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
                 salary = ""
 
             # ESCO Skills ÔåÆ what_we_expect
+            # ESCO Skills → what_we_expect
             for s in pos.get("skills", []):
                 s_label = _extract_lang_string(s.get("prefLabel"), "fi")
                 if s_label and s_label not in what_we_expect:
                     what_we_expect.append(s_label)
 
-            # ESCO Occupations ÔåÆ job_responsibilities
+            # ESCO Occupations → job_responsibilities + jobcategory_keywords
             for o in pos.get("occupations", []):
                 o_label = _extract_lang_string(o.get("prefLabel"), "fi")
                 if o_label and o_label not in job_responsibilities:
                     job_responsibilities.append(o_label)
+
+                # Collect English prefLabel for category mapping
+                pref_en = _extract_lang_string(o.get("prefLabel"), "en")
+                if pref_en and pref_en not in occupation_keywords:
+                    occupation_keywords.append(pref_en)
+
+                # Collect English altLabels for category mapping
+                alt_label = o.get("altLabel") or {}
+                if isinstance(alt_label, dict):
+                    for alt in (alt_label.get("en") or []):
+                        alt = str(alt).strip()
+                        if alt and alt not in occupation_keywords:
+                            occupation_keywords.append(alt)
+                elif isinstance(alt_label, list):
+                    for alt in alt_label:
+                        alt = str(alt).strip()
+                        if alt and alt not in occupation_keywords:
+                            occupation_keywords.append(alt)
 
             # Language requirements
             work_langs = pos.get("workLanguages") or []
@@ -412,6 +432,7 @@ def _tyo_parse_job(item: dict, detail: dict = None) -> dict | None:
             "what_we_expect":        what_we_expect,
             "job_responsibilities":  job_responsibilities,
             "what_we_offer":         what_we_offer,
+            "jobcategory_keywords":  occupation_keywords,
             "source":                "tyomarkkinatori",
             "id":                    job_id_raw,
         }

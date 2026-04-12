@@ -320,13 +320,74 @@ def detect_category_by_keywords(
     text: str,
     occupations: list[str] | None = None,
 ) -> tuple[str, int, bool]:
-    """Score every category and return (best_category, best_score, needs_ai_tiebreaker)."""
+    """Score every category and return (best_category, best_score, needs_ai_tiebreaker).
+
+    Scoring priority (highest to lowest):
+      +50  ESCO occupation label exactly matches a category keyword entry
+      +35  ESCO occupation label fully contains (or is contained by) a category keyword
+      +15  A meaningful word from an ESCO occupation label matches a category keyword
+      +12  Job title exactly matches a category keyword
+      +8   Job title contains a category keyword
+      +3x  Keyword appears in job text (capped at 3 occurrences)
+    """
     title_low = _clean_text(title).lower()
     text_low = _clean_text(text).lower()
     occupations_low = [_clean_text(o).lower() for o in (occupations or [])]
 
     scores: dict[str, int] = {}
 
+    # ── Pass 1: ESCO occupation label scoring (highest priority) ─────────────
+    # jobcategory_keywords are authoritative ESCO prefLabel/altLabel strings.
+    # Score them directly against job_categories.json to produce strong signals.
+    if occupations_low:
+        _occ_stop = {
+            "and", "or", "of", "the", "a", "an", "in", "for", "to",
+            "workers", "worker", "staff", "specialist", "person",
+        }
+
+        for category, keywords in config.CATEGORY_KEYWORDS.items():
+            if not keywords:
+                continue
+
+            kws_low = [_clean_text(kw).lower() for kw in keywords if _clean_text(kw)]
+            occ_score = 0
+
+            for occ in occupations_low:
+                if not occ:
+                    continue
+
+                # Exact match — occupation label is a listed keyword
+                if occ in kws_low:
+                    occ_score += 50
+                    continue
+
+                # Substring containment match
+                # e.g. keyword "carpenter" inside "carpenters and joiners"
+                matched_sub = False
+                for kw_low in kws_low:
+                    if kw_low in occ or occ in kw_low:
+                        occ_score += 35
+                        matched_sub = True
+                        break
+
+                if matched_sub:
+                    continue
+
+                # Word-level match: score each meaningful word of the occupation
+                occ_words = [
+                    w for w in occ.split()
+                    if len(w) >= 4 and w not in _occ_stop
+                ]
+                for word in occ_words:
+                    for kw_low in kws_low:
+                        if word in kw_low or kw_low in word:
+                            occ_score += 15
+                            break  # count each occ_word once per category
+
+            if occ_score > 0:
+                scores[category] = scores.get(category, 0) + occ_score
+
+    # ── Pass 2: Standard title / text keyword scoring ────────────────────────
     for category, keywords in config.CATEGORY_KEYWORDS.items():
         if not keywords:
             continue
@@ -348,12 +409,6 @@ def detect_category_by_keywords(
                 score += 8
                 hit_this_kw = True
 
-            for occ in occupations_low:
-                if kw_low in occ or occ in kw_low:
-                    score += 20
-                    hit_this_kw = True
-                    break
-
             if kw_low in text_low:
                 occurrences = min(text_low.count(kw_low), 3)
                 score += occurrences * 3
@@ -369,7 +424,7 @@ def detect_category_by_keywords(
             score -= 8
 
         if distinct_hits >= _MIN_KEYWORD_MATCHES or score >= 8:
-            scores[category] = score
+            scores[category] = scores.get(category, 0) + score
 
     if not scores:
         return "other", 0, False

@@ -15,6 +15,7 @@ from datetime import date, datetime
 from typing import List
 
 import config
+import expiration
 
 logger = logging.getLogger("html_generator")
 
@@ -215,16 +216,6 @@ def generate_job_page(job: dict) -> bool:
         is_email_apply = True
 
     if is_email_apply and employer_email:
-        contact_name = job.get("job_employer_name", "")
-        contact_phone = job.get("job_employer_phone_no", "")
-        
-        contact_info = ""
-        if contact_name or contact_phone:
-            c_name = _esc(contact_name) if contact_name else ""
-            c_phone = f" ({_esc(contact_phone)})" if contact_phone else ""
-            colon = " : " if c_name or c_phone else ""
-            contact_info = f" Also, you may reach out to the contact person for the job{colon}{c_name}{c_phone}."
-
         import urllib.parse
         subject_raw = f"Application for the Job - {title}"
         body_raw = f"Dear Hiring Manager,\n\nI hope this message finds you well.\n\nI am writing to express my interest in the {title}. I am motivated, reliable, and eager to contribute my skills and experience to your team.\n\nI have experience in relevant tasks and a strong ability to adapt quickly to new environments. I take pride in being hardworking, detail-oriented, and maintaining a positive attitude at work. I am confident that I can add value to your organization.\n\nPlease find my CV & Cover Letter attached for your review. I would welcome the opportunity to discuss how my skills and experience align with your needs.\n\nThank you for your time and consideration. I look forward to hearing from you.\n\nKind regards,\nYOUR_NAME"
@@ -235,11 +226,10 @@ def generate_job_page(job: dict) -> bool:
 
         email_instructions = (
             f"<p>\n"
-            f"Since there is no direct online application portal for this position, "
-            f"interested candidates are encouraged to submit their application, "
+            f"There is no direct online application portal for this position. "
+            f"So, you can submit your application, "
             f"including a cover letter and CV, via email to "
-            f"<b><a href=\"{mailto_link}\">{_esc(employer_email)}</a></b>."
-            f"{contact_info}\n"
+            f"<b><a href=\"{mailto_link}\">{_esc(employer_email)}</a></b>.\n"
             f"</p>"
         )
         job_link = mailto_link
@@ -271,7 +261,7 @@ def generate_job_page(job: dict) -> bool:
         # Image
         "{-job image-}": image_url,
         # Industry / category
-        "{-job industry name-}": _esc(category.replace("_", " ").title()),
+        "{-job industry name-}": _esc(category.replace("_", " ").replace("-", " ").title().replace(" And ", " and ")),
         "{-job industry slug-}": cat_slug,
         "{-job industry id-}": _esc(category),
         # Language
@@ -531,6 +521,75 @@ def update_main_pages(jobs: List[dict]) -> None:
     website = config.WEBSITE_DIR
     _inject_index_cards(os.path.join(website, "index.html"), sections_data, "index.html")
     _inject_cards(os.path.join(website, "jobs.html"),  "blogPts", cards_all, "jobs.html")
+    _generate_jobs_table_page(jobs)
+
+def _generate_jobs_table_page(jobs: List[dict]) -> None:
+    """Generate the premium standalone jobs-table.html dashboard."""
+    template_path = os.path.join(os.path.dirname(__file__), "jobs_table_template.html")
+    output_path = os.path.join(config.WEBSITE_DIR, "jobs-table.html")
+    
+    if not os.path.exists(template_path):
+        logger.warning("jobs_table_template.html not found, skipping jobs-table.html generation.")
+        return
+
+    try:
+        with open(template_path, "r", encoding="utf-8") as f:
+            template_str = f.read()
+            
+        # Filter active jobs
+        active_jobs = [j for j in jobs if _is_job_active(j)]
+        
+        # Sort by date
+        sorted_jobs = sorted(active_jobs, key=lambda j: j.get("date_posted", ""), reverse=True)
+        
+        # Build html for rows
+        rows_html = []
+        
+        # Colors for category badges
+        cat_colors = {
+            "it-and-tech": ("#818cf8", "rgba(99, 102, 241, 0.1)", "rgba(99, 102, 241, 0.2)"),
+            "healthcare-and-social-care": ("#f472b6", "rgba(236, 72, 153, 0.1)", "rgba(236, 72, 153, 0.2)"),
+            "cleaning-and-facility-services": ("#34d399", "rgba(16, 185, 129, 0.1)", "rgba(16, 185, 129, 0.2)"),
+            "food-and-restaurant": ("#fbbf24", "rgba(245, 158, 11, 0.1)", "rgba(245, 158, 11, 0.2)"),
+            "construction": ("#f87171", "rgba(239, 68, 68, 0.1)", "rgba(239, 68, 68, 0.2)"),
+            "other": ("#94a3b8", "rgba(148, 163, 184, 0.1)", "rgba(148, 163, 184, 0.2)")
+        }
+        
+        for job in sorted_jobs:
+            title = _esc(job.get("title", ""))
+            company = _esc(job.get("company", ""))
+            location = _esc(_location_label(job))
+            category_raw = _category_label(job)
+            category = _esc(category_raw.replace("_", " ").replace("-", " ").title().replace(" And ", " and "))
+            cat_slug = config.slugify_category(category_raw)
+            job_url = _esc(_job_page_url(job))
+            
+            # Badge colors mapping
+            c_text, c_bg, c_border = cat_colors.get(cat_slug, cat_colors["other"])
+            
+            row = (
+                f'<tr onclick="window.location=\'{job_url}\'">'
+                f'<td><div class="job-title">{title}</div><div class="company-name">{company}</div></td>'
+                f'<td class="location-col"><span class="location">'
+                f'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'
+                f' {location}</span></td>'
+                f'<td><span class="category-badge" style="color: {c_text}; background: {c_bg}; border-color: {c_border};">{category}</span></td>'
+                f'<td style="text-align: center;"><span class="action-arrow">→</span></td>'
+                f'</tr>'
+            )
+            rows_html.append(row)
+            
+        content = template_str.replace("{-total_jobs-}", str(len(active_jobs)))
+        content = content.replace("{-updated_date-}", datetime.now().strftime("%B %d, %Y"))
+        content = content.replace("{-job_rows-}", "\\n".join(rows_html))
+        
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(content)
+            
+        logger.info("Generated premium jobs table at jobs-table.html")
+    except Exception as exc:
+        logger.error("Failed to generate jobs table page: %s", exc)
+
 
 
 # ── Sitemap ───────────────────────────────────────────────────────────────────
@@ -548,27 +607,7 @@ def _xml_escape_url(url: str) -> str:
 
 def _is_job_active(job: dict) -> bool:
     """Check if a job is active, public, and not expired."""
-    today = date.today()
-    # Check date_expires
-    expires_str = job.get("date_expires", "")
-    if expires_str:
-        try:
-            expires_dt = datetime.strptime(str(expires_str)[:10], "%Y-%m-%d").date()
-            if expires_dt < today:
-                return False
-        except (ValueError, TypeError):
-            pass
-    # Fallback: check date_posted + EXPIRATION_DAYS
-    posted_str = job.get("date_posted", "")
-    if posted_str:
-        try:
-            from datetime import timedelta
-            posted_dt = datetime.strptime(str(posted_str)[:10], "%Y-%m-%d").date()
-            if (today - posted_dt).days > config.EXPIRATION_DAYS:
-                return False
-        except (ValueError, TypeError):
-            pass
-    return True
+    return not expiration.is_job_expired(job)
 
 
 def _get_lastmod_now() -> str:

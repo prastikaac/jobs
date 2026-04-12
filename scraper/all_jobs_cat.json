@@ -7,7 +7,7 @@
         "warehousing-and-storage",
         "construction",
         "installation-and-maintenance",
-        "manufacturing-and-production",
+        "industry-manufacturing-and-production",
         "information-technology",
         "engineering-and-design",
         "technical-services",
@@ -39,6 +39,7 @@
         "management-and-leadership",
         "aviation-and-airport-services",
         "military-and-defense",
-        "gaming-and-sports"
+        "gaming-and-sports",
+        "other"
     ]
 }
