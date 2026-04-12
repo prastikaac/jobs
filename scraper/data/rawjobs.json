@@ -14,7 +14,7 @@
     "job_employer_phone_no": "0405618274",
     "date_posted": "2026-04-12",
     "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-12 13:59:38",
+    "scraped_at": "2026-04-12 14:15:49",
     "open_positions": 1,
     "salary_range": "",
     "workTime": "Part-time",
@@ -45,6 +45,34 @@
       "Työmuoto ja korvaus:",
       "Tehtävässä on mahdollisuus toimia joko omalla toiminimellä sopimusyrittäjänä tai osa-aikaisessa työsuhteessa yrityksemme kanssa. Korvaus sovitaan erikseen hakijan kokemuksen, osaamisen ja sovitun työnkuvan mukaan."
     ],
+    "jobcategory_keywords": [
+      "nurse responsible for general care",
+      "adult nurse",
+      "community staff nurse",
+      "district nurse",
+      "healthcare nurse",
+      "healthcarer",
+      "learning disability nurse",
+      "mental health nurse",
+      "practice nurse",
+      "ward nurse",
+      "ward sister",
+      "specialist nurse",
+      "cardiovascular nurse",
+      "company nurse",
+      "diabetes nurse",
+      "gerontological nurse practitioner",
+      "heart failure nurse",
+      "intensive care nurse",
+      "nurse heart diseases",
+      "nurse practitioner",
+      "nurse specialist",
+      "nursing specialist",
+      "paediatric nurse practitioner",
+      "specialist nurse practitioner",
+      "vascular nurse"
+    ],
+    "job_occupations_en": null,
     "jobcontent": "Klinikka Glow - esteettiset hoidot ja lääkäripalvelut\n\nOlemme Jyväskylän keskustassa toimiva yksityisen terveydenhuollon yksikkö, joka on tarjonnut esteettisiä hoitoja vuodesta 2012 lähtien. Klinikkamme tunnetaan pitkästä kokemuksesta, vakiintuneesta asiakaskunnasta sekä sitoutumisesta turvallisiin, tutkitusti vaikuttaviin ja vastuullisesti toteutettuihin hoitoihin.\n\nTyötehtävät:\n\nHaemme sairaanhoitajaa monipuolisiin työtehtäviin esteettisten hoitojen klinikalle. Työ sisältää esteettisiin hoitoihin liittyvien tehtävien lisäksi työskentelyä erikoislääkärin vastaanotolla sekä avustamista pientoimenpiteissä. Tehtävässä korostuvat asiakaspalvelu, joustava työote ja halu kehittää omaa osaamista.\n\nOdotamme hakijalta:\n\nEdellytämme sairaanhoitajan koulutusta ja laillistusta. Toivomme hakijalta joko kokemusta esteettisistä hoidoista tai vahvaa kiinnostusta kouluttautua alalle. Arvostamme erinomaisia asiakaspalvelu- ja vuorovaikutustaitoja, oma-aloitteisuutta, vastuullisuutta ja joustavuutta. Eduksi katsotaan kiinnostus esteettiseen alaan, yrittäjämäinen asenne sekä asiakaslähtöisen palvelutyön ymmärtäminen.\n\nTarjoamme:\n\nTarjoamme monipuolisen ja vaihtelevan työnkuvan, mahdollisuuden kehittyä esteettisten hoitojen parissa sekä työskentelyn asiantuntevassa ja asiakaslähtöisessä toimintaympäristössä.\n\nTyömuoto ja korvaus:\n\nTehtävässä on mahdollisuus toimia joko omalla toiminimellä sopimusyrittäjänä tai osa-aikaisessa työsuhteessa yrityksemme kanssa. Korvaus sovitaan erikseen hakijan kokemuksen, osaamisen ja sovitun työnkuvan mukaan.\n\nOlemme Jyväskylän keskustassa toimiva yksityisen terveydenhuollon yksikkö, joka on tarjonnut esteettisiä hoitoja vuodesta 2012 lähtien. Klinikkamme tunnetaan pitkästä kokemuksesta, vakiintuneesta asiakaskunnasta sekä sitoutumisesta turvallisiin, tutkitusti vaikuttaviin ja vastuullisesti toteutettuihin hoitoihin.\n\nHakeminen:\n\nLähetä hakemus ja CV, jossa kerrot osaamisestasi, työkokemuksestasi ja kiinnostuksestasi tehtävää kohtaan. Kerrothan myös mahdollisesta kokemuksestasi esteettisistä hoidoista tai halustasi kouluttautua alalle, toivomastasi työmuodosta. Kutsumme hakijoita henkilökohtaiseen työhaastatteluun hakemusten perusteella.",
     "source": "tyomarkkinatori",
     "translated_content": "Nurse\n\nKlinikka Glow - aesthetic treatments and medical services\n\nWe are a private healthcare unit operating in the center of Jyväskylä, which has been offering aesthetic treatments since 2012. Our clinic is known for its long experience, established clientele, and commitment to safe, researched, effective and responsibly implemented treatments.\n\nJob duties:\n\nWe are looking for a nurse for versatile tasks at the clinic for aesthetic treatments. In addition to tasks related to aesthetic treatments, the work includes working at a specialist doctor's office and assisting with minor procedures. The position emphasizes customer service, a flexible approach to work and the desire to develop one's own skills.\n\nWe expect from the applicant:\n\nWe require nurse training and certification. We expect the applicant to have either experience in aesthetic treatments or a strong interest in training in the field. We value excellent customer service and interaction skills, initiative, responsibility and flexibility. An interest in the aesthetic field, an entrepreneurial attitude and an understanding of customer-oriented service work are considered an advantage.\n\nWe offer:\n\nWe offer a versatile and varied job description, the opportunity to develop in aesthetic treatments, and work in an expert and customer-oriented operating environment.\n\nForm of work and compensation:\n\nThe position has the opportunity to work either under your own business name as a contract entrepreneur or in a part-time employment relationship with our company. Compensation is agreed separately according to the applicant's experience, skills and agreed job description.\n\nWe are a private healthcare unit operating in the center of Jyväskylä, which has been offering aesthetic treatments since 2012. Our clinic is known for its long experience, established clientele, and commitment to safe, researched, effective and responsibly implemented treatments.\n\nApplying:\n\nSend an application and CV, where you tell about your skills, work experience and your interest in the position. Please also tell us about your possible experience with aesthetic treatments or your desire to train in the field, your desired type of work. We invite applicants to a personal job interview based on the applications.",
@@ -78,112 +106,6 @@
     "translated_continuityOfWork": "Permanent"
   },
   {
-    "id": "78d902eb",
-    "job_id": "puutavara-auton-kuljettaja-kemijärvi-78d902eb",
-    "title": "Puutavara-auton kuljettaja",
-    "company": "Kuljetus A & N Parkkinen Oy, Salla",
-    "jobLocation": [
-      "Kemijärvi"
-    ],
-    "jobapply_link": "mailto:niko@kuljetusparkkinen.com?subject=Application for the Job - Puutavara-auton kuljettaja",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a969a3a-b65e-412a-951a-eb06f1b877ae/en",
-    "job_employer_email": "niko@kuljetusparkkinen.com",
-    "job_employer_name": "Niko Parkkinen",
-    "job_employer_phone_no": "040 548 3949",
-    "date_posted": "2026-04-12",
-    "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-12 13:59:38",
-    "open_positions": 1,
-    "salary_range": "",
-    "workTime": "Full-time",
-    "continuityOfWork": "Permanent",
-    "language_requirements": [
-      "Finnish"
-    ],
-    "what_we_expect": [
-      "ohjata raskaita ajoneuvoja",
-      "käyttää viestintälaitteita"
-    ],
-    "job_responsibilities": [
-      "tavaraliikenteen kuljettaja"
-    ],
-    "what_we_offer": [],
-    "jobcontent": "Työtehtäviin kuuluu puiden lastaus nosturilla sekä niiden kuljettaminen asemille.\nAjamme pääsääntöisesti Kemijärven, Kuusamon sekä Rovaniemen asemille sekä Ruotsiin.\n\nOta yhteyttä Nikoon puh. 040 548 3949",
-    "source": "tyomarkkinatori",
-    "translated_content": "Lumber truck driver\n\nThe tasks include loading trees with a crane and transporting them to the stations.\nAs a rule, we drive to Kemijärvi, Kuusamo and Rovaniemi stations and to Sweden.\n\nContact Niko on tel. 040 548 3949",
-    "translated_what_we_expect": [
-      "control heavy vehicles",
-      "use communication devices"
-    ],
-    "translated_job_responsibilities": [
-      "freight transport driver"
-    ],
-    "translated_language_requirements": [
-      "Finnish"
-    ],
-    "translated_workTime": "Full-time",
-    "translated_continuityOfWork": "Permanent"
-  },
-  {
-    "id": "95962dcf",
-    "job_id": "elintarvikemyymälän-siivooja-mäntsälä-95962dcf",
-    "title": "Elintarvikemyymälän siivooja",
-    "company": "OPTI CLEANING SERVICES OY/Mäntsälä",
-    "jobLocation": [
-      "Mäntsälä"
-    ],
-    "jobapply_link": "mailto:henkilosto@opticleaning.net?subject=Application for the Job - Elintarvikemyymälän siivooja",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ac1bc198-82b5-4bb6-8eec-71beb9bfe2dc/en",
-    "job_employer_email": "henkilosto@opticleaning.net",
-    "job_employer_name": "Yhteyshenkilö Rekrytointi",
-    "job_employer_phone_no": "",
-    "date_posted": "2026-04-12",
-    "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-12 13:59:38",
-    "open_positions": 1,
-    "salary_range": "",
-    "workTime": "Full-time",
-    "continuityOfWork": "Summer job",
-    "language_requirements": [
-      "Finnish",
-      "English"
-    ],
-    "what_we_expect": [
-      "ylläpitää siivousvälineitä",
-      "puhdistaa lasipintoja",
-      "käsitellä kemiallisia puhdistusaineita",
-      "ylläpitää siivoustarvikkeiden varastoja",
-      "siivota",
-      "puhdistaa pintoja",
-      "siivota WC-tiloja"
-    ],
-    "job_responsibilities": [
-      "laitossiivooja"
-    ],
-    "what_we_offer": [],
-    "jobcontent": "Lattioiden ja pintojen pesua, elintarvikesiivousta, tiskausta.\n\nHakemukset osoiteeseen: henkilosto@opticleaning.net\n\nHakemuksen otsake: Kesätyö, Mäntsälä",
-    "source": "tyomarkkinatori",
-    "translated_content": "Grocery store cleaner\n\nWashing floors and surfaces, food cleaning, washing dishes.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, Mäntsälä",
-    "translated_what_we_expect": [
-      "maintain cleaning equipment",
-      "cleans glass surfaces",
-      "handle chemical cleaners",
-      "maintains stocks of cleaning supplies",
-      "to clean up",
-      "clean surfaces",
-      "clean the toilets"
-    ],
-    "translated_job_responsibilities": [
-      "facility cleaner"
-    ],
-    "translated_language_requirements": [
-      "Finnish",
-      "English"
-    ],
-    "translated_workTime": "Full-time",
-    "translated_continuityOfWork": "Summer job"
-  },
-  {
     "id": "3ff86195",
     "job_id": "eläinklinikan-siivooja-jyväskylä-3ff86195",
     "title": "Eläinklinikan siivooja",
@@ -198,7 +120,7 @@
     "job_employer_phone_no": "",
     "date_posted": "2026-04-12",
     "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-12 13:59:38",
+    "scraped_at": "2026-04-12 14:15:49",
     "open_positions": 1,
     "salary_range": "",
     "workTime": "Full-time",
@@ -220,6 +142,20 @@
       "laitossiivooja"
     ],
     "what_we_offer": [],
+    "jobcategory_keywords": [
+      "building cleaner",
+      "building caretaker",
+      "custodian",
+      "janitor",
+      "janitors manager",
+      "janitors supervisor",
+      "janitress",
+      "maintenance worker",
+      "office cleaner",
+      "super",
+      "superintendent"
+    ],
+    "job_occupations_en": null,
     "jobcontent": "Lattioiden ja pintojen pesua ja siivousta.\n\nHakemukset osoiteeseen: henkilosto@opticleaning.net\n\nHakemuksen otsake: Kesätyö, eläinklinikan siivooja",
     "source": "tyomarkkinatori",
     "translated_content": "Animal clinic cleaner\n\nWashing and cleaning floors and surfaces.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, animal clinic cleaner",
@@ -243,43 +179,224 @@
     "translated_continuityOfWork": "Summer job"
   },
   {
-    "id": "212e3491",
-    "job_id": "tiiminvetäjäsairaanhoitajan-si-oulu-212e3491",
-    "title": "Tiiminvetäjä/Sairaanhoitajan sijaisuus Attendo Kellokas Oulu",
-    "company": "Attendo Oy",
+    "id": "78d902eb",
+    "job_id": "puutavara-auton-kuljettaja-kemijärvi-78d902eb",
+    "title": "Puutavara-auton kuljettaja",
+    "company": "Kuljetus A & N Parkkinen Oy, Salla",
     "jobLocation": [
-      "Oulu"
+      "Kemijärvi"
     ],
-    "jobapply_link": "https://ura.attendo.fi/jobs/7535982-tiiminvetaja-sairaanhoitajan-sijaisuus-attendo-kellokas-oulu/applications/new?promotion=1937010-tyomarkkinatori",
-    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d42e675b-a809-40f0-b8ea-334b9d0e34e3/en",
-    "job_employer_email": "liisa.raiha@attendo.fi",
-    "job_employer_name": "",
-    "job_employer_phone_no": "",
+    "jobapply_link": "mailto:niko@kuljetusparkkinen.com?subject=Application for the Job - Puutavara-auton kuljettaja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a969a3a-b65e-412a-951a-eb06f1b877ae/en",
+    "job_employer_email": "niko@kuljetusparkkinen.com",
+    "job_employer_name": "Niko Parkkinen",
+    "job_employer_phone_no": "040 548 3949",
     "date_posted": "2026-04-12",
     "date_expires": "2026-04-30",
-    "scraped_at": "2026-04-12 13:59:39",
+    "scraped_at": "2026-04-12 14:15:49",
     "open_positions": 1,
     "salary_range": "",
     "workTime": "Full-time",
-    "continuityOfWork": "Temporary",
+    "continuityOfWork": "Permanent",
     "language_requirements": [
       "Finnish"
     ],
-    "what_we_expect": [],
+    "what_we_expect": [
+      "ohjata raskaita ajoneuvoja",
+      "käyttää viestintälaitteita"
+    ],
     "job_responsibilities": [
-      "Muut terveydenhuoltoalan työntekijät"
+      "tavaraliikenteen kuljettaja"
     ],
     "what_we_offer": [],
-    "jobcontent": "Haemme tiiminvetäjä-sairaanhoitajaa sijaisuuteen Attendo Kellokkaaseen Ouluun.Kellokkaassa on 15 asukaspaikkaa kehitysvammaisille aikuisille. Jokainen asukkaamme ansaitsee tulla kohdatuksi omana itseään ja elää täyttä elämää. Tiiminvetäjänä ja sairaanhoitajana olet keskeinen tuki sekä asukkaille että työyhteisölle teet työtä, jossa välität, ohjaat ja kehität yhdessä tiimin kanssa.Mitä tehtävässä teet?Johdat ja tuet henkilökuntaa päivittäisessä työssä ja varmistat hoidon sujuvuudenVastaat hoidon laadusta, henkilöstöresursoinnista ja työvuorojen suunnittelusta yhdessä johdon kanssaOsallistut asukkaiden hoivaan ja lääkehoidon järjestämiseenTeet tiivistä yhteistyötä läheisten, lääkäripalveluiden ja muiden kumppaneiden kanssaKehität työyhteisön toimintatapoja, huolehdit työilmapiiristä ja koulutustarpeiden tunnistamisestaTehtävä on kokonainen ja määräaikainen sijaisuus ajalle 5/2026-12/2027 voimassa oleva. Työtä tehdään arkiaamussa ja työsuhteen aloituksen ajankohdasta voimme sopia kanssasi.Mitä odotamme sinulta?Sosiaali- ja terveysalan koulutus: sairaanhoitajaKokemusta henkilöstön johtamisesta ja tiimityöstä sosiaali ja terveyspalveluissaHyvä suomen kielen taito ja kyky toimia sujuvasti asukkaiden ja läheisten kanssaTartuntatautilain 48 §:n mukainen rokotussuoja työsuhteen ajaksiHygieniapassi tai valmius suorittaa se kolmen kuukauden kuluessa työsuhteen alkamisestaRikosrekisteriote yli kolmen kuukauden työsuhteissa, kun työssään kohtaa alaikäisiä, iäkkäitä tai vammaisiaSote-ammattikortti tai valmius sen hankkimiseenArvostamme aitoa kiinnostusta vammaistyöhön, ratkaisukeskeistä otetta, pitkäjänteisyyttä sekä kykyä tukea ja motivoida tiimiä. Meille on tärkeintä että olemme asukkaillemme ennen kaikkea koti.Mitä tarjoamme? Lähellä johtajuuttaEsihenkilösi on läsnä arjessa ja tukee sinua käytännön työssä ja kehityksessä. Kehittymisen mahdollisuudetLaaja koulutustarjonta ja tuki ammatilliseen kehittymiseen sekä uralla etenemiseen. JoustavuusMahdollisuus vaikuttaa työvuoroihin ja työn sekä muun elämän yhteensovittamiseen.Työsuhde-edutIlmainen kahvi/tee ja ateriaetuEdenred-etu työnantajan määrittelemän käytännön mukaisestiHenkilöstöetuohjelma ja alennuksia useilta palveluntarjoajiltaKattava työterveyshuoltoKoulutusmahdollisuudet ja tuki osaamisen kehittämiseenPalkkaus ja työsuhteen ehdot määräytyvät yksityisen sosiaalipalvelualan työehtosopimuksen mukaan. Palkkaluokka G23D sekä tiimivetäjän tehtäväkohtainen lisä.Huomioithan, että olemme savuton työpaikka.Haku ja lisätiedotHakuaika päättyy 30.4.2026, mutta paikka täytetään heti sopivan henkilön löydyttyä lähetä hakemuksesi pian rekrytointijärjestelmän kautta. Lisätietoja tehtävästä antaa Attendo-kodin johtaja.Attendo Tulevaisuuden hoivan suunnannäyttäjä. Vahvistamme ihmistä ja teemme kodista kodin asukkaillemme.Lisätietoja tehtävästä antaa:Attendo-kodin johtajaLiisa RäihäP. 044 494 4509liisa.raiha@attendo.fi\n\nAttendo Tulevaisuuden hoivan suunnannäyttäjä\nAttendo on Pohjoismaiden johtava hoivapalveluiden tarjoaja. Tehtävämme on vahvistaa ihmistä niin, että jokainen, joka meillä asuu, saa elää omannäköistään täyttä elämää. Tarjoamme hoivaa ja asumispalveluita ikäihmisille, kehitysvammaisille, vammautuneille, päihde- ja mielenterveyskuntoutujille. Tarjoamme myös terapiapalveluita. Asukkaillemme olemme ennen kaikkea koti, sidosryhmillemme kumppani ja yhteiskunnassa vahva muutosvoima. Noin 17 000 työntekijäämme palvelee yli 400 toimipisteessä ympäri Suomen.Vahvistamme ihmistä. Katsomme eteenpäin. Ratkaisemme yhdessä.Me olemme Attendo.",
+    "jobcategory_keywords": [
+      "cargo vehicle driver",
+      "HGV driver",
+      "courier",
+      "courier delivery driver",
+      "delivery driver",
+      "driver of cargo vehicles",
+      "freight driver",
+      "heavy goods vehicle driver",
+      "lorry driver",
+      "package delivery driver",
+      "teamster",
+      "truck driver",
+      "trucker",
+      "truckie",
+      "van driver"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Työtehtäviin kuuluu puiden lastaus nosturilla sekä niiden kuljettaminen asemille.\nAjamme pääsääntöisesti Kemijärven, Kuusamon sekä Rovaniemen asemille sekä Ruotsiin.\n\nOta yhteyttä Nikoon puh. 040 548 3949",
     "source": "tyomarkkinatori",
-    "translated_content": "Team leader/Nurse substitute Attendo Kellokas Oulu\n\nWe are looking for a team leader-nurse to replace Attendo Kellokkaas in Oulu. Kellokkaas has 15 resident places for adults with developmental disabilities. Each of our residents deserves to be seen as themselves and to live a full life. As a team leader and nurse, you are a key support for both the residents and the work community. You do work where you care, guide and develop together with the team. What is your role? You lead and support the staff in their daily work and ensure the smoothness of care. with You will develop the working methods of the working community, take care of the working atmosphere and identify training needs. The work will be done on a weekday morning and we can agree on the start time of the employment relationship with you. What do we expect from you? Education in the social and health field: nurse. Experience in managing personnel and teamwork in social and health services. from the start Criminal record extract in employment for more than three months, when working with minors, elderly or disabled people Social Security professional card or readiness to obtain it We value a genuine interest in working with the disabled, a solution-oriented approach, persistence and the ability to support and motivate the team. The most important thing for us is that we are above all a home for our residents. What do we offer? Close to leadership Your supervisor is present in everyday life and supports you in practical work and development. Opportunities for development Wide range of training and support for professional development and career advancement. Flexibility The opportunity affects work shifts and the coordination of work and the rest of life.Employment benefitsFree coffee/tea and meal benefitEdenred benefit in accordance with the practice defined by the employerEmployee benefits program and discounts from several service providersComprehensive occupational health careTraining opportunities and support for skill developmentSalary and terms of employment are determined by the collective agreement of the private social service sector. Salary grade G23D and the team leader's task-specific supplement. Please note that we are a smoke-free workplace. Application and additional information The application period ends on April 30, 2026, but the position will be filled as soon as a suitable person is found, send your application soon through the recruitment system. For more information about the position, please contact the manager of the Attendo home. Attendo Future care leader. We strengthen the person and make the home a home for our residents. More information about the task is provided by: Director of Attendo home Liisa RäihäP. 044 494 4509liisa.raiha@attendo.fi\n\nAttendo The trendsetter of future care\nAttendo is the leading provider of care services in the Nordic countries. Our mission is to strengthen people so that everyone who lives with us can live a full life in their own way. We offer care and housing services for the elderly, mentally disabled, disabled, drug and mental health rehabilitators. We also offer therapy services. We are above all a home for our residents, a partner for our stakeholders and a strong force for change in society. About 17,000 of our employees serve in more than 400 offices around Finland. We strengthen people. We look forward. We solve together. We are Attendo.",
+    "translated_content": "Lumber truck driver\n\nThe tasks include loading trees with a crane and transporting them to the stations.\nAs a rule, we drive to Kemijärvi, Kuusamo and Rovaniemi stations and to Sweden.\n\nContact Niko on tel. 040 548 3949",
+    "translated_what_we_expect": [
+      "control heavy vehicles",
+      "use communication devices"
+    ],
     "translated_job_responsibilities": [
-      "Other healthcare workers"
+      "freight transport driver"
     ],
     "translated_language_requirements": [
       "Finnish"
     ],
     "translated_workTime": "Full-time",
-    "translated_continuityOfWork": "Temporary"
+    "translated_continuityOfWork": "Permanent"
+  },
+  {
+    "id": "964d7eb7",
+    "job_id": "elintarvikemyymälän-siivooja-riihimäki-964d7eb7",
+    "title": "Elintarvikemyymälän siivooja",
+    "company": "OPTI CLEANING SERVICES OY/Riihimäki",
+    "jobLocation": [
+      "Riihimäki"
+    ],
+    "jobapply_link": "mailto:henkilosto@opticleaning.net?subject=Application for the Job - Elintarvikemyymälän siivooja",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/36103b68-51fb-4d3a-9935-be59d866b1ea/en",
+    "job_employer_email": "henkilosto@opticleaning.net",
+    "job_employer_name": "Yhteyshenkilö Rekrytointi",
+    "job_employer_phone_no": "",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 14:15:49",
+    "open_positions": 1,
+    "salary_range": "",
+    "workTime": "Full-time",
+    "continuityOfWork": "Summer job",
+    "language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "what_we_expect": [
+      "ylläpitää siivousvälineitä",
+      "puhdistaa lasipintoja",
+      "käsitellä kemiallisia puhdistusaineita",
+      "ylläpitää siivoustarvikkeiden varastoja",
+      "siivota",
+      "puhdistaa pintoja",
+      "siivota WC-tiloja"
+    ],
+    "job_responsibilities": [
+      "laitossiivooja"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "building cleaner",
+      "building caretaker",
+      "custodian",
+      "janitor",
+      "janitors manager",
+      "janitors supervisor",
+      "janitress",
+      "maintenance worker",
+      "office cleaner",
+      "super",
+      "superintendent"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Lattioiden ja pintojen pesua, elintarvikesiivousta, tiskausta.\n\nHakemukset osoiteeseen: henkilosto@opticleaning.net\n\nHakemuksen otsake: Kesätyö, Riihimäki",
+    "source": "tyomarkkinatori",
+    "translated_content": "Grocery store cleaner\n\nWashing floors and surfaces, food cleaning, washing dishes.\n\nApplications to: henkilosto@opticleaning.net\n\nApplication title: Summer job, Riihimäki",
+    "translated_what_we_expect": [
+      "maintain cleaning equipment",
+      "cleans glass surfaces",
+      "handle chemical cleaners",
+      "maintains stocks of cleaning supplies",
+      "to clean up",
+      "clean surfaces",
+      "clean the toilets"
+    ],
+    "translated_job_responsibilities": [
+      "facility cleaner"
+    ],
+    "translated_language_requirements": [
+      "Finnish",
+      "English"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Summer job"
+  },
+  {
+    "id": "823ea00f",
+    "job_id": "turvalaiteasentaja-käyttölukko-vantaa-823ea00f",
+    "title": "Turvalaiteasentaja Käyttölukko Oy",
+    "company": "Käyttölukko Oy, Uusimaa",
+    "jobLocation": [
+      "Vantaa"
+    ],
+    "jobapply_link": "https://kayttolukko.fi/hakulomake/",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c7042a03-eb8f-4a7b-aa54-fd44f67c9eb8/en",
+    "job_employer_email": "minna.kyto-lilja@kayttolukko.fi",
+    "job_employer_name": "Minna Kytö-Lilja",
+    "job_employer_phone_no": "0504723587",
+    "date_posted": "2026-04-12",
+    "date_expires": "2026-04-30",
+    "scraped_at": "2026-04-12 14:15:50",
+    "open_positions": 1,
+    "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "what_we_expect": [
+      "sähkö",
+      "sähköiset lukot",
+      "asentaa lukittavia laitteita",
+      "lukea teknisiä tietoja",
+      "huoltaa asennettuja laitteita",
+      "vaihtaa viallisia komponentteja",
+      "käyttöjärjestelmät",
+      "rakennuksen sähköisessä kulunvalvonnassa käytettävät välineet",
+      "hallita hälytysjärjestelmää"
+    ],
+    "job_responsibilities": [
+      "hälytysjärjestelmäasentaja",
+      "lukkoseppä"
+    ],
+    "what_we_offer": [],
+    "jobcategory_keywords": [
+      "security alarm technician",
+      "burglar alarm installer",
+      "burglar alarm technician",
+      "electronic security systems installer",
+      "fire alarm installer",
+      "fire alarm technician",
+      "intruder alarm installer",
+      "intruder alarm technician",
+      "security alarm engineer",
+      "security alarm fitter",
+      "security alarm installer",
+      "security systems technician",
+      "locksmith",
+      "key and lock expert",
+      "key and lock installer",
+      "key and lock specialist",
+      "key maker"
+    ],
+    "job_occupations_en": null,
+    "jobcontent": "Turvalaiteasentajana toimit osana tiivistä työyhteisöä turvatekniikan parissa asennus-, huolto- ja korjaustehtävissä. Työtehtäviisi kuuluu esim. rikosilmoittimien, kulunvalvonta- ja kameravalvontajärjestelmien asennusta, käyttöönottoa sekä huoltoa. Asiakas on toimintamme keskiössä, joten sinun tulee osata kuunnella asiakasta. Tulet toimeen erilaisten ihmisten kanssa. Käyttämämme järjestelmät edustavan alansa teknologisen kehityksen kärkeä, henkilöstön osaamiseen panostetaan jatkuvalla koulutuksella. Rehellisyys, avoimuus, asiakaslähtöisyys ja luotettavuus kuvaavat perusarvojamme, näitä odotetaan myös sinulta. Työtehtävien luonteen vuoksi nuhteettomuus on ehdoton edellytys.\nTehtävän toimipiste sijaitsee Vantaalla ja työskentely tapahtuu pääosin Uudenmaan alueella, mutta asennuskohteita on myös Uudenmaan ulkopuolella, joten työ edellyttää ajoittain valmiutta matkustamiseen.\n\nToivomme sinulta aiempaa työkokemustaustaa turvatekniikan asennus- ja huoltotehtävien parista. Tehtävässä on etua myös sähköisen lukituksen sekä tietoliikennetekniikan perusteiden tuntemisesta. Käyttölukko on valmis kouluttamaan soveltuvan ammatillisen taustan omaavan tekijän osaksi tiimiä.\n\nTarjoamme sinulle mahdollisuuden pitkäaikaiseen työsuhteeseen ketterässä ja mukautuvassa perheyrityksessä. Saat mahdollisuuden olla näköalapaikalla näkemässä ja tekemässä alan kehitystä sekä samalla itsekin kehittyä turvallisuusalan ammattilaisena. Palkkaus sopimuksen mukaan. Tässä on hieno tilaisuus päästä osaksi kasvavaa ja menestyvää yritystä, jossa työntekijät viihtyvät!\n\nKäyttölukko Oy on vuonna 1988 perustettu turvallisuusalan edelläkävijä. Yrityksellämme on ISO-9001 ja ISO-14001 sekä OHSAS-18001 laatusertifikaatit. Olemme vakuutusyhtiöiden hyväksymä turvajärjestelmien suunnittelu ja asennusliike sekä lukkoliike. Meillä on myös S2-sähköurakointioikeudet. Yrityksemme on Suomen Yrittäjien ja Turvaurakoitsijaliiton jäsen. Yrityksellä on toimipisteet Kangasalla, Hämeenlinnassa, Jyväskylässä, Vantaalla sekä Oulussa. Lue lisää osoitteesta: www.kayttolukko.fi\n\nHakemukset palkkatoiveineen https://kayttolukko.fi/hakulomake/ tai hr@kayttolukko.fi\n\nLisätietoja tehtävästä hr@kayttolukko.fi tai Minna Kytö-Lilja 050 4723587.",
+    "source": "tyomarkkinatori",
+    "translated_content": "Safety device installer Käytäslukko Oy\n\nAs a safety device installer, you work as part of a close working community in safety technology in installation, maintenance and repair tasks. Your tasks include, for example, the installation, commissioning and maintenance of crime detectors, access control and camera surveillance systems. The customer is at the center of our operations, so you must know how to listen to the customer. You get along with different people. The systems we use represent the cutting edge of technological development in their field, and continuous training is invested in the competence of the personnel. Honesty, openness, customer orientation and reliability describe our core values, these are also expected of you. Due to the nature of the work, integrity is an absolute prerequisite.\nThe office of the assignment is located in Vantaa and the work mainly takes place in the Uusimaa area, but there are also installation sites outside of Uusimaa, so the job requires occasional travel.\n\nWe expect you to have previous work experience in security technology installation and maintenance tasks. The position also has the advantage of knowing the basics of electronic locking and telecommunications technology. The operator lock is ready to train an operator with a suitable professional background as part of the team.\n\nWe offer you the opportunity for a long-term employment relationship in an agile and adaptable family business. You get the opportunity to be at a vantage point to see and do the development of the industry, and at the same time develop yourself as a security professional. Salary according to the contract. Here is a great opportunity to become part of a growing and successful company where employees are happy!\n\nKäytöslukko Oy is a pioneer in the security industry, founded in 1988. Our company has ISO-9001 and ISO-14001 and OHSAS-18001 quality certificates. We are a design and installation company for security systems and a locksmith approved by insurance companies. We also have S2 electrical contracting rights. Our company is a member of the Finnish Entrepreneurs' and Security Contractors' Association. The company has offices in Kangasa, Hämeenlinna, Jyväskylä, Vantaa and Oulu. Read more at: www.kayttolukko.fi\n\nApplications with salary expectations https://kayttolukko.fi/hakulomake/ or hr@kayttolukko.fi\n\nMore information about the position hr@kayttolukko.fi or Minna Kytö-Lilja 050 4723587.",
+    "translated_what_we_expect": [
+      "electricity",
+      "electronic locks",
+      "install lockable devices",
+      "read the technical data",
+      "maintain installed equipment",
+      "replace defective components",
+      "operating systems",
+      "the equipment used in the building's electronic access control",
+      "manage the alarm system"
+    ],
+    "translated_job_responsibilities": [
+      "alarm system installer",
+      "locksmith"
+    ],
+    "translated_language_requirements": [
+      "Finnish"
+    ],
+    "translated_workTime": "Full-time",
+    "translated_continuityOfWork": "Permanent"
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "scrape_timestamp": "2026-04-12 13:59:38",
+    "scrape_timestamp": "2026-04-12 14:15:49",
     "jobs": [
       {
         "id": "f960db4b",
@@ -21,7 +21,7 @@
         "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-jyväskylä-f960db4b",
         "date_posted": "2026-04-12",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-12 13:59:38",
+        "scraped_at": "2026-04-12 14:15:49",
         "open_positions": 1,
         "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
         "workTime": "Part-time",
@@ -29,8 +29,8 @@
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Glow Union Oy is seeking a versatile nurse for their private healthcare unit in Jyväskylä, specializing in aesthetic treatments and medical services since 2012.",
-        "description": "Glow Union Oy is seeking a versatile nurse for their private healthcare unit in Jyväskylä, specializing in aesthetic treatments and medical services since 2012. The ideal candidate will provide expert care, diagnose treatment needs, implement scientific decision-making, advise on healthy lifestyles, and evaluate medical care. They should have experience or strong interest in aesthetic treatments, excellent customer service skills, initiative, responsibility, flexibility, and an entrepreneurial attitude. Offered are a versatile job description, opportunities to develop in the field of aesthetics, and work in an expert and customer-oriented environment.",
+        "meta_description": "Glow Union Oy is seeking a versatile nurse for their private healthcare unit in Jyväskylä, focusing on aesthetic treatments and medical services since 2012.",
+        "description": "Glow Union Oy is seeking a versatile nurse for their private healthcare unit in Jyväskylä, focusing on aesthetic treatments and medical services since 2012. The ideal candidate will provide expert care, diagnose treatment needs, implement scientific decision-making, offer advice on healthy lifestyles, and analyze the quality of medical care. Responsibilities include tasks related to aesthetic treatments as well as assisting specialist doctors with minor procedures. Applicants should have nurse training and certification, experience in aesthetic treatments or a strong interest in training, excellent customer service skills, initiative, responsibility, flexibility, an entrepreneurial attitude, and an understanding of customer-oriented service work.",
         "what_we_expect": [
           "Nurse training and certification",
           "Experience in aesthetic treatments or strong interest in the field",
@@ -49,107 +49,7 @@
         ],
         "search_keywords": "nurse, clinic, aesthetic treatments, healthcare, private unit, Jyväskylä",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/25.png"
-      },
-      {
-        "id": "78d902eb",
-        "job_id": "lumber-truck-driver-kemijärvi-78d902eb",
-        "processed": true,
-        "title": "Lumber truck driver",
-        "company": "Kuljetus A & N Parkkinen Oy, Salla",
-        "job_category": "transportation-and-logistics",
-        "jobLocation": [
-          "Kemijärvi"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:niko@kuljetusparkkinen.com?subject=Application%20for%20the%20Job%20-%20Lumber%20truck%20driver&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Lumber%20truck%20driver.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a969a3a-b65e-412a-951a-eb06f1b877ae/en",
-        "job_employer_email": "niko@kuljetusparkkinen.com",
-        "job_employer_name": "Niko Parkkinen",
-        "job_employer_phone_no": "040 548 3949",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/lumber-truck-driver-kemijärvi-78d902eb",
-        "date_posted": "2026-04-12",
-        "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-12 13:59:38",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Kuljetus A & N Parkkinen Oy, Salla is seeking a Lumber truck driver in Kemijärvi. Kuljetus A & N Parkkinen Oy is seeking a skilled Lumber truck driver for",
-        "description": "Kuljetus A & N Parkkinen Oy is seeking a skilled Lumber truck driver for permanent employment in Kemijärvi, Finland. This position involves driving heavy vehicles to various stations including Kemijärvi, Kuusamo, Rovaniemi, and Sweden. The successful candidate will be responsible for freight transport duties and must have experience operating control heavy vehicles and using communication devices. For more information or to apply, please contact Niko at 040 548 3949.",
-        "what_we_expect": [
-          "Control heavy vehicles",
-          "Use communication devices",
-          "Lumber truck driver The tasks include loading trees with a crane and transporting them to the stations."
-        ],
-        "job_responsibilities": [
-          "Loading trees with a crane and transporting them to the stations",
-          "Driving to Kemijärvi, Kuusamo, Rovaniemi stations and Sweden",
-          "Lumber truck driver The tasks include loading trees with a crane and transporting them to the stations."
-        ],
-        "what_we_offer": [
-          "Niko on tel. 040 548 3949",
-          "Lumber truck driver The tasks include loading trees with a crane and transporting them to the stations.",
-          "As a rule, we drive to Kemijärvi, Kuusamo and Rovaniemi stations and to Sweden."
-        ],
-        "search_keywords": "lumber truck driver, loading trees, transporting trees, driving to stations, Kemijärvi, Kuusamo, Rovaniemi",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/10.png"
-      },
-      {
-        "id": "95962dcf",
-        "job_id": "grocery-store-cleaner-mäntsälä-95962dcf",
-        "processed": true,
-        "title": "Grocery Store Cleaner",
-        "company": "OPTI CLEANING SERVICES OY/Mäntsälä",
-        "job_category": "cleaning-and-facility-services",
-        "jobLocation": [
-          "Mäntsälä"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:henkilosto@opticleaning.net?subject=Application%20for%20the%20Job%20-%20Grocery%20Store%20Cleaner&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Grocery%20Store%20Cleaner.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ac1bc198-82b5-4bb6-8eec-71beb9bfe2dc/en",
-        "job_employer_email": "henkilosto@opticleaning.net",
-        "job_employer_name": "Yhteyshenkilö Rekrytointi",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/grocery-store-cleaner-mäntsälä-95962dcf",
-        "date_posted": "2026-04-12",
-        "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-12 13:59:38",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
-        "workTime": "Full-time",
-        "continuityOfWork": "Summer job",
-        "language_requirements": [
-          "Finnish",
-          "English"
-        ],
-        "meta_description": "Join OPTI CLEANING SERVICES OY/Mäntsälä as a dedicated grocery store cleaner for the summer months in Mäntsälä! Strong communication skills and ability to work",
-        "description": "OPTI CLEANING SERVICES OY/Mäntsälä is seeking a dedicated grocery store cleaner for the summer months in Mäntsälä. This role involves maintaining cleaning equipment, washing floors and surfaces, food cleaning, washing dishes, handling chemical cleaners, maintaining stocks of cleaning supplies, and cleaning toilets. The ideal candidate should have strong communication skills and be able to work independently as part of a team. For more information or to apply, please contact henkilosto@opticleaning.net.",
-        "what_we_expect": [
-          "Maintain cleaning equipment",
-          "Cleans glass surfaces",
-          "Handle chemical cleaners",
-          "Maintains stocks of cleaning supplies",
-          "To clean up",
-          "Clean surfaces"
-        ],
-        "job_responsibilities": [
-          "Washing floors and surfaces",
-          "Food cleaning",
-          "Washing dishes"
-        ],
-        "what_we_offer": [
-          "Applications to: henkilosto@opticleaning.net",
-          "Application title: Summer job, Mäntsälä",
-          "Professional work environment"
-        ],
-        "search_keywords": "grocery store cleaner, washing floors, food cleaning, washing dishes",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/24.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/17.png"
       },
       {
         "id": "3ff86195",
@@ -170,7 +70,7 @@
         "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/animal-clinic-cleaner-jyväskylä-3ff86195",
         "date_posted": "2026-04-12",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-12 13:59:38",
+        "scraped_at": "2026-04-12 14:15:49",
         "open_positions": 1,
         "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
         "workTime": "Full-time",
@@ -179,8 +79,8 @@
           "Finnish",
           "English"
         ],
-        "meta_description": "OPTI CLEANING SERVICES OY/Jyväskylä seeks a dedicated Animal Clinic Cleaner for full-time summer employment. Ensure cleanliness in the facility with equipment",
-        "description": "We are looking for a dedicated Animal Clinic Cleaner at OPTI CLEANING SERVICES OY/Jyväskylä. This full-time position offers summer employment in the facility, where you will maintain cleaning equipment, clean glass surfaces, handle chemical cleaners, and ensure that all areas of the clinic are thoroughly cleaned. You'll also be responsible for maintaining stocks of cleaning supplies and handling tasks such as cleaning up, cleaning surfaces, and cleaning toilets. With a strong background in animal clinics or a similar setting, this is an opportunity to contribute to a clean and hygienic environment while gaining valuable experience. If you're fluent in Finnish and English, we welcome your application today!",
+        "meta_description": "OPTI CLEANING SERVICES OY/Jyväskylä is seeking a dedicated Animal Clinic Cleaner for the summer months in Jyväskylä. This role involves maintaining cleaning",
+        "description": "OPTI CLEANING SERVICES OY/Jyväskylä is seeking a dedicated Animal Clinic Cleaner for the summer months in Jyväskylä. This role involves maintaining cleaning equipment, washing and cleaning floors and surfaces, handling chemical cleaners, and ensuring that all areas of the clinic are thoroughly cleaned. The position offers a summer job with opportunities to learn valuable skills while contributing positively to the animal care environment. For more information or to apply, please contact henkilosto@opticleaning.net.",
         "what_we_expect": [
           "Maintain cleaning equipment",
           "Cleans glass surfaces",
@@ -201,64 +101,161 @@
         ],
         "search_keywords": "cleaning-and-facility-services animal clinic cleaner",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/9.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/23.png"
+      },
+      {
+        "id": "78d902eb",
+        "job_id": "lumber-truck-driver-kemijärvi-78d902eb",
+        "processed": true,
+        "title": "Lumber truck driver",
+        "company": "Kuljetus A & N Parkkinen Oy, Salla",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Kemijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:niko@kuljetusparkkinen.com?subject=Application%20for%20the%20Job%20-%20Lumber%20truck%20driver&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Lumber%20truck%20driver.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a969a3a-b65e-412a-951a-eb06f1b877ae/en",
+        "job_employer_email": "niko@kuljetusparkkinen.com",
+        "job_employer_name": "Niko Parkkinen",
+        "job_employer_phone_no": "040 548 3949",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/lumber-truck-driver-kemijärvi-78d902eb",
+        "date_posted": "2026-04-12",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-12 14:15:49",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Kuljetus A & N Parkkinen Oy is seeking a Lumber Truck Driver in Kemijärvi, Finland, reporting to Niko at 040 548 3949. Apply now for this exciting position!",
+        "description": "Kuljetus A & N Parkkinen Oy is seeking a Lumber Truck Driver for their Kemijärvi location in Finland, reporting directly to Niko at 040 548 3949. This role involves driving heavy vehicles and transporting lumber from stations such as Kemijärvi, Kuusamo, Rovaniemi, and Sweden. The successful candidate will be responsible for controlling the vehicle and using communication devices. For more information or to apply, contact Niko directly at 040 548 3949.",
+        "what_we_expect": [
+          "Control heavy vehicles",
+          "Use communication devices",
+          "Lumber truck driver The tasks include loading trees with a crane and transporting them to the stations."
+        ],
+        "job_responsibilities": [
+          "Loading trees with a crane and transporting them to the stations",
+          "Driving to Kemijärvi, Kuusamo, Rovaniemi stations and Sweden",
+          "Lumber truck driver The tasks include loading trees with a crane and transporting them to the stations."
+        ],
+        "what_we_offer": [
+          "Niko on tel. 040 548 3949",
+          "Lumber truck driver The tasks include loading trees with a crane and transporting them to the stations.",
+          "As a rule, we drive to Kemijärvi, Kuusamo and Rovaniemi stations and to Sweden."
+        ],
+        "search_keywords": "lumber truck driver, loading trees, transporting trees, driving to stations, Kemijärvi, Kuusamo, Rovaniemi",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/29.png"
+      },
+      {
+        "id": "964d7eb7",
+        "job_id": "grocery-store-cleaner-riihimäki-964d7eb7",
+        "processed": true,
+        "title": "Grocery Store Cleaner",
+        "company": "OPTI CLEANING SERVICES OY/Riihimäki",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Riihimäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:henkilosto@opticleaning.net?subject=Application%20for%20the%20Job%20-%20Grocery%20Store%20Cleaner&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Grocery%20Store%20Cleaner.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/36103b68-51fb-4d3a-9935-be59d866b1ea/en",
+        "job_employer_email": "henkilosto@opticleaning.net",
+        "job_employer_name": "Yhteyshenkilö Rekrytointi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/grocery-store-cleaner-riihimäki-964d7eb7",
+        "date_posted": "2026-04-12",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-12 14:15:49",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "OPTI CLEANING SERVICES OY/Riihimäki is seeking a Grocery store cleaner in Riihimäki. We are looking for a dedicated grocery store cleaner with experience in",
+        "description": "We are looking for a dedicated grocery store cleaner with experience in maintaining cleanliness and handling chemical cleaners. This full-time position offers the opportunity to work summer jobs at OPTI CLEANING SERVICES OY/Riihimäki. The ideal candidate should be able to maintain cleaning equipment, clean glass surfaces, handle various chemical cleaners, and keep stocks of cleaning supplies up-to-date. They will also be responsible for cleaning floors, surfaces, and toilets in grocery stores. If you are fluent in both Finnish and English and enjoy working in a fast-paced environment, we encourage you to apply today!",
+        "what_we_expect": [
+          "Maintain cleaning equipment",
+          "Cleans glass surfaces",
+          "Handle chemical cleaners",
+          "Maintains stocks of cleaning supplies",
+          "To clean up",
+          "Clean surfaces"
+        ],
+        "job_responsibilities": [
+          "Washing floors and surfaces",
+          "Food cleaning",
+          "Washing dishes"
+        ],
+        "what_we_offer": [
+          "Applications to: henkilosto@opticleaning.net",
+          "Application title: Summer job, Riihimäki",
+          "Professional work environment"
+        ],
+        "search_keywords": "grocery store cleaner, washing floors, food cleaning, washing dishes, Summer job, Riihimäki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/26.png"
       }
     ]
   },
 
   {
-    "scrape_timestamp": "2026-04-12 13:59:39",
+    "scrape_timestamp": "2026-04-12 14:15:50",
     "jobs": [
       {
-        "id": "212e3491",
-        "job_id": "team-leadernurse-substitute-oulu-212e3491",
+        "id": "823ea00f",
+        "job_id": "safety-device-installer-vantaa-823ea00f",
         "processed": true,
-        "title": "Team leader/Nurse substitute",
-        "company": "Attendo Oy",
-        "job_category": "management-and-leadership",
+        "title": "Safety Device Installer",
+        "company": "Käyttölukko Oy, Uusimaa",
+        "job_category": "installation-and-maintenance",
         "jobLocation": [
-          "Oulu"
+          "Vantaa"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://ura.attendo.fi/jobs/7535982-tiiminvetaja-sairaanhoitajan-sijaisuus-attendo-kellokas-oulu/applications/new?promotion=1937010-tyomarkkinatori",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d42e675b-a809-40f0-b8ea-334b9d0e34e3/en",
-        "job_employer_email": "liisa.raiha@attendo.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/team-leadernurse-substitute-oulu-212e3491",
+        "jobapply_link": "https://kayttolukko.fi/hakulomake/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c7042a03-eb8f-4a7b-aa54-fd44f67c9eb8/en",
+        "job_employer_email": "minna.kyto-lilja@kayttolukko.fi",
+        "job_employer_name": "Minna Kytö-Lilja",
+        "job_employer_phone_no": "0504723587",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/safety-device-installer-vantaa-823ea00f",
         "date_posted": "2026-04-12",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-12 13:59:39",
+        "scraped_at": "2026-04-12 14:15:50",
         "open_positions": 1,
-        "salary_range": "Salary and terms of employment are determined b",
+        "salary_range": "Salary according to the contract",
         "workTime": "Full-time",
-        "continuityOfWork": "Temporary",
+        "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Join Attendo Oy as a Team Leader/Nurse Substitute in Oulu! A key support role leading care operations and developing working methods while ensuring smooth care.",
-        "description": "We are looking for a team leader-nurse to replace Attendo Kellokkaas in Oulu. As a key support, you will lead and develop the working methods of the community while ensuring smooth care operations. With your education in the social and health field (nursing) and experience managing personnel and teamwork in social and health services, you bring a genuine interest in working with disabled individuals, a solution-oriented approach, persistence, and ability to motivate the team. Our flexible work schedule allows for easy integration into your life while providing opportunities for professional development and comprehensive occupational health care benefits. Apply by April 30, 2026, or contact Liisa Räihä at liisa.raiha@attendo.fi for more information about the position.",
+        "meta_description": "Safety device installer Käyttölukko Oy, Vantaa, Uusimaa: A skilled security technology installer with customer service and technical expertise needed for alarm",
+        "description": "Safety device installer, Käyttölukko Oy, Vantaa, Uusimaa: A skilled safety technology installer with a strong focus on customer service and technical expertise is sought for the role of alarm system installer. Previous experience in security technology installation and maintenance tasks is required, along with knowledge of electronic locking and telecommunications technologies. The position offers competitive hourly wages based on Finnish collective agreements, continuous training opportunities, and a long-term employment relationship within an agile family business. Located in Vantaa, the job primarily involves work in Uusimaa but occasional travel to installation sites outside of Uusimaa is expected.",
         "what_we_expect": [
-          "Education in the social and health field: nurse",
-          "Experience in managing personnel and teamwork in social and health services",
-          "Criminal record extract or readiness to obtain it",
-          "Genuine interest in working with disabled people, a solution-oriented approach, persistence, ability to support and motivate the team"
+          "Previous work experience in security technology installation and maintenance tasks.",
+          "Basics of electronic locking and telecommunications technology.",
+          "Applications with salary expectations https://kayttolukko.fi/hakulomake/ or hr@kayttolukko.fi"
         ],
         "job_responsibilities": [
-          "Lead and support the staff in their daily work and ensure the smoothness of care",
-          "Develop working methods, working atmosphere, and training needs with the team",
-          "Team leader/Nurse substitute Attendo Kellokkaas Oulu We are looking for a team leader-nurse to replace Attendo Kellokkaas in Oulu."
+          "Installation, commissioning and maintenance of crime detectors, access control and camera surveillance systems.",
+          "Applications with salary expectations https://kayttolukko.fi/hakulomake/ or hr@kayttolukko.fi",
+          "Daily operational tasks"
         ],
         "what_we_offer": [
-          "Free coffee/tea and meal benefit",
-          "Edenred benefit in accordance with the practice defined by the employer",
-          "Employee benefits program and discounts from several service providers",
-          "Comprehensive occupational health care",
-          "Training opportunities and support for skill development"
+          "Long-term employment relationship",
+          "Opportunity to develop as a security professional",
+          "Applications with salary expectations https://kayttolukko.fi/hakulomake/ or hr@kayttolukko.fi"
         ],
-        "search_keywords": "team leader nurse substitute, team leader nursing position, Oulu job opening, Attendo Kellokas, leadership role, social services, disability management, employee benefits, career advancement, flexible work schedule",
+        "search_keywords": "Safety Device Installer Käyttölukko Oy, Uusimaa Vantaa installation-and-maintenance",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/management-and-leadership/6.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/installation-and-maintenance/1.png"
       }
     ]
   }

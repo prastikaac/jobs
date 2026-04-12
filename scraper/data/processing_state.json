@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-04-12 14:06:31",
+  "updated_at": "2026-04-12 14:21:23",
   "jobs": {
     "f960db4b": {
       "translated": true,
@@ -11,29 +11,7 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:01:35"
-    },
-    "78d902eb": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:02:34"
-    },
-    "95962dcf": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:03:25"
+      "formatted_at": "2026-04-12 14:17:48"
     },
     "3ff86195": {
       "translated": true,
@@ -44,9 +22,9 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:04:15"
+      "formatted_at": "2026-04-12 14:18:31"
     },
-    "212e3491": {
+    "78d902eb": {
       "translated": true,
       "translated_at": "",
       "ai_processed": true,
@@ -55,7 +33,29 @@
       "max_retries": 3,
       "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": "2026-04-12 14:06:31"
+      "formatted_at": "2026-04-12 14:19:28"
+    },
+    "964d7eb7": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-12 14:20:11"
+    },
+    "823ea00f": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-12 14:21:23"
     }
   }
 }
