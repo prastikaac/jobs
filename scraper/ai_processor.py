@@ -66,6 +66,7 @@ def _sanitize_plain_output(text: str) -> str:
     text = _normalize_whitespace(text)
     text = _strip_wrapping_quotes(text)
     text = _clean_leading_punctuation(text)
+    text = text.replace("*", "")
     return _normalize_whitespace(text)
 
 

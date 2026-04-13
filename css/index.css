@@ -2457,6 +2457,11 @@ article:hover .thmb {
     opacity: .7
 }
 
+.incss {
+    opacity: .8;
+}
+
+
 .iFxd .cmnt,
 .iFxd .pV {
     padding: 5px;

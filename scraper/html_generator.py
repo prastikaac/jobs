@@ -34,6 +34,16 @@ try:
 except Exception as e:
     logger.warning("Could not load municipalities_codes.json for HTML generation: %s", e)
 
+AUTHORS_LIST = []
+try:
+    authors_path = os.path.join(os.path.dirname(__file__), "authors.json")
+    if os.path.exists(authors_path):
+        with open(authors_path, "r", encoding="utf-8") as f:
+            AUTHORS_LIST = json.load(f).get("authors", [])
+except Exception as e:
+    logger.warning("Could not load authors.json for HTML generation: %s", e)
+
+
 
 # ── Utilities ─────────────────────────────────────────────────────────────────
 
@@ -258,6 +268,7 @@ def generate_job_page(job: dict) -> bool:
         "{-job date-}": date_str[:10],
         "{-scraped_at-}": _display_date(str(job.get("scraped_at") or date_str)),
         "{-job valid date-}": str(job.get("date_expires") or valid_date),
+        "{-job deadline-}": _display_date(str(job.get("date_expires") or valid_date)),
         # Image
         "{-job image-}": image_url,
         # Industry / category
@@ -290,6 +301,21 @@ def generate_job_page(job: dict) -> bool:
         "{-display_employer_phone-}": "" if job.get("job_employer_phone_no", "") else 'style="display: none;"',
         "{-display_recruiter_info-}": "" if (job.get("job_employer_name", "") or employer_email or job.get("job_employer_phone_no", "")) else 'style="display: none;"',
     }
+
+    if AUTHORS_LIST:
+        import random
+        author = random.choice(AUTHORS_LIST)
+        replacements["{-author_name-}"] = _esc(author.get("name", "findjobsinfinland.fi"))
+        # Strip https:// or http:// because template uses url(//{-author_photo-})
+        photo_url = author.get("photo", "findjobsinfinland.fi/images/prasiddha-acharya.png")
+        if photo_url.startswith("https://"):
+            photo_url = photo_url[8:]
+        elif photo_url.startswith("http://"):
+            photo_url = photo_url[7:]
+        replacements["{-author_photo-}"] = _esc(photo_url)
+    else:
+        replacements["{-author_name-}"] = "Prasiddha Acharya"
+        replacements["{-author_photo-}"] = "findjobsinfinland.fi/images/prasiddha-acharya.png"
 
     for key, val in replacements.items():
         content = content.replace(key, str(val))
@@ -402,10 +428,10 @@ def _job_card(job: dict) -> str:
             <div class="pSnpt">
               {desc_prev}
               <div class="pInf pSml" style="color:red;font-weight:bold;">
-                <time class="aTtmp pTtmp pbl" data-text="{date_str}"
+                <time class="aTtmp pTtmp pbl"
                       datetime="{job.get('scraped_at', job.get('date_posted', ''))[:10]}"
-                      title="Posted: {scraped_at}"></time>
-                <a aria-label="Apply Now" class="pJmp" data-text="Apply Now" href="{page_url}"></a>
+                      title="Posted: {scraped_at}">{date_str}</time>
+                <a class="pJmp" href="{page_url}">Apply Now</a>
               </div>
             </div>
           </div>

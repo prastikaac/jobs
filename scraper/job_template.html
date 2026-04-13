@@ -128,7 +128,7 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
 
 
 
-  <link rel="stylesheet" href="https://findjobsinfinland.fi/css/page.css">
+  <link rel="stylesheet" href="/css/page.css">
 
   <link rel="stylesheet" href="https://findjobsinfinland.fi/css/social-media-sidebar.css">
 
@@ -672,7 +672,7 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                     <div class="blogPts">
                       <article class="ntry ps post">
                         <div class="pGV" style="margin-left: -10px;">
-                          <span class="pGrt" data-text="Welcome!" id="greetings">
+                          <span class="pGrt" id="greetings">
                             <svg viewbox="0 0 16 16">
                               <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
                                 fill-rule="evenodd"></path>
@@ -682,11 +682,33 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                               <path class="svgC"
                                 d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z">
                               </path>
-                            </svg>
+                            </svg> <span class="greet-text"></span>
                           </span>
+
                         </div>
-                        <script
-                          type="text/javascript">/*<![CDATA[*/ var welElem = document.querySelector("#greetings"); var curHr = new Date().getHours(); var welMes = ["Have a Sweet Dreams!", "Good Morning!", "Good Afternoon!", "Good Evening!", "Good Night!", "It's time to sleep!"]; let welText = ""; if (curHr < 4) welText = welMes[0]; else if (curHr < 12) welText = welMes[1]; else if (curHr < 17) welText = welMes[2]; else if (curHr < 19) welText = welMes[3]; else if (curHr < 22) welText = welMes[4]; else welText = welMes[5]; welElem.setAttribute('data-text', welText); /*]]>*/</script>
+                        <script type="text/javascript">var welElem = document.querySelector("#greetings .greet-text");
+
+                          var curHr = new Date().getHours();
+
+                          var welMes = [
+                            "Have a Sweet Dreams!",
+                            "Good Morning!",
+                            "Good Afternoon!",
+                            "Good Evening!",
+                            "Good Night!",
+                            "It's time to sleep!"
+                          ];
+
+                          let welText = "";
+
+                          if (curHr < 4) welText = welMes[0];
+                          else if (curHr < 12) welText = welMes[1];
+                          else if (curHr < 17) welText = welMes[2];
+                          else if (curHr < 19) welText = welMes[3];
+                          else if (curHr < 22) welText = welMes[4];
+                          else welText = welMes[5];
+
+                          welElem.textContent = welText;</script>
 
 
 
@@ -793,7 +815,7 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                             </a>
                             <div class="pDr">
                               <bdi class="pDt pIn">
-                                <time class="aTtmp pTtmp upd" data-date="Published:" data-text="{-scraped_at-}"></time>
+                                <time class="aTtmp pTtmp upd">Published: {-scraped_at-}</time>
                               </bdi>
                               <div class="pRd pIn"><bdi id="rdTime"></bdi></div>
                             </div>
@@ -875,6 +897,10 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                                       <span class="job-card__label">Working Language</span>
                                       <span class="job-card__value">{-job language-}</span>
                                     </li>
+                                    <li class="job-card__item">
+                                      <span class="job-card__label">Deadline</span>
+                                      <span class="job-card__value">{-job deadline-}</span>
+                                    </li>
 
                                   </ul>
                                 </section>
@@ -902,15 +928,15 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                                   <ul class="job-card__list">
                                     <li class="job-card__item">
                                       <span class="job-card__label">Company</span>
-                                      <span class="job-card__value">{-company-}</span>
+                                      <span translate="no" class="job-card__value">{-company-}</span>
                                     </li>
                                     <li class="job-card__item" {-display_contact_person-}>
                                       <span class="job-card__label">Contact Person</span>
-                                      <span class="job-card__value">{-job_employer_name-}</span>
+                                      <span translate="no" class="job-card__value">{-job_employer_name-}</span>
                                     </li>
                                     <li class="job-card__item" {-display_employer_email-}>
                                       <span class="job-card__label">Email</span>
-                                      <span class="job-card__value">{-employer_email-}</span>
+                                      <span translate="no" class="job-card__value">{-employer_email-}</span>
                                     </li>
                                     <li class="job-card__item" {-display_employer_phone-}>
                                       <span class="job-card__label">Phone No</span>
@@ -1136,19 +1162,17 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                             <h2 class="title dt">About the Author</h2>
                             <div class="admPs">
                               <div class="admIm">
-                                <div class="im lazy lazy"
-                                  data-style="background-image: url(//findjobsinfinland.fi/images/prasiddha-acharya.png)">
+                                <div class="im lazy lazy" data-style="background-image: url(//{-author_photo-})">
                                 </div>
                                 <noscript>
-                                  <div class='im'
-                                    style="background-image: url(//findjobsinfinland.fi/images/prasiddha-acharya.png)">
+                                  <div class='im' style="background-image: url(//{-author_photo-})">
                                   </div>
                                 </noscript>
                               </div>
                               <div class="admI">
-                                <bdi class="admN" data-text="Prasiddha Acharya" data-write="Posted by"></bdi>
+                                <bdi class="admN"><span class="admnname">Posted by : </span>{-author_name-}</bdi>
                                 <div class="admA">
-                                  Prasiddha Acharya is one of the authors of <a href="https://findjobsinfinland.fi"
+                                  {-author_name-} is one of the authors of <a href="https://findjobsinfinland.fi"
                                     title="Visit findjobsinfinland.fi">findjobsinfinland.fi</a>, a leading job portal in
                                   Finland dedicated to connecting immigrants, students, and local residents with
                                   part-time and full-time opportunities across various sectors, including cleaning, IT,
@@ -1158,26 +1182,27 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
                             </div>
                           </div>
                           <div class="pSh">
-                            <div class="pShc" data-text="&nbsp; Share :">
-                              <a id="fb" href="#" target="_blank" aria-label="Facebook" class="longbtns c fb"
-                                data-text="Share" rel="noopener" role="button"> <span class="dispc">&nbsp;</span>
+                            <div class="pShc">Share :
+                              <a translate="no" id="fb" href="#" target="_blank" aria-label="Facebook"
+                                class="longbtns c fb" data-text="Share" rel="noopener" role="button"> <span
+                                  class="dispc">&nbsp;</span>
                                 <svg viewBox="0 0 64 64">
                                   <path
                                     d="M20.1,36h3.4c0.3,0,0.6,0.3,0.6,0.6V58c0,1.1,0.9,2,2,2h7.8c1.1,0,2-0.9,2-2V36.6c0-0.3,0.3-0.6,0.6-0.6h5.6 c1,0,1.9-0.7,2-1.7l1.3-7.8c0.2-1.2-0.8-2.4-2-2.4h-6.6c-0.5,0-0.9-0.4-0.9-0.9v-5c0-1.3,0.7-2,2-2h5.9c1.1,0,2-0.9,2-2V6.2 c0-1.1-0.9-2-2-2h-7.1c-13,0-12.7,10.5-12.7,12v7.3c0,0.3-0.3,0.6-0.6,0.6h-3.4c-1.1,0-2,0.9-2,2v7.8C18.1,35.1,19,36,20.1,36z">
                                   </path>
                                 </svg>
                               </a>
-                              <a aria-label="Whatsapp" class="longbtns c wa" data-text="Share" id="wa" href="#"
-                                rel="noopener" role="button" target="_blank"> <span class="dispc">&nbsp;</span>
+                              <a translate="no" aria-label="Whatsapp" class="longbtns c wa" data-text="Share" id="wa"
+                                href="#" rel="noopener" role="button" target="_blank"> <span class="dispc">&nbsp;</span>
                                 <svg viewBox="0 0 64 64">
                                   <path
                                     d="M6.9,48.4c-0.4,1.5-0.8,3.3-1.3,5.2c-0.7,2.9,1.9,5.6,4.8,4.8l5.1-1.3c1.7-0.4,3.5-0.2,5.1,0.5 c4.7,2.1,10,3,15.6,2.1c12.3-1.9,22-11.9,23.5-24.2C62,17.3,46.7,2,28.5,4.2C16.2,5.7,6.2,15.5,4.3,27.8c-0.8,5.6,0,10.9,2.1,15.6 C7.1,44.9,7.3,46.7,6.9,48.4z M21.3,19.8c0.6-0.5,1.4-0.9,1.8-0.9s2.3-0.2,2.9,1.2c0.6,1.4,2,4.7,2.1,5.1c0.2,0.3,0.3,0.7,0.1,1.2 c-0.2,0.5-0.3,0.7-0.7,1.1c-0.3,0.4-0.7,0.9-1,1.2c-0.3,0.3-0.7,0.7-0.3,1.4c0.4,0.7,1.8,2.9,3.8,4.7c2.6,2.3,4.9,3,5.5,3.4 c0.7,0.3,1.1,0.3,1.5-0.2c0.4-0.5,1.7-2,2.2-2.7c0.5-0.7,0.9-0.6,1.6-0.3c0.6,0.2,4,1.9,4.7,2.2c0.7,0.3,1.1,0.5,1.3,0.8 c0.2,0.3,0.2,1.7-0.4,3.2c-0.6,1.6-2.1,3.1-3.2,3.5c-1.3,0.5-2.8,0.7-9.3-1.9c-7-2.8-11.8-9.8-12.1-10.3c-0.3-0.5-2.8-3.7-2.8-7.1 C18.9,22.1,20.7,20.4,21.3,19.8z">
                                   </path>
                                 </svg>
                               </a>
-                              <a aria-label="X / Twitter" style="background: #000000;" class="longbtns c tw"
-                                data-text="Tweet" id="tw" href="#" rel="noopener" role="button" target="_blank"> <span
-                                  class="dispc">&nbsp;</span>
+                              <a translate="no" aria-label="X / Twitter" style="background: #000000;"
+                                class="longbtns c tw" data-text="Tweet" id="tw" href="#" rel="noopener" role="button"
+                                target="_blank"> <span class="dispc">&nbsp;</span>
                                 <svg viewBox="0 0 1200 1227" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
                                   fill="currentColor">
                                   <path
@@ -1442,7 +1467,7 @@ Apply now from the link and don’t miss out!
                   <div class="widget PopularPosts" data-version="2" id="PopularPosts00">
                     <h2 class="title dt">Facebook Page</h2>
                     <div class="facebook-container">
-                      <div class="facebook-header">
+                      <div class="facebook-header" translate="no">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
                           alt="Facebook Logo">
                         Facebook
@@ -1475,7 +1500,7 @@ Apply now from the link and don’t miss out!
                     <h2 class="title dt">Linked-In Page</h2>
 
                     <div class="linkedin-card" id="linkedinCard">
-                      <div class="linkedin-header">
+                      <div class="linkedin-header" translate="no">
                         <a href="#">Linked</a>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                           alt="LinkedIn Logo">
@@ -1627,10 +1652,9 @@ Apply now from the link and don’t miss out!
                           </div>
                         </div>
                         <div class="iInf pSml" style="text-align: center;">
-                          <time class="aTtmp iTtmp pbl" data-text="Published on " datetime="2023-05-23T23:05:00-07:00"
-                            title=""></time>
+                          <time class="aTtmp iTtmp pbl" title="">Published on &#8212; April 10, 2026</time>
                           <div class="pLbls">
-                            <a class="unclicklocation" aria-label="National" data-text="June 22, 2025"
+                            <a class="unclicklocation" aria-label="National" data-text=""
                               href="https://findjobsinfinland.fi/blogs/tips-and-tricks-for-interview-in-finland"
                               rel="tag">
                             </a>
@@ -1689,10 +1713,9 @@ Apply now from the link and don’t miss out!
                           </div>
                         </div>
                         <div class="iInf pSml" style="text-align: center;">
-                          <time class="aTtmp iTtmp pbl" data-text="Published on " datetime="2023-05-23T23:05:00-07:00"
-                            title=""></time>
+                          <time class="aTtmp iTtmp pbl" title="">Published on &#8212; April 14, 2026</time>
                           <div class="pLbls">
-                            <a class="unclicklocation" aria-label="National" data-text="June 25, 2025"
+                            <a class="unclicklocation" aria-label="National"
                               href="https://findjobsinfinland.fi/blogs/industry-wise-minimum-wages-in-finland"
                               rel="tag">
                             </a>
@@ -1727,12 +1750,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-02-11T04:06:00-08:00"
-                            title="Published: Ashar 13, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Vantaa, Uusima, Finland"
-                              data-text="Vantaa, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Vantaa, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -1745,12 +1764,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-05-13T00:07:00-07:00"
-                            title="Published: Jestha 25, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Itäkeskus, Uusima, Finland"
-                              data-text="Itäkeskus, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Itäkeskus, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -1762,12 +1777,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-04-29T05:35:00-07:00"
-                            title="Published: Baisak 12, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Helsinki, Uusima, Finland"
-                              data-text="Helsinki, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Helsinki, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -1779,12 +1790,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-04-14T02:51:00-07:00"
-                            title="Published: Jestha 11, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Hyvinkää, Uusima, Finland"
-                              data-text="Hyvinkää, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Hyvinkää, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -1796,12 +1803,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-04-14T02:51:00-07:00"
-                            title="Published: Baishak 06, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Espoo, Uusima, Finland"
-                              data-text="Espoo, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Espoo, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -1814,12 +1817,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-04-14T02:51:00-07:00"
-                            title="Published: Baishak 06, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Pasila, Uusima, Finland"
-                              data-text="Pasila, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Pasila, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -1832,12 +1831,8 @@ Apply now from the link and don’t miss out!
 
                       <article class="itm">
                         <div class="iInf pSml">
-                          <time class="aTtmp iTtmp pbl" data-text="Available Now" datetime="2023-04-14T02:51:00-07:00"
-                            title="Published: Baishak 06, 2080"></time>
-                          <div class="pLbls" data-text="In">
-                            <a class="unclicklocation" aria-label="Tikurilla, Uusima, Finland"
-                              data-text="Tikurilla, Uusima, Finland"></a>
-                          </div>
+                          <time class="aTtmp iTtmp pbl">Available Now &#8212; &nbsp; <span style="font-weight: bold;">In
+                              Tikurilla, Uusima, Finland</span></time>
                         </div>
                         <div class="iCtnt">
                           <div class="iInr">
@@ -2234,9 +2229,10 @@ Apply now from the link and don’t miss out!
                         <ul class="lbAl">
 
 
-                          <li><a aria-label="Inkoo" class="lbN" href="https://findjobsinfinland.fi/jobs?location=inkoo"
-                              rel="nofollow"><span class="lbT">Inkoo</span><span class="lbR"><span class="lbC"
-                                  data-text="6"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Inkoo" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=inkoo" rel="nofollow"><span
+                                class="lbT">Inkoo</span><span class="lbR"><span class="lbC" data-text="6"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2244,7 +2240,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Pasila" class="lbN"
+                          <li><a aria-label="Pasila" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=pasila" rel="nofollow"><span
                                 class="lbT">Pasila</span><span class="lbR"><span class="lbC" data-text="17"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2255,9 +2251,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Malmi" class="lbN" href="https://findjobsinfinland.fi/jobs?location=malmi"
-                              rel="nofollow"><span class="lbT">Malmi</span><span class="lbR"><span class="lbC"
-                                  data-text="25"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Malmi" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=malmi" rel="nofollow"><span
+                                class="lbT">Malmi</span><span class="lbR"><span class="lbC" data-text="25"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2265,7 +2262,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Tikkurila" class="lbN"
+                          <li><a aria-label="Tikkurila" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=tikkurila" rel="nofollow"><span
                                 class="lbT">Tikkurila</span><span class="lbR"><span class="lbC"
                                   data-text="34"></span><svg class="line" viewBox="0 0 24 24">
@@ -2276,7 +2273,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Leppävaara" class="lbN"
+                          <li><a aria-label="Leppävaara" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=leppavaara" rel="nofollow"><span
                                 class="lbT">Leppävaara</span><span class="lbR"><span class="lbC"
                                   data-text="20"></span><svg class="line" viewBox="0 0 24 24">
@@ -2287,7 +2284,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Matinkylä" class="lbN"
+                          <li><a aria-label="Matinkylä" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=matinkyla" rel="nofollow"><span
                                 class="lbT">Matinkylä</span><span class="lbR"><span class="lbC"
                                   data-text="19"></span><svg class="line" viewBox="0 0 24 24">
@@ -2298,7 +2295,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Myyrmäki" class="lbN"
+                          <li><a aria-label="Myyrmäki" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=myyrmaki" rel="nofollow"><span
                                 class="lbT">Myyrmäki</span><span class="lbR"><span class="lbC"
                                   data-text="16"></span><svg class="line" viewBox="0 0 24 24">
@@ -2309,7 +2306,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Kamppi" class="lbN"
+                          <li><a aria-label="Kamppi" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=kamppi" rel="nofollow"><span
                                 class="lbT">Kamppi</span><span class="lbR"><span class="lbC" data-text="13"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2320,7 +2317,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Kallio" class="lbN"
+                          <li><a aria-label="Kallio" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=kallio" rel="nofollow"><span
                                 class="lbT">Kallio</span><span class="lbR"><span class="lbC" data-text="10"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2331,7 +2328,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Tapiola" class="lbN"
+                          <li><a aria-label="Tapiola" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=tapiola" rel="nofollow"><span
                                 class="lbT">Tapiola</span><span class="lbR"><span class="lbC" data-text="22"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2342,7 +2339,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Itäkeskus" class="lbN"
+                          <li><a aria-label="Itäkeskus" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=itakeskus" rel="nofollow"><span
                                 class="lbT">Itäkeskus</span><span class="lbR"><span class="lbC"
                                   data-text="8"></span><svg class="line" viewBox="0 0 24 24">
@@ -2353,7 +2350,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Lauttasaari" class="lbN"
+                          <li><a aria-label="Lauttasaari" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=lauttasaari" rel="nofollow"><span
                                 class="lbT">Lauttasaari</span><span class="lbR"><span class="lbC"
                                   data-text="9"></span><svg class="line" viewBox="0 0 24 24">
@@ -2364,7 +2361,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Tampere" class="lbN"
+                          <li><a aria-label="Tampere" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=tampere" rel="nofollow"><span
                                 class="lbT">Tampere</span><span class="lbR"><span class="lbC" data-text="29"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2375,9 +2372,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Turku" class="lbN" href="https://findjobsinfinland.fi/jobs?location=turku"
-                              rel="nofollow"><span class="lbT">Turku</span><span class="lbR"><span class="lbC"
-                                  data-text="33"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Turku" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=turku" rel="nofollow"><span
+                                class="lbT">Turku</span><span class="lbR"><span class="lbC" data-text="33"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2385,9 +2383,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Oulu" class="lbN" href="https://findjobsinfinland.fi/jobs?location=oulu"
-                              rel="nofollow"><span class="lbT">Oulu</span><span class="lbR"><span class="lbC"
-                                  data-text="14"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Oulu" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=oulu" rel="nofollow"><span
+                                class="lbT">Oulu</span><span class="lbR"><span class="lbC" data-text="14"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2395,7 +2394,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Jyväskylä" class="lbN"
+                          <li><a aria-label="Jyväskylä" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=jyvaskyla" rel="nofollow"><span
                                 class="lbT">Jyväskylä</span><span class="lbR"><span class="lbC"
                                   data-text="20"></span><svg class="line" viewBox="0 0 24 24">
@@ -2406,7 +2405,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Kuopio" class="lbN"
+                          <li><a aria-label="Kuopio" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=kuopio" rel="nofollow"><span
                                 class="lbT">Kuopio</span><span class="lbR"><span class="lbC" data-text="12"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2417,9 +2416,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Lahti" class="lbN" href="https://findjobsinfinland.fi/jobs?location=lahti"
-                              rel="nofollow"><span class="lbT">Lahti</span><span class="lbR"><span class="lbC"
-                                  data-text="27"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Lahti" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=lahti" rel="nofollow"><span
+                                class="lbT">Lahti</span><span class="lbR"><span class="lbC" data-text="27"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2427,9 +2427,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Vaasa" class="lbN" href="https://findjobsinfinland.fi/jobs?location=vaasa"
-                              rel="nofollow"><span class="lbT">Vaasa</span><span class="lbR"><span class="lbC"
-                                  data-text="11"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Vaasa" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=vaasa" rel="nofollow"><span
+                                class="lbT">Vaasa</span><span class="lbR"><span class="lbC" data-text="11"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2437,7 +2438,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Seinäjoki" class="lbN"
+                          <li><a aria-label="Seinäjoki" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=seinajoki" rel="nofollow"><span
                                 class="lbT">Seinäjoki</span><span class="lbR"><span class="lbC"
                                   data-text="15"></span><svg class="line" viewBox="0 0 24 24">
@@ -2448,7 +2449,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Rovaniemi" class="lbN"
+                          <li><a aria-label="Rovaniemi" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=rovaniemi" rel="nofollow"><span
                                 class="lbT">Rovaniemi</span><span class="lbR"><span class="lbC"
                                   data-text="7"></span><svg class="line" viewBox="0 0 24 24">
@@ -2459,9 +2460,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Kotka" class="lbN" href="https://findjobsinfinland.fi/jobs?location=kotka"
-                              rel="nofollow"><span class="lbT">Kotka</span><span class="lbR"><span class="lbC"
-                                  data-text="24"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Kotka" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=kotka" rel="nofollow"><span
+                                class="lbT">Kotka</span><span class="lbR"><span class="lbC" data-text="24"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2469,7 +2471,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Lappeenranta" class="lbN"
+                          <li><a aria-label="Lappeenranta" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=lappeenranta" rel="nofollow"><span
                                 class="lbT">Lappeenranta</span><span class="lbR"><span class="lbC"
                                   data-text="28"></span><svg class="line" viewBox="0 0 24 24">
@@ -2480,9 +2482,10 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Pori" class="lbN" href="https://findjobsinfinland.fi/jobs?location=pori"
-                              rel="nofollow"><span class="lbT">Pori</span><span class="lbR"><span class="lbC"
-                                  data-text="23"></span><svg class="line" viewBox="0 0 24 24">
+                          <li><a aria-label="Pori" class="lbN" translate="no"
+                              href="https://findjobsinfinland.fi/jobs?location=pori" rel="nofollow"><span
+                                class="lbT">Pori</span><span class="lbR"><span class="lbC" data-text="23"></span><svg
+                                  class="line" viewBox="0 0 24 24">
                                   <g transform="translate(4.5, 2.5)">
                                     <path
                                       d="M7.47,0 C1.08,0 0.00,0.93 0.00,8.43 C0.00,16.82 -0.15,19 1.44,19 C3.03,19 5.64,15.31 7.47,15.31 C9.29,15.31 11.90,19 13.49,19 C15.09,19 14.93,16.82 14.93,8.43 C14.93,0.93 13.85,0 7.47,0 Z">
@@ -2490,7 +2493,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Kokkola" class="lbN"
+                          <li><a aria-label="Kokkola" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=kokkola" rel="nofollow"><span
                                 class="lbT">Kokkola</span><span class="lbR"><span class="lbC" data-text="16"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2501,7 +2504,7 @@ Apply now from the link and don’t miss out!
                                   </g>
                                 </svg></span></a></li>
 
-                          <li><a aria-label="Joensuu" class="lbN"
+                          <li><a aria-label="Joensuu" class="lbN" translate="no"
                               href="https://findjobsinfinland.fi/jobs?location=joensuu" rel="nofollow"><span
                                 class="lbT">Joensuu</span><span class="lbR"><span class="lbC" data-text="18"></span><svg
                                   class="line" viewBox="0 0 24 24">
@@ -2935,67 +2938,90 @@ Apply now from the link and don’t miss out!
                   </div>
                 </div>
                 <div class="section" id="footer-widget-3">
-
                   <div class="widget LinkList" data-version="2" id="LinkList03">
-                    <h3 class="title">
-                      Available Jobs
-                    </h3>
+                    <h3 class="title">Available Jobs</h3>
                     <div class="widget-content">
                       <ul>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=it+and+software" rel="nofollow"><span>IT &
-                              Software</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=engineering"
-                            rel="nofollow"><span>Engineering</span></a>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=information+technology" rel="nofollow">
+                            <span>Information Technology</span>
+                          </a>
                         </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=nursing"
-                            rel="nofollow"><span>Nursing</span></a>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=engineering+and+design" rel="nofollow">
+                            <span>Engineering &amp; Design</span>
+                          </a>
                         </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=construction+and+labor"
-                            rel="nofollow"><span>Construction
-                              & Labor</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=logistics+and+delivery"
-                            rel="nofollow"><span>Logistics &
-                              Delivery</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=customer+service+support"
-                            rel="nofollow"><span>Customer
-                              Service Support</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=internships+and+traineeships"
-                            rel="nofollow"><span>Internships
-                              & Traineeships</span></a></li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=healthcare" rel="nofollow">
+                            <span>Healthcare</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=accounting+and+finance" rel="nofollow">
+                            <span>Accounting &amp; Finance</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=research+and+development" rel="nofollow">
+                            <span>Research &amp; Development</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=government+jobs" rel="nofollow">
+                            <span>Government &amp; Public Sector</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=education+teaching" rel="nofollow">
+                            <span>Education</span>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
+
                 <div class="section" id="footer-widget-4">
-
-
                   <div class="widget LinkList secwid" data-version="2" id="LinkList04">
-
-                    <h3 class="title">
-                      <br>
-                    </h3>
+                    <h3 class="title"><br /></h3>
                     <div class="widget-content">
                       <ul>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=cleaning"
-                            rel="nofollow noindex"><span>Cleaning</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=housekeeping"
-                            rel="nofollow"><span>Housekepping</span></a>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=social+care" rel="nofollow">
+                            <span>Social Care Services</span>
+                          </a>
                         </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=cooking"
-                            rel="nofollow"><span>Cooking</span></a>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=cleaning+jobs" rel="nofollow">
+                            <span>Cleaning &amp; Facility Services</span>
+                          </a>
                         </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=hospitality+and+service"
-                            rel="nofollow"><span>Hospitality
-                              & Service</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=education+and+teaching"
-                            rel="nofollow"><span>Education &
-                              Teaching</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=finance+and+accounting"
-                            rel="nofollow"><span>Finance &
-                              Accounting</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=sales+and+marketing" rel="nofollow"><span>Sales
-                              &
-                              Marketing</span></a></li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=warehouse+jobs" rel="nofollow">
+                            <span>Warehousing &amp; Storage</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=logistics+jobs" rel="nofollow">
+                            <span>Transportation &amp; Logistics</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=construction+jobs" rel="nofollow">
+                            <span>Construction</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=restaurant+jobs" rel="nofollow">
+                            <span>Food &amp; Restaurant</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://findjobsinfinland.fi/jobs?q=hospitality+jobs" rel="nofollow">
+                            <span>Hospitality &amp; Tourism</span>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>

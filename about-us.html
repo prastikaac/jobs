@@ -566,8 +566,23 @@
                         <h1 style="margin-top: 10px; text-align: center;" class="pTtl aTtl sml itm">
                           About Us
                         </h1>
+                        <div class="pGV" style="margin-left: -10px;">
+                          <span class="pGrt" id="greetings">
+                            <svg viewbox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                fill-rule="evenodd"></path>
+                              <path class="svgC"
+                                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z">
+                              </path>
+                              <path class="svgC"
+                                d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z">
+                              </path>
+                            </svg> <span class="greet-text"></span>
+                          </span>
+
+                        </div>
                         <script
-                          type="text/javascript">/*<![CDATA[*/ var welElem = document.querySelector("#greetings"); var curHr = new Date().getHours(); var welMes = ["Have a Sweet Dreams!", "Good Morning!", "Good Afternoon!", "Good Evening!", "Good Night!", "It's time to sleep!"]; let welText = ""; if (curHr < 4) welText = welMes[0]; else if (curHr < 12) welText = welMes[1]; else if (curHr < 17) welText = welMes[2]; else if (curHr < 19) welText = welMes[3]; else if (curHr < 22) welText = welMes[4]; else welText = welMes[5]; welElem.setAttribute('data-text', welText); /*]]>*/</script>
+                          type="text/javascript">/*<![CDATA[*/ var welElem = document.querySelector("#greetings .greet-text"); var curHr = new Date().getHours(); var welMes = ["Have a Sweet Dreams!", "Good Morning!", "Good Afternoon!", "Good Evening!", "Good Night!", "It's time to sleep!"]; let welText = ""; if (curHr < 4) welText = welMes[0]; else if (curHr < 12) welText = welMes[1]; else if (curHr < 17) welText = welMes[2]; else if (curHr < 19) welText = welMes[3]; else if (curHr < 22) welText = welMes[4]; else welText = welMes[5]; welElem.textContent = welText; /*]]>*/</script>
 
 
                         <div class="pInr">
@@ -1310,70 +1325,94 @@
                   </div>
                 </div>
                 <div class="section" id="footer-widget-3">
+  <div class="widget LinkList" data-version="2" id="LinkList03">
+    <h3 class="title">Available Jobs</h3>
+    <div class="widget-content">
+      <ul>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=information+technology" rel="nofollow">
+            <span>Information Technology</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=engineering+and+design" rel="nofollow">
+            <span>Engineering &amp; Design</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=healthcare" rel="nofollow">
+            <span>Healthcare</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=accounting+and+finance" rel="nofollow">
+            <span>Accounting &amp; Finance</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=research+and+development" rel="nofollow">
+            <span>Research &amp; Development</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=government+jobs" rel="nofollow">
+            <span>Government &amp; Public Sector</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=education+teaching" rel="nofollow">
+            <span>Education</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-                  <div class="widget LinkList" data-version="2" id="LinkList03">
-                    <h3 class="title">
-                      Available Jobs
-                    </h3>
-                    <div class="widget-content">
-                      <ul>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=it+and+software" rel="nofollow"><span>IT &
-                              Software</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=engineering"
-                            rel="nofollow"><span>Engineering</span></a>
-                        </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=nursing"
-                            rel="nofollow"><span>Nursing</span></a>
-                        </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=construction+and+labor"
-                            rel="nofollow"><span>Construction
-                              & Labor</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=logistics+and+delivery"
-                            rel="nofollow"><span>Logistics &
-                              Delivery</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=customer+service+support"
-                            rel="nofollow"><span>Customer
-                              Service Support</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=internships+and+traineeships"
-                            rel="nofollow"><span>Internships
-                              & Traineeships</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="section" id="footer-widget-4">
-
-
-                  <div class="widget LinkList secwid" data-version="2" id="LinkList04">
-
-                    <h3 class="title">
-                      <br>
-                    </h3>
-                    <div class="widget-content">
-                      <ul>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=cleaning"
-                            rel="nofollow noindex"><span>Cleaning</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=housekeeping"
-                            rel="nofollow"><span>Housekepping</span></a>
-                        </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=cooking"
-                            rel="nofollow"><span>Cooking</span></a>
-                        </li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=hospitality+and+service"
-                            rel="nofollow"><span>Hospitality
-                              & Service</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=education+and+teaching"
-                            rel="nofollow"><span>Education &
-                              Teaching</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=finance+and+accounting"
-                            rel="nofollow"><span>Finance &
-                              Accounting</span></a></li>
-                        <li><a href="https://findjobsinfinland.fi/jobs?q=sales+and+marketing"><span>Sales &
-                              Marketing</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+<div class="section" id="footer-widget-4">
+  <div class="widget LinkList secwid" data-version="2" id="LinkList04">
+    <h3 class="title"><br /></h3>
+    <div class="widget-content">
+      <ul>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=social+care" rel="nofollow">
+            <span>Social Care Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=cleaning+jobs" rel="nofollow">
+            <span>Cleaning &amp; Facility Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=warehouse+jobs" rel="nofollow">
+            <span>Warehousing &amp; Storage</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=logistics+jobs" rel="nofollow">
+            <span>Transportation &amp; Logistics</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=construction+jobs" rel="nofollow">
+            <span>Construction</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=restaurant+jobs" rel="nofollow">
+            <span>Food &amp; Restaurant</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://findjobsinfinland.fi/jobs?q=hospitality+jobs" rel="nofollow">
+            <span>Hospitality &amp; Tourism</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
               </div>
 
               <div class="creditInner">

@@ -3976,6 +3976,14 @@ details.ac .aC {
   padding: 0 12px
 }
 
+.admnname {
+  content: attr(data-write) ' ';
+  opacity: .7;
+  font-size: 90%
+}
+
+
+
 .admN::before {
   content: attr(data-write) ' ';
   opacity: .7;
@@ -4749,12 +4757,7 @@ a.prfL:hover {
   display: inline-flex
 }
 
-.iTtmp::after {
-  content: '\2014';
-  margin: 0 5px;
-  color: var(--widgetTac);
-  opacity: .7
-}
+
 
 .iInf {
   margin: 0 25px 8px;
@@ -9331,13 +9334,3 @@ img.goog-te-gadget-icon,
     border-radius: 22px 22px 0 0 !important;
   }
 }
-
-
-
-
-
-
-
-
-
-

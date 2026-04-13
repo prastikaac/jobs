@@ -114,7 +114,13 @@ async function addFcmToken(userId, newToken) {
 
 
 
+let _messagingInitPromise = null;
+
 async function initMessaging() {
+  // Return existing promise if already initialising/initialised
+  if (_messagingInitPromise) return _messagingInitPromise;
+
+  _messagingInitPromise = (async () => {
   if ('serviceWorker' in navigator) {
     try {
       const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
@@ -157,9 +163,13 @@ async function initMessaging() {
   } else {
     console.warn('Service Workers not supported in this browser.');
   }
+  return messaging;
+  })();
+
+  return _messagingInitPromise;
 }
 
-initMessaging(); // ✅ Make sure this is called on load
+initMessaging(); // ✅ Called on load — stores promise so later callers can await it
 
 
 
@@ -942,6 +952,15 @@ async function getOrCreateFcmToken() {
     return null;
   }
 
+  // Ensure messaging is initialised before proceeding (fixes race condition)
+  if (!messaging) {
+    await initMessaging();
+  }
+  if (!messaging) {
+    console.warn("Messaging could not be initialised. Skipping FCM token fetch.");
+    return null;
+  }
+
   // Check if token is already cached in localStorage
   const cached = localStorage.getItem(LS_TOKEN_KEY);
   if (cached) return cached;
@@ -1107,8 +1126,20 @@ window.clickLabelOnYes = function () {
 
 async function updateFcmToken(uid) {
   try {
+    // Ensure messaging is ready (fixes race on signup/re-enable flow)
+    if (!messaging) await initMessaging();
+    if (!messaging) {
+      console.warn("updateFcmToken: messaging not available, skipping.");
+      return;
+    }
+
+    // Must pass serviceWorkerRegistration so the correct SW is used
+    let swReg = await navigator.serviceWorker.getRegistration('/');
+    if (!swReg) swReg = await navigator.serviceWorker.ready;
+
     const currentToken = await getToken(messaging, {
-      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY"
+      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+      serviceWorkerRegistration: swReg
     });
 
     if (!currentToken) {

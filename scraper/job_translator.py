@@ -1,12 +1,12 @@
 """
-job_translator.py — Phase 2: Offline Translation (Argos FI→EN).
+job_translator.py — Phase 2: Offline Translation (FI/SV→EN).
 
-Translates raw Finnish job content to English using ArgosTranslate.
+Translates raw Finnish or Swedish job content to English using GoogleTranslator.
 Saves:
 - rawjobs.json (raw jobs with translated_content cache)
 - translated_raw_jobs.json (Phase 2 output only)
 
-This module runs entirely offline — no network calls, no AI models.
+This module handles translations natively via deep_translator.
 """
 
 import logging
@@ -50,7 +50,7 @@ def _split_translated_title_and_content(translated_text: str, fallback_title: st
 
 def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] | None = None) -> list[dict]:
     """
-    Phase 2: Translate all untranslated raw jobs from Finnish to English using Argos.
+    Phase 2: Translate all untranslated raw jobs from Finnish/Swedish to English.
     Stores the translated text in `translated_content` on raw jobs and marks
     translation status in processing_state.
 
@@ -71,7 +71,7 @@ def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] |
         logger.info("All raw jobs already translated.")
         return raw_jobs
 
-    logger.info("Translating %d raw jobs (Argos FI→EN)…", len(untranslated))
+    logger.info("Translating %d raw jobs (FI/SV→EN)…", len(untranslated))
 
     for i, raw in enumerate(untranslated, 1):
         title = raw.get("title", raw.get("id", ""))

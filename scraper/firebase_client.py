@@ -144,7 +144,7 @@ def send_job_alert(job: dict) -> str:
 
     alert_doc = {
         "createdAt":   fs.SERVER_TIMESTAMP,
-        "expiresAt":   expires_at_utc if expires_at_utc else fs.SERVER_TIMESTAMP,
+        "expiresAt":   expires_at_utc if expires_at_utc else None,  # None → Firestore null; never fake-expire a job
         "date_posted": job.get("date_posted", ""),
         "date_expires": date_expires_str,
         "description": description,

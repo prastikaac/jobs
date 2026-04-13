@@ -95,7 +95,7 @@ jobAlertPopup.innerHTML = `
         to re-enable browser notifications for this site. It’s quick and easy—just follow the steps
         below:
       </p>
-      <p class="popup-description-for-mobile-unique blockeddescription" id="descriptionPCEnableNotifications">
+      <p class="popup-description-for-mobile-unique blockeddescription" id="descriptionMobileEnableNotifications">
         If you'd like to re-enable notifications to start receiving personalized job alerts and
         updates, follow these steps:
       </p>
@@ -114,7 +114,7 @@ jobAlertPopup.innerHTML = `
         <li id="step2Enable">Select <strong>"Permissions"</strong> & Click on <strong>"Reset Permissions"</strong></li>
         <li id="step3Enable">Press <strong>"Reset"</strong> and refresh the page.</li>
       </ol>
-      <button class="blockclosebtn">Close</sbutton>
+      <button class="blockclosebtn">Close</button>
     </div>
   `;
 

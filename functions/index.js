@@ -468,7 +468,10 @@ async function sendDigestAlerts(frequency) {
         }
 
         if (pushNotificationEnabled && fcmTokens.length > 0) {
-            for (const token of fcmTokens) {
+            // Snapshot the token list so that cleanup of invalid tokens during
+            // iteration doesn't affect the loop (fixes stale-array bug)
+            const tokenSnapshot = [...fcmTokens]
+            for (const token of tokenSnapshot) {
                 if (!token) continue
 
                 const success = await sendPushToTokenAndCleanup({
@@ -561,8 +564,8 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
     const db = getFirestore()
     const messaging = getMessaging()
 
-    // Safety check: skip if already expired
-    if (isExpiredTimestamp(jobData.expiresAt)) {
+    // Safety check: skip only if explicitly set AND already expired
+    if (jobData.expiresAt && isExpiredTimestamp(jobData.expiresAt)) {
         console.log(`Skipping expired job alert for ${event.params.jobId}`)
         return
     }

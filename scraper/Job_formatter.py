@@ -745,10 +745,12 @@ def _build_formatted_job(raw_job: dict, ai_data: dict) -> dict:
     desc = ai_data.get("formatted_description") or ai_data.get("description", "")
     if isinstance(desc, list):
         desc = " ".join(str(x) for x in desc if str(x).strip())
+    desc = str(desc).replace("**", "").replace("*", "")
 
     meta_desc = ai_data.get("meta_description", "")
     if isinstance(meta_desc, list):
         meta_desc = " ".join(str(x) for x in meta_desc if str(x).strip())
+    meta_desc = str(meta_desc).replace("**", "").replace("*", "")
     meta_desc = _truncate_safely(meta_desc, MAX_META_DESCRIPTION_CHARS, suffix="")
     safe_slug = config.get_safe_category_slug(category)
     random_num = random.randint(1, 30)

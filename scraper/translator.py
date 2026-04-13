@@ -15,27 +15,27 @@ except ImportError:
 
 logger = logging.getLogger("translator")
 
-_fi_to_en = None
+_auto_to_en = None
 
 # Retry configuration
 _MAX_RETRIES = 3
 _RETRY_DELAYS = [1, 2, 4]  # seconds to wait before each retry attempt
 
 def _get_translator():
-    global _fi_to_en
+    global _auto_to_en
     if not _TRANSLATOR_AVAILABLE:
         logger.warning("deep-translator not installed, translation disabled.")
         return None
     
-    if _fi_to_en is None:
+    if _auto_to_en is None:
         try:
-            _fi_to_en = GoogleTranslator(source='fi', target='en')
-            logger.info("Deep-translator (Google) model loaded successfully.")
+            _auto_to_en = GoogleTranslator(source='auto', target='en')
+            logger.info("Deep-translator (Google) model loaded successfully (source='auto').")
         except Exception as e:
             logger.error(f"Failed to initialize translator: {e}")
             return None
     
-    return _fi_to_en
+    return _auto_to_en
 
 def _clean_for_translation(text: str) -> str:
     """Pre-process text for better translation results."""
@@ -75,7 +75,7 @@ def _translate_with_retry(translator, chunk: str) -> str:
 
 def translate_fi_to_en(text: str) -> str:
     """
-    Translates Finnish text to English using Google Translator.
+    Translates Finnish (or Swedish/other auto-detected languages) text to English using Google Translator.
     Handles texts larger than 4900 characters by chunking.
     Retries up to 3 times with increasing delays on failure, then falls
     back to the original text if all retries are exhausted.
