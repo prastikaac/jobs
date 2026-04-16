@@ -40,3 +40,18 @@ Very easy win.
 - two vieweing cards style
 
 - add 3 more blogs before sending to adsense review
+
+ - instantly send email alerts
+
+ logic for sending alerts :
+
+ email : by selecting the option an annother sub option will appear below it with alert frequency options : daily weekly montthly
+
+ push : by selecting the option an annother sub option will appear below it with alert frequency options : instantly daily weekly montthly
+
+ and for instantly push notification : send the job alert to the user's device immediately after the job is posted 
+
+ and for other daily weekly monthly push notification : send the job alert to the user's device at the scheduled time of the day or week or month and give user to select time schedule of this in another suboption 
+ 
+
+ now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  

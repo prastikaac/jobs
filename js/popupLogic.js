@@ -545,16 +545,13 @@ window.signupUser = async () => {
   const jobTimes = getSelectedValues("jobTimesBox");
   const jobLangs = getSelectedValues("jobLangsBox");
   const jobType = getSelectedValues("jobTypeBox");
-  const jobAlertSub = getSelectedValues("jobAlertSubBox");
-  const jobFreqElement = document.querySelector('input[name="jobFreq"]:checked');
-  const jobAlertFrequency = jobFreqElement ? jobFreqElement.value : "instantly";
 
   if (jobTimes.length === 0) {
     const err = document.getElementById("jobTimesError");
     if (err) err.textContent = "Please select at least one working time.";
     hasError = true;
   }
-  
+
   if (jobLangs.length === 0) {
     const err = document.getElementById("jobLangsError");
     if (err) err.textContent = "Please select at least one working language.";
@@ -567,15 +564,43 @@ window.signupUser = async () => {
     hasError = true;
   }
 
-  if (jobAlertSub.length === 0) {
-    const err = document.getElementById("jobAlertSubError");
-    if (err) err.textContent = "Please select at least one subscription method.";
-    hasError = true;
-  }
+  const emailEnabled = document.getElementById("emailAlertToggle")?.checked ?? true;
+  const pushEnabled = document.getElementById("pushAlertToggle")?.checked ?? true;
 
-  if (!jobFreqElement) {
-    const err = document.getElementById("jobAlertFreqError");
-    if (err) err.textContent = "Please select a job alert frequency.";
+  const emailFreqEl = document.querySelector('input[name="emailFreq"]:checked');
+  const emailAlertFrequency = emailFreqEl ? emailFreqEl.value : "daily";
+
+  const pushFreqEl = document.querySelector('input[name="pushFreq"]:checked');
+  const pushAlertFrequency = pushFreqEl ? pushFreqEl.value : "instantly";
+
+  // Parse push schedule from the native time input
+  const pushTimeVal = document.getElementById("pushScheduleTime")?.value || "09:00";
+  const [pushHour, pushMinute] = pushTimeVal.split(":").map(Number);
+  const pushDay  = parseInt(document.getElementById("pushScheduleDay")?.value  ?? "1", 10);
+  const pushDate = parseInt(document.getElementById("pushScheduleDate")?.value ?? "1", 10);
+  const pushScheduleTime = (pushAlertFrequency !== "instantly") ? {
+    hour: isNaN(pushHour) ? 9 : pushHour,
+    minute: isNaN(pushMinute) ? 0 : pushMinute,
+    ...(pushAlertFrequency === "weekly"  ? { dayOfWeek:   pushDay  } : {}),
+    ...(pushAlertFrequency === "monthly" ? { dayOfMonth:  pushDate } : {})
+  } : null;
+
+  // Parse email schedule from the native time input
+  const emailTimeVal = document.getElementById("emailScheduleTime")?.value || "09:00";
+  const [emailHour, emailMinute] = emailTimeVal.split(":").map(Number);
+  const emailDay  = parseInt(document.getElementById("emailScheduleDay")?.value  ?? "1", 10);
+  const emailDate = parseInt(document.getElementById("emailScheduleDate")?.value ?? "1", 10);
+  const emailScheduleTime = {
+    hour: isNaN(emailHour) ? 9 : emailHour,
+    minute: isNaN(emailMinute) ? 0 : emailMinute,
+    ...(emailAlertFrequency === "weekly"  ? { dayOfWeek:  emailDay  } : {}),
+    ...(emailAlertFrequency === "monthly" ? { dayOfMonth: emailDate } : {})
+  };
+
+  // Validate: at least one channel must be enabled
+  if (!emailEnabled && !pushEnabled) {
+    const err = document.getElementById("jobAlertSubError");
+    if (err) err.textContent = "Please enable at least one notification channel.";
     hasError = true;
   }
 
@@ -611,10 +636,16 @@ window.signupUser = async () => {
       jobTimes: jobTimes,
       jobLanguages: jobLangs,
       jobType: jobType,
-      jobAlertFrequency: jobAlertFrequency,
+      // Per-channel alert preferences
+      emailAlertFrequency: emailAlertFrequency,
+      emailScheduleTime: emailScheduleTime,
+      pushAlertFrequency: pushAlertFrequency,
+      pushScheduleTime: pushScheduleTime,
+      // Legacy fallback: used by existing digest queries until migrated
+      jobAlertFrequency: pushAlertFrequency,
       jobSubscription: {
-        emailNotification: jobAlertSub.includes("email"),
-        pushNotification: jobAlertSub.includes("pushNotification"),
+        emailNotification: emailEnabled,
+        pushNotification: pushEnabled,
       },
       createdAt: timestampNow,
       lastLogin: timestampNow,

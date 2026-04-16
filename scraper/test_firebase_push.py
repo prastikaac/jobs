@@ -9,26 +9,24 @@ import time
 import firebase_client
 
 def run_test():
-    with open('data/jobs.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    import time
     
-    # Flatten jobs from all sessions
-    all_jobs = []
-    for session in data:
-        all_jobs.extend(session.get('jobs', []))
+    test_job = {
+        "id": "gmail-test-" + str(int(time.time())),
+        "title": "Software Developer - Helsinki (Test)",
+        "company": "FindJobsInFinland",
+        "jobUrl": "https://findjobsinfinland.fi/jobs",
+        "description": "This is a test alert to verify Gmail SMTP delivery is working correctly.",
+        "jobLocation": [],
+        "jobCategory": [],
+        "jobTimes": [],
+        "jobType": [],
+        "jobLanguages": [],
+        "date_posted": "2026-04-14",
+        "date_expires": "2026-05-14"
+    }
     
-    if not all_jobs:
-        print("No jobs found in data/jobs.json")
-        return
-
-    # Take last job 
-    test_job = all_jobs[-1]
-    
-    # Change ID to avoid skip
-    test_job['id'] = test_job['id'] + '-test-' + str(int(time.time()))
-    test_job['title'] = "[TEST-URL] " + test_job.get('title', 'Unknown')
-    
-    print(f"Testing Firebase alert send for: {test_job['title']}")
+    print(f"Testing Firebase alert send for: {test_job.get('title')}")
     print(f"URL being sent: {test_job.get('jobUrl')}")
     
     firebase_client.init_firebase()

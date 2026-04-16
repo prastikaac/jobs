@@ -131,21 +131,76 @@ wrapper.innerHTML = `
         <div id="jobTypeError" class="error-message"></div>
 
       <h3>VI. How do you want to receive job alerts?</h3>
-      <p class="popup-description" style="margin-top:-10px; margin-bottom:15px; font-size:14px;">Select how you want to receive job updates.</p>
-      <div class="select-box" id="jobAlertSubBox">
-        <div class="option-row"><span>Email</span><label class="switch"><input type="checkbox" value="email" checked /><span class="slider"></span></label></div>
-        <div class="option-row"><span>Push Notification</span><label class="switch"><input type="checkbox" value="pushNotification" checked /><span class="slider"></span></label></div>
-      </div>
-        <div id="jobAlertSubError" class="error-message"></div>
+      <p class="popup-description" style="margin-top:-10px; margin-bottom:15px; font-size:14px;">Toggle a channel and choose how often to receive alerts.</p>
 
-      <h3>VII. How often do you want to receive job alerts?</h3>
-      <p class="popup-description" style="margin-top:-10px; margin-bottom:15px; font-size:14px;">Choose how often you want to get job alerts.</p>
-      <div class="select-box" id="jobAlertFreqBox">
-        <div class="option-row"><span>Instantly when matching job published</span><label class="switch"><input type="radio" name="jobFreq" value="instantly" checked /><span class="slider"></span></label></div>
-        <div class="option-row"><span>Once a day</span><label class="switch"><input type="radio" name="jobFreq" value="daily" /><span class="slider"></span></label></div>
-        <div class="option-row"><span>Once a week</span><label class="switch"><input type="radio" name="jobFreq" value="weekly" /><span class="slider"></span></label></div>
-        <div class="option-row"><span>Once a month</span><label class="switch"><input type="radio" name="jobFreq" value="monthly" /><span class="slider"></span></label></div>
+      <!-- EMAIL channel row -->
+      <div class="select-box" id="jobAlertSubBox">
+        <div class="option-row"><span>Email</span><label class="switch"><input type="checkbox" id="emailAlertToggle" value="email" checked /><span class="slider"></span></label></div>
       </div>
+      <!-- EMAIL frequency sub-option -->
+      <div id="emailFreqSection" class="sub-freq-section">
+        <p class="sub-freq-label">&#128231; Email frequency</p>
+        <div class="select-box sub-freq-box" id="emailFreqBox">
+          <div class="option-row"><span>Once a day</span><label class="switch"><input type="radio" name="emailFreq" value="daily" checked /><span class="slider"></span></label></div>
+          <div class="option-row"><span>Once a week</span><label class="switch"><input type="radio" name="emailFreq" value="weekly" /><span class="slider"></span></label></div>
+          <div class="option-row"><span>Once a month</span><label class="switch"><input type="radio" name="emailFreq" value="monthly" /><span class="slider"></span></label></div>
+        </div>
+        <!-- Email delivery schedule (shown for daily/weekly/monthly) -->
+        <div id="emailScheduleSection" class="sub-freq-schedule">
+          <p class="sub-freq-label">&#9200; Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki time)</span></p>
+          <div class="schedule-picker">
+            <input type="time" id="emailScheduleTime" value="09:00" />
+            <!-- Day-of-week — only for weekly -->
+            <select id="emailScheduleDay" style="display:none;">
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Friday</option>
+              <option value="6">Saturday</option>
+              <option value="0">Sunday</option>
+            </select>
+            <!-- Day-of-month — only for monthly -->
+            <select id="emailScheduleDate" style="display:none;"></select>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUSH channel row -->
+      <div class="select-box" id="pushAlertSubBox" style="margin-top:10px;">
+        <div class="option-row"><span>Push Notification</span><label class="switch"><input type="checkbox" id="pushAlertToggle" value="pushNotification" checked /><span class="slider"></span></label></div>
+      </div>
+      <!-- PUSH frequency sub-option (instantly / daily / weekly / monthly) -->
+      <div id="pushFreqSection" class="sub-freq-section">
+        <p class="sub-freq-label">&#128276; Push frequency</p>
+        <div class="select-box sub-freq-box" id="pushFreqBox">
+          <div class="option-row"><span>Instantly when matching job published</span><label class="switch"><input type="radio" name="pushFreq" value="instantly" checked /><span class="slider"></span></label></div>
+          <div class="option-row"><span>Once a day</span><label class="switch"><input type="radio" name="pushFreq" value="daily" /><span class="slider"></span></label></div>
+          <div class="option-row"><span>Once a week</span><label class="switch"><input type="radio" name="pushFreq" value="weekly" /><span class="slider"></span></label></div>
+          <div class="option-row"><span>Once a month</span><label class="switch"><input type="radio" name="pushFreq" value="monthly" /><span class="slider"></span></label></div>
+        </div>
+        <!-- Delivery schedule (shown when push freq is NOT instantly) -->
+        <div id="pushScheduleSection" class="sub-freq-schedule" style="display:none;">
+          <p class="sub-freq-label">&#9200; Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki time)</span></p>
+          <div class="schedule-picker">
+            <input type="time" id="pushScheduleTime" value="09:00" />
+            <!-- Day-of-week — only for weekly -->
+            <select id="pushScheduleDay" style="display:none;">
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Friday</option>
+              <option value="6">Saturday</option>
+              <option value="0">Sunday</option>
+            </select>
+            <!-- Day-of-month — only for monthly -->
+            <select id="pushScheduleDate" style="display:none;"></select>
+          </div>
+        </div>
+      </div>
+
+        <div id="jobAlertSubError" class="error-message"></div>
         <div id="jobAlertFreqError" class="error-message"></div>
         <div id="signupPrefError" style="color:red; margin-top:8px;"></div>
         <button id="signupButton" onclick="signupUser()">Sign Up</button>
@@ -251,3 +306,60 @@ async function loadPopupOptions() {
   }
 }
 loadPopupOptions();
+
+// ── Alert frequency sub-option wiring ──────────────────────────────────────
+
+// Populate a day-of-month <select> (1–28 so it's safe every month)
+function populateDayOfMonth(sel) {
+  if (!sel || sel.options.length > 0) return;
+  for (let d = 1; d <= 28; d++) {
+    const o = document.createElement('option');
+    o.value = d;
+    o.textContent = d + (d === 1 ? 'st' : d === 2 ? 'nd' : d === 3 ? 'rd' : 'th');
+    if (d === 1) o.selected = true;
+    sel.appendChild(o);
+  }
+}
+populateDayOfMonth(document.getElementById('pushScheduleDate'));
+populateDayOfMonth(document.getElementById('emailScheduleDate'));
+
+// Email toggle → show/hide emailFreqSection
+const emailToggle = document.getElementById('emailAlertToggle');
+if (emailToggle) {
+  emailToggle.addEventListener('change', function () {
+    const sec = document.getElementById('emailFreqSection');
+    if (sec) sec.style.display = this.checked ? 'block' : 'none';
+  });
+}
+
+// Push toggle → show/hide pushFreqSection
+const pushToggle = document.getElementById('pushAlertToggle');
+if (pushToggle) {
+  pushToggle.addEventListener('change', function () {
+    const sec = document.getElementById('pushFreqSection');
+    if (sec) sec.style.display = this.checked ? 'block' : 'none';
+  });
+}
+
+// Email freq radios → show/hide day-of-week / day-of-month selectors
+document.querySelectorAll('input[name="emailFreq"]').forEach(function (radio) {
+  radio.addEventListener('change', function () {
+    const daySel  = document.getElementById('emailScheduleDay');
+    const dateSel = document.getElementById('emailScheduleDate');
+    if (daySel)  daySel.style.display  = this.value === 'weekly'  ? 'inline-block' : 'none';
+    if (dateSel) dateSel.style.display = this.value === 'monthly' ? 'inline-block' : 'none';
+  });
+});
+
+// Push freq radios → show/hide schedule picker + day/date selectors
+document.querySelectorAll('input[name="pushFreq"]').forEach(function (radio) {
+  radio.addEventListener('change', function () {
+    const scheduleSec = document.getElementById('pushScheduleSection');
+    const daySel      = document.getElementById('pushScheduleDay');
+    const dateSel     = document.getElementById('pushScheduleDate');
+    const isInstant   = this.value === 'instantly';
+    if (scheduleSec) scheduleSec.style.display = isInstant ? 'none' : 'block';
+    if (daySel)  daySel.style.display  = this.value === 'weekly'  ? 'inline-block' : 'none';
+    if (dateSel) dateSel.style.display = this.value === 'monthly' ? 'inline-block' : 'none';
+  });
+});

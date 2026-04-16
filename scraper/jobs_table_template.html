@@ -122,9 +122,65 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-bottom: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .header-left, .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: var(--text-color);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.3s ease;
+            width: 250px;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+
+        .copy-btn {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+
+        .hidden-row {
+            display: none !important;
         }
         
         .stat-badge {
@@ -249,11 +305,7 @@
         }
         
         .location {
-             color: #cbd5e1;
-             font-size: 0.95rem;
-             display: flex;
-             align-items: center;
-             gap: 6px;
+             display: none;
         }
 
         /* Link Wrappers */
@@ -304,7 +356,9 @@
             .location-col { display: none; }
             
             h1 { font-size: 2rem; }
-            .header-controls { flex-direction: column; gap: 10px; align-items: stretch; }
+            .search-input { width: 100%; }
+            .header-controls { flex-direction: column; align-items: stretch; }
+            .header-left, .header-right { flex-direction: column; align-items: stretch; width: 100%; }
         }
     </style>
 </head>
@@ -326,11 +380,26 @@
 
         <div class="glass-panel">
             <div class="header-controls">
-                <div class="stat-badge">
-                    Total Active Jobs <span>{-total_jobs-}</span>
+                <div class="header-left">
+                    <div class="stat-badge">
+                        Total Active Jobs <span id="job-count-badge">{-total_jobs-}</span>
+                    </div>
+                    <div class="stat-badge" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.1); color: #10b981;">
+                        Last Updated: {-updated_date-}
+                    </div>
                 </div>
-                <div class="stat-badge" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.1); color: #10b981;">
-                    Last Updated: {-updated_date-}
+                <div class="header-right">
+                    <select id="date-filter" class="search-input" style="width: auto; min-width: 140px;">
+                        <option value="all">All Dates</option>
+                        <option value="today">Today Only</option>
+                        <option value="yesterday">Yesterday</option>
+                        <option value="tomorrow">Tomorrow</option>
+                    </select>
+                    <input type="text" id="job-search" class="search-input" placeholder="Search jobs or categories...">
+                    <button class="copy-btn" id="copy-all-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        Copy All
+                    </button>
                 </div>
             </div>
 
@@ -339,7 +408,6 @@
                     <thead>
                         <tr>
                             <th>Position &amp; Company</th>
-                            <th class="location-col">Location</th>
                             <th>Category</th>
                             <th style="width: 50px; text-align: center;"></th>
                         </tr>
@@ -351,5 +419,81 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateFilter = document.getElementById('date-filter');
+            const searchInput = document.getElementById('job-search');
+            const rows = document.querySelectorAll('tbody tr');
+            const copyBtn = document.getElementById('copy-all-btn');
+            const countBadge = document.getElementById('job-count-badge');
+
+            const getRelativeDateString = (offset) => {
+                const d = new Date();
+                d.setDate(d.getDate() + offset);
+                return d.toISOString().split('T')[0];
+            };
+
+            const todayStr = getRelativeDateString(0);
+            const yesterdayStr = getRelativeDateString(-1);
+            const tomorrowStr = getRelativeDateString(1);
+
+            // Quick function to trigger search filtering
+            const applyFilter = () => {
+                const term = searchInput.value.toLowerCase().trim();
+                const dMode = dateFilter.value;
+                let visibleCount = 0;
+
+                rows.forEach(row => {
+                    const title = (row.getAttribute('data-title') || '').toLowerCase();
+                    const category = (row.getAttribute('data-category') || '').toLowerCase();
+                    const jobDate = row.getAttribute('data-date') || '';
+                    
+                    const matchesTerm = title.includes(term) || category.includes(term);
+                    let matchesDate = true;
+
+                    if (dMode === 'today') matchesDate = (jobDate === todayStr);
+                    else if (dMode === 'yesterday') matchesDate = (jobDate === yesterdayStr);
+                    else if (dMode === 'tomorrow') matchesDate = (jobDate === tomorrowStr);
+                    
+                    if (matchesTerm && matchesDate) {
+                        row.classList.remove('hidden-row');
+                        visibleCount++;
+                    } else {
+                        row.classList.add('hidden-row');
+                    }
+                });
+                countBadge.textContent = visibleCount;
+            };
+
+            searchInput.addEventListener('input', applyFilter);
+            dateFilter.addEventListener('change', applyFilter);
+
+            // Copy all logic
+            copyBtn.addEventListener('click', async () => {
+                let copyTextList = [];
+                rows.forEach(row => {
+                    if (!row.classList.contains('hidden-row')) {
+                        const title = row.getAttribute('data-title') || '';
+                        const category = row.getAttribute('data-category') || '';
+                        copyTextList.push(`${title} : ${category}`);
+                    }
+                });
+                
+                if (copyTextList.length > 0) {
+                    const textToCopy = copyTextList.join('\n');
+                    try {
+                        await navigator.clipboard.writeText(textToCopy);
+                        copyBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Copied!';
+                        setTimeout(() => {
+                            copyBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy All';
+                        }, 2000);
+                    } catch (err) {
+                        alert('Failed to copy. Note that clipboard access may require a secure context (HTTPS).');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

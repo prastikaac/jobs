@@ -3,15 +3,37 @@
 const { onDocumentCreated } = require("firebase-functions/v2/firestore")
 const { onSchedule } = require("firebase-functions/v2/scheduler")
 const { setGlobalOptions } = require("firebase-functions/v2")
+const { defineSecret } = require("firebase-functions/params")
 const { initializeApp } = require("firebase-admin/app")
 const { getFirestore, Timestamp } = require("firebase-admin/firestore")
 const { getMessaging } = require("firebase-admin/messaging")
-const { Resend } = require("resend")
+const nodemailer = require("nodemailer")
 
 setGlobalOptions({ region: "europe-north1" })
 initializeApp()
 
-const resend = new Resend("re_PWnJNjtv_AuZB3YUcLbRgAqDShh4iCej4")
+const GMAIL_USER = defineSecret("GMAIL_USER")
+const GMAIL_APP_PASSWORD = defineSecret("GMAIL_APP_PASSWORD")
+
+function createTransporter() {
+    return nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_APP_PASSWORD,
+        },
+    })
+}
+
+function sendEmail({ to, subject, html }) {
+    const transporter = createTransporter()
+    return transporter.sendMail({
+        from: `findjobsinfinland <${process.env.GMAIL_USER}>`,
+        to,
+        subject,
+        html,
+    })
+}
 
 const OWNER_EMAIL = "acharyaprasiddha6@gmail.com"
 const DEFAULT_IMAGE = "https://findjobsinfinland.fi/images/jobs/it-and-tech-jobs.png"
@@ -74,6 +96,10 @@ function isExpiredTimestamp(ts) {
 
 function isValidFrequency(value) {
     return ["instantly", "daily", "weekly", "monthly"].includes(value)
+}
+
+function isValidEmailFrequency(value) {
+    return ["daily", "weekly", "monthly"].includes(value)
 }
 
 async function sendPushToTokenAndCleanup({ token, message, db, userDocId, fcmTokens }) {
@@ -454,8 +480,7 @@ async function sendDigestAlerts(frequency) {
 
         if (emailNotificationEnabled && user.email) {
             try {
-                await resend.emails.send({
-                    from: "findjobsinfinland <job-alert@findjobsinfinland.fi>",
+                await sendEmail({
                     to: user.email,
                     subject: `${frequency.charAt(0).toUpperCase() + frequency.slice(1)} Job Alerts (${jobs.length})`,
                     html: buildDigestEmailHTML(frequency, jobs),
@@ -474,6 +499,8 @@ async function sendDigestAlerts(frequency) {
             for (const token of tokenSnapshot) {
                 if (!token) continue
 
+                const periodLabel = { daily: "today's", weekly: "this week's", monthly: "this month's" }[frequency] ?? frequency
+
                 const success = await sendPushToTokenAndCleanup({
                     token,
                     db,
@@ -482,13 +509,13 @@ async function sendDigestAlerts(frequency) {
                     message: {
                         token,
                         notification: {
-                            title: `${frequency.charAt(0).toUpperCase() + frequency.slice(1)} Job Alerts`,
-                            body: `You have ${jobs.length} new matching ${jobs.length === 1 ? "job" : "jobs"}.`,
+                            title: "🔔 New Job Alerts",
+                            body: `Here are your ${periodLabel} job alerts — ${jobs.length} new ${jobs.length === 1 ? "job" : "jobs"} waiting!`,
                         },
                         data: {
                             type: `${frequency}_digest`,
                             jobsCount: String(jobs.length),
-                            jobsPage: `${SITE_URL}/jobs`,
+                            url: `${SITE_URL}/newjobs?period=${frequency}`,
                         },
                     },
                 })
@@ -535,8 +562,7 @@ async function sendDigestAlerts(frequency) {
     }
 
     try {
-        await resend.emails.send({
-            from: "findjobsinfinland <job-alert@findjobsinfinland.fi>",
+        await sendEmail({
             to: OWNER_EMAIL,
             subject: `✅ ${frequency.charAt(0).toUpperCase() + frequency.slice(1)} Alerts Summary`,
             html: `
@@ -557,7 +583,12 @@ async function sendDigestAlerts(frequency) {
     )
 }
 
-exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => {
+exports.sendJobAlertEmails = onDocumentCreated(
+    {
+        document: "jobs/{jobId}",
+        secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
+    },
+    async (event) => {
     const jobData = event.data.data()
     const jobCategory = jobData.jobCategory
     const jobLocation = jobData.jobLocation
@@ -578,34 +609,42 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
     let queuedUsersCount = 0
     let instantMatchedUsersCount = 0
 
-    // Make sure jobData values are always arrays
-    const jobCategories = normalizeToArray(jobData.jobCategory)
-    const jobLocations = normalizeToArray(jobData.jobLocation)
-    const jobLanguages = getJobLanguages(jobData)
-    const jobTimes = normalizeToArray(jobData.jobTimes)
-    const jobTypes = normalizeToArray(jobData.jobType)
+    // Make sure jobData values are always arrays and lowercased for case-insensitive matching
+    const jobCategories = normalizeToArray(jobData.jobCategory).map(v => String(v).toLowerCase())
+    const jobLocations = normalizeToArray(jobData.jobLocation).map(v => String(v).toLowerCase())
+    const jobLanguages = getJobLanguages(jobData).map(v => String(v).toLowerCase())
+    const jobTimes = normalizeToArray(jobData.jobTimes).map(v => String(v).toLowerCase())
+    const jobTypes = normalizeToArray(jobData.jobType).map(v => String(v).toLowerCase())
 
     for (const doc of usersSnapshot.docs) {
         const user = doc.data()
 
-        const userCategories = Array.isArray(user.jobCategory) ? user.jobCategory : []
-        const userLocations = Array.isArray(user.jobLocation) ? user.jobLocation : []
-        const userLanguages = Array.isArray(user.jobLanguages) ? user.jobLanguages : []
-        const userTimes = Array.isArray(user.jobTimes) ? user.jobTimes : []
-        const userTypes = Array.isArray(user.jobType) ? user.jobType : []
+        const userCategories = (Array.isArray(user.jobCategory) ? user.jobCategory : []).map(v => String(v).toLowerCase())
+        const userLocations = (Array.isArray(user.jobLocation) ? user.jobLocation : []).map(v => String(v).toLowerCase())
+        const userLanguages = (Array.isArray(user.jobLanguages) ? user.jobLanguages : []).map(v => String(v).toLowerCase())
+        const userTimes = (Array.isArray(user.jobTimes) ? user.jobTimes : []).map(v => String(v).toLowerCase())
+        const userTypes = (Array.isArray(user.jobType) ? user.jobType : []).map(v => String(v).toLowerCase())
 
         const fcmTokens = Array.isArray(user.fcmTokens) ? user.fcmTokens : []
         const jobSubscription = user.jobSubscription || {}
         const emailNotificationEnabled = jobSubscription.emailNotification ?? true
         const pushNotificationEnabled = jobSubscription.pushNotification ?? true
-        const jobAlertFrequency = isValidFrequency(user.jobAlertFrequency) ? user.jobAlertFrequency : "instantly"
+
+        // Per-channel frequencies with legacy fallback
+        const legacyFreq = isValidFrequency(user.jobAlertFrequency) ? user.jobAlertFrequency : "instantly"
+        const emailAlertFrequency = isValidEmailFrequency(user.emailAlertFrequency)
+            ? user.emailAlertFrequency
+            : isValidEmailFrequency(legacyFreq) ? legacyFreq : "daily"
+        const pushAlertFrequency = isValidFrequency(user.pushAlertFrequency)
+            ? user.pushAlertFrequency
+            : legacyFreq
 
         // Match logic
         const hasCategory =
-            userCategories.length === 0 || jobCategories.some((cat) => userCategories.includes(cat))
+            userCategories.length === 0 || jobCategories.length === 0 || jobCategories.some((cat) => userCategories.includes(cat))
 
         const hasLocation =
-            userLocations.length === 0 || jobLocations.some((loc) => userLocations.includes(loc))
+            userLocations.length === 0 || jobLocations.length === 0 || jobLocations.some((loc) => userLocations.includes(loc))
 
         const hasLanguage =
             userLanguages.length === 0 || jobLanguages.length === 0 || jobLanguages.some((lang) => userLanguages.includes(lang))
@@ -622,7 +661,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
             continue
         }
 
-        if (jobAlertFrequency === "instantly") {
+        if (pushAlertFrequency === "instantly") {
             instantMatchedUsersCount++
 
             if (emailNotificationEnabled && user.email) {
@@ -658,31 +697,62 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
                     )
                 }
             }
-        } else if (["daily", "weekly", "monthly"].includes(jobAlertFrequency)) {
+        } else if (["daily", "weekly", "monthly"].includes(pushAlertFrequency) || ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
             queuedUsersCount++
 
-            await db
-                .collection("users")
-                .doc(doc.id)
-                .collection("pendingAlerts")
-                .doc(event.params.jobId)
-                .set({
-                    jobId: event.params.jobId,
-                    title: jobData.title || "",
-                    description: jobData.description || "",
-                    jobCategory: jobCategories,
-                    jobLocation: jobLocations,
-                    jobLanguages: jobLanguages,
-                    jobTimes: jobTimes,
-                    jobType: jobTypes,
-                    jobLink: jobData.jobLink || "",
-                    imageUrl: jobData.imageUrl || "",
-                    date_posted: jobData.date_posted || "",
-                    date_expires: jobData.date_expires || "",
-                    expiresAt: jobData.expiresAt || null,
-                    frequency: jobAlertFrequency,
-                    createdAt: Timestamp.now(),
-                }, { merge: true })
+            // Queue for email digest if email channel is non-instant
+            if (emailNotificationEnabled && user.email && ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
+                await db
+                    .collection("users")
+                    .doc(doc.id)
+                    .collection("pendingAlerts")
+                    .doc(`email_${event.params.jobId}`)
+                    .set({
+                        jobId: event.params.jobId,
+                        title: jobData.title || "",
+                        description: jobData.description || "",
+                        jobCategory: jobCategories,
+                        jobLocation: jobLocations,
+                        jobLanguages: jobLanguages,
+                        jobTimes: jobTimes,
+                        jobType: jobTypes,
+                        jobLink: jobData.jobLink || "",
+                        imageUrl: jobData.imageUrl || "",
+                        date_posted: jobData.date_posted || "",
+                        date_expires: jobData.date_expires || "",
+                        expiresAt: jobData.expiresAt || null,
+                        frequency: emailAlertFrequency,
+                        channel: "email",
+                        createdAt: Timestamp.now(),
+                    }, { merge: true })
+            }
+
+            // Queue for push digest if push channel is non-instant
+            if (pushNotificationEnabled && fcmTokens.length > 0 && ["daily", "weekly", "monthly"].includes(pushAlertFrequency)) {
+                await db
+                    .collection("users")
+                    .doc(doc.id)
+                    .collection("pendingAlerts")
+                    .doc(`push_${event.params.jobId}`)
+                    .set({
+                        jobId: event.params.jobId,
+                        title: jobData.title || "",
+                        description: jobData.description || "",
+                        jobCategory: jobCategories,
+                        jobLocation: jobLocations,
+                        jobLanguages: jobLanguages,
+                        jobTimes: jobTimes,
+                        jobType: jobTypes,
+                        jobLink: jobData.jobLink || "",
+                        imageUrl: jobData.imageUrl || "",
+                        date_posted: jobData.date_posted || "",
+                        date_expires: jobData.date_expires || "",
+                        expiresAt: jobData.expiresAt || null,
+                        frequency: pushAlertFrequency,
+                        channel: "push",
+                        createdAt: Timestamp.now(),
+                    }, { merge: true })
+            }
         }
     }
 
@@ -690,8 +760,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
 
     if (matchedEmails.length > 0) {
         const emailPromises = matchedEmails.map((email) => {
-            return resend.emails.send({
-                from: "findjobsinfinland <job-alert@findjobsinfinland.fi>",
+            return sendEmail({
                 to: email,
                 subject: jobData.title || "New Job Alert",
                 html: emailHTML,
@@ -712,8 +781,7 @@ exports.sendJobAlertEmails = onDocumentCreated("jobs/{jobId}", async (event) => 
     }
 
     try {
-        await resend.emails.send({
-            from: "findjobsinfinland <job-alert@findjobsinfinland.fi>",
+        await sendEmail({
             to: OWNER_EMAIL,
             subject: `✅ Job Alert Processed for ${jobData.title || event.params.jobId}`,
             html: `
@@ -741,6 +809,8 @@ exports.sendDailyAlerts = onSchedule(
     {
         schedule: "0 8 * * *",
         timeZone: "Europe/Helsinki",
+        region: "europe-west1",
+        secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
     },
     async () => {
         await sendDigestAlerts("daily")
@@ -751,6 +821,8 @@ exports.sendWeeklyAlerts = onSchedule(
     {
         schedule: "0 8 * * 1",
         timeZone: "Europe/Helsinki",
+        region: "europe-west1",
+        secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
     },
     async () => {
         await sendDigestAlerts("weekly")
@@ -761,6 +833,8 @@ exports.sendMonthlyAlerts = onSchedule(
     {
         schedule: "0 8 1 * *",
         timeZone: "Europe/Helsinki",
+        region: "europe-west1",
+        secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
     },
     async () => {
         await sendDigestAlerts("monthly")
@@ -776,6 +850,7 @@ exports.deleteExpiredJobs = onSchedule(
     {
         schedule: "10 0 * * *",
         timeZone: "Europe/Helsinki",
+        region: "europe-west1", // Cloud Scheduler doesn't support europe-north1
     },
     async () => {
         const db = getFirestore()

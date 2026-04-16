@@ -956,6 +956,123 @@ body.drK .popup-description-for-mobile-unique {
     border-bottom: 1px solid #f0f0f0;
 }
 
+/* ── Alert frequency sub-option sections ─────────────────── */
+
+/* The nested section that appears below each channel toggle */
+.sub-freq-section {
+    margin: 0 0 16px 6px;
+    padding: 12px 14px;
+    border-left: 3px solid #005eff;
+    border-radius: 0 10px 10px 0;
+    background: #f5f8ff;
+    animation: subFreqSlideIn 0.2s ease;
+}
+
+@keyframes subFreqSlideIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.sub-freq-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #005eff;
+    margin-bottom: 8px;
+}
+
+/* Override select-box inside a sub-freq so it has no extra margin */
+.sub-freq-box {
+    margin-bottom: 0 !important;
+    max-height: 175px;
+}
+
+/* Schedule time picker row */
+.sub-freq-schedule {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #d0d9f0;
+}
+
+.schedule-picker {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.schedule-picker select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.schedule-picker select:focus {
+    border-color: #005eff;
+}
+
+/* Native time input — matches select look */
+.schedule-picker input[type="time"],
+.sub-freq-section input[type="time"],
+.edit-profile-section input[type="time"] {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+    color: #333;
+    min-width: 100px;
+}
+
+.schedule-picker input[type="time"]:focus,
+.sub-freq-section input[type="time"]:focus {
+    border-color: #005eff;
+}
+
+body.drK .schedule-picker input[type="time"],
+body.drK .sub-freq-section input[type="time"] {
+    background: #2a2a3e;
+    border-color: #444;
+    color: #eee;
+    color-scheme: dark;
+}
+
+.schedule-colon {
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
+
+/* Dark mode overrides for sub-freq sections */
+body.drK .sub-freq-section {
+    background: #1e2a40;
+    border-left-color: #4a90e2;
+}
+
+body.drK .sub-freq-label {
+    color: #7ab3ff;
+}
+
+body.drK .sub-freq-schedule {
+    border-top-color: #334;
+}
+
+body.drK .schedule-picker select {
+    background: #2a2a3e;
+    border-color: #444;
+    color: #eee;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+
 .option-row:last-child {
     border-bottom: none;
 }

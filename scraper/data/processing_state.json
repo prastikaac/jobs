@@ -1,61 +1,61 @@
 {
   "version": 1,
-  "updated_at": "2026-04-13 14:40:02",
+  "updated_at": "2026-04-13 23:44:33",
   "jobs": {
-    "d2a5a557": {
+    "ca4bfd76": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-13 23:41:10",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-13 14:22:15"
+      "formatted_at": ""
     },
-    "db043aa7": {
+    "ee63ba9b": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-13 23:41:32",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-13 14:26:15"
+      "formatted_at": ""
     },
-    "28568c40": {
+    "41250bd5": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-13 23:41:55",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-13 14:30:37"
+      "formatted_at": ""
     },
-    "54f2b68e": {
+    "7f9a2726": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-13 23:42:18",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-13 14:36:20"
+      "formatted_at": ""
     },
-    "135f5958": {
+    "b9b3caee": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-13 23:42:42",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-13 14:40:02"
+      "formatted_at": ""
     }
   }
 }

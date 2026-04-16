@@ -1020,41 +1020,81 @@
                                   <div><input id="type-summer" type="checkbox" value="summer" /><label
                                       for="type-summer">Summer job</label></div>
                                 </div>
-                              </div>
-                              <!-- Job Subscription Section -->
+                                                       <!-- Job Subscription Section (Email + Push with per-channel frequency) -->
                               <div class="dropdown-section">
                                 <h4>Job Alerts Subscription</h4>
-                                <p class="descp">Select how you want to receive job updates. Stay informed through your
-                                  preferred notification method.</p>
-                                <!-- Notification Options (Email and Push Notification) -->
-                                <div class="dropdown" id="notificationTypes">
+                                <p class="descp">Select how you want to receive job updates and choose your preferred frequency for each channel.</p>
+
+                                <!-- EMAIL channel toggle -->
+                                <div class="dropdown" id="notificationTypes" style="margin-bottom:0;">
                                   <div>
                                     <input id="email-notification" type="checkbox" value="email" />
                                     <label for="email-notification">Email</label>
                                   </div>
+                                </div>
+                                <!-- EMAIL frequency sub-option -->
+                                <div id="emailFreqSectionProfile" style="margin:0 0 10px 6px; padding:10px 14px; border-left:3px solid #005eff; border-radius:0 10px 10px 0; background:#f5f8ff; display:none;">
+                                  <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#128231; Email frequency</p>
+                                  <div class="dropdown" id="emailFreqDropdownProfile" style="margin-bottom:0;">
+                                    <div><input id="ep-email-daily"   name="emailFreqProfile" type="radio" value="daily"   checked /><label for="ep-email-daily">Once a day</label></div>
+                                    <div><input id="ep-email-weekly"  name="emailFreqProfile" type="radio" value="weekly"         /><label for="ep-email-weekly">Once a week</label></div>
+                                    <div><input id="ep-email-monthly" name="emailFreqProfile" type="radio" value="monthly"        /><label for="ep-email-monthly">Once a month</label></div>
+                                  </div>
+                                  <!-- Email delivery schedule picker -->
+                                  <div id="emailScheduleSectionProfile" style="margin-top:10px; padding-top:10px; border-top:1px dashed #d0d9f0;">
+                                    <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#9200; Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki time)</span></p>
+                                    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                                      <input type="time" id="emailScheduleTimeProfile" value="09:00" style="padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;" />
+                                      <select id="emailScheduleDayProfile" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;">
+                                        <option value="1">Monday</option>
+                                        <option value="2">Tuesday</option>
+                                        <option value="3">Wednesday</option>
+                                        <option value="4">Thursday</option>
+                                        <option value="5">Friday</option>
+                                        <option value="6">Saturday</option>
+                                        <option value="0">Sunday</option>
+                                      </select>
+                                      <select id="emailScheduleDateProfile" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;"></select>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- PUSH channel toggle -->
+                                <div class="dropdown" style="margin-bottom:0; margin-top:10px;">
                                   <div>
                                     <input id="push-notification" type="checkbox" value="pushNotification" />
                                     <label for="push-notification">Push Notification</label>
                                   </div>
                                 </div>
-                              </div>
-                              <!-- JOB ALERTS FREQUENCY -->
-                              <div class="dropdown-section">
-                                <h4>Job Alerts Frequency</h4>
-                                <p class="descp">Choose how often you want to get job alerts. We’ll send updates based
-                                  on your selected frequency.</p>
-                                <div class="dropdown" id="jobAlertFreqDropdown">
-                                  <div><input checked="" id="freq-instantly" name="jobFreqProfile" type="radio"
-                                      value="instantly" /><label for="freq-instantly">Instantly when a matching job is
-                                      published</label></div>
-                                  <div><input id="freq-daily" name="jobFreqProfile" type="radio" value="daily" /><label
-                                      for="freq-daily">Once a day</label></div>
-                                  <div><input id="freq-weekly" name="jobFreqProfile" type="radio"
-                                      value="weekly" /><label for="freq-weekly">Once a week</label></div>
-                                  <div><input id="freq-monthly" name="jobFreqProfile" type="radio"
-                                      value="monthly" /><label for="freq-monthly">Once a month</label></div>
+                                <!-- PUSH frequency sub-option -->
+                                <div id="pushFreqSectionProfile" style="margin:0 0 10px 6px; padding:10px 14px; border-left:3px solid #005eff; border-radius:0 10px 10px 0; background:#f5f8ff; display:none;">
+                                  <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#128276; Push frequency</p>
+                                  <div class="dropdown" id="pushFreqDropdownProfile" style="margin-bottom:0;">
+                                    <div><input id="ep-push-instantly" name="pushFreqProfile" type="radio" value="instantly" checked /><label for="ep-push-instantly">Instantly when matching job published</label></div>
+                                    <div><input id="ep-push-daily"     name="pushFreqProfile" type="radio" value="daily"             /><label for="ep-push-daily">Once a day</label></div>
+                                    <div><input id="ep-push-weekly"    name="pushFreqProfile" type="radio" value="weekly"            /><label for="ep-push-weekly">Once a week</label></div>
+                                    <div><input id="ep-push-monthly"   name="pushFreqProfile" type="radio" value="monthly"           /><label for="ep-push-monthly">Once a month</label></div>
+                                  </div>
+                                  <!-- Delivery schedule picker -->
+                                  <div id="pushScheduleSectionProfile" style="display:none; margin-top:10px; padding-top:10px; border-top:1px dashed #d0d9f0;">
+                                    <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#9200; Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki time)</span></p>
+                                    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                                      <input type="time" id="pushScheduleTimeProfile" value="09:00" style="padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;" />
+                                      <select id="pushScheduleDayProfile" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;">
+                                        <option value="1">Monday</option>
+                                        <option value="2">Tuesday</option>
+                                        <option value="3">Wednesday</option>
+                                        <option value="4">Thursday</option>
+                                        <option value="5">Friday</option>
+                                        <option value="6">Saturday</option>
+                                        <option value="0">Sunday</option>
+                                      </select>
+                                      <select id="pushScheduleDateProfile" style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;"></select>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
+       </div>
                               <button class="button full-width-btn" id="saveBtn"
                                 style="padding: 11px 20px; font-size: 14px; margin-top: 15px !important; cursor: pointer;"
                                 target="_blank">
@@ -1154,32 +1194,128 @@
                                     document.getElementById("email").textContent = data.email || "—";
                                     document.getElementById("phone").textContent = data.phoneNumber || "—";
 
-                                    // Fetch the job subscription preferences from Firestore
-                                    const jobSubscription = data?.jobSubscription || {};
+                                    // Populate day-of-month selects (1–28)
+                                    function populateDayOfMonth(sel) {
+                                      if (!sel || sel.options.length > 0) return;
+                                      for (let d = 1; d <= 28; d++) {
+                                        const o = document.createElement('option');
+                                        o.value = d;
+                                        o.textContent = d + (d === 1 ? 'st' : d === 2 ? 'nd' : d === 3 ? 'rd' : 'th');
+                                        if (d === 1) o.selected = true;
+                                        sel.appendChild(o);
+                                      }
+                                    }
+                                    populateDayOfMonth(document.getElementById('pushScheduleDateProfile'));
+                                    populateDayOfMonth(document.getElementById('emailScheduleDateProfile'));
 
-                                    document.getElementById("email-notification").checked = jobSubscription.emailNotification || false;
-                                    document.getElementById("push-notification").checked = jobSubscription.pushNotification || false;
+                                    // Load per-channel preferences
+                                    const jobSubscription = data?.jobSubscription || {};
+                                    const emailOn = jobSubscription.emailNotification ?? false;
+                                    const pushOn  = jobSubscription.pushNotification  ?? false;
+
+                                    document.getElementById('email-notification').checked = emailOn;
+                                    document.getElementById('push-notification').checked  = pushOn;
+
+                                    // Show/hide sub-option sections based on saved state
+                                    document.getElementById('emailFreqSectionProfile').style.display = emailOn ? 'block' : 'none';
+                                    document.getElementById('pushFreqSectionProfile').style.display  = pushOn  ? 'block' : 'none';
+
+                                    // Set saved email frequency
+                                    const savedEmailFreq = data.emailAlertFrequency || data.jobAlertFrequency || 'daily';
+                                    const emailFreqR = document.querySelector(`input[name="emailFreqProfile"][value="${savedEmailFreq}"]`);
+                                    if (emailFreqR) emailFreqR.checked = true;
+
+                                    // Restore email schedule
+                                    const savedEmailSched = data.emailScheduleTime || {};
+                                    const emailTimeParts = [
+                                      String(savedEmailSched.hour ?? 9).padStart(2,'0'),
+                                      String(savedEmailSched.minute ?? 0).padStart(2,'0')
+                                    ].join(':');
+                                    const emailTimeInp = document.getElementById('emailScheduleTimeProfile');
+                                    if (emailTimeInp) emailTimeInp.value = emailTimeParts;
+                                    const emailDaySel  = document.getElementById('emailScheduleDayProfile');
+                                    const emailDateSel = document.getElementById('emailScheduleDateProfile');
+                                    if (emailDaySel) {
+                                      emailDaySel.value = savedEmailSched.dayOfWeek ?? 1;
+                                      emailDaySel.style.display = savedEmailFreq === 'weekly' ? 'inline-block' : 'none';
+                                    }
+                                    if (emailDateSel) {
+                                      emailDateSel.value = savedEmailSched.dayOfMonth ?? 1;
+                                      emailDateSel.style.display = savedEmailFreq === 'monthly' ? 'inline-block' : 'none';
+                                    }
+
+                                    // Set saved push frequency
+                                    const savedPushFreq = data.pushAlertFrequency || data.jobAlertFrequency || 'instantly';
+                                    const pushFreqR = document.querySelector(`input[name="pushFreqProfile"][value="${savedPushFreq}"]`);
+                                    if (pushFreqR) pushFreqR.checked = true;
+
+                                    // Show/hide push schedule section
+                                    const schedSec = document.getElementById('pushScheduleSectionProfile');
+                                    if (schedSec) schedSec.style.display = savedPushFreq !== 'instantly' ? 'block' : 'none';
+
+                                    // Restore push schedule
+                                    const savedPushSched = data.pushScheduleTime || {};
+                                    const pushTimeParts = [
+                                      String(savedPushSched.hour ?? 9).padStart(2,'0'),
+                                      String(savedPushSched.minute ?? 0).padStart(2,'0')
+                                    ].join(':');
+                                    const pushTimeInp = document.getElementById('pushScheduleTimeProfile');
+                                    if (pushTimeInp) pushTimeInp.value = pushTimeParts;
+                                    const pushDaySel  = document.getElementById('pushScheduleDayProfile');
+                                    const pushDateSel = document.getElementById('pushScheduleDateProfile');
+                                    if (pushDaySel) {
+                                      pushDaySel.value = savedPushSched.dayOfWeek ?? 1;
+                                      pushDaySel.style.display = savedPushFreq === 'weekly' ? 'inline-block' : 'none';
+                                    }
+                                    if (pushDateSel) {
+                                      pushDateSel.value = savedPushSched.dayOfMonth ?? 1;
+                                      pushDateSel.style.display = savedPushFreq === 'monthly' ? 'inline-block' : 'none';
+                                    }
+
+                                    // Wire toggle events
+                                    document.getElementById('email-notification').addEventListener('change', function() {
+                                      document.getElementById('emailFreqSectionProfile').style.display = this.checked ? 'block' : 'none';
+                                    });
+                                    document.getElementById('push-notification').addEventListener('change', function() {
+                                      document.getElementById('pushFreqSectionProfile').style.display = this.checked ? 'block' : 'none';
+                                    });
+
+                                    // Wire email freq radios
+                                    document.querySelectorAll('input[name="emailFreqProfile"]').forEach(function(r) {
+                                      r.addEventListener('change', function() {
+                                        const ds = document.getElementById('emailScheduleDayProfile');
+                                        const dt = document.getElementById('emailScheduleDateProfile');
+                                        if (ds) ds.style.display = this.value === 'weekly'  ? 'inline-block' : 'none';
+                                        if (dt) dt.style.display = this.value === 'monthly' ? 'inline-block' : 'none';
+                                      });
+                                    });
+
+                                    // Wire push freq radios
+                                    document.querySelectorAll('input[name="pushFreqProfile"]').forEach(function(r) {
+                                      r.addEventListener('change', function() {
+                                        const isInst = this.value === 'instantly';
+                                        document.getElementById('pushScheduleSectionProfile').style.display = isInst ? 'none' : 'block';
+                                        const ds = document.getElementById('pushScheduleDayProfile');
+                                        const dt = document.getElementById('pushScheduleDateProfile');
+                                        if (ds) ds.style.display = this.value === 'weekly'  ? 'inline-block' : 'none';
+                                        if (dt) dt.style.display = this.value === 'monthly' ? 'inline-block' : 'none';
+                                      });
+                                    });
 
                                     originalCategories = data.jobCategory || [];
                                     originalLocations = data.jobLocation || [];
                                     originalTimes = data.jobTimes || [];
                                     originalLangs = data.jobLanguages || [];
                                     originalTypes = data.jobType || [];
-                                    originalFreq = data.jobAlertFrequency || "instantly";
 
-                                    checkValues("jobTimesDropdown", originalTimes);
-                                    checkValues("jobLangsDropdown", originalLangs);
-                                    checkValues("jobTypeDropdown", originalTypes);
+                                    checkValues('jobTimesDropdown', originalTimes);
+                                    checkValues('jobLangsDropdown', originalLangs);
+                                    checkValues('jobTypeDropdown', originalTypes);
+                                    checkValues('jobCategoryDropdown', originalCategories);
+                                    checkValues('jobLocationDropdown', originalLocations);
 
-                                    const freqInput = document.querySelector(`input[name="jobFreqProfile"][value="${originalFreq}"]`);
-                                    if (freqInput) freqInput.checked = true;
-
-
-                                    checkValues("jobCategoryDropdown", originalCategories);
-                                    checkValues("jobLocationDropdown", originalLocations);
-
-                                    handleAllCheckbox("jobCategoryDropdown");
-                                    handleAllCheckbox("jobLocationDropdown");
+                                    handleAllCheckbox('jobCategoryDropdown');
+                                    handleAllCheckbox('jobLocationDropdown');
                                   }
                                 });
 
@@ -1321,53 +1457,67 @@
                                 saveBtn.addEventListener("click", async () => {
                                   if (!uid || !userRef) return;
 
-                                  const newCategories = getCheckedValues("jobCategoryDropdown");
-                                  const newLocations = getCheckedValues("jobLocationDropdown");
-                                  const newTimes = getCheckedValues("jobTimesDropdown");
-                                  const newLangs = getCheckedValues("jobLangsDropdown");
-                                  const newTypes = getCheckedValues("jobTypeDropdown");
-                                  const newFreq = document.querySelector('input[name="jobFreqProfile"]:checked')?.value || "instantly";
+                                  const newCategories = getCheckedValues('jobCategoryDropdown');
+                                  const newLocations  = getCheckedValues('jobLocationDropdown');
+                                  const newTimes = getCheckedValues('jobTimesDropdown');
+                                  const newLangs = getCheckedValues('jobLangsDropdown');
+                                  const newTypes = getCheckedValues('jobTypeDropdown');
 
-                                  // Update job categories and locations if changed
-                                  if (hasChanges()) {
-                                    await updateDoc(userRef, {
-                                      jobCategory: newCategories,
-                                      jobLocation: newLocations,
-                                      jobTimes: newTimes,
-                                      jobLanguages: newLangs,
-                                      jobType: newTypes,
-                                      jobAlertFrequency: newFreq,
-                                      lastUpdated: Timestamp.now()
-                                    });
+                                  // Per-channel frequencies
+                                  const emailNotification = document.getElementById('email-notification').checked;
+                                  const pushNotification  = document.getElementById('push-notification').checked;
+                                  const emailAlertFrequency = document.querySelector('input[name="emailFreqProfile"]:checked')?.value || 'daily';
+                                  const pushAlertFrequency  = document.querySelector('input[name="pushFreqProfile"]:checked')?.value  || 'instantly';
 
-                                    // Update original values to prevent unnecessary saves in future
-                                    originalCategories = [...newCategories];
-                                    originalLocations = [...newLocations];
-                                    originalTimes = [...newTimes];
-                                    originalLangs = [...newLangs];
-                                    originalTypes = [...newTypes];
-                                    originalFreq = newFreq;
-                                  }
+                                  // Parse push schedule from native time input
+                                  const pushTimeVal = document.getElementById('pushScheduleTimeProfile')?.value || '09:00';
+                                  const [pushH, pushM] = pushTimeVal.split(':').map(Number);
+                                  const pushD = parseInt(document.getElementById('pushScheduleDayProfile')?.value ?? '1', 10);
+                                  const pushDt = parseInt(document.getElementById('pushScheduleDateProfile')?.value ?? '1', 10);
+                                  const pushScheduleTime = pushAlertFrequency !== 'instantly' ? {
+                                    hour: isNaN(pushH) ? 9 : pushH,
+                                    minute: isNaN(pushM) ? 0 : pushM,
+                                    ...(pushAlertFrequency === 'weekly'  ? { dayOfWeek:  pushD  } : {}),
+                                    ...(pushAlertFrequency === 'monthly' ? { dayOfMonth: pushDt } : {})
+                                  } : null;
 
-                                  // Update job subscription preferences (email and push notifications)
-                                  const emailNotification = document.getElementById("email-notification").checked;
-                                  const pushNotification = document.getElementById("push-notification").checked;
+                                  // Parse email schedule from native time input
+                                  const emailTimeVal = document.getElementById('emailScheduleTimeProfile')?.value || '09:00';
+                                  const [emailH, emailM] = emailTimeVal.split(':').map(Number);
+                                  const emailD  = parseInt(document.getElementById('emailScheduleDayProfile')?.value  ?? '1', 10);
+                                  const emailDt = parseInt(document.getElementById('emailScheduleDateProfile')?.value ?? '1', 10);
+                                  const emailScheduleTime = {
+                                    hour: isNaN(emailH) ? 9 : emailH,
+                                    minute: isNaN(emailM) ? 0 : emailM,
+                                    ...(emailAlertFrequency === 'weekly'  ? { dayOfWeek:  emailD  } : {}),
+                                    ...(emailAlertFrequency === 'monthly' ? { dayOfMonth: emailDt } : {})
+                                  };
 
                                   await updateDoc(userRef, {
-                                    jobSubscription: {
-                                      emailNotification,
-                                      pushNotification
-                                    },
+                                    jobCategory:  newCategories,
+                                    jobLocation:  newLocations,
+                                    jobTimes:     newTimes,
+                                    jobLanguages: newLangs,
+                                    jobType:      newTypes,
+                                    // Per-channel frequencies + schedules
+                                    emailAlertFrequency,
+                                    emailScheduleTime,
+                                    pushAlertFrequency,
+                                    pushScheduleTime,
+                                    // Legacy fallback
+                                    jobAlertFrequency: pushAlertFrequency,
+                                    jobSubscription: { emailNotification, pushNotification },
                                     lastUpdated: Timestamp.now()
                                   });
 
-                                  // Show success message after saving both job subscription and preferences
-                                  savedMessageContainer.textContent = "Changes saved successfully!";
+                                  originalCategories = [...newCategories];
+                                  originalLocations  = [...newLocations];
+                                  originalTimes = [...newTimes];
+                                  originalLangs = [...newLangs];
+                                  originalTypes = [...newTypes];
 
-                                  // Hide the success message after 3 seconds
-                                  setTimeout(() => {
-                                    savedMessageContainer.textContent = '';
-                                  }, 3000);  // 3000ms = 3 seconds
+                                  savedMessageContainer.textContent = 'Changes saved successfully!';
+                                  setTimeout(() => { savedMessageContainer.textContent = ''; }, 3000);
                                 });
 
 

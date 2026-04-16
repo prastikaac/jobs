@@ -594,11 +594,8 @@ def _generate_jobs_table_page(jobs: List[dict]) -> None:
             c_text, c_bg, c_border = cat_colors.get(cat_slug, cat_colors["other"])
             
             row = (
-                f'<tr onclick="window.location=\'{job_url}\'">'
+                f'<tr onclick="window.location=\'{job_url}\'" data-title="{title.replace("\"", "&quot;")}" data-category="{cat_slug}" data-date="{job.get("date_posted", "")}">'
                 f'<td><div class="job-title">{title}</div><div class="company-name">{company}</div></td>'
-                f'<td class="location-col"><span class="location">'
-                f'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'
-                f' {location}</span></td>'
                 f'<td><span class="category-badge" style="color: {c_text}; background: {c_bg}; border-color: {c_border};">{category}</span></td>'
                 f'<td style="text-align: center;"><span class="action-arrow">→</span></td>'
                 f'</tr>'
