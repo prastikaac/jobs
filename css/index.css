@@ -5206,7 +5206,7 @@ a.prfL:hover {
 
 @media screen and (max-width:640px) {
     .trendingsection {
-        flex: 0 0 96% !important;
+        flex: 0 0 95% !important;
     }
 
     .sldO {
