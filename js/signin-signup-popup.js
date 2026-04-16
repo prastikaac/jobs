@@ -255,7 +255,11 @@ wrapper.innerHTML = `
     </div>
   `;
 
-container.appendChild(wrapper);
+if (container) {
+  container.appendChild(wrapper);
+} else {
+  console.warn("Container 'login-signup-popup-content' not found on the page.");
+}
 
 
 

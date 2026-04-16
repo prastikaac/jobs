@@ -225,10 +225,10 @@ function showPopupStep(stepId) {
   // Handle special popup display logic for the job alert container
   if (["popupStep1", "popupStep1b", "popupStep1c", "popupBlockedNotifications", "popupEnableNotifications"].includes(stepId)) {
     // Show the jobAlertPopup only for relevant steps
-    document.getElementById("jobAlertPopup").style.display = "flex";
+    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
   } else {
     // Hide the jobAlertPopup for other steps
-    document.getElementById("jobAlertPopup").style.display = "none";
+    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   }
 }
 
@@ -246,7 +246,7 @@ function closePopup() {
     localStorage.setItem("jobAlertPopupShown", "true");
   }
 
-  document.getElementById("jobAlertPopup").style.display = "none";
+  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 }
 
 
@@ -299,7 +299,7 @@ window.handlePopupYes = async () => {
 
   showPopupStep("popupStep2");
 
-  document.getElementById("jobAlertPopup").style.display = "none";
+  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 };
 
@@ -359,7 +359,7 @@ window.checkEmailExistence = async () => {
   }
 
   // **Hide the job alert popup immediately after email existence check**
-  document.getElementById("jobAlertPopup").style.display = "none";
+  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 };
 
@@ -416,7 +416,7 @@ window.goToJobPreferenceStep = () => {
   if (hasError) return;
 
   // **Hide the job alert popup immediately after validation passes**
-  document.getElementById("jobAlertPopup").style.display = "none";
+  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 
   // Go to next step after hiding the job alert popup
@@ -1218,7 +1218,7 @@ window.addEventListener("DOMContentLoaded", () => {
       const blockedPopup = document.getElementById("popupBlockedNotifications");
 
       if (blockedPopup) {
-        document.getElementById("jobAlertPopup").style.display = "flex";
+        if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
         blockedPopup.style.display = "flex";
       }
     }
@@ -1229,7 +1229,7 @@ window.addEventListener("DOMContentLoaded", () => {
 document.getElementById("yesButtonBlockedNotifications")?.addEventListener("click", () => {
   localStorage.setItem("LS_SKIP_NO_CONFIRM", "true");
   document.getElementById("popupBlockedNotifications").style.display = "none";
-  document.getElementById("jobAlertPopup").style.display = "none";
+  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 });
 
 
@@ -1249,7 +1249,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
       if (result === "granted") {
         // Hide both the popup and job alert popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
-        document.getElementById("jobAlertPopup").style.display = "none";
+        if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 
         // Update the FCM token
         await updateFcmToken(user.uid);
@@ -1257,7 +1257,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
         // If permission is denied, show the enable notification popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
         document.getElementById("popupEnableNotifications").style.display = "flex";
-        document.getElementById("jobAlertPopup").style.display = "flex";
+        if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
       }
     } catch (e) {
       console.error("Permission request failed:", e);
@@ -1266,11 +1266,11 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
     // If permission is denied, show enable notification popup
     document.getElementById("popupBlockedNotifications").style.display = "none";
     document.getElementById("popupEnableNotifications").style.display = "flex";
-    document.getElementById("jobAlertPopup").style.display = "flex";
+    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
   } else if (permission === "granted") {
     // If permission is already granted, just hide both the popup and job alert popup
     document.getElementById("popupBlockedNotifications").style.display = "none";
-    document.getElementById("jobAlertPopup").style.display = "none";
+    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   }
 });
 
@@ -1278,7 +1278,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
 
 document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
   document.getElementById("popupEnableNotifications").style.display = "none";
-  document.getElementById("jobAlertPopup").style.display = "none";
+  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 });
 
 
