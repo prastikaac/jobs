@@ -133,69 +133,61 @@ wrapper.innerHTML = `
       <h3>VI. How do you want to receive job alerts?</h3>
       <p class="popup-description" style="margin-top:-10px; margin-bottom:15px; font-size:14px;">Toggle a channel and choose how often to receive alerts.</p>
 
-      <!-- EMAIL channel row -->
-      <div class="select-box" id="jobAlertSubBox">
-        <div class="option-row"><span>Email</span><label class="switch"><input type="checkbox" id="emailAlertToggle" value="email" checked /><span class="slider"></span></label></div>
-      </div>
-      <!-- EMAIL frequency sub-option -->
-      <div id="emailFreqSection" class="sub-freq-section">
-        <p class="sub-freq-label">&#128231; Email frequency</p>
-        <div class="select-box sub-freq-box" id="emailFreqBox">
-          <div class="option-row"><span>Once a day</span><label class="switch"><input type="radio" name="emailFreq" value="daily" checked /><span class="slider"></span></label></div>
-          <div class="option-row"><span>Once a week</span><label class="switch"><input type="radio" name="emailFreq" value="weekly" /><span class="slider"></span></label></div>
-          <div class="option-row"><span>Once a month</span><label class="switch"><input type="radio" name="emailFreq" value="monthly" /><span class="slider"></span></label></div>
+      <!-- EMAIL channel — all-in-one card -->
+      <div class="channel-card" id="jobAlertSubBox">
+        <div class="option-row channel-header-row">
+          <span class="channel-label">Email</span>
+          <label class="switch"><input type="checkbox" id="emailAlertToggle" value="email" checked /><span class="slider"></span></label>
         </div>
-        <!-- Email delivery schedule (shown for daily/weekly/monthly) -->
-        <div id="emailScheduleSection" class="sub-freq-schedule">
-          <p class="sub-freq-label">&#9200; Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki time)</span></p>
-          <div class="schedule-picker">
-            <input type="time" id="emailScheduleTime" value="09:00" />
-            <!-- Day-of-week — only for weekly -->
-            <select id="emailScheduleDay" style="display:none;">
-              <option value="1">Monday</option>
-              <option value="2">Tuesday</option>
-              <option value="3">Wednesday</option>
-              <option value="4">Thursday</option>
-              <option value="5">Friday</option>
-              <option value="6">Saturday</option>
-              <option value="0">Sunday</option>
-            </select>
-            <!-- Day-of-month — only for monthly -->
-            <select id="emailScheduleDate" style="display:none;"></select>
+        <!-- EMAIL frequency sub-options (indented inside the card) -->
+        <div id="emailFreqSection" class="channel-sub-section">
+          <div class="channel-divider"></div>
+          <div class="option-row sub-option-row"><span>Once a day</span><label class="switch"><input type="radio" name="emailFreq" value="daily" checked /><span class="slider"></span></label></div>
+          <div class="option-row sub-option-row"><span>Once a week</span><label class="switch"><input type="radio" name="emailFreq" value="weekly" /><span class="slider"></span></label></div>
+          <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" name="emailFreq" value="monthly" /><span class="slider"></span></label></div>
+          <!-- Delivery time — sits at the bottom of the same card -->
+          <div id="emailScheduleSection" class="delivery-time-row">
+            <p class="delivery-time-label">&#9200; Delivery time <span>(Helsinki time)</span></p>
+            <div class="schedule-picker">
+              <input type="time" id="emailScheduleTime" value="09:00" />
+              <select id="emailScheduleDay" style="display:none;">
+                <option value="1">Monday</option><option value="2">Tuesday</option>
+                <option value="3">Wednesday</option><option value="4">Thursday</option>
+                <option value="5">Friday</option><option value="6">Saturday</option>
+                <option value="0">Sunday</option>
+              </select>
+              <select id="emailScheduleDate" style="display:none;"></select>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- PUSH channel row -->
-      <div class="select-box" id="pushAlertSubBox" style="margin-top:10px;">
-        <div class="option-row"><span>Push Notification</span><label class="switch"><input type="checkbox" id="pushAlertToggle" value="pushNotification" checked /><span class="slider"></span></label></div>
-      </div>
-      <!-- PUSH frequency sub-option (instantly / daily / weekly / monthly) -->
-      <div id="pushFreqSection" class="sub-freq-section">
-        <p class="sub-freq-label">&#128276; Push frequency</p>
-        <div class="select-box sub-freq-box" id="pushFreqBox">
-          <div class="option-row"><span>Instantly when matching job published</span><label class="switch"><input type="radio" name="pushFreq" value="instantly" checked /><span class="slider"></span></label></div>
-          <div class="option-row"><span>Once a day</span><label class="switch"><input type="radio" name="pushFreq" value="daily" /><span class="slider"></span></label></div>
-          <div class="option-row"><span>Once a week</span><label class="switch"><input type="radio" name="pushFreq" value="weekly" /><span class="slider"></span></label></div>
-          <div class="option-row"><span>Once a month</span><label class="switch"><input type="radio" name="pushFreq" value="monthly" /><span class="slider"></span></label></div>
+      <!-- PUSH channel — all-in-one card -->
+      <div class="channel-card" id="pushAlertSubBox">
+        <div class="option-row channel-header-row">
+          <span class="channel-label">Push Notification</span>
+          <label class="switch"><input type="checkbox" id="pushAlertToggle" value="pushNotification" checked /><span class="slider"></span></label>
         </div>
-        <!-- Delivery schedule (shown when push freq is NOT instantly) -->
-        <div id="pushScheduleSection" class="sub-freq-schedule" style="display:none;">
-          <p class="sub-freq-label">&#9200; Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki time)</span></p>
-          <div class="schedule-picker">
-            <input type="time" id="pushScheduleTime" value="09:00" />
-            <!-- Day-of-week — only for weekly -->
-            <select id="pushScheduleDay" style="display:none;">
-              <option value="1">Monday</option>
-              <option value="2">Tuesday</option>
-              <option value="3">Wednesday</option>
-              <option value="4">Thursday</option>
-              <option value="5">Friday</option>
-              <option value="6">Saturday</option>
-              <option value="0">Sunday</option>
-            </select>
-            <!-- Day-of-month — only for monthly -->
-            <select id="pushScheduleDate" style="display:none;"></select>
+        <!-- PUSH frequency sub-options (indented inside the card) -->
+        <div id="pushFreqSection" class="channel-sub-section">
+          <div class="channel-divider"></div>
+          <div class="option-row sub-option-row"><span>Instantly when matching job published</span><label class="switch"><input type="radio" name="pushFreq" value="instantly" checked /><span class="slider"></span></label></div>
+          <div class="option-row sub-option-row"><span>Once a day</span><label class="switch"><input type="radio" name="pushFreq" value="daily" /><span class="slider"></span></label></div>
+          <div class="option-row sub-option-row"><span>Once a week</span><label class="switch"><input type="radio" name="pushFreq" value="weekly" /><span class="slider"></span></label></div>
+          <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" name="pushFreq" value="monthly" /><span class="slider"></span></label></div>
+          <!-- Delivery time — sits at the bottom of the same card -->
+          <div id="pushScheduleSection" class="delivery-time-row" style="display:none;">
+            <p class="delivery-time-label">&#9200; Delivery time <span>(Helsinki time)</span></p>
+            <div class="schedule-picker">
+              <input type="time" id="pushScheduleTime" value="09:00" />
+              <select id="pushScheduleDay" style="display:none;">
+                <option value="1">Monday</option><option value="2">Tuesday</option>
+                <option value="3">Wednesday</option><option value="4">Thursday</option>
+                <option value="5">Friday</option><option value="6">Saturday</option>
+                <option value="0">Sunday</option>
+              </select>
+              <select id="pushScheduleDate" style="display:none;"></select>
+            </div>
           </div>
         </div>
       </div>
