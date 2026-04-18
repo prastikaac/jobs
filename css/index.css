@@ -2,15 +2,15 @@
 :root .lgT:not(.drK),
 :root .theme0:not(.drK) {
     /* Theme */
-    --themeC: #482dff;
+    --themeC: #41B375;
     /* Body */
     --headC: #08102b;
     --bodyC: #08102b;
     --bodyCa: #989b9f;
     --bodyB: #FFFFFF;
     /* Link */
-    --linkC: #482dff;
-    --linkB: #482dff;
+    --linkC: #41B375;
+    --linkB: #41B375;
     /* Wave */
     --waveB: #C6DAFC;
     /* Icon */
@@ -517,7 +517,7 @@
 .progress .indeterminate:before {
     content: '';
     position: absolute;
-    background-color: #9303FA;
+    background-color: #41B375;
     top: 0;
     left: -100%;
     /* Start the bar from outside the progress bar */
