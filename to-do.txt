@@ -37,12 +37,6 @@ Very easy win.
 
 - update images across the whole website 
 
-- two vieweing cards style
-
-- add 3 more blogs before sending to adsense review
-
-
-
 
 
 
@@ -59,4 +53,28 @@ Very easy win.
  and for other daily weekly monthly push notification : send the job alert to the user's device at the scheduled time of the day or week or month and give user to select time schedule of this in another suboption 
  
 
- now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  
+ now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  .
+
+
+ okay then now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
+
+
+
+
+
+and while sending different job Alerts Summary, stop sending the job alerts one each every time like, every time to the admin, send it every day 10 pm once with all the reporting of the day to 	acharyaprasiddha6@gmail.com  : Job: Chef
+
+Instant matched users: 1
+
+Queued users (daily/weekly/monthly): 0
+
+Total instant emails sent: 1
+
+Instant push notifications queued (staggered): 3
+
+Instant email recipients:
+
+acharyaprasiddha6@gmail.com  
+
+
+

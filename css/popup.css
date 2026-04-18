@@ -52,19 +52,24 @@
 /* Fast animation for popupStep1 */
 @keyframes slideInFromBottom {
     0% {
-        transform: translateY(100%); /* Start from below the screen */
+        transform: translateY(100%);
+        /* Start from below the screen */
         opacity: 0;
     }
+
     100% {
-        transform: translateY(0); /* Slide into the normal position */
+        transform: translateY(0);
+        /* Slide into the normal position */
         opacity: 1;
     }
 }
 
 /* Apply fast animation with no delay */
 #popupStep1 {
-    animation: slideInFromBottom 0.15s ease-out forwards; /* 0.3s duration for fast animation */
-    opacity: 0; /* Start with no opacity */
+    animation: slideInFromBottom 0.15s ease-out forwards;
+    /* 0.3s duration for fast animation */
+    opacity: 0;
+    /* Start with no opacity */
 }
 
 .popup-heading-unique {
@@ -969,8 +974,15 @@ body.drK .popup-description-for-mobile-unique {
 }
 
 @keyframes subFreqSlideIn {
-    from { opacity: 0; transform: translateY(-6px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .sub-freq-label {
@@ -1000,7 +1012,7 @@ body.drK .popup-description-for-mobile-unique {
     border-radius: 14px;
     border: 1px solid #eee;
     background: #fff;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     padding: 4px 10px 0;
     margin-bottom: 16px;
     overflow: hidden;
@@ -1069,7 +1081,7 @@ body.drK .popup-description-for-mobile-unique {
 body.drK .channel-card {
     background: #1c2236;
     border-color: #2e3a52;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 body.drK .channel-card .channel-label {

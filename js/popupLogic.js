@@ -606,6 +606,11 @@ window.signupUser = async () => {
 
   if (hasError) {
     signupButton.disabled = false;  // Re-enable the button in case of error
+    // Scroll to the first error smoothly
+    const firstError = document.querySelector('.error-message:not(:empty)');
+    if (firstError) {
+      firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
     return;
   }
 

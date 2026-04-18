@@ -605,9 +605,10 @@ exports.sendJobAlertEmails = onDocumentCreated(
 
     const usersSnapshot = await db.collection("users").get()
     const matchedEmails = []
-    const pushPromises = []
+    // pushPromises removed — instant push now goes through notifQueue
     let queuedUsersCount = 0
     let instantMatchedUsersCount = 0
+    let instantPushQueuedCount = 0  // tracks how many push entries were queued
 
     // Make sure jobData values are always arrays and lowercased for case-insensitive matching
     const jobCategories = normalizeToArray(jobData.jobCategory).map(v => String(v).toLowerCase())
@@ -664,37 +665,36 @@ exports.sendJobAlertEmails = onDocumentCreated(
         if (pushAlertFrequency === "instantly") {
             instantMatchedUsersCount++
 
+            // Email is still sent immediately
             if (emailNotificationEnabled && user.email) {
                 matchedEmails.push(user.email)
             }
 
-            if (pushNotificationEnabled) {
+            // Push is now staggered via notifQueue (5 min × position index)
+            if (pushNotificationEnabled && fcmTokens.length > 0) {
                 for (const token of fcmTokens) {
                     if (!token) continue
 
-                    const message = {
-                        token: token,
-                        notification: {
-                            title: jobData.title || "New Job Alert",
-                            body: `${jobData.description || ""}`,
-                            image: jobData.imageUrl || undefined,
-                        },
-                        data: {
-                            jobId: event.params.jobId,
-                            jobLink: jobData.jobLink || "",
-                            imageUrl: jobData.imageUrl || "",
-                        },
-                    }
+                    // Each additional user in this batch gets +5 min on top of the previous
+                    const delayMs = instantPushQueuedCount * 5 * 60 * 1000
+                    const scheduledAt = new Date(Date.now() + delayMs)
 
-                    pushPromises.push(
-                        sendPushToTokenAndCleanup({
-                            token,
-                            message,
-                            db,
-                            userDocId: doc.id,
-                            fcmTokens,
-                        }),
-                    )
+                    await db.collection("notifQueue").add({
+                        userId: doc.id,
+                        token: token,
+                        jobId: event.params.jobId,
+                        scheduledAt: Timestamp.fromDate(scheduledAt),
+                        status: "pending",
+                        createdAt: Timestamp.now(),
+                        message: {
+                            title: jobData.title || "New Job Alert",
+                            body: jobData.description || "",
+                            imageUrl: jobData.imageUrl || "",
+                            jobLink: jobData.jobLink || "",
+                        },
+                    })
+
+                    instantPushQueuedCount++
                 }
             }
         } else if (["daily", "weekly", "monthly"].includes(pushAlertFrequency) || ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
@@ -774,12 +774,6 @@ exports.sendJobAlertEmails = onDocumentCreated(
         }
     }
 
-    let successfulPushCount = 0
-    if (pushPromises.length > 0) {
-        const pushResults = await Promise.all(pushPromises)
-        successfulPushCount = pushResults.filter(Boolean).length
-    }
-
     try {
         await sendEmail({
             to: OWNER_EMAIL,
@@ -789,7 +783,7 @@ exports.sendJobAlertEmails = onDocumentCreated(
                 <p><strong>Instant matched users:</strong> ${instantMatchedUsersCount}</p>
                 <p><strong>Queued users (daily/weekly/monthly):</strong> ${queuedUsersCount}</p>
                 <p><strong>Total instant emails sent:</strong> ${matchedEmails.length}</p>
-                <p><strong>Total instant push notifications sent:</strong> ${successfulPushCount}</p>
+                <p><strong>Instant push notifications queued (staggered):</strong> ${instantPushQueuedCount}</p>
                 <p><strong>Instant email recipients:</strong></p>
                 <ul>
                     ${matchedEmails.map((email) => `<li>${escapeHtml(email)}</li>`).join("") || "<li>No instant emails sent</li>"}
@@ -801,7 +795,7 @@ exports.sendJobAlertEmails = onDocumentCreated(
     }
 
     console.log(`Instant emails sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`)
-    console.log(`Instant push notifications sent to: ${successfulPushCount} users.`)
+    console.log(`Instant push notifications queued (staggered): ${instantPushQueuedCount}`)
     console.log(`Queued users for digest alerts: ${queuedUsersCount}`)
 })
 
@@ -838,6 +832,96 @@ exports.sendMonthlyAlerts = onSchedule(
     },
     async () => {
         await sendDigestAlerts("monthly")
+    },
+)
+
+/**
+ * Drain the notifQueue collection every minute.
+ * Sends push notifications that are due (scheduledAt <= now) and marks them as sent.
+ */
+exports.processNotifQueue = onSchedule(
+    {
+        schedule: "* * * * *",
+        timeZone: "Europe/Helsinki",
+        region: "europe-west1",
+    },
+    async () => {
+        const db = getFirestore()
+        const now = Timestamp.now()
+
+        const snapshot = await db
+            .collection("notifQueue")
+            .where("status", "==", "pending")
+            .where("scheduledAt", "<=", now)
+            .limit(100)
+            .get()
+
+        if (snapshot.empty) {
+            console.log("notifQueue: nothing due right now.")
+            return
+        }
+
+        let sent = 0
+        let failed = 0
+
+        for (const queueDoc of snapshot.docs) {
+            const entry = queueDoc.data()
+            const { token, userId, message } = entry
+
+            if (!token || !message) {
+                await queueDoc.ref.update({ status: "invalid" })
+                continue
+            }
+
+            const fcmMessage = {
+                token,
+                notification: {
+                    title: message.title || "New Job Alert",
+                    body: message.body || "",
+                    image: message.imageUrl || undefined,
+                },
+                data: {
+                    jobId: entry.jobId || "",
+                    jobLink: message.jobLink || "",
+                    imageUrl: message.imageUrl || "",
+                },
+            }
+
+            try {
+                await getMessaging().send(fcmMessage)
+                await queueDoc.ref.update({ status: "sent", sentAt: Timestamp.now() })
+                sent++
+            } catch (error) {
+                console.error(`notifQueue: failed to send to token ${token}:`, error.message)
+
+                // Remove invalid/expired FCM tokens from the user's document
+                if (
+                    error.code === "messaging/registration-token-not-registered" ||
+                    String(error.message).includes("Requested entity was not found")
+                ) {
+                    try {
+                        const userRef = db.collection("users").doc(userId)
+                        const userSnap = await userRef.get()
+                        if (userSnap.exists) {
+                            const currentTokens = Array.isArray(userSnap.data().fcmTokens)
+                                ? userSnap.data().fcmTokens
+                                : []
+                            await userRef.update({
+                                fcmTokens: currentTokens.filter((t) => t !== token),
+                            })
+                            console.log(`notifQueue: removed stale token for user ${userId}`)
+                        }
+                    } catch (cleanupErr) {
+                        console.error("notifQueue: failed to clean up stale token:", cleanupErr.message)
+                    }
+                }
+
+                await queueDoc.ref.update({ status: "failed" })
+                failed++
+            }
+        }
+
+        console.log(`notifQueue: sent=${sent}, failed=${failed}`)
     },
 )
 

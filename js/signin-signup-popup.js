@@ -147,7 +147,7 @@ wrapper.innerHTML = `
           <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" name="emailFreq" value="monthly" /><span class="slider"></span></label></div>
           <!-- Delivery time — sits at the bottom of the same card -->
           <div id="emailScheduleSection" class="delivery-time-row">
-            <p class="delivery-time-label">&#9200; Delivery time <span>(Helsinki time)</span></p>
+            <p class="delivery-time-label">&#9200; Preferred Notification Time <span>(Local Time)</span></p>
             <div class="schedule-picker">
               <input type="time" id="emailScheduleTime" value="09:00" />
               <select id="emailScheduleDay" style="display:none;">
@@ -177,7 +177,7 @@ wrapper.innerHTML = `
           <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" name="pushFreq" value="monthly" /><span class="slider"></span></label></div>
           <!-- Delivery time — sits at the bottom of the same card -->
           <div id="pushScheduleSection" class="delivery-time-row" style="display:none;">
-            <p class="delivery-time-label">&#9200; Delivery time <span>(Helsinki time)</span></p>
+            <p class="delivery-time-label">&#9200; Preferred Notification Time <span>(Local Time)</span></p>
             <div class="schedule-picker">
               <input type="time" id="pushScheduleTime" value="09:00" />
               <select id="pushScheduleDay" style="display:none;">
@@ -311,7 +311,12 @@ function populateDayOfMonth(sel) {
   for (let d = 1; d <= 28; d++) {
     const o = document.createElement('option');
     o.value = d;
-    o.textContent = d + (d === 1 ? 'st' : d === 2 ? 'nd' : d === 3 ? 'rd' : 'th');
+    let suffix = 'th';
+    if (d === 1 || d === 21) suffix = 'st';
+    else if (d === 2 || d === 22) suffix = 'nd';
+    else if (d === 3 || d === 23) suffix = 'rd';
+    
+    o.textContent = d + suffix + ' of the month';
     if (d === 1) o.selected = true;
     sel.appendChild(o);
   }

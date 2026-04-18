@@ -425,6 +425,9 @@ body.drK.foursec {
     /* no solid background */
   }
 
+  #footer-widget-1 {
+    margin-top: 20px !important;
+  }
 
 }
 
@@ -494,8 +497,25 @@ body.drK.foursec {
   }
 
 
+  #footer-widget-2 {
+    margin-top: 10px !important;
+  }
+
+  #footer-widget-3 {
+    margin-top: -15px !important;
+    margin-bottom: 0 !important;
+  }
+
+  #footer-widget-4 {
+    margin-top: -35px !important; 
+  }
+
+  #footer-widget-4 .title {
+    display: none !important;
+  }
+
   .secwid {
-    margin-top: -50px;
+    margin-top: 0 !important;
   }
 
 
@@ -903,4 +923,56 @@ body.drK .job-card__value {
 
 #header-search {
   margin-left: 20px;
+}
+
+/* Footer Responsive Overrides */
+.abtT {
+  max-width: 100%;
+}
+
+.abtT .tl {
+  display: block;
+  font-size: clamp(18px, 1.8vw, 24px) !important;
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow: visible !important;
+}
+
+.abtT h6 {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  opacity: 0.75;
+  margin-top: 5px !important;
+  overflow-wrap: break-word;
+}
+
+.abtT p.abtD {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  opacity: 0.8;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-top: 8px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .abtT .tl {
+    font-size: clamp(16px, 5.5vw, 21px) !important;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-overflow: clip !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+  }
+
+  .abtT h6 {
+    font-size: clamp(11px, 3.8vw, 13px) !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+  }
+
+  .abtT p.abtD {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
 }

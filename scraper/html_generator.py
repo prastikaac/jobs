@@ -272,7 +272,7 @@ def generate_job_page(job: dict) -> bool:
         # Image
         "{-job image-}": image_url,
         # Industry / category
-        "{-job industry name-}": _esc(category.replace("_", " ").replace("-", " ").title().replace(" And ", " and ")),
+        "{-job industry name-}": _esc(category.replace("_", " ").replace("-", " ").title().replace(" And ", " and ").replace("Information Technology", "Information Technology (IT)")),
         "{-job industry slug-}": cat_slug,
         "{-job industry id-}": _esc(category),
         # Language
@@ -586,7 +586,7 @@ def _generate_jobs_table_page(jobs: List[dict]) -> None:
             company = _esc(job.get("company", ""))
             location = _esc(_location_label(job))
             category_raw = _category_label(job)
-            category = _esc(category_raw.replace("_", " ").replace("-", " ").title().replace(" And ", " and "))
+            category = _esc(category_raw.replace("_", " ").replace("-", " ").title().replace(" And ", " and ").replace("Information Technology", "Information Technology (IT)"))
             cat_slug = config.slugify_category(category_raw)
             job_url = _esc(_job_page_url(job))
             
