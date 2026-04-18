@@ -939,8 +939,8 @@ body.drK .job-card__value {
 }
 
 .abtT h6 {
-  font-size: 12px !important;
-  font-weight: 400 !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
   opacity: 0.75;
   margin-top: 5px !important;
   overflow-wrap: break-word;
@@ -966,7 +966,7 @@ body.drK .job-card__value {
   }
 
   .abtT h6 {
-    font-size: clamp(11px, 3.8vw, 13px) !important;
+    font-size: clamp(10px, 3.5vw, 12px) !important;
     white-space: nowrap !important;
     word-break: normal !important;
   }

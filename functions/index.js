@@ -562,20 +562,19 @@ async function sendDigestAlerts(frequency) {
     }
 
     try {
-        await sendEmail({
-            to: OWNER_EMAIL,
-            subject: `✅ ${frequency.charAt(0).toUpperCase() + frequency.slice(1)} Alerts Summary`,
-            html: `
-                <p><strong>Frequency:</strong> ${escapeHtml(frequency)}</p>
-                <p><strong>Users processed:</strong> ${usersProcessed}</p>
-                <p><strong>Total valid queued jobs sent:</strong> ${totalQueuedJobsSent}</p>
-                <p><strong>Total expired queued jobs removed:</strong> ${totalExpiredQueuedJobsRemoved}</p>
-                <p><strong>Total emails sent:</strong> ${totalEmailsSent}</p>
-                <p><strong>Total push notifications sent:</strong> ${totalPushNotificationsSent}</p>
-            `,
+        await db.collection("adminReports").add({
+            type: "digest_alert",
+            frequency,
+            usersProcessed,
+            totalQueuedJobsSent,
+            totalExpiredQueuedJobsRemoved,
+            totalEmailsSent,
+            totalPushNotificationsSent,
+            status: "pending",
+            createdAt: Timestamp.now()
         })
     } catch (error) {
-        console.error(`Failed to send ${frequency} summary email to owner:`, error.message)
+        console.error(`Failed to save ${frequency} admin report to Firestore:`, error.message)
     }
 
     console.log(
@@ -775,23 +774,19 @@ exports.sendJobAlertEmails = onDocumentCreated(
     }
 
     try {
-        await sendEmail({
-            to: OWNER_EMAIL,
-            subject: `✅ Job Alert Processed for ${jobData.title || event.params.jobId}`,
-            html: `
-                <p><strong>Job:</strong> ${escapeHtml(jobData.title || event.params.jobId)}</p>
-                <p><strong>Instant matched users:</strong> ${instantMatchedUsersCount}</p>
-                <p><strong>Queued users (daily/weekly/monthly):</strong> ${queuedUsersCount}</p>
-                <p><strong>Total instant emails sent:</strong> ${matchedEmails.length}</p>
-                <p><strong>Instant push notifications queued (staggered):</strong> ${instantPushQueuedCount}</p>
-                <p><strong>Instant email recipients:</strong></p>
-                <ul>
-                    ${matchedEmails.map((email) => `<li>${escapeHtml(email)}</li>`).join("") || "<li>No instant emails sent</li>"}
-                </ul>
-            `,
+        await db.collection("adminReports").add({
+            type: "job_alert",
+            jobTitle: jobData.title || event.params.jobId,
+            instantMatchedUsersCount,
+            queuedUsersCount,
+            emailsSentCount: matchedEmails.length,
+            pushQueuedCount: instantPushQueuedCount,
+            recipients: matchedEmails,
+            status: "pending",
+            createdAt: Timestamp.now()
         })
     } catch (error) {
-        console.error("Failed to send owner summary email:", error.message)
+        console.error("Failed to save admin report to Firestore:", error.message)
     }
 
     console.log(`Instant emails sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`)
@@ -979,3 +974,122 @@ exports.deleteExpiredJobs = onSchedule(
 )
 
 // Always do firebase deploy --only functions after editing this file.
+
+/**
+ * Send the consolidated Daily Admin Report at 10 PM.
+ * Sweeps 'adminReports' collection, formats a master email, and clears the pending logs.
+ */
+exports.sendDailyAdminReport = onSchedule(
+    {
+        schedule: "0 22 * * *", // 22:00 (10 PM) Europe/Helsinki time
+        timeZone: "Europe/Helsinki",
+        region: "europe-west1",
+        secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
+    },
+    async () => {
+        const db = getFirestore()
+        const ADMIN_TARGET_EMAIL = "acharyaprasiddha6@gmail.com"
+
+        const snapshot = await db.collection("adminReports").where("status", "==", "pending").get()
+
+        if (snapshot.empty) {
+            console.log("sendDailyAdminReport: No pending admin logs to report today.")
+            return
+        }
+
+        const jobAlerts = []
+        const digestAlerts = []
+        const docsToDelete = []
+
+        for (const doc of snapshot.docs) {
+            const data = doc.data()
+            if (data.type === "job_alert") {
+                jobAlerts.push(data)
+            } else if (data.type === "digest_alert") {
+                digestAlerts.push(data)
+            }
+            docsToDelete.push(doc.ref)
+        }
+
+        let htmlContent = `<h2>Daily Job Alerts Report</h2><hr/>`
+
+        if (jobAlerts.length > 0) {
+            jobAlerts.forEach((job) => {
+                const recipientsList = (job.recipients || []).length > 0 
+                  ? job.recipients.join("<br/>") 
+                  : "None"
+
+                htmlContent += `
+                    <div style="margin-bottom: 25px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                        <h3 style="margin-top: 0;">Job: ${escapeHtml(job.jobTitle)}</h3>
+                        <p><strong>Instant matched users:</strong> ${job.instantMatchedUsersCount}</p>
+                        <p><strong>Queued users (daily/weekly/monthly):</strong> ${job.queuedUsersCount}</p>
+                        <p><strong>Total instant emails sent:</strong> ${job.emailsSentCount}</p>
+                        <p><strong>Instant push notifications queued (staggered):</strong> ${job.pushQueuedCount}</p>
+                        <p><strong>Instant email recipients:</strong></p>
+                        <div style="background-color: #f9f9f9; padding: 10px; border-radius: 4px; font-family: monospace; font-size: 12px;">
+                            ${recipientsList}
+                        </div>
+                    </div>
+                `
+            })
+        } else {
+            htmlContent += `<p>No job alerts triggered today.</p>`
+        }
+
+        if (digestAlerts.length > 0) {
+            htmlContent += `<h2>Digest Batch Summaries</h2><hr/>`
+            digestAlerts.forEach((digest) => {
+                htmlContent += `
+                    <div style="margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                        <p><strong>Frequency:</strong> ${escapeHtml(digest.frequency)}</p>
+                        <p><strong>Users processed:</strong> ${digest.usersProcessed}</p>
+                        <p><strong>Total valid queued jobs sent:</strong> ${digest.totalQueuedJobsSent}</p>
+                        <p><strong>Total expired queued jobs removed:</strong> ${digest.totalExpiredQueuedJobsRemoved}</p>
+                        <p><strong>Total emails sent:</strong> ${digest.totalEmailsSent}</p>
+                        <p><strong>Total push notifications sent:</strong> ${digest.totalPushNotificationsSent}</p>
+                    </div>
+                `
+            })
+        }
+
+        htmlContent += `<p style="color: #888; font-size: 12px; margin-top: 30px;">Report automatically generated by findjobsinfinland.fi 🇫🇮</p>`
+
+        let emailSentSuccessfully = false
+        try {
+            await sendEmail({
+                to: ADMIN_TARGET_EMAIL,
+                subject: `Daily System Report — findjobsinfinland.fi`,
+                html: htmlContent,
+            })
+            emailSentSuccessfully = true
+            console.log(`Successfully sent daily admin report to ${ADMIN_TARGET_EMAIL}.`)
+        } catch (error) {
+            console.error("Failed to send daily admin email:", error.message)
+        }
+
+        if (emailSentSuccessfully) {
+            let batch = db.batch()
+            let opCount = 0
+            let passCount = 0
+            const BATCH_LIMIT = 400
+
+            for (const ref of docsToDelete) {
+                batch.delete(ref)
+                opCount++
+
+                if (opCount === BATCH_LIMIT) {
+                    await batch.commit()
+                    batch = db.batch()
+                    opCount = 0
+                    passCount++
+                }
+            }
+
+            if (opCount > 0) {
+                await batch.commit()
+            }
+            console.log("Successfully wiped pending admin logs.")
+        }
+    }
+)
