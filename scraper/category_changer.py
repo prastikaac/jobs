@@ -308,7 +308,8 @@ def change_category(job_id: str, new_category: str) -> dict:
 
     # Update index.html and jobs.html
     try:
-        html_generator.update_main_pages(all_jobs)
+        updated_all_jobs = flat_jobs_from_jobs_json(jobs_raw)
+        html_generator.update_main_pages(updated_all_jobs)
     except Exception as exc:
         print("[category_changer] Failed to update main pages HTML:", exc)
 
