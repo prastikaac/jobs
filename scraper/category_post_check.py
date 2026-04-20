@@ -232,8 +232,11 @@ def _ask_lmstudio(model: str, title: str, company: str, description: str,
 def _load_json(path: Path):
     if not path.exists():
         return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        return None
 
 
 def _save_json(path: Path, data) -> None:

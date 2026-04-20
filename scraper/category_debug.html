@@ -16,7 +16,6 @@
             --warning: #f59e0b;
             --border: #334155;
         }
-
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-color);
@@ -24,171 +23,57 @@
             margin: 0;
             padding: 2rem;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        .container { max-width: 1200px; margin: 0 auto; }
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border);
         }
-
-        h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-
+        h1 { margin: 0; font-size: 1.5rem; font-weight: 600; }
         .btn {
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
+            background-color: var(--primary); color: white; border: none;
+            padding: 0.5rem 1rem; border-radius: 6px; font-weight: 500;
+            cursor: pointer; transition: background-color 0.2s;
+            display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;
         }
-
-        .btn:hover {
-            background-color: var(--primary-hover);
-        }
-
+        .btn:hover { background-color: var(--primary-hover); }
         .btn-small {
-            padding: 0.25rem 0.75rem;
-            font-size: 0.75rem;
-            background-color: var(--surface-color);
-            border: 1px solid var(--border);
+            padding: 0.25rem 0.75rem; font-size: 0.75rem;
+            background-color: var(--surface-color); border: 1px solid var(--border);
         }
-
-        .btn-small:hover {
-            background-color: #334155;
-        }
-
+        .btn-small:hover { background-color: #334155; }
         table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: var(--surface-color);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            width: 100%; border-collapse: collapse; background-color: var(--surface-color);
+            border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
         th {
-            background-color: rgba(0,0,0,0.2);
-            font-weight: 500;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.05em;
+            background-color: rgba(0,0,0,0.2); font-weight: 500; color: var(--text-muted);
+            text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em;
         }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        .job-title {
-            font-weight: 500;
-        }
-
-        .company-name {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-
-        .badge {
-            display: inline-flex;
-            padding: 0.25rem 0.5rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-
-        .badge-ok {
-            background-color: rgba(16, 185, 129, 0.1);
-            color: var(--success);
-        }
-
-        .badge-changed {
-            background-color: rgba(245, 158, 11, 0.1);
-            color: var(--warning);
-        }
-
-        .category-pill {
-            display: inline-block;
-            background-color: rgba(255,255,255,0.1);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.875rem;
-        }
-
-        .arrow {
-            color: var(--text-muted);
-            margin: 0 0.5rem;
-        }
-
+        tr:last-child td { border-bottom: none; }
+        .job-title { font-weight: 500; }
+        .company-name { color: var(--text-muted); font-size: 0.875rem; margin-top: 0.25rem; }
+        .badge { display: inline-flex; padding: 0.25rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; }
+        .badge-ok { background-color: rgba(16, 185, 129, 0.1); color: var(--success); }
+        .badge-changed { background-color: rgba(245, 158, 11, 0.1); color: var(--warning); }
+        .category-pill { display: inline-block; background-color: rgba(255,255,255,0.1); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.875rem; }
+        .arrow { color: var(--text-muted); margin: 0 0.5rem; }
         .toast {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background-color: var(--success);
-            color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-            transform: translateY(150%);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            z-index: 50;
-            font-weight: 500;
+            position: fixed; bottom: 2rem; right: 2rem; background-color: var(--success); color: white;
+            padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            transform: translateY(150%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 50; font-weight: 500;
         }
-
-        .toast.show {
-            transform: translateY(0);
-        }
-
-        #error-state {
-            display: none;
-            background-color: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            color: #fca5a5;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-
+        .toast.show { transform: translateY(0); }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Error Banner -->
-        <div id="error-state">
-            Unable to load JSON data. If you are opening this file locally (file://), CORS policies might be blocking the request. 
-            Try running a local server (e.g. VSCode Live Server) or the python http.server inline.
-        </div>
-
         <div class="header">
             <div>
                 <h1>Category Post-Check Debugger</h1>
                 <div style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;" id="stats-text">
-                    Loading data...
+                    Total Scraped: 1 | AI Corrections: 0
                 </div>
             </div>
             <button class="btn" onclick="copyAll()">
@@ -196,7 +81,6 @@
                 Copy All as Plain Text
             </button>
         </div>
-
         <table>
             <thead>
                 <tr>
@@ -207,114 +91,43 @@
                 </tr>
             </thead>
             <tbody id="table-body">
-                <!-- Rows injected by JS -->
+                
+            <tr>
+                <td>
+                    <div class="job-title">Nursing gig work at Attendo in the Ylä-Savo region</div>
+                    <div class="company-name">Attendo Oy</div>
+                </td>
+                <td><span class="category-pill">healthcare</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Nursing gig work at Attendo in the Yl\u00e4-Savo region", "healthcare")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
             </tbody>
         </table>
     </div>
-
     <div class="toast" id="toast">Copied to clipboard!</div>
 
     <script>
-        let globalJobData = [];
-
-        async function loadData() {
-            try {
-                // Fetch the two JSON files simultaneously
-                const [checkRes, changesRes] = await Promise.all([
-                    fetch('data/category_check.json').catch(() => null),
-                    fetch('data/category_changes_log.json').catch(() => null)
-                ]);
-
-                if (!checkRes || !checkRes.ok) throw new Error("Could not load category_check.json");
-
-                const checkData = await checkRes.json();
-                let changesData = [];
-                
-                if (changesRes && changesRes.ok) {
-                    changesData = await changesRes.json();
-                }
-
-                // Map changes by job_id for O(1) lookup
-                const changesMap = {};
-                changesData.forEach(change => {
-                    changesMap[change.job_id] = change;
-                });
-
-                const tbody = document.getElementById('table-body');
-                tbody.innerHTML = '';
-                
-                let changedCount = 0;
-                globalJobData = [];
-
-                checkData.forEach(job => {
-                    // Check if there's a correction log for this job
-                    const changeLog = changesMap[job.job_id] || changesMap[job.id];
-                    const isChanged = !!changeLog;
-                    if (isChanged) changedCount++;
-
-                    const finalCategory = isChanged ? changeLog.new_category : job.detected_category;
-
-                    // Save to global data for the "Copy All" functionality
-                    globalJobData.push({
-                        title: job.title,
-                        category: finalCategory
-                    });
-
-                    // Build the Category HTML column
-                    let categoryHtml = '';
-                    if (isChanged) {
-                        categoryHtml = `
-                            <span class="category-pill" style="text-decoration: line-through; opacity: 0.6;">${job.detected_category}</span>
-                            <span class="arrow">→</span>
-                            <span class="category-pill" style="border: 1px solid var(--warning); color: var(--warning);">${changeLog.new_category}</span>
-                        `;
-                    } else {
-                        categoryHtml = `<span class="category-pill">${job.detected_category}</span>`;
-                    }
-
-                    // Build the row
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td>
-                            <div class="job-title">${escapeHtml(job.title)}</div>
-                            <div class="company-name">${escapeHtml(job.company)}</div>
-                        </td>
-                        <td>${categoryHtml}</td>
-                        <td>
-                            ${isChanged 
-                                ? '<span class="badge badge-changed">AI Corrected</span>'
-                                : '<span class="badge badge-ok">AI Verified OK</span>'}
-                        </td>
-                        <td>
-                            <button class="btn btn-small" onclick="copySingle('${escapeHtml(job.title)}', '${escapeHtml(finalCategory)}')">
-                                Copy
-                            </button>
-                        </td>
-                    `;
-                    tbody.appendChild(tr);
-                });
-
-                document.getElementById('stats-text').textContent = `Total Scraped: ${checkData.length} | AI Corrections: ${changedCount}`;
-
-            } catch (error) {
-                console.error("Error loading debug data:", error);
-                document.getElementById('error-state').style.display = 'block';
-                document.getElementById('stats-text').textContent = 'Error loading data';
-            }
-        }
+        const globalJobData = [
+  { title: "Nursing gig work at Attendo in the Yl\u00e4-Savo region", category: "healthcare" },
+];
 
         function copySingle(title, category) {
-            const text = `${title} - ${category}`;
+            const text = title + " - " + category;
             navigator.clipboard.writeText(text).then(() => {
-                showToast(`Copied: ${text}`);
+                showToast("Copied: " + text);
             });
         }
 
         function copyAll() {
             if (globalJobData.length === 0) return;
-            const text = globalJobData.map(j => `${j.title} - ${j.category}`).join('\n');
+            const text = globalJobData.map(j => j.title + " - " + j.category).join('\n');
             navigator.clipboard.writeText(text).then(() => {
-                showToast(`Copied ${globalJobData.length} jobs to clipboard`);
+                showToast("Copied " + globalJobData.length + " jobs to clipboard");
             });
         }
 
@@ -322,23 +135,8 @@
             const toast = document.getElementById('toast');
             toast.textContent = msg;
             toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
+            setTimeout(() => { toast.classList.remove('show'); }, 3000);
         }
-
-        function escapeHtml(unsafe) {
-            return (unsafe || '').toString()
-                 .replace(/&/g, "&amp;")
-                 .replace(/</g, "&lt;")
-                 .replace(/>/g, "&gt;")
-                 .replace(/"/g, "&quot;")
-                 .replace(/'/g, "&#039;");
-        }
-
-        // Initialize
-        loadData();
-
     </script>
 </body>
 </html>
