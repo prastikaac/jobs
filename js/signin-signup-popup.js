@@ -147,7 +147,7 @@ wrapper.innerHTML = `
           <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" name="emailFreq" value="monthly" /><span class="slider"></span></label></div>
           <!-- Delivery time — sits at the bottom of the same card -->
           <div id="emailScheduleSection" class="delivery-time-row">
-            <p class="delivery-time-label">&#9200; Preferred Notification Time <span>(Local Time)</span></p>
+            <p class="delivery-time-label">Preferred Notification Time <span>(Local Time)</span></p>
             <div class="schedule-picker">
               <input type="time" id="emailScheduleTime" value="09:00" />
               <select id="emailScheduleDay" style="display:none;">
@@ -177,7 +177,7 @@ wrapper.innerHTML = `
           <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" name="pushFreq" value="monthly" /><span class="slider"></span></label></div>
           <!-- Delivery time — sits at the bottom of the same card -->
           <div id="pushScheduleSection" class="delivery-time-row" style="display:none;">
-            <p class="delivery-time-label">&#9200; Preferred Notification Time <span>(Local Time)</span></p>
+            <p class="delivery-time-label">Preferred Notification Time <span>(Local Time)</span></p>
             <div class="schedule-picker">
               <input type="time" id="pushScheduleTime" value="09:00" />
               <select id="pushScheduleDay" style="display:none;">
@@ -315,7 +315,7 @@ function populateDayOfMonth(sel) {
     if (d === 1 || d === 21) suffix = 'st';
     else if (d === 2 || d === 22) suffix = 'nd';
     else if (d === 3 || d === 23) suffix = 'rd';
-    
+
     o.textContent = d + suffix + ' of the month';
     if (d === 1) o.selected = true;
     sel.appendChild(o);
@@ -345,9 +345,9 @@ if (pushToggle) {
 // Email freq radios → show/hide day-of-week / day-of-month selectors
 document.querySelectorAll('input[name="emailFreq"]').forEach(function (radio) {
   radio.addEventListener('change', function () {
-    const daySel  = document.getElementById('emailScheduleDay');
+    const daySel = document.getElementById('emailScheduleDay');
     const dateSel = document.getElementById('emailScheduleDate');
-    if (daySel)  daySel.style.display  = this.value === 'weekly'  ? 'inline-block' : 'none';
+    if (daySel) daySel.style.display = this.value === 'weekly' ? 'inline-block' : 'none';
     if (dateSel) dateSel.style.display = this.value === 'monthly' ? 'inline-block' : 'none';
   });
 });
@@ -356,11 +356,11 @@ document.querySelectorAll('input[name="emailFreq"]').forEach(function (radio) {
 document.querySelectorAll('input[name="pushFreq"]').forEach(function (radio) {
   radio.addEventListener('change', function () {
     const scheduleSec = document.getElementById('pushScheduleSection');
-    const daySel      = document.getElementById('pushScheduleDay');
-    const dateSel     = document.getElementById('pushScheduleDate');
-    const isInstant   = this.value === 'instantly';
+    const daySel = document.getElementById('pushScheduleDay');
+    const dateSel = document.getElementById('pushScheduleDate');
+    const isInstant = this.value === 'instantly';
     if (scheduleSec) scheduleSec.style.display = isInstant ? 'none' : 'block';
-    if (daySel)  daySel.style.display  = this.value === 'weekly'  ? 'inline-block' : 'none';
+    if (daySel) daySel.style.display = this.value === 'weekly' ? 'inline-block' : 'none';
     if (dateSel) dateSel.style.display = this.value === 'monthly' ? 'inline-block' : 'none';
   });
 });

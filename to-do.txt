@@ -34,14 +34,6 @@ Very easy win.
 
  logic for sending alerts :
 
- email : by selecting the option an annother sub option will appear below it with alert frequency options : daily weekly montthly
-
- push : by selecting the option an annother sub option will appear below it with alert frequency options : instantly daily weekly montthly
-
- and for instantly push notification : send the job alert to the user's device immediately after the job is posted 
-
- and for other daily weekly monthly push notification : send the job alert to the user's device at the scheduled time of the day or week or month and give user to select time schedule of this in another suboption 
- 
  now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  .
 
  now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
@@ -49,10 +41,24 @@ Very easy win.
 
 
 
-- job categories still malfunctioning
+- job categories still malfunctioning : 
 
-- fix edit-profile.html
+make a webpage using html css js and python : the webpage should be category changer, like there will be a table to change the job category and it will consist of the current jobs at one side and at another side there will be job categories and update opiton wiht the list of all job categories and when user clicks on update it should change the category of the job and update it in all the pages including jobs.json and also it should move the file from the old category folder to the new category folder and after doing all this its should commit it to the git and push it to the github
+
 
 - Verify Multiple Locations
 
 
+
+and now currrently we have a logic of sending a job alert summary to admin : acharyaprasiddha6@gmail.com after sending every job alerts like :✅ Job Alert Processed for Information Security Manager
+ :  Job: Information Security Manager
+
+Instant matched users: 1
+
+Queued users (daily/weekly/monthly): 0
+
+Total instant emails sent: 1
+
+Instant push notifications queued (staggered): 3
+
+Instant email recipients: change it and make not to send it every time after sending a notification, do not send it every time, send it daily at 10:pm with all the summary of that day and also for weekly and monthly send another email on the last day of week sunday at 10:pm with all the summary of that week and for monthly send another email on the last day of month at 10:pm with all the summary of that month

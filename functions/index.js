@@ -588,211 +588,211 @@ exports.sendJobAlertEmails = onDocumentCreated(
         secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
     },
     async (event) => {
-    const jobData = event.data.data()
-    const jobCategory = jobData.jobCategory
-    const jobLocation = jobData.jobLocation
-    const db = getFirestore()
-    const messaging = getMessaging()
+        const jobData = event.data.data()
+        const jobCategory = jobData.jobCategory
+        const jobLocation = jobData.jobLocation
+        const db = getFirestore()
+        const messaging = getMessaging()
 
-    // Safety check: skip only if explicitly set AND already expired
-    if (jobData.expiresAt && isExpiredTimestamp(jobData.expiresAt)) {
-        console.log(`Skipping expired job alert for ${event.params.jobId}`)
-        return
-    }
-
-    const formattedJobLocations = getFormattedLocationsString(jobLocation)
-
-    const usersSnapshot = await db.collection("users").get()
-    const matchedEmails = []
-    // pushPromises removed — instant push now goes through notifQueue
-    let queuedUsersCount = 0
-    let instantMatchedUsersCount = 0
-    let instantPushQueuedCount = 0  // tracks how many push entries were queued
-
-    // Make sure jobData values are always arrays and lowercased for case-insensitive matching
-    const jobCategories = normalizeToArray(jobData.jobCategory).map(v => String(v).toLowerCase())
-    const jobLocations = normalizeToArray(jobData.jobLocation).map(v => String(v).toLowerCase())
-    const jobLanguages = getJobLanguages(jobData).map(v => String(v).toLowerCase())
-    const jobTimes = normalizeToArray(jobData.jobTimes).map(v => String(v).toLowerCase())
-    const jobTypes = normalizeToArray(jobData.jobType).map(v => String(v).toLowerCase())
-
-    for (const doc of usersSnapshot.docs) {
-        const user = doc.data()
-
-        const userCategories = (Array.isArray(user.jobCategory) ? user.jobCategory : []).map(v => String(v).toLowerCase())
-        const userLocations = (Array.isArray(user.jobLocation) ? user.jobLocation : []).map(v => String(v).toLowerCase())
-        const userLanguages = (Array.isArray(user.jobLanguages) ? user.jobLanguages : []).map(v => String(v).toLowerCase())
-        const userTimes = (Array.isArray(user.jobTimes) ? user.jobTimes : []).map(v => String(v).toLowerCase())
-        const userTypes = (Array.isArray(user.jobType) ? user.jobType : []).map(v => String(v).toLowerCase())
-
-        const fcmTokens = Array.isArray(user.fcmTokens) ? user.fcmTokens : []
-        const jobSubscription = user.jobSubscription || {}
-        const emailNotificationEnabled = jobSubscription.emailNotification ?? true
-        const pushNotificationEnabled = jobSubscription.pushNotification ?? true
-
-        // Per-channel frequencies with legacy fallback
-        const legacyFreq = isValidFrequency(user.jobAlertFrequency) ? user.jobAlertFrequency : "instantly"
-        const emailAlertFrequency = isValidEmailFrequency(user.emailAlertFrequency)
-            ? user.emailAlertFrequency
-            : isValidEmailFrequency(legacyFreq) ? legacyFreq : "daily"
-        const pushAlertFrequency = isValidFrequency(user.pushAlertFrequency)
-            ? user.pushAlertFrequency
-            : legacyFreq
-
-        // Match logic
-        const hasCategory =
-            userCategories.length === 0 || jobCategories.length === 0 || jobCategories.some((cat) => userCategories.includes(cat))
-
-        const hasLocation =
-            userLocations.length === 0 || jobLocations.length === 0 || jobLocations.some((loc) => userLocations.includes(loc))
-
-        const hasLanguage =
-            userLanguages.length === 0 || jobLanguages.length === 0 || jobLanguages.some((lang) => userLanguages.includes(lang))
-
-        const hasTime =
-            userTimes.length === 0 || jobTimes.length === 0 || jobTimes.some((time) => userTimes.includes(time))
-
-        const hasType =
-            userTypes.length === 0 || jobTypes.length === 0 || jobTypes.some((type) => userTypes.includes(type))
-
-        const isMatched = hasCategory && hasLocation && hasLanguage && hasTime && hasType
-
-        if (!isMatched) {
-            continue
+        // Safety check: skip only if explicitly set AND already expired
+        if (jobData.expiresAt && isExpiredTimestamp(jobData.expiresAt)) {
+            console.log(`Skipping expired job alert for ${event.params.jobId}`)
+            return
         }
 
-        if (pushAlertFrequency === "instantly") {
-            instantMatchedUsersCount++
+        const formattedJobLocations = getFormattedLocationsString(jobLocation)
 
-            // Email is still sent immediately
-            if (emailNotificationEnabled && user.email) {
-                matchedEmails.push(user.email)
+        const usersSnapshot = await db.collection("users").get()
+        const matchedEmails = []
+        // pushPromises removed — instant push now goes through notifQueue
+        let queuedUsersCount = 0
+        let instantMatchedUsersCount = 0
+        let instantPushQueuedCount = 0  // tracks how many push entries were queued
+
+        // Make sure jobData values are always arrays and lowercased for case-insensitive matching
+        const jobCategories = normalizeToArray(jobData.jobCategory).map(v => String(v).toLowerCase())
+        const jobLocations = normalizeToArray(jobData.jobLocation).map(v => String(v).toLowerCase())
+        const jobLanguages = getJobLanguages(jobData).map(v => String(v).toLowerCase())
+        const jobTimes = normalizeToArray(jobData.jobTimes).map(v => String(v).toLowerCase())
+        const jobTypes = normalizeToArray(jobData.jobType).map(v => String(v).toLowerCase())
+
+        for (const doc of usersSnapshot.docs) {
+            const user = doc.data()
+
+            const userCategories = (Array.isArray(user.jobCategory) ? user.jobCategory : []).map(v => String(v).toLowerCase())
+            const userLocations = (Array.isArray(user.jobLocation) ? user.jobLocation : []).map(v => String(v).toLowerCase())
+            const userLanguages = (Array.isArray(user.jobLanguages) ? user.jobLanguages : []).map(v => String(v).toLowerCase())
+            const userTimes = (Array.isArray(user.jobTimes) ? user.jobTimes : []).map(v => String(v).toLowerCase())
+            const userTypes = (Array.isArray(user.jobType) ? user.jobType : []).map(v => String(v).toLowerCase())
+
+            const fcmTokens = Array.isArray(user.fcmTokens) ? user.fcmTokens : []
+            const jobSubscription = user.jobSubscription || {}
+            const emailNotificationEnabled = jobSubscription.emailNotification ?? true
+            const pushNotificationEnabled = jobSubscription.pushNotification ?? true
+
+            // Per-channel frequencies with legacy fallback
+            const legacyFreq = isValidFrequency(user.jobAlertFrequency) ? user.jobAlertFrequency : "instantly"
+            const emailAlertFrequency = isValidEmailFrequency(user.emailAlertFrequency)
+                ? user.emailAlertFrequency
+                : isValidEmailFrequency(legacyFreq) ? legacyFreq : "daily"
+            const pushAlertFrequency = isValidFrequency(user.pushAlertFrequency)
+                ? user.pushAlertFrequency
+                : legacyFreq
+
+            // Match logic
+            const hasCategory =
+                userCategories.length === 0 || jobCategories.length === 0 || jobCategories.some((cat) => userCategories.includes(cat))
+
+            const hasLocation =
+                userLocations.length === 0 || jobLocations.length === 0 || jobLocations.some((loc) => userLocations.includes(loc))
+
+            const hasLanguage =
+                userLanguages.length === 0 || jobLanguages.length === 0 || jobLanguages.some((lang) => userLanguages.includes(lang))
+
+            const hasTime =
+                userTimes.length === 0 || jobTimes.length === 0 || jobTimes.some((time) => userTimes.includes(time))
+
+            const hasType =
+                userTypes.length === 0 || jobTypes.length === 0 || jobTypes.some((type) => userTypes.includes(type))
+
+            const isMatched = hasCategory && hasLocation && hasLanguage && hasTime && hasType
+
+            if (!isMatched) {
+                continue
             }
 
-            // Push is now staggered via notifQueue (5 min × position index)
-            if (pushNotificationEnabled && fcmTokens.length > 0) {
-                for (const token of fcmTokens) {
-                    if (!token) continue
+            if (pushAlertFrequency === "instantly") {
+                instantMatchedUsersCount++
 
-                    // Each additional user in this batch gets +5 min on top of the previous
-                    const delayMs = instantPushQueuedCount * 5 * 60 * 1000
-                    const scheduledAt = new Date(Date.now() + delayMs)
+                // Email is still sent immediately
+                if (emailNotificationEnabled && user.email) {
+                    matchedEmails.push(user.email)
+                }
 
-                    await db.collection("notifQueue").add({
-                        userId: doc.id,
-                        token: token,
-                        jobId: event.params.jobId,
-                        scheduledAt: Timestamp.fromDate(scheduledAt),
-                        status: "pending",
-                        createdAt: Timestamp.now(),
-                        message: {
-                            title: jobData.title || "New Job Alert",
-                            body: jobData.description || "",
-                            imageUrl: jobData.imageUrl || "",
+                // Push is now staggered via notifQueue (5 min × position index)
+                if (pushNotificationEnabled && fcmTokens.length > 0) {
+                    for (const token of fcmTokens) {
+                        if (!token) continue
+
+                        // Each additional user in this batch gets +5 min on top of the previous
+                        const delayMs = instantPushQueuedCount * 5 * 60 * 1000
+                        const scheduledAt = new Date(Date.now() + delayMs)
+
+                        await db.collection("notifQueue").add({
+                            userId: doc.id,
+                            token: token,
+                            jobId: event.params.jobId,
+                            scheduledAt: Timestamp.fromDate(scheduledAt),
+                            status: "pending",
+                            createdAt: Timestamp.now(),
+                            message: {
+                                title: jobData.title || "New Job Alert",
+                                body: jobData.description || "",
+                                imageUrl: jobData.imageUrl || "",
+                                jobLink: jobData.jobLink || "",
+                            },
+                        })
+
+                        instantPushQueuedCount++
+                    }
+                }
+            } else if (["daily", "weekly", "monthly"].includes(pushAlertFrequency) || ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
+                queuedUsersCount++
+
+                // Queue for email digest if email channel is non-instant
+                if (emailNotificationEnabled && user.email && ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
+                    await db
+                        .collection("users")
+                        .doc(doc.id)
+                        .collection("pendingAlerts")
+                        .doc(`email_${event.params.jobId}`)
+                        .set({
+                            jobId: event.params.jobId,
+                            title: jobData.title || "",
+                            description: jobData.description || "",
+                            jobCategory: jobCategories,
+                            jobLocation: jobLocations,
+                            jobLanguages: jobLanguages,
+                            jobTimes: jobTimes,
+                            jobType: jobTypes,
                             jobLink: jobData.jobLink || "",
-                        },
-                    })
+                            imageUrl: jobData.imageUrl || "",
+                            date_posted: jobData.date_posted || "",
+                            date_expires: jobData.date_expires || "",
+                            expiresAt: jobData.expiresAt || null,
+                            frequency: emailAlertFrequency,
+                            channel: "email",
+                            createdAt: Timestamp.now(),
+                        }, { merge: true })
+                }
 
-                    instantPushQueuedCount++
+                // Queue for push digest if push channel is non-instant
+                if (pushNotificationEnabled && fcmTokens.length > 0 && ["daily", "weekly", "monthly"].includes(pushAlertFrequency)) {
+                    await db
+                        .collection("users")
+                        .doc(doc.id)
+                        .collection("pendingAlerts")
+                        .doc(`push_${event.params.jobId}`)
+                        .set({
+                            jobId: event.params.jobId,
+                            title: jobData.title || "",
+                            description: jobData.description || "",
+                            jobCategory: jobCategories,
+                            jobLocation: jobLocations,
+                            jobLanguages: jobLanguages,
+                            jobTimes: jobTimes,
+                            jobType: jobTypes,
+                            jobLink: jobData.jobLink || "",
+                            imageUrl: jobData.imageUrl || "",
+                            date_posted: jobData.date_posted || "",
+                            date_expires: jobData.date_expires || "",
+                            expiresAt: jobData.expiresAt || null,
+                            frequency: pushAlertFrequency,
+                            channel: "push",
+                            createdAt: Timestamp.now(),
+                        }, { merge: true })
                 }
             }
-        } else if (["daily", "weekly", "monthly"].includes(pushAlertFrequency) || ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
-            queuedUsersCount++
+        }
 
-            // Queue for email digest if email channel is non-instant
-            if (emailNotificationEnabled && user.email && ["daily", "weekly", "monthly"].includes(emailAlertFrequency)) {
-                await db
-                    .collection("users")
-                    .doc(doc.id)
-                    .collection("pendingAlerts")
-                    .doc(`email_${event.params.jobId}`)
-                    .set({
-                        jobId: event.params.jobId,
-                        title: jobData.title || "",
-                        description: jobData.description || "",
-                        jobCategory: jobCategories,
-                        jobLocation: jobLocations,
-                        jobLanguages: jobLanguages,
-                        jobTimes: jobTimes,
-                        jobType: jobTypes,
-                        jobLink: jobData.jobLink || "",
-                        imageUrl: jobData.imageUrl || "",
-                        date_posted: jobData.date_posted || "",
-                        date_expires: jobData.date_expires || "",
-                        expiresAt: jobData.expiresAt || null,
-                        frequency: emailAlertFrequency,
-                        channel: "email",
-                        createdAt: Timestamp.now(),
-                    }, { merge: true })
-            }
+        const emailHTML = buildSingleJobEmailHTML(jobData, formattedJobLocations)
 
-            // Queue for push digest if push channel is non-instant
-            if (pushNotificationEnabled && fcmTokens.length > 0 && ["daily", "weekly", "monthly"].includes(pushAlertFrequency)) {
-                await db
-                    .collection("users")
-                    .doc(doc.id)
-                    .collection("pendingAlerts")
-                    .doc(`push_${event.params.jobId}`)
-                    .set({
-                        jobId: event.params.jobId,
-                        title: jobData.title || "",
-                        description: jobData.description || "",
-                        jobCategory: jobCategories,
-                        jobLocation: jobLocations,
-                        jobLanguages: jobLanguages,
-                        jobTimes: jobTimes,
-                        jobType: jobTypes,
-                        jobLink: jobData.jobLink || "",
-                        imageUrl: jobData.imageUrl || "",
-                        date_posted: jobData.date_posted || "",
-                        date_expires: jobData.date_expires || "",
-                        expiresAt: jobData.expiresAt || null,
-                        frequency: pushAlertFrequency,
-                        channel: "push",
-                        createdAt: Timestamp.now(),
-                    }, { merge: true })
+        if (matchedEmails.length > 0) {
+            const emailPromises = matchedEmails.map((email) => {
+                return sendEmail({
+                    to: email,
+                    subject: jobData.title || "New Job Alert",
+                    html: emailHTML,
+                })
+            })
+
+            try {
+                await Promise.all(emailPromises)
+            } catch (error) {
+                console.error("Error sending one or more instant emails:", error.message)
             }
         }
-    }
-
-    const emailHTML = buildSingleJobEmailHTML(jobData, formattedJobLocations)
-
-    if (matchedEmails.length > 0) {
-        const emailPromises = matchedEmails.map((email) => {
-            return sendEmail({
-                to: email,
-                subject: jobData.title || "New Job Alert",
-                html: emailHTML,
-            })
-        })
 
         try {
-            await Promise.all(emailPromises)
+            await db.collection("adminReports").add({
+                type: "job_alert",
+                jobTitle: jobData.title || event.params.jobId,
+                instantMatchedUsersCount,
+                queuedUsersCount,
+                emailsSentCount: matchedEmails.length,
+                pushQueuedCount: instantPushQueuedCount,
+                recipients: matchedEmails,
+                status: "pending",
+                createdAt: Timestamp.now()
+            })
         } catch (error) {
-            console.error("Error sending one or more instant emails:", error.message)
+            console.error("Failed to save admin report to Firestore:", error.message)
         }
-    }
 
-    try {
-        await db.collection("adminReports").add({
-            type: "job_alert",
-            jobTitle: jobData.title || event.params.jobId,
-            instantMatchedUsersCount,
-            queuedUsersCount,
-            emailsSentCount: matchedEmails.length,
-            pushQueuedCount: instantPushQueuedCount,
-            recipients: matchedEmails,
-            status: "pending",
-            createdAt: Timestamp.now()
-        })
-    } catch (error) {
-        console.error("Failed to save admin report to Firestore:", error.message)
-    }
-
-    console.log(`Instant emails sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`)
-    console.log(`Instant push notifications queued (staggered): ${instantPushQueuedCount}`)
-    console.log(`Queued users for digest alerts: ${queuedUsersCount}`)
-})
+        console.log(`Instant emails sent to: ${matchedEmails.length} users: ${matchedEmails.join(", ")}`)
+        console.log(`Instant push notifications queued (staggered): ${instantPushQueuedCount}`)
+        console.log(`Queued users for digest alerts: ${queuedUsersCount}`)
+    })
 
 exports.sendDailyAlerts = onSchedule(
     {
@@ -981,7 +981,7 @@ exports.deleteExpiredJobs = onSchedule(
  */
 exports.sendDailyAdminReport = onSchedule(
     {
-        schedule: "0 22 * * *", // 22:00 (10 PM) Europe/Helsinki time
+        schedule: "0 22 * * *", // 22:00 (10 PM) Europe/Local Time
         timeZone: "Europe/Helsinki",
         region: "europe-west1",
         secrets: [GMAIL_USER, GMAIL_APP_PASSWORD],
@@ -1015,9 +1015,9 @@ exports.sendDailyAdminReport = onSchedule(
 
         if (jobAlerts.length > 0) {
             jobAlerts.forEach((job) => {
-                const recipientsList = (job.recipients || []).length > 0 
-                  ? job.recipients.join("<br/>") 
-                  : "None"
+                const recipientsList = (job.recipients || []).length > 0
+                    ? job.recipients.join("<br/>")
+                    : "None"
 
                 htmlContent += `
                     <div style="margin-bottom: 25px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
