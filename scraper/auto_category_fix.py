@@ -33,14 +33,15 @@ import urllib.request
 from pathlib import Path
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
-SCRIPT_DIR = Path(__file__).parent
-ROOT_DIR   = SCRIPT_DIR.parent
-DATA_DIR   = SCRIPT_DIR / "data"
-JOBS_JSON  = DATA_DIR   / "jobs.json"
-FLAT_JSON  = DATA_DIR   / "formatted_jobs_flat.json"
-CAT_JSON   = SCRIPT_DIR / "all_jobs_cat.json"
-JOBS_DIR   = ROOT_DIR   / "jobs"
-JOBS_TABLE = ROOT_DIR   / "jobs-table.html"
+SCRIPT_DIR  = Path(__file__).parent
+ROOT_DIR    = SCRIPT_DIR.parent
+DATA_DIR    = SCRIPT_DIR / "data"
+JOBS_JSON   = DATA_DIR   / "jobs.json"
+FLAT_JSON   = DATA_DIR   / "formatted_jobs_flat.json"
+CAT_JSON    = SCRIPT_DIR / "all_jobs_cat.json"
+JOBS_DIR    = ROOT_DIR   / "jobs"
+JOBS_TABLE  = ROOT_DIR   / "jobs-table.html"
+CHANGES_LOG = DATA_DIR   / "category_changes_log.json"   # shared audit log
 
 SITE_BASE        = "https://findjobsinfinland.fi"
 OLLAMA_BASE_URL  = "http://localhost:11434"
@@ -79,6 +80,22 @@ def save_json(path: Path, data) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+
+def append_change_log(entry: dict) -> None:
+    """Append one change record to the shared persistent audit log."""
+    import datetime
+    existing = []
+    if CHANGES_LOG.exists():
+        try:
+            with open(CHANGES_LOG, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+        except Exception:
+            existing = []
+    entry.setdefault("timestamp", datetime.datetime.now().isoformat(timespec="seconds"))
+    existing.append(entry)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    with open(CHANGES_LOG, "w", encoding="utf-8") as f:
+        json.dump(existing, f, indent=2, ensure_ascii=False)
 def flat_from_jobs(raw: list) -> list[dict]:
     """Flatten the grouped jobs.json into a simple list."""
     flat = []
@@ -299,6 +316,15 @@ def apply_category_change(
         tbl = tbl.replace(f">{_fmt_cat(old_category)}<", f">{_fmt_cat(new_category)}<")
         with open(JOBS_TABLE, "w", encoding="utf-8") as f:
             f.write(tbl)
+
+    # ── 6. Write to shared audit log ────────────────────────────────
+    append_change_log({
+        "job_id":       job.get("job_id", ""),
+        "title":        job.get("title", ""),
+        "old_category": old_category,
+        "new_category": new_category,
+        "source":       "ai",
+    })
 
     return True, ""
 

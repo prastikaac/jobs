@@ -8,6 +8,7 @@ The server listens on http://localhost:8765
 API endpoints:
   GET  /api/jobs          — returns all current jobs
   GET  /api/categories    — returns all valid categories
+  GET  /api/history       — returns the change-log (for the debug panel)
   POST /api/change        — changes a job's category
   GET  /                  — serves category-changer.html
 """
@@ -29,9 +30,10 @@ DATA_DIR    = SCRIPT_DIR / "data"
 JOBS_JSON   = DATA_DIR / "jobs.json"
 FLAT_JSON   = DATA_DIR / "formatted_jobs_flat.json"
 CAT_JSON    = SCRIPT_DIR / "all_jobs_cat.json"
-JOBS_DIR    = ROOT_DIR / "jobs"                             # jobs/<category>/<slug>.html
-JOBS_TABLE  = ROOT_DIR / "jobs-table.html"
-HTML_UI     = ROOT_DIR / "category-changer.html"
+JOBS_DIR     = ROOT_DIR / "jobs"                            # jobs/<category>/<slug>.html
+JOBS_TABLE   = ROOT_DIR / "jobs-table.html"
+HTML_UI      = ROOT_DIR / "category-changer.html"
+CHANGES_LOG  = DATA_DIR / "category_changes_log.json"       # audit log
 
 SITE_BASE   = "https://findjobsinfinland.fi"
 PORT        = 8765
@@ -47,6 +49,21 @@ def load_json(path: Path):
 def save_json(path: Path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+# ── Change-log helpers ────────────────────────────────────────────────────────
+def load_change_log() -> list[dict]:
+    return load_json(CHANGES_LOG) or []
+
+
+def append_change_log(entry: dict) -> None:
+    """Append one change record to the persistent audit log."""
+    import datetime
+    log = load_change_log()
+    entry.setdefault("timestamp", datetime.datetime.now().isoformat(timespec="seconds"))
+    log.append(entry)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    save_json(CHANGES_LOG, log)
 
 
 # ── Helper — flatten jobs.json ────────────────────────────────────────────────
@@ -205,7 +222,16 @@ def change_category(job_id: str, new_category: str) -> dict:
     # --- 8. Update jobs-table.html ---
     _patch_jobs_table(slug, old_category, new_category, new_job_url, new_image_url)
 
-    # --- 9. Git add + commit + push ---
+    # --- 9. Write to change audit log ---
+    append_change_log({
+        "job_id":       slug,
+        "title":        target_job.get("title", ""),
+        "old_category": old_category,
+        "new_category": new_category,
+        "source":       "manual",
+    })
+
+    # --- 10. Git add + commit + push ---
     git_result = _git_commit_and_push(slug, old_category, new_category)
 
     return {
@@ -324,6 +350,8 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self.send_json(api_get_jobs())
         elif path == "/api/categories":
             self.send_json(api_get_categories())
+        elif path == "/api/history":
+            self.send_json(load_change_log())
         else:
             self._send_404()
 
