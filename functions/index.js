@@ -260,7 +260,7 @@ function buildSingleJobEmailHTML(jobData, formattedJobLocations) {
                                                     If you would prefer not to receive any further job updates or notifications via email, you can easily opt out at any time by clicking on <a href="${SITE_URL}/edit-profile#unsubscribe" style="color: #e82c2f; text-decoration: underline;">unsubscribe</a>.
                                                 </p>
                                                 <p class="text-xs-mobile text-xs-pc" style="font-size: 12px; color: #888888; margin: 0; line-height: 1.4;">
-                                                    © 2025 · <span style="color: #28a745; font-weight: 500;">findjobsinfinland.fi</span> · All rights reserved.
+                                                    © 2026 · <span style="color: #28a745; font-weight: 500;">findjobsinfinland.fi</span> · All rights reserved.
                                                 </p>
                                             </td>
                                         </tr>
@@ -385,7 +385,7 @@ function buildDigestEmailHTML(frequency, jobs) {
                                                     If you would prefer not to receive any further job updates or notifications via email, you can easily opt out at any time by clicking on <a href="${SITE_URL}/edit-profile#unsubscribe" style="color: #e82c2f; text-decoration: underline;">unsubscribe</a>.
                                                 </p>
                                                 <p class="text-xs-mobile text-xs-pc" style="font-size: 12px; color: #888888; margin: 0; line-height: 1.4;">
-                                                    © 2025 · <span style="color: #28a745; font-weight: 500;">findjobsinfinland.fi</span> · All rights reserved.
+                                                    © 2026 · <span style="color: #28a745; font-weight: 500;">findjobsinfinland.fi</span> · All rights reserved.
                                                 </p>
                                             </td>
                                         </tr>
