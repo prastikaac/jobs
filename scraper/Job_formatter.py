@@ -51,21 +51,26 @@ def _clean_text(value) -> str:
 
 
 def _truncate_safely(text: str, max_chars: int, suffix: str = "...") -> str:
-    """Truncate text at a word boundary if it exceeds max_chars."""
+    """Truncate text at a word or sentence boundary if it exceeds max_chars."""
     text = _clean_text(text)
     if len(text) <= max_chars:
         return text
 
-    # Preserve paragraph breaks if present
-    if "\n\n" in text:
-        if len(text) <= max_chars:
-            return text
-        flat = text.replace("\n\n", " ").strip()
-        truncated = flat[:max_chars].rsplit(" ", 1)[0].rstrip(" ,.-")
-        return (truncated or flat[:max_chars].rstrip(" ,.-")) + suffix
+    truncated = text[:max_chars]
+    
+    # Check for sentence boundaries
+    last_punct = max(truncated.rfind(". "), truncated.rfind("! "), truncated.rfind("? "))
+    if last_punct == -1:
+        last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
+        
+    if last_punct > max_chars * 0.5: # only use sentence boundary if it doesn't crop too much
+        return truncated[:last_punct + 1].strip()
 
-    truncated = text[:max_chars].rsplit(" ", 1)[0].rstrip(" ,.-")
-    return (truncated or text[:max_chars].rstrip(" ,.-")) + suffix
+    # Fallback to nearest word
+    last_space = truncated.rfind(" ")
+    if last_space > 0:
+        return truncated[:last_space].rstrip(" ,.-") + suffix
+    return truncated.rstrip(" ,.-") + suffix
 
 
 def _contains_placeholder(text: str) -> bool:
@@ -751,7 +756,7 @@ def _build_formatted_job(raw_job: dict, ai_data: dict) -> dict:
     if isinstance(meta_desc, list):
         meta_desc = " ".join(str(x) for x in meta_desc if str(x).strip())
     meta_desc = str(meta_desc).replace("**", "").replace("*", "")
-    meta_desc = _truncate_safely(meta_desc, MAX_META_DESCRIPTION_CHARS, suffix="")
+    meta_desc = _truncate_safely(meta_desc, MAX_META_DESCRIPTION_CHARS)
     safe_slug = config.get_safe_category_slug(category)
     random_num = random.randint(1, 30)
     image_url = f"{config.GITHUB_PAGES_BASE_URL}/images/jobs/{safe_slug}/{random_num}.png"
@@ -863,7 +868,7 @@ def apply_manual_fixes(job: dict) -> dict:
     if isinstance(job.get("company"), str) and job["company"].isupper():
         job["company"] = job["company"].title()
 
-    job["meta_description"] = _truncate_safely(job.get("meta_description", ""), MAX_META_DESCRIPTION_CHARS, suffix="")
+    job["meta_description"] = _truncate_safely(job.get("meta_description", ""), MAX_META_DESCRIPTION_CHARS)
 
     for field in ["what_we_expect", "job_responsibilities", "what_we_offer"]:
         job[field] = [_capitalize_sentences(item) for item in _clean_list_field(job.get(field, []), max_items=6)]

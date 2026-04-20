@@ -63,15 +63,16 @@ def normalize_whitespace(text: str) -> str:
 def trim_to_sentence_boundary(text: str, min_len: int = 150, max_len: int = 160) -> str:
     text = normalize_whitespace(text)
 
-    if len(text) <= max_len and len(text) >= min_len:
-        return text
-
     if len(text) <= max_len:
         return text
 
     truncated = text[:max_len]
-    last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
-    if last_punct >= min_len - 1:
+    
+    last_punct = max(truncated.rfind(". "), truncated.rfind("! "), truncated.rfind("? "))
+    if last_punct == -1:
+        last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
+        
+    if last_punct > max_len * 0.5:
         return truncated[: last_punct + 1].strip()
 
     last_space = truncated.rfind(" ")
@@ -166,8 +167,9 @@ def build_meta_prompt(job: Dict[str, Any], formatted_description: str) -> str:
 Write a concise SEO meta description for a job posting.
 
 Rules:
-- Length MUST be between 150 and 160 characters.
-- Do NOT exceed 160 characters.
+- Length MUST NOT exceed 160 characters.
+- The description MUST be completely untrimmed; it must end properly with a period.
+- Aim for a single, complete, and engaging sentence around 120-150 characters.
 - Include the job title and location naturally if possible.
 - Make it clear, clickable, and professional.
 - Use natural English.
@@ -237,7 +239,7 @@ def format_job_description(job: Dict[str, Any], index: int, total: int) -> Dict[
         meta_description = sanitize_ai_output(meta_description)
         meta_description = trim_to_sentence_boundary(meta_description, 150, 160)
 
-        if len(meta_description) < 150:
+        if len(meta_description) < 80:
             meta_description = make_meta_fallback(job, formatted_description)
 
         job["formatted_description"] = formatted_description

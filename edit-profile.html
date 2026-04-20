@@ -1072,95 +1072,61 @@
                                   <p class="descp">Select how you want to receive job updates and choose your preferred
                                     frequency for each channel.</p>
 
-                                  <!-- EMAIL channel toggle -->
-                                  <div class="dropdown" id="notificationTypes" style="margin-bottom:0;">
-                                    <div>
-                                      <input id="email-notification" type="checkbox" value="email" />
-                                      <label for="email-notification">Email</label>
+                                  <!-- EMAIL channel — all-in-one card -->
+                                  <div class="channel-card" id="jobAlertSubBox">
+                                    <div class="option-row channel-header-row">
+                                      <span class="channel-label">Email</span>
+                                      <label class="switch"><input type="checkbox" id="email-notification" value="email" /><span class="slider"></span></label>
                                     </div>
-                                  </div>
-                                  <!-- EMAIL frequency sub-option -->
-                                  <div id="emailFreqSectionProfile"
-                                    style="margin:0 0 10px 6px; padding:10px 14px; border-left:3px solid #005eff; border-radius:0 10px 10px 0; background:#f5f8ff; display:none;">
-                                    <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#128231;
-                                      Email frequency</p>
-                                    <div class="dropdown" id="emailFreqDropdownProfile" style="margin-bottom:0;">
-                                      <div><input id="ep-email-daily" name="emailFreqProfile" type="radio" value="daily"
-                                          checked /><label for="ep-email-daily">Once a day</label></div>
-                                      <div><input id="ep-email-weekly" name="emailFreqProfile" type="radio"
-                                          value="weekly" /><label for="ep-email-weekly">Once a week</label></div>
-                                      <div><input id="ep-email-monthly" name="emailFreqProfile" type="radio"
-                                          value="monthly" /><label for="ep-email-monthly">Once a month</label></div>
-                                    </div>
-                                    <!-- Email delivery schedule picker -->
-                                    <div id="emailScheduleSectionProfile"
-                                      style="margin-top:10px; padding-top:10px; border-top:1px dashed #d0d9f0;">
-                                      <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#9200;
-                                        Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki
-                                          time)</span></p>
-                                      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                                        <input type="time" id="emailScheduleTimeProfile" value="09:00"
-                                          style="padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;" />
-                                        <select id="emailScheduleDayProfile"
-                                          style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;">
-                                          <option value="1">Monday</option>
-                                          <option value="2">Tuesday</option>
-                                          <option value="3">Wednesday</option>
-                                          <option value="4">Thursday</option>
-                                          <option value="5">Friday</option>
-                                          <option value="6">Saturday</option>
-                                          <option value="0">Sunday</option>
-                                        </select>
-                                        <select id="emailScheduleDateProfile"
-                                          style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;"></select>
+                                    <!-- EMAIL frequency sub-options (indented inside the card) -->
+                                    <div id="emailFreqSectionProfile" class="channel-sub-section" style="display:none">
+                                      <div class="channel-divider"></div>
+                                      <div class="option-row sub-option-row"><span>Once a day</span><label class="switch"><input type="radio" id="ep-email-daily" name="emailFreqProfile" value="daily" checked /><span class="slider"></span></label></div>
+                                      <div class="option-row sub-option-row"><span>Once a week</span><label class="switch"><input type="radio" id="ep-email-weekly" name="emailFreqProfile" value="weekly" /><span class="slider"></span></label></div>
+                                      <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" id="ep-email-monthly" name="emailFreqProfile" value="monthly" /><span class="slider"></span></label></div>
+                                      <!-- Delivery time — sits at the bottom of the same card -->
+                                      <div id="emailScheduleSectionProfile" class="delivery-time-row">
+                                        <div class="delivery-time-label" style="margin-bottom: 8px;">&#9200; Preferred Notification Time <span>(Helsinki Time)</span></div>
+                                        <div class="schedule-picker">
+                                          <input type="time" id="emailScheduleTimeProfile" value="09:00" />
+                                          <select id="emailScheduleDayProfile" style="display:none;">
+                                            <option value="1">Monday</option><option value="2">Tuesday</option>
+                                            <option value="3">Wednesday</option><option value="4">Thursday</option>
+                                            <option value="5">Friday</option><option value="6">Saturday</option>
+                                            <option value="0">Sunday</option>
+                                          </select>
+                                          <select id="emailScheduleDateProfile" style="display:none;"></select>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
 
-                                  <!-- PUSH channel toggle -->
-                                  <div class="dropdown" style="margin-bottom:0; margin-top:10px;">
-                                    <div>
-                                      <input id="push-notification" type="checkbox" value="pushNotification" />
-                                      <label for="push-notification">Push Notification</label>
+                                  <!-- PUSH channel — all-in-one card -->
+                                  <div class="channel-card" id="pushAlertSubBox">
+                                    <div class="option-row channel-header-row">
+                                      <span class="channel-label">Push Notification</span>
+                                      <label class="switch"><input type="checkbox" id="push-notification" value="pushNotification" /><span class="slider"></span></label>
                                     </div>
-                                  </div>
-                                  <!-- PUSH frequency sub-option -->
-                                  <div id="pushFreqSectionProfile"
-                                    style="margin:0 0 10px 6px; padding:10px 14px; border-left:3px solid #005eff; border-radius:0 10px 10px 0; background:#f5f8ff; display:none;">
-                                    <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#128276;
-                                      Push frequency</p>
-                                    <div class="dropdown" id="pushFreqDropdownProfile" style="margin-bottom:0;">
-                                      <div><input id="ep-push-instantly" name="pushFreqProfile" type="radio"
-                                          value="instantly" checked /><label for="ep-push-instantly">Instantly when
-                                          matching job published</label></div>
-                                      <div><input id="ep-push-daily" name="pushFreqProfile" type="radio"
-                                          value="daily" /><label for="ep-push-daily">Once a day</label></div>
-                                      <div><input id="ep-push-weekly" name="pushFreqProfile" type="radio"
-                                          value="weekly" /><label for="ep-push-weekly">Once a week</label></div>
-                                      <div><input id="ep-push-monthly" name="pushFreqProfile" type="radio"
-                                          value="monthly" /><label for="ep-push-monthly">Once a month</label></div>
-                                    </div>
-                                    <!-- Delivery schedule picker -->
-                                    <div id="pushScheduleSectionProfile"
-                                      style="display:none; margin-top:10px; padding-top:10px; border-top:1px dashed #d0d9f0;">
-                                      <p style="font-size:13px;font-weight:600;color:#005eff;margin-bottom:8px;">&#9200;
-                                        Delivery time <span style="font-weight:400;font-size:12px;">(Helsinki
-                                          time)</span></p>
-                                      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                                        <input type="time" id="pushScheduleTimeProfile" value="09:00"
-                                          style="padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;" />
-                                        <select id="pushScheduleDayProfile"
-                                          style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;">
-                                          <option value="1">Monday</option>
-                                          <option value="2">Tuesday</option>
-                                          <option value="3">Wednesday</option>
-                                          <option value="4">Thursday</option>
-                                          <option value="5">Friday</option>
-                                          <option value="6">Saturday</option>
-                                          <option value="0">Sunday</option>
-                                        </select>
-                                        <select id="pushScheduleDateProfile"
-                                          style="display:none;padding:6px 10px;border-radius:8px;border:1px solid #ccc;font-size:13px;"></select>
+                                    <!-- PUSH frequency sub-options (indented inside the card) -->
+                                    <div id="pushFreqSectionProfile" class="channel-sub-section" style="display:none">
+                                      <div class="channel-divider"></div>
+                                      <div class="option-row sub-option-row"><span>Instantly when matching job published</span><label class="switch"><input type="radio" id="ep-push-instantly" name="pushFreqProfile" value="instantly" checked /><span class="slider"></span></label></div>
+                                      <div class="option-row sub-option-row"><span>Once a day</span><label class="switch"><input type="radio" id="ep-push-daily" name="pushFreqProfile" value="daily" /><span class="slider"></span></label></div>
+                                      <div class="option-row sub-option-row"><span>Once a week</span><label class="switch"><input type="radio" id="ep-push-weekly" name="pushFreqProfile" value="weekly" /><span class="slider"></span></label></div>
+                                      <div class="option-row sub-option-row"><span>Once a month</span><label class="switch"><input type="radio" id="ep-push-monthly" name="pushFreqProfile" value="monthly" /><span class="slider"></span></label></div>
+                                      <!-- Delivery time — sits at the bottom of the same card -->
+                                      <div id="pushScheduleSectionProfile" class="delivery-time-row" style="display:none;">
+                                        <div class="delivery-time-label" style="margin-bottom: 8px;">&#9200; Preferred Notification Time <span>(Helsinki Time)</span></div>
+                                        <div class="schedule-picker">
+                                          <input type="time" id="pushScheduleTimeProfile" value="09:00" />
+                                          <select id="pushScheduleDayProfile" style="display:none;">
+                                            <option value="1">Monday</option><option value="2">Tuesday</option>
+                                            <option value="3">Wednesday</option><option value="4">Thursday</option>
+                                            <option value="5">Friday</option><option value="6">Saturday</option>
+                                            <option value="0">Sunday</option>
+                                          </select>
+                                          <select id="pushScheduleDateProfile" style="display:none;"></select>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
