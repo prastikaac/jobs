@@ -29,6 +29,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+import html_generator
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 SCRIPT_DIR  = Path(__file__).parent                        # .../scraper/
@@ -304,6 +305,12 @@ def change_category(job_id: str, new_category: str) -> dict:
     # Save updated JSON
     save_jobs_json(JOBS_JSON, jobs_raw)
     save_json(FLAT_JSON, flat_raw)
+
+    # Update index.html and jobs.html
+    try:
+        html_generator.update_main_pages(all_jobs)
+    except Exception as exc:
+        print("[category_changer] Failed to update main pages HTML:", exc)
 
     git_result = _git_commit_and_push(job_id, old_category, new_category)
 
