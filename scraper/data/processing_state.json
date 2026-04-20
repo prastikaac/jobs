@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "updated_at": "2026-04-20 23:42:41",
+  "jobs": {
+    "2674cfbc": {
+      "translated": true,
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": false,
+      "last_ai_error": "",
+      "formatted_at": "2026-04-20 23:40:16"
+    }
+  }
+}
