@@ -41,24 +41,15 @@ Very easy win.
 
 
 
+- Verify Multiple Locations
+
+
 - job categories still malfunctioning : 
+
+
 
 make a webpage using html css js and python : the webpage should be category changer, like there will be a table to change the job category and it will consist of the current jobs at one side and at another side there will be job categories and update opiton wiht the list of all job categories and when user clicks on update it should change the category of the job and update it in all the pages including jobs.json and also it should move the file from the old category folder to the new category folder and after doing all this its should commit it to the git and push it to the github
 
 
-- Verify Multiple Locations
 
-
-
-and now currrently we have a logic of sending a job alert summary to admin : acharyaprasiddha6@gmail.com after sending every job alerts like :✅ Job Alert Processed for Information Security Manager
- :  Job: Information Security Manager
-
-Instant matched users: 1
-
-Queued users (daily/weekly/monthly): 0
-
-Total instant emails sent: 1
-
-Instant push notifications queued (staggered): 3
-
-Instant email recipients: change it and make not to send it every time after sending a notification, do not send it every time, send it daily at 10:pm with all the summary of that day and also for weekly and monthly send another email on the last day of week sunday at 10:pm with all the summary of that week and for monthly send another email on the last day of month at 10:pm with all the summary of that month
+now modify this file and here use ollama ai to do this work auutomatically means when i will run it it should work : at first copy the current jobs and categories check for the category of the job using ai like nurse : healthcare and so on and if its correct leave, do nothing and if wrong then suggest the correct category using ai and update it in all the pages including jobs.json and also it should move the file from the old category folder to the new category folder and after doing all this its should commit it to the git and push it to the github 
