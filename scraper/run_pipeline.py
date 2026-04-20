@@ -48,6 +48,7 @@ import image_generator
 import html_generator
 import expiration
 import firebase_client
+import category_post_check
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -512,6 +513,14 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
                     logger.info("  Batch %d Firebase alerts sent: %d", batch_num, batch_alert_count)
                 except Exception as exc:
                     logger.error("Firebase alert error in batch %d: %s", batch_num, exc)
+
+            # ── Category post-check (blocking — runs before git push) ─────
+            # Verifies each job's category via Ollama.  Any corrections are
+            # applied to JSON + HTML files here, so the git commit below
+            # captures both the original batch AND any category fixes in one push.
+            if newly_formatted_batch:
+                logger.info("── Batch %d: Running category post-check ──", batch_num)
+                category_post_check.run_check_sync(newly_formatted_batch)
 
             # ── Git commit + push for this batch ──────────────────────────
             logger.info("── Batch %d: Committing and pushing to GitHub ──", batch_num)

@@ -46,8 +46,8 @@ Very easy win.
 
 - job categories still malfunctioning 
 
+Update prompt of category checker.py
 
-now put this logic in the our job scraping pipeline, dont change anything in the pipeline just add this category changer logic after the job is proccessed by ai
 
+now make like currently we are working in a batch of 50 jobs like 50 jobs pass Phase 4 and everything happens and ready to be published to github at that phase then it goes to category checker and if category is correct then do nothing and if the job's category is wrong then the category changes and then only 50 jobs gets published to the github
 
-now remove the ai tribeaker logic from our category detecting logic :  this one : If rule-based scoring yields no clear winner ("other"), AI picks a category from the top matched candidates or the all_jobs_cat.json allowed list

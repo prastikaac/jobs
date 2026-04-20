@@ -1,323 +1,14 @@
 [
   {
-    "scrape_timestamp": "2026-04-20 16:57:44",
+    "scrape_timestamp": "2026-04-20 19:15:56",
     "jobs": [
-      {
-        "id": "95790fe2",
-        "job_id": "sales-representative-jyväskylä-95790fe2",
-        "processed": true,
-        "title": "Sales Representative",
-        "company": "KESKI-SUOMEN LAATUKOTI OY, Jyväskylä",
-        "job_category": "sales-and-marketing",
-        "jobLocation": [
-          "Jyväskylä"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:eerik.pajala@laatukoti.fi?subject=Application%20for%20the%20Job%20-%20Sales%20Representative&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Sales%20Representative.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e1f83d01-53b3-44ba-833f-5671c58f88a8/en",
-        "job_employer_email": "eerik.pajala@laatukoti.fi",
-        "job_employer_name": "Eerik Pajala",
-        "job_employer_phone_no": "0449821470",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-jyväskylä-95790fe2",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-05-31",
-        "scraped_at": "2026-04-20 16:57:44",
-        "open_positions": 1,
-        "salary_range": "Salary - Base salary + commission If you do wel",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Keski-Suomen Laatukoti Oy is seeking a motivated Sales Representative in Jyväskylä to grow their customer base and provide exceptional service. Join our",
-        "description": "Keski-Suomen Laatukoti Oy, based in Jyväskylä, is seeking a motivated Sales Representative to join their team. This role involves acquiring new customers and selling roof repairs, with the goal of providing an exceptional customer experience. The ideal candidate should have a strong attitude, desire to trade, and courage to face customers. A background in sales or a willingness to learn quickly will be beneficial. Experience is not required; training will be provided for those who can take on this challenging position. The salary includes a base pay with commission, making it an attractive opportunity for someone looking to grow their income. This family-owned business has been in the roofing industry for over 18 years and boasts more than 2,000 satisfied customers across Central Finland.",
-        "what_we_expect": [
-          "Good attitude",
-          "Desire to trade",
-          "Courage to face customers"
-        ],
-        "job_responsibilities": [
-          "Acquiring customers and selling roof repairs",
-          "Customer meetings (arranged + own activity a plus)",
-          "Mapping of objects and selling the solution to the customer",
-          "Making offers and making deals"
-        ],
-        "what_we_offer": [
-          "Base salary + commission",
-          "Clearly rising income above basic salary if you do well",
-          "Making offers and making deals"
-        ],
-        "search_keywords": "sales, marketing, roof repair, customer acquisition, job description",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/sales-and-marketing/27.png"
-      },
-      {
-        "id": "6c8e319c",
-        "job_id": "substitute-for-hygienist-tyks-infection-control-unit-turku-turku-6c8e319c",
-        "processed": true,
-        "title": "Substitute for hygienist, Tyks Infection Control Unit, Turku",
-        "company": "Varsinais-Suomen hyvinvointialue",
-        "job_category": "healthcare",
-        "jobLocation": [
-          "Turku"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/VARHA-04-261-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d4cc9429-4f99-4861-ad35-6f226d1dc7fc/en",
-        "job_employer_email": "tiina.kurvinen@varha.fi",
-        "job_employer_name": "Tiina Kurvinen",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/substitute-for-hygienist-tyks-infection-control-unit-turku-turku-6c8e319c",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-04-27",
-        "scraped_at": "2026-04-20 16:57:44",
-        "open_positions": 1,
-        "salary_range": "SOTE-sopimus",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Varsinais-Suomen hyvinvointialue is seeking a substitute for hygienist at Tyks Infection Control Unit in Turku, Finland. Apply now for eligibility under the",
-        "description": "We are seeking a substitute for hygienist at Tyks Infection Control Unit in Turku, Finland. This position requires eligibility under the Act on Healthcare Professionals and a hygienist qualification through specialization studies or equivalent competence. Previous experience as a hygiene nurse or infection control contact person, proficiency with the SAI program, and Swedish language skills are advantages. The unit is staffed by 5 hygiene nurses, a clinical nursing specialist, department secretary, senior doctor, infectious diseases doctors, and ward nurse. Knowledge of Finnish is essential for this role. Interviews begin during the application period, and the position will be filled promptly upon finding a suitable candidate.",
-        "what_we_expect": [
-          "Legalization in accordance with the Act on Healthcare Professionals (559/1994)",
-          "Qualification of a hygienist obtained through specialization studies or equivalent competence acquired in other ways",
-          "Previous work as a hygiene nurse or infection control contact person",
-          "Experience using the SAI program",
-          "Swedish language skills"
-        ],
-        "job_responsibilities": [
-          "Infection monitoring",
-          "Reporting",
-          "Epidemic management",
-          "Guidance and advice on infection control work",
-          "Training of personnel",
-          "Acting as an expert in cooperation with various actors"
-        ],
-        "what_we_offer": [
-          "Staffed by 5 hygiene nurses, a clinical nursing specialist, a department secretary, a senior doctor, 2 infectious diseases doctors and a ward nurse",
-          "Multi-professional and active unit enabling good consultation opportunities and a support network for those getting familiar with the work",
-          "The workplace is located in Tyks General Hospital"
-        ],
-        "search_keywords": "hygienist, infection control, nursing care, primary health care, Infectious Diseases Act, SAI program, Swedish language skills, healthcare professionals, legalisation, qualification, experience, support network",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/18.png"
-      },
-      {
-        "id": "7cd893ad",
-        "job_id": "summer-job-nurse-turku-7cd893ad",
-        "processed": true,
-        "title": "Summer job, nurse",
-        "company": "Varsinais-Suomen hyvinvointialue",
-        "job_category": "healthcare",
-        "jobLocation": [
-          "Turku"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/VARHA-04-259-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a94d1267-0866-42fc-a410-bf9f24f2e364/en",
-        "job_employer_email": "heidi.aaltonen@varha.fi",
-        "job_employer_name": "Heidi Aaltonen",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/summer-job-nurse-turku-7cd893ad",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-05-03",
-        "scraped_at": "2026-04-20 16:57:44",
-        "open_positions": 1,
-        "salary_range": "SOTE contract, task-specific salary €3116.00/month",
-        "workTime": "Full-time",
-        "continuityOfWork": "Summer job",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Join Varsinais-Suomen hyvinvointialue as a Nurse at Tyks urology polyclinic in Turku this summer! Independent nursing work, outpatient research, and procedure",
-        "description": "We are seeking a nurse to join our urology outpatient clinic at Tyks T-hospital in Turku. This is a summer job opportunity focused on independent nursing work, patient guidance, and implementation of outpatient research and treatment procedures. Key responsibilities include assessing treatment needs, assisting doctors with procedures like cystoscopies and catheterizations, performing independent nurse visits according to operating models, providing guidance and counseling for examinations and treatments, handling treatment-related communication, using appointment and patient information systems, and taking care of equipment.",
-        "what_we_expect": [
-          "Having good interaction and guidance skills",
-          "The ability to work independently and in a team",
-          "An interest in the specialty field of urology and developing expertise",
-          "Experience in specialized nursing or outpatient work is considered an advantage",
-          "Excellent Finnish language skills"
-        ],
-        "job_responsibilities": [
-          "Assessing the need for treatment of urological patients and coordinating treatment",
-          "Assisting doctors in outpatient procedures (e.g., cystoscopies, biopsies, catheterizations)",
-          "Performing independent nursing duties and patient guidance",
-          "Guiding and counseling patients regarding examinations, treatments, and follow-up care",
-          "Communicating with patients about appointments and digital communication related to treatment"
-        ],
-        "what_we_offer": [
-          "A happy, mutually supportive, unified work community where everyone can be themselves",
-          "Valuable work experience in specialized nursing",
-          "Orientation and learning opportunities for new employees",
-          "The opportunity to gain valuable work experience in a specialized field",
-          "A pleasant working environment with a focus on learning and teamwork"
-        ],
-        "search_keywords": "summer job, nurse, Tyks urology polyclinic, Turku",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/20.png"
-      },
-      {
-        "id": "b3118b61",
-        "job_id": "assistant-manager-salesperson-turku-b3118b61",
-        "processed": true,
-        "title": "Assistant Manager, Salesperson",
-        "company": "1240 Turun Osuuskauppa",
-        "job_category": "sales-and-marketing",
-        "jobLocation": [
-          "Turku"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://sok.wd502.myworkdayjobs.com/S-ryhman-avoimet-tyopaikat/job/Prisma-Wiklund/Apulaispllikk--vastuumyyj--Prisma-Wiklund--Turku--Turun-Osuuskauppa_R-37784",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/393901f1-bfbf-4b53-a5de-d394e260dec3/en",
-        "job_employer_email": "saija.ruohonen@sok.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/assistant-manager-salesperson-turku-b3118b61",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-04-29",
-        "scraped_at": "2026-04-20 16:57:44",
-        "open_positions": 1,
-        "salary_range": "The salary of the responsibility salesperson is based on the collective agreement in the trade sector and the responsibility bonus for each task. The hourly wage is €11.98 - €16.03/h, depending on education and years of experience. In shift work, evening and weekend bonuses bring a nice extra bonus on top of the basic salary. In addition, you have the option of an incentive bonus, which can be up to €1.20 per working hour.",
-        "workTime": "Part-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "1240 TURUN OSUUSKAUPPA is seeking a Assistant manager, responsible salesperson, Prisma Wiklund, Turku, Turku Osuuskauppa in Turku. We are now looking for a",
-        "description": "We are now looking for a salesperson to join the role of assistant manager and responsible salespeople at Prisma Wiklund, set to open in Turku by the end of 2026. As an assistant manager, you will act as the manager's right-hand man, managing day-to-day activities through employee strengths and responding positively to changing situations. Your duties include ensuring smooth store operations and customer satisfaction with the help of the manager and assistant manager. The salary for this position is based on collective agreement in the trade sector and a task-specific responsibility bonus, ranging from €2460-2797 per month depending on education and experience. Shift work includes evening and weekend bonuses, as well as an incentive bonus up to €1.20 per working hour.",
-        "what_we_expect": [
-          "Customer service-oriented and solution-oriented",
-          "Positive working attitude and good communication skills",
-          "Primary location"
-        ],
-        "job_responsibilities": [
-          "Organize activities through the strengths of employees and react to rapidly changing situations with a positive and professional approach.",
-          "Lead by example, work in all store tasks and ensure a high-quality customer experience together with the team.",
-          "Primary location"
-        ],
-        "what_we_offer": [
-          "Value shopping benefits with S-advantage card, such as 25% at S group restaurants, 15% at Sokos and Emotion stores or 50% at car washes.",
-          "Comprehensive introduction to job and professional growth opportunities.",
-          "Working with mirrors, we offer you"
-        ],
-        "search_keywords": "assistant manager salesperson Prisma Wiklund Turku",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/sales-and-marketing/8.png"
-      },
-      {
-        "id": "bf9cadbd",
-        "job_id": "information-security-manager-kuopio-bf9cadbd",
-        "processed": true,
-        "title": "Information Security Manager",
-        "company": "Kuopion kaupunki",
-        "job_category": "security-and-safety",
-        "jobLocation": [
-          "Kuopio"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/714246/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/519c7c1c-5b49-4d50-8d87-2e4c6339ec6c/en",
-        "job_employer_email": "kuopiorekry@kuopio.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/information-security-manager-kuopio-bf9cadbd",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-05-18",
-        "scraped_at": "2026-04-20 16:57:44",
-        "open_positions": 1,
-        "salary_range": "Salary for the position; €5,020.76 - €5,248.97/month",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Kuopion kaupunki is seeking an experienced Information Security Manager for a permanent contract with competitive salary ranging from €5,020.76 - €5,248.",
-        "description": "Kuopion kaupunki is looking for an experienced Information Security Manager to join their team. This full-time position offers a permanent contract and competitive salary ranging from €5,020.76 - €5,248.97 per month. The ideal candidate should have a university degree in information security or related fields, with at least 5 years of experience as an Information Security Manager, expert, or similar role. Responsibilities include developing and maintaining the city's information security management model, operational information security monitoring and reporting, technical control implementation, coordination of IT acquisitions and projects, and promoting information security knowledge.",
-        "what_we_expect": [
-          "University degree in Information Security, IT or another applicable field",
-          "At least 5 years of experience as an Information Security Manager, Information Security Expert, or similar role",
-          "The information security manager is responsible for"
-        ],
-        "job_responsibilities": [
-          "Develop and maintain the information security management model of the city of Kuopio.",
-          "Operational information security, its development, and promotion of information security knowledge.",
-          "The information security manager is responsible for"
-        ],
-        "what_we_offer": [
-          "Interesting task field and meaningful work that includes new challenges to develop every day.",
-          "Good introduction to the task, a mutually agreeable partial remote work opportunity, and the opportunity for continuous learning.",
-          "The information security manager is responsible for"
-        ],
-        "search_keywords": "information security manager kuopio information technology",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/security-and-safety/12.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-04-20 18:59:17",
-    "jobs": [
-      {
-        "id": "00524667",
-        "job_id": "early-childhood-education-teacher-kirkkonummi-00524667",
-        "processed": true,
-        "title": "Early childhood education teacher",
-        "company": "Kirkkonummen kunta",
-        "job_category": "education",
-        "jobLocation": [
-          "Kirkkonummi"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/KIR-03-67-26/fi_FI",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e53722e3-045b-4c76-907b-a36bb01e2255/en",
-        "job_employer_email": "etunimi.sukunimi@kirkkonummi.fi",
-        "job_employer_name": "Tuula Nyman",
-        "job_employer_phone_no": "0504140672",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-kirkkonummi-00524667",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-04-20 18:59:17",
-        "open_positions": 1,
-        "salary_range": "alkaen 3178,99 €/kk",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish",
-          "Swedish"
-        ],
-        "meta_description": "Join Kirkkonummi's team as an early childhood education teacher in the scenic surroundings of forests, cliffs, and a sports park. Comprehensive training",
-        "description": "Join Kirkkonummi's enthusiastic and committed team as an early childhood education teacher in the picturesque surroundings of forests, cliffs, and a sports park. This full-time position offers comprehensive training opportunities, competitive salary packages, and access to free swimming at the local pool, making it an ideal career choice for those passionate about sustainable and effective early childhood education. With strong cooperation skills and a collaborative work environment, you'll contribute to the development of pedagogy and team growth alongside a dedicated daycare manager. Apply by May 5, 2026, with your criminal background check completed within 30 days, at www.kuntarekry.fi (job key KIR-03-67-26).",
-        "what_we_expect": [
-          "Strong cooperation skills and a desire to act in a communal and constructive way.",
-          "Experience developing pedagogy for young children.",
-          "We offer you"
-        ],
-        "job_responsibilities": [
-          "Develop new methods of operation to support children's everyday life and participation.",
-          "Ensure every child becomes positively visible.",
-          "Follow principles of a sustainable lifestyle."
-        ],
-        "what_we_offer": [
-          "A good work community and a competent supervisor",
-          "Comprehensive training opportunities to develop your own skills",
-          "Great digital tools",
-          "Competitive salary (€3178.99/month, €3284.93/month in the pre-school group)",
-          "Sports, cultural, and well-being benefit of €200/person/year (Epassi)"
-        ],
-        "search_keywords": "early childhood education teacher, sustainable lifestyle, child development, educational methods",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/education/28.png"
-      },
       {
         "id": "bf3c8209",
         "job_id": "additional-income-as-a-part-time-entrepreneur-repair-install-kouvola-bf3c8209",
         "processed": true,
         "title": "Additional income as a part-time entrepreneur - Repair, installation, yard work, small renovations - Kouvola",
         "company": "Sevalia Oy, Helsinki",
-        "job_category": "cleaning-and-facility-services",
+        "job_category": "installation-and-maintenance",
         "jobLocation": [
           "Kouvola"
         ],
@@ -327,10 +18,10 @@
         "job_employer_email": "rekry@sevalia.fi",
         "job_employer_name": "",
         "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/additional-income-as-a-part-time-entrepreneur-repair-install-kouvola-bf3c8209",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/additional-income-as-a-part-time-entrepreneur-repair-install-kouvola-bf3c8209",
         "date_posted": "2026-04-20",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-20 18:59:17",
+        "scraped_at": "2026-04-20 19:15:56",
         "open_positions": 1,
         "salary_range": "You price your service yourself",
         "workTime": "Full-time",
@@ -338,8 +29,8 @@
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Sevalia Oy seeks a part-time entrepreneur in Kouvola for additional income opportunities in repair, installation, yard work, and small renovations. Flexible",
-        "description": "Sevalia Oy is seeking a part-time entrepreneur with additional income opportunities in Kouvola. This flexible model allows individuals to operate independently within their municipality or nearby areas, without any startup costs or fixed expenses. The business offers an easy-to-set-up and fully automated system that includes appointment booking, online store, and automated payment processing. Marketing support and visibility are provided, ensuring the entrepreneur is not alone in their efforts. Clear instructions and ongoing support are available to help start and run the operation smoothly. The ideal candidate should be able to offer a variety of services such as yard work, small renovations, and property management.",
+        "meta_description": "Sevalia Oy is seeking a part-time entrepreneur in Kouvola, Finland, offering repair, installation, yard work, and small renovations skills for an easy business",
+        "description": "We are looking for a part-time entrepreneur with additional income potential - skilled in repair, installation, yard work, and small renovations - to join our team in Kouvola, Finland. This flexible position offers an easy business model without startup or fixed costs, providing electronic tools for appointment booking, online store management, automated payment processing, marketing support, and continuous instructions and support. Ideal candidates should be customer-focused, responsible, fluent in Finnish, and eager to complement current operations with a meaningful additional income source by helping seniors and families in their area.",
         "what_we_expect": [
           "Customer service",
           "Maintain relationships with customers",
@@ -358,106 +49,56 @@
         ],
         "search_keywords": "additional income, part-time entrepreneur, repair installation, yard work, small renovations, Kouvola",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/11.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/installation-and-maintenance/16.png"
       },
       {
-        "id": "4e8974c4",
-        "job_id": "control-room-worker-technical-customer-support-oulu-4e8974c4",
+        "id": "19f8e767",
+        "job_id": "excavator-driver-shovel-man-kaarina-19f8e767",
         "processed": true,
-        "title": "Control room worker/ technical customer support",
-        "company": "Rekryluuri",
-        "job_category": "installation-and-maintenance",
+        "title": "Excavator driver, shovel man",
+        "company": "WE Rekry Oy",
+        "job_category": "construction",
         "jobLocation": [
-          "Oulu"
+          "Kaarina",
+          "Turku"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://www.rekryluuri.fi/tyopaikat/valvomotyontekija-tekninen-asiakastuki/rectTS0wZ8KpYAt90",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/48a9a776-6111-42f1-a6a7-814230d6902d/en",
-        "job_employer_email": "",
+        "jobapply_link": "http://werekry.likeit.fi/apply/4823032",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/325ce270-6f07-4e65-b8af-cc82cc9dd232/en",
+        "job_employer_email": "samuli.hurme@werekry.fi",
         "job_employer_name": "",
-        "job_employer_phone_no": "+358504167592",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/control-room-worker-technical-customer-support-oulu-4e8974c4",
-        "date_posted": "2026-04-20",
-        "date_expires": "2026-04-26",
-        "scraped_at": "2026-04-20 18:59:17",
-        "open_positions": 1,
-        "salary_range": "salary expectations via Rekryluu's application",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "LämpöYkkönen Oy seeks a Control Room Worker/Technical Customer Support in their Oulu offices for 3-shift work using remote systems to monitor heating systems",
-        "description": "LämpöYkkönen Oy is seeking a Control Room Worker/Technical Customer Support for their Oulu offices, focusing on 3-shift work in LämpöYkkönen's technical control room. This role involves monitoring heating systems using remote systems like Ounet and optimizing system operation to benefit customers. Knowledge of building automation, particularly with an emphasis on heating, is a significant advantage. Successful candidates will have experience installing heating systems or a professional degree related to the field. The position requires excellent customer service skills, cooperation abilities, and organizational skills. Basic office software proficiency is necessary, including programs like Ounet, Fidelix, and building automation systems.",
-        "what_we_expect": [
-          "Knowledge of building automation (especially with an emphasis on heating) is a significant advantage in the position",
-          "Experience installing heating systems helps in taking on the task, as well as a professional or university degree related to the field",
-          "Customer service and cooperation skills, ability to organize things, schedules and prioritize tasks"
-        ],
-        "job_responsibilities": [
-          "Monitoring the operation of heating systems using remote systems (e.g. Ounet)",
-          "React to possible alarms/deviations by using the system remotely or sending maintenance personnel to the site",
-          "A comprehensive introduction to work tasks"
-        ],
-        "what_we_offer": [
-          "Responsible and versatile tasks in a good team",
-          "Extensive occupational health services",
-          "A comprehensive introduction to work tasks",
-          "The support of a competent team and supervisor",
-          "EPassport"
-        ],
-        "search_keywords": "installation-and-maintenance, control room worker, technical customer support, LämpöYkkönen Oy, heating systems, building automation, private customers, business customers, energy savings, emission goals",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/installation-and-maintenance/25.png"
-      },
-      {
-        "id": "ddaa7499",
-        "job_id": "construction-worker-hyvinkää-ddaa7499",
-        "processed": true,
-        "title": "Construction worker",
-        "company": "Ts-Talotecs Oy, Vantaa",
-        "job_category": "engineering-and-design",
-        "jobLocation": [
-          "Hyvinkää"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:rekry@tstalotecs.fi?subject=Application%20for%20the%20Job%20-%20Construction%20worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Construction%20worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ee078d66-f264-446a-a8a4-d6cc649ed2ab/en",
-        "job_employer_email": "rekry@tstalotecs.fi",
-        "job_employer_name": "Tuomas Päivinen",
         "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/construction-worker-hyvinkää-ddaa7499",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/excavator-driver-shovel-man-kaarina-19f8e767",
         "date_posted": "2026-04-20",
-        "date_expires": "2026-04-25",
-        "scraped_at": "2026-04-20 18:59:17",
+        "date_expires": "2026-05-04",
+        "scraped_at": "2026-04-20 19:15:56",
         "open_positions": 1,
-        "salary_range": "salary depending on the job, hard work and skil",
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
         "workTime": "Full-time",
         "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Ts-Talotecs Oy is seeking a motivated construction worker for their Hyvinkää site, offering permanent employment and competitive compensation starting April 27.",
-        "description": "We are looking for a motivated construction worker with experience in earthwork tasks to join our team at Ts-Talotecs Oy's Hyvinkää site. Starting April 27, this versatile position offers a permanent employment relationship and competitive compensation based on skills and hard work. Ideal candidates should have valid occupational safety cards or similar certifications, along with positive attitudes and excellent language skills in Finnish. If you're ready to contribute your expertise while enjoying a stable career path, please apply by email at rekry@tstalotecs.fi.",
+        "meta_description": "WE Rekry Oy seeks a skilled excavator driver and experienced shoveler for foundation construction sites in Kaarina, Turku. Strong civil engineering skills and",
+        "description": "WE Rekry Oy is seeking a skilled excavator driver and experienced shoveler for various foundation construction sites in Kaarina, Turku. This role offers versatile job duties including the support of trenches, soil compaction, and scheduling and planning of work phases. Strong experience in civil engineering fields and the ability to read drawings are expected. The position is part of an expert work community with a fair and professional environment. A long-term employment relationship and salary according to TES corresponding to professional skills are offered. For more information or to inquire about the assignment, contact Samuli Hurme at 0503950495 or visit www.werekry.fi.",
         "what_we_expect": [
-          "Work experience in the field",
-          "Preferably with a valid occupational safety card, other cards a plus.",
-          "Positive attitude, good work motivation.",
-          "Fluent Finnish language skills."
+          "Strong experience in the civil engineering field and ability to read drawings",
+          "Accurate, self-initiated and responsible approach to work",
+          "A valid occupational safety card"
         ],
         "job_responsibilities": [
-          "Civil engineering expert",
-          "You are the person we are looking for if you have",
-          "We offer: A reliable working relationship."
+          "Civil engineering support worker",
+          "Excavator driver",
+          "Earthmoving machine driver, open pit mine"
         ],
         "what_we_offer": [
-          "A reliable working relationship.",
-          "A decent salary depending on the job, hard work and skills",
-          "We offer: A reliable working relationship."
+          "The possibility of a long-term employment relationship",
+          "Salary according to TES corresponding to professional skills",
+          "A fair and professional work environment"
         ],
-        "search_keywords": "construction worker earth construction tasks apartment building site",
+        "search_keywords": "excavator driver shovel man foundation construction civil engineering drawings responsible approach occupational safety card",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/engineering-and-design/22.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/2.png"
       },
       {
         "id": "7d8718f4",
@@ -465,7 +106,7 @@
         "processed": true,
         "title": "Sales Manager",
         "company": "Länsi-Suomen Prosessivesi Oy, Säkylä",
-        "job_category": "customer-support-and-service",
+        "job_category": "sales-and-marketing",
         "jobLocation": [
           "Säkylä"
         ],
@@ -475,10 +116,10 @@
         "job_employer_email": "pasi.hurme@lspv.fi",
         "job_employer_name": "Pasi Hurme",
         "job_employer_phone_no": "0500520593",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/sales-manager-säkylä-7d8718f4",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-manager-säkylä-7d8718f4",
         "date_posted": "2026-04-20",
         "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-20 18:59:17",
+        "scraped_at": "2026-04-20 19:15:56",
         "open_positions": 1,
         "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
         "workTime": "Full-time",
@@ -486,8 +127,8 @@
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Länsi-Suomen Prosessivesi Oy is seeking a Sales Manager to unify operating models and integrate services for environmental sector players in Säkylä. Responsible",
-        "description": "We are looking for a sales manager to strengthen the sales efforts of three major players in the environmental sector by unifying operating models and integrating our services into one entity. As a sales manager, you will be responsible for developing and implementing your companies' sales strategies, ensuring that solutions meet customer needs and support business goals. Key tasks include making and developing targeted sales, building long-term and confidential customer relationships, and providing responsible solutions aligned with the circular economy.",
+        "meta_description": "Join Länsi-Suomen Prosessivesi Oy in Säkylä as a Sales Manager to unify operating models for environmental sector players and develop effective sales strategies",
+        "description": "We are looking for a sales manager to strengthen the sales work of three major players in the environmental sector by unifying operating models and fitting the services into one entity. As a sales manager, you will be responsible for developing and implementing your companies' sales plans while working closely with customers, your own organization, and management. Key tasks include making and developing targeted sales, building long-term and confidential customer relationships, and providing responsible solutions that support the circular economy.",
         "what_we_expect": [
           "Experience in sales and customer development",
           "The ability to visualize wholes and put things into practice",
@@ -508,7 +149,125 @@
         ],
         "search_keywords": "sales manager, customer support, environmental sector, sales, customer development, circular economy, sustainable development",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/customer-support-and-service/30.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/sales-and-marketing/12.png"
+      },
+      {
+        "id": "0f597823",
+        "job_id": "production-coordinator-helsinki-0f597823",
+        "processed": true,
+        "title": "Production Coordinator",
+        "company": "Academic Work Finland Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Kerava",
+          "Kauniainen",
+          "Kirkkonummi",
+          "Nurmijärvi",
+          "Espoo",
+          "Loviisa",
+          "Sipoo",
+          "Hyvinkää",
+          "Siuntio",
+          "Mäntsälä",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/WL6ZBC",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1658f74-f9c7-47c2-b246-65206b224777/en",
+        "job_employer_email": "krs01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-coordinator-helsinki-0f597823",
+        "date_posted": "2026-04-20",
+        "date_expires": "2026-05-20",
+        "scraped_at": "2026-04-20 19:15:56",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Konecranes in Hyvinkää seeks a Production Coordinator to lead delivery projects globally, ensuring high performance and quality products. Remote work options",
+        "description": "Konecranes in Hyvinkää is seeking a Production Coordinator to lead delivery projects globally, ensuring high performance and quality products. This role requires coordination of material flow from engineering to the site, with support from an experienced team. The position offers remote work options and flexible working hours, while providing continuous improvement opportunities through targeted training and development. With a strong technical background and excellent communication skills, this is an exciting opportunity for someone who thrives in fast-paced environments and can manage multiple projects simultaneously.",
+        "what_we_expect": [
+          "Strong technical knowledge obtained from work experience, hobbies, or studies",
+          "Master of Science or Bachelor of Engineering from a suitable area",
+          "Solid technical understanding e.g. The ability to read and understand technical drawings",
+          "Target-oriented and analytical with good communication skills",
+          "Sense of urgency and an attitude to fix deviations quickly",
+          "Fluent in English; other languages are considered an asset"
+        ],
+        "job_responsibilities": [
+          "Coordinating the delivery projects with other stakeholders in the project team according to the project and process requirements",
+          "Creating Manufacturing Bill of Materials (MBOM) for delivery project",
+          "Planning and initiating deliveries in 1KC and other dedicated systems",
+          "Controlling the production of the delivery project in close co-operation and active communication with internal and external suppliers",
+          "Reacting and resolving unexpected situations in the supply chain",
+          "Improving continuously the Port Crane delivery process and production coordination"
+        ],
+        "what_we_offer": [
+          "Great opportunity to develop your skills in an interesting international work environment",
+          "Support of a professional and experienced team",
+          "Great viewpoint to all project phases and functions, including procurement, engineering, site operations, project management, and manufacturing",
+          "Remote work option 2 days/week",
+          "Epassi lunch deduction"
+        ],
+        "search_keywords": "Production Coordinator Academic Work Finland Oy Helsinki industry-manufacturing-and-production",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/industry-manufacturing-and-production/9.png"
+      },
+      {
+        "id": "ddaa7499",
+        "job_id": "construction-worker-hyvinkää-ddaa7499",
+        "processed": true,
+        "title": "Construction worker",
+        "company": "Ts-Talotecs Oy, Vantaa",
+        "job_category": "construction",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:rekry@tstalotecs.fi?subject=Application%20for%20the%20Job%20-%20Construction%20worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Construction%20worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ee078d66-f264-446a-a8a4-d6cc649ed2ab/en",
+        "job_employer_email": "rekry@tstalotecs.fi",
+        "job_employer_name": "Tuomas Päivinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-hyvinkää-ddaa7499",
+        "date_posted": "2026-04-20",
+        "date_expires": "2026-04-25",
+        "scraped_at": "2026-04-20 19:15:56",
+        "open_positions": 1,
+        "salary_range": "salary depending on the job, hard work and skil",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Ts-Talotecs Oy is seeking a versatile construction worker with experience in earthwork tasks for permanent employment starting on April 27th. Apply now by",
+        "description": "We are now looking for a versatile construction worker with experience in earthwork tasks to join our team at Ts-Talotecs Oy, located in Hyvinkää. Starting on April 27, this position offers a permanent employment relationship and decent compensation based on the job's requirements. The ideal candidate should have a valid occupational safety card, other relevant certifications, and excellent communication skills, particularly in Finnish. If you're eager to work hard and contribute positively to our team, we encourage you to apply by email at rekry@tstalotecs.fi.",
+        "what_we_expect": [
+          "Work experience in the field",
+          "Preferably with a valid occupational safety card, other cards a plus.",
+          "Positive attitude, good work motivation.",
+          "Fluent Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Civil engineering expert",
+          "You are the person we are looking for if you have",
+          "We offer: A reliable working relationship,"
+        ],
+        "what_we_offer": [
+          "A reliable working relationship",
+          "Decent salary depending on the job, hard work and skills",
+          "We offer: A reliable working relationship,"
+        ],
+        "search_keywords": "construction worker earth construction tasks apartment building site",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/11.png"
       }
     ]
   }

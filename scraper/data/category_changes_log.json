@@ -1,10 +1,26 @@
 [
   {
-    "job_id": "information-security-manager-kuopio-bf9cadbd",
-    "title": "Information Security Manager",
-    "old_category": "information-technology",
-    "new_category": "security-and-safety",
-    "source": "ai",
-    "timestamp": "2026-04-20T18:53:26"
+    "job_id": "additional-income-as-a-part-time-entrepreneur-repair-install-kouvola-bf3c8209",
+    "title": "Additional income as a part-time entrepreneur - Repair, installation, yard work, small renovations - Kouvola",
+    "old_category": "cleaning-and-facility-services",
+    "new_category": "installation-and-maintenance",
+    "source": "pipeline_post_check",
+    "timestamp": "2026-04-20T19:24:45"
+  },
+  {
+    "job_id": "sales-manager-säkylä-7d8718f4",
+    "title": "Sales Manager",
+    "old_category": "customer-support-and-service",
+    "new_category": "sales-and-marketing",
+    "source": "pipeline_post_check",
+    "timestamp": "2026-04-20T19:25:54"
+  },
+  {
+    "job_id": "construction-worker-hyvinkää-ddaa7499",
+    "title": "Construction worker",
+    "old_category": "engineering-and-design",
+    "new_category": "construction",
+    "source": "pipeline_post_check",
+    "timestamp": "2026-04-20T19:27:07"
   }
 ]

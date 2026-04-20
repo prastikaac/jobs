@@ -13,19 +13,20 @@ The pipeline operates in a fully automated, scheduled loop, split into **four di
 │  Phase 1      │──▶│  Phase 2          │──▶│  Phase 3          │──▶│  Phase 4           │
 │  SCRAPING     │   │  TRANSLATION      │   │  AI FORMATTING    │   │  SITE GENERATION   │
 │               │   │                   │   │                   │   │                    │
-│  Duunitori    │   │  Google FI→EN     │   │  Ollama formats   │   │  HTML pages        │
-│  Työmkturi    │   │  (deep-translator)│   │  structured JSON  │   │  index/jobs.html   │
-│  Jobly        │   │                   │   │  Python locks     │   │  sitemap-jobs.xml  │
-│               │   │  Translates:      │   │  factual fields   │   │  OG images         │
-│  → rawjobs    │   │  title+jobcontent │   │  Finnish sweep    │   │  Firebase alerts   │
+│  Duunitori    │   │  Argos FI→EN      │   │  Rule-based cat   │   │  HTML pages        │
+│  Työmkturi    │   │  (offline)        │   │  + Ollama formats │   │  index/jobs.html   │
+│  Jobly        │   │                   │   │  structured JSON  │   │  sitemap-jobs.xml  │
+│               │   │  Translates:      │   │  Python locks     │   │  OG images         │
+│  → rawjobs    │   │  title+jobcontent │   │  factual fields   │   │  Firebase alerts   │
 │    .json      │   │  → translated_    │   │  → jobs.json      │   │                    │
-│               │   │    content field  │   │  → translated_    │   │                    │
-│               │   │  → translated_    │   │    jobs.json      │   │                    │
-│               │   │    jobs.json      │   │    (overwritten)  │   │                    │
+│               │   │    content field  │   │                   │   │  ↓ (background)    │
+│               │   │  → translated_    │   │                   │   │  Category post-    │
+│               │   │    jobs.json      │   │                   │   │  check (Ollama)    │
 └───────────────┘   └───────────────────┘   └───────────────────┘   └────────────────────┘
- run_scraper.py      job_translator.py        ai_processor.py         html_generator.py
-                     translate_raw_jobs()     format_translated_      image_generator.py
-                     run_phase2()             jobs()                  firebase_client.py
+ run_scraper.py      job_translator.py        ai_processor.py          html_generator.py
+                     translate_raw_jobs()     format_translated_       image_generator.py
+                     run_phase2()             jobs()                   firebase_client.py
+                                                                        category_post_check.py
 ```
 
 Automated via **Windows Task Scheduler** at specific intervals, ensuring fresh data flows onto the live site at `findjobsinfinland.fi`.
@@ -122,9 +123,8 @@ The `translated_content` field is added to each raw job in `rawjobs.json`:
 |----------|--------|
 | `format_translated_jobs(raw_jobs, batch_size)` | Phase 3 entry point: format unprocessed jobs |
 | `_call_ollama_for_content(text, raw_job, category)` | Send translated text to Ollama for structured extraction |
-| `_call_ollama_for_category(context)` | AI picks best category (fallback when string-match fails) |
 | `_build_formatted_job(raw, ai_data)` | Merge AI output with Python factual fields |
-| `_build_fallback_ai_data(raw, category)` | Fallback when AI fails: Python extraction + Argos |
+| `_build_fallback_ai_data(raw, category)` | Fallback when AI fails: Python extraction + translation |
 | `apply_manual_fixes(job)` | Post-processing: salary normalization, Finnish sweep |
 | `_sweep_finnish_from_job(job)` | Final safety net: catch remaining Finnish, retranslate |
 
@@ -136,16 +136,22 @@ Pre-translated English text (from Phase 2)
       ▼
 ┌─────────────────────────────────────┐
 │  Step 1: CATEGORY DETECTION         │
-│  a) Score translated text & title   │
-│     using job_categories.json.      │
-│     Requires >= 2 distinct keywords │
-│     or score >= 8 (e.g., exact or   │
-│     partial title match) to win.    │
-│  b) If rule-based scoring yields    │
-│     no clear winner ("other"),      │
-│     AI picks a category from the    │
-│     top matched candidates or the   │
-│     all_jobs_cat.json allowed list. │
+│  detect_category_by_keywords()      │
+│  Scores title + translated text     │
+│  against job_categories.json.       │
+│                                     │
+│  Scoring rules:                     │
+│  +50 ESCO label exact match         │
+│  +35 ESCO substring containment     │
+│  +15 ESCO word-level match          │
+│  +12 Title exact keyword match      │
+│  +8  Title contains keyword         │
+│  +3x Text frequency (capped ×3)     │
+│                                     │
+│  Requires ≥ 2 distinct keyword      │
+│  hits OR score ≥ 8 to classify.     │
+│  No AI fallback — defaults to       │
+│  "other" if score is 0.             │
 └──────────────┬──────────────────────┘
                │ category determined
                ▼
@@ -156,7 +162,7 @@ Pre-translated English text (from Phase 2)
 │  ALREADY-TRANSLATED English text    │
 │  and extracts structured fields:    │
 │  - title (clean English)            │
-│  - description (1 paragraph, ≤500c) │
+│  - description (1 paragraph, ≤800c) │
 │  - meta_description (SEO, ≤160c)    │
 │  - job_responsibilities [3-6 items] │
 │  - what_we_expect [3-6 items]       │
@@ -205,7 +211,7 @@ Pre-translated English text (from Phase 2)
                ▼
          Final formatted job
          → jobs.json (grouped by session)
-         → translated_jobs.json (flat list)
+         → formatted_jobs_flat.json (flat list)
 ```
 
 ### Who Does What
@@ -226,10 +232,47 @@ Pre-translated English text (from Phase 2)
 
 ### Category Classification Engine
 - **Source of Truth**: 30 broad, predefined categories in `all_jobs_cat.json`.
-- **Keyword Dictionary**: Populated dynamically from `job_categories.json`. Only keywords for categories present in `all_jobs_cat.json` are loaded.
-- **Rule-Based Engine**: Jobs strictly require either `≥ 2` distinct keyword matches OR a base score `≥ 8` (achieved by an exact/partial job title match) to be confidently categorized.
-- **AI Tie-Breaker Fallback**: If the rule-based engine scores 0 or fails to identify a clear winner, the local AI model selects the best fit from the 30 broad categories.
-- Unrecognized or generic jobs default to `"other"`.
+- **Keyword Dictionary**: Populated from `job_categories.json`. Only keywords for categories present in `all_jobs_cat.json` are loaded (3 000+ keywords, Finnish + English).
+- **Rule-Based Only**: `detect_category_by_keywords()` scores every category using ESCO occupation labels, title matching, and keyword frequency. Returns `(best_category, best_score)`. The highest-scoring category wins — **no AI involved in this step**.
+- **Scoring thresholds**: requires either `≥ 2` distinct keyword hits OR a base score `≥ 8` (exact/partial title match). Jobs scoring 0 default to `"other"`.
+- **AI tiebreaker removed**: Previously, Ollama was called as a fallback when the rule-based engine was ambiguous. This was removed to reduce latency and Ollama load during the main pipeline.
+
+### Category Post-Check (`category_post_check.py`)
+After each batch of 50 jobs is fully formatted and HTML/JSON is written, the pipeline runs a **synchronous, blocking** category verification pass before doing the git push:
+
+```
+Phase 3+4+5 complete for batch N
+       │
+       ▼  (BLOCKING — pipeline waits here)
+┌──────────────────────────────────────────┐
+│  category_post_check.run_check_sync()    │
+│                                          │
+│  For each newly formatted job:           │
+│  1. Ask Ollama: "Is this category        │
+│     correct? If not, return the slug."  │
+│  2. If correction found:                 │
+│     • Patch jobs.json + flat.json        │
+│     • Move HTML file to new folder       │
+│     • Patch jobs-table.html              │
+│     • Write to category_changes_log.json │
+│  3. Returns when all jobs are checked.  │
+└──────────────────────────────────────────┘
+       │
+       ▼  (ONE git commit + push)
+  All 50 jobs + any category corrections
+  committed together in a single push.
+
+  • Uses auto-detected Ollama model
+    (llama3.x, gemma3, mistral, etc.)
+  • Silently skips if Ollama offline
+  • Thread-safe: file lock prevents
+    concurrent corruption if called
+    from multiple contexts
+  • Source tagged "pipeline_post_check"
+    in category_changes_log.json
+```
+
+This guarantees that by the time a batch is pushed to GitHub, every job is in its **correct category folder** — no stale misclassified pages ever reach the live site.
 
 ### Hallucination Detection
 - `_is_irrelevant_ai_output()` checks if AI output has meaningful overlap with the original job title/content.
@@ -280,19 +323,40 @@ Pre-translated English text (from Phase 2)
 4. Expire old jobs (> EXPIRATION_DAYS)
 ───────────────────────────────────
 5. PHASE 2: job_translator.run_phase2()
-   → Translate untranslated raw jobs
+   → Translate untranslated raw jobs (Argos, offline)
    → Save rawjobs.json (with translated_content)
-   → Save translated_jobs.json (raw + translations)
+   → Save translated_raw_jobs.json (raw + translations)
 ───────────────────────────────────
-6. PHASE 3: ai_processor.format_translated_jobs()
-   → AI formats using pre-translated text
-   → Merge into jobs list
-   → Apply manual fixes (salary, Finnish sweep)
-───────────────────────────────────
-7. PHASE 4: Site generation
-   → Generate images, HTML pages, update indexes
-   → Send Firebase alerts for new jobs
-   → Save jobs.json + translated_jobs.json (final formatted)
+6. Batched loop (PIPELINE_COMMIT_BATCH_SIZE jobs per iteration):
+
+   a. PHASE 3: ai_processor.format_translated_jobs()
+      → Rule-based category scoring (detect_category_by_keywords)
+      → Ollama structures: title, description, meta, lists
+      → Python locks factual fields (company, location, salary, links)
+      → Finnish sweep safety net
+
+   b. PHASE 4: Job_formatter.format_jobs()
+      → Merges ai_data into final job schema
+      → Generates job_id slug (title + location + hash)
+
+   c. PHASE 5: Site generation
+      → generate_images_for_jobs() — category stock images
+      → generate_job_pages()       — /jobs/{cat}/{id}.html
+      → update_main_pages()        — index.html, jobs.html
+      → update_sitemap()           — sitemap-jobs.xml
+      → save_formatted_jobs_flat() — formatted_jobs_flat.json
+      → save_jobs()                — jobs.json
+      → send_new_job_alerts()      — Firebase push notifications
+
+   d. CATEGORY POST-CHECK (blocking — runs before git push)
+      → category_post_check.run_check_sync(batch)
+         Ollama verifies each job's category synchronously.
+         If a correction is found → patches JSON + HTML files.
+         Pipeline WAITS for this to complete.
+
+   e. Git commit + push (one push covers batch + any corrections)
+      → Commits all changes from this batch (new jobs + category fixes)
+      → Pushes to GitHub Pages (live site update)
 ```
 
 ### CLI Commands
@@ -378,30 +442,35 @@ JobsInFinland/
 │
 └── scraper/
     ├── run_scraper.py           # Phase 1: Scraper entrypoint
-    ├── run_pipeline.py          # Phases 2, 3 & 4: Pipeline CLI
-    ├── job_translator.py        # Phase 2: Google FI→EN translation
+    ├── run_pipeline.py          # Phases 2–5: Pipeline CLI + batch loop
+    ├── job_translator.py        # Phase 2: Argos FI→EN translation (offline)
     ├── ai_processor.py          # Phase 3: AI formatting + factual fields
     ├── patch_salary.py          # Phase 3: Centralized salary extraction logic
-    ├── translator.py            # deep-translator FI→EN wrapper
-    ├── html_generator.py        # Phase 4: Static site builder
-    ├── image_generator.py       # Phase 4: OG image generator
+    ├── translator.py            # deep-translator FI→EN wrapper (Google)
+    ├── html_generator.py        # Phase 5: Static site builder
+    ├── image_generator.py       # Phase 5: OG image generator
     ├── config.py                # All configuration & category keywords
-    ├── jobs_store.py            # jobs.json + translated_jobs.json I/O
+    ├── jobs_store.py            # jobs.json + formatted_jobs_flat.json I/O
     ├── rawjobs_store.py         # rawjobs.json I/O + AI status tracking
     ├── expiration.py            # Job expiration logic
-    ├── firebase_client.py       # Phase 4: Firebase push notifications
+    ├── firebase_client.py       # Phase 5: Firebase push notifications
     ├── scraper.py               # Shared scraping utilities
     ├── job_template.html        # HTML template for job pages
-    ├── all_jobs_cat.json        # Valid category list data (source of truth)
-    ├── job_categories.json      # Keyword dictionaries for scoring
+    ├── all_jobs_cat.json        # Valid category list (source of truth, 30 categories)
+    ├── job_categories.json      # Keyword dictionaries for rule-based scoring
+    ├── category_post_check.py   # Background AI category verifier (post-batch)
+    ├── category_changer.py      # Manual category manager web UI + AI audit tool
     │
     ├── scraper_tyomarkkinatori.py   # Phase 1: Työmarkkinatori module
     ├── scraper_duunitori.py         # Phase 1: Duunitori module
     ├── scraper_jobly.py             # Phase 1: Jobly module
     │
     └── data/
-        ├── rawjobs.json             # Phase 1+2: Raw jobs + translated_content
-        ├── translated_jobs.json     # Phase 2: Translations → Phase 3: Formatted jobs
-        ├── jobs.json                # Phase 3: Formatted jobs (session-grouped)
-        └── sent_alerts.json         # Phase 4: Firebase alert tracking
+        ├── rawjobs.json                # Phase 1+2: Raw jobs + translated_content
+        ├── translated_raw_jobs.json    # Phase 2: Translations snapshot
+        ├── formatted_jobs_flat.json    # Phase 3+4: Formatted jobs (flat list)
+        ├── jobs.json                   # Phase 3+4: Formatted jobs (session-grouped)
+        ├── processing_state.json       # Per-job AI processing state + retry count
+        ├── category_changes_log.json   # Audit log: all category changes (manual + AI)
+        └── sent_alerts.json            # Phase 5: Firebase alert tracking
 ```

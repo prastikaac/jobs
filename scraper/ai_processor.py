@@ -165,132 +165,7 @@ def _make_meta_fallback(job: dict, formatted_description: str) -> str:
     return _trim_to_sentence_boundary(base, 150, 160)
 
 
-def _extract_top_candidate_categories(title: str, text: str, top_n: int | None = None) -> list[str]:
-    title_low = Job_formatter._clean_text(title).lower()
-    text_low = Job_formatter._clean_text(text).lower()
-    top_n = top_n or config.AI_CATEGORY_CANDIDATE_COUNT
 
-    candidate_scores: dict[str, int] = {}
-    for cat, kws in config.CATEGORY_KEYWORDS.items():
-        if not kws:
-            continue
-
-        score = 0
-        for kw in kws:
-            kw_low = Job_formatter._clean_text(kw).lower()
-            if not kw_low:
-                continue
-            if kw_low in title_low:
-                score += 3
-            if kw_low in text_low:
-                score += 1
-
-        if score > 0:
-            candidate_scores[cat] = score
-
-    ranked = sorted(candidate_scores.items(), key=lambda x: x[1], reverse=True)
-    top_candidates = [cat for cat, _ in ranked[:top_n]]
-
-    return top_candidates if top_candidates else list(config.VALID_CATEGORIES)
-
-
-def _should_use_ai_category_tiebreak(top_cat: str, top_score: int, needs_ai: bool, top_candidates: list[str]) -> bool:
-    """
-    Be careful with AI category fallback:
-    - use only if scoring is weak/ambiguous
-    - shortlist only
-    - do not use if title/rule signal already looks strong enough
-    """
-    if top_cat == "other":
-        return True
-    if not needs_ai:
-        return False
-    if top_score >= 16:
-        return False
-    if len(top_candidates) < 2:
-        return False
-    return True
-
-
-def _call_ollama_for_category(job: dict, candidate_categories: list[str] | None = None) -> tuple[str, bool, str]:
-    valid_categories = list(config.VALID_CATEGORIES)
-    if "other" not in valid_categories:
-        valid_categories.append("other")
-
-    cats_to_use = list(candidate_categories) if candidate_categories else list(valid_categories)
-    if "other" not in cats_to_use:
-        cats_to_use.append("other")
-
-    cats_str = ", ".join(cats_to_use)
-
-    title = job.get("title", "")
-    text = job.get("jobcontent", "")
-    occupations = ", ".join(job.get("jobcategory_keywords") or job.get("job_occupations_en", []))
-
-    context_str = f"Job Title: {title}\n"
-    if occupations:
-        context_str += f"Official Occupations: {occupations}\n"
-    context_str += f"Job content:\n{text}"
-
-    prompt = (
-        "Choose the single best matching category from the allowed category list.\n"
-        "Return ONLY the exact category string.\n"
-        "Do not explain.\n"
-        "Do not return multiple categories.\n"
-        "Do not invent a category.\n\n"
-        f"Allowed categories:\n{cats_str}\n\n"
-        f"{context_str}"
-    )
-
-    payload = {
-        "model": OLLAMA_MODEL,
-        "prompt": prompt,
-        "stream": False,
-        "options": {
-            "temperature": 0,
-            "num_predict": 64,
-            "num_ctx": 4096,
-        },
-    }
-
-    for attempt in range(1, MAX_RETRIES + 2):
-        try:
-            resp = requests.post(OLLAMA_URL, json=payload, timeout=CATEGORY_TIMEOUT_SECS)
-
-            if resp.status_code != 200:
-                return "other", False, f"HTTP {resp.status_code}"
-
-            category_resp = Job_formatter._clean_text(resp.json().get("response", ""))
-            sorted_categories = sorted(valid_categories, key=len, reverse=True)
-
-            matched_category = None
-            for vc in sorted_categories:
-                if vc.lower() in category_resp.lower():
-                    matched_category = vc
-                    break
-
-            if not matched_category:
-                return "other", False, f"invalid category: {category_resp[:80]}"
-
-            return matched_category, True, ""
-
-        except (requests.Timeout, requests.ConnectionError) as exc:
-            if attempt <= MAX_RETRIES:
-                logger.warning(
-                    "Category Ollama timeout/connection error (attempt %d/%d): %s",
-                    attempt,
-                    MAX_RETRIES + 1,
-                    exc,
-                )
-            else:
-                logger.warning("Category Ollama failed after retries: %s", exc)
-                return "other", False, str(exc)
-
-        except Exception as exc:
-            logger.warning("Category Ollama failed: %s", exc)
-            return "other", False, str(exc)
-
-    return "other", False, "unknown category error"
 
 
 def _call_ollama_for_content(
@@ -594,41 +469,14 @@ def format_translated_jobs(
         translated_text = raw.get("translated_content") or raw.get("jobcontent", "")
         occupations = raw.get("jobcategory_keywords") or raw.get("job_occupations_en", [])
 
-        top_cat, top_score, needs_ai = Job_formatter.detect_category_by_keywords(
+        top_cat, top_score = Job_formatter.detect_category_by_keywords(
             title,
             translated_text,
             occupations=occupations,
         )
 
         found_category = top_cat if top_cat in config.VALID_CATEGORIES else "other"
-
-        top_candidates = _extract_top_candidate_categories(
-            title,
-            translated_text,
-            top_n=config.AI_CATEGORY_CANDIDATE_COUNT,
-        )
-
-        if _should_use_ai_category_tiebreak(top_cat, top_score, needs_ai, top_candidates):
-            cat_context = {
-                "title": title,
-                "jobcontent": translated_text,
-                "jobcategory_keywords": occupations,
-            }
-
-            ai_category, cat_ok, cat_err = _call_ollama_for_category(
-                cat_context,
-                candidate_categories=top_candidates,
-            )
-
-            if cat_ok and ai_category in config.VALID_CATEGORIES:
-                found_category = ai_category
-                logger.info("  Category (AI tie-break): %s → %s", title, found_category)
-            elif not cat_ok:
-                logger.warning("  Category AI failed for '%s': %s", title, cat_err)
-                if top_cat != "other":
-                    found_category = top_cat
-        else:
-            logger.info("  Category (scoring): %s → %s (score=%d)", title, found_category, top_score)
+        logger.info("  Category (scoring): %s → %s (score=%d)", title, found_category, top_score)
 
         ai_data, success, status, err = _call_ollama_for_content(
             translated_text,

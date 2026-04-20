@@ -317,15 +317,14 @@ _NOISE_KEYWORDS = {
 }
 
 _MIN_KEYWORD_MATCHES = 2
-_CONFIDENCE_GAP = 8
 
 
 def detect_category_by_keywords(
     title: str,
     text: str,
     occupations: list[str] | None = None,
-) -> tuple[str, int, bool]:
-    """Score every category and return (best_category, best_score, needs_ai_tiebreaker).
+) -> tuple[str, int]:
+    """Score every category and return (best_category, best_score).
 
     Scoring priority (highest to lowest):
       +50  ESCO occupation label exactly matches a category keyword entry
@@ -436,14 +435,11 @@ def detect_category_by_keywords(
 
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     top_cat, top_score = ranked[0]
-    second_score = ranked[1][1] if len(ranked) > 1 else 0
-
-    needs_ai = (top_score - second_score) < _CONFIDENCE_GAP
 
     if top_score <= 0:
-        return "other", 0, False
+        return "other", 0
 
-    return top_cat, top_score, needs_ai
+    return top_cat, top_score
 
 
 def _translate_title_direct(raw_title: str) -> str:
