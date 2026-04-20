@@ -195,7 +195,7 @@ wrapper.innerHTML = `
         <div id="jobAlertSubError" class="error-message"></div>
         <div id="jobAlertFreqError" class="error-message"></div>
         <div id="signupPrefError" style="color:red; margin-top:8px;"></div>
-        <button id="signupButton" onclick="signupUser()">Sign Up</button>
+        <button id="signupButton" onclick="signupUser()" style="margin-top: 20px;">Sign Up</button>
     </div>
 
     <div class="popup-content" id="popupStep3Login" style="display:none">

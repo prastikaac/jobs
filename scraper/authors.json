@@ -1,34 +1,39 @@
 {
     "authors": [
         {
-            "id": "pradeep-dhakal",
-            "name": "Pradeep Dhakal",
-            "photo": "https://findjobsinfinland.fi/images/pradeep-dhakal.png"
+            "id": "matti-virtanen",
+            "name": "Matti Virtanen",
+            "photo": "https://findjobsinfinland.fi/images/matti-virtanen.png"
+        },
+        {
+            "id": "teemu-korhonen",
+            "name": "Teemu Korhonen",
+            "photo": "https://findjobsinfinland.fi/images/teemu-korhonen.png"
+        },
+        {
+            "id": "laura-virtanen",
+            "name": "Laura Virtanen",
+            "photo": "https://findjobsinfinland.fi/images/laura-virtanen.png"
+        },
+        {
+            "id": "jussi-korhonen",
+            "name": "Jussi Korhonen",
+            "photo": "https://findjobsinfinland.fi/images/jussi-korhonen.png"
+        },
+        {
+            "id": "anna-makinen",
+            "name": "Anna Mäkinen",
+            "photo": "https://findjobsinfinland.fi/images/anna-makinen.png"
+        },
+        {
+            "id": "pekka-makinen",
+            "name": "Pekka Mäkinen",
+            "photo": "https://findjobsinfinland.fi/images/pekka-makinen.png"
         },
         {
             "id": "prasiddha-acharya",
             "name": "Prasiddha Acharya",
             "photo": "https://findjobsinfinland.fi/images/prasiddha-acharya.png"
-        },
-        {
-            "id": "binam-bhandari",
-            "name": "Binam Bhandari",
-            "photo": "https://findjobsinfinland.fi/images/binam-bhandari.png"
-        },
-        {
-            "id": "prem-tamang",
-            "name": "Prem Tamang",
-            "photo": "https://findjobsinfinland.fi/images/prem-tamang.png"
-        },
-        {
-            "id": "aayush-guragain",
-            "name": "Aayush Guragain",
-            "photo": "https://findjobsinfinland.fi/images/aayush-guragain.png"
-        },
-        {
-            "id": "anam-neupane",
-            "name": "Anam Neupane",
-            "photo": "https://findjobsinfinland.fi/images/anam-neupane.png"
         }
     ]
 }
