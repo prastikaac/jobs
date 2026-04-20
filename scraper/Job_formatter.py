@@ -27,6 +27,37 @@ if os.path.exists(_MUNI_CODES_PATH):
 MAX_DESCRIPTION_CHARS = 9999  # No hard limit on description length
 MAX_META_DESCRIPTION_CHARS = 160
 
+_META_TEMPLATES = [
+    "Apply now for a {title} role at {company}. Join a growing team and build your career in {location}.",
+    "{company} is hiring a {title} in {location}. Explore responsibilities, benefits, and apply today.",
+    "Start your next career step as a {title} at {company}. Great opportunity in {location}—apply now.",
+    "Looking for a {title} job in {location}? {company} is seeking motivated candidates—apply today.",
+    "Join {company} as a {title} and grow your career in {location}. Check details and apply now.",
+    "Discover a new opportunity as a {title} at {company} in {location}. Apply now and take the next step in your career.",
+    "{company} is looking for a skilled {title} in {location}. Don't miss this opportunity—apply today.",
+    "Build your future with {company} as a {title} in {location}. Learn more about the role and apply now.",
+    "Exciting {title} position available at {company} in {location}. Check requirements and submit your application today.",
+    "Take the next step in your career as a {title} at {company}, located in {location}. Apply now and get started.",
+]
+
+def generate_meta_from_template(job: dict) -> str:
+    """
+    Picks a random meta description template and fills in {title}, {company},
+    {location}. No character limit — the template sentences are naturally concise.
+    """
+    title    = _clean_text(job.get("title", "this role"))
+    company  = _clean_text(job.get("company", ""))
+    locations = job.get("jobLocation", [])
+    location = _clean_text(locations[0] if locations else "Finland")
+
+    if not company:
+        company = "the company"
+    if not location:
+        location = "Finland"
+
+    template = random.choice(_META_TEMPLATES)
+    return template.format(title=title, company=company, location=location)
+
 PLACEHOLDER_PATTERNS = [
     "2-4 short items", "2–4 short items", "3-5 items",
     "list of", "short items", "english job title", "company name",

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "27b5c851",
+    "job_id": "varastohenkilö-myyjä-raisio-27b5c851",
+    "title": "Warehouse person / - salesperson",
+    "company": "Bwt Separtec Oy, Raisio",
+    "jobLocation": [
+      "Raisio"
+    ],
+    "detected_category": "sales-and-marketing",
+    "saved_at": "2026-04-20 22:10:04"
+  },
+  {
+    "id": "485b833d",
+    "job_id": "system-specialist-for-energy-s-helsinki-485b833d",
+    "title": "System Specialist for energy sector, Espoo",
+    "company": "Academic Work Finland Oy",
+    "jobLocation": [
+      "Helsinki",
+      "Vantaa",
+      "Kerava",
+      "Kauniainen",
+      "Kirkkonummi",
+      "Nurmijärvi",
+      "Espoo",
+      "Loviisa",
+      "Sipoo",
+      "Hyvinkää",
+      "Siuntio",
+      "Mäntsälä",
+      "Tuusula",
+      "Vihti"
+    ],
+    "detected_category": "consulting-and-coaching",
+    "saved_at": "2026-04-20 22:11:56"
+  },
+  {
+    "id": "96ebd14f",
+    "job_id": "henkilökohtainen-avustaja-rovaniemi-96ebd14f",
+    "title": "Personal assistant",
+    "company": "Muukkonen Minna Kristiina, ROVANIEMI",
+    "jobLocation": [
+      "Rovaniemi"
+    ],
+    "detected_category": "business-and-administration",
+    "saved_at": "2026-04-20 22:17:19"
+  },
+  {
+    "id": "2674cfbc",
+    "job_id": "hoitoalan-keikkatyö-attendolla-lapinlahti-2674cfbc",
+    "title": "Nursing gig work at Attendo in the Ylä-Savo region",
+    "company": "Attendo Oy",
+    "jobLocation": [
+      "Lapinlahti",
+      "Vieremä",
+      "Iisalmi"
+    ],
+    "detected_category": "healthcare",
+    "saved_at": "2026-04-20 22:19:59"
+  },
+  {
+    "id": "4249161b",
+    "job_id": "hoitoalan-keikkatyö-attendolla-leppävirta-4249161b",
+    "title": "Gig work in nursing at Attendo, Varkaus-Joroinen-Leppävirta-Pieksämäki",
+    "company": "Attendo Oy",
+    "jobLocation": [
+      "Leppävirta",
+      "Joroinen",
+      "Varkaus",
+      "Pieksämäki"
+    ],
+    "detected_category": "healthcare",
+    "saved_at": "2026-04-20 22:26:22"
+  }
+]

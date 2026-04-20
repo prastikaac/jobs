@@ -81,32 +81,40 @@ def trim_to_sentence_boundary(text: str, min_len: int = 150, max_len: int = 160)
     return truncated[: max_len - 3].rstrip() + "..."
 
 
-def make_meta_fallback(job: Dict[str, Any], formatted_description: str) -> str:
-    title = clean_text(job.get("title"))
-    location = clean_text(job.get("jobLocation"))
-    company = clean_text(job.get("company"))
+_META_TEMPLATES = [
+    "Apply now for a {title} role at {company}. Join a growing team and build your career in {location}.",
+    "{company} is hiring a {title} in {location}. Explore responsibilities, benefits, and apply today.",
+    "Start your next career step as a {title} at {company}. Great opportunity in {location}—apply now.",
+    "Looking for a {title} job in {location}? {company} is seeking motivated candidates—apply today.",
+    "Join {company} as a {title} and grow your career in {location}. Check details and apply now.",
+    "Discover a new opportunity as a {title} at {company} in {location}. Apply now and take the next step in your career.",
+    "{company} is looking for a skilled {title} in {location}. Don't miss this opportunity—apply today.",
+    "Build your future with {company} as a {title} in {location}. Learn more about the role and apply now.",
+    "Exciting {title} position available at {company} in {location}. Check requirements and submit your application today.",
+    "Take the next step in your career as a {title} at {company}, located in {location}. Apply now and get started.",
+]
 
-    parts = []
-    if title:
-        parts.append(title)
-    if location:
-        parts.append(f"in {location}")
-    if company:
-        parts.append(f"at {company}")
 
-    intro = " ".join(parts).strip()
-    if intro:
-        intro += ". "
+def make_meta_from_template(job: Dict[str, Any]) -> str:
+    title = clean_text(job.get("title", "this role"))
+    company = clean_text(job.get("company", ""))
+    
+    location = ""
+    loc_val = job.get("jobLocation")
+    if isinstance(loc_val, list) and loc_val:
+        location = str(loc_val[0])
+    elif loc_val:
+        location = str(loc_val)
+    location = clean_text(location)
 
-    base = intro + normalize_whitespace(formatted_description)
-    base = re.sub(r"\s+", " ", base).strip()
+    if not company:
+        company = "the company"
+    if not location:
+        location = "Finland"
 
-    if len(base) < 150:
-        extra = " Apply now for this opportunity in Finland."
-        if extra not in base:
-            base += extra
-
-    return trim_to_sentence_boundary(base, 150, 160)
+    import random
+    template = random.choice(_META_TEMPLATES)
+    return template.format(title=title, company=company, location=location)
 
 
 def build_description_prompt(job: Dict[str, Any]) -> str:
@@ -158,34 +166,6 @@ Raw Job Content:
 """.strip()
 
 
-def build_meta_prompt(job: Dict[str, Any], formatted_description: str) -> str:
-    title = clean_text(job.get("title"))
-    company = clean_text(job.get("company"))
-    location = clean_text(job.get("jobLocation"))
-
-    return f"""
-Write a concise SEO meta description for a job posting.
-
-Rules:
-- Length MUST NOT exceed 160 characters.
-- The description MUST be completely untrimmed; it must end properly with a period.
-- Aim for a single, complete, and engaging sentence around 120-150 characters.
-- Include the job title and location naturally if possible.
-- Make it clear, clickable, and professional.
-- Use natural English.
-- Do not use quotes.
-- Do not use HTML.
-- Do not use markdown.
-- Output ONLY the meta description text.
-
-Job Title: {title}
-Company: {company}
-Location: {location}
-
-Job Summary:
-{formatted_description}
-""".strip()
-
 
 def call_ollama(prompt: str, num_predict: int = 300) -> str:
     payload = {
@@ -234,13 +214,7 @@ def format_job_description(job: Dict[str, Any], index: int, total: int) -> Dict[
         formatted_description = call_ollama(description_prompt, num_predict=300)
         formatted_description = sanitize_ai_output(formatted_description)
 
-        meta_prompt = build_meta_prompt(job, formatted_description)
-        meta_description = call_ollama(meta_prompt, num_predict=80)
-        meta_description = sanitize_ai_output(meta_description)
-        meta_description = trim_to_sentence_boundary(meta_description, 150, 160)
-
-        if len(meta_description) < 80:
-            meta_description = make_meta_fallback(job, formatted_description)
+        meta_description = make_meta_from_template(job)
 
         job["formatted_description"] = formatted_description
         job["meta_description"] = meta_description
@@ -254,7 +228,7 @@ def format_job_description(job: Dict[str, Any], index: int, total: int) -> Dict[
         print(f"ERROR while formatting '{title}': {error_message}\n")
 
         fallback_description = normalize_whitespace(job.get("translated_content") or job.get("jobcontent") or "")
-        fallback_meta = make_meta_fallback(job, fallback_description)
+        fallback_meta = make_meta_from_template(job)
 
         job["formatted_description"] = fallback_description
         job["meta_description"] = fallback_meta

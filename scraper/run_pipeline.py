@@ -459,11 +459,22 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
             )
 
             # ── Phase 3: AI on this chunk ─────────────────────────────────
+            # Start the category checker background worker BEFORE Phase 3 so
+            # it is ready to receive jobs the moment the first one finishes AI.
+            checker = category_post_check.BatchChecker()
+            checker.start()
+
             newly_processed_translated, updated_translated_jobs = ai_processor.format_translated_jobs(
                 chunk,
                 batch_size=len(chunk),
+                category_checker=checker,
             )
             processed_so_far += len(chunk)
+
+            # Block until every job in this batch has been category-verified.
+            # Any corrections are on disk before Phase 4 runs.
+            logger.info("── Batch %d: Waiting for category post-check to finish ──", batch_num)
+            checker.wait()
 
             processing_state = rawjobs_store.sync_processing_state_from_jobs(updated_translated_jobs, processing_state)
             rawjobs_store.save_processing_state(processing_state)
@@ -513,14 +524,6 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
                     logger.info("  Batch %d Firebase alerts sent: %d", batch_num, batch_alert_count)
                 except Exception as exc:
                     logger.error("Firebase alert error in batch %d: %s", batch_num, exc)
-
-            # ── Category post-check (blocking — runs before git push) ─────
-            # Verifies each job's category via Ollama.  Any corrections are
-            # applied to JSON + HTML files here, so the git commit below
-            # captures both the original batch AND any category fixes in one push.
-            if newly_formatted_batch:
-                logger.info("── Batch %d: Running category post-check ──", batch_num)
-                category_post_check.run_check_sync(newly_formatted_batch)
 
             # ── Git commit + push for this batch ──────────────────────────
             logger.info("── Batch %d: Committing and pushing to GitHub ──", batch_num)

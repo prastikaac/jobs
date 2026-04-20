@@ -8,6 +8,7 @@ import requests
 
 import config
 import Job_formatter
+import category_post_check
 import rawjobs_store
 
 logger = logging.getLogger("ai_processor")
@@ -138,34 +139,6 @@ def _trim_description_safely(text: str, max_len: int = 800) -> str:
         return truncated[:last_space].rstrip(" ,;:-").strip()
 
     return truncated.rstrip(" ,;:-").strip()
-
-
-def _make_meta_fallback(job: dict, formatted_description: str) -> str:
-    title = Job_formatter._clean_text(job.get("title", ""))
-    location = Job_formatter._clean_text(", ".join(job.get("jobLocation", [])))
-    company = Job_formatter._clean_text(job.get("company", ""))
-
-    if company and title:
-        intro = f"{company} is seeking a {title}"
-    elif title:
-        intro = f"Join our team as a {title}"
-    else:
-        intro = "Explore this exciting job opportunity"
-
-    if location:
-        intro += f" in {location}"
-
-    intro += ". "
-
-    base = _normalize_whitespace(intro + formatted_description)
-
-    if len(base) < 150:
-        base += " Apply now for this opportunity in Finland."
-
-    return _trim_to_sentence_boundary(base, 150, 160)
-
-
-
 
 
 def _call_ollama_for_content(
@@ -341,36 +314,6 @@ def _build_description_prompt(raw_job: dict) -> str:
     )
 
 
-def _build_meta_prompt(raw_job: dict, formatted_description: str) -> str:
-    title = Job_formatter._clean_text(raw_job.get("title", ""))
-    company = Job_formatter._clean_text(raw_job.get("company", ""))
-    location = Job_formatter._clean_text(", ".join(raw_job.get("jobLocation", [])))
-
-    return (
-        "Write a concise SEO meta description for a job posting.\n\n"
-
-        "STRICT RULES:\n"
-        "- Length MUST be between 150 and 160 characters.\n"
-        "- Do NOT exceed 160 characters.\n"
-        "- Write in a natural, human-friendly sentence.\n"
-        "- DO NOT copy the raw title string as-is.\n"
-        "- Start naturally using this style:\n"
-        "  • '[Company] is seeking a [Job Title]...'\n"
-        "- Include location naturally, not as a list dump.\n"
-        "- End with a complete sentence.\n"
-        "- Do not cut the sentence in the middle.\n"
-        "- Do not use quotes, escaped quotes, HTML, markdown, labels, or JSON.\n"
-        "- Do not wrap the output in quotation marks.\n"
-        "- Do not start with any quotation mark, colon, dash, or punctuation.\n"
-        "- Output ONLY the final meta description sentence.\n\n"
-
-        f"Job Title: {title}\n"
-        f"Company: {company}\n"
-        f"Location: {location}\n\n"
-        f"Job Summary:\n{formatted_description}"
-    )
-
-
 def _call_ollama_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, num_predict: int = 220) -> tuple[str, bool, str]:
     payload = {
         "model": OLLAMA_MODEL,
@@ -431,23 +374,8 @@ def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
     else:
         formatted_description = _trim_description_safely(formatted_description, 800)
 
-    meta_prompt = _build_meta_prompt(raw_job, formatted_description)
-    meta_description, meta_ok, meta_err = _call_ollama_plain_text(
-        meta_prompt,
-        timeout_secs=120,
-        num_predict=100,
-    )
-
-    meta_description = _clean_meta_text(meta_description)
-    meta_description = _trim_to_sentence_boundary(meta_description, 150, 160)
-
-    if not meta_ok or not meta_description or len(meta_description) < 150:
-        logger.warning(
-            "Meta AI failed for '%s': %s",
-            raw_job.get("title", raw_job.get("id")),
-            meta_err,
-        )
-        meta_description = _make_meta_fallback(raw_job, formatted_description)
+    # Meta description: always use a template (no Ollama call)
+    meta_description = Job_formatter.generate_meta_from_template(raw_job)
 
     return formatted_description, meta_description
 
@@ -455,10 +383,19 @@ def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
 def format_translated_jobs(
     raw_jobs: list[dict],
     batch_size: int = BATCH_SIZE,
+    category_checker=None,
 ) -> tuple[list[dict], list[dict]]:
     """
     Phase 3: Format pre-translated jobs using AI for extraction,
     description generation, and meta description generation.
+
+    Args:
+        raw_jobs:         list of translated raw job dicts
+        batch_size:       max jobs to process (0 = all)
+        category_checker: optional BatchChecker instance from category_post_check.
+                          If provided, checker.submit(job) is called immediately
+                          after each job finishes AI processing so the background
+                          worker can verify the category concurrently.
 
     Returns:
         (newly_formatted_jobs, updated_raw_jobs)
@@ -478,6 +415,11 @@ def format_translated_jobs(
         found_category = top_cat if top_cat in config.VALID_CATEGORIES else "other"
         logger.info("  Category (scoring): %s → %s (score=%d)", title, found_category, top_score)
 
+        # Persist the detected category immediately — non-blocking fire-and-forget.
+        # This writes to scraper/data/category_check.json in a daemon thread so
+        # the record is on disk before (and while) the Ollama AI call runs.
+        category_post_check.save_to_category_check(raw, found_category)
+
         ai_data, success, status, err = _call_ollama_for_content(
             translated_text,
             raw_job=raw,
@@ -489,7 +431,7 @@ def format_translated_jobs(
         else:
             fallback_description = _trim_description_safely(_normalize_whitespace(translated_text), 800)
             formatted_description = fallback_description
-            meta_description = _make_meta_fallback(raw, fallback_description)
+            meta_description = Job_formatter.generate_meta_from_template(raw)
 
         ai_data["formatted_description"] = formatted_description
         ai_data["meta_description"] = meta_description
@@ -547,6 +489,24 @@ def format_translated_jobs(
                 title,
                 raw_processed.get("ai_data", {}).get("job_category"),
             )
+            # Submit to background category checker as soon as this job is ready
+            if category_checker is not None:
+                # Build a lightweight dict the checker can use without waiting
+                # for Job_formatter.format_jobs() (which runs in Phase 4).
+                # The checker only needs: title, company, job_category,
+                # job_id, formatted_description.  job_id is set by Phase 4
+                # so we pass whatever we have now; the checker skips if missing.
+                submit_job = {
+                    "title":               title,
+                    "company":             raw_processed.get("company", ""),
+                    "job_category":        raw_processed.get("ai_data", {}).get("job_category", "other"),
+                    "job_id":              raw_processed.get("job_id", ""),
+                    "formatted_description": raw_processed.get("ai_data", {}).get("formatted_description", ""),
+                    "image_url":           raw_processed.get("image_url", ""),
+                    # keep reference so checker can update job_category in-place
+                    "_raw_ref":            raw_processed,
+                }
+                category_checker.submit(submit_job)
         else:
             failure_count += 1
             logger.warning("  ✗ %s → %s", title, status)

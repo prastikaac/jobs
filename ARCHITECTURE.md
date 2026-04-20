@@ -238,41 +238,38 @@ Pre-translated English text (from Phase 2)
 - **AI tiebreaker removed**: Previously, Ollama was called as a fallback when the rule-based engine was ambiguous. This was removed to reduce latency and Ollama load during the main pipeline.
 
 ### Category Post-Check (`category_post_check.py`)
-After each batch of 50 jobs is fully formatted and HTML/JSON is written, the pipeline runs a **synchronous, blocking** category verification pass before doing the git push:
+
+The category verifier now runs **concurrently with Phase 3** using a producer-consumer queue. It starts before Phase 3 and verifies each job's category in the background as soon as the AI processor finishes it — not after the whole batch.
 
 ```
-Phase 3+4+5 complete for batch N
-       │
-       ▼  (BLOCKING — pipeline waits here)
-┌──────────────────────────────────────────┐
-│  category_post_check.run_check_sync()    │
-│                                          │
-│  For each newly formatted job:           │
-│  1. Ask Ollama: "Is this category        │
-│     correct? If not, return the slug."  │
-│  2. If correction found:                 │
-│     • Patch jobs.json + flat.json        │
-│     • Move HTML file to new folder       │
-│     • Patch jobs-table.html              │
-│     • Write to category_changes_log.json │
-│  3. Returns when all jobs are checked.  │
-└──────────────────────────────────────────┘
-       │
-       ▼  (ONE git commit + push)
-  All 50 jobs + any category corrections
-  committed together in a single push.
-
-  • Uses auto-detected Ollama model
-    (llama3.x, gemma3, mistral, etc.)
-  • Silently skips if Ollama offline
-  • Thread-safe: file lock prevents
-    concurrent corruption if called
-    from multiple contexts
-  • Source tagged "pipeline_post_check"
-    in category_changes_log.json
+  Phase 3 starts
+  ┌──────────────────────────────┐      ┌─────────────────────────────────────┐
+  │  checker.start()             │      │  Background Worker Thread           │
+  │  (BatchChecker)              │      │                                     │
+  │                              │      │  • Waits on internal queue           │
+  │  ai_processor processes      │      │  • Picks up jobs as they arrive      │
+  │  job 1 → ✓                   │─────▶│  • Asks Ollama: "Is category OK?"   │
+  │  format_translated_jobs()    │      │  Still processing …                 │
+  │  returns                     │      │                                     │
+  │                              │      │                                     │
+  │  checker.wait()  ◀──────────────────  Posts sentinel → drains queue       │
+  │  (BLOCKS here)               │      │  Thread exits                       │
+  └──────────────────────────────┘      └─────────────────────────────────────┘
+         │
+         ▼  All categories already correct on disk
+    Phase 4 → Phase 5 → git push
+    (one commit covers new jobs + all corrections)
 ```
 
-This guarantees that by the time a batch is pushed to GitHub, every job is in its **correct category folder** — no stale misclassified pages ever reach the live site.
+**Key properties:**
+- `submit(job)` is called per-job, immediately after `ai_processor` logs `✓ title → category=…`
+- Worker thread runs concurrently — overlaps with the next job's Ollama call
+- `checker.wait()` is the barrier: blocks until queue is drained, then Phase 4 starts
+- Corrections are already on disk **before** Phase 4 builds HTML, ensuring correct folder paths
+- Logs to `scraper/category_post_check.log` (dedicated file, INFO level)
+- Silently skips if Ollama is offline — pipeline unaffected
+- Thread-safe: `_file_lock` prevents concurrent JSON/HTML corruption
+- Source tagged `"pipeline_post_check"` in `category_changes_log.json`
 
 ### Hallucination Detection
 - `_is_irrelevant_ai_output()` checks if AI output has meaningful overlap with the original job title/content.
@@ -327,35 +324,39 @@ This guarantees that by the time a batch is pushed to GitHub, every job is in it
    → Save rawjobs.json (with translated_content)
    → Save translated_raw_jobs.json (raw + translations)
 ───────────────────────────────────
-6. Batched loop (PIPELINE_COMMIT_BATCH_SIZE jobs per iteration):
+6. Batched loop (25 jobs per iteration — PIPELINE_COMMIT_BATCH_SIZE):
 
-   a. PHASE 3: ai_processor.format_translated_jobs()
+   a. checker = BatchChecker(); checker.start()
+      → Detects Ollama model, loads valid categories
+      → Starts background worker thread (waiting on queue)
+
+   b. PHASE 3: ai_processor.format_translated_jobs(chunk, checker=checker)
       → Rule-based category scoring (detect_category_by_keywords)
-      → Ollama structures: title, description, meta, lists
+      → Ollama structures content: title, description, meta, lists
       → Python locks factual fields (company, location, salary, links)
       → Finnish sweep safety net
+      → After EACH job completes: checker.submit(job)  ← per-job, immediate
+         (background worker starts verifying category while next job processes)
 
-   b. PHASE 4: Job_formatter.format_jobs()
-      → Merges ai_data into final job schema
+   c. checker.wait()  ← BARRIER
+      → Posts sentinel to queue, blocks until worker thread drains queue
+      → All category corrections already applied to JSON + HTML on disk
+
+   d. PHASE 4: Job_formatter.format_jobs()
+      → Merges ai_data into final job schema (categories already corrected)
       → Generates job_id slug (title + location + hash)
 
-   c. PHASE 5: Site generation
+   e. PHASE 5: Site generation
       → generate_images_for_jobs() — category stock images
-      → generate_job_pages()       — /jobs/{cat}/{id}.html
+      → generate_job_pages()       — /jobs/{correct-cat}/{id}.html
       → update_main_pages()        — index.html, jobs.html
       → update_sitemap()           — sitemap-jobs.xml
       → save_formatted_jobs_flat() — formatted_jobs_flat.json
       → save_jobs()                — jobs.json
       → send_new_job_alerts()      — Firebase push notifications
 
-   d. CATEGORY POST-CHECK (blocking — runs before git push)
-      → category_post_check.run_check_sync(batch)
-         Ollama verifies each job's category synchronously.
-         If a correction is found → patches JSON + HTML files.
-         Pipeline WAITS for this to complete.
-
-   e. Git commit + push (one push covers batch + any corrections)
-      → Commits all changes from this batch (new jobs + category fixes)
+   f. Git commit + push (ONE push covers all of the above)
+      → New jobs + category corrections commit together
       → Pushes to GitHub Pages (live site update)
 ```
 

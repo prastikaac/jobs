@@ -1,8 +1,8 @@
 """
-category_changer.py — Combined Category Manager & AI Auditor
+category_changer.py — Manual Category Manager
            for findjobsinfinland.fi
 
-Usage:  python scraper/category_changer.py
+Usage:  python scraper/category_cheanger.py
         (run from the project root)
 
 The server listens on http://localhost:8765
@@ -11,11 +11,7 @@ API endpoints:
   GET  /api/categories    — returns all valid categories
   GET  /api/history       — returns the change-log (audit panel)
   POST /api/change        — manually change a single job's category
-  POST /api/auto_audit    — run AI-powered batch audit on all jobs
   GET  /                  — serves category-changer.html
-
-AI audit uses Ollama running locally (https://ollama.com)
-  Recommended model: llama3.1 or higher (auto-detected)
 """
 
 import datetime
@@ -49,26 +45,6 @@ CHANGES_LOG = DATA_DIR / "category_changes_log.json"        # shared audit log
 SITE_BASE   = "https://findjobsinfinland.fi"
 PORT        = 8765
 
-# ── Ollama settings ────────────────────────────────────────────────────────────
-OLLAMA_BASE_URL  = "http://localhost:11434"
-PREFERRED_MODELS = [
-    "llama3.1", "llama3.2", "llama3", "llama3:8b",
-    "gemma3", "gemma2", "mistral", "phi3", "phi",
-]
-
-# ── Audit state (shared between requests) ─────────────────────────────────────
-_audit_lock   = threading.Lock()
-_audit_status = {
-    "running":   False,
-    "total":     0,
-    "processed": 0,
-    "changed":   0,
-    "errors":    [],
-    "log":       [],       # live per-job messages streamed to UI
-    "done":      False,
-    "result":    None,
-}
-
 # ═══════════════════════════════════════════════════════════════════════════════
 # ── Shared helpers ─────────────────────────────────────────────────────────────
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -76,8 +52,12 @@ _audit_status = {
 def load_json(path: Path):
     if not path.exists():
         return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        # Avoid crashing if the file is 0 bytes or corrupted during pipeline writes
+        return None
 
 
 def save_json(path: Path, data) -> None:
@@ -152,34 +132,6 @@ def _git_commit_and_push(slug: str, old_cat: str, new_cat: str) -> dict:
 
     if code != 0 and "nothing to commit" in (out + err).lower():
         return {"success": True, "messages": ["Nothing to commit — already up to date."]}
-
-    code, out, err = _run_git(["push"])
-    messages.append(f"git push: {out or err or 'ok'}")
-    return {"success": code == 0, "messages": messages}
-
-
-def _git_batch_commit_push(changed_jobs: list) -> dict:
-    """Batched git commit for AI audit."""
-    count = len(changed_jobs)
-    messages = []
-
-    code, out, err = _run_git(["add", "-A"])
-    messages.append(f"git add: {out or err or 'ok'}")
-
-    if count == 1:
-        msg = (f"fix: AI reclassify '{changed_jobs[0]['job_id']}' "
-               f"to '{changed_jobs[0]['new_category']}'")
-    else:
-        slugs = ", ".join(j["job_id"] for j in changed_jobs[:5])
-        if count > 5:
-            slugs += f" … (+{count-5} more)"
-        msg = f"fix: AI reclassified {count} job(s) — {slugs}"
-
-    code, out, err = _run_git(["commit", "-m", msg])
-    messages.append(f"git commit: {out or err or 'ok'}")
-
-    if "nothing to commit" in (out + err).lower():
-        return {"success": True, "messages": ["Nothing to commit — all files already up to date."]}
 
     code, out, err = _run_git(["push"])
     messages.append(f"git push: {out or err or 'ok'}")
@@ -366,304 +318,6 @@ def change_category(job_id: str, new_category: str) -> dict:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# ── AI / Ollama helpers ────────────────────────────────────────────────────────
-# ═══════════════════════════════════════════════════════════════════════════════
-
-def _ollama_get(path: str):
-    try:
-        req = urllib.request.Request(f"{OLLAMA_BASE_URL}{path}")
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            return json.loads(resp.read())
-    except Exception:
-        return None
-
-
-def detect_best_model():
-    """Return the best available Ollama model name, or None if Ollama is offline."""
-    resp = _ollama_get("/api/tags")
-    if resp is None:
-        return None
-    available = [m["name"].split(":")[0] for m in resp.get("models", [])]
-    if not available:
-        return None
-    for pref in PREFERRED_MODELS:
-        for avail in available:
-            if avail.lower().startswith(pref.lower()):
-                full = next(
-                    m["name"] for m in resp["models"]
-                    if m["name"].split(":")[0].lower() == avail.lower()
-                )
-                return full
-    return resp["models"][0]["name"]
-
-
-def ollama_generate(model: str, prompt: str, timeout: int = 60) -> str:
-    """Send a non-streaming generate request to Ollama and return the text."""
-    payload = json.dumps({
-        "model":   model,
-        "prompt":  prompt,
-        "stream":  False,
-        "options": {"temperature": 0.0, "num_predict": 64},
-    }).encode("utf-8")
-    req = urllib.request.Request(
-        f"{OLLAMA_BASE_URL}/api/generate",
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        data = json.loads(resp.read())
-    return data.get("response", "").strip()
-
-
-_CATEGORY_PROMPT_TMPL = """\
-You are a precise job classification engine. Your ONLY job is to output a single category slug.
-
-TASK:
-Determine the best category for this job from the VALID CATEGORIES list below.
-If the CURRENT CATEGORY is already correct, output exactly: CORRECT
-If the CURRENT CATEGORY is wrong, output ONLY the correct slug from the list (e.g. healthcare).
-
-Do NOT explain. Do NOT add punctuation. Output one word or CORRECT.
-
----
-Job Title       : {title}
-Company         : {company}
-Job Summary     : {description}
-Current Category: {current_cat}
-
-VALID CATEGORIES (pick EXACTLY one slug if correcting):
-{cat_list}
----
-Your answer:"""
-
-
-def ai_check_category(
-    model: str,
-    title: str,
-    company: str,
-    description: str,
-    current_cat: str,
-    valid_cats: list,
-):
-    """
-    Returns None if the current category is correct, or a new slug string if wrong.
-    """
-    cat_list = "\n".join(f"  - {c}" for c in valid_cats)
-    prompt   = _CATEGORY_PROMPT_TMPL.format(
-        title=title,
-        company=company,
-        description=(description or "")[:500],
-        current_cat=current_cat,
-        cat_list=cat_list,
-    )
-    try:
-        response = ollama_generate(model, prompt)
-    except Exception as ex:
-        print(f"  [AI] Ollama error for '{title}': {ex}")
-        return None
-
-    raw = response.strip().lower().split()[0] if response.strip() else ""
-    raw = re.sub(r"[^a-z0-9\-]", "", raw)
-
-    if raw == "correct" or not raw:
-        return None
-
-    if raw in valid_cats:
-        return raw
-
-    for vc in valid_cats:
-        if raw in vc or vc in raw:
-            return vc
-
-    print(f"  [AI] Unknown category '{raw}' for '{title}' — ignoring.")
-    return None
-
-
-# ═══════════════════════════════════════════════════════════════════════════════
-# ── AI Audit – runs in a background thread ─────────────────────────────────────
-# ═══════════════════════════════════════════════════════════════════════════════
-
-def _run_auto_audit_thread():
-    """
-    Background thread that performs the AI audit and updates _audit_status.
-    Called by api_auto_audit(); result is polled by the UI via GET /api/audit_status.
-    """
-    global _audit_status
-
-    def _log(msg):
-        print(f"  [audit] {msg}")
-        with _audit_lock:
-            _audit_status["log"].append(msg)
-
-    with _audit_lock:
-        _audit_status.update({
-            "running":   True,
-            "total":     0,
-            "processed": 0,
-            "changed":   0,
-            "errors":    [],
-            "log":       [],
-            "done":      False,
-            "result":    None,
-        })
-
-    try:
-        # Load data
-        jobs_raw = load_json(JOBS_JSON)
-        if jobs_raw is None:
-            with _audit_lock:
-                _audit_status["running"] = False
-                _audit_status["done"]    = True
-                _audit_status["result"]  = {"ok": False, "error": "jobs.json not found"}
-            return
-
-        flat_raw      = load_json(FLAT_JSON) or []
-        all_cats_data = load_json(CAT_JSON)
-        if not all_cats_data:
-            with _audit_lock:
-                _audit_status["running"] = False
-                _audit_status["done"]    = True
-                _audit_status["result"]  = {"ok": False, "error": "all_jobs_cat.json not found"}
-            return
-
-        valid_cats = all_cats_data.get("categories", [])
-        all_jobs   = flat_jobs_from_jobs_json(jobs_raw)
-        total      = len(all_jobs)
-
-        with _audit_lock:
-            _audit_status["total"] = total
-
-        _log(f"Loaded {total} jobs and {len(valid_cats)} categories.")
-
-        # Detect Ollama model
-        model = detect_best_model()
-        if model is None:
-            with _audit_lock:
-                _audit_status["running"] = False
-                _audit_status["done"]    = True
-                _audit_status["result"]  = {
-                    "ok":    False,
-                    "error": "Ollama is not running or has no models installed.",
-                }
-            return
-
-        _log(f"Using Ollama model: {model}")
-
-        changed_jobs = []
-        errors       = []
-
-        for idx, job in enumerate(all_jobs, 1):
-            title       = job.get("title", "Untitled")
-            company     = job.get("company", "")
-            description = job.get("description", "")
-            current_cat = job.get("job_category", "other")
-            slug        = job.get("job_id", "")
-
-            _log(f"[{idx}/{total}] {title} — current: {current_cat}")
-
-            suggested = ai_check_category(
-                model=model,
-                title=title,
-                company=company,
-                description=description,
-                current_cat=current_cat,
-                valid_cats=valid_cats,
-            )
-
-            with _audit_lock:
-                _audit_status["processed"] = idx
-
-            if suggested is None or suggested == current_cat:
-                _log(f"  ✓ Correct — no change.")
-                continue
-
-            _log(f"  → AI suggests: {suggested}  (was: {current_cat})")
-
-            success, err_msg = _apply_category_change_to_files(
-                jobs_raw, flat_raw, job, suggested, source="ai"
-            )
-
-            if success:
-                _log(f"  ✓ Changed '{current_cat}' → '{suggested}'")
-                changed_jobs.append({
-                    "job_id":       slug,
-                    "title":        title,
-                    "old_category": current_cat,
-                    "new_category": suggested,
-                })
-                job["job_category"] = suggested  # keep in-memory consistent
-                with _audit_lock:
-                    _audit_status["changed"] = len(changed_jobs)
-            else:
-                _log(f"  ✗ Failed: {err_msg}")
-                errors.append(f"{slug}: {err_msg}")
-                with _audit_lock:
-                    _audit_status["errors"] = errors[:]
-
-            time.sleep(0.2)   # brief pause between Ollama calls
-
-        # Save updated JSON files
-        if changed_jobs:
-            save_jobs_json(JOBS_JSON, jobs_raw)
-            save_json(FLAT_JSON, flat_raw)
-            _log(f"Saved updated jobs.json and formatted_jobs_flat.json.")
-
-        # Batched git commit + push
-        git_result = None
-        if changed_jobs:
-            _log("Running git add / commit / push…")
-            git_result = _git_batch_commit_push(changed_jobs)
-            _log(f"Git: {'; '.join(git_result.get('messages', []))}")
-        else:
-            _log("No changes — nothing to commit.")
-
-        result = {
-            "ok":          True,
-            "total":       total,
-            "changed":     len(changed_jobs),
-            "errors":      errors,
-            "model":       model,
-            "git":         git_result,
-            "changed_jobs": changed_jobs,
-        }
-        with _audit_lock:
-            _audit_status["done"]    = True
-            _audit_status["result"]  = result
-
-        _log(f"Audit complete. {len(changed_jobs)} fix(es) applied.")
-
-    except Exception as ex:
-        import traceback
-        msg = traceback.format_exc()
-        print(f"  [audit] EXCEPTION:\n{msg}")
-        with _audit_lock:
-            _audit_status["running"] = False
-            _audit_status["done"]    = True
-            _audit_status["result"]  = {"ok": False, "error": str(ex)}
-    finally:
-        with _audit_lock:
-            _audit_status["running"] = False
-
-
-def api_auto_audit() -> dict:
-    """Start the AI audit in a background thread (if not already running)."""
-    with _audit_lock:
-        if _audit_status["running"]:
-            return {"ok": False, "error": "Audit is already running."}
-
-    t = threading.Thread(target=_run_auto_audit_thread, daemon=True)
-    t.start()
-    return {"ok": True, "message": "AI audit started."}
-
-
-def api_audit_status() -> dict:
-    """Return a snapshot of the current audit status for polling."""
-    with _audit_lock:
-        return dict(_audit_status)
-
-
-# ═══════════════════════════════════════════════════════════════════════════════
 # ── HTTP server ────────────────────────────────────────────────────────────────
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -717,8 +371,6 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self.send_json(api_get_categories())
         elif path == "/api/history":
             self.send_json(load_change_log())
-        elif path == "/api/audit_status":
-            self.send_json(api_audit_status())
         else:
             self._send_404()
 
@@ -745,10 +397,6 @@ class Handler(http.server.BaseHTTPRequestHandler):
             result = change_category(job_id, new_category)
             self.send_json(result, 200 if result["ok"] else 400)
 
-        elif path == "/api/auto_audit":
-            result = api_auto_audit()
-            self.send_json(result, 200 if result["ok"] else 409)
-
         else:
             self._send_404()
 
@@ -764,16 +412,10 @@ if __name__ == "__main__":
     print(f"  Server  : http://localhost:{PORT}")
     print(f"  Root    : {ROOT_DIR}")
     print(f"  Jobs    : {JOBS_JSON}")
-    print(f"  Ollama  : {OLLAMA_BASE_URL}")
     print("  UI      : http://localhost:8765")
     print("  Press Ctrl+C to stop.\n")
 
     server = http.server.HTTPServer(("localhost", PORT), Handler)
-
-    # ── Auto-start AI audit immediately in a background thread ─────────────────
-    print("[auto-audit] Starting AI category audit in background…")
-    _audit_thread = threading.Thread(target=_run_auto_audit_thread, daemon=True)
-    _audit_thread.start()
 
     try:
         server.serve_forever()

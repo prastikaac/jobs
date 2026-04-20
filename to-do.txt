@@ -15,39 +15,21 @@ Sun  → ❌ Off
 
 - reduce job scrapping ai processing time
 
-A. Merge these 3 into 1 call : merge content + description + meta into one AI call
+logic for sending alerts :
 
-Combine:
-
-_call_ollama_for_content()
-description generation
-meta generation
-
-
-Reuse one requests.Session()
-
-B. Use SESSION = requests.Session()
-
-Very easy win.
-
-
-
- logic for sending alerts :
-
- now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  .
-
- now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
+now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  .
+now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
 
 
 
 
 - Verify Multiple Locations
 
-
 - job categories still malfunctioning 
 
-Update prompt of category checker.py
 
 
-now make like currently we are working in a batch of 50 jobs like 50 jobs pass Phase 4 and everything happens and ready to be published to github at that phase then it goes to category checker and if category is correct then do nothing and if the job's category is wrong then the category changes and then only 50 jobs gets published to the github
+
+change the logic in scraper\category_checker.py and remove ai one, only put manuall category changer
+
 

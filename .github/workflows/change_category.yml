@@ -1,0 +1,62 @@
+name: Change Job Category
+
+on:
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: "Exact Job ID (e.g. 'sales-manager-1234abcd')"
+        required: true
+        type: string
+      new_category:
+        description: "New Category Slug"
+        required: true
+        type: choice
+        options:
+          - admin-and-hr
+          - business-and-administration
+          - consulting-and-coaching
+          - construction
+          - cleaning-and-sanitation
+          - delivery-and-transport
+          - education
+          - electrical-and-electronics
+          - engineering
+          - food-and-hospitality
+          - forestry-and-agriculture
+          - healthcare
+          - it-and-software
+          - logistics-and-supply-chain
+          - maintenance-and-repair
+          - manufacturing-and-production
+          - media-and-creative
+          - property-management
+          - sales-and-marketing
+          - security-and-rescue
+          - social-work-and-care
+          - other
+
+permissions:
+  contents: write
+
+jobs:
+  change-category:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply Category Change
+        run: |
+          python scraper/action_change_category.py "${{ github.event.inputs.job_id }}" "${{ github.event.inputs.new_category }}"
