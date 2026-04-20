@@ -326,7 +326,7 @@ def generate_job_page(job: dict) -> bool:
         author = random.choice(AUTHORS_LIST)
         replacements["{-author_name-}"] = _esc(author.get("name", "findjobsinfinland.fi"))
         # Strip https:// or http:// because template uses url(//{-author_photo-})
-        photo_url = author.get("photo", "findjobsinfinland.fi/images/prasiddha-acharya.png")
+        photo_url = author.get("photo", "findjobsinfinland.fi/images/authors/prasiddha-acharya.png")
         if photo_url.startswith("https://"):
             photo_url = photo_url[8:]
         elif photo_url.startswith("http://"):
@@ -334,7 +334,7 @@ def generate_job_page(job: dict) -> bool:
         replacements["{-author_photo-}"] = _esc(photo_url)
     else:
         replacements["{-author_name-}"] = "Prasiddha Acharya"
-        replacements["{-author_photo-}"] = "findjobsinfinland.fi/images/prasiddha-acharya.png"
+        replacements["{-author_photo-}"] = "findjobsinfinland.fi/images/authors/prasiddha-acharya.png"
 
     for key, val in replacements.items():
         content = content.replace(key, str(val))

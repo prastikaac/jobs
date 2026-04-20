@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Manager — findjobsinfinland.fi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070b14;
+      --surface: rgba(17, 24, 39, 0.70);
+      --surface2: rgba(30, 41, 59, 0.55);
+      --border: rgba(255, 255, 255, 0.07);
+      --border2: rgba(255, 255, 255, 0.12);
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --accent: #6366f1;
+      --accent2: #a855f7;
+      --green: #10b981;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --blue: #38bdf8;
+      --radius: 16px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden
+    }
+
+    /* orbs */
+    .bg-orbs {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: .3;
+      animation: drift 22s ease-in-out infinite alternate
+    }
+
+    .orb-1 {
+      width: 600px;
+      height: 600px;
+      background: #6366f1;
+      top: -180px;
+      left: -150px;
+      animation-delay: 0s
+    }
+
+    .orb-2 {
+      width: 500px;
+      height: 500px;
+      background: #a855f7;
+      bottom: -150px;
+      right: -100px;
+      animation-delay: -8s
+    }
+
+    .orb-3 {
+      width: 350px;
+      height: 350px;
+      background: #0ea5e9;
+      top: 45%;
+      left: 48%;
+      animation-delay: -16s
+    }
+
+    @keyframes drift {
+      from {
+        transform: translate(0, 0) scale(1)
+      }
+
+      to {
+        transform: translate(40px, -55px) scale(1.07)
+      }
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 36px 22px 80px
+    }
+
+    /* header */
+    header {
+      text-align: center;
+      margin-bottom: 42px
+    }
+
+    .logo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 50px;
+      padding: 7px 18px;
+      margin-bottom: 22px;
+      backdrop-filter: blur(12px)
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green)
+    }
+
+    .pill-txt {
+      font-size: .8rem;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #a5b4fc 0%, #e879f9 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.15;
+      margin-bottom: 12px
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted)
+    }
+
+    /* two-column layout */
+    .page-grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 24px;
+      align-items: start
+    }
+
+    @media(max-width:1100px) {
+      .page-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* glass card */
+    .glass {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+      border-radius: var(--radius);
+      box-shadow: 0 28px 56px rgba(0, 0, 0, .5);
+      overflow: hidden
+    }
+
+    .card-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 9px
+    }
+
+    .card-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(99, 102, 241, .12);
+      border: 1px solid rgba(99, 102, 241, .25);
+      border-radius: 50px;
+      padding: 4px 12px;
+      font-size: .78rem;
+      font-weight: 700;
+      color: #a5b4fc
+    }
+
+    /* controls */
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .search-box,
+    .filter-sel {
+      background: rgba(15, 23, 42, .6);
+      border: 1px solid var(--border2);
+      border-radius: 50px;
+      padding: 9px 18px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: .88rem;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      backdrop-filter: blur(8px)
+    }
+
+    .search-box {
+      min-width: 200px;
+      flex: 1
+    }
+
+    .search-box::placeholder {
+      color: var(--muted)
+    }
+
+    .search-box:focus,
+    .filter-sel:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, .14)
+    }
+
+    .filter-sel {
+      cursor: pointer
+    }
+
+    .filter-sel option {
+      background: #111827;
+      color: var(--text)
+    }
+
+    /* table */
+    .table-wrap {
+      overflow-x: auto
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 5px;
+      min-width: 860px
+    }
+
+    thead th {
+      padding: 12px 18px;
+      text-align: left;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: rgba(0, 0, 0, .18)
+    }
+
+    thead th:first-child {
+      border-radius: 8px 0 0 8px
+    }
+
+    thead th:last-child {
+      border-radius: 0 8px 8px 0
+    }
+
+    tbody tr {
+      transition: transform .18s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    tbody tr.hidden-row {
+      display: none
+    }
+
+    tbody tr td {
+      padding: 15px 18px;
+      background: rgba(255, 255, 255, .022);
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      vertical-align: middle;
+      transition: background .2s, border-color .2s
+    }
+
+    tbody tr td:first-child {
+      border-left: 1px solid transparent;
+      border-radius: 10px 0 0 10px
+    }
+
+    tbody tr td:last-child {
+      border-right: 1px solid transparent;
+      border-radius: 0 10px 10px 0
+    }
+
+    tbody tr:hover td {
+      background: rgba(99, 102, 241, .07);
+      border-color: rgba(99, 102, 241, .22)
+    }
+
+    tbody tr:hover {
+      transform: translateY(-2px)
+    }
+
+    .job-title {
+      font-size: .95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 2px
+    }
+
+    .job-meta {
+      font-size: .78rem;
+      color: var(--muted)
+    }
+
+    .cat-badge {
+      display: inline-block;
+      padding: 3px 11px;
+      border-radius: 50px;
+      font-size: .75rem;
+      font-weight: 600;
+      background: rgba(99, 102, 241, .12);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, .22);
+      text-transform: capitalize;
+      white-space: nowrap
+    }
+
+    .cat-select {
+      background: rgba(15, 23, 42, .8);
+      border: 1px solid var(--border2);
+      border-radius: 9px;
+      padding: 8px 12px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: .83rem;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      min-width: 200px;
+      transition: border-color .2s, box-shadow .2s
+    }
+
+    .cat-select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, .14)
+    }
+
+    .cat-select option {
+      background: #0f172a;
+      color: var(--text)
+    }
+
+    .action-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap
+    }
+
+    .update-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      border: none;
+      border-radius: 9px;
+      padding: 9px 18px;
+      font-family: inherit;
+      font-size: .82rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, .3)
+    }
+
+    .update-btn:hover {
+      opacity: .95;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(99, 102, 241, .42)
+    }
+
+    .update-btn:active {
+      transform: translateY(0)
+    }
+
+    .update-btn:disabled {
+      opacity: .35;
+      cursor: not-allowed;
+      transform: none
+    }
+
+    .row-status {
+      display: none;
+      align-items: center;
+      gap: 5px;
+      font-size: .76rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 50px
+    }
+
+    .row-status.success {
+      display: inline-flex;
+      background: rgba(16, 185, 129, .12);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, .25)
+    }
+
+    .row-status.error {
+      display: inline-flex;
+      background: rgba(239, 68, 68, .12);
+      color: #fca5a5;
+      border: 1px solid rgba(239, 68, 68, .25)
+    }
+
+    .row-status.loading {
+      display: inline-flex;
+      background: rgba(99, 102, 241, .12);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, .25)
+    }
+
+    .spinner {
+      width: 13px;
+      height: 13px;
+      border: 2px solid rgba(255, 255, 255, .25);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin .6s linear infinite
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: .95rem
+    }
+
+    .empty-state svg {
+      margin-bottom: 14px;
+      opacity: .4
+    }
+
+    /* ── Right panel ── */
+    .audit-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px
+    }
+
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px
+    }
+
+    .stat-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-align: center
+    }
+
+    .stat-card .val {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text
+    }
+
+    .stat-card .lbl {
+      font-size: .72rem;
+      color: var(--muted);
+      margin-top: 4px;
+      font-weight: 500
+    }
+
+    .stat-wide {
+      grid-column: span 2
+    }
+
+    .source-badge {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 50px;
+      text-transform: uppercase
+    }
+
+    .source-badge.ai {
+      background: rgba(16, 185, 129, .15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, .3)
+    }
+
+    .source-badge.manual {
+      background: rgba(56, 189, 248, .15);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, .3)
+    }
+
+    .log-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 480px;
+      overflow-y: auto;
+      padding-right: 2px
+    }
+
+    .log-list::-webkit-scrollbar {
+      width: 4px
+    }
+
+    .log-list::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    .log-list::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, .1);
+      border-radius: 4px
+    }
+
+    .log-entry {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      transition: border-color .2s
+    }
+
+    .log-entry:hover {
+      border-color: rgba(99, 102, 241, .3)
+    }
+
+    .log-entry-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      gap: 8px
+    }
+
+    .log-title {
+      font-size: .82rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      flex: 1;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+
+    .log-time {
+      font-size: .68rem;
+      color: var(--muted);
+      flex-shrink: 0
+    }
+
+    .log-arrow {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .73rem;
+      flex-wrap: wrap
+    }
+
+    .log-cat-old {
+      color: var(--muted);
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 50px
+    }
+
+    .log-cat-new {
+      color: #34d399;
+      background: rgba(16, 185, 129, .1);
+      border: 1px solid rgba(16, 185, 129, .25);
+      padding: 2px 8px;
+      border-radius: 50px
+    }
+
+    .log-arrow-icon {
+      color: var(--muted);
+      font-size: .7rem
+    }
+
+    .no-logs {
+      text-align: center;
+      padding: 30px 16px;
+      color: var(--muted);
+      font-size: .85rem
+    }
+
+    /* refresh btn */
+    .refresh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 50px;
+      padding: 6px 14px;
+      color: var(--muted);
+      font-family: inherit;
+      font-size: .8rem;
+      cursor: pointer;
+      transition: color .2s, border-color .2s
+    }
+
+    .refresh-btn:hover {
+      color: var(--text);
+      border-color: rgba(99, 102, 241, .4)
+    }
+
+
+
+    /* toast */
+    #toast-ct {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      z-index: 9999;
+      max-width: 360px
+    }
+
+    .toast {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 14px 18px;
+      border-radius: 13px;
+      backdrop-filter: blur(16px);
+      font-size: .88rem;
+      font-weight: 500;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .55);
+      animation: slideIn .3s cubic-bezier(.4, 0, .2, 1);
+      border: 1px solid transparent
+    }
+
+    .toast.success {
+      background: rgba(16, 185, 129, .16);
+      border-color: rgba(16, 185, 129, .38);
+      color: #a7f3d0
+    }
+
+    .toast.error {
+      background: rgba(239, 68, 68, .16);
+      border-color: rgba(239, 68, 68, .38);
+      color: #fecaca
+    }
+
+    .toast.info {
+      background: rgba(99, 102, 241, .16);
+      border-color: rgba(99, 102, 241, .38);
+      color: #c7d2fe
+    }
+
+    .toast.warn {
+      background: rgba(245, 158, 11, .16);
+      border-color: rgba(245, 158, 11, .38);
+      color: #fde68a
+    }
+
+    .toast-title {
+      font-weight: 700;
+      margin-bottom: 1px
+    }
+
+    .toast-msg {
+      font-size: .78rem;
+      opacity: .8
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(38px);
+        opacity: 0
+      }
+
+      to {
+        transform: none;
+        opacity: 1
+      }
+    }
+
+    /* git modal */
+    #git-bd {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .7);
+      backdrop-filter: blur(5px);
+      z-index: 9998;
+      align-items: center;
+      justify-content: center
+    }
+
+    #git-bd.open {
+      display: flex
+    }
+
+    #git-modal {
+      background: #0f172a;
+      border: 1px solid var(--border2);
+      border-radius: 18px;
+      padding: 28px;
+      width: 100%;
+      max-width: 520px;
+      box-shadow: 0 36px 72px rgba(0, 0, 0, .8);
+      animation: popIn .22s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    @keyframes popIn {
+      from {
+        transform: scale(.93);
+        opacity: 0
+      }
+
+      to {
+        transform: none;
+        opacity: 1
+      }
+    }
+
+    #git-modal h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 18px
+    }
+
+    .git-lines {
+      background: rgba(0, 0, 0, .4);
+      border-radius: 9px;
+      padding: 14px;
+      font-family: monospace;
+      font-size: .78rem;
+      color: #86efac;
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-height: 280px;
+      overflow-y: auto;
+      border: 1px solid rgba(255, 255, 255, .07)
+    }
+
+    .close-btn {
+      margin-top: 18px;
+      padding: 9px 22px;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 9px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: .88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s
+    }
+
+    .close-btn:hover {
+      background: rgba(99, 102, 241, .18)
+    }
+
+    @media(max-width:700px) {
+      .stats-grid {
+        grid-template-columns: 1fr
+      }
+
+      .stat-wide {
+        grid-column: span 1
+      }
+
+      .card-header {
+        flex-direction: column;
+        align-items: stretch
+      }
+
+      .controls {
+        flex-direction: column
+      }
+
+      .action-cell {
+        flex-direction: column;
+        align-items: stretch
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <div class="wrapper">
+
+    <header>
+      <div class="logo-pill"><span class="dot"></span><span class="pill-txt">findjobsinfinland.fi — Admin Tool</span>
+      </div>
+      <h1>Job Category Manager</h1>
+      <p class="subtitle">Manual reassign • AI audit runs automatically on server start • auto-push to GitHub</p>
+    </header>
+
+    <div class="page-grid">
+
+      <!-- ── LEFT: Manual change table ── -->
+      <div>
+        <div class="glass">
+          <div class="card-header">
+            <div class="card-title">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+              Manual Category Editor
+              <span class="card-badge" id="jobs-count-badge">— jobs</span>
+            </div>
+            <div class="controls">
+              <input type="text" class="search-box" id="search-inp" placeholder="🔍  Search title, company, category…">
+              <select class="filter-sel" id="cat-filter">
+                <option value="">All Categories</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="jobs-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Job &amp; Company</th>
+                  <th>Location</th>
+                  <th>Current Category</th>
+                  <th>New Category</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="jobs-tbody">
+                <tr>
+                  <td colspan="6" style="padding:0">
+                    <div class="empty-state">
+                      <svg width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5"
+                        viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v4m0 4h.01" />
+                      </svg>
+                      <div>Loading jobs…</div>
+                      <p style="font-family:monospace;margin-top:8px;font-size:.8rem;color:#6366f1">python
+                        scraper/offline_manual_category_changer.py</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT: Audit panel ── -->
+      <div class="audit-panel">
+
+
+        <!-- Stats cards -->
+        <div class="glass" style="padding:20px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <div class="section-label" style="margin:0">Category Changes</div>
+            <button class="refresh-btn" onclick="loadHistory()">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path
+                  d="M4 4v5h.582m0 0a8 8 0 0115.356 2M4.582 9H9M20 20v-5h-.581m0 0a8 8 0 01-15.357-2M19.419 15H15" />
+              </svg>
+              Refresh
+            </button>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="val" id="stat-today">0</div>
+              <div class="lbl">Today</div>
+            </div>
+            <div class="stat-card">
+              <div class="val" id="stat-week">0</div>
+              <div class="lbl">This Week</div>
+            </div>
+            <div class="stat-card stat-wide">
+              <div class="val" id="stat-month">0</div>
+              <div class="lbl">This Month</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Source breakdown -->
+        <div class="glass" style="padding:18px 20px">
+          <div class="section-label">Source Breakdown</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div class="stat-card" style="flex:1;min-width:100px">
+              <div class="val" style="font-size:1.4rem" id="stat-ai">0</div>
+              <div class="lbl">🤖 AI Fixes</div>
+            </div>
+            <div class="stat-card" style="flex:1;min-width:100px">
+              <div class="val" style="font-size:1.4rem" id="stat-manual">0</div>
+              <div class="lbl">✍️ Manual</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Change history list -->
+        <div class="glass" style="padding:18px 20px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div class="section-label" style="margin:0">Recent Changes</div>
+            <select class="filter-sel" id="log-period" style="border-radius:8px;padding:5px 10px;font-size:.75rem"
+              onchange="renderLog()">
+              <option value="today">Today</option>
+              <option value="week">This Week</option>
+              <option value="month">This Month</option>
+              <option value="all" selected>All Time</option>
+            </select>
+          </div>
+          <div class="log-list" id="log-list">
+            <div class="no-logs">No changes recorded yet.</div>
+          </div>
+        </div>
+
+      </div><!-- /audit-panel -->
+    </div><!-- /page-grid -->
+  </div><!-- /wrapper -->
+
+  <div id="toast-ct"></div>
+
+  <div id="git-bd">
+    <div id="git-modal">
+      <h2>🚀 Git Push Result</h2>
+      <div class="git-lines" id="git-lines"></div>
+      <button class="close-btn" onclick="closeGit()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const API = 'http://localhost:8765';
+    let ALL_JOBS = [], ALL_CATS = [], HISTORY = [];
+    let changedThisSession = 0;
+
+    /* ── Toast ── */
+    function toast(type, title, msg, ms = 5000) {
+      const icons = { success: '✅', error: '❌', info: 'ℹ️', warn: '⚠️' };
+      const el = document.createElement('div');
+      el.className = `toast ${type}`;
+      el.innerHTML = `<span style="font-size:1.1rem">${icons[type] || 'ℹ️'}</span><div><div class="toast-title">${title}</div><div class="toast-msg">${msg}</div></div>`;
+      document.getElementById('toast-ct').appendChild(el);
+      setTimeout(() => { el.style.animation = 'slideIn .3s reverse forwards'; setTimeout(() => el.remove(), 300) }, ms);
+    }
+
+    /* ── Git modal ── */
+    function showGit(d) {
+      document.getElementById('git-lines').textContent = (d.messages || []).join('\n');
+      document.getElementById('git-bd').classList.add('open');
+    }
+    function closeGit() { document.getElementById('git-bd').classList.remove('open') }
+    document.getElementById('git-bd').addEventListener('click', e => { if (e.target === e.currentTarget) closeGit() });
+
+    /* ── Escape HTML ── */
+    function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') }
+
+    /* ── Category label ── */
+    function catLabel(s) { return s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) }
+
+    /* ── Build category options ── */
+    function catOptions(current, cats) {
+      return cats.map(c => `<option value="${c}"${c === current ? ' selected' : ''}>${catLabel(c)}</option>`).join('');
+    }
+
+    /* ── Render jobs table ── */
+    function renderTable(jobs, cats) {
+      const tbody = document.getElementById('jobs-tbody');
+      document.getElementById('jobs-count-badge').textContent = `${jobs.length} job${jobs.length !== 1 ? 's' : ''}`;
+      if (!jobs.length) {
+        tbody.innerHTML = `<tr><td colspan="6" style="padding:0"><div class="empty-state">
+      <svg width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      <div>No jobs found</div></div></td></tr>`;
+        return;
+      }
+      tbody.innerHTML = jobs.map((j, i) => {
+        const loc = Array.isArray(j.jobLocation) ? j.jobLocation.join(', ') : (j.jobLocation || '—');
+        const cur = j.job_category || 'other';
+        return `<tr data-job-id="${j.job_id}" data-cur="${cur}"
+        data-title="${j.title.toLowerCase()}" data-company="${(j.company || '').toLowerCase()}" data-cat="${cur}">
+      <td style="color:var(--muted);font-size:.8rem;font-weight:600;width:40px">${i + 1}</td>
+      <td><div class="job-title">${esc(j.title)}</div><div class="job-meta">${esc(j.company || '—')} · ${j.date_posted || '—'}</div></td>
+      <td style="color:var(--muted);font-size:.82rem">📍 ${esc(loc)}</td>
+      <td><span class="cat-badge">${esc(catLabel(cur))}</span></td>
+      <td><select class="cat-select" id="sel-${j.job_id}">${catOptions(cur, cats)}</select></td>
+      <td>
+        <div class="action-cell">
+          <button class="update-btn" id="btn-${j.job_id}" onclick="doChange('${j.job_id}','${j.title.replace(/'/g, "\\'")}')">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 4v5h.582m0 0a8.001 8.001 0 0115.356 2m.062-7L20 9h-5M20 20v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m-.062 7L4 15h5"/></svg>
+            Update
+          </button>
+          <span class="row-status" id="status-${j.job_id}"></span>
+        </div>
+      </td>
+    </tr>`;
+      }).join('');
+    }
+
+    /* ── Search/filter ── */
+    function applyFilter() {
+      const term = document.getElementById('search-inp').value.toLowerCase().trim();
+      const catF = document.getElementById('cat-filter').value;
+      let vis = 0;
+      document.querySelectorAll('#jobs-tbody tr[data-job-id]').forEach(r => {
+        const ok = (!term || (r.dataset.title || '').includes(term) || (r.dataset.company || '').includes(term) || (r.dataset.cat || '').includes(term))
+          && (!catF || r.dataset.cat === catF);
+        r.classList.toggle('hidden-row', !ok);
+        if (ok) vis++;
+      });
+      document.getElementById('jobs-count-badge').textContent = `${vis} job${vis !== 1 ? 's' : ''}`;
+    }
+    document.getElementById('search-inp').addEventListener('input', applyFilter);
+    document.getElementById('cat-filter').addEventListener('change', applyFilter);
+
+    /* ── Manual update action ── */
+    async function doChange(jobId, title) {
+      const sel = document.getElementById('sel-' + jobId);
+      const btn = document.getElementById('btn-' + jobId);
+      const st = document.getElementById('status-' + jobId);
+      const row = document.querySelector(`tr[data-job-id="${jobId}"]`);
+      const newCat = sel.value, cur = row.dataset.cur;
+      if (newCat === cur) { toast('info', 'No Change', 'Already the current category.'); return; }
+
+      btn.disabled = true;
+      btn.innerHTML = `<span class="spinner"></span> Saving…`;
+      st.className = 'row-status loading'; st.innerHTML = '⏳'; st.style.display = 'inline-flex';
+
+      try {
+        const res = await fetch(`${API}/api/change`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ job_id: jobId, new_category: newCat })
+        });
+        const d = await res.json();
+        if (d.ok) {
+          row.dataset.cur = newCat; row.dataset.cat = newCat;
+          row.querySelector('.cat-badge').textContent = catLabel(newCat);
+          st.className = 'row-status success'; st.innerHTML = '✓ Done';
+          changedThisSession++;
+          toast('success', 'Updated!', `"${title}" → <strong>${catLabel(newCat)}</strong>`, 6000);
+          if (d.git) showGit(d.git);
+          loadHistory();
+        } else {
+          st.className = 'row-status error'; st.innerHTML = '✕ Fail';
+          toast('error', 'Failed', d.error || 'Unknown error');
+        }
+      } catch (e) {
+        st.className = 'row-status error'; st.innerHTML = '✕ Error';
+        toast('error', 'Connection Error', 'Is <code>category_changer.py</code> running?');
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 4v5h.582m0 0a8.001 8.001 0 0115.356 2m.062-7L20 9h-5M20 20v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m-.062 7L4 15h5"/></svg> Update`;
+      }
+    }
+
+
+    /* ══════════════════════════════════════════════════════════
+       ── Audit log helpers ──
+       ══════════════════════════════════════════════════════════ */
+    function startOfDay(d) { const r = new Date(d); r.setHours(0, 0, 0, 0); return r }
+    function startOfWeek(d) { const r = startOfDay(d); r.setDate(r.getDate() - r.getDay()); return r }
+    function startOfMonth(d) { return new Date(d.getFullYear(), d.getMonth(), 1) }
+
+    function filterByPeriod(logs, period) {
+      const now = new Date();
+      if (period === 'today') return logs.filter(l => new Date(l.timestamp) >= startOfDay(now));
+      if (period === 'week') return logs.filter(l => new Date(l.timestamp) >= startOfWeek(now));
+      if (period === 'month') return logs.filter(l => new Date(l.timestamp) >= startOfMonth(now));
+      return logs;
+    }
+
+    function renderLog() {
+      const period = document.getElementById('log-period').value;
+      const filtered = filterByPeriod(HISTORY, period).slice().reverse();
+      const list = document.getElementById('log-list');
+      if (!filtered.length) {
+        list.innerHTML = '<div class="no-logs">No changes in this period.</div>';
+        return;
+      }
+      list.innerHTML = filtered.map(e => {
+        const dt = new Date(e.timestamp);
+        const timeStr = dt.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' }) + ' ' + dt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+        const srcCls = e.source === 'ai' ? 'ai' : 'manual';
+        return `<div class="log-entry">
+      <div class="log-entry-top">
+        <span class="log-title" title="${esc(e.title)}">${esc(e.title || e.job_id)}</span>
+        <span class="source-badge ${srcCls}">${e.source || '?'}</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px">
+        <div class="log-arrow">
+          <span class="log-cat-old">${catLabel(e.old_category || '?')}</span>
+          <span class="log-arrow-icon">→</span>
+          <span class="log-cat-new">${catLabel(e.new_category || '?')}</span>
+        </div>
+        <span class="log-time">${timeStr}</span>
+      </div>
+    </div>`;
+      }).join('');
+    }
+
+    function updateStats() {
+      document.getElementById('stat-today').textContent = filterByPeriod(HISTORY, 'today').length;
+      document.getElementById('stat-week').textContent = filterByPeriod(HISTORY, 'week').length;
+      document.getElementById('stat-month').textContent = filterByPeriod(HISTORY, 'month').length;
+      document.getElementById('stat-ai').textContent = HISTORY.filter(e => e.source === 'ai').length;
+      document.getElementById('stat-manual').textContent = HISTORY.filter(e => e.source === 'manual').length;
+    }
+
+    async function loadHistory() {
+      try {
+        const r = await fetch(`${API}/api/history`);
+        HISTORY = await r.json();
+        updateStats();
+        renderLog();
+      } catch (e) { /* silent */ }
+    }
+
+    /* ── Bootstrap ── */
+    async function init() {
+      try {
+        const [jr, cr] = await Promise.all([fetch(`${API}/api/jobs`), fetch(`${API}/api/categories`)]);
+        ALL_JOBS = await jr.json(); ALL_CATS = await cr.json();
+
+        const fsel = document.getElementById('cat-filter');
+        ALL_CATS.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = catLabel(c); fsel.appendChild(o) });
+
+        renderTable(ALL_JOBS, ALL_CATS);
+        await loadHistory();
+      } catch (e) {
+        document.getElementById('jobs-tbody').innerHTML = `<tr><td colspan="6" style="padding:0">
+      <div class="empty-state" style="padding:60px 20px">
+        <svg width="44" height="44" fill="none" stroke="#ef4444" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+        </svg>
+        <div style="font-size:1rem;font-weight:600;color:#f87171;margin-top:10px">Server Not Running</div>
+        <p style="font-family:monospace;background:rgba(0,0,0,.4);padding:7px 14px;border-radius:7px;margin-top:10px;color:#6ee7b7;font-size:.82rem">
+          python scraper/offline_manual_category_changer.py
+        </p>
+      </div>
+    </td></tr>`;
+        toast('error', 'Cannot connect', 'Start <code>python scraper/offline_manual_category_changer.py</code> first.');
+      }
+    }
+
+    init();
+    setInterval(loadHistory, 30000);
+  </script>
+</body>
+
+</html>
