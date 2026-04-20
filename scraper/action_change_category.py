@@ -4,7 +4,7 @@ import os
 # Ensure scraper dir is in path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import category_changer
+import offline_manual_category_changer
 
 def main():
     if len(sys.argv) != 3:
@@ -16,7 +16,7 @@ def main():
 
     print(f"Executing category change for job: '{job_id}' -> '{new_cat}'")
 
-    result = category_changer.change_category(job_id, new_cat)
+    result = offline_manual_category_changer.change_category(job_id, new_cat)
 
     if not result.get("ok"):
         print(f"✗ Error: {result.get('error')}")
