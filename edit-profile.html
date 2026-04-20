@@ -3,43 +3,72 @@
 <html dir="ltr" lang="en">
 
 <head class="notranslate">
-  <title>Edit User Information || findjobsinfinland </title>
-  <meta charset="utf-8" />
+  <title>Edit Profile - findjobsinfinland.fi</title>
+  <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
     name="viewport" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="noindex, nofollow, max-image-preview:large" name="robots" />
-  <meta content="#41B375" name="theme-color" />
-  <meta content="#41B375" name="msapplication-navbutton-color" />
-  <meta content="#41B375" name="apple-mobile-web-app-status-bar-style" />
-  <meta content="true" name="apple-mobile-web-app-capable" />
-  <!-- General favicon -->
-  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="32x32" type="image/png" />
-  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="16x16" type="image/png" />
-  <!-- Apple Touch Icons -->
-  <link href="https://findjobsinfinland.fi/images/icon.png" rel="apple-touch-icon" sizes="180x180" />
-  <!-- Android/Chrome -->
-  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="192x192" type="image/png" />
-  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="512x512" type="image/png" />
-  <link href="/site.webmanifest" rel="manifest" />
-  <link href="https://findjobsinfinland.fi/edit-profile" rel="canonical">
+
+  <link href="https://findjobsinfinland.fi/edit-profile" rel="canonical" />
+
   <meta
     content="Edit your profile information on findjobsinfinland.fi. Update your contact details, job preferences, and more to keep your profile up to date."
     name="description" />
   <meta content="profile edit, update profile, job preferences, findjobsinfinland, user information, contact details"
     name="keywords" />
   <meta content="findjobsinfinland.fi" name="author" />
-  <meta content="Edit Your Profile - findjobsinfinland.fi" property="og:title" />
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta content="Edit Profile - findjobsinfinland.fi" property="og:title" />
   <meta
-    content="Update your profile, job preferences, and contact details to enhance your job search experience on findjobsinfinland.fi."
+    content="Edit your profile information on findjobsinfinland.fi. Update your contact details, job preferences, and more to keep your profile up to date."
     property="og:description" />
-  <meta content="https://findjobsinfinland.fi/images/findjobsinfinland.png" property="og:image" />
+  <meta content="https://findjobsinfinland.fi/images/jobs-in-finland.png" property="og:image" />
+  <meta content="Edit Profile - findjobsinfinland.fi" property="og:image:alt" />
   <meta content="https://findjobsinfinland.fi/edit-profile" property="og:url" />
+  <meta content="website" property="og:type" />
+
+  <!-- Twitter Meta Tags -->
   <meta content="summary_large_image" name="twitter:card" />
-  <meta content="Edit Your Profile - findjobsinfinland.fi" name="twitter:title" />
-  <meta content="Update your profile and job preferences to match the best job opportunities in Finland."
+  <meta content="Edit Profile - findjobsinfinland.fi" name="twitter:title" />
+  <meta
+    content="Edit your profile information on findjobsinfinland.fi. Update your contact details, job preferences, and more to keep your profile up to date."
     name="twitter:description" />
-  <meta content="https://findjobsinfinland.fi/images/findjobsinfinland.png" name="twitter:image" />
+  <meta content="https://findjobsinfinland.fi/images/jobs-in-finland.png" name="twitter:image" />
+
+  <meta content="#41B375" name="theme-color" />
+  <meta content="#41B375" name="msapplication-navbutton-color" />
+  <meta content="#41B375" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="true" name="apple-mobile-web-app-capable" />
+
+  <!-- General favicon -->
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="16x16" type="image/png" />
+
+  <!-- Apple Touch Icons -->
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="apple-touch-icon" sizes="180x180" />
+
+  <!-- Android/Chrome -->
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="192x192" type="image/png" />
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="512x512" type="image/png" />
+
+  <link href="/site.webmanifest" rel="manifest" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://findjobsinfinland.fi/edit-profile",
+      "name": "Edit Profile",
+      "description": "Edit your profile information on findjobsinfinland.fi. Update your contact details, job preferences, and more to keep your profile up to date.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "findjobsinfinland.fi",
+        "url": "https://findjobsinfinland.fi/"
+      }
+    }
+  </script>
   <!-- Head SEO Contents -->
   <link href="/css/page.css" rel="stylesheet" />
   <link href="/css/social-media-sidebar.css" rel="stylesheet" />
@@ -202,6 +231,8 @@
                   <li class="askpc" id="logsinpop">
                     <label aria-label="Contact" for="forcontact">Contact</label>
                   </li>
+
+
                   <li class="isDrk">
                     <label aria-label="Mode" class="navM tDark tIc tDL bIc" for="onMode" role="button">
                       <svg class="line" viewbox="0 0 24 24">
@@ -220,13 +251,20 @@
                         </g>
                       </svg>
                     </label>
-                    <div class="headM">Change Mode</div>
+                    <div class="headM" data-text="Change Mode">
+                      <span aria-label="Light" class="lgtB" onclick="modeL(); vibRate(50)" role="button"></span>
+                      <span aria-label="Dark" class="drkB" onclick="modeD(); vibRate(50)" role="button"></span>
+                      <span aria-label="System Default" class="sydB" onclick="modeS(); vibRate(50)"
+                        role="button"></span>
+                      <label aria-label="Theme Color" class="themeBtn" for="forCusThm" id="themeBtn"
+                        role="button"></label>
+                    </div>
                     <label class="fCls" for="onMode"></label>
                     <script>/*<![CDATA[*/ if (window.matchMedia) { qSel('.headR .headM .sydB').style.display = 'block' }; /*]]>*/</script>
                     <input class="cusI hidden" id="forCusThm" type="checkbox" />
                     <div class="cusW">
                       <div class="cusH">
-                        <span class="cusHi">Theme Color</span>
+                        <span class="cusHi" data-text="Theme Color"></span>
                         <label class="cusCl" for="forCusThm"></label>
                       </div>
                       <div class="cusP">
@@ -242,6 +280,7 @@
                         <span class="tPkr thB9" onclick="webTheme('theme9');modeL()" style="--pkrC:#744D97"></span>
                         <span class="tPkr thB10" onclick="webTheme('theme10');modeL()" style="--pkrC:#3949AB"></span>
                       </div>
+
                     </div>
                     <label class="fCls" for="forCusThm"></label>
                   </li>
@@ -270,7 +309,7 @@
         <div class="mnBr">
           <div class="mnBrs">
             <div class="mnH">
-              <label aria-label="Close" class="c" for="offNav">Close</label>
+              <label aria-label="Close" class="c" for="offNav"></label>
             </div>
             <div class="mnMob section" id="nav-widget-1">
               <div class="widget PageList" data-version="2" id="PageList002" style="margin-bottom: -10px;">
@@ -287,14 +326,20 @@
                     .tIc::after {
                       content: none;
                     }
+
+                    @media (max-width: 768px) {
+                      .useridho {
+                        margin-top: -45px !important;
+                      }
+                    }
                   </style>
                   <!-- Rotated SVG -->
-                  <svg aria-hidden="true" class="svg-inline--fa fa-arrow-down-to-line fa-fw fa-lg"
-                    data-icon="arrow-down-to-line" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class=""
+                  <svg class="rotate" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="arrow-down-to-line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                    class="svg-inline--fa fa-arrow-down-to-line fa-fw fa-lg">
+                    <path fill="currentColor"
                       d="M32 480c-17.7 0-32-14.3-32-32s14.3-32 32-32l320 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 480zM214.6 342.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 242.7 160 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 178.7 73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-128 128z"
-                      fill="currentColor"></path>
+                      class=""></path>
                   </svg>
                 </label>
                 <br />
@@ -370,7 +415,8 @@
                     </a>
                   </li>
                   <li class="hm">
-                    <a class="seasonal-jobs" href="https://findjobsinfinland.fi/jobs?continuity=summer" itemprop="url">
+                    <a class="a seasonal-jobs" href="https://findjobsinfinland.fi/jobs?continuity=summer"
+                      itemprop="url">
                       <svg fill="#000000" height="800px" style="width: 25px;  height: 25px;  margin-left: 2px;"
                         viewbox="0 0 1000 1000" width="800px" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -482,7 +528,7 @@
                           type="text/javascript">/*<![CDATA[*/ var welElem = document.querySelector("#greetings .greet-text"); var curHr = new Date().getHours(); var welMes = ["Have a Sweet Dreams!", "Good Morning!", "Good Afternoon!", "Good Evening!", "Good Night!", "It's time to sleep!"]; let welText = ""; if (curHr < 4) welText = welMes[0]; else if (curHr < 12) welText = welMes[1]; else if (curHr < 17) welText = welMes[2]; else if (curHr < 19) welText = welMes[3]; else if (curHr < 22) welText = welMes[4]; else welText = welMes[5]; welElem.textContent = welText; /*]]>*/</script>
                         <!-- Post starts from here -->
                         <div class="pInr">
-                          <div class="pEnt" id="postID-1913228579155877810">
+                          <div class="pEnt useridho" id="postID-1913228579155877810">
                             <div class="pS post-body postBody" id="postBody">
                               <style>
                                 .profile-container {
@@ -881,7 +927,7 @@
                               <p class="descp">Review and update your basic information as needed.</p>
                               <div class="profile-container">
                                 <div class="profile-img">
-                                  <img alt="Profile" id="ppPicture" src="images/user.png" />
+                                  <img alt="User Profile Picture" id="ppPicture" src="images/user.png" />
                                   <div class="camera-icon" id="uploadIcon">
                                     <!-- Camera SVG icon instead of emoji -->
                                     <svg class="camera-svg" height="20" viewbox="0 0 512 512" width="20"
@@ -1775,8 +1821,8 @@
                     <div class="section" id="footer-widget-1">
                       <div class="widget HTML" data-version="2" id="HTML77">
                         <div class="widget-content abtU">
-                          <div style="display: flex;"><img alt="" src="https://findjobsinfinland.fi/images/icon.png"
-                              style="    flex: 0 0 70px;
+                          <div style="display: flex;"><img alt="findjobsinfinland logo icon"
+                              src="https://findjobsinfinland.fi/images/icon.png" style="    flex: 0 0 70px;
                     width: 80px;
                     height: 80px; margin-top: -5px;" />
                             <div class="lazy abtL loaded"

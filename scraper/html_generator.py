@@ -246,6 +246,21 @@ def generate_job_page(job: dict) -> bool:
     else:
         email_instructions = ""
 
+    # Location logic for breadcrumbs and display
+    locs_raw = job.get("jobLocation", ["Finland"])
+    clean_cities = [c for c in locs_raw if c.lower() != "finland"]
+    num_locations = len(clean_cities)
+    is_multiple = num_locations > 1
+    
+    # Text display for the breadcrumb/page
+    if is_multiple:
+        location_display = "Multiple Locations"
+    else:
+        location_display = _esc(location)
+    
+    # Link parameter (use the first city if multiple, or the full location string if single)
+    location_link = _esc(clean_cities[0]) if clean_cities else _esc(location)
+
     replacements = {
         # Title
         "{-job title-}": title,
@@ -262,8 +277,12 @@ def generate_job_page(job: dict) -> bool:
         "{-rich content-}": rich_content_str,
         # Apply link
         "{-job apply link-}": job_link,
-        # Location (single canonical placeholder)
-        "{-job location name-}": _esc(location),
+        # Location display name
+        "{-job location name-}": location_display,
+        # New placeholder for the specific search link
+        "{-job location link-}": location_link,
+        # Legacy placeholder
+        "{-multiple locations-}": "",
         # Dates
         "{-job date-}": date_str[:10],
         "{-scraped_at-}": _display_date(str(job.get("scraped_at") or date_str)),

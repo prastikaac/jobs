@@ -32,17 +32,6 @@ Very easy win.
 
 
 
-
-
-
-- update images across the whole website : update the purple with green : #41B375
-
-- Update alt text and other details of all pages
-
-
-
-
-
  logic for sending alerts :
 
  email : by selecting the option an annother sub option will appear below it with alert frequency options : daily weekly montthly
@@ -58,12 +47,23 @@ Very easy win.
  now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
 
 
+
+
+- job categories still malfunctioning
+
+- fix edit-profile.html
+
+- Verify Multiple Locations
+
+
+
+make the design of the Job Alerts Subscription same as the one in the js\signin-signup-popup.js, i have uploaded the screenshot of how it looks like in the js\signin-signup-popup.js
+
+
+
+
+
 blogs\industry-wise-minimum-wages-in-finland.html  blogs\tips-and-tricks-for-interview-in-finland.html blogs\top-ten-in-demand-jobs-in-finland.html
 about-us.html  contact-us.html disclaimer.html  edit-profile.html  index.html jobs.html privacy-policy.html terms-and-conditions.html 
 
-now here in theese pages : about-us.html  contact-us.html edit-profile.html  
- there are meta tags like meta description, Meta Keywords, META ROBOTS meta title, Open Graph and Facebook meta tags for social sharing,  canonical tags,  img alt, schema
-but among they some of them may be broken or some of them may be already correct so check them in all the pages that i have mentioned above and update them properly.
 
-
-index.html  jobs.html
