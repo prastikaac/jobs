@@ -1074,13 +1074,13 @@ body.drK .popup-description-for-mobile-unique {
 
 .delivery-time-label span {
     font-weight: 400;
-    color: #777;
+    color: #a3a3a3;
 }
 
 /* Dark mode — channel card */
 body.drK .channel-card {
-    background: #1c2236;
-    border-color: #2e3a52;
+    background: #252526;
+    border-color: #252526;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
@@ -1093,12 +1093,12 @@ body.drK .channel-divider {
 }
 
 body.drK .channel-card .sub-option-row {
-    border-bottom-color: #2e3a52;
-    color: #c8d3ea;
+    border-bottom: 1px solid #555;
+    color: #ddd;
 }
 
 body.drK .delivery-time-row {
-    background: #1a2540;
+    background: rgb(36 41 53);
     border-color: #2e3a52;
 }
 
@@ -1594,7 +1594,7 @@ body.drK .toggle-password:hover {
 
 /* Slider Styling */
 body.drK .slider {
-    background-color: #6e6e6e !important;
+    background-color: #6e6e6e;
     /* Lighter gray for the slider */
 }
 
