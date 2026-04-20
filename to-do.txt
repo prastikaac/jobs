@@ -44,12 +44,10 @@ Very easy win.
 - Verify Multiple Locations
 
 
-- job categories still malfunctioning : 
+- job categories still malfunctioning 
 
 
-
-make a webpage using html css js and python : the webpage should be category changer, like there will be a table to change the job category and it will consist of the current jobs at one side and at another side there will be job categories and update opiton wiht the list of all job categories and when user clicks on update it should change the category of the job and update it in all the pages including jobs.json and also it should move the file from the old category folder to the new category folder and after doing all this its should commit it to the git and push it to the github
-
+now put this logic in the our job scraping pipeline, dont change anything in the pipeline just add this category changer logic after the job is proccessed by ai
 
 
-now modify this file and here use ollama ai to do this work auutomatically means when i will run it it should work : at first copy the current jobs and categories check for the category of the job using ai like nurse : healthcare and so on and if its correct leave, do nothing and if wrong then suggest the correct category using ai and update it in all the pages including jobs.json and also it should move the file from the old category folder to the new category folder and after doing all this its should commit it to the git and push it to the github 
+now remove the ai tribeaker logic from our category detecting logic :  this one : If rule-based scoring yields no clear winner ("other"), AI picks a category from the top matched candidates or the all_jobs_cat.json allowed list

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category Changer — findjobsinfinland.fi</title>
+  <title>Category Manager — findjobsinfinland.fi</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -123,7 +123,7 @@
     .empty-state{text-align:center;padding:60px 20px;color:var(--muted);font-size:.95rem}
     .empty-state svg{margin-bottom:14px;opacity:.4}
 
-    /* ── Right panel: Audit log ── */
+    /* ── Right panel ── */
     .audit-panel{display:flex;flex-direction:column;gap:16px}
     .section-label{font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 
@@ -155,7 +155,6 @@
     .log-cat-old{color:var(--muted);background:rgba(255,255,255,.05);border:1px solid var(--border);padding:2px 8px;border-radius:50px}
     .log-cat-new{color:#34d399;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);padding:2px 8px;border-radius:50px}
     .log-arrow-icon{color:var(--muted);font-size:.7rem}
-
     .no-logs{text-align:center;padding:30px 16px;color:var(--muted);font-size:.85rem}
 
     /* refresh btn */
@@ -164,6 +163,8 @@
                  color:var(--muted);font-family:inherit;font-size:.8rem;cursor:pointer;
                  transition:color .2s,border-color .2s}
     .refresh-btn:hover{color:var(--text);border-color:rgba(99,102,241,.4)}
+
+
 
     /* toast */
     #toast-ct{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:9px;z-index:9999;max-width:360px}
@@ -174,6 +175,7 @@
     .toast.success{background:rgba(16,185,129,.16);border-color:rgba(16,185,129,.38);color:#a7f3d0}
     .toast.error{background:rgba(239,68,68,.16);border-color:rgba(239,68,68,.38);color:#fecaca}
     .toast.info{background:rgba(99,102,241,.16);border-color:rgba(99,102,241,.38);color:#c7d2fe}
+    .toast.warn{background:rgba(245,158,11,.16);border-color:rgba(245,158,11,.38);color:#fde68a}
     .toast-title{font-weight:700;margin-bottom:1px}
     .toast-msg{font-size:.78rem;opacity:.8}
     @keyframes slideIn{from{transform:translateX(38px);opacity:0}to{transform:none;opacity:1}}
@@ -208,8 +210,8 @@
 
   <header>
     <div class="logo-pill"><span class="dot"></span><span class="pill-txt">findjobsinfinland.fi — Admin Tool</span></div>
-    <h1>Job Category Changer</h1>
-    <p class="subtitle">Manually reassign categories • live audit log • auto-push to GitHub</p>
+    <h1>Job Category Manager</h1>
+    <p class="subtitle">Manual reassign • AI audit runs automatically on server start • auto-push to GitHub</p>
   </header>
 
   <div class="page-grid">
@@ -248,8 +250,9 @@
       </div>
     </div>
 
-    <!-- ── RIGHT: Audit log panel ── -->
+    <!-- ── RIGHT: Audit panel ── -->
     <div class="audit-panel">
+
 
       <!-- Stats cards -->
       <div class="glass" style="padding:20px">
@@ -328,7 +331,7 @@ let changedThisSession = 0;
 
 /* ── Toast ── */
 function toast(type, title, msg, ms=5000){
-  const icons={success:'✅',error:'❌',info:'ℹ️'};
+  const icons={success:'✅',error:'❌',info:'ℹ️',warn:'⚠️'};
   const el=document.createElement('div');
   el.className=`toast ${type}`;
   el.innerHTML=`<span style="font-size:1.1rem">${icons[type]||'ℹ️'}</span><div><div class="toast-title">${title}</div><div class="toast-msg">${msg}</div></div>`;
@@ -404,7 +407,7 @@ function applyFilter(){
 document.getElementById('search-inp').addEventListener('input',applyFilter);
 document.getElementById('cat-filter').addEventListener('change',applyFilter);
 
-/* ── Update action ── */
+/* ── Manual update action ── */
 async function doChange(jobId,title){
   const sel=document.getElementById('sel-'+jobId);
   const btn=document.getElementById('btn-'+jobId);
@@ -429,7 +432,7 @@ async function doChange(jobId,title){
       changedThisSession++;
       toast('success','Updated!',`"${title}" → <strong>${catLabel(newCat)}</strong>`,6000);
       if(d.git) showGit(d.git);
-      loadHistory();  // refresh audit panel
+      loadHistory();
     } else {
       st.className='row-status error'; st.innerHTML='✕ Fail';
       toast('error','Failed',d.error||'Unknown error');
@@ -443,7 +446,10 @@ async function doChange(jobId,title){
   }
 }
 
-/* ── Audit log helpers ── */
+
+/* ══════════════════════════════════════════════════════════
+   ── Audit log helpers ──
+   ══════════════════════════════════════════════════════════ */
 function startOfDay(d){const r=new Date(d);r.setHours(0,0,0,0);return r}
 function startOfWeek(d){const r=startOfDay(d);r.setDate(r.getDate()-r.getDay());return r}
 function startOfMonth(d){return new Date(d.getFullYear(),d.getMonth(),1)}
@@ -486,7 +492,6 @@ function renderLog(){
 }
 
 function updateStats(){
-  const now=new Date();
   document.getElementById('stat-today').textContent =filterByPeriod(HISTORY,'today').length;
   document.getElementById('stat-week').textContent  =filterByPeriod(HISTORY,'week').length;
   document.getElementById('stat-month').textContent =filterByPeriod(HISTORY,'month').length;
@@ -500,9 +505,7 @@ async function loadHistory(){
     HISTORY=await r.json();
     updateStats();
     renderLog();
-  } catch(e){
-    // server might not be up yet — silent fail
-  }
+  } catch(e){ /* silent */ }
 }
 
 /* ── Bootstrap ── */
@@ -511,7 +514,6 @@ async function init(){
     const [jr,cr]=await Promise.all([fetch(`${API}/api/jobs`),fetch(`${API}/api/categories`)]);
     ALL_JOBS=await jr.json(); ALL_CATS=await cr.json();
 
-    // populate category filter
     const fsel=document.getElementById('cat-filter');
     ALL_CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=catLabel(c);fsel.appendChild(o)});
 
@@ -534,8 +536,6 @@ async function init(){
 }
 
 init();
-
-// Auto-refresh audit log every 30 seconds
 setInterval(loadHistory, 30000);
 </script>
 </body>
