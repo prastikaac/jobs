@@ -72,7 +72,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Dependencies
-        run: pip install beautifulsoup4
+        run: pip install beautifulsoup4 python-dotenv
 
       - name: Configure Git
         run: |
