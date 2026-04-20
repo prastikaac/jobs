@@ -56,3 +56,11 @@ Very easy win.
  now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  .
 
  now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
+
+
+blogs\industry-wise-minimum-wages-in-finland.html  blogs\tips-and-tricks-for-interview-in-finland.html blogs\top-ten-in-demand-jobs-in-finland.html
+about-us.html  contact-us.html disclaimer.html  edit-profile.html  index.html jobs.html privacy-policy.html terms-and-conditions.html 
+
+now here in theese pages : blogs\industry-wise-minimum-wages-in-finland.html  blogs\tips-and-tricks-for-interview-in-finland.html blogs\top-ten-in-demand-jobs-in-finland.html
+ there are meta tags like meta description, Meta Keywords, META ROBOTS meta title, Open Graph and Facebook meta tags for social sharing,  canonical tags,  alt images, schema
+but among they some of them may be broken or some of them may be already correct so check them in all the pages that i have mentioned above and update them properly.
