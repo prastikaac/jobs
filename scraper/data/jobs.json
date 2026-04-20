@@ -1,56 +1,268 @@
 [
   {
-    "scrape_timestamp": "2026-04-20 23:36:32",
+    "scrape_timestamp": "2026-04-21 00:34:34",
     "jobs": [
       {
-        "id": "2674cfbc",
-        "job_id": "nursing-gig-work-at-attendo-in-the-ylä-savo-region-lapinlahti-2674cfbc",
+        "id": "b144bc70",
+        "job_id": "security-guard-for-railway-work-espoo-b144bc70",
         "processed": true,
-        "title": "Nursing gig work at Attendo in the Ylä-Savo region",
-        "company": "Attendo Oy",
-        "job_category": "transportation-and-logistics",
+        "title": "Security guard for railway work",
+        "company": "Lisäpalvelu Vantaa Oy",
+        "job_category": "construction",
         "jobLocation": [
-          "Lapinlahti",
-          "Vieremä",
-          "Iisalmi"
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
         ],
         "jobRegions": [],
-        "jobapply_link": "https://ura.attendo.fi/jobs/7604495-hoitoalan-keikkatyo-attendolla-yla-savon-alueella/applications/new?promotion=1956964-tyomarkkinatori",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/754748c7-4290-4dad-9eb3-a68415557442/en",
-        "job_employer_email": "jenna.niskanen@attendo.fi",
-        "job_employer_name": "Jenna Niskanen",
-        "job_employer_phone_no": "0444942292",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/nursing-gig-work-at-attendo-in-the-ylä-savo-region-lapinlahti-2674cfbc",
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/179932958",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/93dfebdd-34fa-41c0-acd2-f136ed2623ba/en",
+        "job_employer_email": "jussi.salmijarvi@lisapalvelu.net",
+        "job_employer_name": "Jussi Salmijärvi",
+        "job_employer_phone_no": "+358413284956",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/security-guard-for-railway-work-espoo-b144bc70",
         "date_posted": "2026-04-20",
-        "date_expires": "2026-05-10",
-        "scraped_at": "2026-04-20 23:36:32",
+        "date_expires": "2026-04-25",
+        "scraped_at": "2026-04-21 00:34:34",
         "open_positions": 1,
-        "salary_range": "salary a task-specific supplement based on the",
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
         "workTime": "Full-time",
         "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Attendo Oy is looking for a skilled Nursing gig work at Attendo in the Ylä-Savo region in Lapinlahti. Don't miss this opportunity—apply today.",
-        "description": "Attendo is seeking experienced caregivers to join their team in the Ylä-Savo region, offering full-time permanent employment with competitive hourly wages based on Finnish collective agreements. The company provides a rotating gig worker model and supports development opportunities for long-term substitutes or permanent positions. Interested candidates should have a degree in social and health fields, completed practical nursing studies, and be vaccinated against infectious diseases to protect residents. Attendo offers comprehensive training and career advancement options while maintaining a smoke-free workplace environment. For more information or to apply, please contact the recruitment coordinator at Jenna Niskanenjenna.niskanen@attendo.fi.",
+        "meta_description": "Lisäpalvelu Vantaa Oy is looking for a skilled Security guard for railway work in Espoo. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a security guard with a T-man certificate and valid occupational safety and track safety card for railway work in Espoo, Helsinki, or Vantaa. This position involves maintenance and construction tasks on the state railway network until the end of the season. We expect reliable workers who can communicate fluently in Finnish and have a positive attitude towards their jobs. Benefits are available to those with additional qualifications. The company offers personal service during the job search phase and provides ongoing support for employment relationships. Jobs are constantly available, and employees can be quickly transferred to new sites based on skills. Põhpalvelu is a domestic company founded in 2002 that specializes in flexible personnel solutions.",
         "what_we_expect": [
-          "Degree in the social and health field or you are a field student, at least two parts of the degree have been completed in practical nursing studies",
-          "Vaccination protection as referred to in Section 48 of the Infectious Diseases Act to protect customers and patients for the entire duration of the employment",
-          "Fluent Finnish language skills, at least level B1.1"
+          "Security guard qualification (T-man certificate)",
+          "Valid occupational safety and track safety card are also mandatory",
+          "Fluent knowledge of the Finnish language",
+          "You are reliable and have a good attitude towards work"
         ],
         "job_responsibilities": [
-          "Caregivers",
-          "You can choose how many shifts you do - this way you can fit the work in, for example, with another job, study or family leave side by side.",
-          "We commit to a paid orientation at the beginning of the employment relationship."
+          "Railway worker",
+          "Your benefits can be counted (but not necessary!) if you also have",
+          "Here are a few more reasons why you should choose the Additional service"
         ],
         "what_we_offer": [
-          "We walk by your side With Attendo, your predecessor is not far away, but present in everyday life, supporting and walking by your side.",
-          "With us, you are an important part of the multiprofessional team that makes the home a home for our residents. We support your development.",
-          "You can choose how many shifts you do - this way you can fit the work in, for example, with another job, study or family leave side by side."
+          "Travel readiness. The state railway network covers the whole of Finland.",
+          "B driver's license and car available",
+          "We stick to agreed matters and do what we promise",
+          "Jobs are constantly available, and when one job ends, you can soon be employed at the next job site"
         ],
-        "search_keywords": "care industry, nursing gig work, Attendo Oma substitute pool, elderly care",
+        "search_keywords": "security guard railway work Finnish language reliable attitude additional service travel readiness",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/18.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/4.png"
+      },
+      {
+        "id": "919c3aa5",
+        "job_id": "early-childhood-education-teacher-vaasa-919c3aa5",
+        "processed": true,
+        "title": "Early childhood education teacher",
+        "company": "Vaasan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/VSA905-02-104-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/178c0770-909d-4c84-bbcf-00d55debf483/en",
+        "job_employer_email": "rekrytointi@vaasa.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-vaasa-919c3aa5",
+        "date_posted": "2026-04-20",
+        "date_expires": "2026-04-30",
+        "scraped_at": "2026-04-21 00:34:34",
+        "open_positions": 1,
+        "salary_range": "2823 € / kk.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Vaasan kaupunki as a Early childhood education teacher / Länsimetsä daycare center and grow your career in Vaasa. Check details and apply now.",
+        "description": "We are looking for an early childhood education teacher to join Länsimetsä daycare center in Gerbyy, Vaasa. This position offers a competitive salary of €2823/month and benefits including city services, employee bicycle benefit, and e-pass culture, exercise, and well-being. The ideal candidate should have strong pedagogical skills, be able to work effectively with parents, and possess excellent interaction and cooperation abilities. A doctor's statement about health (T-certificate) and a criminal record extract are required before starting the trial period of six months. The Infectious Diseases Act mandates investigating tuberculosis risk for childcare workers. Prior qualifications in early childhood education are preferred but not mandatory.",
+        "what_we_expect": [
+          "Strong pedagogical approach",
+          "Activity and initiative",
+          "Good interaction skills to support the well-being of the work community, children and families",
+          "Flexibility to act in changing everyday situations"
+        ],
+        "job_responsibilities": [
+          "Responsible for the group's high-quality pedagogy, planning and evaluation, as well as cooperation with parents.",
+          "Strong pedagogical approach",
+          "Activity and initiative"
+        ],
+        "what_we_offer": [
+          "Benefit 1: benefits for city services",
+          "Benefit 2: an employee bicycle benefit",
+          "Benefit 3: e-pass culture, exercise and well-being benefit"
+        ],
+        "search_keywords": "early childhood education teacher daycare center Länsimetsä Gerbyy Vaasa hiking nature forest nursery fenced yard area children families parents pedagogical approach activity initiative interaction skills flexibility tuberculosis infection questionnaire interpretation instructions Institute of Occupational Health",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/education/3.png"
+      },
+      {
+        "id": "09af3e9c",
+        "job_id": "caregivers-for-home-care-in-tammisaari-for-full-time-work-raasepori-09af3e9c",
+        "processed": true,
+        "title": "Caregivers for home care in Tammisaari for full-time work",
+        "company": "Sam's Care Oy, Lohja",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Raasepori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@samscare.fi?subject=Application%20for%20the%20Job%20-%20Caregivers%20for%20home%20care%20in%20Tammisaari%20for%20full-time%20work&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Caregivers%20for%20home%20care%20in%20Tammisaari%20for%20full-time%20work.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fed429ca-bf46-47b7-8051-7d597232d883/en",
+        "job_employer_email": "info@samscare.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/caregivers-for-home-care-in-tammisaari-for-full-time-work-raasepori-09af3e9c",
+        "date_posted": "2026-04-20",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-21 00:34:34",
+        "open_positions": 1,
+        "salary_range": "€2,900/month and possible shift allowances",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Caregivers for home care in Tammisaari for full-time work role at Sam's Care Oy, Lohja. Join a growing team and build your career in Raasepori.",
+        "description": "We are looking for skilled caregivers with a nursing degree, strong oral and written Finnish language skills, and a valid LOP/LOVe medical license. Join our growing team in Tammisaari, where you'll provide daily assistance, perform basic care tasks, and ensure the safety of elderly customers. Flexible working hours and varied trainings are available, along with competitive salaries and flexible work arrangements. Apply now by emailing info@samscare.fi.",
+        "what_we_expect": [
+          "Nursing degree",
+          "Good oral and written Finnish language skills. Studies in Finnish or Swedish, or B2 level language certificate",
+          "LOP/LOVe medical license",
+          "B driver's license"
+        ],
+        "job_responsibilities": [
+          "Assisting customers in their daily activities",
+          "Basic care",
+          "Performing procedures",
+          "Medical treatment and office work"
+        ],
+        "what_we_offer": [
+          "Versatile work",
+          "Competitive salary",
+          "Flexible working hours and the possibility to influence work shifts",
+          "Varied trainings and good orientation"
+        ],
+        "search_keywords": "care professionals, home care, Tammisaari, full-time work, nursing degree, Finnish language skills, LOP/LOVe medical license, driver's license",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/11.png"
+      },
+      {
+        "id": "de528114",
+        "job_id": "warehouse-worker-language-skills-ukraine-vantaa-de528114",
+        "processed": true,
+        "title": "Warehouse worker (language skills Ukraine)",
+        "company": "Rentaman Finland Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://rentaman.likeit.fi/apply/5578455",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fb92b2f9-0a0e-4a9d-9182-0b075805fdd5/en",
+        "job_employer_email": "emilia.vilponen@rentaman.fi",
+        "job_employer_name": "Emilia Vilponen",
+        "job_employer_phone_no": "0449012885",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/warehouse-worker-language-skills-ukraine-vantaa-de528114",
+        "date_posted": "2026-04-20",
+        "date_expires": "2026-04-26",
+        "scraped_at": "2026-04-21 00:34:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Warehouse worker (language skills Ukraine) at Rentaman Finland Oy. Great opportunity in Vantaa—apply now.",
+        "description": "We are seeking a Ukrainian-speaking warehouse worker to join our team at Rentaman Finland Oy in Vantaa. This position involves cargo handling and warehouse duties until August 31st. We offer competitive hourly wages based on Finnish collective agreements, along with an entry-to-work inspection from the occupational health service. If you meet our requirements and are the person we're looking for, please submit your application immediately to secure this opportunity.",
+        "what_we_expect": [
+          "For the selected person, we will conduct an entry-to-work inspection at the occupational health service.",
+          "Work starts immediately.",
+          "The duration of the work is until the end of August.",
+          "We interview applicants already during the application process and the position will be filled immediately after the person is found.",
+          "If you are the person we are looking for, please submit an application, thank you.",
+          "Rentaman provides skilled labor for the customer's needs."
+        ],
+        "job_responsibilities": [
+          "Cargo handlers, warehouse workers, etc.",
+          "For the selected person, we will conduct an entry-to-work inspection at the occupational health service.",
+          "Work starts immediately."
+        ],
+        "what_we_offer": [
+          "For the selected person, we will conduct an entry-to-work inspection at the occupational health service.",
+          "Work starts immediately.",
+          "The duration of the work is until the end of August.",
+          "We interview applicants already during the application process and the position will be filled immediately after the person is found.",
+          "If you are the person we are looking for, please submit an application, thank you.",
+          "Rentaman provides skilled labor for the customer's needs."
+        ],
+        "search_keywords": "warehouse worker language skills Ukraine cold storage",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/transportation-and-logistics/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-21 00:34:35",
+    "jobs": [
+      {
+        "id": "3a743577",
+        "job_id": "as-a-railway-worker-for-the-pk-region-espoo-3a743577",
+        "processed": true,
+        "title": "As a railway worker for the PK region",
+        "company": "Lisäpalvelu Vantaa Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/179933597",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d917c96b-77a4-48ff-a640-3a0836aa3629/en",
+        "job_employer_email": "jussi.salmijarvi@lisapalvelu.net",
+        "job_employer_name": "Jussi Salmijärvi",
+        "job_employer_phone_no": "+358413284956",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/as-a-railway-worker-for-the-pk-region-espoo-3a743577",
+        "date_posted": "2026-04-20",
+        "date_expires": "2026-04-27",
+        "scraped_at": "2026-04-21 00:34:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a As a railway worker for the PK region at Lisäpalvelu Vantaa Oy, located in Espoo. Apply now and get started.",
+        "description": "We are looking for railway workers for the PK region's projects season 2026. As a team member, you'll work alongside professionals on the railway network. We expect previous experience in railway work, a valid occupational safety and rail work safety card, and fluency in Finnish. Join us to enjoy truly personal service from our dedicated contact person who will help with employment matters. Our diverse customer base offers a wide range of tasks tailored for everyone's skills. With a large customer base, jobs are constantly available, ensuring you'll be employed at the next site as soon as one ends. We promise to stick to agreed terms and take care of extra bureaucracy, allowing you to focus on your work.",
+        "what_we_expect": [
+          "Previous experience in railway work",
+          "Valid occupational safety and rail work safety card",
+          "Fluent knowledge of the Finnish language"
+        ],
+        "job_responsibilities": [
+          "Railway worker",
+          "Here are a few reasons why you should choose Additional service",
+          "Daily operational tasks"
+        ],
+        "what_we_offer": [
+          "With us, as a job seeker and worker, you get truly personal service. You meet us face to face already during the job search phase.",
+          "Our customer base in the construction industry is really diverse. That's why we are able to offer a wide range of different tasks, with something for everyone.",
+          "Here are a few reasons why you should choose Additional service"
+        ],
+        "search_keywords": "railway work railway network projects PK region",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/12.png"
       }
     ]
   }
