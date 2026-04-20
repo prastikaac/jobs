@@ -73,7 +73,7 @@
             <div>
                 <h1>Category Post-Check Debugger</h1>
                 <div style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;" id="stats-text">
-                    Total Scraped: 1 | AI Corrections: 0
+                    Total Scraped: 5 | AI Corrections: 0
                 </div>
             </div>
             <button class="btn" onclick="copyAll()">
@@ -94,13 +94,69 @@
                 
             <tr>
                 <td>
-                    <div class="job-title">Nursing gig work at Attendo in the Ylä-Savo region</div>
-                    <div class="company-name">Attendo Oy</div>
+                    <div class="job-title">Security guard for railway work</div>
+                    <div class="company-name">Lisäpalvelu Vantaa Oy</div>
+                </td>
+                <td><span class="category-pill">construction</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Security guard for railway work", "construction")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Early childhood education teacher / Länsimetsä daycare center</div>
+                    <div class="company-name">Vaasan kaupunki</div>
+                </td>
+                <td><span class="category-pill">education</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Early childhood education teacher / L\u00e4nsimets\u00e4 daycare center", "education")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Caregivers for home care in Tammisaari for full-time work</div>
+                    <div class="company-name">Sam&#x27;s Care Oy, Lohja</div>
                 </td>
                 <td><span class="category-pill">healthcare</span></td>
                 <td><span class="badge badge-ok">AI Verified OK</span></td>
                 <td>
-                    <button class="btn btn-small" onclick="copySingle("Nursing gig work at Attendo in the Yl\u00e4-Savo region", "healthcare")">
+                    <button class="btn btn-small" onclick="copySingle("Caregivers for home care in Tammisaari for full-time work", "healthcare")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Warehouse worker (language skills Ukraine)</div>
+                    <div class="company-name">Rentaman Finland Oy</div>
+                </td>
+                <td><span class="category-pill">transportation-and-logistics</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Warehouse worker (language skills Ukraine)", "transportation-and-logistics")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">As a railway worker for the PK region</div>
+                    <div class="company-name">Lisäpalvelu Vantaa Oy</div>
+                </td>
+                <td><span class="category-pill">construction</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("As a railway worker for the PK region", "construction")">
                         Copy
                     </button>
                 </td>
@@ -113,7 +169,11 @@
 
     <script>
         const globalJobData = [
-  { title: "Nursing gig work at Attendo in the Yl\u00e4-Savo region", category: "healthcare" },
+  { title: "Security guard for railway work", category: "construction" },
+  { title: "Early childhood education teacher / L\u00e4nsimets\u00e4 daycare center", category: "education" },
+  { title: "Caregivers for home care in Tammisaari for full-time work", category: "healthcare" },
+  { title: "Warehouse worker (language skills Ukraine)", category: "transportation-and-logistics" },
+  { title: "As a railway worker for the PK region", category: "construction" },
 ];
 
         function copySingle(title, category) {
