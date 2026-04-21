@@ -177,11 +177,16 @@ public class MainActivity extends BridgeActivity {
                         showOfflinePage(view, url);
                         return true;
                     }
-                    return false; // WebView navigates to the remote page
+                    // Use loadUrl to navigate; returning false can cause Capacitor's
+                    // shouldInterceptRequest to mishandle non-localhost URLs.
+                    view.loadUrl(url);
+                    return true;
                 }
 
                 // Truly external links (LinkedIn, employer sites, etc.) → Chrome Custom Tab
-                openInCustomTab(url);
+                // Post to handler so we don't launch an Activity mid-navigation callback
+                final String externalUrl = url;
+                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(externalUrl));
                 return true;
             }
 
@@ -226,11 +231,18 @@ public class MainActivity extends BridgeActivity {
                 }
             }
 
-            // Delegate the rest to Capacitor's client so routing/splash still works.
-            // shouldInterceptRequest is CRITICAL — Capacitor uses it to serve
-            // bundled assets (html/css/js) at https://localhost/ via WebViewAssetLoader.
-            // Without this, https://localhost/ has no server → ERR_CONNECTION_REFUSED.
-            @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) { return capClient.shouldInterceptRequest(v, req); }
+            // shouldInterceptRequest: Capacitor uses it to serve bundled assets
+            // (html/css/js) at https://localhost/ via WebViewAssetLoader.
+            // ONLY delegate localhost/bundled URLs; for everything else return null
+            // so the WebView uses the network normally.
+            @Override
+            public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) {
+                String reqUrl = req.getUrl().toString();
+                if (isBundledUrl(reqUrl)) {
+                    return capClient.shouldInterceptRequest(v, req);
+                }
+                return null; // let the network handle non-localhost URLs
+            }
             @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
             @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
             @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
