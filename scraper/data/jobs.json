@@ -594,5 +594,66 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/education/12.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-21 14:28:59",
+    "jobs": [
+      {
+        "id": "12b06c6f",
+        "job_id": "earth-construction-worker-working-for-destinations-in-turku-lieto-12b06c6f",
+        "processed": true,
+        "title": "Earth construction worker working for destinations in Turku",
+        "company": "InfraFour Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lieto",
+          "Turku",
+          "Raisio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://infrafour.likeit.fi/apply/4638150",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8d2211bd-4620-4cd3-a316-7ca143af3da4/en",
+        "job_employer_email": "kim.tuovinen@infrafour.fi",
+        "job_employer_name": "Kim Tuovinen",
+        "job_employer_phone_no": "0401538108",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-construction-worker-working-for-destinations-in-turku-lieto-12b06c6f",
+        "date_posted": "2026-04-21",
+        "date_expires": "2026-05-24",
+        "scraped_at": "2026-04-21 14:28:59",
+        "open_positions": 1,
+        "salary_range": "salary * Salary payment every 2 weeks * High-qu",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Earth construction worker working for destinations in Turku role at InfraFour Oy. Join a growing team and build your career in Lieto.",
+        "description": "InfraFour Oy is seeking a motivated and experienced earth construction worker for excavation and yard construction projects in Turku, Finland. This role offers competitive hourly wages based on Finnish collective agreements, along with high-quality work clothes and a fair team environment. Previous experience in earthworks, knowledge of tube and plane lasers, image literacy, ability to work independently, and a valid occupational safety card are required. The position involves assisting with excavation work, piping, measurements, filling, and finishing yard areas at various construction sites in Turku and nearby locations. The role is physically demanding but rewarding, offering long-term employment opportunities.",
+        "what_we_expect": [
+          "Previous experience in earthworks",
+          "Knowledge of tube and plane lasers",
+          "Image reading skills",
+          "Ability to work independently",
+          "Valid occupational safety card",
+          "Energetic, self-initiated and responsible approach to work"
+        ],
+        "job_responsibilities": [
+          "Excavation and yard construction projects in Turku area",
+          "Assisting with excavation work, piping, measurements, filling and finishing yard areas",
+          "Foundation works of detached houses"
+        ],
+        "what_we_offer": [
+          "Competitive and negotiable salary",
+          "Salary payment every 2 weeks",
+          "High-quality work clothes",
+          "A fair and professional team",
+          "Long-term work"
+        ],
+        "search_keywords": "earth construction worker Turku excavation yard construction",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/construction/25.png"
+      }
+    ]
   }
 ]
