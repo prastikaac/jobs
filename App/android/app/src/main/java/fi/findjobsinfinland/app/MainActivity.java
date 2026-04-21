@@ -153,6 +153,23 @@ public class MainActivity extends BridgeActivity {
     }
 
     // =============================================================================
+    //  Helpers
+    // =============================================================================
+
+    private boolean isConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm == null) return false;
+        android.net.Network net = cm.getActiveNetwork();
+        if (net == null) return false;
+        NetworkCapabilities caps = cm.getNetworkCapabilities(net);
+        return caps != null && (
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
+        );
+    }
+
+    // =============================================================================
     //  Double back press to exit
     // =============================================================================
 
