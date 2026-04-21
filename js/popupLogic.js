@@ -41,70 +41,44 @@ let messaging;
 // Function to fetch the current FCM token and check/update it in Firestore if needed
 async function refreshFcmTokenIfNeeded() {
   try {
+    const user = auth.currentUser;
+    if (!user) return; // No need to refresh if not logged in
+
     const permission = Notification.permission;
     if (permission !== 'granted') return;
 
-    const messaging = getMessaging(app);
+    // Use our centralized method to safely fetch or reuse the token with correct SW scope
+    const currentToken = await getOrCreateFcmToken();
+    if (!currentToken) return;
 
-    // Fetch the current token from Firebase (this doesn't refresh or generate a new token)
-    const currentToken = await getToken(messaging, { vapidKey: 'BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY' });
-    if (!currentToken) {
-      console.log('Failed to fetch current FCM token.');
-      return;
-    }
-
-    // Fetch the current logged-in user from Firebase Authentication
-    const user = getAuth().currentUser;
-    if (!user) {
-      console.log('No user is logged in');
-      return;
-    }
-
-    const userId = user.uid;  // Get the user ID from Firebase Authentication
-    const userRef = doc(db, 'users', userId);  // Reference to the user's document
-
-    // Fetch the user's document
+    const userRef = doc(db, 'users', user.uid);
     const userDoc = await getDoc(userRef);
 
     if (userDoc.exists()) {
       const userData = userDoc.data();
-      const fcmTokens = userData.fcmTokens || [];  // Get the existing fcmTokens array or initialize it as empty
+      const existingTokens = Array.isArray(userData.fcmTokens) ? userData.fcmTokens : [];
 
-      // Check if the token already exists in the fcmTokens array
-      if (fcmTokens.includes(currentToken)) {
-        console.log('✅ FCM token already exists in Firestore.');
-      } else {
-        console.log('🔄 FCM token not found in Firestore. Adding token...');
-        // Add the token to the fcmTokens array in Firestore using arrayUnion to prevent duplicates
-        await addFcmToken(userId, currentToken);
-        console.log('✅ FCM token added to Firestore');
+      if (!existingTokens.includes(currentToken)) {
+        await updateDoc(userRef, { fcmTokens: arrayUnion(currentToken) });
+        console.log('🔄 FCM token synchronized to Firestore.');
       }
-    } else {
-      console.log('User document does not exist in Firestore.');
     }
-
-    // Optionally, store the token in localStorage
-    localStorage.setItem('lastFcmToken', currentToken);
   } catch (error) {
-    console.error('Error checking or syncing FCM token:', error);
+    console.warn('Error checking or syncing FCM token:', error);
   }
 }
 
 // Function to add the FCM token to Firestore inside the fcmTokens array
 async function addFcmToken(userId, newToken) {
   try {
-    // Reference to the user's document in the "users" collection
     const userRef = doc(db, 'users', userId);
-
-    // Use arrayUnion to safely add the new token to the fcmTokens array without duplicates
     await updateDoc(userRef, {
-      fcmTokens: arrayUnion(newToken),  // Add token to the fcmTokens array
-      lastUpdated: serverTimestamp()  // Optionally track when the token was last updated
+      fcmTokens: arrayUnion(newToken),
+      lastUpdated: serverTimestamp()
     });
-
     console.log('FCM token successfully added to Firestore');
   } catch (error) {
-    console.error('Error adding token to Firestore:', error);
+    console.error('Error adding FCM token:', error);
   }
 }
 
@@ -1162,26 +1136,12 @@ window.clickLabelOnYes = function () {
 
 async function updateFcmToken(uid) {
   try {
-    // Ensure messaging is ready (fixes race on signup/re-enable flow)
     if (!messaging) await initMessaging();
-    if (!messaging) {
-      console.warn("updateFcmToken: messaging not available, skipping.");
-      return;
-    }
+    if (!messaging) return;
 
-    // Must pass serviceWorkerRegistration so the correct SW is used
-    let swReg = await navigator.serviceWorker.getRegistration('/');
-    if (!swReg) swReg = await navigator.serviceWorker.ready;
-
-    const currentToken = await getToken(messaging, {
-      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-      serviceWorkerRegistration: swReg
-    });
-
-    if (!currentToken) {
-      console.warn("No FCM token retrieved");
-      return;
-    }
+    // Use exactly the same pipeline. Avoid stray single-shot getToken() calls.
+    const currentToken = await getOrCreateFcmToken();
+    if (!currentToken) return;
 
     const userRef = doc(db, "users", uid);
     const userSnap = await getDoc(userRef);
@@ -1190,18 +1150,13 @@ async function updateFcmToken(uid) {
       const userData = userSnap.data();
       const existingTokens = userData.fcmTokens || [];
 
-      // Only add the token if it's not already stored
       if (!existingTokens.includes(currentToken)) {
-        await updateDoc(userRef, {
-          fcmTokens: arrayUnion(currentToken)
-        });
+        await updateDoc(userRef, { fcmTokens: arrayUnion(currentToken) });
         console.log("New FCM token added.");
-      } else {
-        console.log("FCM token already exists. Skipping update.");
       }
     }
   } catch (error) {
-    console.error("Error updating FCM token:", error);
+    console.warn("Error updating FCM token:", error);
   }
 }
 
