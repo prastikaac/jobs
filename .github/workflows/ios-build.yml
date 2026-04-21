@@ -28,11 +28,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Copy web assets to www/
+      - name: Copy offline page to www/
         run: |
-          mkdir -p www/js
-          cp *.html www/
-          cp js/* www/js/
+          mkdir -p www
+          cp nointernet.html www/
 
       - name: Run Capacitor Sync for iOS
         run: npx cap sync ios

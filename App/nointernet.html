@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>No Internet Connection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- App favicon -->
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="https://findjobsinfinland.fi/images/icon.png" rel="apple-touch-icon" sizes="180x180" />
+
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Fonts ── */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    /* ── Base ── */
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      padding: 20px;
+    }
+
+    /* ── Card ── */
+    .card {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 44px 36px 36px;
+      border-radius: 32px;
+      background: #f0f2f5;
+      box-shadow:
+        8px 8px 20px rgba(55, 84, 170, 0.15),
+        -8px -8px 20px #ffffff,
+        inset 0 0 4px rgba(255, 255, 255, 0.2);
+      max-width: 360px;
+      width: 100%;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Decorative circles ── */
+    .circle {
+      position: absolute;
+      z-index: 0;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: #f0f2f5;
+      box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
+      pointer-events: none;
+    }
+    .circle.t { top: -130px; right: -130px; }
+    .circle.b { bottom: -130px; left: -130px; }
+
+    /* ── Content ── */
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Wifi-off icon ── */
+    .icon-wrap {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: #f0f2f5;
+      box-shadow:
+        6px 6px 14px rgba(55, 84, 170, 0.13),
+        -6px -6px 14px #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-wrap svg {
+      width: 44px;
+      height: 44px;
+      color: #5a6a85;
+    }
+
+    /* ── Text ── */
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #5a6a85;
+      margin-bottom: 30px;
+    }
+
+    /* ── Retry button ── */
+    .retry-btn {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background: #f0f2f5;
+      cursor: pointer;
+      box-shadow:
+        6px 6px 14px rgba(55, 84, 170, 0.13),
+        -6px -6px 14px #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.25s ease, transform 0.15s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .retry-btn:active {
+      transform: scale(0.94);
+      box-shadow:
+        inset 4px 4px 10px rgba(55, 84, 170, 0.15),
+        inset -4px -4px 10px #ffffff;
+    }
+
+    .retry-btn svg {
+      width: 26px;
+      height: 26px;
+      color: #7c92b2;
+      transition: transform 0.6s ease;
+    }
+
+    .retry-btn.spinning svg {
+      transform: rotate(360deg);
+    }
+
+    /* ── Status dot ── */
+    .status {
+      margin-top: 20px;
+      font-size: 0.78rem;
+      color: #9aaccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #e05c5c;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.8); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="circle t"></div>
+    <div class="circle b"></div>
+
+    <div class="content">
+      <!-- Wifi-off icon -->
+      <div class="icon-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="1" y1="1" x2="23" y2="23"/>
+          <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+          <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+          <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+          <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+          <line x1="12" y1="20" x2="12.01" y2="20"/>
+        </svg>
+      </div>
+
+      <h1>No Internet Connection</h1>
+      <p>Please check your connection.<br>We'll take you back automatically when it's restored.</p>
+
+      <!-- Retry button -->
+      <button class="retry-btn" id="retryBtn" aria-label="Retry connection">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 4 23 10 17 10"/>
+          <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+        </svg>
+      </button>
+
+      <div class="status">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText">Checking connection…</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ── Connectivity check ────────────────────────────────────────────────────
+    var STORAGE_KEY = 'app_last_page_before_offline';
+    var POLL_MS     = 3000;
+    var pollTimer   = null;
+
+    function getSavedPage() {
+      try { return sessionStorage.getItem(STORAGE_KEY) || 'https://findjobsinfinland.fi/'; }
+      catch (_) { return 'https://findjobsinfinland.fi/'; }
+    }
+
+    function clearSavedPage() {
+      try { sessionStorage.removeItem(STORAGE_KEY); } catch (_) {}
+    }
+
+    function goOnline() {
+      stopPolling();
+      var returnTo = getSavedPage();
+      clearSavedPage();
+      window.location.href = returnTo;
+    }
+
+    function checkConnectivity() {
+      if (!navigator.onLine) return;
+      var probe = 'https://findjobsinfinland.fi/images/icon.png?_=' + Date.now();
+      fetch(probe, { method: 'HEAD', cache: 'no-store', mode: 'no-cors' })
+        .then(goOnline)
+        .catch(function () { /* still offline */ });
+    }
+
+    function startPolling() {
+      if (pollTimer) return;
+      pollTimer = setInterval(checkConnectivity, POLL_MS);
+    }
+
+    function stopPolling() {
+      if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+    }
+
+    // ── Browser events ────────────────────────────────────────────────────────
+    window.addEventListener('online', function () {
+      checkConnectivity();
+    });
+
+    // ── Retry button ──────────────────────────────────────────────────────────
+    var btn = document.getElementById('retryBtn');
+    btn.addEventListener('click', function () {
+      btn.classList.add('spinning');
+      setTimeout(function () { btn.classList.remove('spinning'); }, 650);
+      checkConnectivity();
+    });
+
+    // ── Status text ───────────────────────────────────────────────────────────
+    var statusText = document.getElementById('statusText');
+    var statusDot  = document.getElementById('statusDot');
+
+    function setStatus(msg, color) {
+      statusText.textContent = msg;
+      statusDot.style.background = color || '#e05c5c';
+    }
+
+    // Update every few seconds so user sees the app is trying
+    var tries = 0;
+    setInterval(function () {
+      tries++;
+      setStatus('Retrying… (attempt ' + tries + ')', '#e05c5c');
+    }, POLL_MS);
+
+    // ── Capacitor Network plugin (best accuracy on native) ────────────────────
+    (function tryCapacitor() {
+      if (
+        window.Capacitor &&
+        window.Capacitor.Plugins &&
+        window.Capacitor.Plugins.Network
+      ) {
+        window.Capacitor.Plugins.Network.addListener(
+          'networkStatusChange',
+          function (status) {
+            if (status.connected) { goOnline(); }
+          }
+        );
+      }
+    })();
+
+    // ── Start polling immediately ─────────────────────────────────────────────
+    startPolling();
+  </script>
+</body>
+
+</html>
