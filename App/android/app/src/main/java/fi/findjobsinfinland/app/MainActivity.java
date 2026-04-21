@@ -57,6 +57,8 @@ public class MainActivity extends BridgeActivity {
     @Override
     public void onPause() {
         super.onPause();
+        // Force Android to write cookies to disk immediately when the app goes to background
+        android.webkit.CookieManager.getInstance().flush();
     }
 
     @Override
@@ -70,6 +72,17 @@ public class MainActivity extends BridgeActivity {
     public void onStart() {
         super.onStart();
         
+        // Enforce cookie acceptance and persistence
+        android.webkit.CookieManager cookieManager = android.webkit.CookieManager.getInstance();
+        cookieManager.setAcceptCookie(true);
+        if (getBridge() != null && getBridge().getWebView() != null) {
+            cookieManager.setAcceptThirdPartyCookies(getBridge().getWebView(), true);
+            
+            // Enforce DOM storage (localStorage) which most cookie banners use
+            getBridge().getWebView().getSettings().setDomStorageEnabled(true);
+            getBridge().getWebView().getSettings().setDatabaseEnabled(true);
+        }
+
         setupSwipeRefresh();
         
         getBridge().addWebViewListener(new WebViewListener() {
