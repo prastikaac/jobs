@@ -19,7 +19,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.core.view.WindowCompat;
@@ -60,7 +59,6 @@ public class MainActivity extends BridgeActivity {
 
         setupSwipeRefresh();
         setupLinkInterception();
-        setupBackPress();
     }
 
     @Override
@@ -267,35 +265,37 @@ public class MainActivity extends BridgeActivity {
     }
 
     // =============================================================================
-    //  Double back press to exit (uses OnBackPressedDispatcher — API 33+ safe)
+    //  Double back press to exit
     // =============================================================================
 
-    private void setupBackPress() {
-        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
-            @Override
-            public void handleOnBackPressed() {
-                WebView wv = getBridge().getWebView();
+    @Override
+    @SuppressWarnings("deprecation")        // onBackPressed is still the right hook for BridgeActivity subclasses
+    public void onBackPressed() {
+        if (getBridge() == null) {
+            // Bridge not ready — fall back to system behavior
+            super.onBackPressed();
+            return;
+        }
+        WebView wv = getBridge().getWebView();
 
-                // Normal in-app back navigation (Jobs → Home, etc.)
-                if (wv != null && wv.canGoBack()) {
-                    wv.goBack();
-                    return;
-                }
+        // Let the WebView navigate back normally (Jobs → Home, etc.)
+        if (wv != null && wv.canGoBack()) {
+            wv.goBack();
+            return;
+        }
 
-                // On root screen: double-press to exit
-                long now = System.currentTimeMillis();
-                if (now - backPressedTime < 2000) {
-                    if (backExitToast != null) backExitToast.cancel();
-                    finishAffinity(); // closes the app reliably on all Android versions
-                } else {
-                    backPressedTime = now;
-                    if (backExitToast != null) backExitToast.cancel();
-                    backExitToast = Toast.makeText(
-                        MainActivity.this, "Press back again to exit", Toast.LENGTH_SHORT);
-                    backExitToast.show();
-                }
-            }
-        });
+        // On root screen: require a second press within 2 s to exit
+        long now = System.currentTimeMillis();
+        if (now - backPressedTime < 2000) {
+            if (backExitToast != null) backExitToast.cancel();
+            finishAffinity();   // closes the app reliably on all Android versions
+        } else {
+            backPressedTime = now;
+            if (backExitToast != null) backExitToast.cancel();
+            backExitToast = Toast.makeText(
+                this, "Press back again to exit", Toast.LENGTH_SHORT);
+            backExitToast.show();
+        }
     }
 
     // =============================================================================
