@@ -159,22 +159,31 @@ public class MainActivity extends BridgeActivity {
                 String url = request.getUrl().toString();
 
                 if (isBundledUrl(url)) {
-                    // Capacitor's local assets — let the WebView load normally.
-                    // shouldInterceptRequest handles serving the actual files.
+                    // Already a localhost/capacitor URL — let WebView load normally
                     return false;
                 }
 
                 if (isOwnSiteUrl(url)) {
-                    // Remote pages on findjobsinfinland.fi — need internet
+                    // The HTML links use absolute findjobsinfinland.fi URLs, but the
+                    // pages are bundled at https://localhost/*.html.
+                    // Try to map to the local bundled page first.
+                    String localUrl = toLocalUrl(url);
+                    if (localUrl != null) {
+                        // Load the bundled page instead of the remote URL
+                        view.loadUrl(localUrl);
+                        return true;
+                    }
+                    // Not a bundled page (individual job pages, blogs, etc.)
+                    // Open in Chrome Custom Tab if online, else show offline page
                     if (!isConnected()) {
                         showOfflinePage(view, url);
                         return true;
                     }
-                    // Let WebView navigate to the remote site normally
-                    return false;
+                    openInCustomTab(url);
+                    return true;
                 }
 
-                // Everything else → Chrome Custom Tab (in-app browser)
+                // Everything else (LinkedIn, employer sites, etc.) → Chrome Custom Tab
                 openInCustomTab(url);
                 return true;
             }
@@ -360,6 +369,46 @@ public class MainActivity extends BridgeActivity {
     private boolean isOwnSiteUrl(String url) {
         return url.startsWith("https://findjobsinfinland.fi/")
             || url.startsWith("http://findjobsinfinland.fi/");
+    }
+
+    /**
+     * Converts a findjobsinfinland.fi URL to its bundled https://localhost equivalent.
+     * Returns null if no bundled file exists for this path (e.g. individual job pages).
+     *
+     * Mapping:
+     *   /               → index.html
+     *   /jobs           → jobs.html
+     *   /about-us       → about-us.html
+     *   /contact-us     → contact-us.html
+     *   /disclaimer     → disclaimer.html
+     *   /privacy-policy → privacy-policy.html
+     *   /terms-and-conditions → terms-and-conditions.html
+     *   /edit-profile   → edit-profile.html
+     */
+    private String toLocalUrl(String remoteUrl) {
+        Uri uri = Uri.parse(remoteUrl);
+        String path = uri.getPath();
+        if (path == null) path = "/";
+        // Strip trailing slash (except root)
+        if (path.length() > 1 && path.endsWith("/")) path = path.substring(0, path.length() - 1);
+
+        String bundledFile;
+        switch (path) {
+            case "":
+            case "/":             bundledFile = "index.html";              break;
+            case "/jobs":         bundledFile = "jobs.html";               break;
+            case "/about-us":     bundledFile = "about-us.html";           break;
+            case "/contact-us":   bundledFile = "contact-us.html";         break;
+            case "/disclaimer":   bundledFile = "disclaimer.html";         break;
+            case "/privacy-policy": bundledFile = "privacy-policy.html";   break;
+            case "/terms-and-conditions": bundledFile = "terms-and-conditions.html"; break;
+            case "/edit-profile": bundledFile = "edit-profile.html";       break;
+            default:              return null; // no bundled version — open externally
+        }
+
+        // Preserve query string (e.g. /jobs?q=healthcare)
+        String query = uri.getQuery();
+        return "https://localhost/" + bundledFile + (query != null ? "?" + query : "");
     }
 
     /** Opens an external URL in a branded Chrome Custom Tab (in-app browser). */
