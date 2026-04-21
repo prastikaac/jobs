@@ -1,0 +1,29 @@
+{
+  "name": "app_findjobsinfinland",
+  "version": "1.0.0",
+  "description": "Find Jobs In Finland — Native Mobile App (Capacitor)",
+  "main": "index.js",
+  "scripts": {
+    "copy:www": "copy /Y *.html www\\ && xcopy /E /Y /I js\\* www\\js\\",
+    "sync": "npm run copy:www && npx cap sync",
+    "sync:android": "npm run copy:www && npx cap sync android",
+    "sync:ios": "npm run copy:www && npx cap sync ios",
+    "open:android": "npx cap open android",
+    "open:ios": "npx cap open ios",
+    "build:android": "npm run sync:android && npx cap open android",
+    "build:ios": "npm run sync:ios && npx cap open ios"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^8.3.0",
+    "@capacitor/app": "^8.1.0",
+    "@capacitor/browser": "^8.0.3",
+    "@capacitor/cli": "^8.3.0",
+    "@capacitor/core": "^8.3.0",
+    "@capacitor/ios": "^8.3.0",
+    "@capacitor/splash-screen": "^8.0.1",
+    "@capacitor/toast": "^8.0.1"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+www/
+.DS_Store
+.vscode/
+
+# Ignore auto-generated icons cache
+icons/

@@ -1,0 +1,36 @@
+{
+  "appId": "fi.findjobsinfinland.app",
+  "appName": "Find Jobs In Finland",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false,
+    "allowNavigation": ["*"]
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0,
+      "launchAutoHide": false,
+      "backgroundColor": "#ffffff",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_INSIDE",
+      "showSpinner": false,
+      "splashFullScreen": false,
+      "splashImmersive": false
+    },
+    "Browser": {
+      "presentationStyle": "fullscreen"
+    }
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#ffffff",
+    "overrideUserAgent": "FindJobsFinlandApp/1.0 (Android)"
+  },
+  "ios": {
+    "contentInset": "always",
+    "backgroundColor": "#ffffff",
+    "overrideUserAgent": "FindJobsFinlandApp/1.0 (iOS)",
+    "allowsLinkPreviewEnabled": false
+  }
+}

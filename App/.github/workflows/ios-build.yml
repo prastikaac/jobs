@@ -1,0 +1,45 @@
+name: iOS Build Check
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Copy web assets to www/
+        run: |
+          mkdir -p www/js
+          cp *.html www/
+          cp js/* www/js/
+
+      - name: Run Capacitor Sync for iOS
+        run: npx cap sync ios
+
+      - name: Build iOS App (No Signing — Simulator only)
+        working-directory: ./ios/App
+        run: |
+          xcodebuild clean build \
+            -project App.xcodeproj \
+            -scheme App \
+            -destination "generic/platform=iOS Simulator" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""

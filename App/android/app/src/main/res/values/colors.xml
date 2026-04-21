@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors — findjobsinfinland.fi -->
+    <color name="colorPrimary">#482dff</color>
+    <color name="colorPrimaryDark">#3520c8</color>
+    <color name="colorAccent">#6c52ff</color>
+
+    <!-- Splash screen: white background, logo centered -->
+    <color name="splashBackground">#FFFFFF</color>
+
+    <!-- SwipeRefreshLayout indicator colors -->
+    <color name="refreshColor1">#482dff</color>
+    <color name="refreshColor2">#6c52ff</color>
+</resources>
