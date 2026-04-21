@@ -4,5 +4,23 @@
 - no internet page not showing while clicking on any link on offline
 
 
+ix the offline handling for link clicks inside the app.
 
+Problem:
 
+When the user is offline and clicks on any link or page inside the app, the "No Internet" page is not shown.
+
+Required behavior:
+
+If the user clicks any link or while there is no internet connection:
+Do not try to load the page normally
+Show the custom "No Internet" page App\nointernet.html instead
+and check for internet connection every second in the background and if internet is back then load the page normally instantly
+
+Requirements:
+
+This should work for all link clicks inside the app
+It should detect offline status before or while opening the link
+The app should not stay on a blank/loading/error page
+The "No Internet" page should appear consistently whenever a page cannot be opened because of no connection
+When internet comes back, the user should be able to retry and open the page normally
