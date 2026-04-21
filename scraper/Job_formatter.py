@@ -878,7 +878,7 @@ def apply_manual_fixes(job: dict) -> dict:
     job["jobUrl"] = f"{config.GITHUB_PAGES_BASE_URL}/jobs/{cat_slug}/{job['job_id']}"
 
     safe_slug = config.get_safe_category_slug(new_cat)
-    if "images/jobs/" not in job.get("image_url", "") or safe_slug not in job.get("image_url", ""):
+    if "https://findjobsinfinland.fi/images/jobs/" not in job.get("image_url", "") or safe_slug not in job.get("image_url", ""):
         num = random.randint(1, 30)
         job["image_url"] = f"{config.GITHUB_PAGES_BASE_URL}/images/jobs/{safe_slug}/{num}.png"
 

@@ -251,7 +251,7 @@ def _fmt_cat(slug: str) -> str:
 
 
 def _pick_image(new_category: str, old_image_url: str) -> str:
-    img_dir = _ROOT_DIR / "images" / "jobs" / new_category
+    img_dir = _ROOT_DIR / "https://findjobsinfinland.fi/images" / "jobs" / new_category
     if img_dir.exists():
         pngs = [p.name for p in img_dir.iterdir() if p.suffix.lower() == ".png"]
         if pngs:

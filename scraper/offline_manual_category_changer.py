@@ -171,7 +171,7 @@ def api_get_categories() -> list:
 
 
 def _pick_image(new_category: str, old_image_url: str) -> str:
-    img_dir = ROOT_DIR / "images" / "jobs" / new_category
+    img_dir = ROOT_DIR / "https://findjobsinfinland.fi/images" / "jobs" / new_category
     if img_dir.exists():
         pngs = [p.name for p in img_dir.iterdir() if p.suffix.lower() == ".png"]
         if pngs:

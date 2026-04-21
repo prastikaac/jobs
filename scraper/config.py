@@ -30,7 +30,7 @@ SENT_ALERTS_PATH = os.path.join(DATA_DIR, "sent_alerts.json")
 TRANSLATED_JOBS_JSON_PATH = TRANSLATED_RAW_JOBS_JSON_PATH
 
 JOBS_OUTPUT_DIR = os.path.join(BASE_DIR, "jobs")
-IMAGES_JOBS_DIR = os.path.join(WEBSITE_DIR, "images", "jobs")
+IMAGES_JOBS_DIR = os.path.join(WEBSITE_DIR, "https://findjobsinfinland.fi/images", "jobs")
 
 # ── Categories ────────────────────────────────────────────────────────────────
 _ALL_JOBS_CAT_JSON = os.path.join(os.path.dirname(__file__), "all_jobs_cat.json")

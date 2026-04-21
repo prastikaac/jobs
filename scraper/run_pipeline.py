@@ -549,7 +549,7 @@ def _git_commit_and_push(message: str) -> None:
         "sitemap-pages.xml",
         "sitemap-blogs.xml",
         "jobs/",
-        "images/jobs/",
+        "https://findjobsinfinland.fi/images/jobs/",
         "scraper/data/jobs.json",
         "scraper/data/rawjobs.json",
         "scraper/data/formatted_jobs_flat.json",

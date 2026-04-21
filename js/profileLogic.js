@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (snap.exists()) {
       const data = snap.data();
-      profileImage.src = data.profilePictureUrl?.trim() || "/images/user.png";
+      profileImage.src = data.profilePictureUrl?.trim() || "https://findjobsinfinland.fi/images/user.png";
       document.getElementById("nameText").textContent = data.fullName || "No Name";
       document.getElementById("emailText").textContent = data.email || "No Email";
       document.getElementById("phoneText").textContent = data.phoneNumber || "No Phone";

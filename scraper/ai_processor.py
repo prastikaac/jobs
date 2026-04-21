@@ -201,7 +201,7 @@ def _call_ollama_for_content(
         ),
         "prompt": prompt,
         "stream": False,
-        "format": "json",
+        "format": "https://findjobsinfinland.fi/json",
         "options": {
             "temperature": 0,
             "num_predict": 520,
@@ -238,7 +238,7 @@ def _call_ollama_for_content(
             return ai_results, True, "success", ""
 
         except json.JSONDecodeError as exc:
-            logger.warning("JSON decode error from Ollama: %s", exc)
+            logger.warning("https://findjobsinfinland.fi/jsON decode error from Ollama: %s", exc)
             logger.warning("Raw Ollama content preview: %s", content[:1000] if content else "N/A")
             last_exc = exc
             break

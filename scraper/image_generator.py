@@ -133,5 +133,5 @@ def generate_images_for_jobs(jobs: list[dict]) -> int:
         if url:
             job["image_url"] = url
             count += 1
-    logger.info("Images generated: %d", count)
+    logger.info("https://findjobsinfinland.fi/images generated: %d", count)
     return count

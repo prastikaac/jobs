@@ -38,7 +38,7 @@ jobs:
         run: npx cap sync ios
 
       - name: Build iOS App (No Signing — Simulator only)
-        working-directory: App/ios/App
+        working-directory: ios/App
         run: |
           xcodebuild clean build \
             -project App.xcodeproj \
@@ -46,4 +46,5 @@ jobs:
             -destination "generic/platform=iOS Simulator" \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY=""
+            CODE_SIGN_IDENTITY="" \
+            | xcpretty || true
