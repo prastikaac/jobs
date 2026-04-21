@@ -3,10 +3,14 @@
   "appName": "Find Jobs In Finland",
   "webDir": "www",
   "server": {
+    "url": "https://findjobsinfinland.fi/",
     "androidScheme": "https",
     "cleartext": false,
-    "allowNavigation": ["*"],
-    "startUrl": "index.html"
+    "allowNavigation": [
+      "findjobsinfinland.fi",
+      "*.findjobsinfinland.fi"
+    ],
+    "errorPath": "nointernet.html"
   },
   "plugins": {
     "SplashScreen": {

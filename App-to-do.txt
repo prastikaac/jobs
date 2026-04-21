@@ -10,15 +10,4 @@ swipe down to refresh is not working in app, make to show as in the uploaded ima
 
 
 
-Now change the logic  : 
-If the link belongs to https://findjobsinfinland.fi/, open it inside the app using local files:
-https://findjobsinfinland.fi/ → index.html
-https://findjobsinfinland.fi/about-us → about-us.html
-https://findjobsinfinland.fi/contact-us → contact-us.html
-https://findjobsinfinland.fi/disclaimer → disclaimer.html
-https://findjobsinfinland.fi/edit-profile → edit-profile.html
-https://findjobsinfinland.fi/jobs → jobs.html
-https://findjobsinfinland.fi/privacy-policy → privacy-policy.html
-https://findjobsinfinland.fi/terms-and-conditions → terms-and-conditions.html
-
-and If the link is an internal page (e.g., https://findjobsinfinland.fi/cleaner.html), open that specific page inside the app.
+[DONE] Changed the app logic to load https://findjobsinfinland.fi/ directly, keeping internal links inside the app and external links in the browser, while maintaining the offline page. Local HTML files have been removed.
