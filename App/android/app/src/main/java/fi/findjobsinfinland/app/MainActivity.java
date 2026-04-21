@@ -59,6 +59,22 @@ public class MainActivity extends BridgeActivity {
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        // Re-apply in case a plugin or lifecycle event resets it
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            // Re-apply when splash screen dialog dismisses or window regains focus
+            WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+        }
+    }
+
     /**
      * Poll until JS signals refresh is complete, then hide the spinner.
      * Uses evaluateJavascript to check a flag set by app-pull-to-refresh.js.
