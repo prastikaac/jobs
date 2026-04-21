@@ -192,11 +192,10 @@ public class MainActivity extends BridgeActivity {
                 }
 
                 int code = error.getErrorCode();
-                boolean isNetworkError = (code == WebViewClient.ERROR_NET_DISCONNECT
+                boolean isNetworkError = (code == WebViewClient.ERROR_IO
                     || code == WebViewClient.ERROR_HOST_LOOKUP
                     || code == WebViewClient.ERROR_CONNECT
                     || code == WebViewClient.ERROR_TIMEOUT
-                    || code == WebViewClient.ERROR_TOO_MANY_REQUESTS
                     || code == WebViewClient.ERROR_FAILED_SSL_HANDSHAKE);
 
                 if (isNetworkError || !isConnected()) {
