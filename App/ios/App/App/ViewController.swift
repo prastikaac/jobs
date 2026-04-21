@@ -1,6 +1,7 @@
 import UIKit
 import Capacitor
 import WebKit
+import SafariServices
 
 /// Main view controller — subclasses CAPBridgeViewController to add:
 ///   - Pull-to-refresh via UIRefreshControl on WKWebView.scrollView
@@ -17,6 +18,7 @@ class ViewController: CAPBridgeViewController {
         setupPullToRefresh()
         setupSwipeGestures()
         setupAppResumeObserver()
+        setupLinkInterception()
     }
 
     // MARK: - Pull-to-Refresh
@@ -69,7 +71,98 @@ class ViewController: CAPBridgeViewController {
         )
     }
 
+    // MARK: - External Link Interception
+    private var capNavigationDelegate: WKNavigationDelegate?
+
+    private func setupLinkInterception() {
+        // Save the original Capacitor delegate and set ourselves as the delegate
+        self.capNavigationDelegate = self.webView?.navigationDelegate
+        self.webView?.navigationDelegate = self
+    }
+
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+}
+
+// Forward WKNavigationDelegate calls to Capacitor, but intercept external links
+extension ViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let url = navigationAction.request.url {
+            let urlString = url.absoluteString
+            let isOwnSite = urlString.hasPrefix("https://findjobsinfinland.fi/") || urlString.hasPrefix("http://findjobsinfinland.fi/")
+            let isBundled = urlString.hasPrefix("capacitor://") || urlString.hasPrefix("http://localhost") || urlString.hasPrefix("https://localhost")
+            
+            if !isOwnSite && !isBundled && (urlString.hasPrefix("http://") || urlString.hasPrefix("https://")) {
+                // External link — open in in-app Safari browser
+                decisionHandler(.cancel)
+                
+                let safariVC = SFSafariViewController(url: url)
+                safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
+                self.present(safariVC, animated: true, completion: nil)
+                return
+            }
+        }
+        
+        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:decidePolicyFor:decisionHandler:))) {
+            capDelegate.webView?(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
+        } else {
+            decisionHandler(.allow)
+        }
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        capNavigationDelegate?.webView?(webView, didStartProvisionalNavigation: navigation)
+    }
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        capNavigationDelegate?.webView?(webView, didReceiveServerRedirectForProvisionalNavigation: navigation)
+    }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        capNavigationDelegate?.webView?(webView, didFailProvisionalNavigation: navigation, withError: error)
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        capNavigationDelegate?.webView?(webView, didCommit: navigation)
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        capNavigationDelegate?.webView?(webView, didFinish: navigation)
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        capNavigationDelegate?.webView?(webView, didFail: navigation, withError: error)
+    }
+    
+    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:didReceive:completionHandler:))) {
+            capDelegate.webView?(webView, didReceive: challenge, completionHandler: completionHandler)
+        } else {
+            completionHandler(.performDefaultHandling, nil)
+        }
+    }
+    
+    @available(iOS 14.5, *)
+    func webView(_ webView: WKWebView, navigationAction: WKNavigationAction, didBecome download: WKDownload) {
+        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:navigationAction:didBecome:))) {
+            capDelegate.webView?(webView, navigationAction: navigationAction, didBecome: download)
+        }
+    }
+    
+    @available(iOS 14.5, *)
+    func webView(_ webView: WKWebView, navigationResponse: WKNavigationResponse, didBecome download: WKDownload) {
+        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:navigationResponse:didBecome:))) {
+            capDelegate.webView?(webView, navigationResponse: navigationResponse, didBecome: download)
+        }
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:decidePolicyFor:decisionHandler:) as ((WKWebView, WKNavigationResponse, @escaping (WKNavigationResponsePolicy) -> Void) -> Void)?)) {
+            capDelegate.webView?(webView, decidePolicyFor: navigationResponse, decisionHandler: decisionHandler)
+        } else {
+            decisionHandler(.allow)
+        }
     }
 }

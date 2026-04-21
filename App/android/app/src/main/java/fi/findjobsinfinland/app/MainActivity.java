@@ -49,6 +49,7 @@ public class MainActivity extends BridgeActivity {
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
 
         setupSwipeRefresh();
+        setupLinkInterception();
     }
 
     @Override
@@ -66,6 +67,80 @@ public class MainActivity extends BridgeActivity {
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+    }
+
+    // =============================================================================
+    //  Link Interception for In-App Browser (Custom Tabs)
+    // =============================================================================
+
+    private void setupLinkInterception() {
+        WebView wv = getBridge().getWebView();
+        if (wv == null) return;
+
+        WebViewClient capClient = wv.getWebViewClient();
+
+        wv.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                String url = request.getUrl().toString();
+                if (isOwnSiteUrl(url) || isBundledUrl(url)) {
+                    return capClient.shouldOverrideUrlLoading(view, request);
+                }
+                
+                final String targetUrl = url;
+                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
+                return true;
+            }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (isOwnSiteUrl(url) || isBundledUrl(url)) {
+                    return capClient.shouldOverrideUrlLoading(view, url);
+                }
+                
+                final String targetUrl = url;
+                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
+                return true;
+            }
+
+            @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) { return capClient.shouldInterceptRequest(v, req); }
+            @Override public WebResourceResponse shouldInterceptRequest(WebView v, String url) { return capClient.shouldInterceptRequest(v, url); }
+            @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
+            @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
+            @Override public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { capClient.onReceivedError(v, req, err); }
+            @Override public void onReceivedError(WebView v, int code, String desc, String url) { capClient.onReceivedError(v, code, desc, url); }
+            @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
+            @Override public void onReceivedSslError(WebView v, SslErrorHandler h, SslError err) { capClient.onReceivedSslError(v, h, err); }
+        });
+    }
+
+    private boolean isOwnSiteUrl(String url) {
+        return url.startsWith("https://findjobsinfinland.fi/")
+            || url.startsWith("http://findjobsinfinland.fi/");
+    }
+
+    private boolean isBundledUrl(String url) {
+        return url.startsWith("http://localhost")
+            || url.startsWith("https://localhost")
+            || url.startsWith("capacitor://")
+            || url.startsWith("android-app://")
+            || url.startsWith("file:///android_asset/");
+    }
+
+    private void openInCustomTab(String url) {
+        try {
+            CustomTabColorSchemeParams colors = new CustomTabColorSchemeParams.Builder()
+                .setToolbarColor(Color.parseColor("#482dff"))
+                .build();
+            new CustomTabsIntent.Builder()
+                .setShowTitle(true)
+                .setDefaultColorSchemeParams(colors)
+                .build()
+                .launchUrl(this, Uri.parse(url));
+        } catch (Exception e) {
+            try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url))); }
+            catch (Exception ignored) { }
+        }
     }
 
     // =============================================================================
