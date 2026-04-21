@@ -46,8 +46,6 @@ public class MainActivity extends BridgeActivity {
         super.onCreate(savedInstanceState);
 
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
-
-        setupSwipeRefresh();
     }
 
     @Override
@@ -71,6 +69,8 @@ public class MainActivity extends BridgeActivity {
     @Override
     public void onStart() {
         super.onStart();
+        
+        setupSwipeRefresh();
         
         getBridge().addWebViewListener(new WebViewListener() {
             @Override
@@ -113,8 +113,29 @@ public class MainActivity extends BridgeActivity {
     // =============================================================================
 
     private void setupSwipeRefresh() {
-        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
-        if (swipeRefreshLayout == null) return;
+        WebView wv = getBridge().getWebView();
+        if (wv == null) return;
+
+        // Dynamically wrap WebView if not already wrapped
+        if (wv.getParent() instanceof SwipeRefreshLayout) {
+            swipeRefreshLayout = (SwipeRefreshLayout) wv.getParent();
+        } else {
+            swipeRefreshLayout = new SwipeRefreshLayout(this);
+            android.view.ViewGroup parent = (android.view.ViewGroup) wv.getParent();
+            if (parent != null) {
+                parent.removeView(wv);
+                swipeRefreshLayout.addView(wv, new android.view.ViewGroup.LayoutParams(
+                    android.view.ViewGroup.LayoutParams.MATCH_PARENT, 
+                    android.view.ViewGroup.LayoutParams.MATCH_PARENT
+                ));
+                parent.addView(swipeRefreshLayout, new android.view.ViewGroup.LayoutParams(
+                    android.view.ViewGroup.LayoutParams.MATCH_PARENT, 
+                    android.view.ViewGroup.LayoutParams.MATCH_PARENT
+                ));
+            } else {
+                return; // Not attached yet
+            }
+        }
 
         swipeRefreshLayout.setColorSchemeColors(
             Color.parseColor("#482dff"),
@@ -123,9 +144,6 @@ public class MainActivity extends BridgeActivity {
         );
 
         swipeRefreshLayout.setOnRefreshListener(() -> {
-            WebView wv = getBridge().getWebView();
-            if (wv == null) { swipeRefreshLayout.setRefreshing(false); return; }
-
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
                 wv.loadUrl("file:///android_asset/public/nointernet.html");
@@ -143,13 +161,11 @@ public class MainActivity extends BridgeActivity {
         });
 
         // Only allow pull when the WebView is scrolled to the very top
-        WebView wv = getBridge().getWebView();
-        if (wv != null) {
-            wv.getViewTreeObserver().addOnScrollChangedListener(() -> {
-                if (swipeRefreshLayout != null)
-                    swipeRefreshLayout.setEnabled(wv.getScrollY() == 0);
-            });
-        }
+        wv.getViewTreeObserver().addOnScrollChangedListener(() -> {
+            if (swipeRefreshLayout != null) {
+                swipeRefreshLayout.setEnabled(wv.getScrollY() == 0);
+            }
+        });
     }
 
     // =============================================================================
