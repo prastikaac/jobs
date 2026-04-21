@@ -26,12 +26,12 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.getcapacitor.BridgeActivity;
 
+import com.getcapacitor.BridgeWebViewClient;
+
 public class MainActivity extends BridgeActivity {
 
     // --- Layout ------------------------------------------------------------------
     private SwipeRefreshLayout swipeRefreshLayout;
-
-
 
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
@@ -45,7 +45,6 @@ public class MainActivity extends BridgeActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Fit content within status-bar + nav-bar insets (no fullscreen)
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
 
         setupSwipeRefresh();
@@ -77,20 +76,23 @@ public class MainActivity extends BridgeActivity {
         WebView wv = getBridge().getWebView();
         if (wv == null) return;
 
-        WebViewClient capClient = wv.getWebViewClient();
-
-        wv.setWebViewClient(new WebViewClient() {
+        wv.setWebViewClient(new BridgeWebViewClient(getBridge()) {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
+                
+                // 1. Check Offline
+                if (!isBundledUrl(url) && !isConnected()) {
+                    view.loadUrl("file:///android_asset/public/nointernet.html");
+                    return true;
+                }
+
+                // 2. Check Own Site
                 if (isOwnSiteUrl(url) || isBundledUrl(url)) {
-                    if (!isBundledUrl(url) && !isConnected()) {
-                        view.loadUrl("file:///android_asset/public/nointernet.html");
-                        return true;
-                    }
-                    return capClient.shouldOverrideUrlLoading(view, request);
+                    return super.shouldOverrideUrlLoading(view, request);
                 }
                 
+                // 3. External Links -> Custom Tab
                 final String targetUrl = url;
                 new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
                 return true;
@@ -98,12 +100,12 @@ public class MainActivity extends BridgeActivity {
 
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (!isBundledUrl(url) && !isConnected()) {
+                    view.loadUrl("file:///android_asset/public/nointernet.html");
+                    return true;
+                }
                 if (isOwnSiteUrl(url) || isBundledUrl(url)) {
-                    if (!isBundledUrl(url) && !isConnected()) {
-                        view.loadUrl("file:///android_asset/public/nointernet.html");
-                        return true;
-                    }
-                    return capClient.shouldOverrideUrlLoading(view, url);
+                    return super.shouldOverrideUrlLoading(view, url);
                 }
                 
                 final String targetUrl = url;
@@ -111,22 +113,13 @@ public class MainActivity extends BridgeActivity {
                 return true;
             }
 
-            @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) { return capClient.shouldInterceptRequest(v, req); }
-            @Override public WebResourceResponse shouldInterceptRequest(WebView v, String url) { return capClient.shouldInterceptRequest(v, url); }
-            @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
-            @Override public void onPageFinished(WebView v, String url) { 
-                capClient.onPageFinished(v, url); 
-                // Hide splash screen explicitly when the live website finishes loading
-                v.evaluateJavascript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", null);
-            }
-            
             @Override 
             public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { 
                 if (req.isForMainFrame()) {
                     v.loadUrl("file:///android_asset/public/nointernet.html");
                     return;
                 }
-                capClient.onReceivedError(v, req, err); 
+                super.onReceivedError(v, req, err); 
             }
             
             @Override 
@@ -134,8 +127,17 @@ public class MainActivity extends BridgeActivity {
                 v.loadUrl("file:///android_asset/public/nointernet.html");
             }
             
-            @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
-            @Override public void onReceivedSslError(WebView v, SslErrorHandler h, SslError err) { capClient.onReceivedSslError(v, h, err); }
+            @Override public void onPageFinished(WebView v, String url) { 
+                super.onPageFinished(v, url); 
+                
+                // Hide splash screen explicitly when the live website finishes loading
+                v.evaluateJavascript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", null);
+                
+                // Hide swipe-to-refresh spinner if active
+                if (swipeRefreshLayout != null && swipeRefreshLayout.isRefreshing()) {
+                    swipeRefreshLayout.post(() -> swipeRefreshLayout.setRefreshing(false));
+                }
+            }
         });
     }
 
@@ -205,21 +207,13 @@ public class MainActivity extends BridgeActivity {
                 return;
             }
 
-            // Temporarily override client to catch onPageFinished, then restore
-            WebViewClient saved = wv.getWebViewClient();
-            wv.setWebViewClient(new WebViewClient() {
-                @Override
-                public void onPageFinished(WebView view, String url) {
-                    super.onPageFinished(view, url);
-                    view.setWebViewClient(saved);
-                    view.post(() -> swipeRefreshLayout.setRefreshing(false));
-                }
-            });
             wv.reload();
 
             // Safety net: hide spinner after 8 s even if onPageFinished never fires
             new Handler(getMainLooper()).postDelayed(() -> {
-                if (swipeRefreshLayout.isRefreshing()) swipeRefreshLayout.setRefreshing(false);
+                if (swipeRefreshLayout != null && swipeRefreshLayout.isRefreshing()) {
+                    swipeRefreshLayout.setRefreshing(false);
+                }
             }, 8000);
         });
 
