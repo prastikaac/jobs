@@ -5,7 +5,8 @@
   "server": {
     "androidScheme": "https",
     "cleartext": false,
-    "allowNavigation": ["*"]
+    "allowNavigation": ["*"],
+    "startUrl": "index.html"
   },
   "plugins": {
     "SplashScreen": {

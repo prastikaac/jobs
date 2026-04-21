@@ -1,23 +1,27 @@
 package fi.findjobsinfinland.app;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
 import android.net.Uri;
 import android.net.http.SslError;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.graphics.Color;
 import android.widget.Toast;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
-
 import androidx.core.view.WindowCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -25,186 +29,309 @@ import com.getcapacitor.BridgeActivity;
 
 public class MainActivity extends BridgeActivity {
 
+    // --- Layout ------------------------------------------------------------------
     private SwipeRefreshLayout swipeRefreshLayout;
 
-    // --- Double back press to exit -----------------------------------------------
-    private long backPressedTime = 0;
+    // --- Offline handling --------------------------------------------------------
+    private final Handler connectivityHandler = new Handler(Looper.getMainLooper());
+    private Runnable connectivityChecker;
+    private String  pendingUrl          = null;  // URL blocked due to no internet
+    private boolean isShowingOfflinePage = false;
+
+    // The offline page is bundled in the APK assets (via cap sync)
+    private static final String OFFLINE_PAGE = "file:///android_asset/public/nointernet.html";
+    // The home page Capacitor serves from bundled assets
+    private static final String HOME_URL     = "https://localhost/index.html";
+
+    // --- Double back press -------------------------------------------------------
+    private long  backPressedTime = 0;
     private Toast backExitToast;
+
+    // =============================================================================
+    //  Lifecycle
+    // =============================================================================
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // --- Fix full-screen / dancing layout ------------------------------------
-        // Tell Android to lay out content within system bar insets (status bar +
-        // navigation bar). This stops the WebView from extending under the bars
-        // and prevents the page from shifting/dancing when soft keyboard appears.
+        // Fit content within status-bar + nav-bar insets (no fullscreen)
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
 
-        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
-
-        if (swipeRefreshLayout != null) {
-            // Brand color: #482dff (primary purple of findjobsinfinland.fi)
-            swipeRefreshLayout.setColorSchemeColors(
-                Color.parseColor("#482dff"),
-                Color.parseColor("#6c52ff"),
-                Color.parseColor("#8a79ff")
-            );
-
-            swipeRefreshLayout.setOnRefreshListener(() -> {
-                WebView webView = getBridge().getWebView();
-                if (webView == null) {
-                    swipeRefreshLayout.setRefreshing(false);
-                    return;
-                }
-
-                // --- Pure native reload — no JS dependency -----------------------
-                // Override WebViewClient just long enough to catch page-finished,
-                // then restore Capacitor's own client so routing still works.
-                WebViewClient originalClient = webView.getWebViewClient();
-                webView.setWebViewClient(new WebViewClient() {
-                    @Override
-                    public void onPageFinished(WebView view, String url) {
-                        super.onPageFinished(view, url);
-                        // Restore Capacitor's client immediately
-                        view.setWebViewClient(originalClient);
-                        // Hide spinner on main thread
-                        view.post(() -> swipeRefreshLayout.setRefreshing(false));
-                    }
-                });
-
-                webView.reload();
-
-                // Safety net: hide spinner after 8s even if onPageFinished never fires
-                new Handler(getMainLooper()).postDelayed(() -> {
-                    if (swipeRefreshLayout.isRefreshing()) {
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
-                }, 8000);
-            });
-
-            // --- Only allow pull-to-refresh when scrolled to top ----------------
-            WebView webView = getBridge().getWebView();
-            if (webView != null) {
-                webView.getViewTreeObserver().addOnScrollChangedListener(() -> {
-                    if (swipeRefreshLayout != null) {
-                        swipeRefreshLayout.setEnabled(webView.getScrollY() == 0);
-                    }
-                });
-            }
-        }
-
-        // --- Intercept links: open external URLs in Chrome Custom Tab -----------
+        setupSwipeRefresh();
         setupLinkInterception();
+        setupBackPress();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        // Re-apply in case a plugin or lifecycle event resets it
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+
+        // If the offline page is showing (e.g. user went to Settings to turn on WiFi),
+        // resume polling so the app recovers immediately when connectivity returns.
+        if (isShowingOfflinePage) {
+            WebView wv = getBridge().getWebView();
+            if (wv != null) startConnectivityPolling(wv);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        stopConnectivityPolling(); // battery-friendly: stop polling in background
     }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus) {
-            // Re-apply when splash screen dialog dismisses or window regains focus
-            WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+        if (hasFocus) WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+    }
+
+    // =============================================================================
+    //  Swipe-to-Refresh (pure native, no JS/HTML dependency)
+    // =============================================================================
+
+    private void setupSwipeRefresh() {
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
+        if (swipeRefreshLayout == null) return;
+
+        swipeRefreshLayout.setColorSchemeColors(
+            Color.parseColor("#482dff"),
+            Color.parseColor("#6c52ff"),
+            Color.parseColor("#8a79ff")
+        );
+
+        swipeRefreshLayout.setOnRefreshListener(() -> {
+            WebView wv = getBridge().getWebView();
+            if (wv == null) { swipeRefreshLayout.setRefreshing(false); return; }
+
+            // If offline, don't try to reload — show offline page instead
+            if (!isConnected()) {
+                swipeRefreshLayout.setRefreshing(false);
+                showOfflinePage(wv, wv.getUrl());
+                return;
+            }
+
+            // Temporarily override client to catch onPageFinished, then restore
+            WebViewClient saved = wv.getWebViewClient();
+            wv.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+                    view.setWebViewClient(saved);
+                    view.post(() -> swipeRefreshLayout.setRefreshing(false));
+                }
+            });
+            wv.reload();
+
+            // Safety net: hide spinner after 8 s even if onPageFinished never fires
+            new Handler(getMainLooper()).postDelayed(() -> {
+                if (swipeRefreshLayout.isRefreshing()) swipeRefreshLayout.setRefreshing(false);
+            }, 8000);
+        });
+
+        // Only allow pull when the WebView is scrolled to the very top
+        WebView wv = getBridge().getWebView();
+        if (wv != null) {
+            wv.getViewTreeObserver().addOnScrollChangedListener(() -> {
+                if (swipeRefreshLayout != null)
+                    swipeRefreshLayout.setEnabled(wv.getScrollY() == 0);
+            });
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        WebView webView = getBridge().getWebView();
+    // =============================================================================
+    //  Link Interception + Offline Handling
+    // =============================================================================
 
-        // If the WebView has back history, navigate back normally
-        // (this handles in-app navigation: jobs page -> home, etc.)
-        if (webView != null && webView.canGoBack()) {
-            webView.goBack();
-            return;
-        }
-
-        // No more history — we are on the root/home screen.
-        // Implement double-back-press-to-exit.
-        long now = System.currentTimeMillis();
-        if (now - backPressedTime < 2000) {
-            // Second press within 2 seconds: exit the app
-            if (backExitToast != null) backExitToast.cancel();
-            super.onBackPressed();
-        } else {
-            // First press: show hint and record timestamp
-            backPressedTime = now;
-            if (backExitToast != null) backExitToast.cancel();
-            backExitToast = Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
-            backExitToast.show();
-        }
-    }
-
-    /**
-     * Intercepts WebView URL loads:
-     *  - https://findjobsinfinland.fi/* and localhost -> handled by Capacitor (in-app)
-     *  - Everything else                             -> Chrome Custom Tab (branded in-app browser)
-     *
-     * Saves Capacitor's original WebViewClient and delegates all methods back to it
-     * so splash-screen hiding, routing, SSL handling, etc. keep working normally.
-     */
     private void setupLinkInterception() {
-        WebView webView = getBridge().getWebView();
-        if (webView == null) return;
+        WebView wv = getBridge().getWebView();
+        if (wv == null) return;
 
-        WebViewClient capClient = webView.getWebViewClient();
+        WebViewClient capClient = wv.getWebViewClient();
 
-        webView.setWebViewClient(new WebViewClient() {
+        wv.setWebViewClient(new WebViewClient() {
 
+            // ------------------------------------------------------------------
+            //  URL routing
+            // ------------------------------------------------------------------
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
-                // Internal: let Capacitor route it inside the WebView
-                if (isInternalUrl(url)) {
+
+                if (isBundledUrl(url)) {
+                    // Capacitor's local assets — works offline, let it load
                     return capClient.shouldOverrideUrlLoading(view, request);
                 }
-                // External: show in Chrome Custom Tab (in-app browser overlay)
+
+                if (isOwnSiteUrl(url)) {
+                    // Remote pages on findjobsinfinland.fi — need internet
+                    if (!isConnected()) {
+                        showOfflinePage(view, url);
+                        return true;
+                    }
+                    return capClient.shouldOverrideUrlLoading(view, request);
+                }
+
+                // Everything else → Chrome Custom Tab (in-app browser)
                 openInCustomTab(url);
                 return true;
             }
 
-            // Delegate all Capacitor WebViewClient hooks so nothing breaks
-            @Override public void onPageStarted(WebView v, String url, Bitmap favicon) { capClient.onPageStarted(v, url, favicon); }
+            // ------------------------------------------------------------------
+            //  Error handling — catches failed main-frame loads (e.g. offline)
+            // ------------------------------------------------------------------
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request,
+                                        WebResourceError error) {
+                if (!request.isForMainFrame()) {
+                    // Sub-resource errors (images, fonts…) — let Capacitor decide
+                    capClient.onReceivedError(view, request, error);
+                    return;
+                }
+
+                int code = error.getErrorCode();
+                boolean isNetworkError = (code == WebViewClient.ERROR_NET_DISCONNECT
+                    || code == WebViewClient.ERROR_HOST_LOOKUP
+                    || code == WebViewClient.ERROR_CONNECT
+                    || code == WebViewClient.ERROR_TIMEOUT
+                    || code == WebViewClient.ERROR_TOO_MANY_REQUESTS
+                    || code == WebViewClient.ERROR_FAILED_SSL_HANDSHAKE);
+
+                if (isNetworkError || !isConnected()) {
+                    showOfflinePage(view, view.getUrl());
+                } else {
+                    capClient.onReceivedError(view, request, error);
+                }
+            }
+
+            // Delegate the rest to Capacitor's client so routing/splash still works
+            @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
             @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
-            @Override public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { capClient.onReceivedError(v, req, err); }
             @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
-            @Override public void onReceivedSslError(WebView v, SslErrorHandler handler, SslError err) { capClient.onReceivedSslError(v, handler, err); }
+            @Override public void onReceivedSslError(WebView v, SslErrorHandler h, SslError err) { capClient.onReceivedSslError(v, h, err); }
         });
     }
 
-    /** Returns true for URLs that should stay inside the WebView. */
-    private boolean isInternalUrl(String url) {
-        return url.startsWith("https://findjobsinfinland.fi/")
-            || url.startsWith("http://findjobsinfinland.fi/")
-            || url.startsWith("http://localhost")
-            || url.startsWith("https://localhost")
-            || url.startsWith("capacitor://")
-            || url.startsWith("android-app://");
+    // =============================================================================
+    //  Offline page + connectivity recovery
+    // =============================================================================
+
+    private void showOfflinePage(WebView wv, String blockedUrl) {
+        isShowingOfflinePage = true;
+        pendingUrl = (blockedUrl != null && !blockedUrl.startsWith("file://"))
+                     ? blockedUrl : HOME_URL;
+
+        stopConnectivityPolling();
+        wv.post(() -> wv.loadUrl(OFFLINE_PAGE));
+        startConnectivityPolling(wv);
     }
 
-    /** Opens a URL in a Chrome Custom Tab (in-app browser with brand toolbar colour). */
+    /** Polls every 1 second; when connectivity returns, reloads the pending URL. */
+    private void startConnectivityPolling(WebView wv) {
+        stopConnectivityPolling();
+        connectivityChecker = new Runnable() {
+            @Override public void run() {
+                if (isConnected()) {
+                    stopConnectivityPolling();
+                    isShowingOfflinePage = false;
+                    String target = (pendingUrl != null) ? pendingUrl : HOME_URL;
+                    pendingUrl = null;
+                    wv.post(() -> wv.loadUrl(target));
+                } else {
+                    connectivityHandler.postDelayed(this, 1000);
+                }
+            }
+        };
+        connectivityHandler.postDelayed(connectivityChecker, 1000);
+    }
+
+    private void stopConnectivityPolling() {
+        if (connectivityChecker != null) {
+            connectivityHandler.removeCallbacks(connectivityChecker);
+            connectivityChecker = null;
+        }
+    }
+
+    private boolean isConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm == null) return false;
+        android.net.Network net = cm.getActiveNetwork();
+        if (net == null) return false;
+        NetworkCapabilities caps = cm.getNetworkCapabilities(net);
+        return caps != null && (
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
+        );
+    }
+
+    // =============================================================================
+    //  Double back press to exit (uses OnBackPressedDispatcher — API 33+ safe)
+    // =============================================================================
+
+    private void setupBackPress() {
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                WebView wv = getBridge().getWebView();
+
+                // Normal in-app back navigation (Jobs → Home, etc.)
+                if (wv != null && wv.canGoBack()) {
+                    wv.goBack();
+                    return;
+                }
+
+                // On root screen: double-press to exit
+                long now = System.currentTimeMillis();
+                if (now - backPressedTime < 2000) {
+                    if (backExitToast != null) backExitToast.cancel();
+                    finishAffinity(); // closes the app reliably on all Android versions
+                } else {
+                    backPressedTime = now;
+                    if (backExitToast != null) backExitToast.cancel();
+                    backExitToast = Toast.makeText(
+                        MainActivity.this, "Press back again to exit", Toast.LENGTH_SHORT);
+                    backExitToast.show();
+                }
+            }
+        });
+    }
+
+    // =============================================================================
+    //  Helpers
+    // =============================================================================
+
+    /** Bundled assets served by Capacitor's local server — work offline. */
+    private boolean isBundledUrl(String url) {
+        return url.startsWith("http://localhost")
+            || url.startsWith("https://localhost")
+            || url.startsWith("capacitor://")
+            || url.startsWith("android-app://")
+            || url.startsWith("file:///android_asset/");
+    }
+
+    /** Remote pages on the own website — need internet. */
+    private boolean isOwnSiteUrl(String url) {
+        return url.startsWith("https://findjobsinfinland.fi/")
+            || url.startsWith("http://findjobsinfinland.fi/");
+    }
+
+    /** Opens an external URL in a branded Chrome Custom Tab (in-app browser). */
     private void openInCustomTab(String url) {
         try {
-            CustomTabColorSchemeParams colorParams = new CustomTabColorSchemeParams.Builder()
+            CustomTabColorSchemeParams colors = new CustomTabColorSchemeParams.Builder()
                 .setToolbarColor(Color.parseColor("#482dff"))
                 .build();
-
             new CustomTabsIntent.Builder()
                 .setShowTitle(true)
-                .setDefaultColorSchemeParams(colorParams)
+                .setDefaultColorSchemeParams(colors)
                 .build()
                 .launchUrl(this, Uri.parse(url));
         } catch (Exception e) {
-            // Fallback: system browser if Custom Tabs not available
             try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url))); }
             catch (Exception ignored) { }
         }
     }
 }
-
