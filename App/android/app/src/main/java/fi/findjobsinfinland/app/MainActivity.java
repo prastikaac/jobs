@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.graphics.Color;
+import android.widget.Toast;
 
 import androidx.core.view.WindowCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -14,6 +15,10 @@ import com.getcapacitor.BridgeActivity;
 public class MainActivity extends BridgeActivity {
 
     private SwipeRefreshLayout swipeRefreshLayout;
+
+    // --- Double back press to exit -----------------------------------------------
+    private long backPressedTime = 0;
+    private Toast backExitToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +97,33 @@ public class MainActivity extends BridgeActivity {
         if (hasFocus) {
             // Re-apply when splash screen dialog dismisses or window regains focus
             WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        WebView webView = getBridge().getWebView();
+
+        // If the WebView has back history, navigate back normally
+        // (this handles in-app navigation: jobs page -> home, etc.)
+        if (webView != null && webView.canGoBack()) {
+            webView.goBack();
+            return;
+        }
+
+        // No more history — we are on the root/home screen.
+        // Implement double-back-press-to-exit.
+        long now = System.currentTimeMillis();
+        if (now - backPressedTime < 2000) {
+            // Second press within 2 seconds: exit the app
+            if (backExitToast != null) backExitToast.cancel();
+            super.onBackPressed();
+        } else {
+            // First press: show hint and record timestamp
+            backPressedTime = now;
+            if (backExitToast != null) backExitToast.cancel();
+            backExitToast = Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
+            backExitToast.show();
         }
     }
 }

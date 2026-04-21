@@ -4,24 +4,5 @@
 - no internet page not showing while clicking on any link on offline
 
 
-Now Implement a "double back press to exit app" feature.
-
-Logic:
-
-When the user presses the back button once:
-Do NOT exit the app immediately
-Show a message (e.g., "Press back again to exit")
-Store the time of the first back press
-If the user presses the back button again within 2 seconds:
-Exit the app
-If the second back press is after 2 seconds:
-Treat it as the first press again (show message again)
-
-Requirements:
-
-Works only on the main/home screen
-Should not interfere with normal back navigation inside the app
-Use a timer or timestamp comparison to handle the 2-second interval
 
 
-and make to open all the links inside the app browser except the link that starts with https://findjobsinfinland.fi/
