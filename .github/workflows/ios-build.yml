@@ -38,7 +38,7 @@ jobs:
         run: npx cap sync ios
 
       - name: Build iOS App (No Signing — Simulator only)
-        working-directory: ios/App
+        working-directory: App/ios/App
         run: |
           xcodebuild clean build \
             -project App.xcodeproj \
