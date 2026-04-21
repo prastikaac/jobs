@@ -17,7 +17,7 @@ public class MainActivity extends BridgeActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // ── Fix full-screen / dancing layout ────────────────────────────────────
+        // --- Fix full-screen / dancing layout ------------------------------------
         // Tell Android to lay out content within system bar insets (status bar +
         // navigation bar). This stops the WebView from extending under the bars
         // and prevents the page from shifting/dancing when soft keyboard appears.
@@ -46,7 +46,7 @@ public class MainActivity extends BridgeActivity {
                 listenForRefreshComplete();
             });
 
-            // ── Only allow pull-to-refresh when scrolled to top ────────────────
+            // --- Only allow pull-to-refresh when scrolled to top ----------------
             WebView webView = getBridge().getWebView();
             if (webView != null) {
                 webView.getViewTreeObserver().addOnScrollChangedListener(() -> {
