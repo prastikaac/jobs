@@ -35,49 +35,11 @@ class ViewController: CAPBridgeViewController {
     }
 
     @objc private func handleRefresh() {
-        // Call the web-side refresh handler
-        webView?.evaluateJavaScript(
-            "if(window.AppPullToRefresh) window.AppPullToRefresh.onRefresh();",
-            completionHandler: nil
-        )
-
-        // Listen for completion via JS event
-        listenForRefreshComplete()
-    }
-
-    private func listenForRefreshComplete() {
-        // Inject a one-shot listener that sets a flag when refresh completes
-        webView?.evaluateJavaScript(
-            "document._appRefreshDone = false;" +
-            "document.addEventListener('app:refreshComplete', function() {" +
-            "  document._appRefreshDone = true;" +
-            "}, {once: true});",
-            completionHandler: nil
-        )
-
-        pollRefreshDone(startTime: Date())
-    }
-
-    private func pollRefreshDone(startTime: Date) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-            guard let self = self else { return }
-
-            let elapsed = Date().timeIntervalSince(startTime)
-            if elapsed >= 8.0 {
-                // Timeout — stop spinner regardless
-                self.refreshControl.endRefreshing()
-                return
-            }
-
-            self.webView?.evaluateJavaScript("document._appRefreshDone === true ? 'done' : 'waiting'") { result, _ in
-                if let val = result as? String, val == "done" {
-                    DispatchQueue.main.async {
-                        self.refreshControl.endRefreshing()
-                    }
-                } else {
-                    self.pollRefreshDone(startTime: startTime)
-                }
-            }
+        webView?.reload()
+        
+        // Stop spinner after a reasonable time since page load will finish
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+            self?.refreshControl.endRefreshing()
         }
     }
 

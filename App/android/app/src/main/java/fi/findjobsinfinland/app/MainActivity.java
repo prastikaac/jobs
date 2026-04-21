@@ -40,7 +40,7 @@ public class MainActivity extends BridgeActivity {
     // The offline page is bundled in the APK assets (via cap sync)
     private static final String OFFLINE_PAGE = "file:///android_asset/public/nointernet.html";
     // The home page Capacitor serves from bundled assets
-    private static final String HOME_URL     = "https://localhost/index.html";
+    private static final String HOME_URL     = "https://findjobsinfinland.fi/";
 
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
@@ -165,22 +165,11 @@ public class MainActivity extends BridgeActivity {
 
                 // 2. Own-site links (findjobsinfinland.fi)
                 if (isOwnSiteUrl(url)) {
-                    String localUrl = toLocalUrl(url);
-                    if (localUrl != null) {
-                        // Has a bundled local page → redirect to localhost
-                        view.loadUrl(localUrl);
-                        return true;
-                    }
-
-                    // Non-bundled page (job listings, blogs, etc.)
-                    // User wants this to load normally inside the app.
                     if (!isConnected()) {
                         showOfflinePage(view, url);
                         return true;
                     }
                     // Return false to let the Android WebView handle the navigation natively.
-                    // IMPORTANT: We do NOT call view.loadUrl(url) here because it would cause
-                    // an infinite loop (loadUrl -> triggers this method again -> loadUrl...).
                     return false;
                 }
 
@@ -381,45 +370,7 @@ public class MainActivity extends BridgeActivity {
             || url.startsWith("http://findjobsinfinland.fi/");
     }
 
-    /**
-     * Converts a findjobsinfinland.fi URL to its bundled https://localhost equivalent.
-     * Returns null if no bundled file exists for this path (e.g. individual job pages).
-     *
-     * Mapping:
-     *   /               → index.html
-     *   /jobs           → jobs.html
-     *   /about-us       → about-us.html
-     *   /contact-us     → contact-us.html
-     *   /disclaimer     → disclaimer.html
-     *   /privacy-policy → privacy-policy.html
-     *   /terms-and-conditions → terms-and-conditions.html
-     *   /edit-profile   → edit-profile.html
-     */
-    private String toLocalUrl(String remoteUrl) {
-        Uri uri = Uri.parse(remoteUrl);
-        String path = uri.getPath();
-        if (path == null) path = "/";
-        // Strip trailing slash (except root)
-        if (path.length() > 1 && path.endsWith("/")) path = path.substring(0, path.length() - 1);
 
-        String bundledFile;
-        switch (path) {
-            case "":
-            case "/":             bundledFile = "index.html";              break;
-            case "/jobs":         bundledFile = "jobs.html";               break;
-            case "/about-us":     bundledFile = "about-us.html";           break;
-            case "/contact-us":   bundledFile = "contact-us.html";         break;
-            case "/disclaimer":   bundledFile = "disclaimer.html";         break;
-            case "/privacy-policy": bundledFile = "privacy-policy.html";   break;
-            case "/terms-and-conditions": bundledFile = "terms-and-conditions.html"; break;
-            case "/edit-profile": bundledFile = "edit-profile.html";       break;
-            default:              return null; // no bundled version — open externally
-        }
-
-        // Preserve query string (e.g. /jobs?q=healthcare)
-        String query = uri.getQuery();
-        return "https://localhost/" + bundledFile + (query != null ? "?" + query : "");
-    }
 
     /** Opens an external URL in a branded Chrome Custom Tab (in-app browser). */
     private void openInCustomTab(String url) {
