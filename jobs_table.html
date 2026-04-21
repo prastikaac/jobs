@@ -428,7 +428,7 @@
             let allJobs = [];
 
             try {
-                const response = await fetch("https://findjobsinfinland.fi/scraper/data/jobs.json");
+                const response = await fetch("https://findjobsinfinland.fi/scraper/data/jobs.json?v=" + new Date().getTime(), { cache: "no-store" });
                 const jsonData = await response.json();
                 
                 // Flatten structural nesting if any

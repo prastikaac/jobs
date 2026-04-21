@@ -38,5 +38,61 @@
     "company": "Lisäpalvelu Vantaa Oy",
     "detected_category": "construction",
     "saved_at": "2026-04-21 00:42:46"
+  },
+  {
+    "id": "585a0ae1",
+    "job_id": "kaivinkonekuski-pirkanmaalle-ylöjärvi-585a0ae1",
+    "title": "Excavator driver for Pirkanmaa",
+    "company": "Maximus Oy",
+    "detected_category": "aviation-and-airport-services",
+    "saved_at": "2026-04-21 13:34:58"
+  },
+  {
+    "id": "790e5916",
+    "job_id": "hoiva-avustaja-onnelanpolun-pa-lahti-790e5916",
+    "title": "Hoiva assistant, Onnelanpollu service center, Lahti",
+    "company": "Päijät-Hämeen hyvinvointialue",
+    "detected_category": "healthcare",
+    "saved_at": "2026-04-21 13:36:45"
+  },
+  {
+    "id": "09977bed",
+    "job_id": "ammatillinen-ohjaaja-kiinteist-riihimäki-09977bed",
+    "title": "Professional instructor for the real estate service industry, Riihimäki",
+    "company": "Bolt.Works Oy",
+    "detected_category": "cleaning-and-facility-services",
+    "saved_at": "2026-04-21 13:54:15"
+  },
+  {
+    "id": "547cbdaf",
+    "job_id": "kirkkoherra-lieksa-547cbdaf",
+    "title": "Lord of the Church",
+    "company": "Lieksan Seurakunta, Lieksa",
+    "detected_category": "management-and-leadership",
+    "saved_at": "2026-04-21 13:56:49"
+  },
+  {
+    "id": "ffeff504",
+    "job_id": "sairaaanhoitaja-mielenterveys--turku-ffeff504",
+    "title": "Nurse, Mental Health and Substance Abuse Services, Turku",
+    "company": "Varsinais-Suomen hyvinvointialue",
+    "detected_category": "healthcare",
+    "saved_at": "2026-04-21 14:11:30"
+  },
+  {
+    "id": "8fefbee5",
+    "job_id": "luokanopettaja-hannuniitun-kou-turku-8fefbee5",
+    "title": "Classroom teacher, Hannuniitu school",
+    "company": "Turun kaupunki",
+    "detected_category": "education",
+    "saved_at": "2026-04-21 14:14:16"
+  },
+  {
+    "id": "12b06c6f",
+    "job_id": "maanrakennustyöntekijä-salaoja-lieto-12b06c6f",
+    "title": "Earth construction worker working for destinations in Turku",
+    "company": "InfraFour Oy",
+    "detected_category": "construction",
+    "saved_at": "2026-04-21 14:29:09"
   }
 ]

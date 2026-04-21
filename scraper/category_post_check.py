@@ -157,36 +157,31 @@ def _detect_best_model() -> str | None:
 
 
 _PROMPT_TMPL = """\
-You are a precise job classification engine. Output ONE word only.
+You are a precise job classification engine. Output ONE word only from the VALID CATEGORIES list below.
 
 TASK:
-Decide the best category for this job from the VALID CATEGORIES list.
-If the CURRENT CATEGORY is already the best match, output exactly: CORRECT
-Otherwise output ONLY the correct slug (e.g. healthcare).
-
-Do NOT explain. Do NOT add punctuation. Output one word or CORRECT.
+Read the job details and output ONLY the best matching category slug.
+Do NOT explain. Do NOT add punctuation. Output only the slug.
 
 ---
 Job Title       : {title}
 Company         : {company}
 Job Description : {description}
-Current Category: {current_cat}
 
 VALID CATEGORIES:
 {cat_list}
 ---
-Your answer:"""
+Category Slug:"""
 
 
 def _ask_lmstudio(model: str, title: str, company: str, description: str,
-                  current_cat: str, valid_cats: list[str]) -> str | None:
-    """Returns corrected slug, or None if current is correct / LM Studio unavailable."""
+                  valid_cats: list[str]) -> str | None:
+    """Returns detected slug, or None if LM Studio unavailable/invalid."""
     cat_list = "\n".join(f"  - {c}" for c in valid_cats)
     prompt   = _PROMPT_TMPL.format(
         title=title,
         company=company,
-        description=(description or "")[:500],
-        current_cat=current_cat,
+        description=(description or "")[:350], # Trimmed to speed up inference
         cat_list=cat_list,
     )
     payload = json.dumps({
@@ -213,7 +208,7 @@ def _ask_lmstudio(model: str, title: str, company: str, description: str,
         logger.warning("[cat_check] LM Studio error for '%s': %s", title, exc)
         return None
 
-    if raw == "correct" or not raw:
+    if not raw:
         return None
     if raw in valid_cats:
         return raw
@@ -529,17 +524,17 @@ class BatchChecker:
 
         suggested = _ask_lmstudio(
             self._model, title, company, description,
-            current_cat, self._valid_cats,
+            self._valid_cats,
         )
 
         self._total_checked += 1
 
         if suggested is None or suggested == current_cat:
-            logger.info("[cat_check] ✓ OK — %s | category=%s", title, current_cat)
+            logger.info("category is correct")
             return
 
-        logger.info("[cat_check] → CORRECTION: %s | '%s' → '%s'",
-                    title, current_cat, suggested)
+        logger.info("category is incorrect, changed to category -- %s from -- %s",
+                    suggested, current_cat)
 
         # ── In-memory correction only ──────────────────────────────────────
         # Update the submit_job dict itself
@@ -569,8 +564,7 @@ class BatchChecker:
             "source":       "pipeline_post_check",
         })
 
-        logger.info("[cat_check] ✓ In-memory correction applied: '%s' → '%s'",
-                    current_cat, suggested)
+        # Removed verbose in-memory correction log to keep terminal/file clean
 
         time.sleep(0.1)   # brief pause between Ollama calls
 

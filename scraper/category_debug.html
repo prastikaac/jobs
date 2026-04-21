@@ -73,7 +73,7 @@
             <div>
                 <h1>Category Post-Check Debugger</h1>
                 <div style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;" id="stats-text">
-                    Total Scraped: 5 | AI Corrections: 0
+                    Total Scraped: 12 | AI Corrections: 0
                 </div>
             </div>
             <button class="btn" onclick="copyAll()">
@@ -162,6 +162,104 @@
                 </td>
             </tr>
         
+            <tr>
+                <td>
+                    <div class="job-title">Excavator driver for Pirkanmaa</div>
+                    <div class="company-name">Maximus Oy</div>
+                </td>
+                <td><span class="category-pill">aviation-and-airport-services</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Excavator driver for Pirkanmaa", "aviation-and-airport-services")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Hoiva assistant, Onnelanpollu service center, Lahti</div>
+                    <div class="company-name">Päijät-Hämeen hyvinvointialue</div>
+                </td>
+                <td><span class="category-pill">healthcare</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Hoiva assistant, Onnelanpollu service center, Lahti", "healthcare")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Professional instructor for the real estate service industry, Riihimäki</div>
+                    <div class="company-name">Bolt.Works Oy</div>
+                </td>
+                <td><span class="category-pill">cleaning-and-facility-services</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Professional instructor for the real estate service industry, Riihim\u00e4ki", "cleaning-and-facility-services")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Lord of the Church</div>
+                    <div class="company-name">Lieksan Seurakunta, Lieksa</div>
+                </td>
+                <td><span class="category-pill">management-and-leadership</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Lord of the Church", "management-and-leadership")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Nurse, Mental Health and Substance Abuse Services, Turku</div>
+                    <div class="company-name">Varsinais-Suomen hyvinvointialue</div>
+                </td>
+                <td><span class="category-pill">healthcare</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Nurse, Mental Health and Substance Abuse Services, Turku", "healthcare")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Classroom teacher, Hannuniitu school</div>
+                    <div class="company-name">Turun kaupunki</div>
+                </td>
+                <td><span class="category-pill">education</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Classroom teacher, Hannuniitu school", "education")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <div class="job-title">Earth construction worker working for destinations in Turku</div>
+                    <div class="company-name">InfraFour Oy</div>
+                </td>
+                <td><span class="category-pill">construction</span></td>
+                <td><span class="badge badge-ok">AI Verified OK</span></td>
+                <td>
+                    <button class="btn btn-small" onclick="copySingle("Earth construction worker working for destinations in Turku", "construction")">
+                        Copy
+                    </button>
+                </td>
+            </tr>
+        
             </tbody>
         </table>
     </div>
@@ -174,6 +272,13 @@
   { title: "Caregivers for home care in Tammisaari for full-time work", category: "healthcare" },
   { title: "Warehouse worker (language skills Ukraine)", category: "transportation-and-logistics" },
   { title: "As a railway worker for the PK region", category: "construction" },
+  { title: "Excavator driver for Pirkanmaa", category: "aviation-and-airport-services" },
+  { title: "Hoiva assistant, Onnelanpollu service center, Lahti", category: "healthcare" },
+  { title: "Professional instructor for the real estate service industry, Riihim\u00e4ki", category: "cleaning-and-facility-services" },
+  { title: "Lord of the Church", category: "management-and-leadership" },
+  { title: "Nurse, Mental Health and Substance Abuse Services, Turku", category: "healthcare" },
+  { title: "Classroom teacher, Hannuniitu school", category: "education" },
+  { title: "Earth construction worker working for destinations in Turku", category: "construction" },
 ];
 
         function copySingle(title, category) {

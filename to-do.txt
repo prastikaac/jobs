@@ -10,19 +10,43 @@ Sat  → ❌ Off
 Sun  → ❌ Off
 
 
+logic for sending alerts :
+
+now we have created a webpage named newjobs.html for showing the job alerts and now while sending daily weekly or monthly push notification to user : send notification like : here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the webpage newjobs.html where all the alerts of that particular time period will be stored.
+
+
+now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
 
 
 
 - reduce job scrapping ai processing time
 
-logic for sending alerts :
+- update prompt for ai check
 
-now create a webpage named newjobs.html for showing the job alerts and now while sending daily weekly monthly push notification : send notification like here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open a webpage newjobs.html where all the alerts of that particular time period will be stored  .
-now i want to send theese jobs instantly to the user's device immediately after the job is posted and also now our jobs is sent like 50 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
+- update email content for job alerts
+
+- update firebase notifications
 
 
 
-- update notifications
+
+
+
+
+
+I want to send app notification along with web like currently we have push notification in web so for our android and ios app also we should be able to send push notification and also there is a problem that our app just loads our website into it so it doesn't know who is logged in or not so we should be able to send push notification to the user based on their login status, also we should be able to send push notification to the user based on their preferences, so im thinking to send a message to app after user logs in or sign up inside the app using the following logic : 
+
+Website login inside app
+    ↓
+Website gets user details and stores it in firebase
+    ↓
+Website sends message to app that following user with following uid has been registered and app receives the details uid, email, fullName of the user and stores it in app
+    ↓
+app asks for notification permission with user and gets its own FCM token 
+    ↓
+app sends fcmToken accroding to the user's uid, and also logged in platform name to firebase
+    ↓
+firebase sends notification to the app also
 
 
 

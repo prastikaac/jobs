@@ -17,5 +17,8 @@ scraper\run_all_jobs.bat
 Pages : blogs\industry-wise-minimum-wages-in-finland.html  blogs\tips-and-tricks-for-interview-in-finland.html blogs\top-ten-in-demand-jobs-in-finland.html
 about-us.html  contact-us.html disclaimer.html  edit-profile.html  index.html jobs.html privacy-policy.html terms-and-conditions.html 
 
-To check the live Job Categories : https://findjobsinfinland.fi/jobs_table.html
-To change the Job Categories Manually : Go to https://findjobsinfinland.fi/jobs_table.html and copy the id of the job and then go to https://github.com/prastikaac/jobs/actions/workflows/change_category.yml  and click on run workflow and paste the id of the job and select the new category
+- To check the live Job Categories : https://findjobsinfinland.fi/jobs_table.html
+
+- To change the Job Categories Manually 
+Online : Go to https://findjobsinfinland.fi/jobs_table.html and copy the id of the job and then go to https://github.com/prastikaac/jobs/actions/workflows/change_category.yml  and click on run workflow and paste the id of the job and select the new category
+Offline : Run python scraper/offline_manual_category_changer.py and then go to scraper\offline_manual_category_changer.html to update
