@@ -9,5 +9,4 @@
 swipe down to refresh is not working in app, make to show as in the uploaded image
 
 
-
-[DONE] Changed the app logic to load https://findjobsinfinland.fi/ directly, keeping internal links inside the app and external links in the browser, while maintaining the offline page. Local HTML files have been removed.
+now for splash screen, when user opens the app start loading the main url and show the splash screen till the page is loaded and after that remove the splash screen, make splash screen as an overlay 

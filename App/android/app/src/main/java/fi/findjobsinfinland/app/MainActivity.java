@@ -84,6 +84,10 @@ public class MainActivity extends BridgeActivity {
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
                 if (isOwnSiteUrl(url) || isBundledUrl(url)) {
+                    if (!isBundledUrl(url) && !isConnected()) {
+                        view.loadUrl("file:///android_asset/public/nointernet.html");
+                        return true;
+                    }
                     return capClient.shouldOverrideUrlLoading(view, request);
                 }
                 
@@ -95,6 +99,10 @@ public class MainActivity extends BridgeActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if (isOwnSiteUrl(url) || isBundledUrl(url)) {
+                    if (!isBundledUrl(url) && !isConnected()) {
+                        view.loadUrl("file:///android_asset/public/nointernet.html");
+                        return true;
+                    }
                     return capClient.shouldOverrideUrlLoading(view, url);
                 }
                 
@@ -107,11 +115,37 @@ public class MainActivity extends BridgeActivity {
             @Override public WebResourceResponse shouldInterceptRequest(WebView v, String url) { return capClient.shouldInterceptRequest(v, url); }
             @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
             @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
-            @Override public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { capClient.onReceivedError(v, req, err); }
-            @Override public void onReceivedError(WebView v, int code, String desc, String url) { capClient.onReceivedError(v, code, desc, url); }
+            
+            @Override 
+            public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { 
+                if (req.isForMainFrame()) {
+                    v.loadUrl("file:///android_asset/public/nointernet.html");
+                    return;
+                }
+                capClient.onReceivedError(v, req, err); 
+            }
+            
+            @Override 
+            public void onReceivedError(WebView v, int code, String desc, String url) { 
+                v.loadUrl("file:///android_asset/public/nointernet.html");
+            }
+            
             @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
             @Override public void onReceivedSslError(WebView v, SslErrorHandler h, SslError err) { capClient.onReceivedSslError(v, h, err); }
         });
+    }
+
+    private boolean isConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm == null) return false;
+        android.net.Network net = cm.getActiveNetwork();
+        if (net == null) return false;
+        NetworkCapabilities caps = cm.getNetworkCapabilities(net);
+        return caps != null && (
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+            caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
+        );
     }
 
     private boolean isOwnSiteUrl(String url) {
@@ -160,6 +194,12 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             WebView wv = getBridge().getWebView();
             if (wv == null) { swipeRefreshLayout.setRefreshing(false); return; }
+
+            if (!isConnected()) {
+                swipeRefreshLayout.setRefreshing(false);
+                wv.loadUrl("file:///android_asset/public/nointernet.html");
+                return;
+            }
 
             // Temporarily override client to catch onPageFinished, then restore
             WebViewClient saved = wv.getWebViewClient();
