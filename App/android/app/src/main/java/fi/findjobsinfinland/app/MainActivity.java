@@ -164,26 +164,23 @@ public class MainActivity extends BridgeActivity {
                 }
 
                 if (isOwnSiteUrl(url)) {
-                    // The HTML links use absolute findjobsinfinland.fi URLs, but the
-                    // pages are bundled at https://localhost/*.html.
-                    // Try to map to the local bundled page first.
+                    // Try to map to a bundled local page first
                     String localUrl = toLocalUrl(url);
                     if (localUrl != null) {
-                        // Load the bundled page instead of the remote URL
+                        // Bundled page: redirect to localhost (no internet needed)
                         view.loadUrl(localUrl);
                         return true;
                     }
-                    // Not a bundled page (individual job pages, blogs, etc.)
-                    // Open in Chrome Custom Tab if online, else show offline page
+                    // Non-bundled page (job listings, blogs, etc.):
+                    // Load directly in the WebView — stays inside the app
                     if (!isConnected()) {
                         showOfflinePage(view, url);
                         return true;
                     }
-                    openInCustomTab(url);
-                    return true;
+                    return false; // WebView navigates to the remote page
                 }
 
-                // Everything else (LinkedIn, employer sites, etc.) → Chrome Custom Tab
+                // Truly external links (LinkedIn, employer sites, etc.) → Chrome Custom Tab
                 openInCustomTab(url);
                 return true;
             }
