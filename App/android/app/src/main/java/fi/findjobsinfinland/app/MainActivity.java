@@ -189,6 +189,21 @@ public class MainActivity extends BridgeActivity {
                     return;
                 }
 
+                String failedUrl = request.getUrl().toString();
+
+                // IMPORTANT: Never intercept errors from Capacitor's own local server
+                // (https://localhost). If localhost fails it's a build/asset issue,
+                // not a connectivity problem, and intercepting it would cause an
+                // infinite loop: localhost fails → show offline page → poll → reload
+                // localhost → fails again → repeat forever.
+                if (isBundledUrl(failedUrl)) {
+                    capClient.onReceivedError(view, request, error);
+                    return;
+                }
+
+                // Already showing offline page — don't re-trigger
+                if (isShowingOfflinePage) return;
+
                 int code = error.getErrorCode();
                 boolean isNetworkError = (code == WebViewClient.ERROR_IO
                     || code == WebViewClient.ERROR_HOST_LOOKUP
@@ -197,7 +212,7 @@ public class MainActivity extends BridgeActivity {
                     || code == WebViewClient.ERROR_FAILED_SSL_HANDSHAKE);
 
                 if (isNetworkError || !isConnected()) {
-                    showOfflinePage(view, view.getUrl());
+                    showOfflinePage(view, failedUrl);
                 } else {
                     capClient.onReceivedError(view, request, error);
                 }
@@ -217,11 +232,24 @@ public class MainActivity extends BridgeActivity {
 
     private void showOfflinePage(WebView wv, String blockedUrl) {
         isShowingOfflinePage = true;
-        pendingUrl = (blockedUrl != null && !blockedUrl.startsWith("file://"))
-                     ? blockedUrl : HOME_URL;
+        // Only track remote URLs as pending (localhost failures can't be recovered
+        // by connectivity polling — they're asset-bundling issues, not network issues)
+        if (blockedUrl != null && isOwnSiteUrl(blockedUrl)) {
+            pendingUrl = blockedUrl;
+        } else {
+            pendingUrl = null; // nothing to reload
+        }
 
         stopConnectivityPolling();
-        wv.post(() -> wv.loadUrl(OFFLINE_PAGE));
+        wv.stopLoading();
+        wv.post(() -> {
+            wv.loadUrl(OFFLINE_PAGE);
+            // Clear history after the offline page loads so pressing Back exits the
+            // app instead of going back to the error page
+            new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                if (isShowingOfflinePage) wv.clearHistory();
+            }, 400);
+        });
         startConnectivityPolling(wv);
     }
 
@@ -233,9 +261,18 @@ public class MainActivity extends BridgeActivity {
                 if (isConnected()) {
                     stopConnectivityPolling();
                     isShowingOfflinePage = false;
-                    String target = (pendingUrl != null) ? pendingUrl : HOME_URL;
-                    pendingUrl = null;
-                    wv.post(() -> wv.loadUrl(target));
+                    // Only reload a remote URL that was blocked; if there's no
+                    // pending URL (e.g. localhost failed), do nothing — the user
+                    // can pull-to-refresh or navigate manually.
+                    if (pendingUrl != null) {
+                        String target = pendingUrl;
+                        pendingUrl = null;
+                        wv.post(() -> wv.loadUrl(target));
+                    } else {
+                        // Just mark as recovered; the nointernet.html "Retry" button
+                        // or pull-to-refresh will complete the navigation.
+                        wv.post(() -> wv.loadUrl(HOME_URL));
+                    }
                 } else {
                     connectivityHandler.postDelayed(this, 1000);
                 }
@@ -279,7 +316,9 @@ public class MainActivity extends BridgeActivity {
         WebView wv = getBridge().getWebView();
 
         // Let the WebView navigate back normally (Jobs → Home, etc.)
-        if (wv != null && wv.canGoBack()) {
+        // BUT skip this when the offline page is showing — its history entries
+        // point to broken error pages, so going back would just show errors again.
+        if (!isShowingOfflinePage && wv != null && wv.canGoBack()) {
             wv.goBack();
             return;
         }
