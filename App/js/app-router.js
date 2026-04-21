@@ -119,9 +119,18 @@
         return;
       }
 
-      // Online → open directly in the WebView
+      // Online → point unmapped internal pages to the live server to prevent 404/local crashes
+      let targetUrl = anchor.href;
+      if (
+        parsed.hostname === '' ||
+        parsed.hostname === 'localhost' ||
+        parsed.hostname === window.location.hostname
+      ) {
+        targetUrl = 'https://' + APP_DOMAIN + parsed.pathname + parsed.search + parsed.hash;
+      }
+
       try {
-        window.location.href = anchor.href;
+        window.location.href = targetUrl;
       } catch (err) {
         window.location.href = href;
       }
