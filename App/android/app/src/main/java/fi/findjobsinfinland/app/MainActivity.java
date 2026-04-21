@@ -218,7 +218,11 @@ public class MainActivity extends BridgeActivity {
                 }
             }
 
-            // Delegate the rest to Capacitor's client so routing/splash still works
+            // Delegate the rest to Capacitor's client so routing/splash still works.
+            // shouldInterceptRequest is CRITICAL — Capacitor uses it to serve
+            // bundled assets (html/css/js) at https://localhost/ via WebViewAssetLoader.
+            // Without this, https://localhost/ has no server → ERR_CONNECTION_REFUSED.
+            @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) { return capClient.shouldInterceptRequest(v, req); }
             @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
             @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
             @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
