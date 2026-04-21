@@ -152,41 +152,37 @@ public class MainActivity extends BridgeActivity {
         wv.setWebViewClient(new WebViewClient() {
 
             // ------------------------------------------------------------------
-            //  URL routing
+            //  URL routing — the WebView MUST stay on https://localhost.
+            //  Navigating away from localhost breaks Capacitor's JS bridge.
             // ------------------------------------------------------------------
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String url = request.getUrl().toString();
 
+                // 1. Localhost / Capacitor URLs → stay in WebView
                 if (isBundledUrl(url)) {
-                    // Already a localhost/capacitor URL — let WebView load normally
                     return false;
                 }
 
+                // 2. Own-site links that have a bundled local page → redirect to localhost
                 if (isOwnSiteUrl(url)) {
-                    // Try to map to a bundled local page first
                     String localUrl = toLocalUrl(url);
                     if (localUrl != null) {
-                        // Bundled page: redirect to localhost (no internet needed)
                         view.loadUrl(localUrl);
                         return true;
                     }
-                    // Non-bundled page (job listings, blogs, etc.):
-                    // Load directly in the WebView — stays inside the app
-                    if (!isConnected()) {
-                        showOfflinePage(view, url);
-                        return true;
-                    }
-                    // Use loadUrl to navigate; returning false can cause Capacitor's
-                    // shouldInterceptRequest to mishandle non-localhost URLs.
-                    view.loadUrl(url);
-                    return true;
                 }
 
-                // Truly external links (LinkedIn, employer sites, etc.) → Chrome Custom Tab
-                // Post to handler so we don't launch an Activity mid-navigation callback
-                final String externalUrl = url;
-                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(externalUrl));
+                // 3. Everything else (non-bundled own-site pages, external links)
+                //    → Chrome Custom Tab (appears as in-app browser overlay)
+                //    Posted to handler to avoid crashing when launching Activity
+                //    during a WebView navigation callback.
+                if (!isConnected() && isOwnSiteUrl(url)) {
+                    showOfflinePage(view, url);
+                    return true;
+                }
+                final String targetUrl = url;
+                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
                 return true;
             }
 
