@@ -376,5 +376,117 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/healthcare/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-21 13:54:02",
+    "jobs": [
+      {
+        "id": "09977bed",
+        "job_id": "professional-instructor-for-the-real-estate-service-industry-riihimäki-09977bed",
+        "processed": true,
+        "title": "Professional instructor for the real estate service industry, Riihimäki",
+        "company": "Bolt.Works Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Riihimäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=1901148",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/286b2b11-4db6-4c27-a421-f965eee0493c/en",
+        "job_employer_email": "zara.doray@bolt.works",
+        "job_employer_name": "Zara Doray",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/professional-instructor-for-the-real-estate-service-industry-riihimäki-09977bed",
+        "date_posted": "2026-04-21",
+        "date_expires": "2026-05-03",
+        "scraped_at": "2026-04-21 13:54:02",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with the task, your work ex",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Professional instructor for the real estate service industry, Riihimäki at Bolt.Works Oy, located in Riihimäki.",
+        "description": "Bolt.Works Oy is seeking a professional instructor for their real estate service industry program at Riihimäki. This role involves guiding students through practical tasks related to property management on the Riihimäki campus. Ideal candidates should have experience in both real estate and cleaning services, possess good communication skills, and be comfortable working independently or as part of a team. A degree in real estate or cleaning services is preferred, along with relevant training or supervisory experience. The position offers flexible work hours, practical learning opportunities, and the chance to move around campus. Bolt.Works provides fair compensation based on collective agreements and encourages ongoing professional development.",
+        "what_we_expect": [
+          "Experience in property maintenance tasks",
+          "Practical knowledge of the tasks in the field",
+          "Interest in guidance and teaching work",
+          "Good communication skills",
+          "Driver's license (car not necessary)"
+        ],
+        "job_responsibilities": [
+          "Teach real estate services",
+          "Guide students in practical tasks",
+          "Support their learning through practical training",
+          "Work as a teacher's work partner",
+          "Assist students in campus environment",
+          "Play an important role in supporting their learning"
+        ],
+        "what_we_offer": [
+          "Temporary replacement until 31 October 2026",
+          "Start as soon as possible",
+          "Working hours on weekdays between 7:17 a.m. (working day 7.5 h)",
+          "Students are generally there at 8:16",
+          "No work in July (no students)"
+        ],
+        "search_keywords": "real estate service industry, Riihimäki, property maintenance tasks, practical training, guidance and teaching work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/cleaning-and-facility-services/15.png"
+      },
+      {
+        "id": "547cbdaf",
+        "job_id": "lord-of-the-church-lieksa-547cbdaf",
+        "processed": true,
+        "title": "Lord of the Church",
+        "company": "Lieksan Seurakunta, Lieksa",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Lieksa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/fi/tyopaikat/lieksan-seurakunnan-kirkkoherran-virka-4997/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bb6cd0fe-8b38-4d4c-9ef1-acdca82040a8/en",
+        "job_employer_email": "lea.elbardi@evl.fi",
+        "job_employer_name": "Lea El Bardi",
+        "job_employer_phone_no": "0400991653",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/lord-of-the-church-lieksa-547cbdaf",
+        "date_posted": "2026-04-21",
+        "date_expires": "2026-05-25",
+        "scraped_at": "2026-04-21 13:54:02",
+        "open_positions": 1,
+        "salary_range": "According to the K30 pay grade",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Lord of the Church job in Lieksa? Lieksan Seurakunta, Lieksa is seeking motivated candidates—apply today.",
+        "description": "We are seeking an experienced priest to fill the vacant position of Vicar of Lieksa Parish within Lieksan Seurakunta. This role requires excellent oral and written Finnish language skills, as well as a satisfactory understanding of Swedish. The ideal candidate should possess leadership abilities, administrative skills, and the ability to network with ecclesiastical actors and stakeholders. A background in pastoral work management is also required. Applications must be submitted via KirkkoRekry by April 25, 2026, at 15:00. The successful candidate will lead worship life, develop operating methods, and enhance the parish's strategic work while maintaining confidentiality and promoting dialogue within society. A criminal record check is required for this position.",
+        "what_we_expect": [
+          "Prepare religious services",
+          "Supervise religious communities",
+          "Give spiritual advice",
+          "Perform religious ceremonies",
+          "Represents a religious institution",
+          "Promote dialogue in society"
+        ],
+        "job_responsibilities": [
+          "Priest",
+          "Website: lieksanseurakunta.fi",
+          "Daily operational tasks"
+        ],
+        "what_we_offer": [
+          "Website: lieksanseurakunta.fi",
+          "Professional work environment",
+          "Supportive team"
+        ],
+        "search_keywords": "Vicar of Lieksa Parish, Finnish ev.lut, Church Act, Swedish language skills, pastoral degree, parish work management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/management-and-leadership/26.png"
+      }
+    ]
   }
 ]
