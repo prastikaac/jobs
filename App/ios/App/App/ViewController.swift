@@ -130,6 +130,8 @@ extension ViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         capNavigationDelegate?.webView?(webView, didFinish: navigation)
+        // Hide splash screen explicitly when the live website finishes loading
+        webView.evaluateJavaScript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", completionHandler: nil)
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {

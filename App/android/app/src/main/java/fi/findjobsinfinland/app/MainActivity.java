@@ -114,7 +114,11 @@ public class MainActivity extends BridgeActivity {
             @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) { return capClient.shouldInterceptRequest(v, req); }
             @Override public WebResourceResponse shouldInterceptRequest(WebView v, String url) { return capClient.shouldInterceptRequest(v, url); }
             @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
-            @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
+            @Override public void onPageFinished(WebView v, String url) { 
+                capClient.onPageFinished(v, url); 
+                // Hide splash screen explicitly when the live website finishes loading
+                v.evaluateJavascript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", null);
+            }
             
             @Override 
             public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { 
