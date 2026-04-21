@@ -91,12 +91,25 @@
 
     const localPath = resolveLocal(href);
 
+    let parsed;
+    try {
+      parsed = new URL(href, window.location.href);
+    } catch (err) {
+      return; // Invalid URL, let default behavior happen
+    }
+
+    const isAppDomain =
+      parsed.hostname === APP_DOMAIN ||
+      parsed.hostname === 'www.' + APP_DOMAIN ||
+      parsed.hostname === '' ||
+      parsed.hostname === window.location.hostname;
+
     if (localPath) {
-      // Internal — navigate to bundled local page
+      // Internal mapped — navigate to bundled local page
       e.preventDefault();
       navigateTo(localPath);
-    } else {
-      // External link
+    } else if (isAppDomain) {
+      // Internal unmapped (e.g. /cleaner.html) -> open directly in the WebView
       e.preventDefault();
 
       if (!navigator.onLine) {
@@ -112,6 +125,18 @@
       } catch (err) {
         window.location.href = href;
       }
+    } else {
+      // External link -> open in browser mode inside the app
+      e.preventDefault();
+
+      if (!navigator.onLine) {
+        // Offline → show no-internet page
+        try { sessionStorage.setItem('app_last_page_before_offline', window.location.pathname + window.location.search); } catch (_) {}
+        navigateTo('nointernet.html');
+        return;
+      }
+
+      openExternal(anchor.href);
     }
   }, true); // capture phase to intercept before other handlers
 
