@@ -146,11 +146,12 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
-                wv.loadUrl("file:///android_asset/public/nointernet.html");
+                wv.evaluateJavascript("window.location.href = 'https://localhost/public/nointernet.html';", null);
                 return;
             }
 
-            wv.reload();
+            // DO NOT use wv.reload() natively as it destroys Capacitor's JS bridge hooks and causes a fatal crash
+            wv.evaluateJavascript("window.location.reload(true);", null);
 
             // Safety net: hide spinner after 8 s even if onPageFinished never fires
             new Handler(getMainLooper()).postDelayed(() -> {
@@ -173,16 +174,20 @@ public class MainActivity extends BridgeActivity {
     // =============================================================================
 
     private boolean isConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (cm == null) return false;
-        android.net.Network net = cm.getActiveNetwork();
-        if (net == null) return false;
-        NetworkCapabilities caps = cm.getNetworkCapabilities(net);
-        return caps != null && (
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
-        );
+        try {
+            ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            if (cm == null) return true;
+            android.net.Network net = cm.getActiveNetwork();
+            if (net == null) return false;
+            NetworkCapabilities caps = cm.getNetworkCapabilities(net);
+            return caps != null && (
+                caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
+                caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+                caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
+            );
+        } catch (Exception e) {
+            return true; // Safety net: assume connected if permission is denied or missing to avoid breaking app
+        }
     }
 
     // =============================================================================
