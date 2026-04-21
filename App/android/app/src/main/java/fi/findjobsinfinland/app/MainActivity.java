@@ -31,16 +31,7 @@ public class MainActivity extends BridgeActivity {
     // --- Layout ------------------------------------------------------------------
     private SwipeRefreshLayout swipeRefreshLayout;
 
-    // --- Offline handling --------------------------------------------------------
-    private final Handler connectivityHandler = new Handler(Looper.getMainLooper());
-    private Runnable connectivityChecker;
-    private String  pendingUrl          = null;  // URL blocked due to no internet
-    private boolean isShowingOfflinePage = false;
 
-    // The offline page is bundled in the APK assets (via cap sync)
-    private static final String OFFLINE_PAGE = "file:///android_asset/public/nointernet.html";
-    // The home page Capacitor serves from bundled assets
-    private static final String HOME_URL     = "https://findjobsinfinland.fi/";
 
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
@@ -58,26 +49,17 @@ public class MainActivity extends BridgeActivity {
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
 
         setupSwipeRefresh();
-        setupLinkInterception();
     }
 
     @Override
     public void onResume() {
         super.onResume();
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
-
-        // If the offline page is showing (e.g. user went to Settings to turn on WiFi),
-        // resume polling so the app recovers immediately when connectivity returns.
-        if (isShowingOfflinePage) {
-            WebView wv = getBridge().getWebView();
-            if (wv != null) startConnectivityPolling(wv);
-        }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        stopConnectivityPolling(); // battery-friendly: stop polling in background
     }
 
     @Override
@@ -103,13 +85,6 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             WebView wv = getBridge().getWebView();
             if (wv == null) { swipeRefreshLayout.setRefreshing(false); return; }
-
-            // If offline, don't try to reload — show offline page instead
-            if (!isConnected()) {
-                swipeRefreshLayout.setRefreshing(false);
-                showOfflinePage(wv, wv.getUrl());
-                return;
-            }
 
             // Temporarily override client to catch onPageFinished, then restore
             WebViewClient saved = wv.getWebViewClient();
@@ -140,182 +115,6 @@ public class MainActivity extends BridgeActivity {
     }
 
     // =============================================================================
-    //  Link Interception + Offline Handling
-    // =============================================================================
-
-    private void setupLinkInterception() {
-        WebView wv = getBridge().getWebView();
-        if (wv == null) return;
-
-        WebViewClient capClient = wv.getWebViewClient();
-
-        wv.setWebViewClient(new WebViewClient() {
-
-            // ------------------------------------------------------------------
-            //  URL routing
-            // ------------------------------------------------------------------
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-                String url = request.getUrl().toString();
-
-                // 1. Localhost / Capacitor URLs → stay in WebView
-                if (isBundledUrl(url)) {
-                    return false;
-                }
-
-                // 2. Own-site links (findjobsinfinland.fi)
-                if (isOwnSiteUrl(url)) {
-                    if (!isConnected()) {
-                        showOfflinePage(view, url);
-                        return true;
-                    }
-                    // Return false to let the Android WebView handle the navigation natively.
-                    return false;
-                }
-
-                // 3. Everything else (external links like LinkedIn, etc.)
-                //    → Chrome Custom Tab (browser mode inside the app)
-                final String targetUrl = url;
-                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
-                return true;
-            }
-
-            // ------------------------------------------------------------------
-            //  Error handling — catches failed main-frame loads (e.g. offline)
-            // ------------------------------------------------------------------
-            @Override
-            public void onReceivedError(WebView view, WebResourceRequest request,
-                                        WebResourceError error) {
-                if (!request.isForMainFrame()) {
-                    // Sub-resource errors (images, fonts…) — let Capacitor decide
-                    capClient.onReceivedError(view, request, error);
-                    return;
-                }
-
-                String failedUrl = request.getUrl().toString();
-
-                // IMPORTANT: Never intercept errors from Capacitor's own local server
-                // (https://localhost). If localhost fails it's a build/asset issue,
-                // not a connectivity problem, and intercepting it would cause an
-                // infinite loop: localhost fails → show offline page → poll → reload
-                // localhost → fails again → repeat forever.
-                if (isBundledUrl(failedUrl)) {
-                    capClient.onReceivedError(view, request, error);
-                    return;
-                }
-
-                // Already showing offline page — don't re-trigger
-                if (isShowingOfflinePage) return;
-
-                int code = error.getErrorCode();
-                boolean isNetworkError = (code == WebViewClient.ERROR_IO
-                    || code == WebViewClient.ERROR_HOST_LOOKUP
-                    || code == WebViewClient.ERROR_CONNECT
-                    || code == WebViewClient.ERROR_TIMEOUT
-                    || code == WebViewClient.ERROR_FAILED_SSL_HANDSHAKE);
-
-                if (isNetworkError || !isConnected()) {
-                    showOfflinePage(view, failedUrl);
-                } else {
-                    capClient.onReceivedError(view, request, error);
-                }
-            }
-
-            // shouldInterceptRequest: Capacitor uses it to serve bundled assets
-            // (html/css/js) at https://localhost/ via WebViewAssetLoader.
-            // ONLY delegate localhost/bundled URLs; for everything else return null
-            // so the WebView uses the network normally.
-            @Override
-            public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest req) {
-                String reqUrl = req.getUrl().toString();
-                if (isBundledUrl(reqUrl)) {
-                    return capClient.shouldInterceptRequest(v, req);
-                }
-                return null; // let the network handle non-localhost URLs
-            }
-            @Override public void onPageStarted(WebView v, String url, Bitmap fav) { capClient.onPageStarted(v, url, fav); }
-            @Override public void onPageFinished(WebView v, String url) { capClient.onPageFinished(v, url); }
-            @Override public void onReceivedHttpError(WebView v, WebResourceRequest req, WebResourceResponse resp) { capClient.onReceivedHttpError(v, req, resp); }
-            @Override public void onReceivedSslError(WebView v, SslErrorHandler h, SslError err) { capClient.onReceivedSslError(v, h, err); }
-        });
-    }
-
-    // =============================================================================
-    //  Offline page + connectivity recovery
-    // =============================================================================
-
-    private void showOfflinePage(WebView wv, String blockedUrl) {
-        isShowingOfflinePage = true;
-        // Only track remote URLs as pending (localhost failures can't be recovered
-        // by connectivity polling — they're asset-bundling issues, not network issues)
-        if (blockedUrl != null && isOwnSiteUrl(blockedUrl)) {
-            pendingUrl = blockedUrl;
-        } else {
-            pendingUrl = null; // nothing to reload
-        }
-
-        stopConnectivityPolling();
-        wv.stopLoading();
-        wv.post(() -> {
-            wv.loadUrl(OFFLINE_PAGE);
-            // Clear history after the offline page loads so pressing Back exits the
-            // app instead of going back to the error page
-            new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                if (isShowingOfflinePage) wv.clearHistory();
-            }, 400);
-        });
-        startConnectivityPolling(wv);
-    }
-
-    /** Polls every 1 second; when connectivity returns, reloads the pending URL. */
-    private void startConnectivityPolling(WebView wv) {
-        stopConnectivityPolling();
-        connectivityChecker = new Runnable() {
-            @Override public void run() {
-                if (isConnected()) {
-                    stopConnectivityPolling();
-                    isShowingOfflinePage = false;
-                    // Only reload a remote URL that was blocked; if there's no
-                    // pending URL (e.g. localhost failed), do nothing — the user
-                    // can pull-to-refresh or navigate manually.
-                    if (pendingUrl != null) {
-                        String target = pendingUrl;
-                        pendingUrl = null;
-                        wv.post(() -> wv.loadUrl(target));
-                    } else {
-                        // Just mark as recovered; the nointernet.html "Retry" button
-                        // or pull-to-refresh will complete the navigation.
-                        wv.post(() -> wv.loadUrl(HOME_URL));
-                    }
-                } else {
-                    connectivityHandler.postDelayed(this, 1000);
-                }
-            }
-        };
-        connectivityHandler.postDelayed(connectivityChecker, 1000);
-    }
-
-    private void stopConnectivityPolling() {
-        if (connectivityChecker != null) {
-            connectivityHandler.removeCallbacks(connectivityChecker);
-            connectivityChecker = null;
-        }
-    }
-
-    private boolean isConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (cm == null) return false;
-        android.net.Network net = cm.getActiveNetwork();
-        if (net == null) return false;
-        NetworkCapabilities caps = cm.getNetworkCapabilities(net);
-        return caps != null && (
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
-        );
-    }
-
-    // =============================================================================
     //  Double back press to exit
     // =============================================================================
 
@@ -329,10 +128,8 @@ public class MainActivity extends BridgeActivity {
         }
         WebView wv = getBridge().getWebView();
 
-        // Let the WebView navigate back normally (Jobs → Home, etc.)
-        // BUT skip this when the offline page is showing — its history entries
-        // point to broken error pages, so going back would just show errors again.
-        if (!isShowingOfflinePage && wv != null && wv.canGoBack()) {
+        // Let the WebView navigate back normally
+        if (wv != null && wv.canGoBack()) {
             wv.goBack();
             return;
         }
@@ -348,44 +145,6 @@ public class MainActivity extends BridgeActivity {
             backExitToast = Toast.makeText(
                 this, "Press back again to exit", Toast.LENGTH_SHORT);
             backExitToast.show();
-        }
-    }
-
-    // =============================================================================
-    //  Helpers
-    // =============================================================================
-
-    /** Bundled assets served by Capacitor's local server — work offline. */
-    private boolean isBundledUrl(String url) {
-        return url.startsWith("http://localhost")
-            || url.startsWith("https://localhost")
-            || url.startsWith("capacitor://")
-            || url.startsWith("android-app://")
-            || url.startsWith("file:///android_asset/");
-    }
-
-    /** Remote pages on the own website — need internet. */
-    private boolean isOwnSiteUrl(String url) {
-        return url.startsWith("https://findjobsinfinland.fi/")
-            || url.startsWith("http://findjobsinfinland.fi/");
-    }
-
-
-
-    /** Opens an external URL in a branded Chrome Custom Tab (in-app browser). */
-    private void openInCustomTab(String url) {
-        try {
-            CustomTabColorSchemeParams colors = new CustomTabColorSchemeParams.Builder()
-                .setToolbarColor(Color.parseColor("#482dff"))
-                .build();
-            new CustomTabsIntent.Builder()
-                .setShowTitle(true)
-                .setDefaultColorSchemeParams(colors)
-                .build()
-                .launchUrl(this, Uri.parse(url));
-        } catch (Exception e) {
-            try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url))); }
-            catch (Exception ignored) { }
         }
     }
 }
