@@ -98,7 +98,7 @@ public class MainActivity extends BridgeActivity {
                             "      }" +
                             "    } else if (!navigator.onLine) {" +
                             "      e.preventDefault();" +
-                            "      window.location.href = 'https://localhost/public/nointernet.html';" +
+                            "      window.location.href = 'https://localhost/nointernet.html';" +
                             "    }" +
                             "  }" +
                             "};" +
@@ -146,7 +146,7 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
-                wv.evaluateJavascript("window.location.href = 'https://localhost/public/nointernet.html';", null);
+                wv.evaluateJavascript("window.location.href = 'https://localhost/nointernet.html';", null);
                 return;
             }
 
@@ -164,7 +164,10 @@ public class MainActivity extends BridgeActivity {
         // Only allow pull when the WebView is scrolled to the very top
         wv.getViewTreeObserver().addOnScrollChangedListener(() -> {
             if (swipeRefreshLayout != null) {
-                swipeRefreshLayout.setEnabled(wv.getScrollY() == 0);
+                boolean shouldEnable = (wv.getScrollY() == 0);
+                if (swipeRefreshLayout.isEnabled() != shouldEnable) {
+                    swipeRefreshLayout.setEnabled(shouldEnable);
+                }
             }
         });
     }
