@@ -159,8 +159,9 @@ public class MainActivity extends BridgeActivity {
                 String url = request.getUrl().toString();
 
                 if (isBundledUrl(url)) {
-                    // Capacitor's local assets — works offline, let it load
-                    return capClient.shouldOverrideUrlLoading(view, request);
+                    // Capacitor's local assets — let the WebView load normally.
+                    // shouldInterceptRequest handles serving the actual files.
+                    return false;
                 }
 
                 if (isOwnSiteUrl(url)) {
@@ -169,7 +170,8 @@ public class MainActivity extends BridgeActivity {
                         showOfflinePage(view, url);
                         return true;
                     }
-                    return capClient.shouldOverrideUrlLoading(view, request);
+                    // Let WebView navigate to the remote site normally
+                    return false;
                 }
 
                 // Everything else → Chrome Custom Tab (in-app browser)
