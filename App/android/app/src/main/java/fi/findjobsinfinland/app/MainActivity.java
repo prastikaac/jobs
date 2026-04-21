@@ -1,7 +1,9 @@
 package fi.findjobsinfinland.app;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.graphics.Color;
 
 import androidx.core.view.WindowCompat;
@@ -35,15 +37,34 @@ public class MainActivity extends BridgeActivity {
 
             swipeRefreshLayout.setOnRefreshListener(() -> {
                 WebView webView = getBridge().getWebView();
-                if (webView != null) {
-                    // Call web-side refresh handler
-                    webView.evaluateJavascript(
-                        "if(window.AppPullToRefresh) window.AppPullToRefresh.onRefresh();",
-                        null
-                    );
+                if (webView == null) {
+                    swipeRefreshLayout.setRefreshing(false);
+                    return;
                 }
-                // Listen for completion signal from JS
-                listenForRefreshComplete();
+
+                // --- Pure native reload — no JS dependency -----------------------
+                // Override WebViewClient just long enough to catch page-finished,
+                // then restore Capacitor's own client so routing still works.
+                WebViewClient originalClient = webView.getWebViewClient();
+                webView.setWebViewClient(new WebViewClient() {
+                    @Override
+                    public void onPageFinished(WebView view, String url) {
+                        super.onPageFinished(view, url);
+                        // Restore Capacitor's client immediately
+                        view.setWebViewClient(originalClient);
+                        // Hide spinner on main thread
+                        view.post(() -> swipeRefreshLayout.setRefreshing(false));
+                    }
+                });
+
+                webView.reload();
+
+                // Safety net: hide spinner after 8s even if onPageFinished never fires
+                new Handler(getMainLooper()).postDelayed(() -> {
+                    if (swipeRefreshLayout.isRefreshing()) {
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
+                }, 8000);
             });
 
             // --- Only allow pull-to-refresh when scrolled to top ----------------
@@ -51,7 +72,6 @@ public class MainActivity extends BridgeActivity {
             if (webView != null) {
                 webView.getViewTreeObserver().addOnScrollChangedListener(() -> {
                     if (swipeRefreshLayout != null) {
-                        // Disable pull-to-refresh when not at top of page
                         swipeRefreshLayout.setEnabled(webView.getScrollY() == 0);
                     }
                 });
@@ -74,51 +94,5 @@ public class MainActivity extends BridgeActivity {
             WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
         }
     }
-
-    /**
-     * Poll until JS signals refresh is complete, then hide the spinner.
-     * Uses evaluateJavascript to check a flag set by app-pull-to-refresh.js.
-     */
-    private void listenForRefreshComplete() {
-        WebView webView = getBridge().getWebView();
-        if (webView == null) return;
-
-        // Listen for the DOM event via JS polling (simple, no plugin needed)
-        webView.evaluateJavascript(
-            "(function() {" +
-            "  var done = false;" +
-            "  document.addEventListener('app:refreshComplete', function() { done = true; }, {once: true});" +
-            "  // Also set a max timeout of 8s" +
-            "  setTimeout(function() { done = true; }, 8000);" +
-            "  return 'listening';" +
-            "})()",
-            null
-        );
-
-        // Poll every 500ms up to 8 seconds
-        final long startTime = System.currentTimeMillis();
-        final android.os.Handler handler = new android.os.Handler(getMainLooper());
-        final Runnable[] pollTask = {null};
-        pollTask[0] = () -> {
-            webView.evaluateJavascript(
-                "document._appRefreshDone === true ? 'done' : 'waiting'",
-                result -> {
-                    long elapsed = System.currentTimeMillis() - startTime;
-                    if ("'done'".equals(result) || elapsed >= 8000) {
-                        if (swipeRefreshLayout != null) {
-                            swipeRefreshLayout.setRefreshing(false);
-                        }
-                    } else {
-                        handler.postDelayed(pollTask[0], 500);
-                    }
-                }
-            );
-        };
-        // Set the flag in JS, then start polling
-        webView.evaluateJavascript(
-            "document.addEventListener('app:refreshComplete', function() { document._appRefreshDone = true; }, {once: true});",
-            null
-        );
-        handler.postDelayed(pollTask[0], 500);
-    }
 }
+
