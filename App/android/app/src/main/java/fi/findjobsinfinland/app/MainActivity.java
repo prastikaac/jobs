@@ -26,7 +26,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.getcapacitor.BridgeActivity;
 
-import com.getcapacitor.BridgeWebViewClient;
+import com.getcapacitor.WebViewListener;
 
 public class MainActivity extends BridgeActivity {
 
@@ -48,7 +48,6 @@ public class MainActivity extends BridgeActivity {
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
 
         setupSwipeRefresh();
-        setupLinkInterception();
     }
 
     @Override
@@ -68,119 +67,45 @@ public class MainActivity extends BridgeActivity {
         if (hasFocus) WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
     }
 
-    // =============================================================================
-    //  Link Interception for In-App Browser (Custom Tabs)
-    // =============================================================================
-
-    private void setupLinkInterception() {
-        WebView wv = getBridge().getWebView();
-        if (wv == null) return;
-
-        wv.setWebViewClient(new BridgeWebViewClient(getBridge()) {
+    // Capacitor allows us to inject JS on page load securely via WebViewListener
+    @Override
+    public void onStart() {
+        super.onStart();
+        
+        getBridge().addWebViewListener(new WebViewListener() {
             @Override
-            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-                String url = request.getUrl().toString();
+            public void onPageLoaded(WebView webView) {
+                // Hide splash screen
+                webView.evaluateJavascript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", null);
                 
-                // 1. Check Offline
-                if (!isBundledUrl(url) && !isConnected()) {
-                    view.loadUrl("file:///android_asset/public/nointernet.html");
-                    return true;
-                }
-
-                // 2. Check Own Site
-                if (isOwnSiteUrl(url) || isBundledUrl(url)) {
-                    return super.shouldOverrideUrlLoading(view, request);
-                }
-                
-                // 3. External Links -> Custom Tab
-                final String targetUrl = url;
-                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
-                return true;
-            }
-
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if (!isBundledUrl(url) && !isConnected()) {
-                    view.loadUrl("file:///android_asset/public/nointernet.html");
-                    return true;
-                }
-                if (isOwnSiteUrl(url) || isBundledUrl(url)) {
-                    return super.shouldOverrideUrlLoading(view, url);
-                }
-                
-                final String targetUrl = url;
-                new Handler(Looper.getMainLooper()).post(() -> openInCustomTab(targetUrl));
-                return true;
-            }
-
-            @Override 
-            public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) { 
-                if (req.isForMainFrame()) {
-                    v.loadUrl("file:///android_asset/public/nointernet.html");
-                    return;
-                }
-                super.onReceivedError(v, req, err); 
-            }
-            
-            @Override 
-            public void onReceivedError(WebView v, int code, String desc, String url) { 
-                v.loadUrl("file:///android_asset/public/nointernet.html");
-            }
-            
-            @Override public void onPageFinished(WebView v, String url) { 
-                super.onPageFinished(v, url); 
-                
-                // Hide splash screen explicitly when the live website finishes loading
-                v.evaluateJavascript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", null);
-                
-                // Hide swipe-to-refresh spinner if active
+                // Hide swipe-to-refresh spinner
                 if (swipeRefreshLayout != null && swipeRefreshLayout.isRefreshing()) {
                     swipeRefreshLayout.post(() -> swipeRefreshLayout.setRefreshing(false));
                 }
+
+                // Inject JS to handle external links via Capacitor Browser plugin and instant offline catch
+                String js = "document.removeEventListener('click', window._capLinkInterceptor, true);" +
+                            "window._capLinkInterceptor = function(e) {" +
+                            "  var a = e.target.closest('a');" +
+                            "  if (a && a.href && a.href.startsWith('http')) {" +
+                            "    var isInternal = a.href.indexOf('findjobsinfinland.fi') !== -1 || a.href.indexOf('localhost') !== -1;" +
+                            "    if (!isInternal) {" +
+                            "      e.preventDefault();" +
+                            "      if (window.Capacitor && window.Capacitor.Plugins.Browser) {" +
+                            "        window.Capacitor.Plugins.Browser.open({ url: a.href, presentationStyle: 'fullscreen' });" +
+                            "      } else {" +
+                            "        window.open(a.href, '_blank');" +
+                            "      }" +
+                            "    } else if (!navigator.onLine) {" +
+                            "      e.preventDefault();" +
+                            "      window.location.href = 'https://localhost/public/nointernet.html';" +
+                            "    }" +
+                            "  }" +
+                            "};" +
+                            "document.addEventListener('click', window._capLinkInterceptor, true);";
+                webView.evaluateJavascript(js, null);
             }
         });
-    }
-
-    private boolean isConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (cm == null) return false;
-        android.net.Network net = cm.getActiveNetwork();
-        if (net == null) return false;
-        NetworkCapabilities caps = cm.getNetworkCapabilities(net);
-        return caps != null && (
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)     ||
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-            caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
-        );
-    }
-
-    private boolean isOwnSiteUrl(String url) {
-        return url.startsWith("https://findjobsinfinland.fi/")
-            || url.startsWith("http://findjobsinfinland.fi/");
-    }
-
-    private boolean isBundledUrl(String url) {
-        return url.startsWith("http://localhost")
-            || url.startsWith("https://localhost")
-            || url.startsWith("capacitor://")
-            || url.startsWith("android-app://")
-            || url.startsWith("file:///android_asset/");
-    }
-
-    private void openInCustomTab(String url) {
-        try {
-            CustomTabColorSchemeParams colors = new CustomTabColorSchemeParams.Builder()
-                .setToolbarColor(Color.parseColor("#482dff"))
-                .build();
-            new CustomTabsIntent.Builder()
-                .setShowTitle(true)
-                .setDefaultColorSchemeParams(colors)
-                .build()
-                .launchUrl(this, Uri.parse(url));
-        } catch (Exception e) {
-            try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url))); }
-            catch (Exception ignored) { }
-        }
     }
 
     // =============================================================================
