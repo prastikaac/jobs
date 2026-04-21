@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Your Job Alerts | findjobsinfinland.fi</title>
+  <meta name="description" content="View your personalised job alerts on findjobsinfinland.fi." />
+  <link rel="icon" href="https://findjobsinfinland.fi/images/icon.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="https://findjobsinfinland.fi/images/icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="https://findjobsinfinland.fi/newjobs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ── Reset & base ─────────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --brand-blue: #005eff;
+      --brand-red: #e82c2f;
+      --dark-bg: #1a1a2e;
+      --card-bg: #ffffff;
+      --text-main: #1a1a2e;
+      --text-sub: #666;
+      --border: #e8ecf4;
+      --accent: #005eff;
+      --shadow: 0 4px 24px rgba(0, 94, 255, .08);
+      --radius: 14px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4ff;
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    /* ── Header ───────────────────────────────────────────── */
+    .nj-header {
+      background: #1a1a2e;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, .25);
+    }
+
+    .nj-header a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nj-header img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+
+    .nj-header .site-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -.3px;
+    }
+
+    .nj-header .site-name span {
+      color: var(--brand-blue);
+    }
+
+    /* ── Period tabs ──────────────────────────────────────── */
+    .period-tabs {
+      display: flex;
+      gap: 8px;
+      padding: 20px 24px 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .period-tab {
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 2px solid var(--border);
+      background: #fff;
+      color: var(--text-sub);
+      text-decoration: none;
+      transition: all .2s ease;
+    }
+
+    .period-tab:hover {
+      border-color: var(--brand-blue);
+      color: var(--brand-blue);
+    }
+
+    .period-tab.active {
+      background: var(--brand-blue);
+      border-color: var(--brand-blue);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(0, 94, 255, .3);
+    }
+
+    /* ── Banner ───────────────────────────────────────────── */
+    .nj-banner {
+      text-align: center;
+      padding: 28px 24px 10px;
+    }
+
+    .nj-banner h1 {
+      font-size: clamp(20px, 4vw, 28px);
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .nj-banner h1 span {
+      color: var(--brand-blue);
+    }
+
+    .nj-banner p {
+      font-size: 14px;
+      color: var(--text-sub);
+      margin-top: 6px;
+    }
+
+    .nj-count-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--brand-blue), #3b82f6);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-top: 10px;
+    }
+
+    /* ── Grid ─────────────────────────────────────────────── */
+    .nj-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+      padding: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ── Job card ─────────────────────────────────────────── */
+    .job-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease;
+      animation: fadeUp .35s ease both;
+    }
+
+    .job-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 94, 255, .13);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .job-card-img {
+      width: 100%;
+      height: 170px;
+      object-fit: contain;
+      background: #f7f9ff;
+      padding: 12px;
+      display: block;
+    }
+
+    .job-card-body {
+      padding: 16px 18px 18px;
+    }
+
+    .job-card-location {
+      font-size: 12px;
+      color: var(--brand-blue);
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .job-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .job-card-desc {
+      font-size: 13px;
+      color: var(--text-sub);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+
+    .job-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .job-card-date {
+      font-size: 11px;
+      color: #aaa;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      background: var(--brand-red);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .2s ease, transform .1s ease;
+      white-space: nowrap;
+    }
+
+    .apply-btn:hover {
+      background: #c42225;
+      transform: scale(1.03);
+    }
+
+    /* ── States ───────────────────────────────────────────── */
+    .nj-state {
+      text-align: center;
+      padding: 60px 24px;
+      display: none;
+    }
+
+    .nj-state.active {
+      display: block;
+    }
+
+    .nj-state-icon {
+      font-size: 56px;
+      margin-bottom: 16px;
+    }
+
+    .nj-state h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .nj-state p {
+      font-size: 14px;
+      color: var(--text-sub);
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+
+    .nj-cta-btn {
+      display: inline-block;
+      background: var(--brand-blue);
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+
+    .nj-cta-btn:hover {
+      background: #0047cc;
+    }
+
+    /* loading spinner */
+    .nj-spinner {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .nj-spinner.active {
+      display: flex;
+    }
+
+    .spinner-ring {
+      width: 48px;
+      height: 48px;
+      border: 4px solid #e0e7ff;
+      border-top-color: var(--brand-blue);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ── Footer ───────────────────────────────────────────── */
+    .nj-footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .nj-footer a {
+      color: var(--brand-blue);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .nj-grid {
+        padding: 16px;
+        gap: 14px;
+      }
+
+      .nj-banner {
+        padding: 20px 16px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="nj-header">
+    <a href="https://findjobsinfinland.fi">
+      <img src="https://findjobsinfinland.fi/images/icon.png" alt="findjobsinfinland logo" />
+      <span class="site-name">findjobs<span>in</span>finland<span>.fi</span></span>
+    </a>
+  </header>
+
+  <!-- Period tabs -->
+  <nav class="period-tabs" aria-label="Alert period">
+    <a class="period-tab" id="tab-daily" href="?period=daily">📅 Daily</a>
+    <a class="period-tab" id="tab-weekly" href="?period=weekly">📆 Weekly</a>
+    <a class="period-tab" id="tab-monthly" href="?period=monthly">🗓️ Monthly</a>
+  </nav>
+
+  <!-- Banner -->
+  <div class="nj-banner">
+    <h1 id="bannerTitle">Your <span id="periodLabel">Today's</span> Job Alerts</h1>
+    <p id="bannerSub">Here are the jobs queued for your next digest notification.</p>
+    <span class="nj-count-badge" id="countBadge" style="display:none;"></span>
+  </div>
+
+  <!-- Loading -->
+  <div class="nj-spinner active" id="loadingSpinner">
+    <div class="spinner-ring"></div>
+  </div>
+
+  <!-- Not signed in -->
+  <div class="nj-state" id="stateNotAuth">
+    <div class="nj-state-icon">🔒</div>
+    <h2>Sign in to view your alerts</h2>
+    <p>Your personalised job alerts are only visible when you're signed in.</p>
+    <a href="https://findjobsinfinland.fi" class="nj-cta-btn">Go to Home &amp; Sign In</a>
+  </div>
+
+  <!-- Empty state -->
+  <div class="nj-state" id="stateEmpty">
+    <div class="nj-state-icon">📭</div>
+    <h2>No alerts queued for this period</h2>
+    <p>No matching jobs have been queued for your <span id="emptyPeriodLabel">daily</span> alert yet. Check back after
+      new jobs are posted.</p>
+    <a href="https://findjobsinfinland.fi/jobs" class="nj-cta-btn">Browse All Jobs</a>
+  </div>
+
+  <!-- Error state -->
+  <div class="nj-state" id="stateError">
+    <div class="nj-state-icon">⚠️</div>
+    <h2>Something went wrong</h2>
+    <p id="errorMsg">We couldn't load your alerts. Please try again.</p>
+    <a href="" onclick="location.reload()" class="nj-cta-btn">Retry</a>
+  </div>
+
+  <!-- Job cards grid -->
+  <main class="nj-grid" id="jobsGrid" aria-label="Pending job alerts"></main>
+
+
+  <!-- Firebase SDK (compat for simplicity) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script>
+    // ── Firebase init ──────────────────────────────────────
+    const firebaseConfig = {
+      apiKey: "AIzaSyAstAXkwifJ-ukfZKSXiLG_l9iNwg4tPw4",
+      authDomain: "findjobsinfinland-3c061.firebaseapp.com",
+      projectId: "findjobsinfinland-3c061",
+      storageBucket: "findjobsinfinland-3c061.appspot.com",
+      messagingSenderId: "575437446165",
+      appId: "1:575437446165:web:51922bc01fd291b09b821c"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // ── Period from URL ────────────────────────────────────
+    const params = new URLSearchParams(window.location.search);
+    const rawPeriod = params.get('period') || 'daily';
+    const period = ['daily', 'weekly', 'monthly'].includes(rawPeriod) ? rawPeriod : 'daily';
+
+    const periodLabels = { daily: "Today's", weekly: "This Week's", monthly: "This Month's" };
+    const periodLabel = periodLabels[period];
+
+    // ── Set UI text ────────────────────────────────────────
+    document.getElementById('periodLabel').textContent = periodLabel;
+    document.getElementById('emptyPeriodLabel').textContent = period;
+
+    // ── Activate period tab ────────────────────────────────
+    const activeTab = document.getElementById('tab-' + period);
+    if (activeTab) activeTab.classList.add('active');
+
+    // ── Helpers ────────────────────────────────────────────
+    function showState(id) {
+      ['stateNotAuth', 'stateEmpty', 'stateError'].forEach(s => {
+        document.getElementById(s).classList.remove('active');
+      });
+      const el = document.getElementById(id);
+      if (el) el.classList.add('active');
+    }
+
+    function hideSpinner() {
+      document.getElementById('loadingSpinner').classList.remove('active');
+    }
+
+    function formatDate(ts) {
+      if (!ts) return '';
+      try {
+        const d = ts.toDate ? ts.toDate() : new Date(ts);
+        return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+      } catch { return ''; }
+    }
+
+    function escHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function buildCard(job, index) {
+      const locs = Array.isArray(job.jobLocation)
+        ? job.jobLocation.map(l => l.charAt(0).toUpperCase() + l.slice(1)).join(', ')
+        : (job.jobLocation ? String(job.jobLocation) : 'Finland');
+      const imgSrc = job.imageUrl || 'https://findjobsinfinland.fi/images/jobs/it-and-tech-jobs.png';
+      const delay = Math.min(index * 60, 400);
+
+      return `
+        <article class="job-card" style="animation-delay:${delay}ms;">
+          <a href="${escHtml(job.jobLink || '#')}" target="_blank" rel="noopener noreferrer">
+            <img class="job-card-img" src="${escHtml(imgSrc)}"
+                 alt="${escHtml(job.title)}" loading="lazy"
+                 onerror="this.src='https://findjobsinfinland.fi/images/jobs/it-and-tech-jobs.png'" />
+          </a>
+          <div class="job-card-body">
+            <p class="job-card-location">📍 ${escHtml(locs)}</p>
+            <h2 class="job-card-title">${escHtml(job.title)}</h2>
+            <p class="job-card-desc">${escHtml(job.description)}</p>
+            <div class="job-card-footer">
+              <span class="job-card-date">${job.date_posted ? 'Posted ' + escHtml(job.date_posted) : ''}</span>
+              <a class="apply-btn" href="${escHtml(job.jobLink || '#')}" target="_blank" rel="noopener noreferrer">Apply Now</a>
+            </div>
+          </div>
+        </article>`;
+    }
+
+    // ── Main: load alerts ──────────────────────────────────
+    auth.onAuthStateChanged(async function (user) {
+      if (!user) {
+        hideSpinner();
+        showState('stateNotAuth');
+        return;
+      }
+
+      try {
+        // Query pendingAlerts for this period (may contain email_ and push_ prefixed docs)
+        const snap = await db
+          .collection('users').doc(user.uid)
+          .collection('pendingAlerts')
+          .where('frequency', '==', period)
+          .orderBy('createdAt', 'desc')
+          .get();
+
+        hideSpinner();
+
+        if (snap.empty) {
+          showState('stateEmpty');
+          return;
+        }
+
+        // De-duplicate by jobId (email_ and push_ docs have the same job content)
+        const seen = new Set();
+        const jobs = [];
+        snap.forEach(doc => {
+          const d = doc.data();
+          if (!seen.has(d.jobId)) {
+            seen.add(d.jobId);
+            jobs.push(d);
+          }
+        });
+
+        // Update badge
+        const badge = document.getElementById('countBadge');
+        badge.textContent = jobs.length + (jobs.length === 1 ? ' job queued' : ' jobs queued');
+        badge.style.display = 'inline-block';
+
+        // Render cards
+        const grid = document.getElementById('jobsGrid');
+        grid.innerHTML = jobs.map((j, i) => buildCard(j, i)).join('');
+
+      } catch (err) {
+        console.error('Error loading alerts:', err);
+        hideSpinner();
+        document.getElementById('errorMsg').textContent = err.message || 'Failed to load alerts.';
+        showState('stateError');
+      }
+    });
+  </script>
+</body>
+
+</html>

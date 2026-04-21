@@ -9,13 +9,16 @@
 swipe down to refresh is not working in app, make to show as in the uploaded image
 
 
-Change the logic completely and remove all local file handling.
 
-New approach:
+Now change the logic  : 
+If the link belongs to https://findjobsinfinland.fi/, open it inside the app using local files:
+https://findjobsinfinland.fi/ → index.html
+https://findjobsinfinland.fi/about-us → about-us.html
+https://findjobsinfinland.fi/contact-us → contact-us.html
+https://findjobsinfinland.fi/disclaimer → disclaimer.html
+https://findjobsinfinland.fi/edit-profile → edit-profile.html
+https://findjobsinfinland.fi/jobs → jobs.html
+https://findjobsinfinland.fi/privacy-policy → privacy-policy.html
+https://findjobsinfinland.fi/terms-and-conditions → terms-and-conditions.html
 
-When the app opens, load https://findjobsinfinland.fi/ directly inside the app.
-After that, any link that starts with https://findjobsinfinland.fi/ should open inside the app.
-Any external link that does not start with https://findjobsinfinland.fi/ should open in the browser mode inside app, just like it works now.
-When the device is offline, show the No Internet page exactly as it already works now.
-
-So in short: do not use local HTML files anymore. Load the live website in the app, keep all internal links inside the app, keep external links opening in the browser, and keep the existing offline page behavior unchanged.
+and If the link is an internal page (e.g., https://findjobsinfinland.fi/cleaner.html), open that specific page inside the app.
