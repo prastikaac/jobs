@@ -227,12 +227,12 @@
     var pollTimer   = null;
 
     function getSavedPage() {
-      try { 
+      try {
         var saved = sessionStorage.getItem(STORAGE_KEY);
-        // Return saved page or default to index.html
-        return saved || 'index.html'; 
+        // Return saved page or default to the main site URL
+        return saved || 'https://findjobsinfinland.fi/';
       }
-      catch (_) { return 'index.html'; }
+      catch (_) { return 'https://findjobsinfinland.fi/'; }
     }
 
     function clearSavedPage() {
@@ -241,18 +241,23 @@
 
     function goOnline() {
       stopPolling();
+      setStatus('Connected! Redirecting…', '#4caf50');
       var returnTo = getSavedPage();
       clearSavedPage();
       window.location.href = returnTo;
     }
 
     function checkConnectivity() {
-      if (!navigator.onLine) return;
+      setStatus('Checking connection…', '#e0a030');
+      // Use a lightweight probe to the actual server
       var probe = 'https://findjobsinfinland.fi/images/icon.png?_=' + Date.now();
       fetch(probe, { method: 'HEAD', cache: 'no-store', mode: 'no-cors' })
-        .then(goOnline)
-        .catch(function () { /* still offline */ });
-    }
+        .then(function () {
+          goOnline();
+        })
+        .catch(function () {
+          setStatus('Still offline – retrying…', '#e05c5c');
+        });
     }
 
     function startPolling() {
@@ -285,11 +290,6 @@
       statusText.textContent = msg;
       statusDot.style.background = color || '#e05c5c';
     }
-
-    // Update every few seconds so user sees the app is trying
-    setInterval(function () {
-      setStatus('Retrying…', '#e05c5c');
-    }, POLL_MS);
 
     // ── Capacitor Network plugin (best accuracy on native) ────────────────────
     (function tryCapacitor() {

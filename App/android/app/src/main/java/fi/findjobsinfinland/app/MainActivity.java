@@ -143,7 +143,12 @@ public class MainActivity extends BridgeActivity {
                     swipeRefreshLayout.post(() -> swipeRefreshLayout.setRefreshing(false));
                 }
 
-                // Inject JS to handle external links via Capacitor Browser plugin and instant offline catch
+                // Inject JS to handle external links via Capacitor Browser plugin.
+                // NOTE: We deliberately do NOT check navigator.onLine here for internal
+                // links. That API is unreliable on Android and causes false-positive
+                // offline redirects. Instead, we let the WebView naturally attempt the
+                // navigation; if the network is truly down, Capacitor's errorPath
+                // ("nointernet.html") will kick in automatically.
                 String js = "document.removeEventListener('click', window._capLinkInterceptor, true);" +
                             "window._capLinkInterceptor = function(e) {" +
                             "  var a = e.target.closest('a');" +
@@ -160,14 +165,13 @@ public class MainActivity extends BridgeActivity {
                             "      } else {" +
                             "        window.open(a.href, '_blank');" +
                             "      }" +
-                            "    } else if (!navigator.onLine) {" +
-                            "      e.preventDefault();" +
-                            "      sessionStorage.setItem('app_last_page_before_offline', a.href);" +
-                            "      window.location.href = 'https://localhost/nointernet.html';" +
                             "    }" +
                             "  }" +
                             "};" +
-                            "document.addEventListener('click', window._capLinkInterceptor, true);";
+                            "document.addEventListener('click', window._capLinkInterceptor, true);" +
+                            // Continuously track the current page URL so the offline
+                            // page knows where to return when connectivity resumes.
+                            "try { sessionStorage.setItem('app_last_page_before_offline', window.location.href); } catch(_) {}";
                 webView.evaluateJavascript(js, null);
             }
         });
