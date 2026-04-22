@@ -52,7 +52,20 @@ public class MainActivity extends BridgeActivity {
                 String currentUrl = getBridge().getWebView().getUrl();
                 if (currentUrl != null && currentUrl.contains("nointernet.html")) {
                     if (isConnected()) {
-                        getBridge().getWebView().loadUrl(lastVisitedUrl);
+                        // Silent ping to avoid reloading/flashing when internet is unstable
+                        new Thread(() -> {
+                            try {
+                                java.net.HttpURLConnection conn = (java.net.HttpURLConnection) new java.net.URL("https://findjobsinfinland.fi/images/icon.png").openConnection();
+                                conn.setRequestMethod("HEAD");
+                                conn.setConnectTimeout(2000);
+                                conn.setReadTimeout(2000);
+                                if (conn.getResponseCode() == 200) {
+                                    getBridge().getWebView().post(() -> {
+                                        getBridge().getWebView().loadUrl(lastVisitedUrl);
+                                    });
+                                }
+                            } catch (Exception e) {}
+                        }).start();
                     }
                 }
             }
@@ -128,7 +141,13 @@ public class MainActivity extends BridgeActivity {
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
                         }
-                        view.loadUrl("file:///android_asset/public/nointernet.html");
+                        
+                        if (!isConnected()) {
+                            view.loadUrl("file:///android_asset/public/nointernet.html");
+                        } else {
+                            // If we have network but the site refused connection (website down)
+                            view.loadUrl("file:///android_asset/public/error.html");
+                        }
                     }
                 }
 
