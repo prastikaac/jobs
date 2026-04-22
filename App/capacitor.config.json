@@ -19,7 +19,7 @@
       "launchAutoHide": false,
       "launchFadeOutDuration": 0,
       "androidSplashResourceName": "splash",
-      "androidScaleType": "CENTER_INSIDE",
+      "androidScaleType": "CENTER",
       "showSpinner": false,
       "splashFullScreen": false,
       "splashImmersive": false
