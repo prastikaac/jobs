@@ -10,8 +10,7 @@
       "findjobsinfinland.fi",
       "*.findjobsinfinland.fi",
       "localhost"
-    ],
-    "errorPath": "nointernet.html"
+    ]
   },
   "plugins": {
     "SplashScreen": {

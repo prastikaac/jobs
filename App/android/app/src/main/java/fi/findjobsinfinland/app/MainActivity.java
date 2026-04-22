@@ -17,6 +17,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
@@ -94,6 +95,27 @@ public class MainActivity extends BridgeActivity {
                     getBridge().getWebView().loadUrl("https://localhost/nointernet.html");
                 });
             }
+        }
+
+        // Inject custom WebViewClient to route network errors and HTTP errors differently
+        if (getBridge() != null && getBridge().getWebView() != null) {
+            getBridge().getWebView().setWebViewClient(new com.getcapacitor.BridgeWebViewClient(getBridge()) {
+                @Override
+                public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                    super.onReceivedError(view, request, error);
+                    if (request.isForMainFrame()) {
+                        view.loadUrl("https://localhost/nointernet.html");
+                    }
+                }
+
+                @Override
+                public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse errorResponse) {
+                    super.onReceivedHttpError(view, request, errorResponse);
+                    if (request.isForMainFrame()) {
+                        view.loadUrl("https://localhost/error.html");
+                    }
+                }
+            });
         }
 
         int nightModeFlags = getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
@@ -204,7 +226,8 @@ public class MainActivity extends BridgeActivity {
                 String currentUrl = webView.getUrl();
                 if (currentUrl != null
                         && !currentUrl.isEmpty()
-                        && !currentUrl.contains("nointernet.html")) {
+                        && !currentUrl.contains("nointernet.html")
+                        && !currentUrl.contains("error.html")) {
                     lastVisitedUrl = currentUrl;
                 }
                 webView.evaluateJavascript(js, null);
@@ -241,21 +264,16 @@ public class MainActivity extends BridgeActivity {
             }
         }
 
-        swipeRefreshLayout.setColorSchemeColors(
-            Color.parseColor("#482dff"),
-            Color.parseColor("#6c52ff"),
-            Color.parseColor("#8a79ff")
-        );
-
-        // Match the SwipeRefreshLayout background to the current theme so the
-        // exposed area behind the WebView during the pull gesture doesn't flash
-        // a contrasting colour.
+        // Match the SwipeRefreshLayout background and arrow color to the current theme
+        // so it looks natural and doesn't flash a contrasting colour.
         int nightModeFlags = getResources().getConfiguration().uiMode
                 & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
         if (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
             swipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#121212"));
+            swipeRefreshLayout.setColorSchemeColors(Color.parseColor("#ffffff")); // White arrow for dark mode
         } else {
             swipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#ffffff"));
+            swipeRefreshLayout.setColorSchemeColors(Color.parseColor("#000000")); // Black arrow for light mode
         }
 
         swipeRefreshLayout.setOnRefreshListener(() -> {
