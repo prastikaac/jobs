@@ -80,6 +80,14 @@ public class MainActivity extends BridgeActivity {
             // Enforce DOM storage (localStorage) which most cookie banners use
             getBridge().getWebView().getSettings().setDomStorageEnabled(true);
             getBridge().getWebView().getSettings().setDatabaseEnabled(true);
+            
+            // If the app is launched offline, bypass the 10-second WebView timeout
+            // and immediately load the offline page.
+            if (!isConnected()) {
+                getBridge().getWebView().post(() -> {
+                    getBridge().getWebView().loadUrl("https://localhost/nointernet.html");
+                });
+            }
         }
 
         setupSwipeRefresh();

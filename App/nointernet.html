@@ -282,10 +282,8 @@
     }
 
     // Update every few seconds so user sees the app is trying
-    var tries = 0;
     setInterval(function () {
-      tries++;
-      setStatus('Retrying… (attempt ' + tries + ')', '#e05c5c');
+      setStatus('Retrying…', '#e05c5c');
     }, POLL_MS);
 
     // ── Capacitor Network plugin (best accuracy on native) ────────────────────
