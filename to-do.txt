@@ -23,11 +23,13 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - update prompt for ai check
 
-- update email content for job alerts
+- update email content for job alerts : current job alert email template for the user is good in mobile device now make it responsive for desktop devices too
 
 - update firebase notifications
 
 - on back going to index.html a white blank popup appears
 
 
-- now in our website we have four di theme mode : dark, light and system default.change the default theme of our website to system default
+- now in our website we have three different theme mode : dark, light and system default and currently on the website it is set to light mode as the default theme so change the default theme of our website to system default means if the user device is in dark mode then the website should be in dark mode and if the user device is in light mode then the website should be in light mode
+
+Change the app viewing name to JobsInFinland, but in play store and other platforms it should be "Find Jobs in Finland" and after downloading on the device it should be "JobsInFinland"
