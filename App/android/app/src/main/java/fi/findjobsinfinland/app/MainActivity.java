@@ -45,14 +45,6 @@ public class MainActivity extends BridgeActivity {
         super.onCreate(savedInstanceState);
 
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
-        
-        // Dynamically set background color based on system theme to prevent white flash
-        int nightModeFlags = getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
-        if (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
-            getWindow().getDecorView().setBackgroundColor(Color.parseColor("#0e1621"));
-        } else {
-            getWindow().getDecorView().setBackgroundColor(Color.parseColor("#f0f2f5"));
-        }
     }
 
     @Override
@@ -89,13 +81,6 @@ public class MainActivity extends BridgeActivity {
             getBridge().getWebView().getSettings().setDomStorageEnabled(true);
             getBridge().getWebView().getSettings().setDatabaseEnabled(true);
             
-            // Disable Cache completely
-            getBridge().getWebView().getSettings().setCacheMode(android.webkit.WebSettings.LOAD_NO_CACHE);
-            getBridge().getWebView().clearCache(true);
-            
-            // Make WebView transparent so the window background shows through during refresh
-            getBridge().getWebView().setBackgroundColor(Color.TRANSPARENT);
-
             // If the app is launched offline, bypass the 10-second WebView timeout
             // and immediately load the offline page.
             if (!isConnected()) {
@@ -104,6 +89,41 @@ public class MainActivity extends BridgeActivity {
                 });
             }
         }
+
+        int nightModeFlags = getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        if (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+            getBridge().getWebView().setBackgroundColor(Color.parseColor("#121212"));
+        } else {
+            getBridge().getWebView().setBackgroundColor(Color.parseColor("#ffffff"));
+        }
+
+        getBridge().getWebView().addJavascriptInterface(new Object() {
+            @android.webkit.JavascriptInterface
+            public void openSocialLink(String url) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                String pkg = null;
+                if (url.contains("linkedin.com")) pkg = "com.linkedin.android";
+                else if (url.contains("facebook.com")) pkg = "com.facebook.katana";
+                else if (url.contains("instagram.com")) pkg = "com.instagram.android";
+                
+                if (pkg != null) {
+                    intent.setPackage(pkg);
+                }
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                try {
+                    MainActivity.this.startActivity(intent);
+                } catch (Exception e) {
+                    Intent fallback = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    fallback.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    try {
+                        MainActivity.this.startActivity(fallback);
+                    } catch (Exception ex) {
+                        // ignore
+                    }
+                }
+            }
+        }, "SocialAppOpener");
 
         setupSwipeRefresh();
 
@@ -131,10 +151,10 @@ public class MainActivity extends BridgeActivity {
                             "    var isInternal = a.href.indexOf('findjobsinfinland.fi') !== -1 || a.href.indexOf('localhost') !== -1;" +
                             "    if (!isInternal) {" +
                             "      e.preventDefault();" +
-                            "      var urlStr = a.href.toLowerCase();" +
-                            "      var isSocial = urlStr.indexOf('linkedin.com') !== -1 || urlStr.indexOf('facebook.com') !== -1 || urlStr.indexOf('instagram.com') !== -1;" +
-                            "      if (isSocial && window.Capacitor && window.Capacitor.Plugins.App) {" +
-                            "        window.Capacitor.Plugins.App.openUrl({ url: a.href }).catch(function() { window.open(a.href, '_system'); });" +
+                            "      var u = a.href.toLowerCase();" +
+                            "      var isSocial = u.includes('linkedin.com') || u.includes('facebook.com') || u.includes('instagram.com');" +
+                            "      if (isSocial && window.SocialAppOpener) {" +
+                            "        window.SocialAppOpener.openSocialLink(a.href);" +
                             "      } else if (window.Capacitor && window.Capacitor.Plugins.Browser) {" +
                             "        window.Capacitor.Plugins.Browser.open({ url: a.href, presentationStyle: 'fullscreen' });" +
                             "      } else {" +
@@ -142,7 +162,7 @@ public class MainActivity extends BridgeActivity {
                             "      }" +
                             "    } else if (!navigator.onLine) {" +
                             "      e.preventDefault();" +
-                            "      sessionStorage.setItem('app_last_page_before_offline', window.location.href);" +
+                            "      sessionStorage.setItem('app_last_page_before_offline', a.href);" +
                             "      window.location.href = 'https://localhost/nointernet.html';" +
                             "    }" +
                             "  }" +
