@@ -92,7 +92,7 @@ public class MainActivity extends BridgeActivity {
             // and immediately load the offline page.
             if (!isConnected()) {
                 getBridge().getWebView().post(() -> {
-                    getBridge().getWebView().loadUrl("https://localhost/nointernet.html");
+                    getBridge().getWebView().loadUrl("file:///android_asset/public/nointernet.html");
                 });
             }
         }
@@ -104,7 +104,7 @@ public class MainActivity extends BridgeActivity {
                 public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
                     super.onReceivedError(view, request, error);
                     if (request.isForMainFrame()) {
-                        view.loadUrl("https://localhost/nointernet.html");
+                        view.loadUrl("file:///android_asset/public/nointernet.html");
                     }
                 }
 
@@ -112,7 +112,7 @@ public class MainActivity extends BridgeActivity {
                 public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse errorResponse) {
                     super.onReceivedHttpError(view, request, errorResponse);
                     if (request.isForMainFrame()) {
-                        view.loadUrl("https://localhost/error.html");
+                        view.loadUrl("file:///android_asset/public/error.html");
                     }
                 }
             });
@@ -279,7 +279,7 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
-                wv.evaluateJavascript("sessionStorage.setItem('app_last_page_before_offline', window.location.href); window.location.href = 'https://localhost/nointernet.html';", null);
+                wv.loadUrl("file:///android_asset/public/nointernet.html");
                 return;
             }
 
