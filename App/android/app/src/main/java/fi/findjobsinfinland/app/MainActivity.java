@@ -208,6 +208,17 @@ public class MainActivity extends BridgeActivity {
             Color.parseColor("#8a79ff")
         );
 
+        // Match the SwipeRefreshLayout background to the current theme so the
+        // exposed area behind the WebView during the pull gesture doesn't flash
+        // a contrasting colour.
+        int nightModeFlags = getResources().getConfiguration().uiMode
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        if (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+            swipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#121212"));
+        } else {
+            swipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#ffffff"));
+        }
+
         swipeRefreshLayout.setOnRefreshListener(() -> {
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
@@ -215,8 +226,19 @@ public class MainActivity extends BridgeActivity {
                 return;
             }
 
-            // DO NOT use wv.reload() natively as it destroys Capacitor's JS bridge hooks and causes a fatal crash
-            wv.evaluateJavascript("window.location.reload(true);", null);
+            // DO NOT use wv.reload() natively as it destroys Capacitor's JS bridge hooks
+            // and causes a fatal crash.
+            //
+            // Instead of window.location.reload(true) which blanks the DOM and causes a
+            // visible white flash, use a soft navigation that keeps the current page
+            // painted until the new one is ready.
+            wv.evaluateJavascript(
+                "(function() {" +
+                "  var url = window.location.href;" +
+                "  window.location.replace(url);" +
+                "})();",
+                null
+            );
 
             // Safety net: hide spinner after 8 s even if onPageFinished never fires
             new Handler(getMainLooper()).postDelayed(() -> {

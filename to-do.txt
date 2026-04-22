@@ -30,9 +30,8 @@ now i want to send  job alerts instantly to the user's device immediately after 
 - on back going to index.html a white blank popup appears
 
 
-the splash image logo is being zoomed as you can see in the uploaded image, fix it : 
 
 
 while refreshing the app its shows like this, kind of lagging for a second fix it : 
 
-now here in our app when the internet goes and user tries to open any link then it shows no internet page thats good but when internet comes back then it should automatically refresh that  current page, right now it takes back to index.html page, fix it and the no internet page should automatically check for internet every 3 seconds and if it finds internet then it should refresh the current page
+now here in our app when the internet goes and user tries to open any link then it shows no internet page thats good but when internet comes back then it should automatically refresh that  current page, right now it takes back to index.html page, fix it and the no internet page should automatically check for internet every 3 seconds and if it finds internet then it should refresh the current page and also  sometimes when i open any internal link inside app starting with https://findjobsinfinland.fi/ it shows no internet page, fix it
