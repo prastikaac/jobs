@@ -140,14 +140,17 @@ public class MainActivity extends BridgeActivity {
                         String failedUrl = request.getUrl().toString();
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
-                        }
+                        // Immediately wipe out the default Chromium error text synchronously
+                        view.loadData("", "text/html", "UTF-8");
                         
-                        if (!isConnected()) {
-                            view.loadUrl("file:///android_asset/public/nointernet.html");
-                        } else {
-                            // If we have network but the site refused connection (website down)
-                            view.loadUrl("file:///android_asset/public/error.html");
-                        }
+                        view.post(() -> {
+                            if (!isConnected()) {
+                                view.loadUrl("file:///android_asset/public/nointernet.html");
+                            } else {
+                                // If we have network but the site refused connection (website down)
+                                view.loadUrl("file:///android_asset/public/error.html");
+                            }
+                        });
                     }
                 }
 
@@ -159,7 +162,12 @@ public class MainActivity extends BridgeActivity {
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
                         }
-                        view.loadUrl("file:///android_asset/public/error.html");
+                        // Immediately wipe out the default Chromium error text synchronously
+                        view.loadData("", "text/html", "UTF-8");
+
+                        view.post(() -> {
+                            view.loadUrl("file:///android_asset/public/error.html");
+                        });
                     }
                 }
             });
