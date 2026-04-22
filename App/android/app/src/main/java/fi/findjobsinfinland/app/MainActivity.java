@@ -140,6 +140,8 @@ public class MainActivity extends BridgeActivity {
                         String failedUrl = request.getUrl().toString();
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
+                        }
+                        
                         // Immediately wipe out the default Chromium error text synchronously
                         view.loadData("", "text/html", "UTF-8");
                         
