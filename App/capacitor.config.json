@@ -30,7 +30,7 @@
   },
   "android": {
     "allowMixedContent": false,
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#00000000",
     "overrideUserAgent": "FindJobsFinlandApp/1.0 (Android)"
   },
   "ios": {
