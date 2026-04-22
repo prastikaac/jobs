@@ -28,7 +28,6 @@
 
     <!-- Launch / Splash theme — shown immediately on cold start -->
     <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
-        <item name="android:background">@drawable/splash</item>
         <item name="windowSplashScreenBackground">@color/splashBackground</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
         <!-- NOT fullscreen: respect status bar and nav bar -->
