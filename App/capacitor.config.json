@@ -8,7 +8,8 @@
     "cleartext": false,
     "allowNavigation": [
       "findjobsinfinland.fi",
-      "*.findjobsinfinland.fi"
+      "*.findjobsinfinland.fi",
+      "localhost"
     ],
     "errorPath": "nointernet.html"
   },
@@ -16,7 +17,7 @@
     "SplashScreen": {
       "launchShowDuration": 10000,
       "launchAutoHide": false,
-      "launchFadeOutDuration": 600,
+      "launchFadeOutDuration": 0,
       "backgroundColor": "#ffffff",
       "androidSplashResourceName": "splash",
       "androidScaleType": "CENTER_INSIDE",

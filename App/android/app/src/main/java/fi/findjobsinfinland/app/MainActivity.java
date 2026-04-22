@@ -83,23 +83,17 @@ public class MainActivity extends BridgeActivity {
         }
 
         setupSwipeRefresh();
-        
+
         getBridge().addWebViewListener(new WebViewListener() {
             @Override
             public void onPageLoaded(WebView webView) {
-                // Wait a brief moment for the WebView to paint its first frame,
-                // then fade the splash out smoothly (Facebook-style: content is
-                // already visible before the overlay disappears).
-                new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                    // Pass fadeOutDuration=600 so both old-API overlay and the
-                    // Android-12 ObjectAnimator use our configured 600 ms fade.
-                    webView.evaluateJavascript(
-                        "if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) {" +
-                        "  window.Capacitor.Plugins.SplashScreen.hide({ fadeOutDuration: 600 });" +
-                        "}",
-                        null
-                    );
-                }, 200); // 200 ms first-paint delay
+                // Hide splash instantly as soon as the page is loaded.
+                webView.evaluateJavascript(
+                    "if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) {" +
+                    "  window.Capacitor.Plugins.SplashScreen.hide({ fadeOutDuration: 0 });" +
+                    "}",
+                    null
+                );
 
                 // Hide swipe-to-refresh spinner
                 if (swipeRefreshLayout != null && swipeRefreshLayout.isRefreshing()) {
