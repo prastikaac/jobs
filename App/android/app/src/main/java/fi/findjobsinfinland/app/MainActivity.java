@@ -43,6 +43,23 @@ public class MainActivity extends BridgeActivity {
     private long  backPressedTime = 0;
     private Toast backExitToast;
 
+    // --- Network Poller ----------------------------------------------------------
+    private android.os.Handler networkPollHandler = new android.os.Handler(android.os.Looper.getMainLooper());
+    private Runnable networkPollRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (getBridge() != null && getBridge().getWebView() != null) {
+                String currentUrl = getBridge().getWebView().getUrl();
+                if (currentUrl != null && currentUrl.contains("nointernet.html")) {
+                    if (isConnected()) {
+                        getBridge().getWebView().loadUrl(lastVisitedUrl);
+                    }
+                }
+            }
+            networkPollHandler.postDelayed(this, 3000);
+        }
+    };
+
     // =============================================================================
     //  Lifecycle
     // =============================================================================
@@ -95,6 +112,9 @@ public class MainActivity extends BridgeActivity {
                     getBridge().getWebView().loadUrl("file:///android_asset/public/nointernet.html");
                 });
             }
+
+            // Start the 3-second network polling loop natively
+            networkPollHandler.post(networkPollRunnable);
         }
 
         // Inject custom WebViewClient to route network errors and HTTP errors differently
@@ -104,6 +124,10 @@ public class MainActivity extends BridgeActivity {
                 public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
                     super.onReceivedError(view, request, error);
                     if (request.isForMainFrame()) {
+                        String failedUrl = request.getUrl().toString();
+                        if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
+                            lastVisitedUrl = failedUrl;
+                        }
                         view.loadUrl("file:///android_asset/public/nointernet.html");
                     }
                 }
@@ -112,6 +136,10 @@ public class MainActivity extends BridgeActivity {
                 public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse errorResponse) {
                     super.onReceivedHttpError(view, request, errorResponse);
                     if (request.isForMainFrame()) {
+                        String failedUrl = request.getUrl().toString();
+                        if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
+                            lastVisitedUrl = failedUrl;
+                        }
                         view.loadUrl("file:///android_asset/public/error.html");
                     }
                 }
