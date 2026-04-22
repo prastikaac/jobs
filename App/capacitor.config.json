@@ -1,6 +1,6 @@
 {
   "appId": "fi.findjobsinfinland.app",
-  "appName": "Find Jobs In Finland",
+  "appName": "JobsInFinland",
   "webDir": "www",
   "server": {
     "url": "https://findjobsinfinland.fi/",
