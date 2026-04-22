@@ -29,3 +29,10 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - on back going to index.html a white blank popup appears
 
+
+
+- [x] now here in our app when the internet goes and user tries to open any link then it shows no internet page thats good but when internet comes back then it should automatically refresh that  current page, right now it takes back to index.html page, fix it
+
+- [x] while refreshing the app its shows like this for a second fix it : 
+
+- [x] there is a cache system somewhere in our app, remove that cache system from app

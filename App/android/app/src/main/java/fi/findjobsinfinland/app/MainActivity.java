@@ -45,6 +45,14 @@ public class MainActivity extends BridgeActivity {
         super.onCreate(savedInstanceState);
 
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+        
+        // Dynamically set background color based on system theme to prevent white flash
+        int nightModeFlags = getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        if (nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+            getWindow().getDecorView().setBackgroundColor(Color.parseColor("#0e1621"));
+        } else {
+            getWindow().getDecorView().setBackgroundColor(Color.parseColor("#f0f2f5"));
+        }
     }
 
     @Override
@@ -81,6 +89,13 @@ public class MainActivity extends BridgeActivity {
             getBridge().getWebView().getSettings().setDomStorageEnabled(true);
             getBridge().getWebView().getSettings().setDatabaseEnabled(true);
             
+            // Disable Cache completely
+            getBridge().getWebView().getSettings().setCacheMode(android.webkit.WebSettings.LOAD_NO_CACHE);
+            getBridge().getWebView().clearCache(true);
+            
+            // Make WebView transparent so the window background shows through during refresh
+            getBridge().getWebView().setBackgroundColor(Color.TRANSPARENT);
+
             // If the app is launched offline, bypass the 10-second WebView timeout
             // and immediately load the offline page.
             if (!isConnected()) {
@@ -116,13 +131,18 @@ public class MainActivity extends BridgeActivity {
                             "    var isInternal = a.href.indexOf('findjobsinfinland.fi') !== -1 || a.href.indexOf('localhost') !== -1;" +
                             "    if (!isInternal) {" +
                             "      e.preventDefault();" +
-                            "      if (window.Capacitor && window.Capacitor.Plugins.Browser) {" +
+                            "      var urlStr = a.href.toLowerCase();" +
+                            "      var isSocial = urlStr.indexOf('linkedin.com') !== -1 || urlStr.indexOf('facebook.com') !== -1 || urlStr.indexOf('instagram.com') !== -1;" +
+                            "      if (isSocial && window.Capacitor && window.Capacitor.Plugins.App) {" +
+                            "        window.Capacitor.Plugins.App.openUrl({ url: a.href }).catch(function() { window.open(a.href, '_system'); });" +
+                            "      } else if (window.Capacitor && window.Capacitor.Plugins.Browser) {" +
                             "        window.Capacitor.Plugins.Browser.open({ url: a.href, presentationStyle: 'fullscreen' });" +
                             "      } else {" +
                             "        window.open(a.href, '_blank');" +
                             "      }" +
                             "    } else if (!navigator.onLine) {" +
                             "      e.preventDefault();" +
+                            "      sessionStorage.setItem('app_last_page_before_offline', window.location.href);" +
                             "      window.location.href = 'https://localhost/nointernet.html';" +
                             "    }" +
                             "  }" +
@@ -171,7 +191,7 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
-                wv.evaluateJavascript("window.location.href = 'https://localhost/nointernet.html';", null);
+                wv.evaluateJavascript("sessionStorage.setItem('app_last_page_before_offline', window.location.href); window.location.href = 'https://localhost/nointernet.html';", null);
                 return;
             }
 
