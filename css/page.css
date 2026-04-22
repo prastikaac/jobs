@@ -1,5 +1,6 @@
 :root,
 :root .lgT:not(.drK),
+:root .syD:not(.drK),
 :root .theme0:not(.drK) {
     /* Theme */
     --themeC: #41B375;
