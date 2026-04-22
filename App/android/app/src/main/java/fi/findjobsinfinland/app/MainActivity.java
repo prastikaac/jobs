@@ -32,6 +32,12 @@ public class MainActivity extends BridgeActivity {
     // --- Layout ------------------------------------------------------------------
     private SwipeRefreshLayout swipeRefreshLayout;
 
+    // --- Offline recovery --------------------------------------------------------
+    // Tracks the last real page URL natively so the no-internet page can return
+    // to it. We can't use sessionStorage because the error page is served from
+    // the localhost origin while normal pages are on findjobsinfinland.fi.
+    private String lastVisitedUrl = "https://findjobsinfinland.fi/";
+
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
     private Toast backExitToast;
@@ -125,6 +131,26 @@ public class MainActivity extends BridgeActivity {
             }
         }, "SocialAppOpener");
 
+        // Expose a native bridge so the no-internet page can trigger a real
+        // page load from native code (bypasses Capacitor's error-path loop).
+        getBridge().getWebView().addJavascriptInterface(new Object() {
+            @android.webkit.JavascriptInterface
+            public String getLastUrl() {
+                return lastVisitedUrl;
+            }
+
+            @android.webkit.JavascriptInterface
+            public void reloadPage(String url) {
+                final String target = (url != null && !url.isEmpty()) ? url : lastVisitedUrl;
+                runOnUiThread(() -> {
+                    WebView wv = getBridge().getWebView();
+                    if (wv != null) {
+                        wv.loadUrl(target);
+                    }
+                });
+            }
+        }, "PageReloader");
+
         setupSwipeRefresh();
 
         getBridge().addWebViewListener(new WebViewListener() {
@@ -172,6 +198,15 @@ public class MainActivity extends BridgeActivity {
                             // Continuously track the current page URL so the offline
                             // page knows where to return when connectivity resumes.
                             "try { sessionStorage.setItem('app_last_page_before_offline', window.location.href); } catch(_) {}";
+
+                // Also track it natively (sessionStorage is origin-scoped and
+                // won't be readable from the localhost-served error page).
+                String currentUrl = webView.getUrl();
+                if (currentUrl != null
+                        && !currentUrl.isEmpty()
+                        && !currentUrl.contains("nointernet.html")) {
+                    lastVisitedUrl = currentUrl;
+                }
                 webView.evaluateJavascript(js, null);
             }
         });

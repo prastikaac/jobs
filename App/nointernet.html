@@ -222,28 +222,38 @@
 
   <script>
     // ── Connectivity check ────────────────────────────────────────────────────
-    var STORAGE_KEY = 'app_last_page_before_offline';
     var POLL_MS     = 3000;
     var pollTimer   = null;
 
-    function getSavedPage() {
+    function getReturnUrl() {
+      // Use the native bridge (PageReloader) to get the last real page URL.
+      // sessionStorage won't work here because this page is on the localhost
+      // origin while normal pages are on findjobsinfinland.fi.
       try {
-        var saved = sessionStorage.getItem(STORAGE_KEY);
-        // Return saved page or default to the main site URL
-        return saved || 'https://findjobsinfinland.fi/';
-      }
-      catch (_) { return 'https://findjobsinfinland.fi/'; }
-    }
-
-    function clearSavedPage() {
-      try { sessionStorage.removeItem(STORAGE_KEY); } catch (_) {}
+        if (window.PageReloader && window.PageReloader.getLastUrl) {
+          var url = window.PageReloader.getLastUrl();
+          if (url) return url;
+        }
+      } catch (_) {}
+      return 'https://findjobsinfinland.fi/';
     }
 
     function goOnline() {
       stopPolling();
       setStatus('Connected! Redirecting…', '#4caf50');
-      var returnTo = getSavedPage();
-      clearSavedPage();
+      var returnTo = getReturnUrl();
+
+      // Use native bridge to load the URL directly via wv.loadUrl().
+      // This bypasses Capacitor's error-path routing which would otherwise
+      // loop back to this page.
+      try {
+        if (window.PageReloader && window.PageReloader.reloadPage) {
+          window.PageReloader.reloadPage(returnTo);
+          return;
+        }
+      } catch (_) {}
+
+      // Fallback if native bridge isn't available
       window.location.href = returnTo;
     }
 
