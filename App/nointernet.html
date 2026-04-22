@@ -227,8 +227,12 @@
     var pollTimer   = null;
 
     function getSavedPage() {
-      try { return sessionStorage.getItem(STORAGE_KEY) || 'https://findjobsinfinland.fi/'; }
-      catch (_) { return 'https://findjobsinfinland.fi/'; }
+      try { 
+        var saved = sessionStorage.getItem(STORAGE_KEY);
+        // Return saved page or default to index.html
+        return saved || 'index.html'; 
+      }
+      catch (_) { return 'index.html'; }
     }
 
     function clearSavedPage() {
@@ -248,6 +252,7 @@
       fetch(probe, { method: 'HEAD', cache: 'no-store', mode: 'no-cors' })
         .then(goOnline)
         .catch(function () { /* still offline */ });
+    }
     }
 
     function startPolling() {

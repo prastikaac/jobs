@@ -113,12 +113,9 @@
       // Internal unmapped (e.g. /cleaner.html) -> open directly in the WebView
       e.preventDefault();
 
-      if (!navigator.onLine) {
-        // Offline -> show no-internet page
-        try { sessionStorage.setItem('app_last_page_before_offline', window.location.href); } catch (_) {}
-        navigateTo('nointernet.html');
-        return;
-      }
+      // Don't pre-check offline state - let app-connectivity module handle it
+      // navigator.onLine is unreliable on mobile, and the actual page load
+      // will trigger offline detection if needed
 
       // Ensure we point to the remote server, not localhost
       let targetUrl = anchor.href;
@@ -141,12 +138,8 @@
       // External link -> open in browser mode inside the app
       e.preventDefault();
 
-      if (!navigator.onLine) {
-        // Offline -> show no-internet page
-        try { sessionStorage.setItem('app_last_page_before_offline', window.location.href); } catch (_) {}
-        navigateTo('nointernet.html');
-        return;
-      }
+      // Don't pre-check offline state - let app-connectivity module handle it
+      // The page load will trigger offline detection if we're actually offline
 
       openExternal(anchor.href);
     }
@@ -161,6 +154,10 @@
     // Save current scroll before leaving
     if (window.AppScroll && typeof window.AppScroll.save === 'function') {
       window.AppScroll.save(window.location.pathname + window.location.search);
+    }
+    // Save the page we're navigating to, in case we go offline during navigation
+    if (window.AppConnectivity && typeof window.AppConnectivity.saveCurrentPage === 'function') {
+      window.AppConnectivity.saveCurrentPage(localPath);
     }
     window.location.href = localPath;
   }

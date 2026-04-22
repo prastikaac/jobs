@@ -34,10 +34,11 @@
     return window.location.pathname.endsWith(NO_INTERNET_PAGE);
   }
 
-  function saveCurrentPage() {
+  function saveCurrentPage(pathOverride) {
     if (!isOfflinePage()) {
       try {
-        sessionStorage.setItem(STORAGE_KEY, currentPath());
+        const pageToSave = pathOverride || currentPath();
+        sessionStorage.setItem(STORAGE_KEY, pageToSave);
       } catch (_) {}
     }
   }
@@ -179,6 +180,19 @@
     window.addEventListener('offline', handleOffline);
     window.addEventListener('online', handleOnline);
 
+    // Save page on navigation (via back button, forward, etc)
+    window.addEventListener('popstate', function () {
+      saveCurrentPage();
+    });
+
+    // Save page when it successfully loads
+    // This ensures we capture remote pages (https://findjobsinfinland.fi/...)
+    window.addEventListener('load', function () {
+      if (!isOfflinePage()) {
+        saveCurrentPage();
+      }
+    });
+
     if (isOfflinePage()) {
       // We are on the no-internet page — start polling and bind retry
       isOnNoInternetPage = true;
@@ -207,6 +221,7 @@
     checkConnectivity,
     handleOffline,
     handleOnline,
+    saveCurrentPage,
   };
 
 })();
