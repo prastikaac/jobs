@@ -17,7 +17,6 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
@@ -133,23 +132,50 @@ public class MainActivity extends BridgeActivity {
         // Inject custom WebViewClient to route network errors and HTTP errors differently
         if (getBridge() != null && getBridge().getWebView() != null) {
             getBridge().getWebView().setWebViewClient(new com.getcapacitor.BridgeWebViewClient(getBridge()) {
+
+                // ── PRE-FLIGHT CHECK ────────────────────────────────────────────────────
+                // Intercept BEFORE the request is even sent. If we already know we have
+                // no connection, load the offline page immediately — the browser error
+                // screen is never shown because the request is cancelled right here.
+                @Override
+                public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                    String url = request.getUrl().toString();
+                    // Only gate on real HTTP(S) navigations for the main frame.
+                    // Allow file:// and localhost URLs through unconditionally.
+                    if (request.isForMainFrame()
+                            && (url.startsWith("https://") || url.startsWith("http://"))
+                            && !url.contains("nointernet.html")
+                            && !url.contains("error.html")) {
+                        if (!isConnected()) {
+                            // Track where the user was trying to go
+                            lastVisitedUrl = url;
+                            // Cancel the navigation and show offline page instantly
+                            view.post(() -> view.loadUrl("file:///android_asset/public/nointernet.html"));
+                            return true; // We handled it — WebView must NOT proceed
+                        }
+                    }
+                    // Let Capacitor/WebView handle all other navigations normally
+                    return super.shouldOverrideUrlLoading(view, request);
+                }
+
+                // ── FALLBACK: catches errors that slip past the pre-flight ───────────
+                // (e.g. connection drops mid-request, or DNS failures)
                 @Override
                 public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
-                    super.onReceivedError(view, request, error);
+                    // Do NOT call super — calling super lets Chromium render its own error page.
                     if (request.isForMainFrame()) {
                         String failedUrl = request.getUrl().toString();
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
                         }
-                        
-                        // Immediately wipe out the default Chromium error text synchronously
-                        view.loadData("", "text/html", "UTF-8");
-                        
+
+                        // Stop the current load immediately so Chromium cannot paint its
+                        // default error screen, then redirect to our custom page.
+                        view.stopLoading();
                         view.post(() -> {
                             if (!isConnected()) {
                                 view.loadUrl("file:///android_asset/public/nointernet.html");
                             } else {
-                                // If we have network but the site refused connection (website down)
                                 view.loadUrl("file:///android_asset/public/error.html");
                             }
                         });
@@ -164,13 +190,16 @@ public class MainActivity extends BridgeActivity {
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
                         }
-                        // Immediately wipe out the default Chromium error text synchronously
-                        view.loadData("", "text/html", "UTF-8");
-
-                        view.post(() -> {
-                            view.loadUrl("file:///android_asset/public/error.html");
-                        });
+                        view.stopLoading();
+                        view.post(() -> view.loadUrl("file:///android_asset/public/error.html"));
                     }
+                }
+
+                @Override
+                public void onReceivedSslError(WebView view, SslErrorHandler handler, android.net.http.SslError error) {
+                    // Cancel the SSL error — don't let Chromium show its SSL warning page
+                    handler.cancel();
+                    view.post(() -> view.loadUrl("file:///android_asset/public/error.html"));
                 }
             });
         }

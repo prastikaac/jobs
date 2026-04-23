@@ -31,3 +31,4 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 
 
+- and its showing this kind of error instead of showing no internet page instantly, fix it, fix it and make to show the nointernet page error instantly if net :: ERR_INTERNET_DISCONNECTED error is caused, user should not see this error page never and ever they should not know this is an website inside app : 
