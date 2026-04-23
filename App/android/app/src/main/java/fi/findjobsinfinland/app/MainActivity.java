@@ -38,6 +38,7 @@ public class MainActivity extends BridgeActivity {
     // to it. We can't use sessionStorage because the error page is served from
     // the localhost origin while normal pages are on findjobsinfinland.fi.
     private String lastVisitedUrl = "https://findjobsinfinland.fi/";
+    private boolean isShowingErrorPage = false;
 
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
@@ -50,12 +51,7 @@ public class MainActivity extends BridgeActivity {
         public void run() {
             if (getBridge() != null && getBridge().getWebView() != null) {
                 WebView wv = getBridge().getWebView();
-                String currentUrl = wv.getUrl();
-                // Detect when we're on the offline page (loadDataWithBaseURL sets URL to the base URL)
-                boolean onOfflinePage = (currentUrl == null)
-                    || currentUrl.contains("nointernet.html")
-                    || currentUrl.equals("file:///android_asset/public/");
-                if (onOfflinePage && isConnected()) {
+                if (isShowingErrorPage && isConnected()) {
                     // Silent ping to confirm real connectivity before restoring page
                     new Thread(() -> {
                         try {
@@ -272,6 +268,8 @@ public class MainActivity extends BridgeActivity {
         getBridge().addWebViewListener(new WebViewListener() {
             @Override
             public void onPageLoaded(WebView webView) {
+                isShowingErrorPage = false;
+
                 // Hide splash instantly as soon as the page is loaded.
                 webView.evaluateJavascript(
                     "if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) {" +
@@ -381,12 +379,8 @@ public class MainActivity extends BridgeActivity {
             // This keeps the old page painted until the new one is ready (no
             // white flash) and is a genuine network fetch, not a cache hit.
             String currentUrl = wv.getUrl();
-            boolean onErrorPage = currentUrl == null
-                || currentUrl.equals("file:///android_asset/public/")
-                || currentUrl.contains("nointernet.html")
-                || currentUrl.contains("error.html");
 
-            if (onErrorPage) {
+            if (isShowingErrorPage) {
                 if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
                     wv.loadUrl(lastVisitedUrl);
                 } else {
@@ -446,19 +440,20 @@ public class MainActivity extends BridgeActivity {
      */
     private void loadAssetPage(WebView view, String filename) {
         try {
+            isShowingErrorPage = true;
             InputStream is = getAssets().open("public/" + filename);
             byte[] buffer = new byte[is.available()];
             //noinspection ResultOfMethodCallIgnored
             is.read(buffer);
             is.close();
             String html = new String(buffer, "UTF-8");
-            // Use a file:// base URL so relative asset paths still resolve correctly
+            // Use lastVisitedUrl as the historyUrl so the WebView history stack remains intact
             view.loadDataWithBaseURL(
                 "file:///android_asset/public/",
                 html,
                 "text/html",
                 "UTF-8",
-                null
+                lastVisitedUrl
             );
         } catch (Exception e) {
             // Absolute last-resort fallback: blank white page with a plain message
@@ -485,34 +480,11 @@ public class MainActivity extends BridgeActivity {
         WebView wv = getBridge().getWebView();
 
         // Detect whether we are currently showing an error/offline page.
-        // loadDataWithBaseURL sets getUrl() to the base URL we passed in,
-        // so we also check for that sentinel value.
-        String currentUrl = (wv != null) ? wv.getUrl() : null;
-        boolean onErrorPage = currentUrl == null
-                || currentUrl.equals("file:///android_asset/public/")
-                || currentUrl.contains("nointernet.html")
-                || currentUrl.contains("error.html");
-
-        if (onErrorPage) {
-            // We are on an error page. We need to go back to the previous valid page
-            // in the browser history, skipping over any failed attempts or error pages.
-            android.webkit.WebBackForwardList history = wv.copyBackForwardList();
-            int stepsToGoBack = 0;
-            int currentIndex = history.getCurrentIndex();
-
-            for (int i = currentIndex - 1; i >= 0; i--) {
-                String historyUrl = history.getItemAtIndex(i).getUrl();
-                if (historyUrl != null 
-                        && !historyUrl.equals("file:///android_asset/public/")
-                        && !historyUrl.contains("nointernet.html")
-                        && !historyUrl.contains("error.html")) {
-                    stepsToGoBack = i - currentIndex; // Negative number
-                    break;
-                }
-            }
-
-            if (stepsToGoBack < 0) {
-                wv.goBackOrForward(stepsToGoBack);
+        if (isShowingErrorPage) {
+            // We are on an error page. By passing lastVisitedUrl as historyUrl to loadDataWithBaseURL,
+            // wv.goBack() will now perfectly pop the failed entry and return to the previous valid page.
+            if (wv != null && wv.canGoBack()) {
+                wv.goBack();
             } else {
                 // No valid history before this, treat as root screen
                 long now = System.currentTimeMillis();
