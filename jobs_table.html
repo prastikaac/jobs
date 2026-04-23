@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Categories Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
     <style>
         :root {
             --bg-color: #0b0f19;
@@ -39,14 +41,45 @@
             animation: float 15s ease-in-out infinite alternate;
         }
 
-        .blob-1 { width: 400px; height: 400px; background: rgba(99, 102, 241, 0.4); top: -100px; left: -100px; }
-        .blob-2 { width: 500px; height: 500px; background: rgba(236, 72, 153, 0.3); bottom: -200px; right: -100px; animation-delay: -5s; }
-        .blob-3 { width: 300px; height: 300px; background: rgba(16, 185, 129, 0.3); top: 40%; left: 50%; transform: translate(-50%, -50%); animation-delay: -10s; }
+        .blob-1 {
+            width: 400px;
+            height: 400px;
+            background: rgba(99, 102, 241, 0.4);
+            top: -100px;
+            left: -100px;
+        }
+
+        .blob-2 {
+            width: 500px;
+            height: 500px;
+            background: rgba(236, 72, 153, 0.3);
+            bottom: -200px;
+            right: -100px;
+            animation-delay: -5s;
+        }
+
+        .blob-3 {
+            width: 300px;
+            height: 300px;
+            background: rgba(16, 185, 129, 0.3);
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -10s;
+        }
 
         @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(30px, -50px) scale(1.1); }
-            100% { transform: translate(-20px, 20px) scale(0.9); }
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(30px, -50px) scale(1.1);
+            }
+
+            100% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
         }
 
         /* Container & Layout */
@@ -105,8 +138,9 @@
             padding-bottom: 20px;
             border-bottom: 1px solid var(--glass-border);
         }
-        
-        .header-left, .header-right {
+
+        .header-left,
+        .header-right {
             display: flex;
             align-items: center;
             gap: 15px;
@@ -155,10 +189,10 @@
         .hidden-row {
             display: none !important;
         }
-        
+
         .stat-badge {
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 8px 16px;
             border-radius: 50px;
             font-size: 0.9rem;
@@ -254,7 +288,7 @@
         tbody tr:hover .job-title {
             color: #f472b6;
         }
-        
+
         .company-name {
             font-size: 0.85rem;
             color: #94a3b8;
@@ -279,7 +313,7 @@
             text-decoration: none;
             color: inherit;
         }
-        
+
         .action-arrow {
             color: #6366f1;
             opacity: 0;
@@ -287,7 +321,7 @@
             transition: all 0.3s ease;
             font-size: 1.2rem;
         }
-        
+
         tbody tr:hover .action-arrow {
             opacity: 1;
             transform: translateX(0);
@@ -302,13 +336,13 @@
             margin-bottom: 20px;
             transition: color 0.3s;
         }
-        
+
         .home-link:hover {
             color: #e2e8f0;
         }
 
         .loader {
-            border: 4px solid rgba(255,255,255,0.1);
+            border: 4px solid rgba(255, 255, 255, 0.1);
             border-left-color: var(--primary-accent);
             border-radius: 50%;
             width: 40px;
@@ -318,8 +352,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         @media (max-width: 768px) {
@@ -327,16 +366,42 @@
                 padding: 15px;
                 border-radius: 16px;
             }
-            td { padding: 15px 10px; }
-            th { padding: 12px 10px; }
-            .job-title { font-size: 1rem; }
-            h1 { font-size: 2rem; }
-            .search-input { width: 100%; }
-            .header-controls { flex-direction: column; align-items: stretch; }
-            .header-left, .header-right { flex-direction: column; align-items: stretch; width: 100%; }
+
+            td {
+                padding: 15px 10px;
+            }
+
+            th {
+                padding: 12px 10px;
+            }
+
+            .job-title {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .search-input {
+                width: 100%;
+            }
+
+            .header-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .header-left,
+            .header-right {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="bg-blob blob-1"></div>
     <div class="bg-blob blob-2"></div>
@@ -344,10 +409,14 @@
 
     <div class="container">
         <a href="/" class="home-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
             Back to Home
         </a>
-        
+
         <header>
             <h1>Job Opportunities</h1>
             <p class="subtitle">Real-time overview of active roles across all categories</p>
@@ -359,7 +428,8 @@
                     <div class="stat-badge">
                         Total Active Jobs <span id="job-count-badge">0</span>
                     </div>
-                    <div class="stat-badge" style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.1); color: #10b981;">
+                    <div class="stat-badge"
+                        style="background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.1); color: #10b981;">
                         Live Data
                     </div>
                 </div>
@@ -371,7 +441,11 @@
                     </select>
                     <input type="text" id="job-search" class="search-input" placeholder="Search jobs or categories...">
                     <button class="copy-btn" id="copy-all-btn">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
                         Copy All
                     </button>
                 </div>
@@ -398,7 +472,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
             const dateFilter = document.getElementById('date-filter');
@@ -406,7 +480,7 @@
             const tbody = document.getElementById('job-table-body');
             const copyBtn = document.getElementById('copy-all-btn');
             const countBadge = document.getElementById('job-count-badge');
-            
+
             const catColors = {
                 "it-and-software": ["#818cf8", "rgba(99, 102, 241, 0.1)", "rgba(99, 102, 241, 0.2)"],
                 "healthcare": ["#f472b6", "rgba(236, 72, 153, 0.1)", "rgba(236, 72, 153, 0.2)"],
@@ -430,7 +504,7 @@
             try {
                 const response = await fetch("https://findjobsinfinland.fi/scraper/data/jobs.json?v=" + new Date().getTime(), { cache: "no-store" });
                 const jsonData = await response.json();
-                
+
                 // Flatten structural nesting if any
                 jsonData.forEach(item => {
                     if (item.jobs) {
@@ -455,13 +529,13 @@
 
             function renderTable(jobsData) {
                 tbody.innerHTML = '';
-                
+
                 jobsData.forEach(job => {
                     const title = job.title || 'Untitled';
                     const company = job.company || 'Unknown Company';
                     const categoryRaw = job.job_category || 'other';
                     const categoryFriendly = categoryRaw.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                    
+
                     const jobId = job.job_id || job.id || '';
                     const datePosted = (job.date_posted || '').substring(0, 10);
                     const jobUrl = `https://findjobsinfinland.fi/jobs/${categoryRaw}/${jobId}`;
@@ -498,7 +572,7 @@
                     `;
                     tbody.appendChild(tr);
                 });
-                
+
                 applyFilter(); // Set count initially and apply any pre-existing text
             }
 
@@ -506,19 +580,19 @@
                 const term = searchInput.value.toLowerCase().trim();
                 const dMode = dateFilter.value;
                 let visibleCount = 0;
-                
+
                 const rows = tbody.querySelectorAll('tr');
                 rows.forEach(row => {
                     const title = row.getAttribute('data-title') || '';
                     const category = row.getAttribute('data-category') || '';
                     const jobDate = row.getAttribute('data-date') || '';
-                    
+
                     const matchesTerm = title.includes(term) || category.includes(term);
                     let matchesDate = true;
 
                     if (dMode === 'today') matchesDate = (jobDate === todayStr);
                     else if (dMode === 'yesterday') matchesDate = (jobDate === yesterdayStr);
-                    
+
                     if (matchesTerm && matchesDate) {
                         row.classList.remove('hidden-row');
                         visibleCount++;
@@ -542,7 +616,7 @@
                         copyTextList.push(`[${category}] ${title}`);
                     }
                 });
-                
+
                 if (copyTextList.length > 0) {
                     const textToCopy = copyTextList.join('\n');
                     try {
@@ -557,7 +631,7 @@
                 }
             });
 
-            window.copyTableText = async function(btn, txt) {
+            window.copyTableText = async function (btn, txt) {
                 try {
                     // Reverse any html entity encoding for quotes just in case
                     const cleanTxt = txt.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
@@ -565,15 +639,16 @@
                     const oldHtml = btn.innerHTML;
                     btn.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><polyline points="20 6 9 17 4 12"></polyline></svg>';
                     btn.style.borderColor = "rgba(16, 185, 129, 0.5)";
-                    setTimeout(() => { 
-                        btn.innerHTML = oldHtml; 
+                    setTimeout(() => {
+                        btn.innerHTML = oldHtml;
                         btn.style.borderColor = "rgba(255,255,255,0.1)";
                     }, 2000);
-                } catch(e) {
+                } catch (e) {
                     alert("Copy failed");
                 }
             };
         });
     </script>
 </body>
+
 </html>
