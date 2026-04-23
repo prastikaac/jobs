@@ -378,24 +378,11 @@ public class MainActivity extends BridgeActivity {
             }
 
             // Grab the current URL and navigate to it fresh from the server.
-            // If we are currently showing an error page, we should retry the last failed URL
-            // instead of trying to reload the local asset base URL (which causes a blank screen).
+            // This keeps the old page painted until the new one is ready (no
+            // white flash) and is a genuine network fetch, not a cache hit.
             String currentUrl = wv.getUrl();
-            boolean onErrorPage = currentUrl == null
-                || currentUrl.equals("file:///android_asset/public/")
-                || currentUrl.contains("nointernet.html")
-                || currentUrl.contains("error.html");
-
-            if (onErrorPage) {
-                if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
-                    wv.loadUrl(lastVisitedUrl);
-                } else {
-                    swipeRefreshLayout.setRefreshing(false);
-                }
-            } else if (currentUrl != null && !currentUrl.isEmpty()) {
+            if (currentUrl != null && !currentUrl.isEmpty()) {
                 wv.loadUrl(currentUrl);
-            } else {
-                swipeRefreshLayout.setRefreshing(false);
             }
 
             // Safety net: hide spinner after 8 s even if onPageFinished never fires
@@ -496,34 +483,13 @@ public class MainActivity extends BridgeActivity {
                 || currentUrl.contains("error.html");
 
         if (onErrorPage) {
-            // We want to go back to the previous actual page, skipping the error page
-            // AND the page that failed to load (which is stored in lastVisitedUrl).
-            android.webkit.WebBackForwardList history = wv.copyBackForwardList();
-            int currentIndex = history.getCurrentIndex();
-            int stepsToGoBack = 0;
-
-            for (int i = currentIndex - 1; i >= 0; i--) {
-                String historyUrl = history.getItemAtIndex(i).getUrl();
-                if (historyUrl != null 
-                    && !historyUrl.equals("file:///android_asset/public/")
-                    && !historyUrl.contains("nointernet.html")
-                    && !historyUrl.contains("error.html")) {
-                    
-                    // If this history entry is the very URL that failed, skip it
-                    if (historyUrl.equals(lastVisitedUrl)) {
-                        continue;
-                    }
-                    
-                    // Found a valid previous page!
-                    stepsToGoBack = currentIndex - i;
-                    break;
-                }
-            }
-
-            if (stepsToGoBack > 0 && wv.canGoBackOrForward(-stepsToGoBack)) {
-                wv.goBackOrForward(-stepsToGoBack);
+            // We are on an error page. Don't call wv.goBack() — that would just
+            // navigate back into the failed URL and re-trigger the same error.
+            // Instead: if the site is reachable load lastVisitedUrl, otherwise
+            // treat this as the root screen (double-press to exit).
+            if (isConnected() && lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
+                wv.loadUrl(lastVisitedUrl);
             } else {
-                // If there's no valid page to go back to, treat it as the root screen
                 long now = System.currentTimeMillis();
                 if (now - backPressedTime < 2000) {
                     if (backExitToast != null) backExitToast.cancel();
