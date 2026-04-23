@@ -494,13 +494,27 @@ public class MainActivity extends BridgeActivity {
                 || currentUrl.contains("error.html");
 
         if (onErrorPage) {
-            // We are on an error page. Don't call wv.goBack() — that would just
-            // navigate back into the failed URL and re-trigger the same error.
-            // Instead: if the site is reachable load lastVisitedUrl, otherwise
-            // treat this as the root screen (double-press to exit).
-            if (isConnected() && lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
-                wv.loadUrl(lastVisitedUrl);
+            // We are on an error page. We need to go back to the previous valid page
+            // in the browser history, skipping over any failed attempts or error pages.
+            android.webkit.WebBackForwardList history = wv.copyBackForwardList();
+            int stepsToGoBack = 0;
+            int currentIndex = history.getCurrentIndex();
+
+            for (int i = currentIndex - 1; i >= 0; i--) {
+                String historyUrl = history.getItemAtIndex(i).getUrl();
+                if (historyUrl != null 
+                        && !historyUrl.equals("file:///android_asset/public/")
+                        && !historyUrl.contains("nointernet.html")
+                        && !historyUrl.contains("error.html")) {
+                    stepsToGoBack = i - currentIndex; // Negative number
+                    break;
+                }
+            }
+
+            if (stepsToGoBack < 0) {
+                wv.goBackOrForward(stepsToGoBack);
             } else {
+                // No valid history before this, treat as root screen
                 long now = System.currentTimeMillis();
                 if (now - backPressedTime < 2000) {
                     if (backExitToast != null) backExitToast.cancel();
