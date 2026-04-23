@@ -17,6 +17,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import java.io.InputStream;
 import android.widget.Toast;
 
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
@@ -48,24 +49,26 @@ public class MainActivity extends BridgeActivity {
         @Override
         public void run() {
             if (getBridge() != null && getBridge().getWebView() != null) {
-                String currentUrl = getBridge().getWebView().getUrl();
-                if (currentUrl != null && currentUrl.contains("nointernet.html")) {
-                    if (isConnected()) {
-                        // Silent ping to avoid reloading/flashing when internet is unstable
-                        new Thread(() -> {
-                            try {
-                                java.net.HttpURLConnection conn = (java.net.HttpURLConnection) new java.net.URL("https://findjobsinfinland.fi/images/icon.png").openConnection();
-                                conn.setRequestMethod("HEAD");
-                                conn.setConnectTimeout(2000);
-                                conn.setReadTimeout(2000);
-                                if (conn.getResponseCode() == 200) {
-                                    getBridge().getWebView().post(() -> {
-                                        getBridge().getWebView().loadUrl(lastVisitedUrl);
-                                    });
-                                }
-                            } catch (Exception e) {}
-                        }).start();
-                    }
+                WebView wv = getBridge().getWebView();
+                String currentUrl = wv.getUrl();
+                // Detect when we're on the offline page (loadDataWithBaseURL sets URL to the base URL)
+                boolean onOfflinePage = (currentUrl == null)
+                    || currentUrl.contains("nointernet.html")
+                    || currentUrl.equals("file:///android_asset/public/");
+                if (onOfflinePage && isConnected()) {
+                    // Silent ping to confirm real connectivity before restoring page
+                    new Thread(() -> {
+                        try {
+                            java.net.HttpURLConnection conn = (java.net.HttpURLConnection)
+                                new java.net.URL("https://findjobsinfinland.fi/images/icon.png").openConnection();
+                            conn.setRequestMethod("HEAD");
+                            conn.setConnectTimeout(2000);
+                            conn.setReadTimeout(2000);
+                            if (conn.getResponseCode() == 200) {
+                                wv.post(() -> wv.loadUrl(lastVisitedUrl));
+                            }
+                        } catch (Exception e) { /* still offline */ }
+                    }).start();
                 }
             }
             networkPollHandler.postDelayed(this, 3000);
@@ -121,7 +124,7 @@ public class MainActivity extends BridgeActivity {
             // and immediately load the offline page.
             if (!isConnected()) {
                 getBridge().getWebView().post(() -> {
-                    getBridge().getWebView().loadUrl("file:///android_asset/public/nointernet.html");
+                    loadAssetPage(getBridge().getWebView(), "nointernet.html");
                 });
             }
 
@@ -149,8 +152,9 @@ public class MainActivity extends BridgeActivity {
                         if (!isConnected()) {
                             // Track where the user was trying to go
                             lastVisitedUrl = url;
-                            // Cancel the navigation and show offline page instantly
-                            view.post(() -> view.loadUrl("file:///android_asset/public/nointernet.html"));
+                            // Cancel the navigation and show offline page instantly.
+                            // loadAssetPage inlines the HTML — no file:// URL needed.
+                            view.post(() -> loadAssetPage(view, "nointernet.html"));
                             return true; // We handled it — WebView must NOT proceed
                         }
                     }
@@ -165,18 +169,22 @@ public class MainActivity extends BridgeActivity {
                     // Do NOT call super — calling super lets Chromium render its own error page.
                     if (request.isForMainFrame()) {
                         String failedUrl = request.getUrl().toString();
+                        // Don't update lastVisitedUrl for our own error pages
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
+                        } else {
+                            // An asset page itself failed — skip (don't loop)
+                            return;
                         }
 
-                        // Stop the current load immediately so Chromium cannot paint its
-                        // default error screen, then redirect to our custom page.
+                        // stopLoading() prevents Chromium from finishing its error render.
+                        // loadAssetPage() inlines HTML directly — no file:// URL lookup.
                         view.stopLoading();
                         view.post(() -> {
                             if (!isConnected()) {
-                                view.loadUrl("file:///android_asset/public/nointernet.html");
+                                loadAssetPage(view, "nointernet.html");
                             } else {
-                                view.loadUrl("file:///android_asset/public/error.html");
+                                loadAssetPage(view, "error.html");
                             }
                         });
                     }
@@ -189,17 +197,17 @@ public class MainActivity extends BridgeActivity {
                         String failedUrl = request.getUrl().toString();
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
                             lastVisitedUrl = failedUrl;
+                            view.stopLoading();
+                            view.post(() -> loadAssetPage(view, "error.html"));
                         }
-                        view.stopLoading();
-                        view.post(() -> view.loadUrl("file:///android_asset/public/error.html"));
                     }
                 }
 
                 @Override
                 public void onReceivedSslError(WebView view, SslErrorHandler handler, android.net.http.SslError error) {
-                    // Cancel the SSL error — don't let Chromium show its SSL warning page
+                    // Cancel the SSL handshake. onReceivedError will fire next and
+                    // handle the redirect — no need to call loadAssetPage here too.
                     handler.cancel();
-                    view.post(() -> view.loadUrl("file:///android_asset/public/error.html"));
                 }
             });
         }
@@ -365,7 +373,7 @@ public class MainActivity extends BridgeActivity {
         swipeRefreshLayout.setOnRefreshListener(() -> {
             if (!isConnected()) {
                 swipeRefreshLayout.setRefreshing(false);
-                wv.loadUrl("file:///android_asset/public/nointernet.html");
+                loadAssetPage(wv, "nointernet.html");
                 return;
             }
 
@@ -373,7 +381,18 @@ public class MainActivity extends BridgeActivity {
             // This keeps the old page painted until the new one is ready (no
             // white flash) and is a genuine network fetch, not a cache hit.
             String currentUrl = wv.getUrl();
-            if (currentUrl != null && !currentUrl.isEmpty()) {
+            boolean onErrorPage = currentUrl == null
+                || currentUrl.equals("file:///android_asset/public/")
+                || currentUrl.contains("nointernet.html")
+                || currentUrl.contains("error.html");
+
+            if (onErrorPage) {
+                if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
+                    wv.loadUrl(lastVisitedUrl);
+                } else {
+                    swipeRefreshLayout.setRefreshing(false);
+                }
+            } else if (currentUrl != null && !currentUrl.isEmpty()) {
                 wv.loadUrl(currentUrl);
             }
 
@@ -417,6 +436,41 @@ public class MainActivity extends BridgeActivity {
         }
     }
 
+    /**
+     * Load an error/offline page by reading its HTML directly from Android assets
+     * and injecting it via loadDataWithBaseURL. This completely avoids file:// URL
+     * resolution, which is what caused ERR_FILE_NOT_FOUND in the WebView.
+     *
+     * @param view      The WebView to load into
+     * @param filename  Filename inside assets/public/, e.g. "nointernet.html"
+     */
+    private void loadAssetPage(WebView view, String filename) {
+        try {
+            InputStream is = getAssets().open("public/" + filename);
+            byte[] buffer = new byte[is.available()];
+            //noinspection ResultOfMethodCallIgnored
+            is.read(buffer);
+            is.close();
+            String html = new String(buffer, "UTF-8");
+            // Use a file:// base URL so relative asset paths still resolve correctly
+            view.loadDataWithBaseURL(
+                "file:///android_asset/public/",
+                html,
+                "text/html",
+                "UTF-8",
+                null
+            );
+        } catch (Exception e) {
+            // Absolute last-resort fallback: blank white page with a plain message
+            view.loadData(
+                "<html><body style='display:flex;align-items:center;justify-content:center;" +
+                "height:100vh;font-family:sans-serif;font-size:18px;color:#555;'>" +
+                "<p>No Internet Connection</p></body></html>",
+                "text/html", "UTF-8"
+            );
+        }
+    }
+
     // =============================================================================
     //  Double back press to exit
     // =============================================================================
@@ -425,23 +479,54 @@ public class MainActivity extends BridgeActivity {
     @SuppressWarnings("deprecation")        // onBackPressed is still the right hook for BridgeActivity subclasses
     public void onBackPressed() {
         if (getBridge() == null) {
-            // Bridge not ready — fall back to system behavior
             super.onBackPressed();
             return;
         }
         WebView wv = getBridge().getWebView();
 
-        // Let the WebView navigate back normally
+        // Detect whether we are currently showing an error/offline page.
+        // loadDataWithBaseURL sets getUrl() to the base URL we passed in,
+        // so we also check for that sentinel value.
+        String currentUrl = (wv != null) ? wv.getUrl() : null;
+        boolean onErrorPage = currentUrl == null
+                || currentUrl.equals("file:///android_asset/public/")
+                || currentUrl.contains("nointernet.html")
+                || currentUrl.contains("error.html");
+
+        if (onErrorPage) {
+            // We are on an error page. Don't call wv.goBack() — that would just
+            // navigate back into the failed URL and re-trigger the same error.
+            // Instead: if the site is reachable load lastVisitedUrl, otherwise
+            // treat this as the root screen (double-press to exit).
+            if (isConnected() && lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
+                wv.loadUrl(lastVisitedUrl);
+            } else {
+                long now = System.currentTimeMillis();
+                if (now - backPressedTime < 2000) {
+                    if (backExitToast != null) backExitToast.cancel();
+                    finishAffinity();
+                } else {
+                    backPressedTime = now;
+                    if (backExitToast != null) backExitToast.cancel();
+                    backExitToast = Toast.makeText(
+                        this, "Press back again to exit", Toast.LENGTH_SHORT);
+                    backExitToast.show();
+                }
+            }
+            return;
+        }
+
+        // Normal page — let the WebView navigate back through its history
         if (wv != null && wv.canGoBack()) {
             wv.goBack();
             return;
         }
 
-        // On root screen: require a second press within 2 s to exit
+        // Root screen: require a second press within 2 s to exit
         long now = System.currentTimeMillis();
         if (now - backPressedTime < 2000) {
             if (backExitToast != null) backExitToast.cancel();
-            finishAffinity();   // closes the app reliably on all Android versions
+            finishAffinity();
         } else {
             backPressedTime = now;
             if (backExitToast != null) backExitToast.cancel();
