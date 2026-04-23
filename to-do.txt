@@ -30,5 +30,12 @@ now i want to send  job alerts instantly to the user's device immediately after 
 - on back going to index.html a white blank popup appears
 
 
+Issue to fix: Error Page Behavior
 
-- and its showing this kind of error instead of showing no internet page instantly, fix it, fix it and make to show the nointernet page error instantly if net :: ERR_INTERNET_DISCONNECTED error is caused, user should not see this error page never and ever they should not know this is an website inside app : 
+When the user performs a swipe-down (pull-to-refresh) on the error page, the app displays a blank white screen instead of reloading the page properly.
+And When the user presses the device back button while on the error page, it does not navigate back to the previous page. Instead, it  reloads the same error page.
+
+Expected behavior:
+
+Pull-to-refresh should reload the errorpage correctly, not show a blank screen.
+The back button should navigate to the previous page, not reload the error page.
