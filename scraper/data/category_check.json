@@ -1,98 +1,42 @@
 [
   {
-    "id": "b144bc70",
-    "job_id": "turvamies-ratatöihin-espoo-b144bc70",
-    "title": "Security guard for railway work",
-    "company": "Lisäpalvelu Vantaa Oy",
-    "detected_category": "construction",
-    "saved_at": "2026-04-21 00:34:56"
+    "id": "81854140",
+    "job_id": "kassatyöntekijä-ja-tarjolija-kouvola-81854140",
+    "title": "Cashier and waiter",
+    "company": "nurek Oy, Kouvola",
+    "detected_category": "hospitality-and-tourism",
+    "saved_at": "2026-04-23 22:12:01"
   },
   {
-    "id": "919c3aa5",
-    "job_id": "varhaiskasvatuksen-opettaja-lä-vaasa-919c3aa5",
-    "title": "Early childhood education teacher / Länsimetsä daycare center",
-    "company": "Vaasan kaupunki",
-    "detected_category": "education",
-    "saved_at": "2026-04-21 00:37:29"
+    "id": "942cbb6c",
+    "job_id": "lettukahvila-emäntä-pori-942cbb6c",
+    "title": "Lettukafila hostess",
+    "company": "Fastfood Festivals Oy, Pori",
+    "detected_category": "hospitality-and-tourism",
+    "saved_at": "2026-04-23 22:12:14"
   },
   {
-    "id": "09af3e9c",
-    "job_id": "lähihoitajia-kotihoitoon-tammi-raasepori-09af3e9c",
-    "title": "Caregivers for home care in Tammisaari for full-time work",
-    "company": "Sam's Care Oy, Lohja",
+    "id": "4def45b6",
+    "job_id": "lähihoitaja-keikkatyö-onnikoti-pori-4def45b6",
+    "title": "Family caregiver (gig job), Onnikoti Aalto, Pori",
+    "company": "Mehiläinen Oy",
     "detected_category": "healthcare",
-    "saved_at": "2026-04-21 00:40:04"
+    "saved_at": "2026-04-23 22:12:25"
   },
   {
-    "id": "de528114",
-    "job_id": "varastotyöntekijä-kielitaito-u-vantaa-de528114",
-    "title": "Warehouse worker (language skills Ukraine)",
-    "company": "Rentaman Finland Oy",
-    "detected_category": "transportation-and-logistics",
-    "saved_at": "2026-04-21 00:41:43"
+    "id": "4ef65d3e",
+    "job_id": "työnjohtaja-kotkaan-kouvola-4ef65d3e",
+    "title": "Foreman in Kotka",
+    "company": "Rekrymesta Henkilöstöpalvelut Oy",
+    "detected_category": "industry-manufacturing-and-production",
+    "saved_at": "2026-04-23 22:12:33"
   },
   {
-    "id": "3a743577",
-    "job_id": "ratatyöntekijäksi-pk-seudulle-espoo-3a743577",
-    "title": "As a railway worker for the PK region",
-    "company": "Lisäpalvelu Vantaa Oy",
-    "detected_category": "construction",
-    "saved_at": "2026-04-21 00:42:46"
-  },
-  {
-    "id": "585a0ae1",
-    "job_id": "kaivinkonekuski-pirkanmaalle-ylöjärvi-585a0ae1",
-    "title": "Excavator driver for Pirkanmaa",
-    "company": "Maximus Oy",
-    "detected_category": "aviation-and-airport-services",
-    "saved_at": "2026-04-21 13:34:58"
-  },
-  {
-    "id": "790e5916",
-    "job_id": "hoiva-avustaja-onnelanpolun-pa-lahti-790e5916",
-    "title": "Hoiva assistant, Onnelanpollu service center, Lahti",
-    "company": "Päijät-Hämeen hyvinvointialue",
-    "detected_category": "healthcare",
-    "saved_at": "2026-04-21 13:36:45"
-  },
-  {
-    "id": "09977bed",
-    "job_id": "ammatillinen-ohjaaja-kiinteist-riihimäki-09977bed",
-    "title": "Professional instructor for the real estate service industry, Riihimäki",
-    "company": "Bolt.Works Oy",
-    "detected_category": "cleaning-and-facility-services",
-    "saved_at": "2026-04-21 13:54:15"
-  },
-  {
-    "id": "547cbdaf",
-    "job_id": "kirkkoherra-lieksa-547cbdaf",
-    "title": "Lord of the Church",
-    "company": "Lieksan Seurakunta, Lieksa",
-    "detected_category": "management-and-leadership",
-    "saved_at": "2026-04-21 13:56:49"
-  },
-  {
-    "id": "ffeff504",
-    "job_id": "sairaaanhoitaja-mielenterveys--turku-ffeff504",
-    "title": "Nurse, Mental Health and Substance Abuse Services, Turku",
-    "company": "Varsinais-Suomen hyvinvointialue",
-    "detected_category": "healthcare",
-    "saved_at": "2026-04-21 14:11:30"
-  },
-  {
-    "id": "8fefbee5",
-    "job_id": "luokanopettaja-hannuniitun-kou-turku-8fefbee5",
-    "title": "Classroom teacher, Hannuniitu school",
-    "company": "Turun kaupunki",
-    "detected_category": "education",
-    "saved_at": "2026-04-21 14:14:16"
-  },
-  {
-    "id": "12b06c6f",
-    "job_id": "maanrakennustyöntekijä-salaoja-lieto-12b06c6f",
-    "title": "Earth construction worker working for destinations in Turku",
-    "company": "InfraFour Oy",
-    "detected_category": "construction",
-    "saved_at": "2026-04-21 14:29:09"
+    "id": "b4d38e72",
+    "job_id": "lvi-asentaja-vantaa-b4d38e72",
+    "title": "HVAC installer",
+    "company": "LVI-palvelu Myller Oy, Vantaa",
+    "detected_category": "installation-and-maintenance",
+    "saved_at": "2026-04-23 22:12:49"
   }
 ]

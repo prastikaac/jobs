@@ -1,138 +1,61 @@
 {
   "version": 1,
-  "updated_at": "2026-04-21 14:33:05",
+  "updated_at": "2026-04-23 22:13:03",
   "jobs": {
-    "b144bc70": {
+    "81854140": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
+      "ai_processed": false,
+      "ai_status": "error",
+      "retry_count": 3,
       "max_retries": 3,
       "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 00:37:29"
+      "last_ai_error": "HTTP 500",
+      "formatted_at": ""
     },
-    "919c3aa5": {
+    "942cbb6c": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
+      "ai_processed": false,
+      "ai_status": "error",
+      "retry_count": 3,
       "max_retries": 3,
       "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 00:40:04"
+      "last_ai_error": "HTTP 500",
+      "formatted_at": ""
     },
-    "09af3e9c": {
+    "4def45b6": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
+      "ai_processed": false,
+      "ai_status": "error",
+      "retry_count": 3,
       "max_retries": 3,
       "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 00:41:43"
+      "last_ai_error": "HTTP 500",
+      "formatted_at": ""
     },
-    "de528114": {
+    "4ef65d3e": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
+      "ai_processed": false,
+      "ai_status": "error",
+      "retry_count": 3,
       "max_retries": 3,
       "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 00:42:46"
+      "last_ai_error": "HTTP 500",
+      "formatted_at": ""
     },
-    "3a743577": {
+    "b4d38e72": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
+      "ai_processed": false,
+      "ai_status": "error",
+      "retry_count": 3,
       "max_retries": 3,
       "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 00:45:09"
-    },
-    "585a0ae1": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 13:36:45"
-    },
-    "790e5916": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 13:38:39"
-    },
-    "09977bed": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 13:56:49"
-    },
-    "547cbdaf": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 14:00:08"
-    },
-    "ffeff504": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 14:14:16"
-    },
-    "8fefbee5": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 14:21:22"
-    },
-    "12b06c6f": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-21 14:30:45"
+      "last_ai_error": "HTTP 500",
+      "formatted_at": ""
     }
   }
 }
