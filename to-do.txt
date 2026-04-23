@@ -30,6 +30,8 @@ now i want to send  job alerts instantly to the user's device immediately after 
 - on back going to index.html a white blank popup appears
 
 
+
+
 Issue to fix: Error Page Behavior
 
 When the user performs a swipe-down (pull-to-refresh) on the error page, the app displays a blank white screen instead of reloading the page properly.
