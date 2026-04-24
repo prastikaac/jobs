@@ -381,7 +381,18 @@ public class MainActivity extends BridgeActivity {
             // This keeps the old page painted until the new one is ready (no
             // white flash) and is a genuine network fetch, not a cache hit.
             String currentUrl = wv.getUrl();
-            if (currentUrl != null && !currentUrl.isEmpty()) {
+            boolean onErrorPage = currentUrl == null
+                    || currentUrl.equals("file:///android_asset/public/")
+                    || currentUrl.contains("nointernet.html")
+                    || currentUrl.contains("error.html");
+
+            if (onErrorPage) {
+                if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
+                    wv.loadUrl(lastVisitedUrl);
+                } else {
+                    swipeRefreshLayout.setRefreshing(false);
+                }
+            } else if (currentUrl != null && !currentUrl.isEmpty()) {
                 wv.loadUrl(currentUrl);
             }
 
@@ -473,37 +484,7 @@ public class MainActivity extends BridgeActivity {
         }
         WebView wv = getBridge().getWebView();
 
-        // Detect whether we are currently showing an error/offline page.
-        // loadDataWithBaseURL sets getUrl() to the base URL we passed in,
-        // so we also check for that sentinel value.
-        String currentUrl = (wv != null) ? wv.getUrl() : null;
-        boolean onErrorPage = currentUrl == null
-                || currentUrl.equals("file:///android_asset/public/")
-                || currentUrl.contains("nointernet.html")
-                || currentUrl.contains("error.html");
 
-        if (onErrorPage) {
-            // We are on an error page. Don't call wv.goBack() — that would just
-            // navigate back into the failed URL and re-trigger the same error.
-            // Instead: if the site is reachable load lastVisitedUrl, otherwise
-            // treat this as the root screen (double-press to exit).
-            if (isConnected() && lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
-                wv.loadUrl(lastVisitedUrl);
-            } else {
-                long now = System.currentTimeMillis();
-                if (now - backPressedTime < 2000) {
-                    if (backExitToast != null) backExitToast.cancel();
-                    finishAffinity();
-                } else {
-                    backPressedTime = now;
-                    if (backExitToast != null) backExitToast.cancel();
-                    backExitToast = Toast.makeText(
-                        this, "Press back again to exit", Toast.LENGTH_SHORT);
-                    backExitToast.show();
-                }
-            }
-            return;
-        }
 
         // Normal page — let the WebView navigate back through its history
         if (wv != null && wv.canGoBack()) {
