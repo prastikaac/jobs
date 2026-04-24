@@ -6,8 +6,8 @@ from typing import Any, Dict, List
 
 import requests
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "qwen2.5:1.5b"
+LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
+MODEL_NAME = "qwen2.5-1.5b-instruct"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = os.path.join(BASE_DIR, "data", "translated_raw_jobs.json")
@@ -167,23 +167,21 @@ Raw Job Content:
 
 
 
-def call_ollama(prompt: str, num_predict: int = 300) -> str:
+def call_lm_studio(prompt: str, num_predict: int = 300) -> str:
     payload = {
         "model": MODEL_NAME,
-        "prompt": prompt,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2,
+        "max_tokens": num_predict,
         "stream": False,
-        "options": {
-            "temperature": 0.2,
-            "top_p": 0.9,
-            "num_predict": num_predict
-        }
     }
 
-    response = requests.post(OLLAMA_URL, json=payload, timeout=REQUEST_TIMEOUT)
+    response = requests.post(LM_STUDIO_URL, json=payload, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
 
     data = response.json()
-    return data.get("response", "").strip()
+    raw_content = data["choices"][0]["message"]["content"] if "choices" in data and data["choices"] else ""
+    return raw_content.strip()
 
 
 def sanitize_ai_output(text: str) -> str:
@@ -211,7 +209,7 @@ def format_job_description(job: Dict[str, Any], index: int, total: int) -> Dict[
 
     try:
         description_prompt = build_description_prompt(job)
-        formatted_description = call_ollama(description_prompt, num_predict=300)
+        formatted_description = call_lm_studio(description_prompt, num_predict=300)
         formatted_description = sanitize_ai_output(formatted_description)
 
         meta_description = make_meta_from_template(job)

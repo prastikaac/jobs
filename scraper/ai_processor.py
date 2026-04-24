@@ -13,8 +13,8 @@ import rawjobs_store
 
 logger = logging.getLogger("ai_processor")
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = "qwen2.5:1.5b"
+LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
+LM_STUDIO_MODEL = "qwen2.5-1.5b-instruct"
 
 BATCH_SIZE = 0
 TIMEOUT_SECS = 600
@@ -141,7 +141,7 @@ def _trim_description_safely(text: str, max_len: int = 800) -> str:
     return truncated.rstrip(" ,;:-").strip()
 
 
-def _call_ollama_for_content(
+def _call_lm_studio_for_content(
     translated_text: str,
     raw_job: dict | None = None,
     ai_category: str = "other",
@@ -193,20 +193,24 @@ def _call_ollama_for_content(
     )
 
     payload = {
-        "model": OLLAMA_MODEL,
-        "system": (
-            "You extract structured job information from provided job text only. "
-            "You never invent facts. "
-            "All output must be valid English JSON."
-        ),
-        "prompt": prompt,
+        "model": LM_STUDIO_MODEL,
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "You extract structured job information from provided job text only. "
+                    "You never invent facts. "
+                    "All output must be valid English JSON."
+                )
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 520,
         "stream": False,
-        "format": "https://findjobsinfinland.fi/json",
-        "options": {
-            "temperature": 0,
-            "num_predict": 520,
-            "num_ctx": 4096,
-        },
     }
 
     content = ""
@@ -214,14 +218,16 @@ def _call_ollama_for_content(
 
     for attempt in range(1, MAX_RETRIES + 2):
         try:
-            resp = requests.post(OLLAMA_URL, json=payload, timeout=TIMEOUT_SECS)
+            resp = requests.post(LM_STUDIO_URL, json=payload, timeout=TIMEOUT_SECS)
 
             if resp.status_code != 200:
-                logger.warning("Ollama returned HTTP %d", resp.status_code)
+                logger.warning("LM Studio returned HTTP %d", resp.status_code)
                 fallback = Job_formatter.build_fallback_ai_data(raw_job, ai_category, valid_categories)
                 return fallback, False, "error", f"HTTP {resp.status_code}"
 
-            content = _clean_json_response(resp.json().get("response", ""))
+            data = resp.json()
+            raw_content = data["choices"][0]["message"]["content"] if "choices" in data and data["choices"] else ""
+            content = _clean_json_response(raw_content)
             parsed = json.loads(content)
 
             ai_results = Job_formatter.sanitize_ai_output(parsed, raw_job, ai_category, valid_categories)
@@ -238,8 +244,8 @@ def _call_ollama_for_content(
             return ai_results, True, "success", ""
 
         except json.JSONDecodeError as exc:
-            logger.warning("https://findjobsinfinland.fi/jsON decode error from Ollama: %s", exc)
-            logger.warning("Raw Ollama content preview: %s", content[:1000] if content else "N/A")
+            logger.warning("https://findjobsinfinland.fi/jsON decode error from LM Studio: %s", exc)
+            logger.warning("Raw LM Studio content preview: %s", content[:1000] if content else "N/A")
             last_exc = exc
             break
 
@@ -247,16 +253,16 @@ def _call_ollama_for_content(
             last_exc = exc
             if attempt <= MAX_RETRIES:
                 logger.warning(
-                    "Ollama timeout/connection error (attempt %d/%d): %s",
+                    "LM Studio timeout/connection error (attempt %d/%d): %s",
                     attempt,
                     MAX_RETRIES + 1,
                     exc,
                 )
             else:
-                logger.warning("Ollama failed after retries: %s", exc)
+                logger.warning("LM Studio failed after retries: %s", exc)
 
         except Exception as exc:
-            logger.warning("Ollama failed: %s", exc)
+            logger.warning("LM Studio failed: %s", exc)
             last_exc = exc
             break
 
@@ -314,32 +320,31 @@ def _build_description_prompt(raw_job: dict) -> str:
     )
 
 
-def _call_ollama_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, num_predict: int = 220) -> tuple[str, bool, str]:
+def _call_lm_studio_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, num_predict: int = 220) -> tuple[str, bool, str]:
     payload = {
-        "model": OLLAMA_MODEL,
-        "prompt": prompt,
+        "model": LM_STUDIO_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2,
+        "max_tokens": num_predict,
         "stream": False,
-        "options": {
-            "temperature": 0.2,
-            "num_predict": num_predict,
-            "num_ctx": 4096,
-        },
     }
 
     for attempt in range(1, MAX_RETRIES + 2):
         try:
-            resp = requests.post(OLLAMA_URL, json=payload, timeout=timeout_secs)
+            resp = requests.post(LM_STUDIO_URL, json=payload, timeout=timeout_secs)
 
             if resp.status_code != 200:
                 return "", False, f"HTTP {resp.status_code}"
 
-            output = _sanitize_plain_output(resp.json().get("response", ""))
+            data = resp.json()
+            raw_content = data["choices"][0]["message"]["content"] if "choices" in data and data["choices"] else ""
+            output = _sanitize_plain_output(raw_content)
             return output, True, ""
 
         except (requests.Timeout, requests.ConnectionError) as exc:
             if attempt <= MAX_RETRIES:
                 logger.warning(
-                    "Plain Ollama timeout/connection error (attempt %d/%d): %s",
+                    "Plain LM Studio timeout/connection error (attempt %d/%d): %s",
                     attempt,
                     MAX_RETRIES + 1,
                     exc,
@@ -358,7 +363,7 @@ def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
     fallback_description = _trim_description_safely(_normalize_whitespace(translated_text), 800)
 
     desc_prompt = _build_description_prompt(raw_job)
-    formatted_description, desc_ok, desc_err = _call_ollama_plain_text(
+    formatted_description, desc_ok, desc_err = _call_lm_studio_plain_text(
         desc_prompt,
         timeout_secs=TIMEOUT_SECS,
         num_predict=320,
@@ -420,7 +425,7 @@ def format_translated_jobs(
         # the record is on disk before (and while) the Ollama AI call runs.
         category_post_check.save_to_category_check(raw, found_category)
 
-        ai_data, success, status, err = _call_ollama_for_content(
+        ai_data, success, status, err = _call_lm_studio_for_content(
             translated_text,
             raw_job=raw,
             ai_category=found_category,

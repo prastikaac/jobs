@@ -39,6 +39,19 @@ public class MainActivity extends BridgeActivity {
     // the localhost origin while normal pages are on findjobsinfinland.fi.
     private String lastVisitedUrl = "https://findjobsinfinland.fi/";
 
+    // --- Error page tracking -----------------------------------------------------
+    // URL-based detection is unreliable because loadDataWithBaseURL uses
+    // historyUrl="https://findjobsinfinland.fi/" — so wv.getUrl() returns the
+    // site root, not a path containing "error.html". A boolean flag is the only
+    // reliable way to know we're currently showing an error/offline page.
+    private boolean isOnErrorPage = false;
+
+    // Tracks the last page that SUCCESSFULLY loaded (no error). Used by the back
+    // button on the error page as a guaranteed fallback when the WebView history
+    // has no usable entry (e.g. error on first page load, or all history entries
+    // are error/failed-URL entries).
+    private String lastSuccessfulUrl = "https://findjobsinfinland.fi/";
+
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
     private Toast backExitToast;
@@ -192,7 +205,9 @@ public class MainActivity extends BridgeActivity {
 
                 @Override
                 public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse errorResponse) {
-                    super.onReceivedHttpError(view, request, errorResponse);
+                    // Do NOT call super — calling super lets Capacitor/Chromium process
+                    // the HTTP error first (render a blank/error page), which races against
+                    // our loadAssetPage call and causes a blank white screen.
                     if (request.isForMainFrame()) {
                         String failedUrl = request.getUrl().toString();
                         if (!failedUrl.contains("nointernet.html") && !failedUrl.contains("error.html")) {
@@ -317,12 +332,20 @@ public class MainActivity extends BridgeActivity {
 
                 // Also track it natively (sessionStorage is origin-scoped and
                 // won't be readable from the localhost-served error page).
-                String currentUrl = webView.getUrl();
-                if (currentUrl != null
-                        && !currentUrl.isEmpty()
-                        && !currentUrl.contains("nointernet.html")
-                        && !currentUrl.contains("error.html")) {
-                    lastVisitedUrl = currentUrl;
+                // Guard with isOnErrorPage: when the error page fires onPageLoaded,
+                // wv.getUrl() returns "https://findjobsinfinland.fi/" (our historyUrl)
+                // which would wrongly overwrite the real lastVisitedUrl.
+                if (!isOnErrorPage) {
+                    String currentUrl = webView.getUrl();
+                    if (currentUrl != null
+                            && !currentUrl.isEmpty()
+                            && !currentUrl.contains("nointernet.html")
+                            && !currentUrl.contains("error.html")) {
+                        lastVisitedUrl = currentUrl;
+                        // Also update the "last successful" tracker used by the
+                        // back button on the error page as a guaranteed fallback.
+                        lastSuccessfulUrl = currentUrl;
+                    }
                 }
                 webView.evaluateJavascript(js, null);
             }
@@ -377,32 +400,26 @@ public class MainActivity extends BridgeActivity {
                 return;
             }
 
-            String currentUrl = wv.getUrl();
-            // loadDataWithBaseURL sets the WebView URL to the baseUrl we pass in
-            // ("file:///android_asset/public/"), so detecting error pages must
-            // check for that string too — not just the filename in the URL.
-            boolean onErrorPage = currentUrl == null
-                    || currentUrl.equals("file:///android_asset/public/")
-                    || currentUrl.contains("nointernet.html")
-                    || currentUrl.contains("error.html");
-
-            if (onErrorPage) {
+            if (isOnErrorPage) {
                 // The WebView URL is the asset base URL, not a real HTTP address.
                 // Calling wv.loadUrl(currentUrl) would load an empty directory
-                // and show a blank screen.  Instead, reload the last real page
+                // and show a blank screen.  Instead, reload the last successful page
                 // (with a background ping first to avoid showing error.html again
                 // if the target is still broken).
-                if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
+                if (lastSuccessfulUrl != null && !lastSuccessfulUrl.isEmpty()) {
                     new Thread(() -> {
                         try {
                             java.net.HttpURLConnection conn = (java.net.HttpURLConnection)
-                                new java.net.URL(lastVisitedUrl).openConnection();
+                                new java.net.URL(lastSuccessfulUrl).openConnection();
                             conn.setRequestMethod("HEAD");
                             conn.setConnectTimeout(3000);
                             conn.setReadTimeout(3000);
                             int code = conn.getResponseCode();
                             if (code >= 200 && code < 400) {
-                                wv.post(() -> wv.loadUrl(lastVisitedUrl));
+                                wv.post(() -> {
+                                    isOnErrorPage = false;
+                                    wv.loadUrl(lastSuccessfulUrl);
+                                });
                             } else {
                                 // Target still broken — re-show error page (no blank flash)
                                 wv.post(() -> {
@@ -423,10 +440,13 @@ public class MainActivity extends BridgeActivity {
                     swipeRefreshLayout.setRefreshing(false);
                     loadAssetPage(wv, "error.html");
                 }
-            } else if (currentUrl != null && !currentUrl.isEmpty()) {
-                wv.loadUrl(currentUrl);
             } else {
-                swipeRefreshLayout.setRefreshing(false);
+                String currentUrl = wv.getUrl();
+                if (currentUrl != null && !currentUrl.isEmpty()) {
+                    wv.loadUrl(currentUrl);
+                } else {
+                    swipeRefreshLayout.setRefreshing(false);
+                }
             }
 
             // Safety net: hide spinner after 8 s even if onPageFinished never fires
@@ -478,6 +498,10 @@ public class MainActivity extends BridgeActivity {
      * @param filename  Filename inside assets/public/, e.g. "nointernet.html"
      */
     private void loadAssetPage(WebView view, String filename) {
+        // Mark that we are now showing an error/offline asset page.
+        // onBackPressed and onPageLoaded both rely on this flag because
+        // URL-based detection no longer works (historyUrl = site root).
+        isOnErrorPage = true;
         try {
             InputStream is = getAssets().open("public/" + filename);
             java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();
@@ -488,20 +512,23 @@ public class MainActivity extends BridgeActivity {
             }
             is.close();
             String html = baos.toString("UTF-8");
-            // Use a file:// base URL so relative asset paths still resolve correctly
+            // baseUrl = file:// so relative asset paths (images, css, js) resolve.
+            // historyUrl = the site origin so the WebView's back-stack entry is a
+            // real URL (not null / file://) which prevents blank-screen on reload
+            // and keeps Capacitor's origin checks happy.
             view.loadDataWithBaseURL(
                 "file:///android_asset/public/",
                 html,
                 "text/html",
                 "UTF-8",
-                null
+                "https://findjobsinfinland.fi/"
             );
         } catch (Exception e) {
-            // Absolute last-resort fallback: blank white page with a plain message
+            // Absolute last-resort fallback: plain message with no white flash
             view.loadData(
                 "<html><body style='display:flex;align-items:center;justify-content:center;" +
                 "height:100vh;font-family:sans-serif;font-size:18px;color:#555;'>" +
-                "<p>No Internet Connection</p></body></html>",
+                "<p>Something went wrong. Please go back and try again.</p></body></html>",
                 "text/html", "UTF-8"
             );
         }
@@ -523,38 +550,45 @@ public class MainActivity extends BridgeActivity {
 
 
         if (wv != null) {
-            String currentUrl = wv.getUrl();
-            boolean onErrorPage = currentUrl == null
-                    || currentUrl.equals("file:///android_asset/public/")
-                    || currentUrl.contains("nointernet.html")
-                    || currentUrl.contains("error.html");
-
-            if (onErrorPage) {
+            // Use the flag instead of URL checks — wv.getUrl() returns the site
+            // root (our historyUrl) when on the error page, not "error.html".
+            if (isOnErrorPage) {
+                // Walk history backwards, skipping:
+                //  • error/offline asset entries (file:// base URL)
+                //  • the URL that triggered the error (lastVisitedUrl) — going
+                //    back to it would just show the error page again.
                 android.webkit.WebBackForwardList list = wv.copyBackForwardList();
                 int currentIndex = list.getCurrentIndex();
                 int stepsToSkip = 0;
 
-                // Walk backwards through the history stack and count consecutive
-                // error/asset entries so we can jump over all of them in one go.
-                // NOTE: do NOT include lastVisitedUrl in the error check — that is
-                // the real page the user came from and must be the landing target.
                 for (int i = currentIndex; i >= 0; i--) {
                     String url = list.getItemAtIndex(i).getUrl();
-                    boolean isErrorEntry = url == null
+                    boolean shouldSkip = url == null
                             || url.equals("file:///android_asset/public/")
                             || url.contains("nointernet.html")
-                            || url.contains("error.html");
-                    if (isErrorEntry) {
+                            || url.contains("error.html")
+                            // Skip the historyUrl we injected for the error page
+                            || (url.equals("https://findjobsinfinland.fi/") && i == currentIndex)
+                            // Skip the failed URL — reloading it would error again
+                            || url.equals(lastVisitedUrl);
+                    if (shouldSkip) {
                         stepsToSkip++;
                     } else {
                         break;
                     }
                 }
 
+                isOnErrorPage = false;
                 if (stepsToSkip > 0 && wv.canGoBackOrForward(-stepsToSkip)) {
+                    // Found a valid history entry — navigate there.
                     wv.goBackOrForward(-stepsToSkip);
-                    return;
+                } else {
+                    // No usable history entry (e.g. error on very first load).
+                    // Fall back to the last page that actually loaded successfully
+                    // rather than showing the exit toast.
+                    wv.loadUrl(lastSuccessfulUrl);
                 }
+                return;
             } else if (wv.canGoBack()) {
                 wv.goBack();
                 return;
