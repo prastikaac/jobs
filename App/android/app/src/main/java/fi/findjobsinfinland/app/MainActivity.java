@@ -377,9 +377,6 @@ public class MainActivity extends BridgeActivity {
                 return;
             }
 
-            // Grab the current URL and navigate to it fresh from the server.
-            // This keeps the old page painted until the new one is ready (no
-            // white flash) and is a genuine network fetch, not a cache hit.
             String currentUrl = wv.getUrl();
             boolean onErrorPage = currentUrl == null
                     || currentUrl.equals("file:///android_asset/public/")
@@ -388,12 +385,38 @@ public class MainActivity extends BridgeActivity {
 
             if (onErrorPage) {
                 if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
-                    wv.loadUrl(lastVisitedUrl);
+                    // Ping in background to prevent white flash if still broken
+                    new Thread(() -> {
+                        try {
+                            java.net.HttpURLConnection conn = (java.net.HttpURLConnection)
+                                new java.net.URL(lastVisitedUrl).openConnection();
+                            conn.setRequestMethod("HEAD");
+                            conn.setConnectTimeout(3000);
+                            conn.setReadTimeout(3000);
+                            int code = conn.getResponseCode();
+                            if (code >= 200 && code < 400) {
+                                wv.post(() -> wv.loadUrl(lastVisitedUrl));
+                            } else {
+                                wv.post(() -> {
+                                    swipeRefreshLayout.setRefreshing(false);
+                                    loadAssetPage(wv, "error.html");
+                                });
+                            }
+                        } catch (Exception e) {
+                            wv.post(() -> {
+                                swipeRefreshLayout.setRefreshing(false);
+                                if (!isConnected()) loadAssetPage(wv, "nointernet.html");
+                                else loadAssetPage(wv, "error.html");
+                            });
+                        }
+                    }).start();
                 } else {
                     swipeRefreshLayout.setRefreshing(false);
                 }
             } else if (currentUrl != null && !currentUrl.isEmpty()) {
                 wv.loadUrl(currentUrl);
+            } else {
+                swipeRefreshLayout.setRefreshing(false);
             }
 
             // Safety net: hide spinner after 8 s even if onPageFinished never fires
@@ -489,10 +512,41 @@ public class MainActivity extends BridgeActivity {
 
 
 
-        // Normal page — let the WebView navigate back through its history
-        if (wv != null && wv.canGoBack()) {
-            wv.goBack();
-            return;
+        if (wv != null) {
+            String currentUrl = wv.getUrl();
+            boolean onErrorPage = currentUrl == null
+                    || currentUrl.equals("file:///android_asset/public/")
+                    || currentUrl.contains("nointernet.html")
+                    || currentUrl.contains("error.html");
+
+            if (onErrorPage) {
+                android.webkit.WebBackForwardList list = wv.copyBackForwardList();
+                int currentIndex = list.getCurrentIndex();
+                int stepsToSkip = 0;
+
+                // Look back through history to find the first working page
+                for (int i = currentIndex; i >= 0; i--) {
+                    String url = list.getItemAtIndex(i).getUrl();
+                    boolean isError = url == null
+                            || url.equals("file:///android_asset/public/")
+                            || url.contains("nointernet.html")
+                            || url.contains("error.html")
+                            || url.equals(lastVisitedUrl);
+                    if (isError) {
+                        stepsToSkip++;
+                    } else {
+                        break;
+                    }
+                }
+
+                if (stepsToSkip > 0 && wv.canGoBackOrForward(-stepsToSkip)) {
+                    wv.goBackOrForward(-stepsToSkip);
+                    return;
+                }
+            } else if (wv.canGoBack()) {
+                wv.goBack();
+                return;
+            }
         }
 
         // Root screen: require a second press within 2 s to exit
