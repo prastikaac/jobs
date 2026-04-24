@@ -4,17 +4,17 @@ import re
 import time
 from typing import Any, Dict, List
 
-import requests
+import urllib.request
+import urllib.error
 
 LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
-MODEL_NAME = "qwen2.5-1.5b-instruct"
+MODEL_NAME = "qwen2.5-coder-1.5b-instruct"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = os.path.join(BASE_DIR, "data", "translated_raw_jobs.json")
 OUTPUT_FILE = os.path.join(BASE_DIR, "data", "formatted_jobs.json")
 
 REQUEST_TIMEOUT = 300
-SLEEP_BETWEEN_REQUESTS = 0.5
 
 
 def load_json_file(file_path: str) -> Any:
@@ -176,10 +176,20 @@ def call_lm_studio(prompt: str, num_predict: int = 300) -> str:
         "stream": False,
     }
 
-    response = requests.post(LM_STUDIO_URL, json=payload, timeout=REQUEST_TIMEOUT)
-    response.raise_for_status()
+    payload_bytes = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(
+        LM_STUDIO_URL,
+        data=payload_bytes,
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
 
-    data = response.json()
+    try:
+        with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as response:
+            data = json.loads(response.read())
+    except Exception as e:
+        raise RuntimeError(f"LM Studio error: {e}")
+
     raw_content = data["choices"][0]["message"]["content"] if "choices" in data and data["choices"] else ""
     return raw_content.strip()
 
@@ -249,8 +259,6 @@ def main() -> None:
     for index, job in enumerate(jobs, start=1):
         formatted_job = format_job_description(job, index, total_jobs)
         formatted_jobs.append(formatted_job)
-
-        time.sleep(SLEEP_BETWEEN_REQUESTS)
 
     output_data = rebuild_output(original_data, formatted_jobs)
     save_json_file(OUTPUT_FILE, output_data)

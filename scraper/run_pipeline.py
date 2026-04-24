@@ -48,7 +48,7 @@ import image_generator
 import html_generator
 import expiration
 import firebase_client
-import category_post_check
+import category_checker
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -459,22 +459,11 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
             )
 
             # ── Phase 3: AI on this chunk ─────────────────────────────────
-            # Start the category checker background worker BEFORE Phase 3 so
-            # it is ready to receive jobs the moment the first one finishes AI.
-            checker = category_post_check.BatchChecker()
-            checker.start()
-
             newly_processed_translated, updated_translated_jobs = ai_processor.format_translated_jobs(
                 chunk,
                 batch_size=len(chunk),
-                category_checker=checker,
             )
             processed_so_far += len(chunk)
-
-            # Block until every job in this batch has been category-verified.
-            # Any corrections are on disk before Phase 4 runs.
-            logger.info("── Batch %d: Waiting for category post-check to finish ──", batch_num)
-            checker.wait()
 
             processing_state = rawjobs_store.sync_processing_state_from_jobs(updated_translated_jobs, processing_state)
             rawjobs_store.save_processing_state(processing_state)

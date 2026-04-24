@@ -1,6 +1,6 @@
 # Job Aggregator Architecture
 
-This document outlines the complete architecture, data flow, and functional mechanisms of the Job Aggregator system. The system fetches jobs from multiple Finnish job boards, deduplicates them, translates them using Google Translate (via deep-translator), formats them using a local AI (Ollama), and generates static HTML pages for a fast frontend experience.
+This document outlines the complete architecture, data flow, and functional mechanisms of the Job Aggregator system. The system fetches jobs from multiple Finnish job boards, deduplicates them, translates them using Google Translate (via deep-translator), formats them using a local AI (LM Studio), and generates static HTML pages for a fast frontend experience.
 
 ---
 
@@ -21,12 +21,12 @@ The pipeline operates in a fully automated, scheduled loop, split into **four di
 │    .json      │   │  → translated_    │   │  → jobs.json      │   │                    │
 │               │   │    content field  │   │                   │   │  ↓ (background)    │
 │               │   │  → translated_    │   │                   │   │  Category post-    │
-│               │   │    jobs.json      │   │                   │   │  check (Ollama)    │
+│               │   │    jobs.json      │   │                   │   │  check (LM Studio) │
 └───────────────┘   └───────────────────┘   └───────────────────┘   └────────────────────┘
  run_scraper.py      job_translator.py        ai_processor.py          html_generator.py
                      translate_raw_jobs()     format_translated_       image_generator.py
                      run_phase2()             jobs()                   firebase_client.py
-                                                                        category_post_check.py
+                                                                        category_checker.py
 ```
 
 Automated via **Windows Task Scheduler** at specific intervals, ensuring fresh data flows onto the live site at `findjobsinfinland.fi`.
@@ -114,7 +114,7 @@ The `translated_content` field is added to each raw job in `rawjobs.json`:
 
 ## 4. Phase 3: AI Formatting (`ai_processor.py`)
 
-**Purpose**: Take the pre-translated English text and format it into structured JSON fields using a local AI model (Ollama), combined with Python for factual fields.
+**Purpose**: Take the pre-translated English text and format it into structured JSON fields using a local AI model (LM Studio), combined with Python for factual fields.
 
 **File**: `scraper/ai_processor.py`
 
@@ -122,7 +122,7 @@ The `translated_content` field is added to each raw job in `rawjobs.json`:
 | Function | Purpose |
 |----------|--------|
 | `format_translated_jobs(raw_jobs, batch_size)` | Phase 3 entry point: format unprocessed jobs |
-| `_call_ollama_for_content(text, raw_job, category)` | Send translated text to Ollama for structured extraction |
+| `_call_lm_studio_for_content(text, raw_job, category)` | Send translated text to LM Studio for structured extraction |
 | `_build_formatted_job(raw, ai_data)` | Merge AI output with Python factual fields |
 | `_build_fallback_ai_data(raw, category)` | Fallback when AI fails: Python extraction + translation |
 | `apply_manual_fixes(job)` | Post-processing: salary normalization, Finnish sweep |
@@ -157,9 +157,9 @@ Pre-translated English text (from Phase 2)
                ▼
 ┌─────────────────────────────────────┐
 │  Step 2: AI FORMATTING              │
-│  _call_ollama_for_content()         │
-│  Ollama (qwen2.5:1.5b) reads the   │
-│  ALREADY-TRANSLATED English text    │
+│  _call_lm_studio_for_content()      │
+│  LM Studio (qwen2.5-coder-1.5b)     │
+│  reads the ALREADY-TRANSLATED       │
 │  and extracts structured fields:    │
 │  - title (clean English)            │
 │  - description (1 paragraph, ≤800c) │
@@ -219,7 +219,7 @@ Pre-translated English text (from Phase 2)
 | Component | Responsibility |
 |-----------|---------------|
 | **Google Translate** (Phase 2) | **Translation**: Finnish → English. Uses deep-translator, cached in `translated_content`. |
-| **Ollama** (Phase 3) | **Formatting**: Reads English text, extracts structured fields. Also picks category if string-match fails. |
+| **LM Studio** (Phase 3) | **Formatting**: Reads English text, extracts structured fields. Also picks category if string-match fails. |
 | **Python** (Phase 3) | **Factual fields**: Company, location, salary, links, dates. Never delegated to AI. |
 | **`_sweep_finnish_from_job()`** | **Safety net**: Catches any remaining Finnish after AI formatting and retranslates via Google Translate. |
 
@@ -235,39 +235,38 @@ Pre-translated English text (from Phase 2)
 - **Keyword Dictionary**: Populated from `job_categories.json`. Only keywords for categories present in `all_jobs_cat.json` are loaded (3 000+ keywords, Finnish + English).
 - **Rule-Based Only**: `detect_category_by_keywords()` scores every category using ESCO occupation labels, title matching, and keyword frequency. Returns `(best_category, best_score)`. The highest-scoring category wins — **no AI involved in this step**.
 - **Scoring thresholds**: requires either `≥ 2` distinct keyword hits OR a base score `≥ 8` (exact/partial title match). Jobs scoring 0 default to `"other"`.
-- **AI tiebreaker removed**: Previously, Ollama was called as a fallback when the rule-based engine was ambiguous. This was removed to reduce latency and Ollama load during the main pipeline.
+- **AI override via LM Studio**: The background `BatchChecker` thread evaluates the category concurrently with formatting using `determine_category()`. It checks the point-wise score first, then asks LM Studio to suggest the best category. If LM Studio finds a better fit, it overrides the point-wise category in-place.
 
-### Category Post-Check (`category_post_check.py`)
+### Category Post-Check (`category_checker.py`)
 
-The category verifier now runs **concurrently with Phase 3** using a producer-consumer queue. It starts before Phase 3 and verifies each job's category in the background as soon as the AI processor finishes it — not after the whole batch.
+The category verifier now runs **concurrently with AI Formatting** using a batch-level `ThreadPoolExecutor`.
 
 ```
   Phase 3 starts
-  ┌──────────────────────────────┐      ┌─────────────────────────────────────┐
-  │  checker.start()             │      │  Background Worker Thread           │
-  │  (BatchChecker)              │      │                                     │
-  │                              │      │  • Waits on internal queue           │
-  │  ai_processor processes      │      │  • Picks up jobs as they arrive      │
-  │  job 1 → ✓                   │─────▶│  • Asks Ollama: "Is category OK?"   │
-  │  format_translated_jobs()    │      │  Still processing …                 │
-  │  returns                     │      │                                     │
-  │                              │      │                                     │
-  │  checker.wait()  ◀──────────────────  Posts sentinel → drains queue       │
-  │  (BLOCKS here)               │      │  Thread exits                       │
-  └──────────────────────────────┘      └─────────────────────────────────────┘
+  
+  ┌────────────────────────────────────────────────────────┐
+  │ 1. category_checker.determine_category() is         │
+  │    submitted to a ThreadPoolExecutor for ALL jobs in   │
+  │    the batch upfront.                                  │
+  │                                                        │
+  │ 2. Main thread proceeds to format jobs sequentially    │
+  │    using _call_lm_studio_for_content().                │
+  │                                                        │
+  │ 3. Before finalizing a job, the main thread waits for  │
+  │    that specific job's category future to complete.    │
+  │                                                        │
+  │ 4. Merges final category into formatted data.          │
+  └────────────────────────────────────────────────────────┘
          │
-         ▼  All categories already correct on disk
-    Phase 4 → Phase 5 → git push
-    (one commit covers new jobs + all corrections)
+         ▼
+    Returns fully formatted job batch
 ```
 
 **Key properties:**
-- `submit(job)` is called per-job, immediately after `ai_processor` logs `✓ title → category=…`
-- Worker thread runs concurrently — overlaps with the next job's Ollama call
-- `checker.wait()` is the barrier: blocks until queue is drained, then Phase 4 starts
-- Corrections are already on disk **before** Phase 4 builds HTML, ensuring correct folder paths
-- Logs to `scraper/category_post_check.log` (dedicated file, INFO level)
-- Silently skips if Ollama is offline — pipeline unaffected
+- Category checks run in the background for the entire batch simultaneously while the AI processor works.
+- By the time the main thread finishes the heavy AI extraction for a job, its category check is usually already completed and waiting.
+- Logs to `scraper/category_checker.log` (dedicated file, INFO level)
+- Silently skips if LM Studio is offline — pipeline unaffected
 - Thread-safe: `_file_lock` prevents concurrent JSON/HTML corruption
 - Source tagged `"pipeline_post_check"` in `category_changes_log.json`
 
@@ -326,23 +325,15 @@ The category verifier now runs **concurrently with Phase 3** using a producer-co
 ───────────────────────────────────
 6. Batched loop (25 jobs per iteration — PIPELINE_COMMIT_BATCH_SIZE):
 
-   a. checker = BatchChecker(); checker.start()
-      → Detects Ollama model, loads valid categories
-      → Starts background worker thread (waiting on queue)
-
-   b. PHASE 3: ai_processor.format_translated_jobs(chunk, checker=checker)
-      → Rule-based category scoring (detect_category_by_keywords)
-      → Ollama structures content: title, description, meta, lists
+   a. PHASE 3: ai_processor.format_translated_jobs(chunk)
+      → Submits determine_category() (Point-wise + LM Studio category selection) for all jobs into a background ThreadPool
+      → Main thread loops through jobs, calling _call_lm_studio_for_content() (LM Studio structures title, description, lists)
+      → Before moving to the next job, main thread waits for that job's category ThreadPool future to finish
       → Python locks factual fields (company, location, salary, links)
       → Finnish sweep safety net
-      → After EACH job completes: checker.submit(job)  ← per-job, immediate
-         (background worker starts verifying category while next job processes)
+      → Returns fully finalized formatted jobs
 
-   c. checker.wait()  ← BARRIER
-      → Posts sentinel to queue, blocks until worker thread drains queue
-      → All category corrections already applied to JSON + HTML on disk
-
-   d. PHASE 4: Job_formatter.format_jobs()
+   b. PHASE 4: Job_formatter.format_jobs()
       → Merges ai_data into final job schema (categories already corrected)
       → Generates job_id slug (title + location + hash)
 
@@ -402,8 +393,8 @@ Fields exempt from Finnish detection (kept as-is):
 
 | Setting | Description |
 |---------|-------------|
-| `OLLAMA_MODEL` | `qwen2.5:1.5b` (in ai_processor.py) |
-| `OLLAMA_URL` | `http://localhost:11434/api/generate` |
+| `LM_STUDIO_MODEL` | `qwen2.5-coder-1.5b-instruct` (in ai_processor.py) |
+| `LM_STUDIO_URL` | `http://localhost:1234/v1/chat/completions` |
 | `VALID_CATEGORIES` | Loaded from `all_jobs_cat.json` (30 broad functional categories) |
 | `CATEGORY_KEYWORDS` | Keyword-to-category mapping loaded from `job_categories.json`. Over 3000 keywords in FI and EN. |
 | `CITY_KEYWORDS` | All Finnish cities/districts for location detection |
@@ -459,7 +450,7 @@ JobsInFinland/
     ├── job_template.html        # HTML template for job pages
     ├── all_jobs_cat.json        # Valid category list (source of truth, 30 categories)
     ├── job_categories.json      # Keyword dictionaries for rule-based scoring
-    ├── category_post_check.py   # Background AI category verifier (post-batch)
+    ├── category_checker.py   # Background AI category verifier (post-batch)
     ├── category_changer.py      # Manual category manager web UI + AI audit tool
     │
     ├── scraper_tyomarkkinatori.py   # Phase 1: Työmarkkinatori module

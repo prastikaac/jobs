@@ -3,22 +3,24 @@
 import json
 import logging
 import re
+import concurrent.futures
 
-import requests
+import urllib.request
+import urllib.error
 
 import config
 import Job_formatter
-import category_post_check
+import category_checker
 import rawjobs_store
 
 logger = logging.getLogger("ai_processor")
 
 LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
-LM_STUDIO_MODEL = "qwen2.5-1.5b-instruct"
+LM_STUDIO_MODEL = "qwen2.5-coder-1.5b-instruct"
 
 BATCH_SIZE = 0
 TIMEOUT_SECS = 600
-CATEGORY_TIMEOUT_SECS = 120
+CATEGORY_TIMEOUT_SECS = 600
 MAX_RETRIES = 2
 
 
@@ -218,14 +220,15 @@ def _call_lm_studio_for_content(
 
     for attempt in range(1, MAX_RETRIES + 2):
         try:
-            resp = requests.post(LM_STUDIO_URL, json=payload, timeout=TIMEOUT_SECS)
-
-            if resp.status_code != 200:
-                logger.warning("LM Studio returned HTTP %d", resp.status_code)
-                fallback = Job_formatter.build_fallback_ai_data(raw_job, ai_category, valid_categories)
-                return fallback, False, "error", f"HTTP {resp.status_code}"
-
-            data = resp.json()
+            req = urllib.request.Request(
+                LM_STUDIO_URL,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"Content-Type": "application/json"},
+                method="POST"
+            )
+            with urllib.request.urlopen(req, timeout=TIMEOUT_SECS) as resp:
+                data = json.loads(resp.read())
+            
             raw_content = data["choices"][0]["message"]["content"] if "choices" in data and data["choices"] else ""
             content = _clean_json_response(raw_content)
             parsed = json.loads(content)
@@ -249,8 +252,19 @@ def _call_lm_studio_for_content(
             last_exc = exc
             break
 
-        except (requests.Timeout, requests.ConnectionError) as exc:
+        except urllib.error.HTTPError as exc:
+            err_body = exc.read().decode("utf-8", errors="replace")
+            logger.warning("LM Studio returned HTTP %d: %s", exc.code, err_body)
+            fallback = Job_formatter.build_fallback_ai_data(raw_job, ai_category, valid_categories)
+            return fallback, False, "error", f"HTTP {exc.code}"
+
+        except urllib.error.URLError as exc:
             last_exc = exc
+            if isinstance(exc.reason, TimeoutError) or "timeout" in str(exc.reason).lower():
+                status = "timeout"
+            else:
+                status = "error"
+
             if attempt <= MAX_RETRIES:
                 logger.warning(
                     "LM Studio timeout/connection error (attempt %d/%d): %s",
@@ -268,7 +282,7 @@ def _call_lm_studio_for_content(
 
     fallback = Job_formatter.build_fallback_ai_data(raw_job, ai_category, valid_categories)
     err_str = str(last_exc) if last_exc else "unknown error"
-    status = "timeout" if isinstance(last_exc, (requests.Timeout, requests.ConnectionError)) else "error"
+    status = "timeout" if isinstance(last_exc, urllib.error.URLError) else "error"
     return fallback, False, status, err_str
 
 
@@ -331,17 +345,25 @@ def _call_lm_studio_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, nu
 
     for attempt in range(1, MAX_RETRIES + 2):
         try:
-            resp = requests.post(LM_STUDIO_URL, json=payload, timeout=timeout_secs)
-
-            if resp.status_code != 200:
-                return "", False, f"HTTP {resp.status_code}"
-
-            data = resp.json()
+            req = urllib.request.Request(
+                LM_STUDIO_URL,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"Content-Type": "application/json"},
+                method="POST"
+            )
+            with urllib.request.urlopen(req, timeout=timeout_secs) as resp:
+                data = json.loads(resp.read())
+            
             raw_content = data["choices"][0]["message"]["content"] if "choices" in data and data["choices"] else ""
             output = _sanitize_plain_output(raw_content)
             return output, True, ""
 
-        except (requests.Timeout, requests.ConnectionError) as exc:
+        except urllib.error.HTTPError as exc:
+            err_body = exc.read().decode("utf-8", errors="replace")
+            logger.warning("Plain LM Studio returned HTTP %d: %s", exc.code, err_body)
+            return "", False, f"HTTP {exc.code}"
+
+        except urllib.error.URLError as exc:
             if attempt <= MAX_RETRIES:
                 logger.warning(
                     "Plain LM Studio timeout/connection error (attempt %d/%d): %s",
@@ -388,7 +410,6 @@ def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
 def format_translated_jobs(
     raw_jobs: list[dict],
     batch_size: int = BATCH_SIZE,
-    category_checker=None,
 ) -> tuple[list[dict], list[dict]]:
     """
     Phase 3: Format pre-translated jobs using AI for extraction,
@@ -397,38 +418,19 @@ def format_translated_jobs(
     Args:
         raw_jobs:         list of translated raw job dicts
         batch_size:       max jobs to process (0 = all)
-        category_checker: optional BatchChecker instance from category_post_check.
-                          If provided, checker.submit(job) is called immediately
-                          after each job finishes AI processing so the background
-                          worker can verify the category concurrently.
 
     Returns:
         (newly_formatted_jobs, updated_raw_jobs)
     """
 
-    def _format_one(raw: dict) -> tuple[dict, bool, str, str]:
+    def _format_one(raw: dict, final_category: str) -> tuple[dict, bool, str, str]:
         title = raw.get("title", raw["id"])
         translated_text = raw.get("translated_content") or raw.get("jobcontent", "")
-        occupations = raw.get("jobcategory_keywords") or raw.get("job_occupations_en", [])
-
-        top_cat, top_score = Job_formatter.detect_category_by_keywords(
-            title,
-            translated_text,
-            occupations=occupations,
-        )
-
-        found_category = top_cat if top_cat in config.VALID_CATEGORIES else "other"
-        logger.info("  Category (scoring): %s → %s (score=%d)", title, found_category, top_score)
-
-        # Persist the detected category immediately — non-blocking fire-and-forget.
-        # This writes to scraper/data/category_check.json in a daemon thread so
-        # the record is on disk before (and while) the Ollama AI call runs.
-        category_post_check.save_to_category_check(raw, found_category)
 
         ai_data, success, status, err = _call_lm_studio_for_content(
             translated_text,
             raw_job=raw,
-            ai_category=found_category,
+            ai_category="other"
         )
 
         if success:
@@ -440,7 +442,7 @@ def format_translated_jobs(
 
         ai_data["formatted_description"] = formatted_description
         ai_data["meta_description"] = meta_description
-        ai_data["job_category"] = found_category
+        ai_data["job_category"] = final_category
 
         raw["ai_data"] = ai_data
         raw["ai_status"] = "success" if success else status
@@ -468,15 +470,26 @@ def format_translated_jobs(
         batch_size,
     )
 
+    # 1. Start all category checks concurrently in the background
+    logger.info("Phase 3: Starting background category checks for the entire batch...")
+    cat_executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
+    cat_futures = {}
+    for raw in batch:
+        cat_futures[raw["id"]] = cat_executor.submit(category_checker.determine_category, raw)
+
     newly_formatted: list[dict] = []
     success_count = 0
     failure_count = 0
 
+    # 2. Run AI processor for all jobs
     for i, raw in enumerate(batch, 1):
         title = raw.get("title", raw["id"])
         logger.info("[%d/%d] Formatting: %s", i, len(batch), title)
 
-        raw_processed, success, status, err = _format_one(raw)
+        # Wait for this specific job's category check to finish (or get it instantly if already done)
+        final_category = cat_futures[raw["id"]].result()
+
+        raw_processed, success, status, err = _format_one(raw, final_category)
         newly_formatted = _upsert(newly_formatted, raw_processed)
 
         rawjobs_store.update_ai_status(
@@ -494,27 +507,11 @@ def format_translated_jobs(
                 title,
                 raw_processed.get("ai_data", {}).get("job_category"),
             )
-            # Submit to background category checker as soon as this job is ready
-            if category_checker is not None:
-                # Build a lightweight dict the checker can use without waiting
-                # for Job_formatter.format_jobs() (which runs in Phase 4).
-                # The checker only needs: title, company, job_category,
-                # job_id, formatted_description.  job_id is set by Phase 4
-                # so we pass whatever we have now; the checker skips if missing.
-                submit_job = {
-                    "title":               title,
-                    "company":             raw_processed.get("company", ""),
-                    "job_category":        raw_processed.get("ai_data", {}).get("job_category", "other"),
-                    "job_id":              raw_processed.get("job_id", ""),
-                    "formatted_description": raw_processed.get("ai_data", {}).get("formatted_description", ""),
-                    "image_url":           raw_processed.get("image_url", ""),
-                    # keep reference so checker can update job_category in-place
-                    "_raw_ref":            raw_processed,
-                }
-                category_checker.submit(submit_job)
         else:
             failure_count += 1
             logger.warning("  ✗ %s → %s", title, status)
+
+    cat_executor.shutdown(wait=True)
 
     logger.info(
         "Phase 3: AI generation complete. Attempted=%d, succeeded=%d, failed=%d",

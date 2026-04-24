@@ -1,255 +1,62 @@
 [
   {
-    "scrape_timestamp": "2026-04-23 22:08:43",
+    "scrape_timestamp": "2026-04-24 23:37:06",
     "jobs": [
       {
-        "id": "81854140",
-        "job_id": "cashier-and-waiter-kouvola-81854140",
+        "id": "98408b28",
+        "job_id": "warehouse-and-material-manager-for-the-machine-shop-lahti-lahti-98408b28",
         "processed": true,
-        "title": "Cashier and waiter",
-        "company": "nurek Oy, Kouvola",
-        "job_category": "hospitality-and-tourism",
+        "title": "Warehouse and material manager for the machine shop, Lahti",
+        "company": "Visio Henkilöstöratkaisut Päijät-Häme Oy",
+        "job_category": "warehousing-and-storage",
         "jobLocation": [
-          "Kouvola"
+          "Lahti"
         ],
         "jobRegions": [],
-        "jobapply_link": "mailto:ekertamer1@gmail.com?subject=Application%20for%20the%20Job%20-%20Cashier%20and%20waiter&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Cashier%20and%20waiter.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/73b3084c-fd51-4619-b06e-35184d9adcf4/en",
-        "job_employer_email": "ekertamer1@gmail.com",
-        "job_employer_name": "Tamer Eker",
+        "jobapply_link": "http://visiohr.likeit.fi/apply/55465892",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7a18369b-958d-4d22-bb9d-028c24fd7558/en",
+        "job_employer_email": "lilli.mayra@visiohr.fi",
+        "job_employer_name": "Lilli Mäyrä",
         "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/cashier-and-waiter-kouvola-81854140",
-        "date_posted": "2026-04-23",
-        "date_expires": "2026-04-30",
-        "scraped_at": "2026-04-23 22:08:43",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/warehouse-and-material-manager-for-the-machine-shop-lahti-lahti-98408b28",
+        "date_posted": "2026-04-24",
+        "date_expires": "2026-04-24",
+        "scraped_at": "2026-04-24 23:37:06",
         "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "salary_range": "salary commensurate with your skills",
         "workTime": "Full-time",
         "continuityOfWork": "Permanent",
         "language_requirements": [
           "Finnish"
         ],
-        "meta_description": "Build your future with nurek Oy, Kouvola as a Cashier and waiter in Kouvola. Learn more about the role and apply now.",
-        "description": "Cashier and waiter We are looking for a cashier for our lunch restaurant. Duties include working at the cash register, customer service and taking care of the cleanliness of the hall. Duties also include maintaining the cleanliness of the customers' tables, such as collecting dishes and trays and cleaning the tables. Working hours are 9-14 on weekdays You can send your resume and work experience letter by e-mail. If the criteria are met, we will contact you by email and arrange a personal interview later.",
+        "meta_description": "Looking for a Warehouse and material manager for the machine shop, Lahti job in Lahti?",
+        "description": "Visio Henkilöstöratkaisut Päijät-Häme Oy is seeking a warehouse and material manager for their machine shop in Lahti. The client is looking for a self-starter and energetic worker to manage the material flows and order of the machine shop, ensuring smooth production. The company realizes that its customers combine steel structures, welding, machine shop manufacturing, and installation, service, and maintenance work under the same roof. The job description includes duties such as receiving and inspecting goods, shelving materials, collecting materials for projects, monitoring inventory balances, reporting replenishment needs, internal logistics, transfers of goods, exports and searches of goods/materials if necessary, preparation and packaging of shipments, maintaining the order and",
         "what_we_expect": [
-          "Supervise the checkout area",
-          "Maintain relationships with customers",
-          "Keep the checkout area clean",
-          "Use the cash register"
+          "Experience in warehouse work (working in a machine shop is considered an advantage)",
+          "Forklift driving skills are considered an advantage",
+          "You are organized and keep places clean",
+          "Good Finnish language skills",
+          "Self-initiative and brisk work ethic",
+          "Good physical condition"
         ],
         "job_responsibilities": [
-          "Waiter",
-          "Cashier and waiter We are looking for a cashier for our lunch restaurant.",
-          "Duties include working at the cash register, customer service and taking care of the cleanliness of the hall."
+          "Receipt and inspection of goods",
+          "Shelving of materials and warehouse management",
+          "Collection of materials for projects and delivery to production",
+          "Monitoring inventory balances and reporting replenishment needs",
+          "Internal logistics and transfers of goods",
+          "Exports and searches of goods/materials if necessary"
         ],
         "what_we_offer": [
-          "Cashier and waiter We are looking for a cashier for our lunch restaurant.",
-          "Duties include working at the cash register, customer service and taking care of the cleanliness of the hall.",
-          "Duties also include maintaining the cleanliness of the customers' tables, such as collecting dishes and trays and cleaning the tables.",
-          "Working hours are 9-14 on weekdays You can send your resume and work experience letter by e-mail."
+          "Salary determined according to your skills TES Technology Industry / Hourly wage €14/h",
+          "Fixed-term (6 months) employment 40 h/week",
+          "Salary payment twice a month",
+          "Round-the-clock support in work matters",
+          "The opportunity to develop your professional skills"
         ],
-        "search_keywords": "Cashier and waiter nurek Oy, Kouvola Kouvola hospitality-and-tourism",
+        "search_keywords": "warehouse manager machine shop Lahti",
         "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
-      },
-      {
-        "id": "942cbb6c",
-        "job_id": "letkukafila-hostess-pori-942cbb6c",
-        "processed": true,
-        "title": "Letkukafila hostess",
-        "company": "Fastfood Festivals Oy, Pori",
-        "job_category": "hospitality-and-tourism",
-        "jobLocation": [
-          "Pori"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:festariruoka@gmail.com?subject=Application%20for%20the%20Job%20-%20Letkukafila%20hostess&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Letkukafila%20hostess.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f67fa1b3-d53e-4d81-b313-50e4cb762185/en",
-        "job_employer_email": "festariruoka@gmail.com",
-        "job_employer_name": "Hakan Özciftci",
-        "job_employer_phone_no": "0405820731",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/letkukafila-hostess-pori-942cbb6c",
-        "date_posted": "2026-04-23",
-        "date_expires": "2026-04-23",
-        "scraped_at": "2026-04-23 22:08:43",
-        "open_positions": 1,
-        "salary_range": "the salary is €12/h",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Start your next career step as a Lettukafila hostess at Fastfood Festivals Oy, Pori. Great opportunity in Pori—apply now.",
-        "description": "Lettukafila hostess Frying letu and other things related to the market cafe. So making the bun, baking the doughnut. Customer service/cafeteria cleaning etc festariruoka@gmail.com Lettukafila hostess, Porin. A lettu cafe located on the market square is looking for a customer service-oriented, self-initiated, cheerful, polite lettu hostess",
-        "what_we_expect": [
-          "Make coffee",
-          "Temperature scales",
-          "Prepare the coffee area"
-        ],
-        "job_responsibilities": [
-          "Waiter",
-          "Lettukafila hostess Frying letu and other things related to the market cafe.",
-          "So making the bun, baking the doughnut."
-        ],
-        "what_we_offer": [
-          "Frying letu and other things related to the market cafe. So making the bun, baking the doughnut. Customer service/cafeteria cleaning etc",
-          "Professional work environment"
-        ],
-        "search_keywords": "Letkukafila hostess Fastfood Festivals Oy, Pori Pori hospitality-and-tourism",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
-      },
-      {
-        "id": "4def45b6",
-        "job_id": "family-caregiver-gig-job-onnikoti-aalto-pori-pori-4def45b6",
-        "processed": true,
-        "title": "Family caregiver (gig job), Onnikoti Aalto, Pori",
-        "company": "Mehiläinen Oy",
-        "job_category": "healthcare",
-        "jobLocation": [
-          "Pori"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://mehilainen.wd103.myworkdayjobs.com/tyomarkkinatori_careers/job/Pori-Vantalankuja/Lhihoitaja--keikkaty---Onnikoti-Aalto--Pori_R0042329-2/apply",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7b353f45-8099-438d-9bbd-9cec8fd99c13/en",
-        "job_employer_email": "rekrytointi@mehilainen.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/family-caregiver-gig-job-onnikoti-aalto-pori-pori-4def45b6",
-        "date_posted": "2026-04-23",
-        "date_expires": "2026-05-16",
-        "scraped_at": "2026-04-23 22:08:43",
-        "open_positions": 1,
-        "salary_range": "salary for the position is in accordance with G",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Looking for a Family caregiver (gig job), Onnikoti Aalto, Pori job in Pori? Mehiläinen Oy is seeking motivated candidates—apply today.",
-        "description": "Family caregiver (gig job), Onnikoti Aalto, Pori Family caregiver (gig job), Onnikoti Aalto, Pori Come and do guidance work for people with intellectual disabilities at the unique group facility Onnikoti Aalto, Pori! We are now looking for caregivers for temporary work in our new, beautiful and modern home. Become an enabler of a good everyday life for us! Where do you come to work? We are opening a new Housing Unit for adults with developmental disabilities in the Tikkula district of Pori in the spring of 2026. Onnikoti Aalto will offer 24-hour serviced housing for 14 people and community housing for 7 people. The services are produced in new facilities designed for the purpose. Accessibility and comfort have been taken into account in the design of the facilities. What can you do?",
-        "what_we_expect": [
-          "I will be happy to tell you more",
-          "Positive attitude and reliability"
-        ],
-        "job_responsibilities": [
-          "Family nurse",
-          "I will be happy to tell you more",
-          "Daily operational tasks"
-        ],
-        "what_we_offer": [
-          "I will be happy to tell you more",
-          "Professional work environment"
-        ],
-        "search_keywords": "Family caregiver (gig job), Onnikoti Aalto, Pori Mehiläinen Oy Pori healthcare",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
-      },
-      {
-        "id": "4ef65d3e",
-        "job_id": "foreman-in-kotka-kouvola-4ef65d3e",
-        "processed": true,
-        "title": "Foreman in Kotka",
-        "company": "Rekrymesta Henkilöstöpalvelut Oy",
-        "job_category": "industry-manufacturing-and-production",
-        "jobLocation": [
-          "Kouvola",
-          "Miehikkälä",
-          "Pyhtää",
-          "Virolahti",
-          "Hamina",
-          "Kotka"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://rekrymesta.likeit.fi/apply/6864111",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fa13ddf2-22b1-4beb-943e-0cb329903bc9/en",
-        "job_employer_email": "info@rekrymesta.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/foreman-in-kotka-kouvola-4ef65d3e",
-        "date_posted": "2026-04-23",
-        "date_expires": "2026-05-04",
-        "scraped_at": "2026-04-23 22:08:43",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Rekrymesta Henkilöstöpalvelut Oy is hiring a Foreman in Kotka in Kouvola. Explore responsibilities, benefits, and apply today.",
-        "description": "Foreman in Kotka Become a foreman for us! We are looking for a motivated foreman for versatile projects for our client. You have the opportunity to develop your professional skills in interesting tasks. At work, you get to perform the tasks of a foreman in a versatile destination, surrounded by a comfortable and relaxed work team. You can already be an experienced conker or, for example, a graduating engineer who is looking for work experience in tasks in the field. The works are located in the Kotka area.",
-        "what_we_expect": [
-          "Success at work requires",
-          "Electrical training",
-          "A valid work safety and electrical work safety card",
-          "A brisk and self-initiated attitude",
-          "The possibility of using your own car is considered an advantage",
-          "At least one year of experience in the electrical field"
-        ],
-        "job_responsibilities": [
-          "Industrial foremen",
-          "Varied tasks in a growing company in the field",
-          "Success at work requires"
-        ],
-        "what_we_offer": [
-          "Versatile tasks in a growing company in the field",
-          "A good and relaxed work team",
-          "For a good worker, the opportunity for a longer-term employment relationship",
-          "The opportunity to develop as an expert in the field",
-          "A comprehensive orientation",
-          "Please submit your application as soon as possible, as the position will be filled as soon as a suitable person is found."
-        ],
-        "search_keywords": "Foreman in Kotka Rekrymesta Henkilöstöpalvelut Oy Kouvola industry-manufacturing-and-production",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
-      },
-      {
-        "id": "b4d38e72",
-        "job_id": "hvac-installer-vantaa-b4d38e72",
-        "processed": true,
-        "title": "HVAC installer",
-        "company": "LVI-palvelu Myller Oy, Vantaa",
-        "job_category": "installation-and-maintenance",
-        "jobLocation": [
-          "Vantaa"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "mailto:ville.myller@lvipm.fi?subject=Application%20for%20the%20Job%20-%20HVAC%20installer&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20HVAC%20installer.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ec6f37ea-b33e-4a1a-b80a-3707a19eaadf/en",
-        "job_employer_email": "ville.myller@lvipm.fi",
-        "job_employer_name": "Ville Myller",
-        "job_employer_phone_no": "+358400486904",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/hvac-installer-vantaa-b4d38e72",
-        "date_posted": "2026-04-23",
-        "date_expires": "2026-05-08",
-        "scraped_at": "2026-04-23 22:08:43",
-        "open_positions": 1,
-        "salary_range": "salary and flexible work",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Looking for a HVAC installer job in Vantaa? LVI-palvelu Myller Oy, Vantaa is seeking motivated candidates—apply today.",
-        "description": "HVAC installer HVAC installer/HVAC Service Myller Oy Hello, you HVAC installation professional! Are you ready to jump into an exciting and developing job, where your skills are valued and your strengths are taken into account? Task/who we are looking for: LVI-Palvelu Myller Oy is looking for an experienced and competent HVAC installer in the PK region to carry out versatile pipe installation work. We require the applicant to have two years of HVAC work experience in maintenance and renovation projects, the ability to work independently, and a professional degree in the field. We value self-initiatives and an active approach to work in the applicant. We also expect the applicant to be enthusiastic about learning new things and have sufficient Finnish language skills.",
-        "what_we_expect": [
-          "Plumbing tools",
-          "Task/who we are looking for"
-        ],
-        "job_responsibilities": [
-          "Plumber",
-          "Industrial heating, air conditioning and cooling system installer",
-          "Task/who we are looking for"
-        ],
-        "what_we_offer": [
-          "About us",
-          "Please send your application as soon as possible, because we are already interviewing applicants during the application period. The position will be filled when a suitable person is found.",
-          "You can also call and ask for more information about the position: Ville Myller, tel. +358 400 486 904"
-        ],
-        "search_keywords": "HVAC Installer LVI-palvelu Myller Oy, Vantaa Vantaa installation-and-maintenance",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
       }
     ]
   }
