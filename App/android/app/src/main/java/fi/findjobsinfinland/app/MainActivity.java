@@ -378,14 +378,21 @@ public class MainActivity extends BridgeActivity {
             }
 
             String currentUrl = wv.getUrl();
+            // loadDataWithBaseURL sets the WebView URL to the baseUrl we pass in
+            // ("file:///android_asset/public/"), so detecting error pages must
+            // check for that string too — not just the filename in the URL.
             boolean onErrorPage = currentUrl == null
                     || currentUrl.equals("file:///android_asset/public/")
                     || currentUrl.contains("nointernet.html")
                     || currentUrl.contains("error.html");
 
             if (onErrorPage) {
+                // The WebView URL is the asset base URL, not a real HTTP address.
+                // Calling wv.loadUrl(currentUrl) would load an empty directory
+                // and show a blank screen.  Instead, reload the last real page
+                // (with a background ping first to avoid showing error.html again
+                // if the target is still broken).
                 if (lastVisitedUrl != null && !lastVisitedUrl.isEmpty()) {
-                    // Ping in background to prevent white flash if still broken
                     new Thread(() -> {
                         try {
                             java.net.HttpURLConnection conn = (java.net.HttpURLConnection)
@@ -397,6 +404,7 @@ public class MainActivity extends BridgeActivity {
                             if (code >= 200 && code < 400) {
                                 wv.post(() -> wv.loadUrl(lastVisitedUrl));
                             } else {
+                                // Target still broken — re-show error page (no blank flash)
                                 wv.post(() -> {
                                     swipeRefreshLayout.setRefreshing(false);
                                     loadAssetPage(wv, "error.html");
@@ -411,7 +419,9 @@ public class MainActivity extends BridgeActivity {
                         }
                     }).start();
                 } else {
+                    // No previous URL to return to — just re-show error page cleanly
                     swipeRefreshLayout.setRefreshing(false);
+                    loadAssetPage(wv, "error.html");
                 }
             } else if (currentUrl != null && !currentUrl.isEmpty()) {
                 wv.loadUrl(currentUrl);
@@ -524,15 +534,17 @@ public class MainActivity extends BridgeActivity {
                 int currentIndex = list.getCurrentIndex();
                 int stepsToSkip = 0;
 
-                // Look back through history to find the first working page
+                // Walk backwards through the history stack and count consecutive
+                // error/asset entries so we can jump over all of them in one go.
+                // NOTE: do NOT include lastVisitedUrl in the error check — that is
+                // the real page the user came from and must be the landing target.
                 for (int i = currentIndex; i >= 0; i--) {
                     String url = list.getItemAtIndex(i).getUrl();
-                    boolean isError = url == null
+                    boolean isErrorEntry = url == null
                             || url.equals("file:///android_asset/public/")
                             || url.contains("nointernet.html")
-                            || url.contains("error.html")
-                            || url.equals(lastVisitedUrl);
-                    if (isError) {
+                            || url.contains("error.html");
+                    if (isErrorEntry) {
                         stepsToSkip++;
                     } else {
                         break;
