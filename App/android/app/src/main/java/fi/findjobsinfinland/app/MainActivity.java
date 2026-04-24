@@ -447,11 +447,14 @@ public class MainActivity extends BridgeActivity {
     private void loadAssetPage(WebView view, String filename) {
         try {
             InputStream is = getAssets().open("public/" + filename);
-            byte[] buffer = new byte[is.available()];
-            //noinspection ResultOfMethodCallIgnored
-            is.read(buffer);
+            java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = is.read(buffer)) != -1) {
+                baos.write(buffer, 0, length);
+            }
             is.close();
-            String html = new String(buffer, "UTF-8");
+            String html = baos.toString("UTF-8");
             // Use a file:// base URL so relative asset paths still resolve correctly
             view.loadDataWithBaseURL(
                 "file:///android_asset/public/",
