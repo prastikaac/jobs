@@ -12,3 +12,15 @@ app sends fcmToken accroding to the user's uid, and also logged in platform name
     ↓
 firebase sends notification to the app also
 
+
+
+
+Issue to fix: Error Page Behavior
+
+When the user performs a swipe-down (pull-to-refresh) on the error page, the app displays a blank white screen instead of reloading the page properly.
+And When the user presses the device back button while on the error page, it does not navigate back to the previous page. Instead, it  reloads the same error page.
+
+Expected behavior:
+
+Pull-to-refresh should reload the errorpage correctly, not show a blank screen.
+The back button should navigate to the previous page, not reload the error page.

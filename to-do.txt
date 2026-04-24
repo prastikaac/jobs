@@ -27,17 +27,8 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - update firebase notifications
 
-- on back going to index.html a white blank popup appears
+- on back going to index.html a white blank popup appears, seach what is caused by that 
 
 
 
 
-Issue to fix: Error Page Behavior
-
-When the user performs a swipe-down (pull-to-refresh) on the error page, the app displays a blank white screen instead of reloading the page properly.
-And When the user presses the device back button while on the error page, it does not navigate back to the previous page. Instead, it  reloads the same error page.
-
-Expected behavior:
-
-Pull-to-refresh should reload the errorpage correctly, not show a blank screen.
-The back button should navigate to the previous page, not reload the error page.

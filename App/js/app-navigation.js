@@ -40,6 +40,14 @@
   }
 
   /**
+   * Returns true if the current page is the error page.
+   */
+  function isErrorPage() {
+    const path = window.location.pathname;
+    return path.endsWith('/error.html') || path === '/error.html';
+  }
+
+  /**
    * Show a native-style toast message.
    * Uses the existing toastNotif() function if available, otherwise falls back.
    */
@@ -75,6 +83,12 @@
    * Called by Capacitor's backButton listener.
    */
   function handleAndroidBack() {
+    // On error page: always go back, don't reload error page
+    if (isErrorPage()) {
+      window.history.back();
+      return;
+    }
+
     if (window.history.length > 1 && document.referrer) {
       // Webview has navigable history → go back
       window.history.back();
@@ -165,6 +179,7 @@
   window.AppNav = {
     handleAndroidBack,
     isHomePage,
+    isErrorPage,
     showToast,
   };
 
