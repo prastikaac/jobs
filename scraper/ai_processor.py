@@ -15,8 +15,8 @@ import rawjobs_store
 
 logger = logging.getLogger("ai_processor")
 
-LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
-LM_STUDIO_MODEL = "llama-3.2-1b-instruct"
+OLLAMA_URL = "http://localhost:11434/v1/chat/completions"
+OLLAMA_MODEL = "llama3.2" # You can change this to your pulled Ollama model (e.g. qwen2.5:1.5b)
 
 BATCH_SIZE = 0
 TIMEOUT_SECS = 600
@@ -203,7 +203,7 @@ def _call_lm_studio_for_content(
     )
 
     payload = {
-        "model": LM_STUDIO_MODEL,
+        "model": OLLAMA_MODEL,
         "messages": [
             {
                 "role": "system",
@@ -229,7 +229,7 @@ def _call_lm_studio_for_content(
     for attempt in range(1, MAX_RETRIES + 2):
         try:
             req = urllib.request.Request(
-                LM_STUDIO_URL,
+                OLLAMA_URL,
                 data=json.dumps(payload).encode("utf-8"),
                 headers={"Content-Type": "application/json"},
                 method="POST"
@@ -344,7 +344,7 @@ def _build_description_prompt(raw_job: dict) -> str:
 
 def _call_lm_studio_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, num_predict: int = 220) -> tuple[str, bool, str]:
     payload = {
-        "model": LM_STUDIO_MODEL,
+        "model": OLLAMA_MODEL,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.2,
         "max_tokens": num_predict,
@@ -354,7 +354,7 @@ def _call_lm_studio_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, nu
     for attempt in range(1, MAX_RETRIES + 2):
         try:
             req = urllib.request.Request(
-                LM_STUDIO_URL,
+                OLLAMA_URL,
                 data=json.dumps(payload).encode("utf-8"),
                 headers={"Content-Type": "application/json"},
                 method="POST"
