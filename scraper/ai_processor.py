@@ -16,7 +16,7 @@ import rawjobs_store
 logger = logging.getLogger("ai_processor")
 
 LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
-LM_STUDIO_MODEL = "qwen2.5-coder-1.5b-instruct"
+LM_STUDIO_MODEL = "llama-3.2-1b-instruct"
 
 BATCH_SIZE = 0
 TIMEOUT_SECS = 600

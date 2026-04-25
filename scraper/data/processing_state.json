@@ -1,61 +1,50 @@
 {
   "version": 1,
-  "updated_at": "2026-04-25 14:51:42",
+  "updated_at": "2026-04-25 15:56:28",
   "jobs": {
-    "069dd72e": {
+    "fe90ee59": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-25 15:54:27",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-25 14:41:54"
+      "formatted_at": ""
     },
-    "7610bb18": {
+    "06783c9d": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-25 15:54:27",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-25 14:44:07"
-    },
-    "728587a3": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-04-25 14:46:20"
+      "formatted_at": ""
     },
     "a28de47a": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-25 15:56:26",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-25 14:48:31"
+      "formatted_at": ""
     },
-    "ad2e1664": {
+    "d281f906": {
       "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
+      "translated_at": "2026-04-25 15:56:27",
+      "ai_processed": false,
+      "ai_status": "pending",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": false,
+      "ai_retry_needed": true,
       "last_ai_error": "",
-      "formatted_at": "2026-04-25 14:51:42"
+      "formatted_at": ""
     }
   }
 }
