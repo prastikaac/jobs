@@ -54,7 +54,7 @@ Answer:
 
 # ── LM Studio helpers ─────────────────────────────
 def _detect_best_model():
-    return "qwen2.5-coder-1.5b-instruct"
+    return "Qwen2.5-1.5B-Instruct"
 
 def _ask_lmstudio(model, title, current_category, valid_cats):
     cat_list = "\n".join(f"- {c}" for c in valid_cats)
