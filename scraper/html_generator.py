@@ -100,6 +100,7 @@ def _location_label(job: dict) -> str:
     return ", ".join(parts)
 
 
+
 # ── Step 4: Individual job page ───────────────────────────────────────────────
 
 # Load external template
@@ -252,14 +253,37 @@ def generate_job_page(job: dict) -> bool:
     num_locations = len(clean_cities)
     is_multiple = num_locations > 1
     
-    # Text display for the breadcrumb/page
+    # Text display for the breadcrumb/page ("Multiple Locations" when > 1 city)
     if is_multiple:
         location_display = "Multiple Locations"
     else:
         location_display = _esc(location)
     
-    # Link parameter (use the first city if multiple, or the full location string if single)
-    location_link = _esc(clean_cities[0]) if clean_cities else _esc(location)
+    # All city names joined — used in the job-card Location info row
+    location_all_names = _esc(location)
+    
+    # Link parameter (combine cities and regions for the URL parameter)
+    import urllib.parse
+    link_parts = []
+    if clean_cities:
+        link_parts.append(clean_cities[0])
+        for c in clean_cities[1:]:
+            link_parts.append(f"city:{c}")
+            
+        unique_regions = []
+        for city in clean_cities:
+            region = MUNICIPALITY_MAP.get(city.lower())
+            if region and region not in unique_regions:
+                unique_regions.append(region)
+                
+        for r in unique_regions:
+            link_parts.append(f"region:{r}")
+            
+        raw_location_link = ",".join(link_parts)
+    else:
+        raw_location_link = "Finland"
+        
+    location_link = urllib.parse.quote(raw_location_link)
 
     replacements = {
         # Title
@@ -277,8 +301,10 @@ def generate_job_page(job: dict) -> bool:
         "{-rich content-}": rich_content_str,
         # Apply link
         "{-job apply link-}": job_link,
-        # Location display name
+        # Location display name — used in breadcrumb visible text
         "{-job location name-}": location_display,
+        # All city names joined — used in the job-card Location info row
+        "{-job location all names-}": location_all_names,
         # New placeholder for the specific search link
         "{-job location link-}": location_link,
         # Legacy placeholder

@@ -251,7 +251,8 @@ function buildDigestEmailHTML(frequency, jobs) {
                     </td>
                 </tr>
             </table>
-        </body>
+         <script src="https://findjobsinfinland.fi/js/main.js"></script>
+</body>
         </html>
     `
 }
@@ -289,7 +290,7 @@ async function processUserDigests() {
         const emailSched = user.emailScheduleTime || {}
         const eHour = isNaN(emailSched.hour) ? 9 : Number(emailSched.hour)
         const eMin = isNaN(emailSched.minute) ? 0 : Number(emailSched.minute)
-        
+
         const pushSched = user.pushScheduleTime || {}
         const pHour = isNaN(pushSched.hour) ? 9 : Number(pushSched.hour)
         const pMin = isNaN(pushSched.minute) ? 0 : Number(pushSched.minute)
@@ -306,7 +307,7 @@ async function processUserDigests() {
         }
 
         let processPush = false
-        if (pushNotificationEnabled && fcmTokens.length > 0 && pushTimeMatch && ["daily","weekly","monthly"].includes(pushFreq)) {
+        if (pushNotificationEnabled && fcmTokens.length > 0 && pushTimeMatch && ["daily", "weekly", "monthly"].includes(pushFreq)) {
             if (pushFreq === "daily") processPush = true
             else if (pushFreq === "weekly" && cDay === Number(pushSched.dayOfWeek ?? 1)) processPush = true
             else if (pushFreq === "monthly" && cDate === Number(pushSched.dayOfMonth ?? 1)) processPush = true
@@ -349,40 +350,40 @@ async function processUserDigests() {
                 stats[emailFreq].emailsSent++
                 stats[emailFreq].jobsSent += jobs.length
                 stats[emailFreq].usersProcessed++
-            } catch(e) { console.error(`Error sending ${emailFreq} email to ${user.email}:`, e.message) }
+            } catch (e) { console.error(`Error sending ${emailFreq} email to ${user.email}:`, e.message) }
         }
 
         let pushSuccessCountForUser = 0
         if (pushAlertDocs.length > 0) {
-             const jobs = pushAlertDocs.map(d => d.data)
-             const periodLabel = { daily: "today's", weekly: "this week's", monthly: "this month's" }[pushFreq] ?? pushFreq
-             const tokenSnapshot = [...fcmTokens]
-             for (const token of tokenSnapshot) {
-                 if (!token) continue
-                 const success = await sendPushToTokenAndCleanup({
-                     token, db, userDocId: userId, fcmTokens,
-                     message: {
-                         token,
-                         notification: {
-                             title: "🔔 New Job Alerts",
-                             body: `Here are your ${periodLabel} job alerts — ${jobs.length} new ${jobs.length === 1 ? "job" : "jobs"} waiting!`,
-                         },
-                         data: {
-                             type: `${pushFreq}_digest`,
-                             jobsCount: String(jobs.length),
-                             url: `${SITE_URL}/newjobs?period=${pushFreq}`,
-                         },
-                     }
-                 })
-                 if (success) {
-                     pushSuccessCountForUser++
-                     stats[pushFreq].pushSent++
-                 }
-             }
-             if (pushSuccessCountForUser > 0) {
-                 stats[pushFreq].jobsSent += jobs.length
-                 stats[pushFreq].usersProcessed++ // Might double count if email processed too, but separated by channel logically
-             }
+            const jobs = pushAlertDocs.map(d => d.data)
+            const periodLabel = { daily: "today's", weekly: "this week's", monthly: "this month's" }[pushFreq] ?? pushFreq
+            const tokenSnapshot = [...fcmTokens]
+            for (const token of tokenSnapshot) {
+                if (!token) continue
+                const success = await sendPushToTokenAndCleanup({
+                    token, db, userDocId: userId, fcmTokens,
+                    message: {
+                        token,
+                        notification: {
+                            title: "🔔 New Job Alerts",
+                            body: `Here are your ${periodLabel} job alerts — ${jobs.length} new ${jobs.length === 1 ? "job" : "jobs"} waiting!`,
+                        },
+                        data: {
+                            type: `${pushFreq}_digest`,
+                            jobsCount: String(jobs.length),
+                            url: `${SITE_URL}/newjobs?period=${pushFreq}`,
+                        },
+                    }
+                })
+                if (success) {
+                    pushSuccessCountForUser++
+                    stats[pushFreq].pushSent++
+                }
+            }
+            if (pushSuccessCountForUser > 0) {
+                stats[pushFreq].jobsSent += jobs.length
+                stats[pushFreq].usersProcessed++ // Might double count if email processed too, but separated by channel logically
+            }
         }
 
         // Cleanup pending alerts
@@ -422,7 +423,7 @@ async function processUserDigests() {
                     createdAt: Timestamp.now()
                 })
                 console.log(`Saved ${freq} digest admin report.`)
-            } catch(e) { console.error(`Failed to save ${freq} admin report:`, e.message) }
+            } catch (e) { console.error(`Failed to save ${freq} admin report:`, e.message) }
         }
     }
 }

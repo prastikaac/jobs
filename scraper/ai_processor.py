@@ -122,25 +122,33 @@ def _trim_description_safely(text: str, max_len: int = 800) -> str:
     if not text:
         return ""
 
-    if len(text) <= max_len:
-        return text
-
     truncated = text[:max_len]
+
+    # If the text ends cleanly, keep it
+    if truncated[-1:] in [".", "!", "?"]:
+        return truncated
 
     # Prefer full sentence ending
     sentence_endings = [truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?")]
     last_punct = max(sentence_endings)
 
     # Keep reasonably sized full sentence if found
-    if last_punct >= int(max_len * 0.6):
+    min_acceptable_len = int(len(truncated) * 0.5)
+    if last_punct >= min_acceptable_len:
         return truncated[: last_punct + 1].strip()
 
     # Fallback: trim at last safe space, no mid-word cut
     last_space = truncated.rfind(" ")
     if last_space > 0:
-        return truncated[:last_space].rstrip(" ,;:-").strip()
+        trimmed = truncated[:last_space].rstrip(" ,;:-").strip()
+        if trimmed and not trimmed.endswith((".", "!", "?")):
+            trimmed += "..."
+        return trimmed
 
-    return truncated.rstrip(" ,;:-").strip()
+    trimmed = truncated.rstrip(" ,;:-").strip()
+    if trimmed and not trimmed.endswith((".", "!", "?")):
+        trimmed += "..."
+    return trimmed
 
 
 def _call_lm_studio_for_content(
@@ -388,7 +396,7 @@ def _generate_description_and_meta(raw_job: dict) -> tuple[str, str]:
     formatted_description, desc_ok, desc_err = _call_lm_studio_plain_text(
         desc_prompt,
         timeout_secs=TIMEOUT_SECS,
-        num_predict=320,
+        num_predict=450,
     )
 
     if not desc_ok or not formatted_description:

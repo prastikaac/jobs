@@ -242,31 +242,4 @@ def determine_category(raw_job: dict) -> str:
         else:
             logger.info("  Category (AI confirmed): %s", final_category)
 
-    # Save to log/check file
-    save_to_category_check(raw_job, final_category)
     return final_category
-
-def save_to_category_check(raw_job, category):
-    check_file = _SCRAPER_DIR / "data" / "category_check.json"
-    entry = {
-        "id": raw_job.get("id", ""),
-        "job_id": raw_job.get("job_id", ""),
-        "title": raw_job.get("title", ""),
-        "company": raw_job.get("company", ""),
-        "detected_category": category,
-        "saved_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
-    
-    data = []
-    if check_file.exists():
-        try:
-            with open(check_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-        except json.JSONDecodeError:
-            pass
-            
-    data.append(entry)
-    
-    check_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(check_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
