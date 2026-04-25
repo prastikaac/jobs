@@ -251,7 +251,6 @@ function buildDigestEmailHTML(frequency, jobs) {
                     </td>
                 </tr>
             </table>
-         <script src="/js/main.js"></script>
 </body>
         </html>
     `
