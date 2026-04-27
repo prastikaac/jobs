@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
         // Disable pinch-to-zoom by injecting a viewport override at document load.
         // Works even when the page already has a <meta name="viewport"> tag.
-        let noZoomJS = """
+        let noZoomJS = #"""
         (function() {
             var meta = document.querySelector('meta[name="viewport"]');
             if (meta) {
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 document.head.appendChild(m);
             }
         })();
-        """
+        """#
         let noZoomScript = WKUserScript(
             source: noZoomJS,
             injectionTime: .atDocumentEnd,
@@ -197,10 +197,20 @@ class ViewController: UIViewController {
         return scheme == "http" || scheme == "https"
     }
 
+    private func isSocialAppUrl(_ url: URL) -> Bool {
+        guard let host = url.host?.lowercased() else { return false }
+        return host.contains("facebook.com") ||
+               host.contains("instagram.com") ||
+               host.contains("twitter.com") ||
+               host.contains("x.com") ||
+               host.contains("linkedin.com")
+    }
+
     private func shouldOpenInBuiltInBrowser(_ url: URL) -> Bool {
         if !isHttpUrl(url) { return false }
         if isLocalAppUrl(url) { return false }
         if isMainDomain(url) { return false }
+        if isSocialAppUrl(url) { return false }
         return true
     }
 
@@ -221,6 +231,18 @@ class ViewController: UIViewController {
     private func openSystemApp(_ url: URL) {
         DispatchQueue.main.async {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+
+    private func openSocialAppOrBrowser(_ url: URL) {
+        DispatchQueue.main.async { [weak self] in
+            // Try to open using universal links (native app)
+            UIApplication.shared.open(url, options: [.universalLinksOnly: true]) { success in
+                if !success {
+                    // Fall back to built-in browser if the native app isn't installed
+                    self?.openBuiltInBrowser(url)
+                }
+            }
         }
     }
 
@@ -331,10 +353,17 @@ extension ViewController: WKNavigationDelegate {
         // Sub-frame navigations (iframes, embedded widgets, ad networks) must be
         // allowed through; intercepting them is what caused rogue popups on page load.
         let isMainFrame = navigationAction.targetFrame?.isMainFrame ?? false
-        if isMainFrame && shouldOpenInBuiltInBrowser(url) {
-            decisionHandler(.cancel)
-            openBuiltInBrowser(url)
-            return
+        if isMainFrame {
+            if isSocialAppUrl(url) {
+                decisionHandler(.cancel)
+                openSocialAppOrBrowser(url)
+                return
+            }
+            if shouldOpenInBuiltInBrowser(url) {
+                decisionHandler(.cancel)
+                openBuiltInBrowser(url)
+                return
+            }
         }
 
         decisionHandler(.allow)
@@ -367,6 +396,11 @@ extension ViewController: WKUIDelegate {
 
         guard let url = navigationAction.request.url else { return nil }
 
+        if isSocialAppUrl(url) {
+            openSocialAppOrBrowser(url)
+            return nil
+        }
+
         if shouldOpenInBuiltInBrowser(url) {
             openBuiltInBrowser(url)
             return nil
@@ -392,7 +426,9 @@ extension ViewController: WKScriptMessageHandler {
         case "externalLink":
             guard let urlString = message.body as? String,
                   let url = URL(string: urlString) else { return }
-            if shouldOpenInBuiltInBrowser(url) {
+            if isSocialAppUrl(url) {
+                openSocialAppOrBrowser(url)
+            } else if shouldOpenInBuiltInBrowser(url) {
                 openBuiltInBrowser(url)
             }
 
