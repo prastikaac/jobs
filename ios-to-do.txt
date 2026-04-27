@@ -2,10 +2,10 @@
 
 the app is being full screen, without leaving space for upper bar and down navigation so, fix it and leave space for top and bottom 
 
-and currently its opening the external links in device default browser fix it and make it to open the external links except https://findjobsinfinland.fi/ inside the built in apps browser mode
-
 a white screen appears as a flash when user clicks on any link inside the app, fix it  
 
+
+and currently its opening the external links in device default browser fix it and make it to open the external links except https://findjobsinfinland.fi/ inside the built in apps browser mode
 
 
 put a back button in the top, make like put a different url for ios like https://findjobsinfinland.fi/?ios and if there is ?ios in the url then display the back button otherwise hide it 

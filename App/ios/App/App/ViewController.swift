@@ -33,6 +33,8 @@ class ViewController: CAPBridgeViewController {
         injectExternalLinkHandler()
     }
 
+    // MARK: - Native iOS Pull To Refresh
+
     private func setupPullToRefresh() {
         guard let scrollView = webView?.scrollView else { return }
 
@@ -42,13 +44,15 @@ class ViewController: CAPBridgeViewController {
         refreshControl.tintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
 
-        scrollView.addSubview(refreshControl)
+        scrollView.refreshControl = refreshControl
         scrollView.bounces = true
     }
 
     @objc private func handleRefresh() {
         webView?.reload()
     }
+
+    // MARK: - App Resume
 
     private func setupAppResumeObserver() {
         NotificationCenter.default.addObserver(
@@ -66,6 +70,8 @@ class ViewController: CAPBridgeViewController {
         )
     }
 
+    // MARK: - WebView Delegates
+
     private func setupWebViewDelegates() {
         if originalNavigationDelegate == nil,
            let currentDelegate = webView?.navigationDelegate,
@@ -77,8 +83,11 @@ class ViewController: CAPBridgeViewController {
         webView?.uiDelegate = self
     }
 
+    // MARK: - URL Rules
+
     private func isMainDomain(_ url: URL) -> Bool {
         guard let host = url.host?.lowercased() else { return false }
+
         return host == mainDomain || host == "www.\(mainDomain)"
     }
 
@@ -105,6 +114,8 @@ class ViewController: CAPBridgeViewController {
         return true
     }
 
+    // MARK: - Browser Opening
+
     private func openBuiltInBrowser(_ url: URL) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
@@ -117,7 +128,6 @@ class ViewController: CAPBridgeViewController {
             safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
             safariVC.modalPresentationStyle = .fullScreen
 
-            // Instant open, no laggy animation
             self.present(safariVC, animated: false)
         }
     }
@@ -127,6 +137,8 @@ class ViewController: CAPBridgeViewController {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
+
+    // MARK: - JavaScript External Link Handler
 
     private func injectExternalLinkHandler() {
         guard let webView = webView else { return }
