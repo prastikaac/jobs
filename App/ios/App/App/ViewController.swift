@@ -19,9 +19,32 @@ class ViewController: CAPBridgeViewController {
         // This is the OS-level fix — Capacitor cannot override it.
         edgesForExtendedLayout = []
         extendedLayoutIncludesOpaqueBars = false
+
+        // Prevent white flash when navigating between pages by adapting to Dark/Light mode
+        webView?.isOpaque = false
+        if traitCollection.userInterfaceStyle == .dark {
+            webView?.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0) // #121212
+            view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
+        } else {
+            webView?.backgroundColor = .white
+            view.backgroundColor = .white
+        }
+
         setupSwipeGestures()
         setupAppResumeObserver()
         setupLinkInterception()
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        // Update background if user changes system theme while app is open
+        if traitCollection.userInterfaceStyle == .dark {
+            webView?.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
+            view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
+        } else {
+            webView?.backgroundColor = .white
+            view.backgroundColor = .white
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
