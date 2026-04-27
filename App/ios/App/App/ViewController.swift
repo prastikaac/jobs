@@ -1,64 +1,75 @@
 import UIKit
-import Capacitor
 import WebKit
 import SafariServices
 
-class ViewController: CAPBridgeViewController {
+class ViewController: UIViewController {
 
+    // MARK: - Properties
+
+    private var webView: WKWebView!
     private var refreshControl: UIRefreshControl!
-    private var originalNavigationDelegate: WKNavigationDelegate?
     private let mainDomain = "findjobsinfinland.fi"
+    private let startURL = URL(string: "https://findjobsinfinland.fi/")!
+
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        edgesForExtendedLayout = []
-        extendedLayoutIncludesOpaqueBars = false
-
         view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
-
-        webView?.isOpaque = false
-        webView?.backgroundColor = UIColor.clear
-        webView?.scrollView.backgroundColor = UIColor.clear
-        webView?.allowsBackForwardNavigationGestures = true
-
+        setupWebView()
         setupAppResumeObserver()
+        webView.load(URLRequest(url: startURL))
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
         setupPullToRefresh()
         setupWebViewDelegates()
         injectExternalLinkHandler()
     }
 
+    // MARK: - WKWebView Setup
+
+    private func setupWebView() {
+        let config = WKWebViewConfiguration()
+        config.allowsInlineMediaPlayback = true
+        config.mediaTypesRequiringUserActionForPlayback = []
+
+        webView = WKWebView(frame: .zero, configuration: config)
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        webView.isOpaque = false
+        webView.backgroundColor = .clear
+        webView.scrollView.backgroundColor = .clear
+        webView.allowsBackForwardNavigationGestures = true
+        webView.customUserAgent = "FindJobsFinlandApp/1.0 (iOS)"
+
+        view.addSubview(webView)
+
+        NSLayoutConstraint.activate([
+            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
+    }
+
     // MARK: - Native iOS Pull To Refresh
 
     private func setupPullToRefresh() {
-        guard let scrollView = webView?.scrollView else { return }
-
-        if refreshControl != nil { return }
+        guard refreshControl == nil else { return }
 
         refreshControl = UIRefreshControl()
         refreshControl.tintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
 
-        scrollView.refreshControl = refreshControl
-        scrollView.bounces = true
+        webView.scrollView.refreshControl = refreshControl
+        webView.scrollView.bounces = true
     }
 
     /// Called when the user pulls down and releases.
     /// Tries the JS-side smart refresh first; falls back to a full WebKit reload
     /// only if the JS bridge is not available (e.g. error page, JS not loaded yet).
     @objc private func handleRefresh() {
-        guard let webView = webView else {
-            refreshControl?.endRefreshing()
-            return
-        }
-
-        // Register a one-shot message handler BEFORE calling JS so the
-        // "done" signal from the JS side can be received.
         let controller = webView.configuration.userContentController
         controller.removeScriptMessageHandler(forName: "refreshComplete")
         controller.add(self, name: "refreshComplete")
@@ -86,7 +97,7 @@ class ViewController: CAPBridgeViewController {
             let jsHandled = (result as? Bool) == true
             if !jsHandled {
                 // JS bridge not ready — full WebKit reload; spinner ends in didFinish/didFail
-                webView.reload()
+                self.webView.reload()
             }
             // else: waiting for "refreshComplete" message or navigation didFinish
         }
@@ -103,7 +114,7 @@ class ViewController: CAPBridgeViewController {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.refreshControl?.endRefreshing()
-            self.webView?.configuration.userContentController
+            self.webView.configuration.userContentController
                 .removeScriptMessageHandler(forName: "refreshComplete")
         }
     }
@@ -120,7 +131,7 @@ class ViewController: CAPBridgeViewController {
     }
 
     @objc private func appDidBecomeActive() {
-        webView?.evaluateJavaScript(
+        webView.evaluateJavaScript(
             "if(window.AppData && window.AppData.silentRefresh) window.AppData.silentRefresh();",
             completionHandler: nil
         )
@@ -129,14 +140,8 @@ class ViewController: CAPBridgeViewController {
     // MARK: - WebView Delegates
 
     private func setupWebViewDelegates() {
-        if originalNavigationDelegate == nil,
-           let currentDelegate = webView?.navigationDelegate,
-           !(currentDelegate === self) {
-            originalNavigationDelegate = currentDelegate
-        }
-
-        webView?.navigationDelegate = self
-        webView?.uiDelegate = self
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
     }
 
     // MARK: - URL Rules
@@ -147,12 +152,8 @@ class ViewController: CAPBridgeViewController {
     }
 
     private func isLocalAppUrl(_ url: URL) -> Bool {
-        let scheme = url.scheme?.lowercased() ?? ""
         let host = url.host?.lowercased() ?? ""
-        return scheme == "capacitor"
-            || scheme == "ionic"
-            || host == "localhost"
-            || host == "127.0.0.1"
+        return host == "localhost" || host == "127.0.0.1"
     }
 
     private func isHttpUrl(_ url: URL) -> Bool {
@@ -189,8 +190,6 @@ class ViewController: CAPBridgeViewController {
     // MARK: - JavaScript External Link Handler
 
     private func injectExternalLinkHandler() {
-        guard let webView = webView else { return }
-
         let js = """
         (function() {
             if (window.__externalLinkHandlerInstalled) return;
@@ -290,25 +289,17 @@ extension ViewController: WKNavigationDelegate {
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        originalNavigationDelegate?.webView?(webView, didFinish: navigation)
         injectExternalLinkHandler()
-        webView.evaluateJavaScript(
-            "if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }",
-            completionHandler: nil
-        )
-        // Covers the full-reload path (JS bridge wasn't ready)
         finishRefreshing()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        originalNavigationDelegate?.webView?(webView, didFail: navigation, withError: error)
         finishRefreshing()
     }
 
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
-        originalNavigationDelegate?.webView?(webView, didFailProvisionalNavigation: navigation, withError: error)
         finishRefreshing()
     }
 }
