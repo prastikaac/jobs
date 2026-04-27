@@ -18,10 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Define a dynamic color that perfectly matches the website's header/footer backgrounds
-        // Dark mode: #121212 (0.07, 0.07, 0.07). Light mode: White.
+        // Dark mode: #2d2d30 (45/255, 45/255, 48/255). Light mode: White.
         let adaptiveBgColor = UIColor { traitCollection in
             return traitCollection.userInterfaceStyle == .dark
-                ? UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
+                ? UIColor(red: 0.176, green: 0.176, blue: 0.188, alpha: 1.0)
                 : .white
         }
         
@@ -127,6 +127,10 @@ class ViewController: UIViewController {
         webView.scrollView.minimumZoomScale = 1.0
         webView.scrollView.maximumZoomScale = 1.0
         webView.scrollView.bouncesZoom = false
+        // Prevent iOS from automatically injecting safe area padding into the scroll view.
+        // This stops the "transparent gap" bug when we shift the webview up by 10 points,
+        // ensuring the fixed header and the page content stay perfectly connected.
+        webView.scrollView.contentInsetAdjustmentBehavior = .never
 
         view.addSubview(webView)
 
