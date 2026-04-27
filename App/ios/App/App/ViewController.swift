@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
         setupWebView()
+        setupWebViewDelegates()   // must be set BEFORE load()
         setupAppResumeObserver()
         webView.load(URLRequest(url: startURL))
     }
@@ -24,7 +25,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupPullToRefresh()
-        setupWebViewDelegates()
         injectExternalLinkHandler()
     }
 
@@ -37,9 +37,9 @@ class ViewController: UIViewController {
 
         webView = WKWebView(frame: .zero, configuration: config)
         webView.translatesAutoresizingMaskIntoConstraints = false
-        webView.isOpaque = false
-        webView.backgroundColor = .clear
-        webView.scrollView.backgroundColor = .clear
+        // isOpaque must stay TRUE — setting it to false causes a black screen
+        // while WKWebView's compositor initialises. Let the webpage set its own bg.
+        webView.underPageBackgroundColor = .white   // iOS 15+ — hides grey flash between pages
         webView.allowsBackForwardNavigationGestures = true
         webView.customUserAgent = "FindJobsFinlandApp/1.0 (iOS)"
 
