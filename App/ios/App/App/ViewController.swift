@@ -7,28 +7,22 @@ import SafariServices
 ///   - Pull-to-refresh via UIRefreshControl on WKWebView.scrollView
 ///   - Native back/forward swipe gestures
 ///   - App resume → silent data refresh
+///   - External links open in an in-app browser instead of device Safari
 class ViewController: CAPBridgeViewController {
 
     private var refreshControl: UIRefreshControl!
+    private var capNavigationDelegate: WKNavigationDelegate?
 
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Stop the view from extending behind the status bar and home indicator.
-        // This is the OS-level fix — Capacitor cannot override it.
+
         edgesForExtendedLayout = []
         extendedLayoutIncludesOpaqueBars = false
 
-        // Prevent white flash when navigating between pages by adapting to Dark/Light mode
         webView?.isOpaque = false
-        if traitCollection.userInterfaceStyle == .dark {
-            webView?.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0) // #121212
-            view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
-        } else {
-            webView?.backgroundColor = .white
-            view.backgroundColor = .white
-        }
+        updateBackgroundColor()
 
         setupSwipeGestures()
         setupAppResumeObserver()
@@ -37,7 +31,15 @@ class ViewController: CAPBridgeViewController {
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        // Update background if user changes system theme while app is open
+        updateBackgroundColor()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupPullToRefresh()
+    }
+
+    private func updateBackgroundColor() {
         if traitCollection.userInterfaceStyle == .dark {
             webView?.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
             view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
@@ -47,41 +49,32 @@ class ViewController: CAPBridgeViewController {
         }
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // webView is guaranteed to exist by the time viewDidAppear is called
-        setupPullToRefresh()
-    }
-
     // MARK: - Pull-to-Refresh
 
     private func setupPullToRefresh() {
         guard let scrollView = webView?.scrollView else { return }
 
-        refreshControl = UIRefreshControl()
+        if refreshControl != nil { return }
 
-        // Brand color: #482dff
+        refreshControl = UIRefreshControl()
         refreshControl.tintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
 
-        // Attach to WKWebView's scroll view
         scrollView.addSubview(refreshControl)
         scrollView.bounces = true
     }
 
     @objc private func handleRefresh() {
         webView?.reload()
-        // endRefreshing() is called in webView(_:didFinish:) for accurate timing
     }
 
-    // MARK: - Swipe Gestures (iOS native back/forward)
+    // MARK: - Swipe Gestures
 
     private func setupSwipeGestures() {
-        // Enable WKWebView's built-in back/forward swipe navigation
         webView?.allowsBackForwardNavigationGestures = true
     }
 
-    // MARK: - App Resume (silent refresh)
+    // MARK: - App Resume
 
     private func setupAppResumeObserver() {
         NotificationCenter.default.addObserver(
@@ -93,7 +86,6 @@ class ViewController: CAPBridgeViewController {
     }
 
     @objc private func appDidBecomeActive() {
-        // Trigger silent data refresh on web side — don't reload the page
         webView?.evaluateJavaScript(
             "if(window.AppData && window.AppData.silentRefresh) window.AppData.silentRefresh();",
             completionHandler: nil
@@ -101,12 +93,45 @@ class ViewController: CAPBridgeViewController {
     }
 
     // MARK: - External Link Interception
-    private var capNavigationDelegate: WKNavigationDelegate?
 
     private func setupLinkInterception() {
-        // Save the original Capacitor delegate and set ourselves as the delegate
-        self.capNavigationDelegate = self.webView?.navigationDelegate
-        self.webView?.navigationDelegate = self
+        // Keep Capacitor's original delegate and forward events to it.
+        capNavigationDelegate = webView?.navigationDelegate
+
+        // navigationDelegate handles normal link clicks.
+        webView?.navigationDelegate = self
+
+        // uiDelegate handles target="_blank" and window.open() links.
+        // This is the usual reason external links still open in device Safari.
+        webView?.uiDelegate = self
+    }
+
+    private func isFindJobsInFinlandURL(_ url: URL) -> Bool {
+        guard let host = url.host?.lowercased() else { return false }
+        return host == "findjobsinfinland.fi" || host == "www.findjobsinfinland.fi"
+    }
+
+    private func isBundledOrLocalURL(_ url: URL) -> Bool {
+        let scheme = url.scheme?.lowercased() ?? ""
+        let host = url.host?.lowercased() ?? ""
+
+        return scheme == "capacitor" || host == "localhost" || host == "127.0.0.1"
+    }
+
+    private func shouldOpenInInAppBrowser(_ url: URL) -> Bool {
+        let scheme = url.scheme?.lowercased() ?? ""
+        guard scheme == "http" || scheme == "https" else { return false }
+
+        // Keep only your own website in the main WebView.
+        // Everything else opens in built-in in-app browser mode.
+        return !isFindJobsInFinlandURL(url) && !isBundledOrLocalURL(url)
+    }
+
+    private func openInAppBrowser(_ url: URL) {
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
+        safariVC.modalPresentationStyle = .fullScreen
+        present(safariVC, animated: true, completion: nil)
     }
 
     deinit {
@@ -114,90 +139,119 @@ class ViewController: CAPBridgeViewController {
     }
 }
 
-// Forward WKNavigationDelegate calls to Capacitor, but intercept external links
+// MARK: - WKNavigationDelegate
+
 extension ViewController: WKNavigationDelegate {
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let url = navigationAction.request.url {
-            let urlString = url.absoluteString
-            let isOwnSite = urlString.hasPrefix("https://findjobsinfinland.fi/") || urlString.hasPrefix("http://findjobsinfinland.fi/")
-            let isBundled = urlString.hasPrefix("capacitor://") || urlString.hasPrefix("http://localhost") || urlString.hasPrefix("https://localhost")
-            
-            if !isOwnSite && !isBundled && (urlString.hasPrefix("http://") || urlString.hasPrefix("https://")) {
-                // External link — open in in-app Safari browser
-                decisionHandler(.cancel)
-                
-                let safariVC = SFSafariViewController(url: url)
-                safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
-                self.present(safariVC, animated: true, completion: nil)
-                return
-            }
+
+    func webView(_ webView: WKWebView,
+                 decidePolicyFor navigationAction: WKNavigationAction,
+                 decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let url = navigationAction.request.url, shouldOpenInInAppBrowser(url) {
+            decisionHandler(.cancel)
+            openInAppBrowser(url)
+            return
         }
-        
-        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:decidePolicyFor:decisionHandler:))) {
+
+        if let capDelegate = capNavigationDelegate,
+           capDelegate.responds(to: #selector(webView(_:decidePolicyFor:decisionHandler:))) {
             capDelegate.webView?(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
         } else {
             decisionHandler(.allow)
         }
     }
-    
+
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         capNavigationDelegate?.webView?(webView, didStartProvisionalNavigation: navigation)
     }
-    
+
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
         capNavigationDelegate?.webView?(webView, didReceiveServerRedirectForProvisionalNavigation: navigation)
     }
-    
+
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         capNavigationDelegate?.webView?(webView, didFailProvisionalNavigation: navigation, withError: error)
     }
-    
+
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         capNavigationDelegate?.webView?(webView, didCommit: navigation)
     }
-    
+
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         capNavigationDelegate?.webView?(webView, didFinish: navigation)
-        // Hide splash screen when the live website finishes loading
         webView.evaluateJavaScript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", completionHandler: nil)
-        // End pull-to-refresh spinner accurately when page finishes loading
         DispatchQueue.main.async { [weak self] in
             self?.refreshControl?.endRefreshing()
         }
     }
-    
+
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         capNavigationDelegate?.webView?(webView, didFail: navigation, withError: error)
+        DispatchQueue.main.async { [weak self] in
+            self?.refreshControl?.endRefreshing()
+        }
     }
-    
-    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:didReceive:completionHandler:))) {
+
+    func webView(_ webView: WKWebView,
+                 didReceive challenge: URLAuthenticationChallenge,
+                 completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        if let capDelegate = capNavigationDelegate,
+           capDelegate.responds(to: #selector(webView(_:didReceive:completionHandler:))) {
             capDelegate.webView?(webView, didReceive: challenge, completionHandler: completionHandler)
         } else {
             completionHandler(.performDefaultHandling, nil)
         }
     }
-    
+
     @available(iOS 14.5, *)
     func webView(_ webView: WKWebView, navigationAction: WKNavigationAction, didBecome download: WKDownload) {
-        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:navigationAction:didBecome:))) {
+        if let capDelegate = capNavigationDelegate,
+           capDelegate.responds(to: #selector(webView(_:navigationAction:didBecome:))) {
             capDelegate.webView?(webView, navigationAction: navigationAction, didBecome: download)
         }
     }
-    
+
     @available(iOS 14.5, *)
     func webView(_ webView: WKWebView, navigationResponse: WKNavigationResponse, didBecome download: WKDownload) {
-        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:navigationResponse:didBecome:))) {
+        if let capDelegate = capNavigationDelegate,
+           capDelegate.responds(to: #selector(webView(_:navigationResponse:didBecome:))) {
             capDelegate.webView?(webView, navigationResponse: navigationResponse, didBecome: download)
         }
     }
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-        if let capDelegate = capNavigationDelegate, capDelegate.responds(to: #selector(webView(_:decidePolicyFor:decisionHandler:) as ((WKWebView, WKNavigationResponse, @escaping (WKNavigationResponsePolicy) -> Void) -> Void)?)) {
+
+    func webView(_ webView: WKWebView,
+                 decidePolicyFor navigationResponse: WKNavigationResponse,
+                 decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        if let capDelegate = capNavigationDelegate,
+           capDelegate.responds(to: #selector(webView(_:decidePolicyFor:decisionHandler:) as ((WKWebView, WKNavigationResponse, @escaping (WKNavigationResponsePolicy) -> Void) -> Void)?)) {
             capDelegate.webView?(webView, decidePolicyFor: navigationResponse, decisionHandler: decisionHandler)
         } else {
             decisionHandler(.allow)
         }
+    }
+}
+
+// MARK: - WKUIDelegate
+
+extension ViewController: WKUIDelegate {
+
+    func webView(_ webView: WKWebView,
+                 createWebViewWith configuration: WKWebViewConfiguration,
+                 for navigationAction: WKNavigationAction,
+                 windowFeatures: WKWindowFeatures) -> WKWebView? {
+
+        guard let url = navigationAction.request.url else { return nil }
+
+        if shouldOpenInInAppBrowser(url) {
+            openInAppBrowser(url)
+            return nil
+        }
+
+        // Same-domain target="_blank" links should stay inside the main WebView.
+        if isFindJobsInFinlandURL(url) || isBundledOrLocalURL(url) {
+            webView.load(navigationAction.request)
+            return nil
+        }
+
+        return nil
     }
 }
