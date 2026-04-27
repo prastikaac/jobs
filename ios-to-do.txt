@@ -6,6 +6,8 @@ and currently its opening the external links in device default browser fix it an
 
 a white screen appears as a flash when user clicks on any link inside the app, fix it  
 
+
+
 put a back button in the top, make like put a different url for ios like https://findjobsinfinland.fi/?ios and if there is ?ios in the url then display the back button otherwise hide it 
 
 take me back in 404 navigates back to the previous page

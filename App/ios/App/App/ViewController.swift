@@ -7,7 +7,6 @@ class ViewController: CAPBridgeViewController {
 
     private var refreshControl: UIRefreshControl!
     private var originalNavigationDelegate: WKNavigationDelegate?
-
     private let mainDomain = "findjobsinfinland.fi"
 
     override func viewDidLoad() {
@@ -16,10 +15,13 @@ class ViewController: CAPBridgeViewController {
         edgesForExtendedLayout = []
         extendedLayoutIncludesOpaqueBars = false
 
-        webView?.isOpaque = false
-        updateBackgroundColor()
+        view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
 
-        setupSwipeGestures()
+        webView?.isOpaque = false
+        webView?.backgroundColor = UIColor.clear
+        webView?.scrollView.backgroundColor = UIColor.clear
+        webView?.allowsBackForwardNavigationGestures = true
+
         setupAppResumeObserver()
     }
 
@@ -27,29 +29,9 @@ class ViewController: CAPBridgeViewController {
         super.viewDidAppear(animated)
 
         setupPullToRefresh()
-
-        // Important: Capacitor may set delegates after viewDidLoad,
-        // so set our delegates again here.
         setupWebViewDelegates()
         injectExternalLinkHandler()
     }
-
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        updateBackgroundColor()
-    }
-
-    private func updateBackgroundColor() {
-        if traitCollection.userInterfaceStyle == .dark {
-            webView?.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
-            view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
-        } else {
-            webView?.backgroundColor = .white
-            view.backgroundColor = .white
-        }
-    }
-
-    // MARK: - Pull To Refresh
 
     private func setupPullToRefresh() {
         guard let scrollView = webView?.scrollView else { return }
@@ -68,14 +50,6 @@ class ViewController: CAPBridgeViewController {
         webView?.reload()
     }
 
-    // MARK: - Swipe Gesture
-
-    private func setupSwipeGestures() {
-        webView?.allowsBackForwardNavigationGestures = true
-    }
-
-    // MARK: - App Resume
-
     private func setupAppResumeObserver() {
         NotificationCenter.default.addObserver(
             self,
@@ -92,8 +66,6 @@ class ViewController: CAPBridgeViewController {
         )
     }
 
-    // MARK: - WebView Delegates
-
     private func setupWebViewDelegates() {
         if originalNavigationDelegate == nil,
            let currentDelegate = webView?.navigationDelegate,
@@ -105,11 +77,8 @@ class ViewController: CAPBridgeViewController {
         webView?.uiDelegate = self
     }
 
-    // MARK: - URL Rules
-
     private func isMainDomain(_ url: URL) -> Bool {
         guard let host = url.host?.lowercased() else { return false }
-
         return host == mainDomain || host == "www.\(mainDomain)"
     }
 
@@ -140,11 +109,16 @@ class ViewController: CAPBridgeViewController {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
 
+            if self.presentedViewController is SFSafariViewController {
+                return
+            }
+
             let safariVC = SFSafariViewController(url: url)
             safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
             safariVC.modalPresentationStyle = .fullScreen
 
-            self.present(safariVC, animated: true)
+            // Instant open, no laggy animation
+            self.present(safariVC, animated: false)
         }
     }
 
@@ -153,8 +127,6 @@ class ViewController: CAPBridgeViewController {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
-
-    // MARK: - JavaScript Link Handler
 
     private func injectExternalLinkHandler() {
         guard let webView = webView else { return }
@@ -171,12 +143,9 @@ class ViewController: CAPBridgeViewController {
                 return element;
             }
 
-            document.addEventListener('click', function(event) {
-                var anchor = findAnchor(event.target);
-                if (!anchor || !anchor.href) return;
-
+            function isExternalUrl(href) {
                 try {
-                    var url = new URL(anchor.href);
+                    var url = new URL(href, window.location.href);
                     var host = url.hostname.toLowerCase();
 
                     var isHttp = url.protocol === 'http:' || url.protocol === 'https:';
@@ -184,30 +153,39 @@ class ViewController: CAPBridgeViewController {
                         host === 'findjobsinfinland.fi' ||
                         host === 'www.findjobsinfinland.fi';
 
-                    if (isHttp && !isOwnSite) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        window.webkit.messageHandlers.externalLink.postMessage(anchor.href);
-                    }
+                    return isHttp && !isOwnSite;
+                } catch(e) {
+                    return false;
+                }
+            }
+
+            function openExternal(href) {
+                try {
+                    var url = new URL(href, window.location.href);
+                    window.webkit.messageHandlers.externalLink.postMessage(url.href);
                 } catch(e) {}
+            }
+
+            document.addEventListener('click', function(event) {
+                var anchor = findAnchor(event.target);
+                if (!anchor || !anchor.href) return;
+
+                if (isExternalUrl(anchor.href)) {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    event.stopPropagation();
+
+                    openExternal(anchor.href);
+                    return false;
+                }
             }, true);
 
             var originalOpen = window.open;
             window.open = function(url) {
-                try {
-                    var parsed = new URL(url, window.location.href);
-                    var host = parsed.hostname.toLowerCase();
-
-                    var isHttp = parsed.protocol === 'http:' || parsed.protocol === 'https:';
-                    var isOwnSite =
-                        host === 'findjobsinfinland.fi' ||
-                        host === 'www.findjobsinfinland.fi';
-
-                    if (isHttp && !isOwnSite) {
-                        window.webkit.messageHandlers.externalLink.postMessage(parsed.href);
-                        return null;
-                    }
-                } catch(e) {}
+                if (isExternalUrl(url)) {
+                    openExternal(url);
+                    return null;
+                }
 
                 return originalOpen.apply(window, arguments);
             };
@@ -241,21 +219,18 @@ extension ViewController: WKNavigationDelegate {
 
         let scheme = url.scheme?.lowercased() ?? ""
 
-        // Open external http/https links inside iOS built-in in-app browser.
         if shouldOpenInBuiltInBrowser(url) {
             decisionHandler(.cancel)
             openBuiltInBrowser(url)
             return
         }
 
-        // Handle mail, phone, SMS, maps, etc.
         if scheme == "mailto" || scheme == "tel" || scheme == "sms" {
             decisionHandler(.cancel)
             openSystemApp(url)
             return
         }
 
-        // Allow your own website and Capacitor local app files.
         decisionHandler(.allow)
     }
 
