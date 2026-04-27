@@ -16,8 +16,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // .systemBackground automatically switches between white (light mode) and black (dark mode)
-        view.backgroundColor = .systemBackground
+        
+        // Define a dynamic color that perfectly matches the website's header/footer backgrounds
+        // Dark mode: #121212 (0.07, 0.07, 0.07). Light mode: White.
+        let adaptiveBgColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark
+                ? UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
+                : .white
+        }
+        
+        view.backgroundColor = adaptiveBgColor
         setupWebView()
         setupSplashOverlay()      // Show splash overlay over the empty webview
         setupWebViewDelegates()   // must be set BEFORE load()
@@ -29,7 +37,7 @@ class ViewController: UIViewController {
 
     private func setupSplashOverlay() {
         let overlay = UIView(frame: view.bounds)
-        overlay.backgroundColor = .systemBackground
+        overlay.backgroundColor = view.backgroundColor
         overlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
         let imageView = UIImageView(image: UIImage(named: "Splash"))
@@ -107,10 +115,10 @@ class ViewController: UIViewController {
         webView.translatesAutoresizingMaskIntoConstraints = false
         // isOpaque must stay TRUE — setting it to false causes a black screen
         // while WKWebView's compositor initialises. Let the webpage set its own bg.
-        // Make background adaptive so overscrolling matches system theme.
-        webView.underPageBackgroundColor = .systemBackground
-        webView.backgroundColor = .systemBackground
-        webView.scrollView.backgroundColor = .systemBackground
+        // Make background adaptive so overscrolling and safe areas match the website header/footer perfectly.
+        webView.underPageBackgroundColor = view.backgroundColor
+        webView.backgroundColor = view.backgroundColor
+        webView.scrollView.backgroundColor = view.backgroundColor
         webView.allowsBackForwardNavigationGestures = true
         webView.customUserAgent = "FindJobsFinlandApp/1.0 (iOS)"
 
