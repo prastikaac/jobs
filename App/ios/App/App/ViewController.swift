@@ -19,19 +19,18 @@ class ViewController: CAPBridgeViewController {
         setupSwipeGestures()
         setupAppResumeObserver()
         setupLinkInterception()
+        applySafeAreaInsets()
+    }
+
+    /// Forces the WKWebView scroll view to always respect iOS safe area insets.
+    /// This prevents content from scrolling under the status bar (top)
+    /// and the home indicator / tab bar (bottom) — even while scrolling.
+    private func applySafeAreaInsets() {
+        webView?.scrollView.contentInsetAdjustmentBehavior = .always
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        // Constrain the webView within safe area so content doesn't go
-        // behind the status bar (top) or home indicator (bottom)
-        let safeArea = view.safeAreaInsets
-        webView?.frame = CGRect(
-            x: view.bounds.origin.x,
-            y: view.bounds.origin.y + safeArea.top,
-            width: view.bounds.width,
-            height: view.bounds.height - safeArea.top - safeArea.bottom
-        )
     }
 
     // MARK: - Pull-to-Refresh
