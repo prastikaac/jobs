@@ -15,22 +15,14 @@ class ViewController: CAPBridgeViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Stop the view from extending behind the status bar and home indicator.
+        // This is the OS-level fix — Capacitor cannot override it.
+        edgesForExtendedLayout = []
+        extendedLayoutIncludesOpaqueBars = false
         setupPullToRefresh()
         setupSwipeGestures()
         setupAppResumeObserver()
         setupLinkInterception()
-        applySafeAreaInsets()
-    }
-
-    /// Forces the WKWebView scroll view to always respect iOS safe area insets.
-    /// This prevents content from scrolling under the status bar (top)
-    /// and the home indicator / tab bar (bottom) — even while scrolling.
-    private func applySafeAreaInsets() {
-        webView?.scrollView.contentInsetAdjustmentBehavior = .always
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
     }
 
     // MARK: - Pull-to-Refresh
