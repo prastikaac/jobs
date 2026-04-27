@@ -85,15 +85,11 @@ class ViewController: UIViewController {
 
         view.addSubview(webView)
 
-        // Make the web view truly full-screen (draw behind the notch and home indicator).
-        // The web app's CSS should use env(safe-area-inset-*) to pad content safely.
-        webView.scrollView.contentInsetAdjustmentBehavior = .never
-
         NSLayoutConstraint.activate([
-            webView.topAnchor.constraint(equalTo: view.topAnchor),
+            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 
