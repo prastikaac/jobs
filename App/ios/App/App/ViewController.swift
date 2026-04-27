@@ -8,6 +8,7 @@ class ViewController: UIViewController {
 
     private var webView: WKWebView!
     private var refreshControl: UIRefreshControl!
+    private var splashOverlayView: UIView?
     private let mainDomain = "findjobsinfinland.fi"
     private let startURL = URL(string: "https://findjobsinfinland.fi/")!
 
@@ -18,9 +19,45 @@ class ViewController: UIViewController {
         // .systemBackground automatically switches between white (light mode) and black (dark mode)
         view.backgroundColor = .systemBackground
         setupWebView()
+        setupSplashOverlay()      // Show splash overlay over the empty webview
         setupWebViewDelegates()   // must be set BEFORE load()
         setupAppResumeObserver()
         webView.load(URLRequest(url: startURL))
+    }
+
+    // MARK: - Splash Screen Overlay
+
+    private func setupSplashOverlay() {
+        let overlay = UIView(frame: view.bounds)
+        overlay.backgroundColor = .systemBackground
+        overlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+        let imageView = UIImageView(image: UIImage(named: "Splash"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        overlay.addSubview(imageView)
+
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: overlay.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: overlay.centerYAnchor),
+            imageView.widthAnchor.constraint(equalToConstant: 160),
+            imageView.heightAnchor.constraint(equalToConstant: 160)
+        ])
+
+        view.addSubview(overlay)
+        splashOverlayView = overlay
+    }
+
+    private func hideSplashOverlay() {
+        guard let overlay = splashOverlayView else { return }
+        splashOverlayView = nil
+
+        UIView.animate(withDuration: 0.4, delay: 0.1, options: .curveEaseInOut, animations: {
+            overlay.alpha = 0
+            overlay.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+        }) { _ in
+            overlay.removeFromSuperview()
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -375,17 +412,20 @@ extension ViewController: WKNavigationDelegate {
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        hideSplashOverlay()
         injectExternalLinkHandler()
         finishRefreshing()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        hideSplashOverlay()
         finishRefreshing()
     }
 
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
+        hideSplashOverlay()
         finishRefreshing()
     }
 }
