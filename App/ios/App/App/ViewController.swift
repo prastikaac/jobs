@@ -19,34 +19,36 @@ class ViewController: CAPBridgeViewController {
         // This is the OS-level fix — Capacitor cannot override it.
         edgesForExtendedLayout = []
         extendedLayoutIncludesOpaqueBars = false
-        setupPullToRefresh()
         setupSwipeGestures()
         setupAppResumeObserver()
         setupLinkInterception()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // webView is guaranteed to exist by the time viewDidAppear is called
+        setupPullToRefresh()
+    }
+
     // MARK: - Pull-to-Refresh
 
     private func setupPullToRefresh() {
+        guard let scrollView = webView?.scrollView else { return }
+
         refreshControl = UIRefreshControl()
 
         // Brand color: #482dff
         refreshControl.tintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
-
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
 
-        // Attach to WKWebView's scroll view (the correct iOS approach)
-        webView?.scrollView.addSubview(refreshControl)
-        webView?.scrollView.bounces = true
+        // Attach to WKWebView's scroll view
+        scrollView.addSubview(refreshControl)
+        scrollView.bounces = true
     }
 
     @objc private func handleRefresh() {
         webView?.reload()
-        
-        // Stop spinner after a reasonable time since page load will finish
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-            self?.refreshControl.endRefreshing()
-        }
+        // endRefreshing() is called in webView(_:didFinish:) for accurate timing
     }
 
     // MARK: - Swipe Gestures (iOS native back/forward)
@@ -134,8 +136,12 @@ extension ViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         capNavigationDelegate?.webView?(webView, didFinish: navigation)
-        // Hide splash screen explicitly when the live website finishes loading
+        // Hide splash screen when the live website finishes loading
         webView.evaluateJavaScript("if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }", completionHandler: nil)
+        // End pull-to-refresh spinner accurately when page finishes loading
+        DispatchQueue.main.async { [weak self] in
+            self?.refreshControl?.endRefreshing()
+        }
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
