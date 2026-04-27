@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1.0)
+        // .systemBackground automatically switches between white (light mode) and black (dark mode)
+        view.backgroundColor = .systemBackground
         setupWebView()
         setupWebViewDelegates()   // must be set BEFORE load()
         setupAppResumeObserver()
@@ -69,7 +70,10 @@ class ViewController: UIViewController {
         webView.translatesAutoresizingMaskIntoConstraints = false
         // isOpaque must stay TRUE — setting it to false causes a black screen
         // while WKWebView's compositor initialises. Let the webpage set its own bg.
-        webView.underPageBackgroundColor = .white   // iOS 15+ — hides grey flash between pages
+        // Make background adaptive so overscrolling matches system theme.
+        webView.underPageBackgroundColor = .systemBackground
+        webView.backgroundColor = .systemBackground
+        webView.scrollView.backgroundColor = .systemBackground
         webView.allowsBackForwardNavigationGestures = true
         webView.customUserAgent = "FindJobsFinlandApp/1.0 (iOS)"
 
@@ -81,11 +85,15 @@ class ViewController: UIViewController {
 
         view.addSubview(webView)
 
+        // Make the web view truly full-screen (draw behind the notch and home indicator).
+        // The web app's CSS should use env(safe-area-inset-*) to pad content safely.
+        webView.scrollView.contentInsetAdjustmentBehavior = .never
+
         NSLayoutConstraint.activate([
-            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            webView.topAnchor.constraint(equalTo: view.topAnchor),
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
 
@@ -95,7 +103,8 @@ class ViewController: UIViewController {
         guard refreshControl == nil else { return }
 
         refreshControl = UIRefreshControl()
-        refreshControl.tintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
+        // .label automatically switches to black in light mode, white in dark mode
+        refreshControl.tintColor = .label
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
 
         webView.scrollView.refreshControl = refreshControl
