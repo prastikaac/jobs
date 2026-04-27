@@ -223,7 +223,16 @@ class ViewController: UIViewController {
                 } catch(e) {}
             }
 
+            // Track whether we are inside a real user click gesture.
+            // This prevents programmatic window.open() calls (ads, analytics)
+            // from being intercepted as if the user tapped an external link.
+            var _inUserClick = false;
+
             document.addEventListener('click', function(event) {
+                _inUserClick = true;
+                // Reset after current call-stack unwinds
+                setTimeout(function() { _inUserClick = false; }, 300);
+
                 var anchor = findAnchor(event.target);
                 if (!anchor || !anchor.href) return;
                 if (isExternalUrl(anchor.href)) {
@@ -237,7 +246,9 @@ class ViewController: UIViewController {
 
             var originalOpen = window.open;
             window.open = function(url) {
-                if (isExternalUrl(url)) {
+                // Only intercept window.open() that originated from a user tap,
+                // NOT auto-called scripts that run on page load.
+                if (_inUserClick && isExternalUrl(url)) {
                     openExternal(url);
                     return null;
                 }
@@ -273,15 +284,19 @@ extension ViewController: WKNavigationDelegate {
 
         let scheme = url.scheme?.lowercased() ?? ""
 
-        if shouldOpenInBuiltInBrowser(url) {
-            decisionHandler(.cancel)
-            openBuiltInBrowser(url)
-            return
-        }
-
         if scheme == "mailto" || scheme == "tel" || scheme == "sms" {
             decisionHandler(.cancel)
             openSystemApp(url)
+            return
+        }
+
+        // Only open external links in the built-in browser for MAIN-FRAME navigations.
+        // Sub-frame navigations (iframes, embedded widgets, ad networks) must be
+        // allowed through; intercepting them is what caused rogue popups on page load.
+        let isMainFrame = navigationAction.targetFrame?.isMainFrame ?? false
+        if isMainFrame && shouldOpenInBuiltInBrowser(url) {
+            decisionHandler(.cancel)
+            openBuiltInBrowser(url)
             return
         }
 
