@@ -21,6 +21,19 @@ class ViewController: CAPBridgeViewController {
         setupLinkInterception()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // Constrain the webView within safe area so content doesn't go
+        // behind the status bar (top) or home indicator (bottom)
+        let safeArea = view.safeAreaInsets
+        webView?.frame = CGRect(
+            x: view.bounds.origin.x,
+            y: view.bounds.origin.y + safeArea.top,
+            width: view.bounds.width,
+            height: view.bounds.height - safeArea.top - safeArea.bottom
+        )
+    }
+
     // MARK: - Pull-to-Refresh
 
     private func setupPullToRefresh() {
