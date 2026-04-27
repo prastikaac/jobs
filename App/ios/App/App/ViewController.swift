@@ -35,6 +35,36 @@ class ViewController: UIViewController {
         config.allowsInlineMediaPlayback = true
         config.mediaTypesRequiringUserActionForPlayback = []
 
+        // Disable pinch-to-zoom by injecting a viewport override at document load.
+        // Works even when the page already has a <meta name="viewport"> tag.
+        let noZoomJS = """
+        (function() {
+            var meta = document.querySelector('meta[name="viewport"]');
+            if (meta) {
+                // Strip any existing user-scalable / scale limits, then add ours
+                var c = meta.content
+                    .replace(/user-scalable\s*=\s*[^,]+/gi, '')
+                    .replace(/minimum-scale\s*=\s*[^,]+/gi, '')
+                    .replace(/maximum-scale\s*=\s*[^,]+/gi, '')
+                    .replace(/,\s*,/g, ',')
+                    .replace(/(^,|,$)/g, '')
+                    .trim();
+                meta.content = c + ', user-scalable=no, minimum-scale=1.0, maximum-scale=1.0';
+            } else {
+                var m = document.createElement('meta');
+                m.name = 'viewport';
+                m.content = 'width=device-width, initial-scale=1.0, user-scalable=no';
+                document.head.appendChild(m);
+            }
+        })();
+        """
+        let noZoomScript = WKUserScript(
+            source: noZoomJS,
+            injectionTime: .atDocumentEnd,
+            forMainFrameOnly: true
+        )
+        config.userContentController.addUserScript(noZoomScript)
+
         webView = WKWebView(frame: .zero, configuration: config)
         webView.translatesAutoresizingMaskIntoConstraints = false
         // isOpaque must stay TRUE — setting it to false causes a black screen
@@ -42,6 +72,12 @@ class ViewController: UIViewController {
         webView.underPageBackgroundColor = .white   // iOS 15+ — hides grey flash between pages
         webView.allowsBackForwardNavigationGestures = true
         webView.customUserAgent = "FindJobsFinlandApp/1.0 (iOS)"
+
+        // Belt-and-suspenders: also lock the scroll view zoom so UIKit
+        // doesn't allow a pinch gesture to scale the web view at all.
+        webView.scrollView.minimumZoomScale = 1.0
+        webView.scrollView.maximumZoomScale = 1.0
+        webView.scrollView.bouncesZoom = false
 
         view.addSubview(webView)
 
@@ -175,7 +211,8 @@ class ViewController: UIViewController {
             guard let self = self else { return }
             if self.presentedViewController is SFSafariViewController { return }
             let safariVC = SFSafariViewController(url: url)
-            safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
+            // UIColor.label = black in light mode, white in dark mode — matches system appearance
+            safariVC.preferredControlTintColor = UIColor.label
             safariVC.modalPresentationStyle = .fullScreen
             self.present(safariVC, animated: false)
         }
