@@ -228,6 +228,7 @@ class ViewController: UIViewController {
     private func setupWebViewDelegates() {
         webView.navigationDelegate = self
         webView.uiDelegate = self
+        webView.scrollView.delegate = self
     }
 
     // MARK: - URL Rules
@@ -491,6 +492,21 @@ extension ViewController: WKScriptMessageHandler {
 
         default:
             break
+        }
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+
+extension ViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // Prevent bouncing ONLY at the bottom of the page.
+        // We calculate the maximum allowed Y offset. If the user scrolls past it, we cap it.
+        // We still allow bouncing at the top (contentOffset.y < 0) so Pull-to-Refresh works.
+        let bottomOffset = scrollView.contentSize.height - scrollView.bounds.size.height + scrollView.contentInset.bottom
+        if scrollView.contentOffset.y > bottomOffset && bottomOffset > 0 {
+            scrollView.contentOffset.y = bottomOffset
         }
     }
 }
