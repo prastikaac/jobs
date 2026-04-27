@@ -48,8 +48,64 @@ class ViewController: CAPBridgeViewController {
         scrollView.bounces = true
     }
 
+    /// Called when the user pulls down and releases.
+    /// Tries the JS-side smart refresh first; falls back to a full WebKit reload
+    /// only if the JS bridge is not available (e.g. error page, JS not loaded yet).
     @objc private func handleRefresh() {
-        webView?.reload()
+        guard let webView = webView else {
+            refreshControl?.endRefreshing()
+            return
+        }
+
+        // Register a one-shot message handler BEFORE calling JS so the
+        // "done" signal from the JS side can be received.
+        let controller = webView.configuration.userContentController
+        controller.removeScriptMessageHandler(forName: "refreshComplete")
+        controller.add(self, name: "refreshComplete")
+
+        // Patch signalDone in the JS layer so it also posts back to native,
+        // then kick off the smart refresh. Returns true if JS handled it,
+        // false if the bridge isn't available (triggers native full reload).
+        let js = """
+        (function() {
+            if (window.AppPullToRefresh && typeof window.AppPullToRefresh.onRefresh === 'function') {
+                var _orig = window.AppPullToRefresh.signalDone;
+                window.AppPullToRefresh.signalDone = function() {
+                    if (_orig) _orig();
+                    window.webkit.messageHandlers.refreshComplete.postMessage('done');
+                };
+                window.AppPullToRefresh.onRefresh();
+                return true;
+            }
+            return false;
+        })();
+        """
+
+        webView.evaluateJavaScript(js) { [weak self] result, _ in
+            guard let self = self else { return }
+            let jsHandled = (result as? Bool) == true
+            if !jsHandled {
+                // JS bridge not ready — full WebKit reload; spinner ends in didFinish/didFail
+                webView.reload()
+            }
+            // else: waiting for "refreshComplete" message or navigation didFinish
+        }
+
+        // Safety timeout: stop spinner if neither JS nor navigation finishes within 15 s
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15) { [weak self] in
+            guard let self = self, self.refreshControl?.isRefreshing == true else { return }
+            self.finishRefreshing()
+        }
+    }
+
+    /// Stops the pull-to-refresh spinner and removes the one-shot message handler.
+    private func finishRefreshing() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.refreshControl?.endRefreshing()
+            self.webView?.configuration.userContentController
+                .removeScriptMessageHandler(forName: "refreshComplete")
+        }
     }
 
     // MARK: - App Resume
@@ -87,14 +143,12 @@ class ViewController: CAPBridgeViewController {
 
     private func isMainDomain(_ url: URL) -> Bool {
         guard let host = url.host?.lowercased() else { return false }
-
         return host == mainDomain || host == "www.\(mainDomain)"
     }
 
     private func isLocalAppUrl(_ url: URL) -> Bool {
         let scheme = url.scheme?.lowercased() ?? ""
         let host = url.host?.lowercased() ?? ""
-
         return scheme == "capacitor"
             || scheme == "ionic"
             || host == "localhost"
@@ -110,7 +164,6 @@ class ViewController: CAPBridgeViewController {
         if !isHttpUrl(url) { return false }
         if isLocalAppUrl(url) { return false }
         if isMainDomain(url) { return false }
-
         return true
     }
 
@@ -119,15 +172,10 @@ class ViewController: CAPBridgeViewController {
     private func openBuiltInBrowser(_ url: URL) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-
-            if self.presentedViewController is SFSafariViewController {
-                return
-            }
-
+            if self.presentedViewController is SFSafariViewController { return }
             let safariVC = SFSafariViewController(url: url)
             safariVC.preferredControlTintColor = UIColor(red: 0.282, green: 0.176, blue: 1.0, alpha: 1.0)
             safariVC.modalPresentationStyle = .fullScreen
-
             self.present(safariVC, animated: false)
         }
     }
@@ -159,12 +207,10 @@ class ViewController: CAPBridgeViewController {
                 try {
                     var url = new URL(href, window.location.href);
                     var host = url.hostname.toLowerCase();
-
                     var isHttp = url.protocol === 'http:' || url.protocol === 'https:';
                     var isOwnSite =
                         host === 'findjobsinfinland.fi' ||
                         host === 'www.findjobsinfinland.fi';
-
                     return isHttp && !isOwnSite;
                 } catch(e) {
                     return false;
@@ -181,12 +227,10 @@ class ViewController: CAPBridgeViewController {
             document.addEventListener('click', function(event) {
                 var anchor = findAnchor(event.target);
                 if (!anchor || !anchor.href) return;
-
                 if (isExternalUrl(anchor.href)) {
                     event.preventDefault();
                     event.stopImmediatePropagation();
                     event.stopPropagation();
-
                     openExternal(anchor.href);
                     return false;
                 }
@@ -198,7 +242,6 @@ class ViewController: CAPBridgeViewController {
                     openExternal(url);
                     return null;
                 }
-
                 return originalOpen.apply(window, arguments);
             };
         })();
@@ -206,13 +249,13 @@ class ViewController: CAPBridgeViewController {
 
         webView.configuration.userContentController.removeScriptMessageHandler(forName: "externalLink")
         webView.configuration.userContentController.add(self, name: "externalLink")
-
         webView.evaluateJavaScript(js, completionHandler: nil)
     }
 
     deinit {
         NotificationCenter.default.removeObserver(self)
         webView?.configuration.userContentController.removeScriptMessageHandler(forName: "externalLink")
+        webView?.configuration.userContentController.removeScriptMessageHandler(forName: "refreshComplete")
     }
 }
 
@@ -248,35 +291,25 @@ extension ViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         originalNavigationDelegate?.webView?(webView, didFinish: navigation)
-
         injectExternalLinkHandler()
-
         webView.evaluateJavaScript(
             "if (window.Capacitor && window.Capacitor.Plugins.SplashScreen) { window.Capacitor.Plugins.SplashScreen.hide(); }",
             completionHandler: nil
         )
-
-        DispatchQueue.main.async { [weak self] in
-            self?.refreshControl?.endRefreshing()
-        }
+        // Covers the full-reload path (JS bridge wasn't ready)
+        finishRefreshing()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         originalNavigationDelegate?.webView?(webView, didFail: navigation, withError: error)
-
-        DispatchQueue.main.async { [weak self] in
-            self?.refreshControl?.endRefreshing()
-        }
+        finishRefreshing()
     }
 
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
         originalNavigationDelegate?.webView?(webView, didFailProvisionalNavigation: navigation, withError: error)
-
-        DispatchQueue.main.async { [weak self] in
-            self?.refreshControl?.endRefreshing()
-        }
+        finishRefreshing()
     }
 }
 
@@ -289,9 +322,7 @@ extension ViewController: WKUIDelegate {
                  for navigationAction: WKNavigationAction,
                  windowFeatures: WKWindowFeatures) -> WKWebView? {
 
-        guard let url = navigationAction.request.url else {
-            return nil
-        }
+        guard let url = navigationAction.request.url else { return nil }
 
         if shouldOpenInBuiltInBrowser(url) {
             openBuiltInBrowser(url)
@@ -313,15 +344,21 @@ extension ViewController: WKScriptMessageHandler {
 
     func userContentController(_ userContentController: WKUserContentController,
                                didReceive message: WKScriptMessage) {
+        switch message.name {
 
-        guard message.name == "externalLink",
-              let urlString = message.body as? String,
-              let url = URL(string: urlString) else {
-            return
-        }
+        case "externalLink":
+            guard let urlString = message.body as? String,
+                  let url = URL(string: urlString) else { return }
+            if shouldOpenInBuiltInBrowser(url) {
+                openBuiltInBrowser(url)
+            }
 
-        if shouldOpenInBuiltInBrowser(url) {
-            openBuiltInBrowser(url)
+        case "refreshComplete":
+            // JS smart refresh finished — hide the native spinner
+            finishRefreshing()
+
+        default:
+            break
         }
     }
 }
