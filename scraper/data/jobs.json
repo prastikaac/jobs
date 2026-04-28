@@ -105,5 +105,118 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 00:01:38",
+    "jobs": [
+      {
+        "id": "d57adbb2",
+        "job_id": "maintenance-specialist-relay-protection-helsinki-d57adbb2",
+        "processed": true,
+        "title": "Maintenance specialist, relay protection",
+        "company": "Helen Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://helen.csod.com/ux/ats/careersite/4/home/requisition/779?c=helen",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/19c0d330-ae39-4ec5-8dfe-3996095bb814/en",
+        "job_employer_email": "tuomas.murumaki@helen.fi",
+        "job_employer_name": "Tuomas Murumäki",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/maintenance-specialist-relay-protection-helsinki-d57adbb2",
+        "date_posted": "2026-04-28",
+        "date_expires": "2026-05-04",
+        "scraped_at": "2026-04-29 00:01:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Maintenance specialist, relay protection at Helen Oy. Great opportunity in Helsinki—apply now.",
+        "description": "Helen Oy is seeking a Maintenance Specialist specializing in relay protection for their Helsinki-based subsidiary Helen Sähköverko. This role involves defining, maintaining, and developing the electrical network’s relay protection system, analyzing operation after disturbances, participating in maintenance activities, and supporting operations centers during disruptions. The ideal candidate has extensive knowledge of 400 kV, 110 kV, and substation secondary systems, including protective relays and automation components. They should possess excellent communication skills, cooperation with various stakeholders, and experience with network calculation software and enterprise resource planning systems.",
+        "what_we_expect": [
+          "Extensive and in-depth knowledge of relay protection of the electrical network (400 kV, 110 kV and kj)",
+          "Experience with substation secondary system components, including protective relays and substation automation",
+          "Excellent cooperation and communication skills"
+        ],
+        "job_responsibilities": [
+          "Definition, maintenance and development of the relay protection of the electrical network",
+          "Analyze the operation of the relay protection after disturbances",
+          "Participate as a representative of the customer organization in daily maintenance activities, planning, procurement and implementation phases of substation projects"
+        ],
+        "what_we_offer": [
+          "Central role in the development of our capital's electricity distribution network",
+          "Flexible working hours and remote or office work options",
+          "Active development of own expertise through industry trainings, learning from each other, and sharing views with others"
+        ],
+        "search_keywords": "maintenance specialist, relay protection, Helen Sähköverko, clean transition, renewable energy solutions, electric transport, substation environment, enterprise resource planning systems",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 00:01:39",
+    "jobs": [
+      {
+        "id": "a8a11048",
+        "job_id": "senior-finance-business-analyst-helsinki-a8a11048",
+        "processed": true,
+        "title": "Senior Finance Business Analyst",
+        "company": "Helen Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://helen.csod.com/ux/ats/careersite/4/home/requisition/784?c=helen",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/069d7000-d542-44c1-ad80-04a30a264b86/en",
+        "job_employer_email": "sami.rautiainen@helen.fi",
+        "job_employer_name": "Sami Rautiainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/senior-finance-business-analyst-helsinki-a8a11048",
+        "date_posted": "2026-04-28",
+        "date_expires": "2026-05-05",
+        "scraped_at": "2026-04-29 00:01:39",
+        "open_positions": 1,
+        "salary_range": "salary for the position is determined based on",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Senior Finance Business Analyst at Helen Oy, located in Helsinki. Apply now and get started.",
+        "description": "We are looking for an experienced and analytical Senior Finance Business Analyst at Helen Oy in Helsinki, Finland. This role involves developing group-level financial reporting, analytics, and financial data models while ensuring their functionality in strategic guidance, forecasting, and decision-making. The ideal candidate has 5-7 years of experience in financial analytics, reporting, or working with financial forecasting models. They should have strong knowledge of financial data, dimensions, key figures, and be skilled in designing and developing financial reports, dashboards (Power BI), and interpreting financial information for different stakeholders.",
+        "what_we_expect": [
+          "5-7 years of experience in financial analytics, reporting, or working with financial forecasting models.",
+          "Strong knowledge of financial data, dimensions, key figures, and the ability to visualize entities.",
+          "Experience with data analytics and reporting tools (e.g., Power BI, SQL, Python, Databricks).",
+          "Ability to build clear, user-friendly, and visually functional dashboards.",
+          "Ability to change complex financial information into an understandable and decision-making entity.",
+          "Strong cooperation and communication skills, including the ability to act as a credible sparring partner."
+        ],
+        "job_responsibilities": [
+          "Develop group-level financial reporting, analytics, and the financial data model.",
+          "Ensure that business reports are based on common, agreed financial figures.",
+          "Design and develop financial reports, dashboards, and Power BI for different stakeholders."
+        ],
+        "what_we_offer": [
+          "Central and influential role in developing group's financial visibility and guidance.",
+          "Direct impact on how financial information is used in decision-making at different levels of the organization.",
+          "Competent, relaxed, and cooperative community of experts.",
+          "Involved in building the future of clean and sustainable energy.",
+          "Various employee benefits including electricity for employees, charity work day, remote working abroad, and welfare benefit."
+        ],
+        "search_keywords": "Senior Finance Business Analyst Helen Group Finland Clean Energy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
