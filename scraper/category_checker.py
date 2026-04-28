@@ -33,28 +33,28 @@ if not logger.handlers:
     logger.propagate = False
 
 LM_STUDIO_BASE_URL = "http://localhost:1234"
+LM_STUDIO_MODEL = "qwen2.5-3b-instruct"
 _SENTINEL = object()
 
-# ── Prompt (SIMPLIFIED) ───────────────────────────
+# ── Prompt ────────────────────────────────────────
 _PROMPT_TMPL = """\
-Is "{current_category}" the correct category for the job title "{title}"?
+Keyword scoring determined this job belongs to: "{current_category}"
+Job title: "{title}"
 
-If correct, output: correct
-If incorrect, output ONLY the best matching category from this list:
+Confirm or correct the category.
+- If "{current_category}" is correct or you are unsure, output: {current_category}
+- If a different category CLEARLY fits better, output that category instead.
 
+Valid categories:
 {cat_list}
 
 Rules:
-- Output only one word
-- No explanation
-- No punctuation
+- Output ONLY one exact category name from the list above
+- No explanation, no punctuation, no extra words
 
-Answer:
-"""
+Answer:"""
 
 # ── LM Studio helpers ─────────────────────────────
-def _detect_best_model():
-    return "Qwen2.5-1.5B-Instruct-GGUF"
 
 def _ask_lmstudio(model, title, current_category, valid_cats):
     cat_list = "\n".join(f"- {c}" for c in valid_cats)
@@ -72,7 +72,7 @@ def _ask_lmstudio(model, title, current_category, valid_cats):
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.0,
-        "max_tokens": 16,
+        "max_tokens": 24,
         "stream": False,
     }).encode("utf-8")
 
@@ -84,16 +84,13 @@ def _ask_lmstudio(model, title, current_category, valid_cats):
     )
 
     try:
-        with urllib.request.urlopen(req, timeout=45) as resp:
+        with urllib.request.urlopen(req, timeout=120) as resp:
             data = json.loads(resp.read())
         raw = data["choices"][0]["message"]["content"].strip().lower()
         raw = re.sub(r"[^a-z0-9\-]", "", raw)
     except Exception as e:
-        logger.warning(f"LM Studio error: {e}")
+        logger.warning("LM Studio error: %s", e)
         return None
-
-    if raw == "correct":
-        return current_category
 
     return raw
 
@@ -123,6 +120,12 @@ def detect_category_by_keywords(
         _occ_stop = {
             "and", "or", "of", "the", "a", "an", "in", "for", "to",
             "workers", "worker", "staff", "specialist", "person",
+            # Generic job-title words that appear in keywords of many categories —
+            # word-matching on these alone causes false cross-category hits
+            "manager", "expert", "senior", "junior", "lead", "head",
+            "assistant", "associate", "coordinator", "officer", "director",
+            "supervisor", "executive", "consultant", "analyst", "advisor",
+            "engineer", "technician", "operator", "professional",
         }
 
         for category, keywords in config.CATEGORY_KEYWORDS.items():
@@ -227,17 +230,16 @@ def determine_category(raw_job: dict) -> str:
     logger.info("  Category (scoring): %s → %s (score=%d)", title, found_category, top_score)
 
     # 2. AI check
-    model = _detect_best_model()
     valid_cats = list(config.VALID_CATEGORIES)
     if "other" not in valid_cats:
         valid_cats.append("other")
         
-    ai_suggested = _ask_lmstudio(model, title, found_category, valid_cats)
+    ai_suggested = _ask_lmstudio(LM_STUDIO_MODEL, title, found_category, valid_cats)
     
     final_category = found_category
     if ai_suggested and ai_suggested in valid_cats:
-        final_category = ai_suggested
         if ai_suggested != found_category:
+            final_category = ai_suggested
             logger.info("  Category (AI override): %s → %s", found_category, final_category)
         else:
             logger.info("  Category (AI confirmed): %s", final_category)

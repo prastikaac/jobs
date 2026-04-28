@@ -3,6 +3,7 @@
 import json
 import logging
 import re
+import threading
 import concurrent.futures
 
 import urllib.request
@@ -16,12 +17,13 @@ import rawjobs_store
 logger = logging.getLogger("ai_processor")
 
 OLLAMA_URL = "http://localhost:11434/v1/chat/completions"
-OLLAMA_MODEL = "llama3.2" # You can change this to your pulled Ollama model (e.g. qwen2.5:1.5b)
+OLLAMA_MODEL = "qwen2.5:1.5b"  # Ollama model — change to match your pulled model
 
 BATCH_SIZE = 0
 TIMEOUT_SECS = 600
 CATEGORY_TIMEOUT_SECS = 600
 MAX_RETRIES = 2
+PARALLEL_JOBS = 2   # how many jobs to format concurrently (set to 1 to disable)
 
 
 def _clean_json_response(content: str) -> str:
@@ -35,6 +37,57 @@ def _clean_json_response(content: str) -> str:
         content = content[start:end + 1]
 
     return content.strip()
+
+
+def _repair_truncated_json(content: str) -> str:
+    """Attempt to close a truncated JSON string by re-balancing brackets."""
+    content = (content or "").strip()
+    if not content:
+        return content
+
+    # Walk the string tracking open structures
+    stack = []
+    in_string = False
+    escape_next = False
+
+    for ch in content:
+        if escape_next:
+            escape_next = False
+            continue
+        if ch == "\\" and in_string:
+            escape_next = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch in "[{":
+            stack.append("}" if ch == "{" else "]")
+        elif ch in "]}":
+            if stack and stack[-1] == ch:
+                stack.pop()
+
+    trimmed = content.rstrip()
+
+    # If we're still inside a string, the value was cut mid-word.
+    # Close the string, then remove the partial trailing value + its comma.
+    if in_string:
+        trimmed += '"'
+        # Strip the partial item (last comma-separated element)
+        last_comma = trimmed.rfind(",")
+        if last_comma != -1:
+            trimmed = trimmed[:last_comma].rstrip()
+
+    # Remove trailing comma before closing
+    if trimmed.endswith(","):
+        trimmed = trimmed[:-1].rstrip()
+
+    # Close all open structures
+    for closer in reversed(stack):
+        trimmed += "\n" + closer
+
+    return trimmed
 
 
 def _normalize_whitespace(text: str) -> str:
@@ -219,7 +272,7 @@ def _call_lm_studio_for_content(
             }
         ],
         "temperature": 0.0,
-        "max_tokens": 520,
+        "max_tokens": 1200,
         "stream": False,
     }
 
@@ -255,14 +308,30 @@ def _call_lm_studio_for_content(
             return ai_results, True, "success", ""
 
         except json.JSONDecodeError as exc:
-            logger.warning("https://findjobsinfinland.fi/jsON decode error from LM Studio: %s", exc)
-            logger.warning("Raw LM Studio content preview: %s", content[:1000] if content else "N/A")
-            last_exc = exc
-            break
+            # Try to repair truncated JSON before giving up
+            repaired = _repair_truncated_json(content)
+            try:
+                parsed = json.loads(repaired)
+                logger.info("JSON was truncated but repaired successfully")
+                ai_results = Job_formatter.sanitize_ai_output(parsed, raw_job, ai_category, valid_categories)
+                if Job_formatter.is_irrelevant_ai_output(
+                    ai_results,
+                    raw_job.get("translated_content") or raw_job.get("jobcontent", ""),
+                    raw_job.get("title", ""),
+                ):
+                    logger.warning("Repaired AI output rejected due to irrelevance")
+                    fallback = Job_formatter.build_fallback_ai_data(raw_job, ai_category, valid_categories)
+                    return fallback, False, "irrelevant", "AI hallucination detected"
+                return ai_results, True, "success", ""
+            except json.JSONDecodeError:
+                logger.warning("JSON decode error from Ollama (repair failed): %s", exc)
+                logger.warning("Raw Ollama content preview: %s", content[:500] if content else "N/A")
+                last_exc = exc
+                break
 
         except urllib.error.HTTPError as exc:
             err_body = exc.read().decode("utf-8", errors="replace")
-            logger.warning("LM Studio returned HTTP %d: %s", exc.code, err_body)
+            logger.warning("Ollama returned HTTP %d: %s", exc.code, err_body)
             fallback = Job_formatter.build_fallback_ai_data(raw_job, ai_category, valid_categories)
             return fallback, False, "error", f"HTTP {exc.code}"
 
@@ -275,16 +344,16 @@ def _call_lm_studio_for_content(
 
             if attempt <= MAX_RETRIES:
                 logger.warning(
-                    "LM Studio timeout/connection error (attempt %d/%d): %s",
+                    "Ollama timeout/connection error (attempt %d/%d): %s",
                     attempt,
                     MAX_RETRIES + 1,
                     exc,
                 )
             else:
-                logger.warning("LM Studio failed after retries: %s", exc)
+                logger.warning("Ollama failed after retries: %s", exc)
 
         except Exception as exc:
-            logger.warning("LM Studio failed: %s", exc)
+            logger.warning("Ollama failed: %s", exc)
             last_exc = exc
             break
 
@@ -368,13 +437,13 @@ def _call_lm_studio_plain_text(prompt: str, timeout_secs: int = TIMEOUT_SECS, nu
 
         except urllib.error.HTTPError as exc:
             err_body = exc.read().decode("utf-8", errors="replace")
-            logger.warning("Plain LM Studio returned HTTP %d: %s", exc.code, err_body)
+            logger.warning("Plain Ollama returned HTTP %d: %s", exc.code, err_body)
             return "", False, f"HTTP {exc.code}"
 
         except urllib.error.URLError as exc:
             if attempt <= MAX_RETRIES:
                 logger.warning(
-                    "Plain LM Studio timeout/connection error (attempt %d/%d): %s",
+                    "Plain Ollama timeout/connection error (attempt %d/%d): %s",
                     attempt,
                     MAX_RETRIES + 1,
                     exc,
@@ -488,36 +557,48 @@ def format_translated_jobs(
     newly_formatted: list[dict] = []
     success_count = 0
     failure_count = 0
+    _lock = threading.Lock()
 
-    # 2. Run AI processor for all jobs
-    for i, raw in enumerate(batch, 1):
+    def _process_job(idx: int, raw: dict) -> None:
+        nonlocal success_count, failure_count
         title = raw.get("title", raw["id"])
-        logger.info("[%d/%d] Formatting: %s", i, len(batch), title)
+        logger.info("[%d/%d] Formatting: %s", idx, len(batch), title)
 
-        # Wait for this specific job's category check to finish (or get it instantly if already done)
+        # Blocks only if this job's category check isn't done yet (usually instant)
         final_category = cat_futures[raw["id"]].result()
 
         raw_processed, success, status, err = _format_one(raw, final_category)
-        newly_formatted = _upsert(newly_formatted, raw_processed)
 
-        rawjobs_store.update_ai_status(
-            raw_jobs,
-            raw["id"],
-            success=success,
-            status=status,
-            error=err,
-        )
-
-        if success:
-            success_count += 1
-            logger.info(
-                "  ✓ %s → category=%s",
-                title,
-                raw_processed.get("ai_data", {}).get("job_category"),
+        with _lock:
+            newly_formatted[:] = _upsert(newly_formatted, raw_processed)
+            rawjobs_store.update_ai_status(
+                raw_jobs,
+                raw["id"],
+                success=success,
+                status=status,
+                error=err,
             )
-        else:
-            failure_count += 1
-            logger.warning("  ✗ %s → %s", title, status)
+            if success:
+                success_count += 1
+                logger.info(
+                    "  ✓ %s → category=%s",
+                    title,
+                    raw_processed.get("ai_data", {}).get("job_category"),
+                )
+            else:
+                failure_count += 1
+                logger.warning("  ✗ %s → %s", title, status)
+
+    # 2. Run AI formatting in parallel (PARALLEL_JOBS jobs at a time)
+    logger.info("Phase 3: Processing jobs with %d parallel worker(s)...", PARALLEL_JOBS)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=PARALLEL_JOBS) as job_executor:
+        futures = [
+            job_executor.submit(_process_job, i, raw)
+            for i, raw in enumerate(batch, 1)
+        ]
+        # Raise any exceptions that occurred in worker threads
+        for f in concurrent.futures.as_completed(futures):
+            f.result()
 
     cat_executor.shutdown(wait=True)
 

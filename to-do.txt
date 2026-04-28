@@ -1,4 +1,6 @@
-Every time run job scrap : python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
+Every time run job scrap test : python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
+
+
 
 Job Scraping Weekly Schedule:
 Mon  → 10:00, 13:30, 17:00
@@ -32,5 +34,23 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - reduce ai processing time
 
-why ai proccessor is taking soo long to format jobs check it and tell me dont do any changes  
+why ai proccessor is taking soo long to format jobs check it and tell me dont do any changes 
 
+
+
+
+
+Here are the practical options to reduce AI processing time without quality loss:
+
+Option 1 — Merge the 2 Ollama calls into 1 per job
+Current: 2 sequential calls per job (JSON + description) = ~8-12 min/job
+Proposed: 1 combined call that returns JSON + description together = ~4-6 min/job
+Saving: ~50% time, no quality change
+
+Option 2 — Parallelize jobs using Ollama's concurrent mode (Done already)
+Enable Ollama to handle parallel requests by setting OLLAMA_NUM_PARALLEL=2 in system environment, then run 2 jobs simultaneously instead of sequentially.
+Saving: ~40-50% for batches of 4+
+
+Option 3 — Tune max_tokens smarter
+1200 is the ceiling but most outputs use only 500-700 tokens. Set max_tokens=800 — still safe with the repair function as backup.
+Saving: ~10-20% per call
