@@ -15,20 +15,4 @@ firebase sends notification to the app also
 
 
 
-In our app, use `App/www/error.html` to handle all errors except network errors, including:
-
-* 404 (Page Not Found)
-* Server errors
-* Any other non-network loading errors
-
-The app should display the `error.html` page immediately when any of these errors occur.
-
-**Current Issues:**
-
-* When the user performs a swipe-down (pull-to-refresh) on the error page, the app shows a blank white screen instead of reloading properly.
-* When the user presses the device back button while on the error page, it does not navigate to the previous page and instead reloads the same error page.
-
-**Expected Behavior:**
-
-* Pull-to-refresh should reload the error page correctly without showing a blank screen.
-* The back button should navigate to the previous page instead of reloading the error page.
+change app open color to this 

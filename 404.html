@@ -7890,141 +7890,230 @@
   </div>
   <div class="mntnM">
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+      /* ── 404 Page Styles ── */
+      .err404-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        user-select: none;
+        padding: 20px 16px;
+        width: 100%;
+        min-height: 100vh;
       }
 
-      body {
-        height: 100vh;
-        overflow: hidden;
+      /* Spider + thread hang above the number */
+      .err404-spider-col {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+      }
+
+      .err404-thread {
+        width: 2px;
+        height: clamp(50px, 10vh, 110px);
+        background: rgba(8, 16, 43, 0.18);
+        border-radius: 2px;
+      }
+
+      .err404-spider-icon {
+        font-size: clamp(2rem, 6vw, 3.2rem);
+        color: var(--headC, #08102b);
+        transform: rotate(180deg);
+        animation: spider404-swing 2.4s ease-in-out infinite alternate;
+        display: block;
+        margin-top: 4px;
+      }
+
+      /* Big 404 number */
+      .err404-number {
+        font-size: clamp(5rem, 18vw, 10rem);
+        font-weight: 900;
+        line-height: 1;
+        margin: 0;
+        color: var(--headC, #08102b);
         font-family: "Poppins", sans-serif;
       }
 
-      .container {
-        text-align: center;
-        user-select: none;
-      }
-
-      .container h1 {
-        font-size: 6rem;
-      }
-
-      .container h1 .fas {
-        animation: animate1 2s linear infinite alternate;
-      }
-
-      .container h1 .num {
+      .err404-number .num {
         animation: animate2 2s linear infinite alternate;
+        color: var(--headC, #08102b);
       }
 
-      .container p {
-        word-spacing: 5px;
+      .err404-number .fas {
+        animation: animate1 4s linear infinite;
+        color: var(--headC, #08102b);
+        font-size: 0.8em;
       }
 
-      @media (max-width: 767px) {
-        .spider {
-          left: 43% !important;
-        }
+      /* ── Dark Mode overrides ── */
+      body.drK .err404-outer,
+      .drK .err404-outer {
+        background: var(--darkB, #1e1e1e);
       }
 
-      .spider {
-        font-size: 3rem;
-        animation: animate3 2s linear infinite alternate;
-        position: absolute;
-        top: 0;
-        left: 48%;
-        transform: rotate(180deg);
+      body.drK .err404-btn,
+      .drK .err404-btn {
+        background: var(--darkU, #41B375) !important;
       }
 
-      .spider::after {
-        content: "";
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        width: 0.5px;
-        height: 30vh;
-        opacity: 0.5;
+      body.drK .err404-thread,
+      .drK .err404-thread {
+        background: rgba(255, 253, 252, 0.22);
       }
 
-      .spider::before {
-        content: "404";
-        position: fixed;
-        top: -50px;
-        left: -18px;
-        opacity: 0.5;
-        transform: rotate(180deg);
+      body.drK .err404-spider-icon,
+      .drK .err404-spider-icon {
+        color: var(--darkT, #fffdfc);
       }
 
-      /* animation */
+      body.drK .err404-number,
+      .drK .err404-number {
+        color: var(--darkT, #fffdfc);
+      }
 
-      @keyframes animate1 {
+      body.drK .err404-number .num,
+      .drK .err404-number .num {
+        color: var(--darkT, #fffdfc);
+      }
+
+      body.drK .err404-number .fas,
+      .drK .err404-number .fas {
+        color: var(--darkT, #fffdfc);
+      }
+
+      body.drK .err404-title,
+      .drK .err404-title {
+        color: var(--darkT, #fffdfc);
+      }
+
+      body.drK .err404-sub,
+      .drK .err404-sub {
+        color: var(--darkTa, #989b9f);
+      }
+
+      /* Text below */
+      .err404-title {
+        font-size: clamp(1.05rem, 3.5vw, 1.4rem);
+        font-weight: 700;
+        margin: 14px 0 6px;
+        color: var(--headC, #08102b);
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 0.5px;
+      }
+
+      .err404-sub {
+        font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+        color: var(--bodyCa, #989b9f);
+        margin-bottom: 28px;
+        line-height: 1.7;
+        max-width: 360px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Back button */
+      .err404-btn {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 8px;
+        background: var(--themeC, #41B375) !important;
+        color: #fff !important;
+        border: none;
+        padding: 13px 32px !important;
+        font-size: clamp(0.85rem, 2.5vw, 0.95rem) !important;
+        font-weight: 600;
+        border-radius: 50px !important;
+        cursor: pointer;
+        text-decoration: none !important;
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        box-shadow: 0 4px 20px rgba(65, 179, 117, 0.32);
+        font-family: "Poppins", sans-serif;
+        position: relative;
+      }
+
+      .err404-btn::after {
+        display: none !important;
+      }
+
+      .err404-btn:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 10px 30px rgba(65, 179, 117, 0.45) !important;
+        color: #fff !important;
+        opacity: 1 !important;
+      }
+
+      /* Animations */
+      @keyframes spider404-swing {
         0% {
-          opacity: 0;
+          transform: rotate(175deg) translateX(-10px);
         }
 
         100% {
-          opacity: 1;
+          transform: rotate(185deg) translateX(10px);
+        }
+      }
+
+      @keyframes animate1 {
+        0% {
+          transform: rotate(0deg);
+          opacity: 0.7;
+        }
+
+        100% {
           transform: rotate(360deg);
+          opacity: 1;
         }
       }
 
       @keyframes animate2 {
         0% {
-          opacity: 0
+          opacity: 0.4;
         }
 
         50% {
-          opacity: 0.5
-        }
-
-        100% {
-          opacity: 1
-        }
-      }
-
-      @keyframes animate3 {
-        0% {
-          opacity: 0.1
+          opacity: 0.7;
         }
 
         100% {
           opacity: 1;
-          top: 20%
         }
       }
 
-      .button {
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 15px;
-        cursor: pointer;
-        border-radius: 1rem;
-        margin: 10px;
+      /* Responsive tweaks */
+      @media (max-width: 480px) {
+        .err404-thread {
+          height: 48px;
+        }
+
+        .err404-sub {
+          max-width: 90vw;
+        }
+
+        .err404-btn {
+          padding: 11px 26px !important;
+        }
       }
     </style>
-    <div class="spider"><i class="fas fa-spider"></i></div>
-    <div class="container">
-      <br> <br> <br> <br> <br>
-      <h1>
-        <span class="num">4 </span>
-        <i class="fas fa-cog"></i>
-        <span class="num"> 4</span>
-      </h1>
-      <p style="line-height: 180%;">
-        Page not found !!<br>
-        Make sure that all words are spelled correctly </p>
 
-      [ www.findjobsinfinland.fi ] <br>
-      <a href="https://findjobsinfinland.fi/" class="button">Take me back</a>
+    <div class="err404-outer">
+      <!-- Spider hanging on a thread above the 404 -->
+      <div class="err404-spider-col">
+        <div class="err404-thread"></div>
+        <i class="fas fa-spider err404-spider-icon"></i>
+      </div>
+
+      <!-- Big 404 -->
+      <h1 class="err404-number">
+        <span class="num">4</span><i class="fas fa-cog"></i><span class="num">4</span>
+      </h1>
+
+      <p class="err404-title">Page Not Found!</p>
+      <p class="err404-sub">Oops! The page you're looking for doesn't exist or has been moved.</p>
+
+      <a href="javascript:void(0);" onclick="history.back();" class="err404-btn">
+        <i class="fas fa-arrow-left"></i> Take me back
+      </a>
     </div>
 
 

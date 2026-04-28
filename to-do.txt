@@ -14,8 +14,9 @@ logic for sending alerts :
 
 now we have created a webpage named newjobs.html for showing the job alerts and now while sending daily weekly or monthly push notification to user : send notification like : here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the webpage newjobs.html where all the alerts of that particular time period will be stored.
 
-
 now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
+
+
 
 - update email content for job alerts : current job alert email template for the user is good in mobile device now make it responsive for desktop devices too
 
@@ -32,9 +33,3 @@ now i want to send  job alerts instantly to the user's device immediately after 
 - reduce ai processing time
 
 why ai proccessor is taking soo long to format jobs check it and tell me dont do any changes  
-
-take me back in 404 navigates back to the previous page
-
-
-
-now make to open the social links like facebook instagram x linked in open in the respective app rather than opening inside the browser inside the app and also 
