@@ -2,6 +2,7 @@
 category_checker.py — Optimized version
 
 Key Improvements:
+- AI formats the job title first (using jobcontent) before any category check
 - AI evaluates the point-wise determined category (correct vs incorrect)
 - Faster inference (max_tokens=16, timeout=45)
 - Removed artificial delay
@@ -53,6 +54,24 @@ Rules:
 - No explanation, no punctuation, no extra words
 
 Answer:"""
+
+# ── Title formatter prompt ───────────────────────
+_TITLE_FORMAT_PROMPT = """\
+You are a professional job title formatter.
+Your task: read the job posting content below and return a clean, concise, professional English job title.
+
+Rules:
+- Output ONLY the job title — nothing else. No explanation, no punctuation at the end.
+- The title must be in English. Translate or infer from the content if needed.
+- Keep it short and specific (2–6 words ideally).
+- Use standard title case (e.g. "Senior Software Engineer", "Cleaning Specialist", "Warehouse Worker").
+- Do NOT include company name, location, salary, or any other detail.
+- Do NOT add any commentary or extra text.
+
+Job posting content:
+\"\"\"{jobcontent}\"\"\"
+
+Job title:"""
 
 # ── LM Studio helpers ─────────────────────────────
 
@@ -215,12 +234,82 @@ def detect_category_by_keywords(
 
     return top_cat, top_score
 
+def format_job_title_with_ai(raw_job: dict) -> str:
+    """
+    Call LM Studio to produce a clean English job title from the job's content.
+    Returns the formatted title string, or the original title if the AI call fails.
+    The result is also written back into raw_job["title"] so all downstream
+    steps automatically use the improved title.
+    """
+    original_title = _clean_text(raw_job.get("title", raw_job.get("id", "")))
+    # Prefer translated content; fall back to raw jobcontent
+    jobcontent = _clean_text(
+        raw_job.get("translated_content") or raw_job.get("jobcontent", "")
+    )
+
+    if not jobcontent:
+        logger.info("  Title formatter: no content available, keeping original title '%s'", original_title)
+        return original_title
+
+    # Truncate to avoid exceeding model context limits
+    content_snippet = jobcontent[:2000]
+
+    prompt = _TITLE_FORMAT_PROMPT.format(jobcontent=content_snippet)
+
+    payload = json.dumps({
+        "model": LM_STUDIO_MODEL,
+        "messages": [
+            {"role": "system", "content": "You are a professional job title formatter. Output only the job title."},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.0,
+        "max_tokens": 24,
+        "stream": False,
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        f"{LM_STUDIO_BASE_URL}/v1/chat/completions",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.loads(resp.read())
+        raw_title = data["choices"][0]["message"]["content"].strip()
+        # Strip surrounding quotes, markdown, or extra punctuation
+        raw_title = re.sub(r'^[\s"\'`]+|[\s"\'`]+$', '', raw_title).strip()
+        raw_title = re.sub(r'\s+', ' ', raw_title)
+
+        if raw_title and len(raw_title) >= 3:
+            logger.info(
+                "  Title formatter: '%s' → '%s'",
+                original_title,
+                raw_title,
+            )
+            raw_job["title"] = raw_title
+            return raw_title
+        else:
+            logger.warning(
+                "  Title formatter: AI returned empty/short title for '%s', keeping original",
+                original_title,
+            )
+    except Exception as exc:
+        logger.warning("  Title formatter: LM Studio error for '%s': %s", original_title, exc)
+
+    return original_title
+
+
 def determine_category(raw_job: dict) -> str:
+    # ── Step 0: AI title formatting (always runs first) ───────────────────
+    format_job_title_with_ai(raw_job)
+
     title = raw_job.get("title", raw_job.get("id", ""))
     translated_text = raw_job.get("translated_content") or raw_job.get("jobcontent", "")
     occupations = raw_job.get("jobcategory_keywords") or raw_job.get("job_occupations_en", [])
 
-    # 1. Point-wise scoring
+    # ── Step 1: Point-wise keyword scoring ────────────────────────────────
     top_cat, top_score = detect_category_by_keywords(
         title,
         translated_text,
@@ -229,13 +318,13 @@ def determine_category(raw_job: dict) -> str:
     found_category = top_cat if top_cat in config.VALID_CATEGORIES else "other"
     logger.info("  Category (scoring): %s → %s (score=%d)", title, found_category, top_score)
 
-    # 2. AI check
+    # ── Step 2: AI category check ─────────────────────────────────────────
     valid_cats = list(config.VALID_CATEGORIES)
     if "other" not in valid_cats:
         valid_cats.append("other")
-        
+
     ai_suggested = _ask_lmstudio(LM_STUDIO_MODEL, title, found_category, valid_cats)
-    
+
     final_category = found_category
     if ai_suggested and ai_suggested in valid_cats:
         if ai_suggested != found_category:

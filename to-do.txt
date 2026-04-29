@@ -28,10 +28,3 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - here now on back going to index.html a white blank popup appears as in the scrrenshot, seach what is caused by that, it doesnt appears in other pages only in index.html page 
 
-
-
-
-now make to 
-
-
-now i want to put a job title formatter with ai, so in the category checker file scraper\category_checker.py , put a new feature to format job title before job category check, always format the job title with ai and use the "jobcontent": from scraper\data\translated_raw_jobs.json to give it the title and after formatting it put the formatted title in the jobs.json and in that scraper\category_checker.py first format title then only start category check
