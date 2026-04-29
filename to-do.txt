@@ -1,17 +1,3 @@
-Every time run job scrap test : python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
-
-
-
-Job Scraping Weekly Schedule:
-Mon  → 10:00, 13:30, 17:00
-Tue  → 10:00, 13:30, 17:00
-Wed  → 10:00, 13:30, 17:00
-Thu  → 10:00, 13:30, 17:00
-Fri  → 10:00, 13:30, 17:00
-Sat  → ❌ Off
-Sun  → ❌ Off
-
-
 logic for sending alerts :
 
 now we have created a webpage named newjobs.html for showing the job alerts and now while sending daily weekly or monthly push notification to user : send notification like : here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the webpage newjobs.html where all the alerts of that particular time period will be stored.
@@ -28,3 +14,10 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - here now on back going to index.html a white blank popup appears as in the scrrenshot, seach what is caused by that, it doesnt appears in other pages only in index.html page 
 
+
+- blogs images + top 10 jobs make
+- insta image change
+- createe imagge of each pages
+- blogs date change
+- category jobs make
+- favourites txt

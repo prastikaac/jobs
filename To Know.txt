@@ -22,3 +22,16 @@ about-us.html  contact-us.html disclaimer.html  edit-profile.html  index.html jo
 - To change the Job Categories Manually 
 Online : Go to https://findjobsinfinland.fi/jobs_table.html and copy the id of the job and then go to https://github.com/prastikaac/jobs/actions/workflows/change_category.yml  and click on run workflow and paste the id of the job and select the new category
 Offline : Run python scraper/offline_manual_category_changer.py and then go to scraper\offline_manual_category_changer.html to update
+
+
+Job Scraping Weekly Schedule:
+Mon  → 10:00, 13:30, 17:00
+Tue  → 10:00, 13:30, 17:00
+Wed  → 10:00, 13:30, 17:00
+Thu  → 10:00, 13:30, 17:00
+Fri  → 10:00, 13:30, 17:00
+Sat  → ❌ Off
+Sun  → ❌ Off
+
+To run a job scrap test : python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
+
