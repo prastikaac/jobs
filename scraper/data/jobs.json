@@ -1531,5 +1531,133 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 19:14:03",
+    "jobs": [
+      {
+        "id": "f04fa8e8",
+        "job_id": "carpenter-specialist-helsinki-f04fa8e8",
+        "processed": true,
+        "title": "Carpenter Specialist",
+        "company": "JWD Palvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Järvenpää",
+          "Hanko",
+          "Kerava",
+          "Karkkila",
+          "Kauniainen",
+          "Kirkkonummi",
+          "Lohja",
+          "Nurmijärvi",
+          "Espoo",
+          "Inkoo",
+          "Pornainen",
+          "Raasepori",
+          "Hyvinkää",
+          "Siuntio",
+          "Mäntsälä",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://jwd.likeit.fi/apply/44076460",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2c1d7608-630e-4112-a66f-3c5054b2245c/en",
+        "job_employer_email": "karo.lehto@jwdpalvelut.fi",
+        "job_employer_name": "Karo Lehto",
+        "job_employer_phone_no": "0401663747",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/carpenter-specialist-helsinki-f04fa8e8",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-11",
+        "scraped_at": "2026-04-29 19:14:03",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with professional skills *",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Carpenter Specialist at JWD Palvelut Oy. Great opportunity in Helsinki—apply now.",
+        "description": "JWD Palvelut Oy is seeking experienced carpenters for villa construction projects across Finland, including the archipelagos and Uusimaa area. Applicants should have previous experience in constructing small villas, proficiency in Finnish, and ability to work independently. The company offers competitive salaries, appropriate equipment, and private occupational health care. Interested candidates can apply via email or call Karo on 040 166 3747 for an interview.",
+        "what_we_expect": [
+          "Previous experience in carpentry work, especially in the construction of small villas",
+          "Ability to work independently",
+          "A genuine desire to work in small locations and in the archipelago",
+          "Fluent Finnish language skills"
+        ],
+        "job_responsibilities": [
+          "Work on small villas in various locations, including Uusimaa area and archipelagos",
+          "Possess several years of experience in construction projects of small villas (new and renovation)",
+          "Be capable of reading pictures and working independently"
+        ],
+        "what_we_offer": [
+          "Competitive salary commensurate with professional skills",
+          "Appropriate and high-quality work equipment, including safety shoes and helmets",
+          "Private occupational health care",
+          "Salary payment every Friday if desired by the applicant"
+        ],
+        "search_keywords": "carpenter villas renovation Finland Uusimaa archipelago Finnish language experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "3ef759f0",
+        "job_id": "special-class-teacher-laitila-3ef759f0",
+        "processed": true,
+        "title": "Special Class Teacher",
+        "company": "Laitilan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Laitila"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/722320/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cf1e7cb3-4835-4e22-9193-0644a7961af6/en",
+        "job_employer_email": "lotta.stenij@laitila.if",
+        "job_employer_name": "Lotta Stenij",
+        "job_employer_phone_no": "0504671568",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/special-class-teacher-laitila-3ef759f0",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-04-29 19:14:03",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Special Class Teacher position available at Laitilan kaupunki in Laitila. Check requirements and submit your application today.",
+        "description": "Laitilan kaupunki is seeking a special class teacher for the period from August 10, 2026 to June 5, 2027. The candidate must have excellent cooperation skills and be prepared to teach in parallel if necessary. This position involves integrating special education students into general classes at Varppee school. Essential requirements include strong communication abilities, a collaborative work ethic, knowledge of curriculum reform, and experience with language-aware teaching methods. Applications should be submitted via Kuntarekry's electronic recruitment system. A four-month trial period follows the selection process, during which time criminal background checks must be completed within 30 days of notification.",
+        "what_we_expect": [
+          "The candidate is required to have good cooperation skills and readiness for simultaneous teaching if necessary.",
+          "In schools in Varppe, special class students are integrated into general education classes where appropriate.",
+          "Experience in language-aware teaching and supporting foreign language students can be considered an advantage.",
+          "Applications must be submitted through Kuntarekry's electronic recruitment system.",
+          "Certificates proving eligibility and any other certificates are requested to be added as an attachment to the electronic application.",
+          "The original certificates will be presented at a possible interview."
+        ],
+        "job_responsibilities": [
+          "Special education teacher",
+          "The candidate is required to have good cooperation skills and readiness for simultaneous teaching if necessary.",
+          "In schools in Varppe, special class students are integrated into general education classes where appropriate."
+        ],
+        "what_we_offer": [
+          "The candidate is required to have good cooperation skills and readiness for simultaneous teaching if necessary.",
+          "In schools in Varppe, special class students are integrated into general education classes where appropriate.",
+          "Experience in language-aware teaching and supporting foreign language students can be considered an advantage.",
+          "Applications must be submitted through Kuntarekry's electronic recruitment system.",
+          "Certificates proving eligibility and any other certificates are requested to be added as an attachment to the electronic application.",
+          "The original certificates will be presented at a possible interview."
+        ],
+        "search_keywords": "special class teacher, Laitila, Varppee school, teaching, cooperation skills, simultaneous teaching, curriculum, reform, language-aware teaching",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
   }
 ]
