@@ -5,7 +5,7 @@
         var dst = document.querySelector('.mN .tBkmt');
         if (!src || !dst) return;
         var val = src.getAttribute('data-text');
-        if (val !== null) {
+        if (val !== null && parseInt(val, 10) >= 1) {
             dst.setAttribute('data-text', val);
         } else {
             dst.removeAttribute('data-text');
