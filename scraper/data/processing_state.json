@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-04-30 00:18:22",
+  "updated_at": "2026-04-30 00:19:16",
   "jobs": {
     "0bcfdc50": {
       "translated": true,
@@ -359,9 +359,9 @@
       "translated_at": "",
       "ai_processed": false,
       "ai_status": "error",
-      "retry_count": 2,
+      "retry_count": 3,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "Invalid \\escape: line 13 column 6 (char 534)",
       "formatted_at": ""
     },
