@@ -1,65 +1,135 @@
 """
 Wrapper for translation (FI->EN).
-Uses deep-translator (Google Translate) for vastly better contextual translation 
-than ArgosTranslate, preserving idioms and proper grammar.
+Uses deep-translator (Google Translate) with MyMemory as fallback.
+
+SSL FIX: The GoogleTranslator instance is re-created on every retry attempt
+so each attempt opens a brand-new HTTP connection. The UNEXPECTED_EOF_WHILE_READING
+error occurs when Google drops an already-open SSL session; forcing a new
+connection avoids re-using the stale, dead socket.
 """
 import logging
 import re
 import html
 import time
-try:
-    from deep_translator import GoogleTranslator
-    _TRANSLATOR_AVAILABLE = True
-except ImportError:
-    _TRANSLATOR_AVAILABLE = False
 
 logger = logging.getLogger("translator")
 
-_auto_to_en = None
+try:
+    from deep_translator import GoogleTranslator
+    _GOOGLE_AVAILABLE = True
+except ImportError:
+    _GOOGLE_AVAILABLE = False
+    logger.warning("deep-translator not installed; Google translation disabled.")
 
+try:
+    from deep_translator import MyMemoryTranslator
+    _MYMEMORY_AVAILABLE = True
+except ImportError:
+    _MYMEMORY_AVAILABLE = False
+
+# ---------------------------------------------------------------------------
 # Retry configuration
+# ---------------------------------------------------------------------------
 _MAX_RETRIES = 3
-_RETRY_DELAYS = [1, 2, 4]  # seconds to wait before each retry attempt
+_RETRY_DELAYS = [2, 5, 10]   # seconds – longer gaps give Google time to recover
 
-def _get_translator():
-    global _auto_to_en
-    if not _TRANSLATOR_AVAILABLE:
-        logger.warning("deep-translator not installed, translation disabled.")
+# MyMemory hard limit per request
+_MYMEMORY_CHUNK_LIMIT = 490
+
+
+# ---------------------------------------------------------------------------
+# Internal helpers
+# ---------------------------------------------------------------------------
+
+def _new_google() -> "GoogleTranslator | None":
+    """Always returns a *fresh* GoogleTranslator (new HTTP session)."""
+    if not _GOOGLE_AVAILABLE:
         return None
-    
-    if _auto_to_en is None:
-        try:
-            _auto_to_en = GoogleTranslator(source='auto', target='en')
-            logger.info("Deep-translator (Google) model loaded successfully (source='auto').")
-        except Exception as e:
-            logger.error(f"Failed to initialize translator: {e}")
-            return None
-    
-    return _auto_to_en
+    try:
+        return GoogleTranslator(source="auto", target="en")
+    except Exception as e:
+        logger.error(f"Failed to create GoogleTranslator: {e}")
+        return None
+
+
+def _new_mymemory() -> "MyMemoryTranslator | None":
+    if not _MYMEMORY_AVAILABLE:
+        return None
+    try:
+        return MyMemoryTranslator(source="fi-FI", target="en-US")
+    except Exception as e:
+        logger.error(f"Failed to create MyMemoryTranslator: {e}")
+        return None
+
 
 def _clean_for_translation(text: str) -> str:
     """Pre-process text for better translation results."""
     if not text:
         return ""
-    # Remove excessive blank lines
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    # Ensure quotes are literal
+    text = re.sub(r"\n{3,}", "\n\n", text)
     text = html.unescape(text)
     return text.strip()
 
-def _translate_with_retry(translator, chunk: str) -> str:
+
+def _mymemory_translate(chunk: str) -> str | None:
     """
-    Translates a single chunk of text, retrying on failure with increasing delays.
-    Returns the translated text, or the original chunk if all retries are exhausted.
+    Translate via MyMemory (500-char per-request limit).
+    Splits the chunk internally if needed.
+    Returns translated text, or None on failure.
     """
+    if not _MYMEMORY_AVAILABLE:
+        return None
+    try:
+        translator = _new_mymemory()
+        if not translator:
+            return None
+
+        # MyMemory rejects requests longer than ~500 chars
+        if len(chunk) <= _MYMEMORY_CHUNK_LIMIT:
+            result = translator.translate(chunk)
+            return result if result and result.strip() else None
+
+        # Split into sub-chunks
+        parts = [
+            chunk[i : i + _MYMEMORY_CHUNK_LIMIT]
+            for i in range(0, len(chunk), _MYMEMORY_CHUNK_LIMIT)
+        ]
+        translated_parts = []
+        for part in parts:
+            t = _new_mymemory()
+            if not t:
+                return None
+            r = t.translate(part.strip())
+            if r and r.strip():
+                translated_parts.append(r.strip())
+            else:
+                return None  # partial failure – bail out
+        return " ".join(translated_parts)
+    except Exception as e:
+        logger.warning(f"MyMemory translation failed: {e}")
+        return None
+
+
+def _translate_chunk(chunk: str) -> str:
+    """
+    Translate a single chunk (≤4900 chars) with retry logic.
+    - Each attempt creates a FRESH GoogleTranslator (new SSL connection).
+    - After all Google attempts fail, falls back to MyMemory.
+    - If MyMemory also fails, returns the original chunk unchanged.
+    """
+    last_error = None
+
     for attempt in range(_MAX_RETRIES):
         try:
+            translator = _new_google()
+            if not translator:
+                break  # Google unavailable, skip to fallback
             result = translator.translate(chunk)
-            if result and len(result.strip()) > 0:
+            if result and result.strip():
                 return result
-            # If result is empty, treat it as a failure and retry
             raise ValueError("Empty translation returned")
         except Exception as e:
+            last_error = e
             if attempt < _MAX_RETRIES - 1:
                 delay = _RETRY_DELAYS[attempt]
                 logger.warning(
@@ -69,61 +139,77 @@ def _translate_with_retry(translator, chunk: str) -> str:
                 time.sleep(delay)
             else:
                 logger.error(
-                    f"Translation failed after {_MAX_RETRIES} attempts: {e}"
+                    f"Google translation failed after {_MAX_RETRIES} attempts: {e}. "
+                    "Trying MyMemory fallback..."
                 )
-                return chunk  # Fall back to original text
+
+    # --- MyMemory fallback ---
+    result = _mymemory_translate(chunk)
+    if result:
+        logger.info("MyMemory fallback translation succeeded.")
+        return result
+
+    logger.error(f"All translation attempts exhausted. Returning original text.")
+    return chunk
+
+
+# ---------------------------------------------------------------------------
+# Public API
+# ---------------------------------------------------------------------------
 
 def translate_fi_to_en(text: str) -> str:
     """
-    Translates Finnish (or Swedish/other auto-detected languages) text to English using Google Translator.
-    Handles texts larger than 4900 characters by chunking.
-    Retries up to 3 times with increasing delays on failure, then falls
-    back to the original text if all retries are exhausted.
+    Translates Finnish (or auto-detected) text to English.
+    Handles texts larger than 4900 characters by splitting into paragraph chunks.
+    Falls back to original text only if every strategy fails.
     """
     if not text or len(text.strip()) < 2:
         return text
 
-    translator = _get_translator()
-    if not translator:
+    if not _GOOGLE_AVAILABLE and not _MYMEMORY_AVAILABLE:
+        logger.warning("No translation backend available.")
         return text
-    
+
     try:
         clean_text = _clean_for_translation(text)
-        
-        # Google Translate API has a 5K char limit. Chunk if necessary.
         limit = 4900
+
         if len(clean_text) <= limit:
-            translated = _translate_with_retry(translator, clean_text)
-        else:
-            logger.info(f"Text too long ({len(clean_text)} chars). Chunking translation...")
-            translated_pieces = []
-            paragraphs = clean_text.split('\n\n')
-            current_chunk = ""
-            for p in paragraphs:
-                if len(current_chunk) + len(p) + 2 < limit:
-                    current_chunk += p + "\n\n"
-                else:
-                    if current_chunk.strip():
-                        translated_pieces.append(_translate_with_retry(translator, current_chunk.strip()))
-                    current_chunk = p + "\n\n"
-                    
-            if current_chunk.strip():
-                # If a single paragraph is outrageously long, chunk it by rough length
-                if len(current_chunk) >= limit:
-                    logger.warning("Extremely long single paragraph encountered. Forcing manual split.")
-                    parts = [current_chunk[i:i+limit] for i in range(0, len(current_chunk), limit)]
-                    for part in parts:
-                        translated_pieces.append(_translate_with_retry(translator, part.strip()))
-                else:
-                    translated_pieces.append(_translate_with_retry(translator, current_chunk.strip()))
-                
-            translated = "\n\n".join(translated_pieces)
-            
-        # Prevent completely corrupted returns
-        if not translated or len(translated.strip()) == 0:
+            return _translate_chunk(clean_text)
+
+        # --- Chunked translation for long texts ---
+        logger.info(f"Text too long ({len(clean_text)} chars). Chunking translation...")
+        translated_pieces = []
+        paragraphs = clean_text.split("\n\n")
+        current_chunk = ""
+
+        for p in paragraphs:
+            if len(current_chunk) + len(p) + 2 <= limit:
+                current_chunk += p + "\n\n"
+            else:
+                if current_chunk.strip():
+                    translated_pieces.append(_translate_chunk(current_chunk.strip()))
+                current_chunk = p + "\n\n"
+
+        if current_chunk.strip():
+            if len(current_chunk) >= limit:
+                logger.warning("Extremely long single paragraph. Forcing manual split.")
+                parts = [
+                    current_chunk[i : i + limit]
+                    for i in range(0, len(current_chunk), limit)
+                ]
+                for part in parts:
+                    translated_pieces.append(_translate_chunk(part.strip()))
+            else:
+                translated_pieces.append(_translate_chunk(current_chunk.strip()))
+
+        translated = "\n\n".join(translated_pieces)
+
+        if not translated or not translated.strip():
             return text
-            
+
         return translated.strip()
+
     except Exception as e:
         logger.error(f"Translation pipeline error: {e}")
         return text
