@@ -515,24 +515,27 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
     salary_range = patch_salary.extract_salary_from_text(raw_job)
 
     def _sanitize_and_translate_list(ai_list, raw_list, field_name, min_items: int = 3):
+        # jobcontent here is already translated_content (English) — no translation needed
         cleaned = _clean_list_field(ai_list, max_items=6)
         if not cleaned or any(_looks_finnish(x) for x in cleaned):
             fallback = _clean_list_field(raw_list, max_items=6)
             if not fallback:
+                # Use translated_content (English) for extraction — no translate call needed
                 fallback = _extract_field_items_from_raw_text(jobcontent, field_name)
-            cleaned = _translate_list_direct(fallback)
-            
+            # Items are already in English — just clean, don't translate
+            cleaned = _clean_list_field(fallback, max_items=6)
+
         if len(cleaned) < min_items:
             extra = _extract_field_items_from_raw_text(jobcontent, field_name, max_items=6)
-            extra_translated = _translate_list_direct(extra)
+            # Already English — no translate call
             seen = {x.lower() for x in cleaned}
-            for item in extra_translated:
+            for item in _clean_list_field(extra, max_items=6):
                 if len(cleaned) >= min_items:
                     break
                 if item.lower() not in seen:
                     cleaned.append(item)
                     seen.add(item.lower())
-                    
+
         # Force minimum 3 items if still lacking
         if len(cleaned) < min_items:
             fallbacks = {
@@ -543,7 +546,7 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
             needed = min_items - len(cleaned)
             for f_item in fallbacks.get(field_name, [])[:needed]:
                 cleaned.append(f_item)
-                
+
         return cleaned
 
     what_we_expect = _sanitize_and_translate_list(
@@ -592,13 +595,27 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
 
 def build_fallback_ai_data(raw_job: dict, fallback_category: str, valid_categories: list[str]) -> dict:
     raw_title = _clean_text(raw_job.get("title", ""))
+    # Prefer translated_content (already English) — avoids unnecessary translate calls
     jobcontent = raw_job.get("translated_content") or raw_job.get("jobcontent", "")
 
-    title = _translate_title_direct(raw_title) or raw_title
+    # Title is already set by AI title formatter in category_checker — just use it
+    title = raw_title
     category = fallback_category if fallback_category in valid_categories else "other"
     company = _extract_company_from_python(raw_job)
     location_list = _extract_location_from_python(raw_job)
     location = _clean_text(location_list[0] if location_list else "Finland")
+
+    # workTime / continuityOfWork: only translate if they look Finnish, otherwise keep as-is
+    work_time_raw = _clean_text(raw_job.get("workTime") or "Full-time")
+    continuity_raw = _clean_text(raw_job.get("continuityOfWork") or "Permanent")
+    work_time = _translate_text_direct(work_time_raw) if _looks_finnish(work_time_raw) else work_time_raw
+    continuity = _translate_text_direct(continuity_raw) if _looks_finnish(continuity_raw) else continuity_raw
+
+    # Lists: only translate if items look Finnish
+    def _smart_list(items):
+        cleaned = _clean_list_field(items, max_items=6)
+        return _translate_list_direct([x for x in cleaned if _looks_finnish(x)]) + \
+               [x for x in cleaned if not _looks_finnish(x)]
 
     data = {
         "title": title,
@@ -607,12 +624,12 @@ def build_fallback_ai_data(raw_job: dict, fallback_category: str, valid_categori
         "meta_description": "",
         "formatted_description": _clean_text(jobcontent),
         "salary_range": patch_salary.extract_salary_from_text(raw_job),
-        "workTime": _translate_text_direct(_clean_text(raw_job.get("workTime") or "Full-time")),
-        "continuityOfWork": _translate_text_direct(_clean_text(raw_job.get("continuityOfWork") or "Permanent")),
-        "language_requirements": _translate_list_direct(_clean_list_field(raw_job.get("language_requirements", []), max_items=4)),
-        "what_we_expect": _translate_list_direct(_clean_list_field(raw_job.get("what_we_expect", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "what_we_expect")),
-        "job_responsibilities": _translate_list_direct(_clean_list_field(raw_job.get("job_responsibilities", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "job_responsibilities")),
-        "what_we_offer": _translate_list_direct(_clean_list_field(raw_job.get("what_we_offer", []), max_items=6) or _extract_field_items_from_raw_text(jobcontent, "what_we_offer")),
+        "workTime": work_time,
+        "continuityOfWork": continuity,
+        "language_requirements": _clean_list_field(raw_job.get("language_requirements", []), max_items=4),
+        "what_we_expect": _smart_list(raw_job.get("what_we_expect", []) or _extract_field_items_from_raw_text(jobcontent, "what_we_expect")),
+        "job_responsibilities": _smart_list(raw_job.get("job_responsibilities", []) or _extract_field_items_from_raw_text(jobcontent, "job_responsibilities")),
+        "what_we_offer": _smart_list(raw_job.get("what_we_offer", []) or _extract_field_items_from_raw_text(jobcontent, "what_we_offer")),
         "search_keywords": _clean_text(f"{title} {company} {location} {category}"),
         "job_location": location or "Finland",
         "job_regions": _extract_regions_from_python(raw_job),

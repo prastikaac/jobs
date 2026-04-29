@@ -2,7 +2,7 @@
 schedule_jobs.py — Runs run_all_jobs.bat on a weekday schedule.
 
 Schedule:
-    Mon-Fri: 10:15, 13:30, 17:00
+    Mon-Fri: 10:00, 13:30, 17:00
     Sat-Sun: Off
 
 If the previous run is still active when the next slot fires,
@@ -24,7 +24,7 @@ logging.basicConfig(
 logger = logging.getLogger("scheduler")
 
 # ── Config ────────────────────────────────────────────────────────────────────
-SCHEDULE_SLOTS = [(10, 15), (13, 30), (17, 0)]   # (hour, minute) UTC+local
+SCHEDULE_SLOTS = [(10, 0), (13, 30), (17, 0)]    # (hour, minute) UTC+local
 WEEKDAYS       = {0, 1, 2, 3, 4}                 # Mon=0 … Fri=4, Sat/Sun skip
 
 SCRAPER_DIR = os.path.dirname(os.path.abspath(__file__))
