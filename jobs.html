@@ -1785,6 +1785,12 @@
                     color: #111827;
                   }
 
+                  /* Hidden articles (filter) — must beat list-view !important */
+                  #Blog1 .blogPts .ntry.filter-hidden,
+                  #Blog1 .blogPts.list-view > .ntry.filter-hidden {
+                    display: none !important;
+                  }
+
                   /* ===== LIST VIEW (horizontal cards) ===== */
                   #Blog1 .blogPts.list-view {
                     display: flex !important;
@@ -4479,16 +4485,19 @@
               matchPublished;
 
             if (matches) {
-              article.style.display = "block";
+              article.classList.remove("filter-hidden");
               visibleCount++;
             } else {
-              article.style.display = "none";
+              article.classList.add("filter-hidden");
             }
           });
 
           if (noResultsMessage) {
+            const blogPts = document.querySelector("#Blog1 .blogPts");
+
             if (visibleCount > 0) {
               noResultsMessage.style.display = "none";
+              if (blogPts) blogPts.style.display = "";
             } else {
               noResultsMessage.style.display = "block";
               noResultsMessage.innerHTML = `
@@ -4496,6 +4505,7 @@
               <img src="https://findjobsinfinland.fi/images/no-jobs.png" alt="No jobs found" class="no-job-img">
             </div>
           `;
+              if (blogPts) blogPts.style.display = "none";
             }
           }
 
