@@ -110,6 +110,61 @@
   },
 
   {
+    "scrape_timestamp": "2026-04-29 18:22:36",
+    "jobs": [
+      {
+        "id": "7d32fe61",
+        "job_id": "personal-nurse-for-hearing-center-helsinki-7d32fe61",
+        "processed": true,
+        "title": "Personal Nurse for Hearing Center",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=1ad72374d7653588d4847330da5a512d",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/93a0f5f5-a921-4d33-bd6f-ad4833598f89/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/personal-nurse-for-hearing-center-helsinki-7d32fe61",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-04-29 18:22:36",
+        "open_positions": 1,
+        "salary_range": "salary is €2716",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Personal Nurse position available at HUS Helsingin yliopistollinen sairaala in Helsinki. Check requirements and submit your application today.",
+        "description": "HUS Helsingin yliopistollinen sairaala is looking for a versatile personal nurse to join the Hearing Center team until December 31, 2026. This role involves assisting patients and their families with daily care tasks, including meal distribution and group guidance. With good communication skills and manual abilities, you'll work alongside other healthcare professionals in a dynamic environment focused on improving hearing function. Competitive hourly wages based on Finnish collective agreements are offered, along with opportunities for skill development within the team. Apply now to start your journey at HUS!",
+        "what_we_expect": [
+          "Good communication skills",
+          "Manual skills",
+          "Technical know-how",
+          "Knowledge of the anatomy of the ear and the physiology of hearing"
+        ],
+        "job_responsibilities": [
+          "Guiding patients of different ages and their close circle, manual skills, independent reception work, working in a multi-professional team",
+          "Local nurse Hearing Centre, Surgical Hospital Hello, you nurse!",
+          "This could be the perfect opportunity for you!"
+        ],
+        "what_we_offer": [
+          "€2716.25/month salary",
+          "Possible experience and other bonuses",
+          "Local nurse Hearing Centre, Surgical Hospital Hello, you nurse!"
+        ],
+        "search_keywords": "nurse, Hearing Center, Surgical Hospital, job, opportunity, versatile day job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
     "scrape_timestamp": "2026-04-29 18:22:38",
     "jobs": [
       {
@@ -218,6 +273,61 @@
         "search_keywords": "Cook, Lahti Visio Henkilöstöratkaisut Päijät-Häme Oy Lahti other",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:32:53",
+    "jobs": [
+      {
+        "id": "27a64635",
+        "job_id": "summer-job-home-care-services-for-the-elderly-home-care-turk-turku-27a64635",
+        "processed": true,
+        "title": "Summer job, home care, Services for the elderly, Home care, Turku",
+        "company": "Varsinais-Suomen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/VARHA25-05-1327-25/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d8890c02-a838-4393-b183-cb83fbdd0076/en",
+        "job_employer_email": "ikapalveluidenrekry@varha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0405785892",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/summer-job-home-care-services-for-the-elderly-home-care-turk-turku-27a64635",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-13",
+        "scraped_at": "2026-04-29 22:32:53",
+        "open_positions": 1,
+        "salary_range": "Task-specific salary from €2721.38/month",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Summer job, home care, Services for the elderly, Home care, Turku at Varsinais-Suomen hyvinvointialue, located in Turku.",
+        "description": "We are looking for enthusiastic caregivers with a passion for helping others in Turku, Finland. As a home care assistant, you'll work closely with clients and a multi-professional team to provide rehabilitation services at their homes. Your responsibilities include planning, implementing, and evaluating treatment plans using Pegasos OMNI and Pegasos Mukana systems, as well as the RAI evaluation system. A driver's license is required due to variable work environments. We offer a meaningful summer job with good orientation and team support, while providing excellent benefits including a competitive salary of €2721.38 per month upon start date. You must have a Lovisa drug license or be able to complete the process within the agreed deadline.",
+        "what_we_expect": [
+          "Have a LOVe drug license or be ready to complete it within the agreed deadline",
+          "Knowledge of the RAI system and good IT skills are considered an advantage",
+          "Experience in care work and home care for the elderly, good communication skills, positive attitude towards development"
+        ],
+        "job_responsibilities": [
+          "Plan, implement and evaluate treatment with a rehabilitative approach together with a multi-professional team",
+          "Work in the client's home environment",
+          "Use Pegasos OMNI and Pegasos Mukana operational control systems and RAI evaluation system"
+        ],
+        "what_we_offer": [
+          "A summer job where you can do meaningful work and develop your professional skills",
+          "Good orientation and team support throughout the summer",
+          "Orientation and team support during the application period",
+          "Warm-hearted team supporting and encouraging you every day"
+        ],
+        "search_keywords": "Summer job, home care, Services for the elderly, Home care, Turku Varsinais-Suomen hyvinvointialue Turku other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
       }
     ]
   },
@@ -396,6 +506,60 @@
         "search_keywords": "hotel cleaner, floor maintenance, SOL Group",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:33:15",
+    "jobs": [
+      {
+        "id": "e1c76352",
+        "job_id": "substitute-caregiver-for-elderly-people-in-hauhos-koivukoto-hämeenlinna-e1c76352",
+        "processed": true,
+        "title": "Substitute Caregiver for Elderly People in Hauho's Koivukoto",
+        "company": "Kanta-Hämeen hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/720632/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/632279d7-58ba-41b9-a036-d8fbf7369518/en",
+        "job_employer_email": "wirva-tuulia.nykanen@omahame.fi",
+        "job_employer_name": "Wirva-Tuulia Nykänen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/substitute-caregiver-for-elderly-people-in-hauhos-koivukoto-hämeenlinna-e1c76352",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-04-29 22:33:15",
+        "open_positions": 1,
+        "salary_range": "salary is €2647",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Substitute caregiver for elderly people in Hauho's Koivukoto at Kanta-Hämeen hyvinvointialue in Hämeenlinna.",
+        "description": "We are looking for a local nurse to join our valued team at Koivukoto Hauho in Hämeenlinna. This substitute position will run until February 16, 2027, and you can start on May 25. Our nursing professionals provide round-the-clock long-term service housing for 42 residents, divided into five small homes called nests. Each nest has its own nest keepers, but flexibility is available if needed. You'll be supported by a nurse team coordinator and local managers, as well as home nurses and care assistants. Your duties include taking care of daily needs, hygiene, medical treatment, personal caregiving, RAI functional ability assessments when agreed upon, and organizing active activities for residents. We expect a positive attitude and good teamwork skills from you.",
+        "what_we_expect": [
+          "A basic degree in social and health care or another equivalent degree.",
+          "Previous experience working with the elderly is preferred but not mandatory.",
+          "Genuine interest in the well-being of the elderly and a rehabilitative way of working."
+        ],
+        "job_responsibilities": [
+          "Taking care of the residents' daily care, hygiene and medical treatment.",
+          "Acting as a personal caregiver for clients assigned to you.",
+          "At Oma Häme, you also have access to a wide range of employment benefits"
+        ],
+        "what_we_offer": [
+          "Responsible position in a positive work environment",
+          "Lunch allowance, commuting benefit, cultural, well-being and exercise benefit Epassi Flex, occupational health at Terveystalo, comprehensive training offer",
+          "At Oma Häme, you also have access to a wide range of employment benefits"
+        ],
+        "search_keywords": "Substitute Caregiver for Elderly People in Hauho's Koivukoto Kanta-Hämeen hyvinvointialue Hämeenlinna other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
       }
     ]
   },
@@ -585,6 +749,61 @@
   },
 
   {
+    "scrape_timestamp": "2026-04-29 22:33:43",
+    "jobs": [
+      {
+        "id": "85e499c3",
+        "job_id": "caregivers-for-gigs-esperi-hoivakoti-merivuokko-uusikaupunki-85e499c3",
+        "processed": true,
+        "title": "Caregivers for gigs, Esperi Hoivakoti Merivuokko",
+        "company": "Esperi Hoivakoti Merivuokko",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/hoitajia-keikkatoihin-esperi-hoivakoti-merivuokko/m7lVA1",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6a2b6b79-4d08-43c4-9627-152a8e019c9e/en",
+        "job_employer_email": "jaana.kiesi@esperi.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "044 720 2437",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/caregivers-for-gigs-esperi-hoivakoti-merivuokko-uusikaupunki-85e499c3",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-04-29 22:33:43",
+        "open_positions": 1,
+        "salary_range": "When hiring, we follow the private collective agreement in the social services sector. The job-specific base salary is €14.82-16.03/h depending on the experience bonus (salary category G20C).",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Caregivers for gigs, Esperi Hoivakoti Merivuokko role at Esperi Hoivakoti Merivuokko. Join a growing team and build your career in Uusikaupunki.",
+        "description": "Esperi Hoivakoti Merivuokko, a Finnish national company offering housing services in Uusikaupunki, is currently seeking dedicated caregivers for their team. Ideal candidates should have completed nursing or related studies and possess fluently spoken Finnish language skills. The position offers flexible work hours, round-the-clock care, and the opportunity to learn from experienced professionals while ensuring high-quality care. With a base salary ranging from €14.82-16.03/h (salary category G20C), this gig work is based on a contract that allows for variable hours. Interested parties should apply by May 15th and expect a warm welcome as part of the team, with ongoing support provided to enhance their skills in caring for elderly residents.",
+        "what_we_expect": [
+          "Brisk and self-initiated attitude",
+          "Nursing or nursing degree or sufficiently completed studies",
+          "Vaccination protection and hygiene passport according to the Infectious Diseases Act, valid medical licenses are an advantage",
+          "Fluent Finnish language skills (at least B1 level) so that you can communicate with our residents and colleagues, work on the phone and make resident registrations"
+        ],
+        "job_responsibilities": [
+          "Caring for and guiding residents",
+          "Planning and participating in the overall care of the residents",
+          "Activity activities"
+        ],
+        "what_we_offer": [
+          "Flexible work",
+          "Warm welcome",
+          "Good conditions to carry out your work and develop your skills"
+        ],
+        "search_keywords": "Caregivers for gigs, Esperi Hoivakoti Merivuokko Esperi Hoivakoti Merivuokko Uusikaupunki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
     "scrape_timestamp": "2026-04-29 22:33:59",
     "jobs": [
       {
@@ -647,6 +866,63 @@
   },
 
   {
+    "scrape_timestamp": "2026-04-29 22:34:01",
+    "jobs": [
+      {
+        "id": "12e5bed8",
+        "job_id": "home-care-nurse-urjala-12e5bed8",
+        "processed": true,
+        "title": "Home Care Nurse",
+        "company": "Esperi Hoivakoti Reikonlinna",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Urjala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/hoitajia-kesatoihin-esperi-hoivakoti-reikonlinna/Dokn9g",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/11bfee0e-8510-4908-848e-2cbc7f565cd4/en",
+        "job_employer_email": "soili.uusitalo@esperi.fi",
+        "job_employer_name": "Soili Uusitalo",
+        "job_employer_phone_no": "044 446 0300",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/home-care-nurse-urjala-12e5bed8",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-17",
+        "scraped_at": "2026-04-29 22:34:01",
+        "open_positions": 1,
+        "salary_range": "Salary When hiring, we follow the private colle",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Esperi Hoivakoti Reikonlinna as a Home Care Nurse in Urjala. Learn more about the role and apply now.",
+        "description": "At Esperi Hoivakoti Reikonlinna, located in Urjala, we are seeking a skilled and compassionate nurse to join our team for the summer months from June 8 to August 9, 2026. This position offers competitive hourly wages based on Finnish collective agreements and provides opportunities for continued employment after the summer. Our experienced caregivers offer 24-hour service housing for elderly residents with diverse hobbies and activities organized by volunteers. As a nurse, you will create meaningful daily lives for our residents through basic care, support of their abilities, monitoring well-being, engaging in outdoor activities, and providing medical care when necessary.",
+        "what_we_expect": [
+          "Valid medical licenses, hygiene passport, and vaccination protection according to the Infectious Diseases Act",
+          "Fluent Finnish language skills",
+          "Empathy, skill of meeting, desire to learn new things"
+        ],
+        "job_responsibilities": [
+          "Create a safe, meaningful and valuable everyday life for residents with your presence.",
+          "Support the ability to function, monitor well-being, go outside with residents, and various treatment measures.",
+          "Find out more about our everyday life on Instagram: [@esperi_reikonlinna](https://www.instagram.com/esperi_reikonlinna/)"
+        ],
+        "what_we_offer": [
+          "Find out more about our everyday life on Instagram: [@esperi_reikonlinna](https://www.instagram.com/esperi_reikonlinna/)",
+          "In the role of family nurse €2415.762612.33/month (salary category G20C)",
+          "In the position of a nurse €2723.922969.00/month (salary category G23D)",
+          "You are ready to become a nurse or a nurse",
+          "You have valid medical licenses, a hygiene passport and vaccination protection according to the Infectious Diseases Act",
+          "You have fluent Finnish language skills"
+        ],
+        "search_keywords": "Home Care Nurse Esperi Hoivakoti Reikonlinna Urjala other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
     "scrape_timestamp": "2026-04-29 22:34:02",
     "jobs": [
       {
@@ -700,6 +976,60 @@
         "search_keywords": "gig cleaner",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:34:08",
+    "jobs": [
+      {
+        "id": "45632a66",
+        "job_id": "home-care-worker-paimio-45632a66",
+        "processed": true,
+        "title": "Home Care Worker",
+        "company": "ANNU Group Oy, Helsinki",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Paimio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://form.hailer.com/cd1f832ac3525d7cf917a5bcce84be5f",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0303bf0a-2ff9-4fdd-87c7-ee4451ba8d4a/en",
+        "job_employer_email": "ida@annu.fi",
+        "job_employer_name": "Ida Ehrman",
+        "job_employer_phone_no": "0413191773",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/home-care-worker-paimio-45632a66",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-12",
+        "scraped_at": "2026-04-29 22:34:08",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Home Care Worker at ANNU Group Oy, Helsinki. Great opportunity in Paimio—apply now.",
+        "description": "We are looking for a dedicated Home Care Worker to join our team at ANNU Group Oy in Paimio. This versatile and rewarding role involves providing care services to families with children, offering flexible working hours that can be adjusted according to the family's needs. With a supervisor on hand and opportunities for increased work time available, you'll have the support needed to excel in your position. Our comprehensive orientation is provided before starting tasks, ensuring a smooth transition into this meaningful paid role. ANNU social services offers a salary based on collective agreement (salary category G20C) with flexible payment options, making it an ideal choice for those seeking a career that aligns with their personal and professional goals.",
+        "what_we_expect": [
+          "Ability to work independently and professionally in customer relationships lasting several months.",
+          "Commitment to working hours that can vary according to the family's wishes and your availability.",
+          "We offer flexible and meaningful paid work"
+        ],
+        "job_responsibilities": [
+          "Assist families with children in taking care of their basic needs, hygiene, meals, playing, outdoor activities, and supporting hobbies.",
+          "We offer a comprehensive orientation before starting the work tasks, the orientation is paid and it is paid with the first salary payment.",
+          "We offer flexible and meaningful paid work"
+        ],
+        "what_we_offer": [
+          "Flexible paid work with influence on working hours, focus on daytime or afternoon/evening shifts.",
+          "Supervisor support for professional work in customer relationships.",
+          "Compliance with collective agreement of the private social sector and salary payment according to the G20C category."
+        ],
+        "search_keywords": "home service, families with children, child care, social services, caregiver",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
   },
@@ -817,6 +1147,58 @@
         "search_keywords": "Lunch Chef Bolt.Works Oy Oulu other",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "eef85b8d",
+        "job_id": "personal-assistant-vaala-eef85b8d",
+        "processed": true,
+        "title": "Personal assistant",
+        "company": "Hoivapalvelut Ystävyydellä Oy, Oulu",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Vaala",
+          "Utajärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:pia.ruotsalainen@ystavyydella.fi?subject=Application%20for%20the%20Job%20-%20Personal%20assistant&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Personal%20assistant.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b9e85024-9804-4c1f-a652-4cb713a733e4/en",
+        "job_employer_email": "pia.ruotsalainen@ystavyydella.fi",
+        "job_employer_name": "Pia Ruotsalainen",
+        "job_employer_phone_no": "+358445683450",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/personal-assistant-vaala-eef85b8d",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-31",
+        "scraped_at": "2026-04-29 22:34:48",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Hoivapalvelut Ystäviňlä Oy, Oulu is hiring a Personal Assistant in Vaala. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for reliable and helpful assistants for our small employee team. At this stage, the work is free time assistance where helping people in everyday life is close to the heart. In the future, more jobs will open up, including training opportunities as a family nurse. The tasks are part-time/hourly jobs with flexibility and good working hours influence. If you're seeking flexible work, feel free to contact us! We offer a small, entrepreneur-led care business where we treat our customers as we would like to be treated ourselves. Please reach out primarily by email; we are often closed during the day but will get back to you soonest.",
+        "what_we_expect": [
+          "Disability care",
+          "The needs of the elderly",
+          "Support users of social services in living at home",
+          "Assists disabled people to participate in community activities",
+          "To assess the elderly's ability to take care of themselves",
+          "Promote inclusion"
+        ],
+        "job_responsibilities": [
+          "Personal assistant",
+          "Family nurse",
+          "Home care nurse"
+        ],
+        "what_we_offer": [
+          "Small, entrepreneur-led work community",
+          "Flexible working hours",
+          "Personal assistant We are looking for reliable and helpful assistants for our small employee team."
+        ],
+        "search_keywords": "personal assistant, reliable, helpful, part-time/hourly jobs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
   },
@@ -874,6 +1256,63 @@
         "search_keywords": "Chef Restaurant Zarillo summer job Tampere",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:34:58",
+    "jobs": [
+      {
+        "id": "f5ff422a",
+        "job_id": "family-worker-kittilä-f5ff422a",
+        "processed": true,
+        "title": "Family Worker",
+        "company": "Sovea Oy, Kemi",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:eeva.lohiniva@sovea.fi?subject=Application%20for%20the%20Job%20-%20Family%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Family%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d8d584e7-fa54-4f12-b1ae-bfa1b8551c4a/en",
+        "job_employer_email": "eeva.lohiniva@sovea.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-worker-kittilä-f5ff422a",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-04-29 22:34:58",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Sovea Oy, Kemi as a Family Worker in Kittilä. Learn more about the role and apply now.",
+        "description": "We are looking for a Family Worker with at least a degree in home care, nurse, or social worker, and the ability to use their own car. The ideal candidate should have excellent Finnish language skills and experience working with families with children. This role involves mobile work in families' homes, operating environments, and networks, with some flexibility on weekends. The applicant must be able to provide professional support and assess service needs while maintaining trust with clients. A 6-month trial period is offered, and the position complies with vaccination protection requirements for working with children. To apply, send your free-form application and CV to eeva.lohiniva@sovea.fi.",
+        "what_we_expect": [
+          "At least a degree in home care, nurse or social worker",
+          "Driver's license and the possibility to use your own car",
+          "Excellent Finnish language skills"
+        ],
+        "job_responsibilities": [
+          "Family work",
+          "Enhanced family work",
+          "Professional support staff activities",
+          "Home service for families with children",
+          "Assessing the need for services",
+          "Strengthening family's resources, parenting and supporting interaction within the family"
+        ],
+        "what_we_offer": [
+          "Work experience in services for families with children",
+          "Good cooperation and interaction skills and the ability to work independently",
+          "Methodological expertise, e.g. Children to talk, nepsy instructor, substance abuse and psychiatry expertise"
+        ],
+        "search_keywords": "family worker, family support, child care, home service, Finnish language skills, driving license",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
       }
     ]
   },
@@ -1040,6 +1479,182 @@
         "search_keywords": "cleaning grocery store, factory premises, car, work security card, job responsibilities, summer jobs, Finnish language skills",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:35:36",
+    "jobs": [
+      {
+        "id": "4aec67ba",
+        "job_id": "nurses-for-home-service-for-families-with-children-in-kirkko-kirkkonummi-4aec67ba",
+        "processed": true,
+        "title": "NURSES for home service for families with children in Kirkkonummi",
+        "company": "Sivina Hoivanet Oy, Espoo",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://hoivanet.fi/tyopaikkailmoitus/?tyopaikkaid=226011257",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e8b5954b-ef53-401c-aa0a-d75f33210770/en",
+        "job_employer_email": "anna.forsten@hoivanet.fi",
+        "job_employer_name": "Anna Forsten",
+        "job_employer_phone_no": "0451455947",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/nurses-for-home-service-for-families-with-children-in-kirkko-kirkkonummi-4aec67ba",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-13",
+        "scraped_at": "2026-04-29 22:35:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Sivina Hoivanet Oy, Espoo is hiring a NURSES for home service for families with children in Kirkkonummi in Kirkkonummi.",
+        "description": "NURSES for home service for families with children in Kirkkonummi We are looking for CAREGIVERS for home service for families with children in the welfare area of Länsi-uusmaa, Kirkkonummi! In the home service for families with children, you take care of the children of our client families and you get to play and go out with the wonderful children. At the same time, you concretely support the smoothness of the families' everyday life and the parents' ability to cope with your own work, and thus help to prevent and ease the problems of children and families as early as possible. We offer you work according to your own life situation, in families that suit you. As a rule, your work shift in the family lasts 2-4 hours at a time.",
+        "what_we_expect": [
+          "Take care of children's basic physical needs",
+          "Assists in the development of children's personal skills",
+          "Disability care",
+          "Infant care",
+          "Deal with children's problems",
+          "Help children with homework"
+        ],
+        "job_responsibilities": [
+          "Family nurse",
+          "Early childhood nurse",
+          "From us you get"
+        ],
+        "what_we_offer": [
+          "From us you get",
+          "We expect from you",
+          "We also value",
+          "Send your application through the form! :)"
+        ],
+        "search_keywords": "NURSES for home service for families with children in Kirkkonummi Sivina Hoivanet Oy, Espoo Kirkkonummi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:35:51",
+    "jobs": [
+      {
+        "id": "8180755b",
+        "job_id": "pizza-chef-kajaani-8180755b",
+        "processed": true,
+        "title": "Pizza Chef",
+        "company": "Haapala BnB Oy, Sotkamo",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@pioppo.fi?subject=Application%20for%20the%20Job%20-%20Pizza%20Chef&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Pizza%20Chef.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c5bcabf2-c729-4c56-b4d1-6d95511b06e6/en",
+        "job_employer_email": "info@pioppo.fi",
+        "job_employer_name": "Kaisa Tyler",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/pizza-chef-kajaani-8180755b",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-31",
+        "scraped_at": "2026-04-29 22:35:51",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Haapala BnB Oy, Sotkamo is hiring a Pizza Chef in Kajaani. Explore responsibilities, benefits, and apply today.",
+        "description": "Pioppo Kitchen & Bar in Kajaani is seeking a pizza chef to join our dynamic team. With an interest in food and kitchen work, this role offers the chance to learn from scratch how to make Neapolitan pizzas. Ideal candidates will be enthusiastic about working collaboratively with others and have a genuine curiosity for culinary techniques. The position provides comprehensive training on pizza-making secrets, a supportive professional community, and a modern workspace within Kajaani’s heart. If you're passionate about cooking and eager to grow in your career, apply today!",
+        "what_we_expect": [
+          "Use cooking techniques",
+          "Hand over the cooking space to the next shift",
+          "Cleans the food preparation area",
+          "Use food cutting tools",
+          "Comply with food-related health, safety, hygiene and other relevant legislation",
+          "Store kitchen supplies"
+        ],
+        "job_responsibilities": [
+          "Pizza maker",
+          "Cook",
+          "Assistant food preparer"
+        ],
+        "what_we_offer": [
+          "A full introduction to the secrets of pizza making. A relaxed but professional work community. The opportunity to develop and grow into a professional quickly. A modern and comfortable work environment in the heart of Kajaani",
+          "Pizza chef Do you like doing things with your hands and want to learn something new?",
+          "We are looking for you!"
+        ],
+        "search_keywords": "pizza chef, Neapolitan pizzas, kitchen work, restaurant industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-04-29 22:36:08",
+    "jobs": [
+      {
+        "id": "46e257b0",
+        "job_id": "chefcook-turku-46e257b0",
+        "processed": true,
+        "title": "Chef/Cook",
+        "company": "Carrot Varsinais-Suomi Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/89925462",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f581ef03-7a08-42c6-ac4a-c0afc3e83817/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 8094999",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chefcook-turku-46e257b0",
+        "date_posted": "2026-04-29",
+        "date_expires": "2026-05-13",
+        "scraped_at": "2026-04-29 22:36:08",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Chef/Cook at Carrot Varsinais-Suomi Oy, located in Turku. Apply now and get started.",
+        "description": "We are looking for experienced cooks or aspiring chefs with a passion for culinary arts to join our team at Carrot Varsinais-Suomi Oy in Turku. Our flexible schedule allows you to work full-time and enjoy competitive hourly wages based on Finnish collective agreements. With the ability to cater to various clients, including a la carte and buffet options, we're committed to providing a diverse range of culinary experiences. Whether you have extensive industry experience or are just starting out, we offer tailored job opportunities that align with your skills and career goals. Contact us today by submitting an application through the provided link or logging in with your credentials for further updates on this exciting opportunity.",
+        "what_we_expect": [
+          "We employ cooks in Varsinais-Suomi according to the needs of our client companies and the interest and skills of the job seeker. You can be an experienced a la carte or buffet chef who has worked in the industry for a long time, or a creator who has only gained a little experience.",
+          "Leave an application, and we'll talk and map together a job that matches your skills and wishes!",
+          "How do I apply to Carrot?",
+          "If necessary, you can get more information by calling Johanna on 040 809 4999, ext. From 9 a.m. To 3 p.m.",
+          "See you at Carrot!",
+          "Carrot Expert in the changing working life"
+        ],
+        "job_responsibilities": [
+          "Cook",
+          "Kitchen manager",
+          "Chef (Open application) Chef (Open application) Is your chef's hat waiting at the back of the cupboard, eager to get to work?"
+        ],
+        "what_we_offer": [
+          "Chef (Open application) Chef (Open application) Is your chef's hat waiting at the back of the cupboard, eager to get to work?",
+          "Leave us an open application!",
+          "We are looking for cooks for our customers in the Varsinais-Suomi region for various tasks and employment relationships.",
+          "We employ cooks in Varsinais-Suomi according to the needs of our client companies and the interest and skills of the job seeker.",
+          "Leave an application, and we'll talk and map together a job that matches your skills and wishes!",
+          "You can submit your application via the attached link."
+        ],
+        "search_keywords": "Chef, open application, Varsinais-Suomi region, cooks, employment relationships, job seeker",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       }
     ]
   },
