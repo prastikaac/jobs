@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-04-30 14:16:40",
+  "updated_at": "2026-04-30 14:58:56",
   "jobs": {
     "0bcfdc50": {
       "translated": true,
@@ -2051,277 +2051,277 @@
     "9fd3bf8a": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:22:22"
     },
     "fe09c67c": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:23:19"
     },
     "ea0a59e5": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:24:05"
     },
     "d9a0bfd1": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:27:32"
     },
     "0f0f75cf": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:27:34"
     },
     "5010ce96": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:29:51"
     },
     "c1aec203": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:30:18"
     },
     "e23c5d84": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:32:38"
     },
     "1e50a9ce": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:32:59"
     },
     "80ce90c7": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:35:47"
     },
     "40e48278": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:36:32"
     },
     "d9067526": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:38:49"
     },
     "487b20c5": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:39:16"
     },
     "91e41178": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:42:14"
     },
     "48ba0f11": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:41:46"
     },
     "a3744a3e": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:44:42"
     },
     "2d3ba1bf": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:44:56"
     },
     "f0051fcc": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:47:15"
     },
     "484aab9d": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:47:31"
     },
     "60c3762f": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:52:02"
     },
     "9899c8e1": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:52:30"
     },
     "cca5372a": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:55:14"
     },
     "a614b117": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:55:26"
     },
     "b1eaebc6": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:58:27"
     },
     "dec4d6fe": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-04-30 14:58:56"
     },
     "6a04b298": {
       "translated": true,
