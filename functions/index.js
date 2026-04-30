@@ -130,29 +130,35 @@ async function sendPushToTokenAndCleanup({ token, message, db, userDocId, fcmTok
 // All job email alerts are now batched via pendingAlerts and sent as
 // daily / weekly / monthly digests through buildDigestEmailHTML.
 
-function buildDigestEmailHTML(frequency, jobs) {
+function buildDigestEmailHTML(frequency, jobs, fullName) {
     const capitalizedFrequency = frequency.charAt(0).toUpperCase() + frequency.slice(1)
+    const displayName = (fullName || "").trim() || "there"
+    const periodLabel = { daily: "today", weekly: "this week", monthly: "this month" }[frequency] ?? ""
 
     const jobCards = jobs.map((job) => {
-        const formattedLocations = getFormattedLocationsString(job.jobLocation)
+        // Show "Multiple Locations" when job spans more than one city
+        const rawLocations = normalizeToArray(job.jobLocation)
+        const uniqueCities = [...new Set(rawLocations.map(l => String(l).trim()).filter(Boolean))]
+        const locationLabel = uniqueCities.length > 1
+            ? "Multiple Locations"
+            : getFormattedLocationsString(job.jobLocation)
 
         return `
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 5px 35px rgba(0, 0, 0, .07); margin-bottom: 25px; border: 1px solid #e0e0e0;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#ffffff;border-radius:12px;box-shadow:0 5px 35px rgba(0,0,0,.07);margin-bottom:20px;border:1px solid #e0e0e0;">
                 <tr>
-                    <td style="padding: 20px; text-align: center;">
-                        <a href="${job.jobLink || "#"}" style="display: block; text-decoration: none;">
-                            <img src="${job.imageUrl || DEFAULT_IMAGE}" alt="Job Image" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; border-radius: 12px; display: block;">
+                    <!-- Image cell — full-width on mobile, fixed 150px on desktop -->
+                    <td class="card-img-cell" style="padding:14px 14px 0 14px;display:block;width:100%;box-sizing:border-box;" valign="top">
+                        <a href="${job.jobLink || "#"}" style="display:block;text-decoration:none;">
+                            <img src="${job.imageUrl || DEFAULT_IMAGE}" alt="${escapeHtml(job.title)}" class="card-img"
+                                 style="width:100%;max-width:100%;height:160px;object-fit:cover;border-radius:8px;display:block;">
                         </a>
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 20px; padding-top: 5px;">
-                        <div style="font-size: 13px; color: #666666; font-weight: bold; margin-bottom: 12px;">
-                            📍 ${formattedLocations}
-                        </div>
-                        <h2 style="font-size: 20px; font-weight: bold; margin: 0 0 10px 0; color: #005effff;">${escapeHtml(job.title)}</h2>
-                        <p style="font-size: 14px; line-height: 1.6; margin: 0 0 20px 0; color: #666666;">${escapeHtml(job.description)}</p>
-                        <a href="${job.jobLink || "#"}" style="background-color: #e82c2f; color: #ffffff; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block;">Apply Now</a>
+                    <!-- Content cell — stacked on mobile, side-by-side on desktop -->
+                    <td class="card-content-cell" style="padding:12px 14px 16px 14px;display:block;width:100%;box-sizing:border-box;" valign="top">
+                        <div style="font-size:12px;color:#444444;margin-bottom:8px;"><strong>In ${escapeHtml(locationLabel)}</strong></div>
+                        <h2 style="font-size:17px;font-weight:bold;margin:0 0 8px 0;color:#005effff;line-height:1.3;">${escapeHtml(job.title)}</h2>
+                        <p style="font-size:13px;line-height:1.6;margin:0 0 14px 0;color:#555555;">${escapeHtml(job.description)}</p>
+                        <a href="${job.jobLink || "#"}" style="background-color:#e82c2f;color:#ffffff;padding:9px 22px;border-radius:6px;text-decoration:none;font-weight:bold;display:inline-block;font-size:13px;">Apply Now</a>
                     </td>
                 </tr>
             </table>
@@ -165,93 +171,140 @@ function buildDigestEmailHTML(frequency, jobs) {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>${capitalizedFrequency} Job Alerts</title>
+            <title>${capitalizedFrequency} Job Alerts — findjobsinfinland.fi</title>
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-                body {
-                    font-family: 'Poppins', sans-serif;
-                    margin: 0;
-                    margin-top: 20px;
-                    margin-left: 5px;
-                    background-color: #f4f4f4;
-                }
-                .main-content-wrapper {
-                    background-color: #ffffff;
-                    border-radius: 12px;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                }
-                .text-base-mobile { font-size: 14px; }
-                .text-sm-mobile { font-size: 13px; }
-                .text-xs-mobile { font-size: 12px; }
-                @media only screen and (min-width: 601px) {
-                    .text-base-pc { font-size: 16px !important; }
-                    .text-sm-pc { font-size: 14px !important; }
-                    .text-xs-pc { font-size: 13px !important; }
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+                /* Reset */
+                body, #bodyTable { margin:0 !important; padding:0 !important; width:100% !important; }
+                body { background-color:#f4f4f4; font-family:'Poppins',Arial,sans-serif; }
+
+                /* Mobile-first: cards stacked */
+                .email-outer   { width:100% !important; }
+                .email-inner   { width:100% !important; max-width:600px !important; }
+                .card-img-cell     { display:block !important; width:100% !important; padding:14px 14px 0 14px !important; }
+                .card-img          { width:100% !important; max-width:100% !important; height:160px !important; object-fit:cover !important; }
+                .card-content-cell { display:block !important; width:100% !important; padding:12px 14px 16px 14px !important; }
+                .browse-btn        { display:block !important; width:100% !important; text-align:center !important; box-sizing:border-box !important; padding:13px 0 !important; }
+
+                /* Desktop (≥ 600px): side-by-side card layout */
+                @media only screen and (min-width: 600px) {
+                    body { padding:24px 0 !important; }
+                    .email-inner { width:600px !important; }
+
+                    .card-img-cell {
+                        display:table-cell !important;
+                        width:160px !important;
+                        min-width:160px !important;
+                        padding:16px 8px 16px 16px !important;
+                        vertical-align:top !important;
+                    }
+                    .card-img {
+                        width:144px !important;
+                        max-width:144px !important;
+                        height:110px !important;
+                        border-radius:8px !important;
+                    }
+                    .card-content-cell {
+                        display:table-cell !important;
+                        padding:16px 16px 16px 8px !important;
+                        vertical-align:top !important;
+                    }
+                    .browse-btn {
+                        display:inline-block !important;
+                        width:auto !important;
+                        padding:12px 48px !important;
+                    }
+                    .body-pad  { padding:30px 36px !important; }
+                    .intro-h2  { font-size:22px !important; }
+                    .intro-p   { font-size:15px !important; }
+                    .footer-td { padding:22px 36px !important; }
                 }
             </style>
         </head>
-        <body style="font-family: 'Poppins', sans-serif; margin: 0; margin-top: 20px; margin-left: 5px; background-color: #f4f4f4; border-radius: 12px;">
-            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <body style="margin:0;padding:0;background-color:#f4f4f4;font-family:'Poppins',Arial,sans-serif;">
+            <table id="bodyTable" cellpadding="0" cellspacing="0" border="0" width="100%" class="email-outer" style="background-color:#f4f4f4;">
                 <tr>
-                    <td align="center">
-                        <table cellpadding="0" cellspacing="0" border="0" width="100%" class="email-container" style="max-width: 100%;">
+                    <td align="center" style="padding:16px 8px;">
+
+                        <table cellpadding="0" cellspacing="0" border="0" class="email-inner"
+                               style="max-width:600px;width:100%;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,0.13);">
+
+                            <!-- ── Header ── -->
                             <tr>
-                                <td>
-                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="main-content-wrapper">
+                                <td style="background-color:#242424;padding:18px 20px;text-align:center;border-radius:14px 14px 0 0;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
                                         <tr>
-                                            <td style="background-color: #242424ff; padding: 20px; text-align: center; border-radius: 12px 12px 0 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
-                                                    <tr>
-                                                        <td style="vertical-align: middle;">
-                                                            <img src="${SITE_URL}/images/icon.png" alt="findjobsinfinland Logo" style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;">
-                                                        </td>
-                                                        <td style="vertical-align: middle;">
-                                                            <h1 style="font-size: 23px; color: #ffffff; margin: 0; font-weight: bold;">findjobsinfinland.fi</h1>
-                                                        </td>
-                                                    </tr>
-                                                </table>
+                                            <td style="vertical-align:middle;padding-right:10px;">
+                                                <img src="${SITE_URL}/images/icon.png" alt="findjobsinfinland Logo"
+                                                     style="width:36px;height:36px;display:block;">
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 25px 30px;">
-                                                <h2 style="font-size: 24px; color: #005effff; margin: 0 0 15px 0;">Your ${capitalizedFrequency} Job Alerts</h2>
-                                                <p class="text-base-mobile text-base-pc" style="font-size: 15px; color: #555555; line-height: 1.6; margin-bottom: 20px;">
-                                                    Dear user, <br><br>
-                                                    Here ${jobs.length === 1 ? "is" : "are"} <strong>${jobs.length}</strong> new ${jobs.length === 1 ? "job" : "jobs"} matching your preferences.
-                                                </p>
-                                                ${jobCards}
-                                                <div style="text-align: left; margin: 30px 0;">
-                                                    <h3 style="font-size: 20px; font-weight: bold; margin: 0 0 15px 0; color: #005effff;">Want to browse more options?</h3>
-                                                    <p class="text-base-mobile text-base-pc" style="font-size: 15px; color: #555555; line-height: 1.6; margin: 0 0 20px 0;">
-                                                        Explore more opportunities tailored to your skills and preferences on findjobsinfinland.fi.
-                                                    </p>
-                                                    <a href="${SITE_URL}/jobs" style="background-color: #696969ff; color: #ffffff; padding: 12px 0; border-radius: 6px; text-decoration: none; font-weight: bold; display: block; width: 100%; text-align: center;">Browse More Jobs</a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="background-color: #f5f0eb; padding: 20px; text-align: center; border-radius: 0 0 12px 12px; border-top: 1px solid #e9ecef;">
-                                                <p class="text-sm-mobile text-sm-pc" style="font-size: 13px; color: #005effff; margin: 0 0 15px 0; line-height: 1.5;">
-                                                    <a href="${SITE_URL}/disclaimer" style="color: #005effff; text-decoration: none; margin: 0 5px;">Disclaimer</a>
-                                                    <span style="color: #666666; margin: 0 5px;">|</span>
-                                                    <a href="${SITE_URL}/privacy-policy" style="color: #005effff; text-decoration: none; margin: 0 5px;">Privacy Policy</a>
-                                                </p>
-                                                <p class="text-xs-mobile text-xs-pc" style="font-size: 12px; color: #888888; line-height: 1.6; margin-top: 10px; margin-bottom: 10px; text-align: center;">
-                                                    If you would prefer not to receive any further job updates or notifications via email, you can easily opt out at any time by clicking on <a href="${SITE_URL}/edit-profile#unsubscribe" style="color: #e82c2f; text-decoration: underline;">unsubscribe</a>.
-                                                </p>
-                                                <p class="text-xs-mobile text-xs-pc" style="font-size: 12px; color: #888888; margin: 0; line-height: 1.4;">
-                                                    © 2026 · <span style="color: #28a745; font-weight: 500;">findjobsinfinland.fi</span> · All rights reserved.
-                                                </p>
+                                            <td style="vertical-align:middle;">
+                                                <h1 style="font-size:21px;color:#ffffff;margin:0;font-weight:700;white-space:nowrap;">
+                                                    findjobsinfinland&zwnj;.fi
+                                                </h1>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
+
+                            <!-- ── Body ── -->
+                            <tr>
+                                <td class="body-pad" style="background-color:#ffffff;padding:24px 22px 20px 22px;">
+                                    <p class="intro-p" style="font-size:14px;color:#555555;line-height:1.7;margin:0 0 22px 0;">
+                                        Dear ${escapeHtml(displayName)},<br><br>
+                                        We're pleased to inform you that <strong>${jobs.length}</strong> new job ${jobs.length === 1 ? "opportunity" : "opportunities"} matching your preferences ${jobs.length === 1 ? "has" : "have"} recently been published ${periodLabel}. Explore the latest listings and take the next step toward finding the right role for you.
+                                    </p>
+
+                                    ${jobCards}
+
+                                    <!-- Browse More -->
+                                    <div style="text-align:center;margin:24px 0 8px 0;">
+                                        <h3 style="font-size:17px;font-weight:700;margin:0 0 10px 0;color:#005effff;">
+                                            Want to browse more options?
+                                        </h3>
+                                        <p class="intro-p" style="font-size:14px;color:#555555;line-height:1.6;margin:0 0 16px 0;">
+                                            Explore more opportunities tailored to your skills on findjobsinfinland.fi.
+                                        </p>
+                                        <a href="${SITE_URL}/jobs" class="browse-btn"
+                                           style="background-color:#696969;color:#ffffff;padding:12px 0;border-radius:6px;
+                                                  text-decoration:none;font-weight:bold;display:block;width:100%;
+                                                  text-align:center;font-size:14px;box-sizing:border-box;">
+                                            Browse More Jobs
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ── Footer ── -->
+                            <tr>
+                                <td class="footer-td"
+                                    style="background-color:#f5f0eb;padding:18px 22px;text-align:center;
+                                           border-top:1px solid #e9ecef;border-radius:0 0 14px 14px;">
+                                    <p style="font-size:13px;color:#005effff;margin:0 0 10px 0;line-height:1.5;">
+                                        <a href="${SITE_URL}/disclaimer"
+                                           style="color:#005effff;text-decoration:none;margin:0 6px;">Disclaimer</a>
+                                        <span style="color:#aaaaaa;">|</span>
+                                        <a href="${SITE_URL}/privacy-policy"
+                                           style="color:#005effff;text-decoration:none;margin:0 6px;">Privacy Policy</a>
+                                    </p>
+                                    <p style="font-size:12px;color:#888888;line-height:1.6;margin:0 0 8px 0;">
+                                        If you'd prefer not to receive further job updates, you can
+                                        <a href="${SITE_URL}/edit-profile#unsubscribe"
+                                           style="color:#e82c2f;text-decoration:underline;">unsubscribe</a> at any time.
+                                    </p>
+                                    <p style="font-size:12px;color:#888888;margin:0;line-height:1.4;">
+                                        © 2026 · <span style="color:#28a745;font-weight:500;">findjobsinfinland.fi</span> · All rights reserved.
+                                    </p>
+                                </td>
+                            </tr>
+
                         </table>
                     </td>
                 </tr>
             </table>
-</body>
+        </body>
         </html>
     `
 }
@@ -340,10 +393,16 @@ async function processUserDigests() {
         if (emailAlertDocs.length > 0) {
             const jobs = emailAlertDocs.map(d => d.data)
             try {
+                const userFullName = user.fullName || user.displayName || ""
+                const subjectMap = {
+                    daily:   "New Job Opportunities Today - findjobsinfinland.fi",
+                    weekly:  "New Job Opportunities This Week - findjobsinfinland.fi",
+                    monthly: "New Job Opportunities This Month - findjobsinfinland.fi",
+                }
                 await sendEmail({
                     to: user.email,
-                    subject: `${emailFreq.charAt(0).toUpperCase() + emailFreq.slice(1)} Job Alerts (${jobs.length})`,
-                    html: buildDigestEmailHTML(emailFreq, jobs),
+                    subject: subjectMap[emailFreq] || `New Job Opportunities - findjobsinfinland.fi`,
+                    html: buildDigestEmailHTML(emailFreq, jobs, userFullName),
                 })
                 emailSuccess = true
                 stats[emailFreq].emailsSent++
@@ -937,3 +996,4 @@ exports.sendMonthlyAdminReport = onSchedule(
         )
     }
 )
+

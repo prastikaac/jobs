@@ -486,8 +486,17 @@ def _job_card(job: dict) -> str:
 
 # ── Step 5: Update index.html + jobs.html ─────────────────────────────────────
 
-def _inject_index_cards(html_path: str, sections_data: dict, page_name: str) -> bool:
-    """Find specific HTML comments and replace the content immediately after them until the next comment."""
+def _inject_index_cards(
+    html_path: str,
+    sections_data: dict,
+    page_name: str,
+    max_per_section: int = 6,
+) -> bool:
+    """
+    Find specific HTML comments and PREPEND new job cards immediately after them.
+    New cards are inserted first; existing cards that are not already present are
+    kept. The combined list is then trimmed to `max_per_section`.
+    """
     if not os.path.exists(html_path):
         logger.warning("%s not found at %s", page_name, html_path)
         return False
@@ -496,32 +505,66 @@ def _inject_index_cards(html_path: str, sections_data: dict, page_name: str) -> 
         from bs4 import BeautifulSoup, Comment
         with open(html_path, "r", encoding="utf-8") as f:
             soup = BeautifulSoup(f, "html.parser")
-            
+
         comments = soup.find_all(string=lambda text: isinstance(text, Comment))
         for c in comments:
-            # Normalize whitespace/case (e.g. 'Nursing Jobs  ' -> 'nursing jobs')
+            # Normalise whitespace/case (e.g. 'Nursing Jobs  ' -> 'nursing jobs')
             key = c.strip().lower()
             key = " ".join(key.split())
-            
-            if key in sections_data:
-                # Remove existing articles immediately after this comment
-                sibling = c.next_sibling
-                while sibling:
-                    next_sib = sibling.next_sibling
-                    if sibling.name == 'article':
-                        sibling.extract()
-                    elif isinstance(sibling, Comment):
-                        break # Stop if we hit another comment
-                    sibling = next_sib
-                
-                # Insert new content
-                new_content = BeautifulSoup(sections_data[key], "html.parser")
-                c.insert_after(new_content)
-                
+
+            if key not in sections_data or not sections_data[key].strip():
+                continue
+
+            # ── 1. Collect EXISTING articles after this comment ────────────
+            existing_articles = []
+            existing_ids = set()
+            sibling = c.next_sibling
+            while sibling:
+                if isinstance(sibling, Comment):
+                    break  # another section starts
+                if sibling.name == "article":
+                    job_id = sibling.get("data-id") or sibling.find(
+                        attrs={"bm-id": True}
+                    )
+                    # Use bm-id attribute of inner bookmark span as unique key
+                    bm_span = sibling.find(attrs={"bm-id": True})
+                    uid = bm_span["bm-id"] if bm_span else id(sibling)
+                    existing_articles.append((uid, sibling))
+                    existing_ids.add(uid)
+                sibling = sibling.next_sibling
+
+            # ── 2. Remove all existing articles from DOM ───────────────────
+            for _, art in existing_articles:
+                art.extract()
+
+            # ── 3. Parse the new cards and collect their IDs ──────────────
+            new_soup = BeautifulSoup(sections_data[key], "html.parser")
+            new_articles = new_soup.find_all("article")
+            new_ids = set()
+            for art in new_articles:
+                bm_span = art.find(attrs={"bm-id": True})
+                uid = bm_span["bm-id"] if bm_span else None
+                if uid:
+                    new_ids.add(uid)
+
+            # ── 4. Build merged list: new first, then existing not in new ──
+            merged = list(new_articles)  # new jobs first
+            for uid, art in existing_articles:
+                if uid not in new_ids:   # skip duplicates
+                    merged.append(art)
+
+            # ── 5. Trim to max_per_section ────────────────────────────────
+            merged = merged[:max_per_section]
+
+            # ── 6. Re-insert after the comment node ───────────────────────
+            # insert_after reverses order, so insert last-to-first
+            for art in reversed(merged):
+                c.insert_after(art)
+
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(str(soup))
-            
-        logger.info("Updated %s with specific sections", page_name)
+
+        logger.info("Updated %s (prepend mode, max %d per section)", page_name, max_per_section)
         return True
     except Exception as exc:
         logger.error("Failed to update index logic: %s", exc)
@@ -575,18 +618,28 @@ def update_main_pages(jobs: List[dict]) -> None:
     random.shuffle(short_title_jobs)
     top_jobs = short_title_jobs[:9]
 
-    # 2) Specific category buckets
-    it_jobs = [j for j in sorted_jobs if j.get("job_category") == "it-and-tech"][:6]
-    nursing_jobs = [j for j in sorted_jobs if j.get("job_category") == "healthcare-and-social-care"][:6]
-    cleaning_jobs = [j for j in sorted_jobs if j.get("job_category") == "cleaning-and-facility-services"][:6]
-    restaurant_jobs = [j for j in sorted_jobs if j.get("job_category") == "food-and-restaurant"][:6]
+    # 2) Specific category buckets — use only the NEWEST jobs (they will be
+    # prepended in front of whatever is already in index.html; the injector
+    # keeps max 6 total per section after merging).
+    # Category slugs must match all_jobs_cat.json exactly.
+    IT_CATEGORY         = "information-technology"
+    NURSING_CATEGORY    = "healthcare"
+    CLEANING_CATEGORY   = "cleaning-and-facility-services"
+    RESTAURANT_CATEGORY = "food-and-restaurant"
+
+    # Pull only truly NEW jobs so we only prepend what isn't already shown.
+    # We still cap at 6 here to avoid sending too much; the injector will trim.
+    it_jobs       = [j for j in sorted_jobs if j.get("job_category") == IT_CATEGORY][:6]
+    nursing_jobs  = [j for j in sorted_jobs if j.get("job_category") == NURSING_CATEGORY][:6]
+    cleaning_jobs = [j for j in sorted_jobs if j.get("job_category") == CLEANING_CATEGORY][:6]
+    restaurant_jobs = [j for j in sorted_jobs if j.get("job_category") == RESTAURANT_CATEGORY][:6]
 
     sections_data = {
-        "top jobs": "\n".join(_job_card(j) for j in top_jobs),
+        "top jobs":           "\n".join(_job_card(j) for j in top_jobs),
         "it & technology jobs": "\n".join(_job_card(j) for j in it_jobs),
-        "nursing jobs": "\n".join(_job_card(j) for j in nursing_jobs),
-        "cleaning jobs": "\n".join(_job_card(j) for j in cleaning_jobs),
-        "restaurant jobs": "\n".join(_job_card(j) for j in restaurant_jobs)
+        "nursing jobs":       "\n".join(_job_card(j) for j in nursing_jobs),
+        "cleaning jobs":      "\n".join(_job_card(j) for j in cleaning_jobs),
+        "restaurant jobs":    "\n".join(_job_card(j) for j in restaurant_jobs),
     }
 
     website = config.WEBSITE_DIR

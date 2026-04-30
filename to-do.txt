@@ -5,13 +5,12 @@ now we have created a webpage named newjobs.html for showing the job alerts and 
 now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
 
 
+- update firebase notifications
 
 - update email content for job alerts : current job alert email template for the user is good in mobile device now make it responsive for desktop devices too
 
-- update firebase notifications
+- update ai processor to format the What We Offer  What We Expect Responsibilities correctly, currently its not formatting its correctly
 
+- whats this Lm studio error, fix it
 
-
-- here now on back going to index.html a white blank popup appears as in the scrrenshot, seach what is caused by that, it doesnt appears in other pages only in index.html page 
-
-
+- check email test
