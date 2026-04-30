@@ -70,6 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // User logged in — dismiss gate overlay immediately
+    const gateOverlay = document.getElementById('loginGateOverlay');
+    if (gateOverlay) gateOverlay.classList.add('hidden');
+    window.dispatchEvent(new Event('userLoggedIn'));
+
     // User logged in — show profile and related elements
     ppCard.style.display = "flex";
     editButton.style.display = "block";

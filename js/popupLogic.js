@@ -1059,10 +1059,12 @@ window.addEventListener("load", () => {
     } else {
       // Only show popupStep1 if not logged in and neverShowPopup is false
       if (!neverShowPopup) {
-        // Show popupStep1 after 5 seconds of user on the page after load
-        setTimeout(() => {
-          showPopupStep("popupStep1")
-        }, 8000)
+        // Only show popupStep1 automatically if we are NOT on the edit-profile page
+        if (!window.location.pathname.includes("edit-profile")) {
+          setTimeout(() => {
+            showPopupStep("popupStep1")
+          }, 8000)
+        }
       } else {
         closePopup()
       }
