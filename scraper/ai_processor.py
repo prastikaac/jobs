@@ -240,7 +240,14 @@ def _call_lm_studio_for_content(
         "4. Keep list items short, factual, and directly supported by the text. Extract up to 3-6 strong items per array when clearly supported by the text. If a field is not clearly stated, return [].\n"
         "5. If title is unclear, return an empty string.\n"
         "6. search_keywords must be 5-8 relevant English keywords separated by spaces only.\n"
-        "7. Remove markdown formatting and section labels from extracted values.\n\n"
+        "7. Remove markdown formatting and section labels from extracted values.\n"
+        "8. Every list item MUST end with a period (.). If the item does not already end with '.', '!' or '?', add a period at the end.\n"
+        "9. FIELD DEFINITIONS — put content ONLY in the correct field:\n"
+        "   - job_responsibilities: concrete tasks and duties the employee performs in this role.\n"
+        "   - what_we_expect: qualifications, skills, experience, certifications, and requirements the candidate must have.\n"
+        "   - what_we_offer: benefits, perks, salary, working conditions, and advantages the employer provides to the employee.\n"
+        "   Do NOT mix content between fields (e.g. benefits must never appear in job_responsibilities or what_we_expect).\n"
+        "10. Do NOT include as list items: welcome phrases, closing remarks, company taglines, job intro sentences, \"so welcome to [city]\", application instructions, or any text that is not a concrete duty / requirement / benefit.\n\n"
 
         f"Category: {ai_category}\n\n"
         f"JOBCONTENT:\n{translated_text}\n\n"
@@ -248,9 +255,9 @@ def _call_lm_studio_for_content(
         "Return ONLY this JSON:\n"
         "{\n"
         '  "title": "clean English job title",\n'
-        '  "job_responsibilities": ["duty 1", "duty 2"],\n'
-        '  "what_we_expect": ["requirement 1", "requirement 2"],\n'
-        '  "what_we_offer": ["benefit 1", "benefit 2"],\n'
+        '  "job_responsibilities": ["Concrete task or duty.", "Another duty."],\n'
+        '  "what_we_expect": ["Required qualification or skill.", "Another requirement."],\n'
+        '  "what_we_offer": ["Concrete benefit or perk.", "Another benefit."],\n'
         '  "search_keywords": "keyword1 keyword2 keyword3 keyword4 keyword5"\n'
         "}"
     )

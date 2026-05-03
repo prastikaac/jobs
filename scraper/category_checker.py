@@ -35,6 +35,8 @@ if not logger.handlers:
 
 LM_STUDIO_BASE_URL = "http://localhost:1234"
 LM_STUDIO_MODEL = "qwen2.5-3b-instruct"
+LM_STUDIO_TIMEOUT = 60      # seconds per attempt
+LM_STUDIO_MAX_RETRIES = 2   # extra retries after the first attempt
 _SENTINEL = object()
 
 # ── Prompt ────────────────────────────────────────
@@ -76,6 +78,7 @@ Job title:"""
 # ── LM Studio helpers ─────────────────────────────
 
 def _ask_lmstudio(model, title, current_category, valid_cats):
+    import time
     cat_list = "\n".join(f"- {c}" for c in valid_cats)
 
     prompt = _PROMPT_TMPL.format(
@@ -95,23 +98,30 @@ def _ask_lmstudio(model, title, current_category, valid_cats):
         "stream": False,
     }).encode("utf-8")
 
-    req = urllib.request.Request(
-        f"{LM_STUDIO_BASE_URL}/v1/chat/completions",
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
+    for attempt in range(1, LM_STUDIO_MAX_RETRIES + 2):
+        req = urllib.request.Request(
+            f"{LM_STUDIO_BASE_URL}/v1/chat/completions",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=LM_STUDIO_TIMEOUT) as resp:
+                data = json.loads(resp.read())
+            raw = data["choices"][0]["message"]["content"].strip().lower()
+            raw = re.sub(r"[^a-z0-9\-]", "", raw)
+            return raw
+        except Exception as e:
+            if attempt <= LM_STUDIO_MAX_RETRIES:
+                logger.warning(
+                    "LM Studio error (attempt %d/%d): %s — retrying in 5s…",
+                    attempt, LM_STUDIO_MAX_RETRIES + 1, e,
+                )
+                time.sleep(5)
+            else:
+                logger.warning("LM Studio error: %s", e)
 
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            data = json.loads(resp.read())
-        raw = data["choices"][0]["message"]["content"].strip().lower()
-        raw = re.sub(r"[^a-z0-9\-]", "", raw)
-    except Exception as e:
-        logger.warning("LM Studio error: %s", e)
-        return None
-
-    return raw
+    return None
 
 # Soft skills and generic terms that should not contribute to category scoring
 _NOISE_KEYWORDS = {
@@ -267,36 +277,45 @@ def format_job_title_with_ai(raw_job: dict) -> str:
         "stream": False,
     }).encode("utf-8")
 
-    req = urllib.request.Request(
-        f"{LM_STUDIO_BASE_URL}/v1/chat/completions",
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
+    import time
+    for attempt in range(1, LM_STUDIO_MAX_RETRIES + 2):
+        req = urllib.request.Request(
+            f"{LM_STUDIO_BASE_URL}/v1/chat/completions",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=LM_STUDIO_TIMEOUT) as resp:
+                data = json.loads(resp.read())
+            raw_title = data["choices"][0]["message"]["content"].strip()
+            # Strip surrounding quotes, markdown, or extra punctuation
+            raw_title = re.sub(r'^[\s"\'`]+|[\s"\'`]+$', '', raw_title).strip()
+            raw_title = re.sub(r'\s+', ' ', raw_title)
 
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            data = json.loads(resp.read())
-        raw_title = data["choices"][0]["message"]["content"].strip()
-        # Strip surrounding quotes, markdown, or extra punctuation
-        raw_title = re.sub(r'^[\s"\'`]+|[\s"\'`]+$', '', raw_title).strip()
-        raw_title = re.sub(r'\s+', ' ', raw_title)
-
-        if raw_title and len(raw_title) >= 3:
-            logger.info(
-                "  Title formatter: '%s' → '%s'",
-                original_title,
-                raw_title,
-            )
-            raw_job["title"] = raw_title
-            return raw_title
-        else:
-            logger.warning(
-                "  Title formatter: AI returned empty/short title for '%s', keeping original",
-                original_title,
-            )
-    except Exception as exc:
-        logger.warning("  Title formatter: LM Studio error for '%s': %s", original_title, exc)
+            if raw_title and len(raw_title) >= 3:
+                logger.info(
+                    "  Title formatter: '%s' → '%s'",
+                    original_title,
+                    raw_title,
+                )
+                raw_job["title"] = raw_title
+                return raw_title
+            else:
+                logger.warning(
+                    "  Title formatter: AI returned empty/short title for '%s', keeping original",
+                    original_title,
+                )
+                break  # Bad output — don't retry, keep original
+        except Exception as exc:
+            if attempt <= LM_STUDIO_MAX_RETRIES:
+                logger.warning(
+                    "  Title formatter: LM Studio error for '%s' (attempt %d/%d): %s — retrying in 5s…",
+                    original_title, attempt, LM_STUDIO_MAX_RETRIES + 1, exc,
+                )
+                time.sleep(5)
+            else:
+                logger.warning("  Title formatter: LM Studio error for '%s': %s", original_title, exc)
 
     return original_title
 

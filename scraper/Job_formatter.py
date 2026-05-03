@@ -189,18 +189,29 @@ def _apply_grammar_rules(text: str) -> str:
 
 def _clean_list_field(items, max_items: int = 8) -> list[str]:
     cleaned = []
-    
+
     skip_headers = {
-        "job duties", "requirements", "we require", "job description", 
-        "what we expect", "what we offer", "we offer", "advantages", 
+        "job duties", "requirements", "we require", "job description",
+        "what we expect", "what we offer", "we offer", "advantages",
         "responsibilities", "tasks", "duties", "qualifications", "who is this for"
     }
-    
+
+    # Filler phrases that should never appear as a standalone bullet
+    _FILLER_PHRASES = [
+        "so welcome to", "welcome to raahe", "welcome to ",
+        "qualities mentioned below", "listed below", "as follows",
+        "include the following", "this opportunity is for motivated",
+        "we are looking for a", "apply now", "send your application",
+        "applications to", "please apply", "for more information contact",
+        "for more information, contact", "contact us at", "submit your",
+        "closing date", "deadline",
+    ]
+
     for item in _ensure_list(items):
         item = _apply_grammar_rules(_clean_text(item))
         item = re.sub(r"[*:]+$", "", item).strip()
         item = item.replace("**", "").strip()
-        
+
         if not item:
             continue
         if _contains_placeholder(item):
@@ -209,6 +220,12 @@ def _clean_list_field(items, max_items: int = 8) -> list[str]:
             continue
         if len(item) < 3:
             continue
+
+        # Drop filler / intro / application sentences
+        item_low = item.lower()
+        if any(phrase in item_low for phrase in _FILLER_PHRASES):
+            continue
+
         cleaned.append(item)
     return _dedupe_preserve_order(cleaned)[:max_items]
 
@@ -539,9 +556,9 @@ def sanitize_ai_output(parsed: dict, raw_job: dict, ai_category: str, valid_cate
         # Force minimum 3 items if still lacking
         if len(cleaned) < min_items:
             fallbacks = {
-                "what_we_expect": ["Positive attitude and reliability", "Ability to work effectively", "Willingness to learn"],
-                "job_responsibilities": ["Daily operational tasks", "Supporting the team", "Ensuring quality service"],
-                "what_we_offer": ["Professional work environment", "Supportive team", "Valuable experience"],
+                "what_we_expect": ["Positive attitude and reliability.", "Ability to work effectively.", "Willingness to learn."],
+                "job_responsibilities": ["Daily operational tasks.", "Supporting the team.", "Ensuring quality service."],
+                "what_we_offer": ["Professional work environment.", "Supportive team.", "Valuable experience."],
             }
             needed = min_items - len(cleaned)
             for f_item in fallbacks.get(field_name, [])[:needed]:
@@ -783,7 +800,16 @@ def apply_manual_fixes(job: dict) -> dict:
     job["meta_description"] = _truncate_safely(job.get("meta_description", ""), MAX_META_DESCRIPTION_CHARS)
 
     for field in ["what_we_expect", "job_responsibilities", "what_we_offer"]:
-        job[field] = [_capitalize_sentences(item) for item in _clean_list_field(job.get(field, []), max_items=6)]
+        items = [_capitalize_sentences(item) for item in _clean_list_field(job.get(field, []), max_items=6)]
+        # Safety net: ensure every bullet ends with a sentence-ending punctuation mark
+        enforced = []
+        for item in items:
+            item = item.strip()
+            if item and item[-1] not in '.!?':
+                item += '.'
+            if item:
+                enforced.append(item)
+        job[field] = enforced
 
     existing_salary = _clean_text(job.get("salary_range", ""))
     if existing_salary and patch_salary.is_tes(existing_salary):
