@@ -37297,6 +37297,112 @@
   },
 
   {
+    "scrape_timestamp": "2026-05-01 13:32:39",
+    "jobs": [
+      {
+        "id": "e2818a5c",
+        "job_id": "pedagogical-coordinator-helsinki-e2818a5c",
+        "processed": true,
+        "title": "Pedagogical Coordinator",
+        "company": "Helsingin kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-02-549-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1e000941-caca-47ee-9c4a-b0896e8877dd/en",
+        "job_employer_email": "annika.haavisto2@hel.fi",
+        "job_employer_name": "Annika Haavisto",
+        "job_employer_phone_no": "0931061222",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/pedagogical-coordinator-helsinki-e2818a5c",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-05-01 13:32:39",
+        "open_positions": 1,
+        "salary_range": "150€/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Pedagogical Coordinator position available at Helsingin kaupunki in Helsinki. Check requirements and submit your application today.",
+        "description": "The city of Helsinki is meticulous and an early childhood education teacher who works at our daycare center in Eastern Helsinki. We are looking for a professional, active and sensitive early childhood education teacher who brings his own competent contribution and strengths to our work community. It is important for us to meet each child in a positive and sensitive interaction. We expect a pedagogical sensitivity from you, where the child's growth and development is supported by means of positive pedagogy, emphasizing consideration of each child's individual needs. We offer you a work community where you have the opportunity to utilize your own strengths, influence daily operations and develop professionally.",
+        "what_we_expect": [
+          "Kelpoisuusehdot.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "Early childhood education teacher.",
+          "Kelpoisuusehdot.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Kelpoisuusehdot.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "early childhood education teacher, early childhood education unit, Haikara-Ruutiin",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "9c808da8",
+        "job_id": "senior-early-childhood-educator-savonlinna-9c808da8",
+        "processed": true,
+        "title": "Senior Early Childhood Educator",
+        "company": "Savonlinnan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Savonlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/722604/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3be835c8-7d85-43fe-b874-d166ee35f0be/en",
+        "job_employer_email": "markku.hamalainen@savonlinna.fi",
+        "job_employer_name": "Markku Hämäläinen",
+        "job_employer_phone_no": "0444174377",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/senior-early-childhood-educator-savonlinna-9c808da8",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-05-01 13:32:39",
+        "open_positions": 1,
+        "salary_range": "Local standard salary: €2989.31/month",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Senior Early Childhood Educator at Savonlinnan kaupunki. Great opportunity in Savonlinna—apply now.",
+        "description": "The Viikari group of the Kellarpello daycare center, located in Kallislahti on Männynmäentie, has a large yard for outdoor activities and good camping opportunities, the nearby nature and outdoor exercise are one of the starting points of the activities. In our operations, we support childhood happiness, safety and joyful learning experiences in accordance with the child's development; through new knowledge and skills. Children's play is at the core of our activities; games, exercise and music, as well as working together bring joy to a child's everyday life. Childhood is unique. We are looking for an early childhood education teacher to join us in our Kallislahti unit for a temporary position for the period 1 August 2026-31 May 2027. As an early childhood education teacher, we expect good and versatile cooperation, interaction and work community skills from you, as well as a willingness to develop.",
+        "what_we_expect": [
+          "Working time: 38.15h/week.",
+          "Eligibility requirement: Eligibility according to § 26 of the Early Childhood Education Act (540/2018).",
+          "Local standard salary: €2989.31/month.",
+          "Collective agreement: OVTES.",
+          "Please provide more information."
+        ],
+        "job_responsibilities": [
+          "Early childhood education teacher.",
+          "Working time: 38.15h/week.",
+          "Eligibility requirement: Eligibility according to § 26 of the Early Childhood Education Act (540/2018)."
+        ],
+        "what_we_offer": [
+          "Working time: 38.15h/week.",
+          "Eligibility requirement: Eligibility according to § 26 of the Early Childhood Education Act (540/2018).",
+          "Local standard salary: €2989.31/month.",
+          "Collective agreement: OVTES.",
+          "Please provide more information."
+        ],
+        "search_keywords": "Senior Early Childhood Educator Savonlinnan kaupunki Savonlinna other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
     "scrape_timestamp": "2026-05-01 13:32:40",
     "jobs": [
       {
@@ -37404,6 +37510,113 @@
         "search_keywords": "Basic education lecturer Kajaanin kaupunki Kajaani other",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "b45aa339",
+        "job_id": "ikkunanpesijätstäväksi-hattula-b45aa339",
+        "processed": true,
+        "title": "Ikkunanpesijätstäväksi",
+        "company": "Visio Henkilöstöratkaisut Pirkanmaa Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Hattula",
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://visiohr.likeit.fi/apply/57561378",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a3d6e6ca-2571-45fe-a2ee-82076c0af0d4/en",
+        "job_employer_email": "wilma.niskanen@visiohr.fi",
+        "job_employer_name": "Wilma Niskanen",
+        "job_employer_phone_no": "050 391 3188",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/ikkunanpesijätstäväksi-hattula-b45aa339",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-13",
+        "scraped_at": "2026-05-01 13:32:40",
+        "open_positions": 1,
+        "salary_range": "Pay €12.26-12.88/h based on the collective agreement in the real estate service industry, taking into account your previous window washing experience and skills.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Ikkunanpesijätstäväksi job in Hattula? Visio Henkilöstöratkaisut Pirkanmaa Oy is seeking motivated candidates—apply today.",
+        "description": "We are looking for window cleaners in the Hämeenlinna area. Job description In the job duties, you get to wash the windows of public buildings such as schools. We have work sites all over Hämeenlinna, so it's good to have your own car to get around. The works will start at the beginning of June and last until about mid-August. We work during the day during the weekdays, so you can spend the evenings and weekends with good weather. To apply for this position, you must have: Good basic fitness - we offer daily steps and a physical job description. Agility and a self-initiated approach to work. Previous experience is a plus, but in this job it's the attitude that counts - you will learn things if you have the right motivation! What do we offer? Varied working days in various cleaning tasks.",
+        "what_we_expect": [
+          "To apply for this position you must have.",
+          "To apply for this position you must have.",
+          "As a visionary, you will get this job."
+        ],
+        "job_responsibilities": [
+          "Facility cleaner.",
+          "Ikkunanpesijät.",
+          "Huonekalujen siistijä."
+        ],
+        "what_we_offer": [
+          "Agility and a self-initiated approach to work.",
+          "Previous experience is a plus, but in this job it's the attitude that counts - you will learn things if you have the right motivation!",
+          "Varied working days in various cleaning tasks.",
+          "A pleasant working group to round off the working days.",
+          "Work that you can immediately see as cleanliness.",
+          "Vision's employee promise."
+        ],
+        "search_keywords": "Ikkunanpesijätstäväksi Visio Henkilöstöratkaisut Pirkanmaa Oy Hattula other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "585959c0",
+        "job_id": "senior-lead-npi-engineer-ylöjärvi-585959c0",
+        "processed": true,
+        "title": "Senior Lead NPI Engineer",
+        "company": "Academic Work Finland Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Ylöjärvi",
+          "Kangasala",
+          "Urjala",
+          "Nokia",
+          "Pirkkala",
+          "Tampere",
+          "Mänttä-Vilppula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/JOTTYY",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f633edaa-cb8f-4fe8-8c0a-937f2db5575c/en",
+        "job_employer_email": "tre01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/senior-lead-npi-engineer-ylöjärvi-585959c0",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-30",
+        "scraped_at": "2026-05-01 13:32:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Senior Lead NPI Engineer at Academic Work Finland Oy, located in Ylöjärvi. Apply now and get started.",
+        "description": "We are looking for a Senior Lead NPI Engineer at Academic Work Finland Oy, focusing on advanced semiconductor valve technology for their global FACTS team. This role involves ensuring the high quality and technical integrity of products like STATCOM VSC. You will drive innovation in power electronics through close collaboration with R&D, system design, and tendering teams. Our client offers a true vantage point into the future trends of electrical engineering and power electronics, providing opportunities for technical excellence and meaningful work towards sustainable global futures. This role is permanent and comes with competitive hourly wages based on Finnish collective agreements. You will be part of a community that supports professional growth and values innovative thinking.",
+        "what_we_expect": [
+          "Close collaboration with R&D, system design, and tendering teams.",
+          "Develop into an internationally recognized expert in a role where technical excellence meets meaningful work for a sustainable global future.",
+          "Leading the design of control applications and developing new features in New Product Introduction (NPI) projects."
+        ],
+        "job_responsibilities": [
+          "Leading the design of control applications and developing new features in New Product Introduction (NPI) projects.",
+          "Designing and managing simulation environments and test automation.",
+          "Conducting research and development in the field of FACTS control architectures and system design."
+        ],
+        "what_we_offer": [
+          "A true vantage point into the future trends of electrical engineering and power electronics.",
+          "Opportunity to develop into an internationally recognized expert in a role where technical excellence meets meaningful work for a sustainable global future.",
+          "Leading the design of control applications and developing new features in New Product Introduction (NPI) projects."
+        ],
+        "search_keywords": "Senior Lead NPI Engineer Academic Work Finland Oy Ylöjärvi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
       }
     ]
   },
@@ -40105,12 +40318,491 @@
           "More information is provided by."
         ],
         "what_we_offer": [
-          "More information is provided by.",
           "More information is provided by."
         ],
         "search_keywords": "Senior Healthcare Assistant Siu työterveys Oy Joensuu other",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:33:13",
+    "jobs": [
+      {
+        "id": "6ec924de",
+        "job_id": "work-ability-coordinator-kuopio-6ec924de",
+        "processed": true,
+        "title": "Work Ability Coordinator",
+        "company": "Rikosseuraamuslaitos",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://valtiolle.fi/tyoavain/20997/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/70e8eba1-3d26-4460-bb48-35b45a92ceec/en",
+        "job_employer_email": "tarja.kovalainen@om.fi",
+        "job_employer_name": "Tarja Kovalainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/work-ability-coordinator-kuopio-6ec924de",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-12",
+        "scraped_at": "2026-05-01 13:33:13",
+        "open_positions": 1,
+        "salary_range": "4035 - 4547 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Rikosseuraamuslaitos as a Special expert, work ability coordinator (Personnel service unit) in Kuopio.",
+        "description": "We are seeking a dedicated work ability coordinator to join our Personnel Service Unit in Kuopio. This role is pivotal in supporting the development and management of work ability, safety, and well-being for administrative and support services within Human Resources. The successful candidate will contribute to national occupational health care cooperation by drafting contracts and guidelines. Our team at the Criminal Sanctions Institute is committed to preventing recidivism through respect for human dignity and justice, operating in the Ministry of Justice's administration and part of the criminal justice chain. This position offers a competitive salary range of 4035 - 4547 €/kk, with opportunities for continuous growth within our dynamic organization.",
+        "what_we_expect": [
+          "Enthusiasm about supporting work ability management and its development.",
+          "Qualifications, skills, experience, certifications, or requirements.",
+          "For more information, please contact."
+        ],
+        "job_responsibilities": [
+          "Support work ability management and development for the area of responsibility in administrative and support services.",
+          "Drafting contracts and guidelines related to national occupational health care cooperation.",
+          "For more information, please contact."
+        ],
+        "what_we_offer": [
+          "Concrete benefits such as salary, working conditions, or perks.",
+          "Another benefit.",
+          "For more information, please contact."
+        ],
+        "search_keywords": "work ability coordinator, administrative support services, human resources service unit, criminal justice chain, community punishment offices",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "fa134327",
+        "job_id": "oral-hygienist-lempäälä-lempäälä-fa134327",
+        "processed": true,
+        "title": "Oral hygienist, Lempäälä",
+        "company": "Pirkanmaan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lempäälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/Pirha-01-2637-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8cd5cd01-6bd1-4f12-93c7-d781dc8e011d/en",
+        "job_employer_email": "etunimi.sukunimi@pirha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/oral-hygienist-lempäälä-lempäälä-fa134327",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-05-01 13:33:13",
+        "open_positions": 1,
+        "salary_range": "Job-specific salary: €3,054.50/month.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Pirkanmaan hyvinvointialue as a Suuhygienisti, Lempäälä and grow your career in Lempäälä. Check details and apply now.",
+        "description": "More than 500 oral health care professionals in the Pirkanmaa welfare area work as Lempäälä dental hygienists: oral health checks for school-aged children, anti-infective treatment and supporting the oral health of elderly customers. We offer interesting work in a skilled and multi-professional work community, good oral and written Finnish language skills, flexibility, a positive and active work attitude, a willingness to develop and good interaction and cooperation skills. The work is full-time work and the form of working time is general working time. The probationary period is half of the duration of the employment relationship, and you can apply for the position if you have a dental hygienist AMK degree or a similar previous degree.",
+        "what_we_expect": [
+          "We require the approved completion of the LOVe online test for medical treatment. If necessary, you can update your knowledge of medical treatment with us before starting the employment relationship.",
+          "We offer you.",
+          "More information about the task.",
+          "Sijaisuus on ajalle: 19.5.2026-30.3.2027.",
+          "The work is full-time work and the form of working time is general working time. The probationary period is half of the duration of the employment relationship."
+        ],
+        "job_responsibilities": [
+          "Suuhygienisti.",
+          "We offer you."
+        ],
+        "what_we_offer": [
+          "Interesting work in a competent and multi-professional work community.",
+          "The opportunity to utilize your skills in a wide range of areas and develop both yourself and your work.",
+          "The possibility of continuous competence maintenance and development through internal training.",
+          "The support of an encouraging, professional and enthusiastic multi-professional team.",
+          "Naturally, working days include breaks during work holidays, lunch is served flexibly during working hours.",
+          "You can apply for a position if you have a dental hygienist AMK degree or a similar previous degree. In addition, for the task you need good oral and written Finnish language skills."
+        ],
+        "search_keywords": "More than 500 professionals work in the health care of Pirkanmaa, the well-being area, suun, providing services at different stages of life, for Lempäälä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "ecd74b84",
+        "job_id": "garbage-truck-driver-temporary-porvoo-ecd74b84",
+        "processed": true,
+        "title": "Garbage truck driver, temporary",
+        "company": "Verdis Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Porvoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://jobilla.talentadore.com/apply/jateautonkuljettaja-maaraaikainen/Z70X13",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1aad6d76-9f62-4e46-a23d-571f1338ed63/en",
+        "job_employer_email": "josi.nyrhivaara@verdis.fi",
+        "job_employer_name": "Josi Nyrhivaara",
+        "job_employer_phone_no": "041 732 5522",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/garbage-truck-driver-temporary-porvoo-ecd74b84",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-09",
+        "scraped_at": "2026-05-01 13:33:13",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Waste truck driver, temporary at Verdis Oy in Porvoo. Apply now and take the next step in your career.",
+        "description": "The environmental sector is always hiring! Environmental workers play an important role in order for society to function in every situation. The industry offers opportunities to work for an important cause for all of us now and in the future. Our drivers get to work with modern equipment and use modern systems. Working hours are regular, leaving time for your own hobbies. We are looking for energetic drivers for the summer season! The duties include driving a packaging waste truck in the Porvoo area. The employment is fixed-term and full-time from 4 May to 27 September 2026. In the fall, there may be a chance for a permanent employment relationship. In addition to the C-card, the job requires a valid professional qualification and occupational safety card, as well as a good attitude and driving skills.",
+        "what_we_expect": [
+          "Käyttää ennakoivaa ajotapaa.",
+          "The environmental sector is always hiring!",
+          "Environmental workers play an important role in order for society to function in every situation."
+        ],
+        "job_responsibilities": [
+          "Garbage truck driver.",
+          "The environmental sector is always hiring!",
+          "Environmental workers play an important role in order for society to function in every situation."
+        ],
+        "what_we_offer": [
+          "The environmental sector is always hiring!",
+          "Environmental workers play an important role in order for society to function in every situation.",
+          "The industry offers opportunities to work for an important cause for all of us now and in the future.",
+          "Our drivers get to work with modern equipment and use modern systems.",
+          "Working hours are regular, leaving time for your own hobbies.",
+          "We are looking for energetic drivers for the summer season!"
+        ],
+        "search_keywords": "Garbage truck driver, temporary Verdis Oy Porvoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:33:14",
+    "jobs": [
+      {
+        "id": "3a0391a9",
+        "job_id": "packer-riihimäki-3a0391a9",
+        "processed": true,
+        "title": "Packer",
+        "company": "SOL Henkilöstöpalvelut Oy",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Riihimäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/pakkaaja/D4varl",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ec6e5fc6-6946-4abf-a28f-82dfc244c8b8/en",
+        "job_employer_email": "heidi.ignatius@sol.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0401393609",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/packer-riihimäki-3a0391a9",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-09",
+        "scraped_at": "2026-05-01 13:33:14",
+        "open_positions": 1,
+        "salary_range": "- Basic salary 1213 €/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "SOL Henkilöstöpalvelut Oy is looking for a skilled Packer in Riihimäki. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a skilled packager to join our team in Riihimäki, Finland. This position offers full-time employment with permanent continuity and a competitive salary of €1213 per hour. The ideal candidate will have experience in packaging products and be fluent in Finnish, English, and Swedish. Our work is primarily conducted in two shifts (Monday to Friday) but we also require part-time involvement on Saturdays. Located in Hirsimäen, Riihimäki, this position offers a safe working environment with proper ergonomics measures. We are SOL Henkilöstöpalvelut Oy, a Finnish company specializing in various services across Europe. Our team is dedicated to providing high-quality service and support for our clients while ensuring the well-being of all employees.",
+        "what_we_expect": [
+          "Tuotepakkausten vaatimukset.",
+          "Salary.",
+          "Basic salary €1213/h."
+        ],
+        "job_responsibilities": [
+          "Käsinpakkaaja.",
+          "Salary.",
+          "Basic salary €1213/h."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Basic salary €1213/h.",
+          "Evening supplement for the entire shift + €1.19/h on top of the hourly wage.",
+          "Night supplement for the entire shift + €2.18/h on top of the hourly wage.",
+          "[Read more about the responsibility of our operations and our story.](https://www.sol.fi/vastuullisuus/).",
+          "[Instructions for safe work](https://www.esitteemme.fi/SOL/MailView/)."
+        ],
+        "search_keywords": "puutuotteiden pakkaaminen, ympäristö, astma/tuplaallergia, suomen kielessä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "e26ebb4f",
+        "job_id": "bartenders-and-waiters-kuunari-elinaa-joensuu-joensuu-kuopio-e26ebb4f",
+        "processed": true,
+        "title": "Bartenders and waiters Kuunari Elinaa, Joensuu, Joensuu",
+        "company": "Bolt.Works Oy, Helsinki",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kuopio",
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=1871654",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e9415cbe-b4ea-4f68-adbd-d0816d951646/en",
+        "job_employer_email": "arttu.kokkonen@bolt.works",
+        "job_employer_name": "Arttu Kokkonen",
+        "job_employer_phone_no": "+358505236596",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/bartenders-and-waiters-kuunari-elinaa-joensuu-joensuu-kuopio-e26ebb4f",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-21",
+        "scraped_at": "2026-05-01 13:33:14",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Bolt.Works Oy, Helsinki as a Bartenders and waiters Kuunari Elinaa, Joensuu, Joensuu in Kuopio.",
+        "description": "Bolt.Works Oy is seeking energetic and customer service-oriented barista, baarimestari, and cocktail-baarimestari candidates for the upcoming summer in Kuunari Elinaan, Joensuu. The company provides a competitive hourly wage based on Finnish collective agreements. Applicants must be fluent in Finnish. Responsibilities include preparing drinks, providing excellent customer service, and handling orders efficiently. Benefits include a well-rounded salary package, flexible working hours, and opportunities for growth within the team. This position is available from June to December, with employees starting work at 12:00 PM daily. The company offers a range of benefits including health insurance, paid vacation time, and professional development opportunities.",
+        "what_we_expect": [
+          "Bolttilaisena sinulle kuuluvat.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "Barista.",
+          "Baarimestari.",
+          "Cocktail-baarimestari."
+        ],
+        "what_we_offer": [
+          "Bolttilaisena sinulle kuuluvat.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "Bartenders and waiters Kuunari Elinaa, Joensuu, Joensuu Bolt.Works Oy, Helsinki Kuopio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:33:15",
+    "jobs": [
+      {
+        "id": "6fd37676",
+        "job_id": "physician-kouvola-6fd37676",
+        "processed": true,
+        "title": "Physician",
+        "company": "Sofita Oy, Helsinki",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://sofita.teamtailor.com/jobs/7664394-yleislaakari",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6015b169-f8c2-4b60-9642-ac6468b7f688/en",
+        "job_employer_email": "niina.piranen@sofita.fi",
+        "job_employer_name": "Niina Piranen",
+        "job_employer_phone_no": "0449016024",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/physician-kouvola-6fd37676",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-14",
+        "scraped_at": "2026-05-01 13:33:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Sofita Oy, Helsinki is hiring a Physician in Kouvola. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a qualified general practitioner to join our team in Kouvola, Finland. This position offers competitive hourly wages based on Finnish collective agreements and provides comprehensive benefits including saumattoman support from experienced colleagues who ensure that work practices are conducted efficiently. The role involves providing care to patients with various needs, including mental health services. You will also benefit from ongoing training opportunities and a flexible salary package. Sofita is committed to creating an inclusive environment where professionals can thrive and contribute their skills effectively. If you have a background in medicine, particularly in family medicine, and are passionate about patient care, we encourage you to apply.",
+        "what_we_expect": [
+          "Bachelor's degree in nursing or related field.",
+          "Current license as a registered nurse (RN).",
+          "Odotamme sinulta."
+        ],
+        "job_responsibilities": [
+          "Provide care and support to individuals with disabilities.",
+          "Lääkäri Tule mukaan Sofitan ihmisläheiseen tiimiin!"
+        ],
+        "what_we_offer": [
+          "Competitive salary and benefits package.",
+          "Professional development opportunities.",
+          "We offer you."
+        ],
+        "search_keywords": "Physician Sofita Oy, Helsinki Kouvola other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:33:16",
+    "jobs": [
+      {
+        "id": "a5e3c647",
+        "job_id": "structural-engineer-raisio-a5e3c647",
+        "processed": true,
+        "title": "Structural Engineer",
+        "company": "WE Rekry Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Raisio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://werekry.likeit.fi/apply/4884350",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e7f087d4-008d-45a4-bbd4-eb525ca20315/en",
+        "job_employer_email": "mira.holmaranta@werekry.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/structural-engineer-raisio-a5e3c647",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-27",
+        "scraped_at": "2026-05-01 13:33:16",
+        "open_positions": 1,
+        "salary_range": "The salary is €14-18/h depending on your skills and experience.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with WE Rekry Oy as a Structural Engineer in Raisio. Learn more about the role and apply now.",
+        "description": "WE Rekry Oy is seeking a Structural Engineer based in Raisio, Finland. This full-time position offers permanent employment with an average salary ranging from €14 to €18 per hour based on qualifications and experience. The role requires proficiency in reading technical drawings and standard reports while working closely with the team to ensure projects are executed according to specifications. A minimum of 6-8 weeks of continuous work is expected, along with opportunities for continued involvement in other company projects after joining WE Rekry. The position also offers a competitive hourly rate of €14-18 per hour and comes with benefits such as health insurance, paid time off, and the chance to work in a dynamic Finnish environment.",
+        "what_we_expect": [
+          "You can read technical drawings and master basic measurements on the job site.",
+          "Tehtäviisi kuuluu esimerkiksi.",
+          "Installation works of the sewer network and pipelines."
+        ],
+        "job_responsibilities": [
+          "Civil engineering support worker.",
+          "Tehtäviisi kuuluu esimerkiksi.",
+          "Installation works of the sewer network and pipelines."
+        ],
+        "what_we_offer": [
+          "Pitkäkestoinen projekti, arviolta 6-8 kuukautta.",
+          "Mahdollisuus jatkaa tämän jälkeen yrityksen muissa projekteissa.",
+          "Work in a stable Finnish company.",
+          "Aloitus sopimuksen mukaan toukokuun aikana.",
+          "The salary is €14-18/h depending on your skills and experience.",
+          "It's worth applying, even if you don't fully fulfill every wish. The right attitude and the spirit of doing practical things weigh a lot in this job."
+        ],
+        "search_keywords": "Structural Engineer WE Rekry Oy Raisio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "39af6fef",
+        "job_id": "psychiatric-nurse-specialist-jyväskylä-39af6fef",
+        "processed": true,
+        "title": "Psychiatric Nurse Specialist",
+        "company": "Keski-Suomen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/723111/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/64b7dcb5-6c5b-4446-8dec-ef23e343130a/en",
+        "job_employer_email": "merja.ettanen@hyvaks.fi",
+        "job_employer_name": "Merja Ettanen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/psychiatric-nurse-specialist-jyväskylä-39af6fef",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-05-01 13:33:16",
+        "open_positions": 1,
+        "salary_range": "Sote-sopimus",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Psychiatric Nurse Specialist at Keski-Suomen hyvinvointialue. Great opportunity in Jyväskylä—apply now.",
+        "description": "We are looking for summer substitutes for May-September. The six psychiatric treatment departments for adults are closed departments, where they operate on the basis of treatment models coordinated with the reception services, taking into account the stage and frequency of the patient's illness, as well as the first time. Ward C7 is a closed acute care ward (12 ss), whose mission is to investigate and treat psychotic-level mental health disorders. Ward J7 is a closed acute care ward (7 ss), whose task is to examine and treat demanding psychotic-level mental health disorders. We work collaboratively and flexibly in the psychiatry service area as part of a diverse and extensive work community.",
+        "what_we_expect": [
+          "We require suitability according to Section 48 of the Infectious Diseases Act (chicken pox and measles). Regarding influenza and pertussis vaccination, the employer determines the need.",
+          "You can work as our summer colleague.",
+          "I'm happy to provide more information, ask for more."
+        ],
+        "job_responsibilities": [
+          "Nurse.",
+          "You can work as our summer colleague.",
+          "I'm happy to provide more information, ask for more."
+        ],
+        "what_we_offer": [
+          "You can work as our summer colleague.",
+          "I'm happy to provide more information, ask for more."
+        ],
+        "search_keywords": "Psychiatric Nurse Specialist Keski-Suomen hyvinvointialue Jyväskylä other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:33:17",
+    "jobs": [
+      {
+        "id": "5dc5d5ab",
+        "job_id": "senior-educator-mikkeli-5dc5d5ab",
+        "processed": true,
+        "title": "Senior Educator",
+        "company": "Mikkelin kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Mikkeli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/723043/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/03f7bbcd-c8a7-4fb4-bcb3-1da2cd90986e/en",
+        "job_employer_email": "jari.luukkonen@sivistys.mikkeli.fi",
+        "job_employer_name": "Jari Luukkonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/senior-educator-mikkeli-5dc5d5ab",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-05-01 13:33:17",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Senior Educator role at Mikkelin kaupunki. Join a growing team and build your career in Mikkeli.",
+        "description": "The applicant is required to have a teacher's qualification according to regulation 986/1998. A teacher teaching basic education or pre-primary education must have excellent oral and written skills in the school's language of instruction. The candidate is expected to have an interest and versatile skills in teaching and school development, a desire for development and cooperation, and the courage to tackle new things. The City of Mikkeli offers an annual exercise, cultural and wellness benefit with Epass as a personnel benefit and a comprehensive training offer. Apply for the position using an electronic application form by the deadline of May 15, 2026 at 3:00 p.m. via the Kuntarekry.fi service. Diplomas and a certificate of eligibility must be attached to the application as a pdf file.",
+        "what_we_expect": [
+          "The applicant is required to have a teacher's qualification according to regulation 986/1998.",
+          "A teacher teaching basic education or pre-primary education must have excellent oral and written skills in the school's language of instruction.",
+          "The City of Mikkeli offers an annual exercise, cultural and wellness benefit with Epass as a personnel benefit and a comprehensive training offer.",
+          "Diplomas and a certificate of eligibility must be attached to the application as a pdf file.",
+          "Criminal background check for those working with children)."
+        ],
+        "job_responsibilities": [
+          "Special teacher, primary school lower classes.",
+          "The applicant is required to have a teacher's qualification according to regulation 986/1998.",
+          "A teacher teaching basic education or pre-primary education must have excellent oral and written skills in the school's language of instruction."
+        ],
+        "what_we_offer": [
+          "The applicant is required to have a teacher's qualification according to regulation 986/1998.",
+          "A teacher teaching basic education or pre-primary education must have excellent oral and written skills in the school's language of instruction.",
+          "The City of Mikkeli offers an annual exercise, cultural and wellness benefit with Epass as a personnel benefit and a comprehensive training offer.",
+          "Diplomas and a certificate of eligibility must be attached to the application as a pdf file.",
+          "Criminal background check for those working with children)."
+        ],
+        "search_keywords": "Senior Educator Mikkelin kaupunki Mikkeli other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
       }
     ]
   },
