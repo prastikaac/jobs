@@ -6,6 +6,12 @@ Reads rawjobs.json and processing_state.json and runs:
   Phase 3 — AI Formatting : Ollama formats translated text → structured extraction
   Phase 4 — Job Formatter : Python locks factual fields + builds final jobs
   Phase 5 — Site Gen      : HTML pages, images, Firebase alerts
+
+Resume flags:
+  (default)      — Resume from Phase 2 (Translation) onward
+  --ai-only      — Resume from Phase 3 (AI Formatting) onward, skip Translation
+  --format-only  — Resume from Phase 4 (Job Formatter) onward, skip Translation + AI
+  --html-only    — Phase 5 (Site Gen) only, re-render HTML from existing formatted jobs
 """
 
 import argparse
@@ -324,6 +330,74 @@ def _load_phase2_input_jobs(raw_jobs: list[dict], ai_only: bool) -> list[dict]:
     return raw_jobs
 
 
+def cmd_format_only() -> None:
+    """Phase 4+5: run Job Formatter on all AI-processed jobs, then regenerate HTML/sitemap.
+
+    Use this to resume the pipeline after Phase 3 (AI Formatting) completed.
+    Reads translated_raw_jobs.json, finds jobs not yet in formatted_jobs_flat.json,
+    runs Job_formatter (Phase 4) on them, then rebuilds the full site (Phase 5).
+    """
+    translated_raw_jobs = jobs_store.load_translated_raw_jobs()
+    if not translated_raw_jobs:
+        logger.error("--format-only: No AI-processed jobs found in translated_raw_jobs.json. Run Phase 3 first.")
+        return
+
+    processing_state = rawjobs_store.load_processing_state()
+    existing_jobs = jobs_store.load_formatted_jobs_flat()
+    if not existing_jobs:
+        existing_jobs = jobs_store.load_jobs()
+
+    # Find jobs that are AI-processed but not yet formatted
+    already_formatted_ids = {j.get("id") for j in existing_jobs if j.get("id")}
+    to_format = [
+        j for j in translated_raw_jobs
+        if processing_state.get(j.get("id"), {}).get("ai_processed", False)
+        and j.get("id") not in already_formatted_ids
+    ]
+
+    if not to_format:
+        logger.info("--format-only: All AI-processed jobs are already formatted. Re-generating HTML from existing data.")
+        all_jobs = existing_jobs
+    else:
+        logger.info("── Format-Only Mode: Running Job Formatter on %d unformatted AI-processed jobs ──", len(to_format))
+        newly_formatted = Job_formatter.format_jobs(to_format)
+        logger.info("  Job Formatter complete. Formatted: %d jobs", len(newly_formatted))
+
+        for job in newly_formatted:
+            Job_formatter.apply_manual_fixes(job)
+
+        all_jobs, new_jobs = jobs_store.merge_new_jobs(existing_jobs, newly_formatted)
+        logger.info("  Merged: %d new jobs added (total: %d)", len(new_jobs), len(all_jobs))
+
+    logger.info("── Format-Only Mode: Running Phase 5 (Site Generation) for %d total jobs ──", len(all_jobs))
+    image_generator.generate_images_for_jobs(all_jobs)
+    html_generator.generate_job_pages(all_jobs)
+    html_generator.update_main_pages(all_jobs)
+    html_generator.update_sitemap(all_jobs)
+    jobs_store.save_formatted_jobs_flat(all_jobs)
+    jobs_store.save_jobs(all_jobs)
+    logger.info("── Format-Only Mode complete. %d total jobs rendered. ──", len(all_jobs))
+
+
+def cmd_html_only() -> None:
+    """Phase 5 only: regenerate HTML/sitemap from already-formatted jobs, no AI or translation."""
+    all_jobs = jobs_store.load_formatted_jobs_flat()
+    if not all_jobs:
+        all_jobs = jobs_store.load_jobs()
+    if not all_jobs:
+        logger.error("--html-only: No formatted jobs found in formatted_jobs_flat.json or jobs.json. Run the full pipeline first.")
+        return
+
+    logger.info("── HTML-Only Mode: Regenerating site for %d jobs ──", len(all_jobs))
+    image_generator.generate_images_for_jobs(all_jobs)
+    html_generator.generate_job_pages(all_jobs)
+    html_generator.update_main_pages(all_jobs)
+    html_generator.update_sitemap(all_jobs)
+    jobs_store.save_formatted_jobs_flat(all_jobs)
+    jobs_store.save_jobs(all_jobs)
+    logger.info("── HTML-Only Mode complete. %d jobs rendered. ──", len(all_jobs))
+
+
 def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -> None:
     logger.info("=" * 60)
     logger.info("PIPELINE STARTED  (dry_run=%s, ai_only=%s)", dry_run, ai_only)
@@ -614,6 +688,14 @@ def main():
         help="Skip translation and only run AI processing + formatter + site generation",
     )
     parser.add_argument(
+        "--format-only", action="store_true",
+        help="Resume after Phase 3: run Job Formatter (Phase 4) + Site Gen (Phase 5) on AI-processed jobs",
+    )
+    parser.add_argument(
+        "--html-only", action="store_true",
+        help="Phase 5 only: re-render HTML/sitemap from existing formatted_jobs_flat.json",
+    )
+    parser.add_argument(
         "--reset-raw", action="store_true",
         help="Reset all raw jobs to untranslated/unprocessed before running",
     )
@@ -648,6 +730,14 @@ def main():
     )
 
     args = parser.parse_args()
+
+    if args.format_only:
+        cmd_format_only()
+        return
+
+    if args.html_only:
+        cmd_html_only()
+        return
 
     if args.check_expires:
         cmd_check_expires()
