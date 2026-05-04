@@ -1378,28 +1378,35 @@ body.drK #popupStep2 button.continue-btn:hover {
     /* Darker blue on hover */
 }
 
-/* Dark Mode Input Wrapper */
+/* Dark Mode Input Wrapper — unified pill container, no double border */
 body.drK #popupStep2 .input-wrapper {
-    background-color: #333;
-    /* Dark background for inputs */
-    border: 1px solid #444;
-    /* Dark border */
+    background-color: #3a3a3a;
+    border: 1px solid #4a4a4a;
+    border-radius: 28px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+body.drK #popupStep2 .input-wrapper:focus-within {
+    border-color: #4a90e2;
+    background-color: #424242;
 }
 
 body.drK #popupStep2 input[type="email"] {
-    background-color: #555;
-    /* Dark input field background */
-    border: 1px solid #444;
-    /* Dark border */
+    background-color: transparent;
+    border: none;
+    outline: none;
     color: #fff;
     /* White text for input */
 }
 
+body.drK #popupStep2 input[type="email"]::placeholder {
+    color: #999;
+}
+
 body.drK #popupStep2 input[type="email"]:focus {
-    border-color: #4a90e2;
-    /* Highlight border on focus */
-    background-color: #666;
-    /* Slightly lighter input background */
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 /* Icon inside input */

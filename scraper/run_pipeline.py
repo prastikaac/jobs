@@ -330,6 +330,25 @@ def _load_phase2_input_jobs(raw_jobs: list[dict], ai_only: bool) -> list[dict]:
     return raw_jobs
 
 
+_AI_DATA_FIELDS = {
+    "title", "description", "formatted_description", "meta_description",
+    "job_responsibilities", "what_we_expect", "what_we_offer",
+    "search_keywords", "job_category", "job_location", "job_regions",
+}
+
+
+def _inject_ai_data(jobs: list[dict]) -> list[dict]:
+    """Wrap embedded AI fields back into an 'ai_data' sub-dict so that
+    Job_formatter.format_jobs() takes the correct branch (not the translate fallback)."""
+    result = []
+    for job in jobs:
+        j = dict(job)
+        if "ai_data" not in j:
+            j["ai_data"] = {k: j[k] for k in _AI_DATA_FIELDS if k in j}
+        result.append(j)
+    return result
+
+
 def cmd_format_only() -> None:
     """Phase 4+5: run Job Formatter on all AI-processed jobs, then regenerate HTML/sitemap.
 
@@ -358,16 +377,20 @@ def cmd_format_only() -> None:
     if not to_format:
         logger.info("--format-only: All AI-processed jobs are already formatted. Re-generating HTML from existing data.")
         all_jobs = existing_jobs
+        new_jobs_to_alert = []
     else:
         logger.info("── Format-Only Mode: Running Job Formatter on %d unformatted AI-processed jobs ──", len(to_format))
-        newly_formatted = Job_formatter.format_jobs(to_format)
+        # Inject ai_data so format_jobs() uses the correct branch (avoids translation fallback)
+        to_format_with_ai = _inject_ai_data(to_format)
+        newly_formatted = Job_formatter.format_jobs(to_format_with_ai)
         logger.info("  Job Formatter complete. Formatted: %d jobs", len(newly_formatted))
 
         for job in newly_formatted:
             Job_formatter.apply_manual_fixes(job)
 
-        all_jobs, new_jobs = jobs_store.merge_new_jobs(existing_jobs, newly_formatted)
-        logger.info("  Merged: %d new jobs added (total: %d)", len(new_jobs), len(all_jobs))
+        all_jobs, new_jobs_list = jobs_store.merge_new_jobs(existing_jobs, newly_formatted)
+        new_jobs_to_alert = newly_formatted
+        logger.info("  Merged: %d new jobs added (total: %d)", len(new_jobs_list), len(all_jobs))
 
     logger.info("── Format-Only Mode: Running Phase 5 (Site Generation) for %d total jobs ──", len(all_jobs))
     image_generator.generate_images_for_jobs(all_jobs)
@@ -376,6 +399,18 @@ def cmd_format_only() -> None:
     html_generator.update_sitemap(all_jobs)
     jobs_store.save_formatted_jobs_flat(all_jobs)
     jobs_store.save_jobs(all_jobs)
+
+    # Firebase alerts
+    try:
+        firebase_client.init_firebase()
+        alert_count = firebase_client.send_new_job_alerts(new_jobs_to_alert, dry_run=False)
+        logger.info("  Firebase alerts sent: %d", alert_count)
+    except Exception as exc:
+        logger.error("Firebase alert error: %s", exc)
+
+    # Git commit + push
+    _git_commit_and_push(message=f"Auto-update jobs [format-only] [+{len(new_jobs_to_alert)} new]")
+
     logger.info("── Format-Only Mode complete. %d total jobs rendered. ──", len(all_jobs))
 
 

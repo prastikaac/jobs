@@ -1,32 +1,28 @@
 # Job Aggregator Architecture
 
-This document outlines the complete architecture, data flow, and functional mechanisms of the Job Aggregator system. The system fetches jobs from multiple Finnish job boards, deduplicates them, translates them using Google Translate (via deep-translator), formats them using a local AI (LM Studio), and generates static HTML pages for a fast frontend experience.
+This document outlines the complete architecture, data flow, and functional mechanisms of the Job Aggregator system. The system fetches jobs from multiple Finnish job boards, deduplicates them, translates them using **Google Translate** (via deep-translator, online), formats them using a local AI (**LM Studio / qwen2.5**), and generates static HTML pages for a fast frontend experience.
 
 ---
 
 ## 1. System Overview
 
-The pipeline operates in a fully automated, scheduled loop, split into **four distinct phases**:
+The pipeline operates in a fully automated, scheduled loop, split into **five distinct phases**:
 
 ```
-┌───────────────┐   ┌───────────────────┐   ┌───────────────────┐   ┌────────────────────┐
-│  Phase 1      │──▶│  Phase 2          │──▶│  Phase 3          │──▶│  Phase 4           │
-│  SCRAPING     │   │  TRANSLATION      │   │  AI FORMATTING    │   │  SITE GENERATION   │
-│               │   │                   │   │                   │   │                    │
-│  Duunitori    │   │  Argos FI→EN      │   │  Rule-based cat   │   │  HTML pages        │
-│  Työmkturi    │   │  (offline)        │   │  + Ollama formats │   │  index/jobs.html   │
-│  Jobly        │   │                   │   │  structured JSON  │   │  sitemap-jobs.xml  │
-│               │   │  Translates:      │   │  Python locks     │   │  OG images         │
-│  → rawjobs    │   │  title+jobcontent │   │  factual fields   │   │  Firebase alerts   │
-│    .json      │   │  → translated_    │   │  → jobs.json      │   │                    │
-│               │   │    content field  │   │                   │   │  ↓ (background)    │
-│               │   │  → translated_    │   │                   │   │  Category post-    │
-│               │   │    jobs.json      │   │                   │   │  check (LM Studio) │
-└───────────────┘   └───────────────────┘   └───────────────────┘   └────────────────────┘
- run_scraper.py      job_translator.py        ai_processor.py          html_generator.py
-                     translate_raw_jobs()     format_translated_       image_generator.py
-                     run_phase2()             jobs()                   firebase_client.py
-                                                                        category_checker.py
+┌──────────────┐  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│  Phase 1     │─▶│  Phase 2        │─▶│  Phase 3        │─▶│  Phase 4         │─▶│  Phase 5         │
+│  SCRAPING    │  │  TRANSLATION    │  │  AI FORMATTING  │  │  JOB FORMATTER   │  │  SITE GENERATION │
+│              │  │                 │  │                 │  │                  │  │                  │
+│  Duunitori   │  │  Google Trans.  │  │  AI title fix   │  │  Locks factual   │  │  HTML pages      │
+│  Työmkturi   │  │  (online, via   │  │  Rule-based cat │  │  fields (Python) │  │  index/jobs.html │
+│  Jobly       │  │  deep-trans.)   │  │  LM Studio fmt  │  │  Builds job_id   │  │  sitemap.xml     │
+│              │  │                 │  │  structured JSON │  │  slug + URL      │  │  OG images       │
+│  →rawjobs    │  │  →translated_   │  │  →translated_   │  │  meta_desc       │  │  Firebase alerts │
+│   .json      │  │   raw_jobs.json │  │   raw_jobs.json │  │  →formatted_     │  │  Git commit+push │
+└──────────────┘  └─────────────────┘  └─────────────────┘  │   jobs_flat.json │  └──────────────────┘
+ run_scraper.py    job_translator.py    ai_processor.py       │  →jobs.json      │  html_generator.py
+                                       category_checker.py   └──────────────────┘  image_generator.py
+                                                             Job_formatter.py      firebase_client.py
 ```
 
 Automated via **Windows Task Scheduler** at specific intervals, ensuring fresh data flows onto the live site at `findjobsinfinland.fi`.
@@ -73,7 +69,7 @@ Scraping is orchestrated by `scraper/run_scraper.py`, using a centralized `Dedup
 
 ## 3. Phase 2: Translation (`job_translator.py`)
 
-**Purpose**: Translate all raw Finnish job text to English using Google Translate via deep-translator.
+**Purpose**: Translate all raw Finnish job text to English using **Google Translate via deep-translator** (online).
 
 **File**: `scraper/job_translator.py`
 
@@ -81,24 +77,21 @@ Scraping is orchestrated by `scraper/run_scraper.py`, using a centralized `Dedup
 1. `run_phase2()` is called by the pipeline.
 2. Scans all raw jobs for those missing a `translated_content` field.
 3. For each untranslated job, concatenates `title + jobcontent` into a single text block.
-4. Passes the text through `translator.translate_fi_to_en()` (Google Translator logic).
-5. Stores the result in the `translated_content` field on the raw job.
-6. Saves the updated `rawjobs.json` (with translations cached).
-7. **Saves `translated_jobs.json`** — a snapshot of the raw jobs with their translations, available for inspection before Phase 3.
+4. Passes text through `translator.translate_fi_to_en()` — chunked for Google's 4900-char limit.
+5. Stores result in `translated_content` field on the raw job.
+6. Saves updated `rawjobs.json` and **`translated_raw_jobs.json`** snapshot.
 
 ### Key Functions
 | Function | Purpose |
 |----------|--------|
 | `translate_raw_jobs(raw_jobs)` | Translates untranslated jobs, returns updated list |
-| `run_phase2(raw_jobs)` | Full Phase 2: translate + save to rawjobs.json + translated_jobs.json |
+| `run_phase2(raw_jobs)` | Full Phase 2: translate + save to rawjobs.json + translated_raw_jobs.json |
 
 ### Key Design Decisions
-- **Online**: Uses deep-translator to fetch translations via Google Translate API with built-in retries.
-- **Cached**: Once translated, the `translated_content` field persists across pipeline runs. Only new/untranslated jobs are processed.
-- **Decoupled**: Translation is completely separate from AI formatting. If the AI fails in Phase 3, the translation is still saved.
-- **Inspectable**: `translated_jobs.json` is written at the end of Phase 2 so you can verify translations before AI formatting.
+- **Online**: Google Translate via deep-translator with chunking (≤4900 chars) and retry/backoff.
+- **Cached**: `translated_content` persists across runs — only new/untranslated jobs are processed.
+- **Decoupled**: Translation saved independently of AI. AI failure in Phase 3 does not lose translations.
 - **Reset**: `--reset-raw` clears both `ai_processed` and `translated_content`, forcing full retranslation.
-- **Standalone**: Can be run independently: `python job_translator.py`
 
 ### Output
 The `translated_content` field is added to each raw job in `rawjobs.json`:
@@ -112,9 +105,9 @@ The `translated_content` field is added to each raw job in `rawjobs.json`:
 
 ---
 
-## 4. Phase 3: AI Formatting (`ai_processor.py`)
+## 4. Phase 3: AI Formatting (`ai_processor.py` + `category_checker.py`)
 
-**Purpose**: Take the pre-translated English text and format it into structured JSON fields using a local AI model (LM Studio), combined with Python for factual fields.
+**Purpose**: Take the pre-translated English text and format it into structured JSON fields using **LM Studio (qwen2.5-3b-instruct)**, combined with Python for factual fields. Factual field locking and final job assembly happens in Phase 4 (`Job_formatter.py`).
 
 **File**: `scraper/ai_processor.py`
 
@@ -277,100 +270,125 @@ The category verifier now runs **concurrently with AI Formatting** using a batch
 
 ---
 
-## 5. Phase 4: Site Generation
+## 5. Phase 4: Job Formatter (`Job_formatter.py`)
 
-### 5.1 HTML Generation (`html_generator.py`)
+**Purpose**: Take AI-formatted job data and produce the final clean job object with locked factual fields, slugged URLs, and sanitized lists.
+
+- **`format_jobs(jobs)`**: Main entry point. Calls `_build_formatted_job()` per job.
+- **`_build_formatted_job(raw, ai_data)`**: Builds the full job schema — locks company, location (via municipality code lookup), salary, links, dates. Generates `job_id` slug (`title-slug + loc-slug + hash`).
+- **`apply_manual_fixes(job)`**: Post-processing — title/company casing, image URL correction, meta description truncation.
+- **`sanitize_ai_output()`**: Validates AI list fields, fills gaps from raw content, enforces minimum 3 items per list.
+- **Municipality Code Resolver**: Converts numeric codes (e.g. `"091"`) to city names using `municipalities_codes.json`.
+- **Region Resolver**: Maps codes to `MAAKUNTANIMIFI` region names for `jobRegions` field.
+
+---
+
+## 6. Phase 5: Site Generation
+
+### 6.1 HTML Generation (`html_generator.py`)
 - **Job Pages**: Compiles `job_template.html` into individual `/jobs/{category-slug}/{job-id}/index.html` pages.
 - **Index Pages**: Updates `index.html` and `jobs.html` with job cards.
 - **Sitemap**: Updates `sitemap-jobs.xml` with all active job URLs.
 - **Dynamic Apply Links**: If `jobapply_link` is a `mailto:`, generates a pre-filled email template with subject and body.
-- **Location Attributes**: Extracts and slugifies location data for `data-location` attributes, expanding with regional (e.g., `uusimaa`) and national (`finland`) contexts.
+- **Location Attributes**: Extracts and slugifies location data for `data-location` attributes, with regional and national context.
 - **Recruiter Info**: Renders employer name, email, and phone on job pages with conditional display.
 
-### 5.2 Image Generation (`image_generator.py`)
+### 6.2 Image Generation (`image_generator.py`)
 - Generates category-specific OG/meta images for social media sharing.
 - Uses category-keyed image folders under `/images/jobs/{category-slug}/`.
 
-### 5.3 Firebase Alerts (`firebase_client.py`)
+### 6.3 Firebase Alerts (`firebase_client.py`)
 - Sends push notifications for new job listings to subscribed users.
 - Tracks sent alerts in `sent_alerts.json` to prevent duplicates.
 - Uses Firebase Admin SDK with `serviceAccountKey.json`.
 
 ---
 
-## 6. Data Stores
+## 7. Data Stores
 
 | File | Purpose | Written By |
 |------|---------|------------|
-| `rawjobs.json` | Raw Finnish jobs + `translated_content` | Phase 1 (scraper) + Phase 2 (`job_translator.py`) |
-| `translated_jobs.json` | After Phase 2: raw jobs with translations. After Phase 3: formatted English jobs. | Phase 2 (`job_translator.py`), then Phase 3 (`ai_processor.py`) overwrites |
-| `jobs.json` | Formatted English jobs, grouped by scrape session | Phase 3 (`ai_processor.py`) |
-| `sent_alerts.json` | Job IDs that have had Firebase alerts sent | Phase 4 (`firebase_client.py`) |
+| `rawjobs.json` | Raw Finnish jobs + `translated_content` | Phase 1 + Phase 2 |
+| `translated_raw_jobs.json` | Raw jobs with translations + AI-formatted fields | Phase 2 (translations), Phase 3 (AI fields) |
+| `processing_state.json` | Per-job state: translated, ai_processed, retry_count | Phase 2 + Phase 3 |
+| `formatted_jobs_flat.json` | Final formatted jobs — flat list | Phase 4 (`Job_formatter.py`) |
+| `jobs.json` | Final formatted jobs — session-grouped | Phase 4 (`Job_formatter.py`) |
+| `sent_alerts.json` | Job IDs that have had Firebase alerts sent | Phase 5 (`firebase_client.py`) |
 
 ---
 
-## 7. Pipeline Orchestration (`run_pipeline.py`)
+## 8. Pipeline Orchestration (`run_pipeline.py`)
 
 ### Execution Flow
 ```
-1. Load stores (rawjobs.json, jobs.json)
+1. Load stores (rawjobs.json, processing_state.json, formatted_jobs_flat.json)
 2. Reset if --reset-raw (clears ai_processed + translated_content)
 3. Sync category directories (underscore → hyphen)
-4. Expire old jobs (> EXPIRATION_DAYS)
+4. Expire old jobs (> EXPIRATION_DAYS = 60 days)
 ───────────────────────────────────
-5. PHASE 2: job_translator.run_phase2()
-   → Translate untranslated raw jobs (Argos, offline)
-   → Save rawjobs.json (with translated_content)
-   → Save translated_raw_jobs.json (raw + translations)
+5. PHASE 2: job_translator.run_phase2()  [skipped with --ai-only or --format-only]
+   → Google Translate untranslated raw jobs
+   → Save rawjobs.json + translated_raw_jobs.json
 ───────────────────────────────────
-6. Batched loop (25 jobs per iteration — PIPELINE_COMMIT_BATCH_SIZE):
+6. Batched loop (25 jobs/batch — PIPELINE_COMMIT_BATCH_SIZE) [skipped with --format-only]
 
    a. PHASE 3: ai_processor.format_translated_jobs(chunk)
-      → Submits determine_category() (Point-wise + LM Studio category selection) for all jobs into a background ThreadPool
-      → Main thread loops through jobs, calling _call_lm_studio_for_content() (LM Studio structures title, description, lists)
-      → Before moving to the next job, main thread waits for that job's category ThreadPool future to finish
-      → Python locks factual fields (company, location, salary, links)
-      → Finnish sweep safety net
-      → Returns fully finalized formatted jobs
+      → category_checker.determine_category() runs in background ThreadPool:
+          Step 0: format_job_title_with_ai() — LM Studio generates clean English title
+          Step 1: detect_category_by_keywords() — rule-based scoring
+          Step 2: LM Studio confirms or overrides the category
+      → Main thread calls _call_lm_studio_for_content() per job (structures description + lists)
+      → Waits for category future before finalizing each job
 
    b. PHASE 4: Job_formatter.format_jobs()
-      → Merges ai_data into final job schema (categories already corrected)
-      → Generates job_id slug (title + location + hash)
+      → sanitize_ai_output() validates and fills AI list fields
+      → _build_formatted_job() assembles final job schema
+      → Locks: company, location (municipality codes), salary, links, dates
+      → Generates job_id slug + jobUrl + image_url
+      → apply_manual_fixes() — casing, URL, meta_description
 
-   e. PHASE 5: Site generation
+   c. PHASE 5: Site generation
       → generate_images_for_jobs() — category stock images
-      → generate_job_pages()       — /jobs/{correct-cat}/{id}.html
+      → generate_job_pages()       — /jobs/{cat-slug}/{job-id}/index.html
       → update_main_pages()        — index.html, jobs.html
       → update_sitemap()           — sitemap-jobs.xml
       → save_formatted_jobs_flat() — formatted_jobs_flat.json
       → save_jobs()                — jobs.json
       → send_new_job_alerts()      — Firebase push notifications
-
-   f. Git commit + push (ONE push covers all of the above)
-      → New jobs + category corrections commit together
-      → Pushes to GitHub Pages (live site update)
+      → Git commit + push          — live site updated on GitHub Pages
 ```
 
-### CLI Commands
+### CLI Resume Commands (run from project root)
+| Command | Resumes From | Runs |
+|---------|-------------|------|
+| `python scraper/run_pipeline.py` | After Phase 1 (Scraping) | Phase 2+3+4+5 |
+| `python scraper/run_pipeline.py --ai-only` | After Phase 2 (Translation) | Phase 3+4+5 |
+| `python scraper/run_pipeline.py --format-only` | After Phase 3 (AI Formatting) | Phase 4+5 |
+| `python scraper/run_pipeline.py --html-only` | Force Phase 5 only | Phase 5 only |
+
+### All CLI Flags
 | Flag | Description |
 |------|-------------|
-| *(no flags)* | Full pipeline: Phase 2 + 3 + 4 |
+| *(no flags)* | Full pipeline: Phase 2→3→4→5 |
+| `--ai-only` | Skip Phase 2, resume from Phase 3 (AI already translated) |
+| `--format-only` | Skip Phase 2+3, run Phase 4+5 on AI-processed jobs |
+| `--html-only` | Phase 5 only: regenerate HTML from formatted_jobs_flat.json |
 | `--dry-run` | No disk writes, no AI/translation calls |
-| `--reset-raw` | Reset all raw jobs (retranslate + reformat), then run |
-| `--reset` | Nuclear: clear everything, reset raw + empty jobs.json |
+| `--reset-raw` | Reset all raw jobs to untranslated/unprocessed, then run |
+| `--reset` | Clear everything — reset raw + empty output stores |
 | `--fix-dates` | Fix title casing + Finnish date formats, regenerate HTML |
 | `--migrate` | One-time migration for category/date/salary/URL fixes |
 | `--patch-titles` | Replace known Finnish titles with English equivalents |
 | `--check-expires` | Print expiry stats for last 5 jobs |
 | `--check-db` | Print Firebase document count + first 10 IDs |
-| `--schedule` | Run pipeline now, then repeat every hour (blocking) |
+| `--schedule` | Run pipeline now, then repeat every 1 hour (blocking) |
 
 ---
 
-## 8. Translation Layer (`translator.py`)
+## 9. Translation Layer (`translator.py`)
 
-- Wraps `deep-translator` for Finnish → English translation over Google Translate.
-- Handles chunking for strings larger than 4900 characters due to Google limits.
+- Wraps `deep-translator` for Finnish → English translation over **Google Translate** (online).
+- Handles chunking for strings larger than **4900 characters** due to Google limits.
 - Features retry logic and backoff. Falls back to original text if translation fails completely.
 - Pre-processes text (removes excessive blank lines, unescapes HTML entities).
 
@@ -391,17 +409,17 @@ Fields exempt from Finnish detection (kept as-is):
 
 ## 10. Configuration (`config.py`)
 
-| Setting | Description |
-|---------|-------------|
-| `LM_STUDIO_MODEL` | `qwen2.5-coder-1.5b-instruct` (in ai_processor.py) |
+| Setting | Value / Description |
+|---------|--------------------|
+| `LM_STUDIO_MODEL` (category_checker) | `qwen2.5-3b-instruct` |
 | `LM_STUDIO_URL` | `http://localhost:1234/v1/chat/completions` |
 | `VALID_CATEGORIES` | Loaded from `all_jobs_cat.json` (30 broad functional categories) |
-| `CATEGORY_KEYWORDS` | Keyword-to-category mapping loaded from `job_categories.json`. Over 3000 keywords in FI and EN. |
-| `CITY_KEYWORDS` | All Finnish cities/districts for location detection |
-| `UUSIMAA_CITIES` | Capital region cities for regional filtering |
+| `CATEGORY_KEYWORDS` | Loaded from `job_categories.json` — 3000+ keywords (FI + EN) |
 | `MAX_PAGES` | Max scraping pages per site (default: 10) |
 | `AI_BATCH_SIZE` | Jobs per AI batch (default: 0 = unlimited) |
-| `EXPIRATION_DAYS` | Days before a job expires (default: 30) |
+| `PIPELINE_COMMIT_BATCH_SIZE` | Git commit+push every N processed jobs (default: 25) |
+| `EXPIRATION_DAYS` | Days before a job expires (default: **60**) |
+| `AI_MAX_RETRIES` | Max AI retries per job (default: 3) |
 | `GITHUB_PAGES_BASE_URL` | `https://findjobsinfinland.fi` |
 
 ---
@@ -434,9 +452,10 @@ JobsInFinland/
 │
 └── scraper/
     ├── run_scraper.py           # Phase 1: Scraper entrypoint
-    ├── run_pipeline.py          # Phases 2–5: Pipeline CLI + batch loop
-    ├── job_translator.py        # Phase 2: Argos FI→EN translation (offline)
-    ├── ai_processor.py          # Phase 3: AI formatting + factual fields
+    ├── run_pipeline.py          # Phases 2–5: Pipeline CLI + batch loop (--ai-only, --format-only, --html-only)
+    ├── job_translator.py        # Phase 2: Google Translate FI→EN (online, deep-translator)
+    ├── ai_processor.py          # Phase 3: LM Studio AI content formatting
+    ├── Job_formatter.py         # Phase 4: Final job assembly, factual field locking, slug generation
     ├── patch_salary.py          # Phase 3: Centralized salary extraction logic
     ├── translator.py            # deep-translator FI→EN wrapper (Google)
     ├── html_generator.py        # Phase 5: Static site builder
@@ -450,8 +469,8 @@ JobsInFinland/
     ├── job_template.html        # HTML template for job pages
     ├── all_jobs_cat.json        # Valid category list (source of truth, 30 categories)
     ├── job_categories.json      # Keyword dictionaries for rule-based scoring
-    ├── category_checker.py   # Background AI category verifier (post-batch)
-    ├── category_changer.py      # Manual category manager web UI + AI audit tool
+    ├── category_checker.py      # Phase 3: AI title formatter + rule-based + LM Studio category check
+    ├── offline_manual_category_changer.py  # Manual category manager (offline UI)
     │
     ├── scraper_tyomarkkinatori.py   # Phase 1: Työmarkkinatori module
     ├── scraper_duunitori.py         # Phase 1: Duunitori module

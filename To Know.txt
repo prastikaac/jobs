@@ -39,8 +39,16 @@ scraper\run_all_jobs.bat
 To run a job scrap test : python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
 
 
-After Phase 1 (Scraping) → cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py
+To do Phase 2, 3, 4, 5 after Phase 1 (Scraping) 
+→ cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py
 
-After Phase 2 (Translation) → cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --ai-only
 
-After Phase 3 (AI Formatting) → cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --format-only
+To do Phase 3, 4, 5 after Phase 2 (Translation) 
+→ cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --ai-only
+
+
+To do Phase 4, 5 after Phase 3 (AI Formatting) 
+→ cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --format-only
+
+To do Phase 5 after Phase 4 (Job Formatting) 
+→ cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --html-only

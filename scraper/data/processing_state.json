@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-04 21:25:39",
+  "updated_at": "2026-05-04 23:14:15",
   "jobs": {
     "9b630b5d": {
       "translated": true,
@@ -29188,6 +29188,116 @@
     "1f249d6e": {
       "translated": true,
       "translated_at": "",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "5d0ed692": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:06:23",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "68405308": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:06:46",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "cda5f1c7": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:07:08",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "d8621e59": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:07:31",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "53214e2a": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:07:54",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "7cafa696": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:08:17",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "d9e204fd": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:08:40",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "d8f02582": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:09:02",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "b9b15add": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:09:24",
+      "ai_processed": false,
+      "ai_status": "pending",
+      "retry_count": 0,
+      "max_retries": 3,
+      "ai_retry_needed": true,
+      "last_ai_error": "",
+      "formatted_at": ""
+    },
+    "3e2113d1": {
+      "translated": true,
+      "translated_at": "2026-05-04 23:09:47",
       "ai_processed": false,
       "ai_status": "pending",
       "retry_count": 0,
