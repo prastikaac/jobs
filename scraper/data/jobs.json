@@ -35812,6 +35812,60 @@
   },
 
   {
+    "scrape_timestamp": "2026-05-01 13:32:26",
+    "jobs": [
+      {
+        "id": "ea247fcd",
+        "job_id": "plumber-for-renovation-in-helsinki-helsinki-ea247fcd",
+        "processed": true,
+        "title": "Plumber for renovation in Helsinki",
+        "company": "Arsenaali Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/4934786",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b6f31779-dbd4-4c9d-b67b-f202c8dafd1d/en",
+        "job_employer_email": "hr@arsenaali.fi",
+        "job_employer_name": "Santeri Teerisuo",
+        "job_employer_phone_no": "050 304 0498",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/plumber-for-renovation-in-helsinki-helsinki-ea247fcd",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-01 13:32:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Arsenaali Oy is looking for a skilled Plumber in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "Arsenaali Oy is seeking a competent plumber for their renovation site in Helsinki. This position offers competitive hourly wages based on Finnish collective agreements, with ongoing employment potential. The ideal candidate should have experience in HVAC installation and bathroom framing, as well as knowledge of the Finnish language. Interested parties can apply directly via the provided link or by email to hr@arsenaali.fi. Arsenal is a reliable and modern employment agency that employs over 300 professionals daily in the Uusimaa area, offering an open and pleasant working environment focused on work completion.",
+        "what_we_expect": [
+          "Occupational safety card.",
+          "Knowledge of the Finnish language.",
+          "If you are ready to take on the challenge."
+        ],
+        "job_responsibilities": [
+          "Drainage, frame and bracing.",
+          "If you are ready to take on the challenge.",
+          "More information: Henri 050 375 4448, Santeri 050 304 0498."
+        ],
+        "what_we_offer": [
+          "Open and pleasant working atmosphere.",
+          "Reliable, solvent, modern employment agency.",
+          "If you are ready to take on the challenge."
+        ],
+        "search_keywords": "Plumber for renovation in Helsinki Arsenaali Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
+  },
+
+  {
     "scrape_timestamp": "2026-05-01 13:32:28",
     "jobs": [
       {
@@ -36214,6 +36268,150 @@
         "search_keywords": "berry vendor service counter berry vegetable seller summer jobs",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "3e867458",
+        "job_id": "stone-installer-stone-worker-tampere-3e867458",
+        "processed": true,
+        "title": "Stone Installer / Stone Worker",
+        "company": "Click Henkilöstöpalvelut Oy, Tampere",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.click-hp.fi/tyopaikat/23452",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9e7e846-2676-48fa-a1ee-94da0f48abe6/en",
+        "job_employer_email": "ilkka.seppa@click-hp.fi",
+        "job_employer_name": "Ilkka Seppä",
+        "job_employer_phone_no": "0504112705",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/stone-installer-stone-worker-tampere-3e867458",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-13",
+        "scraped_at": "2026-05-01 13:32:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Click Henkilöstöpalvelut Oy, Tampere as a Stone Installer and grow your career in Tampere. Check details and apply now.",
+        "description": "We are currently seeking a skilled stone installer for our reputable customer company in the green and environmental construction industry. This role involves installing stones across various locations including Tampere and surrounding areas. The successful candidate will be responsible for managing stone installation work independently, working 40 hours per week from 7:00 AM to 3:30 PM. The salary is based on experience, skills, and time worked. The assignment starts in mid-May with a fixed-term rental contract and runs until September. We offer professional attire, occupational health benefits, and high-quality service. Interested candidates should apply via the attached link or by email to Ilkka Sepä at Click Personnel Services.",
+        "what_we_expect": [
+          "Skills in stone installation.",
+          "Previous experience in environmental construction industry.",
+          "The task includes a lot of curbstone installation, but also other stonework."
+        ],
+        "job_responsibilities": [
+          "Curbstone installation and other stonework tasks.",
+          "Independent management of stone installation work.",
+          "The task includes a lot of curbstone installation, but also other stonework."
+        ],
+        "what_we_offer": [
+          "Work clothes provided.",
+          "Occupational health support.",
+          "High-quality and comfortable service."
+        ],
+        "search_keywords": "Stone Installer / Stone Worker Click Henkilöstöpalvelut Oy, Tampere Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      },
+      {
+        "id": "8b57f4ad",
+        "job_id": "truck-driver-for-parcel-distribution-mikkeli-8b57f4ad",
+        "processed": true,
+        "title": "Truck Driver for Parcel Distribution",
+        "company": "EST Henkilöstöpalvelut Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Mikkeli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://est.likeit.fi/apply/12852114",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6120ee36-ac5a-4198-b89b-fec9d6a59f75/en",
+        "job_employer_email": "kai.tillanen@estpalvelut.fi",
+        "job_employer_name": "Kai Tillanen",
+        "job_employer_phone_no": "0503275883",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/truck-driver-for-parcel-distribution-mikkeli-8b57f4ad",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-10",
+        "scraped_at": "2026-05-01 13:32:30",
+        "open_positions": 1,
+        "salary_range": "Salary according to the collective agreement in the truck industry. A truck driver's salary is determined by skills and experience. Starting salary €15.77/h (experience less than 4 years).",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Truck Driver role at EST Henkilöstöpalvelut Oy. Join a growing team and build your career in Mikkeli.",
+        "description": "EST Henkilöstöpalvelut Oy is seeking a fearless truck driver with experience in piece goods distribution, good customer service skills, precision, flexibility, and a valid C driving license to join their team. The position offers morning shift work from Monday to Friday, starting salary of €15.77/h (experience less than 4 years), and the ability to work independently is considered an advantage. This role will be based in Mikkeli and aligns with the collective agreement in the truck industry. Interested candidates should apply through the provided link by submitting their application.",
+        "what_we_expect": [
+          "Experience in piece goods distribution.",
+          "Good customer service skills.",
+          "What we expect from the applicant."
+        ],
+        "job_responsibilities": [
+          "Delivering parcels and performing pickups.",
+          "Working days are morning shift from Monday to Friday.",
+          "What we expect from the applicant."
+        ],
+        "what_we_offer": [
+          "Salary according to the collective agreement in the truck industry.",
+          "Starting salary €15.77/h (experience less than 4 years).",
+          "What we expect from the applicant."
+        ],
+        "search_keywords": "truck driver parcel delivery Mikkeli E-card ADR permit",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "c6187fb8",
+        "job_id": "demolition-helper-vantaa-c6187fb8",
+        "processed": true,
+        "title": "Demolition Helper",
+        "company": "Arsenaali Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/7106070",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b4cadff8-da99-4b08-88bd-f4ab6bffafd2/en",
+        "job_employer_email": "hr@arsenaali.fi",
+        "job_employer_name": "Santreri Teerisuo",
+        "job_employer_phone_no": "050 304 0498",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/demolition-helper-vantaa-c6187fb8",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-01 13:32:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Arsenaali Oy is hiring a Demolition Helper in Vantaa. Explore responsibilities, benefits, and apply today.",
+        "description": "We are seeking a Demolition Helper for Vantaa, Finland. This role involves carrying out small internal demolition tasks alongside an excavator driver. The successful candidate will hold an occupational safety card and be proficient in Finnish. Apply now by visiting our website at <http://arsenaali.likeit.fi/apply/7106070> or emailing hr@arsenaali.fi for more information. Arsenaali, a reputable employment agency with over 300 professionals in the Uusimaa area, offers an open and pleasant working environment focused on doing work.",
+        "what_we_expect": [
+          "Occupational safety card.",
+          "Knowledge of the Finnish language.",
+          "Or by e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>."
+        ],
+        "job_responsibilities": [
+          "Carry out small internal demolition work and act as a helper for the excavator driver.",
+          "Or by e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>.",
+          "More information: Santeri 050 304 0498."
+        ],
+        "what_we_offer": [
+          "Open and pleasant working atmosphere where doing work is the focus.",
+          "Or by e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>.",
+          "More information: Santeri 050 304 0498."
+        ],
+        "search_keywords": "Demolition Helper Arsenaali Oy Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
       }
     ]
   },
@@ -38069,6 +38267,516 @@
         "search_keywords": "Language and Culture Teacher in Early Childhood Education Kyrkslätts kommmun Kirkkonummi other",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "02b4e52d",
+        "job_id": "maintenance-fitter-helsinki-02b4e52d",
+        "processed": true,
+        "title": "Maintenance Fitter",
+        "company": "Bolt.Works Oy",
+        "job_category": "technical-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=1852881",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e4d734c5-1a89-4509-8907-0e8ab0f7aea9/en",
+        "job_employer_email": "oona.ansamaa@bolt.works",
+        "job_employer_name": "Oona Ansamaa",
+        "job_employer_phone_no": "+358409218326",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/maintenance-fitter-helsinki-02b4e52d",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-10",
+        "scraped_at": "2026-05-01 13:32:54",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with the task, your work ex",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bolt.Works Oy is hiring a Maintenance Fitter in Helsinki. Explore responsibilities, benefits, and apply today.",
+        "description": "Bolt.Works Oy is seeking experienced maintenance fitters for their Rautajärven Konehuolto Oy subsidiary in Nummela. This role involves handling a variety of tasks related to elevator and equipment maintenance, as well as earth-moving equipment upkeep. The position offers competitive hourly wages based on Finnish collective agreements and the opportunity for permanent employment with potential career advancement. Applicants are encouraged to apply quickly due to ongoing interest from prospective candidates during the application period.",
+        "what_we_expect": [
+          "Problem-solving ability, initiative, good attitude towards work.",
+          "Previous education does not matter; trained for the job.",
+          "Previous experience with machines (e.g., driver or repair tasks) and metal industry experience is an advantage.",
+          "Temporary employment relationship initially, then opportunity to become established at customer company."
+        ],
+        "job_responsibilities": [
+          "Maintain various elevators and special equipment in infrastructure sector.",
+          "Perform maintenance tasks for earth-moving equipment.",
+          "See more in the video! Https://youtu.be/gKHLgCnPLZ0."
+        ],
+        "what_we_offer": [
+          "Fair employer.",
+          "Great colleagues.",
+          "Good application in the industry.",
+          "Career options and paths available."
+        ],
+        "search_keywords": "maintenance fitter Rautajärven Konehuolto Oy Nummela Nummela",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "0daa6d1d",
+        "job_id": "construction-cleaner-turku-0daa6d1d",
+        "processed": true,
+        "title": "Construction Cleaner",
+        "company": "WE Rekry Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Turku",
+          "Raisio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://werekry.likeit.fi/apply/4884517",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ae306b52-8070-4710-8853-72e3c2088134/en",
+        "job_employer_email": "samuli.hurme@werekry.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-cleaner-turku-0daa6d1d",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-11",
+        "scraped_at": "2026-05-01 13:32:54",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Construction Cleaner role at WE Rekry Oy. Join a growing team and build your career in Turku.",
+        "description": "WE Rekry Oy is seeking a construction cleaner for their new site in Turku, Raisio. This role requires someone with a positive attitude and the ability to handle physical work while maintaining attention to detail. The ideal candidate will be able to act independently in changing situations and ensure that tasks are completed promptly and efficiently. They should have a valid occupational safety card and be available for weekdays from 7:00 a.m. to 5:30 p.m. Responsibilities include performing various building cleaning duties, coordinating construction site waste management, and assisting with general housekeeping.",
+        "what_we_expect": [
+          "A brisk attitude and ability to do physical work.",
+          "Care and attention to detail.",
+          "Upbeat and upbeat mood for doing things.",
+          "Ability to act independently in changing situations.",
+          "Valid occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Versatile building cleaning tasks, from rough cleaning to dust control.",
+          "Coordination and sorting of construction site waste management.",
+          "Surface protection and tasks assisting final cleaning.",
+          "General housekeeping and other assisting site chores as needed."
+        ],
+        "what_we_offer": [
+          "Long-term job opportunity in a stable environment.",
+          "Salary according to the TES of the construction industry, corresponding to your skills.",
+          "Relevant work equipment and background support so you can focus on what's important.",
+          "A good team, where things are handled directly and honestly."
+        ],
+        "search_keywords": "construction cleaner new site building cleaning",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "742647b8",
+        "job_id": "part-time-mathematics-teacher-kirkkonummi-742647b8",
+        "processed": true,
+        "title": "Part-time Mathematics Teacher",
+        "company": "Kyrkslätts kommun",
+        "job_category": "education",
+        "jobLocation": [
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.kuntarekry.fi/tyoavain/KIR-03-88-26/sv_SE",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1cf7c865-e942-43fd-8fb3-53b22bb80648/en",
+        "job_employer_email": "fornamn.efternamn@kirkkonummi.fi",
+        "job_employer_name": "Maria Riska",
+        "job_employer_phone_no": "0405633875",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/part-time-mathematics-teacher-kirkkonummi-742647b8",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-15",
+        "scraped_at": "2026-05-01 13:32:54",
+        "open_positions": 1,
+        "salary_range": "UKTA",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Build your future with Kyrkslätts kommun as a Part-time Mathematics Teacher in Kirkkonummi. Learn more about the role and apply now.",
+        "description": "Kyrkslätts kommun is seeking a part-time mathematics teacher with experience in upper grades and high school to join their talented and professional team of foster carers. The position offers an opportunity to teach physics and/or chemistry alongside mathematics, ensuring a comprehensive learning path for students from early childhood education through the end of the second stage. As a mathematics, physics, or chemistry teacher, you will contribute to creating a safe, inclusive, and motivating learning environment that supports students' well-being and academic growth. The school prioritizes continuous professional development and innovation within its educational system, providing numerous opportunities for growth and advancement.",
+        "what_we_expect": [
+          "Mathematics, Physics, or Chemistry qualifications.",
+          "Collaboration with school staff.",
+          "Within the education system, there is active and innovative know-how."
+        ],
+        "job_responsibilities": [
+          "Teach students in grades 7-9.",
+          "Plan and implement teaching.",
+          "Within the education system, there is active and innovative know-how."
+        ],
+        "what_we_offer": [
+          "Safe and motivating learning environment.",
+          "Professional development opportunities.",
+          "Within the education system, there is active and innovative know-how."
+        ],
+        "search_keywords": "mathematics physics chemistry teacher",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:32:55",
+    "jobs": [
+      {
+        "id": "64781009",
+        "job_id": "construction-workers-and-excavator-operators-hyvinkää-64781009",
+        "processed": true,
+        "title": "Construction workers and excavator operators",
+        "company": "Carrot Tampere Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/89940694",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/34e1e2c4-7a60-4a23-ad59-15cdefdbe28b/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0406899111",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-workers-and-excavator-operators-hyvinkää-64781009",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-01 13:32:55",
+        "open_positions": 1,
+        "salary_range": "Salary is determined according to the infrastru",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Construction workers and excavator operators role at Carrot Tampere Oy. Join a growing team and build your career in Hyvinkää.",
+        "description": "Carrot Tampere Oy is seeking earthworks workers and excavator operators for their client in Hyvinkää, Finland. This role involves working on cable installation projects across various sites within Pirkanmaa area. Candidates must have education or previous experience in construction industry tasks and be able to read pictures and use lasers. A valid work safety card, road safety card, and emergency EA card is required, but can be obtained through Carrot if necessary. The salary is determined based on skills and experience, with a competitive hourly wage according to Finnish collective agreements. Interested candidates should contact 040 689 9111 for more information or visit <http://www.carrot.fi/> to apply.",
+        "what_we_expect": [
+          "Education in the field or previous experience in versatile tasks in the construction industry.",
+          "Valid work safety card, road safety card, and emergency EA card (if necessary).",
+          "You can get more information about the task by calling 040 689 9111 on weekdays from 8:00 a.m. To 4:00 p.m."
+        ],
+        "job_responsibilities": [
+          "Work as part of a team with an excavator operator.",
+          "Read pictures and use lasers.",
+          "You can get more information about the task by calling 040 689 9111 on weekdays from 8:00 a.m. To 4:00 p.m."
+        ],
+        "what_we_offer": [
+          "Salary determined according to the infrastructure industry based on skills and experience.",
+          "Contact information for more details.",
+          "You can get more information about the task by calling 040 689 9111 on weekdays from 8:00 a.m. To 4:00 p.m."
+        ],
+        "search_keywords": "earthworks workers excavator operators Pirkanmaa cable installation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "743b05a7",
+        "job_id": "green-builder-for-vantaa-vantaa-743b05a7",
+        "processed": true,
+        "title": "Green builder for Vantaa",
+        "company": "Arsenaali Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/4711195",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c339ed6a-8058-4a81-900e-b4054f490dc5/en",
+        "job_employer_email": "hr@arsenaali.fi",
+        "job_employer_name": "Santeri Teerisuo",
+        "job_employer_phone_no": "050 304 0498",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/green-builder-for-vantaa-vantaa-743b05a7",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-01 13:32:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Arsenaali Oy is looking for a skilled Green builder for Vantaa in Vantaa. Don't miss this opportunity—apply today.",
+        "description": "Arsenaali Oy is seeking a GREEN BUILDER for their new development project in Vantaa, Finland. This role involves planting bushes and other yard work tasks with previous experience preferred. A valid occupational safety card and knowledge of Finnish language are required. The position offers competitive hourly wages based on Finnish collective agreements and comes with the opportunity to start as soon as a suitable candidate is found. For more information or to apply, contact Iiro at 040-169 9388 or Santeri at 050-304 0498. Arsenal is a reputable employment agency in Uusimaa that provides an open and pleasant working environment focused on doing work.",
+        "what_we_expect": [
+          "Previous experience in similar tasks.",
+          "Valid occupational safety card.",
+          "Knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Planting bushes and plants.",
+          "Yard work.",
+          "More information: Iiro 040 169 9388, Santeri 050 304 0498."
+        ],
+        "what_we_offer": [
+          "Open and pleasant working atmosphere.",
+          "Reliable, solvent, modern employment agency.",
+          "More information: Iiro 040 169 9388, Santeri 050 304 0498."
+        ],
+        "search_keywords": "green builder Vantaa job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "9c66d0af",
+        "job_id": "wheeled-excavator-driver-vantaa-9c66d0af",
+        "processed": true,
+        "title": "Wheeled Excavator Driver",
+        "company": "Arsenaali Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/6620527",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2fc868ce-70da-496f-a732-4ac5502a2c07/en",
+        "job_employer_email": "hr@arsenaali.fi",
+        "job_employer_name": "Santeri Teerisuo",
+        "job_employer_phone_no": "050 304 0498",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/wheeled-excavator-driver-vantaa-9c66d0af",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-01 13:32:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Wheeled Excavator Driver at Arsenaali Oy. Great opportunity in Vantaa—apply now.",
+        "description": "Arsenaali Oy is seeking a skilled Wheeled Excavator Driver for Vantaa, Finland. This role involves operating 10t and 16t wheeled excavators to perform tasks such as pipeline excavation and pre-filling. The ideal candidate should have experience driving these machines and related duties. Essential skills include 3D knowledge, an occupational safety card, and proficiency in the Finnish language. With a competitive hourly wage based on Finnish collective agreements, this position offers continuous employment starting immediately upon suitable hiring. Apply now by visiting <http://arsenaali.likeit.fi/apply/6620527> or emailing hr@arsenaali.fi for more information.",
+        "what_we_expect": [
+          "Experience in driving a wheeled machine and similar tasks.",
+          "Occupational safety card and knowledge of the Finnish language.",
+          "More information: Santeri 050 304 0498, Henri 050 375 4448."
+        ],
+        "job_responsibilities": [
+          "Driving a wheeled excavator for pipeline excavation, pre-filling, and other finishing works.",
+          "Performing tasks requiring 3D knowledge and an occupational safety card.",
+          "More information: Santeri 050 304 0498, Henri 050 375 4448."
+        ],
+        "what_we_offer": [
+          "Open and pleasant working atmosphere with a focus on doing work.",
+          "Reliable, solvent, and modern employment agency.",
+          "More information: Santeri 050 304 0498, Henri 050 375 4448."
+        ],
+        "search_keywords": "Wheeled Excavator Driver Arsenaali Oy Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "9e7cf397",
+        "job_id": "reinforcement-worker-for-pk-region-hyvinkää-9e7cf397",
+        "processed": true,
+        "title": "Reinforcement Worker for PK Region",
+        "company": "Arsenaali Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Hyvinkää",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/7429969",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ef79e11c-4fb2-41bb-bf56-198c60c49b3a/en",
+        "job_employer_email": "hr@arsenaali.fi",
+        "job_employer_name": "Santeri Teerisuo",
+        "job_employer_phone_no": "050 304 0498",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/reinforcement-worker-for-pk-region-hyvinkää-9e7cf397",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-01 13:32:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Arsenaali Oy as a Reinforcement Worker and grow your career in Hyvinkää. Check details and apply now.",
+        "description": "Arsenaali Oy is seeking a skilled rebar worker for their client REINFORCEMENT MAN in Vantaa. This position offers concrete building and formwork duties alongside rebar work, requiring experience, an occupational safety card, and knowledge of Finnish. The job starts as soon as the right candidate is found, with competitive hourly wages based on Finnish collective agreements. Apply by visiting <http://arsenaali.likeit.fi/apply/7429969> or contacting hr@arsenaali.fi for more information. Arsenal is a modern and solvent construction agency in the PK region that employs over 200 professionals, offering efficient and transparent work solutions to both employees and clients.",
+        "what_we_expect": [
+          "Experience in similar tasks.",
+          "Occupational safety card.",
+          "Knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Rebar work and, depending on your skills, also formwork and concrete work.",
+          "By e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Working conditions.",
+          "By e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>."
+        ],
+        "search_keywords": "Reinforcement Worker for PK Region Arsenaali Oy Hyvinkää other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "f848a867",
+        "job_id": "occupational-health-psychologist-joensuu-f848a867",
+        "processed": true,
+        "title": "Occupational Health Psychologist",
+        "company": "Siun työterveys Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://siunsote.rekrytointi.com/paikat/index.php?o=A_A&jid=10084&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/82e60dc3-ba96-4bcf-95fd-a8334b8f9f7e/en",
+        "job_employer_email": "soile.kurttila@siuntyoterveys.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/occupational-health-psychologist-joensuu-f848a867",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-17",
+        "scraped_at": "2026-05-01 13:32:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Occupational Health Psychologist job in Joensuu? Siun työterveys Oy is seeking motivated candidates—apply today.",
+        "description": "Siu työterveys Oy is seeking an Occupational Health Psychologist to join their team in Joensuu, Finland. This role involves developing occupational health cooperation with customers and implementing services through a multi-professional approach. The ideal candidate possesses experience working in expert positions in occupational health care, strong skills in assessing work community levels and functional ability, and the ability to work independently and effectively within a collaborative environment. Siu työterveys Oy offers an inspiring work community, interesting and versatile work opportunities, and access to their expert network. The position is for one year with a fixed-term employment starting June 1, 2026 or according to agreement.",
+        "what_we_expect": [
+          "Eligibility for the position is legalization in accordance with the Act on Healthcare Professionals and permission to work as a psychologist. Qualification training in occupational health care is considered an advantage.",
+          "Experience of working in expert positions in occupational health care, competence in assessing the level of work community and functional ability is considered an advantage when choosing the position.",
+          "Occupational health psychologist: Siu occupational health, Joensuu; temporary id10084."
+        ],
+        "job_responsibilities": [
+          "Developing occupational health cooperation together with our customers is of paramount importance to us. We plan and implement our services with a multi-professional approach.",
+          "As an occupational health psychologist, you hold individual appointments based on the guidance/referral of an occupational health nurse or a doctor, e.g., in matters related to time at work, memory problems, sleep challenges, stress management or other needs for work ability support. Your work also includes guidance and counseling of supervisors and the work community, and occupational health psychologists are part of the crisis work team.",
+          "The occupational health psychologist also conducts targeted workplace surveys as defined separately and participates in the implementation of basic surveys as necessary."
+        ],
+        "what_we_offer": [
+          "Inspiring and comfortable work community.",
+          "Interesting and versatile work.",
+          "Expert network to support your work."
+        ],
+        "search_keywords": "occupational health psychologist, Siu työterveys Oy, Joensuu, temporary job, one year fixed-term employment, June 1, 2026 or according to the agreement, multi-professional cooperation, prevention, supporting the ability to function, securing the continuity of careers in customer cooperation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "41290537",
+        "job_id": "project-worker-turku-41290537",
+        "processed": true,
+        "title": "Project Worker",
+        "company": "Lounais-Suomen vesiensuojeluyhdistys ry, Sydvästra Finlands vattenskyddsförening rf, Turku",
+        "job_category": "agriculture-forestry-and-fisheries",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:riitta.saleva-sjoblom@lsvsy.fi?subject=Application%20for%20the%20Job%20-%20Project%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Project%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0c47e84b-169a-4802-aaf2-a36f014a59bc/en",
+        "job_employer_email": "riitta.saleva-sjoblom@lsvsy.fi",
+        "job_employer_name": "Riitta Saleva-Sjöblom",
+        "job_employer_phone_no": "040 758 3448",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/agriculture-forestry-and-fisheries/project-worker-turku-41290537",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-17",
+        "scraped_at": "2026-05-01 13:32:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Project worker, Napakka project at Lounais-Suomen vesiensuojeluyhdistys ry, Sydvästra Finlands vattenskyddsförening rf, Turku.",
+        "description": "We are looking for temporary and full-time project workers for the Napakka project in Turku, Southwest Finland Water Protection Association. The project aims to promote and implement concrete water management measures in various areas of Rymättylä and Merimasku, including Piikkiönlahti and Paimionlahti. Successful applicants will work closely with local operators and landowners, ensuring a positive outcome for the environment. A degree in environmental science or natural resources is required, along with previous experience in environmental work (at least 2 years), excellent Finnish language skills, good presentation and interaction abilities, field suitability, and commitment to the project's duration.",
+        "what_we_expect": [
+          "Degree in environment and natural resources.",
+          "Previous experience in environmental work (more than 2 years).",
+          "Good or excellent oral and written Finnish language skills.",
+          "Good presentation and interaction skills and field suitability.",
+          "Commitment to work for the entire duration of the project."
+        ],
+        "job_responsibilities": [
+          "Project administration and finance.",
+          "Tendering and procurement of purchasing services.",
+          "Field work.",
+          "Organizing events.",
+          "Providing information.",
+          "Planning and implementing water protection measures and renovations together with local operators and landowners."
+        ],
+        "what_we_offer": [
+          "Concrete benefit or perk.",
+          "Another benefit.",
+          "Additional information."
+        ],
+        "search_keywords": "Project Worker, Napakka project",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-01 13:32:57",
+    "jobs": [
+      {
+        "id": "b99383ca",
+        "job_id": "construction-worker-municipal-engineering-espoo-b99383ca",
+        "processed": true,
+        "title": "Construction Worker, Municipal Engineering",
+        "company": "WE Rekry Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://werekry.likeit.fi/apply/4884588",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7091a329-768f-4aa7-8ecf-1dc594c090e7/en",
+        "job_employer_email": "mira.holmaranta@werekry.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-municipal-engineering-espoo-b99383ca",
+        "date_posted": "2026-04-30",
+        "date_expires": "2026-05-20",
+        "scraped_at": "2026-05-01 13:32:57",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join WE Rekry Oy as a Construction worker, municipal engineering and grow your career in Espoo. Check details and apply now.",
+        "description": "WE Rekry Oy is currently seeking a skilled construction worker with expertise in municipal engineering for a long-term project in Espoo, Finland. Ideal candidates should have previous experience in civil engineering or similar roles, knowledge of pipe installation at infrastructure sites, proficiency in using laser equipment and basic measurement skills, and the ability to read construction drawings. The role involves participating in the installation of stormwater and sewer pipelines, working closely with machine drivers, and utilizing a tube laser and plane laser as central aids. This physically demanding job offers a clear orientation, a functional work community, and long-term employment opportunities.",
+        "what_we_expect": [
+          "Previous experience in civil engineering or municipal engineering tasks.",
+          "Knowledge of pipe installation at infrastructure sites.",
+          "Confidence in using laser equipment (tube laser / plane laser) and basic measurement skills.",
+          "Ability to read construction drawings."
+        ],
+        "job_responsibilities": [
+          "Construction of the water supply and sewage network. You actively participate in the installation of stormwater and sewer pipelines and trenching work.",
+          "As a work partner of a machine driver, you work in close cooperation with the excavator driver, ensuring that the work progresses according to plans.",
+          "Previous experience in civil engineering or municipal engineering tasks."
+        ],
+        "what_we_offer": [
+          "Salary, which is determined directly by your skills and experience (ask for a salary request in the application).",
+          "The opportunity to become part of a large and meaningful infrastructure project in Espoo.",
+          "Long-term work project. The job is initially offered for about 68 months, and a skilled worker has an excellent opportunity to continue working longer.",
+          "A clear orientation and a nice, functional work community.",
+          "The work will start after a suitable contractor is found, during May.",
+          "Apply for a position quickly, because we interview applicants already during the application period."
+        ],
+        "search_keywords": "construction worker, municipal engineering, Espoo area, hands-on work, civil engineering, municipal engineering tasks, pipe installation, laser equipment, construction drawings",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
   },
