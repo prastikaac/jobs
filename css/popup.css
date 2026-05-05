@@ -645,7 +645,7 @@ body.drK .popup-description-for-mobile-unique {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 20px 4px 20px 20px;
+    margin: 20px 4px 20px 5px;
     padding: 0;
 }
 
@@ -1530,7 +1530,7 @@ body.drK #popupEmailError {
 
 /* Dark mode — consent checkboxes (popupStep2) */
 body.drK .consent-checkboxes {
-    margin: 20px 4px 20px 20px;
+    margin: 20px 4px 20px 5px;
 }
 
 body.drK .consent-text {
