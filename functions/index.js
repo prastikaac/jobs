@@ -157,7 +157,7 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
 
         return `
             <!--[if mso]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><![endif]-->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%"
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="card-table"
                    style="background-color:#2b2b2b;border-radius:12px;margin-bottom:16px;overflow:hidden;">
                 <tr>
                     <!-- Image cell -->
@@ -166,7 +166,7 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                         <a href="${job.jobLink || "#"}" style="display:block;text-decoration:none;position:relative;">
                             <img src="${job.imageUrl || DEFAULT_IMAGE}"
                                  alt="${escapeHtml(job.title)}"
-                                 class="card-img"
+                                 class="card-img card-img-bg"
                                  style="width:100%;max-width:100%;height:160px;object-fit:cover;
                                         border-radius:10px;display:block;background-color:#3a3a3a;">
                         </a>
@@ -174,15 +174,15 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                     <!-- Content cell -->
                     <td class="card-content-cell" valign="top"
                         style="padding:14px 16px 16px 0;display:block;width:100%;box-sizing:border-box;">
-                        <h2 style="font-size:16px;font-weight:700;margin:0 0 5px 0;
+                        <h2 class="job-title" style="font-size:16px;font-weight:700;margin:0 0 5px 0;
                                    color:#ffffff;line-height:1.3;">
                             ${escapeHtml(job.title)}
                         </h2>
-                        <p style="font-size:12px;font-weight:700;color:#cccccc;
+                        <p class="job-location" style="font-size:12px;font-weight:700;color:#cccccc;
                                   margin:0 0 10px 0;line-height:1.4;">
                             In ${escapeHtml(locationLabel)}
                         </p>
-                        <p style="font-size:12px;line-height:1.6;margin:0 0 16px 0;
+                        <p class="job-desc" style="font-size:12px;line-height:1.6;margin:0 0 16px 0;
                                   color:#aaaaaa;">
                             ${escapeHtml(job.description)}
                         </p>
@@ -276,6 +276,27 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                     .intro-p   { font-size:15px !important; }
                     .footer-td { padding:22px 36px !important; }
                 }
+
+                /* ── Light mode overrides ── */
+                @media (prefers-color-scheme: light) {
+                    body                    { background-color:#f2f2f2 !important; }
+                    .email-outer            { background-color:#f2f2f2 !important; }
+                    .body-pad               { background-color:#f2f2f2 !important; }
+                    .header-td              { background-color:#ffffff !important;
+                                             border-bottom:1px solid #e0e0e0 !important; }
+                    .footer-td              { background-color:#f0f0f0 !important;
+                                             border-top:1px solid #e0e0e0 !important; }
+                    .card-table             { background-color:#ffffff !important;
+                                             box-shadow:0 2px 8px rgba(0,0,0,0.10) !important; }
+                    .card-img-bg            { background-color:#e8e8e8 !important; }
+                    .job-title              { color:#1a1a1a !important; }
+                    .job-location           { color:#555555 !important; }
+                    .job-desc               { color:#666666 !important; }
+                    .intro-p                { color:#444444 !important; }
+                    .header-h1              { color:#1a1a1a !important; }
+                    .browse-heading         { color:#1a1a1a !important; }
+                    .browse-desc            { color:#555555 !important; }
+                }
             </style>
         </head>
         <body style="margin:0;padding:0;background-color:#1e1e1e;font-family:'Poppins',Arial,sans-serif;">
@@ -290,7 +311,7 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
 
                             <!-- ── Header ── -->
                             <tr>
-                                <td style="background-color:#242424;padding:18px 20px;
+                                <td class="header-td" style="background-color:#242424;padding:18px 20px;
                                            text-align:center;border-radius:16px 16px 0 0;
                                            border-bottom:1px solid #3a3a3a;">
                                     <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
@@ -301,7 +322,7 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                                                      style="width:36px;height:36px;display:block;">
                                             </td>
                                             <td style="vertical-align:middle;">
-                                                <h1 style="font-size:20px;color:#ffffff;margin:0;
+                                                <h1 class="header-h1" style="font-size:20px;color:#ffffff;margin:0;
                                                            font-weight:700;white-space:nowrap;">
                                                     findjobsinfinland&zwnj;.fi
                                                 </h1>
@@ -333,11 +354,11 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
 
                                     <!-- Browse More -->
                                     <div style="text-align:center;margin:24px 0 8px 0;">
-                                        <h3 style="font-size:16px;font-weight:700;margin:0 0 8px 0;
+                                        <h3 class="browse-heading" style="font-size:16px;font-weight:700;margin:0 0 8px 0;
                                                    color:#ffffff;">
                                             Want to browse more options?
                                         </h3>
-                                        <p class="intro-p"
+                                        <p class="intro-p browse-desc"
                                            style="font-size:13px;color:#aaaaaa;line-height:1.6;
                                                   margin:0 0 16px 0;">
                                             Explore more opportunities tailored to your skills on
