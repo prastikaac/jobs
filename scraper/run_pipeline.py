@@ -731,8 +731,8 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
             else:
                 batch_actually_new = []
 
-            # Maintenance fixes
-            for job in all_jobs:
+            # Maintenance fixes — only apply to newly formatted jobs, not all 800+ existing ones
+            for job in newly_formatted_batch:
                 Job_formatter.apply_manual_fixes(job)
 
             # Saving to disk will happen after image generation to ensure image_urls are saved
