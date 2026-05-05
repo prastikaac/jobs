@@ -42522,6 +42522,65 @@
   },
 
   {
+    "scrape_timestamp": "2026-05-06 01:02:07",
+    "jobs": [
+      {
+        "id": "9a5a4173",
+        "job_id": "full-stack-software-developer-liferay-vantaa-9a5a4173",
+        "processed": true,
+        "title": "Full stack software developer (Liferay)",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/23658352",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1a58b457-088d-4c08-a270-c7c9f852f01d/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/full-stack-software-developer-liferay-vantaa-9a5a4173",
+        "date_posted": "2026-05-05",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-06 01:02:07",
+        "open_positions": 1,
+        "salary_range": "salary that matches your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is looking for a skilled Full Stack Developer in Vantaa. Don't miss this opportunity—apply today.",
+        "description": "We are seeking two full-stack software developers for Lokki Henkilöstöpalvelut Oy, specializing in Liferay DXP and Community Edition. With a focus on public administration projects, Scrum methodology, Azure DevOps tools, open source technologies (Java/React, Blazor), digital experience platforms, data warehouse solutions (SQL Server), and strong communication skills, we are looking for candidates with at least 6 months of experience in each area. The ideal candidate will thrive in a collaborative team environment, be proactive about continuous improvement, and demonstrate technical leadership. A competitive hourly wage based on Finnish collective agreements is offered, along with the opportunity to work remotely or in Espoo. Fluent written and oral skills in Finnish are required.",
+        "what_we_expect": [
+          "6 months experience in public administration projects.",
+          "At least 6 months experience with the Scrum method.",
+          "Experience with Azure DevOps tools (Boards, Repos and publishing tools).",
+          "12 months experience with open source technologies such as Java and React, Blazor and similar technologies.",
+          "12 months experience with digital experience platform solutions, in particular Liferay DXP and Community Edition.",
+          "4 months experience with data warehouse solutions, in particular SQL Server."
+        ],
+        "job_responsibilities": [
+          "Develop and maintain demanding and critical digital service environments of public administration.",
+          "Work in a multi-supplier model with experts and different suppliers, guided by high requirements for information security, interoperability, accessibility, and cost-effectiveness.",
+          "Technical skills requirements."
+        ],
+        "what_we_offer": [
+          "Competitive salary that matches skills.",
+          "Nice working relationship in a big company.",
+          "Versatile work where every day is different and interesting.",
+          "A place of work: Hybrid model (Espoo + remote work).",
+          "Fluent written and oral Finnish language skills."
+        ],
+        "search_keywords": "full stack software developer liferay public administration digital experience platform open source technologies azure devops sql server",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
+  },
+
+  {
     "scrape_timestamp": "Unknown Date",
     "jobs": [
       {
