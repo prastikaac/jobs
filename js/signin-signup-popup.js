@@ -35,6 +35,7 @@ wrapper.innerHTML = `
           <input type="checkbox" id="consentBlogSubscribe" />
           <span class="consent-text">
             I would also like to receive blog posts, career tips, and news about the Finnish job market via email.
+            <span class="optional-tag">(Optional)</span>
           </span>
         </label>
       </div>
