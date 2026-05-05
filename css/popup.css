@@ -644,8 +644,9 @@ body.drK .popup-description-for-mobile-unique {
 .consent-checkboxes {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 4px 0 18px 0;
+    gap: 12px;
+    margin: 8px 4px 20px 4px;
+    padding: 0;
 }
 
 .consent-label {
@@ -653,7 +654,10 @@ body.drK .popup-description-for-mobile-unique {
     align-items: flex-start;
     gap: 10px;
     cursor: pointer;
-    line-height: 1.5;
+    line-height: 1.45;
+    padding: 0;
+    margin: 0;
+    user-select: none;
 }
 
 .consent-label input[type="checkbox"] {
@@ -662,14 +666,19 @@ body.drK .popup-description-for-mobile-unique {
     width: 18px;
     height: 18px;
     min-width: 18px;
-    border: 2px solid #ccc;
+    min-height: 18px;
+    border: 2px solid #bbb;
     border-radius: 4px;
-    margin-top: 2px;
+    margin-top: 1px;
     cursor: pointer;
     background-color: #fff;
-    transition: border-color 0.2s, background-color 0.2s;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
     position: relative;
     flex-shrink: 0;
+}
+
+.consent-label input[type="checkbox"]:hover {
+    border-color: #0055ff;
 }
 
 .consent-label input[type="checkbox"]:checked {
@@ -684,58 +693,63 @@ body.drK .popup-description-for-mobile-unique {
     top: 1px;
     width: 6px;
     height: 10px;
-    border: 2px solid #fff;
-    border-top: none;
-    border-left: none;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
 
 .consent-text {
-    font-size: 13px;
+    font-size: 12.5px;
     color: #555;
     line-height: 1.5;
+    letter-spacing: 0.01em;
 }
 
 .required-star {
     color: #e53e3e;
     font-weight: 700;
-    margin-left: 2px;
+    font-size: 14px;
+    margin-left: 1px;
+    vertical-align: baseline;
 }
 
 .optional-tag {
-    color: #888;
-    font-size: 12px;
-    margin-left: 3px;
+    color: #999;
+    font-size: 11.5px;
+    font-style: italic;
+    margin-left: 2px;
 }
 
 #consentJobAlertsError {
-    color: red;
+    color: #e53e3e;
     font-size: 12px;
-    margin-left: 28px;
-    margin-top: -4px;
+    line-height: 1.3;
+    margin: -2px 0 0 28px;
+    min-height: 0;
 }
 
-/* Dark mode — consent checkboxes */
-body.drK .consent-text {
-    color: #bbb;
+/* ── Light mode explicit (body.lgT) — consent ─── */
+body.lgT .consent-text {
+    color: #555;
 }
 
-body.drK .consent-label input[type="checkbox"] {
-    background-color: #3a3a3e;
-    border-color: #666;
+body.lgT .consent-label input[type="checkbox"] {
+    background-color: #fff;
+    border-color: #bbb;
 }
 
-body.drK .consent-label input[type="checkbox"]:checked {
+body.lgT .consent-label input[type="checkbox"]:checked {
     background-color: #0055ff;
     border-color: #0055ff;
 }
 
-body.drK .optional-tag {
-    color: #888;
+body.lgT .optional-tag {
+    color: #999;
 }
 
-
-
+body.lgT #consentJobAlertsError {
+    color: #e53e3e;
+}
 
 
 
@@ -1512,6 +1526,41 @@ body.drK #popupStep2 .icon-wrapper svg {
 body.drK #popupEmailError {
     color: #f44336;
     /* Red error messages */
+}
+
+/* Dark mode — consent checkboxes (popupStep2) */
+body.drK .consent-checkboxes {
+    margin: 8px 4px 20px 4px;
+}
+
+body.drK .consent-text {
+    color: #bbb;
+}
+
+body.drK .consent-label input[type="checkbox"] {
+    background-color: #3a3a3e;
+    border-color: #555;
+}
+
+body.drK .consent-label input[type="checkbox"]:hover {
+    border-color: #4a90e2;
+}
+
+body.drK .consent-label input[type="checkbox"]:checked {
+    background-color: #0055ff;
+    border-color: #0055ff;
+}
+
+body.drK .required-star {
+    color: #ff6b6b;
+}
+
+body.drK .optional-tag {
+    color: #777;
+}
+
+body.drK #consentJobAlertsError {
+    color: #ff6b6b;
 }
 
 /* Dark Mode Step 3 Login */
