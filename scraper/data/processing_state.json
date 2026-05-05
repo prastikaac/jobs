@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-05 12:47:14",
+  "updated_at": "2026-05-05 15:24:17",
   "jobs": {
     "9b630b5d": {
       "translated": true,
@@ -15218,13 +15218,13 @@
     "5e6767a4": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:12:28"
     },
     "8e3d9633": {
       "translated": true,
@@ -15240,13 +15240,13 @@
     "8b02143b": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:21:02"
     },
     "c38cd60b": {
       "translated": true,
@@ -15262,57 +15262,57 @@
     "f18682a3": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:12:26"
     },
     "a492a712": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:16:03"
     },
     "7c5b9ef5": {
       "translated": true,
       "translated_at": "",
       "ai_processed": false,
-      "ai_status": "pending",
-      "retry_count": 0,
+      "ai_status": "irrelevant",
+      "retry_count": 1,
       "max_retries": 3,
       "ai_retry_needed": true,
-      "last_ai_error": "",
+      "last_ai_error": "AI hallucination detected",
       "formatted_at": ""
     },
     "e3cf3629": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:24:17"
     },
     "531caf55": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:21:20"
     },
     "0f182dfe": {
       "translated": true,
@@ -15328,24 +15328,24 @@
     "42069891": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:24:16"
     },
     "1674df74": {
       "translated": true,
       "translated_at": "",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-05 15:18:28"
     },
     "708a31fb": {
       "translated": true,
