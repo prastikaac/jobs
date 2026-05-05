@@ -19,6 +19,27 @@ wrapper.innerHTML = `
         </span>
       </div>
       <div id="popupEmailError" class="error-message"></div>
+
+      <!-- Consent checkboxes -->
+      <div class="consent-checkboxes">
+        <label class="consent-label" for="consentJobAlerts">
+          <input type="checkbox" id="consentJobAlerts" />
+          <span class="consent-text">
+            I agree to receive job market news, updates, and information about opportunities in Finland via email.
+            <span class="required-star">*</span>
+          </span>
+        </label>
+        <div id="consentJobAlertsError" class="error-message"></div>
+
+        <label class="consent-label" for="consentBlogSubscribe">
+          <input type="checkbox" id="consentBlogSubscribe" />
+          <span class="consent-text">
+            I would like to receive blog posts, career tips, and news about the Finnish job market via email.
+            <span class="optional-tag">(Optional)</span>
+          </span>
+        </label>
+      </div>
+
       <button class="continue-btn" onclick="checkEmailExistence()">Next</button>
     </div>
 

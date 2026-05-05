@@ -637,8 +637,101 @@ body.drK .popup-description-for-mobile-unique {
     color: red;
     font-size: 13px;
     line-height: 1.4;
-    margin: 6px 0 16px 12px;
-    /* spacing from input + spacing to button */
+    margin: 6px 0 10px 12px;
+}
+
+/* ── Consent checkboxes (popupStep2) ─────────────────────── */
+.consent-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 4px 0 18px 0;
+}
+
+.consent-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.consent-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border-color 0.2s, background-color 0.2s;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.consent-label input[type="checkbox"]:checked {
+    background-color: #0055ff;
+    border-color: #0055ff;
+}
+
+.consent-label input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
+
+.consent-text {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.required-star {
+    color: #e53e3e;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.optional-tag {
+    color: #888;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+#consentJobAlertsError {
+    color: red;
+    font-size: 12px;
+    margin-left: 28px;
+    margin-top: -4px;
+}
+
+/* Dark mode — consent checkboxes */
+body.drK .consent-text {
+    color: #bbb;
+}
+
+body.drK .consent-label input[type="checkbox"] {
+    background-color: #3a3a3e;
+    border-color: #666;
+}
+
+body.drK .consent-label input[type="checkbox"]:checked {
+    background-color: #0055ff;
+    border-color: #0055ff;
+}
+
+body.drK .optional-tag {
+    color: #888;
 }
 
 

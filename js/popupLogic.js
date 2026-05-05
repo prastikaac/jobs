@@ -321,6 +321,18 @@ window.checkEmailExistence = async () => {
     return;
   }
 
+  // Validate required consent checkbox
+  const consentJobAlerts = document.getElementById("consentJobAlerts");
+  if (!consentJobAlerts || !consentJobAlerts.checked) {
+    const consentErr = document.getElementById("consentJobAlertsError");
+    if (consentErr) consentErr.textContent = "You must agree to receive job alerts to continue.";
+    return;
+  }
+
+  // Capture blog subscription preference (optional) for use in signupUser
+  const consentBlogSubscribe = document.getElementById("consentBlogSubscribe");
+  window._blogSubscriptionConsent = consentBlogSubscribe ? consentBlogSubscribe.checked : false;
+
   const q = query(collection(db, "users"), where("email", "==", email));
   const querySnapshot = await getDocs(q);
   emailExists = !querySnapshot.empty;
@@ -435,6 +447,7 @@ function clearAllErrors() {
     "popupPasswordError",
     "popupConfirmPasswordError",
     "popupEmailError",
+    "consentJobAlertsError",
     "signupError",
     "categoryError",
     "locationError",
@@ -626,6 +639,8 @@ window.signupUser = async () => {
         emailNotification: emailEnabled,
         pushNotification: pushEnabled,
       },
+      // Blog subscription consent (set in Step 2)
+      ...(window._blogSubscriptionConsent ? { BlogSubscriptionViaEmail: "yes" } : {}),
       createdAt: timestampNow,
       lastLogin: timestampNow,
       fcmTokens: [],  // Ensure this array is always created

@@ -12,6 +12,9 @@ Resume flags:
   --ai-only      — Resume from Phase 3 (AI Formatting) onward, skip Translation
   --format-only  — Resume from Phase 4 (Job Formatter) onward, skip Translation + AI
   --html-only    — Phase 5 (Site Gen) only, re-render HTML from existing formatted jobs
+
+Maintenance:
+  --cleanup      — Remove all intermediate data for jobs already saved in jobs.json
 """
 
 import argparse
@@ -55,6 +58,140 @@ import html_generator
 import expiration
 import firebase_client
 import category_checker
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CLEANUP HELPER
+# ══════════════════════════════════════════════════════════════════════════════
+
+def cleanup_completed_jobs(completed_ids: set[str] | None = None) -> int:
+    """
+    Remove completed jobs from all intermediate pipeline files.
+
+    A job is considered "completed" when it exists in jobs.json.
+    Its data is wiped from:
+      - rawjobs.json
+      - processing_state.json
+      - translated_raw_jobs.json   (also aliased as translated_jobs.json)
+      - formatted_jobs_flat.json
+      - sent_alerts.json           (IDs list — keep, but entries are already IDs)
+      - ai_field_issues.json
+
+    Args:
+        completed_ids: Optional explicit set of job IDs to clean up.
+                       If None, all IDs present in jobs.json are used.
+
+    Returns:
+        Number of job IDs that were cleaned from at least one file.
+    """
+    # ── Determine which IDs are done ─────────────────────────────────────────
+    if completed_ids is None:
+        completed_ids = {str(j.get("id")) for j in jobs_store.load_jobs() if j.get("id")}
+
+    if not completed_ids:
+        logger.info("[cleanup] No completed job IDs found in jobs.json — nothing to clean.")
+        return 0
+
+    logger.info("[cleanup] Cleaning %d completed job IDs from intermediate files.", len(completed_ids))
+    cleaned_count = 0
+
+    # ── rawjobs.json ─────────────────────────────────────────────────────────
+    raw_jobs = rawjobs_store.load_raw_jobs()
+    before = len(raw_jobs)
+    raw_jobs = [j for j in raw_jobs if str(j.get("id", "")) not in completed_ids]
+    if len(raw_jobs) < before:
+        rawjobs_store.save_raw_jobs(raw_jobs)
+        removed = before - len(raw_jobs)
+        logger.info("[cleanup] rawjobs.json: removed %d entries.", removed)
+        cleaned_count += removed
+
+    # ── processing_state.json ────────────────────────────────────────────────
+    processing_state = rawjobs_store.load_processing_state()
+    before = len(processing_state)
+    processing_state = {k: v for k, v in processing_state.items() if str(k) not in completed_ids}
+    if len(processing_state) < before:
+        rawjobs_store.save_processing_state(processing_state)
+        removed = before - len(processing_state)
+        logger.info("[cleanup] processing_state.json: removed %d entries.", removed)
+        cleaned_count += removed
+
+    # ── translated_raw_jobs.json (also covers translated_jobs.json alias) ────
+    translated_raw = jobs_store.load_translated_raw_jobs()
+    before = len(translated_raw)
+    translated_raw = [j for j in translated_raw if str(j.get("id", "")) not in completed_ids]
+    if len(translated_raw) < before:
+        jobs_store.save_translated_raw_jobs(translated_raw)
+        removed = before - len(translated_raw)
+        logger.info("[cleanup] translated_raw_jobs.json: removed %d entries.", removed)
+        cleaned_count += removed
+
+    # ── formatted_jobs_flat.json ─────────────────────────────────────────────
+    flat_jobs = jobs_store.load_formatted_jobs_flat()
+    before = len(flat_jobs)
+    flat_jobs = [j for j in flat_jobs if str(j.get("id", "")) not in completed_ids]
+    if len(flat_jobs) < before:
+        jobs_store.save_formatted_jobs_flat(flat_jobs)
+        removed = before - len(flat_jobs)
+        logger.info("[cleanup] formatted_jobs_flat.json: removed %d entries.", removed)
+        cleaned_count += removed
+
+    # ── sent_alerts.json (stored as a list of ID strings) ───────────────────
+    sent_alerts_path = config.SENT_ALERTS_PATH
+    if os.path.exists(sent_alerts_path):
+        try:
+            with open(sent_alerts_path, "r", encoding="utf-8") as f:
+                sent_alerts = json.load(f)
+            if isinstance(sent_alerts, list):
+                before = len(sent_alerts)
+                # Keep alert history for completed jobs (they already fired), so
+                # we only remove IDs that are NOT in jobs.json anymore (safety net).
+                # Actually per the user requirement we DO remove them from sent_alerts too.
+                sent_alerts = [aid for aid in sent_alerts if str(aid) not in completed_ids]
+                if len(sent_alerts) < before:
+                    with open(sent_alerts_path, "w", encoding="utf-8") as f:
+                        json.dump(sorted(sent_alerts), f, indent=2)
+                    removed = before - len(sent_alerts)
+                    logger.info("[cleanup] sent_alerts.json: removed %d entries.", removed)
+                    cleaned_count += removed
+        except Exception as exc:
+            logger.warning("[cleanup] Could not clean sent_alerts.json: %s", exc)
+
+    # ── ai_field_issues.json ─────────────────────────────────────────────────
+    ai_issues_path = os.path.join(config.DATA_DIR, "ai_field_issues.json")
+    if os.path.exists(ai_issues_path):
+        try:
+            with open(ai_issues_path, "r", encoding="utf-8") as f:
+                ai_issues = json.load(f)
+            if isinstance(ai_issues, list):
+                before = len(ai_issues)
+                ai_issues = [item for item in ai_issues if str(item.get("id", "")) not in completed_ids]
+                if len(ai_issues) < before:
+                    with open(ai_issues_path, "w", encoding="utf-8") as f:
+                        json.dump(ai_issues, f, ensure_ascii=False, indent=2)
+                    removed = before - len(ai_issues)
+                    logger.info("[cleanup] ai_field_issues.json: removed %d entries.", removed)
+                    cleaned_count += removed
+            elif isinstance(ai_issues, dict):
+                before = len(ai_issues)
+                ai_issues = {k: v for k, v in ai_issues.items() if str(k) not in completed_ids}
+                if len(ai_issues) < before:
+                    with open(ai_issues_path, "w", encoding="utf-8") as f:
+                        json.dump(ai_issues, f, ensure_ascii=False, indent=2)
+                    removed = before - len(ai_issues)
+                    logger.info("[cleanup] ai_field_issues.json: removed %d entries.", removed)
+                    cleaned_count += removed
+        except Exception as exc:
+            logger.warning("[cleanup] Could not clean ai_field_issues.json: %s", exc)
+
+    logger.info("[cleanup] Done. Total entries removed across all files: %d", cleaned_count)
+    return cleaned_count
+
+
+def cmd_cleanup() -> None:
+    """Standalone command: clean all intermediate data for jobs already in jobs.json."""
+    logger.info("── Cleanup: removing completed job data from intermediate files ──")
+    n = cleanup_completed_jobs()
+    print(f"Cleanup complete. {n} total entries removed from intermediate files.")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -408,6 +545,10 @@ def cmd_format_only() -> None:
     except Exception as exc:
         logger.error("Firebase alert error: %s", exc)
 
+    # Cleanup intermediate files for all jobs now in jobs.json
+    logger.info("── Format-Only Mode: Cleaning up completed jobs from intermediate files ──")
+    cleanup_completed_jobs()
+
     # Git commit + push
     _git_commit_and_push(message=f"Auto-update jobs [format-only] [+{len(new_jobs_to_alert)} new]")
 
@@ -632,6 +773,11 @@ def run(dry_run: bool = False, ai_only: bool = False, reset_raw: bool = False) -
     else:
         logger.info("[DRY-RUN] Skipping Phase 3 / Phase 4 / Phase 5.")
 
+    # ── Cleanup: remove all completed jobs from intermediate files (once, after all batches) ──
+    if not dry_run and total_actually_new:
+        logger.info("── Post-pipeline cleanup: removing completed job data from intermediate files ──")
+        cleanup_completed_jobs()
+
     # ── Final summary ─────────────────────────────────────────────────────────
     _print_summary(all_jobs, total_actually_new, total_img_count, total_alert_count)
 
@@ -763,6 +909,10 @@ def main():
         "--patch-titles", action="store_true",
         help="Patch known Finnish titles to English in jobs.json, regenerate HTML, then exit",
     )
+    parser.add_argument(
+        "--cleanup", action="store_true",
+        help="Remove all intermediate data for jobs already saved in jobs.json, then exit",
+    )
 
     args = parser.parse_args()
 
@@ -800,6 +950,10 @@ def main():
 
     if args.patch_titles:
         cmd_patch_titles()
+        return
+
+    if args.cleanup:
+        cmd_cleanup()
         return
 
     run(dry_run=args.dry_run, ai_only=args.ai_only, reset_raw=args.reset_raw)
