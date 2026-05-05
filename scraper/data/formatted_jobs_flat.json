@@ -1,5 +1,102 @@
 [
   {
+    "id": "204c8ddd",
+    "job_id": "senior-it-consultant-helsinki-204c8ddd",
+    "processed": true,
+    "title": "Senior IT Consultant",
+    "company": "Helsingin kaupunki",
+    "job_category": "social-care-services",
+    "jobLocation": [
+      "Helsinki"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-03-216-26",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/48cb9e4b-1322-492d-adf4-c4f4709f777e/en",
+    "job_employer_email": "tarja.taimisto@hel.fi",
+    "job_employer_name": "Tarja Taimisto",
+    "job_employer_phone_no": "0931029719",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/senior-it-consultant-helsinki-204c8ddd",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-15",
+    "scraped_at": "2026-05-01 13:33:41",
+    "open_positions": 1,
+    "salary_range": "€3398.74/month + possible experience bonus max. 8%",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Start your next career step as an Operations Supervisor, Syystien Senior Center at City of Helsinki. Great opportunity in Helsinki—apply now.",
+    "description": "We are looking for a senior IT professional to join our Syystien senioricsuksen project management team in Helsinki, Finland. This role will begin on August 3, 2026, and we expect the project to start operations in January 2027 at Jakomäkeen. The responsibilities include managing the development of a new branch office for Syystien senioricsuksen, which is part of Pukinmäen (Madetojan) and Ylä-Malmilla's branches. Responsibilities also include overseeing project management, handling customer service, providing technical support, and mentoring colleagues in various IT environments. We offer competitive salaries with a maximum bonus of 8% and excellent benefits, including health insurance, pension contributions, and relocation assistance for Finnish-speaking employees.",
+    "what_we_expect": [
+      "Bachelor's degree or equivalent experience in IT-related fields.",
+      "Proficiency in programming languages such as Java, Python, or C#.",
+      "Kelpoisuusehto."
+    ],
+    "job_responsibilities": [
+      "Conducts senior-level technical analysis and design.",
+      "Participates in the development of new systems and solutions.",
+      "Kelpoisuusehto."
+    ],
+    "what_we_offer": [
+      "Competitive salary with performance-based bonuses.",
+      "Flexible working hours and remote work options available.",
+      "Access to state-of-the-art technology and tools for professional development."
+    ],
+    "search_keywords": "Senior IT Consultant Helsingin kaupunki Helsinki other",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+  },
+  {
+    "id": "b632a3c7",
+    "job_id": "employment-specialist-multidisciplinary-services-hyvinkää-b632a3c7",
+    "processed": true,
+    "title": "Employment specialist, multidisciplinary services",
+    "company": "Järvenpään kaupunki",
+    "job_category": "military-and-defense",
+    "jobLocation": [
+      "Hyvinkää",
+      "Järvenpää"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://jakeduunit.rekrytointi.com/paikat/index.php?o=A_A&jid=854&jbid=15",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2c6536de-8bbb-4092-9548-11207756a2ed/en",
+    "job_employer_email": "anna-maija.heinanen@keskiuudenmaantepalvelut.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/military-and-defense/employment-specialist-multidisciplinary-services-hyvinkää-b632a3c7",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-15",
+    "scraped_at": "2026-05-01 13:33:41",
+    "open_positions": 1,
+    "salary_range": "3075 €/kk",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Take the next step in your career as an Employment specialist, multi-disciplinary services at Järvenpää kaupunki, located in Hyvinkää.",
+    "description": "We are looking for a versatile and experienced IT specialist to join our team in the vibrant city of Hyvinkää, Järvenpää. This position offers competitive hourly wages based on Finnish collective agreements and provides a permanent contract starting from August 1, 2026, or as soon as possible after the agreement is signed. The ideal candidate will be proficient in Finnish and able to work with multiple clients simultaneously. As an IT specialist, you will contribute to the seamless operation of our services by providing support for various projects. Your responsibilities include managing client relationships, developing skills through training programs, and contributing to the improvement of service quality.",
+    "what_we_expect": [
+      "Customer service.",
+      "Https://www.jarvenpaa.fi/yrittaminen-ja-tyo/tyonhakijalle/hae-meille-toihin.",
+      "Positive attitude and reliability."
+    ],
+    "job_responsibilities": [
+      "Recruiter.",
+      "Https://www.jarvenpaa.fi/yrittaminen-ja-tyo/tyonhakijalle/hae-meille-toihin.",
+      "Daily operational tasks."
+    ],
+    "what_we_offer": [
+      "Https://www.jarvenpaa.fi/yrittaminen-ja-tyo/tyonhakijalle/hae-meille-toihin.",
+      "Professional work environment.",
+      "Supportive team."
+    ],
+    "search_keywords": "Employment specialist, Multidisciplinary services City of Järvenpää Hyvinkää other",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+  },
+  {
     "id": "531caf55",
     "job_id": "caregivers-järvenpää-home-care-8-months-järvenpää-531caf55",
     "processed": true,
@@ -152,6 +249,116 @@
     "search_keywords": "Petty Care Attendant Keski-Uudenmaan hyvinvointialue Tuusula other",
     "display_mode": "fallback",
     "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+  },
+  {
+    "id": "0f182dfe",
+    "job_id": "petani-hoitoja-tuusula-0f182dfe",
+    "processed": true,
+    "title": "Petani Hoitoja",
+    "company": "Keski-Uudenmaan hyvinvointialue",
+    "job_category": "social-care-services",
+    "jobLocation": [
+      "Tuusula"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://keusote.rekrytointi.com/paikat/index.php?o=A_A&jid=6430&jbid=15",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ba94b2b6-475f-4145-8ecf-c926dc89c50c/en",
+    "job_employer_email": "anette.salo@keusote.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/petani-hoitoja-tuusula-0f182dfe",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-14",
+    "scraped_at": "2026-05-01 13:33:39",
+    "open_positions": 1,
+    "salary_range": "the salary is 2870 e/month In addition, we pay for work experience",
+    "workTime": "Full-time",
+    "continuityOfWork": "Temporary",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Join Keski-Uudenmaan hyvinvointialue as a Petani Hoitoja and grow your career in Tuusula. Check details and apply now.",
+    "description": "We are looking for a versatile and experienced petani hoitoja to work in Tuusula, Finland. The role involves leading the development of child-friendly programs, collaborating with diverse stakeholders, and utilizing modern technology to enhance educational outcomes. Our team values diversity and inclusivity, offering competitive salaries and benefits. If you have excellent language skills in Finnish, including a strong understanding of pedagogical methods and teaching techniques, we encourage your application. Please contact Anette Salo at 050-497 1849 or anette.salo@keusote.fi for more information.",
+    "what_we_expect": [
+      "The position requires good written and oral Finnish language skills as well as IT skills as well as a driver's license and the ability to use your own car.",
+      "More information about the employment relationship and the explanations to be presented for the position.",
+      "The job-specific salary is 2870 e/month. In addition, we pay more based on work experience.",
+      "In direct patient and customer work, the vaccination protection required by Section 48 of the Infectious Diseases Act and the report on respiratory tuberculosis in accordance with Section 55 are required.",
+      "The selected person must submit the criminal record extract referred to in section 6 subsection 2 of the Criminal Records Act when the job involves working with the elderly.",
+      "The assignment is subject to a probationary period."
+    ],
+    "job_responsibilities": [
+      "Home care nurse.",
+      "Temporary employment until August 9, 2026. Start by agreement.",
+      "The job-specific salary is 2870 e/month. In addition, we pay more based on work experience."
+    ],
+    "what_we_offer": [
+      "Temporary employment until August 9, 2026. Start by agreement.",
+      "The job-specific salary is 2870 e/month. In addition, we pay more based on work experience.",
+      "The assignment is subject to a probationary period.",
+      "Original study and work certificates are presented in connection with a possible interview."
+    ],
+    "search_keywords": "family nurse, customer-oriented care planning, in home care you need the ability to work independently",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+  },
+  {
+    "id": "708a31fb",
+    "job_id": "senior-doctors-reception-services-nurmijärvi-708a31fb",
+    "processed": true,
+    "title": "Senior doctors, reception services",
+    "company": "Keski-Uudenmaan hyvinvointialue",
+    "job_category": "healthcare",
+    "jobLocation": [
+      "Nurmijärvi",
+      "Hyvinkää",
+      "Mäntsälä",
+      "Tuusula",
+      "Järvenpää"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://keusote.rekrytointi.com/paikat/index.php?o=A_A&jid=6438&jbid=15",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5a20934e-60c0-4a78-88ac-46bfaeabde46/en",
+    "job_employer_email": "paivi.makela-bengs@keusote.fi",
+    "job_employer_name": "",
+    "job_employer_phone_no": "",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/senior-doctors-reception-services-nurmijärvi-708a31fb",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-21",
+    "scraped_at": "2026-05-01 13:33:39",
+    "open_positions": 1,
+    "salary_range": "salary 10100 e/month",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Build your future with Keski-Uudenmaa welfare area as a General practitioners, reception services in Nurmijärvi. Learn more about the role and apply now.",
+    "description": "Come and do meaningful work for the reception services. We are looking for two senior doctors for the reception services of the Central Uusimaa welfare area. The Central Uusimaa welfare area, i.e. Keusote, covers Hyvinkää, Järvenpää, Mäntsälä, Pornainen, Nurmijärvi and Tuusula and has a population of approx. 200,000. In the position of chief physician, you are responsible for the operational activities of your units. You will have management responsibility for service production and versatile administrative tasks. As a senior physician, you are responsible for the doctors' well-being and competence, and you act as a supervisor for the doctors in your area. The continuous improvement of services and the well-being of the personnel are the priorities of our development work.",
+    "what_we_expect": [
+      "We value previously completed management training, especially in terms of competence and occupational well-being management, and previous experience in managing primary healthcare services.",
+      "We expect an open-minded approach to utilizing modern technology and enthusiasm for developing your own work as a team member.",
+      "We assess the applicant's suitability for the position based on the curriculum vitae, previous work experience and the interview.",
+      "More information about the employment relationship and the explanations required for the position.",
+      "Task-specific basic salary 10,100 e/month. The salary is determined according to Keusote's career ladder salary level and LS. In addition, we pay a work experience bonus.",
+      "Valinta on ehdollinen, kunnes virkaan valittu on toimittanut hyväksyttävän lääkärintodistuksen terveydentilastaan."
+    ],
+    "job_responsibilities": [
+      "Erikoislääkäri.",
+      "Eligibility is a general medicine specialist's degree and the legalization of the professional title in Finland.",
+      "We assess the applicant's suitability for the position based on the curriculum vitae, previous work experience and the interview."
+    ],
+    "what_we_offer": [
+      "Eligibility is a general medicine specialist's degree and the legalization of the professional title in Finland.",
+      "We assess the applicant's suitability for the position based on the curriculum vitae, previous work experience and the interview.",
+      "Permanent employment from 01.08.2026 or according to agreement.",
+      "Original work and study certificates are presented in connection with a possible interview.",
+      "Valinta on ehdollinen, kunnes virkaan valittu on toimittanut hyväksyttävän lääkärintodistuksen terveydentilastaan.",
+      "Koeaika on 6 kuukautta."
+    ],
+    "search_keywords": "Senior doctors, reception services Central Uusimaa welfare area Nurmijärvi other",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
   },
   {
     "id": "a492a712",
@@ -2983,6 +3190,251 @@
     "search_keywords": "Roof Installer Arsenaali Oy Vantaa other",
     "display_mode": "fallback",
     "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+  },
+  {
+    "id": "ffe4895b",
+    "job_id": "early-childhood-education-teacher-punkaharju-kindergarten-savonlinna-ffe4895b",
+    "processed": true,
+    "title": "Early childhood education teacher, Punkaharju kindergarten",
+    "company": "Savonlinnan kaupunki",
+    "job_category": "education",
+    "jobLocation": [
+      "Savonlinna"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/722898/fi_FI",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/224d8b35-d0f4-40d7-b1e7-2c01fba53c29/en",
+    "job_employer_email": "leena.sinkkonen@savonlinna.fi",
+    "job_employer_name": "Leena Sinkkonen",
+    "job_employer_phone_no": "0444175445",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-punkaharju-kindergarten-savonlinna-ffe4895b",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-14",
+    "scraped_at": "2026-05-01 13:32:59",
+    "open_positions": 1,
+    "salary_range": "Local standard salary: €2989.31/month",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Join the city of Savonlinna as an Early Childhood Teacher, Punkaharju Kindergarten and grow your career in Savonlinna. Check details and apply now.",
+    "description": "The city of Savonlinna must get the Punkaharju daycare center as an early childhood education teacher, which offers a friendly working environment and good work certificates. The working hours of 38.15 h/week and the local standard salary of €2989.31/month are for very considerable reasons. As an early childhood education teacher, you are responsible for and promote the comprehensive planning, implementation, evaluation and development of the activities of the children's group with your own professional expertise. For more information, give an interview by 14 May 2026 at 12:00 via Kuntarekry, www.kuntarekry.fi.",
+    "what_we_expect": [
+      "Hold a valid CPR certification.",
+      "Be able to communicate effectively with children and parents.",
+      "Working time: 38.15h/week."
+    ],
+    "job_responsibilities": [
+      "Provide childcare services to children aged 0-6 years.",
+      "Ensure the safety and well-being of children during playtime.",
+      "Working time: 38.15h/week."
+    ],
+    "what_we_offer": [
+      "Flexible working hours.",
+      "Paid vacation days.",
+      "Working time: 38.15h/week."
+    ],
+    "search_keywords": "childcare, safety, playtime, CPR certification, communication skills",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+  },
+  {
+    "id": "1959c8cf",
+    "job_id": "early-childhood-education-social-worker-pihalajaniemi-daycar-savonlinna-1959c8cf",
+    "processed": true,
+    "title": "Early childhood education social worker, Pihalajaniemi daycare center",
+    "company": "Savonlinnan kaupunki",
+    "job_category": "social-care-services",
+    "jobLocation": [
+      "Savonlinna"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/722910/fi_FI",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6f86ed74-528f-4981-9713-531d79b7d4f9/en",
+    "job_employer_email": "kirsi.hakkarainen@savonlinna.fi",
+    "job_employer_name": "Kirsi Hakkarainen",
+    "job_employer_phone_no": "0444174366",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/early-childhood-education-social-worker-pihalajaniemi-daycar-savonlinna-1959c8cf",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-14",
+    "scraped_at": "2026-05-01 13:32:59",
+    "open_positions": 1,
+    "salary_range": "Local standard salary: €2887.97/month",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "The city of Savonlinna is hiring a Early Childhood Education social worker, Pihalajaniemi daycare center in Savonlinna.",
+    "description": "The city of Savonlinna is exactly and in the right area, where more than 1,000 employees work. Pihlajaniemi daycare center is a small municipal center that grows confidently and repeats the child. We operate in accordance with Pro-Vaka pedagogy, and the early childhood education social worker participates in promoting the implementation of early childhood education/preschool education and its pedagogy for her group of children. The working time is 38.25 h/week, and the position is subject to a six (6) month trial period. The person selected for the position must provide the employer with a tuberculosis report in accordance with the Infectious Diseases Act, and present a resume or CV showing the criminal background of those working with children. Applications with a curriculum vitae or CV must be submitted by 12.00 on May 14, 2026 via Kuntarekry.",
+    "what_we_expect": [
+      "A background in early childhood education or related field.",
+      "Experience working with children aged 3-6 years old.",
+      "Proficiency in Finnish language."
+    ],
+    "job_responsibilities": [
+      "Varhaiskasvatuksen sosionomi.",
+      "Working hours: 38.25 h/week.",
+      "Conditions of employment and salary: KVTES."
+    ],
+    "what_we_offer": [
+      "Competitive salary and benefits package.",
+      "Flexible work hours.",
+      "Working hours: 38.25 h/week."
+    ],
+    "search_keywords": "Early childhood education social worker, Pihalajaniemi daycare center Savonlinnan kaupunki Savonlinna other",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+  },
+  {
+    "id": "9aa8fce8",
+    "job_id": "early-childhood-education-social-worker-anttola-daycare-cent-savonlinna-9aa8fce8",
+    "processed": true,
+    "title": "Early childhood education social worker, Anttola daycare center",
+    "company": "Savonlinnan kaupunki",
+    "job_category": "social-care-services",
+    "jobLocation": [
+      "Savonlinna"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/722908/fi_FI",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5dbb53ef-b481-4b37-a312-23ff0ddc3927/en",
+    "job_employer_email": "hannele.taavitsainen@savonlinna.fi",
+    "job_employer_name": "Hannele Taavitsainen",
+    "job_employer_phone_no": "0444175114",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/early-childhood-education-social-worker-anttola-daycare-cent-savonlinna-9aa8fce8",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-14",
+    "scraped_at": "2026-05-01 13:32:59",
+    "open_positions": 1,
+    "salary_range": "Local standard salary: €2887.97/month",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "The city of Savonlinna is hiring a social worker for early childhood education, Anttola daycare center in Savonlinna.",
+    "description": "We are seeking a Varhaiskasvatuksen sosionomi specialist to join our Anttolan päiväkoti team in Savonlinna. This position is part of a multi-disciplinary team focused on the holistic education and pedagogical management of children's development, including assessment and planning. The successful candidate will work closely with parents to enhance their child's involvement and support, providing accurate assessments and fostering extensive collaboration. We offer a permanent role starting in August 2026, working full-time hours. Our team is committed to maintaining high standards as per the Finnish Varhaiskasvatuksen sosionomi (540/2018) regulations, with an emphasis on ensuring compliance with Section 27 and 33 of the regulation. The role involves a total of 38.",
+    "what_we_expect": [
+      "Ammattiosaamisellaan.",
+      "Lapsenytystarpeet.",
+      "Working time: 38.25 h/week, commits to shift work if necessary."
+    ],
+    "job_responsibilities": [
+      "Varhaiskasvatuksen sosionomi.",
+      "Working time: 38.25 h/week, commits to shift work if necessary.",
+      "Conditions of employment and salary: KVTES."
+    ],
+    "what_we_offer": [
+      "Working time: 38.25 h/week, commits to shift work if necessary.",
+      "Conditions of employment and salary: KVTES.",
+      "Local standard salary: €2887.97/month.",
+      "Please provide more information."
+    ],
+    "search_keywords": "early childhood education social worker, promotes child and family well-being with guardians, adoption needs",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+  },
+  {
+    "id": "7883cd69",
+    "job_id": "cleaner-kolari-7883cd69",
+    "processed": true,
+    "title": "Cleaner",
+    "company": "Kolarin kunta",
+    "job_category": "cleaning-and-facility-services",
+    "jobLocation": [
+      "Kolari"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/683248/fi_FI",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2cd94979-0c24-42aa-a85f-3717209608b6/en",
+    "job_employer_email": "sakari.ravelin@kolari.fi",
+    "job_employer_name": "Sakari Ravelin",
+    "job_employer_phone_no": "+358404895010",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/cleaner-kolari-7883cd69",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-19",
+    "scraped_at": "2026-05-01 13:32:59",
+    "open_positions": 1,
+    "salary_range": "2196,34",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Looking for a Cleaner job in Kolari? Kolar municipality is seeking motivated candidates—apply today.",
+    "description": "The municipality of Kolar is accessible to the fells, the free-flowing Tornion-Muonionjoki and the salmon kingdom. We are looking for cleaners, one of whom is an itinerant cleaner. After finding a suitable person for the cleaning job, the work can be started immediately or according to the agreement. Our way of feeling: 2196.34 / day. It is important to us that a person with our requirements is assumed to be private and completely suitable.",
+    "what_we_expect": [
+      "We are looking for cleaners for the properties owned by Kolar municipality, one of which is an itinerant cleaner.",
+      "After finding a suitable person for the cleaning job, the work can be started immediately or according to the agreement.",
+      "Kunnossapitomestari; puh.",
+      "040 4895010 Cleaning supervisor; tel.",
+      "0400696344."
+    ],
+    "job_responsibilities": [
+      "Facility cleaner.",
+      "We are looking for cleaners for the properties owned by Kolar municipality, one of which is an itinerant cleaner.",
+      "After finding a suitable person for the cleaning job, the work can be started immediately or according to the agreement."
+    ],
+    "what_we_offer": [
+      "Tervetuloa Kolariin.",
+      "We are looking for cleaners for the properties owned by Kolar municipality, one of which is an itinerant cleaner.",
+      "After finding a suitable person for the cleaning job, the work can be started immediately or according to the agreement."
+    ],
+    "search_keywords": "Cleaner Kolari municipality Kolari other",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+  },
+  {
+    "id": "6ccd14ee",
+    "job_id": "early-childhood-education-social-worker-kellarpello-kinderga-savonlinna-6ccd14ee",
+    "processed": true,
+    "title": "Early childhood education social worker, Kellarpello kindergarten (Kallislahti unit)",
+    "company": "Savonlinnan kaupunki",
+    "job_category": "social-care-services",
+    "jobLocation": [
+      "Savonlinna"
+    ],
+    "jobRegions": [],
+    "jobapply_link": "https://www.kuntarekry.fi/tyoavain/722909/fi_FI",
+    "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/09c961db-15be-4735-a5cf-98966541a910/en",
+    "job_employer_email": "markku.hamalainen@savonlinna.fi",
+    "job_employer_name": "Markku Hämäläinen",
+    "job_employer_phone_no": "0444174377",
+    "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/early-childhood-education-social-worker-kellarpello-kinderga-savonlinna-6ccd14ee",
+    "date_posted": "2026-04-30",
+    "date_expires": "2026-05-14",
+    "scraped_at": "2026-05-01 13:32:58",
+    "open_positions": 1,
+    "salary_range": "Local standard salary: €2887.97/month",
+    "workTime": "Full-time",
+    "continuityOfWork": "Permanent",
+    "language_requirements": [
+      "Finnish"
+    ],
+    "meta_description": "Looking for an Early Childhood Social Worker, Kellarpello Daycare (Kallislahti unit) job in Savonlinna?",
+    "description": "The city of Savonlinna has at its disposal a large courtyard for outdoor recreation and good camping opportunities. In our operations, we support childhood happiness, safety and joyful learning experiences in accordance with the child's development; through new knowledge and skills. Children's play is at the core of our activities; games, exercise and music, as well as working together bring joy to a child's everyday life. The early childhood education social worker participates and promotes the comprehensive implementation, evaluation and development of early childhood education/preschool education and its pedagogy for their group of children with their own professional expertise. Working hours: 38.25 h/week Terms of employment and salary: Local standard salary: €2887.97/month The position is subject to a six (6) month trial period. Applications with a curriculum vitae or CV will be submitted on 14.5.",
+    "what_we_expect": [
+      "Working hours: 38.25 h/week.",
+      "Conditions of employment and salary: KVTES.",
+      "Local standard salary: €2887.97/month.",
+      "Please provide more information."
+    ],
+    "job_responsibilities": [
+      "Varhaiskasvatuksen sosionomi.",
+      "Working hours: 38.25 h/week.",
+      "Conditions of employment and salary: KVTES."
+    ],
+    "what_we_offer": [
+      "Working hours: 38.25 h/week.",
+      "Conditions of employment and salary: KVTES.",
+      "Local standard salary: €2887.97/month.",
+      "Please provide more information."
+    ],
+    "search_keywords": "Daycare Director, childhood, social worker, early childhood education",
+    "display_mode": "fallback",
+    "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
   },
   {
     "id": "b99383ca",
