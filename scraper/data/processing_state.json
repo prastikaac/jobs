@@ -1,28 +1,28 @@
 {
   "version": 1,
-  "updated_at": "2026-05-06 00:43:52",
+  "updated_at": "2026-05-06 00:49:06",
   "jobs": {
     "1fc737ce": {
       "translated": true,
-      "translated_at": "2026-05-06 00:42:45",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-06 00:49:06"
     },
     "40d2004c": {
       "translated": true,
-      "translated_at": "2026-05-06 00:43:08",
-      "ai_processed": false,
-      "ai_status": "pending",
+      "translated_at": "",
+      "ai_processed": true,
+      "ai_status": "success",
       "retry_count": 0,
       "max_retries": 3,
-      "ai_retry_needed": true,
+      "ai_retry_needed": false,
       "last_ai_error": "",
-      "formatted_at": ""
+      "formatted_at": "2026-05-06 00:48:16"
     }
   }
 }

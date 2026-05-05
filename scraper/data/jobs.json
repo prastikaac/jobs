@@ -1205,62 +1205,6 @@
   },
 
   {
-    "scrape_timestamp": "2026-04-29 22:35:00",
-    "jobs": [
-      {
-        "id": "73d93fe2",
-        "job_id": "summer-cleaner-valkeakoski-73d93fe2",
-        "processed": true,
-        "title": "Summer Cleaner",
-        "company": "Bolt.Works Oy",
-        "job_category": "cleaning-and-facility-services",
-        "jobLocation": [
-          "Valkeakoski"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://q.bolt.works/application.html?advertId=1817647",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1a69ff9-32a6-496e-8944-1c5cc77cb0a6/en",
-        "job_employer_email": "susa.jarvinen@bolt.works",
-        "job_employer_name": "Susa Järvinen",
-        "job_employer_phone_no": "+358505999597",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/summer-cleaner-valkeakoski-73d93fe2",
-        "date_posted": "2026-04-29",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-04-29 22:35:00",
-        "open_positions": 1,
-        "salary_range": "salary commensurate with the task, your work ex",
-        "workTime": "Full-time",
-        "continuityOfWork": "Summer job",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Join Bolt.Works Oy as a Summer Cleaner and grow your career in Valkeakoski. Check details and apply now.",
-        "description": "Bolt.Works Oy is seeking a Summer Cleaner for ISS Valkeakoski, offering full-time work from June 1st, 2026. The position involves cleaning duties across various facilities including an airplane cleaner, facility cleaner, furniture cleaner, ward nurse, toilet cleaner, and train cleaner. Applicants must be at least 18 years old and able to communicate in Finnish. Duties include courage, initiative, cooperation skills, learning new things, following common rules of the game, and understanding instructions in Finnish. The role offers a competitive hourly wage based on Finnish collective agreements and is available immediately with working hours from 06:00 to 11:00 Monday-Saturday. Interested candidates should apply through Bolt.Works for immediate consideration.",
-        "what_we_expect": [
-          "Courage, initiative and cooperation skills.",
-          "Want to learn new things and act according to the common rules of the game.",
-          "Ability to communicate and understand instructions in Finnish.",
-          "Coming of age."
-        ],
-        "job_responsibilities": [
-          "Cleaning of the customer Ruokakauppa.",
-          "We want you to.",
-          "Courage, initiative and cooperation skills."
-        ],
-        "what_we_offer": [
-          "Salary commensurate with the task, work experience, and skills.",
-          "Bonus for excellent work performance.",
-          "Occupational health services from day one.",
-          "Career options and paths available."
-        ],
-        "search_keywords": "cleaner ISS Valkeakoski summer job",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
-      }
-    ]
-  },
-
-  {
     "scrape_timestamp": "2026-04-29 22:35:09",
     "jobs": [
       {
@@ -7107,54 +7051,6 @@
     "scrape_timestamp": "2026-04-30 10:00:59",
     "jobs": [
       {
-        "id": "af8d9b18",
-        "job_id": "painter-for-commercial-space-renovation-in-helsinki-helsinki-af8d9b18",
-        "processed": true,
-        "title": "Painter for commercial space renovation in Helsinki",
-        "company": "Arsenaali Oy",
-        "job_category": "construction",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://arsenaali.likeit.fi/apply/5226353",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d25b3c4b-c806-43a6-9495-2c0e5d42a7a4/en",
-        "job_employer_email": "hr@arsenaali.fi",
-        "job_employer_name": "Santeri Teerisuo",
-        "job_employer_phone_no": "050 304 0498",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/painter-for-commercial-space-renovation-in-helsinki-helsinki-af8d9b18",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-04-30 10:00:59",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Join Arsenaali Oy as a Painter for commercial space renovation in Helsinki and grow your career in Helsinki. Check details and apply now.",
-        "description": "Arsenaali Oy is seeking a painter for commercial space renovation in Helsinki. If you are eager to join a reliable company, apply at <http://arsenaali.likeit.fi/apply/5226353> or by email at hr@arsenaali.fi. Arsenal offers an open and pleasant working environment focused on doing work. The position requires experience in similar tasks and knowledge of the Finnish language. Apply quickly for a competitive hourly wage based on Finnish collective agreements.",
-        "what_we_expect": [
-          "Occupational safety card.",
-          "Knowledge of the Finnish language.",
-          "Or by e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>."
-        ],
-        "job_responsibilities": [
-          "Hand painting, smoothing and taping are done at the site.",
-          "Experience in similar tasks is expected.",
-          "Or by e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>."
-        ],
-        "what_we_offer": [
-          "Or by e-mail at hr@arsenaali.fi <mailto:hr@arsenaali.fi>.",
-          "More information: Santeri 050 304 0498.",
-          "Professional work environment."
-        ],
-        "search_keywords": "Painter commercial space renovation Helsinki",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
-      },
-      {
         "id": "dd85802b",
         "job_id": "excavator-driver-for-park-work-espoo-dd85802b",
         "processed": true,
@@ -11424,59 +11320,6 @@
           "Opportunity to complete an internship in your summer job."
         ],
         "search_keywords": "summer social security assistant, summer employee, community nurse, social worker, care assistant, head of service unit, Finnish language skills, criminal record check, work community, drug-free workplace",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
-      },
-      {
-        "id": "a8a11048",
-        "job_id": "senior-finance-business-analyst-helsinki-a8a11048",
-        "processed": true,
-        "title": "Senior Finance Business Analyst",
-        "company": "Helen Oy",
-        "job_category": "business-and-administration",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://helen.csod.com/ux/ats/careersite/4/home/requisition/784?c=helen",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/069d7000-d542-44c1-ad80-04a30a264b86/en",
-        "job_employer_email": "sami.rautiainen@helen.fi",
-        "job_employer_name": "Sami Rautiainen",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/senior-finance-business-analyst-helsinki-a8a11048",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-04-30 10:01:23",
-        "open_positions": 1,
-        "salary_range": "salary for the position is determined based on",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Helen Oy is hiring a Senior Finance Business Analyst in Helsinki. Explore responsibilities, benefits, and apply today.",
-        "description": "Helen Oy is seeking a Senior Finance Business Analyst for their Helsinki-based team. This role involves developing group-level financial reporting, analytics, and data models while ensuring they are used effectively in strategic guidance, forecasting, and decision-making. The ideal candidate has 5-7 years of experience in financial analytics, reporting, or working with financial forecasting models. They should possess strong knowledge of financial data, dimensions, key figures, and be skilled in visualizing complex information into understandable entities. Experience with tools like Power BI, SQL, Python, and Databricks is also required. The candidate must have excellent communication skills to work effectively with finance, IT, and business operations teams.",
-        "what_we_expect": [
-          "5-7 years of experience in financial analytics, reporting, or working with financial forecasting models.",
-          "Strong knowledge of financial data, dimensions, key figures, and the ability to visualize entities.",
-          "Experience with data analytics and reporting tools (e.g., Power BI, SQL, Python, Databricks).",
-          "Ability to build clear, user-friendly, and visually functional dashboards.",
-          "Ability to change complex financial information into an understandable and decision-making entity.",
-          "Strong cooperation and communication skills, including the ability to act as a credible sparring partner."
-        ],
-        "job_responsibilities": [
-          "Develop group-level financial reporting, analytics, and the financial data model.",
-          "Ensure that business reports are based on common, agreed financial figures.",
-          "Design and develop financial reports, dashboards, and Power BI for different stakeholders."
-        ],
-        "what_we_offer": [
-          "Central and influential role in developing group's financial visibility and guidance.",
-          "Direct impact on how financial information is used in decision-making at different levels of the organization.",
-          "Competent, relaxed, and cooperative community of experts.",
-          "Involved in building the future of clean and sustainable energy.",
-          "Various employee benefits including electricity for employees, charity work day, remote working abroad, and welfare benefit."
-        ],
-        "search_keywords": "Senior Finance Business Analyst Helen Group Finland Clean Energy",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
       }
@@ -19527,54 +19370,6 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
       },
       {
-        "id": "4a30f4bf",
-        "job_id": "heavy-equipment-installer-oulu-4a30f4bf",
-        "processed": true,
-        "title": "Heavy Equipment Installer",
-        "company": "Osuma Henkilöstöpalvelut Oy",
-        "job_category": "technical-services",
-        "jobLocation": [
-          "Oulu"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "http://osuma.likeit.fi/apply/47920118",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c0083174-a5aa-4e12-aa5e-857e95b0ae5b/en",
-        "job_employer_email": "tommi.karsikas@osuma.fi",
-        "job_employer_name": "Tommi Karsikas",
-        "job_employer_phone_no": "0503412168",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/heavy-equipment-installer-oulu-4a30f4bf",
-        "date_posted": "2026-05-01",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-05-01 13:30:05",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Start your next career step as a Heavy Equipment Repairer at Osuma Henkilöstöpalvelut Oy. Great opportunity in Oulu—apply now.",
-        "description": "We are seeking a heavy equipment repairer/installer for our customer company in Oulu, specializing in earthmoving machines and construction equipment. This position offers full-time employment starting mid-May until autumn. Previous experience with heavy equipment maintenance, an independent work ethic, and the ability to learn new skills are highly valued. The role involves maintaining, installing, and repairing excavators, earthmoving, and other work machines. A safe and comfortable workplace is provided. Submit your application using our website or contact Tommi Karsikas for more information. Interviews are ongoing during the application period.",
-        "what_we_expect": [
-          "Previous experience with heavy equipment maintenance.",
-          "A self-initiated and independent approach to work with a desire to learn new things.",
-          "Previous experience in heavy equipment maintenance."
-        ],
-        "job_responsibilities": [
-          "Install and repair heavy equipment such as excavators, earthmoving machines, and construction machinery.",
-          "Work independently in a workshop setting or move to customers' sites for repairs.",
-          "Previous experience in heavy equipment maintenance."
-        ],
-        "what_we_offer": [
-          "Comfortable workplace with a safe environment.",
-          "Opportunities for growth and learning.",
-          "Previous experience in heavy equipment maintenance."
-        ],
-        "search_keywords": "Heavy Equipment Installer Osuma Henkelistopalvelut Oy Oulu other",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
-      },
-      {
         "id": "10aa7cdb",
         "job_id": "construction-worker-oulu-10aa7cdb",
         "processed": true,
@@ -24253,69 +24048,6 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
       },
       {
-        "id": "5f7edb7f",
-        "job_id": "customer-prospector-helsinki-5f7edb7f",
-        "processed": true,
-        "title": "Customer Prospector",
-        "company": "Kaskipuu Oy, Oulu",
-        "job_category": "sales-and-marketing",
-        "jobLocation": [
-          "Helsinki",
-          "Vantaa",
-          "Sastamala",
-          "Ylöjärvi",
-          "Rauma",
-          "Lohja",
-          "Espoo",
-          "Sipoo",
-          "Turku",
-          "Nokia",
-          "Hämeenlinna",
-          "Porvoo",
-          "Tampere",
-          "Pori"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://kaski.fi/tyopaikat/asiakashankkija/",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/13d49733-1d9d-4b73-accd-bb470554a7f5/en",
-        "job_employer_email": "olli.holopainen@kaski.fi",
-        "job_employer_name": "Olli Holopainen",
-        "job_employer_phone_no": "0406462014",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/customer-prospector-helsinki-5f7edb7f",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-05-01 13:31:01",
-        "open_positions": 1,
-        "salary_range": "salary model is based on results, but we are pa",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Build your future with Kaskipuu Oy, Oulu as a Customer Prospector in Helsinki. Learn more about the role and apply now.",
-        "description": "We are establishing our own customer acquisition team in Southern Finland and the Turku area! This opportunity is great for people who want to work and earn extra income while deciding their own working hours. The task involves arranging free demonstration visits for Kaskipuu factory representatives, suitable for events, fairs, shopping centers, or residential areas. We are hiring 3-5 new employees in the Pirkanmaa, Pori, or Helsinki area, with a salary model based on results and incentive pay. Our brand is reliable, working hours are flexible, and we offer continuous support from factory representatives. The job requires an active approach to work, courage to do customer acquisition, self-initiative, and earning a good hourly wage. Apply now for the best season in door and window sales!",
-        "what_we_expect": [
-          "Active approach to work, courage to do customer acquisition, self-initiative, want to earn a good hourly wage.",
-          "Now we are establishing our own customer acquisition team in Southern Finland and the Turku area!",
-          "What do we offer?"
-        ],
-        "job_responsibilities": [
-          "Arrange free demonstration visits for Kaskipuu factory representatives.",
-          "Do customer acquisition on foot while moving around the residential area.",
-          "Now we are establishing our own customer acquisition team in Southern Finland and the Turku area!"
-        ],
-        "what_we_offer": [
-          "A reliable brand that you can represent with pride.",
-          "Very flexible working hours (also suitable for students/athletes).",
-          "The opportunity to influence your own way of working.",
-          "Incentive salary.",
-          "Per diem and mileage allowances."
-        ],
-        "search_keywords": "Customer Prospector Kaskipuu Oy, Oulu Helsinki other",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
-      },
-      {
         "id": "18be146e",
         "job_id": "project-manager-helsinki-18be146e",
         "processed": true,
@@ -26015,59 +25747,6 @@
   {
     "scrape_timestamp": "2026-05-01 13:31:11",
     "jobs": [
-      {
-        "id": "ed02976f",
-        "job_id": "summer-employee-warehouse-assistant-pori-ed02976f",
-        "processed": true,
-        "title": "Summer Employee / Warehouse Assistant",
-        "company": "Timoteos Oy, Pori",
-        "job_category": "warehousing-and-storage",
-        "jobLocation": [
-          "Pori"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/59e921e0-a6d9-45d9-aa7b-4c0b04fe368a/en",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/59e921e0-a6d9-45d9-aa7b-4c0b04fe368a/en",
-        "job_employer_email": "",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/summer-employee-warehouse-assistant-pori-ed02976f",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-05-01 13:31:11",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
-        "workTime": "Full-time",
-        "continuityOfWork": "Summer job",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Build your future with Timoteos Oy, Pori as a Summer employee / Warehouse assistant in Pori. Learn more about the role and apply now.",
-        "description": "Timoteos Oy in Pori is looking for a versatile warehouse assistant to join their team during the summer months. This position involves assisting with deliveries, packaging products, filling shelves, and keeping the warehouse organized. Applicants must be at least 18 years old, precise, conscientious, and eager to learn new skills. The company offers an opportunity to work directly with quality products while gaining valuable experience in a fast-paced environment. Interested candidates should visit on Tuesday, May 5th from 7:00 AM to 10:00 AM at Kartanontie 51. The works will commence as soon as possible and continue until the end of August, with the last two weeks of July dedicated solely to rest and relaxation.",
-        "what_we_expect": [
-          "At least 18 years old.",
-          "Precise.",
-          "Conscientious.",
-          "Interested in learning new things.",
-          "Used to completing started tasks."
-        ],
-        "job_responsibilities": [
-          "Assisting with deliveries, packaging and shelving of parts.",
-          "Used to completing started tasks.",
-          "You are."
-        ],
-        "what_we_offer": [
-          "You are.",
-          "At least 18 years old.",
-          "Precise.",
-          "Conscientious.",
-          "Interested in learning new things.",
-          "Used to completing started tasks."
-        ],
-        "search_keywords": "summer job, warehouse assistant, delivery assistance, packaging, shelving, precision, conscientiousness, learning, new experiences, factory visit, Pori, Kartanontie, Ulvila border, July break, summer employment",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
-      },
       {
         "id": "fa46edb2",
         "job_id": "à-la-carte-chef-skyview-igloo-resort-winter-season-2026-2027-rovaniemi-fa46edb2",
@@ -36484,54 +36163,6 @@
         "search_keywords": "restaurant shift manager Scandic Hamburger Börs",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
-      },
-      {
-        "id": "c9fa86ac",
-        "job_id": "early-childhood-educator-helsinki-c9fa86ac",
-        "processed": true,
-        "title": "Early Childhood Educator",
-        "company": "Helsingin kaupunki",
-        "job_category": "education",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-02-473-26",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/71aedf98-df22-4e7d-bf83-b6c24b6fc8b7/en",
-        "job_employer_email": "anne.saariniemi@hel.fi",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-educator-helsinki-c9fa86ac",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-05-01 13:32:36",
-        "open_positions": 1,
-        "salary_range": "3 224,86 euroa/kk",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Build your future with Helsingin kaupunki as a Early Childhood Educator in Helsinki. Learn more about the role and apply now.",
-        "description": "Helsingin kaupunki is looking for an enthusiastic early childhood educator to join their Aalto-Arabia-Loiskee unit. The ideal candidate should be passionate about child-centered education and enjoy engaging with children through play-based activities. With a strong background in investigative teaching methods, the successful applicant will contribute to innovative educational projects that align with children's interests. This role offers opportunities for well-being moments during breaks and access to nature-friendly outdoor recreation areas. The company values employee engagement and provides comprehensive benefits including an Epassi Flex benefit of up to 550 euros towards business trips and wellness services, making it a great place to grow professionally in Helsinki.",
-        "what_we_expect": [
-          "Qualification in accordance with Act on Early Childhood Education (540/2018) or a bachelor's degree in education (lto).",
-          "Good oral and written Finnish language skills.",
-          "Valid criminal record for working with children (504/2002)."
-        ],
-        "job_responsibilities": [
-          "Building the working culture and learning environment of children's groups.",
-          "Planning, implementing, developing, and evaluating pedagogical activities.",
-          "Supporting children's individual learning in accordance with the Helsinki early childhood education and preschool curriculum."
-        ],
-        "what_we_offer": [
-          "Enthusiasm that is not tied to formulas.",
-          "Small work well-being and recreation moments during the working day off.",
-          "We start job interviews already during the application period."
-        ],
-        "search_keywords": "Early Childhood Educator Helsingin kaupunki Helsinki other",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
       }
     ]
   },
@@ -37787,54 +37418,6 @@
   {
     "scrape_timestamp": "2026-05-01 13:32:48",
     "jobs": [
-      {
-        "id": "ae8cb087",
-        "job_id": "teacher-in-early-childhood-education-helsinki-ae8cb087",
-        "processed": true,
-        "title": "Teacher in Early Childhood Education",
-        "company": "Helsingfors stad",
-        "job_category": "education",
-        "jobLocation": [
-          "Helsinki"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-04-2-26",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/127f21c0-144e-4387-81d6-8f03a6e4678c/en",
-        "job_employer_email": "emilia.doshoris2@hel.fi",
-        "job_employer_name": "Emilia Doshoris",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/education/teacher-in-early-childhood-education-helsinki-ae8cb087",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-05-01 13:32:48",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Swedish"
-        ],
-        "meta_description": "Discover a new opportunity as a Early Childhood Educator at Helsingfors stad in Helsinki. Apply now and take the next step in your career.",
-        "description": "We are looking for a versatile early childhood educator with experience in positive pedagogy and child-centered learning to join our team at Helsingfors stad. This part-time position offers the chance to contribute to building an operating culture based on children's best interests, focusing on their participation, sustainability goals, and emotional intelligence development. With opportunities for growth and a supportive professional environment, this role is ideal for educators committed to creating positive experiences for young minds. Apply now to be part of our dynamic community dedicated to nurturing the next generation!",
-        "what_we_expect": [
-          "Respect for children, parents, and colleagues.",
-          "Professional competence in building pedagogy within a group setting.",
-          "Also check out our video about what it's like to work in Helsinki early childhood education."
-        ],
-        "job_responsibilities": [
-          "Building the operating culture and learning environment for children's group.",
-          "Recognizing, naming, expressing, and regulating emotions among children.",
-          "Also check out our video about what it's like to work in Helsinki early childhood education."
-        ],
-        "what_we_offer": [
-          "Versatile employee benefits including Epassi Flex with up to €550 per year.",
-          "Supplementary training opportunities.",
-          "In Helsinki, we offer you versatile employee benefits."
-        ],
-        "search_keywords": "early childhood education, teaching, daycare centers, preschools, substitute teacher, Helsinki, pedagogy, child's best interest, sustainable development, well-being, language awareness, reading skills, Räv model, cultural benefits, city bikes, museums, exercise, leisure hobbies, supplementary training",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
-      },
       {
         "id": "9be7ca0a",
         "job_id": "excavator-driver-espoo-9be7ca0a",
@@ -41745,59 +41328,6 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       },
       {
-        "id": "6adfc5a4",
-        "job_id": "speech-therapist-espoo-6adfc5a4",
-        "processed": true,
-        "title": "Speech therapist",
-        "company": "Ab Puhepoint Oy, Helsinki (Kutomotie 16, 00380 HELSINKI)",
-        "job_category": "healthcare",
-        "jobLocation": [
-          "Espoo",
-          "Helsinki",
-          "Vantaa"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://puhepoint.fi/meille-toihin/",
-        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/898874cf-9d1a-4dd9-ac44-a8ffdc8ed9cc/en",
-        "job_employer_email": "hallinto@puhepoint.fi",
-        "job_employer_name": "Sirpa Pirilä",
-        "job_employer_phone_no": "0405538500",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/speech-therapist-espoo-6adfc5a4",
-        "date_posted": "2026-04-30",
-        "date_expires": "2026-05-05",
-        "scraped_at": "2026-05-01 13:33:27",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Looking for a Puheterapeutti job in Espoo? Ab Puhepoint Oy, Helsinki (Kutomotie 16, 00380 HELSINKI) is seeking motivated candidates—apply today.",
-        "description": "Ab Puhepoint Oy is seeking a highly skilled and experienced Puheterapeutti to join their team in Espoo. This position offers the opportunity to provide high-quality Kelan terapioita with a focus on patient-centered care, continuous learning opportunities, and support for personal development. The ideal candidate will be fluent in Finnish and possess strong communication skills. With a proven track record of delivering effective therapy programs and conducting research, this individual will contribute significantly to the company's ongoing success. For more information or to apply, please contact Sirpa Pirilä at hallinto@puhepoint.fi.",
-        "what_we_expect": [
-          "Logopedia.",
-          "We hope from you.",
-          "We offer you."
-        ],
-        "job_responsibilities": [
-          "Puheterapeutti.",
-          "We offer you.",
-          "Kilpailukykyiset vuokraprosentit."
-        ],
-        "what_we_offer": [
-          "Kilpailukykyiset vuokraprosentit.",
-          "Customer acquisition.",
-          "Mahdollisuuden harjoittaa ammattiasi toivomallasi tavalla.",
-          "Freedom to plan your own number of customers and schedule.",
-          "Professional guidance and training.",
-          "Henkilökohtaista mentorointia tarpeittesi mukaan."
-        ],
-        "search_keywords": "Come to us, Kela therapy, for professional speech therapists, clients of wellness areas and private individuals, speech therapy, in addition to Kelo therapies, implements",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
-      },
-      {
         "id": "10e4e92c",
         "job_id": "caretakercleaner-for-the-post-office-and-the-art-museum-25-h-kuopio-10e4e92c",
         "processed": true,
@@ -42882,6 +42412,111 @@
         "search_keywords": "Employment specialist, Multidisciplinary services City of Järvenpää Hyvinkää other",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-05-06 00:42:18",
+    "jobs": [
+      {
+        "id": "40d2004c",
+        "job_id": "full-stack-software-developer-vantaa-40d2004c",
+        "processed": true,
+        "title": "Full stack software developer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/23658363",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/92ed38e1-7672-48ef-808c-01ef6f418b3e/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/full-stack-software-developer-vantaa-40d2004c",
+        "date_posted": "2026-05-05",
+        "date_expires": "2026-05-07",
+        "scraped_at": "2026-05-06 00:42:18",
+        "open_positions": 1,
+        "salary_range": "salary that matches your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Full Stack Developer position available at Lokki Henkilöstöpalvelut Oy in Vantaa. Check requirements and submit your application today.",
+        "description": "We are looking for two full stack software developers with experience in modern digital platforms, SAFe business model, Azure DevOps, open source technologies like Java and React, content management systems such as Magnolia, database solutions including SQL Server, continuous release practices, and a strong commitment to team collaboration. Fluent written and spoken Finnish is required. The hybrid work model offers flexibility while ensuring consistent communication with the Espoo office and remote teams. A competitive salary based on Finnish collective agreements will be offered, along with opportunities for professional growth and a positive working relationship within a large company. If you meet these requirements and are eager to join our team, please apply quickly.",
+        "what_we_expect": [
+          "Experience in teams (at least 6 months).",
+          "Experience with SAFe business model (at least 6 months).",
+          "Experience with Azure DevOps environment (at least 6 months).",
+          "Experience with open source technologies such as Java and React (at least 6 months) or similar technologies (at least 12 months in total).",
+          "Experience with content management systems, especially Magnolia (at least 6 months).",
+          "Experience with database solutions, especially SQL Server (at least 4 months)."
+        ],
+        "job_responsibilities": [
+          "Develop and maintain nationwide digital information systems for employment services.",
+          "Support digitization of labor services, customer orientation, and knowledge-based management on a national scale.",
+          "Technical skills requirements."
+        ],
+        "what_we_offer": [
+          "Competitive salary that matches skills.",
+          "Nice working relationship in a big company.",
+          "We offer you."
+        ],
+        "search_keywords": "Full stack software Developer Lokki Henkilöstöpalvelut Oy Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "1fc737ce",
+        "job_id": "sales-coordinator-kuopio-1fc737ce",
+        "processed": true,
+        "title": "Sales Coordinator",
+        "company": "M&J Dynastia Oy, Kuopio",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.mjdynastia.fi/rekry/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/49f1735f-66e2-45de-a524-e523d5f8cc89/en",
+        "job_employer_email": "janiina.kekkonen@mjdynastia.fi",
+        "job_employer_name": "Janiina Kekkonen",
+        "job_employer_phone_no": "0445264462",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/sales-coordinator-kuopio-1fc737ce",
+        "date_posted": "2026-05-05",
+        "date_expires": "2026-05-19",
+        "scraped_at": "2026-05-06 00:42:18",
+        "open_positions": 1,
+        "salary_range": "The guaranteed salary works for you. However, thanks to commissions and bonuses, you can expect your salary to be around €2,000/month after the first month, and €3,000-4,000/month through development. In addition, we constantly have competitions, e.g. events, bonuses and gift cards for foreign trips. You learn how to calculate the salary accrual from successes yourself, but we also look at it weekly together.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Sales Coordinator role at M&J Dynastia Oy, Kuopio. Join a growing team and build your career in Kuopio.",
+        "description": "M&J Dynastia Oy is seeking a Sales Coordinator for their Kuopio office. This role involves working closely with customers to book appointments and support the company's brand image. The position offers continuous coaching and development opportunities, including potential advancement to sales supervisor. With a strong customer service background, applicants should be able to communicate effectively in Finnish and have experience using computers. A salary of €2,000/month is offered after the first month, with an expected increase to €3,000-4,000/month through continued learning. The office is located in Savilahti with good transport links and close to universities.",
+        "what_we_expect": [
+          "A good attitude and heart, enthusiasm to develop.",
+          "Customer service/sales background.",
+          "We are happy to tell you more about the work: Janiina Kekkonen, 0445264462, janiina.kekkonen@mjdynastia.fi."
+        ],
+        "job_responsibilities": [
+          "Book appointments for consumer customers of the partner's service.",
+          "Map out high-quality customer encounters.",
+          "We are happy to tell you more about the work: Janiina Kekkonen, 0445264462, janiina.kekkonen@mjdynastia.fi."
+        ],
+        "what_we_offer": [
+          "Continuous coaching and education.",
+          "Competitions, bonuses, gift cards for foreign trips.",
+          "We are happy to tell you more about the work: Janiina Kekkonen, 0445264462, janiina.kekkonen@mjdynastia.fi."
+        ],
+        "search_keywords": "sales-inspired, customer work, appointment booking, partner's service, high-quality customer encounters",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
   },
