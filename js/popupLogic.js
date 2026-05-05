@@ -325,7 +325,7 @@ window.checkEmailExistence = async () => {
   const consentJobAlerts = document.getElementById("consentJobAlerts");
   if (!consentJobAlerts || !consentJobAlerts.checked) {
     const consentErr = document.getElementById("consentJobAlertsError");
-    if (consentErr) consentErr.textContent = "You must agree to our job alerts to continue.";
+    if (consentErr) consentErr.textContent = "You must agree to continue.";
     return;
   }
 
