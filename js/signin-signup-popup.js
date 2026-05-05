@@ -24,18 +24,17 @@ wrapper.innerHTML = `
       <div class="consent-checkboxes">
         <label class="consent-label" for="consentJobAlerts">
           <input type="checkbox" id="consentJobAlerts" />
-          <span class="consent-text">
-            I agree to receive job market news, updates, and information about opportunities in Finland via email.
-            <span class="required-star">*</span>
-          </span>
+        <span class="consent-text">
+ By continuing, I agree to the <a href="https://findjobsinfinland.fi/terms-and-conditions" target="_blank">Terms & Conditions</a> and <a href="https://findjobsinfinland.fi/privacy-policy" target="_blank">Privacy Policy</a>.
+  <span class="required-star">*</span>
+</span>
         </label>
         <div id="consentJobAlertsError" class="error-message"></div>
 
         <label class="consent-label" for="consentBlogSubscribe">
           <input type="checkbox" id="consentBlogSubscribe" />
           <span class="consent-text">
-            I would like to receive blog posts, career tips, and news about the Finnish job market via email.
-            <span class="optional-tag">(Optional)</span>
+            I would also like to receive blog posts, career tips, and news about the Finnish job market via email.
           </span>
         </label>
       </div>

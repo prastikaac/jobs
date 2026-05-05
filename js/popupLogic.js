@@ -95,49 +95,49 @@ async function initMessaging() {
   if (_messagingInitPromise) return _messagingInitPromise;
 
   _messagingInitPromise = (async () => {
-  if ('serviceWorker' in navigator) {
-    try {
-      const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
-      console.log('Service Worker registered:', registration);
-      messaging = getMessaging(app);
+    if ('serviceWorker' in navigator) {
+      try {
+        const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+        console.log('Service Worker registered:', registration);
+        messaging = getMessaging(app);
 
-      // 🔽 Place onMessage HERE, after messaging is initialized
-      onMessage(messaging, (payload) => {
-        console.log('Message received:', payload);
+        // 🔽 Place onMessage HERE, after messaging is initialized
+        onMessage(messaging, (payload) => {
+          console.log('Message received:', payload);
 
-        // Only proceed if this tab is focused
-        if (!document.hasFocus()) {
-          console.log("Tab not focused. Skipping notification.");
-          return;
-        }
+          // Only proceed if this tab is focused
+          if (!document.hasFocus()) {
+            console.log("Tab not focused. Skipping notification.");
+            return;
+          }
 
-        if (Notification.permission === 'granted') {
-          const { title, body, icon } = payload.notification || {};
-          const jobLink = payload.data?.jobLink || null;
-          const imageUrl = payload.data?.imageUrl || null;
+          if (Notification.permission === 'granted') {
+            const { title, body, icon } = payload.notification || {};
+            const jobLink = payload.data?.jobLink || null;
+            const imageUrl = payload.data?.imageUrl || null;
 
-          const notification = new Notification(title || 'New Notification', {
-            body: body || '',
-            icon: icon || '/images/icon.png',
-            image: imageUrl || undefined
-          });
+            const notification = new Notification(title || 'New Notification', {
+              body: body || '',
+              icon: icon || '/images/icon.png',
+              image: imageUrl || undefined
+            });
 
-          notification.onclick = () => {
-            if (jobLink && jobLink.startsWith('http')) {
-              window.open(jobLink, '_blank');
-            }
-          };
-        }
-      });
+            notification.onclick = () => {
+              if (jobLink && jobLink.startsWith('http')) {
+                window.open(jobLink, '_blank');
+              }
+            };
+          }
+        });
 
 
-    } catch (error) {
-      console.error('Service Worker registration failed:', error);
+      } catch (error) {
+        console.error('Service Worker registration failed:', error);
+      }
+    } else {
+      console.warn('Service Workers not supported in this browser.');
     }
-  } else {
-    console.warn('Service Workers not supported in this browser.');
-  }
-  return messaging;
+    return messaging;
   })();
 
   return _messagingInitPromise;
@@ -199,10 +199,10 @@ function showPopupStep(stepId) {
   // Handle special popup display logic for the job alert container
   if (["popupStep1", "popupStep1b", "popupStep1c", "popupBlockedNotifications", "popupEnableNotifications"].includes(stepId)) {
     // Show the jobAlertPopup only for relevant steps
-    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
+    if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
   } else {
     // Hide the jobAlertPopup for other steps
-    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+    if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   }
 }
 
@@ -220,7 +220,7 @@ function closePopup() {
     localStorage.setItem("jobAlertPopupShown", "true");
   }
 
-  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 }
 
 
@@ -273,7 +273,7 @@ window.handlePopupYes = async () => {
 
   showPopupStep("popupStep2");
 
-  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 };
 
@@ -325,7 +325,7 @@ window.checkEmailExistence = async () => {
   const consentJobAlerts = document.getElementById("consentJobAlerts");
   if (!consentJobAlerts || !consentJobAlerts.checked) {
     const consentErr = document.getElementById("consentJobAlertsError");
-    if (consentErr) consentErr.textContent = "You must agree to receive job alerts to continue.";
+    if (consentErr) consentErr.textContent = "You must agree to our job alerts to continue.";
     return;
   }
 
@@ -345,7 +345,7 @@ window.checkEmailExistence = async () => {
   }
 
   // **Hide the job alert popup immediately after email existence check**
-  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 };
 
@@ -402,7 +402,7 @@ window.goToJobPreferenceStep = () => {
   if (hasError) return;
 
   // **Hide the job alert popup immediately after validation passes**
-  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   document.getElementById("profile-card-container").style.display = "block";
 
   // Go to next step after hiding the job alert popup
@@ -563,24 +563,24 @@ window.signupUser = async () => {
   // Parse push schedule from the native time input
   const pushTimeVal = document.getElementById("pushScheduleTime")?.value || "09:00";
   const [pushHour, pushMinute] = pushTimeVal.split(":").map(Number);
-  const pushDay  = parseInt(document.getElementById("pushScheduleDay")?.value  ?? "1", 10);
+  const pushDay = parseInt(document.getElementById("pushScheduleDay")?.value ?? "1", 10);
   const pushDate = parseInt(document.getElementById("pushScheduleDate")?.value ?? "1", 10);
   const pushScheduleTime = (pushAlertFrequency !== "instantly") ? {
     hour: isNaN(pushHour) ? 9 : pushHour,
     minute: isNaN(pushMinute) ? 0 : pushMinute,
-    ...(pushAlertFrequency === "weekly"  ? { dayOfWeek:   pushDay  } : {}),
-    ...(pushAlertFrequency === "monthly" ? { dayOfMonth:  pushDate } : {})
+    ...(pushAlertFrequency === "weekly" ? { dayOfWeek: pushDay } : {}),
+    ...(pushAlertFrequency === "monthly" ? { dayOfMonth: pushDate } : {})
   } : null;
 
   // Parse email schedule from the native time input
   const emailTimeVal = document.getElementById("emailScheduleTime")?.value || "09:00";
   const [emailHour, emailMinute] = emailTimeVal.split(":").map(Number);
-  const emailDay  = parseInt(document.getElementById("emailScheduleDay")?.value  ?? "1", 10);
+  const emailDay = parseInt(document.getElementById("emailScheduleDay")?.value ?? "1", 10);
   const emailDate = parseInt(document.getElementById("emailScheduleDate")?.value ?? "1", 10);
   const emailScheduleTime = {
     hour: isNaN(emailHour) ? 9 : emailHour,
     minute: isNaN(emailMinute) ? 0 : emailMinute,
-    ...(emailAlertFrequency === "weekly"  ? { dayOfWeek:  emailDay  } : {}),
+    ...(emailAlertFrequency === "weekly" ? { dayOfWeek: emailDay } : {}),
     ...(emailAlertFrequency === "monthly" ? { dayOfMonth: emailDate } : {})
   };
 
@@ -1195,7 +1195,7 @@ window.addEventListener("DOMContentLoaded", () => {
       const blockedPopup = document.getElementById("popupBlockedNotifications");
 
       if (blockedPopup) {
-        if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
+        if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
         blockedPopup.style.display = "flex";
       }
     }
@@ -1206,7 +1206,7 @@ window.addEventListener("DOMContentLoaded", () => {
 document.getElementById("yesButtonBlockedNotifications")?.addEventListener("click", () => {
   localStorage.setItem("LS_SKIP_NO_CONFIRM", "true");
   document.getElementById("popupBlockedNotifications").style.display = "none";
-  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 });
 
 
@@ -1226,7 +1226,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
       if (result === "granted") {
         // Hide both the popup and job alert popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
-        if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+        if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 
         // Update the FCM token
         await updateFcmToken(user.uid);
@@ -1234,7 +1234,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
         // If permission is denied, show the enable notification popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
         document.getElementById("popupEnableNotifications").style.display = "flex";
-        if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
+        if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
       }
     } catch (e) {
       console.error("Permission request failed:", e);
@@ -1243,11 +1243,11 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
     // If permission is denied, show enable notification popup
     document.getElementById("popupBlockedNotifications").style.display = "none";
     document.getElementById("popupEnableNotifications").style.display = "flex";
-    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
+    if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
   } else if (permission === "granted") {
     // If permission is already granted, just hide both the popup and job alert popup
     document.getElementById("popupBlockedNotifications").style.display = "none";
-    if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+    if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   }
 });
 
@@ -1255,7 +1255,7 @@ document.getElementById("noButtonBlockedNotifications")?.addEventListener("click
 
 document.querySelector(".blockclosebtn")?.addEventListener("click", () => {
   document.getElementById("popupEnableNotifications").style.display = "none";
-  if(document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
 });
 
 
@@ -1395,7 +1395,7 @@ document.getElementById("categoryBox").addEventListener("change", function (e) {
 const jobTypeBoxCheckboxContainer = document.getElementById("jobTypeBox");
 if (jobTypeBoxCheckboxContainer) {
   jobTypeBoxCheckboxContainer.addEventListener("change", function (e) {
-    if (e.target.value === "all-job-types") { 
+    if (e.target.value === "all-job-types") {
       handleAllCheckboxClick("jobTypeBox");
     } else {
       updateAllCheckboxStatus("jobTypeBox");
@@ -1412,21 +1412,21 @@ async function initDynamicRegions() {
     if (!resp.ok) return;
     const data = await resp.json();
     for (const [region, cities] of Object.entries(data)) {
-        // use lowercased region name as slug, same as popup options
-        popupRegions[region.toLowerCase()] = cities.map(c => c.toLowerCase());
+      // use lowercased region name as slug, same as popup options
+      popupRegions[region.toLowerCase()] = cities.map(c => c.toLowerCase());
     }
-  } catch(e) {
+  } catch (e) {
     console.error("Error loading dynamic regions:", e);
   }
 }
 initDynamicRegions();
 
 // Function to handle region selection
-function handleRegionSelection(regionId, containerId="locationBox") {
+function handleRegionSelection(regionId, containerId = "locationBox") {
   const container = document.getElementById(containerId);
   if (!container) return;
   const checkboxes = container.querySelectorAll('input[type="checkbox"]');
-  
+
   // Find the exact checked state of the region checkbox that was just clicked
   let isChecked = false;
   checkboxes.forEach(cb => {
@@ -1450,7 +1450,7 @@ function handleRegionSelection(regionId, containerId="locationBox") {
 
 // Unified event listener to handle changes on location checkboxes including regions
 document.getElementById("locationBox").addEventListener("change", function (e) {
-  if (e.target.value === "all-location") { 
+  if (e.target.value === "all-location") {
     handleAllCheckboxClick("locationBox");
   } else if (popupRegions[e.target.value]) {
     // If a region header is clicked, select/deselect all its sub-cities dynamically
