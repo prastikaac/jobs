@@ -19,8 +19,10 @@ if not exist ".git-private" (
 )
 
 :: Stage everything including scraper/ and functions/ (force past .gitignore)
+:: SECURITY: explicitly un-stage the service account key so it is NEVER committed
 %GIT% add -A
 %GIT% add -f scraper/ functions/
+%GIT% reset HEAD scraper/serviceAccountKey.json 2>nul
 %GIT% status --short
 
 set /p MSG="Commit message (or press Enter for auto): "
@@ -30,7 +32,7 @@ if "%MSG%"=="" (
 )
 
 %GIT% commit -m "%MSG%"
-%GIT% push private master
+%GIT% push private main
 
 echo.
 echo Done! Full backup pushed to private repo (includes scraper + functions).

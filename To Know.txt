@@ -49,3 +49,6 @@ cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scrap
 
 To do Phase 5 after Phase 4 (Job Formatting) 
 cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --html-only
+
+To do Backup in Github Private Folder : 
+git push private
