@@ -77,3 +77,11 @@ functions/
 
 # Second git directory for private backup repo
 .git-private/
+
+# ── Public repo exclusions (private repo only) ────────────────────────────────
+.github/
+__pycache__/
+ARCHITECTURE.md
+push-private.bat
+push-public.bat
+setup-private-repo.bat
