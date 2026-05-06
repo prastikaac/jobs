@@ -7,16 +7,10 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - update firebase notifications
 
+- Update firebase rules 
 
 
 - check job list view in emails
 
 
-
-move scraper\category_debug.html into root folder C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland and update its path in all places and also can we make not to send the scraper and functions folder to the  github  repo ?
-
-
-now i want to make like not send the scraper and functions folder to github because anyone can see it from my site which is hosted on github pages, so what could be the best alternative for this, and not sending the scraper and functions files to github is an alternative but if we use that method than it could be like there is no a cloud backup of our those folders they will be only in the system and if something goes wrong and i want to go back then there will be no backgoing, so what could be the best way of doing this ?
-
-
-did you removed all the unwanted google adsense and ezoic script from all files ?
+- why its taking too much time for job translation ?
