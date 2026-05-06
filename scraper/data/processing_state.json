@@ -1,28 +1,5 @@
 {
   "version": 1,
-  "updated_at": "2026-05-06 15:42:20",
-  "jobs": {
-    "3ed84cb9": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-05-06 15:42:19"
-    },
-    "a856cd11": {
-      "translated": true,
-      "translated_at": "",
-      "ai_processed": true,
-      "ai_status": "success",
-      "retry_count": 0,
-      "max_retries": 3,
-      "ai_retry_needed": false,
-      "last_ai_error": "",
-      "formatted_at": "2026-05-06 15:41:27"
-    }
-  }
+  "updated_at": "2026-05-06 15:42:59",
+  "jobs": {}
 }

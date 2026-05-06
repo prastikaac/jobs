@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html dir="ltr" lang="en">
 
@@ -78,7 +78,7 @@
   <script type="text/javascript">/*<![CDATA[*/ /* Disable Default Cookie Consent */ cookieChoices = {}; /* @shinsenter/defer.js */ !function (c, i, t) { var f, o = /^data-(.+)/, u = 'IntersectionObserver', r = /p/.test(i.readyState), s = [], a = s.slice, d = 'lazied', n = 'load', e = 'pageshow', l = 'forEach', m = 'hasAttribute', h = 'shift'; function p(e) { i.head.appendChild(e) } function v(e, n) { a.call(e.attributes)[l](n) } function y(e, n, t, o) { return o = (o = n ? i.getElementById(n) : o) || i.createElement(e), n && (o.id = n), t && (o.onload = t), o } function b(e, n) { return a.call((n || i).querySelectorAll(e)) } function g(t, e) { b('source', t)[l](g), v(t, function (e, n) { (n = o.exec(e.name)) && (t[n[1]] = e.value) }), e && (t.className += ' ' + e), n in t && t[n]() } function I(e) { f(function (o) { o = b(e || '[type=deferjs]'), function e(n, t) { (n = o[h]()) && (n.parentNode.removeChild(n), (t = y(n.nodeName)).text = n.text, v(n, function (e) { 'type' != e.name && (t[e.name] = e.value) }), t.src && !t[m]('async') ? (t.onload = t.onerror = e, p(t)) : (p(t), e())) }() }) } (f = function (e, n) { r ? t(e, n) : s.push(e, n) }).all = I, f.js = function (n, t, e, o) { f(function (e) { (e = y('SCRIPT', t, o)).src = n, p(e) }, e) }, f.css = function (n, t, e, o) { f(function (e) { (e = y('LINK', t, o)).rel = 'stylesheet', e.href = n, p(e) }, e) }, f.dom = function (e, n, t, o, i) { function r(e) { o && !1 === o(e) || g(e, t) } f(function (t) { t = u in c && new c[u](function (e) { e[l](function (e, n) { e.isIntersecting && (n = e.target) && (t.unobserve(n), r(n)) }) }, i), b(e || '[data-src]')[l](function (e) { e[m](d) || (e.setAttribute(d, ''), t ? t.observe(e) : r(e)) }) }, n) }, f.reveal = g, c.Defer = f, c.addEventListener('on' + e in c ? e : n, function () { for (I(); s[0]; t(s[h](), s[h]()))r = 1 }) }(this, document, setTimeout), function (e, n) { e.defer = n = e.Defer, e.deferscript = n.js, e.deferstyle = n.css, e.deferimg = e.deferiframe = n.dom }(this); /*]]>*/
   </script>
   <link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Times" rel="stylesheet" />
-  <link href="https://findjobsinfinland.fi/css/popup.css" rel="stylesheet">
+  <link href="/css/popup.css" rel="stylesheet">
   <link href="https://findjobsinfinland.fi/css/main.css" rel="stylesheet" />
   <!-- Google tag (gtag.js) -->
   <!-- Google Tag Manager -->
@@ -93,9 +93,7 @@
   <!-- End Google Tag Manager -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet" />
-  <script async="" crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7655905411010514"></script>
-  <script async="" src=""></script>
+<script async="" src=""></script>
   </link>
   </link>
 </head>
@@ -107,7 +105,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- ── LOGIN GATE OVERLAY ─────────────────────────────────────────── -->
-  <div id="loginGateOverlay">
+  <div id="loginGateOverlay" style="visibility:hidden;">
     <style>
       #loginGateOverlay {
         position: fixed;
@@ -121,17 +119,22 @@
         justify-content: center;
         padding: 16px;
       }
-      #loginGateOverlay.hidden { display: none !important; }
+
+      #loginGateOverlay.hidden {
+        display: none !important;
+      }
+
       #loginGateBox {
         background: #ffffff;
         border-radius: 20px;
-        box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
         padding: 40px 24px 36px;
         max-width: 90%;
         width: 100%;
         text-align: center;
         transition: background 0.3s, box-shadow 0.3s;
       }
+
       #loginGateBox h2 {
         font-family: 'Poppins', Arial, sans-serif;
         font-size: 20px;
@@ -140,12 +143,14 @@
         margin: 0 0 16px 0;
         transition: color 0.3s;
       }
+
       #loginGateBox .gate-illustration {
         width: 160px;
         height: 140px;
         margin: 0 auto 20px;
         display: block;
       }
+
       #loginGateBox p {
         font-family: 'Poppins', Arial, sans-serif;
         font-size: 13px;
@@ -155,6 +160,7 @@
         padding: 0;
         transition: color 0.3s;
       }
+
       #loginGateBtn {
         display: block;
         width: 100%;
@@ -168,15 +174,19 @@
         padding: 14px 0;
         cursor: pointer;
         transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
-        box-shadow: 0 4px 18px rgba(26,106,245,0.28);
+        box-shadow: 0 4px 18px rgba(26, 106, 245, 0.28);
         letter-spacing: 0.3px;
       }
+
       #loginGateBtn:hover {
         background: #1050c8;
-        box-shadow: 0 6px 24px rgba(26,106,245,0.38);
+        box-shadow: 0 6px 24px rgba(26, 106, 245, 0.38);
         transform: translateY(-1px);
       }
-      #loginGateBtn:active { transform: translateY(0); }
+
+      #loginGateBtn:active {
+        transform: translateY(0);
+      }
 
       /* Desktop Responsiveness */
       @media (min-width: 768px) {
@@ -184,14 +194,17 @@
           max-width: 440px;
           padding: 40px 32px 36px;
         }
+
         #loginGateBox h2 {
           font-size: 22px;
           margin-bottom: 20px;
         }
+
         #loginGateBox .gate-illustration {
           width: 180px;
           height: 160px;
         }
+
         #loginGateBox p {
           font-size: 14px;
           margin-bottom: 28px;
@@ -203,13 +216,16 @@
       body.drK #loginGateOverlay {
         background: rgba(10, 10, 10, 0.65);
       }
+
       body.drK #loginGateBox {
         background: #1e1e2d;
-        box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
       }
+
       body.drK #loginGateBox h2 {
         color: #f5f5f5;
       }
+
       body.drK #loginGateBox p {
         color: #b0b0ba;
       }
@@ -221,42 +237,43 @@
       <!-- Lock illustration (inline SVG, matches image design) -->
       <svg class="gate-illustration" viewBox="0 0 260 220" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!-- Person body -->
-        <ellipse cx="88" cy="195" rx="52" ry="12" fill="#e8e8e8"/>
-        <rect x="58" y="140" width="60" height="55" rx="18" fill="#b8cce8"/>
+        <ellipse cx="88" cy="195" rx="52" ry="12" fill="#e8e8e8" />
+        <rect x="58" y="140" width="60" height="55" rx="18" fill="#b8cce8" />
         <!-- Person head -->
-        <circle cx="88" cy="112" r="26" fill="#f5c9a0"/>
+        <circle cx="88" cy="112" r="26" fill="#f5c9a0" />
         <!-- Hair -->
-        <path d="M62 108 Q64 82 88 82 Q112 82 114 108 Q108 96 88 96 Q68 96 62 108Z" fill="#2d2d2d"/>
-        <path d="M64 108 Q60 130 68 138" stroke="#2d2d2d" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M62 108 Q64 82 88 82 Q112 82 114 108 Q108 96 88 96 Q68 96 62 108Z" fill="#2d2d2d" />
+        <path d="M64 108 Q60 130 68 138" stroke="#2d2d2d" stroke-width="6" stroke-linecap="round" fill="none" />
         <!-- Arm reaching out -->
-        <path d="M118 158 Q150 148 168 138" stroke="#b8cce8" stroke-width="18" stroke-linecap="round" fill="none"/>
-        <ellipse cx="172" cy="136" rx="10" ry="10" fill="#f5c9a0"/>
+        <path d="M118 158 Q150 148 168 138" stroke="#b8cce8" stroke-width="18" stroke-linecap="round" fill="none" />
+        <ellipse cx="172" cy="136" rx="10" ry="10" fill="#f5c9a0" />
 
         <!-- Glow behind lock -->
-        <ellipse cx="185" cy="108" rx="44" ry="44" fill="#e8f5b0" opacity="0.6"/>
+        <ellipse cx="185" cy="108" rx="44" ry="44" fill="#e8f5b0" opacity="0.6" />
 
         <!-- Lock body -->
-        <rect x="162" y="100" width="46" height="36" rx="8" fill="#5c7daf"/>
+        <rect x="162" y="100" width="46" height="36" rx="8" fill="#5c7daf" />
         <!-- Lock shackle -->
-        <path d="M172 100 V88 Q185 72 198 88 V100" stroke="#3a5a8a" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <path d="M172 100 V88 Q185 72 198 88 V100" stroke="#3a5a8a" stroke-width="9" stroke-linecap="round"
+          fill="none" />
         <!-- Lock keyhole -->
-        <circle cx="185" cy="115" r="6" fill="#fff" opacity="0.85"/>
-        <rect x="182" y="117" width="6" height="8" rx="2" fill="#fff" opacity="0.85"/>
+        <circle cx="185" cy="115" r="6" fill="#fff" opacity="0.85" />
+        <rect x="182" y="117" width="6" height="8" rx="2" fill="#fff" opacity="0.85" />
 
         <!-- Floating keys -->
         <g transform="translate(138,72) rotate(-30)">
-          <rect x="0" y="-3" width="22" height="6" rx="3" fill="#f0c040"/>
-          <circle cx="-5" cy="0" r="7" fill="none" stroke="#f0c040" stroke-width="4"/>
-          <circle cx="-5" cy="0" r="3" fill="#f0c040"/>
+          <rect x="0" y="-3" width="22" height="6" rx="3" fill="#f0c040" />
+          <circle cx="-5" cy="0" r="7" fill="none" stroke="#f0c040" stroke-width="4" />
+          <circle cx="-5" cy="0" r="3" fill="#f0c040" />
         </g>
         <g transform="translate(220,72) rotate(20)">
-          <rect x="0" y="-3" width="20" height="6" rx="3" fill="#f0c040"/>
-          <circle cx="-5" cy="0" r="6" fill="none" stroke="#f0c040" stroke-width="4"/>
-          <circle cx="-5" cy="0" r="3" fill="#f0c040"/>
+          <rect x="0" y="-3" width="20" height="6" rx="3" fill="#f0c040" />
+          <circle cx="-5" cy="0" r="6" fill="none" stroke="#f0c040" stroke-width="4" />
+          <circle cx="-5" cy="0" r="3" fill="#f0c040" />
         </g>
         <g transform="translate(228,128) rotate(-10)">
-          <rect x="0" y="-3" width="18" height="6" rx="3" fill="#a0c8f0"/>
-          <circle cx="-5" cy="0" r="6" fill="none" stroke="#a0c8f0" stroke-width="4"/>
+          <rect x="0" y="-3" width="18" height="6" rx="3" fill="#a0c8f0" />
+          <circle cx="-5" cy="0" r="6" fill="none" stroke="#a0c8f0" stroke-width="4" />
         </g>
       </svg>
 
@@ -272,7 +289,7 @@
       // Hide the gate overlay
       var gateOverlay = document.getElementById('loginGateOverlay');
       if (gateOverlay) gateOverlay.classList.add('hidden');
-      
+
       // Ensure the overall profile card container is visible
       const container = document.getElementById('profile-card-container');
       if (container) {
@@ -291,42 +308,62 @@
       } else {
         // Fallback if the button is not yet injected
         if (typeof window.handlePopupYes === 'function') {
-           window.handlePopupYes();
+          window.handlePopupYes();
         }
         if (typeof window.clickLabelOnYes === 'function') {
-           window.clickLabelOnYes();
+          window.clickLabelOnYes();
         }
       }
     }
 
-    // Hide the gate if the user is already logged in using Firebase Auth
-    (function() {
-      // Poll for Firebase auth — dismiss gate as soon as auth resolves
-      let attempts = 0;
-      const maxAttempts = 40; // 10 seconds
-      const interval = setInterval(function() {
-        attempts++;
-        // Firebase sets window.__firebase_auth_user__ via onAuthStateChanged in profileLogic.js
-        // We rely on localStorage as fast-path, Firebase Auth as source of truth
-        const localUser = localStorage.getItem('user');
-        if (localUser) {
-          try {
-            const parsed = JSON.parse(localUser);
-            if (parsed && parsed.uid) {
-              document.getElementById('loginGateOverlay').classList.add('hidden');
-              clearInterval(interval);
-              return;
-            }
-          } catch(e) {}
-        }
-        if (attempts >= maxAttempts) {
-          clearInterval(interval);
-        }
-      }, 250);
+    // ── Login gate: show only for unauthenticated users, with zero flash ──
+    (function () {
+      const overlay = document.getElementById('loginGateOverlay');
 
-      // Also listen for custom event fired by profileLogic.js / popupLogic.js on auth state change
-      window.addEventListener('userLoggedIn', function() {
-        document.getElementById('loginGateOverlay').classList.add('hidden');
+      function showGate() {
+        if (overlay) {
+          overlay.style.visibility = '';
+          overlay.classList.remove('hidden');
+        }
+      }
+      function hideGate() {
+        if (overlay) {
+          overlay.style.visibility = 'hidden';
+          overlay.classList.add('hidden');
+        }
+      }
+
+      // Fast-path: if localStorage already has a logged-in user, keep gate hidden
+      // (Firebase onAuthStateChanged in profileLogic.js will confirm and dispatch 'userLoggedIn')
+      const localUser = localStorage.getItem('user');
+      let isLoggedInViaStorage = false;
+      if (localUser) {
+        try {
+          const parsed = JSON.parse(localUser);
+          if (parsed && parsed.uid) isLoggedInViaStorage = true;
+        } catch (e) { }
+      }
+
+      // After a short grace period, show the gate only if Firebase hasn't confirmed login
+      let gateShown = false;
+      const gracePeriod = setTimeout(function () {
+        if (!isLoggedInViaStorage) {
+          showGate();
+          gateShown = true;
+        }
+      }, 600); // 600ms grace — Firebase auth usually resolves within this time
+
+      // Confirmed logged-in via profileLogic.js onAuthStateChanged
+      window.addEventListener('userLoggedIn', function () {
+        clearTimeout(gracePeriod);
+        hideGate();
+        gateShown = false;
+      });
+
+      // Re-show gate after sign-out
+      window.addEventListener('userSignedOut', function () {
+        isLoggedInViaStorage = false;
+        showGate();
       });
     })();
   </script>
@@ -809,7 +846,6 @@
                                 }
 
 
-
                                 .info-box {
                                   flex: 1;
                                 }
@@ -832,7 +868,6 @@
                                 }
 
 
-
                                 input[type="file"] {
                                   display: none;
                                 }
@@ -842,7 +877,6 @@
                                   margin-bottom: 30px;
 
                                 }
-
 
 
                                 .dropdown {
@@ -945,7 +979,6 @@
                                 }
 
 
-
                                 /* Description text for Job Subscription */
                                 .job-subscription p {
                                   font-size: 14px;
@@ -996,8 +1029,6 @@
                                 .dissign.dismob {
                                   display: none !important;
                                 }
-
-
 
 
                                 @media (min-width: 768px) {
@@ -1071,8 +1102,6 @@
                                   font-weight: bold;
                                   margin-top: 15px;
                                 }
-
-
 
 
                                 /* Dark mode styles */
@@ -1388,6 +1417,14 @@
                                     </div>
                                   </div>
                                 </div>
+
+                                <h4>News Subscription</h4>
+                                <p class="descp">Stay informed with the latest blog posts, career tips, and news about
+                                  the Finnish job market via email.</p>
+                                <div class="dropdown" id="BlogSubscription">
+                                  <div><input id="subscription-email" type="checkbox" value="email" /><label
+                                      for="subscription-email">Email</label></div>
+                                </div>
                               </div>
                               <button class="button full-width-btn" id="saveBtn"
                                 style="padding: 11px 20px; font-size: 14px; margin-top: 15px !important; cursor: pointer;"
@@ -1608,6 +1645,12 @@
                                     checkValues('jobCategoryDropdown', originalCategories);
                                     checkValues('jobLocationDropdown', originalLocations);
 
+                                    // Pre-check News Subscription from Firestore
+                                    const subscriptionEmailCb = document.getElementById('subscription-email');
+                                    if (subscriptionEmailCb) {
+                                      subscriptionEmailCb.checked = data.BlogSubscriptionViaEmail === 'yes';
+                                    }
+
                                     handleAllCheckbox('jobCategoryDropdown');
                                     handleAllCheckbox('jobLocationDropdown');
                                   }
@@ -1647,7 +1690,6 @@
                                     console.error("Error uploading profile picture:", error);
                                   }
                                 });
-
 
 
                                 // Enable inline editing
@@ -1787,6 +1829,8 @@
                                     ...(emailAlertFrequency === 'monthly' ? { dayOfMonth: emailDt } : {})
                                   };
 
+                                  const blogSubscribeChecked = document.getElementById('subscription-email')?.checked || false;
+
                                   await updateDoc(userRef, {
                                     jobCategory: newCategories,
                                     jobLocation: newLocations,
@@ -1801,6 +1845,8 @@
                                     // Legacy fallback
                                     jobAlertFrequency: pushAlertFrequency,
                                     jobSubscription: { emailNotification, pushNotification },
+                                    // News / blog subscription
+                                    BlogSubscriptionViaEmail: blogSubscribeChecked ? 'yes' : 'no',
                                     lastUpdated: Timestamp.now()
                                   });
 
@@ -1814,6 +1860,14 @@
                                   setTimeout(() => { savedMessageContainer.textContent = ''; }, 3000);
                                 });
 
+
+                                // ── Unsaved changes guard ─────────────────────────────────────
+                                window.addEventListener('beforeunload', function (e) {
+                                  if (hasChanges()) {
+                                    e.preventDefault();
+                                    e.returnValue = ''; // Chrome requires this
+                                  }
+                                });
 
                               </script>
                               <script>
@@ -2511,7 +2565,6 @@
 
 
       newScript.src = '../../../cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latesta039.js?config=AM_CHTML';
-
 
 
       headID.appendChild(newScript);

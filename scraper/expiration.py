@@ -16,9 +16,19 @@ logger = logging.getLogger("expiration")
 
 
 def _parse_date(date_str: str) -> date | None:
-    """Parse an ISO date string (YYYY-MM-DD) to a date object."""
+    """Parse an ISO date string (YYYY-MM-DD) to a date object.
+    
+    Returns None for any value that doesn't cleanly represent a real date,
+    including short garbage strings like '2' or '30'.
+    """
+    if not date_str:
+        return None
+    s = str(date_str).strip()
+    # Must be at least 8 chars (YYYY-MM-DD shortest valid ISO date)
+    if len(s) < 8:
+        return None
     try:
-        return datetime.strptime(str(date_str)[:10], "%Y-%m-%d").date()
+        return datetime.strptime(s[:10], "%Y-%m-%d").date()
     except (ValueError, TypeError):
         return None
 
@@ -41,7 +51,11 @@ def is_job_expired(job: dict) -> bool:
         posted = _parse_date(job.get("scraped_at"))
         
     if posted is None:
-        logger.warning("Cannot parse date for job %s — treating as not expired.", job.get("id"))
+        logger.warning(
+            "Cannot parse date for job %s (date_posted=%r) — "
+            "treating as not expired to avoid premature removal.",
+            job.get("id"), job.get("date_posted")
+        )
         return False
         
     age_days = (today - posted).days

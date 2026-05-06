@@ -160,26 +160,33 @@ def cleanup_completed_jobs(completed_ids: set[str] | None = None) -> int:
     ai_issues_path = os.path.join(config.DATA_DIR, "ai_field_issues.json")
     if os.path.exists(ai_issues_path):
         try:
-            with open(ai_issues_path, "r", encoding="utf-8") as f:
-                ai_issues = json.load(f)
-            if isinstance(ai_issues, list):
-                before = len(ai_issues)
-                ai_issues = [item for item in ai_issues if str(item.get("id", "")) not in completed_ids]
-                if len(ai_issues) < before:
-                    with open(ai_issues_path, "w", encoding="utf-8") as f:
-                        json.dump(ai_issues, f, ensure_ascii=False, indent=2)
-                    removed = before - len(ai_issues)
-                    logger.info("[cleanup] ai_field_issues.json: removed %d entries.", removed)
-                    cleaned_count += removed
-            elif isinstance(ai_issues, dict):
-                before = len(ai_issues)
-                ai_issues = {k: v for k, v in ai_issues.items() if str(k) not in completed_ids}
-                if len(ai_issues) < before:
-                    with open(ai_issues_path, "w", encoding="utf-8") as f:
-                        json.dump(ai_issues, f, ensure_ascii=False, indent=2)
-                    removed = before - len(ai_issues)
-                    logger.info("[cleanup] ai_field_issues.json: removed %d entries.", removed)
-                    cleaned_count += removed
+            raw = open(ai_issues_path, "r", encoding="utf-8").read().strip()
+            if not raw:
+                # File is empty — nothing to clean, skip silently
+                pass
+            else:
+                ai_issues = json.loads(raw)
+                if isinstance(ai_issues, list):
+                    before = len(ai_issues)
+                    ai_issues = [item for item in ai_issues if str(item.get("id", "")) not in completed_ids]
+                    if len(ai_issues) < before:
+                        with open(ai_issues_path, "w", encoding="utf-8") as f:
+                            json.dump(ai_issues, f, ensure_ascii=False, indent=2)
+                        removed = before - len(ai_issues)
+                        logger.info("[cleanup] ai_field_issues.json: removed %d entries.", removed)
+                        cleaned_count += removed
+                elif isinstance(ai_issues, dict):
+                    before = len(ai_issues)
+                    ai_issues = {k: v for k, v in ai_issues.items() if str(k) not in completed_ids}
+                    if len(ai_issues) < before:
+                        with open(ai_issues_path, "w", encoding="utf-8") as f:
+                            json.dump(ai_issues, f, ensure_ascii=False, indent=2)
+                        removed = before - len(ai_issues)
+                        logger.info("[cleanup] ai_field_issues.json: removed %d entries.", removed)
+                        cleaned_count += removed
+        except json.JSONDecodeError:
+            # Malformed but non-empty — leave it alone, don't warn
+            logger.debug("[cleanup] ai_field_issues.json is malformed, skipping.")
         except Exception as exc:
             logger.warning("[cleanup] Could not clean ai_field_issues.json: %s", exc)
 

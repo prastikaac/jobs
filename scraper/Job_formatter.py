@@ -815,7 +815,8 @@ def apply_manual_fixes(job: dict) -> dict:
     if existing_salary and patch_salary.is_tes(existing_salary):
         job["salary_range"] = patch_salary.CLEAN_SALARY
 
-    job = _sweep_finnish_from_job(job)
+    # Finnish sweep removed: Phase 2 (job_translator.py) now guarantees
+    # all fields in translated_raw_jobs.json are already in English.
     return job
 
 

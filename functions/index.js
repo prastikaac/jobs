@@ -1,4 +1,4 @@
-// firebase deploy --only functions
+﻿// firebase deploy --only functions
 
 const { onDocumentCreated } = require("firebase-functions/v2/firestore")
 const { onSchedule } = require("firebase-functions/v2/scheduler")
@@ -98,7 +98,7 @@ function isValidFrequency(value) {
     return ["instantly", "daily", "weekly", "monthly"].includes(value)
 }
 
-// Email never sends instantly — only daily/weekly/monthly digests are supported
+// Email never sends instantly â€” only daily/weekly/monthly digests are supported
 
 function isValidEmailFrequency(value) {
     return ["daily", "weekly", "monthly"].includes(value)
@@ -126,7 +126,7 @@ async function sendPushToTokenAndCleanup({ token, message, db, userDocId, fcmTok
     }
 }
 
-// buildSingleJobEmailHTML removed — emails are never sent instantly.
+// buildSingleJobEmailHTML removed â€” emails are never sent instantly.
 // All job email alerts are now batched via pendingAlerts and sent as
 // daily / weekly / monthly digests through buildDigestEmailHTML.
 
@@ -158,7 +158,8 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
         return `
             <!--[if mso]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><![endif]-->
             <table cellpadding="0" cellspacing="0" border="0" width="100%" class="card-table"
-                   style="background-color:#2b2b2b;border-radius:12px;margin-bottom:16px;overflow:hidden;">
+                   style="background-color:#ffffff;border-radius:12px;margin-bottom:16px;overflow:hidden;
+                          box-shadow:0 2px 8px rgba(0,0,0,0.10);">
                 <tr>
                     <!-- Image cell -->
                     <td class="card-img-cell" valign="top"
@@ -168,22 +169,22 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                                  alt="${escapeHtml(job.title)}"
                                  class="card-img card-img-bg"
                                  style="width:100%;max-width:100%;height:160px;object-fit:cover;
-                                        border-radius:10px;display:block;background-color:#3a3a3a;">
+                                        border-radius:10px;display:block;background-color:#e0e0e0;">
                         </a>
                     </td>
                     <!-- Content cell -->
                     <td class="card-content-cell" valign="top"
                         style="padding:14px 16px 16px 0;display:block;width:100%;box-sizing:border-box;">
                         <h2 class="job-title" style="font-size:16px;font-weight:700;margin:0 0 5px 0;
-                                   color:#ffffff;line-height:1.3;">
+                                   color:#1a1a1a;line-height:1.3;">
                             ${escapeHtml(job.title)}
                         </h2>
-                        <p class="job-location" style="font-size:12px;font-weight:700;color:#cccccc;
+                        <p class="job-location" style="font-size:12px;font-weight:700;color:#555555;
                                   margin:0 0 10px 0;line-height:1.4;">
                             In ${escapeHtml(locationLabel)}
                         </p>
                         <p class="job-desc" style="font-size:12px;line-height:1.6;margin:0 0 16px 0;
-                                  color:#aaaaaa;">
+                                  color:#666666;">
                             ${escapeHtml(job.description)}
                         </p>
                         <!-- Date + Apply Now row -->
@@ -214,20 +215,22 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>${capitalizedFrequency} Job Alerts — findjobsinfinland.fi</title>
+            <meta name="color-scheme" content="light dark">
+            <meta name="supported-color-schemes" content="light dark">
+            <title>${capitalizedFrequency} Job Alerts â€” findjobsinfinland.fi</title>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
                 /* Reset */
                 body, #bodyTable { margin:0 !important; padding:0 !important; width:100% !important; }
-                body { background-color:#1e1e1e; font-family:'Poppins',Arial,sans-serif; }
 
-                /* Mobile-first: image stacked above content */
-                .email-outer       { width:100% !important; background-color:#1e1e1e !important; }
+                /* â”€â”€ Default: LIGHT theme (safe baseline for all email clients) â”€â”€ */
+                body               { background-color:#f5f5f5; font-family:'Poppins',Arial,sans-serif; }
+                .email-outer       { width:100% !important; background-color:#f5f5f5 !important; }
                 .email-inner       { width:100% !important; max-width:620px !important; }
-                .body-pad          { background-color:#1e1e1e !important; padding:16px 12px !important; }
+                .body-pad          { background-color:#f5f5f5 !important; padding:16px 12px !important; }
 
-                /* Card cells — stacked on mobile */
+                /* Card cells â€” stacked on mobile */
                 .card-img-cell     { display:block !important; width:100% !important;
                                      padding:14px 14px 0 14px !important; box-sizing:border-box !important; }
                 .card-img          { width:100% !important; max-width:100% !important;
@@ -236,14 +239,14 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                 .card-content-cell { display:block !important; width:100% !important;
                                      padding:12px 14px 16px 14px !important; box-sizing:border-box !important; }
 
-                /* Browse More button — full-width on mobile */
+                /* Browse More button â€” full-width on mobile */
                 .browse-btn        { display:block !important; width:100% !important;
                                      text-align:center !important; box-sizing:border-box !important;
                                      padding:13px 0 !important; }
 
-                /* Desktop (≥ 560px): side-by-side layout */
+                /* Desktop (â‰¥ 560px): side-by-side layout */
                 @media only screen and (min-width: 560px) {
-                    body           { padding:24px 0 !important; background-color:#1e1e1e !important; }
+                    body           { padding:24px 0 !important; background-color:#f5f5f5 !important; }
                     .email-inner   { width:620px !important; }
                     .body-pad      { padding:20px 20px !important; }
 
@@ -277,43 +280,46 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                     .footer-td { padding:22px 36px !important; }
                 }
 
-                /* ── Light mode overrides ── */
-                @media (prefers-color-scheme: light) {
-                    body                    { background-color:#f2f2f2 !important; }
-                    .email-outer            { background-color:#f2f2f2 !important; }
-                    .body-pad               { background-color:#f2f2f2 !important; }
-                    .header-td              { background-color:#ffffff !important;
-                                             border-bottom:1px solid #e0e0e0 !important; }
-                    .footer-td              { background-color:#f0f0f0 !important;
-                                             border-top:1px solid #e0e0e0 !important; }
-                    .card-table             { background-color:#ffffff !important;
-                                             box-shadow:0 2px 8px rgba(0,0,0,0.10) !important; }
-                    .card-img-bg            { background-color:#e8e8e8 !important; }
-                    .job-title              { color:#1a1a1a !important; }
-                    .job-location           { color:#555555 !important; }
-                    .job-desc               { color:#666666 !important; }
-                    .intro-p                { color:#444444 !important; }
-                    .header-h1              { color:#1a1a1a !important; }
-                    .browse-heading         { color:#1a1a1a !important; }
-                    .browse-desc            { color:#555555 !important; }
+                /* â”€â”€ Dark mode overrides (industry-standard approach) â”€â”€ */
+                @media (prefers-color-scheme: dark) {
+                    body                    { background-color:#1e1e1e !important; }
+                    .email-outer            { background-color:#1e1e1e !important; }
+                    .body-pad               { background-color:#1e1e1e !important; }
+                    .header-td              { background-color:#242424 !important;
+                                             border-bottom:1px solid #3a3a3a !important; }
+                    .footer-td              { background-color:#242424 !important;
+                                             border-top:1px solid #3a3a3a !important; }
+                    .card-table             { background-color:#2b2b2b !important;
+                                             box-shadow:0 2px 8px rgba(0,0,0,0.40) !important; }
+                    .card-img-bg            { background-color:#3a3a3a !important; }
+                    .job-title              { color:#ffffff !important; }
+                    .job-location           { color:#cccccc !important; }
+                    .job-desc               { color:#aaaaaa !important; }
+                    .intro-p                { color:#aaaaaa !important; }
+                    .header-h1              { color:#ffffff !important; }
+                    .browse-heading         { color:#ffffff !important; }
+                    .browse-desc            { color:#aaaaaa !important; }
+                    @media only screen and (min-width: 560px) {
+                        body               { background-color:#1e1e1e !important; }
+                    }
                 }
             </style>
         </head>
-        <body style="margin:0;padding:0;background-color:#1e1e1e;font-family:'Poppins',Arial,sans-serif;">
+        <body style="margin:0;padding:0;background-color:#f5f5f5;font-family:'Poppins',Arial,sans-serif;">
             <table id="bodyTable" cellpadding="0" cellspacing="0" border="0" width="100%"
-                   class="email-outer" style="background-color:#1e1e1e;">
+                   class="email-outer" style="background-color:#f5f5f5;">
                 <tr>
                     <td align="center" style="padding:20px 8px;">
 
                         <table cellpadding="0" cellspacing="0" border="0" class="email-inner"
                                style="max-width:620px;width:100%;border-radius:16px;overflow:hidden;
-                                      box-shadow:0 8px 32px rgba(0,0,0,0.5);">
+                                      box-shadow:0 8px 32px rgba(0,0,0,0.12);">
 
-                            <!-- ── Header ── -->
+                            <!-- â”€â”€ Header â”€â”€ -->
                             <tr>
-                                <td class="header-td" style="background-color:#242424;padding:18px 20px;
+                                <td class="header-td" style="background-color:#ffffff;padding:18px 20px;
                                            text-align:center;border-radius:16px 16px 0 0;
-                                           border-bottom:1px solid #3a3a3a;">
+                                           border-bottom:1px solid #e0e0e0;">
                                     <table cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
                                         <tr>
                                             <td style="vertical-align:middle;padding-right:10px;">
@@ -322,7 +328,7 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                                                      style="width:36px;height:36px;display:block;">
                                             </td>
                                             <td style="vertical-align:middle;">
-                                                <h1 class="header-h1" style="font-size:20px;color:#ffffff;margin:0;
+                                                <h1 class="header-h1" style="font-size:20px;color:#1a1a1a;margin:0;
                                                            font-weight:700;white-space:nowrap;">
                                                     findjobsinfinland&zwnj;.fi
                                                 </h1>
@@ -332,17 +338,17 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                                 </td>
                             </tr>
 
-                            <!-- ── Body ── -->
+                            <!-- â”€â”€ Body â”€â”€ -->
                             <tr>
                                 <td class="body-pad"
-                                    style="background-color:#1e1e1e;padding:20px 16px;">
+                                    style="background-color:#f5f5f5;padding:20px 16px;">
 
                                     <p class="intro-p"
-                                       style="font-size:14px;color:#aaaaaa;line-height:1.7;
+                                       style="font-size:14px;color:#444444;line-height:1.7;
                                               margin:0 0 20px 0;">
                                         Dear ${escapeHtml(displayName)},<br><br>
                                         We're pleased to inform you that
-                                        <strong style="color:#ffffff;">${jobs.length}</strong>
+                                        <strong style="color:#1a1a1a;">${jobs.length}</strong>
                                         new job ${jobs.length === 1 ? "opportunity" : "opportunities"}
                                         matching your preferences
                                         ${jobs.length === 1 ? "has" : "have"} recently been published
@@ -355,11 +361,11 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                                     <!-- Browse More -->
                                     <div style="text-align:center;margin:24px 0 8px 0;">
                                         <h3 class="browse-heading" style="font-size:16px;font-weight:700;margin:0 0 8px 0;
-                                                   color:#ffffff;">
+                                                   color:#1a1a1a;">
                                             Want to browse more options?
                                         </h3>
                                         <p class="intro-p browse-desc"
-                                           style="font-size:13px;color:#aaaaaa;line-height:1.6;
+                                           style="font-size:13px;color:#555555;line-height:1.6;
                                                   margin:0 0 16px 0;">
                                             Explore more opportunities tailored to your skills on
                                             findjobsinfinland.fi.
@@ -376,32 +382,32 @@ function buildDigestEmailHTML(frequency, jobs, fullName) {
                                 </td>
                             </tr>
 
-                            <!-- ── Footer ── -->
+                            <!-- â”€â”€ Footer â”€â”€ -->
                             <tr>
                                 <td class="footer-td"
-                                    style="background-color:#242424;padding:18px 22px;
-                                           text-align:center;border-top:1px solid #3a3a3a;
+                                    style="background-color:#efefef;padding:18px 22px;
+                                           text-align:center;border-top:1px solid #e0e0e0;
                                            border-radius:0 0 16px 16px;">
                                     <p style="font-size:13px;color:#5b9df9;margin:0 0 10px 0;
                                               line-height:1.5;">
                                         <a href="${SITE_URL}/disclaimer"
                                            style="color:#5b9df9;text-decoration:none;
                                                   margin:0 6px;">Disclaimer</a>
-                                        <span style="color:#555555;">|</span>
+                                        <span style="color:#999999;">|</span>
                                         <a href="${SITE_URL}/privacy-policy"
                                            style="color:#5b9df9;text-decoration:none;
                                                   margin:0 6px;">Privacy Policy</a>
                                     </p>
-                                    <p style="font-size:12px;color:#777777;line-height:1.6;
+                                    <p style="font-size:12px;color:#888888;line-height:1.6;
                                               margin:0 0 8px 0;">
                                         If you'd prefer not to receive further job updates, you can
                                         <a href="${SITE_URL}/edit-profile#unsubscribe"
                                            style="color:#e82c2f;text-decoration:underline;">
                                             unsubscribe</a> at any time.
                                     </p>
-                                    <p style="font-size:12px;color:#777777;margin:0;line-height:1.4;">
-                                        © 2026 · <span style="color:#28a745;font-weight:600;">
-                                        findjobsinfinland.fi</span> · All rights reserved.
+                                    <p style="font-size:12px;color:#888888;margin:0;line-height:1.4;">
+                                        Â© 2026 Â· <span style="color:#28a745;font-weight:600;">
+                                        findjobsinfinland.fi</span> Â· All rights reserved.
                                     </p>
                                 </td>
                             </tr>
@@ -529,8 +535,8 @@ async function processUserDigests() {
                     message: {
                         token,
                         notification: {
-                            title: "🔔 New Job Alerts",
-                            body: `Here are your ${periodLabel} job alerts — ${jobs.length} new ${jobs.length === 1 ? "job" : "jobs"} waiting!`,
+                            title: "ðŸ”” New Job Alerts",
+                            body: `Here are your ${periodLabel} job alerts â€” ${jobs.length} new ${jobs.length === 1 ? "job" : "jobs"} waiting!`,
                         },
                         data: {
                             type: `${pushFreq}_digest`,
@@ -609,7 +615,7 @@ exports.sendJobAlertEmails = onDocumentCreated(
 
         const usersSnapshot = await db.collection("users").get()
 
-        // Email is ALWAYS queued — never sent instantly.
+        // Email is ALWAYS queued â€” never sent instantly.
         // Push can be instant (via notifQueue) or queued (via pendingAlerts).
         let queuedEmailUsersCount = 0
         let instantPushQueuedCount = 0  // tracks push entries queued in notifQueue
@@ -645,7 +651,7 @@ exports.sendJobAlertEmails = onDocumentCreated(
                 ? user.pushAlertFrequency
                 : legacyFreq
 
-            // Match logic — all criteria must pass (empty array = wildcard)
+            // Match logic â€” all criteria must pass (empty array = wildcard)
             const hasCategory = userCategories.length === 0 || jobCategories.length === 0 || jobCategories.some(c => userCategories.includes(c))
             const hasLocation = userLocations.length === 0 || jobLocations.length === 0 || jobLocations.some(l => userLocations.includes(l))
             const hasLanguage = userLanguages.length === 0 || jobLanguages.length === 0 || jobLanguages.some(l => userLanguages.includes(l))
@@ -654,7 +660,7 @@ exports.sendJobAlertEmails = onDocumentCreated(
 
             if (!(hasCategory && hasLocation && hasLanguage && hasTime && hasType)) continue
 
-            // ── Email: always queued, never instant ──────────────────────────
+            // â”€â”€ Email: always queued, never instant â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             if (emailNotificationEnabled && user.email) {
                 await db
                     .collection("users")
@@ -682,7 +688,7 @@ exports.sendJobAlertEmails = onDocumentCreated(
                 queuedEmailUsersCount++
             }
 
-            // ── Push: instant (notifQueue) OR queued (pendingAlerts) ─────────
+            // â”€â”€ Push: instant (notifQueue) OR queued (pendingAlerts) â”€â”€â”€â”€â”€â”€â”€â”€â”€
             if (pushNotificationEnabled && fcmTokens.length > 0) {
                 if (pushAlertFrequency === "instantly") {
                     // Stagger each push by 5 min per queued entry to avoid rate-limit spikes
@@ -912,7 +918,7 @@ exports.deleteExpiredJobs = onSchedule(
 
 // Always do firebase deploy --only functions after editing this file.
 
-// ─── Shared helper ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Shared helper â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 /**
  * Build the HTML body for an admin report email.
@@ -952,7 +958,7 @@ function buildAdminReportHTML(periodLabel, jobAlerts, digestAlerts) {
         })
     }
 
-    html += `<p style="color:#888;font-size:12px;margin-top:30px;">Report automatically generated by findjobsinfinland.fi 🇫🇮</p>`
+    html += `<p style="color:#888;font-size:12px;margin-top:30px;">Report automatically generated by findjobsinfinland.fi ðŸ‡«ðŸ‡®</p>`
     return html
 }
 
@@ -1023,10 +1029,10 @@ async function sendAdminReport(db, periodLabel, reportPeriods, emailSubject) {
     }
 }
 
-// ─── Scheduled exports ────────────────────────────────────────────────────────
+// â”€â”€â”€ Scheduled exports â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 /**
- * Daily Admin Report — every day at 22:00 Helsinki time.
+ * Daily Admin Report â€” every day at 22:00 Helsinki time.
  * Covers: all job_alert entries (reportPeriod="daily") + daily digest summaries.
  */
 exports.sendDailyAdminReport = onSchedule(
@@ -1042,13 +1048,13 @@ exports.sendDailyAdminReport = onSchedule(
             db,
             "Daily",
             ["daily"],
-            "Daily System Report — findjobsinfinland.fi"
+            "Daily System Report â€” findjobsinfinland.fi"
         )
     }
 )
 
 /**
- * Weekly Admin Report — every Sunday at 22:00 Helsinki time.
+ * Weekly Admin Report â€” every Sunday at 22:00 Helsinki time.
  * Covers: weekly digest summaries (reportPeriod="weekly").
  */
 exports.sendWeeklyAdminReport = onSchedule(
@@ -1064,14 +1070,14 @@ exports.sendWeeklyAdminReport = onSchedule(
             db,
             "Weekly",
             ["weekly"],
-            "Weekly System Report — findjobsinfinland.fi"
+            "Weekly System Report â€” findjobsinfinland.fi"
         )
     }
 )
 
 /**
- * Monthly Admin Report — last day of every month at 22:00 Helsinki time.
- * Cron "0 22 28-31 * *" fires on the 28th–31st; we check inside whether
+ * Monthly Admin Report â€” last day of every month at 22:00 Helsinki time.
+ * Cron "0 22 28-31 * *" fires on the 28thâ€“31st; we check inside whether
  * tomorrow is the 1st (= today is the last day of the month).
  * Covers: monthly digest summaries (reportPeriod="monthly").
  */
@@ -1089,7 +1095,7 @@ exports.sendMonthlyAdminReport = onSchedule(
         const isLastDay = tomorrow.getDate() === 1
 
         if (!isLastDay) {
-            console.log("sendMonthlyAdminReport: Not the last day of the month — skipping.")
+            console.log("sendMonthlyAdminReport: Not the last day of the month â€” skipping.")
             return
         }
 
@@ -1098,7 +1104,7 @@ exports.sendMonthlyAdminReport = onSchedule(
             db,
             "Monthly",
             ["monthly"],
-            "Monthly System Report — findjobsinfinland.fi"
+            "Monthly System Report â€” findjobsinfinland.fi"
         )
     }
 )

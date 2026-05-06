@@ -36,7 +36,7 @@ Terminal Commands :
 cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && scraper\run_all_jobs.bat
 
 To run a job Scrap test :
-cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_scraper.py --site Työmarkkinatori --limit 10; python scraper/run_pipeline.py
+cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper\run_scraper.py --site "Työmarkkinatori" --limit 10 && python scraper\run_pipeline.py
 
 To do Phase 2, 3, 4, 5 after Phase 1 (Scraping) 
 cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py

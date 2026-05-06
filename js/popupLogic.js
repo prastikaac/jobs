@@ -601,6 +601,9 @@ window.signupUser = async () => {
     return;
   }
 
+  // ── Show success popup INSTANTLY (optimistic UI) ───────────────────
+  showPopupStep("popupSignupSuccess");
+
   try {
     // 1. Create the user in Firebase Auth
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -692,6 +695,8 @@ window.signupUser = async () => {
 
   } catch (error) {
     console.error("Signup error:", error);
+    // Revert back to the preferences form on Firebase failure
+    showPopupStep("popupStep3Signup2");
     const signupError = document.getElementById("signupPrefError");
     if (signupError) signupError.textContent = error.message || "Signup failed. Please try again.";
 
@@ -731,9 +736,11 @@ window.loginUser = async () => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // Update lastLogin timestamp after successful login
+    // Update lastLogin timestamp after successful login,
+    // and set BlogSubscriptionViaEmail if the user opted in
     await updateDoc(doc(db, "users", user.uid), {
-      lastLogin: Timestamp.now()
+      lastLogin: Timestamp.now(),
+      ...(window._blogSubscriptionConsent ? { BlogSubscriptionViaEmail: "yes" } : {})
     });
 
 
@@ -819,7 +826,8 @@ window.loginUser = async () => {
 
   } catch (error) {
     console.error("Login failed:", error);
-    const passwordErrorDiv = document.getElementById("popupPasswordLoginError");
+    // Revert back to the login form on Firebase failure
+    showPopupStep("popupStep3Login");
     showFieldError(passInput, "Incorrect password. Please try again.");
   }
 };

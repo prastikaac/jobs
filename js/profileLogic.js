@@ -45,6 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sign-out logic
   signOutButton.addEventListener("click", () => {
     signOut(auth).then(() => {
+      // Clear localStorage user record
+      localStorage.removeItem("user");
+
+      // Notify the gate overlay to re-show
+      window.dispatchEvent(new Event('userSignedOut'));
+
       // Hide profile and related elements on sign-out
       ppCard.style.display = "none";
       editButton.style.display = "none";

@@ -663,13 +663,13 @@ body.drK .popup-description-for-mobile-unique {
 .consent-label input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
-    min-width: 18px;
-    min-height: 18px;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
     border: 2px solid #bbb;
-    border-radius: 4px;
-    margin-top: 1px;
+    border-radius: 3px;
+    margin-top: 3px;
     cursor: pointer;
     background-color: #fff;
     transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
@@ -689,10 +689,10 @@ body.drK .popup-description-for-mobile-unique {
 .consent-label input[type="checkbox"]:checked::after {
     content: "";
     position: absolute;
-    left: 4px;
+    left: 3px;
     top: 1px;
-    width: 6px;
-    height: 10px;
+    width: 4px;
+    height: 7px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
@@ -2182,4 +2182,8 @@ body.drK #pp-card-wrapper .pp-field svg {
 
 body.drK .region-header span {
     color: #fff;
+}
+
+#jobAlertSubError {
+    margin-top: 0px !important;
 }

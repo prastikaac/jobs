@@ -4,7 +4,7 @@ job_translator.py — Phase 2: Offline Translation (FI/SV→EN).
 Translates raw Finnish or Swedish job content to English using GoogleTranslator.
 Saves:
 - rawjobs.json (raw jobs with translated_content cache)
-- translated_raw_jobs.json (Phase 2 output only)
+- translated_raw_jobs.json (Phase 2 output only — pure English)
 
 This module handles translations natively via deep_translator.
 """
@@ -71,7 +71,7 @@ def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] |
         logger.info("All raw jobs already translated.")
         return raw_jobs
 
-    logger.info("Translating %d raw jobs (FI/SV→EN)…", len(untranslated))
+    logger.info("Translating %d raw jobs (FI/SV->EN)...", len(untranslated))
 
     for i, raw in enumerate(untranslated, 1):
         title = raw.get("title", raw.get("id", ""))
@@ -92,7 +92,7 @@ def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] |
         )
 
         logger.info(
-            "  [%d/%d] Translated: %s (%d→%d chars)",
+            "  [%d/%d] Translated: %s (%d->%d chars)",
             i,
             len(untranslated),
             title[:50],
@@ -106,22 +106,29 @@ def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] |
 
 def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
     """
-    Build translated_raw_jobs.json as a clean Phase 2 output.
-    It keeps raw structure but replaces title/jobcontent with English versions
-    when translated_content is available.
+    Build translated_raw_jobs.json as a clean Phase 2 output with pure English.
+
+    For every job:
+    - title and jobcontent are replaced with the English translated_content version
+    - all supplementary list/text fields (what_we_expect, job_responsibilities,
+      what_we_offer, language_requirements, workTime, continuityOfWork) are
+      bulk-translated and written to the output as English values.
+
+    This ensures translated_raw_jobs.json is fully English — no Finnish sweep
+    needed downstream in Job_formatter.
     """
     translated_output = []
     total = len(raw_jobs)
     bulk_calls = 0
 
-    logger.info("Building translated output for %d jobs…", total)
+    logger.info("Building translated output for %d jobs...", total)
 
     for i, raw in enumerate(raw_jobs):
         out_job = dict(raw)
-        
-        # Gather small fields that need translation to do them in a single bulk request
+
+        # -- Bulk translate supplementary list + text fields -----------------
         texts_to_translate = []
-        map_back = [] # (field, is_list)
+        map_back = []  # (field, is_list)
 
         for field in [
             "what_we_expect",
@@ -130,8 +137,7 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
             "language_requirements",
         ]:
             val = raw.get(field)
-            t_key = f"translated_{field}"
-            if val and isinstance(val, list) and t_key not in raw:
+            if val and isinstance(val, list):
                 for v in val:
                     s_val = str(v).strip()
                     if s_val:
@@ -140,36 +146,38 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
 
         for field in ["workTime", "continuityOfWork"]:
             val = raw.get(field)
-            t_key = f"translated_{field}"
-            if val and isinstance(val, str) and t_key not in raw:
-                if val.strip():
-                    texts_to_translate.append(val.strip())
-                    map_back.append((field, False))
+            if val and isinstance(val, str) and val.strip():
+                texts_to_translate.append(val.strip())
+                map_back.append((field, False))
 
-        # Bulk translate fields to save API requests and prevent rate limits
         if texts_to_translate:
             bulk_text = "\n\n---\n\n".join(texts_to_translate)
             translated_bulk = translator.translate_fi_to_en(bulk_text)
             bulk_calls += 1
-            
-            # Use regex to safely split around the --- delimiter, even if spaces were added
-            import re
+
+            # Split safely around the --- delimiter even if spacing varies
             parts = [p.strip() for p in re.split(r'\n*-{2,}\n*', translated_bulk)]
-            
+
             if len(parts) == len(texts_to_translate):
                 parsed = {}
                 for idx, (field, is_list) in enumerate(map_back):
-                    t_key = f"translated_{field}"
-                    if t_key not in parsed:
-                        parsed[t_key] = [] if is_list else ""
-                        
+                    if field not in parsed:
+                        parsed[field] = [] if is_list else ""
                     if is_list:
-                        parsed[t_key].append(parts[idx])
+                        parsed[field].append(parts[idx])
                     else:
-                        parsed[t_key] = parts[idx]
-                
-                raw.update(parsed)
+                        parsed[field] = parts[idx]
 
+                # Write translated values directly into the output job
+                for field, val in parsed.items():
+                    out_job[field] = val
+            else:
+                logger.warning(
+                    "  [%d/%d] Bulk split mismatch (%d parts vs %d items) — keeping originals for this job.",
+                    i + 1, total, len(parts), len(texts_to_translate)
+                )
+
+        # -- Replace title / jobcontent with translated versions -------------
         translated_text = raw.get("translated_content", "")
         if translated_text:
             fallback_title = out_job.get("title", "")
@@ -177,19 +185,7 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
             out_job["title"] = trans_title
             out_job["jobcontent"] = trans_content
 
-            for field in [
-                "what_we_expect",
-                "job_responsibilities",
-                "what_we_offer",
-                "language_requirements",
-                "workTime",
-                "continuityOfWork",
-            ]:
-                t_key = f"translated_{field}"
-                if t_key in raw:
-                    out_job[field] = raw[t_key]
-
-        # Remove transient translated_* helper keys from the phase2 output
+        # Remove all transient translated_* helper keys from output
         for key in list(out_job.keys()):
             if key.startswith("translated_") and key != "translated_content":
                 del out_job[key]
@@ -197,7 +193,7 @@ def _build_translated_raw_output(raw_jobs: list[dict]) -> list[dict]:
         translated_output.append(out_job)
 
         if (i + 1) % 50 == 0 or (i + 1) == total:
-            logger.info("  [%d/%d] Supplementary fields processed (%d bulk API calls so far)", i + 1, total, bulk_calls)
+            logger.info("  [%d/%d] fields processed (%d bulk API calls so far)", i + 1, total, bulk_calls)
 
     logger.info("Translated output built. %d jobs, %d bulk translation calls.", total, bulk_calls)
     return translated_output
@@ -208,7 +204,7 @@ def run_phase2(raw_jobs: list[dict]) -> list[dict]:
     Full Phase 2 execution:
     - translate raw jobs
     - save rawjobs.json
-    - save translated_raw_jobs.json
+    - save translated_raw_jobs.json (pure English)
     - save processing_state.json
     """
     processing_state = rawjobs_store.ensure_processing_state(
@@ -220,7 +216,7 @@ def run_phase2(raw_jobs: list[dict]) -> list[dict]:
 
     # Compile the output FIRST so any dynamic translation appended to `raw_jobs` gets captured.
     translated_output = _build_translated_raw_output(raw_jobs)
-    
+
     # Save AFTER building output, so that translated_* extra fields are saved to cache forever!
     rawjobs_store.save_raw_jobs(raw_jobs)
     rawjobs_store.save_processing_state(processing_state)
@@ -234,7 +230,7 @@ def run_phase2(raw_jobs: list[dict]) -> list[dict]:
 if __name__ == "__main__":
     logging.basicConfig(
         level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
+        format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
     )
 
     raw_list = rawjobs_store.load_raw_jobs()
