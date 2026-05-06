@@ -30,7 +30,7 @@ if "%MSG%"=="" (
 )
 
 %GIT% commit -m "%MSG%"
-%GIT% push private main
+%GIT% push private master
 
 echo.
 echo Done! Full backup pushed to private repo (includes scraper + functions).
