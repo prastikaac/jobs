@@ -9,9 +9,7 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - Update firebase database rules 
 
+- check job encode characters in emails
 
-- check job list view in emails
+- delete scraper\title_utils.py file as the location is removed from the title in : category_checker.py
 
-- why not pushing automatically to github after completion of pipeline ?
-
-why its taking too much time for job translation ?
