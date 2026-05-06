@@ -68,3 +68,9 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 scraper/serviceAccountKey.json
+
+# ── Private backend folders (tracked in private repo only) ──
+# These contain sensitive scraper logic, Firebase Cloud Functions,
+# service account keys, and API credentials. Never push to public repo.
+scraper/
+functions/
