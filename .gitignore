@@ -74,3 +74,6 @@ scraper/serviceAccountKey.json
 # service account keys, and API credentials. Never push to public repo.
 scraper/
 functions/
+
+# Second git directory for private backup repo
+.git-private/
