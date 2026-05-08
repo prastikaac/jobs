@@ -60,3 +60,5 @@ Run as admin: Disable-ScheduledTask -TaskName 'JobsInFinland_AutoScraper'
 
 To re-enable Auto-runner:
 Run as admin: Enable-ScheduledTask -TaskName 'JobsInFinland_AutoScraper'
+
+
