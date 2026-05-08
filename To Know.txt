@@ -35,6 +35,9 @@ Terminal Commands :
 - Automatic runner file : 
 cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && scraper\run_all_jobs.bat
 
+To run a job Scrap : 
+cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper\run_scraper.py && python scraper\run_pipeline.py
+
 To run a job Scrap test :
 cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper\run_scraper.py --site "Työmarkkinatori" --limit 10 && python scraper\run_pipeline.py
 

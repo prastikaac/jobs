@@ -9,7 +9,143 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - Update firebase database rules                                                                           
 
-
 - locaation - fix
 
-- make jobs and index file to fetch jobs from jobs.json
+
+
+
+
+
+Create a clean and modern notification popup system for the website.
+
+Requirements:
+- I have already placed a notification icon in the HTML at: -----
+- When the notification icon is clicked, show a popup dropdown/modal below the icon
+- The popup should contain notification items
+- Create everything dynamically using JavaScript only
+- Do NOT write the popup HTML directly in the HTML page
+- Generate all popup HTML elements inside the JS file using template literals or createElement
+- Create a separate JS file named: notification-popup.js
+- Place the JS file inside the /js folder
+- Link the JS file in the HTML page
+
+Popup Design:
+- Modern, minimal, and premium UI
+- Background color should automatically adapt to the website theme:
+  - White for light mode
+  - Dark/black for dark mode
+- Add blurred overlay background outside the popup
+- Add smooth open/close animations
+- Add rounded corners and soft shadows
+- Add hover effects for notification items
+- Make the popup mobile responsive
+- Add a close (X) button inside the popup
+- Clicking outside the popup should also close it
+
+Notifications:
+- Add 3 sample notifications
+- Each notification should contain:
+  - Small icon/image
+  - Notification title
+  - Short description
+  - Time text like “2 min ago”
+
+Expanded Notification View:
+- When a user clicks a notification item, open an enlarged detailed popup/modal
+- The enlarged popup should show:
+  - Bigger image/icon
+  - Full notification title
+  - Full detailed description/message
+  - Time/date
+- Add smooth animation while opening the detailed notification popup
+- Add a back button or close button to return to the notifications list
+- Background overlay should remain blurred while viewing details
+
+Functionality:
+- Open popup when clicking notification icon
+- Close popup when:
+  - Clicking the X button
+  - Clicking outside the popup
+- Prevent duplicate popups from opening
+- Use clean and optimized JavaScript
+- Organize code properly with comments
+- Ensure smooth performance and fast loading
+
+Important:
+- Only the notification icon should remain in HTML
+- Everything else (popup structure, overlay, notifications, styling injection if needed) must be generated through JavaScript inside notification-popup.js
+
+
+
+
+
+
+
+
+Create a modern and professional “Our Team” section with profile cards for 5 people.
+
+Requirements:
+- Place the Founder & CEO card at about-us.html page after    <h2>Our Team</h2>
+- Make it fully mobile responsive
+- Use rounded profile images and clean typography
+- Highlight the founder card slightly bigger than the others
+
+Founder :
+Prasiddha Acharya
+Photo: https://findjobsinfinland.fi/images/authors/prasiddha-acharya.png
+
+Authors:
+Matti Virtanen
+Photo: https://findjobsinfinland.fi/images/authors/matti-virtanen.png
+
+Teemu Korhonen
+Photo: https://findjobsinfinland.fi/images/authors/teemu-korhonen.png
+
+Laura Virtanen
+Photo: https://findjobsinfinland.fi/images/authors/laura-virtanen.png
+
+Jussi Korhonen
+Photo: https://findjobsinfinland.fi/images/authors/jussi-korhonen.png
+
+Suggested layout:
+
+             Founder Card
+
+    Author Card    Author Card
+    Author Card    Author Card
+
+
+
+
+
+
+
+
+
+
+- Add a clean and responsive pagination system to the "Jobs.html” page.
+
+Requirements:
+
+Show page numbers like: 1 2 3 4 5 at the bottom of the page
+Add Previous and Next buttons with that
+Highlight the active/current page number differently 
+hide Previous button on the first page
+hide Next button on the last page
+Load the limited number of job as user requested posts per page
+Add a “Show results per page” selector with options:
+25
+50
+75
+100 along the View: Grid List texts 
+Automatically update the displayed jobs when the user changes the results-per-page value
+Pagination should update dynamically based on total job count
+Smooth scroll to the top of the jobs section when changing pages
+also update url on page change like jobs.html?page=2 on each page and also fetch page from ulr like if user got into https://findjobsinfinland.fi/jobs?page=2 then they should be able to go to page 2
+
+
+
+
+
+
+now make jobs and index file to fetch jobs from jobs.json, means while putting jobs article in index page and jobs.html now dont put mannual article code in both files instead make like the article to be fetched automatically on every page open, the article template remains the same as it is, only make to fetch it every time instead of putting html code block and it should fetch the the respective data from  C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland\scraper\data\jobs.json
