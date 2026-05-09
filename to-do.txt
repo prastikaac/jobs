@@ -19,7 +19,7 @@ now i want to send  job alerts instantly to the user's device immediately after 
 Create a clean and modern notification popup system for the website.
 
 Requirements:
-- I have already placed a notification icon in the HTML at: -----
+- I have already placed a notification icon block in the index.html file at: -----
 - When the notification icon is clicked, show a popup dropdown/modal below the icon
 - The popup should contain notification items
 - Create everything dynamically using JavaScript only
@@ -143,9 +143,3 @@ Pagination should update dynamically based on total job count
 Smooth scroll to the top of the jobs section when changing pages
 also update url on page change like jobs.html?page=2 on each page and also fetch page from ulr like if user got into https://findjobsinfinland.fi/jobs?page=2 then they should be able to go to page 2
 
-
-
-
-
-
-now make jobs and index file to fetch jobs from jobs.json, means while putting jobs article in index page and jobs.html now dont put mannual article code in both files instead make like the article to be fetched automatically on every page open, the article template remains the same as it is, only make to fetch it every time instead of putting html code block and it should fetch the the respective data from  C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland\scraper\data\jobs.json
