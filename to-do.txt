@@ -104,4 +104,3 @@ Automatically update the displayed jobs when the user changes the results-per-pa
 Pagination should update dynamically based on total job count
 Smooth scroll to the top of the jobs section when changing pages
 also update url on page change like jobs.html?page=2 on each page and also fetch page from ulr like if user got into https://findjobsinfinland.fi/jobs?page=2 then they should be able to go to page 2
-
