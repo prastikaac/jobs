@@ -1,0 +1,35 @@
+2026-05-11 18:55:28 [WARNING] ai_processor — AI output rejected due to irrelevance
+
+2026-05-11 16:20:48 [WARNING] ai_processor —   ✗ Maanrakennuksen perämies, putkihitsaus → irrelevant
+
+
+2026-05-11 15:08:56 [WARNING] job_translator —   [1069/2141] Bulk split mismatch (16 parts vs 15 items) — keeping originals.
+2026-05-11 15:11:09 [INFO] job_translator —   [1100/2141] fields processed (1100 bulk API calls so far)
+2026-05-11 15:14:52 [INFO] job_translator —   [1150/2141] fields processed (1150 bulk API calls so far)
+2026-05-11 15:16:40 [WARNING] job_translator —   [1175/2141] Bulk split mismatch (26 parts vs 24 items) — keeping originals.
+
+
+
+2026-05-11 17:09:53 [WARNING] pipeline — Git private push failed after 1 attempt(s): remote: error: Trace: e2217e4ac34bbb0c7c81d47c5fe5e4b102747f84442b6873be7e12bd06cb2376        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File .git-private/objects/cc/01dda4200a4029dda71476b6d4d69f9d02eb3f is 197.68 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/e7/5139fe163bbe37418e1294e585bfe2f2a1a8f8 is 197.92 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/pack/pack-72d10967c6edf1d9f72ef3c2261b8e4e27769645.pack is 197.60 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/8a/d9d5e70338d4c46b5bef6926b6ec9f950db2ee is 197.86 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/bf/247d6db89db1ff32f9e19ce8e2f00181b1544c is 197.62 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/fc/72cde56268e913544947b11e0c341c968f72c0 is 197.74 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/62/cf93706c2adf77e9463a6891fffa44103db0e8 is 197.56 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/8d/bcb0035c852086a17da9371b93606eb47e5115 is 197.50 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .git-private/objects/8f/4349792c5f03528ae359eb704a8c265952b27c is 197.80 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/prastikaac/jobs-private.git
+ ! [remote rejected]   main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/prastikaac/jobs-private.git'
+
+
+2026-05-11 18:15:38 [WARNING] pipeline — Git private push failed (attempt 1/5) -- retrying in 30s: error: RPC failed; HTTP 500 curl 22 The requested URL returned error: 500
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+
