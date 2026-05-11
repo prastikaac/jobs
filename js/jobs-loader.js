@@ -11,7 +11,7 @@
   "use strict";
 
   /* ── Config ─────────────────────────────────────────────────────────── */
-  var JOBS_JSON_URL = "scraper/data/jobs.json";
+  var JOBS_JSON_URL = "QuantumNeuralHyperSync_ArchiveVaultX9_UltraSecureDataMatrix_EnterpriseBackupNode_AlphaCentauriProtocol_EncryptedWorkflowRepository_VersionControlMaster_AdaptiveLearningEngine_IntegratedCl/jobs.json";
 
   /* ── HTML helpers ───────────────────────────────────────────────────── */
   function escAttr(s) {
@@ -309,7 +309,7 @@
         container.innerHTML =
           '<div style="text-align:center;padding:40px;color:#e55;">' +
             '<strong>Could not load job listings.</strong><br>' +
-            'Make sure <code>scraper/data/jobs.json</code> is accessible.<br>' +
+            'Make sure the data file is accessible.<br>' +
             '<small style="opacity:0.6;">' + escHtml(String(err)) + '</small>' +
           '</div>';
         console.error("[jobs-loader]", err);
