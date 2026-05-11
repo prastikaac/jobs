@@ -4,8 +4,9 @@
  * <article class="ntry"> cards into #Blog1 .blogPts
  * using the EXACT same HTML structure the pipeline generator produces.
  *
- * The existing filter / search / view-toggle JS reads data-* attributes
- * from those articles — it works unchanged because the structure is identical.
+ * Now supports client-side pagination:
+ *  - window.JobsPagination  → public API used by inline filter/pagination script
+ *  - Pagination renders only `perPage` jobs at a time, filtered set is sliced.
  */
 (function () {
   "use strict";
@@ -32,7 +33,6 @@
   }
 
   /* ── Location helpers ───────────────────────────────────────────────── */
-  /** Known city → region map (same as the HTML generator) */
   var REGION_MAP = {
     "Helsinki": "Uusimaa", "Espoo": "Uusimaa", "Vantaa": "Uusimaa",
     "Kauniainen": "Uusimaa", "Kerava": "Uusimaa", "Järvenpää": "Uusimaa",
@@ -289,11 +289,14 @@
       .then(function (data) {
         var jobs = flattenJobs(data);
 
+        /* Store all jobs globally so pagination can access them */
+        window._allJobs = jobs;
+
         /* Update the "X job opportunities" badge */
         var countEl = document.getElementById("totalJobsCount");
         if (countEl) countEl.textContent = jobs.length.toLocaleString();
 
-        /* Render cards */
+        /* Render ALL cards initially (pagination will hide/show via CSS) */
         container.innerHTML = jobs.map(renderCard).join("\n");
 
         /* Rebuild filter dropdowns with real categories / locations */
@@ -302,7 +305,7 @@
         /* Re-apply filters, view mode, and URL params */
         kickExistingScripts();
 
-        /* Signal for any other listeners */
+        /* Signal for any other listeners (pagination init listens here) */
         document.dispatchEvent(new CustomEvent("jobs-loaded", { detail: { count: jobs.length } }));
       })
       .catch(function (err) {

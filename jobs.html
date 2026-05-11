@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html dir="ltr" lang="en">
 
@@ -2178,6 +2178,8 @@
                   @media (max-width: 600px) {
                     .view-style-bar {
                       margin: 14px 0 8px 0;
+                      flex-wrap: wrap;
+                      gap: 10px;
                     }
 
                     .view-toggle-btn {
@@ -2187,6 +2189,194 @@
 
                     .view-label-text {
                       font-size: 12px;
+                    }
+                  }
+
+                  /* ===== PER-PAGE SELECTOR ===== */
+                  .per-page-group {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-left: auto;
+                  }
+
+                  .per-page-select {
+                    display: inline-block;
+                    height: 36px;
+                    padding: 0 28px 0 12px;
+                    border-radius: 10px;
+                    background: var(--filter-bg);
+                    border: 1px solid var(--filter-border);
+                    color: var(--filter-text);
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: inherit;
+                    cursor: pointer;
+                    appearance: auto;
+                    -webkit-appearance: auto;
+                    outline: none;
+                    box-shadow: none;
+                    vertical-align: middle;
+                    transition: background 0.2s ease, border-color 0.2s ease;
+                  }
+
+                  .per-page-select:hover {
+                    background: var(--filter-bg-hover);
+                    border-color: rgba(255, 255, 255, 0.16);
+                  }
+
+                  .per-page-suffix {
+                    font-size: 13px;
+                    color: rgba(255, 255, 255, 0.5);
+                    white-space: nowrap;
+                  }
+
+                  body.lgT .per-page-select {
+                    background: #ffffff;
+                    border-color: #d8dee8;
+                    color: #1f2937;
+                  }
+
+                  body.lgT .per-page-select:hover {
+                    background: #f8fafc;
+                    border-color: #c8d0db;
+                  }
+
+                  body.lgT .per-page-suffix {
+                    color: #6b7280;
+                  }
+
+                  @media (max-width: 520px) {
+                    .per-page-group {
+                      margin-left: 0;
+                    }
+
+                    .per-page-suffix {
+                      display: none;
+                    }
+                  }
+
+                  /* ===== PAGINATION BAR ===== */
+                  .jobs-pagination {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 6px;
+                    margin: 32px 0 20px 0;
+                    padding: 0;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                  }
+
+                  .jobs-pagination.visible {
+                    opacity: 1;
+                  }
+
+                  .jobs-pagination:empty {
+                    display: none;
+                  }
+
+                  .pg-btn {
+                    all: unset;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 40px;
+                    height: 40px;
+                    padding: 0 14px;
+                    border-radius: 10px;
+                    border: 1px solid var(--filter-border);
+                    background: var(--filter-bg);
+                    color: var(--filter-text);
+                    font-size: 14px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: background 0.18s ease, border-color 0.18s ease, transform 0.15s ease, color 0.18s ease;
+                    white-space: nowrap;
+                    user-select: none;
+                    box-sizing: border-box;
+                  }
+
+                  .pg-btn:hover:not(:disabled):not(.pg-active) {
+                    background: var(--filter-bg-hover);
+                    border-color: rgba(255, 255, 255, 0.16);
+                    transform: translateY(-1px);
+                  }
+
+                  .pg-btn.pg-active {
+                    background: rgba(255, 255, 255, 0.18);
+                    border-color: rgba(255, 255, 255, 0.35);
+                    color: #ffffff;
+                    font-weight: 700;
+                    cursor: default;
+                    transform: none;
+                  }
+
+                  .pg-btn:disabled {
+                    opacity: 0;
+                    pointer-events: none;
+                    cursor: default;
+                  }
+
+                  .pg-dots {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 36px;
+                    height: 40px;
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.4);
+                    user-select: none;
+                  }
+
+                  /* Light mode */
+                  body.lgT .pg-btn {
+                    background: #ffffff;
+                    border-color: #d8dee8;
+                    color: #1f2937;
+                  }
+
+                  body.lgT .pg-btn:hover:not(:disabled):not(.pg-active) {
+                    background: #f8fafc;
+                    border-color: #c8d0db;
+                  }
+
+                  body.lgT .pg-btn.pg-active {
+                    background: #1f2937;
+                    border-color: #1f2937;
+                    color: #ffffff;
+                  }
+
+                  body.lgT .pg-dots {
+                    color: #9ca3af;
+                  }
+
+                  /* Prev / Next labels */
+                  .pg-prev svg,
+                  .pg-next svg {
+                    width: 14px;
+                    height: 14px;
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-width: 2.2;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    vertical-align: middle;
+                    margin: 0 3px;
+                  }
+
+                  @media (max-width: 480px) {
+                    .pg-btn {
+                      min-width: 36px;
+                      height: 36px;
+                      padding: 0 10px;
+                      font-size: 13px;
+                    }
+
+                    .jobs-pagination {
+                      gap: 4px;
+                      margin: 24px 0 14px 0;
                     }
                   }
                 </style>
@@ -2358,6 +2548,17 @@
                     <span class="view-label-text">List</span>
                   </button>
                 </div>
+                <!-- Per-page selector -->
+                <div class="per-page-group" id="perPageGroup">
+                  <label class="view-style-label" for="perPageSelect">Show:</label>
+                  <select class="per-page-select" id="perPageSelect" aria-label="Jobs per page">
+                    <option value="25">25</option>
+                    <option value="50" selected>50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                  </select>
+                  <span class="per-page-suffix">jobs per page</span>
+                </div>
               </div>
               <div id="jobSummaryText">
                 <p id="defaultText">
@@ -2381,7 +2582,10 @@
                 </div>
                 <script src="js/jobs-loader.js"></script>
               </div>
-              <br /> <br />
+              <!-- ===== PAGINATION BAR ===== -->
+              <nav aria-label="Job listings pagination" class="jobs-pagination" id="jobsPagination">
+                <!-- Rendered dynamically by pagination script -->
+              </nav>
               <br />
               <div class="pCmnts" id="comment" style="background-color: transparent; box-shadow: none;">
                 <input class="cmSh fixi hidden" id="forcontact" type="checkbox" />
@@ -3273,7 +3477,15 @@
           };
 
           const query = buildURL(filters);
-          const newURL = window.location.pathname + (query ? "?" + query : "");
+          // Preserve ?page= if pagination script set it (it will clear it when resetting to 1)
+          const existingPage = new URLSearchParams(window.location.search).get("page");
+          let finalQuery = query;
+          if (existingPage && parseInt(existingPage, 10) > 1) {
+            const p = new URLSearchParams(query);
+            p.set("page", existingPage);
+            finalQuery = p.toString();
+          }
+          const newURL = window.location.pathname + (finalQuery ? "?" + finalQuery : "");
           window.history.replaceState({}, "", newURL);
         }
 
@@ -4159,6 +4371,267 @@
           );
         });
       }
+    </script>
+    <!-- ===== PAGINATION: Self-contained, integrates with filterArticles ===== -->
+    <script>
+      (function () {
+        "use strict";
+
+        /* ── State ───────────────────────────────────────────────── */
+        var currentPage       = 1;
+        var perPage           = 50;    // default; synced with #perPageSelect
+        var filteredArticles  = [];    // visible articles for current filter set
+        var _paginationPatched = false; // guard: prevent double-wrapping filterArticles
+        var _allowPageReset   = false;  // false during initial load; true once settled
+        //
+        // WHY _allowPageReset?
+        // After jobs.json loads, the filter-script's async init (loadCategories /
+        // loadLocations) may still be running and will call filterArticles() one
+        // more time. Without this guard that call would reset ?page=32 back to 1.
+        // We flip _allowPageReset = true only after a short settling period so that
+        // any system-initiated filterArticles() calls during init honour the URL
+        // page, while subsequent USER-triggered calls reset to page 1.
+
+        /* ── DOM refs ────────────────────────────────────────────── */
+        var paginationEl  = document.getElementById("jobsPagination");
+        var perPageSelect = document.getElementById("perPageSelect");
+
+        /* ── Helpers: URL page ───────────────────────────────────── */
+        function getPageFromURL() {
+          var p = parseInt(new URLSearchParams(window.location.search).get("page"), 10);
+          return p >= 1 ? p : 1;
+        }
+
+        function setPageInURL(page) {
+          var params = new URLSearchParams(window.location.search);
+          if (page <= 1) {
+            params.delete("page");
+          } else {
+            params.set("page", String(page));
+          }
+          var qs = params.toString();
+          window.history.replaceState({}, "", window.location.pathname + (qs ? "?" + qs : ""));
+        }
+
+        /* ── Helpers: article visibility ─────────────────────────── */
+        function getVisibleArticles() {
+          var visible = [];
+          document.querySelectorAll("#Blog1 .blogPts article.ntry").forEach(function (a) {
+            if (!a.classList.contains("filter-hidden")) visible.push(a);
+          });
+          return visible;
+        }
+
+        /* ── Apply page slice (show only current page's jobs) ─────── */
+        function applyPageSlice() {
+          var start = (currentPage - 1) * perPage;
+          var end   = start + perPage;
+
+          // Show only the current page slice of the filtered set
+          filteredArticles.forEach(function (a, i) {
+            a.style.display = (i >= start && i < end) ? "" : "none";
+          });
+
+          // filter-hidden articles always stay hidden
+          document.querySelectorAll("#Blog1 .blogPts article.ntry").forEach(function (a) {
+            if (a.classList.contains("filter-hidden")) a.style.display = "none";
+          });
+        }
+
+        /* ── Ellipsis page-number builder ────────────────────────── */
+        function buildPageNumbers(total, current) {
+          if (total <= 7) {
+            var nums = [];
+            for (var i = 1; i <= total; i++) nums.push(i);
+            return nums;
+          }
+          var pages = [1];
+          if (current > 3)          pages.push("…");
+          if (current > 2)          pages.push(current - 1);
+          if (current !== 1 && current !== total) pages.push(current);
+          if (current < total - 1)  pages.push(current + 1);
+          if (current < total - 2)  pages.push("…");
+          pages.push(total);
+          return pages;
+        }
+
+        /* ── Render pagination bar ───────────────────────────────── */
+        function renderPagination() {
+          if (!paginationEl) return;
+          var totalPages = Math.ceil(filteredArticles.length / perPage);
+
+          if (totalPages <= 1) {
+            paginationEl.innerHTML = "";
+            paginationEl.classList.remove("visible");
+            return;
+          }
+
+          var SP = '<svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>';
+          var SN = '<svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"></polyline></svg>';
+          var html = "";
+
+          html += '<button class="pg-btn pg-prev" id="pgPrev" aria-label="Previous page"' +
+                  (currentPage <= 1 ? " disabled" : "") + ">" + SP + "Prev</button>";
+
+          buildPageNumbers(totalPages, currentPage).forEach(function (n) {
+            if (n === "…") {
+              html += '<span class="pg-dots" aria-hidden="true">&hellip;</span>';
+            } else {
+              var isActive = (n === currentPage);
+              html += '<button class="pg-btn' + (isActive ? " pg-active" : "") + '"' +
+                      ' data-page="' + n + '" aria-label="Page ' + n + '"' +
+                      (isActive ? ' aria-current="page"' : "") +
+                      ">" + n + "</button>";
+            }
+          });
+
+          html += '<button class="pg-btn pg-next" id="pgNext" aria-label="Next page"' +
+                  (currentPage >= totalPages ? " disabled" : "") + ">Next" + SN + "</button>";
+
+          paginationEl.innerHTML = html;
+          paginationEl.classList.add("visible");
+
+          // Wire up page buttons
+          paginationEl.querySelectorAll(".pg-btn[data-page]").forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              goToPage(parseInt(btn.dataset.page, 10));
+            });
+          });
+
+          var prevBtn = document.getElementById("pgPrev");
+          var nextBtn = document.getElementById("pgNext");
+          if (prevBtn) prevBtn.addEventListener("click", function () { goToPage(currentPage - 1); });
+          if (nextBtn) nextBtn.addEventListener("click", function () { goToPage(currentPage + 1); });
+        }
+
+        /* ── Navigate to a specific page ─────────────────────────── */
+        function goToPage(page) {
+          var totalPages = Math.ceil(filteredArticles.length / perPage);
+          page = Math.max(1, Math.min(page, totalPages));
+          if (page === currentPage) return;
+
+          currentPage = page;
+          applyPageSlice();
+          renderPagination();
+          setPageInURL(page);
+
+          // Smooth-scroll to the top of the jobs section
+          var target = document.getElementById("viewStyleBar") ||
+                       document.getElementById("Blog1") ||
+                       document.querySelector(".filters-section");
+          if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        /* ── Full rebuild (called after jobs load) ───────────────── */
+        function rebuildFromURL() {
+          filteredArticles = Array.from(getVisibleArticles());
+          var totalPages = Math.ceil(filteredArticles.length / perPage);
+          var urlPage    = getPageFromURL();
+          // Honour ?page=N from URL; clamp if out of range
+          currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
+          applyPageSlice();
+          renderPagination();
+          setPageInURL(currentPage);
+        }
+
+        /* ── Patch window.filterArticles ─────────────────────────── */
+        function patchFilterArticles() {
+          if (_paginationPatched) return true;
+          if (typeof window.filterArticles !== "function") return false;
+
+          var _orig = window.filterArticles;
+          window.filterArticles = function () {
+            _orig.apply(this, arguments); // run original filter logic
+
+            filteredArticles = Array.from(getVisibleArticles());
+
+            if (_allowPageReset) {
+              // USER changed a filter → go back to page 1
+              currentPage = 1;
+            } else {
+              // SYSTEM call during initial load → honour ?page= from URL
+              var totalPages = Math.ceil(filteredArticles.length / perPage);
+              var urlPage    = getPageFromURL();
+              currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
+            }
+
+            applyPageSlice();
+            renderPagination();
+            setPageInURL(currentPage);
+          };
+
+          _paginationPatched = true;
+          return true;
+        }
+
+        /* ── Per-page selector ───────────────────────────────────── */
+        function bindPerPageSelector() {
+          if (!perPageSelect) return;
+
+          // Restore saved preference from localStorage
+          try {
+            var saved = localStorage.getItem("jobsPerPage");
+            if (saved && ["25","50","75","100"].includes(saved)) {
+              perPageSelect.value = saved;
+              perPage = parseInt(saved, 10);
+            }
+          } catch (e) {}
+
+          perPageSelect.addEventListener("change", function () {
+            var oldPerPage = perPage;
+            perPage = parseInt(perPageSelect.value, 10) || 50;
+            try { localStorage.setItem("jobsPerPage", String(perPage)); } catch (e) {}
+
+            // Preserve approximate scroll position:
+            // find which new page contains the first item of the current view.
+            var firstItemIndex = (currentPage - 1) * oldPerPage; // 0-based index
+            filteredArticles = Array.from(getVisibleArticles());
+            var totalPages = Math.ceil(filteredArticles.length / perPage);
+            currentPage = Math.min(Math.floor(firstItemIndex / perPage) + 1, totalPages || 1);
+
+            applyPageSlice();
+            renderPagination();
+            setPageInURL(currentPage); // keeps ?page= in URL when page > 1
+          });
+        }
+
+        /* ── Init ────────────────────────────────────────────────── */
+        function init() {
+          bindPerPageSelector();
+          currentPage = getPageFromURL(); // seed from URL
+
+          // Patch filterArticles as early as possible.
+          // On first call it may fail (async filter script not done yet) –
+          // the jobs-loaded handler will retry.
+          patchFilterArticles();
+
+          // Primary entry point: jobs-loaded fires after all cards are rendered
+          document.addEventListener("jobs-loaded", function () {
+            patchFilterArticles(); // no-op if already patched (guard flag)
+
+            // Wait 150 ms for kickExistingScripts → filterArticles() to settle,
+            // then override currentPage from the URL.
+            setTimeout(function () {
+              rebuildFromURL();
+
+              // After another 600 ms (total ~750 ms from jobs-loaded) allow
+              // subsequent filterArticles() calls to reset back to page 1.
+              // This window covers the filter script's own loadCategories /
+              // loadLocations async calls that may still fire filterArticles().
+              setTimeout(function () {
+                _allowPageReset = true;
+              }, 600);
+            }, 150);
+          });
+        }
+
+        // Run once DOM is ready
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", init);
+        } else {
+          init();
+        }
+      })();
     </script>
     <!-- ===== VIEW TOGGLE: Separate, self-contained logic ===== -->
     <script>
