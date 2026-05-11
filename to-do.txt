@@ -82,3 +82,8 @@ Functionality:
 Important:
 - Only the notification icon should remain in HTML
 - Everything else (popup structure, overlay, notifications, styling injection if needed) must be generated through JavaScript inside notification-popup.js
+
+
+
+rename jobs.json to else something
+fix loader in jobs.html
