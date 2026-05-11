@@ -80,10 +80,10 @@
 
   function buildDataTitle(job) {
     var parts = [];
-    if (job.title)          parts.push(job.title.toLowerCase());
-    if (job.company)        parts.push(job.company.toLowerCase());
+    if (job.title) parts.push(job.title.toLowerCase());
+    if (job.company) parts.push(job.company.toLowerCase());
     (job.jobLocation || []).forEach(function (l) { if (l) parts.push(l.toLowerCase()); });
-    if (job.job_category)   parts.push(job.job_category.toLowerCase().replace(/[-_]/g, " "));
+    if (job.job_category) parts.push(job.job_category.toLowerCase().replace(/[-_]/g, " "));
     if (job.search_keywords) parts.push(job.search_keywords.toLowerCase());
     return escAttr(parts.join(" "));
   }
@@ -91,28 +91,28 @@
   /* ── Bookmark SVG (identical to generator output) ───────────────────── */
   var BM_SVG =
     '<svg class="line" viewbox="0 0 24 24">' +
-      '<g transform="translate(4.500000, 2.500000)">' +
-        '<path d="M7.47,0 C1.08,0 0,0.932 0,8.429 C0,16.822 -0.15,19 1.44,19 ' +
-              'C3.04,19 5.64,15.316 7.47,15.316 C9.3,15.316 11.9,19 13.5,19 ' +
-              'C15.09,19 14.94,16.822 14.94,8.429 C14.94,0.932 13.86,0 7.47,0 Z"></path>' +
-        '<line class="svgC v" transform="translate(-4.5,-2.5)" x1="12" x2="12" y1="6" y2="12"></line>' +
-        '<line class="svgC h" transform="translate(-4.5,-2.5)" x1="15" x2="9" y1="9" y2="9"></line>' +
-      '</g>' +
+    '<g transform="translate(4.500000, 2.500000)">' +
+    '<path d="M7.47,0 C1.08,0 0,0.932 0,8.429 C0,16.822 -0.15,19 1.44,19 ' +
+    'C3.04,19 5.64,15.316 7.47,15.316 C9.3,15.316 11.9,19 13.5,19 ' +
+    'C15.09,19 14.94,16.822 14.94,8.429 C14.94,0.932 13.86,0 7.47,0 Z"></path>' +
+    '<line class="svgC v" transform="translate(-4.5,-2.5)" x1="12" x2="12" y1="6" y2="12"></line>' +
+    '<line class="svgC h" transform="translate(-4.5,-2.5)" x1="15" x2="9" y1="9" y2="9"></line>' +
+    '</g>' +
     '</svg>';
 
   /* ── Article card renderer ──────────────────────────────────────────── */
   function renderCard(job) {
-    var jobUrl    = job.jobUrl || job.jobapply_link || "#";
-    var imageUrl  = job.image_url || "https://findjobsinfinland.fi/images/jobs/other/1.png";
-    var jobId     = job.job_id || job.id || "";
-    var title     = job.title || "Untitled";
-    var category  = job.job_category || "other";
-    var locText   = buildLocationText(job);
-    var locSlug   = buildLocationSlug(job);
+    var jobUrl = job.jobUrl || job.jobapply_link || "#";
+    var imageUrl = job.image_url || "https://findjobsinfinland.fi/images/jobs/other/1.png";
+    var jobId = job.job_id || job.id || "";
+    var title = job.title || "Untitled";
+    var category = job.job_category || "other";
+    var locText = buildLocationText(job);
+    var locSlug = buildLocationSlug(job);
     var published = job.date_posted || (job.scraped_at || "").substring(0, 10);
-    var workTime  = (job.workTime || "full-time").toLowerCase();
+    var workTime = (job.workTime || "full-time").toLowerCase();
     var continuity = (job.continuityOfWork || "permanent").toLowerCase();
-    var langs     = (job.language_requirements || []).map(function (l) {
+    var langs = (job.language_requirements || []).map(function (l) {
       return l.trim();
     }).join(" ");
 
@@ -123,57 +123,57 @@
 
     return (
       '<article class="ntry"' +
-        ' data-category="' + escAttr(category) + '"' +
-        ' data-continuityofwork="' + escAttr(continuity) + '"' +
-        ' data-language="' + escAttr(langs) + '"' +
-        ' data-location="' + escAttr(locSlug) + '"' +
-        ' data-published="' + escAttr(published) + '"' +
-        ' data-time="' + escAttr(workTime) + '"' +
-        ' data-title="' + buildDataTitle(job) + '">' +
+      ' data-category="' + escAttr(category) + '"' +
+      ' data-continuityofwork="' + escAttr(continuity) + '"' +
+      ' data-language="' + escAttr(langs) + '"' +
+      ' data-location="' + escAttr(locSlug) + '"' +
+      ' data-published="' + escAttr(published) + '"' +
+      ' data-time="' + escAttr(workTime) + '"' +
+      ' data-title="' + buildDataTitle(job) + '">' +
 
-        '<div class="pThmb iyt">' +
-          '<a class="thmb" href="' + escAttr(jobUrl) + '">' +
-            '<img alt="' + escAttr(title) + '" class="imgThm lazy" data-src="' + escAttr(imageUrl) + '" src="' + escAttr(imageUrl) + '"/>' +
-            '<noscript>' +
-              '<img alt="' + escAttr(title) + '" class="imgThm" src="' + escAttr(imageUrl) + '"/>' +
-            '</noscript>' +
-          '</a>' +
-          '<div class="iFxd" style="z-index:1;">' +
-            '<span aria-label="Add to favorites"' +
-              ' bm-id="' + escAttr(jobId) + '"' +
-              ' bm-img="' + escAttr(imageUrl) + '"' +
-              ' bm-ttl="' + escAttr(title + (locText ? " - " + locText : "")) + '"' +
-              ' bm-url="' + escAttr(jobUrl) + '"' +
-              ' class="bM bmPs" role="button">' +
-              BM_SVG +
-            '</span>' +
-          '</div>' +
-        '</div>' +
+      '<div class="pThmb iyt">' +
+      '<a class="thmb" href="' + escAttr(jobUrl) + '">' +
+      '<img alt="' + escAttr(title) + '" class="imgThm lazy loaded" lazied="" data-src="' + escAttr(imageUrl) + '" src="' + escAttr(imageUrl) + '"/>' +
+      '<noscript>' +
+      '<img alt="' + escAttr(title) + '" class="imgThm" src="' + escAttr(imageUrl) + '"/>' +
+      '</noscript>' +
+      '</a>' +
+      '<div class="iFxd" style="z-index:1;">' +
+      '<span aria-label="Add to favorites"' +
+      ' bm-id="' + escAttr(jobId) + '"' +
+      ' bm-img="' + escAttr(imageUrl) + '"' +
+      ' bm-ttl="' + escAttr(title + (locText ? " - " + locText : "")) + '"' +
+      ' bm-url="' + escAttr(jobUrl) + '"' +
+      ' class="bM bmPs" role="button">' +
+      BM_SVG +
+      '</span>' +
+      '</div>' +
+      '</div>' +
 
-        '<div class="pCntn">' +
-          '<div class="pHdr pSml">' +
-            '<div class="pLbls" data-text="In" style="font-weight:bold;">' +
-              '<a data-text="' + escAttr(locText) + '" rel="tag"' +
-                ' style="pointer-events:none;color:inherit;text-decoration:none;"></a>' +
-            '</div>' +
-          '</div>' +
-          '<h2 class="pTtl aTtl sml h1font">' +
-            '<a data-text="' + escAttr(title) + '" href="' + escAttr(jobUrl) + '" rel="bookmark">' +
-              escHtml(title) +
-            '</a>' +
-          '</h2>' +
-          '<div class="pSnpt">' +
-            escHtml(snippet) +
-            '<div class="pInf pSml" style="color:red;font-weight:bold;">' +
-              '<time class="aTtmp pTtmp pbl"' +
-                ' datetime="' + escAttr(published) + '"' +
-                ' title="Posted: ' + escAttr(posted) + '">' +
-                escHtml(posted) +
-              '</time>' +
-              '<a class="pJmp" href="' + escAttr(jobUrl) + '">Apply Now</a>' +
-            '</div>' +
-          '</div>' +
-        '</div>' +
+      '<div class="pCntn">' +
+      '<div class="pHdr pSml">' +
+      '<div class="pLbls" data-text="In " style="font-weight:bold;">' +
+      '<a data-text="' + escAttr(locText) + '" rel="tag"' +
+      ' style="pointer-events:none;color:inherit;text-decoration:none;"></a>' +
+      '</div>' +
+      '</div>' +
+      '<h2 class="pTtl aTtl sml h1font">' +
+      '<a data-text="' + escAttr(title) + '" href="' + escAttr(jobUrl) + '" rel="bookmark">' +
+      escHtml(title) +
+      '</a>' +
+      '</h2>' +
+      '<div class="pSnpt">' +
+      escHtml(snippet) +
+      '<div class="pInf pSml" style="color:red;font-weight:bold;">' +
+      '<time class="aTtmp pTtmp pbl"' +
+      ' datetime="' + escAttr(published) + '"' +
+      ' title="Posted: ' + escAttr(posted) + '">' +
+      escHtml(posted) +
+      '</time>' +
+      '<a class="pJmp" href="' + escAttr(jobUrl) + '">Apply Now</a>' +
+      '</div>' +
+      '</div>' +
+      '</div>' +
       '</article>'
     );
   }
@@ -184,7 +184,7 @@
     if (!Array.isArray(data)) return flat;
     data.forEach(function (session) {
       var jobs = Array.isArray(session.jobs) ? session.jobs :
-                 Array.isArray(session)      ? session      : [];
+        Array.isArray(session) ? session : [];
       jobs.forEach(function (j) { flat.push(j); });
     });
     // Newest first
@@ -200,8 +200,8 @@
   function populateDropdowns(jobs) {
     var catMenu = document.getElementById("categoryDropdownMenu");
     var locMenu = document.getElementById("locationDropdownMenu");
-    var catSet  = {};
-    var locSet  = {};
+    var catSet = {};
+    var locSet = {};
 
     jobs.forEach(function (j) {
       if (j.job_category) catSet[j.job_category] = true;
@@ -222,7 +222,7 @@
       Object.keys(items).sort().forEach(function (key) {
         var d = document.createElement("div");
         d.dataset.value = slugFn ? slugFn(key) : key;
-        d.textContent   = labelFn(key);
+        d.textContent = labelFn(key);
         menu.appendChild(d);
       });
     }
@@ -255,7 +255,7 @@
     var blogPts = document.querySelector("#Blog1 .blogPts");
     if (blogPts) {
       if (savedMode === "list") blogPts.classList.add("list-view");
-      else                      blogPts.classList.remove("list-view");
+      else blogPts.classList.remove("list-view");
       blogPts.classList.add("view-ready");
     }
 
@@ -271,15 +271,20 @@
     var container = document.querySelector("#Blog1 .blogPts");
     if (!container) return;
 
-    container.innerHTML =
-      '<div style="text-align:center;padding:50px 20px;opacity:0.55;">' +
+    var statusEl = document.getElementById("jobsStatusMsg");
+
+    // Show loading spinner in the status element (above the job grid)
+    if (statusEl) {
+      statusEl.innerHTML =
+        '<div style="text-align:center;padding:50px 20px;opacity:0.55;">' +
         '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"' +
-            ' stroke-width="2" style="animation:spin 1s linear infinite;">' +
-          '<circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10"/>' +
+        ' stroke-width="2" style="animation:spin 1s linear infinite;">' +
+        '<circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10"/>' +
         '</svg>' +
         '<style>@keyframes spin{to{transform:rotate(360deg)}}</style>' +
         '<p style="margin-top:12px;">Loading jobs&hellip;</p>' +
-      '</div>';
+        '</div>';
+    }
 
     fetch(JOBS_JSON_URL, { cache: "no-cache" })
       .then(function (r) {
@@ -291,6 +296,9 @@
 
         /* Store all jobs globally so pagination can access them */
         window._allJobs = jobs;
+
+        /* Clear the loading spinner */
+        if (statusEl) statusEl.innerHTML = "";
 
         /* Update the "X job opportunities" badge */
         var countEl = document.getElementById("totalJobsCount");
@@ -309,12 +317,13 @@
         document.dispatchEvent(new CustomEvent("jobs-loaded", { detail: { count: jobs.length } }));
       })
       .catch(function (err) {
-        container.innerHTML =
-          '<div style="text-align:center;padding:40px;color:#e55;">' +
-            '<strong>Could not load job listings.</strong><br>' +
-            'Make sure the data file is accessible.<br>' +
-            '<small style="opacity:0.6;">' + escHtml(String(err)) + '</small>' +
-          '</div>';
+        // Clear the spinner and show a simple error in the status element
+        if (statusEl) {
+          statusEl.innerHTML =
+            '<div style="text-align:center;padding:40px;color:#e55;">' +
+            '<strong>Could not load job listings.</strong>' +
+            '</div>';
+        }
         console.error("[jobs-loader]", err);
       });
   }

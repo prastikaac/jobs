@@ -2576,6 +2576,8 @@
                 style="display: none; text-align: center; margin-top: 20px; font-weight: bold;">
                 No jobs found.
               </div>
+              <div id="jobsStatusMsg"></div>
+
               <div class="widget Blog" data-version="2" id="Blog1">
                 <div class="blogPts">
                   <!-- Jobs rendered dynamically by js/jobs-loader.js -->
@@ -4378,11 +4380,11 @@
         "use strict";
 
         /* ── State ───────────────────────────────────────────────── */
-        var currentPage       = 1;
-        var perPage           = 50;    // default; synced with #perPageSelect
-        var filteredArticles  = [];    // visible articles for current filter set
+        var currentPage = 1;
+        var perPage = 50;    // default; synced with #perPageSelect
+        var filteredArticles = [];    // visible articles for current filter set
         var _paginationPatched = false; // guard: prevent double-wrapping filterArticles
-        var _allowPageReset   = false;  // false during initial load; true once settled
+        var _allowPageReset = false;  // false during initial load; true once settled
         //
         // WHY _allowPageReset?
         // After jobs.json loads, the filter-script's async init (loadCategories /
@@ -4393,7 +4395,7 @@
         // page, while subsequent USER-triggered calls reset to page 1.
 
         /* ── DOM refs ────────────────────────────────────────────── */
-        var paginationEl  = document.getElementById("jobsPagination");
+        var paginationEl = document.getElementById("jobsPagination");
         var perPageSelect = document.getElementById("perPageSelect");
 
         /* ── Helpers: URL page ───────────────────────────────────── */
@@ -4425,7 +4427,7 @@
         /* ── Apply page slice (show only current page's jobs) ─────── */
         function applyPageSlice() {
           var start = (currentPage - 1) * perPage;
-          var end   = start + perPage;
+          var end = start + perPage;
 
           // Show only the current page slice of the filtered set
           filteredArticles.forEach(function (a, i) {
@@ -4446,11 +4448,11 @@
             return nums;
           }
           var pages = [1];
-          if (current > 3)          pages.push("…");
-          if (current > 2)          pages.push(current - 1);
+          if (current > 3) pages.push("…");
+          if (current > 2) pages.push(current - 1);
           if (current !== 1 && current !== total) pages.push(current);
-          if (current < total - 1)  pages.push(current + 1);
-          if (current < total - 2)  pages.push("…");
+          if (current < total - 1) pages.push(current + 1);
+          if (current < total - 2) pages.push("…");
           pages.push(total);
           return pages;
         }
@@ -4471,7 +4473,7 @@
           var html = "";
 
           html += '<button class="pg-btn pg-prev" id="pgPrev" aria-label="Previous page"' +
-                  (currentPage <= 1 ? " disabled" : "") + ">" + SP + "Prev</button>";
+            (currentPage <= 1 ? " disabled" : "") + ">" + SP + "Prev</button>";
 
           buildPageNumbers(totalPages, currentPage).forEach(function (n) {
             if (n === "…") {
@@ -4479,14 +4481,14 @@
             } else {
               var isActive = (n === currentPage);
               html += '<button class="pg-btn' + (isActive ? " pg-active" : "") + '"' +
-                      ' data-page="' + n + '" aria-label="Page ' + n + '"' +
-                      (isActive ? ' aria-current="page"' : "") +
-                      ">" + n + "</button>";
+                ' data-page="' + n + '" aria-label="Page ' + n + '"' +
+                (isActive ? ' aria-current="page"' : "") +
+                ">" + n + "</button>";
             }
           });
 
           html += '<button class="pg-btn pg-next" id="pgNext" aria-label="Next page"' +
-                  (currentPage >= totalPages ? " disabled" : "") + ">Next" + SN + "</button>";
+            (currentPage >= totalPages ? " disabled" : "") + ">Next" + SN + "</button>";
 
           paginationEl.innerHTML = html;
           paginationEl.classList.add("visible");
@@ -4517,8 +4519,8 @@
 
           // Smooth-scroll to the top of the jobs section
           var target = document.getElementById("viewStyleBar") ||
-                       document.getElementById("Blog1") ||
-                       document.querySelector(".filters-section");
+            document.getElementById("Blog1") ||
+            document.querySelector(".filters-section");
           if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
 
@@ -4526,7 +4528,7 @@
         function rebuildFromURL() {
           filteredArticles = Array.from(getVisibleArticles());
           var totalPages = Math.ceil(filteredArticles.length / perPage);
-          var urlPage    = getPageFromURL();
+          var urlPage = getPageFromURL();
           // Honour ?page=N from URL; clamp if out of range
           currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
           applyPageSlice();
@@ -4551,7 +4553,7 @@
             } else {
               // SYSTEM call during initial load → honour ?page= from URL
               var totalPages = Math.ceil(filteredArticles.length / perPage);
-              var urlPage    = getPageFromURL();
+              var urlPage = getPageFromURL();
               currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
             }
 
@@ -4571,16 +4573,16 @@
           // Restore saved preference from localStorage
           try {
             var saved = localStorage.getItem("jobsPerPage");
-            if (saved && ["25","50","75","100"].includes(saved)) {
+            if (saved && ["25", "50", "75", "100"].includes(saved)) {
               perPageSelect.value = saved;
               perPage = parseInt(saved, 10);
             }
-          } catch (e) {}
+          } catch (e) { }
 
           perPageSelect.addEventListener("change", function () {
             var oldPerPage = perPage;
             perPage = parseInt(perPageSelect.value, 10) || 50;
-            try { localStorage.setItem("jobsPerPage", String(perPage)); } catch (e) {}
+            try { localStorage.setItem("jobsPerPage", String(perPage)); } catch (e) { }
 
             // Preserve approximate scroll position:
             // find which new page contains the first item of the current view.
