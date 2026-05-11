@@ -75,9 +75,6 @@ scraper/serviceAccountKey.json
 scraper/
 functions/
 
-# ── Data vault (pipeline data - never push to public repo) ──
-QuantumNeuralHyperSync_ArchiveVaultX9_UltraSecureDataMatrix_EnterpriseBackupNode_AlphaCentauriProtocol_EncryptedWorkflowRepository_VersionControlMaster_AdaptiveLearningEngine_IntegratedCl/
-
 # Second git directory for private backup repo
 .git-private/
 
