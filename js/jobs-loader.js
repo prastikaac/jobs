@@ -12,7 +12,7 @@
   "use strict";
 
   /* ── Config ─────────────────────────────────────────────────────────── */
-  var JOBS_JSON_URL = "QuantumNeuralHyperSync_ArchiveVaultX9_UltraSecureDataMatrix_EnterpriseBackupNode_AlphaCentauriProtocol_EncryptedWorkflowRepository_VersionControlMaster_AdaptiveLearningEngine_IntegratedCl/jobs.json";
+  var JOBS_JSON_URL = "xQ7mPfL92aKdR8vTnW3sYhU6cZe1BjFoP4rNxLmQa8VtHyC2dKsJwE9uGbRfXpLoM5qZaNcV7tHyD3kWsPbXeR8mQvT1uJnFyL6cKdSaP9wEr/pfbID9xRtQw7LmNzE4vHyK2sDaFc8PqW1uJmXoT5rVeYbCnL6kHsAzG3dRfUpQoXnT8vLmKeP2sHyW7cDaJfR9uGbNxQ4tVeMzLpKoY1xCfHsRw8nTaVqZdE6mPyUi.json";
 
   /* ── HTML helpers ───────────────────────────────────────────────────── */
   function escAttr(s) {
