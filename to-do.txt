@@ -88,3 +88,7 @@ Important:
 
 
 fix loader in jobs.html
+
+clear files after pipeline 
+
+also update our pipeline to do it
