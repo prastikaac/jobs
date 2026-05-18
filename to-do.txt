@@ -11,8 +11,8 @@ now i want to send  job alerts instantly to the user's device immediately after 
 
 - in locaation - fix
 
-fix loader in jobs.html
 
-clear files after pipeline 
 
-also update our pipeline to do it
+fix loader in jobs.html and make loader to show first than 0 job image
+
+clear files after pipeline and also update our pipeline to do it

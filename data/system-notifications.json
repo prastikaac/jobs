@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sys-update-001",
+    "type": "feature",
+    "title": "🎉 New Feature: Job Alerts",
+    "description": "You can now subscribe to personalised job alerts! Set your preferences in your profile and we'll notify you whenever new matching jobs are posted. Stay ahead of the competition — never miss a relevant opportunity.",
+    "imageUrl": "/images/notification.png",
+    "jobLink": "",
+    "createdAt": "2026-05-15T09:00:00Z",
+    "read": false
+  },
+  {
+    "id": "sys-update-002",
+    "type": "update",
+    "title": "📢 Website Update – May 2026",
+    "description": "We've improved our job search filters, added new job categories, and made the mobile experience faster and smoother. Thank you for being part of the FindJobsInFinland community — your feedback keeps making us better!",
+    "imageUrl": "/images/notification.png",
+    "jobLink": "",
+    "createdAt": "2026-05-10T09:00:00Z",
+    "read": false
+  },
+  {
+    "id": "sys-update-003",
+    "type": "tip",
+    "title": "💡 Tip: Complete Your Profile",
+    "description": "Users with a complete profile — including job preferences, languages, and location — receive more accurate job matches. Head to your profile page to fill in any missing details and boost your chances of finding the right job in Finland.",
+    "imageUrl": "/images/notification.png",
+    "jobLink": "/profile",
+    "createdAt": "2026-05-05T09:00:00Z",
+    "read": false
+  }
+]
