@@ -1,0 +1,503 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Notification Popup System — CSS
+   Used with notification-popup.js + HTML containers in index.html
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Overlay (only shown for expanded detail view) ── */
+#np-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 99998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+}
+
+#np-overlay.np-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ── Popup panel ── */
+#np-popup {
+  position: fixed;
+  top: 68px;
+  right: 16px;
+  width: 360px;
+  max-height: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18), 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-12px) scale(0.97);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s cubic-bezier(.34, 1.56, .64, 1),
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+  background: var(--np-bg);
+  border: 1px solid var(--np-border);
+  font-family: 'Google Sans Text', Arial, Helvetica, sans-serif;
+}
+
+#np-popup.np-visible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ── Light / Dark CSS vars ── */
+body:not(.drK) #np-popup {
+  --np-bg: #ffffff;
+  --np-border: rgba(0, 0, 0, 0.08);
+  --np-header-bg: #f8f9fa;
+  --np-text: #1a1a2e;
+  --np-subtext: #6b7280;
+  --np-item-hover: #f4f6f8;
+  --np-divider: rgba(0, 0, 0, 0.07);
+  --np-badge: var(--themeC, #41B375);
+  --np-close-bg: rgba(0, 0, 0, 0.07);
+  --np-close-hover: rgba(0, 0, 0, 0.14);
+  --np-unread-bg: rgba(65, 179, 117, 0.07);
+}
+
+body.drK #np-popup {
+  --np-bg: #1e1e1e;
+  --np-border: rgba(255, 255, 255, 0.08);
+  --np-header-bg: #252526;
+  --np-text: #f0f0f0;
+  --np-subtext: #9ca3af;
+  --np-item-hover: #2d2d30;
+  --np-divider: rgba(255, 255, 255, 0.07);
+  --np-badge: var(--darkU, #41B375);
+  --np-close-bg: rgba(255, 255, 255, 0.08);
+  --np-close-hover: rgba(255, 255, 255, 0.16);
+  --np-unread-bg: rgba(65, 179, 117, 0.10);
+}
+
+/* ── Header ── */
+#np-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px 14px;
+  background: var(--np-header-bg);
+  border-bottom: 1px solid var(--np-divider);
+  flex-shrink: 0;
+}
+
+#np-header h2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--np-text);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+#np-badge {
+  background: var(--np-badge);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 2px 8px;
+  margin-left: 8px;
+}
+
+#np-header-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#np-close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--np-close-bg);
+  color: var(--np-subtext);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  transition: background 0.18s ease, transform 0.18s ease;
+  flex-shrink: 0;
+}
+
+#np-close-btn:hover {
+  background: var(--np-close-hover);
+  transform: rotate(90deg);
+}
+
+/* ── List ── */
+#np-list {
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: var(--np-divider) transparent;
+}
+
+#np-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+#np-list::-webkit-scrollbar-thumb {
+  background: var(--np-divider);
+  border-radius: 4px;
+}
+
+/* ── Notification item ── */
+.np-item {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--np-divider);
+  transition: background 0.15s ease;
+  position: relative;
+}
+
+.np-item:last-child {
+  border-bottom: none;
+}
+
+.np-item:hover {
+  background: var(--np-item-hover);
+}
+
+.np-item:hover .np-item-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Unread state ── */
+.np-item.np-unread {
+  background: var(--np-unread-bg);
+}
+
+.np-item.np-unread:hover {
+  background: var(--np-item-hover);
+}
+
+/* ── Green dot for unread ── */
+.np-unread-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #41B375;
+  flex-shrink: 0;
+  align-self: center;
+  box-shadow: 0 0 0 2px rgba(65, 179, 117, 0.25);
+  transition: opacity 0.3s ease;
+}
+
+.np-item:not(.np-unread) .np-unread-dot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ── Bell badge on notification icon ── */
+.np-bell-badge {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 20px;
+  background: #e53935;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  pointer-events: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.np-bell-badge.np-hidden {
+  transform: scale(0);
+  opacity: 0;
+}
+
+li.isNotif.notif {
+  position: relative;
+}
+
+/* ── Notification thumbnail image ── */
+.np-img-wrap {
+  width: 100px;
+  min-height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: var(--np-item-hover);
+}
+
+.np-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Item body ── */
+.np-item-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.np-item-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--np-text);
+  margin: 0 0 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.np-item-desc {
+  font-size: 12.5px;
+  color: var(--np-subtext);
+  margin: 0 0 5px;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.np-item-time {
+  font-size: 11px;
+  color: var(--np-badge);
+  font-weight: 600;
+}
+
+.np-item-arrow {
+  color: var(--np-subtext);
+  font-size: 14px;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.15s, transform 0.15s;
+  margin-top: 12px;
+  flex-shrink: 0;
+}
+
+/* ── Footer ── */
+#np-footer {
+  padding: 11px 18px;
+  text-align: center;
+  border-top: 1px solid var(--np-divider);
+  flex-shrink: 0;
+  background: var(--np-header-bg);
+}
+
+#np-footer span {
+  font-size: 12.5px;
+  color: var(--np-subtext);
+}
+
+/* ═══ Detail Panel (centered on page) ═══ */
+#np-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.92);
+  width: 420px;
+  max-height: 75vh;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 100000;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25), 0 8px 24px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.35s cubic-bezier(.34, 1.56, .64, 1),
+    opacity 0.28s ease,
+    visibility 0.28s ease;
+  font-family: 'Google Sans Text', Arial, Helvetica, sans-serif;
+  background: var(--nd-bg);
+  border: 1px solid var(--nd-border);
+}
+
+#np-detail.np-visible {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+body:not(.drK) #np-detail {
+  --nd-bg: #ffffff;
+  --nd-border: rgba(0, 0, 0, 0.08);
+  --nd-text: #1a1a2e;
+  --nd-subtext: #6b7280;
+  --nd-header-bg: #f8f9fa;
+  --nd-divider: rgba(0, 0, 0, 0.07);
+  --nd-badge: var(--themeC, #41B375);
+  --nd-back-bg: rgba(0, 0, 0, 0.07);
+  --nd-back-hover: rgba(0, 0, 0, 0.14);
+}
+
+body.drK #np-detail {
+  --nd-bg: #1e1e1e;
+  --nd-border: rgba(255, 255, 255, 0.08);
+  --nd-text: #f0f0f0;
+  --nd-subtext: #9ca3af;
+  --nd-header-bg: #252526;
+  --nd-divider: rgba(255, 255, 255, 0.07);
+  --nd-badge: var(--darkU, #41B375);
+  --nd-back-bg: rgba(255, 255, 255, 0.08);
+  --nd-back-hover: rgba(255, 255, 255, 0.16);
+}
+
+#nd-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 18px 13px;
+  background: var(--nd-header-bg);
+  border-bottom: 1px solid var(--nd-divider);
+  flex-shrink: 0;
+}
+
+#nd-back-btn,
+#nd-close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--nd-back-bg);
+  color: var(--nd-subtext);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+#nd-back-btn:hover {
+  background: var(--nd-back-hover);
+  transform: translateX(-3px);
+}
+
+#nd-close-btn {
+  line-height: 1;
+  margin-left: auto;
+}
+
+#nd-close-btn:hover {
+  background: var(--nd-back-hover);
+  transform: rotate(90deg);
+}
+
+#nd-header-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--nd-text);
+  margin: 0;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#nd-body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 20px 18px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--nd-divider) transparent;
+}
+
+#nd-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+#nd-body::-webkit-scrollbar-thumb {
+  background: var(--nd-divider);
+  border-radius: 4px;
+}
+
+/* ── Detail image ── */
+#nd-img-large {
+  width: 100%;
+  height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 0 auto 18px;
+  background: var(--nd-divider);
+}
+
+#nd-img-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#nd-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--nd-text);
+  text-align: center;
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
+
+#nd-date {
+  font-size: 11.5px;
+  color: var(--nd-badge);
+  text-align: center;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+#nd-divider {
+  border: none;
+  border-top: 1px solid var(--nd-divider);
+  margin: 0 0 16px;
+}
+
+#nd-full-desc {
+  font-size: 13.5px;
+  color: var(--nd-subtext);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ═══ Mobile responsive ═══ */
+@media (max-width: 480px) {
+  #np-popup {
+    right: 8px;
+    left: 8px;
+    width: auto;
+    top: 62px;
+    border-radius: 14px;
+  }
+
+  #np-detail {
+    width: calc(100% - 24px);
+    max-height: 80vh;
+    border-radius: 16px;
+  }
+}
