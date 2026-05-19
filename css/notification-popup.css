@@ -673,10 +673,60 @@ body.drK #np-detail {
 @media (max-width: 480px) {
   #np-popup {
     right: 8px;
-    left: 8px;
-    width: auto;
+    left: auto;
+    width: 280px;
+    max-width: calc(100% - 16px);
     top: 62px;
-    border-radius: 14px;
+    border-radius: 12px;
+  }
+
+  #np-header {
+    padding: 10px 12px 8px;
+  }
+
+  #np-header h2 {
+    font-size: 13px;
+  }
+
+  #np-close-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+
+  .np-item {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .np-img-wrap {
+    width: 60px;
+    min-height: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+
+  .np-item-title {
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+
+  .np-item-desc {
+    font-size: 11px;
+    margin-bottom: 2px;
+    -webkit-line-clamp: 2;
+  }
+
+  .np-item-time {
+    font-size: 10px;
+  }
+
+  .np-caught-up {
+    font-size: 11px;
+  }
+
+  .np-expiry-note {
+    font-size: 9.5px;
   }
 
   #np-detail {

@@ -287,7 +287,7 @@
         '/* From Uiverse.io by satyamchaudharydev */' +
         '.loading {' +
         ' --speed-of-animation: 0.9s;' +
-        ' --gap: 7px;' +
+        ' --gap: 6px;' +
         ' --first-color: #4c86f9;' +
         ' --second-color: #49a84c;' +
         ' --third-color: #f6bb02;' +
@@ -296,13 +296,13 @@
         ' display: flex;' +
         ' justify-content: center;' +
         ' align-items: center;' +
-        ' width: 130px;' +
-        ' gap: var(--gap);' +
-        ' height: 130px;' +
+        ' width: 100px;' +
+        ' gap: 6px;' +
+        ' height: 100px;' +
         '}' +
         '.loading span {' +
-        ' width: 5px;' +
-        ' height: 65px;' +
+        ' width: 4px;' +
+        ' height: 50px;' +
         ' background: var(--first-color);' +
         ' animation: scale var(--speed-of-animation) ease-in-out infinite;' +
         '}' +

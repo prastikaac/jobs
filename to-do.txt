@@ -8,11 +8,3 @@ now i want to send  job alerts instantly to the user's device immediately after 
 - update firebase notifications
 
 - Update firebase database rules                                                                           
-
-- in locaation - fix
-
-
-fix dashes in location 
-
-make to clear the jobs that crosses all the phase in pipeline, remove them from the files scraper\data\ai_proccessed_jobs.json scraper\data\formatted_jobs.json scraper\data\processing_state.json scraper\data\rawjobs.json scraper\data\sent_alerts.json  scraper\data\translated_jobs.json
-after finishing all the pipeline and pipeline end
