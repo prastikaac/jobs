@@ -696,14 +696,19 @@ body.drK #np-detail {
 
   .np-item {
     padding: 8px 10px;
-    gap: 8px;
+    gap: 10px;
+    align-items: stretch;
   }
 
   .np-img-wrap {
-    width: 60px;
-    min-height: 50px;
-    height: 50px;
-    border-radius: 6px;
+    width: 75px;
+    height: auto;
+    min-height: auto;
+    border-radius: 8px;
+  }
+
+  .np-item-body {
+    padding: 0;
   }
 
   .np-item-title {
