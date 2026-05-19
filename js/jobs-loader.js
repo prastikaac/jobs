@@ -259,7 +259,6 @@
       blogPts.classList.add("view-ready");
     }
 
-    /* Sync button active state */
     var gridBtn = document.getElementById("viewGridBtn");
     var listBtn = document.getElementById("viewListBtn");
     if (gridBtn) gridBtn.classList.toggle("active", savedMode !== "list");
@@ -273,16 +272,65 @@
 
     var statusEl = document.getElementById("jobsStatusMsg");
 
-    // Show loading spinner in the status element (above the job grid)
     if (statusEl) {
       statusEl.innerHTML =
-        '<div style="text-align:center;padding:50px 20px;opacity:0.55;">' +
-        '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"' +
-        ' stroke-width="2" style="animation:spin 1s linear infinite;">' +
-        '<circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10"/>' +
-        '</svg>' +
-        '<style>@keyframes spin{to{transform:rotate(360deg)}}</style>' +
-        '<p style="margin-top:12px;">Loading jobs&hellip;</p>' +
+        '<div class="loader-container" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 20px;">' +
+        '<!-- From Uiverse.io by satyamchaudharydev -->' +
+        '<div class="loading">' +
+        '<span></span>' +
+        '<span></span>' +
+        '<span></span>' +
+        '<span></span>' +
+        '<span></span>' +
+        '</div>' +
+        '<style>' +
+        '/* From Uiverse.io by satyamchaudharydev */' +
+        '.loading {' +
+        ' --speed-of-animation: 0.9s;' +
+        ' --gap: 7px;' +
+        ' --first-color: #4c86f9;' +
+        ' --second-color: #49a84c;' +
+        ' --third-color: #f6bb02;' +
+        ' --fourth-color: #f6bb02;' +
+        ' --fifth-color: #2196f3;' +
+        ' display: flex;' +
+        ' justify-content: center;' +
+        ' align-items: center;' +
+        ' width: 130px;' +
+        ' gap: var(--gap);' +
+        ' height: 130px;' +
+        '}' +
+        '.loading span {' +
+        ' width: 5px;' +
+        ' height: 65px;' +
+        ' background: var(--first-color);' +
+        ' animation: scale var(--speed-of-animation) ease-in-out infinite;' +
+        '}' +
+        '.loading span:nth-child(2) {' +
+        ' background: var(--second-color);' +
+        ' animation-delay: -0.8s;' +
+        '}' +
+        '.loading span:nth-child(3) {' +
+        ' background: var(--third-color);' +
+        ' animation-delay: -0.7s;' +
+        '}' +
+        '.loading span:nth-child(4) {' +
+        ' background: var(--fourth-color);' +
+        ' animation-delay: -0.6s;' +
+        '}' +
+        '.loading span:nth-child(5) {' +
+        ' background: var(--fifth-color);' +
+        ' animation-delay: -0.5s;' +
+        '}' +
+        '@keyframes scale {' +
+        ' 0%, 40%, 100% {' +
+        '  transform: scaleY(0.05);' +
+        ' }' +
+        ' 20% {' +
+        '  transform: scaleY(1);' +
+        ' }' +
+        '}' +
+        '</style>' +
         '</div>';
     }
 
