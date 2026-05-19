@@ -1,8 +1,8 @@
 logic for sending alerts :
 
-now we have created a webpage named newjobs.html for showing the job alerts and now while sending daily weekly or monthly push notification to user : send notification like : here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the webpage newjobs.html where all the alerts of that particular time period will be stored.
+now remove the webpage named newjobs.html for showing the job alerts and now onwards  while sending daily weekly or monthly push notification to user : send notification like : here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the expanded notification and show all the job alerts there.
 
-now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so what can we do so user may feel natural like getting jobs after every some time
+now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so there is a logic to make feel natural like getting jobs after every some time implement it correctly
 
 
 - update firebase notifications
