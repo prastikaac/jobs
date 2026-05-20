@@ -2,7 +2,7 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
-  getFirestore, collection, query, where, getDocs,
+  getFirestore, collection, query, where, getDocs, limit,
   doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp, deleteField, arrayRemove, addDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import {
@@ -333,7 +333,7 @@ window.checkEmailExistence = async () => {
   const consentBlogSubscribe = document.getElementById("consentBlogSubscribe");
   window._blogSubscriptionConsent = consentBlogSubscribe ? consentBlogSubscribe.checked : false;
 
-  const q = query(collection(db, "users"), where("email", "==", email));
+  const q = query(collection(db, "users"), where("email", "==", email), limit(1));
   const querySnapshot = await getDocs(q);
   emailExists = !querySnapshot.empty;
 
