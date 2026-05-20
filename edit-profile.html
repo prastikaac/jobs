@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html dir="ltr" lang="en">
 
@@ -93,7 +93,7 @@
   <!-- End Google Tag Manager -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet" />
-<script async="" src=""></script>
+  <script async="" src=""></script>
   </link>
   </link>
 </head>
@@ -1179,6 +1179,266 @@
                                 body.drK #savedMessage {
                                   color: #b2ffb2;
                                 }
+
+                                /* ── Danger Zone Section ─────────────────────────── */
+                                .danger-zone-section {
+                                  margin-top: 36px;
+                                  margin-bottom: 8px;
+                                  border-radius: 16px;
+                                  border: 1.5px solid rgba(220, 38, 38, 0.25);
+                                  background: linear-gradient(135deg, rgba(255, 235, 235, 0.85) 0%, rgba(255, 245, 245, 0.95) 100%);
+                                  padding: 14px 20px 18px;
+                                  box-shadow: 0 4px 24px rgba(220, 38, 38, 0.07);
+                                  position: relative;
+                                  overflow: hidden;
+                                }
+
+                                .danger-zone-section::before {
+                                  content: '';
+                                  position: absolute;
+                                  top: 0;
+                                  left: 0;
+                                  right: 0;
+                                  height: 3px;
+                                  background: linear-gradient(90deg, #ef4444, #dc2626);
+                                  border-radius: 16px 16px 0 0;
+                                }
+
+                                .danger-zone-title {
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 8px;
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 15px;
+                                  font-weight: 700;
+                                  color: #b91c1c;
+                                  margin: 0 0 6px 0;
+                                  letter-spacing: 0.2px;
+                                }
+
+                                .danger-zone-title svg {
+                                  flex-shrink: 0;
+                                }
+
+                                .danger-zone-desc {
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 12.5px;
+                                  color: #7f1d1d;
+                                  line-height: 1.6;
+                                  margin: 0 0 16px 0;
+                                  opacity: 0.85;
+                                }
+
+                                #deleteAccountBtn {
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  gap: 8px;
+                                  width: 100%;
+                                  padding: 12px 20px;
+                                  background: linear-gradient(135deg, #ef4444, #dc2626);
+                                  color: #fff;
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 14px;
+                                  font-weight: 600;
+                                  border: none;
+                                  border-radius: 10px;
+                                  cursor: pointer;
+                                  letter-spacing: 0.3px;
+                                  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.3);
+                                  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+                                }
+
+                                #deleteAccountBtn:hover {
+                                  background: linear-gradient(135deg, #dc2626, #b91c1c);
+                                  box-shadow: 0 6px 22px rgba(220, 38, 38, 0.42);
+                                  transform: translateY(-1px);
+                                }
+
+                                #deleteAccountBtn:active {
+                                  transform: translateY(0);
+                                  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+                                }
+
+                                /* Dark mode: Danger Zone */
+                                body.drK .danger-zone-section {
+                                  background: linear-gradient(135deg, rgba(60, 20, 20, 0.9) 0%, rgba(45, 15, 15, 0.95) 100%);
+                                  border-color: rgba(220, 38, 38, 0.35);
+                                  box-shadow: 0 4px 24px rgba(220, 38, 38, 0.12);
+                                }
+
+                                body.drK .danger-zone-title {
+                                  color: #fca5a5;
+                                }
+
+                                body.drK .danger-zone-desc {
+                                  color: #fecaca;
+                                  opacity: 0.75;
+                                }
+
+                                /* ── Delete Confirm Modal ─────────────────────────── */
+                                #deleteConfirmOverlay {
+                                  position: fixed;
+                                  inset: 0;
+                                  z-index: 999999;
+                                  background: rgba(0, 0, 0, 0.5);
+                                  backdrop-filter: blur(8px);
+                                  -webkit-backdrop-filter: blur(8px);
+                                  display: none;
+                                  align-items: center;
+                                  justify-content: center;
+                                  padding: 16px;
+                                  animation: fadeInModal 0.2s ease;
+                                }
+
+                                #deleteConfirmOverlay.visible {
+                                  display: flex;
+                                }
+
+                                @keyframes fadeInModal {
+                                  from {
+                                    opacity: 0;
+                                    transform: scale(0.96);
+                                  }
+
+                                  to {
+                                    opacity: 1;
+                                    transform: scale(1);
+                                  }
+                                }
+
+                                #deleteConfirmBox {
+                                  background: #fff;
+                                  border-radius: 20px;
+                                  padding: 36px 28px 28px;
+                                  max-width: 420px;
+                                  width: 100%;
+                                  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+                                  text-align: center;
+                                  position: relative;
+                                  animation: slideUpBox 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+                                }
+
+                                @keyframes slideUpBox {
+                                  from {
+                                    opacity: 0;
+                                    transform: translateY(30px);
+                                  }
+
+                                  to {
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                  }
+                                }
+
+                                .delete-modal-icon {
+                                  width: 64px;
+                                  height: 64px;
+                                  background: linear-gradient(135deg, #fee2e2, #fecaca);
+                                  border-radius: 50%;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  margin: 0 auto 18px;
+                                  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.18);
+                                }
+
+                                #deleteConfirmBox h3 {
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 19px;
+                                  font-weight: 700;
+                                  color: #1a1a2e;
+                                  margin: 0 0 10px;
+                                }
+
+                                #deleteConfirmBox p {
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 13px;
+                                  color: #555;
+                                  line-height: 1.65;
+                                  margin: 0 0 24px;
+                                }
+
+                                .delete-modal-actions {
+                                  display: flex;
+                                  gap: 12px;
+                                  flex-direction: column;
+                                }
+
+                                #confirmDeleteBtn {
+                                  padding: 13px;
+                                  background: linear-gradient(135deg, #ef4444, #dc2626);
+                                  color: #fff;
+                                  border: none;
+                                  border-radius: 10px;
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 14px;
+                                  font-weight: 600;
+                                  cursor: pointer;
+                                  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.3);
+                                  transition: background 0.2s, transform 0.15s;
+                                }
+
+                                #confirmDeleteBtn:hover {
+                                  background: linear-gradient(135deg, #dc2626, #b91c1c);
+                                  transform: translateY(-1px);
+                                }
+
+                                #confirmDeleteBtn:disabled {
+                                  opacity: 0.6;
+                                  cursor: not-allowed;
+                                  transform: none;
+                                }
+
+                                #cancelDeleteBtn {
+                                  padding: 13px;
+                                  background: transparent;
+                                  color: #555;
+                                  border: 1.5px solid #ddd;
+                                  border-radius: 10px;
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 14px;
+                                  font-weight: 500;
+                                  cursor: pointer;
+                                  transition: background 0.2s, border-color 0.2s;
+                                }
+
+                                #cancelDeleteBtn:hover {
+                                  background: #f5f5f5;
+                                  border-color: #bbb;
+                                }
+
+                                #deleteModalStatus {
+                                  font-family: 'Poppins', Arial, sans-serif;
+                                  font-size: 12.5px;
+                                  color: #ef4444;
+                                  min-height: 18px;
+                                  margin-top: 8px;
+                                }
+
+                                /* Dark mode: modal */
+                                body.drK #deleteConfirmBox {
+                                  background: #1e1e2d;
+                                  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+                                }
+
+                                body.drK #deleteConfirmBox h3 {
+                                  color: #f5f5f5;
+                                }
+
+                                body.drK #deleteConfirmBox p {
+                                  color: #b0b0ba;
+                                }
+
+                                body.drK #cancelDeleteBtn {
+                                  color: #bbb;
+                                  border-color: #444;
+                                }
+
+                                body.drK #cancelDeleteBtn:hover {
+                                  background: #2a2a3a;
+                                  border-color: #666;
+                                }
                               </style>
                               <h4 class="topuser">User information</h4>
                               <p class="descp">Review and update your basic information as needed.</p>
@@ -1425,6 +1685,28 @@
                                   <div><input id="subscription-email" type="checkbox" value="email" /><label
                                       for="subscription-email">Email</label></div>
                                 </div>
+
+
+                                <h4>Account Deletion</h4>
+                          
+                                <!-- ── Danger Zone ─────────────────────────────── -->
+                                <div class="danger-zone-section">
+                                  <p class="danger-zone-desc">Permanently delete your account and all associated data
+                                    including your job preferences, notification settings, and profile. <strong>This
+                                      action cannot be undone.</strong></p>
+                                  <button id="deleteAccountBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                      fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                      stroke-linejoin="round">
+                                      <polyline points="3 6 5 6 21 6" />
+                                      <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+                                      <path d="M10 11v6" />
+                                      <path d="M14 11v6" />
+                                      <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+                                    </svg>
+                                    Delete My Account
+                                  </button>
+                                </div>
                               </div>
                               <button class="button full-width-btn" id="saveBtn"
                                 style="padding: 11px 20px; font-size: 14px; margin-top: 15px !important; cursor: pointer;"
@@ -1478,9 +1760,9 @@
                                 await loadPopupOptions();
 
                                 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-                                import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+                                import { getAuth, onAuthStateChanged, deleteUser, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
                                 import {
-                                  getFirestore, doc, getDoc, updateDoc, Timestamp
+                                  getFirestore, doc, getDoc, updateDoc, deleteDoc, collection, getDocs, Timestamp
                                 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
                                 import {
                                   getStorage, ref, uploadBytes, getDownloadURL
@@ -1866,6 +2148,94 @@
                                   if (hasChanges()) {
                                     e.preventDefault();
                                     e.returnValue = ''; // Chrome requires this
+                                  }
+                                });
+
+                                // ── Account Deletion Logic ────────────────────────────────────
+                                const deleteAccountBtn = document.getElementById('deleteAccountBtn');
+                                const deleteConfirmOverlay = document.getElementById('deleteConfirmOverlay');
+                                const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+                                const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+                                const deleteModalStatus = document.getElementById('deleteModalStatus');
+
+                                // Open modal
+                                deleteAccountBtn.addEventListener('click', () => {
+                                  deleteModalStatus.textContent = '';
+                                  confirmDeleteBtn.disabled = false;
+                                  confirmDeleteBtn.textContent = 'Yes, Delete My Account';
+                                  deleteConfirmOverlay.classList.add('visible');
+                                });
+
+                                // Close modal
+                                function closeDeleteModal() {
+                                  deleteConfirmOverlay.classList.remove('visible');
+                                }
+                                cancelDeleteBtn.addEventListener('click', closeDeleteModal);
+                                deleteConfirmOverlay.addEventListener('click', (e) => {
+                                  if (e.target === deleteConfirmOverlay) closeDeleteModal();
+                                });
+
+                                // Helper: delete all docs in a subcollection
+                                async function deleteSubcollection(userId, subcollectionName) {
+                                  try {
+                                    const colRef = collection(db, 'users', userId, subcollectionName);
+                                    const snap = await getDocs(colRef);
+                                    const deletions = snap.docs.map(d => deleteDoc(d.ref));
+                                    await Promise.all(deletions);
+                                  } catch (err) {
+                                    console.warn(`Could not delete subcollection ${subcollectionName}:`, err);
+                                  }
+                                }
+
+                                // Execute deletion
+                                confirmDeleteBtn.addEventListener('click', async () => {
+                                  const currentUser = auth.currentUser;
+                                  if (!currentUser) {
+                                    deleteModalStatus.textContent = 'No user session found. Please log in again.';
+                                    return;
+                                  }
+
+                                  confirmDeleteBtn.disabled = true;
+                                  confirmDeleteBtn.textContent = 'Deleting...';
+                                  deleteModalStatus.textContent = '';
+
+                                  try {
+                                    const userId = currentUser.uid;
+
+                                    // Step 1: Delete all alert subcollections
+                                    await deleteSubcollection(userId, 'pushAlerts');
+                                    await deleteSubcollection(userId, 'pendingAlerts');
+                                    await deleteSubcollection(userId, 'emailAlerts');
+
+                                    // Step 2: Delete the main user document
+                                    await deleteDoc(doc(db, 'users', userId));
+
+                                    // Step 3: Delete Firebase Auth account
+                                    await deleteUser(currentUser);
+
+                                    // Step 4: Clean local state and reload
+                                    localStorage.removeItem('user');
+                                    window.dispatchEvent(new Event('userSignedOut'));
+                                    closeDeleteModal();
+                                    location.reload();
+
+                                  } catch (err) {
+                                    console.error('Account deletion failed:', err);
+                                    if (err.code === 'auth/requires-recent-login') {
+                                      deleteModalStatus.textContent = 'For security, please log out and log back in, then try again.';
+                                      confirmDeleteBtn.textContent = 'Log Out & Re-authenticate';
+                                      confirmDeleteBtn.disabled = false;
+                                      confirmDeleteBtn.onclick = async () => {
+                                        await signOut(auth);
+                                        localStorage.removeItem('user');
+                                        closeDeleteModal();
+                                        location.reload();
+                                      };
+                                    } else {
+                                      deleteModalStatus.textContent = 'Deletion failed. Please try again.';
+                                      confirmDeleteBtn.disabled = false;
+                                      confirmDeleteBtn.textContent = 'Yes, Delete My Account';
+                                    }
                                   }
                                 });
 
@@ -2607,6 +2977,31 @@
 
   <!-- Required: signin-signup-popup.js injects profile-card-container here -->
   <div id="login-signup-popup-content"></div>
+
+  <!-- ── Account Deletion Confirmation Modal ──────────────────────────── -->
+  <div id="deleteConfirmOverlay">
+    <div id="deleteConfirmBox">
+      <div class="delete-modal-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#dc2626"
+          stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 6 5 6 21 6" />
+          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" />
+          <path d="M10 11v6" />
+          <path d="M14 11v6" />
+          <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+        </svg>
+      </div>
+      <h3>Delete Your Account?</h3>
+      <p>This will permanently remove your profile, all job preferences, and notification history from our systems.
+        <strong>This cannot be undone.</strong></p>
+      <div class="delete-modal-actions">
+        <button id="confirmDeleteBtn">Yes, Delete My Account</button>
+        <button id="cancelDeleteBtn">Cancel, Keep My Account</button>
+      </div>
+      <div id="deleteModalStatus"></div>
+    </div>
+  </div>
+  <!-- ── END Account Deletion Confirmation Modal ──────────────────────── -->
 
 </body>
 
