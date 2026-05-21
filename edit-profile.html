@@ -1718,7 +1718,7 @@
                               <script type="module">
                                 async function loadPopupOptions() {
                                   try {
-                                    const catRes = await fetch('/scraper/all_jobs_cat.json');
+                                    const catRes = await fetch('/data/all_jobs_cat.json');
                                     const catData = await catRes.json();
                                     const categories = catData.categories || [];
 
@@ -1737,7 +1737,7 @@
                                     const catDrop = document.getElementById('jobCategoryDropdown');
                                     if (catDrop) catDrop.innerHTML = catHtml;
 
-                                    const locRes = await fetch('/scraper/all_jobs_loc.json');
+                                    const locRes = await fetch('/data/all_jobs_loc.json');
                                     const locData = await locRes.json();
 
                                     let locHtml = '<div><input type="checkbox" id="loc-all" value="all" /><label for="loc-all">All Locations</label></div>';

@@ -3931,7 +3931,7 @@
           if (!categoryMenu) return;
 
           try {
-            const response = await fetch("scraper/all_jobs_cat.json", { cache: "no-store" });
+            const response = await fetch("data/all_jobs_cat.json", { cache: "no-store" });
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
             const data = await response.json();
@@ -4000,7 +4000,7 @@
           if (!locationDropdownMenu) return;
 
           try {
-            const response = await fetch("scraper/all_jobs_loc.json", { cache: "no-store" });
+            const response = await fetch("data/all_jobs_loc.json", { cache: "no-store" });
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
             const data = await response.json();

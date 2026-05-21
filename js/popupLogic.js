@@ -1416,7 +1416,7 @@ let popupRegions = {};
 
 async function initDynamicRegions() {
   try {
-    const resp = await fetch('/scraper/all_jobs_loc.json');
+    const resp = await fetch('/data/all_jobs_loc.json');
     if (!resp.ok) return;
     const data = await resp.json();
     for (const [region, cities] of Object.entries(data)) {

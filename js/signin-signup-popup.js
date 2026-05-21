@@ -279,7 +279,7 @@ if (container) {
 
 async function loadPopupOptions() {
   try {
-    const catRes = await fetch('/scraper/all_jobs_cat.json');
+    const catRes = await fetch('/data/all_jobs_cat.json');
     if (!catRes.ok) throw new Error('Failed to fetch categories');
     const catData = await catRes.json();
     const categories = catData.categories || [];
@@ -300,7 +300,7 @@ async function loadPopupOptions() {
     const catBox = document.getElementById('categoryBox');
     if (catBox) catBox.innerHTML = catHtml;
 
-    const locRes = await fetch('/scraper/all_jobs_loc.json');
+    const locRes = await fetch('/data/all_jobs_loc.json');
     if (!locRes.ok) throw new Error('Failed to fetch locations');
     const locData = await locRes.json();
 
