@@ -44,6 +44,7 @@ let isOpen = false;
 let notifications     = [];
 let systemNotifications = [];
 let dataLoaded        = false;   // true once the first fetch cycle completes
+let urlSlugHandled    = false;   // true once we've tried to auto-open a ?notif= slug
 
 /* ─── DOM refs (set in setupUI) ──────────────────────────────────────────── */
 let overlayEl, popupEl, detailEl, listEl;
@@ -119,6 +120,9 @@ async function fetchSystemNotifications() {
       .filter(n => !deletedSet.includes(n.id))
       .map(n => ({
         id: n.id,
+        // For system notifications the JSON id IS the URL slug (e.g. sys-update-001)
+        // This is the "default unique id" stored in JS / JSON for system notifications
+        notifId: n.id,
         firestoreRef: null,
         source: "system",
         title: n.title,
@@ -150,6 +154,10 @@ async function fetchPushAlerts(userId) {
     const snap = await getDocs(q);
     return snap.docs.map(d => ({
       id: d.id,
+      // notifId is the unique 8-char hex stored in Firestore when the alert was created
+      // (e.g. '03944da6') — used as the ?notif= URL slug
+      // Falls back to the Firestore document id if notifId wasn't set on older documents
+      notifId: d.data().notifId || d.id,
       firestoreRef: d.ref,
       source: "personal",
       title: d.data().title || "New Job Alert",
@@ -285,6 +293,50 @@ function updateBadges() {
   }
 }
 
+/* ─── URL slug helpers ───────────────────────────────────────────────────── */
+function setUrlSlug(notifId) {
+  const url = new URL(window.location.href);
+  url.searchParams.set("notif", notifId);
+  window.history.replaceState(null, "", url.toString());
+}
+
+function clearUrlSlug() {
+  const url = new URL(window.location.href);
+  if (!url.searchParams.has("notif")) return;
+  url.searchParams.delete("notif");
+  // Use the bare path+search (removes trailing ? if no other params remain)
+  const newUrl = url.pathname + (url.search === "?" ? "" : url.search);
+  window.history.replaceState(null, "", newUrl);
+}
+
+/**
+ * After data loads, check if the URL contains ?notif=<id>.
+ * If found, auto-open the matching notification detail panel.
+ * Only runs once per page load.
+ */
+async function handleUrlSlug() {
+  if (urlSlugHandled) return;
+  const params = new URLSearchParams(window.location.search);
+  const slugParam = params.get("notif");
+  if (!slugParam) { urlSlugHandled = true; return; }
+
+  // Find the matching notification by its notifId (or id for system ones)
+  const match = notifications.find(n => (n.notifId || n.id) === slugParam);
+  if (!match) { urlSlugHandled = true; return; }
+
+  urlSlugHandled = true;
+
+  // Open the popup first (without toggling closed)
+  if (!isOpen) {
+    isOpen = true;
+    if (!dataLoaded) showLoadingShimmer();
+    popupEl.classList.add("np-visible");
+  }
+  // Small delay so popup renders before the detail slides in
+  await new Promise(r => setTimeout(r, 80));
+  openDetail(match);
+}
+
 /* ─── Open / Close ───────────────────────────────────────────────────────── */
 function openPopup() {
   if (isOpen) { closeAll(); return; }
@@ -295,12 +347,14 @@ function openPopup() {
 }
 
 function closeDetail() {
+  clearUrlSlug();
   detailEl.classList.remove("np-visible");
   overlayEl.classList.remove("np-visible");
   requestAnimationFrame(() => popupEl.classList.add("np-visible"));
 }
 
 function closeAll() {
+  clearUrlSlug();
   popupEl.classList.remove("np-visible");
   detailEl.classList.remove("np-visible");
   overlayEl.classList.remove("np-visible");
@@ -308,6 +362,9 @@ function closeAll() {
 }
 
 async function openDetail(n) {
+  // Update URL slug so the notification can be shared / linked directly
+  setUrlSlug(n.notifId || n.id);
+
   const itemEl = popupEl.querySelector(`.np-item[data-id="${n.id}"]`);
   if (itemEl) itemEl.classList.remove("np-unread");
   await markAsRead(n);
@@ -410,6 +467,8 @@ async function loadData() {
   notifications = buildNotifications(sys, []);
   dataLoaded = true;
   populateNotifications();
+  // Check for ?notif= slug after first data load (system notifications only at this point)
+  handleUrlSlug();
 
   onAuthStateChanged(auth, async user => {
     const sys = await fetchSystemNotifications();
@@ -421,6 +480,9 @@ async function loadData() {
     }
     dataLoaded = true;
     populateNotifications();
+    // Re-check slug after personal alerts load — catches job-alert slugs for logged-in users
+    urlSlugHandled = false;  // allow re-check now that personal alerts are available
+    handleUrlSlug();
   });
 }
 
