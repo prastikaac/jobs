@@ -801,47 +801,56 @@
                                   max-width: 800px;
                                   margin: auto;
                                   border-radius: 16px;
-                                  padding: 20px;
+                                  padding: 24px;
                                   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
                                   display: flex;
-                                  gap: 20px;
+                                  gap: 24px;
                                   align-items: center;
                                 }
 
-                                /* ── Profile picture wrapper ── */
+                                /* ── Profile picture ── */
+                                #ppWrap {
+                                  position: relative;
+                                  display: inline-flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  flex-shrink: 0;
+                                  cursor: pointer;
+                                }
+
                                 .profile-img {
                                   position: relative;
-                                  width: 120px;
-                                  height: 120px;
-                                  flex-shrink: 0;
+                                  width: 186px;
+                                  height: 186px;
                                   border-radius: 50%;
+                                  overflow: hidden;          /* clips image + spinner to circle */
                                   flex-shrink: 0;
+                                  border: none;
+                                  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
                                 }
 
                                 .profile-img img {
+                                  /* fill the full circle with no gap */
                                   width: 100%;
                                   height: 100%;
-                                  border-radius: 50%;
-                                  object-fit: cover;
                                   display: block;
-                                  border: 3px solid var(--themeC, #41B375);
-                                  box-shadow: 0 0 0 3px rgba(65,179,117,0.15);
-                                  transition: opacity 0.3s ease;
-                                  position: relative;
-                                  z-index: 1;
+                                  object-fit: cover;
+                                  object-position: center;
+                                  border-radius: 0;          /* parent already clips to circle */
+                                  border: none;              /* no inner border — avoids frame mismatch */
+                                  transition: filter 0.22s ease;
                                 }
 
-                                /* Subtle darken on hover so user knows it's clickable */
-                                .profile-img:hover img {
-                                  filter: brightness(0.88);
+                                /* Slight dim on hover — no layout shift */
+                                #ppWrap:hover .profile-img img {
+                                  filter: brightness(0.80);
                                 }
 
-                                /* ── Loader spinner (shown while Firebase image loads) ── */
+                                /* ── Loader spinner ── */
                                 .pp-loader {
                                   position: absolute;
                                   inset: 0;
-                                  border-radius: 50%;
-                                  background: rgba(0,0,0,0.06);
+                                  background: rgba(0,0,0,0.08);
                                   display: flex;
                                   align-items: center;
                                   justify-content: center;
@@ -863,47 +872,56 @@
                                   width: 36px;
                                   height: 36px;
                                   border-radius: 50%;
-                                  border: 3px solid rgba(65,179,117,0.2);
+                                  border: 3px solid rgba(65,179,117,0.22);
                                   border-top-color: var(--themeC, #41B375);
                                   animation: pp-spin 0.75s linear infinite;
                                 }
 
-                                /* ── Camera badge — bottom-right corner ── */
+                                /* ── Camera badge ──
+                                   Anchored to #ppWrap so it's never clipped.
+                                   NO transform on hover — stays perfectly in place. */
                                 .camera-icon {
                                   position: absolute;
-                                  bottom: 2px;
-                                  right: 2px;
+                                  bottom: 8px;
+                                  right: 8px;
                                   width: 32px;
                                   height: 32px;
                                   border-radius: 50%;
-                                  background: #fff;
+                                  background: #ffffff;
                                   border: 2px solid var(--themeC, #41B375);
                                   display: flex;
                                   align-items: center;
                                   justify-content: center;
                                   cursor: pointer;
-                                  z-index: 3;
-                                  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-                                  transition: background 0.18s ease, transform 0.18s ease;
+                                  z-index: 10;
+                                  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+                                  box-sizing: border-box;
+                                  /* only colour transitions — no transform, so it never jumps */
+                                  transition: background 0.18s ease, box-shadow 0.18s ease;
                                 }
 
                                 .camera-icon:hover {
-                                  background: #f0faf5;
-                                  transform: scale(1.1);
+                                  background: #edfaf3;
+                                  box-shadow: 0 3px 10px rgba(0,0,0,0.22);
                                 }
 
-                                .camera-icon:active {
-                                  transform: scale(0.95);
-                                }
+                                /* no :active transform — prevents positional jump */
 
                                 .camera-svg {
-                                  width: 15px;
-                                  height: 15px;
+                                  width: 14px;
+                                  height: 14px;
                                   fill: var(--themeC, #41B375);
                                   display: block;
+                                  margin: 0 !important;      /* ensure perfect centering */
+                                  padding: 0 !important;
                                   flex-shrink: 0;
+                                  pointer-events: none;
                                 }
 
+                                /* Scope file-input hide to just this widget */
+                                #ppWrap input[type="file"] {
+                                  display: none;
+                                }
 
                                 .info-box {
                                   flex: 1;
@@ -919,16 +937,15 @@
                                   justify-content: space-between;
                                 }
 
+                                .info-item:last-child {
+                                  margin-bottom: 0;
+                                }
+
                                 .info-text {
                                   display: flex;
                                   align-items: center;
                                   gap: 8px;
                                   width: 100%;
-                                }
-
-
-                                input[type="file"] {
-                                  display: none;
                                 }
 
 
@@ -1096,37 +1113,39 @@
                                   }
                                 }
 
+                                /* ── Tablet (≤ 768px) ── */
                                 @media (max-width: 768px) {
                                   .profile-container {
                                     flex-direction: column;
                                     align-items: center;
-                                    padding: 16px;
+                                    padding: 20px 16px;
+                                    gap: 16px;
                                   }
 
                                   .profile-img {
-                                    width: 100px;
-                                    height: 100px;
-                                    margin: 0 0 8px 0;
+                                    width: 170px;
+                                    height: 170px;
                                   }
 
                                   .camera-icon {
-                                    width: 28px;
-                                    height: 28px;
+                                    width: 34px;
+                                    height: 34px;
+                                    bottom: 8px;
+                                    right: 8px;
                                   }
 
                                   .camera-svg {
-                                    width: 13px;
-                                    height: 13px;
+                                    width: 14px;
+                                    height: 14px;
                                   }
 
                                   .pp-spinner {
-                                    width: 28px;
-                                    height: 28px;
+                                    width: 36px;
+                                    height: 36px;
                                   }
 
                                   .info-box {
                                     width: 100%;
-                                    margin-top: -15px;
                                   }
 
                                   .info-item {
@@ -1138,18 +1157,9 @@
 
                                   .info-text {
                                     flex: 1;
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 8px;
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
-                                  }
-
-                                  .camera-icon {
-                                    bottom: -5px;
-                                    width: 30px;
-                                    height: 30px;
                                   }
 
                                   #editFullName,
@@ -1165,6 +1175,62 @@
                                     margin-top: -10px;
                                   }
                                 }
+
+                                /* ── Mobile (≤ 480px) ── */
+                                @media (max-width: 480px) {
+                                  .profile-container {
+                                    padding: 16px 12px;
+                                    gap: 12px;
+                                  }
+
+                                  .profile-img {
+                                    width: 155px;
+                                    height: 155px;
+                                  }
+
+                                  .camera-icon {
+                                    width: 32px;
+                                    height: 32px;
+                                    bottom: 7px;
+                                    right: 7px;
+                                  }
+
+                                  .camera-svg {
+                                    width: 14px;
+                                    height: 14px;
+                                  }
+
+                                  .pp-spinner {
+                                    width: 32px;
+                                    height: 32px;
+                                  }
+                                }
+
+                                /* ── Very small phones (≤ 360px) ── */
+                                @media (max-width: 360px) {
+                                  .profile-img {
+                                    width: 130px;
+                                    height: 130px;
+                                  }
+
+                                  .camera-icon {
+                                    width: 30px;
+                                    height: 30px;
+                                    bottom: 6px;
+                                    right: 6px;
+                                  }
+
+                                  .camera-svg {
+                                    width: 14px;
+                                    height: 14px;
+                                  }
+
+                                  .pp-spinner {
+                                    width: 28px;
+                                    height: 28px;
+                                  }
+                                }
+
 
                                 .pS hr {
                                   margin-bottom: -65px;
@@ -1184,27 +1250,26 @@
                                   box-shadow: 0 0 15px rgba(0, 0, 0, .07);
                                 }
 
-                                body.drK .profile-img img {
-                                  border-color: var(--darkU, #41B375);
-                                  box-shadow: 0 0 0 3px rgba(65,179,117,0.2);
+                                body.drK .profile-img {
+                                  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
                                 }
 
                                 body.drK .pp-loader {
-                                  background: rgba(255,255,255,0.06);
+                                  background: rgba(255, 255, 255, 0.06);
                                 }
 
                                 body.drK .camera-svg {
-                                  fill: var(--darkU, #41B375);
+                                  fill: #ffffff;
                                 }
 
                                 body.drK .camera-icon {
-                                  background: #252526;
-                                  border-color: var(--darkU, #41B375);
-                                  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+                                  background: #2a2a2e;
+                                  border-color: #ffffff;
+                                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
                                 }
 
                                 body.drK .camera-icon:hover {
-                                  background: #2d3a31;
+                                  background: #3a3a40;
                                 }
 
                                 body.drK .info-item {
@@ -1523,17 +1588,22 @@
                               <h4 class="topuser">User information</h4>
                               <p class="descp">Review and update your basic information as needed.</p>
                               <div class="profile-container">
-                                <div class="profile-img" id="ppWrap">
-                                  <!-- Spinner shown while Firebase image loads -->
-                                  <div class="pp-loader" id="ppLoader">
-                                    <div class="pp-spinner"></div>
+                                <!-- #ppWrap: outer click/position anchor; does NOT clip so camera badge is always visible -->
+                                <div id="ppWrap">
+                                  <!-- .profile-img: clipping circle that contains image + spinner -->
+                                  <div class="profile-img">
+                                    <!-- Spinner shown while Firebase image loads -->
+                                    <div class="pp-loader" id="ppLoader">
+                                      <div class="pp-spinner"></div>
+                                    </div>
+                                    <img alt="User Profile Picture" id="ppPicture"
+                                      src="https://findjobsinfinland.fi/images/user.png" />
                                   </div>
-                                  <img alt="User Profile Picture" id="ppPicture"
-                                    src="https://findjobsinfinland.fi/images/user.png" />
-                                  <!-- Camera badge bottom-right -->
+                                  <!-- Camera badge: sits on #ppWrap so it's never clipped -->
                                   <div class="camera-icon" id="uploadIcon" title="Change photo">
                                     <svg class="camera-svg" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/>
+                                      <path
+                                        d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
                                     </svg>
                                   </div>
                                   <input accept="image/*" id="uploadInput" type="file" />
@@ -1768,8 +1838,8 @@
                                 </div>
 
 
-                                <h4>Account Deletion</h4>
-                          
+                                <h4 style="margin-bottom: -20px;">Account Deletion</h4>
+
                                 <!-- ── Danger Zone ─────────────────────────────── -->
                                 <div class="danger-zone-section">
                                   <p class="danger-zone-desc">Permanently delete your account and all associated data
@@ -1891,13 +1961,21 @@
                                     const data = snap.data();
 
                                     ppPicture.src = data.profilePictureUrl || "https://findjobsinfinland.fi/images/user.png";
+                                    // Dismiss spinner once image has loaded (or immediately if cached)
+                                    const ppLoader = document.getElementById("ppLoader");
+                                    if (ppPicture.complete) {
+                                      ppLoader && ppLoader.classList.add("pp-loaded");
+                                    } else {
+                                      ppPicture.addEventListener("load", () => ppLoader && ppLoader.classList.add("pp-loaded"), { once: true });
+                                      ppPicture.addEventListener("error", () => ppLoader && ppLoader.classList.add("pp-loaded"), { once: true });
+                                    }
                                     document.getElementById("fullName").textContent = data.fullName || "—";
                                     document.getElementById("email").textContent = data.email || "—";
                                     document.getElementById("phone").textContent = data.phoneNumber || "—";
 
                                     // Store originals for dirty-check
                                     _savedFullName = data.fullName || "";
-                                    _savedPhone    = data.phoneNumber || "";
+                                    _savedPhone = data.phoneNumber || "";
 
                                     // Populate day-of-month selects (1–28)
                                     function populateDayOfMonth(sel) {
@@ -2039,6 +2117,9 @@
                                   reader.onload = function (event) {
                                     // Set the profile image src to the local image URL (before uploading)
                                     ppPicture.src = event.target.result;
+                                    // Dismiss any visible spinner immediately for the local preview
+                                    const ppLoader = document.getElementById("ppLoader");
+                                    if (ppLoader) ppLoader.classList.add("pp-loaded");
                                   };
                                   reader.readAsDataURL(file);
 
@@ -2088,8 +2169,8 @@
                                         lastUpdated: Timestamp.now()
                                       });
                                       // Update stored originals
-                                      if (key === "fullName")    _savedFullName = newValue;
-                                      if (key === "phoneNumber") _savedPhone    = newValue;
+                                      if (key === "fullName") _savedFullName = newValue;
+                                      if (key === "phoneNumber") _savedPhone = newValue;
                                     }
                                     // Field is committed — clear dirty flag
                                     _fieldDirty = false;
@@ -3101,7 +3182,8 @@
       </div>
       <h3>Delete Your Account?</h3>
       <p>This will permanently remove your profile, all job preferences, and notification history from our systems.
-        <strong>This cannot be undone.</strong></p>
+        <strong>This cannot be undone.</strong>
+      </p>
       <div class="delete-modal-actions">
         <button id="confirmDeleteBtn">Yes, Delete My Account</button>
         <button id="cancelDeleteBtn">Cancel, Keep My Account</button>

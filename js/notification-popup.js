@@ -152,25 +152,28 @@ async function fetchPushAlerts(userId) {
       limit(20)
     );
     const snap = await getDocs(q);
-    return snap.docs.map(d => ({
-      id: d.id,
-      // notifId is the unique 8-char hex stored in Firestore when the alert was created
-      // (e.g. '03944da6') — used as the ?notif= URL slug
-      // Falls back to the Firestore document id if notifId wasn't set on older documents
-      notifId: d.data().notifId || d.id,
-      firestoreRef: d.ref,
-      source: "personal",
-      title: d.data().title || "New Job Alert",
-      shortDesc: d.data().description || "",
-      fullDesc: d.data().description || "",
-      image: d.data().imageUrl || "/images/notification.png",
-      jobLink: d.data().jobLink || "",
-      time: formatTimeAgo(d.data().createdAt),
-      date: formatFullDate(d.data().createdAt),
-      read: d.data().read === true,
-      type: "job_alert",
-      sortKey: d.data().createdAt?.toMillis?.() || 0,
-    }));
+    return snap.docs.map(d => {
+      const rawNotifId = d.data().notifId || d.id;
+      const cleanNotifId = rawNotifId.replace(/^push_/, "");
+      return {
+        id: d.id,
+        // notifId is the unique 8-char hex stored in Firestore when the alert was created
+        // (e.g. '03944da6') — used as the ?notif= URL slug (with push_ prefix stripped)
+        notifId: cleanNotifId,
+        firestoreRef: d.ref,
+        source: "personal",
+        title: d.data().title || "New Job Alert",
+        shortDesc: d.data().description || "",
+        fullDesc: d.data().description || "",
+        image: d.data().imageUrl || "/images/notification.png",
+        jobLink: d.data().jobLink || "",
+        time: formatTimeAgo(d.data().createdAt),
+        date: formatFullDate(d.data().createdAt),
+        read: d.data().read === true,
+        type: "job_alert",
+        sortKey: d.data().createdAt?.toMillis?.() || 0,
+      };
+    });
   } catch (e) {
     console.error("Failed to fetch pushAlerts:", e);
     return [];
@@ -295,8 +298,9 @@ function updateBadges() {
 
 /* ─── URL slug helpers ───────────────────────────────────────────────────── */
 function setUrlSlug(notifId) {
+  const cleanId = (notifId || "").replace(/^push_/, "");
   const url = new URL(window.location.href);
-  url.searchParams.set("notif", notifId);
+  url.searchParams.set("notif", cleanId);
   window.history.replaceState(null, "", url.toString());
 }
 
@@ -320,8 +324,20 @@ async function handleUrlSlug() {
   const slugParam = params.get("notif");
   if (!slugParam) { urlSlugHandled = true; return; }
 
-  // Find the matching notification by its notifId (or id for system ones)
-  const match = notifications.find(n => (n.notifId || n.id) === slugParam);
+  const cleanSlug = slugParam.replace(/^push_/, "");
+  
+  // Clean up URL in the address bar immediately if it has the "push_" prefix
+  if (slugParam !== cleanSlug) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("notif", cleanSlug);
+    window.history.replaceState(null, "", url.toString());
+  }
+
+  // Find the matching notification by its notifId (or id for system ones) with push_ prefix stripped
+  const match = notifications.find(n => {
+    const cleanId = (n.notifId || n.id || "").replace(/^push_/, "");
+    return cleanId === cleanSlug;
+  });
   if (!match) { urlSlugHandled = true; return; }
 
   urlSlugHandled = true;
