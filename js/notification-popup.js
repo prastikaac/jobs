@@ -5,6 +5,12 @@
  *   2. /users/{uid}/pushAlerts          → shown only when logged in (personalised job alerts)
  *
  * HTML structure → index.html | CSS → css/notification-popup.css
+ *
+ * ARCHITECTURE NOTE:
+ *   - setupUI() runs synchronously as soon as the DOM is ready.
+ *     It attaches all click / keyboard handlers so the popup opens instantly.
+ *   - loadData() runs asynchronously in the background (Firebase + fetch).
+ *     A loading shimmer is shown in the list until data arrives.
  */
 
 import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
@@ -17,6 +23,7 @@ import {
   limit,
   getDocs,
   updateDoc,
+  deleteDoc,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 /* ─── Firebase init ──────────────────────────────────────────────────────── */
@@ -30,23 +37,28 @@ const firebaseConfig = {
 };
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const db = getFirestore(app);
+const db   = getFirestore(app);
 
 /* ─── State ──────────────────────────────────────────────────────────────── */
 let isOpen = false;
-let notifications = [];           // merged: system + personal
-let systemNotifications = [];     // loaded once from JSON, cached
+let notifications     = [];
+let systemNotifications = [];
+let dataLoaded        = false;   // true once the first fetch cycle completes
 
-/* ─── DOM refs ───────────────────────────────────────────────────────────── */
+/* ─── DOM refs (set in setupUI) ──────────────────────────────────────────── */
 let overlayEl, popupEl, detailEl, listEl;
+
+/* ─── LocalStorage keys ──────────────────────────────────────────────────── */
+const LS_READ_KEY    = "np_sys_read";
+const LS_DELETED_KEY = "np_sys_deleted";
 
 /* ─── Time helpers ───────────────────────────────────────────────────────── */
 function formatTimeAgo(ts) {
   if (!ts) return "";
   const date = ts.toDate ? ts.toDate() : new Date(ts);
   const diff = Math.floor((Date.now() - date.getTime()) / 1000);
-  if (diff < 60) return "Just now";
-  if (diff < 3600) return `${Math.floor(diff / 60)} min ago`;
+  if (diff < 60)    return "Just now";
+  if (diff < 3600)  return `${Math.floor(diff / 60)} min ago`;
   if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
   return `${Math.floor(diff / 86400)}d ago`;
 }
@@ -63,39 +75,63 @@ function formatFullDate(ts) {
 /* ─── Type badge helper ──────────────────────────────────────────────────── */
 function typeBadge(type) {
   const map = {
-    feature: { icon: "", label: "New Feature" },
-    update: { icon: "", label: "Update" },
-    tip: { icon: "", label: "Tip" },
-    job_alert: { icon: "", label: "Job Alert" },
+    feature:   { label: "New Feature" },
+    update:    { label: "Update" },
+    tip:       { label: "Tip" },
+    job_alert: { label: "Job Alert" },
   };
-  const b = map[type] || { icon: "", label: "Notification" };
-  return { icon: b.icon, label: b.label, text: b.label };
+  const b = map[type] || { label: "Notification" };
+  return { label: b.label };
 }
 
-/* ─── 1. Fetch system notifications from JSON (all users) ───────────────── */
+/* ─── Delete SVG icon ────────────────────────────────────────────────────── */
+const TRASH_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+  <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+</svg>`;
+
+/* ─── Loading shimmer (shown while data hasn't arrived yet) ──────────────── */
+function showLoadingShimmer() {
+  if (!listEl) return;
+  listEl.innerHTML = `
+    <div class="np-shimmer-wrap">
+      ${[1,2,3].map(() => `
+        <div class="np-shimmer-item">
+          <div class="np-shimmer-img"></div>
+          <div class="np-shimmer-body">
+            <div class="np-shimmer-line np-shimmer-short"></div>
+            <div class="np-shimmer-line np-shimmer-long"></div>
+            <div class="np-shimmer-line np-shimmer-med"></div>
+          </div>
+        </div>`).join("")}
+    </div>`;
+}
+
+/* ─── 1. Fetch system notifications from JSON ────────────────────────────── */
 async function fetchSystemNotifications() {
-  if (systemNotifications.length > 0) return systemNotifications; // cached
+  if (systemNotifications.length > 0) return systemNotifications;
   try {
     const res = await fetch("/data/system-notifications.json?_=" + Date.now());
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
-    // Read state persisted in localStorage so they aren't always "unread"
-    const readSet = JSON.parse(localStorage.getItem("np_sys_read") || "[]");
-    systemNotifications = data.map(n => ({
-      id: n.id,
-      firestoreRef: null,       // local — no Firestore ref
-      source: "system",
-      title: n.title,
-      shortDesc: n.description,
-      fullDesc: n.description,
-      image: n.imageUrl || "/images/notification.png",
-      jobLink: n.jobLink || "",
-      time: formatTimeAgo(n.createdAt),
-      date: formatFullDate(n.createdAt),
-      read: readSet.includes(n.id),
-      type: n.type || "update",
-      sortKey: new Date(n.createdAt).getTime(),
-    }));
+    const readSet    = JSON.parse(localStorage.getItem(LS_READ_KEY)    || "[]");
+    const deletedSet = JSON.parse(localStorage.getItem(LS_DELETED_KEY) || "[]");
+    systemNotifications = data
+      .filter(n => !deletedSet.includes(n.id))
+      .map(n => ({
+        id: n.id,
+        firestoreRef: null,
+        source: "system",
+        title: n.title,
+        shortDesc: n.description,
+        fullDesc: n.description,
+        image: n.imageUrl || "/images/notification.png",
+        jobLink: n.jobLink || "",
+        time: formatTimeAgo(n.createdAt),
+        date: formatFullDate(n.createdAt),
+        read: readSet.includes(n.id),
+        type: n.type || "update",
+        sortKey: new Date(n.createdAt).getTime(),
+      }));
   } catch (e) {
     console.warn("Could not load system-notifications.json:", e.message);
     systemNotifications = [];
@@ -103,7 +139,7 @@ async function fetchSystemNotifications() {
   return systemNotifications;
 }
 
-/* ─── 2. Fetch personal pushAlerts (logged-in users only) ───────────────── */
+/* ─── 2. Fetch personal pushAlerts ──────────────────────────────────────── */
 async function fetchPushAlerts(userId) {
   try {
     const q = query(
@@ -137,15 +173,9 @@ async function fetchPushAlerts(userId) {
 async function markAsRead(n) {
   if (n.read) return;
   n.read = true;
-
   if (n.source === "system") {
-    // Persist to localStorage
-    const readSet = JSON.parse(localStorage.getItem("np_sys_read") || "[]");
-    if (!readSet.includes(n.id)) {
-      readSet.push(n.id);
-      localStorage.setItem("np_sys_read", JSON.stringify(readSet));
-    }
-    // Sync to cached array
+    const readSet = JSON.parse(localStorage.getItem(LS_READ_KEY) || "[]");
+    if (!readSet.includes(n.id)) { readSet.push(n.id); localStorage.setItem(LS_READ_KEY, JSON.stringify(readSet)); }
     const cached = systemNotifications.find(s => s.id === n.id);
     if (cached) cached.read = true;
   } else if (n.firestoreRef) {
@@ -153,26 +183,61 @@ async function markAsRead(n) {
   }
 }
 
-/* ─── Merge + render ─────────────────────────────────────────────────────── */
+/* ─── Delete a notification ──────────────────────────────────────────────── */
+async function deleteNotification(n, itemEl) {
+  itemEl.classList.add("np-item-deleting");
+  await new Promise(resolve => {
+    itemEl.addEventListener("animationend", resolve, { once: true });
+    setTimeout(resolve, 450);
+  });
+  itemEl.remove();
+  notifications = notifications.filter(x => x.id !== n.id);
+
+  if (n.source === "system") {
+    const deletedSet = JSON.parse(localStorage.getItem(LS_DELETED_KEY) || "[]");
+    if (!deletedSet.includes(n.id)) { deletedSet.push(n.id); localStorage.setItem(LS_DELETED_KEY, JSON.stringify(deletedSet)); }
+    const readSet = JSON.parse(localStorage.getItem(LS_READ_KEY) || "[]");
+    localStorage.setItem(LS_READ_KEY, JSON.stringify(readSet.filter(id => id !== n.id)));
+    systemNotifications = systemNotifications.filter(s => s.id !== n.id);
+  } else if (n.firestoreRef) {
+    try { await deleteDoc(n.firestoreRef); } catch (e) { console.error("Failed to delete from Firestore:", e); }
+  }
+
+  updateBadges();
+  if (notifications.length === 0) { showEmptyState(); }
+  else { const old = listEl.querySelector(".np-end-of-list"); if (old) old.remove(); appendEndOfList(); }
+}
+
+/* ─── Empty state ────────────────────────────────────────────────────────── */
+function showEmptyState() {
+  listEl.innerHTML = `
+    <div class="np-empty">
+      <img src="/images/no-notification.png" alt="No notifications" class="np-empty-img" onerror="this.style.display='none'"/>
+      <p class="np-empty-title">No Notifications</p>
+      <p class="np-empty-sub">You're all caught up! 🎉</p>
+    </div>`;
+}
+
+/* ─── End-of-list block ──────────────────────────────────────────────────── */
+function appendEndOfList() {
+  const endEl = document.createElement("div");
+  endEl.className = "np-end-of-list";
+  endEl.innerHTML = `
+    <span class="np-caught-up">You're all caught up.</span>
+    <span class="np-expiry-note">Job alerts are automatically deleted after 3 days</span>
+  `;
+  listEl.appendChild(endEl);
+}
+
+/* ─── Merge ──────────────────────────────────────────────────────────────── */
 function buildNotifications(sys, personal) {
-  // Merge all sources and sort globally by date — newest first
   return [...sys, ...personal].sort((a, b) => b.sortKey - a.sortKey);
 }
 
+/* ─── Render ─────────────────────────────────────────────────────────────── */
 function populateNotifications() {
   listEl.innerHTML = "";
-
-  if (notifications.length === 0) {
-    listEl.innerHTML = `
-      <div class="np-empty">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-        </svg>
-        <p>No notifications yet</p>
-      </div>`;
-    updateBadges();
-    return;
-  }
+  if (notifications.length === 0) { showEmptyState(); updateBadges(); return; }
 
   notifications.forEach(n => {
     const badge = typeBadge(n.type);
@@ -181,7 +246,6 @@ function populateNotifications() {
     item.setAttribute("data-id", n.id);
     item.setAttribute("role", "button");
     item.setAttribute("tabindex", "0");
-
     item.innerHTML = `
       <div class="np-img-wrap">
         <img src="${n.image}" alt="${n.title}" loading="lazy" onerror="this.src='/images/notification.png'"/>
@@ -193,23 +257,17 @@ function populateNotifications() {
         <span class="np-item-time">${n.time}</span>
       </div>
       <span class="np-unread-dot"></span>
-      <span class="np-item-arrow">›</span>
+      <button class="np-delete-btn" aria-label="Delete notification" title="Delete">${TRASH_SVG}</button>
     `;
-
-    item.addEventListener("click", () => openDetail(n));
+    const body    = item.querySelector(".np-item-body");
+    const imgWrap = item.querySelector(".np-img-wrap");
+    [body, imgWrap].forEach(el => el.addEventListener("click", e => { e.stopPropagation(); openDetail(n); }));
     item.addEventListener("keydown", e => { if (e.key === "Enter") openDetail(n); });
+    item.querySelector(".np-delete-btn").addEventListener("click", async e => { e.stopPropagation(); await deleteNotification(n, item); });
     listEl.appendChild(item);
   });
 
-  // End-of-list message after the last notification
-  const endEl = document.createElement("div");
-  endEl.className = "np-end-of-list";
-  endEl.innerHTML = `
-    <span class="np-caught-up">You're all caught up.</span>
-    <span class="np-expiry-note">Job alerts are automatically deleted after 3 days</span>
-  `;
-  listEl.appendChild(endEl);
-
+  appendEndOfList();
   updateBadges();
 }
 
@@ -218,10 +276,8 @@ function countUnread() { return notifications.filter(n => !n.read).length; }
 
 function updateBadges() {
   const unread = countUnread();
-
   const popupBadge = document.getElementById("np-badge");
   if (popupBadge) popupBadge.textContent = notifications.length;
-
   const bellBadge = document.getElementById("np-bell-badge");
   if (bellBadge) {
     bellBadge.textContent = unread > 9 ? "9+" : unread;
@@ -233,6 +289,8 @@ function updateBadges() {
 function openPopup() {
   if (isOpen) { closeAll(); return; }
   isOpen = true;
+  // If data hasn't loaded yet, show shimmer so the popup feels instant
+  if (!dataLoaded) showLoadingShimmer();
   requestAnimationFrame(() => popupEl.classList.add("np-visible"));
 }
 
@@ -250,7 +308,6 @@ function closeAll() {
 }
 
 async function openDetail(n) {
-  // Mark read
   const itemEl = popupEl.querySelector(`.np-item[data-id="${n.id}"]`);
   if (itemEl) itemEl.classList.remove("np-unread");
   await markAsRead(n);
@@ -262,14 +319,12 @@ async function openDetail(n) {
   const badge = typeBadge(n.type);
   detailEl.querySelector("#nd-header-title").textContent = n.title;
   const imgEl = detailEl.querySelector("#nd-img");
-  imgEl.src = n.image;
-  imgEl.alt = n.title;
+  imgEl.src = n.image; imgEl.alt = n.title;
   imgEl.onerror = () => { imgEl.src = "/images/notification.png"; };
   detailEl.querySelector("#nd-title").textContent = n.title;
   detailEl.querySelector("#nd-date").textContent = n.date;
   detailEl.querySelector("#nd-full-desc").textContent = n.fullDesc;
 
-  // Type badge in detail
   let typeBadgeEl = detailEl.querySelector("#nd-type-badge");
   if (!typeBadgeEl) {
     typeBadgeEl = document.createElement("span");
@@ -277,19 +332,13 @@ async function openDetail(n) {
     detailEl.querySelector("#nd-title").before(typeBadgeEl);
   }
   typeBadgeEl.className = `np-type-badge np-type-${n.type}`;
-  typeBadgeEl.textContent = `${badge.icon} ${badge.label}`;
+  typeBadgeEl.textContent = badge.label;
 
-  // Apply Now button
   const applyBtn = detailEl.querySelector("#nd-apply-btn");
   if (applyBtn) {
-    if (n.jobLink) {
-      applyBtn.href = n.jobLink;
-      applyBtn.style.display = "flex";
-    } else {
-      applyBtn.style.display = "none";
-    }
+    if (n.jobLink) { applyBtn.href = n.jobLink; applyBtn.style.display = "flex"; }
+    else { applyBtn.style.display = "none"; }
   }
-
   requestAnimationFrame(() => detailEl.classList.add("np-visible"));
 }
 
@@ -332,23 +381,36 @@ document.addEventListener("click", e => {
     !popupEl.contains(e.target)) closeAll();
 });
 
-/* ─── Init ───────────────────────────────────────────────────────────────── */
-async function init() {
+/* ═══════════════════════════════════════════════════════════════════════════
+   PHASE 1 — setupUI()
+   Runs synchronously as soon as the DOM is ready.
+   Attaches all event handlers so the popup opens instantly on click.
+   No Firebase, no fetch — zero async delay.
+   ═══════════════════════════════════════════════════════════════════════════ */
+function setupUI() {
   overlayEl = document.getElementById("np-overlay");
-  popupEl = document.getElementById("np-popup");
-  detailEl = document.getElementById("np-detail");
-  listEl = document.getElementById("np-list");
-  if (!overlayEl || !popupEl || !detailEl || !listEl) return;
+  popupEl   = document.getElementById("np-popup");
+  detailEl  = document.getElementById("np-detail");
+  listEl    = document.getElementById("np-list");
+  if (!overlayEl || !popupEl || !detailEl || !listEl) return false;
 
+  showLoadingShimmer();   // pre-fill list so first open isn't blank
   bindEvents();
   hookTrigger();
+  return true;
+}
 
-  // Load system notifications immediately for all visitors
+/* ═══════════════════════════════════════════════════════════════════════════
+   PHASE 2 — loadData()
+   Runs async in the background after UI is ready.
+   Fetches system JSON + Firebase personal alerts, then re-renders the list.
+   ═══════════════════════════════════════════════════════════════════════════ */
+async function loadData() {
   const sys = await fetchSystemNotifications();
   notifications = buildNotifications(sys, []);
+  dataLoaded = true;
   populateNotifications();
 
-  // Load personal pushAlerts once authenticated
   onAuthStateChanged(auth, async user => {
     const sys = await fetchSystemNotifications();
     if (user) {
@@ -357,12 +419,18 @@ async function init() {
     } else {
       notifications = buildNotifications(sys, []);
     }
+    dataLoaded = true;
     populateNotifications();
   });
 }
 
+/* ─── Bootstrap ──────────────────────────────────────────────────────────── */
+function bootstrap() {
+  if (setupUI()) loadData();   // fire-and-forget
+}
+
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", init);
+  document.addEventListener("DOMContentLoaded", bootstrap);
 } else {
-  init();
+  bootstrap();
 }

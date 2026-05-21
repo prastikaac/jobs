@@ -154,6 +154,67 @@ body.drK #np-popup {
   border-radius: 4px;
 }
 
+/* ─── Loading shimmer ────────────────────────────────────────────────────── */
+@keyframes np-shimmer-sweep {
+  0%   { background-position: -300px 0; }
+  100% { background-position: 300px 0; }
+}
+
+.np-shimmer-wrap {
+  padding: 4px 0;
+}
+
+.np-shimmer-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--np-divider);
+}
+
+.np-shimmer-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, var(--np-divider) 25%, rgba(200,200,200,0.15) 50%, var(--np-divider) 75%);
+  background-size: 600px 100%;
+  animation: np-shimmer-sweep 1.4s ease infinite;
+}
+
+.np-shimmer-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.np-shimmer-line {
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--np-divider) 25%, rgba(200,200,200,0.15) 50%, var(--np-divider) 75%);
+  background-size: 600px 100%;
+  animation: np-shimmer-sweep 1.4s ease infinite;
+}
+
+.np-shimmer-short { width: 40%; }
+.np-shimmer-long  { width: 90%; }
+.np-shimmer-med   { width: 60%; }
+
+/* ─── Delete slide-out animation ─────────────────────────────────────────── */
+
+@keyframes np-slide-out {
+  0%   { opacity: 1; transform: translateX(0) scaleY(1); max-height: 200px; margin-bottom: 0; }
+  40%  { opacity: 0; transform: translateX(60px) scaleY(1); max-height: 200px; }
+  100% { opacity: 0; transform: translateX(60px) scaleY(0); max-height: 0; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; margin-bottom: 0; }
+}
+
+.np-item-deleting {
+  overflow: hidden;
+  pointer-events: none;
+  animation: np-slide-out 0.4s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+}
+
 /* ── Notification item ── */
 .np-item {
   display: flex;
@@ -177,6 +238,54 @@ body.drK #np-popup {
 .np-item:hover .np-item-arrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* ── Delete button ── */
+.np-delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--np-subtext);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.18s ease, background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  padding: 0;
+  z-index: 1;
+}
+
+.np-delete-btn svg {
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.np-item:hover .np-delete-btn {
+  opacity: 1;
+}
+
+.np-delete-btn:hover {
+  background: rgba(229, 57, 53, 0.12);
+  color: #e53935;
+  transform: scale(1.2);
+}
+
+.np-delete-btn:active {
+  transform: scale(0.9);
+}
+
+/* Always show delete button on touch devices */
+@media (hover: none) {
+  .np-delete-btn {
+    opacity: 0.5;
+  }
 }
 
 /* ── Unread state ── */
@@ -307,7 +416,6 @@ li.isNotif.notif {
   align-items: center;
   gap: 5px;
   padding: 16px 18px 18px;
-  border-top: 1px solid var(--np-divider);
   margin-top: 2px;
 }
 
@@ -534,13 +642,37 @@ body.drK #np-detail {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 32px 20px 36px;
   color: var(--np-subtext);
-  gap: 12px;
+  gap: 8px;
+}
+
+.np-empty-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  opacity: 0.85;
+  margin-bottom: 6px;
 }
 
 .np-empty svg {
   opacity: 0.4;
+}
+
+.np-empty-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--np-text);
+  margin: 0;
+  text-align: center;
+}
+
+.np-empty-sub {
+  font-size: 12px;
+  color: var(--np-subtext);
+  margin: 0;
+  text-align: center;
+  opacity: 0.8;
 }
 
 .np-empty p {
@@ -613,17 +745,7 @@ body.drK #np-detail {
 #nd-apply-btn:active { transform: translateY(0); opacity: 0.88; }
 #nd-apply-btn svg { flex-shrink: 0; }
 
-/* ── Empty state ── */
-.np-empty {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  color: var(--np-subtext);
-  gap: 12px;
-}
-
+/* ── Empty state (duplicate block kept for specificity) ── */
 .np-empty svg { opacity: 0.4; }
 .np-empty p { font-size: 13px; margin: 0; text-align: center; }
 

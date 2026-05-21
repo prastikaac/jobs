@@ -808,41 +808,100 @@
                                   align-items: center;
                                 }
 
+                                /* ── Profile picture wrapper ── */
                                 .profile-img {
                                   position: relative;
-                                  width: 170px;
-                                  height: 170px;
+                                  width: 120px;
+                                  height: 120px;
                                   flex-shrink: 0;
-                                  overflow: hidden;
                                   border-radius: 50%;
-                                  margin-top: -10px;
+                                  flex-shrink: 0;
                                 }
 
                                 .profile-img img {
                                   width: 100%;
-                                  height: 100% !important;
+                                  height: 100%;
                                   border-radius: 50%;
                                   object-fit: cover;
-                                  border: 4px solid #f0f0f0;
                                   display: block;
+                                  border: 3px solid var(--themeC, #41B375);
+                                  box-shadow: 0 0 0 3px rgba(65,179,117,0.15);
+                                  transition: opacity 0.3s ease;
+                                  position: relative;
+                                  z-index: 1;
                                 }
 
+                                /* Subtle darken on hover so user knows it's clickable */
+                                .profile-img:hover img {
+                                  filter: brightness(0.88);
+                                }
+
+                                /* ── Loader spinner (shown while Firebase image loads) ── */
+                                .pp-loader {
+                                  position: absolute;
+                                  inset: 0;
+                                  border-radius: 50%;
+                                  background: rgba(0,0,0,0.06);
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  z-index: 2;
+                                  transition: opacity 0.3s ease, visibility 0.3s ease;
+                                }
+
+                                .pp-loader.pp-loaded {
+                                  opacity: 0;
+                                  visibility: hidden;
+                                  pointer-events: none;
+                                }
+
+                                @keyframes pp-spin {
+                                  to { transform: rotate(360deg); }
+                                }
+
+                                .pp-spinner {
+                                  width: 36px;
+                                  height: 36px;
+                                  border-radius: 50%;
+                                  border: 3px solid rgba(65,179,117,0.2);
+                                  border-top-color: var(--themeC, #41B375);
+                                  animation: pp-spin 0.75s linear infinite;
+                                }
+
+                                /* ── Camera badge — bottom-right corner ── */
                                 .camera-icon {
                                   position: absolute;
-                                  left: 50%;
-                                  bottom: -9px;
-                                  width: 35px;
-                                  height: 35px;
-                                  transform: translateX(-50%);
-                                  background: #fff;
+                                  bottom: 2px;
+                                  right: 2px;
+                                  width: 32px;
+                                  height: 32px;
                                   border-radius: 50%;
-                                  padding: 6px;
-                                  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+                                  background: #fff;
+                                  border: 2px solid var(--themeC, #41B375);
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
                                   cursor: pointer;
+                                  z-index: 3;
+                                  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+                                  transition: background 0.18s ease, transform 0.18s ease;
                                 }
 
                                 .camera-icon:hover {
-                                  background: rgb(237, 237, 237);
+                                  background: #f0faf5;
+                                  transform: scale(1.1);
+                                }
+
+                                .camera-icon:active {
+                                  transform: scale(0.95);
+                                }
+
+                                .camera-svg {
+                                  width: 15px;
+                                  height: 15px;
+                                  fill: var(--themeC, #41B375);
+                                  display: block;
+                                  flex-shrink: 0;
                                 }
 
 
@@ -1045,9 +1104,24 @@
                                   }
 
                                   .profile-img {
-                                    width: 140px;
-                                    height: 140px;
-                                    margin: 0 0 20px 0;
+                                    width: 100px;
+                                    height: 100px;
+                                    margin: 0 0 8px 0;
+                                  }
+
+                                  .camera-icon {
+                                    width: 28px;
+                                    height: 28px;
+                                  }
+
+                                  .camera-svg {
+                                    width: 13px;
+                                    height: 13px;
+                                  }
+
+                                  .pp-spinner {
+                                    width: 28px;
+                                    height: 28px;
                                   }
 
                                   .info-box {
@@ -1111,20 +1185,26 @@
                                 }
 
                                 body.drK .profile-img img {
-                                  border: 4px solid #444;
+                                  border-color: var(--darkU, #41B375);
+                                  box-shadow: 0 0 0 3px rgba(65,179,117,0.2);
+                                }
+
+                                body.drK .pp-loader {
+                                  background: rgba(255,255,255,0.06);
                                 }
 
                                 body.drK .camera-svg {
-                                  fill: #fff;
+                                  fill: var(--darkU, #41B375);
                                 }
 
                                 body.drK .camera-icon {
                                   background: #252526;
-                                  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+                                  border-color: var(--darkU, #41B375);
+                                  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
                                 }
 
                                 body.drK .camera-icon:hover {
-                                  background: #505055;
+                                  background: #2d3a31;
                                 }
 
                                 body.drK .info-item {
@@ -1443,16 +1523,17 @@
                               <h4 class="topuser">User information</h4>
                               <p class="descp">Review and update your basic information as needed.</p>
                               <div class="profile-container">
-                                <div class="profile-img">
+                                <div class="profile-img" id="ppWrap">
+                                  <!-- Spinner shown while Firebase image loads -->
+                                  <div class="pp-loader" id="ppLoader">
+                                    <div class="pp-spinner"></div>
+                                  </div>
                                   <img alt="User Profile Picture" id="ppPicture"
                                     src="https://findjobsinfinland.fi/images/user.png" />
-                                  <div class="camera-icon" id="uploadIcon">
-                                    <!-- Camera SVG icon instead of emoji -->
-                                    <svg class="camera-svg" height="20" viewbox="0 0 512 512" width="20"
-                                      xmlns="http://www.w3.org/2000/svg">
-                                      <path
-                                        d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z">
-                                      </path>
+                                  <!-- Camera badge bottom-right -->
+                                  <div class="camera-icon" id="uploadIcon" title="Change photo">
+                                    <svg class="camera-svg" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/>
                                     </svg>
                                   </div>
                                   <input accept="image/*" id="uploadInput" type="file" />
@@ -1786,12 +1867,19 @@
                                 const fileInput = document.getElementById("uploadInput");
                                 let userRef, uid;
 
+                                // Tracks whether a name/phone field is currently being edited
+                                let _fieldDirty = false;
+
                                 let originalCategories = [];
                                 let originalLocations = [];
                                 let originalTimes = [];
                                 let originalLangs = [];
                                 let originalTypes = [];
                                 let originalFreq = "instantly";
+
+                                // Track stored name/phone so we can detect a real change
+                                let _savedFullName = "";
+                                let _savedPhone = "";
 
 
                                 onAuthStateChanged(auth, async (user) => {
@@ -1806,6 +1894,10 @@
                                     document.getElementById("fullName").textContent = data.fullName || "—";
                                     document.getElementById("email").textContent = data.email || "—";
                                     document.getElementById("phone").textContent = data.phoneNumber || "—";
+
+                                    // Store originals for dirty-check
+                                    _savedFullName = data.fullName || "";
+                                    _savedPhone    = data.phoneNumber || "";
 
                                     // Populate day-of-month selects (1–28)
                                     function populateDayOfMonth(sel) {
@@ -1985,6 +2077,9 @@
                                   span.replaceWith(input);
                                   input.focus();
 
+                                  // Mark dirty as soon as user starts typing
+                                  input.addEventListener("input", () => { _fieldDirty = true; });
+
                                   const save = async () => {
                                     const newValue = input.value.trim();
                                     if (newValue && newValue !== oldValue) {
@@ -1992,7 +2087,12 @@
                                         [key]: newValue,
                                         lastUpdated: Timestamp.now()
                                       });
+                                      // Update stored originals
+                                      if (key === "fullName")    _savedFullName = newValue;
+                                      if (key === "phoneNumber") _savedPhone    = newValue;
                                     }
+                                    // Field is committed — clear dirty flag
+                                    _fieldDirty = false;
                                     input.replaceWith(span);
                                     span.textContent = newValue || oldValue;
                                   };
@@ -2000,6 +2100,11 @@
                                   input.addEventListener("blur", save);
                                   input.addEventListener("keydown", (e) => {
                                     if (e.key === "Enter") input.blur();
+                                    if (e.key === "Escape") {
+                                      _fieldDirty = false;
+                                      input.replaceWith(span);
+                                      span.textContent = oldValue;
+                                    }
                                   });
                                 }
 
@@ -2058,6 +2163,9 @@
 
                                 // Check for changes
                                 function hasChanges() {
+                                  // In-progress inline edit (name/phone input is open and has been typed in)
+                                  if (_fieldDirty) return true;
+
                                   const newFreq = document.querySelector('input[name="jobFreqProfile"]:checked')?.value || "instantly";
                                   return updateSaveState(originalCategories, "jobCategoryDropdown") ||
                                     updateSaveState(originalLocations, "jobLocationDropdown") ||
