@@ -165,6 +165,7 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
     crossorigin="anonymous"></script>
 
 
+  <link href="/css/notification-popup.css" rel="stylesheet"/>
 </head>
 
 <body class="MN-3 theme0 mobS HD-2 flT hdMn bD onItm onPs findjobsinfinland" id="mainCont">
@@ -314,6 +315,21 @@ visa sponsorship jobs in finland, part-time jobs in finland, full-time jobs in f
             <div class="headP section" id="header-icon">
               <div class="widget TextList" data-version="2" id="TextList000">
                 <ul class="headIc">
+                  <li>
+<div id="notification-icon" style=" margin-right: 35px;">
+<svg class="bi bi-bell" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6">
+</path>
+</svg>
+<span id="notification-count">
+                        0
+                      </span>
+</div>
+<div class="notification-outer-div" id="notifications-outer-div">
+</div>
+<div id="notifications-container">
+</div>
+</li>
 
                   <li style="margin-right: 5px;">
                     <div>
@@ -3297,6 +3313,40 @@ Apply now from the link and don’t miss out!
 
 
   <script src="https://findjobsinfinland.fi/js/main.js"></script>
+<script src="/js/notification-popup.js" type="module"></script>
+<!-- â•â•â• Notification Popup System (containers only â€” content injected by JS) â•â•â• -->
+<div id="np-overlay"></div>
+<div aria-label="Notifications" id="np-popup" role="dialog">
+<div id="np-header">
+<div id="np-header-left">
+<h2>Notifications</h2>
+<span id="np-badge">0</span>
+</div>
+<button aria-label="Close notifications" id="np-close-btn">âœ•</button>
+</div>
+<div id="np-list">
+<!-- Notification items injected by notification-popup.js -->
+</div>
+</div>
+<div aria-label="Notification detail" id="np-detail" role="dialog">
+<div id="nd-header">
+<button aria-label="Back to notifications" id="nd-back-btn">â†</button>
+<p id="nd-header-title">Notification</p>
+<button aria-label="Close" id="nd-close-btn">âœ•</button>
+</div>
+<div id="nd-body">
+<div id="nd-img-large"><img alt="" id="nd-img" src=""/></div>
+<h3 id="nd-title"></h3>
+<p id="nd-date"></p>
+<hr id="nd-divider"/>
+<p id="nd-full-desc"></p>
+<a href="#" id="nd-apply-btn" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        Apply Now
+      </a>
+</div>
+</div>
+<!-- â•â•â• End Notification Popup System â•â•â• -->
 </body>
 
 
