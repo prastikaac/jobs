@@ -10,16 +10,4 @@ now i want to send  job alerts instantly to the user's device immediately after 
 - update firebase notifications
 
 
-
-- In edit-profile.html, the camera icon is not in centre of the profile picture frame on mobile and small device as you can see in the uploaded image, so fix it, use different approach for it as previous approaches didnt work
-
- - there are two pipeline.log files in the folder one in scraper\pipeline.log and another in the root folder pipeline.log, remove the duplicate pipeline.log of the root folder
-
-
-
-now what this text â† and âœ• in <button aria-label="Back to notifications" id="nd-back-btn">â†</button> 
-
-and <button aria-label="Close" id="nd-close-btn">âœ•</button>
-
-fix it in all the files that has thoose buttons 
-
+change colour of camera icon
