@@ -15,16 +15,10 @@ function processDirectory(dir) {
             const content = fs.readFileSync(fullPath, 'utf8');
             let newContent = content;
 
-            // Replace back button
+            // Replace close notifications button
             newContent = newContent.replace(
-                /<button\s+aria-label="Back to notifications"\s+id="nd-back-btn">.*?<\/button>/g,
-                '<button aria-label="Back to notifications" id="nd-back-btn">&larr;</button>'
-            );
-
-            // Replace close button
-            newContent = newContent.replace(
-                /<button\s+aria-label="Close"\s+id="nd-close-btn">.*?<\/button>/g,
-                '<button aria-label="Close" id="nd-close-btn">&times;</button>'
+                /<button\s+aria-label="Close notifications"\s+id="np-close-btn">.*?<\/button>/g,
+                '<button aria-label="Close notifications" id="np-close-btn">&times;</button>'
             );
 
             if (content !== newContent) {
