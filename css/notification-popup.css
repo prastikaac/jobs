@@ -601,6 +601,7 @@ body.drK #np-detail {
   color: var(--nd-subtext);
   line-height: 1.7;
   margin: 0;
+  white-space: pre-line;
 }
 
 /* ── Apply Now button ── */
@@ -788,6 +789,7 @@ body.drK #np-detail {
   #nd-full-desc {
     font-size: 15px;
     line-height: 1.7;
+    white-space: pre-line;
   }
 }
 

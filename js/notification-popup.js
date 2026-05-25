@@ -153,8 +153,19 @@ async function fetchPushAlerts(userId) {
     );
     const snap = await getDocs(q);
     return snap.docs.map(d => {
-      const rawNotifId = d.data().notifId || d.id;
+      const data = d.data();
+      const rawNotifId = data.notifId || d.id;
       const cleanNotifId = rawNotifId.replace(/^push_/, "");
+
+      // For digest summaries the description contains the full personal message + job list.
+      // Use a concise shortDesc for the notification list preview.
+      const isDigest = !!data.isDigestSummary;
+      const jobCount = data.jobsCount || 0;
+      const freqLabel = { daily: "today", weekly: "this week", monthly: "this month" }[data.frequency] || data.frequency || "";
+      const shortDesc = isDigest && jobCount
+        ? `${jobCount} new ${jobCount === 1 ? "job" : "jobs"} matching your preferences${freqLabel ? " " + freqLabel : ""}.`
+        : (data.description || "");
+
       return {
         id: d.id,
         // notifId is the unique 8-char hex stored in Firestore when the alert was created
@@ -162,16 +173,16 @@ async function fetchPushAlerts(userId) {
         notifId: cleanNotifId,
         firestoreRef: d.ref,
         source: "personal",
-        title: d.data().title || "New Job Alert",
-        shortDesc: d.data().description || "",
-        fullDesc: d.data().description || "",
-        image: d.data().imageUrl || "/images/notification.png",
-        jobLink: d.data().jobLink || "",
-        time: formatTimeAgo(d.data().createdAt),
-        date: formatFullDate(d.data().createdAt),
-        read: d.data().read === true,
+        title: data.title || "New Job Alert",
+        shortDesc,
+        fullDesc: data.description || "",
+        image: data.imageUrl || "/images/notification.png",
+        jobLink: data.jobLink || "",
+        time: formatTimeAgo(data.createdAt),
+        date: formatFullDate(data.createdAt),
+        read: data.read === true,
         type: "job_alert",
-        sortKey: d.data().createdAt?.toMillis?.() || 0,
+        sortKey: data.createdAt?.toMillis?.() || 0,
       };
     });
   } catch (e) {

@@ -24,13 +24,15 @@ self.addEventListener('notificationclick', function (event) {
   const data = event.notification.data || {};
   // FCM wraps data inside FCM_MSG for background messages
   const fcmData = data.FCM_MSG ? data.FCM_MSG.data : data;
-  let targetUrl = fcmData.url || fcmData.jobLink || '/newjobs';
-
-  // Fix for local Live Server testing: Add .html extension locally for clean URLs
-  if (self.location.hostname === 'localhost' || self.location.hostname === '127.0.0.1') {
-    if (targetUrl.startsWith('/newjobs') && !targetUrl.includes('.html')) {
-      targetUrl = targetUrl.replace('/newjobs', '/newjobs.html');
-    }
+  // jobLink may be an absolute URL (e.g. https://findjobsinfinland.fi/?notif=abc123)
+  // or a relative path. Fall back to the homepage if neither is set.
+  const rawUrl = fcmData.url || fcmData.jobLink || '/';
+  // Ensure we have an absolute URL so clients.openWindow works reliably
+  let targetUrl;
+  try {
+    targetUrl = new URL(rawUrl, self.location.origin).href;
+  } catch (_) {
+    targetUrl = self.location.origin + '/';
   }
 
   event.waitUntil(

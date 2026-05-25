@@ -1,15 +1,13 @@
-logic for sending alerts :
+- now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so there is a logic to make feel natural like getting jobs after every some time implement it correctly
 
-now remove the webpage named newjobs.html for showing the job alerts and now onwards while sending daily weekly or monthly push notification to user : send notification like : here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the expanded notification and show all the job alerts there like : "Dear {fullName},
+
+- update firebase push notifications
+
+
+
+now remove the current logic of sending the push notifications for daily/weekly/montly and also remove  the webpage named newjobs.html for showing the job alerts for  daily/weekly/montly and now onwards while sending daily weekly or monthly push notification to user use the same approach as we are currently using for sending instant notification but send  daily/weekly/montly notification like : : Here are your today's job alerts or this week's job alerts or this month's job alerts or this month's job alerts and when user clicks on it open the expanded notification and show all the job alerts there like : "Dear {fullName},
 
 We're pleased to inform you that (no of total alerts) new job opportunities matching your preferences have recently been published today/this week/this month. Explore the latest listings and take the next step toward finding the right role for you." and then put the job alerts below it 
-
-now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so there is a logic to make feel natural like getting jobs after every some time implement it correctly
-
-
-- update firebase notifications
-
-
-change colour of camera
+22:38
 
 
