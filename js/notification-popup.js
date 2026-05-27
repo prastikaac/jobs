@@ -18,6 +18,8 @@ import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 import {
   getFirestore,
   collection,
+  doc,
+  getDoc,
   query,
   orderBy,
   limit,
@@ -45,6 +47,7 @@ let notifications     = [];
 let systemNotifications = [];
 let dataLoaded        = false;   // true once the first fetch cycle completes
 let urlSlugHandled    = false;   // true once we've tried to auto-open a ?notif= slug
+let currentUserFullName = "";    // user's fullName from Firestore (for digest summaries)
 
 /* ─── DOM refs (set in setupUI) ──────────────────────────────────────────── */
 let overlayEl, popupEl, detailEl, listEl;
@@ -149,45 +152,114 @@ async function fetchPushAlerts(userId) {
     const q = query(
       collection(db, "users", userId, "pushAlerts"),
       orderBy("createdAt", "desc"),
-      limit(20)
+      limit(50)
     );
     const snap = await getDocs(q);
-    return snap.docs.map(d => {
+
+    const FREQ_LABELS = {
+      daily:   { period: "today",      title: "New Job Opportunities Today" },
+      weekly:  { period: "this week",  title: "New Job Opportunities This Week" },
+      monthly: { period: "this month", title: "New Job Opportunities This Month" },
+    };
+
+    // Separate digest summaries (isDigestSummary:true) from per-job docs
+    const digestSummaries = [];  // { frequency, doc }
+    const perJobDocs      = [];  // all other pushAlert docs
+
+    for (const d of snap.docs) {
       const data = d.data();
-      const rawNotifId = data.notifId || d.id;
+      if (data.isDigestSummary) {
+        digestSummaries.push({ frequency: data.frequency, data, ref: d.ref, id: d.id });
+      } else {
+        perJobDocs.push({ data, ref: d.ref, id: d.id });
+      }
+    }
+
+    // Build result list — per-job docs always shown individually
+    const result = perJobDocs.map(({ data, ref, id }) => {
+      const rawNotifId  = data.notifId || id;
       const cleanNotifId = rawNotifId.replace(/^push_/, "");
-
-      // For digest summaries the description contains the full personal message + job list.
-      // Use a concise shortDesc for the notification list preview.
-      const isDigest = !!data.isDigestSummary;
-      const jobCount = data.jobsCount || 0;
-      const freqLabel = { daily: "today", weekly: "this week", monthly: "this month" }[data.frequency] || data.frequency || "";
-      const shortDesc = isDigest && jobCount
-        ? `${jobCount} new ${jobCount === 1 ? "job" : "jobs"} matching your preferences${freqLabel ? " " + freqLabel : ""}.`
-        : (data.description || "");
-
       return {
-        id: d.id,
-        // notifId is the unique 8-char hex stored in Firestore when the alert was created
-        // (e.g. '03944da6') — used as the ?notif= URL slug (with push_ prefix stripped)
+        id,
         notifId: cleanNotifId,
-        firestoreRef: d.ref,
+        firestoreRef: ref,
         source: "personal",
         title: data.title || "New Job Alert",
-        shortDesc,
-        fullDesc: data.description || "",
-        image: data.imageUrl || "/images/notification.png",
-        jobLink: data.jobLink || "",
-        time: formatTimeAgo(data.createdAt),
-        date: formatFullDate(data.createdAt),
-        read: data.read === true,
-        type: "job_alert",
+        shortDesc: data.description || "",
+        fullDesc:  data.description || "",
+        image:    data.imageUrl || "/images/notification.png",
+        jobLink:  data.jobLink  || "",
+        time:  formatTimeAgo(data.createdAt),
+        date:  formatFullDate(data.createdAt),
+        read:  data.read === true,
+        type:  "job_alert",
         sortKey: data.createdAt?.toMillis?.() || 0,
       };
     });
+
+    // For each digest summary, inject a synthetic "summary" notification at the top.
+    // The digest doc is also added as a regular card so clicking it shows the full description.
+    for (const { frequency, data, ref, id } of digestSummaries) {
+      const fl        = FREQ_LABELS[frequency] || { period: frequency, title: "New Job Opportunities" };
+      const rawNotifId  = data.notifId || id;
+      const cleanNotifId = rawNotifId.replace(/^digest_/, "").replace(/^push_/, "");
+      const jobCount  = data.jobsCount || 0;
+      const displayName = (currentUserFullName || "").trim() || "there";
+
+      // Build the personalized summary message
+      const summaryFullDesc =
+        `Dear ${displayName},\n\n` +
+        `We're pleased to inform you that ${jobCount} new job ${
+          jobCount === 1 ? "opportunity" : "opportunities"
+        } matching your preferences have been published ${fl.period}.\n\n` +
+        `Explore the latest listings and discover roles that align with your career goals. ` +
+        `You can view all new opportunities in the Notifications panel.`;
+
+      const summaryShortDesc =
+        `${jobCount} new job ${
+          jobCount === 1 ? "opportunity" : "opportunities"
+        } matching your preferences published ${fl.period}.`;
+
+      const digestSortKey = (data.createdAt?.toMillis?.() || 0) + 1; // pin above per-job items
+
+      // Synthetic summary card (uses same Firestore ref for mark-as-read/delete)
+      result.push({
+        id: `summary_${id}`,          // unique synthetic id so it doesn't clash
+        notifId: `summary_${cleanNotifId}`,
+        firestoreRef: ref,             // shares ref → deleting it removes the digest doc
+        source: "personal",
+        isDigestSummary: true,
+        frequency,
+        title: fl.title,
+        shortDesc: summaryShortDesc,
+        fullDesc:  summaryFullDesc,
+        image: data.imageUrl || "/images/notification.png",
+        jobLink: "",
+        time:  formatTimeAgo(data.createdAt),
+        date:  formatFullDate(data.createdAt),
+        read:  data.read === true,
+        type:  "job_alert",
+        sortKey: digestSortKey,
+      });
+    }
+
+    return result;
   } catch (e) {
     console.error("Failed to fetch pushAlerts:", e);
     return [];
+  }
+}
+
+/* ─── Fetch user fullName from Firestore ─────────────────────────────────── */
+async function fetchUserFullName(userId) {
+  try {
+    const userDoc = await getDoc(doc(db, "users", userId));
+    if (userDoc.exists()) {
+      const d = userDoc.data();
+      currentUserFullName = (d.fullName || d.displayName || "").trim();
+    }
+  } catch (_) {
+    // non-critical — fallback to empty string
   }
 }
 
@@ -264,7 +336,9 @@ function populateNotifications() {
   notifications.forEach(n => {
     const badge = typeBadge(n.type);
     const item = document.createElement("div");
-    item.className = "np-item" + (n.read ? "" : " np-unread");
+    let cls = "np-item" + (n.read ? "" : " np-unread");
+    if (n.isDigestSummary) cls += " np-digest-summary";
+    item.className = cls;
     item.setAttribute("data-id", n.id);
     item.setAttribute("role", "button");
     item.setAttribute("tabindex", "0");
@@ -292,6 +366,7 @@ function populateNotifications() {
   appendEndOfList();
   updateBadges();
 }
+
 
 /* ─── Badges ─────────────────────────────────────────────────────────────── */
 function countUnread() { return notifications.filter(n => !n.read).length; }
@@ -332,11 +407,23 @@ function clearUrlSlug() {
 async function handleUrlSlug() {
   if (urlSlugHandled) return;
   const params = new URLSearchParams(window.location.search);
+  // params.get("notif") returns "" for ?notif= (empty), null if absent
   const slugParam = params.get("notif");
-  if (!slugParam) { urlSlugHandled = true; return; }
+  if (slugParam === null) { urlSlugHandled = true; return; }  // no ?notif= at all
+
+  // If ?notif= is empty, just open the panel and stop
+  if (slugParam === "") {
+    urlSlugHandled = true;
+    if (!isOpen) {
+      isOpen = true;
+      if (!dataLoaded) showLoadingShimmer();
+      requestAnimationFrame(() => popupEl.classList.add("np-visible"));
+    }
+    return;
+  }
 
   const cleanSlug = slugParam.replace(/^push_/, "");
-  
+
   // Clean up URL in the address bar immediately if it has the "push_" prefix
   if (slugParam !== cleanSlug) {
     const url = new URL(window.location.href);
@@ -368,13 +455,20 @@ async function handleUrlSlug() {
 function openPopup() {
   if (isOpen) { closeAll(); return; }
   isOpen = true;
+  // Set ?notif= (empty) in the URL to indicate the panel is open
+  const url = new URL(window.location.href);
+  url.searchParams.set("notif", "");
+  window.history.replaceState(null, "", url.toString());
   // If data hasn't loaded yet, show shimmer so the popup feels instant
   if (!dataLoaded) showLoadingShimmer();
   requestAnimationFrame(() => popupEl.classList.add("np-visible"));
 }
 
 function closeDetail() {
-  clearUrlSlug();
+  // Go back to bare ?notif= (panel open, no specific notification selected)
+  const url = new URL(window.location.href);
+  url.searchParams.set("notif", "");
+  window.history.replaceState(null, "", url.toString());
   detailEl.classList.remove("np-visible");
   overlayEl.classList.remove("np-visible");
   requestAnimationFrame(() => popupEl.classList.add("np-visible"));
@@ -500,9 +594,12 @@ async function loadData() {
   onAuthStateChanged(auth, async user => {
     const sys = await fetchSystemNotifications();
     if (user) {
+      // Fetch fullName first so digest summary cards are personalised
+      await fetchUserFullName(user.uid);
       const personal = await fetchPushAlerts(user.uid);
       notifications = buildNotifications(sys, personal);
     } else {
+      currentUserFullName = "";
       notifications = buildNotifications(sys, []);
     }
     dataLoaded = true;

@@ -864,3 +864,43 @@ body.drK #np-detail {
     border-radius: 16px;
   }
 }
+
+/* ── Digest summary card — pinned "summary" notification at top ── */
+.np-digest-summary {
+  position: relative;
+  border-left: 3px solid #41B375;
+  background: linear-gradient(
+    105deg,
+    rgba(65, 179, 117, 0.07) 0%,
+    transparent 80%
+  ) !important;
+}
+
+.np-digest-summary::before {
+  content: "SUMMARY";
+  position: absolute;
+  top: 8px;
+  right: 34px;                       /* leave room for the delete btn */
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #41B375;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+/* Slightly bolder title for summary cards */
+.np-digest-summary .np-item-title {
+  color: var(--np-text);
+  font-weight: 700;
+}
+
+/* Dark-mode tweak */
+body.drK .np-digest-summary {
+  background: linear-gradient(
+    105deg,
+    rgba(65, 179, 117, 0.10) 0%,
+    transparent 80%
+  ) !important;
+}
+
