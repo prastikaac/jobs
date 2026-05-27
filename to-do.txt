@@ -1,1 +1,6 @@
 there is a bug somewhere in our code where the fcm tokens are not being stored properly or whatever because the user is not receiving the push notification on the device even after allowing notification, so check all of our files and fix it 
+
+
+fix notification and language in mobile
+
+

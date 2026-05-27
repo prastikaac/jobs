@@ -32,3 +32,32 @@
     }
 })();
 /*]]>*/
+
+/* ── GTranslate: show short language code (e.g. EN, FI, NE) instead of full name ── */
+(function () {
+    function shortenGtLabel() {
+        // The trigger button: <a class="gt_switcher-popup ..."><img alt="en"> <span>English</span> ...
+        var btn = document.querySelector('.gt_switcher-popup');
+        if (!btn) return;
+        var img  = btn.querySelector('img');
+        var span = btn.querySelector('span:not([style])');
+        if (!img || !span) return;
+        var code = (img.alt || '').replace(/[^a-zA-Z]/g, '').toUpperCase();
+        if (code && span.textContent !== code) {
+            span.textContent = code;
+        }
+    }
+
+    // Run once as soon as the element exists, then watch for GTranslate's async updates
+    function start() {
+        shortenGtLabel();
+        var observer = new MutationObserver(shortenGtLabel);
+        observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', start);
+    } else {
+        start();
+    }
+})();
