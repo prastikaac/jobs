@@ -96,7 +96,9 @@
     widget_code += '<a href="#" class="gt_switcher-popup glink nturl notranslate">';
 
     var arrow_down = '<span style="color:#666;font-size:8px;font-weight:bold;">&#9660;</span>';
-    widget_code += '<img src="'+get_flag_src(current_lang)+'" height="'+flag_size+'" width="'+flag_size+'" alt="'+current_lang+'" /> <span>'+lang_array[current_lang]+'</span>'+arrow_down+'</a>';
+    // Show short uppercase code (e.g. EN, FI, NE) instead of full name in the collapsed button
+    var short_label = current_lang.replace(/[^a-zA-Z]/g, '').toUpperCase();
+    widget_code += '<img src="'+get_flag_src(current_lang)+'" height="'+flag_size+'" width="'+flag_size+'" alt="'+current_lang+'" /> <span>'+short_label+'</span>'+arrow_down+'</a>';
 
     widget_code += '<div class="gt_black_overlay"></div>';
     widget_code += '<div class="gt_white_content notranslate">';
@@ -191,7 +193,12 @@
             document.querySelectorAll(u_class + ' a.gt-current-lang').forEach(function(e){e.classList.remove('gt-current-lang')});
             e.classList.add('gt-current-lang');
             doGTranslate(default_language+'|'+e.getAttribute('data-gt-lang'));
-            e.parentNode.parentNode.parentNode.querySelector('a.gt_switcher-popup').innerHTML=e.innerHTML+arrow_down;
+            // Show short uppercase code in the collapsed button after language switch
+            var chosen_lang = e.getAttribute('data-gt-lang');
+            var chosen_code = chosen_lang.replace(/[^a-zA-Z]/g, '').toUpperCase();
+            var chosen_img = e.querySelector('img');
+            var btn_img_html = chosen_img ? '<img src="'+chosen_img.src+'" height="'+flag_size+'" width="'+flag_size+'" alt="'+chosen_lang+'" /> ' : '';
+            e.parentNode.parentNode.parentNode.querySelector('a.gt_switcher-popup').innerHTML=btn_img_html+'<span>'+chosen_code+'</span>'+arrow_down;
             gt_hide_popup();
         })});
     }
@@ -214,7 +221,11 @@
                     doGTranslate(default_language+'|'+preferred_language);
                     var el = document.querySelector(u_class+' a[data-gt-lang="'+preferred_language+'"]');
                     el.querySelectorAll('img:not([src])').forEach(function(e){e.setAttribute('src', e.getAttribute('data-gt-lazy-src'))});
-                    el.parentNode.parentNode.parentNode.querySelector('a.gt_switcher-popup').innerHTML=el.innerHTML+arrow_down;
+                    // Show short uppercase code after auto browser-language switch
+                    var auto_code = preferred_language.replace(/[^a-zA-Z]/g, '').toUpperCase();
+                    var auto_img = el.querySelector('img');
+                    var auto_img_html = auto_img ? '<img src="'+auto_img.src+'" height="'+flag_size+'" width="'+flag_size+'" alt="'+preferred_language+'" /> ' : '';
+                    el.parentNode.parentNode.parentNode.querySelector('a.gt_switcher-popup').innerHTML=auto_img_html+'<span>'+auto_code+'</span>'+arrow_down;
                 };
             } else
                 document.querySelectorAll(u_class+' a[data-gt-lang="'+preferred_language+'"]').forEach(function(e){location.href=e.href});
