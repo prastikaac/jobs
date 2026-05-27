@@ -32,37 +32,26 @@ Sun  → 10:00, 13:30, 17:00
 
 Terminal Commands : 
 
-1. Automatic Runner File
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-bash scraper/run_all_jobs.bat
+- Automatic runner file : 
+cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && scraper\run_all_jobs.bat
 
-2. Run Full Job Scrap
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-python scraper/run_scraper.py
-python scraper/run_pipeline.py
+To run a job Scrap : 
+cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper\run_scraper.py && python scraper\run_pipeline.py
 
-3. Run Job Scrap Test (10 jobs from Työmarkkinatori)
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-python scraper/run_scraper.py --site "Työmarkkinatori" --limit 10
-python scraper/run_pipeline.py
+To run a job Scrap test :
+cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper\run_scraper.py --site "Työmarkkinatori" --limit 10 && python scraper\run_pipeline.py
 
-4. Run Phase 2, 3, 4, 5 after Phase 1 (Scraping)
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-python scraper/run_pipeline.py
+To do Phase 2, 3, 4, 5 after Phase 1 (Scraping) 
+cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py
 
-5. Run Phase 3, 4, 5 after Phase 2 (Translation)
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-python scraper/run_pipeline.py --ai-only
+To do Phase 3, 4, 5 after Phase 2 (Translation) 
+cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --ai-only
 
-6. Run Phase 4, 5 after Phase 3 (AI Formatting)
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-python scraper/run_pipeline.py --format-only
+To do Phase 4, 5 after Phase 3 (AI Formatting) 
+cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --format-only
 
-7. Run Phase 5 after Phase 4 (HTML Generation)
-cd "/c/Users/Ac/Documents/Programming/HTML CSS JS/JobsInFinland"
-python scraper/run_pipeline.py --html-only
-
-
+To do Phase 5 after Phase 4 (Job Formatting) 
+cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py --html-only
 
 To disable Auto-runner (Task Scheduler):
 Run as admin: Disable-ScheduledTask -TaskName 'JobsInFinland_AutoScraper'
