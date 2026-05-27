@@ -97,7 +97,7 @@ async function initMessaging() {
   _messagingInitPromise = (async () => {
     if ('serviceWorker' in navigator) {
       try {
-        const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+        const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
         console.log('Service Worker registered:', registration);
         messaging = getMessaging(app);
 
@@ -994,10 +994,6 @@ async function getOrCreateFcmToken() {
     return null;
   }
 
-  // Check if token is already cached in localStorage
-  const cached = localStorage.getItem(LS_TOKEN_KEY);
-  if (cached) return cached;
-
   // If notification permission is "default" (i.e., not decided yet), ask for permission
   if (Notification.permission === "default") {
     const permission = await Notification.requestPermission();
@@ -1007,47 +1003,77 @@ async function getOrCreateFcmToken() {
   // If permission is still not granted, exit early
   if (Notification.permission !== "granted") return null;
 
-  // Register Service Worker for Firebase messaging
+  // Get or register the Service Worker (must use same scope as registration)
   let registration = await navigator.serviceWorker.getRegistration('/');
   if (!registration) {
     await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
     registration = await navigator.serviceWorker.ready;
   }
 
-  // Get FCM token
-  const token = await getToken(messaging, {
-    vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-    serviceWorkerRegistration: registration
-  });
+  // Check if token is already cached in localStorage
+  // Even if cached, we still verify it exists in Firestore so a previously-failed
+  // write (e.g. network error during signup) is always recovered on the next visit.
+  const cached = localStorage.getItem(LS_TOKEN_KEY);
+  const currentUser = auth.currentUser;
 
-  // If a token is generated, store it in localStorage and update Firebase
+  if (cached) {
+    // Validate cached token is stored in Firestore (recovery path)
+    if (currentUser) {
+      try {
+        const userRef = doc(db, "users", currentUser.uid);
+        const docSnap = await getDoc(userRef);
+        if (docSnap.exists()) {
+          const existingTokens = docSnap.data().fcmTokens || [];
+          if (!existingTokens.includes(cached)) {
+            await updateDoc(userRef, { fcmTokens: arrayUnion(cached) });
+            console.log("FCM token (cached) synced to Firestore.");
+          }
+        }
+      } catch (e) {
+        console.warn("Could not sync cached FCM token to Firestore:", e);
+      }
+    }
+    return cached;
+  }
+
+  // Get a fresh FCM token from Firebase
+  let token;
+  try {
+    token = await getToken(messaging, {
+      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+      serviceWorkerRegistration: registration
+    });
+  } catch (e) {
+    console.error("getToken() failed:", e);
+    return null;
+  }
+
+  // If a token is generated, store it in localStorage and save to Firestore
   if (token) {
     localStorage.setItem(LS_TOKEN_KEY, token);
 
-    // Get the user data
-    const user = JSON.parse(localStorage.getItem("user"));
-    if (user?.uid) {
-      const userRef = doc(db, "users", user.uid);
-      const docSnap = await getDoc(userRef);
-
-      if (docSnap.exists()) {
-        const userData = docSnap.data();
-        const existingTokens = userData.fcmTokens || [];
-
-        // Only update if the token is not already stored in Firestore
-        if (!existingTokens.includes(token)) {
-          await updateDoc(userRef, {
-            fcmTokens: arrayUnion(token)
-          });
-          console.log("FCM token successfully saved to Firestore.");
-        } else {
-          console.log("FCM token already exists, skipping.");
+    // Prefer auth.currentUser as the authoritative UID source
+    const uid = auth.currentUser?.uid || JSON.parse(localStorage.getItem("user") || "{}")?.uid;
+    if (uid) {
+      try {
+        const userRef = doc(db, "users", uid);
+        const docSnap = await getDoc(userRef);
+        if (docSnap.exists()) {
+          const existingTokens = docSnap.data().fcmTokens || [];
+          if (!existingTokens.includes(token)) {
+            await updateDoc(userRef, { fcmTokens: arrayUnion(token) });
+            console.log("FCM token successfully saved to Firestore.");
+          } else {
+            console.log("FCM token already exists in Firestore, skipping.");
+          }
         }
+      } catch (e) {
+        console.warn("Could not save FCM token to Firestore:", e);
       }
     }
   }
 
-  return token;
+  return token || null;
 }
 
 
