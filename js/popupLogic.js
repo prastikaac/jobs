@@ -103,13 +103,7 @@ async function initMessaging() {
 
         // 🔽 Place onMessage HERE, after messaging is initialized
         onMessage(messaging, (payload) => {
-          console.log('Message received:', payload);
-
-          // Only proceed if this tab is focused
-          if (!document.hasFocus()) {
-            console.log("Tab not focused. Skipping notification.");
-            return;
-          }
+          console.log('FCM foreground message received:', payload);
 
           if (Notification.permission === 'granted') {
             const { title, body, icon } = payload.notification || {};
@@ -123,6 +117,7 @@ async function initMessaging() {
             });
 
             notification.onclick = () => {
+              window.focus();
               if (jobLink && jobLink.startsWith('http')) {
                 window.open(jobLink, '_blank');
               }
@@ -1003,11 +998,14 @@ async function getOrCreateFcmToken() {
   // If permission is still not granted, exit early
   if (Notification.permission !== "granted") return null;
 
-  // Get or register the Service Worker (must use same scope as registration)
-  let registration = await navigator.serviceWorker.getRegistration('/');
-  if (!registration) {
-    await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
+  // Ensure the service worker is ready (initMessaging already registered it).
+  // Use .ready so we always get the active registration rather than creating a second one.
+  let registration;
+  try {
     registration = await navigator.serviceWorker.ready;
+  } catch (e) {
+    console.error("Could not get SW registration:", e);
+    return null;
   }
 
   // Check if token is already cached in localStorage
