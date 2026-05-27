@@ -1,4 +1,1 @@
-- now i want to send  job alerts instantly to the user's device immediately after the job is posted but also currently our system sends like 25 jobs at a time to firebase so user may receive too much notification at once so there is a logic to make feel natural like getting jobs after every some time implement it correctly
-
-
-- update firebase push notifications
+there is a bug somewhere in our code where the fcm tokens are not being stored properly or whatever because the user is not receiving the push notification on the device even after allowing notification, so check all of our files and fix it 
