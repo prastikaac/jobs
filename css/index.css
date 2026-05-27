@@ -8018,3 +8018,26 @@ img.goog-te-gadget-icon,
     margin-left: 7px !important;
     margin-right: -35px;
 }
+
+/* ── Responsive header title: scale down on small mobile screens ── */
+@media screen and (max-width: 480px) {
+    .Header .headTtl,
+    span.headTtl {
+        font-size: 16px !important;
+    }
+    .Header .headSub,
+    span.headSub {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .Header .headTtl,
+    span.headTtl {
+        font-size: 14px !important;
+    }
+    .Header .headSub,
+    span.headSub {
+        font-size: 10px !important;
+    }
+}
