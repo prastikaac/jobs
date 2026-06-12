@@ -8,16 +8,15 @@ workflows:
       node: latest
 
     scripts:
-      - name: Install dependencies khuru khuru
+      - name: Install dependencies
         script: |
           cd App
           npm install
           npx cap sync ios
 
-      - name: MBuild iOS app for simulator 
+      - name: Build iOS app for simulator
         script: |
           cd App/ios/App
-
           xcodebuild \
             -project App.xcodeproj \
             -scheme App \
@@ -33,3 +32,6 @@ workflows:
 
     artifacts:
       - App/ios/App/build/Build/Products/Debug-iphonesimulator/App.app.zip
+
+    publishing:
+      app_preview: true
