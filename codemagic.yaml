@@ -14,16 +14,11 @@ workflows:
           npm install
           npx cap sync ios
 
-      - name: Install CocoaPods dependencies
-        script: |
-          cd App/ios/App
-          pod install --repo-update
-
       - name: Build iOS app
         script: |
           cd App/ios/App
           xcodebuild \
-            -workspace App.xcworkspace \
+            -project App.xcodeproj \
             -scheme App \
             -sdk iphonesimulator \
             -configuration Debug \

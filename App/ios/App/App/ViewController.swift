@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         setupWebViewDelegates()   // must be set BEFORE load()
         setupAppResumeObserver()
         webView.load(URLRequest(url: startURL))
+
+        // Check for a mandatory App Store update every time the app launches.
+        // If a newer version is found, a blocking screen is presented that
+        // cannot be dismissed until the user updates from the App Store.
+        checkForAppUpdate()
     }
 
     // MARK: - Splash Screen Overlay
@@ -209,6 +214,120 @@ class ViewController: UIViewController {
             self.webView.configuration.userContentController
                 .removeScriptMessageHandler(forName: "refreshComplete")
         }
+    }
+
+    // MARK: - Mandatory App Store Update
+
+    /// Queries the App Store version via the iTunes Lookup API.
+    /// If the installed build is outdated, presents a non-dismissable update screen.
+    /// If the store is unreachable or the app is not yet listed, continues normally.
+    private func checkForAppUpdate() {
+        AppUpdateChecker.shared.checkForUpdate { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .updateRequired(let storeVersion, let storeURL):
+                self.showMandatoryUpdateScreen(storeVersion: storeVersion, storeURL: storeURL)
+            case .upToDate, .unavailable:
+                break  // App starts normally
+            }
+        }
+    }
+
+    /// Builds and presents a full-screen, non-dismissable update screen.
+    /// The user can only leave this screen by tapping "Update Now", which
+    /// opens the App Store. The screen has no close button and cannot be
+    /// swiped away (isModalInPresentation = true).
+    private func showMandatoryUpdateScreen(storeVersion: String, storeURL: URL) {
+        // --- Root container ---------------------------------------------------
+        let updateVC = UIViewController()
+        updateVC.modalPresentationStyle = .fullScreen
+        updateVC.isModalInPresentation = true   // blocks interactive dismissal
+
+        let isDark = traitCollection.userInterfaceStyle == .dark
+        let bgColor = isDark
+            ? UIColor(red: 0.10, green: 0.10, blue: 0.12, alpha: 1.0)
+            : UIColor(red: 0.97, green: 0.97, blue: 0.98, alpha: 1.0)
+        updateVC.view.backgroundColor = bgColor
+
+        // --- App icon ---------------------------------------------------------
+        let iconImageView = UIImageView(image: UIImage(named: "AppIcon") ?? UIImage(named: "Icon"))
+        iconImageView.contentMode = .scaleAspectFit
+        iconImageView.layer.cornerRadius = 22
+        iconImageView.layer.masksToBounds = true
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+
+        // --- Title ------------------------------------------------------------
+        let titleLabel = UILabel()
+        titleLabel.text = "Update Required"
+        titleLabel.font = UIFont.systemFont(ofSize: 28, weight: .bold)
+        titleLabel.textColor = isDark ? .white : UIColor(red: 0.08, green: 0.08, blue: 0.10, alpha: 1)
+        titleLabel.textAlignment = .center
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        // --- Body label -------------------------------------------------------
+        let bodyLabel = UILabel()
+        let installedVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "—"
+        bodyLabel.text = "A new version of Jobs In Finland is available.\n\n"
+            + "Your version: \(installedVersion)\n"
+            + "Latest version: \(storeVersion)\n\n"
+            + "Please update to continue using the app."
+        bodyLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        bodyLabel.textColor = isDark
+            ? UIColor(white: 0.75, alpha: 1)
+            : UIColor(red: 0.30, green: 0.30, blue: 0.35, alpha: 1)
+        bodyLabel.textAlignment = .center
+        bodyLabel.numberOfLines = 0
+        bodyLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        // --- Update button ----------------------------------------------------
+        let updateButton = UIButton(type: .system)
+        updateButton.setTitle("Update Now", for: .normal)
+        updateButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        updateButton.setTitleColor(.white, for: .normal)
+        updateButton.backgroundColor = UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 1)  // iOS blue
+        updateButton.layer.cornerRadius = 14
+        updateButton.translatesAutoresizingMaskIntoConstraints = false
+
+        // Open App Store when tapped
+        let storeURLCapture = storeURL
+        updateButton.addAction(UIAction { _ in
+            UIApplication.shared.open(storeURLCapture, options: [:], completionHandler: nil)
+        }, for: .touchUpInside)
+
+        // Subtle press animation
+        updateButton.addAction(UIAction { _ in
+            UIView.animate(withDuration: 0.1) { updateButton.transform = CGAffineTransform(scaleX: 0.96, y: 0.96) }
+        }, for: .touchDown)
+        updateButton.addAction(UIAction { _ in
+            UIView.animate(withDuration: 0.1) { updateButton.transform = .identity }
+        }, for: [.touchUpInside, .touchUpOutside, .touchCancel])
+
+        // --- Layout -----------------------------------------------------------
+        let stack = UIStackView(arrangedSubviews: [iconImageView, titleLabel, bodyLabel, updateButton])
+        stack.axis = .vertical
+        stack.alignment = .center
+        stack.spacing = 24
+        stack.setCustomSpacing(32, after: iconImageView)
+        stack.setCustomSpacing(16, after: titleLabel)
+        stack.setCustomSpacing(36, after: bodyLabel)
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        updateVC.view.addSubview(stack)
+        NSLayoutConstraint.activate([
+            iconImageView.widthAnchor.constraint(equalToConstant: 100),
+            iconImageView.heightAnchor.constraint(equalToConstant: 100),
+
+            updateButton.widthAnchor.constraint(equalToConstant: 260),
+            updateButton.heightAnchor.constraint(equalToConstant: 56),
+
+            stack.centerXAnchor.constraint(equalTo: updateVC.view.centerXAnchor),
+            stack.centerYAnchor.constraint(equalTo: updateVC.view.centerYAnchor, constant: -20),
+            stack.leadingAnchor.constraint(greaterThanOrEqualTo: updateVC.view.leadingAnchor, constant: 32),
+            stack.trailingAnchor.constraint(lessThanOrEqualTo: updateVC.view.trailingAnchor, constant: -32),
+        ])
+
+        // Present modally — isModalInPresentation prevents swipe-to-dismiss
+        present(updateVC, animated: true)
     }
 
     // MARK: - App Resume
