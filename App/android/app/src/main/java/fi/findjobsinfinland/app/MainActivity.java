@@ -28,6 +28,13 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.WebViewListener;
 
+import com.google.android.play.core.appupdate.AppUpdateInfo;
+import com.google.android.play.core.appupdate.AppUpdateManager;
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
+import com.google.android.play.core.appupdate.AppUpdateOptions;
+import com.google.android.play.core.install.model.AppUpdateType;
+import com.google.android.play.core.install.model.UpdateAvailability;
+
 public class MainActivity extends BridgeActivity {
 
     // --- Layout ------------------------------------------------------------------
@@ -55,6 +62,10 @@ public class MainActivity extends BridgeActivity {
     // --- Double back press -------------------------------------------------------
     private long  backPressedTime = 0;
     private Toast backExitToast;
+
+    // --- In-App Update -----------------------------------------------------------
+    private AppUpdateManager appUpdateManager;
+    private static final int UPDATE_REQUEST_CODE = 9001;
 
     // --- Network Poller ----------------------------------------------------------
     private android.os.Handler networkPollHandler = new android.os.Handler(android.os.Looper.getMainLooper());
@@ -97,12 +108,44 @@ public class MainActivity extends BridgeActivity {
         super.onCreate(savedInstanceState);
 
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+
+        // Check for a mandatory update every time the app is launched.
+        // This runs before any UI is visible so the user cannot bypass it.
+        checkForAppUpdate();
     }
 
     @Override
     public void onResume() {
         super.onResume();
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+
+        // Edge-case guard: if the activity was recreated while an IMMEDIATE update
+        // was already in progress (e.g. the user backgrounded the app during download),
+        // re-trigger the update UI so the user still cannot reach the app content.
+        if (appUpdateManager != null) {
+            appUpdateManager.getAppUpdateInfo().addOnSuccessListener(info -> {
+                if (info.updateAvailability()
+                        == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
+                    launchImmediateUpdate(info);
+                }
+            });
+        }
+    }
+
+    /**
+     * Called when the system-managed update UI returns a result.
+     * RESULT_OK  → update installed; the app will restart automatically.
+     * Anything else → user backed out or update failed; re-trigger immediately
+     * so the user cannot reach the app content without completing the update.
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == UPDATE_REQUEST_CODE && resultCode != RESULT_OK) {
+            // Re-launch the update prompt. This creates an inescapable loop:
+            // the user MUST complete the update before using the app.
+            checkForAppUpdate();
+        }
     }
 
     @Override
@@ -471,6 +514,57 @@ public class MainActivity extends BridgeActivity {
     // =============================================================================
     //  Helpers
     // =============================================================================
+
+    // ── In-App Update helpers ────────────────────────────────────────────────────
+
+    /**
+     * Queries the Play Store for available updates and, if one is found,
+     * launches the system-managed IMMEDIATE update flow.
+     *
+     * IMMEDIATE mode takes over the entire screen — the user cannot interact
+     * with the app at all until the update is downloaded and installed.
+     *
+     * If the app was not installed from the Play Store, or if the Play Store
+     * service is unavailable, the task silently fails and the app continues
+     * to load normally.
+     */
+    private void checkForAppUpdate() {
+        appUpdateManager = AppUpdateManagerFactory.create(this);
+
+        appUpdateManager.getAppUpdateInfo()
+            .addOnSuccessListener(info -> {
+                boolean updateAvailable =
+                    info.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                    && info.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE);
+
+                if (updateAvailable) {
+                    launchImmediateUpdate(info);
+                }
+                // No update available, or not a Play install → app starts normally.
+            })
+            .addOnFailureListener(e -> {
+                // Play Store unavailable, sideloaded APK, or network error.
+                // Silently continue — the app should still open for these users.
+            });
+    }
+
+    /**
+     * Starts the IMMEDIATE update flow for the given AppUpdateInfo.
+     * Any error (e.g. Play Store crash) is caught and ignored; the
+     * app will simply continue loading normally rather than hard-crashing.
+     */
+    private void launchImmediateUpdate(AppUpdateInfo info) {
+        try {
+            appUpdateManager.startUpdateFlowForResult(
+                info,
+                this,
+                AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE).build(),
+                UPDATE_REQUEST_CODE
+            );
+        } catch (Exception e) {
+            // Could not launch update UI — fail open so the app still works.
+        }
+    }
 
     private boolean isConnected() {
         try {
