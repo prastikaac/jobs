@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html dir="ltr" lang="en">
 
@@ -4467,22 +4467,13 @@
         "use strict";
 
         /* ── State ───────────────────────────────────────────────── */
-        var currentPage = 1;
-        var perPage = 50;    // default; synced with #perPageSelect
-        var filteredArticles = [];    // visible articles for current filter set
-        var _paginationPatched = false; // guard: prevent double-wrapping filterArticles
-        var _allowPageReset = false;  // false during initial load; true once settled
-        //
-        // WHY _allowPageReset?
-        // After jobs.json loads, the filter-script's async init (loadCategories /
-        // loadLocations) may still be running and will call filterArticles() one
-        // more time. Without this guard that call would reset ?page=32 back to 1.
-        // We flip _allowPageReset = true only after a short settling period so that
-        // any system-initiated filterArticles() calls during init honour the URL
-        // page, while subsequent USER-triggered calls reset to page 1.
+        var currentPage        = 1;
+        var perPage            = 50;   // synced with #perPageSelect
+        var _filteredJobsCache = [];   // JS-array of job objects for current filter
+        var _allowPageReset    = false;
 
         /* ── DOM refs ────────────────────────────────────────────── */
-        var paginationEl = document.getElementById("jobsPagination");
+        var paginationEl  = document.getElementById("jobsPagination");
         var perPageSelect = document.getElementById("perPageSelect");
 
         /* ── Helpers: URL page ───────────────────────────────────── */
@@ -4493,38 +4484,17 @@
 
         function setPageInURL(page) {
           var params = new URLSearchParams(window.location.search);
-          if (page <= 1) {
-            params.delete("page");
-          } else {
-            params.set("page", String(page));
-          }
+          if (page <= 1) { params.delete("page"); }
+          else           { params.set("page", String(page)); }
           var qs = params.toString();
           window.history.replaceState({}, "", window.location.pathname + (qs ? "?" + qs : ""));
         }
 
-        /* ── Helpers: article visibility ─────────────────────────── */
-        function getVisibleArticles() {
-          var visible = [];
-          document.querySelectorAll("#Blog1 .blogPts article.ntry").forEach(function (a) {
-            if (!a.classList.contains("filter-hidden")) visible.push(a);
-          });
-          return visible;
-        }
-
-        /* ── Apply page slice (show only current page's jobs) ─────── */
+        /* ── Render current page slice via jobs-loader hook ──────── */
         function applyPageSlice() {
+          if (typeof window._renderJobSlice !== "function") return;
           var start = (currentPage - 1) * perPage;
-          var end = start + perPage;
-
-          // Show only the current page slice of the filtered set
-          filteredArticles.forEach(function (a, i) {
-            a.style.display = (i >= start && i < end) ? "" : "none";
-          });
-
-          // filter-hidden articles always stay hidden
-          document.querySelectorAll("#Blog1 .blogPts article.ntry").forEach(function (a) {
-            if (a.classList.contains("filter-hidden")) a.style.display = "none";
-          });
+          window._renderJobSlice(_filteredJobsCache, start, start + perPage);
         }
 
         /* ── Ellipsis page-number builder ────────────────────────── */
@@ -4535,11 +4505,11 @@
             return nums;
           }
           var pages = [1];
-          if (current > 3) pages.push("…");
-          if (current > 2) pages.push(current - 1);
+          if (current > 3)                      pages.push("…");
+          if (current > 2)                      pages.push(current - 1);
           if (current !== 1 && current !== total) pages.push(current);
-          if (current < total - 1) pages.push(current + 1);
-          if (current < total - 2) pages.push("…");
+          if (current < total - 1)              pages.push(current + 1);
+          if (current < total - 2)              pages.push("…");
           pages.push(total);
           return pages;
         }
@@ -4547,7 +4517,7 @@
         /* ── Render pagination bar ───────────────────────────────── */
         function renderPagination() {
           if (!paginationEl) return;
-          var totalPages = Math.ceil(filteredArticles.length / perPage);
+          var totalPages = Math.ceil(_filteredJobsCache.length / perPage);
 
           if (totalPages <= 1) {
             paginationEl.innerHTML = "";
@@ -4580,7 +4550,6 @@
           paginationEl.innerHTML = html;
           paginationEl.classList.add("visible");
 
-          // Wire up page buttons
           paginationEl.querySelectorAll(".pg-btn[data-page]").forEach(function (btn) {
             btn.addEventListener("click", function () {
               goToPage(parseInt(btn.dataset.page, 10));
@@ -4595,129 +4564,74 @@
 
         /* ── Navigate to a specific page ─────────────────────────── */
         function goToPage(page) {
-          var totalPages = Math.ceil(filteredArticles.length / perPage);
+          var totalPages = Math.ceil(_filteredJobsCache.length / perPage);
           page = Math.max(1, Math.min(page, totalPages));
           if (page === currentPage) return;
-
           currentPage = page;
           applyPageSlice();
           renderPagination();
           setPageInURL(page);
-
-          // Smooth-scroll to the top of the jobs section
           var target = document.getElementById("viewStyleBar") ||
             document.getElementById("Blog1") ||
             document.querySelector(".filters-section");
           if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
 
-        /* ── Full rebuild (called after jobs load) ───────────────── */
-        function rebuildFromURL() {
-          filteredArticles = Array.from(getVisibleArticles());
-          var totalPages = Math.ceil(filteredArticles.length / perPage);
-          var urlPage = getPageFromURL();
-          // Honour ?page=N from URL; clamp if out of range
-          currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
+        /* ── Hook: jobs-loader calls this after every filter run ─── */
+        window._paginationRebuild = function (filteredJobs) {
+          _filteredJobsCache = filteredJobs || [];
+          var totalPages = Math.ceil(_filteredJobsCache.length / perPage);
+
+          if (_allowPageReset) {
+            currentPage = 1;
+          } else {
+            var urlPage = getPageFromURL();
+            currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
+          }
+
           applyPageSlice();
           renderPagination();
           setPageInURL(currentPage);
-        }
-
-        /* ── Patch window.filterArticles ─────────────────────────── */
-        function patchFilterArticles() {
-          if (_paginationPatched) return true;
-          if (typeof window.filterArticles !== "function") return false;
-
-          var _orig = window.filterArticles;
-          window.filterArticles = function () {
-            if (typeof window._allJobs === "undefined") {
-              return;
-            }
-            _orig.apply(this, arguments); // run original filter logic
-
-            filteredArticles = Array.from(getVisibleArticles());
-
-            if (_allowPageReset) {
-              // USER changed a filter → go back to page 1
-              currentPage = 1;
-            } else {
-              // SYSTEM call during initial load → honour ?page= from URL
-              var totalPages = Math.ceil(filteredArticles.length / perPage);
-              var urlPage = getPageFromURL();
-              currentPage = (urlPage >= 1 && urlPage <= totalPages) ? urlPage : 1;
-            }
-
-            applyPageSlice();
-            renderPagination();
-            setPageInURL(currentPage);
-          };
-
-          _paginationPatched = true;
-          return true;
-        }
+        };
 
         /* ── Per-page selector ───────────────────────────────────── */
         function bindPerPageSelector() {
           if (!perPageSelect) return;
 
-          // Restore saved preference from localStorage
           try {
             var saved = localStorage.getItem("jobsPerPage");
-            if (saved && ["25", "50", "75", "100"].includes(saved)) {
+            if (saved && ["25","50","75","100"].indexOf(saved) !== -1) {
               perPageSelect.value = saved;
               perPage = parseInt(saved, 10);
             }
-          } catch (e) { }
+          } catch (e) {}
 
           perPageSelect.addEventListener("change", function () {
             var oldPerPage = perPage;
             perPage = parseInt(perPageSelect.value, 10) || 50;
-            try { localStorage.setItem("jobsPerPage", String(perPage)); } catch (e) { }
+            try { localStorage.setItem("jobsPerPage", String(perPage)); } catch (e) {}
 
-            // Preserve approximate scroll position:
-            // find which new page contains the first item of the current view.
-            var firstItemIndex = (currentPage - 1) * oldPerPage; // 0-based index
-            filteredArticles = Array.from(getVisibleArticles());
-            var totalPages = Math.ceil(filteredArticles.length / perPage);
+            var firstItemIndex = (currentPage - 1) * oldPerPage;
+            var totalPages = Math.ceil(_filteredJobsCache.length / perPage);
             currentPage = Math.min(Math.floor(firstItemIndex / perPage) + 1, totalPages || 1);
 
             applyPageSlice();
             renderPagination();
-            setPageInURL(currentPage); // keeps ?page= in URL when page > 1
+            setPageInURL(currentPage);
           });
         }
 
         /* ── Init ────────────────────────────────────────────────── */
         function init() {
           bindPerPageSelector();
-          currentPage = getPageFromURL(); // seed from URL
+          currentPage = getPageFromURL();
 
-          // Patch filterArticles as early as possible.
-          // On first call it may fail (async filter script not done yet) –
-          // the jobs-loaded handler will retry.
-          patchFilterArticles();
-
-          // Primary entry point: jobs-loaded fires after all cards are rendered
           document.addEventListener("jobs-loaded", function () {
-            patchFilterArticles(); // no-op if already patched (guard flag)
-
-            // Wait 150 ms for kickExistingScripts → filterArticles() to settle,
-            // then override currentPage from the URL.
-            setTimeout(function () {
-              rebuildFromURL();
-
-              // After another 600 ms (total ~750 ms from jobs-loaded) allow
-              // subsequent filterArticles() calls to reset back to page 1.
-              // This window covers the filter script's own loadCategories /
-              // loadLocations async calls that may still fire filterArticles().
-              setTimeout(function () {
-                _allowPageReset = true;
-              }, 600);
-            }, 150);
+            // Allow page resets only after initial load settles (~750ms)
+            setTimeout(function () { _allowPageReset = true; }, 750);
           });
         }
 
-        // Run once DOM is ready
         if (document.readyState === "loading") {
           document.addEventListener("DOMContentLoaded", init);
         } else {

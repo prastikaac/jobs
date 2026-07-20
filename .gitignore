@@ -85,3 +85,10 @@ ARCHITECTURE.md
 push-private.bat
 push-public.bat
 setup-private-repo.bat
+
+# ── Android signing secrets — NEVER commit ─────────────────────────────────
+SHA-256 fingerprint.txt
+App/android/SIGNING-INFO.txt
+App/android/*.jks
+App/android/*.keystore
+App/android/gradle.properties
