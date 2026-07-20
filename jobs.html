@@ -3768,6 +3768,16 @@
         }
 
         function filterArticles() {
+          // Once jobs-loader.js has loaded and overridden window.filterArticles
+          // with its full-array JS version, delegate all calls to it.
+          // This ensures filtering, counts, and pagination always use _allJobs
+          // (not just the ~50 DOM articles on the current page).
+          if (typeof window.filterArticles === "function" &&
+              window.filterArticles !== filterArticles) {
+            window.filterArticles();
+            return;
+          }
+
           // If jobs are still loading, do not run filtering logic yet
           if (typeof window._allJobs === "undefined") {
             return;
