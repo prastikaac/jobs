@@ -41,6 +41,9 @@ cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python sc
 To run a job Scrap test :
 cd /d "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper\run_scraper.py --site "Työmarkkinatori" --limit 10 && python scraper\run_pipeline.py
 
+To run a job Scrap test (Vs Code)
+cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland"; python scraper\run_scraper.py --site "Työmarkkinatori" --limit 10; python scraper\run_pipeline.py
+
 To do Phase 2, 3, 4, 5 after Phase 1 (Scraping) 
 cd "C:\Users\Ac\Documents\Programming\HTML CSS JS\JobsInFinland" && python scraper/run_pipeline.py
 
