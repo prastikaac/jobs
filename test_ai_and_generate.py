@@ -34,7 +34,7 @@ def main():
 
     results = []
 
-    for i, raw_job in enumerate(candidates[:TEST_COUNT], 1):
+    for i, raw_job in enumerate(candidates[TEST_OFFSET:TEST_OFFSET + TEST_COUNT], 1):
         title = raw_job.get("title", raw_job.get("id", "unknown"))
         text  = raw_job.get("translated_content", "")
 
