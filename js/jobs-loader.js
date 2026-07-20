@@ -184,14 +184,14 @@
       '</h2>' +
       '<div class="pSnpt">' +
       escHtml(snippet) +
-      '<div class="pInf pSml" style="color:red;font-weight:bold;">' +
+      '</div>' +
+      '<div class="pInf pSml">' +
       '<time class="aTtmp pTtmp pbl"' +
       ' datetime="' + escAttr(published) + '"' +
       ' title="Posted: ' + escAttr(posted) + '">' +
       escHtml(posted) +
       '</time>' +
       '<a class="pJmp" href="' + escAttr(jobUrl) + '">Apply Now</a>' +
-      '</div>' +
       '</div>' +
       '</div>' +
       '</article>'

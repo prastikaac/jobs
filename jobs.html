@@ -1836,6 +1836,37 @@
                     color: #111827;
                   }
 
+                  /* ===== GRID VIEW: always show date + Apply Now ===== */
+                  /* .pInf is now a sibling of .pSnpt (not inside it), so
+                     -webkit-line-clamp no longer clips it. These rules make
+                     sure the date and button are always visible in grid mode. */
+
+                  /* Give the card content area enough bottom room */
+                  #Blog1 .blogPts .ntry .pCntn {
+                    padding-bottom: 14px !important;
+                  }
+
+                  #Blog1 .blogPts .ntry .pInf {
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: space-between !important;
+                    margin-top: 12px !important;
+                    opacity: 1 !important;
+                  }
+
+                  /* Date — bold red */
+                  #Blog1 .blogPts .ntry .pInf time.pTtmp {
+                    color: #e53935 !important;
+                    font-weight: 700 !important;
+                    font-size: 0.88rem !important;
+                  }
+
+                  /* Apply Now button: always visible (theme hides it with opacity:0) */
+                  #Blog1 .blogPts .ntry .pJmp {
+                    opacity: 1 !important;
+                    animation: none !important;
+                  }
+
                   /* Hidden articles (filter) — must beat list-view !important */
                   #Blog1 .blogPts .ntry.filter-hidden,
                   #Blog1 .blogPts.list-view>.ntry.filter-hidden {
@@ -1937,7 +1968,7 @@
                     min-width: 0 !important;
                     display: flex !important;
                     flex-direction: column !important;
-                    justify-content: center !important;
+                    justify-content: flex-start !important;
                     padding: 20px 28px !important;
                   }
 
@@ -1956,6 +1987,13 @@
                   #Blog1 .blogPts.list-view .pCntn .pSnpt {
                     order: 3 !important;
                     margin-top: 0 !important;
+                  }
+
+                  /* Date + Apply Now row — pinned to bottom of card */
+                  #Blog1 .blogPts.list-view .pCntn .pInf {
+                    order: 4 !important;
+                    margin-top: auto !important;
+                    padding-top: 12px !important;
                   }
 
                   #Blog1 .blogPts.list-view .pTtl {
@@ -2031,6 +2069,11 @@
                     #Blog1 .blogPts.list-view .pCntn .pHdr {
                       font-size: 0.79rem !important;
                       margin-bottom: 6px !important;
+                    }
+
+                    /* Hide date + Apply Now in list view on mobile */
+                    #Blog1 .blogPts.list-view .pInf {
+                      display: none !important;
                     }
                   }
 
@@ -3745,7 +3788,8 @@
           const continuities = getValues(continuitySelect);
 
           const liveArticles = getArticles();
-          const totalCount = liveArticles.length;
+          // Use full job array for the total count (not just current page's DOM slice)
+          const totalCount = (window._allJobs || liveArticles).length;
           let visibleCount = 0;
 
           liveArticles.forEach(article => {
@@ -3826,7 +3870,12 @@
             continuities.length > 0
           );
 
-          updateJobSummary(totalCount, visibleCount, isFiltered);
+          // If jobs-loader's JS filter ran, use its full-array count for accuracy
+          const effectiveVisible = (window._filteredJobs && window._filteredJobs.length != null)
+            ? window._filteredJobs.length
+            : visibleCount;
+
+          updateJobSummary(totalCount, effectiveVisible, isFiltered);
           renderFilterTags();
           updateFilterButtonBackground();
           updateURL();
