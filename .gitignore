@@ -78,6 +78,9 @@ functions/
 # Second git directory for private backup repo
 .git-private/
 
+# iOS git directory (separate repo — same pattern as .git-private)
+.git-ios/
+
 # ── Public repo exclusions (private repo only) ────────────────────────────────
 .github/
 __pycache__/
@@ -86,6 +89,7 @@ push-private.bat
 push-public.bat
 push-ios.bat
 setup-private-repo.bat
+*.code-workspace
 
 # ── Android signing secrets — NEVER commit ─────────────────────────────────
 SHA-256 fingerprint.txt
