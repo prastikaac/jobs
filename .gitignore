@@ -84,6 +84,7 @@ __pycache__/
 ARCHITECTURE.md
 push-private.bat
 push-public.bat
+push-ios.bat
 setup-private-repo.bat
 
 # ── Android signing secrets — NEVER commit ─────────────────────────────────
@@ -92,3 +93,4 @@ App/android/SIGNING-INFO.txt
 App/android/*.jks
 App/android/*.keystore
 App/android/gradle.properties
+App/android/app/google-services.json

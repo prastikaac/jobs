@@ -2263,15 +2263,16 @@
                   @media (max-width: 600px) {
                     .view-style-bar {
                       margin: 12px 0 8px 0;
-                      flex-wrap: wrap;
+                      flex-wrap: nowrap;
                       gap: 8px;
                     }
 
-                    /* Both pills: block-level, fill full width */
+                    /* Both pills: side by side, equal width */
                     .view-toggle-wrap,
                     .per-page-wrap {
                       display: flex;
-                      width: 100%;
+                      flex: 1;
+                      min-width: 0;
                       box-sizing: border-box;
                       border-radius: 15px;
                       justify-content: center;
@@ -2279,8 +2280,9 @@
 
                     .per-page-group {
                       display: flex;
+                      flex: 1;
+                      min-width: 0;
                       margin-left: 0;
-                      width: 100%;
                     }
 
                     /* View: toggle group fills remaining space, buttons share equally */
@@ -2310,10 +2312,10 @@
                       font-size: 13px;
                     }
 
-                    .per-page-suffix {
-                      flex-shrink: 0;
-                      font-size: 12px;
-                      white-space: nowrap;
+                    /* Hide Grid/List text on mobile — icons only */
+                    .view-label-text,
+                    .per-page-suffix-text {
+                      display: none;
                     }
                   }
 
@@ -2365,38 +2367,60 @@
                     flex-shrink: 0;
                   }
 
-                  .per-page-select {
-                    all: unset;
+                  /* Custom per-page overlay wrapper */
+                  .per-page-custom-wrap {
+                    position: relative;
                     display: inline-flex;
                     align-items: center;
+                    gap: 5px;
                     height: 36px;
                     padding: 0 10px;
                     border-radius: 50px;
                     cursor: pointer;
-                    color: #fff;
-                    font-size: 13px;
-                    font-weight: 500;
-                    font-family: inherit;
                     background: rgba(255, 255, 255, 0.13);
-                    border: none;
-                    outline: none;
-                    -webkit-appearance: auto;
-                    appearance: auto;
                     transition: background 0.18s ease;
                   }
 
-                  .per-page-select:hover {
+                  .per-page-custom-wrap:hover {
                     background: rgba(255, 255, 255, 0.18);
                   }
 
-                  .per-page-suffix {
+                  .per-page-val {
                     font-size: 13px;
-                    font-weight: 500;
-                    color: rgba(255, 255, 255, 0.5);
-                    white-space: nowrap;
-                    padding: 0 10px 0 8px;
+                    font-weight: 600;
+                    color: #fff;
                     user-select: none;
+                    pointer-events: none;
                   }
+
+                  .per-page-chevron {
+                    width: 10px;
+                    height: 6px;
+                    color: rgba(255,255,255,0.6);
+                    pointer-events: none;
+                    flex-shrink: 0;
+                  }
+
+                  .per-page-suffix-text {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: rgba(255, 255, 255, 0.55);
+                    white-space: nowrap;
+                    user-select: none;
+                    pointer-events: none;
+                  }
+
+                  /* Select is invisible overlay — captures clicks, opens native picker */
+                  .per-page-select {
+                    all: unset;
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                  }
+
 
                   /* Light-mode overrides */
                   body.lgT .per-page-wrap {
@@ -2414,17 +2438,29 @@
                   }
 
                   body.lgT .per-page-select {
-                    background: #ebebed;
-                    color: #111827;
+                    /* still invisible overlay — no style needed */
                   }
 
-                  body.lgT .per-page-select:hover {
+                  body.lgT .per-page-custom-wrap {
+                    background: #ebebed;
+                  }
+
+                  body.lgT .per-page-custom-wrap:hover {
                     background: #e0e0e3;
                   }
 
-                  body.lgT .per-page-suffix {
+                  body.lgT .per-page-val {
+                    color: #111827;
+                  }
+
+                  body.lgT .per-page-chevron {
                     color: #6b7280;
                   }
+
+                  body.lgT .per-page-suffix-text {
+                    color: #6b7280;
+                  }
+
 
                   @media (max-width: 520px) {
                     .per-page-group {
@@ -2778,13 +2814,20 @@
                       <span class="per-page-label-text">Show</span>
                     </div>
                     <div class="per-page-divider"></div>
-                    <select aria-label="Jobs per page" class="per-page-select" id="perPageSelect">
-                      <option value="25">25</option>
-                      <option selected="" value="50">50</option>
-                      <option value="75">75</option>
-                      <option value="100">100</option>
-                    </select>
-                    <span class="per-page-suffix">jobs per page</span>
+                    <!-- Custom overlay: span shows number, transparent select opens native picker with full labels -->
+                    <div class="per-page-custom-wrap">
+                      <span class="per-page-val" id="perPageVal">50</span>
+                      <span class="per-page-suffix-text">jobs per page</span>
+                      <svg class="per-page-chevron" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <select aria-label="Jobs per page" class="per-page-select" id="perPageSelect">
+                        <option value="25">25 jobs per page</option>
+                        <option selected="" value="50">50 jobs per page</option>
+                        <option value="75">75 jobs per page</option>
+                        <option value="100">100 jobs per page</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -4829,11 +4872,14 @@
         function bindPerPageSelector() {
           if (!perPageSelect) return;
 
+          var perPageVal = document.getElementById("perPageVal");
+
           try {
             var saved = localStorage.getItem("jobsPerPage");
             if (saved && ["25","50","75","100"].indexOf(saved) !== -1) {
               perPageSelect.value = saved;
               perPage = parseInt(saved, 10);
+              if (perPageVal) perPageVal.textContent = saved;
             }
           } catch (e) {}
 
@@ -4841,6 +4887,9 @@
             var oldPerPage = perPage;
             perPage = parseInt(perPageSelect.value, 10) || 50;
             try { localStorage.setItem("jobsPerPage", String(perPage)); } catch (e) {}
+
+            // Update the visible number in the pill
+            if (perPageVal) perPageVal.textContent = String(perPage);
 
             var firstItemIndex = (currentPage - 1) * oldPerPage;
             var totalPages = Math.ceil(_filteredJobsCache.length / perPage);
