@@ -2,15 +2,18 @@ package fi.findjobsinfinland.app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
 import android.net.Uri;
 import android.net.http.SslError;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
@@ -19,6 +22,16 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import java.io.InputStream;
 import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
+import com.google.firebase.messaging.FirebaseMessaging;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
@@ -36,6 +49,8 @@ import com.google.android.play.core.install.model.AppUpdateType;
 import com.google.android.play.core.install.model.UpdateAvailability;
 
 public class MainActivity extends BridgeActivity {
+
+    private static final String TAG = "MainActivity";
 
     // --- Layout ------------------------------------------------------------------
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -66,6 +81,9 @@ public class MainActivity extends BridgeActivity {
     // --- In-App Update -----------------------------------------------------------
     private AppUpdateManager appUpdateManager;
     private static final int UPDATE_REQUEST_CODE = 9001;
+
+    // --- Notification permission request code (Android 13+) --------------------
+    private static final int NOTIF_PERMISSION_REQUEST_CODE = 2001;
 
     // --- Network Poller ----------------------------------------------------------
     private android.os.Handler networkPollHandler = new android.os.Handler(android.os.Looper.getMainLooper());
@@ -112,6 +130,76 @@ public class MainActivity extends BridgeActivity {
         // Check for a mandatory update every time the app is launched.
         // This runs before any UI is visible so the user cannot bypass it.
         checkForAppUpdate();
+
+        // Always register FCM token immediately — the token works independently
+        // of notification permission (permission only controls visible alerts).
+        registerFcmToken();
+
+        // Separately ask for POST_NOTIFICATIONS permission on Android 13+.
+        // This is fire-and-forget — no callback needed since token is already saved.
+        requestNotificationPermission();
+    }
+
+    // =========================================================================
+    //  FCM Token Registration
+    // =========================================================================
+
+    /**
+     * Asks for POST_NOTIFICATIONS permission on Android 13+ (API 33+).
+     * Safe to call repeatedly — skipped if already granted or on older Android.
+     * FCM token registration is done separately and does NOT depend on this.
+     */
+    private void requestNotificationPermission() {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                boolean already = ContextCompat.checkSelfPermission(
+                    this, android.Manifest.permission.POST_NOTIFICATIONS
+                ) == PackageManager.PERMISSION_GRANTED;
+                if (!already) {
+                    ActivityCompat.requestPermissions(
+                        this,
+                        new String[]{ android.Manifest.permission.POST_NOTIFICATIONS },
+                        NOTIF_PERMISSION_REQUEST_CODE
+                    );
+                }
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Could not request notification permission: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Fetches the current FCM registration token and saves it to the
+     * Firestore "appDevices" collection. Wrapped in try-catch so a missing
+     * google-services.json or uninitialized Firebase NEVER crashes the app.
+     */
+    private void registerFcmToken() {
+        try {
+            FirebaseMessaging.getInstance().getToken()
+                .addOnSuccessListener(token -> {
+                    Log.d(TAG, "FCM token obtained: " + token);
+                    try {
+                        Map<String, Object> data = new HashMap<>();
+                        data.put("fcmToken",     token);
+                        data.put("platform",     "android");
+                        data.put("registeredAt", com.google.firebase.Timestamp.now());
+                        data.put("lastSeen",     com.google.firebase.Timestamp.now());
+
+                        FirebaseFirestore.getInstance()
+                            .collection("appDevices")
+                            .document(token)
+                            .set(data, SetOptions.merge())
+                            .addOnSuccessListener(v -> Log.d(TAG, "FCM token saved to Firestore."))
+                            .addOnFailureListener(e -> Log.e(TAG, "Firestore save failed: " + e.getMessage()));
+                    } catch (Exception e) {
+                        Log.e(TAG, "Firestore write error: " + e.getMessage());
+                    }
+                })
+                .addOnFailureListener(e -> Log.e(TAG, "Failed to get FCM token: " + e.getMessage()));
+        } catch (Exception e) {
+            // Firebase not initialized (google-services.json missing) — app still opens normally
+            Log.e(TAG, "Firebase not available, skipping FCM registration: " + e.getMessage());
+        }
     }
 
     @Override

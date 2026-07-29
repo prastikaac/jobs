@@ -269,11 +269,12 @@
         var locText   = normalize(buildLocationText(job));
         var locMatch  = locs.some(function(l) {
           var rawL = l;
-          // region: or city: prefix handling
+          // region: prefix — match against region name in locText
           if (rawL.startsWith("region:")) {
             var rName = normalize(rawL.replace(/^region:/, ""));
             return locText.includes(rName);
           }
+          // city: prefix — match city name against locText/locSlug
           if (rawL.startsWith("city:")) {
             var cName = normalize(rawL.replace(/^city:/, ""));
             return locText.includes(cName) || locSlug.includes(cName.replace(/\s+/g,"-"));
@@ -495,7 +496,10 @@
         var tag = document.createElement("span");
         tag.className = "filter-tag";
         var txt = document.createElement("span");
-        txt.textContent = v;
+        // Strip city:/region: prefixes, replace hyphens with spaces, capitalise first letter
+        var displayV = v.replace(/^(city:|region:)/i, "").replace(/-/g, " ");
+        displayV = displayV ? displayV.charAt(0).toUpperCase() + displayV.slice(1) : displayV;
+        txt.textContent = displayV;
         var btn = document.createElement("button");
         btn.type = "button";
         btn.textContent = "×";
@@ -650,8 +654,8 @@
         '</div>';
     }
 
-    // Use force-cache so repeat visits are instant from disk (no round-trip)
-    fetch(JOBS_JSON_URL, { cache: "force-cache" })
+    // Use no-cache so new jobs are always picked up (server returns 304 if unchanged)
+    fetch(JOBS_JSON_URL, { cache: "no-cache" })
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status + " — " + JOBS_JSON_URL);
         return r.json();
@@ -679,8 +683,11 @@
         var countEl = document.getElementById("totalJobsCount");
         if (countEl) countEl.textContent = jobs.length.toLocaleString();
 
-        /* Rebuild dropdown menus */
-        populateDropdowns(jobs);
+        /* Rebuild dropdown menus — DISABLED: jobs.html's loadCategories() /
+           loadLocations() already populate both menus from their own JSON
+           files and attach click listeners. Calling populateDropdowns() here
+           would replace the menu innerHTML and destroy those listeners. */
+        // populateDropdowns(jobs);
 
         /* Run initial filter (applies URL params) */
         filterArticles();

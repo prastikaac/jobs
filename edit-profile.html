@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html dir="ltr" lang="en">
 
@@ -105,7 +105,7 @@
       style="display:none;visibility:hidden" width="0"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- ── LOGIN GATE OVERLAY ─────────────────────────────────────────── -->
+  <!-- -- LOGIN GATE OVERLAY ------------------------------------------- -->
   <div id="loginGateOverlay" style="visibility:hidden;">
     <style>
       #loginGateOverlay {
@@ -317,7 +317,7 @@
       }
     }
 
-    // ── Login gate: show only for unauthenticated users, with zero flash ──
+    // -- Login gate: show only for unauthenticated users, with zero flash --
     (function () {
       const overlay = document.getElementById('loginGateOverlay');
 
@@ -352,7 +352,7 @@
           showGate();
           gateShown = true;
         }
-      }, 600); // 600ms grace — Firebase auth usually resolves within this time
+      }, 600); // 600ms grace � Firebase auth usually resolves within this time
 
       // Confirmed logged-in via profileLogic.js onAuthStateChanged
       window.addEventListener('userLoggedIn', function () {
@@ -368,15 +368,12 @@
       });
     })();
   </script>
-  <!-- ── END LOGIN GATE OVERLAY ────────────────────────────────────── -->
+  <!-- -- END LOGIN GATE OVERLAY -------------------------------------- -->
 
   <!--h1 content-->
   <div id="fb-root"></div>
   <script async="" crossorigin="anonymous" defer="" nonce="E4Y7rLjw"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v17.0"></script>
-  <div class="progress active" id="PreLoaderBar">
-    <div class="indeterminate"></div>
-  </div>
   <div class="progress"></div>
   <script>
 
@@ -431,7 +428,7 @@
                   <bdi>
                     <a href="" style="pointer-events: none; cursor: default; text-decoration: none; ">
                       <span class="headTtl" style="font-size: 19px;">
-                          findjobsinfinland
+                        � findjobsinfinland
                       </span>
                     </a>
                   </bdi>
@@ -836,14 +833,14 @@
                                   align-items: center;
                                 }
 
-                                /* ── Profile picture ─────────────────────────────────────────
+                                /* -- Profile picture -----------------------------------------
                                    NEW APPROACH: CSS Grid stacking.
                                    #ppWrap is a grid container with one cell.
                                    Both .profile-img AND #uploadIcon share grid-area:1/1,
                                    so they stack in the same cell without position:absolute.
                                    The camera badge uses align-self/justify-self+margin for
-                                   placement — immune to any ancestor positioning-context bugs.
-                                ────────────────────────────────────────────────────────── */
+                                   placement � immune to any ancestor positioning-context bugs.
+                                ---------------------------------------------------------- */
                                 #ppWrap {
                                   display: grid !important;
                                   /* grid stacking context */
@@ -885,7 +882,7 @@
                                   filter: brightness(0.80);
                                 }
 
-                                /* ── Loader spinner ── */
+                                /* -- Loader spinner -- */
                                 .pp-loader {
                                   position: absolute;
                                   inset: 0;
@@ -918,11 +915,11 @@
                                   animation: pp-spin 0.75s linear infinite;
                                 }
 
-                                /* ── Camera badge ──
-                                   grid-area: 1/1  → stacks on top of .profile-img
-                                   align-self: end + justify-self: center → bottom-center
-                                   margin         → fine-tunes position onto circle edge
-                                   position: relative !important → defeats any global
+                                /* -- Camera badge --
+                                   grid-area: 1/1  ? stacks on top of .profile-img
+                                   align-self: end + justify-self: center ? bottom-center
+                                   margin         ? fine-tunes position onto circle edge
+                                   position: relative !important ? defeats any global
                                      .camera-icon { position: absolute } rule */
                                 #uploadIcon.camera-icon {
                                   grid-area: 1 / 1 !important;
@@ -959,7 +956,7 @@
                                   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
                                 }
 
-                                /* SVG icon — centred by parent flex, no absolute needed */
+                                /* SVG icon � centred by parent flex, no absolute needed */
                                 #uploadIcon>svg.camera-svg {
                                   width: 14px !important;
                                   height: 14px !important;
@@ -1173,7 +1170,7 @@
                                   }
                                 }
 
-                                /* ── Tablet (≤ 768px) ── */
+                                /* -- Tablet (= 768px) -- */
                                 @media (max-width: 768px) {
                                   .profile-container {
                                     flex-direction: column;
@@ -1241,7 +1238,7 @@
                                   }
                                 }
 
-                                /* ── Mobile (≤ 480px) ── */
+                                /* -- Mobile (= 480px) -- */
                                 @media (max-width: 480px) {
                                   .profile-container {
                                     padding: 16px 12px;
@@ -1274,7 +1271,7 @@
                                   }
                                 }
 
-                                /* ── Very small phones (≤ 360px) ── */
+                                /* -- Very small phones (= 360px) -- */
                                 @media (max-width: 360px) {
                                   #ppWrap {
                                     width: 175px;
@@ -1396,7 +1393,7 @@
                                   color: #b2ffb2;
                                 }
 
-                                /* ── Danger Zone Section ─────────────────────────── */
+                                /* -- Danger Zone Section --------------------------- */
                                 .danger-zone-section {
                                   margin-top: 36px;
                                   margin-bottom: 8px;
@@ -1493,7 +1490,7 @@
                                   opacity: 0.75;
                                 }
 
-                                /* ── Delete Confirm Modal ─────────────────────────── */
+                                /* -- Delete Confirm Modal --------------------------- */
                                 #deleteConfirmOverlay {
                                   position: fixed;
                                   inset: 0;
@@ -1748,7 +1745,7 @@
                               <!-- JOB CATEGORY -->
                               <div class="dropdown-section">
                                 <h4>Preferred Job Types</h4>
-                                <p class="descp">Choose the job industries that interest you the most. We’ll
+                                <p class="descp">Choose the job industries that interest you the most. We�ll
                                   use this to personalize your job alerts and recommendations.</p>
                                 <div class="dropdown" id="jobCategoryDropdown">
                                   <!-- Dynamically loaded -->
@@ -1767,7 +1764,7 @@
                               <!-- JOB TIMES -->
                               <div class="dropdown-section">
                                 <h4>Preferred Working Times</h4>
-                                <p class="descp">Pick the working hours that suit your schedule. We’ll filter jobs based
+                                <p class="descp">Pick the working hours that suit your schedule. We�ll filter jobs based
                                   on your availability.</p>
                                 <div class="dropdown" id="jobTimesDropdown">
                                   <div><input id="time-full" type="checkbox" value="full-time" /><label
@@ -1779,7 +1776,7 @@
                               <!-- WORKING LANGUAGES -->
                               <div class="dropdown-section">
                                 <h4>Preferred Working Languages</h4>
-                                <p class="descp">Select the languages you’re comfortable using at work. This ensures you
+                                <p class="descp">Select the languages you�re comfortable using at work. This ensures you
                                   see jobs that match your language skills.</p>
                                 <div class="dropdown" id="jobLangsDropdown">
                                   <div><input id="lang-fi" type="checkbox" value="finnish" /><label
@@ -1793,7 +1790,7 @@
                               <!-- JOB TYPE -->
                               <div class="dropdown-section">
                                 <h4>Preferred Job Type</h4>
-                                <p class="descp">Choose the type of employment you are looking for. We’ll recommend jobs
+                                <p class="descp">Choose the type of employment you are looking for. We�ll recommend jobs
                                   that fit your preferred work style.</p>
                                 <div class="dropdown" id="jobTypeDropdown">
                                   <div><input id="type-perm" type="checkbox" value="permanent" /><label
@@ -1812,7 +1809,7 @@
                                   <p class="descp">Select how you want to receive job updates and choose your preferred
                                     frequency for each channel.</p>
 
-                                  <!-- EMAIL channel — all-in-one card -->
+                                  <!-- EMAIL channel � all-in-one card -->
                                   <div class="channel-card" id="jobAlertSubBox">
                                     <div class="option-row channel-header-row">
                                       <span class="channel-label">Email</span>
@@ -1833,7 +1830,7 @@
                                           class="switch"><input type="radio" id="ep-email-monthly"
                                             name="emailFreqProfile" value="monthly" /><span
                                             class="slider"></span></label></div>
-                                      <!-- Delivery time — sits at the bottom of the same card -->
+                                      <!-- Delivery time � sits at the bottom of the same card -->
                                       <div id="emailScheduleSectionProfile" class="delivery-time-row">
                                         <div class="delivery-time-label" style="margin-bottom: 8px;">Preferred
                                           Notification Time <span>(Local Time)</span></div>
@@ -1854,7 +1851,7 @@
                                     </div>
                                   </div>
 
-                                  <!-- PUSH channel — all-in-one card -->
+                                  <!-- PUSH channel � all-in-one card -->
                                   <div class="channel-card" id="pushAlertSubBox">
                                     <div class="option-row channel-header-row">
                                       <span class="channel-label">Push Notification</span>
@@ -1877,7 +1874,7 @@
                                       <div class="option-row sub-option-row"><span>Once a month</span><label
                                           class="switch"><input type="radio" id="ep-push-monthly" name="pushFreqProfile"
                                             value="monthly" /><span class="slider"></span></label></div>
-                                      <!-- Delivery time — sits at the bottom of the same card -->
+                                      <!-- Delivery time � sits at the bottom of the same card -->
                                       <div id="pushScheduleSectionProfile" class="delivery-time-row"
                                         style="display:none;">
                                         <div class="delivery-time-label" style="margin-bottom: 8px;">Preferred
@@ -1911,7 +1908,7 @@
 
                                 <h4 style="margin-bottom: -20px;">Account Deletion</h4>
 
-                                <!-- ── Danger Zone ─────────────────────────────── -->
+                                <!-- -- Danger Zone ------------------------------- -->
                                 <div class="danger-zone-section">
                                   <p class="danger-zone-desc">Permanently delete your account and all associated data
                                     including your job preferences, notification settings, and profile. <strong>This
@@ -2040,15 +2037,15 @@
                                       ppPicture.addEventListener("load", () => ppLoader && ppLoader.classList.add("pp-loaded"), { once: true });
                                       ppPicture.addEventListener("error", () => ppLoader && ppLoader.classList.add("pp-loaded"), { once: true });
                                     }
-                                    document.getElementById("fullName").textContent = data.fullName || "—";
-                                    document.getElementById("email").textContent = data.email || "—";
-                                    document.getElementById("phone").textContent = data.phoneNumber || "—";
+                                    document.getElementById("fullName").textContent = data.fullName || "�";
+                                    document.getElementById("email").textContent = data.email || "�";
+                                    document.getElementById("phone").textContent = data.phoneNumber || "�";
 
                                     // Store originals for dirty-check
                                     _savedFullName = data.fullName || "";
                                     _savedPhone = data.phoneNumber || "";
 
-                                    // Populate day-of-month selects (1–28)
+                                    // Populate day-of-month selects (1�28)
                                     function populateDayOfMonth(sel) {
                                       if (!sel || sel.options.length > 0) return;
                                       for (let d = 1; d <= 28; d++) {
@@ -2243,7 +2240,7 @@
                                       if (key === "fullName") _savedFullName = newValue;
                                       if (key === "phoneNumber") _savedPhone = newValue;
                                     }
-                                    // Field is committed — clear dirty flag
+                                    // Field is committed � clear dirty flag
                                     _fieldDirty = false;
                                     input.replaceWith(span);
                                     span.textContent = newValue || oldValue;
@@ -2404,7 +2401,7 @@
                                 });
 
 
-                                // ── Unsaved changes guard ─────────────────────────────────────
+                                // -- Unsaved changes guard -------------------------------------
                                 window.addEventListener('beforeunload', function (e) {
                                   if (hasChanges()) {
                                     e.preventDefault();
@@ -2412,7 +2409,7 @@
                                   }
                                 });
 
-                                // ── Account Deletion Logic ────────────────────────────────────
+                                // -- Account Deletion Logic ------------------------------------
                                 const deleteAccountBtn = document.getElementById('deleteAccountBtn');
                                 const deleteConfirmOverlay = document.getElementById('deleteConfirmOverlay');
                                 const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
@@ -2507,7 +2504,7 @@
                                   return [...container.querySelectorAll(`input[type="checkbox"]:not(${exceptSelector})`)];
                                 }
 
-                                /** Handles “All” checkboxes (All Categories / All Locations) */
+                                /** Handles �All� checkboxes (All Categories / All Locations) */
                                 function handleAllCheckbox(containerId) {
                                   const container = document.getElementById(containerId);
                                   if (!container) return;
@@ -2713,7 +2710,7 @@
               </ul>
             </div>
           </div>
-          ﻿<footer style="box-shadow: none !important; background: none; backdrop-filter: none;">
+          ?<footer style="box-shadow: none !important; background: none; backdrop-filter: none;">
             <div class="footer ftrmb"
               style="backdrop-filter: blur(10.1px); border-radius: 10px !important; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);">
               <style>
@@ -3025,8 +3022,8 @@
                   }
                 </style>
                 <span class="credit">
-                  <span style="font-family:Arial, Helvetica, sans-serif">©</span> <span id="changeyear"></span>
-                  ‧
+                  <span style="font-family:Arial, Helvetica, sans-serif">�</span> <span id="changeyear"></span>
+                  ?
 
                   <script>
                     // Get the current year
@@ -3052,7 +3049,7 @@
                           fill: var(--darkU) !important;
                         }
                       </style>
-                    </a></bdi> ‧ All rights reserved.
+                    </a></bdi> ? All rights reserved.
                 </span>
               </div>
             </div>
@@ -3215,7 +3212,6 @@
     document.onreadystatechange = function () {
       if (document.readyState === "complete") {
         console.log(document.readyState);
-        document.getElementById("PreLoaderBar").style.display = "none";
       }
     }
     //]]></script>
@@ -3240,7 +3236,7 @@
   <!-- Required: signin-signup-popup.js injects profile-card-container here -->
   <div id="login-signup-popup-content"></div>
 
-  <!-- ── Account Deletion Confirmation Modal ──────────────────────────── -->
+  <!-- -- Account Deletion Confirmation Modal ---------------------------- -->
   <div id="deleteConfirmOverlay">
     <div id="deleteConfirmBox">
       <div class="delete-modal-icon">
@@ -3264,10 +3260,10 @@
       <div id="deleteModalStatus"></div>
     </div>
   </div>
-  <!-- ── END Account Deletion Confirmation Modal ──────────────────────── -->
+  <!-- -- END Account Deletion Confirmation Modal ------------------------ -->
 
   <script src="/js/notification-popup.js" type="module"></script>
-  <!-- â•â•â• Notification Popup System (containers only â€” content injected by JS) â•â•â• -->
+  <!-- ═══ Notification Popup System (containers only — content injected by JS) ═══ -->
   <div id="np-overlay"></div>
   <div aria-label="Notifications" id="np-popup" role="dialog">
     <div id="np-header">
@@ -3304,7 +3300,7 @@
       </a>
     </div>
   </div>
-  <!-- â•â•â• End Notification Popup System â•â•â• -->
+  <!-- ═══ End Notification Popup System ═══ -->
 </body>
 
 </html>

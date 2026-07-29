@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575437446165",
+    "project_id": "findjobsinfinland-3c061",
+    "storage_bucket": "findjobsinfinland-3c061.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575437446165:android:68d3145175cfbe409b821c",
+        "android_client_info": {
+          "package_name": "fi.findjobsinfinland.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3hud6dqo635MUzjFDYd3w0Yr___EmY90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -88,10 +88,6 @@
   <div id="fb-root"></div>
   <script async="" crossorigin="anonymous" defer="" nonce="QGh53qZ5"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v17.0"></script>
-  <div class="progress" id="PreLoaderBar">
-    <div class="indeterminate">
-    </div>
-  </div>
   <div class="blog-admin" id="admCk"></div>
   <input class="prfI hidden" id="offPrf" type="checkbox" />
   <input class="navI hidden" id="offNav" type="checkbox" />
@@ -1771,34 +1767,73 @@
                   }
 
                   /* ===== VIEW TOGGLE (GRID / LIST) ===== */
+                  /* ===== VIEW TOGGLE PILL (card-style segmented control) ===== */
+                  .view-toggle-wrap {
+                    display: inline-flex;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.08);
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    border-radius: 15px;
+                    padding: 5px 6px;
+                    gap: 0;
+                    box-sizing: border-box;
+                  }
+
+                  .view-toggle-label-wrap {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 14px 0 10px;
+                    gap: 0;
+                  }
+
+                  .view-toggle-label-text {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.65);
+                    white-space: nowrap;
+                    user-select: none;
+                    letter-spacing: 0.01em;
+                  }
+
+                  .view-toggle-divider {
+                    width: 1px;
+                    height: 28px;
+                    background: rgba(255, 255, 255, 0.15);
+                    margin: 0 4px;
+                    flex-shrink: 0;
+                  }
+
                   .view-toggle-group {
                     display: inline-flex;
                     align-items: center;
-                    gap: 4px;
-                    background: var(--filter-bg);
-                    border: 1px solid var(--filter-border);
-                    border-radius: var(--filter-radius);
-                    padding: 5px;
-                    min-height: var(--filter-height);
-                    box-sizing: border-box;
+                    gap: 2px;
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    min-height: auto;
                   }
 
                   .view-toggle-btn {
                     all: unset;
-                    display: flex;
+                    display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    width: 38px;
-                    height: 38px;
-                    border-radius: 10px;
+                    gap: 7px;
+                    height: 36px;
+                    padding: 0 14px;
+                    border-radius: 50px;
                     cursor: pointer;
-                    color: rgba(255, 255, 255, 0.55);
-                    transition: background 0.2s ease, color 0.2s ease;
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 14px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    transition: background 0.18s ease, color 0.18s ease;
+                    box-sizing: border-box;
                   }
 
                   .view-toggle-btn:hover {
                     background: rgba(255, 255, 255, 0.09);
-                    color: rgba(255, 255, 255, 0.9);
+                    color: rgba(255, 255, 255, 0.85);
                   }
 
                   .view-toggle-btn.active {
@@ -1807,19 +1842,29 @@
                   }
 
                   .view-toggle-btn svg {
-                    width: 18px;
-                    height: 18px;
+                    width: 17px;
+                    height: 17px;
                     fill: none;
                     stroke: currentColor;
                     stroke-width: 2;
                     stroke-linecap: round;
                     stroke-linejoin: round;
+                    flex-shrink: 0;
                   }
 
                   /* Light-mode overrides */
-                  body.lgT .view-toggle-group {
+                  body.lgT .view-toggle-wrap {
                     background: #ffffff;
-                    border-color: #d8dee8;
+                    border-color: #e2e5ec;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+                  }
+
+                  body.lgT .view-toggle-label-text {
+                    color: #6b7280;
+                  }
+
+                  body.lgT .view-toggle-divider {
+                    background: #e2e5ec;
                   }
 
                   body.lgT .view-toggle-btn {
@@ -1832,7 +1877,7 @@
                   }
 
                   body.lgT .view-toggle-btn.active {
-                    background: #e5e7eb;
+                    background: #ebebed;
                     color: #111827;
                   }
 
@@ -2199,22 +2244,8 @@
                     color: #4b5563;
                   }
 
-                  .view-toggle-group {
-                    border: none;
-                    background: none;
-                    padding: 0;
-                    min-height: auto;
-                    gap: 6px;
-                  }
-
-                  .view-toggle-btn {
-                    gap: 6px;
-                    width: auto;
-                    height: 38px;
-                    padding: 0 14px;
-                    border-radius: 10px;
-                  }
-
+                  /* view-toggle-group and view-toggle-btn are now
+                     handled by the .view-toggle-wrap pill styles above */
                   .view-label-text {
                     font-size: 13px;
                     font-weight: 500;
@@ -2231,69 +2262,164 @@
 
                   @media (max-width: 600px) {
                     .view-style-bar {
-                      margin: 14px 0 8px 0;
+                      margin: 12px 0 8px 0;
                       flex-wrap: wrap;
-                      gap: 10px;
+                      gap: 8px;
+                    }
+
+                    /* Both pills: block-level, fill full width */
+                    .view-toggle-wrap,
+                    .per-page-wrap {
+                      display: flex;
+                      width: 100%;
+                      box-sizing: border-box;
+                      border-radius: 15px;
+                      justify-content: center;
+                    }
+
+                    .per-page-group {
+                      display: flex;
+                      margin-left: 0;
+                      width: 100%;
+                    }
+
+                    /* View: toggle group fills remaining space, buttons share equally */
+                    .view-toggle-group {
+                      flex: 1;
                     }
 
                     .view-toggle-btn {
-                      height: 34px;
-                      padding: 0 10px;
+                      flex: 1;
+                      justify-content: center;
+                      height: 38px;
+                      padding: 0 8px;
+                      font-size: 13px;
                     }
 
                     .view-label-text {
+                      font-size: 13px;
+                    }
+
+                    .view-toggle-label-text,
+                    .per-page-label-text {
+                      font-size: 13px;
+                    }
+
+                    /* Show: select stays natural width, suffix pushed to right end */
+                    .per-page-select {
+                      font-size: 13px;
+                    }
+
+                    .per-page-suffix {
+                      flex-shrink: 0;
                       font-size: 12px;
+                      white-space: nowrap;
                     }
                   }
 
-                  /* ===== PER-PAGE SELECTOR ===== */
+                  @media (max-width: 400px) {
+                    .view-toggle-btn {
+                      height: 34px;
+                    }
+                  }
+
+                  /* ===== PER-PAGE SELECTOR (pill with dropdown) ===== */
                   .per-page-group {
                     display: inline-flex;
                     align-items: center;
-                    gap: 8px;
+                    gap: 0;
                     margin-left: auto;
                   }
 
+                  .per-page-wrap {
+                    display: inline-flex;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.08);
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    border-radius: 15px;
+                    padding: 5px 8px 5px 6px;
+                    gap: 0;
+                    box-sizing: border-box;
+                  }
+
+                  .per-page-label-wrap {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 12px 0 10px;
+                  }
+
+                  .per-page-label-text {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.65);
+                    white-space: nowrap;
+                    user-select: none;
+                    letter-spacing: 0.01em;
+                  }
+
+                  .per-page-divider {
+                    width: 1px;
+                    height: 28px;
+                    background: rgba(255, 255, 255, 0.15);
+                    margin: 0 8px 0 0;
+                    flex-shrink: 0;
+                  }
+
                   .per-page-select {
-                    display: inline-block;
+                    all: unset;
+                    display: inline-flex;
+                    align-items: center;
                     height: 36px;
-                    padding: 0 28px 0 12px;
-                    border-radius: 10px;
-                    background: var(--filter-bg);
-                    border: 1px solid var(--filter-border);
-                    color: var(--filter-text);
+                    padding: 0 10px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    color: #fff;
                     font-size: 13px;
                     font-weight: 500;
                     font-family: inherit;
-                    cursor: pointer;
-                    appearance: auto;
-                    -webkit-appearance: auto;
+                    background: rgba(255, 255, 255, 0.13);
+                    border: none;
                     outline: none;
-                    box-shadow: none;
-                    vertical-align: middle;
-                    transition: background 0.2s ease, border-color 0.2s ease;
+                    -webkit-appearance: auto;
+                    appearance: auto;
+                    transition: background 0.18s ease;
                   }
 
                   .per-page-select:hover {
-                    background: var(--filter-bg-hover);
-                    border-color: rgba(255, 255, 255, 0.16);
+                    background: rgba(255, 255, 255, 0.18);
                   }
 
                   .per-page-suffix {
                     font-size: 13px;
+                    font-weight: 500;
                     color: rgba(255, 255, 255, 0.5);
                     white-space: nowrap;
+                    padding: 0 10px 0 8px;
+                    user-select: none;
+                  }
+
+                  /* Light-mode overrides */
+                  body.lgT .per-page-wrap {
+                    background: #ffffff;
+                    border-color: #e2e5ec;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+                  }
+
+                  body.lgT .per-page-label-text {
+                    color: #6b7280;
+                  }
+
+                  body.lgT .per-page-divider {
+                    background: #e2e5ec;
                   }
 
                   body.lgT .per-page-select {
-                    background: #ffffff;
-                    border-color: #d8dee8;
-                    color: #1f2937;
+                    background: #ebebed;
+                    color: #111827;
                   }
 
                   body.lgT .per-page-select:hover {
-                    background: #f8fafc;
-                    border-color: #c8d0db;
+                    background: #e0e0e3;
                   }
 
                   body.lgT .per-page-suffix {
@@ -2303,6 +2429,9 @@
                   @media (max-width: 520px) {
                     .per-page-group {
                       margin-left: 0;
+                    }
+                    .per-page-select {
+                      font-size: 12px;
                     }
                   }
 
@@ -2416,17 +2545,49 @@
                     margin: 0 3px;
                   }
 
-                  @media (max-width: 480px) {
-                    .pg-btn {
-                      min-width: 36px;
-                      height: 36px;
-                      padding: 0 10px;
-                      font-size: 13px;
+                  @media (max-width: 600px) {
+                    .jobs-pagination {
+                      justify-content: center;
+                      flex-wrap: wrap;
+                      gap: 5px;
+                      margin: 24px 0 14px 0;
+                      padding: 0 8px;
+                      width: 100%;
+                      box-sizing: border-box;
                     }
 
+                    .pg-btn {
+                      min-width: 38px;
+                      height: 38px;
+                      padding: 0 10px;
+                      font-size: 13px;
+                      border-radius: 8px;
+                    }
+
+                    .pg-dots {
+                      min-width: 24px;
+                      font-size: 13px;
+                    }
+                  }
+
+                  @media (max-width: 380px) {
                     .jobs-pagination {
                       gap: 4px;
-                      margin: 24px 0 14px 0;
+                      padding: 0 4px;
+                    }
+
+                    .pg-btn {
+                      min-width: 34px;
+                      height: 34px;
+                      padding: 0 8px;
+                      font-size: 12px;
+                      border-radius: 7px;
+                    }
+
+                    /* Hide Prev/Next text labels on very small phones, keep icons only */
+                    .pg-prev span,
+                    .pg-next span {
+                      display: none;
                     }
                   }
 
@@ -2577,45 +2738,54 @@
                         <input id="continuitySelect" name="continuity" type="hidden" />
                       </form>
                     </div>
-                    <div class="selected-filters" id="selectedFilters"></div>
                   </div>
                 </div>
               </div>
               <!-- ===== VIEW STYLE TOGGLE (separate from filters) ===== -->
               <div class="view-style-bar" id="viewStyleBar">
-                <span class="view-style-label">View:</span>
-                <div aria-label="View style" class="view-toggle-group" role="group">
-                  <button aria-label="Grid view" class="view-toggle-btn" id="viewGridBtn" title="Grid View">
-                    <svg viewbox="0 0 24 24">
-                      <rect height="8" rx="1.5" width="8" x="3" y="3"></rect>
-                      <rect height="8" rx="1.5" width="8" x="13" y="3"></rect>
-                      <rect height="8" rx="1.5" width="8" x="3" y="13"></rect>
-                      <rect height="8" rx="1.5" width="8" x="13" y="13"></rect>
-                    </svg>
-                    <span class="view-label-text">Grid</span>
-                  </button>
-                  <button aria-label="List view" class="view-toggle-btn" id="viewListBtn" title="List View">
-                    <svg viewbox="0 0 24 24">
-                      <rect height="5" rx="1.5" width="6" x="3" y="4"></rect>
-                      <line x1="12" x2="21" y1="5.5" y2="5.5"></line>
-                      <line x1="12" x2="18" y1="7.5" y2="7.5"></line>
-                      <rect height="5" rx="1.5" width="6" x="3" y="12"></rect>
-                      <line x1="12" x2="21" y1="13.5" y2="13.5"></line>
-                      <line x1="12" x2="18" y1="15.5" y2="15.5"></line>
-                    </svg>
-                    <span class="view-label-text">List</span>
-                  </button>
+                <div class="view-toggle-wrap">
+                  <div class="view-toggle-label-wrap">
+                    <span class="view-toggle-label-text">View</span>
+                  </div>
+                  <div class="view-toggle-divider"></div>
+                  <div aria-label="View style" class="view-toggle-group" role="group">
+                    <button aria-label="Grid view" class="view-toggle-btn" id="viewGridBtn" title="Grid View">
+                      <svg viewbox="0 0 24 24">
+                        <rect height="9" rx="2" width="9" x="3" y="3"></rect>
+                        <rect height="9" rx="2" width="9" x="13" y="3"></rect>
+                        <rect height="9" rx="2" width="9" x="3" y="13"></rect>
+                        <rect height="9" rx="2" width="9" x="13" y="13"></rect>
+                      </svg>
+                      <span class="view-label-text">Grid</span>
+                    </button>
+                    <button aria-label="List view" class="view-toggle-btn" id="viewListBtn" title="List View">
+                      <svg viewbox="0 0 24 24">
+                        <line x1="8" x2="21" y1="6" y2="6"></line>
+                        <line x1="8" x2="21" y1="12" y2="12"></line>
+                        <line x1="8" x2="21" y1="18" y2="18"></line>
+                        <polyline points="3 6 4 7 6 5"></polyline>
+                        <polyline points="3 12 4 13 6 11"></polyline>
+                        <polyline points="3 18 4 19 6 17"></polyline>
+                      </svg>
+                      <span class="view-label-text">List</span>
+                    </button>
+                  </div>
                 </div>
                 <!-- Per-page selector -->
                 <div class="per-page-group" id="perPageGroup">
-                  <label class="view-style-label" for="perPageSelect">Show:</label>
-                  <select aria-label="Jobs per page" class="per-page-select" id="perPageSelect">
-                    <option value="25">25</option>
-                    <option selected="" value="50">50</option>
-                    <option value="75">75</option>
-                    <option value="100">100</option>
-                  </select>
-                  <span class="per-page-suffix">jobs per page</span>
+                  <div class="per-page-wrap">
+                    <div class="per-page-label-wrap">
+                      <span class="per-page-label-text">Show</span>
+                    </div>
+                    <div class="per-page-divider"></div>
+                    <select aria-label="Jobs per page" class="per-page-select" id="perPageSelect">
+                      <option value="25">25</option>
+                      <option selected="" value="50">50</option>
+                      <option value="75">75</option>
+                      <option value="100">100</option>
+                    </select>
+                    <span class="per-page-suffix">jobs per page</span>
+                  </div>
                 </div>
               </div>
               <div id="jobSummaryText">
@@ -2630,6 +2800,7 @@
                   preferences.
                 </p>
               </div>
+              <div class="selected-filters" id="selectedFilters"></div>
               <div id="noResultsMessage"
                 style="display: none; text-align: center; margin-top: 20px; font-weight: bold;">
                 No jobs found.
@@ -4534,6 +4705,7 @@
         /* ── DOM refs ────────────────────────────────────────────── */
         var paginationEl  = document.getElementById("jobsPagination");
         var perPageSelect = document.getElementById("perPageSelect");
+        var perPageBtns = null; // unused — using select
 
         /* ── Helpers: URL page ───────────────────────────────────── */
         function getPageFromURL() {

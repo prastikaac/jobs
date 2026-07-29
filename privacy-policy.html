@@ -101,11 +101,6 @@
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
     nonce="E4Y7rLjw"></script>
 
-
-  <div class="progress active" id="PreLoaderBar">
-    <div class="indeterminate"></div>
-  </div>
-
   <div class="progress"></div>
 
 
@@ -1404,7 +1399,6 @@
     document.onreadystatechange = function () {
       if (document.readyState === "complete") {
         console.log(document.readyState);
-        document.getElementById("PreLoaderBar").style.display = "none";
       }
     }
     //]]></script>

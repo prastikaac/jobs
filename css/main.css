@@ -507,7 +507,7 @@ body.drK.foursec {
   }
 
   #footer-widget-4 {
-    margin-top: -35px !important; 
+    margin-top: -35px !important;
   }
 
   #footer-widget-4 .title {
@@ -975,4 +975,9 @@ body.drK .job-card__value {
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+}
+
+
+#PreLoaderBar {
+  display: none !important;
 }
