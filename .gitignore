@@ -78,9 +78,6 @@ functions/
 # Second git directory for private backup repo
 .git-private/
 
-# iOS git directory (separate repo — same pattern as .git-private)
-.git-ios/
-
 # ── Public repo exclusions (private repo only) ────────────────────────────────
 .github/
 __pycache__/
