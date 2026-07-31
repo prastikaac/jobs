@@ -2157,7 +2157,32 @@ footer .toTop svg {
     position: absolute;
     bottom: 15px;
     left: 15px;
-    right: 15px
+    right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 6px
+}
+
+/* Date text – red on job cards */
+.onIndx .blogPts .pInf .aTtmp {
+    color: #e53935 !important;
+    font-weight: bold;
+    flex-shrink: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 1
+}
+
+/* Apply Now – always visible on job cards */
+.onIndx .blogPts .pInf .pJmp {
+    opacity: 1;
+    flex-shrink: 0;
+    animation: none
 }
 
 .onIndx .blogPts {
@@ -2552,8 +2577,10 @@ article:hover .thmb {
 
 .pInf {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
     margin-top: 15px
 }
 
@@ -2716,12 +2743,22 @@ article:hover .thmb {
 }
 
 .aTtmp {
-    opacity: .8
+    opacity: .8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+    min-width: 0
 }
 
 .aTtmp,
 .pJmp {
     overflow: hidden
+}
+
+/* Suppress empty ::after block on job-card date elements (no data-text set) */
+.aTtmp::after {
+    display: none
 }
 
 .pTtmp::after,
@@ -2738,7 +2775,7 @@ article:hover .thmb {
 .pJmp {
     display: inline-flex;
     align-items: center;
-    opacity: 0;
+    opacity: 1;
     transition: var(--trans-2)
 }
 
@@ -2760,7 +2797,8 @@ article:hover .thmb {
 
 .ntry:not(.noAd) .pJmp,
 .itemFt .itm .pJmp {
-    animation: indicator 2s 3s infinite
+    animation: indicator 2s 3s infinite;
+    animation-fill-mode: forwards
 }
 
 .ntry:not(.noAd):hover .pJmp,
@@ -6632,15 +6670,15 @@ img.goog-te-gadget-icon,
 
 @keyframes indicator {
     0% {
-        opacity: 0
-    }
-
-    50% {
         opacity: 1
     }
 
+    50% {
+        opacity: 0.4
+    }
+
     100% {
-        opacity: 0
+        opacity: 1
     }
 }
 
@@ -6803,29 +6841,29 @@ img.goog-te-gadget-icon,
 
 @-webkit-keyframes indicator {
     0% {
-        opacity: 0
-    }
-
-    50% {
         opacity: 1
     }
 
+    50% {
+        opacity: 0.4
+    }
+
     100% {
-        opacity: 0
+        opacity: 1
     }
 }
 
 @-moz-keyframes indicator {
     0% {
-        opacity: 0
-    }
-
-    50% {
         opacity: 1
     }
 
+    50% {
+        opacity: 0.4
+    }
+
     100% {
-        opacity: 0
+        opacity: 1
     }
 }
 
