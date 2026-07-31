@@ -5009,6 +5009,29 @@
 
                   }
 
+                  /* Fix overlap at 481–640px: remote CSS wrongly sets 50% width causing columns to collide */
+                  @media only screen and (min-width: 481px) and (max-width: 640px) {
+                    footer .footerContent > *,
+                    footer .footerContent > :first-child,
+                    footer .footerContent > :last-child {
+                      width: 100% !important;
+                      margin-left: 0 !important;
+                      margin-right: 0 !important;
+                    }
+
+                    #footer-widget-2 {
+                      margin-top: 24px !important;
+                    }
+
+                    #footer-widget-3 {
+                      margin-top: 16px !important;
+                    }
+
+                    #footer-widget-4 {
+                      margin-top: 16px !important;
+                    }
+                  }
+
                   /* For mobile */
                   @media only screen and (max-width: 767px) {
                     #footer-widget-2 {

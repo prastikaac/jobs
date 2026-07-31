@@ -27,9 +27,9 @@ change the footer in all the pages
 modify landing page
 
 
+like there is a static delay in website for images loading like imagesloaded little half than full, so is there any way of fixing it ?
 
 
-images loading delay
 
 app lagging
 
@@ -38,7 +38,3 @@ app lagging
 
 
 
-now remove all the fcm token storing logic of user if allowed notification like here in our code we have if user clicked yes in a popup than it ask for notification permission and stores the fcm token to so remove that logic of asking notification and storing fcm tokens only and also remove all other fcm token storing logic from our code except one place in android app where its stored in appdevices
-
-
-footer unresponsive on medium small device : means as you can see the support and quick links are being unresponsive
