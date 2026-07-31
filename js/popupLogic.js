@@ -3,7 +3,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getFirestore, collection, query, where, getDocs, limit,
-  doc, setDoc, getDoc, updateDoc, arrayUnion, Timestamp, deleteField, arrayRemove, addDoc, serverTimestamp
+  doc, setDoc, getDoc, updateDoc, arrayUnion, arrayRemove, Timestamp, deleteField, addDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import {
   getAuth, createUserWithEmailAndPassword,
@@ -11,6 +11,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getMessaging, getToken, onMessage, deleteToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+
 
 
 
@@ -36,134 +37,142 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
+
+
+
+
+
+
+
+
+
+
+// ── Platform detection ──────────────────────────────────────────────────────
+// Capacitor injects a custom User-Agent for both Android and iOS builds.
+// We use this flag to skip web FCM logic inside the app — the app manages
+// push notifications natively via MyFirebaseMessagingService + AppBridge.
+const IS_IN_APP = /FindJobsFinlandApp/i.test(navigator.userAgent);
+
+// ── Web FCM (browser users only) ─────────────────────────────────────────────
+const LS_TOKEN_KEY = "currentFcmToken";
 let messaging;
-
-// Function to fetch the current FCM token and check/update it in Firestore if needed
-async function refreshFcmTokenIfNeeded() {
-  try {
-    const user = auth.currentUser;
-    if (!user) return; // No need to refresh if not logged in
-
-    const permission = Notification.permission;
-    if (permission !== 'granted') return;
-
-    // Use our centralized method to safely fetch or reuse the token with correct SW scope
-    const currentToken = await getOrCreateFcmToken();
-    if (!currentToken) return;
-
-    const userRef = doc(db, 'users', user.uid);
-    const userDoc = await getDoc(userRef);
-
-    if (userDoc.exists()) {
-      const userData = userDoc.data();
-      const existingTokens = Array.isArray(userData.fcmTokens) ? userData.fcmTokens : [];
-
-      if (!existingTokens.includes(currentToken)) {
-        await updateDoc(userRef, { fcmTokens: arrayUnion(currentToken) });
-        console.log('🔄 FCM token synchronized to Firestore.');
-      }
-    }
-  } catch (error) {
-    console.warn('Error checking or syncing FCM token:', error);
-  }
-}
-
-// Function to add the FCM token to Firestore inside the fcmTokens array
-async function addFcmToken(userId, newToken) {
-  try {
-    const userRef = doc(db, 'users', userId);
-    await updateDoc(userRef, {
-      fcmTokens: arrayUnion(newToken),
-      lastUpdated: serverTimestamp()
-    });
-    console.log('FCM token successfully added to Firestore');
-  } catch (error) {
-    console.error('Error adding FCM token:', error);
-  }
-}
-
-
-
-
-
-
-
 let _messagingInitPromise = null;
+// Shared in-flight promise so concurrent callers never trigger two separate getToken() calls
+let _tokenFetchPromise = null;
 
 async function initMessaging() {
-  // Return existing promise if already initialising/initialised
+  if (IS_IN_APP) return null; // App handles FCM natively — skip entirely
   if (_messagingInitPromise) return _messagingInitPromise;
-
   _messagingInitPromise = (async () => {
-    if ('serviceWorker' in navigator) {
-      try {
-        const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' });
-        console.log('Service Worker registered:', registration);
-        messaging = getMessaging(app);
-
-        // 🔽 Place onMessage HERE, after messaging is initialized
-        onMessage(messaging, (payload) => {
-          console.log('FCM foreground message received:', payload);
-
-          if (Notification.permission === 'granted') {
-            const { title, body, icon } = payload.notification || {};
-            const jobLink = payload.data?.jobLink || null;
-            const imageUrl = payload.data?.imageUrl || null;
-
-            const notification = new Notification(title || 'New Notification', {
-              body: body || '',
-              icon: icon || '/images/icon.png',
-              image: imageUrl || undefined
-            });
-
-            notification.onclick = () => {
-              window.focus();
-              if (jobLink && jobLink.startsWith('http')) {
-                window.open(jobLink, '_blank');
-              }
-            };
-          }
+    if (!("serviceWorker" in navigator)) return null;
+    try {
+      await navigator.serviceWorker.register("/firebase-messaging-sw.js", { scope: "/" });
+      messaging = getMessaging(app);
+      // Handle foreground messages (tab is open and visible)
+      onMessage(messaging, (payload) => {
+        if (Notification.permission !== "granted") return;
+        const { title, body, icon } = payload.notification || {};
+        const jobLink = payload.data?.jobLink || null;
+        const imageUrl = payload.data?.imageUrl || null;
+        const notif = new Notification(title || "New Job Alert", {
+          body: body || "",
+          icon: icon || "/images/icon.png",
+          image: imageUrl || undefined
         });
-
-
-      } catch (error) {
-        console.error('Service Worker registration failed:', error);
-      }
-    } else {
-      console.warn('Service Workers not supported in this browser.');
+        notif.onclick = () => {
+          window.focus();
+          if (jobLink && jobLink.startsWith("http")) window.open(jobLink, "_blank");
+        };
+      });
+    } catch (e) {
+      console.error("Messaging init failed:", e);
     }
     return messaging;
   })();
-
   return _messagingInitPromise;
 }
 
-initMessaging(); // ✅ Called on load — stores promise so later callers can await it
+async function getOrCreateFcmToken() {
+  if (IS_IN_APP) return null;
+  if (!("serviceWorker" in navigator && "PushManager" in window && "Notification" in window)) return null;
+  if (!messaging) await initMessaging();
+  if (!messaging) return null;
+  if (Notification.permission !== "granted") return null;
+  let registration;
+  try { registration = await navigator.serviceWorker.ready; } catch (e) { return null; }
 
+  // Return cached token immediately — no network call needed
+  const cached = localStorage.getItem(LS_TOKEN_KEY);
+  if (cached) return cached;
 
+  // If another caller is already fetching, share its promise instead of making a second
+  // getToken() call (which could return a different token before the cache is set).
+  if (_tokenFetchPromise) return _tokenFetchPromise;
 
-async function logFcmToken() {
-  if (!messaging) {
-    console.warn('Messaging is not initialized yet');
-    return;
-  }
-
-  try {
-    const token = await getOrCreateFcmToken();
-    if (token) {
-      console.log('FCM token:', token);
-    } else {
-      console.warn('No FCM token obtained');
+  _tokenFetchPromise = (async () => {
+    try {
+      const token = await getToken(messaging, {
+        vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
+        serviceWorkerRegistration: registration
+      });
+      if (token) localStorage.setItem(LS_TOKEN_KEY, token);
+      return token || null;
+    } catch (e) {
+      console.error("getToken() failed:", e);
+      return null;
+    } finally {
+      _tokenFetchPromise = null; // Allow a fresh attempt if this one failed
     }
-  } catch (error) {
-    console.error('Error getting FCM token:', error);
+  })();
+
+  return _tokenFetchPromise;
+}
+
+// Save the current web FCM token to users/{uid}/fcmTokens in Firestore.
+// Also removes any stale token that was previously cached in localStorage for this
+// browser but has since changed (token rotation), preventing accumulation.
+async function saveWebFcmToken(uid) {
+  if (IS_IN_APP || !uid) return;
+  // Gate check: only proceed if notifications are granted
+  if (Notification.permission !== 'granted') return;
+  try {
+    // Read the previously cached token BEFORE fetching the current one.
+    // If the token rotated, the cache is stale and we need to clean up Firestore.
+    const previouslyCachedToken = localStorage.getItem(LS_TOKEN_KEY);
+
+    const token = await getOrCreateFcmToken();
+    if (!token) return;
+
+    // If the token changed (rotation/fresh install), remove the stale Firestore entry.
+    if (previouslyCachedToken && previouslyCachedToken !== token) {
+      await updateDoc(doc(db, 'users', uid), { fcmTokens: arrayRemove(previouslyCachedToken) }).catch(() => {});
+    }
+
+    await updateDoc(doc(db, 'users', uid), { fcmTokens: arrayUnion(token) });
+    console.log('Web FCM token saved.');
+  } catch (e) {
+    console.warn('Could not save web FCM token:', e);
   }
 }
 
+// Remove the current web FCM token from Firestore and delete it from FCM.
+async function removeWebFcmToken(uid) {
+  if (IS_IN_APP || !uid) return;
+  const token = localStorage.getItem(LS_TOKEN_KEY);
+  if (!token) return;
+  try {
+    await updateDoc(doc(db, "users", uid), { fcmTokens: arrayRemove(token) });
+    if (messaging) { try { await deleteToken(messaging); } catch (_) {} }
+    localStorage.removeItem(LS_TOKEN_KEY);
+    console.log("Web FCM token removed.");
+  } catch (e) {
+    console.warn("Could not remove web FCM token:", e);
+  }
+}
 
+// Initialize messaging on page load (browser only — no-op inside the app)
+if (!IS_IN_APP) initMessaging();
 
-
-const LS_TOKEN_KEY = "currentFcmToken";
 const LS_SKIP_NO_CONFIRM = "skipNoConfirm";
 
 let emailExists = false;
@@ -254,16 +263,9 @@ function getSelectedValues(containerId) {
 }
 
 window.handlePopupYes = async () => {
-  try {
-    if ("Notification" in window) {
-      const permission = Notification.permission;
-      if (permission === "default") {
-        const result = await Notification.requestPermission();
-        console.log("Notification permission result:", result);
-      }
-    }
-  } catch (e) {
-    console.warn("Notification permission check failed:", e);
+  // Ask for notification permission in the browser (app handles this natively)
+  if (!IS_IN_APP && "Notification" in window && Notification.permission === "default") {
+    try { await Notification.requestPermission(); } catch (e) {}
   }
 
   showPopupStep("popupStep2");
@@ -606,16 +608,7 @@ window.signupUser = async () => {
 
     const timestampNow = Timestamp.now();
 
-    // 2. Get the FCM token properly
-    let fcmToken = "";
-    try {
-      fcmToken = await getOrCreateFcmToken();
-      console.log("Signup FCM token obtained:", fcmToken);
-    } catch (e) {
-      console.warn("Unable to get FCM token during signup:", e);
-    }
-
-    // 3. Store user details in Firestore with all requested fields
+    // 2. Store user details in Firestore with all requested fields
     await setDoc(doc(db, "users", user.uid), {
       uid: user.uid,
       email: user.email,
@@ -646,21 +639,25 @@ window.signupUser = async () => {
     });
 
 
-    // 4. Save to localStorage
+    // 3. Save to localStorage
     localStorage.setItem("user", JSON.stringify({
       uid: user.uid,
       email: user.email
     }));
 
-    if (fcmToken) {
-      await updateFcmToken(user.uid);  // Already handles duplicates
+    // 4. Register FCM token — only if user enabled push notifications
+    if (pushEnabled) {
+      if (IS_IN_APP && window.AppBridge) {
+        try { window.AppBridge.onUserLoggedIn(user.uid); } catch (_) {}
+      } else {
+        saveWebFcmToken(user.uid).catch(() => {});
+      }
     }
 
-
-    // 6. Finalize - Show signup success popup
+    // 5. Finalize - Show signup success popup
     showPopupStep("popupSignupSuccess");
 
-    console.log("Signup completed with FCM token stored for:", user.uid);
+    console.log("Signup completed for:", user.uid);
 
     // **Hide the signup success popup after 5 seconds, and unclick the label**
     setTimeout(() => {
@@ -764,26 +761,16 @@ window.loginUser = async () => {
       showPopupStep("popupLoginSuccess");
       console.log("User logged in and data fetched successfully.");
 
-      const token = await getOrCreateFcmToken();
-      if (token) {
-        const userRef = doc(db, "users", user.uid);
-        const userSnap = await getDoc(userRef);
-        if (userSnap.exists()) {
-          const data = userSnap.data();
-          const currentTokens = data.fcmTokens || [];
-
-          // Add only if token doesn't already exist
-          if (!currentTokens.includes(token)) {
-            await updateDoc(userRef, {
-              fcmTokens: arrayUnion(token)
-            });
-
-            console.log("Unique FCM token saved:", token);
-          } else {
-            console.log("FCM token already exists. No update needed.");
-          }
+      // Register FCM token — only if user has push notifications enabled
+      if (userData?.jobSubscription?.pushNotification) {
+        if (IS_IN_APP && window.AppBridge) {
+          try { window.AppBridge.onUserLoggedIn(user.uid); } catch (_) {}
+        } else {
+          saveWebFcmToken(user.uid).catch(() => {});
         }
       }
+
+
 
 
 
@@ -914,52 +901,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById("logoffbtn")?.addEventListener("click", async () => {
   try {
-    const user = auth.currentUser;
-    let token = localStorage.getItem("currentFcmToken") || localStorage.getItem(LS_TOKEN_KEY);
-    console.log("Logging out FCM token:", token);
+    const currentUser = auth.currentUser;
 
-    // Ensure messaging is initialized
-    if (!messaging) {
-      const registration = await navigator.serviceWorker.getRegistration();
-      if (registration) {
-        messaging = getMessaging(app);
+    // 1. Remove FCM token on logout
+    if (currentUser) {
+      if (IS_IN_APP && window.AppBridge) {
+        try { window.AppBridge.onUserLoggedOut(currentUser.uid); } catch (_) {}
+      } else {
+        await removeWebFcmToken(currentUser.uid);
       }
     }
 
-    if (user && token && messaging) {
-      try {
-        // 1. Remove the current FCM token from Firestore's fcmTokens array
-        const userRef = doc(db, "users", user.uid);
-        await updateDoc(userRef, {
-          fcmTokens: arrayRemove(token)  // Remove only the current token
-        });
-        console.log("✅ Current FCM token removed from Firestore.");
-
-        // 2. Remove the current FCM token from Firebase Messaging
-        const deleted = await deleteToken(messaging);
-        if (deleted) {
-          console.log("✅ Current FCM token deleted from Firebase Messaging.");
-        } else {
-          console.warn("⚠️ FCM token could not be deleted.");
-        }
-      } catch (err) {
-        console.error("🔥 Error removing current FCM token during logout:", err);
-      }
-    }
-
-    // 3. Clear current FCM token from localStorage
-    localStorage.removeItem("currentFcmToken");
-    localStorage.removeItem(LS_TOKEN_KEY);
-
-    // 4. Clear other user-related data from localStorage
+    // 2. Clear user-related data from localStorage
     localStorage.removeItem("user");
     localStorage.removeItem("jobAlertPopupShown");
     localStorage.removeItem("LS_SKIP_NO_CONFIRM");
 
-    // 5. Logout the user from Firebase Authentication
+    // 3. Logout the user from Firebase Authentication
     await auth.signOut();
 
-    // 6. Reload the page to reflect logged-out state
+    // 4. Reload the page to reflect logged-out state
     location.reload();
 
   } catch (error) {
@@ -970,109 +931,7 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
 
 
 
-async function fcmSupported() {
-  return "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
-}
 
-async function getOrCreateFcmToken() {
-  if (!(await fcmSupported())) {
-    console.warn("Web FCM not supported on this browser/device.");
-    return null;
-  }
-
-  // Ensure messaging is initialised before proceeding (fixes race condition)
-  if (!messaging) {
-    await initMessaging();
-  }
-  if (!messaging) {
-    console.warn("Messaging could not be initialised. Skipping FCM token fetch.");
-    return null;
-  }
-
-  // If notification permission is "default" (i.e., not decided yet), ask for permission
-  if (Notification.permission === "default") {
-    const permission = await Notification.requestPermission();
-    if (permission !== "granted") return null;  // Exit if permission is not granted
-  }
-
-  // If permission is still not granted, exit early
-  if (Notification.permission !== "granted") return null;
-
-  // Ensure the service worker is ready (initMessaging already registered it).
-  // Use .ready so we always get the active registration rather than creating a second one.
-  let registration;
-  try {
-    registration = await navigator.serviceWorker.ready;
-  } catch (e) {
-    console.error("Could not get SW registration:", e);
-    return null;
-  }
-
-  // Check if token is already cached in localStorage
-  // Even if cached, we still verify it exists in Firestore so a previously-failed
-  // write (e.g. network error during signup) is always recovered on the next visit.
-  const cached = localStorage.getItem(LS_TOKEN_KEY);
-  const currentUser = auth.currentUser;
-
-  if (cached) {
-    // Validate cached token is stored in Firestore (recovery path)
-    if (currentUser) {
-      try {
-        const userRef = doc(db, "users", currentUser.uid);
-        const docSnap = await getDoc(userRef);
-        if (docSnap.exists()) {
-          const existingTokens = docSnap.data().fcmTokens || [];
-          if (!existingTokens.includes(cached)) {
-            await updateDoc(userRef, { fcmTokens: arrayUnion(cached) });
-            console.log("FCM token (cached) synced to Firestore.");
-          }
-        }
-      } catch (e) {
-        console.warn("Could not sync cached FCM token to Firestore:", e);
-      }
-    }
-    return cached;
-  }
-
-  // Get a fresh FCM token from Firebase
-  let token;
-  try {
-    token = await getToken(messaging, {
-      vapidKey: "BMAg3rxpHjJdssyUfVzCcqrP-k89h_OtRzlmQ2OPPQQzoRrKhVeR73JMd6oZ91zO0J_Kx4K2avuIGIbF14RjWIY",
-      serviceWorkerRegistration: registration
-    });
-  } catch (e) {
-    console.error("getToken() failed:", e);
-    return null;
-  }
-
-  // If a token is generated, store it in localStorage and save to Firestore
-  if (token) {
-    localStorage.setItem(LS_TOKEN_KEY, token);
-
-    // Prefer auth.currentUser as the authoritative UID source
-    const uid = auth.currentUser?.uid || JSON.parse(localStorage.getItem("user") || "{}")?.uid;
-    if (uid) {
-      try {
-        const userRef = doc(db, "users", uid);
-        const docSnap = await getDoc(userRef);
-        if (docSnap.exists()) {
-          const existingTokens = docSnap.data().fcmTokens || [];
-          if (!existingTokens.includes(token)) {
-            await updateDoc(userRef, { fcmTokens: arrayUnion(token) });
-            console.log("FCM token successfully saved to Firestore.");
-          } else {
-            console.log("FCM token already exists in Firestore, skipping.");
-          }
-        }
-      } catch (e) {
-        console.warn("Could not save FCM token to Firestore:", e);
-      }
-    }
-  }
-
-  return token || null;
-}
 
 
 
@@ -1081,27 +940,6 @@ window.addEventListener("load", () => {
 
   onAuthStateChanged(auth, async (user) => {
     if (user) {
-      // Start refresh immediately
-      refreshFcmTokenIfNeeded();
-
-      // Run every 24 hours (24 hours = 24 * 60 * 60 * 1000 milliseconds)
-      setInterval(() => {
-        console.log('⏰ 24h FCM refresh running...');
-        refreshFcmTokenIfNeeded();
-      }, 24 * 60 * 60 * 1000); // 24 hours
-
-
-
-      try {
-        const token = await getOrCreateFcmToken();
-        if (token) {
-          console.log("FCM token:", token);
-        } else {
-        }
-      } catch (error) {
-        console.error("Error initializing messaging or getting token:", error);
-      }
-
       // DO NOT show popupStep1 if user is logged in
     } else {
       // Only show popupStep1 if not logged in and neverShowPopup is false
@@ -1183,31 +1021,7 @@ window.clickLabelOnYes = function () {
 };
 
 
-async function updateFcmToken(uid) {
-  try {
-    if (!messaging) await initMessaging();
-    if (!messaging) return;
 
-    // Use exactly the same pipeline. Avoid stray single-shot getToken() calls.
-    const currentToken = await getOrCreateFcmToken();
-    if (!currentToken) return;
-
-    const userRef = doc(db, "users", uid);
-    const userSnap = await getDoc(userRef);
-
-    if (userSnap.exists()) {
-      const userData = userSnap.data();
-      const existingTokens = userData.fcmTokens || [];
-
-      if (!existingTokens.includes(currentToken)) {
-        await updateDoc(userRef, { fcmTokens: arrayUnion(currentToken) });
-        console.log("New FCM token added.");
-      }
-    }
-  } catch (error) {
-    console.warn("Error updating FCM token:", error);
-  }
-}
 
 
 
@@ -1244,40 +1058,33 @@ document.getElementById("yesButtonBlockedNotifications")?.addEventListener("clic
 
 document.getElementById("noButtonBlockedNotifications")?.addEventListener("click", async () => {
   const user = JSON.parse(localStorage.getItem("user"));
-  if (!user?.uid) {
-    // Don't do anything if not logged in
-    console.warn("User not logged in — skipping notification permission request.");
+
+  // Inside the app, just close the popup — notifications are managed natively
+  if (IS_IN_APP || !user?.uid) {
+    document.getElementById("popupBlockedNotifications").style.display = "none";
+    if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
     return;
   }
 
   const permission = Notification.permission;
-
   if (permission === "default") {
     try {
       const result = await Notification.requestPermission();
       if (result === "granted") {
-        // Hide both the popup and job alert popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
         if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
-
-        // Update the FCM token
-        await updateFcmToken(user.uid);
+        await saveWebFcmToken(user.uid);
       } else {
-        // If permission is denied, show the enable notification popup
         document.getElementById("popupBlockedNotifications").style.display = "none";
         document.getElementById("popupEnableNotifications").style.display = "flex";
         if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
       }
-    } catch (e) {
-      console.error("Permission request failed:", e);
-    }
+    } catch (e) { console.error("Permission request failed:", e); }
   } else if (permission === "denied") {
-    // If permission is denied, show enable notification popup
     document.getElementById("popupBlockedNotifications").style.display = "none";
     document.getElementById("popupEnableNotifications").style.display = "flex";
     if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "flex";
-  } else if (permission === "granted") {
-    // If permission is already granted, just hide both the popup and job alert popup
+  } else {
     document.getElementById("popupBlockedNotifications").style.display = "none";
     if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
   }

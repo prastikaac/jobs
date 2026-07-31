@@ -26,6 +26,7 @@ import android.widget.Toast;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -413,6 +414,12 @@ public class MainActivity extends BridgeActivity {
             }
         }, "PageReloader");
 
+        // ── AppBridge: links website login/logout events to native FCM token storage ──
+        // The website JS calls window.AppBridge.onUserLoggedIn(uid) after login/signup,
+        // and onUserLoggedOut(uid) on logout. We then store/remove this device's FCM
+        // token in users/{uid}/fcmTokens so Cloud Functions can target this user.
+        getBridge().getWebView().addJavascriptInterface(new AppBridgeInterface(), "AppBridge");
+
         setupSwipeRefresh();
 
         getBridge().addWebViewListener(new WebViewListener() {
@@ -788,6 +795,79 @@ public class MainActivity extends BridgeActivity {
             backExitToast = Toast.makeText(
                 this, "Press back again to exit", Toast.LENGTH_SHORT);
             backExitToast.show();
+        }
+    }
+
+
+    // =============================================================================
+    //  AppBridge — JavascriptInterface for website → native communication
+    // =============================================================================
+
+    /**
+     * Called by the website JavaScript (popupLogic.js) after successful login or signup.
+     * Fetches this device's FCM token and saves it to users/{uid}/fcmTokens so Cloud
+     * Functions can send personalised push notifications to this user on this device.
+     *
+     * Re-login safety: FCM tokens are device-bound and do NOT change on logout/re-login.
+     * arrayUnion is idempotent — re-adding the same token is a safe no-op.
+     */
+    private class AppBridgeInterface {
+
+        @android.webkit.JavascriptInterface
+        public void onUserLoggedIn(final String uid) {
+            if (uid == null || uid.trim().isEmpty()) return;
+            Log.d(TAG, "AppBridge: user logged in — " + uid);
+
+            // Persist UID so onNewToken() can re-link the token if FCM rotates it
+            getSharedPreferences("app_prefs", MODE_PRIVATE)
+                .edit().putString("logged_in_uid", uid).apply();
+
+            FirebaseMessaging.getInstance().getToken()
+                .addOnSuccessListener(token -> {
+                    if (token == null) return;
+                    Log.d(TAG, "Linking FCM token to user: " + uid);
+
+                    // 1. Add token to users/{uid}/fcmTokens
+                    FirebaseFirestore.getInstance()
+                        .collection("users").document(uid)
+                        .update("fcmTokens", FieldValue.arrayUnion(token))
+                        .addOnFailureListener(e ->
+                            Log.e(TAG, "Failed to link FCM token: " + e.getMessage()));
+
+                    // 2. Keep appDevices in sync with the uid
+                    FirebaseFirestore.getInstance()
+                        .collection("appDevices").document(token)
+                        .update("uid", uid)
+                        .addOnFailureListener(e ->
+                            Log.w(TAG, "appDevices uid sync failed: " + e.getMessage()));
+                })
+                .addOnFailureListener(e -> Log.e(TAG, "getToken() failed in AppBridge: " + e.getMessage()));
+        }
+
+        /**
+         * Called by the website JavaScript on logout.
+         * Removes this device's FCM token from users/{uid}/fcmTokens so the user
+         * no longer receives push notifications on this device after signing out.
+         */
+        @android.webkit.JavascriptInterface
+        public void onUserLoggedOut(final String uid) {
+            if (uid == null || uid.trim().isEmpty()) return;
+            Log.d(TAG, "AppBridge: user logged out — " + uid);
+
+            // Clear stored UID
+            getSharedPreferences("app_prefs", MODE_PRIVATE)
+                .edit().remove("logged_in_uid").apply();
+
+            FirebaseMessaging.getInstance().getToken()
+                .addOnSuccessListener(token -> {
+                    if (token == null) return;
+                    FirebaseFirestore.getInstance()
+                        .collection("users").document(uid)
+                        .update("fcmTokens", FieldValue.arrayRemove(token))
+                        .addOnFailureListener(e ->
+                            Log.e(TAG, "Failed to remove FCM token on logout: " + e.getMessage()));
+                })
+                .addOnFailureListener(e -> Log.e(TAG, "getToken() failed in AppBridge logout: " + e.getMessage()));
         }
     }
 }

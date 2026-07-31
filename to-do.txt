@@ -14,12 +14,12 @@ firebase sends notification to the app also
 
 change app open color to this 
 
+app lagging on first open after showing the splashscreen,  fix it 
+
+app scroll smooth
 
 
 
-there is a bug somewhere in our code where the fcm tokens are not being stored properly or whatever because the user is not receiving the push notification on the device even after allowing notification, so check all of our files and fix it 
-
-remmove invalid fcm tokens
 
 
 change the footer in all the pages 
@@ -27,14 +27,8 @@ change the footer in all the pages
 modify landing page
 
 
-like there is a static delay in website for images loading like imagesloaded little half than full, so is there any way of fixing it ?
 
 
+finjobsinfinland.fi title font small in devices, fix it
 
-app lagging
-
-
-
-
-
-
+fix date and apply button in pinned post

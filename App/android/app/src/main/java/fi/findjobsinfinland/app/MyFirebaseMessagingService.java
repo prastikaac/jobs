@@ -11,6 +11,7 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 
 import com.google.firebase.Timestamp;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
 import com.google.firebase.messaging.FirebaseMessagingService;
@@ -53,7 +54,21 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     public void onNewToken(String token) {
         super.onNewToken(token);
         Log.d(TAG, "New FCM token: " + token);
+
+        // 1. Always save to appDevices (existing behaviour — anonymous device registry)
         saveTokenToFirestore(token);
+
+        // 2. If a user is currently logged in, re-link the new token to their account.
+        //    The old token is automatically invalidated by FCM; arrayUnion adds the new one.
+        String uid = getSharedPreferences("app_prefs", MODE_PRIVATE)
+                .getString("logged_in_uid", null);
+        if (uid != null && !uid.isEmpty()) {
+            FirebaseFirestore.getInstance()
+                .collection("users").document(uid)
+                .update("fcmTokens", FieldValue.arrayUnion(token))
+                .addOnSuccessListener(v -> Log.d(TAG, "Rotated FCM token re-linked to user: " + uid))
+                .addOnFailureListener(e -> Log.w(TAG, "Could not re-link rotated token: " + e.getMessage()));
+        }
     }
 
     private void saveTokenToFirestore(String token) {
