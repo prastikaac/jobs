@@ -48,10 +48,12 @@ const auth = getAuth(app);
 
 
 // ── Platform detection ──────────────────────────────────────────────────────
-// Capacitor injects a custom User-Agent for both Android and iOS builds.
-// We use this flag to skip web FCM logic inside the app — the app manages
-// push notifications natively via MyFirebaseMessagingService + AppBridge.
-const IS_IN_APP = /FindJobsFinlandApp/i.test(navigator.userAgent);
+// Two reliable signals that we are running inside the native app:
+//  1. User-Agent: Capacitor injects "FindJobsFinlandApp" via overrideUserAgent.
+//  2. window.AppBridge: injected by addJavascriptInterface in MainActivity.onStart().
+// Checking both protects against cases where the Capacitor sync hasn't propagated
+// the custom UA or where AppBridge hasn't been registered yet when this module loads.
+const IS_IN_APP = /FindJobsFinlandApp/i.test(navigator.userAgent) || !!window.AppBridge;
 
 // ── Web FCM (browser users only) ─────────────────────────────────────────────
 const LS_TOKEN_KEY = "currentFcmToken";
@@ -660,13 +662,14 @@ window.signupUser = async () => {
       email: user.email
     }));
 
-    // 4. Register FCM token — only if user enabled push notifications
-    if (pushEnabled) {
-      if (IS_IN_APP && window.AppBridge) {
-        try { window.AppBridge.onUserLoggedIn(user.uid); } catch (_) {}
-      } else {
-        saveWebFcmToken(user.uid).catch(() => {});
-      }
+    // 4. Register FCM token.
+    // In the app: ALWAYS call AppBridge so the device's FCM token is linked to
+    // this user. OS notification permission is the real gate for showing alerts.
+    // On web: only save the token if the user explicitly enabled push.
+    if (IS_IN_APP && window.AppBridge) {
+      try { window.AppBridge.onUserLoggedIn(user.uid); } catch (_) {}
+    } else if (pushEnabled) {
+      saveWebFcmToken(user.uid).catch(() => {});
     }
 
     // 5. Finalize - Show signup success popup
@@ -776,13 +779,13 @@ window.loginUser = async () => {
       showPopupStep("popupLoginSuccess");
       console.log("User logged in and data fetched successfully.");
 
-      // Register FCM token — only if user has push notifications enabled
-      if (userData?.jobSubscription?.pushNotification) {
-        if (IS_IN_APP && window.AppBridge) {
-          try { window.AppBridge.onUserLoggedIn(user.uid); } catch (_) {}
-        } else {
-          saveWebFcmToken(user.uid).catch(() => {});
-        }
+      // Register FCM token.
+      // In the app: ALWAYS call AppBridge — OS permission gates actual notification delivery.
+      // On web: only save the token if the user has push notifications enabled.
+      if (IS_IN_APP && window.AppBridge) {
+        try { window.AppBridge.onUserLoggedIn(user.uid); } catch (_) {}
+      } else if (userData?.jobSubscription?.pushNotification) {
+        saveWebFcmToken(user.uid).catch(() => {});
       }
 
 

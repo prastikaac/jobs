@@ -264,6 +264,15 @@ public class MainActivity extends BridgeActivity {
             // Enforce DOM storage (localStorage) which most cookie banners use
             getBridge().getWebView().getSettings().setDomStorageEnabled(true);
             getBridge().getWebView().getSettings().setDatabaseEnabled(true);
+
+            // Guarantee the custom User-Agent contains "FindJobsFinlandApp" so the
+            // website's IS_IN_APP flag works even if Capacitor's overrideUserAgent
+            // hasn't been synced to this build of the Android project.
+            String currentUA = getBridge().getWebView().getSettings().getUserAgentString();
+            if (currentUA != null && !currentUA.contains("FindJobsFinlandApp")) {
+                getBridge().getWebView().getSettings()
+                    .setUserAgentString(currentUA + " FindJobsFinlandApp/1.0");
+            }
             
             // If the app is launched offline, bypass the 10-second WebView timeout
             // and immediately load the offline page.
@@ -821,6 +830,11 @@ public class MainActivity extends BridgeActivity {
             // Persist UID so onNewToken() can re-link the token if FCM rotates it
             getSharedPreferences("app_prefs", MODE_PRIVATE)
                 .edit().putString("logged_in_uid", uid).apply();
+
+            // Re-request notification permission as a safety net.
+            // This is a no-op if already granted. Covers the case where the user
+            // dismissed the initial onCreate() dialog without making a choice.
+            runOnUiThread(() -> requestNotificationPermission());
 
             FirebaseMessaging.getInstance().getToken()
                 .addOnSuccessListener(token -> {
