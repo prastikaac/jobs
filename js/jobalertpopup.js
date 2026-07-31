@@ -20,7 +20,7 @@ jobAlertPopup.innerHTML = `
         job postings that match your preferences.
       </p>
       <div class="popup-buttons-unique">
-        <button class="yes-btn-unique" onclick="handlePopupYes(); clickLabelOnYes()">Yes</button>
+        <button class="yes-btn-unique" onclick="handlePopupYes()">Yes</button>
         <button class="no-btn-unique" onclick="handlePopupNo()">No</button>
       </div>
     </div>
@@ -41,7 +41,7 @@ jobAlertPopup.innerHTML = `
       </p>
       <div class="finalbuttons-unique">
         <button class="yesbtn-unique" onclick="handleNoSkipAlerts()">No, skip alerts</button>
-        <button class="nobtn-unique" onclick="handlePopupYes(); clickLabelOnYes()">Yes, notify me</button>
+        <button class="nobtn-unique" onclick="handlePopupYes()">Yes, notify me</button>
       </div>
     </div>
 
@@ -67,7 +67,7 @@ jobAlertPopup.innerHTML = `
       </label>
       <div class="finalbuttons-unique">
         <button class="yesbtn-unique" onclick="confirmFinalNo(true)">Yes, I’m sure</button>
-        <button class="nobtn-unique" onclick="handlePopupYes(); clickLabelOnYes()">No, go back</button>
+        <button class="nobtn-unique" onclick="handlePopupYes()">No, go back</button>
       </div>
     </div>
 

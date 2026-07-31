@@ -262,16 +262,31 @@ function getSelectedValues(containerId) {
   return selected;
 }
 
-window.handlePopupYes = async () => {
-  // Ask for notification permission in the browser (app handles this natively)
-  if (!IS_IN_APP && "Notification" in window && Notification.permission === "default") {
-    try { await Notification.requestPermission(); } catch (e) {}
+window.handlePopupYes = function () {
+  // Open the popup container immediately — this starts the CSS open animation
+  // right away so the user sees an instant response on click.
+  // (clickLabelOnYes is no longer called separately from the onclick attribute.)
+  window.clickLabelOnYes?.();
+
+  function _showStep2() {
+    showPopupStep("popupStep2");
+    if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
+    document.getElementById("profile-card-container").style.display = "block";
   }
 
-  showPopupStep("popupStep2");
+  // Fast path: permission already decided (granted/denied) or we're in the app.
+  // Show step 2 synchronously — no async delay whatsoever.
+  if (IS_IN_APP || !("Notification" in window) || Notification.permission !== "default") {
+    _showStep2();
+    return;
+  }
 
-  if (document.getElementById("jobAlertPopup")) document.getElementById("jobAlertPopup").style.display = "none";
-  document.getElementById("profile-card-container").style.display = "block";
+  // Slow path: permission is still "default" — ask the user.
+  // The container is already opening (from clickLabelOnYes above), so the
+  // browser dialog appears while the animation plays in the background.
+  Notification.requestPermission()
+    .catch(() => {})
+    .finally(_showStep2);
 };
 
 
@@ -916,6 +931,7 @@ document.getElementById("logoffbtn")?.addEventListener("click", async () => {
     localStorage.removeItem("user");
     localStorage.removeItem("jobAlertPopupShown");
     localStorage.removeItem("LS_SKIP_NO_CONFIRM");
+    localStorage.removeItem("neverShowJobAlertPopup"); // Reset so popup shows again for next user/session
 
     // 3. Logout the user from Firebase Authentication
     await auth.signOut();
@@ -940,11 +956,20 @@ window.addEventListener("load", () => {
 
   onAuthStateChanged(auth, async (user) => {
     if (user) {
-      // DO NOT show popupStep1 if user is logged in
+      // Logged in via Firebase — DO NOT show popupStep1
+      // Also ensure localStorage is in sync
+      if (!localStorage.getItem("user")) {
+        localStorage.setItem("user", JSON.stringify({ uid: user.uid, email: user.email }));
+      }
     } else {
-      // Only show popupStep1 if not logged in and neverShowPopup is false
+      // Firebase definitively says user is NOT logged in.
+      // Clear any stale localStorage user data so the rest of the page
+      // (e.g., the blocked-notification DOMContentLoaded handler) doesn't
+      // mistakenly think the user is logged in.
+      localStorage.removeItem("user");
+
+      // Only show popupStep1 if neverShowPopup is false
       if (!neverShowPopup) {
-        // Only show popupStep1 automatically if we are NOT on the edit-profile page
         if (!window.location.pathname.includes("edit-profile")) {
           setTimeout(() => {
             showPopupStep("popupStep1")
@@ -1029,14 +1054,24 @@ window.clickLabelOnYes = function () {
 
 
 window.addEventListener("DOMContentLoaded", () => {
+  // The blocked-notification popup is a web-only concern.
+  // In the app, Android/iOS handles notification permission natively — skip entirely.
+  if (IS_IN_APP) return;
+
   const skipNoConfirm = localStorage.getItem("LS_SKIP_NO_CONFIRM");
   const user = JSON.parse(localStorage.getItem("user"));
 
+  // Both conditions must hold:
+  //  1. User must be logged in (checked by login state, NOT notification state)
+  //  2. Notification API must be available in this browser
   if (!("Notification" in window) || !user?.uid) return;
 
   setTimeout(() => {
     const permission = Notification.permission;
 
+    // Only show the blocked popup if the user is logged in AND notification
+    // permission has not been granted. This ensures the popup is NEVER shown
+    // purely based on notification state — login state is the primary gate.
     if ((permission === "denied" || permission === "default") && skipNoConfirm !== "true") {
       const blockedPopup = document.getElementById("popupBlockedNotifications");
 
@@ -1045,7 +1080,7 @@ window.addEventListener("DOMContentLoaded", () => {
         blockedPopup.style.display = "flex";
       }
     }
-  }, 100); // Delay helps browser finish determining permission
+  }, 100); // Small delay gives the browser time to settle the permission state
 });
 
 
