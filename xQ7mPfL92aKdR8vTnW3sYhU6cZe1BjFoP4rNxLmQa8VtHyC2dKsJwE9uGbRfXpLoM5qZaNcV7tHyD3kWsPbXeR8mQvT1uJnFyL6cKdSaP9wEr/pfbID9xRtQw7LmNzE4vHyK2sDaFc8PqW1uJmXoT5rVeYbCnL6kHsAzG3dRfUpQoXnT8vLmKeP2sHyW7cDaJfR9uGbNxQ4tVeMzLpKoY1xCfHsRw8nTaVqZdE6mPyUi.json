@@ -304853,5 +304853,1322 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-08 10:00:15",
+    "jobs": [
+      {
+        "id": "a805b12d",
+        "job_id": "warehouse-worker-jyväskylä-a805b12d",
+        "processed": true,
+        "title": "Warehouse Worker",
+        "company": "Buugi Oy, Jyväskylä",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:teemu.manninen@buugi.fi?subject=Application%20for%20the%20Job%20-%20Warehouse%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Warehouse%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4f111d42-8338-405e-93e8-c95a537fc45b/en",
+        "job_employer_email": "teemu.manninen@buugi.fi",
+        "job_employer_name": "Teemu Manninen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/warehouse-worker-jyväskylä-a805b12d",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-08 10:00:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Buugi Oy, Jyväskylä as a Warehouse Worker in Jyväskylä. Learn more about the role and apply now.",
+        "description": "We are seeking a Warehouse Worker for Buugi Oy in Jyväskylä. This position involves cleaning duties in the morning and evening shifts, typically from 17:00 to 23:00 or 5:00 to 12:00, with an average weekly working time of 0-20 hours. A strong grasp of Finnish language skills is essential, and the ability to use one's own car is preferred due to the working hours. Applications should be submitted via email to teemu.manninen@buugi.fi. For further information, please contact 044-7364205.",
+        "what_we_expect": [
+          "Good physical fitness.",
+          "Ability to work in a fast-paced environment.",
+          "Knowledge of basic inventory management."
+        ],
+        "job_responsibilities": [
+          "Packing and organizing inventory.",
+          "Handling and storing goods.",
+          "Inspecting and maintaining equipment."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Flexible working hours."
+        ],
+        "search_keywords": "warehouse worker, warehouse cleaner, job opening, warehouse position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "b64f86a9",
+        "job_id": "industrial-cleaner-raahe-b64f86a9",
+        "processed": true,
+        "title": "Industrial Cleaner",
+        "company": "Worker Oulu Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Raahe",
+          "Merijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://worker.likeit.fi/apply/121923596",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a8e087bc-3e08-4a4d-8e0e-5ec5f13336f0/en",
+        "job_employer_email": "satu.takkula@worker.fi",
+        "job_employer_name": "Satu Takkula",
+        "job_employer_phone_no": "+358505567899",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/industrial-cleaner-raahe-b64f86a9",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-23",
+        "scraped_at": "2026-09-08 10:00:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Industrial Cleaner role at Worker Oulu Oy. Join a growing team and build your career in Raahe.",
+        "description": "We are looking for Industrial Cleaners for our client company in Raahe, Merijärvi, for a maintenance shutdown in November 2026. The job involves process cleaning, high-power vacuuming, and high-pressure washing in demanding conditions. You will work in both outside and inside factory areas, emphasizing safety and teamwork. No previous experience is required, but a positive attitude is key. You will be introduced to the job, and the salary is competitive, ranging from 12.59 to 16 euros per hour based on skills and experience. The work requires flexibility in hours, willingness to work in demanding conditions, good physical condition, a valid occupational safety card, and a safe work ethic.",
+        "what_we_expect": [
+          "Good physical condition and valid occupational safety card.",
+          "A willingness to work in demanding conditions and as part of a team.",
+          "The work requires."
+        ],
+        "job_responsibilities": [
+          "Perform process cleaning, high-power vacuuming, and high-pressure washing tasks.",
+          "Work in demanding conditions, including both outside and inside the factory area.",
+          "Versatile tasks."
+        ],
+        "what_we_offer": [
+          "A salary in accordance with the TES of the real estate service industry or better, paid on time.",
+          "Versatile tasks and a great team atmosphere.",
+          "We offer you."
+        ],
+        "search_keywords": "Industrial Cleaner, Maintenance Shutdown, November 2026, Factory Area, Safety, Teamwork, Salary, Versatile Tasks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "cbe22c22",
+        "job_id": "taxi-driver-rovaniemi-cbe22c22",
+        "processed": true,
+        "title": "Taxi Driver",
+        "company": "Täyttö Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.taytto.fi/jobs/8336994-taksinkuljettajia-rovaniemelle/applications/new?promotion=2183964-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/51a561ad-1f11-420e-aaf7-991b3055b568/en",
+        "job_employer_email": "malla@taytto.fi",
+        "job_employer_name": "Malla",
+        "job_employer_phone_no": "+358503778557",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-rovaniemi-cbe22c22",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-08 10:00:15",
+        "open_positions": 1,
+        "salary_range": "Salary based on contract and experience, and at",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Taxi Driver role at Täyttö Oy. Join a growing team and build your career in Rovaniemi.",
+        "description": "We are looking for experienced and enthusiastic taxi drivers to join our team in Rovaniemi, Finland. Seasonal positions are available during the Lapland winter season, offering the opportunity to transport happy customers and enjoy the beautiful winter scenery. Shift work is required, with a focus on evenings, and the job requires a positive customer service attitude, good driving skills, and fluency in Finnish and English. A valid driver's license and a B license are essential, and a company-specific salary supplement is available. Accommodation is provided in close proximity to the workplace. For more information, please contact us at 050 377 8557 or malla@taytto.fi.",
+        "what_we_expect": [
+          "Fluent Finnish and English language skills.",
+          "A valid B driver's license and a valid taxi driver's license.",
+          "Taxi drivers in Rovaniemi!"
+        ],
+        "job_responsibilities": [
+          "Transport customers in Rovaniemi's winter scenery.",
+          "Drive both private cars and minibuses.",
+          "Taxi drivers in Rovaniemi!"
+        ],
+        "what_we_offer": [
+          "Accommodation offered at a cheap price close to the workplace.",
+          "A company-specific salary supplement in every salary.",
+          "Taxi drivers in Rovaniemi!"
+        ],
+        "search_keywords": "taxi driver rovaniemi winter season",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "6eadacea",
+        "job_id": "skilled-welder-pori-6eadacea",
+        "processed": true,
+        "title": "Skilled Welder",
+        "company": "Benevan Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5879793",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/494035ea-d7d2-4648-a2a6-3b9f3e88d991/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/skilled-welder-pori-6eadacea",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:15",
+        "open_positions": 1,
+        "salary_range": "salary: We pay a competent and conscientious wor",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Benevan Oy as a Skilled Welder and grow your career in Pori. Check details and apply now.",
+        "description": "Benevan Oy is seeking a skilled welder for permanent employment in Pori. This position involves welding reinforcements and armoring for vehicles at a high-quality machine shop. The role requires a good command of the Finnish language and an independent working attitude. The salary is competitive based on Finnish collective agreements, and the company offers stable day jobs with predictable schedules, a competitive salary, good work tools, a long-term career, and occupational health care.",
+        "what_we_expect": [
+          "Training and experience in welding.",
+          "Independent working attitude.",
+          "Teamwork skills.",
+          "Smooth teamwork.",
+          "Self-initiative.",
+          "Motivated to take action."
+        ],
+        "job_responsibilities": [
+          "Welding reinforcements/armouring to vehicles.",
+          "Working on weekdays as a day job.",
+          "We expect from you."
+        ],
+        "what_we_offer": [
+          "Stable day job.",
+          "Competitive salary.",
+          "Good work tools.",
+          "Long-term career with direct employment in the client company's name.",
+          "Occupational health care."
+        ],
+        "search_keywords": "welder, skilled, welder, permanent, employment, machine shop, Pori, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "25369d4b",
+        "job_id": "area-it-director-alajärvi-25369d4b",
+        "processed": true,
+        "title": "Area IT Director",
+        "company": "Barona IT Talent Oy",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Alajärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/en/jobs/area-it-manager-finland-and-europe-ruukki-construction-oy-2eedeac0-584d-47db-87e6-7f8e0bf52f81-9eda302b",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/10f60951-5b34-44b4-972d-fbb8e9e8850b/en",
+        "job_employer_email": "arja.martikainen@barona.fi",
+        "job_employer_name": "Arja Martikainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/area-it-director-alajärvi-25369d4b",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-10-04",
+        "scraped_at": "2026-09-08 10:00:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Area IT Director at Barona IT Talent Oy, located in Alajärvi. Apply now and get started.",
+        "description": "Area IT Manager Finland and Europe Ruukki Construction aims to drive the construction industry towards carbon neutrality with its products. Our 1,350 employees in 10 European countries and 14 specialized manufacturing sites provide steel-based building products and services for roofs and walls in sustainable buildings. We serve our customers locally under our main brands Ruukki and Plannja. Our net sales in 2024 were approximately EUR 481 million. We are of Nordic origin and share our values and long experience in the steel and construction industry with our parent company SSAB. Do you want to be part of building a more sustainable future and be part of a professional and successful team in an international company? Maybe this is your new challenge!",
+        "what_we_expect": [
+          "For more information, please contact.",
+          "Please note: Background check may be a part of the recruitment process.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "For more information, please contact.",
+          "Please note: Background check may be a part of the recruitment process.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "For more information, please contact.",
+          "Please note: Background check may be a part of the recruitment process.",
+          "Professional work environment."
+        ],
+        "search_keywords": "Area IT Director Barona IT Talent Oy Alajärvi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-08 10:00:18",
+    "jobs": [
+      {
+        "id": "3323b8ea",
+        "job_id": "cnc-machinist-parainen-3323b8ea",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Benevan Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Parainen"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5207678",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b08316c4-9729-4915-873b-76f7d88b299e/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-parainen-3323b8ea",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:18",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Benevan Oy is looking for a skilled CNC Machinist in Parainen. Don't miss this opportunity—apply today.",
+        "description": "Benevan Oy is seeking a CNC Machinist for a permanent position in Parainen, Finland. This experienced professional will join a reputable machine shop known for its expertise in heavy steel structures and modern machinery. The role involves machining medium and heavy parts, using Siemens controlled machine tools and programming, and contributing to quality assurance and documentation. The 2-shift job offers a competitive hourly wage based on Finnish collective agreements. The company values reliability, quality, and a supportive team. Interested candidates should have 3+ years of CNC machining experience, proficiency in Siemens control systems, a basic degree in machinist or mechanical production technology, and a meticulous, independent work ethic.",
+        "what_we_expect": [
+          "Experience: You already have a few years of strong work experience in CNC machining (especially milling).",
+          "Control system knowledge: You master the Siemens operating program smoothly.",
+          "Education: Basic degree in machinist or mechanical and production technology.",
+          "Work experience: You are meticulous, able to work independently based on drawings and understand the importance of quality in heavy machining."
+        ],
+        "job_responsibilities": [
+          "Machining of medium and heavy parts.",
+          "CNC milling, threading and drilling.",
+          "Independent use of Siemens controlled machine tools.",
+          "Programming and making program changes (Siemens).",
+          "Quality assurance and documentation of work steps."
+        ],
+        "what_we_offer": [
+          "A long-term job in a reputable family company.",
+          "The opportunity to work on exceptionally large and demanding projects.",
+          "A competitive salary commensurate with the TES of the technology industry and your previous experience.",
+          "A professional and supportive team and appropriate work tools.",
+          "High-quality and appropriate work clothes and equipment.",
+          "Occupational health care."
+        ],
+        "search_keywords": "CNC Machinist CNC Machinist CNC Machinist CNC Machinist CNC Machinist",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-08 10:00:19",
+    "jobs": [
+      {
+        "id": "4bd05e89",
+        "job_id": "cnc-machinist-specialist-rauma-4bd05e89",
+        "processed": true,
+        "title": "CNC Machinist Specialist",
+        "company": "Benevan Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5299576",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/20e4ea2e-dfef-4ff6-8f10-ab3924f40806/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-specialist-rauma-4bd05e89",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting CNC Machinist Specialist position available at Benevan Oy in Rauma. Check requirements and submit your application today.",
+        "description": "Benevan Oy is seeking a CNC Machinist Specialist in Rauma, Finland, to manufacture molds for a client company. This role requires meticulous work and precise laboratory-level precision. The company values self-starters and team players who can adapt to close teamwork and initiative. The position offers competitive hourly wages based on Finnish collective agreements and a commitment to growth into a specialist. The team values reliability, attitude, occupational safety, and courage to take on new challenges.",
+        "what_we_expect": [
+          "Previous experience in CNC machining.",
+          "Ability to adapt to close teamwork and initiative.",
+          "CAM programming skills.",
+          "Able to work as a day job or be ready for shift work based on the situation."
+        ],
+        "job_responsibilities": [
+          "Manufacturing molds for a client company in Rauma, focusing on high-level precision.",
+          "Adapting to close teamwork and taking initiative in CNC machining.",
+          "We expect from you."
+        ],
+        "what_we_offer": [
+          "Top class orientation.",
+          "Long-term employment in a respected and expert work community.",
+          "Starting salary according to skills and TES.",
+          "A good work community, professional colleagues, and a practical work environment.",
+          "Occupational health care."
+        ],
+        "search_keywords": "CNC Machinist Specialist, Rauma, CNC Machinist, Rauma, CNC Machinist, Rauma, CNC Machinist, Rauma",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "6f0ba072",
+        "job_id": "senior-electrician-turku-6f0ba072",
+        "processed": true,
+        "title": "Senior Electrician",
+        "company": "HR Satama",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.hrsatama.fi/jobs/8337003-sahkoasentaja-turkuun/applications/new?promotion=2183963-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ef669ac2-7263-4e06-8156-3fb014a8963d/en",
+        "job_employer_email": "suorahakutiimi@hrsatama.fi",
+        "job_employer_name": "Suorahakutiimi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/senior-electrician-turku-6f0ba072",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-10-04",
+        "scraped_at": "2026-09-08 10:00:19",
+        "open_positions": 1,
+        "salary_range": "SALARY LEVEL APPROXIMATELY €20/H Our client is",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Senior Electrician at HR Satama, located in Turku. Apply now and get started.",
+        "description": "We are looking for an experienced electrical expert in Turku, Finland, to join our internationally operating expert company in technical services and property maintenance. The ideal candidate will have strong expertise in the electrical field and preferably experience in building automation. They should approach problems in a practical way and find solutions that work for them. Previous experience with customer or construction sites is considered an advantage. The salary for this position is competitive and based on Finnish collective agreements, with a salary level of approximately €20/h. We offer a long-term job, versatile electrical and automation tasks, varied customer and construction sites, the opportunity to develop professional skills, and a stable work environment.",
+        "what_we_expect": [
+          "Strong expertise in electrical field and experience in building automation.",
+          "Previous experience with customer or construction sites is considered an advantage.",
+          "Start: As soon as a suitable author is found."
+        ],
+        "job_responsibilities": [
+          "Troubleshoot electrical and automation systems in various locations.",
+          "Work independently to solve technical problems in demanding customer environments.",
+          "Start: As soon as a suitable author is found."
+        ],
+        "what_we_offer": [
+          "Long-term job.",
+          "Versatile electrical and automation tasks.",
+          "Varying customer and construction sites.",
+          "Opportunity to develop professional skills.",
+          "Stable work environment in an international expert organization."
+        ],
+        "search_keywords": "Senior Electrician, Electrical Expert, Building Automation, Technical Services, Property Maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "d994506b",
+        "job_id": "delivery-truck-driver-turku-d994506b",
+        "processed": true,
+        "title": "Delivery Truck Driver",
+        "company": "Benevan Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5879525",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1c4b5f4d-c3ea-4660-9c8a-7a262cf6a4b5/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/delivery-truck-driver-turku-d994506b",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Delivery Truck Driver at Benevan Oy in Turku. Apply now and take the next step in your career.",
+        "description": "Benevan Oy is seeking a delivery truck driver with a C card for permanent employment in the Turku region. This position involves transporting goods to customers in Northern Finland, utilizing a new fully electric truck with a tail lift. The work schedule includes starting at 2:00 AM at the Lieto terminal and working approximately 12-13 hours per day. Physical fitness and previous experience in piecework are required, with a strong emphasis on the Finnish language for job security and effective communication. The company offers a competitive hourly wage based on Finnish collective agreements, comprehensive introduction to work tools, high-quality equipment, and the possibility of a long-term job. Additionally, employees enjoy occupational health care and a reliable employer.",
+        "what_we_expect": [
+          "Willingness to commit to a comfortable workplace and work environment.",
+          "C driving license.",
+          "A valid driver's professional qualification permit.",
+          "A valid digital recorder card.",
+          "Good physical condition.",
+          "Previous experience in the distribution of piece goods by truck."
+        ],
+        "job_responsibilities": [
+          "Transporting piece goods to customers in the Northern Finland area.",
+          "Using a new fully electric truck with a tail lift.",
+          "We expect you to."
+        ],
+        "what_we_offer": [
+          "A reliable and good employer.",
+          "Comprehensive introduction to work tools.",
+          "High-quality work equipment.",
+          "The possibility of getting a long-term job.",
+          "Occupational health care."
+        ],
+        "search_keywords": "delivery truck driver, truck driver, delivery driver, delivery truck, truck driver job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "b68e5d9d",
+        "job_id": "professional-welder-lahti-b68e5d9d",
+        "processed": true,
+        "title": "Professional Welder",
+        "company": "Benevan Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5560718",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/03bdf768-ab74-4377-937e-e7b6878cf11b/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/professional-welder-lahti-b68e5d9d",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:19",
+        "open_positions": 1,
+        "salary_range": "salary: We pay a competent and conscientious wor",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Professional Welder at Benevan Oy. Great opportunity in Lahti—apply now.",
+        "description": "We are looking for a skilled welder for a permanent position at our machine shop in Lahti, Finland. This role involves working on individual pieces and small series, using black steel (MAG welding) and ensuring the quality and finish of seams. The position offers competitive hourly wages based on Finnish collective agreements and comes with a stable day job, predictable working hours, and a competitive salary. A good command of the Finnish language is essential for this role. If you are passionate about neat workmanship and technical precision, this is the place for you. Submit your application and CV via the application link today!",
+        "what_we_expect": [
+          "Versatile welding experience.",
+          "Excellent image reading skills.",
+          "Adapting to changing situations and tasks.",
+          "Ability to work smoothly as part of a team.",
+          "Self-initiative: Motivated to take action and ensure the quality of work from start to finish."
+        ],
+        "job_responsibilities": [
+          "Use expertise in demanding individual pieces and small series to build and weld versatile assemblies, single pieces, and small series.",
+          "Work with black steel (MAG welding) and ensure the quality and finish of the seam.",
+          "Adapting to changing situations and tasks."
+        ],
+        "what_we_offer": [
+          "Stable day job: Regular working hours on weekdays and a predictable everyday life.",
+          "Competitive salary: Fair compensation for a competent and conscientious worker.",
+          "Good work tools: High-quality environment where good work results are valued.",
+          "A long-term career: Direct employment in the client company's own name after the rental period.",
+          "Occupational health care."
+        ],
+        "search_keywords": "professional welder, machine shop, Lahti, welding, skilled welder",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "27fdc5df",
+        "job_id": "cnc-machinist-kouvola-27fdc5df",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Benevan Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5243864",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fb8572be-a8ab-48ec-8963-d40245782ccd/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-kouvola-27fdc5df",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:19",
+        "open_positions": 1,
+        "salary_range": "salary is approx",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a CNC Machinist at Benevan Oy. Great opportunity in Kouvola—apply now.",
+        "description": "We are looking for an experienced 5-axis machinist for our client company in Kouvola, Finland. This position offers a competitive hourly wage based on Finnish collective agreements and a stable, long-term employment opportunity. The role involves the production of demanding and technically challenging pieces using 5-axis machining centers, with the ability to work independently based on drawings. Modern machinery, including Heidenhain, Siemens, and WinMax control systems, is utilized. The 2-shift job starts as soon as a suitable worker is found, and the work is expected to begin immediately. The salary is approximately €15/h, with potential increases based on experience and training. The company values reliability, a positive attitude, and a commitment to occupational safety.",
+        "what_we_expect": [
+          "Strong evidence of 5-axis machining and settings.",
+          "Experience with at least one of the mentioned control systems (Heidenhain, Siemens or WinMax).",
+          "Carefulness, quality thinking, and the ability to read technical pictures.",
+          "Want to develop your own skills and take responsibility for a high-quality end result."
+        ],
+        "job_responsibilities": [
+          "Responsible for the production of demanding and technically challenging pieces with 5-axis machining centers.",
+          "Work independently based on drawings.",
+          "Use modern machinery and control systems such as Heidenhain, Siemens, and WinMax.",
+          "Perform 2-shift work and start as soon as a suitable worker is found."
+        ],
+        "what_we_offer": [
+          "Long-term employment in a stable company.",
+          "Starting salary of approximately €15/h, which will be revised according to experience and TES.",
+          "A good work community, professional colleagues, and a proper work environment.",
+          "Occupational health care."
+        ],
+        "search_keywords": "CNC Machinist, 5-axis, CNC Machinist, CNC Machinist, CNC Machinist",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-08 10:00:20",
+    "jobs": [
+      {
+        "id": "a46f5ae0",
+        "job_id": "machinist-pori-a46f5ae0",
+        "processed": true,
+        "title": "Machinist",
+        "company": "Benevan Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5293557",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d095796d-6789-4dc0-851c-293c3398204c/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/machinist-pori-a46f5ae0",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Benevan Oy is hiring a Machinist in Pori. Explore responsibilities, benefits, and apply today.",
+        "description": "Benevan Oy is seeking an experienced machinist for their machine shop in Pori, Finland. This role involves working with a Heidenhain-controlled drill press and performing a variety of tasks. The company offers competitive hourly wages based on Finnish collective agreements and provides shift work with a minimum salary equivalent to the TES rate. The workplace is modern, and the company values quality, professionalism, and a good team. Interested candidates should have experience in aarboring, Heidenhain-controlled machining centers, reading skills in drawings, and familiarity with TOS machines. The salary is competitive, and the company offers long-term employment, modern machines, safe working conditions, and occupational health care.",
+        "what_we_expect": [
+          "Experience in aarboring.",
+          "Experience with Heidenhain controlled machining centers.",
+          "Reading skills in drawings.",
+          "Experience with TOS machines.",
+          "Willingness to work in 2 shifts.",
+          "Good knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Work with a Heidenhain-controlled drill press.",
+          "Perform a wide variety of different tasks.",
+          "Use accuracy and independent programming skills."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Long-term employment in a growing and developing company.",
+          "Modern machines and safe working conditions.",
+          "The opportunity to expand skills and advance in career.",
+          "Occupational health care."
+        ],
+        "search_keywords": "Machinist, experience, Heidenhain, drilling, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "1ec41d55",
+        "job_id": "concrete-pump-truck-driver-lappeenranta-1ec41d55",
+        "processed": true,
+        "title": "Concrete Pump Truck Driver",
+        "company": "Benevan Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/5499208",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a339e64b-8e19-4357-aaab-7e533ef58ca0/en",
+        "job_employer_email": "ismo.nieminen@benevan.fi",
+        "job_employer_name": "Ismo Nieminen",
+        "job_employer_phone_no": "+358413116564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/concrete-pump-truck-driver-lappeenranta-1ec41d55",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Concrete Pump Truck Driver at Benevan Oy, located in Lappeenranta. Apply now and get started.",
+        "description": "Benevan Oy is seeking an experienced concrete pump truck driver for their client in Lappeenranta. This position involves the secure management and smooth progress of construction sites. Previous experience with concrete pumps, strong experience in transporting heavy equipment, and qualifications such as a C driver's license, professional qualifications, work safety card, and digital plotter card are highly valued. The fleet consists of Volvo and MB trucks equipped with Putzmeister concrete pumps. The working day can vary depending on the situation, but it typically starts at 7:00 AM and ends around 16:00 PM, with a length of the days varying somewhat. The car is parked in the customer's hall in Lappeenranta.",
+        "what_we_expect": [
+          "Previous experience: You know the inner life of a concrete pump or concrete truck.",
+          "Other strong experience in transporting heavy equipment is also considered to your advantage.",
+          "Experience with Putzmeister would be a big plus.",
+          "Qualifications: In your pocket you will find a C driver's license, valid professional qualifications, work safety card and digital plotter card."
+        ],
+        "job_responsibilities": [
+          "Secure management of the equipment and the smooth progress of the construction site.",
+          "Take responsibility for their work and want to get things done at once.",
+          "We expect from you."
+        ],
+        "what_we_offer": [
+          "A reliable and good employer.",
+          "Comprehensive introduction to work tools.",
+          "High-quality work equipment.",
+          "The possibility of getting a long-term job.",
+          "Occupational health care."
+        ],
+        "search_keywords": "Concrete Pump Truck Driver, Lappeenranta, construction industry, experience, Putzmeister, Volvo, MB trucks, work safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "a32f9a86",
+        "job_id": "combination-vehicle-driver-vantaa-a32f9a86",
+        "processed": true,
+        "title": "Combination Vehicle Driver",
+        "company": "Benevan Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://benevan.likeit.fi/apply/4759410",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8e998722-20d1-4949-a4be-deecdd1db419/en",
+        "job_employer_email": "mika.hotelainen@benevan.fi",
+        "job_employer_name": "Mika Hotelainen",
+        "job_employer_phone_no": "+358413144989",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/combination-vehicle-driver-vantaa-a32f9a86",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Combination Vehicle Driver at Benevan Oy. Great opportunity in Vantaa—apply now.",
+        "description": "We are looking for a combination vehicle driver with a CE card for the PKS area to join our client company in Vantaa. This role involves transporting piece goods to customers in Riihimäki, Hyvinkää, Nurmijärvi, and the entire PK region. The driver will operate a full trailer combination with side unloading and tailboards, starting work at 7:00 a.m. daily at the Vantaa terminal. Previous experience in piece goods times and knowledge of the work tools are required. A good command of the Finnish language, including C1 proficiency, is essential for job security and smooth communication with employees and customers. The job offers a reliable employer, comprehensive introduction to work tools, high-quality equipment, and the possibility of a long-term position.",
+        "what_we_expect": [
+          "CE driver's license.",
+          "A valid driver's professional qualification permit.",
+          "A valid digital recorder card.",
+          "Previous experience in the distribution of piece goods by truck.",
+          "Good command of the Finnish language (C1 level)."
+        ],
+        "job_responsibilities": [
+          "Transporting piece goods to customers in Riihimäki, Hyvinkää, Nurmijärvi, and the entire PK region.",
+          "Using a full trailer combination with side unloading and tailboards.",
+          "We expect you to."
+        ],
+        "what_we_offer": [
+          "A reliable and good employer.",
+          "Comprehensive introduction to work tools.",
+          "High-quality work equipment.",
+          "The possibility of getting a long-term job.",
+          "Occupational health care."
+        ],
+        "search_keywords": "combination vehicle driver, piece goods, CE card, PKS area, Vantaa terminal, piece goods times, distribution, truck, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "930280ca",
+        "job_id": "av-sales-manager-espoo-930280ca",
+        "processed": true,
+        "title": "AV Sales Manager",
+        "company": "Caverion Suomi Oy",
+        "job_category": "technical-services",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/av-myyntipaallikko-vantaa/ZNvyWE",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/51d30f3e-fc61-44c0-9151-798369fd7121/en",
+        "job_employer_email": "",
+        "job_employer_name": "Jean Hanslin",
+        "job_employer_phone_no": "040 755 3215",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/av-sales-manager-espoo-930280ca",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-27",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Exciting AV Sales Manager position available at Caverion Suomi Oy in Espoo. Check requirements and submit your application today.",
+        "description": "We are looking for an AV sales manager for permanent employment in Vantaa. This role involves actively selling AV services, acquiring new customers, and developing long-term relationships. You will work closely with the AV production staff, sales groups of other industries, and customer representatives, meeting customers and providing solutions for their needs. The position offers a comprehensive introduction to work, extensive training, and development opportunities, as well as a company car. You will enjoy a goal-oriented sales approach, strong customer understanding, and good oral and written Finnish and English language skills. The working hours are 8 a.m. to 4 p.m. on weekdays, with the possibility of remote work depending on the situation.",
+        "what_we_expect": [
+          "Experience in successful AV sales and customer care.",
+          "Knowledge of AV systems.",
+          "Solution-selling thinking and strong customer understanding.",
+          "An independent, active, and goal-oriented approach to work and the ability to take agreed matters and offers smoothly to the finish line.",
+          "Good interaction and negotiation skills.",
+          "Good oral and written Finnish and English language skills; other language skills are considered an advantage."
+        ],
+        "job_responsibilities": [
+          "You are actively responsible for AV sales and acquiring new customers.",
+          "You develop and maintain long-term customer relationships and identify opportunities for additional sales.",
+          "You drive forward sales processes independently, from contacting to drawing up offers and contracts as well as negotiations.",
+          "You meet customers and build solutions for their needs.",
+          "You work closely with the AV production staff, sales groups of other industries, and customer representatives."
+        ],
+        "what_we_offer": [
+          "Comprehensive introduction to work and support from our own team.",
+          "Extensive training and development opportunities.",
+          "Open and inclusive work culture.",
+          "Appropriate freedom and responsibility.",
+          "First-class tools to support your work.",
+          "Extensive occupational health services."
+        ],
+        "search_keywords": "AV Sales Manager Caverion Suomi Oy Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      },
+      {
+        "id": "5ccf15c3",
+        "job_id": "electrician-hamina-5ccf15c3",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Econia Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Hamina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://econia.likeit.fi/apply/13411928",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8d973f4c-d996-4dec-882a-5aa869e710f8/en",
+        "job_employer_email": "jaakko.niinisalo@econia.com",
+        "job_employer_name": "Jaakko Niinisalo",
+        "job_employer_phone_no": "+358413178183",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-hamina-5ccf15c3",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "A fixed-term employment contract is available for 3-5 months. The salary is 15-20 €/h depending on skills, experience and qualifications. The work is done in a day shift.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting Electrician position available at Econia Oy in Hamina. Check requirements and submit your application today.",
+        "description": "Econia Oy is seeking electricians for a fixed-term employment contract in Hamina, Finland. This role involves various electrical installation and connection work in a construction site environment, including cable connections, lighting fixture connections, and other electrical device installations. The salary ranges from 15-20 €/h, depending on skills, experience, and qualifications. The work is done in a day shift, and the applicant should have electrical training, valid qualifications, and previous experience in electrical installations. The job requires an occupational safety card, electrical safety training, and IPAF 3A and 3B qualifications. The applicant should be able to communicate in English, Russian, or Lithuanian.",
+        "what_we_expect": [
+          "Valid electrical training.",
+          "Valid qualifications in electrical safety.",
+          "IPAF 3A and 3B qualifications.",
+          "Previous experience in electrical installations."
+        ],
+        "job_responsibilities": [
+          "Install and connect electrical devices.",
+          "Perform cable connections in electrical centers.",
+          "Connect lighting fixtures and socket connections."
+        ],
+        "what_we_offer": [
+          "Fixed-term employment contract of 3-5 months.",
+          "Salary ranging from 15-20 €/h based on skills, experience, and qualifications.",
+          "Day shift work environment."
+        ],
+        "search_keywords": "electrician hamina electrical construction site",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "f80dd7ef",
+        "job_id": "general-practitioner-loimaa-f80dd7ef",
+        "processed": true,
+        "title": "General Practitioner",
+        "company": "Solo Health",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Loimaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.solohealth.fi/jobs/8332377-yleislaakari-loimaan-ikaantyneiden-arviointiyksikkoon-4-1-31-12-2027/applications/new?promotion=2183952-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a7d18682-6930-42a2-95ed-d15dcc018ec4/en",
+        "job_employer_email": "irina.nordblom@solohealth.fi",
+        "job_employer_name": "Irina Nordblom",
+        "job_employer_phone_no": "044 700 2911",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/general-practitioner-loimaa-f80dd7ef",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "salary - We invest in fair and motivating salar",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a General Practitioner at Solo Health in Loimaa. Apply now and take the next step in your career.",
+        "description": "Join Solo Health's group of friends! We are seeking a General Practitioner for the Loima social security center's elderly assessment unit from January 4, 2027, to December 31, 2027. This is a permanent position with full-time work hours. The role involves assessing the service and rehabilitation needs of the elderly through a multi-professional team approach. Essential qualifications include a General Practitioner qualification, experience in primary health care, and good Finnish language skills. The working time is 38.25 hours per week, with opportunities for remote work on one day per week. Solo Health offers a €400 annual passport benefit, occupational health support, strong community support, and a motivating salary.",
+        "what_we_expect": [
+          "General practitioner qualification.",
+          "Experience in primary health care.",
+          "Vaccination protection according to Section 48 of the Infectious Diseases Act.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Assess the elderly's service and rehabilitation needs multi-professionally.",
+          "Work as part of a team assessing the elderly's service and rehabilitation needs.",
+          "General practitioner qualification."
+        ],
+        "what_we_offer": [
+          "EPassport benefit €400/year – Can be used for exercise, culture and welfare services (for employment lasting at least 60 shifts).",
+          "Occupational health – Occupational health services support your well-being.",
+          "Strong support and community – You will not be alone! You get your own contact person, the support of responsible doctors and a supportive and competent work community around you.",
+          "Good and motivating salary – We invest in fair and motivating salary.",
+          "Opportunity to develop – We offer training money that grows with your hours of work.",
+          "New doors for your career – We offer many different job opportunities."
+        ],
+        "search_keywords": "general practitioner, elderly assessment unit, social security center, primary health care, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "ac5571d9",
+        "job_id": "home-care-assistant-ilmajoki-ac5571d9",
+        "processed": true,
+        "title": "Home Care Assistant",
+        "company": "Attendo Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Ilmajoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.attendo.fi/jobs/8336766-palvelukotiavustaja-attendo-mamselli-ilmajoki/applications/new?promotion=2183946-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d86ea0ba-bb76-4658-8ff3-8696c6fd24a9/en",
+        "job_employer_email": "eija.korpikoski@attendo.fi",
+        "job_employer_name": "Eija Korpikoski",
+        "job_employer_phone_no": "0405587420",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/home-care-assistant-ilmajoki-ac5571d9",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Home Care Assistant position available at Attendo Oy in Ilmajoki. Check requirements and submit your application today.",
+        "description": "Care home assistant, Attendo Mamselli, Ilmajoki A clean, food-scented service home is cozy! At Attendo, we are on the journey to home. It means that we want to be, above all, a home for the elderly, the disabled and the handicapped, as well as for mental health and substance abuse rehabilitation. Each of our residents deserves to be seen as themselves and to live a full life. As an attendee, you are an important part of this task. Here at Attendo Mamsell, a home for multi-challenged mental health rehabilitators in Ilmajoki, there is a temporary position available for a service home helper. The work will start as soon as possible and continue until 31 October 2026, an extension is possible.",
+        "what_we_expect": [
+          "Hygiene passport.",
+          "Salmonella certificate.",
+          "Criminal record extract in an employment relationship lasting more than three months.",
+          "Good Finnish language skills.",
+          "Contact information for the manager of the Attendo home.",
+          "Www.attendo.fi [https://app.teamtailor.com/companies/TM8RiVbWmHA/jobs/5492231/edit/www.attendo.fi%20]."
+        ],
+        "job_responsibilities": [
+          "Hygiene passport.",
+          "Salmonella certificate.",
+          "Criminal record extract in an employment relationship lasting more than three months.",
+          "Good Finnish language skills.",
+          "Contact information for the manager of the Attendo home.",
+          "Www.attendo.fi [https://app.teamtailor.com/companies/TM8RiVbWmHA/jobs/5492231/edit/www.attendo.fi%20]."
+        ],
+        "what_we_offer": [
+          "Hygiene passport.",
+          "Salmonella certificate.",
+          "Criminal record extract in an employment relationship lasting more than three months.",
+          "Good Finnish language skills.",
+          "Contact information for the manager of the Attendo home.",
+          "Www.attendo.fi [https://app.teamtailor.com/companies/TM8RiVbWmHA/jobs/5492231/edit/www.attendo.fi%20]."
+        ],
+        "search_keywords": "Home Care Assistant Attendo Oy Ilmajoki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "b54dedb5",
+        "job_id": "industrial-cleaner-raahe-b54dedb5",
+        "processed": true,
+        "title": "Industrial Cleaner",
+        "company": "RTK-Palvelu Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Raahe"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rtkpalvelu.rekrytointi.com/paikat/index.php?o=A_A&jid=5896&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/53c22afc-3de8-494e-ba6c-9a6976a8fee2/en",
+        "job_employer_email": "tanja.putaansu@rtkpalvelu.fi",
+        "job_employer_name": "Tanja Putaansuu",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/industrial-cleaner-raahe-b54dedb5",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-09-08 10:00:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "RTK-Palvelu Oy is hiring a Industrial Cleaner in Raahe. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for motivated and customer service-minded cleaners for permanent employment in Raahe. The work at our destination is practical and varied, with daily tasks including maintenance and basic cleaning. The responsibility for one's own work is clear, and the team is motivated and cooperative. We offer a competitive hourly wage based on Finnish collective agreements and a variety of benefits, including occupational safety training and support for professional development while working.",
+        "what_we_expect": [
+          "Fluent Finnish language skills.",
+          "Previous experience in factory cleaning work.",
+          "Knowledge of basic cleaning tasks.",
+          "Experience with combination machines.",
+          "Occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Ensuring the cleanliness of the factory environment by maintaining and basic cleaning tasks.",
+          "Taking care of maintenance cleaning and basic washing tasks.",
+          "The work at our destination is practical and varied."
+        ],
+        "what_we_offer": [
+          "Motivated and cooperative team atmosphere.",
+          "Open and encouraging community atmosphere.",
+          "Comprehensive orientation and internal training and advancement opportunities.",
+          "Full support for completing professional degrees while working.",
+          "Versatile personnel benefits that support well-being and everyday life.",
+          "Encouraging supervisor and competent colleagues."
+        ],
+        "search_keywords": "Industrial Cleaner, factory cleaner, industrial cleaner, permanent job, Raahe",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-08 10:00:21",
+    "jobs": [
+      {
+        "id": "9518ec8b",
+        "job_id": "shelving-team-leader-kotka-9518ec8b",
+        "processed": true,
+        "title": "Shelving Team Leader",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/kOQCxJOZRtlNHt9qJyzMsw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4cad5c7f-9086-43b6-8d54-c867262d22b3/en",
+        "job_employer_email": "reetta.laitinen@eezy.fi",
+        "job_employer_name": "Reetta Laitinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/shelving-team-leader-kotka-9518ec8b",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-27",
+        "scraped_at": "2026-09-08 10:00:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is looking for a skilled Shelving Team Leader in Kotka. Don't miss this opportunity—apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a motivated and experienced Shelving Team Leader to join their team in Kotka. As a second in command, you will be responsible for participating in practical shelving work, guiding the team in everyday operations, and training new employees. You will also maintain team cooperation and work atmosphere, and collaborate closely with merchants and department managers. With a background in trade and excellent interpersonal and organizational skills, you are expected to motivate and inspire the team and be proactive in developing operations. The salary is based on the TES industry standard, and additional responsibilities as a team leader are available. If you are interested, submit your application through the Eezy Talents service.",
+        "what_we_expect": [
+          "Experience in trade (necessary).",
+          "Interpersonal and organizational skills.",
+          "Ability to motivate and inspire the team.",
+          "Initiative and flexibility.",
+          "Knowledge of the Finnish language (work language), other language skills are considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Participation in shelving work.",
+          "Punching the team leader.",
+          "Induction of new shelving team members.",
+          "Maintenance of team cooperation and work atmosphere.",
+          "Close cooperation with merchants and department managers."
+        ],
+        "what_we_offer": [
+          "Versatile role as part of a professional team.",
+          "The opportunity to influence and develop operations.",
+          "Salary according to the TES of the trade industry + additional responsibilities when working as a team leader."
+        ],
+        "search_keywords": "shelving team leader grocery store Kotka",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "9c23a0a7",
+        "job_id": "hydraulic-fitter-tampere-9c23a0a7",
+        "processed": true,
+        "title": "Hydraulic Fitter",
+        "company": "Bolt.Works Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=2073456",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5f931b37-8f96-44e9-b366-c24884c20c7e/en",
+        "job_employer_email": "susa.jarvinen@bolt.works",
+        "job_employer_name": "Susa Järvinen",
+        "job_employer_phone_no": "+358505999597",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/hydraulic-fitter-tampere-9c23a0a7",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-08 10:00:21",
+        "open_positions": 1,
+        "salary_range": "Salary depends on your previous experience and",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bolt.Works Oy is hiring a Hydraulic Fitter in Tampere. Explore responsibilities, benefits, and apply today.",
+        "description": "Bolt.Works Oy, based in Tampere, is seeking a hydraulic fitter with a quick schedule for full-time, permanent employment. The role is available until the end of January, with shifts available in the fall, and the work is done on weekdays in 2 shifts, 6-14 and 14-22, with a small shift. The salary is competitive hourly wage based on Finnish collective agreements. Previous experience in installation work is expected. The job includes installation of components such as hoses, valves, and fittings. Interested candidates should contact Susa Järvinen at 0505999597 or visit Bolt.Works for more information.",
+        "what_we_expect": [
+          "Previous experience with installation work.",
+          "Skills and experience.",
+          "More information is available on weekdays from 08:00 to 16:00."
+        ],
+        "job_responsibilities": [
+          "Install components such as hoses, valves, and fittings.",
+          "Install work, e.g., installation of components depending on experience.",
+          "More information is available on weekdays from 08:00 to 16:00."
+        ],
+        "what_we_offer": [
+          "Salary commensurate with experience and skills.",
+          "Bonus for excellent work performance.",
+          "Occupational health services from day one."
+        ],
+        "search_keywords": "Hydraulic Fitter, Installation, Fitter, Job, Position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "bc222d8f",
+        "job_id": "welder-pietarsaari-bc222d8f",
+        "processed": true,
+        "title": "Welder",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Pietarsaari",
+          "Pedersöre"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/4KhEN4vyWcMxBCdLyLFgDA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3c393167-a8a0-444d-874c-b1e83dffbf73/en",
+        "job_employer_email": "roosa.ojala@eezy.fi",
+        "job_employer_name": "Roosa Ojala",
+        "job_employer_phone_no": "+358503522775",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-pietarsaari-bc222d8f",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-27",
+        "scraped_at": "2026-09-08 10:00:21",
+        "open_positions": 1,
+        "salary_range": "Salary according to your skills and experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Welder role at Eezy Henkilöstöpalvelut Oy. Join a growing team and build your career in Pietarsaari.",
+        "description": "We are looking for a Welder to join our industrial customer company in Pietarsaari, Pedersöre. This 2-3 month fixed-term project involves various welding tasks according to our customer's needs. The work is carried out during the day shift on weekdays. We expect from you: - Education and work experience in the metal industry - Self-directed and active approach to work - Commitment to continuous development of quality and occupational safety - Knowledge of MIG/MAG and TIG welding - Good ability to read drawings. We offer temporary employment through Eezy, a versatile job description, and a salary based on your skills and experience (Technology industry TES).",
+        "what_we_expect": [
+          "Education and work experience in the metal industry.",
+          "Self-directed and active approach to work.",
+          "Commitment to continuous development of quality and occupational safety.",
+          "Knowledge of MIG/MAG and TIG welding.",
+          "Good ability to read drawings."
+        ],
+        "job_responsibilities": [
+          "Perform welding tasks according to customer's needs.",
+          "Carry out work during the day shift on weekdays.",
+          "We expect from you."
+        ],
+        "what_we_offer": [
+          "Temporary employment through Eezy.",
+          "Versatile job description.",
+          "Salary according to your skills and experience (Technology industry TES).",
+          "The opportunity to develop in your work.",
+          "A professional, pleasant, and encouraging team.",
+          "Eezy's support and assistance throughout your employment."
+        ],
+        "search_keywords": "Welder Pietarsaari industrial customer company",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "1ac893a5",
+        "job_id": "traveling-home-nurse-oulu-1ac893a5",
+        "processed": true,
+        "title": "Traveling Home Nurse",
+        "company": "Attendo Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.attendo.fi/jobs/8336870-kiertava-lahihoitaja-maaraaikainen-attendo-oma-oulun-seutu/applications/new?promotion=2183943-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3e6ca8b8-39f3-4cdb-af97-25bfde800705/en",
+        "job_employer_email": "jenna.niskanen@attendo.fi",
+        "job_employer_name": "Jenna Niskanen",
+        "job_employer_phone_no": "0444942292",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/traveling-home-nurse-oulu-1ac893a5",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-08 10:00:21",
+        "open_positions": 1,
+        "salary_range": "salary includes a task-specific supplement of 3",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Traveling Home Nurse at Attendo Oy in Oulu. Apply now and take the next step in your career.",
+        "description": "Attendo Oy is seeking a Traveling Home Nurse for their Oulu region. This role involves providing care and support to residents in Attendo homes, including elderly care, intellectual disabilities, and mental health rehabilitation. The position offers competitive hourly wages and a tax-free mileage allowance. Applicants must have a Bachelor's degree in social and health care, be vaccinated against infectious diseases, and have a hygiene passport. The ideal candidate is a warm-hearted team worker with experience in caregiving and a strong sense of responsibility. The role is part-time, with two shifts per day, and the employment period is until December 31, 2027. Attendo offers a supportive work environment, employee benefits, and a comprehensive training program. The salary range is €2,493.",
+        "what_we_expect": [
+          "Bachelor's degree in social and health care (nurse).",
+          "Infectious Diseases Act Section 48 vaccination cover to protect customers and patients for the entire duration of the employment relationship.",
+          "Hygiene passport.",
+          "The criminal record extract is checked at the start of the employment relationship.",
+          "Sote professional card, i.e. Certificate card.",
+          "Driver's license and the possibility to use your own car."
+        ],
+        "job_responsibilities": [
+          "Assist residents in daily living activities.",
+          "Provide emotional support and companionship.",
+          "Bachelor's degree in social and health care (nurse)."
+        ],
+        "what_we_offer": [
+          "An employee benefits program that offers benefits to several different service providers.",
+          "Our employee benefits include, for example.",
+          "Bachelor's degree in social and health care (nurse).",
+          "Hygiene passport.",
+          "The criminal record extract is checked at the start of the employment relationship.",
+          "Sote professional card, i.e. Certificate card."
+        ],
+        "search_keywords": "traveling home nurse, traveling nurse, home care, elderly care, mental health, substance abuse, rehabilitation, Attendo, Oulu, Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "6844fb92",
+        "job_id": "sales-representative-vantaa-6844fb92",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "K-ryhmä",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/381035/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/010f2aab-7d07-4840-bd43-d2f2b514f22b/en",
+        "job_employer_email": "Ville.Vepsalainen@k-market.com",
+        "job_employer_name": "Ville Vepsäläinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-vantaa-6844fb92",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-08 10:00:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Sales Representative at K-ryhmä in Vantaa. Apply now and take the next step in your career.",
+        "description": "Salesperson (20-30 h/week) K-Market Tikkuri and K-Market Dixi, Vantaa We are looking for an enthusiastic salesperson for a permanent employment relationship with K-Market Tikkur and K-Market Dix. K-Market Tikkuri and K-Market Dixi are located next to each other in the immediate vicinity of the Tikkurila train station. K-Market Tikkuri is a versatile, active and seasonal grocery store that offers package services, an online store, and Wolt. K-market Dixi offers its customers a quick shopping service in a small and compact store. With us, you can work in both stores and in versatile tasks. It won't be boring at work, there's enough speed! We work at a brisk pace but in a relaxed and fun group. Making customers' everyday life easier and quality service are at the center of our operations.",
+        "what_we_expect": [
+          "We expect you to.",
+          "We offer you.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "We expect you to.",
+          "We offer you.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "We offer you.",
+          "We expect you to.",
+          "Professional work environment."
+        ],
+        "search_keywords": "Sales Representative K-ryhmä Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "49706b35",
+        "job_id": "cnc-lathe-operator-tampere-49706b35",
+        "processed": true,
+        "title": "CNC Lathe Operator",
+        "company": "VPS Teollisuuspalvelut Länsi-Suomi",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://vps.likeit.fi/apply/6626581",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/44f247f2-5e95-4894-9114-8a122e2a1f47/en",
+        "job_employer_email": "markku.partanen@vps.fi",
+        "job_employer_name": "Markku Partanen",
+        "job_employer_phone_no": "+358400931328",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-lathe-operator-tampere-49706b35",
+        "date_posted": "2026-09-08",
+        "date_expires": "2026-09-14",
+        "scraped_at": "2026-09-08 10:00:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "VPS Teollisuuspalvelut Länsi-Suomi is looking for a skilled CNC Lathe Operator in Tampere. Don't miss this opportunity—apply today.",
+        "description": "VPS Teollisuuspalvelut Länsi-Suomi is seeking a skilled CNC lathe operator for their Tampere location. This role involves working in 2 shifts and offers a permanent employment relationship. Applicants should have more than three years of CNC turning and programming experience, with proficiency in Finnish. The company provides excellent customer service and is committed to quality. The position is open to experienced candidates and offers competitive hourly wages based on Finnish collective agreements. For more information, please contact Markku Partanen at 0400-931328 or markku.partanen@vps.fi.",
+        "what_we_expect": [
+          "Experience in CNC turning.",
+          "Programming skills.",
+          "Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Operate CNC lathe.",
+          "Program and maintain CNC machines.",
+          "More information: 0400-931328 or markku.partanen@vps.fi."
+        ],
+        "what_we_offer": [
+          "Permanent employment.",
+          "Salary.",
+          "Benefits."
+        ],
+        "search_keywords": "CNC lathe operator, CNC turning, programming skills, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
   }
 ]
