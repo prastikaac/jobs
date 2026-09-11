@@ -313271,5 +313271,1252 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:00:22",
+    "jobs": [
+      {
+        "id": "8524412a",
+        "job_id": "none-available-helsinki-8524412a",
+        "processed": true,
+        "title": "None Available",
+        "company": "Helsingin kaupunki",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-03-389-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ea49cb92-bae9-4053-9139-32c39094b168/en",
+        "job_employer_email": "sotepe.kotihoidon.resurssipalvelu@hel.fi",
+        "job_employer_name": "Kotihoidon resurssipalvelu",
+        "job_employer_phone_no": "0931066330",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/none-available-helsinki-8524412a",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:22",
+        "open_positions": 1,
+        "salary_range": "2900,74 €/kk sekä mahd. kokemuslisä max. 8 %",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Helsingin kaupunki is hiring a None Available in Helsinki. Explore responsibilities, benefits, and apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Helsingin kaupunki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "0fb098b7",
+        "job_id": "none-available-espoo-0fb098b7",
+        "processed": true,
+        "title": "None Available",
+        "company": "Barona Logistiikka Oy",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/logistiikkatyontekijaksi-oy-medifon-ab-lle-espooseen-oy-medifon-ab",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/291507b9-9030-48d7-8db3-bff7cc56d579/en",
+        "job_employer_email": "suvi.hattunen@barona.fi",
+        "job_employer_name": "Suvi Hattunen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/none-available-espoo-0fb098b7",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:22",
+        "open_positions": 1,
+        "salary_range": "13,66-15,64 €/h",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Barona Logistiikka Oy as a None Available in Espoo. Learn more about the role and apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Barona Logistiikka Oy Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "f2650f69",
+        "job_id": "none-available-vaasa-f2650f69",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mehiläinen Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mehilainen.wd103.myworkdayjobs.com/tyomarkkinatori_careers/job/Vaasa-Yrittjnkatu/Toimintaterapeutti--Mehilinen-Vaasa-Yrittjnkatu_R0045312/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/90686be4-e230-4bb4-befe-a9acd6c5a92d/en",
+        "job_employer_email": "johan.slotte@mehilainen.fi",
+        "job_employer_name": "Johan Slotte",
+        "job_employer_phone_no": "+358505124867",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-vaasa-f2650f69",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-11 10:00:22",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Mehiläinen Oy as a None Available in Vaasa. Learn more about the role and apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mehiläinen Oy Vaasa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "d34abdc1",
+        "job_id": "none-available-helsinki-d34abdc1",
+        "processed": true,
+        "title": "None Available",
+        "company": "Ylioppilaiden terveydenhoitosäätiö sr, Helsinki",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://yths.teamtailor.com/jobs/8362834-hammashoitaja",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b9c2f404-43a3-422e-996b-aad1f8b2366e/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-helsinki-d34abdc1",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-11 10:00:22",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a None Available role at Ylioppilaiden terveydenhoitosäätiö sr, Helsinki. Join a growing team and build your career in Helsinki.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Ylioppilaiden terveydenhoitosäätiö sr, Helsinki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "f24e1d99",
+        "job_id": "car-rental-assistant-turku-f24e1d99",
+        "processed": true,
+        "title": "Car Rental Assistant",
+        "company": "Hertz",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://hertzfi.attract.reachmee.com/jobs/rm?rmpage=job&rmjob=198&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/23727b20-d0ac-4695-946d-365adc890647/en",
+        "job_employer_email": "arto.lehtinen@hertz.fi",
+        "job_employer_name": "Arto Lehtinen",
+        "job_employer_phone_no": "0406184329",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/car-rental-assistant-turku-f24e1d99",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-27",
+        "scraped_at": "2026-09-11 10:00:22",
+        "open_positions": 1,
+        "salary_range": "13,07€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Car Rental Assistant role at Hertz. Join a growing team and build your career in Turku.",
+        "description": "Hertz, the global leader in car rentals, is seeking a versatile Car Rental Assistant in Turku, Finland. This role involves customer service and operational tasks, including car washing, moving, damage inspections, and handing over to customers. The morning and evening shifts, along with occasional on-call and weekend duties, are part of the comprehensive schedule. The position offers a competitive hourly wage, team goals, and personal performance bonuses. Applicants must be 18 years old, have a valid driver's license, and be fluent in Finnish and English. The international working environment and comprehensive training are key benefits. Interested candidates should apply by September 27, 2026, and prepare for video interviews.",
+        "what_we_expect": [
+          "Self-initiative, flexible, cooperative, quick to adopt new things, and able to work in a fast-paced environment.",
+          "Valid driver's license and at least 18 years old.",
+          "We offer you."
+        ],
+        "job_responsibilities": [
+          "Customer service and operational functions, such as car washing, moving, damage inspections, and handing over to customers.",
+          "Occasional on-call and weekend shifts.",
+          "A comprehensive introduction to high-quality handling of work tasks."
+        ],
+        "what_we_offer": [
+          "The international working atmosphere.",
+          "Comprehensive introduction to high-quality handling of work tasks.",
+          "Hourly wage according to experience, from €13.07/h.",
+          "Great additional earning opportunity in the form of team goals and personal performance bonuses.",
+          "Lunch and exercise benefit.",
+          "Nice colleagues and a great opportunity to develop oneself in customer service tasks."
+        ],
+        "search_keywords": "car rental assistant, car rental, rental assistant, car rental job, car rental position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:00:23",
+    "jobs": [
+      {
+        "id": "df18ec5a",
+        "job_id": "none-available-hämeenlinna-df18ec5a",
+        "processed": true,
+        "title": "None Available",
+        "company": "Hämeenlinnan Teatteri Oy, Hämeenlinna",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hmlteatteri.fi/esittely/rekrytointi/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/58284fd9-014a-437c-bc84-87a83f124699/en",
+        "job_employer_email": "petriina.suomela@hmlteatteri.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/none-available-hämeenlinna-df18ec5a",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-18",
+        "scraped_at": "2026-09-11 10:00:23",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Hämeenlinnan Teatteri Oy, Hämeenlinna is looking for a skilled None Available in Hämeenlinna. Don't miss this opportunity—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Hämeenlinnan Teatteri Oy, Hämeenlinna Hämeenlinna other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "001d50ad",
+        "job_id": "mig-welder-parainen-001d50ad",
+        "processed": true,
+        "title": "MIG Welder",
+        "company": "Työkuutio Teollisuus Oy, Turku",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Parainen"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tyokuutio.fi/my-postd48e39a9",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/aaccdf51-b6f1-4f8a-87cf-7ae8dc0b790d/en",
+        "job_employer_email": "jenny.ek@tyokuutio.fi",
+        "job_employer_name": "Jenny Ek",
+        "job_employer_phone_no": "0408334100",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/mig-welder-parainen-001d50ad",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:00:23",
+        "open_positions": 1,
+        "salary_range": "Salary is determined in accordance with the col",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a MIG Welder at Työkuutio Teollisuus Oy, Turku in Parainen. Apply now and take the next step in your career.",
+        "description": "We are looking for a MIG welder at Työkuutio Teollisuus Oy, Turku, with a focus on summer employment. The ideal candidate should have knowledge of the metal industry, education in welding, and previous work experience. Experience in versatile expertise within the metal industry is highly valued. The working language is Finnish or English. The position offers a salary determined by the technology industry's collective agreement, with work done on weekdays in the day shift. Interested applicants should fill out the application on the company's website or send it by email to toimisto@tyokuutio.fi.",
+        "what_we_expect": [
+          "Knowledge of the industry, education in the field, and previous work experience.",
+          "Versatile expertise in the metal industry.",
+          "MIG welder Our client company is a well-known expert in the metal industry in Parain."
+        ],
+        "job_responsibilities": [
+          "Weld, modify, and join sheets and various metal and steel structures.",
+          "MIG welder Our client company is a well-known expert in the metal industry in Parain.",
+          "The company's business is based on customized manufacturing of high-quality products."
+        ],
+        "what_we_offer": [
+          "Salary determined in accordance with the collective agreement of the technology industry.",
+          "Work on weekdays in the day shift.",
+          "MIG welder Our client company is a well-known expert in the metal industry in Parain."
+        ],
+        "search_keywords": "MIG welder, metal industry, welding, steel, metalworking",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "7a173af1",
+        "job_id": "construction-worker-helsinki-7a173af1",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Good Staff Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://goodstaff.teamtailor.com/jobs/8356973-lapiomies-maanrakennustyontekija-malmi-helsinki/applications/new?promotion=2190688-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/33d24ec7-009b-4424-9d19-4e46be259ead/en",
+        "job_employer_email": "heidi.korhonen@goodstaff.fi",
+        "job_employer_name": "Heidi",
+        "job_employer_phone_no": "+358458521969",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-helsinki-7a173af1",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-09-11 10:00:23",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Construction Worker at Good Staff Henkilöstöpalvelut Oy in Helsinki. Apply now and take the next step in your career.",
+        "description": "Good Staff Henkilöstöpalvelut Oy is seeking a professional shovel man for their pipe renovation project in Malmi, Helsinki. The position offers competitive hourly wages based on Finnish collective agreements, a start immediately, and the opportunity to continue working at the site. The ideal candidate has experience in earthworks and infrastructure work, valid work safety card, Tieturva 1 card, and Water work card. Responsibilities include tasks such as shovel man duties, auxiliary works for trenching and pipe work, working with rainwater and sewer pipes, and tasks related to the installation of pipes and wells. The company offers a salary according to the TES of the infrastructure sector, experience, and skills.",
+        "what_we_expect": [
+          "Work safety card.",
+          "Tieturva 1 card.",
+          "Water work card.",
+          "Knowledge of pipe and infrastructure works.",
+          "Ability to use a laser."
+        ],
+        "job_responsibilities": [
+          "Tasks include, among other things.",
+          "Duties of shovel man and coxswain.",
+          "Auxiliary works for trenching and pipe work.",
+          "Working with rainwater and sewer pipes.",
+          "Tasks related to the installation of pipes and wells.",
+          "Other earthworks at the construction site according to skills."
+        ],
+        "what_we_offer": [
+          "Works at Malmi in Helsinki.",
+          "Start immediately.",
+          "At the beginning, a work period of about 2 weeks.",
+          "After a well-run job, the opportunity to continue.",
+          "Tasks that match your professional skills.",
+          "Salary according to the TES of the infrastructure sector, according to experience and skills."
+        ],
+        "search_keywords": "Construction Worker, shovel man, pipe renovation, Helsinki, Helsinki, Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "cb006f2e",
+        "job_id": "textile-salesperson-kittilä-cb006f2e",
+        "processed": true,
+        "title": "Textile Salesperson",
+        "company": "Työkuutio Teollisuus Oy, Turku",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tyokuutio.fi/tekstiilimyyja-kesatyo-levi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/609f53a3-780c-4194-baf9-7f9acfedd8af/en",
+        "job_employer_email": "jenny.ek@tyokuutio.fi",
+        "job_employer_name": "Jenny Ek",
+        "job_employer_phone_no": "0408334100",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/textile-salesperson-kittilä-cb006f2e",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:00:23",
+        "open_positions": 1,
+        "salary_range": "salary is determined in accordance with the tra",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Textile Salesperson at Työkuutio Teollisuus Oy, Turku in Kittilä. Apply now and take the next step in your career.",
+        "description": "Textile salesman at Työkuutio Teollisuus Oy in Kittilä, Finland, offering competitive hourly wages based on Finnish collective agreements, working experience or trade sector training, and a seasonal employment opportunity for the summer of 2026-2027. The role involves customer service and sales work with winter sports equipment, sportswear, and rental services, with Finnish and English customer service in peak season. Full-time work, 37.5 hours per week, and a living arrangement responsibility. Apply by sending your application to toimisto@tyokuutio.fi or completing the WORK CUBE application.",
+        "what_we_expect": [
+          "Work experience or training in the trade sector.",
+          "An energetic attitude and passion for exercise/sports.",
+          "Textile salesman, Levi Our customer is a sports store right in the heart of Levi."
+        ],
+        "job_responsibilities": [
+          "Customer service and sales work with winter sports equipment, sportswear, and a rental company.",
+          "Meet numerous customers during the day, handle customer service situations in Finnish and English, and work with a hectic schedule.",
+          "Textile salesman, Levi Our customer is a sports store right in the heart of Levi."
+        ],
+        "what_we_offer": [
+          "Salary determined by trade industry collective agreement, with previous experience and education increasing salary.",
+          "Temporary work available for the season 2026-2027, starting in the fall and ending in spring 2027, with full hours available (37.5 hours/week).",
+          "Textile salesman, Levi Our customer is a sports store right in the heart of Levi."
+        ],
+        "search_keywords": "Textile Salesperson, Textile Salesperson, Textile Salesperson, Textile Salesperson, Textile Salesperson",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:00:28",
+    "jobs": [
+      {
+        "id": "db654a16",
+        "job_id": "none-available-maarianhamina-db654a16",
+        "processed": true,
+        "title": "None Available",
+        "company": "Sällskapet Bel Canto Alandia rf, Maarianhamina",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Maarianhamina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.belcanto.ax/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0b41e070-5d73-41fb-9325-92f204344d36/en",
+        "job_employer_email": "belcanto@aland.net",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/none-available-maarianhamina-db654a16",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Start your next career step as a None Available at Sällskapet Bel Canto Alandia rf, Maarianhamina. Great opportunity in Maarianhamina—apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Sällskapet Bel Canto Alandia rf, Maarianhamina Maarianhamina other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "6bfc8eb2",
+        "job_id": "production-worker-salo-6bfc8eb2",
+        "processed": true,
+        "title": "Production Worker",
+        "company": "Työkuutio Teollisuus Oy, Turku",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Salo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tyokuutio.fi/tuotantotyoentekijae-salo",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/24bbd8d2-6375-4b93-ab51-bfb663a88829/en",
+        "job_employer_email": "jenny.ek@tyokuutio.fi",
+        "job_employer_name": "Jenny Ek",
+        "job_employer_phone_no": "040 8334 100",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-worker-salo-6bfc8eb2",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Työkuutio Teollisuus Oy, Turku is looking for a skilled Production Worker in Salo. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a Production Worker at Salo, Finland. This role involves operating and controlling machines, reading drawings, and implementing the production process. The ideal candidate should have experience in similar tasks or relevant education, possess good physical condition, be self-motivated, and have knowledge of the Finnish language. We offer full-time employment, 3 shifts, salary according to the TES of the Technology Industry, a modern production environment, and a nice team. Apply now on our website or by email to toimisto@tyokuutio.fi.",
+        "what_we_expect": [
+          "Experience in similar tasks or suitable education.",
+          "Good physical condition.",
+          "Self-initiative and positive attitude.",
+          "Knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Operation and control of machines.",
+          "Reading drawings and working according to them.",
+          "Implementation of the different stages of the production process."
+        ],
+        "what_we_offer": [
+          "With the full working hours of a permanent employment relationship.",
+          "Work is done in 3 shifts.",
+          "Salary according to the TES of the Technology Industry.",
+          "A modern production environment and a nice team.",
+          "The work starts according to the agreement."
+        ],
+        "search_keywords": "Production Worker Salo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "f213d8e9",
+        "job_id": "human-resources-manager-helsinki-f213d8e9",
+        "processed": true,
+        "title": "Human Resources Manager",
+        "company": "Helsingin kaupunki",
+        "job_category": "human-resources",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-01-301-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/03d50578-35cc-4678-bff9-1f40a2babe66/en",
+        "job_employer_email": "anne.nuolikoski@hel.fi",
+        "job_employer_name": "Anne Nuolikoski",
+        "job_employer_phone_no": "0931024392",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/human-resources/human-resources-manager-helsinki-f213d8e9",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-28",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "4845,17 e/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Human Resources Manager role at Helsingin kaupunki. Join a growing team and build your career in Helsinki.",
+        "description": "We are looking for a Human Resources Manager to join our team in Helsinki. This is a permanent position offering a competitive salary of 4845,17 e/kk. The ideal candidate will be fluent in Finnish and possess strong communication skills. The role involves managing personnel, ensuring work well-being and comfort, and promoting continuous learning and development. We offer a supportive work environment and opportunities for growth. Follow us on social media for updates. Contact Anne Nuolikoski at 09 31024392 or Kirsti Tonttila at 09 310 43520 for more information.",
+        "what_we_expect": [
+          "Versatile work tasks.",
+          "A good working atmosphere.",
+          "Continuous learning and development opportunities."
+        ],
+        "job_responsibilities": [
+          "Ensure the well-being and comfort of employees.",
+          "Support front-line work to promote employee success.",
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "Human Resources Manager, Human Resources, Manager, HR, Personnel",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "bbe9e0ba",
+        "job_id": "early-childhood-nanny-lahti-bbe9e0ba",
+        "processed": true,
+        "title": "Early Childhood Nanny",
+        "company": "Lahden kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LAHTI-02-696-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0b524780-2fdc-4094-85e1-0dc30fd1da03/en",
+        "job_employer_email": "",
+        "job_employer_name": "Henriikka Winqvist",
+        "job_employer_phone_no": "0503985476",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nanny-lahti-bbe9e0ba",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "Tasopalkka on 2662,60 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Early Childhood Nanny at Lahden kaupunki in Lahti. Apply now and take the next step in your career.",
+        "description": "Early childhood nanny At Paavola's daycare, our work is based on joy, professionalism and genuine encounters. We are looking for you who has a positive attitude towards the development of activities and the ability to work flexibly in changing everyday situations with children of different ages. Your work style is engaging and you deal with the child individually and sensitively. The task requires good interaction and cooperation skills and noticing the good in every child. Paavola's daycare center is located in the center of Lahti along good transport links. Our opening hours are from Monday to Sunday from 5:00 a.m. to 11:00 p.m. and we require the possibility to work according to the opening hours.",
+        "what_we_expect": [
+          "Applications via the Kuntarekry.fi system no later than September 25, 2026 at 12:00 p.m.",
+          "Https://www.lahti.fi/tyo-ja-yrittaminen/lahti-tyonantajana/tyontekijatarinoita/.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Applications via the Kuntarekry.fi system no later than September 25, 2026 at 12:00 p.m.",
+          "Https://www.lahti.fi/tyo-ja-yrittaminen/lahti-tyonantajana/tyontekijatarinoita/.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Applications via the Kuntarekry.fi system no later than September 25, 2026 at 12:00 p.m.",
+          "Https://www.lahti.fi/tyo-ja-yrittaminen/lahti-tyonantajana/tyontekijatarinoita/.",
+          "Professional work environment."
+        ],
+        "search_keywords": "Early Childhood Nanny Lahden kaupunki Lahti other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "ee01d891",
+        "job_id": "none-available-helsinki-ee01d891",
+        "processed": true,
+        "title": "None Available",
+        "company": "Helsingin kaupunki",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-01-311-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/573f676e-8755-481a-b256-e3a7f5e75ef1/en",
+        "job_employer_email": "",
+        "job_employer_name": "Anu Rämö",
+        "job_employer_phone_no": "0931057759",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/none-available-helsinki-ee01d891",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-28",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "3265,23 €/kk sekä mahd. kokemuslisä max. 8 %",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a None Available role at Helsingin kaupunki. Join a growing team and build your career in Helsinki.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Helsingin kaupunki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "21553e01",
+        "job_id": "none-available-virrat-21553e01",
+        "processed": true,
+        "title": "None Available",
+        "company": "Virtain kaupunki",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Virrat"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/742169/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/05f4997f-5ca2-4a05-8b6d-c5468a811659/en",
+        "job_employer_email": "outi.kellomaki@virrat.fi",
+        "job_employer_name": "Outi Kellomäki",
+        "job_employer_phone_no": "0447153284",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/none-available-virrat-21553e01",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "Peruspalkka 2332,66 €",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Virtain kaupunki is hiring a None Available in Virrat. Explore responsibilities, benefits, and apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Virtain kaupunki Virrat other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "6050ad5f",
+        "job_id": "none-available-oulu-6050ad5f",
+        "processed": true,
+        "title": "None Available",
+        "company": "Oulun ev.lut. seurakuntayhtymä",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5235/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/70cfd3bf-7450-4aa5-8bc7-19b44127491e/en",
+        "job_employer_email": "jaana.vayrynen@evl.fi",
+        "job_employer_name": "Jaana Väyrynen",
+        "job_employer_phone_no": "0447883929",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/none-available-oulu-6050ad5f",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a None Available job in Oulu? Oulun ev.lut. seurakuntayhtymä is seeking motivated candidates—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Oulun ev.lut. seurakuntayhtymä Oulu other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "0e8e6ef0",
+        "job_id": "none-available-hämeenlinna-0e8e6ef0",
+        "processed": true,
+        "title": "None Available",
+        "company": "Kanta-Hämeen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/738802/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3160cf88-99d8-4008-a9ad-67a18e006b2f/en",
+        "job_employer_email": "rekry@omahame.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-hämeenlinna-0e8e6ef0",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-28",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "5661,67€/kk. Tehtäväkohtaisen palkan lisäksi maksamme kokemukseen perustuvaa lisää, jonka määrä voi olla 0%-8%.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a None Available job in Hämeenlinna? Kanta-Hämeen hyvinvointialue is seeking motivated candidates—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Kanta-Hämeen hyvinvointialue Hämeenlinna other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "137a9d8c",
+        "job_id": "none-available-helsinki-137a9d8c",
+        "processed": true,
+        "title": "None Available",
+        "company": "Helsingin kaupunki",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-02-215-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0f8ac15e-a95d-4763-abdb-f1064dada447/en",
+        "job_employer_email": "hanna.paatela@hel.fi",
+        "job_employer_name": "Hanna Paatela",
+        "job_employer_phone_no": "0407011831",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-helsinki-137a9d8c",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-10-05",
+        "scraped_at": "2026-09-11 10:00:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Helsingin kaupunki in Helsinki. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Helsingin kaupunki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:00:29",
+    "jobs": [
+      {
+        "id": "75b9160b",
+        "job_id": "none-available-helsinki-75b9160b",
+        "processed": true,
+        "title": "None Available",
+        "company": "Helsingin kaupunki",
+        "job_category": "law-and-legal-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-04-72-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/74a109bb-90ec-43dd-942f-e50ed206e909/en",
+        "job_employer_email": "sari.tanner-suonpaa@hel.fi",
+        "job_employer_name": "Sari Tanner-Suonpää",
+        "job_employer_phone_no": "0931051946",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/law-and-legal-services/none-available-helsinki-75b9160b",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-28",
+        "scraped_at": "2026-09-11 10:00:29",
+        "open_positions": 1,
+        "salary_range": "5225,12 €/kk. Lisäksi mahdolliset kokemuslisät määräytyvät HYVTESin mukaisesti.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting None Available position available at Helsingin kaupunki in Helsinki. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Helsingin kaupunki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "747f85d2",
+        "job_id": "none-available-kuopio-747f85d2",
+        "processed": true,
+        "title": "None Available",
+        "company": "Kuopion kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/741959/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b1a1085f-a6d5-4a12-8f15-51d921d788b6/en",
+        "job_employer_email": "kuopiorekry@kuopio.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-kuopio-747f85d2",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Kuopion kaupunki is looking for a skilled None Available in Kuopio. Don't miss this opportunity—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Kuopion kaupunki Kuopio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "6d572ced",
+        "job_id": "none-available-lahti-6d572ced",
+        "processed": true,
+        "title": "None Available",
+        "company": "Lahden kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LAHTI-02-698-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9bf2cdc-8101-4e86-b4c4-3cfb225479b4/en",
+        "job_employer_email": "reetta.ahokas@lahti.fi",
+        "job_employer_name": "Reetta Ahokas",
+        "job_employer_phone_no": "0505180292",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-lahti-6d572ced",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-18",
+        "scraped_at": "2026-09-11 10:00:29",
+        "open_positions": 1,
+        "salary_range": "Tasopalkka 2 284,53€ - 2 399,84€, josta maksetaan työaikaprosentin 52,29 %:n mukainen osuus.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Lahden kaupunki in Lahti. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Lahden kaupunki Lahti other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "83a11de5",
+        "job_id": "none-available-lahti-83a11de5",
+        "processed": true,
+        "title": "None Available",
+        "company": "Lahden kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LAHTI-02-706-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d5429f44-2698-4ffe-a354-38baebb3e260/en",
+        "job_employer_email": "",
+        "job_employer_name": "Kati Hostikka",
+        "job_employer_phone_no": "0503985475",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-lahti-83a11de5",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-11 10:00:29",
+        "open_positions": 1,
+        "salary_range": "Tasopalkka on 2893,22 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting None Available position available at Lahden kaupunki in Lahti. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Lahden kaupunki Lahti other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "3d4ddd3c",
+        "job_id": "none-available-helsinki-3d4ddd3c",
+        "processed": true,
+        "title": "None Available",
+        "company": "Helsingin kaupunki",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-03-381-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b344a24b-2628-4119-95ea-e37dce172044/en",
+        "job_employer_email": "sotepe.seniorikeskusten.rekrytointi@hel.fi",
+        "job_employer_name": "Seniorikeskusten keskitetty rekrytointi",
+        "job_employer_phone_no": "0931001108",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-helsinki-3d4ddd3c",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:29",
+        "open_positions": 1,
+        "salary_range": "3159.90 e/month and possible experience bonus max. 8%",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Helsingin kaupunki in Helsinki. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Helsingin kaupunki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "27d21d29",
+        "job_id": "food-service-manager-vantaa-27d21d29",
+        "processed": true,
+        "title": "Food Service Manager",
+        "company": "Vantaan Tilapalvelut Vantti Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://vantti.fi/tyopaikat/?rmpage=job&rmjob=687&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/84f9b39d-6582-42a3-9852-78ea659d6c4c/en",
+        "job_employer_email": "kaisa.tolonen@vantti.fi",
+        "job_employer_name": "Kaisa Tolonen",
+        "job_employer_phone_no": "0401531256",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/food-service-manager-vantaa-27d21d29",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-25",
+        "scraped_at": "2026-09-11 10:00:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Food Service Manager role at Vantaan Tilapalvelut Vantti Oy. Join a growing team and build your career in Vantaa.",
+        "description": "Vantaan Tilapalvelut Vantti Oy is seeking a responsible and self-motivated Food Service Manager for their Martinlaakso daycare center. This role involves overseeing the smooth implementation of nutritious and tasty meals for children, ensuring their daily well-being. The ideal candidate should possess a chef's degree, a valid hygiene passport, and experience in similar tasks. Knowledge of the Aromi system is also preferred. A strong command of Finnish language skills, both oral and written, is essential. The position offers a competitive hourly wage based on Finnish collective agreements, a lunch allowance, and Epassi Flex benefits. The manager's work hours are from 7:30 a.m. to 3:39 p.m., Monday through Friday, and the position is a full-time temporary substitute until December 23, 2026.",
+        "what_we_expect": [
+          "Chef's degree and valid hygiene passport.",
+          "Previous experience in similar tasks.",
+          "Knowledge of the Aromi system.",
+          "Good command of the Finnish language, both orally and in writing."
+        ],
+        "job_responsibilities": [
+          "Ordering supplies, preparing food, and distributing and serving it.",
+          "Ensuring the smooth implementation of food services.",
+          "Working hours are from Monday to Friday from 7:30 a.m. To 3:39 p.m."
+        ],
+        "what_we_offer": [
+          "Lunch allowance and Epassi Flex.",
+          "Inspiring work environment.",
+          "Working hours are from Monday to Friday from 7:30 a.m. To 3:39 p.m."
+        ],
+        "search_keywords": "Food Service Manager, Martinlaakso daycare center",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:00:30",
+    "jobs": [
+      {
+        "id": "8633d7c4",
+        "job_id": "none-available-turku-8633d7c4",
+        "processed": true,
+        "title": "None Available",
+        "company": "Työkuutio Teollisuus Oy, Turku",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tyokuutio.fi/sahkoautomaatioasentaja",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/99bcf06a-40a3-4abe-909e-841d082a2667/en",
+        "job_employer_email": "jenny.ek@tyokuutio.fi",
+        "job_employer_name": "Jenny Ek",
+        "job_employer_phone_no": "0408334100",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/none-available-turku-8633d7c4",
+        "date_posted": "2026-09-11",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:00:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Työkuutio Teollisuus Oy, Turku as a None Available and grow your career in Turku. Check details and apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Työkuutio Teollisuus Oy, Turku Turku other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
   }
 ]
