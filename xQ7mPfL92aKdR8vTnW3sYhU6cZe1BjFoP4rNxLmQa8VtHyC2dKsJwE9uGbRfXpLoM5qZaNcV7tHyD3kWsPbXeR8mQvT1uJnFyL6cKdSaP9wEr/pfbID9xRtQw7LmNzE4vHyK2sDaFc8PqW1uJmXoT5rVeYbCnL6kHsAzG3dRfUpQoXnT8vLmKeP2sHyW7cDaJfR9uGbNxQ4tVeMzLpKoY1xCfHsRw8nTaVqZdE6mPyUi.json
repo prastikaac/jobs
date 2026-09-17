@@ -271837,5 +271837,65 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:11:08",
+    "jobs": [
+      {
+        "id": "b0421db6",
+        "job_id": "store-manager-lempäälä-b0421db6",
+        "processed": true,
+        "title": "Store Manager",
+        "company": "Björn Borg Finland Oy",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Lempäälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/retail-store-manager-sdsuu-20521656",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/retail-store-manager-sdsuu-20521656",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/store-manager-lempäälä-b0421db6",
+        "date_posted": "2026-08-27",
+        "date_expires": "2026-09-26",
+        "scraped_at": "2026-09-11 10:11:08",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting Store Manager position available at Björn Borg Finland Oy in Lempäälä. Check requirements and submit your application today.",
+        "description": "Björn Borg Finland Oy is seeking a dynamic Store Manager to lead their successful retail store in Ideapark Lempäälä. As a Store Manager, you will be responsible for driving sales, financial results, and team performance. With a strong focus on commercial orientation and leadership, you will inspire your team and create an environment where customers feel loved and inspired. Previous experience in retail, preferably in a leadership role, is required. You will thrive in a fast-paced and dynamic work environment, taking ownership of opportunities and turning them into results. A performance-based bonus, dynamic training events, and an employee discount on Björn Borg products are just a few of the benefits offered.",
+        "what_we_expect": [
+          "Previous experience in retail, preferably in front-line positions.",
+          "Commercially oriented and have a strong focus on sales and results.",
+          "Practical leader who leads by example.",
+          "Self-initiated, organized, and ready to take responsibility.",
+          "Motivates, coaches, and develops a team towards top results.",
+          "Comfortable in a fast-paced and dynamic environment."
+        ],
+        "job_responsibilities": [
+          "Build a winning team.",
+          "Create excellent customer experiences.",
+          "Drive store to the best possible result."
+        ],
+        "what_we_offer": [
+          "A responsible front-line role where you can make a real impact.",
+          "Opportunity for a performance-based bonus.",
+          "Dynamic and relaxed work environment in an ambitious and energetic team.",
+          "Free participation in various training events.",
+          "Free physical fitness tests twice a year.",
+          "Employee discount on Björn Borg products."
+        ],
+        "search_keywords": "store manager, retail, Björn Borg, Ideapark Lempäälä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
   }
 ]
