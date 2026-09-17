@@ -270724,5 +270724,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:05:56",
+    "jobs": [
+      {
+        "id": "a8187e9b",
+        "job_id": "none-available-rovaniemi-a8187e9b",
+        "processed": true,
+        "title": "None Available",
+        "company": "BRP Finland Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/brp-finland-it-harjoittelija-sdsuu-20560848",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/brp-finland-it-harjoittelija-sdsuu-20560848",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/none-available-rovaniemi-a8187e9b",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-10-10",
+        "scraped_at": "2026-09-11 10:05:56",
+        "open_positions": 1,
+        "salary_range": "2 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Looking for a None Available job in Rovaniemi? BRP Finland Oy is seeking motivated candidates—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available BRP Finland Oy Rovaniemi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
   }
 ]
