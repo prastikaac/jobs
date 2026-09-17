@@ -250888,5 +250888,1262 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:03:04",
+    "jobs": [
+      {
+        "id": "ed7eec49",
+        "job_id": "none-available-kuopio-ed7eec49",
+        "processed": true,
+        "title": "None Available",
+        "company": "Kuopion kaupunki",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/735989/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/69ac67a7-eeea-4387-899b-4ea30bf0f318/en",
+        "job_employer_email": "kuopiorekry@kuopio.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/none-available-kuopio-ed7eec49",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "3 169,37 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Kuopion kaupunki in Kuopio. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know. Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Kuopion kaupunki Kuopio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "b671f4a9",
+        "job_id": "none-available-vantaa-b671f4a9",
+        "processed": true,
+        "title": "None Available",
+        "company": "Vantaan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://vantaa.rekrytointi.com/paikat/index.php?o=A_A&jid=18745&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/13799ff6-a8f9-4cd8-aca1-ed9e83548132/en",
+        "job_employer_email": "mirja-riikka.kilponen@vantaa.fi",
+        "job_employer_name": "Mirja-Riikka Kilponen",
+        "job_employer_phone_no": "040 5582808",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-vantaa-b671f4a9",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Looking for a None Available job in Vantaa? Vantaan kaupunki is seeking motivated candidates—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Vantaan kaupunki Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "598ae10c",
+        "job_id": "concrete-element-manufacturer-kankaanpää-598ae10c",
+        "processed": true,
+        "title": "Concrete Element Manufacturer",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kankaanpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22343031",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0ac6a1ff-96f3-4fce-9bf1-1808192a4b2d/en",
+        "job_employer_email": "info@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/concrete-element-manufacturer-kankaanpää-598ae10c",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "salary expectations via the attached applicatio",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Looking for a Concrete Element Manufacturer job in Kankaanpää? Mestarit Henkilöstöpalvelut Oy is seeking motivated candidates—apply today.",
+        "description": "We are seeking a concrete element manufacturer for our client's factory in Kankaanpää. This role offers full-time employment with a competitive hourly wage based on Finnish collective agreements. Previous experience in the construction industry and element manufacturing, problem-solving skills, and proficiency in both Finnish and English are required. Independent work and the ability to follow detailed instructions are expected. Interested candidates should apply by sending an application and CV with salary expectations to the provided link. We interview potential applicants during the application period. Mestarit Henkilöstöpalvelut Oy is a personnel service company specializing in construction and building engineering industries.",
+        "what_we_expect": [
+          "Previous experience in the construction industry and element manufacturing.",
+          "Ability to work independently.",
+          "Problem solving ability.",
+          "Good attitude.",
+          "Finnish and English language skills."
+        ],
+        "job_responsibilities": [
+          "Making molds.",
+          "Reinforcing.",
+          "Concreting.",
+          "Finishing elements."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "concrete element manufacturer, element manufacturing, construction industry, element production, problem solving",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "48a0c904",
+        "job_id": "none-available-janakkala-48a0c904",
+        "processed": true,
+        "title": "None Available",
+        "company": "Janakkalan kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Janakkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/741534/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/965e9d93-84dd-4549-8c64-2b5dbee6e0c0/en",
+        "job_employer_email": "harri.suhonen@janakkala.fi",
+        "job_employer_name": "Harri Suhonen",
+        "job_employer_phone_no": "0505967759",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-janakkala-48a0c904",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "Ovtes 3221,06 € (1.8.2026) + ylitunnit 2 vvt",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a None Available at Janakkalan kunta, located in Janakkala. Apply now and get started.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Janakkalan kunta Janakkala other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "6985aa11",
+        "job_id": "none-available-forssa-6985aa11",
+        "processed": true,
+        "title": "None Available",
+        "company": "Forssan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Forssa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/FOR-02-44-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5df923c6-be9a-4077-b65f-3661d9535bcb/en",
+        "job_employer_email": "tiina.iivanainen@forssa.fi",
+        "job_employer_name": "Tiina Iivanainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-forssa-6985aa11",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-21",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "2990,61 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Forssan kaupunki is hiring a None Available in Forssa. Explore responsibilities, benefits, and apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Forssan kaupunki Forssa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "08826078",
+        "job_id": "none-available-uusikaupunki-08826078",
+        "processed": true,
+        "title": "None Available",
+        "company": "Lounais-Suomen koulutuskuntayhtymä",
+        "job_category": "education",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/741405/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/812875fe-b10a-4dc8-b7c6-eadfa6c8c0d2/en",
+        "job_employer_email": "suvi.laurikkala@novida.fi",
+        "job_employer_name": "Suvi Laurikkala",
+        "job_employer_phone_no": "0503761046",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-uusikaupunki-08826078",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Join Lounais-Suomen koulutuskuntayhtymä as a None Available and grow your career in Uusikaupunki. Check details and apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Lounais-Suomen koulutuskuntayhtymä Uusikaupunki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "0cc8a946",
+        "job_id": "none-available-helsinki-0cc8a946",
+        "processed": true,
+        "title": "None Available",
+        "company": "Helsingin kaupunki",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-05-96-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e561777a-0aff-426c-9a37-e5ad3cebe892/en",
+        "job_employer_email": "ove.lemstrom@hel.fi",
+        "job_employer_name": "Ove Lemström",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/none-available-helsinki-0cc8a946",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "Tasopalkka on 2 413,63 €/kk sekä mahdollinen kokemuslisä max. 8 % (KVTES)",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Helsingin kaupunki in Helsinki. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Helsingin kaupunki Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "a7dfb1b2",
+        "job_id": "none-available-sotkamo-a7dfb1b2",
+        "processed": true,
+        "title": "None Available",
+        "company": "Sotkamon kunta",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Sotkamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/SOT-0-14-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/901b0a91-62c7-4ba2-a670-d730caee4a12/en",
+        "job_employer_email": "antti.paakkonen@sotkamo.fi",
+        "job_employer_name": "Antti Pääkkönen",
+        "job_employer_phone_no": "0401842568",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/none-available-sotkamo-a7dfb1b2",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:04",
+        "open_positions": 1,
+        "salary_range": "3507,04",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Looking for a None Available job in Sotkamo? Sotkamon kunta is seeking motivated candidates—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Sotkamon kunta Sotkamo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:03:05",
+    "jobs": [
+      {
+        "id": "0221457e",
+        "job_id": "none-available-helsinki-0221457e",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22239828",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a90d4184-ae6a-4f65-90a8-4a00f8659f1a/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/none-available-helsinki-0221457e",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting None Available position available at Mestarit Henkilöstöpalvelut Oy in Helsinki. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "3a4436f5",
+        "job_id": "none-available-tampere-3a4436f5",
+        "processed": true,
+        "title": "None Available",
+        "company": "Tampereen kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/TRE-01-1086-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/53d4b803-b817-4b14-88cc-9918bf8b0881/en",
+        "job_employer_email": "etunimi.sukunimi@tampere.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/none-available-tampere-3a4436f5",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-16",
+        "scraped_at": "2026-09-11 10:03:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a None Available at Tampereen kaupunki, located in Tampere. Apply now and get started.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Tampereen kaupunki Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "2e966adf",
+        "job_id": "none-available-forssa-2e966adf",
+        "processed": true,
+        "title": "None Available",
+        "company": "Henkilöstöpalvelut Duuri-tiimi Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Forssa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://duuritiimi.likeit.fi/apply/5280502",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/58708944-4795-4290-8f29-2bf3daa60724/en",
+        "job_employer_email": "konttori@duuritiimi.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/none-available-forssa-2e966adf",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-20",
+        "scraped_at": "2026-09-11 10:03:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Henkilöstöpalvelut Duuri-tiimi Oy in Forssa. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Henkilöstöpalvelut Duuri-tiimi Oy Forssa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "67656d1a",
+        "job_id": "none-available-helsinki-67656d1a",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22343138",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8b6c58b4-05c1-4be3-af91-a848593f201c/en",
+        "job_employer_email": "info@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/none-available-helsinki-67656d1a",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Mestarit Henkilöstöpalvelut Oy is looking for a skilled None Available in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "994aa6ee",
+        "job_id": "none-available-espoo-994aa6ee",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22239879",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d4775ced-d7a2-497e-9bcd-c373a055fbec/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/none-available-espoo-994aa6ee",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a None Available role at Mestarit Henkilöstöpalvelut Oy. Join a growing team and build your career in Espoo.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:03:09",
+    "jobs": [
+      {
+        "id": "afe1937f",
+        "job_id": "none-available-helsinki-afe1937f",
+        "processed": true,
+        "title": "None Available",
+        "company": "Huiput ei Hosu Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Kerava",
+          "Karkkila",
+          "Kauniainen",
+          "Kirkkonummi",
+          "Lohja",
+          "Nurmijärvi",
+          "Espoo",
+          "Inkoo",
+          "Pornainen",
+          "Hyvinkää",
+          "Siuntio",
+          "Askola",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://huiput.likeit.fi/apply/1244664",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7ce5a7cf-c6a1-48fd-82d7-ab6b8a4a45c2/en",
+        "job_employer_email": "jonna.erola@huiput.com",
+        "job_employer_name": "Jonna Erola",
+        "job_employer_phone_no": "+358413280204",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/none-available-helsinki-afe1937f",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-16",
+        "scraped_at": "2026-09-11 10:03:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a None Available at Huiput ei Hosu Oy in Helsinki. Apply now and take the next step in your career.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Huiput ei Hosu Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "bb3230b1",
+        "job_id": "none-available-helsinki-bb3230b1",
+        "processed": true,
+        "title": "None Available",
+        "company": "Destia Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/tyonjohtaja-kiuruveden-maanteiden-hoitourakka/mXwR9y",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e0e12298-d7fc-4c3a-81c2-905faea916ea/en",
+        "job_employer_email": "markku.manninen@destia.fi",
+        "job_employer_name": "Markku Manninen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/none-available-helsinki-bb3230b1",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-19",
+        "scraped_at": "2026-09-11 10:03:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a None Available at Destia Oy, located in Helsinki. Apply now and get started.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Destia Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "7a980edd",
+        "job_id": "none-available-espoo-7a980edd",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22260846",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8d9136e7-0d0e-4b85-9d03-db25d69feeb9/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/none-available-espoo-7a980edd",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting None Available position available at Mestarit Henkilöstöpalvelut Oy in Espoo. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "c86ba756",
+        "job_id": "none-available-helsinki-c86ba756",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22260830",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5620c98b-4566-4bb7-b81d-b017635aec18/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/none-available-helsinki-c86ba756",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next career step as a None Available at Mestarit Henkilöstöpalvelut Oy. Great opportunity in Helsinki—apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      },
+      {
+        "id": "d41d32b6",
+        "job_id": "none-available-espoo-d41d32b6",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22240836",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/586c8efe-601e-4b64-8fc5-d0be21a14e1c/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/none-available-espoo-d41d32b6",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Join Mestarit Henkilöstöpalvelut Oy as a None Available and grow your career in Espoo. Check details and apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:03:11",
+    "jobs": [
+      {
+        "id": "de32855d",
+        "job_id": "none-available-helsinki-de32855d",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22358313",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6d4cc822-ecf5-4924-be76-5272116babf9/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-helsinki-de32855d",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting None Available position available at Mestarit Henkilöstöpalvelut Oy in Helsinki. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "e521e4f7",
+        "job_id": "none-available-helsinki-e521e4f7",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22358300",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b3a86a0f-3c1e-479e-9d2d-450c1a3867a8/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-helsinki-e521e4f7",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting None Available position available at Mestarit Henkilöstöpalvelut Oy in Helsinki. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "eff31283",
+        "job_id": "project-manager-espoo-eff31283",
+        "processed": true,
+        "title": "Project Manager",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22596419",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ca1357b0-bb97-4e6f-bce6-5b0ee47d0593/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/project-manager-espoo-eff31283",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:11",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible via the",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Mestarit Henkilöstöpalvelut Oy is looking for a skilled Project Manager in Espoo. Don't miss this opportunity—apply today.",
+        "description": "Project manager for renovation projects Our client offers you the opportunity to take the next step in your career and to play a central role in significant renovation construction projects. You get to utilize and expand your skills, especially in pipe repairs, facade repairs and waterproofing works. This position is suitable for you who want to make a real impact on the success of projects and grow as part of an expert and innovative team. Your role as project manager In this position, you are responsible for the comprehensive management of projects throughout the entire project management life cycle. You make sure that the projects progress according to plans, on schedule, on budget and within the framework of quality requirements.",
+        "what_we_expect": [
+          "Previous experience in project management of renovation projects.",
+          "Excellent communication and teamwork skills and the ability to motivate the project team.",
+          "Strategic thinking ability and strong financial understanding.",
+          "Proactive and solution-oriented approach even in changing situations."
+        ],
+        "job_responsibilities": [
+          "Previous experience in project management of renovation projects.",
+          "Excellent communication and teamwork skills and the ability to motivate the project team.",
+          "Strategic thinking ability and strong financial understanding.",
+          "Proactive and solution-oriented approach even in changing situations."
+        ],
+        "what_we_offer": [
+          "Previous experience in project management of renovation projects.",
+          "Excellent communication and teamwork skills and the ability to motivate the project team.",
+          "Strategic thinking ability and strong financial understanding.",
+          "Proactive and solution-oriented approach even in changing situations."
+        ],
+        "search_keywords": "Project Manager Mestarit Henkilöstöpalvelut Oy Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "b2ed907e",
+        "job_id": "none-available-keminmaa-b2ed907e",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mehiläinen Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Keminmaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mehilainen.wd103.myworkdayjobs.com/tyomarkkinatori_careers/job/Keminmaa-Vyltie/Hoitaja-sijaisrinkiin-Keminmaalle--keikkaty---Mehilinen-hoitajavuokraus_R0045277/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5d19bdb5-fb31-4770-9f52-f5ec8dfc719b/en",
+        "job_employer_email": "rekrytointi@mehilainen.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/none-available-keminmaa-b2ed907e",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-10-02",
+        "scraped_at": "2026-09-11 10:03:11",
+        "open_positions": 1,
+        "salary_range": "Palkkaus: Sairaanhoitaja 17,25-18,84€/h, lähihoitaja 15,50-17,55€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting None Available position available at Mehiläinen Oy in Keminmaa. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mehiläinen Oy Keminmaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "d491caa0",
+        "job_id": "none-available-rovaniemi-d491caa0",
+        "processed": true,
+        "title": "None Available",
+        "company": "Santa's Hotels",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://santashotels.teamtailor.com/jobs/8356342-rovaniemi-santa-s-hotel-noelle-vastaanottovirkailija/applications/new?promotion=2188951-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e477ee1e-b1ff-47ae-9889-8d299b5b643c/en",
+        "job_employer_email": "eeva.moilanen@santashotels.fi",
+        "job_employer_name": "Eeva Moilanen",
+        "job_employer_phone_no": "+358500715910",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/none-available-rovaniemi-d491caa0",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-30",
+        "scraped_at": "2026-09-11 10:03:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting None Available position available at Santa's Hotels in Rovaniemi. Check requirements and submit your application today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Santa's Hotels Rovaniemi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:03:12",
+    "jobs": [
+      {
+        "id": "9d316b9e",
+        "job_id": "none-available-tampere-9d316b9e",
+        "processed": true,
+        "title": "None Available",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/43539106",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9c107d6a-e1a6-4c68-aa3c-f38071c7616d/en",
+        "job_employer_email": "jani.lindqvist@osuma.fi",
+        "job_employer_name": "Jani Lindqvist",
+        "job_employer_phone_no": "0505659987",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/none-available-tampere-9d316b9e",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-22",
+        "scraped_at": "2026-09-11 10:03:12",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Osuma Henkilöstöpalvelut Oy is hiring a None Available in Tampere. Explore responsibilities, benefits, and apply today.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Osuma Henkilöstöpalvelut Oy Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "53e43da0",
+        "job_id": "none-available-helsinki-53e43da0",
+        "processed": true,
+        "title": "None Available",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/22358334",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cc4ccacb-a7e7-405c-978c-5c3e6c94f375/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/none-available-helsinki-53e43da0",
+        "date_posted": "2026-09-10",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-11 10:03:12",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Join Mestarit Henkilöstöpalvelut Oy as a None Available and grow your career in Helsinki. Check details and apply now.",
+        "description": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "what_we_expect": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Error 500 (Server Error)!!1500.That’s an error.There was an error.",
+          "Please try again later.That’s all we know.",
+          "Professional work environment."
+        ],
+        "search_keywords": "None Available Mestarit Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
   }
 ]
