@@ -271778,5 +271778,64 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-11 10:09:30",
+    "jobs": [
+      {
+        "id": "41c55a3b",
+        "job_id": "team-lead-sales-kuopio-41c55a3b",
+        "processed": true,
+        "title": "Team Lead Sales",
+        "company": "AD VaraosaMaailma / Broman Group",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/team-lead-b2b-sbsro-20532179",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/team-lead-b2b-sbsro-20532179",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/team-lead-sales-kuopio-41c55a3b",
+        "date_posted": "2026-09-02",
+        "date_expires": "2026-10-02",
+        "scraped_at": "2026-09-11 10:09:30",
+        "open_positions": 1,
+        "salary_range": "Salary by agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a Team Lead Sales at AD VaraosaMaailma / Broman Group in Kuopio. Apply now and take the next step in your career.",
+        "description": "We are looking for a Team Lead (B2B) at AD VaraosaMaailma, a department store in Kuopio, Finland. This role requires a practical supervisor who can lead the front-line work and sales management of the corporate sales team. The ideal candidate should have strong coaching skills and a background in commercial thinking and sales management. The Team Lead will be responsible for setting goals, monitoring results, and ensuring the team's daily activities remain under control. The position offers a permanent, full-time employment with a salary determined by the candidate's skills and experience. The role involves working closely with the Motonet department store and Broman Group's stakeholders, and requires excellent communication and organizational skills.",
+        "what_we_expect": [
+          "Supervisory experience and coaching management skills.",
+          "Commercial thinking and understanding of sales and sales management.",
+          "Ability to inspire the team and make people work towards common goals.",
+          "Systematic, self-initiated, and solution-oriented approach.",
+          "Good organizational and pressure tolerance skills.",
+          "Good interaction and cooperation skills."
+        ],
+        "job_responsibilities": [
+          "Lead front-line work and sales management for the corporate sales team.",
+          "Build an everyday life where the team knows its goals and is able to succeed in them.",
+          "Coach team members, set direction, monitor goals, and ensure daily activities remain under control.",
+          "Manage the team's work, organize the team's operations, and move forward in a planned manner.",
+          "Report, participate in budgeting, and coordinate business sales activities."
+        ],
+        "what_we_offer": [
+          "Permanent and full-time employment.",
+          "Salary by agreement, determined based on skills and experience.",
+          "Opportunity to develop professionally."
+        ],
+        "search_keywords": "Team Lead, Sales, Motonet, Kuopio, B2B",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
   }
 ]
