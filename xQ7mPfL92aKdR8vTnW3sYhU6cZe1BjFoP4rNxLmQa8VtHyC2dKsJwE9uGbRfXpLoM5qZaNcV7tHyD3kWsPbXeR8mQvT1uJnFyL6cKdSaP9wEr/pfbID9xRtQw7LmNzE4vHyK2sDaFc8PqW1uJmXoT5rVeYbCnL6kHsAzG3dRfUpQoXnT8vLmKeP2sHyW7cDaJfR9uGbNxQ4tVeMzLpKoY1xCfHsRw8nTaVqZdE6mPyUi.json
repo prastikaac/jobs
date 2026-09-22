@@ -175915,5 +175915,355 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-23 00:40:20",
+    "jobs": [
+      {
+        "id": "54311769",
+        "job_id": "timper-to-seinäjoki-seinäjoki-54311769",
+        "processed": true,
+        "title": "Timper to Seinäjoki",
+        "company": "Nordic JobCentre Oy, Seinäjoki",
+        "job_category": "construction",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://njc.likeit.fi/apply/68608528",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a490c0fc-eae5-46df-8d70-7652dd67fd8c/en",
+        "job_employer_email": "",
+        "job_employer_name": "Rami Koivisto",
+        "job_employer_phone_no": "0444936162",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/timper-to-seinäjoki-seinäjoki-54311769",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-09-23 00:40:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with Nordic JobCentre Oy, Seinäjoki as a Timper to Seinäjoki in Seinäjoki. Learn more about the role and apply now.",
+        "description": "We are looking for skilled carpenters in the Seinäjoki area for the autumn season. We offer professional employment care with 30 years of experience, opportunity for long-term employment, versatile tasks, and proper work clothes and equipment. We provide wage according to the collective agreement, taking into account skills, experience, and skills. Working hours are between 7:00 and 3:30 on weekdays, and applications are already processed during the application period. For more information, please contact Ram on weekdays from 8 to 16, tel. + 358 44 493 6162.",
+        "what_we_expect": [
+          "Solid expertise and experience in various construction work.",
+          "Versatile tasks.",
+          "Proper work clothes and equipment."
+        ],
+        "job_responsibilities": [
+          "Axle work and construction work carried out independently or with a partner.",
+          "Good, if you can find your own hand tools, as well as a valid occupational safety card (however, we will help you get a card if needed).",
+          "Timper to Seinäjoki We are looking for skilled carpenters in the Seinäjoki area for the autumn season."
+        ],
+        "what_we_offer": [
+          "Wage according to the collective agreement.",
+          "Remuneration takes into account the skills, skills and experience required for the task.",
+          "Opportunity for long-term employment.",
+          "Professional employment care with 30 years' experience."
+        ],
+        "search_keywords": "Timper Seinäjoki, carpenter, construction work, skilled, professional, NJC, employment, Oulu",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-23 00:45:11",
+    "jobs": [
+      {
+        "id": "9dfddfed",
+        "job_id": "user-driven-development-competitive-ylöjärvi-9dfddfed",
+        "processed": true,
+        "title": "User-driven development _ competitive",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Ylöjärvi",
+          "Kangasala",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Salo",
+          "Vantaa",
+          "Pirkkala",
+          "Lempäälä",
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/25946424",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3887e78b-3461-4aa0-85b1-1e8241530ab7/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/user-driven-development-competitive-ylöjärvi-9dfddfed",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-09-27",
+        "scraped_at": "2026-09-23 00:45:11",
+        "open_positions": 1,
+        "salary_range": "salary that will match your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting User-driven development _ competitive position available at Lokki Henkilöstöpalvelut Oy in Ylöjärvi.",
+        "description": "We are looking for user-driven development experts for a public service competition. This acquisition targets user-driven development specialist services, where the expert will work in public administration as part of customer development teams or in close cooperation with them, consulting, business sparring, and/or execution of different assignments. The ideal candidate has at least five years of experience in user-driven development of digital services, with a minimum of 100 hours of workload per year.",
+        "what_we_expect": [
+          "At least five (5) years of experience in the user-driven development of digital services.",
+          "Aggregation of experts' experience in the following themes: design and implementation of qualitative user surveys by various means (e.g. Observations, interviews, probes); exploitation of qualitative and quantitative data as part of development work; joint development, inclusion, workshop planning and facilitation; service concept; design and implementation of prototypes; work iteratively and agile operating models; design, through-export and analysis, management and preparation of multidisciplinary development teams, based on client methods; business models and concepts (strategic level).",
+          "Mandatory quality requirements."
+        ],
+        "job_responsibilities": [
+          "Design and implementation of qualitative user surveys by various means (e.g. User surveys, observations, interviews, probes).",
+          "Exploitation of qualitative and quantitative data as part of development work.",
+          "Co-development, inclusion, workshops planning and facilitation.",
+          "The concept, design and visualisation of services.",
+          "Design and implementation of prototypes.",
+          "Working iteratively and using agile operating models."
+        ],
+        "what_we_offer": [
+          "Nice job in a big company.",
+          "Versatile job.",
+          "Competitive salary.",
+          "Flexible working conditions.",
+          "Access to professional development opportunities.",
+          "Opportunities for personal growth and development."
+        ],
+        "search_keywords": "user-driven development, digital services, public service, customer development, agile, multidisciplinary, business models, accessibility testing, personnel services, personnel consultant",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "38504054",
+        "job_id": "nurse-tampere-38504054",
+        "processed": true,
+        "title": "Nurse",
+        "company": "Ikifit Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ikifit.rekrytointi.com/paikat/index.php?o=A_A&jid=594&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/117ca3fa-cd9e-4ad4-a39b-d4f37107ec31/en",
+        "job_employer_email": "denis.kucevic@ikifit.fi",
+        "job_employer_name": "Denis Kucevic",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-tampere-38504054",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-09-23 00:45:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Ikifit Oy is looking for a skilled NURSE, Welfare Centre Härmälänranta - Ikifit, Tampere in Tampere. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a skilled nurse to join our team at the Härmälänranta Welfare Centre in Tampere. As a nurse, you will be responsible for the daily care of residents, providing medical tasks and cooperation with medical professionals. We offer permanent and full-time work, a working environment, statutory occupational health services, a meal benefit, and an ePass to maintain your working capacity. Our remuneration is competitive and based on Finnish collective agreements. A nurse's education, post-graduate work experience in housing services for older people, medical permits, and good Finnish language skills are required.",
+        "what_we_expect": [
+          "Nurse's education.",
+          "Post-graduate work experience in housing services for older people.",
+          "Medical permits.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Daily care of residents.",
+          "Medical tasks and medical cooperation.",
+          "Well-being of the residents."
+        ],
+        "what_we_offer": [
+          "Permanent and full-time work.",
+          "Working environment.",
+          "Wider statutory occupational health services.",
+          "Meal benefit.",
+          "EPass to maintain working capacity.",
+          "Remuneration in line with private social services sector TS G24 D."
+        ],
+        "search_keywords": "NURSE, Welfare Centre, Härmälänranta, Ikifit, Tampere",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-23 00:50:51",
+    "jobs": [
+      {
+        "id": "8fdd70c8",
+        "job_id": "pizza-maker-kajaani-8fdd70c8",
+        "processed": true,
+        "title": "Pizza maker",
+        "company": "MoBa Sol Oy, Kajaani",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:parmabistro.mobasol@gmail.com?subject=Application%20for%20the%20Job%20-%20Pizza%20maker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Pizza%20maker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9d620abb-28e8-4e2e-a273-fbad58b9b880/en",
+        "job_employer_email": "parmabistro.mobasol@gmail.com",
+        "job_employer_name": "Mohammadreza Aboutalebi",
+        "job_employer_phone_no": "0504670066",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/pizza-maker-kajaani-8fdd70c8",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-09-23 00:50:51",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a We're looking for a pizza maker. role at MoBa Sol Oy, Kajaani. Join a growing team and build your career in Kajaani.",
+        "description": "MoBa Sol Oy, based in Kajaani, is seeking a skilled pizza maker to enhance their team. This part-time position offers the opportunity to work either full-time or part-time. The ideal candidate should have experience in pizza making and be able to work independently and carefully in a busy environment. The job requires a hygiene passport, a positive attitude, and cooperation skills. Interested candidates should also have experience in kitchen work. The location is Kajaani.",
+        "what_we_expect": [
+          "Experience in pizza making.",
+          "Ability to work independently and carefully.",
+          "Ability to work in a busy environment."
+        ],
+        "job_responsibilities": [
+          "Make Neapolitan pizzas.",
+          "Make various sauces.",
+          "Perform restaurant works such as cleaning, maintenance, inventory, dough manufacturer."
+        ],
+        "what_we_offer": [
+          "Full-time or part-time work.",
+          "Hygiene passport.",
+          "Positive attitude.",
+          "Cooperation skills.",
+          "Experience in kitchen work."
+        ],
+        "search_keywords": "pizza maker, pizza cook, kitchen worker, Kajaani, job opening",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-23 00:57:41",
+    "jobs": [
+      {
+        "id": "7c6b14cf",
+        "job_id": "golden-palace-family-day-nurse-sipoo-7c6b14cf",
+        "processed": true,
+        "title": "Golden Palace Family Day Nurse",
+        "company": "Kultapalat Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Sipoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.kultapalat.fi/jobs/2212168-kultapalat-perhepaivahoitaja/applications/new?promotion=2209714-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5edc157f-ee32-46bd-9e58-12a196fff16c/en",
+        "job_employer_email": "jenny.salo@kultapalat.fi",
+        "job_employer_name": "Jenny Salo",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/golden-palace-family-day-nurse-sipoo-7c6b14cf",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-06",
+        "scraped_at": "2026-09-23 00:57:41",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next career step as a Golden Palace Family Day Nurse at Kultapalat Oy. Great opportunity in Sipoo—apply now.",
+        "description": "Golden Palace Family Day Nurse Would you be interested in working as a family day nurse, but you don't know where to start? Would you like to be engaged in high-quality early childhood education in small groups where every child receives the support and attention they deserve? If you said yes, keep reading! We are looking for new, reliable family day nurses for the Golden Palace family in Sipow. The heartfelt factors we seek open the doors of their homes to children who form their first relationships with adults outside their own family. Safe and high quality early childhood education is the right of every child and we want to make it possible with your help! The Golden Palace family day nurses have up to four children in groups.",
+        "what_we_expect": [
+          "We expect from you.",
+          "Daycare experience.",
+          "Suitable training or willingness to study at work.",
+          "Safe and clean homes.",
+          "Free criminal background and credit information.",
+          "Wants to be reforming the early childhood education sector."
+        ],
+        "job_responsibilities": [
+          "We expect from you.",
+          "Daycare experience.",
+          "Suitable training or willingness to study at work.",
+          "Safe and clean homes.",
+          "Free criminal background and credit information.",
+          "Wants to be reforming the early childhood education sector."
+        ],
+        "what_we_offer": [
+          "We offer you.",
+          "We expect from you.",
+          "Daycare experience.",
+          "Suitable training or willingness to study at work.",
+          "Safe and clean homes.",
+          "Free criminal background and credit information."
+        ],
+        "search_keywords": "Golden Palace Family Day Nurse Kultapalat Oy Sipoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "fab13f93",
+        "job_id": "buildings-to-the-seinäjoki-river-seinäjoki-fab13f93",
+        "processed": true,
+        "title": "Buildings to the Seinäjoki River",
+        "company": "Nordic JobCentre Oy, Seinäjoki",
+        "job_category": "construction",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://njc.likeit.fi/apply/68608523",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4a68f82c-bda1-44f4-881d-d45d9a3bb76d/en",
+        "job_employer_email": "",
+        "job_employer_name": "Rami Koivisto",
+        "job_employer_phone_no": "0444936162",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/buildings-to-the-seinäjoki-river-seinäjoki-fab13f93",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-09-23 00:57:41",
+        "open_positions": 1,
+        "salary_range": "salary is determined in accordance with the col",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with Nordic JobCentre Oy, Seinäjoki as a Buildings to the Seinäjoki River in Seinäjoki. Learn more about the role and apply now.",
+        "description": "We are looking for a versatile and skilled individual to join our team at Buildings to the Seinäjoki River in Seinäjoki. This position offers a competitive hourly wage based on Finnish collective agreements and the opportunity for long-term employment. We are seeking candidates with a positive attitude, diverse skills, and the ability to work effectively on-site. A smooth Finnish language proficiency and occupational safety card (if necessary) are also highly valued. NJC offers professional employment care with 30 years of experience, including opportunities for training and proper work attire. The salary is determined by collective agreements in the construction sector, and the duration of work depends on the customer's orders and needs.",
+        "what_we_expect": [
+          "A good attitude to work.",
+          "Diverse skills.",
+          "Readiness to take up the task as on the site.",
+          "Smooth Finnish language and occupational safety card (if necessary we will assist in acquiring the card)."
+        ],
+        "job_responsibilities": [
+          "Works are ancillary tasks in the construction sector, such as dredging and grubbing-up work, small demolition work and protection.",
+          "We hope for a good attitude to work, diverse skills and readiness to take up the task as on the site.",
+          "We at NJC offer professional employment care with 30 years' experience, also opportunity for long-term employment, versatile tasks, and proper work clothes and equipment.",
+          "Why work for NJC? Read more here! <https://njc.fi/mix-njc/>."
+        ],
+        "what_we_offer": [
+          "Professional employment care with 30 years' experience.",
+          "Opportunity for long-term employment.",
+          "Versatile tasks.",
+          "Proper work clothes and equipment.",
+          "Salary determined in accordance with the collective agreement in the construction sector.",
+          "Remuneration influenced by the possibility of training in the field / past work experience."
+        ],
+        "search_keywords": "Buildings to the Seinäjoki River Nordic JobCentre Oy, Seinäjoki Seinäjoki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
   }
 ]
