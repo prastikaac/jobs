@@ -41,3 +41,5 @@ notification cross and arrow design fix in pc
 replace bell with image in notification
 
 
+another Option to speed up the translation could be but dont use it now: Optimize NLLB-1.3B (num_beams=1)
+Switching from 4 beams to greedy decoding cuts GPU workload and translation time by ~3× to 4×, while keeping the 1.3B model.
