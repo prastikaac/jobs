@@ -209224,5 +209224,318 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 01:04:47",
+    "jobs": [
+      {
+        "id": "b560cac9",
+        "job_id": "senior-android-developer-kuopio-b560cac9",
+        "processed": true,
+        "title": "Senior Android Developer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26137531",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3be98159-a423-4f51-996b-94ca34af4326/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-android-developer-kuopio-b560cac9",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-02",
+        "scraped_at": "2026-09-30 01:04:47",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting Senior Android Developer position available at Lokki Henkilöstöpalvelut Oy in Kuopio. Check requirements and submit your application today.",
+        "description": "We are looking for a Senior Android Developer to join our team in Kuopio, Ylöjärvi, Kangasala, Lahti, Oulu, Espoo, Turku, Nokia, Helsinki, Vantaa, Tampere, and Vaasa. This role involves designing, implementing, and maintaining high-quality Android applications using Kotlin and Jetpack Compose. The ideal candidate will lead the modernization of existing applications, refactor custom-built UI components, and contribute to test automation coverage. They should have strong hands-on experience with Jetpack Compose, Git, and Java, and be proficient in Android application development. The position offers a competitive hourly wage based on Finnish collective agreements and continuous employment with benefits. We offer assistance with finding accommodation and a modern vehicle fleet.",
+        "what_we_expect": [
+          "Strong professional experience with Kotlin.",
+          "Strong hands-on experience with Jetpack Compose.",
+          "Solid experience in Android application development.",
+          "Strong experience with Git.",
+          "Good working knowledge of Java.",
+          "Experience working with IntelliJ IDEA."
+        ],
+        "job_responsibilities": [
+          "Design, implement, and maintain high-quality Android applications using Kotlin and Jetpack Compose.",
+          "Lead and contribute to the modernization of existing applications by migrating legacy View-based UI implementations to Compose.",
+          "Refactor and update custom-built UI components to align with standardized design system and UI component libraries.",
+          "Drive frontend engineering best practices, promoting maintainable, scalable, and reusable mobile solutions.",
+          "Develop and maintain automated UI tests using Espresso and contribute to delivering overall test automation coverage.",
+          "Create and maintain unit tests and other verification activities to ensure application quality and reliability."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Competitive salary.",
+          "Good employee benefits.",
+          "Flexible working hours.",
+          "Hybrid work arrangement.",
+          "23 days per week on-site."
+        ],
+        "search_keywords": "Senior Android Developer, Banking Sector, Kotlin, Jetpack Compose, Android Application Development, Git, Java, IntelliJ IDEA, Gradle, Material Design, View/XML-based Android UI development, Espresso, Automated UI Testing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "283fb133",
+        "job_id": "service-engineer-kuopio-283fb133",
+        "processed": true,
+        "title": "Service engineer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26137940",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7e21bf16-09ec-4671-a9bf-985e8fd5ebb7/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/service-engineer-kuopio-283fb133",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-06",
+        "scraped_at": "2026-09-30 01:04:47",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a Service engineer at Lokki Henkilöstöpalvelut Oy, located in Kuopio. Apply now and get started.",
+        "description": "Service engineer We're looking for a service engineer for our client. Your Role and Responsibilities: As a Service Engineer, based in the Helsinki or Turku area, you will be responsible for commissioning, maintaining and servicing electric propulsion systems for marine applications. You will work closely with customers and internal engineering and service teams, acting as the technical point of contact while ensuring high-quality service and customer satisfaction. The position involves approximately 150 days of mostly international travel per year, as you will provide practical technical support at customer sites around the world.",
+        "what_we_expect": [
+          "Explore Lokki, through our blog and website: https://www.lokki.fi/ <https://www.lokki.fi/>.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "Explore Lokki, through our blog and website: https://www.lokki.fi/ <https://www.lokki.fi/>.",
+          "Daily operational tasks.",
+          "Supporting the team."
+        ],
+        "what_we_offer": [
+          "Explore Lokki, through our blog and website: https://www.lokki.fi/ <https://www.lokki.fi/>.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "Service engineer Lokki Henkilöstöpalvelut Oy Kuopio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 01:06:34",
+    "jobs": [
+      {
+        "id": "c5a0a6a1",
+        "job_id": "food-production-shift-supervisor-kerava-c5a0a6a1",
+        "processed": true,
+        "title": "Food Production Shift Supervisor",
+        "company": "Aromia Oy, Helsinki",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kerava",
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:contact@aromia.fi?subject=Application%20for%20the%20Job%20-%20Food%20Production%20Shift%20Supervisor&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Food%20Production%20Shift%20Supervisor.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/24a1a8ee-7c83-4b84-9110-c839aca1f9bc/en",
+        "job_employer_email": "contact@aromia.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/food-production-shift-supervisor-kerava-c5a0a6a1",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-09-30 01:06:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a Food Production Shift Supervisor at Aromia Oy, Helsinki, located in Kerava. Apply now and get started.",
+        "description": "Aromia Oy, located in Kerava, Helsinki, is seeking a Food Production Shift Supervisor for a rotating production facility. This role involves managing production schedules, ensuring compliance with recipes and hygiene standards, and maintaining accurate records in a database and AI-based system. The successful candidate will work full-time and receive competitive hourly wages based on Finnish collective agreements. Essential skills include strong management skills, proficiency in Finnish and English, and experience in food production management, product information, and label management. Aromia offers assistance with finding accommodation and a modern vehicle fleet.",
+        "what_we_expect": [
+          "Previous experience in food production management.",
+          "Knowledge of product information and label management.",
+          "Description of the project Food production dynamic."
+        ],
+        "job_responsibilities": [
+          "Plan and manage production in a rotating shift.",
+          "Share tasks and be responsible for production progress and delivery schedules.",
+          "Description of the project Food production dynamic."
+        ],
+        "what_we_offer": [
+          "Salary and benefits package.",
+          "Professional development opportunities.",
+          "Description of the project Food production dynamic."
+        ],
+        "search_keywords": "Food Production Shift Supervisor, Food Production Manager, Production Supervisor",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "4bbc413f",
+        "job_id": "senior-ios-and-android-developer-kuopio-4bbc413f",
+        "processed": true,
+        "title": "Senior iOS and Android Developer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26137883",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d435e3da-8bea-4963-a344-2a695c6b9776/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-ios-and-android-developer-kuopio-4bbc413f",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-05",
+        "scraped_at": "2026-09-30 01:06:34",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting Senior iOS and Android Developer position available at Lokki Henkilöstöpalvelut Oy in Kuopio. Check requirements and submit your application today.",
+        "description": "We are seeking a Senior iOS and Android Developer for our client in the banking sector. The ideal candidate will design, implement, and maintain high-quality Android and iOS applications using Kotlin, Jetpack Compose, and Swift. They will lead the modernization of existing applications by migrating legacy View-based UI implementations to Compose, refactor and update custom-built UI components, drive frontend engineering best practices, and contribute to improving test automation coverage. The successful candidate will have strong professional experience with Kotlin, hands-on experience with Jetpack Compose, professional experience with Swift and iOS development, solid experience in Android application development, strong experience with Git, and good working knowledge of Java.",
+        "what_we_expect": [
+          "Strong professional experience with Kotlin.",
+          "Strong hands-on experience with Jetpack Compose.",
+          "Professional experience with Swift and iOS development.",
+          "Solid experience in Android application development.",
+          "Strong experience with Git.",
+          "Good working knowledge of Java."
+        ],
+        "job_responsibilities": [
+          "Design, implement, and maintain high-quality Android & iOS applications using Kotlin, Jetpack Compose & Swift.",
+          "Lead and contribute to the modernization of existing applications by migrating legacy View-based UI implementations to Compose.",
+          "Refactor and update custom-built UI components to align with the standardized design system and UI component libraries.",
+          "Drive frontend engineering best practices, promoting maintainable, scalable, and reusable mobile solutions.",
+          "Develop and maintain automated UI tests using Espresso & XCUnit and contribute to improving overall test automation coverage.",
+          "Create and maintain unit tests and other verification activities to ensure application quality and reliability."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Competitive salary.",
+          "Good employee benefits.",
+          "Versatile assignment.",
+          "Continuous assignment.",
+          "Flexible service."
+        ],
+        "search_keywords": "Senior iOS and Android Developer Lokki Henkilöstöpalvelut Oy Kuopio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 01:31:46",
+    "jobs": [
+      {
+        "id": "f95b529b",
+        "job_id": "taxi-driver-kittilä-f95b529b",
+        "processed": true,
+        "title": "Taxi driver",
+        "company": "VIP one Oy, levi",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:ilkka@vipone.fi?subject=Application%20for%20the%20Job%20-%20Taxi%20driver&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Taxi%20driver.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a5cc5a21-64b8-4e5c-a065-b14fd65a6777/en",
+        "job_employer_email": "ilkka@vipone.fi",
+        "job_employer_name": "Ilkka Soinu",
+        "job_employer_phone_no": "040-5111066",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-kittilä-f95b529b",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-09-30 01:31:46",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join VIP one Oy, levi as a Taxi driver and grow your career in Kittilä. Check details and apply now.",
+        "description": "We are looking for a dedicated and skilled taxi driver to join our team at VIP one Oy, based in Kittilä. With a strong background in Finnish and English, a clean driving record, and experience operating in winter conditions, you will be responsible for providing exceptional service to our luxury cooperatives. We offer a permanent position with a competitive salary and the opportunity to assist with finding accommodation. Our fleet consists of modern vehicles, and we prioritize economical driving styles. Apply today by contacting ilkka@vipone.fi or calling 040-5111066.",
+        "what_we_expect": [
+          "Finnish and English language skills.",
+          "Clean criminal record.",
+          "Taxi driver's license.",
+          "Ability to drive in winter.",
+          "Understanding of spreading."
+        ],
+        "job_responsibilities": [
+          "Drive taxis in winter.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation."
+        ],
+        "search_keywords": "taxi driver, winter driving, luxury co-op, premium taxi company",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
   }
 ]
