@@ -62,3 +62,23 @@ Run as admin: Disable-ScheduledTask -TaskName 'JobsInFinland_AutoScraper'
 
 To re-enable Auto-runner:
 Run as admin: Enable-ScheduledTask -TaskName 'JobsInFinland_AutoScraper'
+
+
+--------------------------------------------------------------------------------
+Phase 2 Translation Engine: Meta NLLB-200 via CTranslate2
+--------------------------------------------------------------------------------
+Option 1: Meta NLLB-200 via CTranslate2 (Best 100% Local & Unlimited Drop-In Replacement)
+NLLB-200 (No Language Left Behind) is Meta’s state-of-the-art neural machine translation engine supporting 200+ languages, with dedicated high-performance support for Finnish (fin_Latn), Swedish (swe_Latn), and English (eng_Latn).
+
+When combined with CTranslate2 (an ultra-fast inference engine with 8-bit quantization):
+- Truly Unlimited: Runs 100% offline on your machine. No API keys, no IP bans, no network drops.
+- Fast: Translates a full job posting in ~300 milliseconds on a standard CPU.
+- Removes Pipeline Delays: Completely eliminates the time.sleep(15.0) pause in job_translator.py and runs parallel threads. Phase 2 finishes in under 1 minute instead of 45 minutes.
+- Memory Footprint: The nllb-200-distilled-600M model uses only ~1.2 GB of RAM.
+
+Setup & Activation:
+1. Install requirements:
+   pip install ctranslate2 transformers sentencepiece huggingface_hub
+2. Download model & verify:
+   python scraper\scripts\setup_nllb.py
+--------------------------------------------------------------------------------
