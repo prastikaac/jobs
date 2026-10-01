@@ -262214,5 +262214,661 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:51:56",
+    "jobs": [
+      {
+        "id": "2d378e8c",
+        "job_id": "software-developer-seinäjoki-2d378e8c",
+        "processed": true,
+        "title": "Software Developer",
+        "company": "Exertus Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/exertus-ohjelmistokehittaja-sdsuu-20601261",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/exertus-ohjelmistokehittaja-sdsuu-20601261",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/software-developer-seinäjoki-2d378e8c",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:51:56",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exertus Oy is hiring a Software developer in Seinäjoki. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a software developer to join our team and contribute to the development of intelligent software solutions for the control of mobile machines. This role involves implementing machine control systems on demanding customer projects, ensuring that solutions are not confined to the confines of the desk but are deployed in the right machines and across the globe. As part of a growing and internationalizing business, you will have the opportunity to influence your workflow and develop as an expert. We value your initiative and ability to understand customer needs at a practical level. Seinäjoki, Finland. Full-time, permanent position. Salary not disclosed. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Skills in software development.",
+          "Experience in machine control systems.",
+          "Knowledge of customer project requirements."
+        ],
+        "job_responsibilities": [
+          "Develop intelligent software solutions for mobile machine control systems.",
+          "Implement machine control systems on customer projects.",
+          "We offer you the opportunity to influence your own workflow and develop as an expert as part of a growing and internationalizing business."
+        ],
+        "what_we_offer": [
+          "Concrete development work leading to real-world applications.",
+          "Opportunity to influence workflow and become an expert.",
+          "Growth in a growing and internationalizing business."
+        ],
+        "search_keywords": "software developer, mobile machine control, machine control systems, customer projects, software development, machine control systems, customer projects",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:51:58",
+    "jobs": [
+      {
+        "id": "2306227b",
+        "job_id": "specialist-in-fundraising-helsinki-2306227b",
+        "processed": true,
+        "title": "Specialist in fundraising",
+        "company": "Lääkärit Ilman Rajoja Ry",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/laakarit-ilman-rajoja-varainhankinnan-asiantuntija-sijaisuus-sdsuu-20601363",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/laakarit-ilman-rajoja-varainhankinnan-asiantuntija-sijaisuus-sdsuu-20601363",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/specialist-in-fundraising-helsinki-2306227b",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:51:58",
+        "open_positions": 1,
+        "salary_range": "3 514 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Looking for a Specialist in fundraising (location) job in Helsinki? Lääkärit Ilman Rajoja Ry is seeking motivated candidates—apply today.",
+        "description": "We are looking for a highly motivated and enthusiastic Specialist in Fundraising to join our dedicated team in Helsinki. This role offers a unique opportunity to contribute to the growth and success of Médecins Sans Frontières (MSF) in Finland, inspiring and engaging donors and key supporters. With a strong background in fundraising and a passion for healthcare, you will play a crucial role in supporting the organisation's key donor and key donor activities. This is a temporary position, with a salary of 3,514 €/kk, and you will be working full-time from November 2026 for approximately eleven months. We offer an inspiring and collaborative environment, with assistance with finding accommodation provided. This is a fantastic chance to make a difference in the lives of those in need.",
+        "what_we_expect": [
+          "Strong communication skills.",
+          "Experience in event planning.",
+          "Ability to work independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Support the organisation of the world's largest independent care market.",
+          "Leverage expertise in fundraising to engage donors and key supporters.",
+          "Specialist in fundraising (location) Médecins Sans Frontières (MSF) is the world's largest independent charity specialising in healthcare."
+        ],
+        "what_we_offer": [
+          "Flexible working hours.",
+          "Professional development opportunities.",
+          "Collaborative work environment."
+        ],
+        "search_keywords": "fundraising, specialist, MSF, donation, key donor, volunteer, Finnish office",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:00",
+    "jobs": [
+      {
+        "id": "4b4a8660",
+        "job_id": "sales-engineer-instrumentation-and-power-distribution-pirkkala-4b4a8660",
+        "processed": true,
+        "title": "Sales Engineer, Instrumentation and Power Distribution",
+        "company": "Tampereen Sähköpalvelu Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tampereen-sahkopalvelu-myynti-insinoori-kojeistot-ja-sahkonjakelu-sdsuu-20601617",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tampereen-sahkopalvelu-myynti-insinoori-kojeistot-ja-sahkonjakelu-sdsuu-20601617",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/sales-engineer-instrumentation-and-power-distribution-pirkkala-4b4a8660",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:52:00",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Tampereen Sähköpalvelu Oy as a Sales engineer, instrumentation and power distribution in Pirkkala.",
+        "description": "Tampereen Sähköpalvelu Oy is seeking a Sales Engineer specializing in instrumentation and power distribution. This role offers a permanent position with full-time work, focusing on technical sales within the hardware and electrical distribution industry. The ideal candidate will join a team of experienced professionals, including Timi, Juha, and Petri, where they will contribute to the company's growth and success. The role involves sales of printed products and customer technical services, providing an excellent opportunity for professional development. The company offers assistance with finding accommodation and a modern vehicle fleet.",
+        "what_we_expect": [
+          "Strong technical knowledge in instrumentation and power distribution.",
+          "Excellent communication skills.",
+          "Proficiency in sales techniques."
+        ],
+        "job_responsibilities": [
+          "Develop and execute sales strategies.",
+          "Collaborate with technical team to provide solutions.",
+          "Handle customer inquiries and technical support."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Professional development opportunities.",
+          "Flexible working hours."
+        ],
+        "search_keywords": "sales engineer instrumentation power distribution",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:02",
+    "jobs": [
+      {
+        "id": "9012be8d",
+        "job_id": "business-controller-uusikaupunki-9012be8d",
+        "processed": true,
+        "title": "Business controller",
+        "company": "Valmet Automotive Oyj",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/valmet-automotive-business-controller-sdsuu-20602782",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/valmet-automotive-business-controller-sdsuu-20602782",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/business-controller-uusikaupunki-9012be8d",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:52:02",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Exciting Business controller position available at Valmet Automotive Oyj in Uusikaupunki. Check requirements and submit your application today.",
+        "description": "Valmet Automotive Oyj is seeking a Business Controller to join our dynamic team in Uusikaupunki. This role is part of our ongoing growth and transformation, offering unparalleled opportunities to leverage your expertise in advanced manufacturing and finance. As a Business Controller, you will provide end-to-end expertise in advanced manufacturing, supporting our contract manufacturing and industrialization of future technologies across automotive, defense, and other high-tech industrial sectors. With a focus on continuous development, we are committed to providing a rewarding career and a fast-paced environment that aligns with your passion for technology and innovation. Our team is looking for a commercially minded and analytically strong individual to join us.",
+        "what_we_expect": [
+          "Advanced degree in finance.",
+          "Strong analytical skills.",
+          "Proficiency in Microsoft Office."
+        ],
+        "job_responsibilities": [
+          "Manage financial reports.",
+          "Analyze market trends.",
+          "Develop financial strategies."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "401(k) plan."
+        ],
+        "search_keywords": "business controller, finance, controller, controller position, controller job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:06",
+    "jobs": [
+      {
+        "id": "7e6e8fd1",
+        "job_id": "chief-of-staff-tuusula-7e6e8fd1",
+        "processed": true,
+        "title": "Chief of Staff",
+        "company": "Raskone Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/raskone-copy-of-huoltoesimies-tyonjohto-tuusula-sdsuu-20604332",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/raskone-copy-of-huoltoesimies-tyonjohto-tuusula-sdsuu-20604332",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/chief-of-staff-tuusula-7e6e8fd1",
+        "date_posted": "2026-09-26",
+        "date_expires": "2026-10-26",
+        "scraped_at": "2026-09-30 11:52:06",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Raskone Oy as a Chief of Staff and grow your career in Tuusula. Check details and apply now.",
+        "description": "Raskone Oy, a leading company in Finland, is seeking a Chief of Staff with a strong background in project management and commercial vehicle fleet maintenance. This position offers the opportunity to work alongside a skilled team, supported by modern tools and technologies. The ideal candidate will thrive in a fast-paced environment, leveraging their technical skills and customer service expertise to contribute to the company's success. With a focus on project management, the Chief of Staff will be involved in a variety of tasks, from overseeing fleet maintenance to collaborating with clients. The role is permanent and comes with a competitive salary, making it an excellent opportunity for someone looking to join a dynamic and growing organization.",
+        "what_we_expect": [
+          "Technical skills.",
+          "Customer service skills.",
+          "Commercial vehicle fleet maintenance experience."
+        ],
+        "job_responsibilities": [
+          "Assist in decision-making.",
+          "Collaborate with team members.",
+          "Manage projects."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "Chief of Staff, Chief of Staff job, Chief of Staff position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:08",
+    "jobs": [
+      {
+        "id": "75120753",
+        "job_id": "service-coordinator-pietarsaari-75120753",
+        "processed": true,
+        "title": "Service Coordinator",
+        "company": "Beamex Oy Ab",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Pietarsaari"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/beamex-service-coordinator-sdsuu-20601151",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/beamex-service-coordinator-sdsuu-20601151",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/service-coordinator-pietarsaari-75120753",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:52:08",
+        "open_positions": 1,
+        "salary_range": "The salary range for this position is 2600-3400€ per month, and the final salary will be based on the selected candidate’s background and skills. In addition to your base salary, we offer a comprehensive benefits package, including Epassi (€400/year), extensive occupational healthcare, and the Auntie service to support mental wellbeing. You’ll also have the opportunity to take part in Team Beamex events and activities throughout the year.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Service coordinator role at Beamex Oy Ab. Join a growing team and build your career in Pietarsaari.",
+        "description": "We are looking for a Service Coordinator at Beamex Oy Ab in Pietarsaari. This role involves coordinating service orders, contracts, and deliveries for selected countries, ensuring a high-quality customer experience. The position offers a competitive salary range of 2600-3400€ per month, plus comprehensive benefits including Epassi, occupational healthcare, and the Auntie service for mental wellbeing. Opportunities to participate in Team Beamex events and activities are also available. The Service Coordinator will work with customers and colleagues worldwide, handling service orders, quotes, contracts, and deliveries. This is a full-time position with a temporary continuity of work.",
+        "what_we_expect": [
+          "Problem-solving skills.",
+          "Excellent communication skills.",
+          "Ability to work with customers and colleagues globally."
+        ],
+        "job_responsibilities": [
+          "Handle service orders and contracts for selected countries.",
+          "Ensure a high-quality customer experience throughout the service process.",
+          "What will you do?"
+        ],
+        "what_we_offer": [
+          "Customer service support.",
+          "Access to global customer databases.",
+          "Flexible working hours."
+        ],
+        "search_keywords": "service coordinator, customer service, problem-solving, communication, global customer experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:10",
+    "jobs": [
+      {
+        "id": "9b03a1e6",
+        "job_id": "communication-expert-lappeenranta-9b03a1e6",
+        "processed": true,
+        "title": "Communication expert",
+        "company": "LUT-yliopisto",
+        "job_category": "environment-and-sustainability",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/lut-yliopisto-tietoliikenneasiantuntija-sdsuu-20598407",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/lut-yliopisto-tietoliikenneasiantuntija-sdsuu-20598407",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/environment-and-sustainability/communication-expert-lappeenranta-9b03a1e6",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:52:10",
+        "open_positions": 1,
+        "salary_range": "3 500–4 000 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "LUT-yliopisto is looking for a skilled Communication expert in Lappeenranta. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a telecommunications specialist with expertise in wired and wireless local networks, routers, and returners to join our network team at LUT-yliopisto. This role involves maintaining and developing the network environments of LUT and LAB universities, working closely with our network experts. Your responsibilities will include the maintenance of network environments for RUSADI, DNS, and CCP services, as well as the overall management of the network environments. With a strong background in DH and experience, you will contribute to the development of campus networks and telecommunications solutions for research and teaching. Full-time employment is offered, with a competitive salary ranging from 3,500 to 4,000 euros per month.",
+        "what_we_expect": [
+          "DH and experience.",
+          "Skills or qualifications.",
+          "Languages."
+        ],
+        "job_responsibilities": [
+          "Maintain and develop network environments of LUT and LAB universities.",
+          "Maintain wired and wireless local networks.",
+          "Maintain routers, routers and returners.",
+          "Maintain network environments for RUSADI, DNS, and CCP services.",
+          "Maintain network environments."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "communication expert, telecommunications specialist, network environments, LUT, LAB universities, network team, network environments, wired and wireless local networks, routers, routers and returners, RUSADI, DNS, CCP services, network environments.",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:12",
+    "jobs": [
+      {
+        "id": "1345cd18",
+        "job_id": "sellers-vaasa-ja-1-muu-1345cd18",
+        "processed": true,
+        "title": "Sellers",
+        "company": "Instru optiikka Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Vaasa ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/instru-optiikka-myyjia-kemi-ja-vaasa-sdsuu-20598436",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/instru-optiikka-myyjia-kemi-ja-vaasa-sdsuu-20598436",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/sellers-vaasa-ja-1-muu-1345cd18",
+        "date_posted": "2026-09-24",
+        "date_expires": "2026-10-24",
+        "scraped_at": "2026-09-30 11:52:12",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Sellers (Kemi and Vaasa) at Instru optiikka Oy in Vaasa ja 1 muu. Apply now and take the next step in your career.",
+        "description": "We are looking for two salespeople, one from Kem and one from Vaasa, at Instru Optika. Join a customer-oriented and professional team where you'll work in a variety of sales and customer service roles, developing expertise in optics. At Kem, a full-time position with 37.5 hours per week or a fixed-term until 31 January 2027. At Vaasa, a permanent 30 hours per week position. Finnish language skills are required. Assistance with finding accommodation is provided. A modern vehicle fleet is available. Economical driving style is expected.",
+        "what_we_expect": [
+          "Optics knowledge.",
+          "Customer service skills.",
+          "Sales experience."
+        ],
+        "job_responsibilities": [
+          "Develop expertise in optics.",
+          "Work in sales and customer service roles.",
+          "Join a customer-oriented team."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation."
+        ],
+        "search_keywords": "optics, sales, customer service, team, Kem, Vaasa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:14",
+    "jobs": [
+      {
+        "id": "12b0aed0",
+        "job_id": "business-controller-turku-12b0aed0",
+        "processed": true,
+        "title": "Business Controller",
+        "company": "Takomo Golf",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/takomo-golf-business-controller-turku-sdsuu-20598201",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/takomo-golf-business-controller-turku-sdsuu-20598201",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/business-controller-turku-12b0aed0",
+        "date_posted": "2026-09-24",
+        "date_expires": "2026-10-24",
+        "scraped_at": "2026-09-30 11:52:14",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Takomo Golf is hiring a Business controller in Turku. Explore responsibilities, benefits, and apply today.",
+        "description": "Takomo Golf is seeking a Business Controller with a passion for forecasting and an AI-native mindset. Join a fast-growing team of over 50 professionals globally, where the local Finnish community is at the heart of our culture and collaboration. We offer a unique blend of seasonal work and continuous growth, with a focus on building a forecasting system that thrives on innovation. Our team is highly collaborative and values genuine enjoyment in working together. If you're ready to contribute to a brand built by a team that genuinely enjoys working together, we'd love to hear from you.",
+        "what_we_expect": [
+          "Proficiency in AI and data analysis.",
+          "Experience in financial management and reporting.",
+          "Sound like you?"
+        ],
+        "job_responsibilities": [
+          "Develop and improve forecasting systems.",
+          "Ensure accurate financial reporting and analysis.",
+          "Sound like you?"
+        ],
+        "what_we_offer": [
+          "Competitive salary and benefits.",
+          "Flexible working hours and remote work options.",
+          "Sound like you?"
+        ],
+        "search_keywords": "controller, business, forecasting, AI, finance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:18",
+    "jobs": [
+      {
+        "id": "cafa09cb",
+        "job_id": "nurse-vantaa-cafa09cb",
+        "processed": true,
+        "title": "Nurse",
+        "company": "Vantaan ja Keravan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/sairaanhoitaja-tikkurilan-vanhustenkeskus-svsan-20598378",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/sairaanhoitaja-tikkurilan-vanhustenkeskus-svsan-20598378",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-vantaa-cafa09cb",
+        "date_posted": "2026-09-25",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:52:18",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a I'm a nurse at the Tikkurila Senior Center. job in Vantaa? Vantaan ja Keravan hyvinvointialue is seeking motivated candidates—apply today.",
+        "description": "We are looking for nurses to join our multi-professional team at the Tikkurila Senior Center in Vantaa. As a key expert, you will collaborate with colleagues, support pharmaceutical work, and contribute to the community culture. Your role includes coordinating with pharmaceutical staff, ensuring close collaboration with other healthcare professionals, and maintaining the quality and safety of patient care. This is a permanent position with full-time work, offering a salary and the opportunity to build a supportive and collaborative environment. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Key expertise in a multi-professional working community.",
+          "Collaboration between colleagues.",
+          "I'm a nurse at the Tikkurila Senior Center."
+        ],
+        "job_responsibilities": [
+          "Assess the quality and safety of patient care as a whole.",
+          "Collaborate with other healthcare professionals.",
+          "I'm a nurse at the Tikkurila Senior Center."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation."
+        ],
+        "search_keywords": "nurse, senior center, Tikkurila, healthcare, community, collaboration",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:20",
+    "jobs": [
+      {
+        "id": "5f071618",
+        "job_id": "customer-analytics-and-insights-manager-vantaa-5f071618",
+        "processed": true,
+        "title": "Customer Analytics and Insights Manager",
+        "company": "Oomi Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/oomi-customer-analytics-insights-manager-sdsuu-20597723",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/oomi-customer-analytics-insights-manager-sdsuu-20597723",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/customer-analytics-and-insights-manager-vantaa-5f071618",
+        "date_posted": "2026-09-24",
+        "date_expires": "2026-10-24",
+        "scraped_at": "2026-09-30 11:52:20",
+        "open_positions": 1,
+        "salary_range": "4 800–6 500 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a Customer analytics and insights manager at Oomi Oy, located in Vantaa. Apply now and get started.",
+        "description": "We are looking for a Customer Analytics & Insights Manager to join our Development, Change and Customer Understanding unit. This role will help us better understand our customers and translate data into actionable insights that drive business development and improve the customer experience. With a passion for data and customer insights, you will work directly with our team to make informed decisions and drive positive outcomes. Our modern vehicle fleet and supportive work environment are just two of the benefits you can expect. If you're ready to make a difference and join a team committed to creating a better world for everyone, we encourage you to apply.",
+        "what_we_expect": [
+          "Bachelor's degree in a related field.",
+          "Experience in data analysis and customer insights.",
+          "Customer analytics and insights manager Would you like to help us better understand our customers?"
+        ],
+        "job_responsibilities": [
+          "Analyze customer data to gain insights.",
+          "Develop customer insights that drive business decisions.",
+          "Customer analytics and insights manager Would you like to help us better understand our customers?"
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "customer analytics, insights, data, customer experience, business development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:52:37",
+    "jobs": [
+      {
+        "id": "9244e78e",
+        "job_id": "field-sales-consultant-and-sales-representative-tampere-9244e78e",
+        "processed": true,
+        "title": "Field Sales Consultant and Sales Representative",
+        "company": "SumUp Ltd",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/field-sales-consultant-myyja-stsyo-20582198",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/field-sales-consultant-myyja-stsyo-20582198",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/field-sales-consultant-and-sales-representative-tampere-9244e78e",
+        "date_posted": "2026-09-24",
+        "date_expires": "2026-10-24",
+        "scraped_at": "2026-09-30 11:52:37",
+        "open_positions": 1,
+        "salary_range": "4 000-10 000 €/kk laskutusmahdollisuus",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Field sales consultant and sales representative role at SumUp Ltd. Join a growing team and build your career in Tampere.",
+        "description": "SumUp Ltd, a leading fintech company in Europe, is seeking field sales consultants and sales representatives for its growing team in Tampere. This is not a standard sales role; instead, you'll be responsible for building your own customer base and acquiring new clients. You'll work independently, plan your own projects, and have a direct impact on your earnings. Daily work will involve active prospecting, meeting with local sales consultants, and providing tailored solutions to meet the needs of new customers. This role offers a competitive salary range of €4,000 to €10,000 per month, with the potential for growth. SumUp provides assistance with finding accommodation, ensuring a comfortable work environment. The company offers a modern vehicle fleet and a supportive work environment.",
+        "what_we_expect": [
+          "Have a direct impact on what you earn through your own company.",
+          "Field sales consultant and sales representative How much do you want to earn as a seller?",
+          "SumUp, one of Europe's leading fintech companies, is looking for field sales consultants to join a growing team across Finland."
+        ],
+        "job_responsibilities": [
+          "Build your own customer portfolio and acquire customers yourself.",
+          "Plan your work independently and are responsible for your own area.",
+          "Have a direct impact on what you earn through your own company.",
+          "Do daily work.",
+          "Create new opportunities and actively build business."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Field sales consultant and sales representative How much do you want to earn as a seller?",
+          "SumUp, one of Europe's leading fintech companies, is looking for field sales consultants to join a growing team across Finland."
+        ],
+        "search_keywords": "field sales consultant, sales representative, fintech, SumUp, Finland, sales, sales consultant, sales representative, sales, sales job, sales position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
