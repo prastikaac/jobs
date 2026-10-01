@@ -262870,5 +262870,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:53:05",
+    "jobs": [
+      {
+        "id": "e99e4794",
+        "job_id": "assistant-store-manager-kaarina-e99e4794",
+        "processed": true,
+        "title": "Assistant Store Manager",
+        "company": "Puuilo",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Kaarina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/apulaismyymalapaallikko-kaarinaan-spsuu-20588782",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/apulaismyymalapaallikko-kaarinaan-spsuu-20588782",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/assistant-store-manager-kaarina-e99e4794",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-09-30 11:53:05",
+        "open_positions": 1,
+        "salary_range": "2 297–2 857 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a I 'm the assistant store manager at Kaarina 's . at Puuilo, located in Kaarina. Apply now and get started.",
+        "description": "We are the assistant store manager at Kaarina's. We are currently seeking an Assistant Store Manager for Puuilo Kaarina's store. The job responsibilities include managing the store, staff well-being and training, sales, safety, cleanliness, and customer satisfaction. Ensuring the store's timeliness and providing customers with accurate and professional resources to enhance sales and increase working hours. The Assistant Store Manager works closely with the Store Manager, ensuring the store's operational efficiency and staff's professional development. This role offers a competitive salary range of 2,297–2,857 €/kk and is permanent. We are looking for a candidate with strong organizational skills, excellent communication abilities, and a passion for customer service.",
+        "what_we_expect": [
+          "Acts as the closest operational person to the store staff.",
+          "Works with the Store Manager to manage the store, staff, sales, safety, cleanliness, and customer satisfaction.",
+          "I 'm the assistant store manager at Kaarina 's ."
+        ],
+        "job_responsibilities": [
+          "Responsible for the management of the store, staff training, sales, safety, cleanliness, and customer satisfaction.",
+          "Ensures the timeliness of the store and provides customers with access to the right information and professional resources to increase sales and working hours.",
+          "I 'm the assistant store manager at Kaarina 's ."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "assistant store manager, assistant store manager job, assistant store manager position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
   }
 ]
