@@ -262924,5 +262924,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:54:49",
+    "jobs": [
+      {
+        "id": "12bdab38",
+        "job_id": "the-barber-room-m-kuopio-12bdab38",
+        "processed": true,
+        "title": "The Barber - Room M",
+        "company": "M Room",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/parturi-m-room-kuopio-smsro-20569292",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/parturi-m-room-kuopio-smsro-20569292",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/the-barber-room-m-kuopio-12bdab38",
+        "date_posted": "2026-09-15",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-09-30 11:54:49",
+        "open_positions": 1,
+        "salary_range": "salary + commission) TAI We have the opportunit",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "M Room is looking for a skilled The Barber - Room M in Kuopio. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a barber to join our team in Kuopio! Our shops, located at Savonkatu and Kuopion Gate, have been serving customers for over a decade and have a combined customer base of just over 1200 per month. We are seeking to expand our customer base, and you will be part of the solution. As a barber, you will work full-time and enjoy a competitive earning model that includes a fixed salary plus commission. We offer comprehensive training and personalized materials to help you develop your own barbershop. With a modern vehicle fleet and assistance with finding accommodation, you will have the tools to succeed in this role.",
+        "what_we_expect": [
+          "Good communication skills.",
+          "Ability to work independently.",
+          "Positive attitude and customer service skills."
+        ],
+        "job_responsibilities": [
+          "Cut hair and provide styling services.",
+          "Maintain salon cleanliness and hygiene.",
+          "Answer customer inquiries and provide customer service.",
+          "Assist customers with styling and grooming needs."
+        ],
+        "what_we_offer": [
+          "Competitive salary and commission structure.",
+          "Opportunity to work as a barber contract company.",
+          "Comprehensive training and materials for barbershop operation.",
+          "Personalized training and materials for barbershop operation."
+        ],
+        "search_keywords": "barber, barber shop, salon, barber shop job, barber job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
   }
 ]
