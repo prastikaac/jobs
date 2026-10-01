@@ -243593,5 +243593,1335 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:47:42",
+    "jobs": [
+      {
+        "id": "3688c219",
+        "job_id": "materials-management-engineer-vehicle-engineer-vantaa-3688c219",
+        "processed": true,
+        "title": "Materials management engineer (vehicle engineer)",
+        "company": "Keskusrikospoliisi",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://valtiolle.fi/tyoavain/25293/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/749eb949-149a-4da9-8cc1-ab32a171c0f8/en",
+        "job_employer_email": "",
+        "job_employer_name": "Minna Liimatainen",
+        "job_employer_phone_no": "0295480141",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/materials-management-engineer-vehicle-engineer-vantaa-3688c219",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Materials management engineer (vehicle engineer) 40.11 position available at Keskusrikospoliisi in Vantaa.",
+        "description": "We are looking for a Materials Management Engineer (Vehicle Engineer) with experience in vehicle management and fleet security for the Central Criminal Police's Safety and Operational Unit. This role involves managing the renewal, use, and maintenance of vehicles and their equipment, acting as the unit's liaison with other agencies, and contributing to personnel safety, premises, and occupational safety. The position is permanent and comes with a salary of 40.11, making it a significant opportunity for someone passionate about vehicles and security. The job offers a supportive and ethical work environment, with comprehensive benefits including flexible working hours, on-time exercise benefits, and a positive atmosphere.",
+        "what_we_expect": [
+          "Skills in vehicle management.",
+          "Experience in managing a vehicle fleet.",
+          "Knowledge of ethical principles and values."
+        ],
+        "job_responsibilities": [
+          "Renewal of vehicles and their equipment.",
+          "Use and maintenance of vehicles.",
+          "Liaison with police administration and service providers."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Vehicle management tasks.",
+          "Liaison with police administration and service providers."
+        ],
+        "search_keywords": "materials management engineer vehicle engineer vehicle fleet",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "27004684",
+        "job_id": "3d-technicians-to-be-excavator-drivers-helsinki-27004684",
+        "processed": true,
+        "title": "3D technicians to be excavator drivers",
+        "company": "InfraFour Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Järvenpää",
+          "Kerava",
+          "Kauniainen",
+          "Kirkkonummi",
+          "Nurmijärvi",
+          "Espoo",
+          "Sipoo",
+          "Hyvinkää",
+          "Siuntio",
+          "Mäntsälä",
+          "Tuusula",
+          "Porvoo",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://infrafour.likeit.fi/apply/435431",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4b42b393-624f-4761-8d34-43d673a2f701/en",
+        "job_employer_email": "kim.tuovinen@infrafour.fi",
+        "job_employer_name": "Kim Tuovinen",
+        "job_employer_phone_no": "040 153 8108",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/3d-technicians-to-be-excavator-drivers-helsinki-27004684",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a 3D technicians to be excavator drivers at InfraFour Oy in Helsinki. Apply now and take the next step in your career.",
+        "description": "InfraFour Oy is seeking 3D technicians with experience in excavator drivers for clients in the D.C. area. Applicants should be familiar with Novatron or Leica 3D machine control systems and possess previous excavator and 3D machine control experience. The role offers a fixed-term employment relationship, quality clothing, and a professional working environment. Salary is competitive based on Finnish collective agreements and skills and experience. Interested candidates should apply immediately or contact Kim Tuovining at 040 153 8108. For more information, visit InfraFour.fi.",
+        "what_we_expect": [
+          "Familiarity with Novatron or Leica 3D machine control systems.",
+          "Previous experience with excavators.",
+          "Ability to work independently."
+        ],
+        "job_responsibilities": [
+          "Operate excavators with 3D machine control systems.",
+          "Assist with 3D machine control tasks.",
+          "Maintain and repair excavators and 3D machine control systems."
+        ],
+        "what_we_offer": [
+          "Fixed-term employment relationship.",
+          "Quality clothing.",
+          "Professional working environment.",
+          "Salary in accordance with the TES of the Infrastructure sector, taking into account skills and experience."
+        ],
+        "search_keywords": "3D technicians excavator drivers, 3D control system, Novatron, Leica 3D machine control, excavator, 3D machine control, infrastructure sector",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "e4be380e",
+        "job_id": "early-childhood-education-teacher-rovaniemi-e4be380e",
+        "processed": true,
+        "title": "Early Childhood Education Teacher",
+        "company": "Rovaniemen kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/ROI-03-131-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b8fd258d-189b-4f6f-9ad8-e05c6ef8e9df/en",
+        "job_employer_email": "heidi.vierela@rovaniemi.fi",
+        "job_employer_name": "Heidi Vierelä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-rovaniemi-e4be380e",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-13",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "Palkkaus OVTES:n mukainen (peruspalkka 3027,26 €/kk). Lisäksi tiimivastaavuus (58,57 €) ja kelpoisuuslisät huomioidaan erikseen palkassa.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Early Childhood Education Teacher at Rovaniemen kaupunki. Great opportunity in Rovaniemi—apply now.",
+        "description": "We are looking for a qualified early childhood education teacher to join our committed working community at the Saarenpuuta day care centre in Rovaniemi. As an expert in early childhood education, you will promote children's growth, development, and learning in cooperation with your team and carers. You will raise and teach children, promote their wellbeing, and develop pedagogical activities in accordance with the criteria of the Early Childhood Education Act and Plan. We offer a competitive salary of €3027.26 per year, team responsiveness of €58.57, and comprehensive employment benefits. We expect from you a sensitive work experience, ability to work independently and collaboratively, strong pedagogical skills, and good cooperation, interaction, and working community skills.",
+        "what_we_expect": [
+          "Sensitive work experience and a desire to develop our common culture of work.",
+          "Ability to work on your own initiative and in collaboration with the education community.",
+          "Strong pedagogical skills.",
+          "Good cooperation, interaction and working community skills and a flexible work environment."
+        ],
+        "job_responsibilities": [
+          "Promote children's growth, development and learning in cooperation with your team and carers.",
+          "Raise and teach children and promote their wellbeing.",
+          "Develop pedagogical activities in accordance with the criteria of the Early Childhood Education Act and Plan.",
+          "Invest in inclusive working practices and assessment methods."
+        ],
+        "what_we_offer": [
+          "The opportunity to participate in the development of an inspiring early childhood education in Rovaniemi.",
+          "The opportunity to develop professionally and participate in vocational training.",
+          "Interesting and challenging jobs.",
+          "A working community that values your skills and supports your professional development.",
+          "Competitive pay and comprehensive employment benefits."
+        ],
+        "search_keywords": "Early Childhood Education Teacher, Early Childhood Education, Childcare, Education, Rovaniemi",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "40b355f8",
+        "job_id": "chef-kittilä-40b355f8",
+        "processed": true,
+        "title": "Chef",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/pPdlN_nnrYdItMtya0ZJ-w",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/af007450-ef6b-4062-883b-6347d9821c06/en",
+        "job_employer_email": "laura.niemi@eezy.fi",
+        "job_employer_name": "Laura Niemi",
+        "job_employer_phone_no": "+358449021316",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-kittilä-40b355f8",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "Asunnon vuokra on 250-550 €/kk riippuen majoitusvaihtoehdosta. Tarjolla on sekä oman huoneen että jaetun huoneen ratkaisuja.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Join Eezy Henkilöstöpalvelut Oy as a We 're looking for a chef for Levi in December . and grow your career in Kittilä. Check details and apply now.",
+        "description": "We are looking for a chef to join our team at the Levis Hotel in December. This position offers a dynamic and diverse work environment in one of the most popular tourist destinations in Lapland. With a focus on high-quality food production, you'll be responsible for preparing breakfast, buffets, group meals, and à la carte dishes for a busy and changing clientele. The salary range is €13.70 - €15.04 per hour, and we provide accommodation assistance during working hours, with options for both private and shared rooms. The position is permanent and comes with a modern vehicle fleet. Our commitment to quality, seasonality, and an international atmosphere makes this a rewarding career choice.",
+        "what_we_expect": [
+          "Previous experience as a chef.",
+          "Willingness to work in a diverse hotel catering environment.",
+          "Ability to work independently and as part of a kitchen team."
+        ],
+        "job_responsibilities": [
+          "Prepare high-quality food products for busy and changing clientele.",
+          "Prepare breakfast, buffet, group, and à la carte meals.",
+          "We 're looking for a chef for Levi in December ."
+        ],
+        "what_we_offer": [
+          "Working hours during December 112.5 hours / 3 weeks.",
+          "Possibility of accommodation during working hours.",
+          "Apartment rent: 250-550 €/month depending on accommodation option.",
+          "Modern hotel-catering environment with quality food, strong seasonality, and an international atmosphere."
+        ],
+        "search_keywords": "chef, hotel, catering, December, job, position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "9df58ed1",
+        "job_id": "hosted-by-oulu-oulu-9df58ed1",
+        "processed": true,
+        "title": "Hosted by Oulu",
+        "company": "Kiinteistötahkola",
+        "job_category": "property-and-real-estate",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.kiinteistotahkola.fi/jobs/7790723-isannoitsija-ouluun/applications/new?promotion=2219426-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0f5dd30d-aa58-44c4-be06-9f1913314bd8/en",
+        "job_employer_email": "lassi.ylikulju@kiinteistotahkola.fi",
+        "job_employer_name": "Lassi Ylikulju",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/property-and-real-estate/hosted-by-oulu-oulu-9df58ed1",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "salary and a pleasant working environment",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Hosted by Oulu at Kiinteistötahkola in Oulu. Apply now and take the next step in your career.",
+        "description": "We are looking for an administrative host in Oulu, Finland, for the growing and developing PHM Group real estate services group. The position will be based in the new office in Oulu and will provide modern tools, training, a competitive salary, and a pleasant working environment. Essential for the role includes a strong attitude, good social skills, systematic work output, and good IT skills. The ideal candidate will have experience in customer service, financial management, and technical expertise. Submit your CV and application to recruitment.oulu@kiinteistotahkola.fi.",
+        "what_we_expect": [
+          "Strong attitude.",
+          "Good social skills.",
+          "Systematic work output.",
+          "Good IT skills."
+        ],
+        "job_responsibilities": [
+          "Administrative work on contracts.",
+          "Customer service.",
+          "Cooperation with stakeholders."
+        ],
+        "what_we_offer": [
+          "Modern tools.",
+          "Training for the job.",
+          "Competitive salary.",
+          "Pleasant working environment.",
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "Hosted by Oulu, administrative host, real estate services, Oulu, PHM Group, real estate professionals, financial management, customer service, IT skills, recruitment system",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "f325d09a",
+        "job_id": "winter-waitress-for-the-saint-camp-kitchen-and-bar-pelkosenniemi-f325d09a",
+        "processed": true,
+        "title": "Winter waitress for the Saint, Camp Kitchen and Bar",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Pelkosenniemi",
+          "Kemijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/68943627",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/73c879cf-1a1b-4664-af83-a880f4cde48d/en",
+        "job_employer_email": "marika.haataja@lisapalvelu.net",
+        "job_employer_name": "Marika Haataja",
+        "job_employer_phone_no": "+358406238068",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/winter-waitress-for-the-saint-camp-kitchen-and-bar-pelkosenniemi-f325d09a",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-12",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "Palkkaus on kilpailukykyinen osaamisesi mukaan 15-17€/h, sekä tarvittaessa sinulle järjestyy myös majoitus paikan päältä huokeaan hintaan!",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Lisäpalvelu Pohjois-Suomi Oy as a Winter waitress for the Saint, Camp Kitchen and Bar. in Pelkosenniemi.",
+        "description": "We are looking for professional waiters for the winter of 2026-2027 for the Saint, Camp Kitchen and Bar. The restaurant serves breakfast, lunch, and ala carte dishes. We require formal education or experience in serving a la carte, a knack for customer service, and knowledge of Finnish. The salary is €15-17 per hour, and accommodation assistance is provided. This opportunity offers a great chance to work with a team, enjoy a variety of hobbies, and a reliable place of work.",
+        "what_we_expect": [
+          "A formal education or experience in serving a la carte.",
+          "Knowledge of Finnish.",
+          "Here are a few more reasons why you should choose the Additional Service."
+        ],
+        "job_responsibilities": [
+          "Prepare and serve food to customers.",
+          "Ensure customer satisfaction by providing excellent customer service.",
+          "Here are a few more reasons why you should choose the Additional Service."
+        ],
+        "what_we_offer": [
+          "Salary according to skills.",
+          "Assistance and support in obtaining work cards and training.",
+          "Here are a few more reasons why you should choose the Additional Service."
+        ],
+        "search_keywords": "winter waitress, Camp Kitchen, Bar, restaurant, employment, job opportunity",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "0e6a1bb5",
+        "job_id": "waiters-for-the-ruka-camp-kitchen-and-bar-kuusamo-0e6a1bb5",
+        "processed": true,
+        "title": "Waiters for the Ruka, Camp Kitchen and Bar",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/187068649",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c4dff459-33a2-4f7c-a40a-4bbf3c162741/en",
+        "job_employer_email": "marika.haataja@lisapalvelu.net",
+        "job_employer_name": "Marika Haataja",
+        "job_employer_phone_no": "+358406238068",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiters-for-the-ruka-camp-kitchen-and-bar-kuusamo-0e6a1bb5",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-05",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "Palkkaus on sopimuksen ja osaamisesi mukaan 15-17€/h sekä tarvittaessa sinulle järjestyy paikan päältä majoitus huokeaan hintaan!",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Waiters for the Ruka, Camp Kitchen and Bar. at Lisäpalvelu Pohjois-Suomi Oy, located in Kuusamo.",
+        "description": "We are looking for skilled waitresses to join our team at Ruka's Camp Kitchen & Bar, located on the eastern slopes of the island. This exciting opportunity offers a chance to enjoy the winter recreational opportunities while working on the slopes. With a salary ranging from 15-17€ per hour, including necessary accommodation assistance, this position is perfect for those who thrive in a fast-paced, outdoor environment. Our team is committed to providing a reliable and supportive work environment, ensuring that you can focus on your duties and enjoy the stunning hillside scenery. Apply now to be part of this dynamic team and experience the joy of working in the heart of winter.",
+        "what_we_expect": [
+          "Experience in the restaurant industry or training in the industry.",
+          "Knowledge of Finnish.",
+          "A fearless attitude to work and a desire to develop."
+        ],
+        "job_responsibilities": [
+          "Serve customers with a smile and excellent customer service.",
+          "Prepare and serve food in a buffet and a la carte setting.",
+          "Ensure a positive and enthusiastic attitude towards work.",
+          "Understand and follow the restaurant's menu and procedures."
+        ],
+        "what_we_offer": [
+          "Salary according to skills and contract.",
+          "Assistance and support in obtaining work cards and training.",
+          "A reliable place of work with all employment relationship matters handled.",
+          "Occupational health services."
+        ],
+        "search_keywords": "waiters, Ruka, Camp Kitchen, Bar, ski slopes, winter recreational opportunities, restaurant, hospitality, customer service, restaurant industry, Finnish language, job opportunities, employment, flexible HR solutions",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "d4987776",
+        "job_id": "excavator-helmsman-tampere-d4987776",
+        "processed": true,
+        "title": "Excavator Helmsman",
+        "company": "Rekrytalo",
+        "job_category": "other",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.rekrytalo.fi/jobs/8470313-kaivinkoneen-peramies/applications/new?promotion=2219381-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c98fc82b-c123-4613-8470-d6ed0c5eceb8/en",
+        "job_employer_email": "heidi.saarijarvi@rekrytalo.fi",
+        "job_employer_name": "Heidi Saarijärvi",
+        "job_employer_phone_no": "+358403503733",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/other/excavator-helmsman-tampere-d4987776",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-29",
+        "scraped_at": "2026-09-30 11:47:42",
+        "open_positions": 1,
+        "salary_range": "16 - 21 EUR/hourly",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a The helmsman of the excavator at Rekrytalo in Tampere. Apply now and take the next step in your career.",
+        "description": "We are looking for a skilled excavator helmsman to join our team in Tampere. This full-time position, starting as soon as the right person is found, involves being a second-in-command of an excavator, installing finished concrete blocks, and constructing wooden terraces. Ideal candidates have experience in similar yard construction work and smooth cooperation with the excavator driver. The job requires careful installation and construction work, as well as safe working practices around the machine. We offer a competitive hourly rate of 16-21 EUR, a drink on the job, and assistance with finding accommodation. The position is suitable for someone who can handle various yard building tasks, including digging and woodworking. For more information, please contact Heidi Saarijärvi at heidi.",
+        "what_we_expect": [
+          "Experience in the duties of excavator mate and yard construction.",
+          "Knowledge of the installation of prefabricated concrete blocks and the construction of wooden terraces.",
+          "Careful and safe work experience and smooth cooperation with the excavator driver."
+        ],
+        "job_responsibilities": [
+          "Installing finished concrete blocks and constructing wooden terraces.",
+          "Being a second-in-command of an excavator.",
+          "Experience in the duties of excavator mate and yard construction."
+        ],
+        "what_we_offer": [
+          "Various yard building tasks from digging to woodworking.",
+          "Full-time work.",
+          "A day's work.",
+          "Until the arrival of the temporary employee.",
+          "A drink."
+        ],
+        "search_keywords": "excavator, excavator helmsman, yard work, Tampere, excavator driver, concrete blocks, wooden terraces",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:47:43",
+    "jobs": [
+      {
+        "id": "7b69e615",
+        "job_id": "waiters-at-the-top-of-the-rock-restaurant-base-eatheat-kuusamo-7b69e615",
+        "processed": true,
+        "title": "Waiters at the top of the Rock, Restaurant Base Eat&Heat",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/147709176",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6c61f7fd-0548-41b2-a223-30ae749ea1f6/en",
+        "job_employer_email": "marika.haataja@lisapalvelu.net",
+        "job_employer_name": "Marika Haataja",
+        "job_employer_phone_no": "+358406238068",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiters-at-the-top-of-the-rock-restaurant-base-eatheat-kuusamo-7b69e615",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-05",
+        "scraped_at": "2026-09-30 11:47:43",
+        "open_positions": 1,
+        "salary_range": "salary according to your skills and, if necessa",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lisäpalvelu Pohjois-Suomi Oy as a Waiters at the top of the Rock, Restaurant Base Eat&Heat and grow your career in Kuusamo. Check details and apply now.",
+        "description": "We are looking for professional waiters to join our team at the top of the hill, Base Heat&Eat, in Kuusamo. The restaurant, completed in December 2024, offers stunning views of Valtavaara and Konttai, perfect for winter recreational activities. This role is for the winter of 2026-2027, with a competitive salary based on skills and accommodation assistance if needed. The ideal candidate has experience in a la carte service, is a team player, and possesses good attitude and pressure tolerance. A flexible work schedule is expected, with a starting date of 16.11.2026 to 30.4.2027, with the possibility of a shorter period from 30.11.2026 to 7.1.2027.",
+        "what_we_expect": [
+          "Experience in a la carte waitressing.",
+          "Good team player.",
+          "Positive attitude towards work and desire to learn.",
+          "Knowledge of Finnish.",
+          "Hygiene pass and dispensing pass."
+        ],
+        "job_responsibilities": [
+          "Prepare and serve food to customers.",
+          "Ensure customer satisfaction by providing excellent service.",
+          "Maintain a clean and hygienic kitchen and dining area."
+        ],
+        "what_we_offer": [
+          "Competitive salary according to skills.",
+          "Accommodation near the workplace at a reasonable price.",
+          "Additional support and security throughout the trip.",
+          "Regular check-ins to ensure a comfortable stay."
+        ],
+        "search_keywords": "waiters, restaurant, sauna, Base Eat&Heat, top of the hill, winter, job, employment, flexible, HR solutions, Additional Service, Lapland, Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "11b1ca55",
+        "job_id": "waiters-for-the-winter-kemijärvi-11b1ca55",
+        "processed": true,
+        "title": "Waiters for the winter",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kemijärvi",
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/86525333",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b8111ced-d12e-441b-87fc-913bf14dc941/en",
+        "job_employer_email": "marika.haataja@lisapalvelu.net",
+        "job_employer_name": "Marika Haataja",
+        "job_employer_phone_no": "+358406238068",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiters-for-the-winter-kemijärvi-11b1ca55",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-12",
+        "scraped_at": "2026-09-30 11:47:43",
+        "open_positions": 1,
+        "salary_range": "salary is competitive, taking into account your",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Lisäpalvelu Pohjois-Suomi Oy as a Waiters for the winter for Ruka, Camp Kitchen&Bar and grow your career in Kemijärvi. Check details and apply now.",
+        "description": "We are looking for highly skilled waiters for the winter of 2026-2027 at Ruka, Camp Kitchen&Bar. This opportunity offers you the chance to work in the stunning scenery of the rugged terrain, with a wide range of leisure opportunities and a top-notch team. You will be responsible for a la carte service, including breakfast, lunch, and a la carte meals, and must have experience in an à la carte restaurant, familiarity with à la carte service, and the ability to work independently and as part of a team. The salary is competitive, taking into account your skills and experience, and accommodation will be arranged on site at a reasonable price. You will receive additional support and security throughout your trip, and Rukastaff benefits will be provided.",
+        "what_we_expect": [
+          "Work experience in a restaurant.",
+          "Proficiency in à la carte service.",
+          "Positive attitude and teamwork skills."
+        ],
+        "job_responsibilities": [
+          "Serve customers a la carte dishes.",
+          "Ensure customer satisfaction through friendly service.",
+          "Work independently and as part of a team."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Accommodation assistance.",
+          "Support and security throughout the trip.",
+          "Rukastaff benefits."
+        ],
+        "search_keywords": "waiters, winter, Ruka, Camp Kitchen&Bar",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "747f93f7",
+        "job_id": "hotel-cleaner-kittilä-747f93f7",
+        "processed": true,
+        "title": "Hotel Cleaner",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/NI81EnqReEJdzpkA5f-kgQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/718cbad8-98bd-442b-895f-f6378dbf7a6b/en",
+        "job_employer_email": "laura.niemi@eezy.fi",
+        "job_employer_name": "Laura Niemi",
+        "job_employer_phone_no": "+358449021316",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/hotel-cleaner-kittilä-747f93f7",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-09-30 11:47:43",
+        "open_positions": 1,
+        "salary_range": "Asunnon vuokra on 250-550 €/kk riippuen majoitusvaihtoehdosta. Tarjolla on sekä oman huoneen että jaetun huoneen ratkaisuja.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is hiring a We're looking for hotel cleaners for Levi in December. in Kittilä. Explore responsibilities, benefits, and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is looking for hotel cleaners for the December period in Levi. This position offers full-time work with a permanent contract and a competitive salary ranging from 250 to 550 euros per month. The role involves cleaning hotel rooms, public spaces, and customer premises while ensuring a high-quality guest experience. The duties include maintaining cleanliness, safety, and readiness of hotel facilities. The work is active and mobile, with a 112,5-hour work week over three weeks. Accommodation assistance is provided, with apartment rents ranging from 250 to 550 euros per day. The position is based in Kittilä, a popular tourist destination in Lapland, offering an international working environment. The salary is €12.97 to €14.33 per hour.",
+        "what_we_expect": [
+          "Previous experience in hotel cleaning.",
+          "Initiative.",
+          "Diligence.",
+          "High level of quality."
+        ],
+        "job_responsibilities": [
+          "Clean hotel rooms.",
+          "Maintain public spaces.",
+          "Help ensure a pleasant customer experience."
+        ],
+        "what_we_offer": [
+          "Salary from €12.97 to €14.33 per hour.",
+          "Working hours during December 112,5 hours / 3 weeks.",
+          "Possibility of accommodation for the duration of the work.",
+          "Apartment rent 250-550 €/day depending on accommodation option.",
+          "Possibility of working in Lapland in an international environment."
+        ],
+        "search_keywords": "clean hotel rooms, hotel cleaning, hotel customer experience, hotel staff, hotel maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "22f49a3e",
+        "job_id": "waiter-at-the-ruke-isaac-village-kuusamo-22f49a3e",
+        "processed": true,
+        "title": "Waiter at the Ruke Isaac Village",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/190963926",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a8aa69e1-af81-4a3a-aa91-5ceceff67f06/en",
+        "job_employer_email": "marika.haataja@lisapalvelu.net",
+        "job_employer_name": "Marika Haataja",
+        "job_employer_phone_no": "0406238068",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiter-at-the-ruke-isaac-village-kuusamo-22f49a3e",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-12",
+        "scraped_at": "2026-09-30 11:47:43",
+        "open_positions": 1,
+        "salary_range": "salary is competitive, taking into account your",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Waiter at the Ruke Isaac Village . at Lisäpalvelu Pohjois-Suomi Oy. Great opportunity in Kuusamo—apply now.",
+        "description": "We are looking for a dynamic and enthusiastic waiter to join our team at the Ruke Isaac Village, a unique tourist destination in Kuusamo. This position offers the opportunity to work in a warm and welcoming environment, surrounded by traditional Finnish charm and modern amenities. As a waiter, you will be responsible for providing excellent customer service, ensuring a high-quality dining experience, and contributing to the overall success of the establishment. Our team is committed to creating memorable experiences for our guests, and we are seeking someone with a fearless attitude and a passion for hospitality.",
+        "what_we_expect": [
+          "Experience as a waiter or in the restaurant industry.",
+          "Fluency in Finnish and English.",
+          "Flexibility in shift work, including evenings and weekends.",
+          "Positive attitude and willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Prepare and serve food and beverages to customers.",
+          "Ensure customer satisfaction by providing excellent service.",
+          "Maintain a clean and hygienic environment in the restaurant.",
+          "Adhere to safety and health regulations.",
+          "Handle cash and credit cards securely."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Accommodation on site at a reasonable price.",
+          "Support and security throughout the trip.",
+          "Occupational health services.",
+          "Staff benefits on site."
+        ],
+        "search_keywords": "waiter, Ruke Isaac Village, restaurant, hospitality, job, employment, position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "7c47239c",
+        "job_id": "pastor-of-developmental-disability-at-the-tampere-congregati-tampere-7c47239c",
+        "processed": true,
+        "title": "Pastor of developmental disability at the Tampere Congregational Association",
+        "company": "Tampereen seurakuntayhtymä",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5313/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8a2ff986-0eef-4294-8f75-83de6afc01d0/en",
+        "job_employer_email": "mika.kallunki@evl.fi",
+        "job_employer_name": "Mika Kallunki",
+        "job_employer_phone_no": "0505623364",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/pastor-of-developmental-disability-at-the-tampere-congregati-tampere-7c47239c",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-09-30 11:47:43",
+        "open_positions": 1,
+        "salary_range": "4003,18 €/kk + mahdollinen kokemuslisä 140,50 € - 513,50 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Start your next career step as a Pastor of developmental disability at the Tampere Congregational Association at Tampereen seurakuntayhtymä.",
+        "description": "Pastor of developmental disability at the Tampere Congregational Association We are looking for a pastor of developmental disabilities for a permanent position in the mental health unit of the Tampere Congregational Hospital Association as of March 1, 2027, or by contract. In this role, you will implement and develop the developmental disability work of the parishes in the Pirkanmaa region in cooperation with the local parishes, the Pirkanmaa welfare area and the employees of various organisations. What we offer We offer you a functioning working community in the mental health unit of the Tampere parish association, where the office is administratively located.",
+        "what_we_expect": [
+          "Good interaction, networking and organisational skills.",
+          "Flexibility, initiative, desire and ability to develop, skills to lead one's own work.",
+          "Strong knowledge of the basic work of the priest.",
+          "Presence and mobility in a geographically wide area of Pirkanmaa.",
+          "Work is non-working hours and requires weekend, evening and camp work.",
+          "Conditions of employment The post requires excellent oral and written knowledge of Finnish and a satisfactory understanding of Swedish."
+        ],
+        "job_responsibilities": [
+          "Good interaction, networking and organisational skills.",
+          "Flexibility, initiative, desire and ability to develop, skills to lead one's own work.",
+          "Strong knowledge of the basic work of the priest.",
+          "Presence and mobility in a geographically wide area of Pirkanmaa.",
+          "Work is non-working hours and requires weekend, evening and camp work.",
+          "Conditions of employment The post requires excellent oral and written knowledge of Finnish and a satisfactory understanding of Swedish."
+        ],
+        "what_we_offer": [
+          "Good interaction, networking and organisational skills.",
+          "Flexibility, initiative, desire and ability to develop, skills to lead one's own work.",
+          "Strong knowledge of the basic work of the priest.",
+          "Presence and mobility in a geographically wide area of Pirkanmaa.",
+          "Work is non-working hours and requires weekend, evening and camp work.",
+          "Conditions of employment The post requires excellent oral and written knowledge of Finnish and a satisfactory understanding of Swedish."
+        ],
+        "search_keywords": "Pastor of developmental disability at the Tampere Congregational Association Tampereen seurakuntayhtymä Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:47:44",
+    "jobs": [
+      {
+        "id": "a580c739",
+        "job_id": "ce-driver-forklift-hyvinkää-a580c739",
+        "processed": true,
+        "title": "CE driver, forklift",
+        "company": "WorkPower Palvelut Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.workpower.fi/likeit/likeit_form.php?id=211197463",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1949e64e-3dc3-4ef8-a114-f7170a2d4b90/en",
+        "job_employer_email": "aapo.virtanen@workpower.fi",
+        "job_employer_name": "Aapo Virtanen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/ce-driver-forklift-hyvinkää-a580c739",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-20",
+        "scraped_at": "2026-09-30 11:47:44",
+        "open_positions": 1,
+        "salary_range": "Salary according to the ACP-EEC Convention Perm",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a CE driver, forklift, please at WorkPower Palvelut Oy. Great opportunity in Hyvinkää—apply now.",
+        "description": "We are seeking a CE-certified driver for our customer company, responsible for transporting railway goods to the Uusimaa region. This position offers full-time, permanent employment with competitive hourly wages based on Finnish collective agreements. Shifts begin at 9 p.m. in the evening, making it ideal for drivers who enjoy night work. The station is located on Goodwill. We provide comprehensive training and opportunities for career development in the transport sector. A valid CE driving license and professional qualifications, a sharp and responsible attitude, and the ability to work at night are essential. We offer a drink on the job and a competitive salary. Comprehensive training and opportunities for career development are provided.",
+        "what_we_expect": [
+          "Valid CE driving licence.",
+          "Professional qualifications.",
+          "Sharp and responsible attitude.",
+          "Ability to work at night.",
+          "Desire to learn crane operation."
+        ],
+        "job_responsibilities": [
+          "Transport railway goods to the Uusimaa region.",
+          "Operate forklifts for loading and unloading tasks.",
+          "Shifts start at 9 p.m."
+        ],
+        "what_we_offer": [
+          "Salary according to the ACP-EEC Convention.",
+          "Permanent and long-term work.",
+          "Diversified work in rail freight transport.",
+          "Comprehensive training for the job.",
+          "Work clothes through us.",
+          "Opportunity to develop in the transport sector."
+        ],
+        "search_keywords": "CE driver forklift, railway goods, Uusimaa, Goodwill, CE certification, forklift operator, ACP-EEC",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "485f3e88",
+        "job_id": "agricultural-worker-karjalan-sarka-oy-luumäki-485f3e88",
+        "processed": true,
+        "title": "Agricultural worker, Karjalan Sarka Oy",
+        "company": "Töitä Suomesta työvoimapalvelut Oy, Helsinki",
+        "job_category": "agriculture-forestry-and-fisheries",
+        "jobLocation": [
+          "Luumäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/karjalan-sarka-oy-maataloustyontekija/D4vLQJ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/74a37df8-688e-4d62-b6f5-e85e62c378d2/en",
+        "job_employer_email": "hennamari.toiviainen@toitasuomesta.fi",
+        "job_employer_name": "Hennamari Toiviainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/agriculture-forestry-and-fisheries/agricultural-worker-karjalan-sarka-oy-luumäki-485f3e88",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-09-30 11:47:44",
+        "open_positions": 1,
+        "salary_range": "Palkka on 13–17 €/h osaamisen ja kokemuksen mukaan. Työssä tarvitaan oma auto. Tilan pellot ja laidunalueet ovat Luumäen kirkonkylän ympäristössä, ja itse tila sijaitsee taajamassa, noin 6 km Taavetin keskuksesta.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Töitä Suomesta työvoimapalvelut Oy, Helsinki as a Agricultural worker, Karjalan Sarka Oy in Luumäki.",
+        "description": "Agricultural worker, Karjalan Sarka Oy Do you long for a job where the days don't go by the same pattern and where what you do really matters? Karjalan Sarka Oy is looking for an agricultural worker for Luumäe. In the Karelian Sarka, grazing is at the heart of our activity.We are engaged in organic dairy farming and have been developing our activities for years in terms of grazing, soil well-being and biodiversity.Now we are looking for someone who enjoys practical work and wants to be involved in the development of the farm's operations. ♪ What's in the job?",
+        "what_we_expect": [
+          "Karjalan Sarka Oy is looking for an agricultural worker for Luumäe.",
+          "The tasks shall include, inter alia.",
+          "What kind of job is Karelian Sarka?"
+        ],
+        "job_responsibilities": [
+          "The tasks shall include, inter alia.",
+          "Karjalan Sarka Oy is looking for an agricultural worker for Luumäe.",
+          "What kind of job is Karelian Sarka?"
+        ],
+        "what_we_offer": [
+          "Karjalan Sarka Oy is looking for an agricultural worker for Luumäe.",
+          "The tasks shall include, inter alia.",
+          "What kind of job is Karelian Sarka?"
+        ],
+        "search_keywords": "Agricultural worker, Karjalan Sarka Oy Töitä Suomesta työvoimapalvelut Oy, Helsinki Luumäki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "5b2d4f0e",
+        "job_id": "traffic-driver-karkkila-5b2d4f0e",
+        "processed": true,
+        "title": "Traffic Driver",
+        "company": "Rekrymesta Henkilöstöpalvelut Oy",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Karkkila",
+          "Lohja",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://rekrymesta.likeit.fi/apply/9745829",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ce9f3160-9973-4ba6-8f34-b7495a3ae48d/en",
+        "job_employer_email": "vertti.pihlajamaki@rekrymesta.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/traffic-driver-karkkila-5b2d4f0e",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-09-30 11:47:44",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Traffic drivers at Rekrymesta Henkilöstöpalvelut Oy in Karkkila. Apply now and take the next step in your career.",
+        "description": "We are looking for a Traffic Driver at Rekrymesta Henkilöstöpalvelut Oy. This role involves controlling workplace traffic, guiding vehicles and drivers, ensuring safety, and maintaining tidiness. Candidates must have rapid and responsible work experience, good situational awareness, proficiency in Finnish or English, and previous work experience. The position offers competitive hourly wages and comes with assistance with finding accommodation. The work is full-time and permanent, and there is potential for longer-term assignments. For more information, contact us at verti.pihlajamaki@rekrymesta.fi. Our team is highly skilled and reliable, adhering to collective bargaining agreements and industry regulations.",
+        "what_we_expect": [
+          "Rapid and responsible work experience.",
+          "Good situational awareness.",
+          "Proficiency in Finnish or English.",
+          "Previous work experience is an advantage.",
+          "Existing driver qualifications are an advantage."
+        ],
+        "job_responsibilities": [
+          "Control of workplace traffic.",
+          "Guidance of vehicles and drivers arriving at the workplace.",
+          "Ensure safety and smooth traffic on the workplace.",
+          "Keep the workplace tidy and tidy.",
+          "Other tasks to assist the workplace if necessary."
+        ],
+        "what_we_offer": [
+          "Highly skilled personnel with 25 years of experience in various industries.",
+          "Responsibility, speed, and reliability as an employer.",
+          "Support at all stages of your working life."
+        ],
+        "search_keywords": "traffic driver, traffic controller, workplace traffic, vehicle guidance, workplace safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "33b7bda4",
+        "job_id": "floor-attendants-for-rovaniemi-rovaniemi-33b7bda4",
+        "processed": true,
+        "title": "Floor Attendants for Rovaniemi",
+        "company": "SOL Palvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/kerroshoitajia-rovaniemelle/ZAYBOl",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/46d55e4e-a707-4615-8d41-57b80f29c7ff/en",
+        "job_employer_email": "etunimi.sukunimi@sol.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/floor-attendants-for-rovaniemi-rovaniemi-33b7bda4",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-09-30 11:47:44",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "SOL Palvelut Oy is looking for a skilled Floor attendants for Rovaniemi in Rovaniemi. Don't miss this opportunity—apply today.",
+        "description": "We are looking for enthusiastic Floor attendants to join our team in Rovaniemi, Finland. This position offers a full-time, temporary employment opportunity, with a salary of tuntipalkka and benefits including the SOL Life programme and occupational safety. Our duties include cleaning and preparing rooms, maintaining cleanliness and order, and reporting any anomalies to the foreman. We value resilience, flexibility, and good communication skills in a multilingual work environment. Our hotel environment is dynamic, requiring good physical conditioning. We offer a well-integrated and supportive work environment, with a focus on eco-friendly cleaning practices and the Swan Mark criteria.",
+        "what_we_expect": [
+          "Resilience, self-initiative and responsible work.",
+          "Flexibility for shift work.",
+          "Good communication and teamwork skills in a multilingual work environment."
+        ],
+        "job_responsibilities": [
+          "Cleaning and preparing rooms.",
+          "Maintaining the cleanliness and orderliness of public spaces.",
+          "Maintenance of cleaning agents and replenishment of cleaning agents.",
+          "Reporting any anomalies to the foreman."
+        ],
+        "what_we_offer": [
+          "A thorough introduction to your duties to get you off to a smooth start.",
+          "Promoting well-being at work under the SOL Life programme and investing in occupational safety.",
+          "A happy and supportive work environment where the whole team supports your success.",
+          "A well-structured salary and benefits package.",
+          "A chance to learn and grow within the company through different career paths.",
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "Floor attendants, Rovaniemi, hotel floor, cleaning, hospitality, winter break, job, position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "ac8995cb",
+        "job_id": "meeting-buckle-kuopio-ac8995cb",
+        "processed": true,
+        "title": "Meeting buckle",
+        "company": "Jobby Oy, Helsinki",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Kuopio",
+          "Jyväskylä",
+          "Oulu",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://jobby.fi/job-offers/job/1560/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9dbfdf70-adbe-41fb-93ee-f39709f59095/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/meeting-buckle-kuopio-ac8995cb",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-09-30 11:47:44",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Looking for a Meeting buckle job in Kuopio? Jobby Oy, Helsinki is seeking motivated candidates—apply today.",
+        "description": "We are looking for energetic and ambitious meeting buckers for our growing team! Do you want to sell B2B flexibly and earn extra income while working or studying? In this assignment, you'll contact business decision makers, set up meetings with the sales team, build new customer relationships, develop your sales and interaction skills, and influence your earnings. You can book flexibly on your own schedule, get a year's head start on sales training, and previous sales experience is a plus, but attitude and courage are key. This ideal role is perfect for students, entrepreneurs, or those looking for extra income through a part-time job. If you're positive, self-motivated, and want to make the outcome flexible, apply! Contact us at information@jobby.fi or through the application form.",
+        "what_we_expect": [
+          "Previous sales experience is a plus.",
+          "Attitude and courage are key.",
+          "Ideal for students, entrepreneurs, or those looking for extra income."
+        ],
+        "job_responsibilities": [
+          "Contacting business decision makers.",
+          "Setting up meetings with the sales team.",
+          "Building new customer relationships.",
+          "Developing sales and interaction skills.",
+          "Influencing earnings through flexible scheduling."
+        ],
+        "what_we_offer": [
+          "Year's head start on sales training.",
+          "Flexible scheduling.",
+          "Extra income through part-time job."
+        ],
+        "search_keywords": "meeting buckle, energetic, sales, B2B, extra income, part-time job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:47:45",
+    "jobs": [
+      {
+        "id": "e33dddda",
+        "job_id": "the-drivers-share-new-zealand-kerava-e33dddda",
+        "processed": true,
+        "title": "The driver's share, New Zealand",
+        "company": "WorkPower Palvelut Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Kerava",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Tuusula",
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.workpower.fi/likeit/likeit_form.php?id=211197329",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5f4a67fc-17be-4d59-8f04-0fb1143d2d15/en",
+        "job_employer_email": "aapo.virtanen@workpower.fi",
+        "job_employer_name": "Aapo Virtanen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/the-drivers-share-new-zealand-kerava-e33dddda",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-09-30 11:47:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a The driver's share, New Zealand role at WorkPower Palvelut Oy. Join a growing team and build your career in Kerava.",
+        "description": "Join the Workpower Driver Exchange one application, dozens of opportunities Do you want to reach several transport companies in Uusimaa with one application? Are you tired of having to fill out separate applications for different companies?Workpower's Driver's Exchange makes it easier to find a job: you fill out one application and you are exposed to a large number of employers. WORKPOWER The transport sector We are looking for C- and CE-card drivers for both permanent and occasional jobs in the Uusimaa region. Whether you are an experienced transport professional or just starting your career, the Driver's Exchange will help you find suitable job opportunities. What does the Driver Exchange offer you?",
+        "what_we_expect": [
+          "Experience in transport sector.",
+          "Skills in driving semi-trailers and full trailers.",
+          "Professional qualifications in shift work and day/night work.",
+          "Previous jobs and work assignments."
+        ],
+        "job_responsibilities": [
+          "Reach several transport companies in Uusimaa with one application.",
+          "Find suitable job opportunities in the transport sector.",
+          "Work directly for the transport company or through Workpower until a suitable job is found."
+        ],
+        "what_we_offer": [
+          "Opportunity to reach a wide network of employers.",
+          "Job offers that match skills and aspirations.",
+          "Flexible job opportunities.",
+          "Modern equipment and safe working conditions.",
+          "Quality workwear and staff benefits.",
+          "Opportunity to influence working hours and career path."
+        ],
+        "search_keywords": "transport truck driver semi-trailer full trailer distribution freight ground transport hiab logistics driver card professional qualifications shift work day and night work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "ee346277",
+        "job_id": "manufacture-in-which-the-value-of-all-the-materials-used-doe-jyväskylä-ee346277",
+        "processed": true,
+        "title": "Manufacture in which the value of all the materials used does not exceed 30% of the ex-works price of the product",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/51627752",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7b5eb43f-54eb-46ab-a553-b89b51710217/en",
+        "job_employer_email": "jani.lehtinen@osuma.fi",
+        "job_employer_name": "Jani Lehtinen",
+        "job_employer_phone_no": "050 318 1872",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/manufacture-in-which-the-value-of-all-the-materials-used-doe-jyväskylä-ee346277",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-12",
+        "scraped_at": "2026-09-30 11:47:45",
+        "open_positions": 1,
+        "salary_range": "salary of the job is negotiable taking into acc",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Manufacture in which the value of all the materials used does not exceed 30% of the ex-works price of the product role at Osuma...",
+        "description": "We are seeking a bitumen cutter for our client company in Central Finland, primarily in the Jyväskylä region. The role involves manufacturing products where the value of materials used does not exceed 30% of the ex-works price. The position is available immediately upon finding a suitable candidate. Initially, the work is agreed for one project, which can then be extended to other locations until the project concludes. The salary is competitive and based on Finnish collective agreements, taking into account your previous experience. Duties include waterproofing roofs, foundation walls, thermal insulation installation, and small-scale construction projects, requiring experience in waterproofing and a valid B driving license.",
+        "what_we_expect": [
+          "Required skill or qualification.",
+          "Another requirement.",
+          "The work starts as soon as a suitable person is found."
+        ],
+        "job_responsibilities": [
+          "Task or duty.",
+          "Another task.",
+          "The work starts as soon as a suitable person is found."
+        ],
+        "what_we_offer": [
+          "Benefit or perk.",
+          "Another benefit.",
+          "The work starts as soon as a suitable person is found."
+        ],
+        "search_keywords": "manufacture, materials, value, 30%, ex-works, price, waterproofing, foundation walls, thermal insulation, B driving licence",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "307c2ee4",
+        "job_id": "pipe-excavator-for-the-kitchen-salo-307c2ee4",
+        "processed": true,
+        "title": "Pipe excavator for the kitchen",
+        "company": "Henkilöstötalo Tarmo Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Salo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://httarmo.rekrytointi.com/paikat/index.php?o=A_A&jid=19&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9c6067f0-bb51-4dd7-b788-db0b37e5eb50/en",
+        "job_employer_email": "sari.kavander@httarmo.fi",
+        "job_employer_name": "Sari Kavander",
+        "job_employer_phone_no": "0408280190",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/pipe-excavator-for-the-kitchen-salo-307c2ee4",
+        "date_posted": "2026-09-29",
+        "date_expires": "2027-03-26",
+        "scraped_at": "2026-09-30 11:47:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Henkilöstötalo Tarmo Oy is hiring a Pipe excavator for the kitchen in Salo. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a pipe excavator for the kitchen in Salo. If you have experience in metalworking, knowledge of machinery and tools, a good attitude, a valid occupational safety card, and knowledge of Finnish, we invite you to join us. We offer a diverse and challenging work environment in a modern production setting, professional development opportunities, a supportive team, and a competitive hourly wage based on Finnish collective agreements. Temporary employment with the possibility of permanent placement after the probationary period. Start of work once the right person is found. Contact Personnel Office Tarmo Oy for more information.",
+        "what_we_expect": [
+          "Valid occupational safety card.",
+          "Knowledge of Finnish language.",
+          "Diversified and challenging work in a modern production environment."
+        ],
+        "job_responsibilities": [
+          "Excavate pipes in kitchen areas.",
+          "Assist in kitchen renovations and repairs.",
+          "Diversified and challenging work in a modern production environment."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Professional development opportunities.",
+          "Diversified and challenging work in a modern production environment."
+        ],
+        "search_keywords": "pipe excavator kitchen",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "7086f311",
+        "job_id": "the-chef-at-the-silver-birch-resort-in-rovaniemi-lapland-rovaniemi-7086f311",
+        "processed": true,
+        "title": "The chef at the Silver Birch Resort in Rovaniemi, Lapland.",
+        "company": "Silver Birch Resort",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/kokki-silver-birch-resort-rovaniemi-lappi/Z93g7n",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7323fa68-b239-4473-a39c-d9240426d467/en",
+        "job_employer_email": "lappi@bondata.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/the-chef-at-the-silver-birch-resort-in-rovaniemi-lapland-rovaniemi-7086f311",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-09-30 11:47:45",
+        "open_positions": 1,
+        "salary_range": "516,50 €/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with Silver Birch Resort as a The chef at the Silver Birch Resort in Rovaniemi, Lapland. in Rovaniemi.",
+        "description": "The Silver Birch Resort in Rovaniemi, Lapland is seeking a skilled ala carte chef for the winter season 2026-2027. The position offers a high-quality job environment, excellent knowledge of the role, a supportive team, and shared accommodation in the centre of Rovaniemi. The applicant should have strong prior experience in cooking a la carte and quality kitchen work, excellent teamwork skills, fluency in English, flexibility to work shifts, and a hygiene passport. The salary is around 1516,50 €/hour, depending on skills and experience. Bondata will support the applicant during employment. Apply for the job by filling out an application and submitting a CV with a job application. The application process is open now.",
+        "what_we_expect": [
+          "Strong prior experience of cooking a la carte and quality kitchen work.",
+          "Excellent interaction and teamwork skills.",
+          "We offer you."
+        ],
+        "job_responsibilities": [
+          "Prepare delicious dinners and breakfasts for customers.",
+          "Prepare food and other kitchen tasks.",
+          "We offer you."
+        ],
+        "what_we_offer": [
+          "A high-quality job where you can also develop yourself.",
+          "Good knowledge of the job.",
+          "A team that encourages and unites.",
+          "A shared apartment in the centre of Rovaniemi for a reasonable rent."
+        ],
+        "search_keywords": "The chef at the Silver Birch Resort in Rovaniemi, Lapland. Silver Birch Resort Rovaniemi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "c83b2572",
+        "job_id": "cook-ylivieska-c83b2572",
+        "processed": true,
+        "title": "Cook",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Ylivieska"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/156893012",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c20f1207-b367-46cb-94bd-d39d0e4b4023/en",
+        "job_employer_email": "ilari.kesti@lisapalvelu.net",
+        "job_employer_name": "Ilari Kesti",
+        "job_employer_phone_no": "0401966174",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/cook-ylivieska-c83b2572",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-09-30 11:47:45",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyisen palkan osaamisesi mukaan, joka on aina vähintään alan työehtosopimuksen mukainen. Noin- 14-16€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lisäpalvelu Pohjois-Suomi Oy is hiring a ♪ The cook, the restaurant, the little brother ♪ in Ylivieska. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a skilled and enthusiastic Cook to join our team at PetkuVeli, Ylivieska. With a few years of experience in preparing high-quality à la carte meals and a positive attitude, you will contribute to delivering exceptional customer experiences. Our competitive salary, including occupational health services, and the opportunity to develop as a chef in a top-rated restaurant, make this a rewarding career move. We offer comprehensive support and security throughout your employment, ensuring a smooth and comfortable transition. Apply now to be part of a dedicated and reliable team!",
+        "what_we_expect": [
+          "A few years of experience in preparing high-quality à la carte meals.",
+          "A good attitude to work and willingness to learn.",
+          "Situational awareness, pressure tolerance, and flexibility in a hurry.",
+          "A hygiene passport."
+        ],
+        "job_responsibilities": [
+          "Prepare high-quality à la carte meals.",
+          "Work as part of a team to provide a great customer experience.",
+          "Here are a few more reasons why you should choose the Additional Service."
+        ],
+        "what_we_offer": [
+          "Current agreement 90h/3vko.",
+          "Competitive salary according to your skills, always at least in line with the collective bargaining agreement. Around €14-16/h.",
+          "Occupational health services.",
+          "Opportunity to develop as a chef in this high-quality restaurant.",
+          "Extra support and security throughout your trip.",
+          "Regular visits to greet you on the spot to ensure a comfortable work environment."
+        ],
+        "search_keywords": "cook restaurant little brother",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:47:49",
+    "jobs": [
+      {
+        "id": "8087b049",
+        "job_id": "chefs-for-the-spring-of-2027-luxury-winter-oy-levi-kittilä-8087b049",
+        "processed": true,
+        "title": "Chefs for the spring of 2027, Luxury Winter Oy Levi",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/159119763",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/84e66fa1-3d7e-4c90-986b-78042c5da746/en",
+        "job_employer_email": "ilari.kesti@lisapalvelu.net",
+        "job_employer_name": "Ilari Kesti",
+        "job_employer_phone_no": "0401966174",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chefs-for-the-spring-of-2027-luxury-winter-oy-levi-kittilä-8087b049",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-09-30 11:47:49",
+        "open_positions": 1,
+        "salary_range": "* Palkkaus 16-18€/h+ lisät. Riippuen kokemuksestasi.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Chefs for the spring of 2027, Luxury Winter Oy Levi role at Lisäpalvelu Pohjois-Suomi Oy. Join a growing team and build your career in Kittilä.",
+        "description": "Chefs for the spring of 2027, Luxury Winter Oy Levi If you're interested in working at Levi's next winter, we might be able to find a solution. We are now looking for top chefs for the Luxury Winter Oy Levi team! We're now offering you a unique opportunity to work in a wonderful environment at Levi's, where you'll be surrounded by wonderful and diverse hobbies and meet amazing people, so you're sure to have a great time! The job description includes the pre-preparation of a la carte and buffet meals and the preparation of hors d'oeuvres in the restaurants in Levi's, as well as customer service and, in general, ensuring customer comfort. Our requirement is professional training and at least 2 years' experience of working in a la carte and buffet kitchens.",
+        "what_we_expect": [
+          "Here are a few more reasons why you should choose the Additional Service.",
+          "For further information: ilari.kesti@lisapalivelu.net or by telephone 0401966174.",
+          "We want to make it easy for you to go to work: with us you can be employed in the best possible way the very next day."
+        ],
+        "job_responsibilities": [
+          "Here are a few more reasons why you should choose the Additional Service.",
+          "For further information: ilari.kesti@lisapalivelu.net or by telephone 0401966174.",
+          "We want to make it easy for you to go to work: with us you can be employed in the best possible way the very next day."
+        ],
+        "what_we_offer": [
+          "Here are a few more reasons why you should choose the Additional Service.",
+          "For further information: ilari.kesti@lisapalivelu.net or by telephone 0401966174.",
+          "We want to make it easy for you to go to work: with us you can be employed in the best possible way the very next day."
+        ],
+        "search_keywords": "Chefs for the spring of 2027, Luxury Winter Oy Levi Lisäpalvelu Pohjois-Suomi Oy Kittilä other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "7f409828",
+        "job_id": "swimming-instructor-espoo-7f409828",
+        "processed": true,
+        "title": "Swimming instructor",
+        "company": "FitPit Oy, Helsinki",
+        "job_category": "education",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://fitpit.careers.haileyhr.app/fi-FI/job/677e8127-1de5-4c10-a9f8-c7d82a6cf123/d89feaa1-aefb-49d6-a57f-6e0f46dc77ed/5902e2de-5ca7-48ca-812c-e92bf4c9c61b",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/15482a24-72f2-426a-803e-bb108e631d7c/en",
+        "job_employer_email": "maria@fitpit.fi",
+        "job_employer_name": "Paukkeri Maria",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/swimming-instructor-espoo-7f409828",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-09-30 11:47:49",
+        "open_positions": 1,
+        "salary_range": "- Palkkaus 1900-2400€/kk täysipäiväsenä (37,5h/vko). Lopullinen palkkaus riippuu viikkotyötuntien määrästä.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "FitPit Oy, Helsinki is looking for a skilled Swimming instructor in Espoo. Don't miss this opportunity—apply today.",
+        "description": "FitPit is looking for swimming instructors. FitPit is a sports company that provides swimming services to individuals, companies, clubs and associations. We are looking for swimming instructors at our offices in Helsinki and Espoo. We offer a suitable number of hours between 5 and 37.5 hours per week! Work starts in October-November 2026. ♪ What we're offering you ♪ You'll have the opportunity to join a growing fitness company where every customer is equally important and every employee is equal. At FitPit, we want to build the future by caring about what's around us. We're a changeable organization where employee feedback is heard and where employee development is important. Additionally, by joining our team, you'll get: - Opportunity to develop yourself.",
+        "what_we_expect": [
+          "Training as a swimming instructor (SUH/Folkhälsa) or strong knowledge of swimming.",
+          "Fluency in Finnish.",
+          "Knowledge of Swedish and English is considered an advantage.",
+          "Extroversion and initiative.",
+          "Ability to work with people of different ages."
+        ],
+        "job_responsibilities": [
+          "Guidance of school sessions in the city halls of Espoo.",
+          "Guidance of FitPit courses for clients of different levels and ages.",
+          "Private swimming lessons.",
+          "Provision of quality customer service that exceeds all customer expectations.",
+          "Development of operations and other tasks of FitPit according to your professional skills and interests."
+        ],
+        "what_we_offer": [
+          "Salary 1900-2400€/week as a full-time member (37.5h/week).",
+          "Incentive model, which you can influence by your own work and which our employees receive on average +50-100€/week.",
+          "Epass 200€/year.",
+          "Fun and relaxed work community and FitPit staff parties.",
+          "Opportunity to develop yourself. We continuously train our staff and offer swimming lessons in addition to work that suits every interest. We also offer the opportunity to participate, for example, in SUH trainings."
+        ],
+        "search_keywords": "Swimming instructor, FitPit, Helsinki, Espoo, job, swimming, instructor",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
   }
 ]
