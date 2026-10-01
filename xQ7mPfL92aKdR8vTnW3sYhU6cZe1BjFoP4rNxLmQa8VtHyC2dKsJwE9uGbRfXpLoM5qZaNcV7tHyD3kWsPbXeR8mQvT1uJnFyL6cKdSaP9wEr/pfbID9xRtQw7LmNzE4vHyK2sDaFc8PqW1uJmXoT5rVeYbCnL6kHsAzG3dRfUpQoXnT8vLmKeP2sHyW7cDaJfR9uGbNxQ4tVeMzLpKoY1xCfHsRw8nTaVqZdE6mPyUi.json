@@ -262980,5 +262980,338 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:57:03",
+    "jobs": [
+      {
+        "id": "01c3cbed",
+        "job_id": "professional-in-the-construction-industry-espoo-01c3cbed",
+        "processed": true,
+        "title": "Professional in the construction industry",
+        "company": "ATL-Rakennushuolto Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/atl-rakennushuolto-rakennusalan-ammattilainen-espoo-sdsuu-20513135",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/atl-rakennushuolto-rakennusalan-ammattilainen-espoo-sdsuu-20513135",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/professional-in-the-construction-industry-espoo-01c3cbed",
+        "date_posted": "2026-08-25",
+        "date_expires": "2026-09-24",
+        "scraped_at": "2026-09-30 11:57:03",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Professional in the construction industry at ATL-Rakennushuolto Oy, located in Espoo. Apply now and get started.",
+        "description": "We are looking for experienced construction professionals to join our team at ATL-Rakennushuolto Oy in Espoo. As a construction professional, you will be responsible for working on diverse and demanding repair construction projects, ensuring high quality and customer satisfaction. Our sites are located in the Uusimaa area, primarily in the capital region. Your responsibilities include independent and efficient work on the construction site, continuous support at various stages of repair, and compliance with quality and workmanship requirements. We offer a permanent position and a competitive salary. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Experience in construction.",
+          "Proficiency in carpentry, masonry, carpet fitting, and finishing.",
+          "Ability to work independently and efficiently on the construction site."
+        ],
+        "job_responsibilities": [
+          "Work on diverse repair construction projects.",
+          "Ensure compliance with quality and workmanship requirements.",
+          "Support at various stages of repair on the construction site."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits such as housing and accommodation.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "construction professional, experienced construction, construction industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:57:07",
+    "jobs": [
+      {
+        "id": "9707f679",
+        "job_id": "project-engineer-electricity-distribution-services-vantaa-9707f679",
+        "processed": true,
+        "title": "Project Engineer, Electricity Distribution Services",
+        "company": "Insta Group",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/projekti-insinoori-sahkonjakelun-palvelut-sisns-20604010",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/projekti-insinoori-sahkonjakelun-palvelut-sisns-20604010",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/project-engineer-electricity-distribution-services-vantaa-9707f679",
+        "date_posted": "2026-09-28",
+        "date_expires": "2026-10-28",
+        "scraped_at": "2026-09-30 11:57:07",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a Project engineer, electricity distribution services at Insta Group in Vantaa. Apply now and take the next step in your career.",
+        "description": "We are looking for a Project Engineer with expertise in electricity distribution services to join our team in Vantaa. This role involves maintaining equipment, coordinating bidding and ordering processes, and collaborating with customers, suppliers, and technical specialists to ensure the smooth operation and development of electrical equipment. The successful candidate will work closely with technical specialists to enhance productivity, reliability, and accountability in customers' operations. This is a permanent position with a focus on sustainable industry and critical infrastructure. We offer assistance with finding accommodation and a modern vehicle fleet. The salary is competitive, and we provide a welcoming environment for professionals.",
+        "what_we_expect": [
+          "Technical expertise.",
+          "Flexible implementation.",
+          "Transformation-accelerating software."
+        ],
+        "job_responsibilities": [
+          "Maintain equipment.",
+          "Coordinate bidding and ordering process.",
+          "Design project supplies."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Predictive maintenance and lifecycle services."
+        ],
+        "search_keywords": "Project Engineer, electricity distribution, Project Manager, Principal Supplier",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:57:09",
+    "jobs": [
+      {
+        "id": "d0f4de5c",
+        "job_id": "controller-helsinki-ja-3-muuta-d0f4de5c",
+        "processed": true,
+        "title": "Controller",
+        "company": "Colliers Finland Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki ja 3 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/colliers-finland-oy-controller-sdsuu-20605842",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/colliers-finland-oy-controller-sdsuu-20605842",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/controller-helsinki-ja-3-muuta-d0f4de5c",
+        "date_posted": "2026-09-28",
+        "date_expires": "2026-10-28",
+        "scraped_at": "2026-09-30 11:57:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Colliers Finland Oy as a Controller in Helsinki ja 3 muuta. Learn more about the role and apply now.",
+        "description": "Colliers Finland Oy is seeking a Controller to join their dynamic team in Helsinki and beyond. This role is a permanent position offering full-time work and a competitive salary. The Controller will be responsible for overseeing financial operations, ensuring compliance with regulations, and providing strategic financial advice. The ideal candidate will have a strong background in finance and a proven track record of managing complex financial systems. Colliers offers a supportive work environment and assistance with finding accommodation, making it an excellent opportunity for professionals looking to advance their careers in the real estate industry.",
+        "what_we_expect": [
+          "Bachelor's degree in accounting or finance.",
+          "5+ years of experience in a controller role.",
+          "Proficiency in financial software."
+        ],
+        "job_responsibilities": [
+          "Manage financial reports.",
+          "Ensure compliance with regulations.",
+          "Analyze financial data."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "401(k) plan."
+        ],
+        "search_keywords": "controller controller role financial financial reports accounting finance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:57:11",
+    "jobs": [
+      {
+        "id": "e9452ad7",
+        "job_id": "property-manager-oulu-e9452ad7",
+        "processed": true,
+        "title": "Property Manager",
+        "company": "Oulun Pysäköinti Oy",
+        "job_category": "property-and-real-estate",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kiinteistopaallikko-smsps-20606152",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kiinteistopaallikko-smsps-20606152",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/property-and-real-estate/property-manager-oulu-e9452ad7",
+        "date_posted": "2026-09-29",
+        "date_expires": "2026-10-29",
+        "scraped_at": "2026-09-30 11:57:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Property manager at Oulun Pysäköinti Oy, located in Oulu. Apply now and get started.",
+        "description": "We are seeking a property manager for Oulu Päräköinti Oy, responsible for the technical maintenance of parking facilities, repair projects, and the guidance of service providers. This role involves ensuring the safety and security of facilities, developing current assets, and preparing for future investments. Key responsibilities include managing service providers, supervising contracts, and overseeing high-level repair projects. The property manager will work closely with maintenance companies, technical contractors, engineers, and authorities, reporting to the project manager. This is a full-time, permanent position requiring a strong understanding of property management and a commitment to safety and security. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Technical knowledge in parking facilities.",
+          "Experience in project management.",
+          "Proficiency in communication."
+        ],
+        "job_responsibilities": [
+          "Ensure the safety and security of the facilities.",
+          "Manage service providers.",
+          "Supervise contracts and high-level repair projects.",
+          "Take care of long-term maintenance."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation assistance."
+        ],
+        "search_keywords": "property manager, parking facilities, maintenance, project management, safety, security",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:57:13",
+    "jobs": [
+      {
+        "id": "2c82a8b9",
+        "job_id": "maintenance-technician-miele-professional-uusimaa-ja-1-muu-2c82a8b9",
+        "processed": true,
+        "title": "Maintenance Technician - Miele Professional",
+        "company": "Miele Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Uusimaa ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/miele-huoltoteknikko-miele-professional-sdsuu-20606242",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/miele-huoltoteknikko-miele-professional-sdsuu-20606242",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/maintenance-technician-miele-professional-uusimaa-ja-1-muu-2c82a8b9",
+        "date_posted": "2026-09-28",
+        "date_expires": "2026-10-28",
+        "scraped_at": "2026-09-30 11:57:13",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a Maintenance technician - Miele Professional at Miele Oy, located in Uusimaa ja 1 muu. Apply now and get started.",
+        "description": "We are looking for a Maintenance Technician with experience in repairing, installing, and scheduling maintenance visits for Miele Professional equipment in the Finnish capital region and Uusimaa. You will ensure excellent customer service and reliable equipment operation. Building strong relationships with customers and understanding their technical needs is crucial. This role requires a combination of technical expertise and customer service skills. Assistance with finding accommodation is provided. Modern vehicle fleet is available. A comprehensive understanding of the Miele Professional equipment is essential. The ideal candidate will have a strong background in automotive repair and a good command of English.",
+        "what_we_expect": [
+          "Technical skills and experience in Miele Professional equipment.",
+          "Ability to understand and communicate technical needs.",
+          "Good customer service skills.",
+          "Strong problem-solving skills.",
+          "Ability to work independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Repair, install, and schedule maintenance visits of Miele Professional equipment.",
+          "Ensure customers receive the best possible service and equipment works reliably.",
+          "Work with customers throughout the maintenance operation and build a good relationship.",
+          "Identify opportunities to provide additional information and maintenance services.",
+          "Advises on new equipment needed during the lifetime of the equipment."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Housing and accommodation.",
+          "Modern vehicles and equipment.",
+          "Economical driving style.",
+          "Winter driving experience.",
+          "Licenses."
+        ],
+        "search_keywords": "Maintenance Technician, Miele Professional, repair, installation, maintenance, equipment, customer service, technical skills, Miele Professional equipment, customer relationship, technical needs, new equipment, driving skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-09-30 11:57:15",
+    "jobs": [
+      {
+        "id": "8e1a7488",
+        "job_id": "maintenance-technician-pirkkala-8e1a7488",
+        "processed": true,
+        "title": "Maintenance Technician",
+        "company": "Machinery MT Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/machinery-mt-huoltoteknikko-sdsuu-20606332",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/machinery-mt-huoltoteknikko-sdsuu-20606332",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/maintenance-technician-pirkkala-8e1a7488",
+        "date_posted": "2026-09-28",
+        "date_expires": "2026-10-28",
+        "scraped_at": "2026-09-30 11:57:15",
+        "open_positions": 1,
+        "salary_range": "2 800–4 600 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting Maintenance technician position available at Machinery MT Oy in Pirkkala. Check requirements and submit your application today.",
+        "description": "We are looking for a Maintenance Technician to join our growing team at Machinery MT Oy in Pirkkala. This full-time position offers a competitive salary range of 2,800–4,600 €/kk and comes with permanent employment. We are seeking a skilled technician with experience in electrical systems installation and troubleshooting, ideally from a machine shop background. The ideal candidate will be able to work independently and contribute to our strong customer service. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Experience in machine shop work.",
+          "No prior experience at the company's premises.",
+          "Maintenance technician Our success is based on skilled personnel, strong expertise and long-term customer service."
+        ],
+        "job_responsibilities": [
+          "Install, install, install and troubleshoot customers' electrical systems.",
+          "Troubleshoot and repair electrical systems.",
+          "Maintenance technician Our success is based on skilled personnel, strong expertise and long-term customer service."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Employment conditions.",
+          "Maintenance technician Our success is based on skilled personnel, strong expertise and long-term customer service."
+        ],
+        "search_keywords": "maintenance technician, electrical systems, machine shop, customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
   }
 ]
