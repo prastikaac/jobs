@@ -282754,5 +282754,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:54:34",
+    "jobs": [
+      {
+        "id": "ec85bc4d",
+        "job_id": "project-manager-installation-projects-kuopio-ja-8-muuta-ec85bc4d",
+        "processed": true,
+        "title": "Project Manager, Installation Projects",
+        "company": "Insta Group",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Kuopio ja 8 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/project-manager-asennusprojektit-sisns-20608167",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/project-manager-asennusprojektit-sisns-20608167",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/project-manager-installation-projects-kuopio-ja-8-muuta-ec85bc4d",
+        "date_posted": "2026-09-23",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-02 02:54:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Exciting Project manager, installation projects position available at Insta Group in Kuopio ja 8 muuta. Check requirements and submit your application today.",
+        "description": "We are looking for an experienced Project Manager to lead our demanding instrumentation, electricity, and automation installation projects in Finland and internationally. With decades of extensive experience, we execute projects with reliability, quality, and professionalism. Our growing business started as early as 1960 with instrumentation installations, and we are committed to ensuring that projects are carried out quickly, safely, and in line with customer objectives. We offer a permanent position with a competitive salary and assistance with finding accommodation.",
+        "what_we_expect": [
+          "Experienced in instrumentation and automation.",
+          "Strong project management skills.",
+          "With decades of extensive experience, we execute our projects with reliability, quality and professionalism."
+        ],
+        "job_responsibilities": [
+          "Lead demanding installation projects.",
+          "Ensure projects are carried out quickly, safely, and in line with customer objectives.",
+          "With decades of extensive experience, we execute our projects with reliability, quality and professionalism."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "Project Manager, Installation Projects, automation, installation, instrumentation, electricity, automation, installation projects",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
