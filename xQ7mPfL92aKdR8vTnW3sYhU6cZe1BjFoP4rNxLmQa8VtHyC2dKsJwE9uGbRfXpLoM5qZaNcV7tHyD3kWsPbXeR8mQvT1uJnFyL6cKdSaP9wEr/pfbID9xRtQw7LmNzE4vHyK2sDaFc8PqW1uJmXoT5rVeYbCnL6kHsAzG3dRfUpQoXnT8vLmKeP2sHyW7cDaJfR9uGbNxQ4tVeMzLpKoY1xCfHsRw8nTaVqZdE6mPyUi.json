@@ -281881,5 +281881,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:50:26",
+    "jobs": [
+      {
+        "id": "ee69def5",
+        "job_id": "nurse-neurological-rehabilitation-helsinki-ee69def5",
+        "processed": true,
+        "title": "Nurse Neurological Rehabilitation",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=0e327053db84bd7d5cf0c3ed8ad839ed",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a3252e3f-ce6b-4ed1-b9da-54b021e4f811/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-neurological-rehabilitation-helsinki-ee69def5",
+        "date_posted": "2026-09-30",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-10-02 02:50:26",
+        "open_positions": 1,
+        "salary_range": "salary per job of a nurse is €3 024",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Nurse Neurological rehabilitation at HUS Helsingin yliopistollinen sairaala. Great opportunity in Helsinki—apply now.",
+        "description": "We are looking for a nurse with experience in neurological rehabilitation to join our team at Synapsia House. This is a full-time, permanent position in the Neurology Rehabilitation Department. The salary is competitive and based on Finnish collective agreements. The role involves multidisciplinary collaboration and focuses on patient-centered care. We offer a range of benefits, including active supervisors, experienced nursing professionals, and a modern vehicle fleet. The work is a three-shift job, and we provide support for community shift planning. The recruitment process is open to applicants at the time of application, and interviews will be held on October 16 and 19. The salary is €3,024.27 per day plus any experience and other allowances.",
+        "what_we_expect": [
+          "Licensed nurse.",
+          "Good oral and written knowledge of Finnish and Swedish.",
+          "Interviews will be held tentatively: * on 16 October from 10 to 11 and from 13 to 15 * on 19 October from 9 to 11."
+        ],
+        "job_responsibilities": [
+          "Assist patients with neurological rehabilitation.",
+          "Collaborate with multidisciplinary teams for holistic patient care.",
+          "Interviews will be held tentatively: * on 16 October from 10 to 11 and from 13 to 15 * on 19 October from 9 to 11."
+        ],
+        "what_we_offer": [
+          "Salary of €3,024.27 per day plus experience and allowances.",
+          "Six-month probationary period.",
+          "Interviews will be held tentatively: * on 16 October from 10 to 11 and from 13 to 15 * on 19 October from 9 to 11."
+        ],
+        "search_keywords": "Nurse Neurological Rehabilitation, Neurological Rehabilitation Nurse, Nurse Neurological, Neurological Rehabilitation, Neurological Rehabilitation Nurse",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
   }
 ]
