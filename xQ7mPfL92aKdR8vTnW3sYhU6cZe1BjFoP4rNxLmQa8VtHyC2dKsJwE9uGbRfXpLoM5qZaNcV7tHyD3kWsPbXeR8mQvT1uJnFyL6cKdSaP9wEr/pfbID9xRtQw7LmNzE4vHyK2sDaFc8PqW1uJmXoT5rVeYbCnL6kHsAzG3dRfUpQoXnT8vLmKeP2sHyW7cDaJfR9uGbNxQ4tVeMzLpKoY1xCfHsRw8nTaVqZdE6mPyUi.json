@@ -279401,5 +279401,1327 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:50:04",
+    "jobs": [
+      {
+        "id": "72a188f9",
+        "job_id": "cashier-hanko-72a188f9",
+        "processed": true,
+        "title": "Cashier",
+        "company": "Joblink Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Hanko",
+          "Karkkila",
+          "Kirkkonummi",
+          "Lohja",
+          "Inkoo",
+          "Raasepori",
+          "Siuntio",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/kassamyyja-lansi-uusimaa/m23zKe",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/576c2ac0-f8c9-437b-81ef-c89eac9da7f3/en",
+        "job_employer_email": "riikka.aalto@joblink.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 579 9401",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/cashier-hanko-72a188f9",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-29",
+        "scraped_at": "2026-10-02 02:50:04",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a I 'm a cashier in Western Newfoundland . job in Hanko? Joblink Oy is seeking motivated candidates—apply today.",
+        "description": "We are looking for new customer service-minded individuals to join our team as salespeople in the retail industry. With Joblink, you can work flexible shifts at different retail locations in Western Newfoundland. Our app makes it easy to book shifts, and you'll enjoy the flexibility to choose your own schedule. The job offers valuable work experience and customer service skills, with opportunities for advancement to various positions in the retail sector. Our modern vehicle fleet and assistance with finding accommodation are provided. Apply now and start your career with Joblink!",
+        "what_we_expect": [
+          "Fluent in Finnish.",
+          "At least 18 years old.",
+          "I 'm a cashier in Western Newfoundland ."
+        ],
+        "job_responsibilities": [
+          "Assist customers with transactions.",
+          "Stock shelves and restock items.",
+          "Answer customer inquiries and provide assistance."
+        ],
+        "what_we_offer": [
+          "Flexible work schedule.",
+          "Customer service experience.",
+          "Opportunities for career advancement.",
+          "Discount on membership fees for Elix and Fressi stores."
+        ],
+        "search_keywords": "cashier western newfoundland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "240ebc7d",
+        "job_id": "barber-and-hairdresser-espoo-240ebc7d",
+        "processed": true,
+        "title": "Barber and hairdresser",
+        "company": "Harikabet Oy, Lohja",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:teresa.aho@salonklipsi.fi?subject=Application%20for%20the%20Job%20-%20Barber%20and%20hairdresser&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Barber%20and%20hairdresser.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ea4a9a75-0fab-4631-99ec-fe6efc710e88/en",
+        "job_employer_email": "teresa.aho@salonklipsi.fi",
+        "job_employer_name": "Teresa Aho",
+        "job_employer_phone_no": "0500763296",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-and-hairdresser-espoo-240ebc7d",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-02 02:50:04",
+        "open_positions": 1,
+        "salary_range": "salary job",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Harikabet Oy, Lohja is hiring a Barber and hairdresser, Harikabet Oy, Salon Klipsi Sello, Espoo in Espoo. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a barber and hairdresser with several years of experience to join our Sello Salon Klipsi team in Espoo. This full-time position offers a pleasant job, a comfortable working environment, career advancement opportunities, good educational benefits, and a uniquely competitive salary. Send your application in Finnish to applications@salonklipsi.fi.",
+        "what_we_expect": [
+          "Graduated barber.",
+          "Several years of work experience.",
+          "Customer base."
+        ],
+        "job_responsibilities": [
+          "Cutting hair.",
+          "Shaving.",
+          "Trimming.",
+          "Styling."
+        ],
+        "what_we_offer": [
+          "Pleasant job.",
+          "Comfortable working environment.",
+          "Career advancement opportunities.",
+          "Good educational opportunities.",
+          "Competitive salary."
+        ],
+        "search_keywords": "barber, hairdresser, Sello Salon Klips, Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "421d78dc",
+        "job_id": "bakers-shelf-puddle-lake-pudasjärvi-421d78dc",
+        "processed": true,
+        "title": "Baker's Shelf Puddle Lake",
+        "company": "Joblink Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Pudasjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/panimohyllyttaja-pudasjarvi/DokgWn",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/55d542df-eb86-4476-a0a9-829dcdc29bd6/en",
+        "job_employer_email": "marita.rusanen@joblink.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 531 3180",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/bakers-shelf-puddle-lake-pudasjärvi-421d78dc",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-17",
+        "scraped_at": "2026-10-02 02:50:04",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Joblink Oy as a It's the baker's shelf, puddle lake. and grow your career in Pudasjärvi. Check details and apply now.",
+        "description": "We are looking for a brewery helper to join our team at Poodle Lake. Self-motivated, independent, and driven by physical work, you'll be responsible for taking care of our customers' products at the display and shelving. You'll handle unloading cargo, filling sales points, and maintaining order in the warehouse. We're seeking someone who enjoys achievement, works independently, and is flexible in terms of hours. Previous experience is preferred but not required. A positive and agile attitude is essential. We offer a permanent position with full-time hours, and you'll be paid based on the company's hourly rate. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Physical flexibility.",
+          "Previous experience in similar jobs is considered an advantage.",
+          "An enthusiastic and agile attitude."
+        ],
+        "job_responsibilities": [
+          "Taking care of the display and shelving of products.",
+          "Unloading cargo that arrives at the warehouse.",
+          "Going through the warehouse and filling in additional sales points at the grocery store."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Physical work.",
+          "Diversity and opportunity to explore different types of work.",
+          "No day is the same, so be prepared for rapid changes.",
+          "Previous experience in similar jobs is considered an advantage.",
+          "An enthusiastic and agile attitude."
+        ],
+        "search_keywords": "baker's shelf puddle lake, physical work, diverse opportunities, flexible hours, enthusiastic attitude",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "b94a090e",
+        "job_id": "barber-and-hairdresser-espoo-b94a090e",
+        "processed": true,
+        "title": "Barber and Hairdresser",
+        "company": "Harikabet Oy, Salon Klipsi Lippulaiva",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:teresa.aho@salonklipsi.fi?subject=Application%20for%20the%20Job%20-%20Barber%20and%20Hairdresser&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Barber%20and%20Hairdresser.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/25a80e7a-1e2e-4f54-a593-30962023ccb4/en",
+        "job_employer_email": "teresa.aho@salonklipsi.fi",
+        "job_employer_name": "Teresa Aho",
+        "job_employer_phone_no": "0500763296",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-and-hairdresser-espoo-b94a090e",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-02 02:50:04",
+        "open_positions": 1,
+        "salary_range": "paid work, a fixed monthly salary and an incentive salary.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a He is a barber and hairdresser, Harikabet Oy, Salon Klipsi Flagship, Espoo job in Espoo?",
+        "description": "We are looking for a barber-barber with some work experience and a customer base, who is sensitive to customer service and passionate about the latest technologies and fashion trends. A professional hairdresser with a barber's degree and fluency in Finnish is required. We offer a pleasant job, a comfortable working environment, career advancement opportunities, good training opportunities, and a competitive salary. Send a free application and attach some hair photos as an annex to your application or a link to a website where you can admire your work samples. Apply now, as we will fill the vacancies as soon as we find the right people.",
+        "what_we_expect": [
+          "Professional experience.",
+          "Fluency in Finnish.",
+          "If you are a professional hairdresser with some work experience and a customer base, with a sensitive smile and a love of customer service."
+        ],
+        "job_responsibilities": [
+          "Cutting hair and styling.",
+          "Customer service and grooming.",
+          "If you are a professional hairdresser with some work experience and a customer base, with a sensitive smile and a love of customer service."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Career advancement opportunities.",
+          "Training opportunities.",
+          "Comfortable working environment."
+        ],
+        "search_keywords": "barber, hairdresser, Salon Klipsi Flagship, Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "2b7629b9",
+        "job_id": "general-practitioner-at-the-reception-lappeenranta-lappeenranta-2b7629b9",
+        "processed": true,
+        "title": "General practitioner at the reception, Lappeenranta",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/386043/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/27dd63b7-7eaa-4ddc-ba8b-c0ba48f7d1d6/en",
+        "job_employer_email": "saara.mitrunen@terveystalo.com",
+        "job_employer_name": "Saara Mitrunen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/general-practitioner-at-the-reception-lappeenranta-lappeenranta-2b7629b9",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-10-02 02:50:04",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Terveystalo as a General practitioner at the reception, Lappeenranta in Lappeenranta. Learn more about the role and apply now.",
+        "description": "We at Terveystalo are looking for a General Practitioner to join our team at the Health Centre in Lappeenranta. As a General Practitioner at Terveystalo, Lappeenranta, you will be part of a team dedicated to providing comprehensive primary healthcare services. This role offers varied working opportunities in the evenings and on weekends, with the flexibility to choose your working mode. You will have access to comprehensive laboratory, imaging, and nursing services, as well as excellent framework for procedures, accident treatment, and a varied clinical work. Additionally, you will have the support of an appointed medical and specialist representative to ensure a smooth day and professional growth.",
+        "what_we_expect": [
+          "No specific requirements mentioned.",
+          "General practitioner at the reception, Lappeenranta We at Terveisto make our work the most important, health.",
+          "Our work is of great importance, not only to our customers, but to the whole society."
+        ],
+        "job_responsibilities": [
+          "Perform general practitioner-level tasks.",
+          "Use and develop expertise in patient work.",
+          "General practitioner at the reception, Lappeenranta We at Terveisto make our work the most important, health."
+        ],
+        "what_we_offer": [
+          "Varied working opportunities in the evenings and on weekends.",
+          "Comprehensive laboratory, imaging and nursing services.",
+          "Excellent framework for procedures, accident treatment and a varied clinical work.",
+          "Appointed medical and specialist representative to support training and smooth running."
+        ],
+        "search_keywords": "general practitioner reception Lappeenranta",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:50:05",
+    "jobs": [
+      {
+        "id": "fe4dd732",
+        "job_id": "barber-and-hairdresser-lohja-fe4dd732",
+        "processed": true,
+        "title": "Barber and Hairdresser",
+        "company": "Salon Klipsi Oy, Lohja",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b9676d6e-6bd3-41f5-a3ae-639aef9c42be/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b9676d6e-6bd3-41f5-a3ae-639aef9c42be/en",
+        "job_employer_email": "",
+        "job_employer_name": "Teresa Aho",
+        "job_employer_phone_no": "0500763296",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-and-hairdresser-lohja-fe4dd732",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-02 02:50:05",
+        "open_positions": 1,
+        "salary_range": "paid work, fixed monthly salary and incentive salary.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Barber and hairdresser, Salon Klipsi Oy, office located in Lohja, Lohja at Salon Klipsi Oy, Lohja in Lohja.",
+        "description": "We are looking for a qualified barber and hairdresser to join our team at Salon Klipsi Oy, located in Lohja, Lohja. This is a permanent position offering part-time and full-time opportunities, with an incentive pay model that allows direct influence on salary. Ideal candidates should have some work experience, a sensitive smile, and a passion for customer service. We offer a unique incentive pay system that allows you to directly impact your salary based on your performance. If you are interested in the latest technologies and fashion trends, and are fluent in Finnish, please apply with a resume and a few hair photos. We'll be in touch soon with the right candidates.",
+        "what_we_expect": [
+          "Some work experience.",
+          "Fluency in Finnish.",
+          "A sensitive smile."
+        ],
+        "job_responsibilities": [
+          "Cutting hair and styling.",
+          "Providing customer service.",
+          "Maintaining salon equipment."
+        ],
+        "what_we_offer": [
+          "Permanent full-time and part-time jobs.",
+          "Incentive pay model.",
+          "Unique incentive pay."
+        ],
+        "search_keywords": "barber, hairdresser, salon, Klipsi, Lohja",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "d420720d",
+        "job_id": "construction-worker-kuopio-d420720d",
+        "processed": true,
+        "title": "Construction worker",
+        "company": "Barona Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/maanrakennustyontekija-barona-rakennus-oy-18e38024",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/46f6a180-3a4f-4e08-ab30-0811deae6e50/en",
+        "job_employer_email": "janne.jaatinen@barona.fi",
+        "job_employer_name": "Janne Jaatinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-kuopio-d420720d",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-21",
+        "scraped_at": "2026-10-02 02:50:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Barona Rakennus Oy is looking for a skilled Construction worker in Kuopio. Don't miss this opportunity—apply today.",
+        "description": "We are currently seeking a construction worker for Barona Rakennus Oy in Kuopio. This position involves earthworks in various locations, including Kuopio and its surroundings. Responsibilities include mining, excavator work, pipe installation, insulation, paving, foundation construction, and more. Applicants must hold a valid occupational safety card, be fluent in Finnish, have good physical condition, be able to drive a car, possess a waterworking card, and be certified in plastic welding. The work will commence in February and continue through the autumn, with an estimated completion date of November. We are interviewing applicants at the time of application, so please apply promptly.",
+        "what_we_expect": [
+          "Occupational safety card.",
+          "Finnish fluency.",
+          "Good physical condition.",
+          "Car driving ability."
+        ],
+        "job_responsibilities": [
+          "Mine earthworks.",
+          "Excavate.",
+          "Install pipes and insulation.",
+          "Pave.",
+          "Construct foundations."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation."
+        ],
+        "search_keywords": "construction worker Kuopio Kuopio area",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "b3c764c6",
+        "job_id": "head-of-youth-work-espoo-b3c764c6",
+        "processed": true,
+        "title": "Head of Youth Work",
+        "company": "Espoonlahden seurakunta",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5324/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1856f2e4-da9b-457c-ab44-ca049a2aae20/en",
+        "job_employer_email": "jukka.lehti@evl.fi",
+        "job_employer_name": "Jukka Lehti",
+        "job_employer_phone_no": "0504341090",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/head-of-youth-work-espoo-b3c764c6",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-10-02 02:50:05",
+        "open_positions": 1,
+        "salary_range": "The basic salary is EUR 3643 per year.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Espoonlahden seurakunta as a Head of Youth Work in Espoo. Learn more about the role and apply now.",
+        "description": "We are looking for a Head of Youth Work in Espoo, Finland, to lead a dynamic team focused on youth education and development. With a strong background in youth work and a proven track record in parish education, you will be responsible for overseeing the entire field of youth work, including planning, implementation, and monitoring activities. Our diverse and multicultural community welcomes your experience and commitment to working with children and young people from various backgrounds. As part of a modern vehicle fleet, you will enjoy comprehensive occupational health services, lunch, sports, and cultural benefits. Our team is highly skilled and enthusiastic, and we offer leadership opportunities and a supportive work environment.",
+        "what_we_expect": [
+          "Child and youth-oriented work experience.",
+          "Experience in parish education.",
+          "Ability to plan and evaluate work independently.",
+          "Ability to work collaboratively.",
+          "Leadership experience.",
+          "Openness."
+        ],
+        "job_responsibilities": [
+          "Lead a highly skilled and enthusiastic team focused on individual strengths.",
+          "Develop the whole field of education, especially youth work and specific youth work.",
+          "Plan, implement, and monitor activities and the economy, as well as manage and manage staff and activities.",
+          "Have regular access to cross-curricular activities."
+        ],
+        "what_we_offer": [
+          "Comprehensive occupational health services.",
+          "Lunch.",
+          "Sports.",
+          "Cultural benefits."
+        ],
+        "search_keywords": "Head Youth Work, Youth Work, Youth Officer, Parish, Espoonlahti, Child and Youth-oriented work experience, Parish Education, Cross-curricular Activities, Evangelical Lutheran Church, Criminal Record Act",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "36f6a482",
+        "job_id": "barber-and-hairdresser-vihti-36f6a482",
+        "processed": true,
+        "title": "Barber and Hairdresser",
+        "company": "Salon Klipsi Oy, Nummela",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1ac8e2c9-3818-4637-9a4b-6fb3aab12fbb/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1ac8e2c9-3818-4637-9a4b-6fb3aab12fbb/en",
+        "job_employer_email": "",
+        "job_employer_name": "Teresa Aho",
+        "job_employer_phone_no": "0500763296",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-and-hairdresser-vihti-36f6a482",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-02 02:50:05",
+        "open_positions": 1,
+        "salary_range": "paid work, fixed monthly salary and incentive salary.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Barber and hairdresser, Salon Klipsi Oy, office of Nummela, Vihti position available at Salon Klipsi Oy, Nummela in Vihti.",
+        "description": "We are looking for a qualified barber and hairdresser to join our team at Salon Klipsi Oy, located in the office of Nummela, Vihti. This is a permanent position offering part-time and full-time opportunities, with an incentive pay model where you can influence your salary directly. If you have experience, a friendly smile, and a passion for customer service, we encourage you to apply. We offer a unique incentive pay system and are committed to providing modern equipment and the latest in beauty technologies. To apply, please submit a free-form application in Finnish to applications (at) salonklipsi.fi.",
+        "what_we_expect": [
+          "Some work experience.",
+          "A sensitive smile.",
+          "A love of customer service."
+        ],
+        "job_responsibilities": [
+          "Cut hair and provide styling services.",
+          "Maintain salon equipment and cleanliness.",
+          "Communicate with clients to understand their needs and preferences."
+        ],
+        "what_we_offer": [
+          "Permanent full-time and part-time jobs.",
+          "Incentive pay model.",
+          "Unique incentive pay where you can influence your salary."
+        ],
+        "search_keywords": "barber hairdresser salon Klipsi Oy Vihti",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:50:06",
+    "jobs": [
+      {
+        "id": "9d24b5b2",
+        "job_id": "x-ray-nurse-diagnostic-centre-radiology-hyvinkää-9d24b5b2",
+        "processed": true,
+        "title": "X-ray nurse Diagnostic centre Radiology",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=f93fdfb459546e2da7bb524a2e735909",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/142fd44c-7da1-4cf8-8695-c5ff04108097/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/x-ray-nurse-diagnostic-centre-radiology-hyvinkää-9d24b5b2",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-10-02 02:50:06",
+        "open_positions": 1,
+        "salary_range": "salary per job is EUR 3218,18 per month",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a X-ray nurse Diagnostic centre Radiology role at HUS Helsingin yliopistollinen sairaala. Join a growing team and build your career in Hyvinkää.",
+        "description": "X-ray nurse Diagnostic centre Radiology Welcome to the role of an X-ray nurse with a high standard of diagnostic services Welcome to the X-ray department of the hospital! The HUS Diagnostic Centre is Finland's leading provider of clinical laboratory and imaging services.Our main area of activity is specialised healthcare for the HUS group and primary healthcare in the HUS welfare areas.We are also responsible for laboratory and imaging activities in the Kymen Valley welfare area and South Karelia welfare area. We operate in eight medical specialties. We are nationally responsible for a number of expertise-demanding studies as well as research and teaching at the university hospital.",
+        "what_we_expect": [
+          "We operate in eight medical specialties.",
+          "We are nationally responsible for a number of expertise-demanding studies as well as research and teaching at the university hospital.",
+          "Diagnostic research plays a central role in the detection, exclusion, management, monitoring and screening of diseases.",
+          "The HUS Diagnostic Centre employs around 3,300 laboratory and imaging specialists in more than 150 offices."
+        ],
+        "job_responsibilities": [
+          "We operate in eight medical specialties.",
+          "We are nationally responsible for a number of expertise-demanding studies as well as research and teaching at the university hospital.",
+          "Diagnostic research plays a central role in the detection, exclusion, management, monitoring and screening of diseases.",
+          "The HUS Diagnostic Centre employs around 3,300 laboratory and imaging specialists in more than 150 offices."
+        ],
+        "what_we_offer": [
+          "We operate in eight medical specialties.",
+          "We are nationally responsible for a number of expertise-demanding studies as well as research and teaching at the university hospital.",
+          "Diagnostic research plays a central role in the detection, exclusion, management, monitoring and screening of diseases.",
+          "The HUS Diagnostic Centre employs around 3,300 laboratory and imaging specialists in more than 150 offices."
+        ],
+        "search_keywords": "X-ray nurse Diagnostic centre Radiology HUS Helsingin yliopistollinen sairaala Hyvinkää other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "2fbdf2d0",
+        "job_id": "the-new-children-s-hospital-helsinki-2fbdf2d0",
+        "processed": true,
+        "title": "The new children 's hospital .",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=76b0c5a239fe42f643e52feb435e9a7d",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/728c1feb-fbde-4750-bb62-acdf1cdf4161/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/the-new-children-s-hospital-helsinki-2fbdf2d0",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-10-02 02:50:06",
+        "open_positions": 1,
+        "salary_range": "salary:SOTE contract, €2473",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "HUS Helsingin yliopistollinen sairaala is hiring a The new children 's hospital . in Helsinki. Explore responsibilities, benefits, and apply today.",
+        "description": "The new children 's hospital . Do you want to be a part of doing meaningful work in the field of hospital hygiene? We're hiring a facility attendant for the new pediatric surgery unit for a two-shift position for the time being. The HUSintopalvelut, officially called Bunkopalvelut, is responsible for ensuring that the hospital has the best possible facilities for the care of patients. The duties and working environments of the facility manager are varied and varied.You will be able to work in a comfortable team environment to ensure that the premises are clean, safe and comfortable for both customers and staff.Your duties may also include catering, bed-keeping and other maintenance tasks.",
+        "what_we_expect": [
+          "Location of work: New Children's Hospital, Helsinki.",
+          "Employment relationship: permanent, full-time, two-shift work.",
+          "Collective agreement and salary:SOTE contract, €2473.91 per job per day and contract allowances.",
+          "Start of work: 2.11.2026 or under contract.",
+          "In this video, you can get to know the work of a facility manager:https://www.youtube.com/watch?v=vmJH8yR0878."
+        ],
+        "job_responsibilities": [
+          "Location of work: New Children's Hospital, Helsinki.",
+          "Employment relationship: permanent, full-time, two-shift work.",
+          "Collective agreement and salary:SOTE contract, €2473.91 per job per day and contract allowances.",
+          "Start of work: 2.11.2026 or under contract.",
+          "In this video, you can get to know the work of a facility manager:https://www.youtube.com/watch?v=vmJH8yR0878."
+        ],
+        "what_we_offer": [
+          "Location of work: New Children's Hospital, Helsinki.",
+          "Employment relationship: permanent, full-time, two-shift work.",
+          "Collective agreement and salary:SOTE contract, €2473.91 per job per day and contract allowances.",
+          "Start of work: 2.11.2026 or under contract.",
+          "In this video, you can get to know the work of a facility manager:https://www.youtube.com/watch?v=vmJH8yR0878."
+        ],
+        "search_keywords": "The new children 's hospital . HUS Helsingin yliopistollinen sairaala Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "4980508f",
+        "job_id": "specialist-oral-and-maxillofacial-surgeon-helsinki-4980508f",
+        "processed": true,
+        "title": "Specialist Oral and Maxillofacial Surgeon",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=9c0c299b14b7b1db90785624dd10c7d1",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0650c71a-ce7b-445c-acfa-09b6471504b0/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/specialist-oral-and-maxillofacial-surgeon-helsinki-4980508f",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-10-02 02:50:06",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Specialist oral and maxillofacial surgeon position available at HUS Helsingin yliopistollinen sairaala in Helsinki.",
+        "description": "We are seeking a Specialist Oral and Maxillofacial Surgeon for the Oral and Maxillofacial Surgery Unit of the Head and Neck Centre at HUS Helsingin yliopistollinen sairaala. This role requires expertise in trauma and corrective maxillofacial surgery, with a focus on specialized facial trauma and corrective surgery at the University Hospital level. The ideal candidate should have experience in teaching and working collaboratively in a multidisciplinary treatment team. A broad and multidisciplinary background in leprosy surgery, including pediatric and leprosy surgery, adult-focused police activities, and excellent general medical knowledge, is preferred. Knowledge of 3D oral design is also highly desirable.",
+        "what_we_expect": [
+          "Experience in specialised facial trauma and corrective surgery at the University Hospital level.",
+          "Interest in teaching.",
+          "Experience in a multidisciplinary treatment team.",
+          "Background in leprosy surgery.",
+          "Knowledge of 3D oral design."
+        ],
+        "job_responsibilities": [
+          "Specialised facial trauma and corrective surgery.",
+          "Multidisciplinary treatment team collaboration.",
+          "3D oral design knowledge."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation assistance.",
+          "Equipment and vehicles."
+        ],
+        "search_keywords": "oral maxillofacial surgeon, specialist, trauma, maxillofacial surgery, multidisciplinary, leprosy surgery, 3D design",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "8a9b9772",
+        "job_id": "attending-physician-in-neurology-vantaa-8a9b9772",
+        "processed": true,
+        "title": "Attending Physician in Neurology",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=80d6f5ae50d503844c861c82ad931bc4",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/52008486-9cf2-4a60-a497-ec388ed93fde/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/attending-physician-in-neurology-vantaa-8a9b9772",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-19",
+        "scraped_at": "2026-10-02 02:50:06",
+        "open_positions": 1,
+        "salary_range": "salary per job is determined in accordance with",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting I 'm an attending physician in neurology . position available at HUS Helsingin yliopistollinen sairaala in Vantaa.",
+        "description": "We are seeking an attending physician with expertise in clinical neurology, operational development, and physician management to join Peijas Hospital as an assistant physician. This role will play a key role in developing neurological services and supporting high-quality patient care alongside a multidisciplinary team. Responsibilities include handling outpatient applications, developing neurological care chains, allocating resources, cooperating with primary healthcare, training specialists, and acting as a consultant neurologist and head of the Pediatric Department. The salary is competitive and based on Finnish collective agreements, with a minimum of EUR 7312.31 per month. We offer assistance with finding accommodation and a modern vehicle fleet.",
+        "what_we_expect": [
+          "Strong clinical experience and expert knowledge in neurology.",
+          "Experience in training and supervising specialists.",
+          "Ability to design and implement training with practical implications.",
+          "Good collaborative skills and ability to work in a multi-professional environment.",
+          "Experience in the development of care chains and operating models.",
+          "Ability to act as a deputy to the chief medical officer and to participate in unit management."
+        ],
+        "job_responsibilities": [
+          "Handling of outpatient applications and assessment of treatment needs.",
+          "Development of neurological care chains and practices in the Peijas area of responsibility.",
+          "Allocation of resources and planning of clinical work arrangements.",
+          "Cooperation with primary healthcare in Kerava and Vantaa.",
+          "Training and guidance of specialists.",
+          "Familiarisation and internal information of new staff."
+        ],
+        "what_we_offer": [
+          "Salary per job determined in accordance with the career path L3SL003A and has a minimum amount of EUR 7312.31 per month.",
+          "Total salary is also affected by any work experience allowances, personal allowances, additional duties and operating and emergency allowances.",
+          "Part of the most impressive treatment ever."
+        ],
+        "search_keywords": "Attending Physician in Neurology HUS Helsingin yliopistollinen sairaala Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "c50184c5",
+        "job_id": "specialist-dentist-karendo-helsinki-c50184c5",
+        "processed": true,
+        "title": "Specialist dentist Karendo",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=2d6f5962efa810a0de9919969bff3190",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9110a608-696c-45b3-a93b-375ce299dbee/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/specialist-dentist-karendo-helsinki-c50184c5",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-10-02 02:50:06",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Specialist dentist Karendo job in Helsinki? HUS Helsingin yliopistollinen sairaala is seeking motivated candidates—apply today.",
+        "description": "We are seeking a highly skilled and dedicated Specialist Dentist to join our dynamic team at HUS Helsingin yliopistollinen sairaala. The ideal candidate will specialize in clinical dentistry, with a strong background in cardiology and endodontics. This role requires a combination of advanced clinical experience and knowledge of these specialties, as well as the ability to collaborate effectively within a multidisciplinary environment. A proven track record of senior positions and a passion for teaching are also essential. The position offers competitive hourly wages based on Finnish collective agreements and comes with assistance in finding suitable accommodation. We provide a modern vehicle fleet and a supportive work environment.",
+        "what_we_expect": [
+          "Specialist dentist qualification.",
+          "Doctor of Dental Medicine degree.",
+          "Clinical experience in cardiology and endodontics.",
+          "Ability to work in a multidisciplinary team.",
+          "Work experience in senior positions.",
+          "Interest in teaching."
+        ],
+        "job_responsibilities": [
+          "Provide clinical dentistry services.",
+          "Specialize in cardiology and endodontics.",
+          "Contact details I'm the leader of the line, Dr."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation assistance.",
+          "Vehicle and fleet."
+        ],
+        "search_keywords": "specialist dentist, clinical dentist, cardiology, endodontics, multidisciplinary team, work experience, teaching",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:50:07",
+    "jobs": [
+      {
+        "id": "693e47a7",
+        "job_id": "specialist-in-services-kotka-693e47a7",
+        "processed": true,
+        "title": "Specialist in services",
+        "company": "Kotkan kaupunki",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/KOTKA-03-31-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a28a7cb1-2a5f-423a-995f-4a087fb6c196/en",
+        "job_employer_email": "tatu.moisio@kotka.fi",
+        "job_employer_name": "Tatu Moisio",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/specialist-in-services-kotka-693e47a7",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "KVTES:in mukainen 2812,27 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Specialist in services at Kotkan kaupunki in Kotka. Apply now and take the next step in your career.",
+        "description": "We are looking for a positive, customer service-minded team member at the Ruori service point! The City of Kotka is seeking a service specialist for a permanent job starting on November 2, 2026. Ruori offers a wide range of business and consultancy services to its citizens. The office is located in the town hall. The work is carried out by a team of six employees. For more information on the activities of Ruori: https://kotka.fi/asioi-ja osallistuu/asiakaspalvelus/palvelupiste-ruori. The task includes multi-channel customer service, by telephone, online, and at the service point; the main tasks are the management of the city's telephone and service advisory, the development of telephone services, and the organization of product sales.",
+        "what_we_expect": [
+          "Relevant undergraduate degree or equivalent previous university degree.",
+          "Experience in customer service tasks.",
+          "Understanding of city's services.",
+          "Good customer service and cash management skills."
+        ],
+        "job_responsibilities": [
+          "Multi-channel customer service.",
+          "Management of city's telephone and service advisory.",
+          "Development of telephone services.",
+          "Organisation of product sales.",
+          "Management of other customer service tasks."
+        ],
+        "what_we_offer": [
+          "Salary based on KVTES.",
+          "Standard salary of €2812.27 per year.",
+          "Work experience bonus (max. 8%) based on work experience.",
+          "General working time of 38.25 hours per week.",
+          "6-month probationary period.",
+          "Comprehensive staff education, well-being, maintenance of employability, and training."
+        ],
+        "search_keywords": "Specialist in services, customer service, Ruori service point, Kotka, permanent job, City of Kotka, Ruori, business and consultancy services, telephone service, customer service tasks, city's telephone and service advisory, development of telephone services, organization of product sales, management of other customer service tasks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "77f9fabf",
+        "job_id": "experienced-earthmoving-worker-mikkeli-juva-77f9fabf",
+        "processed": true,
+        "title": "Experienced earthmoving worker, Mikkeli",
+        "company": "Barona Rakennus Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Juva",
+          "Mikkeli",
+          "Varkaus",
+          "Pieksämäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/kokenut-maanrakennustyontekija-mikkeli-barona-rakennus-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8856e3d7-17fe-4c9c-b93b-1b67bcc9736d/en",
+        "job_employer_email": "janne.jaatinen@barona.fi",
+        "job_employer_name": "Janne Jaatinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/experienced-earthmoving-worker-mikkeli-juva-77f9fabf",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-15",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "Salary is determined by the collective agreemen",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Barona Rakennus Oy is looking for a skilled Experienced earthmoving worker, Mikkeli in Juva. Don't miss this opportunity—apply today.",
+        "description": "We are seeking an experienced earthmoving worker in Mikkeli, Juva, Mikkeli, Varkaus, and Pieksämäki. This role involves working full-time and offers a competitive hourly wage based on Finnish collective agreements. Successful candidates should have previous experience in civil engineering, pipeline installation, and laser operation, as well as the ability to read images. Assistance with finding accommodation is provided. The job requires initiative, reliability, and diligence, and a valid occupational safety and health card is necessary. For more information, please contact us.",
+        "what_we_expect": [
+          "Previous experience in civil engineering.",
+          "Piping installation skills.",
+          "Laser operation skills.",
+          "Image reading skills."
+        ],
+        "job_responsibilities": [
+          "Operate earthmoving equipment.",
+          "Assist with pipeline installation.",
+          "Read and interpret images."
+        ],
+        "what_we_offer": [
+          "Salary determined by collective agreement.",
+          "Infrastructure sector experience.",
+          "Housing and accommodation.",
+          "Modern vehicles and equipment."
+        ],
+        "search_keywords": "earthmoving worker, civil engineer, Mikkeli, infrastructure, job opportunities",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "38db0c6d",
+        "job_id": "baron-of-the-buildings-landscapes-and-environmental-areas-pieksämäki-38db0c6d",
+        "processed": true,
+        "title": "Baron of the Buildings, Landscapes and Environmental Areas",
+        "company": "Barona Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Pieksämäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/avoin-hakemus-barona-rakennukselle-pieksamaki-ja-ymparistoalueet-barona-rakennus-oy-5f500f9f",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4d5dc92c-da99-41bd-9eab-adadbdd5d8cd/en",
+        "job_employer_email": "janne.jaatinen@barona.fi",
+        "job_employer_name": "Janne Jaatinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/baron-of-the-buildings-landscapes-and-environmental-areas-pieksämäki-38db0c6d",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "salary payment and all employer obligations to",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Open call for Baron of the Buildings, Landscapes and Environmental Areas role at Barona Rakennus Oy.",
+        "description": "We are looking for a skilled Baron of the Buildings, Landscapes and Environmental Areas at Barona Rakennus Oy in Pieksämäki. This position involves foundation work, including excavation, landscaping, and concrete preparation. We offer competitive hourly wages based on Finnish collective agreements and a modern vehicle fleet. The ideal candidate has prior experience in the field or training in the construction sector, a valid occupational safety card, and a valid driving licence. We provide assistance with finding accommodation and a responsible employer. Apply today for long-term job opportunities in the construction industry.",
+        "what_we_expect": [
+          "Prior experience in the field or training in the construction sector.",
+          "A valid occupational safety card.",
+          "At least 18 years of age.",
+          "Ability to work both independently and in a team.",
+          "A driving licence and the possibility of driving your own car are considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Foundation work: participation in excavation, landscaping and preparation of foundations.",
+          "Ironing: installation of reinforcement on concrete structures to ensure their durability and strength.",
+          "Concrete and masonry work: concrete slabs and masonry and paving work at various stages of construction projects.",
+          "Diamond drilling and cutting work: participation in diamond drilling and cutting as required by the site.",
+          "Interior and exterior work: painting of walls and finishing work on interior and exterior finishes and various surface treatments.",
+          "LVI work: installation of lighting, heating and air conditioning systems."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Employment opportunities.",
+          "Career advancement.",
+          "Responsibility and security.",
+          "Long-term job opportunities."
+        ],
+        "search_keywords": "Baron Buildings Landscapes Environmental Areas",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "fcd9116f",
+        "job_id": "baron-building-theft-varkaus-fcd9116f",
+        "processed": true,
+        "title": "Baron Building, Theft",
+        "company": "Barona Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Varkaus"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/avoin-hakemus-barona-rakennukselle-varkaus-barona-rakennus-oy-2fe16883",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dad53413-671e-49d0-bff6-c9cebd23f3b2/en",
+        "job_employer_email": "janne.jaatinen@barona.fi",
+        "job_employer_name": "Janne Jaatinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/baron-building-theft-varkaus-fcd9116f",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "salary payment and all employer obligations to",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Open for Baron Building, Theft. position available at Barona Rakennus Oy in Varkaus. Check requirements and submit your application today.",
+        "description": "We are looking for a skilled and experienced construction professional to join our team at Baron Building, Theft. This role involves participating in excavation, landscaping, and foundation preparation, as well as installing reinforcement, concrete and masonry work, diamond drilling, and interior and exterior finishing. Prior experience in the field or training in the construction sector is required. A valid occupational safety card and a valid driving licence are also essential. The job offers competitive hourly wages based on Finnish collective agreements, assistance with finding accommodation, and the possibility of driving your own car. This is a permanent position with long-term job opportunities and career advancement possibilities.",
+        "what_we_expect": [
+          "Prior experience in the field or training in the construction sector.",
+          "A valid occupational safety card.",
+          "At least 18 years of age.",
+          "Ability to work both independently and in a team.",
+          "A driving licence and the possibility of driving your own car are considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Foundation work: participation in excavation, landscaping and preparation of foundations.",
+          "Ironing: installation of reinforcement on concrete structures to ensure their durability and strength.",
+          "Concrete and masonry work: concrete slabs and masonry and paving work at various stages of construction projects.",
+          "Diamond drilling and cutting work: participation in diamond drilling and cutting as required by the site.",
+          "Interior and exterior work: painting of walls and finishing work on interior and exterior finishes and various surface treatments.",
+          "LVI work: installation of lighting, heating and air conditioning systems."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Employment opportunities.",
+          "Career advancement.",
+          "Responsibility and employer obligations."
+        ],
+        "search_keywords": "Baron Building, Theft, construction, job, opportunity",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "9aed18c5",
+        "job_id": "application-open-for-baron-building-iisalmi-iisalmi-9aed18c5",
+        "processed": true,
+        "title": "Application open for Baron Building, Iisalmi",
+        "company": "Barona Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/avoin-hakemus-barona-rakennukselle-iisalmi-barona-rakennus-oy-08604c56",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/22202d5a-8546-4fdc-aba4-48ce70178124/en",
+        "job_employer_email": "janne.jaatinen@barona.fi",
+        "job_employer_name": "Janne Jaatinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/application-open-for-baron-building-iisalmi-iisalmi-9aed18c5",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "salary payment and all employer obligations to",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Barona Rakennus Oy as a Application open for Baron Building, Iisalmi in Iisalmi. Learn more about the role and apply now.",
+        "description": "Application open for Baron Building, Iisalmi - Foundation work: participation in excavation, landscaping and preparation of foundations. - Ironing: installation of reinforcement on concrete structures to ensure their durability and strength. - Concrete and masonry work: concrete slabs and masonry and paving work at various stages of construction projects. - Diamond drilling and cutting work: participation in diamond drilling and cutting as required by the site. - Interior and exterior work: painting of walls and finishing work on interior and exterior finishes and various surface treatments. - LVI work: installation of lighting, heating and air conditioning systems.",
+        "what_we_expect": [
+          "Please note: For security reasons, we do not accept e-mail requests.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "Please note: For security reasons, we do not accept e-mail requests.",
+          "Daily operational tasks.",
+          "Supporting the team."
+        ],
+        "what_we_offer": [
+          "Please note: For security reasons, we do not accept e-mail requests.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "Application open for Baron Building, Iisalmi Barona Rakennus Oy Iisalmi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "1d867f7c",
+        "job_id": "land-use-specialist-kotka-1d867f7c",
+        "processed": true,
+        "title": "Land Use Specialist",
+        "company": "Kotkan kaupunki",
+        "job_category": "government-and-public-sector",
+        "jobLocation": [
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/KOTKA-03-30-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ce059981-da15-4c6a-846e-f344c139aa10/en",
+        "job_employer_email": "janne.juslin@kotka.fi",
+        "job_employer_name": "Janne Juslin",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/government-and-public-sector/land-use-specialist-kotka-1d867f7c",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-28",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "Tehtäväkohtainen palkka on 4 165,06 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Kotkan kaupunki is looking for a skilled Land use expert in Kotka. Don't miss this opportunity—apply today.",
+        "description": "Kotka is a fair, international port city where it is good to live and work. The daily life in Kotka is smooth and affordable. The urban centre, the beautiful archipelago and the Kymi River wilderness form a diverse working environment. Urban planning plays an important role as a developer of the city. The Land Acquisition and Transfer Service Unit is part of urban planning and is responsible for, among other things, the management of land and water areas owned by the city and contractual matters related to land use. We are now looking for a land use specialist for our temporary employment from 1.12.2026 or on the basis of a contract. The eligibility condition is an appropriate university degree and professional experience.",
+        "what_we_expect": [
+          "University degree and professional experience.",
+          "Practical knowledge and knowledge of legislation in real estate development, planning, and land use.",
+          "Good oral and written knowledge of Finnish language.",
+          "Good IT skills and knowledge of geography."
+        ],
+        "job_responsibilities": [
+          "Manage land and water areas owned by the city.",
+          "Draft land and water leases, acquire land, and manage land use agreements and permits.",
+          "Land use expert Kotka is a fair, international port city where it is good to live and work."
+        ],
+        "what_we_offer": [
+          "Salary and other conditions of employment determined in accordance with municipal technical staff collective agreements.",
+          "Training and work well-being activities offered by the city.",
+          "Smoke-free workplace."
+        ],
+        "search_keywords": "land use expert, land use specialist, urban planning, land acquisition, land use agreements, Finnish language, IT skills, real estate development, planning, land use, municipal administration, systemic knowledge, willingness to work independently, developmental capacity, ability to cooperate, ability to produce written material, collective agreements, Kotka, fair, international port city, affordable living, marine living environment, award-winning parks, Kymi River wilderness, urban planning, land use, city of Kotka, friendly and approachable locals, Kotka city, smoke-free employer",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "0bdfd317",
+        "job_id": "electrical-engineer-kotka-0bdfd317",
+        "processed": true,
+        "title": "Electrical engineer",
+        "company": "Kotkan kaupunki",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/KOTKA-03-29-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f6824a25-ba93-46e8-b09b-1e699b003528/en",
+        "job_employer_email": "paula.tyyska@kotka.fi",
+        "job_employer_name": "Paula Tyyskä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/electrical-engineer-kotka-0bdfd317",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "4 165,06 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Electrical engineer role at Kotkan kaupunki. Join a growing team and build your career in Kotka.",
+        "description": "Welcome to work in the Maritime City of Kotka! The City of Kotka is seeking an electrical engineer for a permanent position in the Infrastructure Services Unit as of November 1, 2026, or by contract. Your Key Tasks The electrical engineer is responsible for the renovation and basic improvement of street and traffic lighting infrastructure, as well as other electrical equipment and related maintenance work. The electrical engineer is responsible for the safety and security supervision of infrastructure electrical works. The work is shared and carried out together with another electrical engineer. The electrical engineers are responsible for procurement preparations, tendering, project supervision, reception and commissioning tasks for infrastructure street and traffic lighting investments.",
+        "what_we_expect": [
+          "Professional qualification (e.g., engineer AMK Electrical and Automation Engineering) and three years' experience in the design, maintenance, construction or related specialist tasks of street lighting and traffic lighting systems.",
+          "Good management of commonly used office software.",
+          "Possibility of using one's own car if necessary.",
+          "Experience in the use of street and traffic light systems such as RMS traffic light program and KeyLight network information system.",
+          "Experience in public administration and public procurement.",
+          "Occupational safety card qualification as a safety coordinator."
+        ],
+        "job_responsibilities": [
+          "Responsible for the renovation and basic improvement of street and traffic lighting infrastructure, as well as other electrical equipment and related maintenance work.",
+          "Responsible for the safety and security supervision of infrastructure electrical works.",
+          "Responsible for procurement preparations, tendering, project supervision, reception and commissioning tasks for infrastructure street and traffic lighting investments."
+        ],
+        "what_we_offer": [
+          "Salary of €4,165.06/year.",
+          "Occupational supplement (max. 8%) determined on the basis of good work experience.",
+          "Continuous training and well-being activities for employees.",
+          "Beautiful seaside town on the east coast of the Gulf of Finland, known as the park capital of the North.",
+          "Friendly and approachable locals."
+        ],
+        "search_keywords": "Electrical engineer Kotka job Kotka electrical engineer",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "c07afcd4",
+        "job_id": "counsellor-in-dari-pashto-and-farsi-salo-c07afcd4",
+        "processed": true,
+        "title": "Counsellor in Dari, Pashto, and Farsi",
+        "company": "Monikulttuurinen varhaiskasvatus, koulu ja koti ry. - Mångkulturell småbarnspedagogik, skola och hem rf, Turku",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Salo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.facebook.com/photo?fbid=1729255059200651&set=pb.100063485195515.-2207520000",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8ae393bc-bd07-4212-94bc-7f6652ed0d7b/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/counsellor-in-dari-pashto-and-farsi-salo-c07afcd4",
+        "date_posted": "2026-09-30",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "28€/tunti",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Prs",
+          "P.s."
+        ],
+        "meta_description": "Join Monikulttuurinen varhaiskasvatus, koulu ja koti ry. - Mångkulturell småbarnspedagogik, skola och hem rf, Turku as a Advice in Dari, Pashto and Farsi and...",
+        "description": "We are looking for a bilingual counsellor with knowledge of Dari, Pashto, and Persian to join our native language guidance and counselling service for immigrants in the Salon Employment Area from 1.11.2026 to 31.12.2027. The ideal candidate will have a strong understanding of Finnish society and culture, as well as local knowledge of the area. They must be proficient in immigration legislation and have experience working with diverse language clients. The role involves providing guidance and advice in the counsellor's native language on various legal issues related to income, family matters, work, residence permits, housing, and more. This is a permanent position offering a competitive salary of 28€/tunti.",
+        "what_we_expect": [
+          "Good understanding of society and, in particular, the functioning of its basic services, the necessary skills in immigration legislation and the necessary local knowledge of the area (local actors and services).",
+          "General knowledge of Finnish-speaking society and culture, and ability to distinguish between the different languages of the clients from the client's country of origin.",
+          "Good knowledge of literature and communication.",
+          "Ability to communicate with the authorities and other relevant authorities.",
+          "At least one year's professional experience in order to be able to communicate with clients in the various languages of the client's country of origin."
+        ],
+        "job_responsibilities": [
+          "Maintain and update the vocabulary in Finland and the concepts required for the work of the counsellor.",
+          "The CV must include at least the name of the counsellor."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits such as housing assistance, accommodation, and vehicles provided by the employer.",
+          "Professional development opportunities and training programs."
+        ],
+        "search_keywords": "Counsellor Dari Pashto Farsi",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "4a74d68c",
+        "job_id": "child-counsellor-ylöjärvi-4a74d68c",
+        "processed": true,
+        "title": "Child counsellor",
+        "company": "Ylöjärven seurakunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Ylöjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5318/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0fdae009-b5c6-430f-aaec-10c6e09841e7/en",
+        "job_employer_email": "anne.vanhatalo@evl.fi",
+        "job_employer_name": "Anne Vanhatalo",
+        "job_employer_phone_no": "0407507520",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/child-counsellor-ylöjärvi-4a74d68c",
+        "date_posted": "2026-09-30",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "KirVESTES 402 peruspalkka 2538,72 €/kk, mahdollinen kokemuslisä 86 €-320,50 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Child counsellor at Ylöjärven seurakunta in Ylöjärvi. Apply now and take the next step in your career.",
+        "description": "We are looking for a dedicated Child Counsellor to join our Early Childhood Education team in Ylöjärvi. This full-time position, starting January 7, 2027, offers a warm and professional working environment. Our team includes 21 tutors, an early childhood education and family services coordinator, a pastor, and a workplace manager. The Child Counsellor will work closely with the rest of the team to support the well-being of children and families, including organizing activities, planning events, and collaborating with families and day-care centers. The ideal candidate has a heart for working with children, families, and Christian education, is self-motivated, collaborative, and enthusiastic about new ideas. The salary is €2538.",
+        "what_we_expect": [
+          "A bachelor's degree in education and guidance (children's guidance counsellor).",
+          "Experience working with families and Christian education.",
+          "Application Interviews will be held from 2.11.2026 at 15:00 at the Ylöjärvi parish centre."
+        ],
+        "job_responsibilities": [
+          "Supporting children and families in early childhood education activities.",
+          "Organizing and implementing events and camps for schoolchildren.",
+          "Application Interviews will be held from 2.11.2026 at 15:00 at the Ylöjärvi parish centre."
+        ],
+        "what_we_offer": [
+          "Skilled co-workers.",
+          "Meaningful and varied work.",
+          "Good occupational health care.",
+          "Lunch and cultural benefits of Epasus.",
+          "Pro-educational working community.",
+          "Opportunity to develop skills."
+        ],
+        "search_keywords": "child counsellor, early childhood education, guidance counselor, child guidance, child welfare, child care",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "964d1195",
+        "job_id": "manufacture-from-materials-of-any-heading-except-that-of-the-närpiö-964d1195",
+        "processed": true,
+        "title": "Manufacture from materials of any heading, except that of the product",
+        "company": "Ab Närpes Trä & Metall - Oy Närpiön Puu ja Metalli, Närpiö",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Närpiö"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ntm.recruitee.com/l/en/o/skapmontorer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/52340759-7e37-4e1b-9fc6-d5f645eed5b6/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/manufacture-from-materials-of-any-heading-except-that-of-the-närpiö-964d1195",
+        "date_posted": "2026-09-30",
+        "date_expires": "2026-10-11",
+        "scraped_at": "2026-10-02 02:50:07",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish",
+          "English"
+        ],
+        "meta_description": "Exciting Manufacture from materials of any heading, except that of the product position available at Ab Närpes Trä & Metall - Oy Närpiön Puu ja Metalli, Närpiö.",
+        "description": "We are looking for two skilled workers for our Gryffindor factory in Närpiö. The job involves installing wall, floor, ceiling, and door elements, as well as frames, insulators, and reinforcements. Quality control is essential to ensure the high quality of our products. Shift work may be required, but we offer interesting and varied tasks, opportunities for career development, and a bonus system for all employees. Our parent company, NTM, is a Finnish family-owned company with a long history in producing high-quality and specialized waste trucks, trailers, and car body structures. We provide on-the-job training and a supportive work environment. Contact EvaLena Gullans, Head of HRD, at 020123 6401 for further information.",
+        "what_we_expect": [
+          "Professional training and/or a few years' work experience.",
+          "Positive and caring team player.",
+          "Experience in the construction or metal industry is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Installation of wall, floor, ceiling and door elements.",
+          "Installation of frames, insulators and reinforcements.",
+          "Quality control to ensure the high quality of our products.",
+          "Working with hand tools and machines."
+        ],
+        "what_we_offer": [
+          "Interesting and varied tasks.",
+          "Opportunities to develop at work.",
+          "Nice coworkers.",
+          "Good staff interests.",
+          "A bonus system for all employees."
+        ],
+        "search_keywords": "Manufacture materials, installation, quality control, hand tools, professional training, work experience, construction, metal industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-02 02:50:11",
+    "jobs": [
+      {
+        "id": "3147841c",
+        "job_id": "nursing-home-for-lohja-lohja-3147841c",
+        "processed": true,
+        "title": "Nursing home for Lohja",
+        "company": "Sam's Care Oy, Lohja",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@samscare.fi?subject=Application%20for%20the%20Job%20-%20Nursing%20home%20for%20Lohja&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Nursing%20home%20for%20Lohja.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/49d23f54-a23c-4f34-887a-edf8b613ef2a/en",
+        "job_employer_email": "info@samscare.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nursing-home-for-lohja-lohja-3147841c",
+        "date_posted": "2026-09-30",
+        "date_expires": "2026-10-04",
+        "scraped_at": "2026-10-02 02:50:11",
+        "open_positions": 1,
+        "salary_range": "salary and flexible working hours Diversified t",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Sam's Care Oy, Lohja is looking for a skilled Nursing home for Lohja in Lohja. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a skilled nurse to join our team at the nursing home in Lohja. This position involves customer service, home care, basic care, and office work. The primary location is our office in Lohja, but you may be required to travel to offices in Espoo and Tammisaari. Essential qualifications include a nursing certificate, experience with vascular sampling, vaccination authorization, valid medical authorization, good oral and written knowledge of Finnish, proficiency in Finnish/Swedish or a language certificate at level B2, and a valid B driving license. We offer a competitive basic salary and flexible working hours, along with diversified training and familiarity with the role. To apply and discuss your salary claims, please contact us via email at info@samscare.fi.",
+        "what_we_expect": [
+          "Certificate in nursing.",
+          "Experience with vascular sampling.",
+          "Vaccination authorisation.",
+          "Valid medical authorisation.",
+          "Good oral and written knowledge of Finnish.",
+          "Language studies in Finnish/Swedish or a language certificate at level B2."
+        ],
+        "job_responsibilities": [
+          "Provide customer service.",
+          "Perform home care.",
+          "Conduct basic care.",
+          "Engage in office work."
+        ],
+        "what_we_offer": [
+          "Competitive basic salary.",
+          "Flexible working hours.",
+          "Diversified training.",
+          "Good familiarity."
+        ],
+        "search_keywords": "nursing home Lohja, nursing job, nursing assistant, nursing position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
   }
 ]
