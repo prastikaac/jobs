@@ -326063,5 +326063,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:03:36",
+    "jobs": [
+      {
+        "id": "e3437b69",
+        "job_id": "construction-worker-in-porvoo-porvoo-e3437b69",
+        "processed": true,
+        "title": "Construction worker in Porvoo",
+        "company": "Arsenaali Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Porvoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/8076762",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0d69a7ee-26b3-42b9-8a7b-a224121ea26f/en",
+        "job_employer_email": "hr@arsenaali.fi",
+        "job_employer_name": "Santeri Teerisuo",
+        "job_employer_phone_no": "040 169 9388",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-in-porvoo-porvoo-e3437b69",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-10-03 22:03:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Arsenaali Oy as a Construction worker in Porvoo and grow your career in Porvoo. Check details and apply now.",
+        "description": "Arsenaali Oy is seeking a construction worker for their Porvoo site. This position offers full-time work with a competitive hourly wage based on Finnish collective agreements. The ideal candidate should have experience on construction sites, a valid occupational safety card, and knowledge of the Finnish language. The role involves physical work on tasks such as the networking of concrete floors. Arsenaali is a reliable, modern employer with a strong presence in the Uusimaa region. For more information, please contact Santeri at 050 304 0498 or Jesse at 040 162 9795.",
+        "what_we_expect": [
+          "Experience on construction site.",
+          "Valid occupational safety card.",
+          "Knowledge of Finnish language."
+        ],
+        "job_responsibilities": [
+          "Do physical work on construction sites.",
+          "Support tasks on concrete floors.",
+          "If you're ready to take on the challenge."
+        ],
+        "what_we_offer": [
+          "Modern vehicles and equipment.",
+          "Accommodation assistance.",
+          "Salary and benefits."
+        ],
+        "search_keywords": "construction worker Porvoo, construction site, scaffolding worker, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
   }
 ]
