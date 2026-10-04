@@ -326117,5 +326117,270 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:03:52",
+    "jobs": [
+      {
+        "id": "a9c237f9",
+        "job_id": "electrical-engineer-tampere-a9c237f9",
+        "processed": true,
+        "title": "Electrical Engineer",
+        "company": "Wulff Works Oy",
+        "job_category": "education",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/55069975",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fc96e030-ab7d-455f-b0d3-79a3a386fca8/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/electrical-engineer-tampere-a9c237f9",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-10-03 22:03:52",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä sähköistys- ja sähköasennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,50-21,35 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Electrical engineer at Wulff Works Oy. Great opportunity in Tampere—apply now.",
+        "description": "Wulff Works Oy is seeking a skilled electrical engineer for construction sites, focusing on electrical installations and project management. Ideal candidates should have previous experience with electrical installations, strong technical knowledge, and the ability to work independently and effectively with a team. Responsibilities include electrical installations, project coordination, and customer service. The salary is determined by the job according to the TES for electrification and electrical installation, with a base pay of 15.50-21.35 euros per hour. The company offers professional development opportunities, a changing working environment, and long-term employment relationships. For more information, please apply at <http://wulffworks.likeit.fi/apply/easyapply/55069975>.",
+        "what_we_expect": [
+          "Education in the field.",
+          "Ability to read and interpret electrical drawings.",
+          "Good physical condition and ability to work in a variety of locations.",
+          "Customer service and good interaction skills.",
+          "Current occupational safety and electrical safety card."
+        ],
+        "job_responsibilities": [
+          "Electrical installations on site.",
+          "Working with the team to ensure the smooth running of projects.",
+          "Customer service and technical advice to customers where necessary."
+        ],
+        "what_we_offer": [
+          "Opportunity for professional development and training.",
+          "Changing working environment.",
+          "Opportunity for a long-term employment relationship."
+        ],
+        "search_keywords": "Electrical engineer, electrician, construction site, job, responsibilities, requirements, benefits, salary, training, employment, long-term, professional development, electrical installations, electrical drawings, physical condition, customer service, occupational safety, electrical safety, CV, AI assistant, recruitment company, better world, better recruitment, Wulff Works, Oy, facing a better world, better recruitment company",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "dc2cc0ad",
+        "job_id": "construction-worker-tampere-dc2cc0ad",
+        "processed": true,
+        "title": "Construction worker",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/49600296",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/46f76007-68f8-41ad-bba3-bb44056f28d3/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-tampere-dc2cc0ad",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-10-03 22:03:52",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 14,19-17,12 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is looking for a skilled Construction worker in Tampere. Don't miss this opportunity—apply today.",
+        "description": "Wulff Works Oy is seeking experienced construction workers for their growing team. Ideal candidates possess a background in construction or are eager to learn. Responsibilities include various construction and demolition tasks, material handling, and site cleanliness. The salary is determined by skill level in the construction sector, ranging from €14.19 to €17.12 per hour. Previous experience or training in the construction industry, good physical condition, and teamwork skills are valued. Quality work clothes and tools are provided. The salary is based on the TES for the construction sector, with a range of €14.19 to €17.12 per hour depending on the worker's skill level. Apply for this exciting opportunity immediately.",
+        "what_we_expect": [
+          "Previous experience or training in the construction industry.",
+          "Good physical condition and ability to work both outdoors and indoors.",
+          "Self-direction, accuracy and diligence.",
+          "Teamwork skills and positive attitude."
+        ],
+        "job_responsibilities": [
+          "Construction and demolition work.",
+          "General construction work tasks.",
+          "Material handling.",
+          "Site cleanliness maintenance."
+        ],
+        "what_we_offer": [
+          "Changing work environment and interesting subjects.",
+          "Opportunity to develop as a professional in the field and expand your skills.",
+          "Opportunity for a long-term employment relationship.",
+          "Quality work clothes and tools."
+        ],
+        "search_keywords": "construction worker, construction professional, construction industry, construction, construction worker job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "02f68e06",
+        "job_id": "construction-worker-ylöjärvi-02f68e06",
+        "processed": true,
+        "title": "Construction worker",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Ylöjärvi",
+          "Nokia",
+          "Pirkkala",
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/49599807",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b89b0fa4-2164-455a-8d0a-bcc11b85f169/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-ylöjärvi-02f68e06",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-10-03 22:03:52",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 12,59-14,19 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is hiring a Construction worker in Ylöjärvi. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for industrious, motivated construction workers at Wulff Works Oy in Ylöjärvi, Nokia, Pirkkala, and Tampere. As a construction assistant, you'll work full-time, with variable hours based on site needs, including moving and storing materials, maintaining tools, performing simple construction and demolition tasks, and cleaning the site. Previous experience, good physical condition, social skills, initiative, and a valid driving license (own car preferred) are required. We offer necessary work equipment, opportunities to grow into a construction professional, varied job roles, and a skilled team. The salary is determined by the job according to the TES for the construction sector, ranging from €12.59 to €14.19 per hour.",
+        "what_we_expect": [
+          "Previous experience in similar roles.",
+          "Good physical condition.",
+          "Good social skills and initiative.",
+          "B driving licence (own car is a plus).",
+          "Occupational safety card is an advantage."
+        ],
+        "job_responsibilities": [
+          "Move and store building materials.",
+          "Maintain tools and machinery.",
+          "Perform simple construction and demolition work.",
+          "Clean the site."
+        ],
+        "what_we_offer": [
+          "Necessary work equipment.",
+          "Opportunity to grow into a construction professional.",
+          "Varying job roles.",
+          "Good working environment and support from a skilled team."
+        ],
+        "search_keywords": "construction worker, construction assistant, construction worker job, construction worker requirements, construction worker benefits",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:03:53",
+    "jobs": [
+      {
+        "id": "fb008c08",
+        "job_id": "the-axe-man-tampere-fb008c08",
+        "processed": true,
+        "title": "The Axe Man",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/34302031",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/07f6a89a-e852-4e43-852e-b0532c172da2/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/the-axe-man-tampere-fb008c08",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-10-03 22:03:53",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 17,12-19,93 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a The Axe Man at Wulff Works Oy in Tampere. Apply now and take the next step in your career.",
+        "description": "The Axe Man We're looking for an experienced carpenter for a variety of construction projects! We are looking for a skilled carpenter to join our team, where you will be able to work on a variety of construction sites as well as new construction and renovation projects. As a carpenter, your duties include: Construction of foundations, walls and ceilings Repair and renewal of roof structures Installation of windows and doors Furniture installation and finishing work Various carpentry and construction work We're waiting for you.",
+        "what_we_expect": [
+          "As a carpenter, your duties include.",
+          "We offer you.",
+          "The salary."
+        ],
+        "job_responsibilities": [
+          "As a carpenter, your duties include.",
+          "We offer you.",
+          "The salary."
+        ],
+        "what_we_offer": [
+          "We offer you.",
+          "As a carpenter, your duties include.",
+          "The salary."
+        ],
+        "search_keywords": "The Axe Man Wulff Works Oy Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "5c0b1da7",
+        "job_id": "installer-of-plumbing-and-heating-equipment-tampere-5c0b1da7",
+        "processed": true,
+        "title": "Installer of plumbing and heating equipment",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/58378017",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/eccf3d34-f140-454c-9974-9106575ecd51/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/installer-of-plumbing-and-heating-equipment-tampere-5c0b1da7",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-09",
+        "scraped_at": "2026-10-03 22:03:53",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä talotekniikan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,22-19,97 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Installer of plumbing and heating equipment job in Tampere? Wulff Works Oy is seeking motivated candidates—apply today.",
+        "description": "We are looking for a skilled and motivated plumber to join our team. If you have experience in plumbing and are eager to work on a variety of sites, we are seeking your expertise. As a plumber, you will be responsible for installing a range of plumbing and fittings, from residential buildings to industrial sites. We offer a pleasant and supportive work environment, with opportunities to develop your skills and advance in your career. Our modern vehicle fleet and modern work clothes are available to you. Full-time work hours are generally on weekdays, with the possibility of flexibility in working hours. The salary is determined by the job according to the TES for civil engineers, ranging from €15.22 to €19.97 per hour.",
+        "what_we_expect": [
+          "Professional qualification as a plumber or equivalent.",
+          "Some experience in similar jobs.",
+          "Description of the mission."
+        ],
+        "job_responsibilities": [
+          "Install plumbing and heating equipment.",
+          "Work on various sites.",
+          "Description of the mission."
+        ],
+        "what_we_offer": [
+          "Work clothes.",
+          "Opportunity to develop skills and advance in career.",
+          "Various and varied job roles.",
+          "Pleasant and supportive work environment."
+        ],
+        "search_keywords": "plumber, heating equipment, plumbing, installer, job, position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      }
+    ]
   }
 ]
