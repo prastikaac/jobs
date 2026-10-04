@@ -326005,5 +326005,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:01:51",
+    "jobs": [
+      {
+        "id": "3c3bfd7f",
+        "job_id": "taxi-driver-helsinki-3c3bfd7f",
+        "processed": true,
+        "title": "Taxi driver",
+        "company": "Nordlink Henkilöstövuokraus Oy, Helsinki",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cfa6f968-d037-4c5b-9f36-563fbd5df87a/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cfa6f968-d037-4c5b-9f36-563fbd5df87a/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-helsinki-3c3bfd7f",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-08",
+        "scraped_at": "2026-10-03 22:01:51",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Looking for a Taxi driver, weekend shifts - Taxi from Helsinki job in Helsinki? Nordlink Henkilöstövuokraus Oy, Helsinki is seeking motivated...",
+        "description": "Nordlink Henkilöstövuokraus Oy is seeking a reliable and experienced driver for weekend shifts in Helsinki. The ideal candidate will be available for both day and night shifts, with a focus on evening and overnight trips to the city centre and airport on weekends. A valid taxi driver's license and a Taxi Helsinki driver's license or willingness to acquire them are required. Proficiency in Finnish is essential for customer service, and knowledge of English or other languages is an advantage. The position offers a permanent employment in a modern Tesla Model Y vehicle, tailored to individual needs. Nordlink Personnel Hiring Oy is a skilled, growing, and diversified Finnish service company specializing in staff hiring and recruitment.",
+        "what_we_expect": [
+          "Valid taxi driver's licence.",
+          "Willingness to acquire a Taxi Helsinki driver's licence or willingness to acquire them.",
+          "Knowledge of Finnish.",
+          "Knowledge of English or other languages is an advantage."
+        ],
+        "job_responsibilities": [
+          "Drive taxis on weekends.",
+          "Operate the Taxi Helsinki system.",
+          "Provide customer service knowledge of Finnish.",
+          "Be willing to acquire a Taxi Helsinki driver's licence or be willing to acquire them."
+        ],
+        "what_we_offer": [
+          "Permanent employment in a Tesla Model Y vehicle.",
+          "Salary based on commissions.",
+          "Salary of 40 to 45% of the value added tax-free cash register of the shift driven.",
+          "Salary paid at a rate of 40 to 45% of the value added tax-free cash register of the shift driven, depending on the shift."
+        ],
+        "search_keywords": "taxi driver weekend shifts taxi Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
   }
 ]
