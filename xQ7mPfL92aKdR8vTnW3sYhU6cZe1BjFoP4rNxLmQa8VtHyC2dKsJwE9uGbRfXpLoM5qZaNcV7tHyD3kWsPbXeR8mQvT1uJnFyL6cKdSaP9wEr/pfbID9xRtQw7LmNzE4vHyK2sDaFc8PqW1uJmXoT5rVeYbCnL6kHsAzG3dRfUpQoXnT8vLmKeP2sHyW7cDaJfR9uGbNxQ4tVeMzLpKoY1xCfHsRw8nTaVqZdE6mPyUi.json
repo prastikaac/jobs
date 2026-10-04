@@ -326382,5 +326382,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:06:48",
+    "jobs": [
+      {
+        "id": "3507278d",
+        "job_id": "data-protection-officer-helsinki-3507278d",
+        "processed": true,
+        "title": "Data protection officer",
+        "company": "HSL Helsingin seudun liikenne -kuntayhtymä",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/hsl-helsingin-seudun-liikenne-kuntayhtyma-tietosuoja-asiantuntija-sdsuu-20618423",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/hsl-helsingin-seudun-liikenne-kuntayhtyma-tietosuoja-asiantuntija-sdsuu-20618423",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/data-protection-officer-helsinki-3507278d",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-03 22:06:48",
+        "open_positions": 1,
+        "salary_range": "4 500–4 800 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Data protection officer position available at HSL Helsingin seudun liikenne -kuntayhtymä in Helsinki.",
+        "description": "HSL Helsingin seudun liikenne -kuntayhtymä is seeking a dedicated Data Protection Officer to enhance the company's data protection efforts and align practices with experts across various fields. This role is pivotal in ensuring that data protection is seamlessly integrated into the public transport system, thereby bolstering trust and reliability. The ideal candidate will work full-time, offering permanent employment, and will be compensated between 4,500 and 4,800 euros per month. This position requires a strong understanding of Finnish language skills. The role involves developing and implementing data protection strategies that support the smooth operation of public transportation, ensuring that data protection is not just a compliance measure but a cornerstone of trust and reliability.",
+        "what_we_expect": [
+          "Expertise in data protection.",
+          "Experience in public transport.",
+          "Knowledge of legal regulations related to data protection."
+        ],
+        "job_responsibilities": [
+          "Ensure data protection is reflected in practical solutions.",
+          "Develop data protection practices with experts in different fields.",
+          "Data protection officer Do you want to ensure that data protection is reflected in practical solutions and supports trust in our services?"
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "data protection, data protection officer, public transport, data protection expert",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:06:53",
+    "jobs": [
+      {
+        "id": "9c95b660",
+        "job_id": "head-of-customer-insight-reporting-and-analyses-helsinki-9c95b660",
+        "processed": true,
+        "title": "Head of Customer Insight, Reporting and Analyses",
+        "company": "Dna",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/head-of-customer-insight-reporting-and-analyses-sdsna-20618559",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/head-of-customer-insight-reporting-and-analyses-sdsna-20618559",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/head-of-customer-insight-reporting-and-analyses-helsinki-9c95b660",
+        "date_posted": "2026-10-03",
+        "date_expires": "2026-11-02",
+        "scraped_at": "2026-10-03 22:06:53",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with DNA as a Head of Customer Insight, Reporting and Analyses in Helsinki. Learn more about the role and apply now.",
+        "description": "DNA is seeking an experienced Head of Customer Insight, Reporting and Analyses to lead the customer experience unit. This role requires a professional with a proven track record in customer experience measurement, reporting, and analysis. The ideal candidate will support DNA's customer experience activities and develop the customer experience. The position offers a permanent contract and a competitive salary. The Customer Experience Team includes a Customer Insight, Reporting and Analysis Manager, and a Customer Experience Manager, ensuring a collaborative and win-win environment. Remote work is available, and the Customer Experience Team is equipped with a modern vehicle fleet. The role requires a strong understanding of customer insights and a flexible approach to work.",
+        "what_we_expect": [
+          "Bachelor's degree in Business Administration or related field.",
+          "5+ years of experience in customer experience management.",
+          "The task is a win-win, but we also work easily remotely."
+        ],
+        "job_responsibilities": [
+          "Measure customer experience.",
+          "Report on customer insights.",
+          "Analyze customer feedback."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "customer experience, reporting, analysis, DNA Consumer Business",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
   }
 ]
