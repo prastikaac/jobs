@@ -326544,5 +326544,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:13:08",
+    "jobs": [
+      {
+        "id": "b79ada94",
+        "job_id": "assistant-shop-manager-tampere-b79ada94",
+        "processed": true,
+        "title": "Assistant shop manager",
+        "company": "Puuilo",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/apulaismyymalapaallikko-tampere-lahdesjarvelle-spsuu-20615286",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/apulaismyymalapaallikko-tampere-lahdesjarvelle-spsuu-20615286",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/assistant-shop-manager-tampere-b79ada94",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-03 22:13:08",
+        "open_positions": 1,
+        "salary_range": "2 354–2 928 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Assistant shop manager for Tampere and Lahdesjärve position available at Puuilo in Tampere. Check requirements and submit your application today.",
+        "description": "We are currently seeking an Assistant Store Manager for Tampere and Lahdesjärvi. This role involves working full-time and is temporary. The Assistant Store Manager is responsible for managing the store, ensuring staff well-being and training, and maintaining sales, security, cleanliness, and customer satisfaction. The position offers a salary range of 2,354–2,928 €/kk. The ideal candidate will have experience in store management and a strong understanding of operational tasks. We offer assistance with finding accommodation, modern vehicle fleet, and a focus on economical driving style.",
+        "what_we_expect": [
+          "Responsible and versatile.",
+          "Timely, timely, timely sales.",
+          "Cost-effective sales."
+        ],
+        "job_responsibilities": [
+          "Operational point of contact for store staff.",
+          "Manager of store, staff well-being and training.",
+          "Sales, security, cleanliness, customer satisfaction."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "Assistant shop manager, Assistant Store Manager, Lahdesjärvi, Tampere",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
