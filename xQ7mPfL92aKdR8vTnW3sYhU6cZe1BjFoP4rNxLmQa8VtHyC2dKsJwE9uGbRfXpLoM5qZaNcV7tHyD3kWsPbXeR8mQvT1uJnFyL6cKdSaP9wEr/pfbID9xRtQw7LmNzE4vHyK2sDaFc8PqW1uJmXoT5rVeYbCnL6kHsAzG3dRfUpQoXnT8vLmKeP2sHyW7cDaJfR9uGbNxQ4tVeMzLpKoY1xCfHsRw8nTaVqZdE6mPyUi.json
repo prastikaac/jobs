@@ -325951,5 +325951,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:00:33",
+    "jobs": [
+      {
+        "id": "c65a5946",
+        "job_id": "part-time-parking-attendant-for-the-ruka-kuusamo-area-kuusamo-c65a5946",
+        "processed": true,
+        "title": "Part-time parking attendant for the Ruka-Kuusamo area",
+        "company": "ParkkiPate Oy, Helsinki",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.parkkipate.fi/rekry/pysakoinninvalvoja",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/95192804-be13-437b-8043-3bc6bfc0d8b3/en",
+        "job_employer_email": "rekry@parkkipate.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/part-time-parking-attendant-for-the-ruka-kuusamo-area-kuusamo-c65a5946",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-16",
+        "scraped_at": "2026-10-03 22:00:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Part-time parking attendant for the Ruka-Kuusamo area role at ParkkiPate Oy, Helsinki. Join a growing team and build your career in Kuusamo.",
+        "description": "We are looking for a part-time parking attendant for the Ruka-Kuusamo area. Join us for a rewarding job that can provide extra income while offering flexibility in your work schedule. As a parking attendant, you'll assist with parking arrangements for various properties, ensuring emergency lanes remain open. This seasonal position offers competitive hourly wages based on Finnish collective agreements. With a zero-hour contract, you can adjust your hours to suit your personal calendar. If you're interested in the job, simply fill out the application form at [parkkipate.fi/rekry/parking supervisor]. This position could complement another seasonal job, bringing in additional income.",
+        "what_we_expect": [
+          "Basic communication skills.",
+          "Ability to work independently.",
+          "Good customer service attitude."
+        ],
+        "job_responsibilities": [
+          "Arrange parking for properties.",
+          "Ensure emergency lanes are open.",
+          "Handle customer inquiries and complaints."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits such as health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "parking attendant Ruka-Kuusamo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
   }
 ]
