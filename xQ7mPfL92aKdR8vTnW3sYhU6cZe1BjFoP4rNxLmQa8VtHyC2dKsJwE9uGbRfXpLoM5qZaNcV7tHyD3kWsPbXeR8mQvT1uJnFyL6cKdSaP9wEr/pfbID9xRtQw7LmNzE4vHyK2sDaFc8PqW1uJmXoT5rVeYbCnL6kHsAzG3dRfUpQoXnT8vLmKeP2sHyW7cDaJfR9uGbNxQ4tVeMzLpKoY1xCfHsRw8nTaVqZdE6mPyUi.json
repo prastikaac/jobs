@@ -326490,5 +326490,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-03 22:12:46",
+    "jobs": [
+      {
+        "id": "75222886",
+        "job_id": "social-media-content-producer-helsinki-75222886",
+        "processed": true,
+        "title": "Social media content producer",
+        "company": "Varma",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/varma-sosiaalisen-median-sisallontuottaja-helsinki-sdsuu-20618351",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/varma-sosiaalisen-median-sisallontuottaja-helsinki-sdsuu-20618351",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/social-media-content-producer-helsinki-75222886",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-03 22:12:46",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Varma is looking for a skilled Social media content producer in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a dynamic social media content producer to join our growing team at Varma. This role involves creating engaging content that helps Varma increase its visibility on Instagram and TikTok. You'll develop content that makes complex topics accessible and interesting, experimenting with new ideas and interacting with the target audience to build a strong connection. If you're passionate about creating content that resonates with people, we'd love to hear from you.",
+        "what_we_expect": [
+          "Skills related to social media content creation.",
+          "Experience in content production.",
+          "Proficiency in at least one social media platform."
+        ],
+        "job_responsibilities": [
+          "Create content that is understandable, interesting, and identifiable.",
+          "Experiment with new content ideas.",
+          "Interact with the target audience."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "social media content producer, content creator, social media marketing, content writer, social media manager",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
   }
 ]
