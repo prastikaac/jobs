@@ -280092,5 +280092,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-04 22:00:37",
+    "jobs": [
+      {
+        "id": "ad611af0",
+        "job_id": "sewer-closure-turku-turku-ad611af0",
+        "processed": true,
+        "title": "Sewer closure Turku",
+        "company": "Taloturva Turku",
+        "job_category": "energy-and-utilities",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/avoimet-tyopaikat/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/33b25a2f-e7fc-4cf5-926b-6244b326ff8f/en",
+        "job_employer_email": "info@taloturva.fi",
+        "job_employer_name": "Yhteyshenkilö Rekrytointi",
+        "job_employer_phone_no": "+358290075800",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/energy-and-utilities/sewer-closure-turku-turku-ad611af0",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-04 22:00:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Sewer closure Turku at Taloturva Turku. Great opportunity in Turku—apply now.",
+        "description": "Sewer closure Turku Description of the job We're looking for a plumber to join our growing team in Turku for diverse and responsible work. We have also expanded to Sweden and Norway, offering our employees opportunities in an international environment if they are also interested. What is the job In this role, you will be responsible for the plumbing and related installations at our clients' sites, including the restoration of the sewers using modern methods and a quality track record as part of a skilled team, working both independently and as part of a team, ensuring the smooth running of projects from start to finish.",
+        "what_we_expect": [
+          "Description of the job.",
+          "What is the job.",
+          "House security group Oy."
+        ],
+        "job_responsibilities": [
+          "Description of the job.",
+          "What is the job.",
+          "House security group Oy."
+        ],
+        "what_we_offer": [
+          "Description of the job.",
+          "What is the job.",
+          "House security group Oy."
+        ],
+        "search_keywords": "Sewer closure Turku Taloturva Turku Turku other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-04 22:00:38",
+    "jobs": [
+      {
+        "id": "42d69ec1",
+        "job_id": "im-here-to-make-an-appointment-taloturva-group-oytampere-tampere-42d69ec1",
+        "processed": true,
+        "title": "I'm here to make an appointment, Taloturva Group Oy,Tampere.",
+        "company": "Taloturva Tampere",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/ajanvaraaja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a01e92fa-64c8-4dbe-989b-fc9664232046/en",
+        "job_employer_email": "kim.heinonen@taloturva.fi",
+        "job_employer_name": "Heinonen Kim",
+        "job_employer_phone_no": "+358417437428",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/im-here-to-make-an-appointment-taloturva-group-oytampere-tampere-42d69ec1",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-10-04 22:00:38",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Part-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Taloturva Tampere as a I'm here to make an appointment, Taloturva Group Oy,Tampere. in Tampere. Learn more about the role and apply now.",
+        "description": "I'm here to make an appointment, Taloturva Group Oy,Tampere. _See the video presentation of the task https://youtu.be/T3rt\\_V5efuc_ ♪ This is what we're looking for ♪ - We're looking for a full-time employee. - We'll familiarize and train you for the job, so no previous work experience is necessary. - You're not selling anything, you're marketing our services to customers and setting up appointments for our repair reps. - It's a neat full-time office job and the most common job is a regular day job. ♪ A little bit about us ♪ - Taloturva is a national and international family-owned company specialising in home plumbing repairs. Our growth has been driven by our fast winning concept and products. - Our annual turnover is around EUR 15 million.",
+        "what_we_expect": [
+          "_See the video presentation of the task https://youtu.be/T3rt\\_V5efuc_.",
+          "With these jobs, you get to work.",
+          "Customer contact - Appointment of repair representatives - Storage of customer data in systems - Calendar entries."
+        ],
+        "job_responsibilities": [
+          "_See the video presentation of the task https://youtu.be/T3rt\\_V5efuc_.",
+          "With these jobs, you get to work.",
+          "Customer contact - Appointment of repair representatives - Storage of customer data in systems - Calendar entries."
+        ],
+        "what_we_offer": [
+          "_See the video presentation of the task https://youtu.be/T3rt\\_V5efuc_.",
+          "With these jobs, you get to work.",
+          "Customer contact - Appointment of repair representatives - Storage of customer data in systems - Calendar entries."
+        ],
+        "search_keywords": "I'm here to make an appointment, Taloturva Group Oy,Tampere. Taloturva Tampere Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
   }
 ]
