@@ -280263,5 +280263,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-04 22:04:54",
+    "jobs": [
+      {
+        "id": "7638cb5f",
+        "job_id": "maintenance-manager-forssa-7638cb5f",
+        "processed": true,
+        "title": "Maintenance manager",
+        "company": "Volvo Truck Center Forssa",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Forssa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/huoltopaallikko-sdsuu-20622962",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/huoltopaallikko-sdsuu-20622962",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/maintenance-manager-forssa-7638cb5f",
+        "date_posted": "2026-10-04",
+        "date_expires": "2026-11-03",
+        "scraped_at": "2026-10-04 22:04:54",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Maintenance manager at Volvo Truck Center Forssa. Great opportunity in Forssa—apply now.",
+        "description": "Maintenance manager Are you the new service manager for Volvo Truck Center Forssa? We are looking for a service manager to lead and develop Volvo Truck Center Forssa's aftermarket operations as the current service manager moves into new roles at Volvo. You will be responsible for the unit's maintenance, repair and spare parts services and their smoothness, quality and profitability. You will lead and develop the aftermarket business with an active sales force, identify sales opportunities and build new long-term customer relationships and ensure continuous development. You will have the freedom to make decisions and develop operations together with Volvo Truck Center Forssa's staff in line with today's Volvo.",
+        "what_we_expect": [
+          "Maintenance manager Are you the new service manager for Volvo Truck Center Forssa?",
+          "You will be responsible for the unit's maintenance, repair and spare parts services and their smoothness, quality and profitability.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Maintenance manager Are you the new service manager for Volvo Truck Center Forssa?",
+          "You will be responsible for the unit's maintenance, repair and spare parts services and their smoothness, quality and profitability.",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Maintenance manager Are you the new service manager for Volvo Truck Center Forssa?",
+          "You will be responsible for the unit's maintenance, repair and spare parts services and their smoothness, quality and profitability.",
+          "Professional work environment."
+        ],
+        "search_keywords": "Maintenance manager Volvo Truck Center Forssa Forssa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
   }
 ]
