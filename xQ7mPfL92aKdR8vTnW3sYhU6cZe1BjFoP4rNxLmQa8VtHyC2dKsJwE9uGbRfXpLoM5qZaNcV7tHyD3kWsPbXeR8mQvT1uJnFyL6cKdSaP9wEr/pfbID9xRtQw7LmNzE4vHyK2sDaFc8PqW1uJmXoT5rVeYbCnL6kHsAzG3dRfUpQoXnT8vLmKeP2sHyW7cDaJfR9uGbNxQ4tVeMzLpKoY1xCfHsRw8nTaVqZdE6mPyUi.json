@@ -280200,5 +280200,68 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-04 22:00:46",
+    "jobs": [
+      {
+        "id": "7a41b734",
+        "job_id": "we-re-still-looking-for-a-parking-attendant-for-the-bay-area-lahti-7a41b734",
+        "processed": true,
+        "title": "We 're still looking for a parking attendant for the Bay Area .",
+        "company": "ParkkiPate Oy, Helsinki",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.parkkipate.fi/rekry/pysakoinninvalvoja",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/92ed5a04-ad84-4a2d-afb4-ff1de3af5b90/en",
+        "job_employer_email": "rekry@parkkipate.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/we-re-still-looking-for-a-parking-attendant-for-the-bay-area-lahti-7a41b734",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-10-30",
+        "scraped_at": "2026-10-04 22:00:46",
+        "open_positions": 1,
+        "salary_range": "salary Your job is mainly to tackle parking mis",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "ParkkiPate Oy, Helsinki is looking for a skilled We 're still looking for a parking attendant for the Bay Area . in Lahti.",
+        "description": "We 're still looking for a parking attendant for the Bay Area . Are you interested in independent and responsible work? Now you have the opportunity to become a Parking Supervisor and make a difference to the safety and smoothness of our urban environment! Few of us are parking attendants at birth. We are individuals on many trains, which is why we want you to be part of our community just the way you are, and our highly trained trainers will thoroughly guide you, giving you good skills, good buddies, and personal support in your development. Job description and salary Your job is mainly to tackle parking misconduct by patrolling and monitoring many of our sites, and you'll be in charge of different circuits as things get going, so days are not the same.",
+        "what_we_expect": [
+          "We 're still looking for a parking attendant for the Bay Area .",
+          "Are you interested in independent and responsible work?",
+          "Now you have the opportunity to become a Parking Supervisor and make a difference to the safety and smoothness of our urban environment!",
+          "Few of us are parking attendants at birth.",
+          "There are a variety of sites on ParkkiPat, including hotels, hospitals, shopping malls and commercial properties.",
+          "You will also have at least one free weekend per month."
+        ],
+        "job_responsibilities": [
+          "We 're still looking for a parking attendant for the Bay Area .",
+          "Are you interested in independent and responsible work?",
+          "Now you have the opportunity to become a Parking Supervisor and make a difference to the safety and smoothness of our urban environment!",
+          "Few of us are parking attendants at birth.",
+          "There are a variety of sites on ParkkiPat, including hotels, hospitals, shopping malls and commercial properties.",
+          "You will also have at least one free weekend per month."
+        ],
+        "what_we_offer": [
+          "We 're still looking for a parking attendant for the Bay Area .",
+          "Are you interested in independent and responsible work?",
+          "Now you have the opportunity to become a Parking Supervisor and make a difference to the safety and smoothness of our urban environment!",
+          "Few of us are parking attendants at birth.",
+          "There are a variety of sites on ParkkiPat, including hotels, hospitals, shopping malls and commercial properties.",
+          "You will also have at least one free weekend per month."
+        ],
+        "search_keywords": "We 're still looking for a parking attendant for the Bay Area . ParkkiPate Oy, Helsinki Lahti other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
   }
 ]
