@@ -352622,5 +352622,64 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-10 22:00:37",
+    "jobs": [
+      {
+        "id": "fcfe0663",
+        "job_id": "marketing-specialist-helsinki-fcfe0663",
+        "processed": true,
+        "title": "Marketing Specialist",
+        "company": "Terveystalo",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/385055/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/00f1c0d5-57d2-46a6-b930-cded4438f0c1/en",
+        "job_employer_email": "Jonna.Toyli@terveystalo.com",
+        "job_employer_name": "Jonna Töyli",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/marketing-specialist-helsinki-fcfe0663",
+        "date_posted": "2026-10-09",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-10 22:00:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Terveystalo as a Marketing specialist in Helsinki. Learn more about the role and apply now.",
+        "description": "We are seeking an enthusiastic and development-oriented marketing expert for our professional marketing team at Terveystalo, a leading private healthcare company in Finland. This full-time, permanent position offers a wide range of marketing tasks, including design, implementation, monitoring, and development of marketing measures to support healthcare professionals. The ideal candidate will manage paid advertising across multiple channels, develop website content, and create data-based understanding of the target audience. The role also involves creating and implementing recruitment marketing and employer branding campaigns, as well as planning and implementing events for healthcare professionals.",
+        "what_we_expect": [
+          "A university degree in marketing or another relevant field and at least five years' experience in a similar marketing role.",
+          "Solid experience with and use of paid advertising tools (e.g., Meta, Google Ads, Smartly, Adform), interpreting website analytics to support job planning, and an understanding of website conversion and search engine optimization concepts.",
+          "Or do you want to work in employer branding and recruitment marketing at Finland's largest private healthcare company?"
+        ],
+        "job_responsibilities": [
+          "Manage paid advertising across multiple channels and work closely with our media agency.",
+          "Develop website content targeted to the target audience (SEO & SEM) and against website conversion optimization.",
+          "Create a data-based understanding of the target audience and plan and optimize actions accordingly.",
+          "Design, coordinate, and implement recruitment marketing and employer branding campaigns with the team and stakeholders.",
+          "Be involved in the planning and implementation of events for healthcare professionals in the Healthcare team, such as the Lääkäripöiset in Lääkäpöiset in Lääkäpöiset, but also play a key role in building the healthcare industry's reputation as a major player in the healthcare industry, and be involved in the decision-making process."
+        ],
+        "what_we_offer": [
+          "Full-time and fixed-term family leave position.",
+          "Central location in Kamp, Helsinki.",
+          "Flexible working hours and meet with the team in the office nearby every Tuesday and Wednesday.",
+          "Support from external stakeholders such as media agency, search marketing agency, recruitment marketing partner, and in-house stakeholders like Career Services and Asana.",
+          "A wide range of primary healthcare, specialist care, oral health, and wellbeing services to corporate and private clients as well as the public sector.",
+          "A smoke-free workplace that promotes wellbeing even in the small choices of everyday life."
+        ],
+        "search_keywords": "marketing specialist, marketing, healthcare, marketing position, marketing job, marketing career",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
   }
 ]
