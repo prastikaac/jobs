@@ -352741,5 +352741,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-10 22:06:55",
+    "jobs": [
+      {
+        "id": "182c744f",
+        "job_id": "drivers-compulsion-turku-ja-1-muu-182c744f",
+        "processed": true,
+        "title": "Driver's Compulsion",
+        "company": "Valopilkku Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Turku ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/ajojarjestelija-sdsuu-20626475",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/ajojarjestelija-sdsuu-20626475",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/drivers-compulsion-turku-ja-1-muu-182c744f",
+        "date_posted": "2026-10-09",
+        "date_expires": "2026-11-08",
+        "scraped_at": "2026-10-10 22:06:55",
+        "open_positions": 1,
+        "salary_range": "2 708–3 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Valopilkku Oy as a A driver 's compulsion . in Turku ja 1 muu. Learn more about the role and apply now.",
+        "description": "Valopilkku Oy is a rapidly growing company specializing in taxi brokerage and telephone services. Founded in 2024 by the merger of 020202 Servizi, 02 Taksi, and Valopilkku, the company has expanded to serve nearly every Finn. With a focus on quality, efficiency, and responsibility, Valopilkku brokers taxis for consumers, companies, and the public sector, and has begun producing K-replaceable transport in eleven counties since 2027. The company's goal is to become the leading provider of Finnish taxi services by 2030. Valopilkku is looking for a reliable and motivated driver to join its team, offering competitive salaries and assistance with finding accommodation.",
+        "what_we_expect": [
+          "Good driving skills.",
+          "Passenger safety awareness.",
+          "A driver 's compulsion ."
+        ],
+        "job_responsibilities": [
+          "Pick up and deliver passengers.",
+          "Handle customer inquiries.",
+          "Maintain vehicle cleanliness."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "driver compulsion, taxi driver, Finnish driver",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-10 22:06:57",
+    "jobs": [
+      {
+        "id": "5aaf1904",
+        "job_id": "accountant-for-rovaniemi-rovaniemi-5aaf1904",
+        "processed": true,
+        "title": "Accountant for Rovaniemi",
+        "company": "Aspia",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kirjanpitaja-rovaniemelle-sascc-20608809",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kirjanpitaja-rovaniemelle-sascc-20608809",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/accountant-for-rovaniemi-rovaniemi-5aaf1904",
+        "date_posted": "2026-10-08",
+        "date_expires": "2026-11-07",
+        "scraped_at": "2026-10-10 22:06:57",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with Aspia as a Accountant for Rovaniemi in Rovaniemi. Learn more about the role and apply now.",
+        "description": "We are looking for an accounting professional in Rovaniemi who enjoys working with clients and wants to develop their expertise on a wide range of clients. As part of our expert community in Aspiana, we provide modern financial management tools and support our clients' growth through clear, complex business presentation. Our team is dedicated to fostering a culture of growth and development, focusing on the well-being of people and ideas. Join us to combine your skills, provide customer service, and support our clients' success. Aspiana offers a permanent position with the potential for career advancement. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Proficiency in Microsoft Excel.",
+          "Strong analytical skills.",
+          "Good communication skills."
+        ],
+        "job_responsibilities": [
+          "Assist clients with financial reports.",
+          "Analyze client financial data.",
+          "Prepare financial statements."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "accountant, Rovaniemi, accountant job, accounting job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
   }
 ]
