@@ -352681,5 +352681,65 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-10 22:02:03",
+    "jobs": [
+      {
+        "id": "a0d3195c",
+        "job_id": "permanent-nanny-for-home-care-of-children-evening-and-night--kirkkonummi-a0d3195c",
+        "processed": true,
+        "title": "Permanent nanny for home care of children - evening and night emphasis",
+        "company": "Viisi Vuodenaikaa Oy, Espoo",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Kirkkonummi",
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.viisivuodenaikaa.com/rekry/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bf1d5107-5a3e-43b4-89d8-c5e25fa9341d/en",
+        "job_employer_email": "info@viisivuodenaikaa.com",
+        "job_employer_name": "Auri Korhonen",
+        "job_employer_phone_no": "0503213543",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/permanent-nanny-for-home-care-of-children-evening-and-night--kirkkonummi-a0d3195c",
+        "date_posted": "2026-10-09",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-10-10 22:02:03",
+        "open_positions": 1,
+        "salary_range": "Sopimuspalkka 2518,72 - 2724,33€/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Viisi Vuodenaikaa Oy, Espoo is looking for a skilled Permanent nanny for home care of children - evening and night emphasis in Kirkkonummi.",
+        "description": "Permanent nanny for home care of children - evening and night emphasis We are looking for reinforcement for our children's and young people's home care teams. Work in teams takes place in the homes of our wonderful children's partners, where you can carry out quality and important care work on your own. Shifts are carried out one client at a time. In this work, in addition to quality care work, the emphasis is on urgency and good resources. The work is a three-shift job and the clients are in Helsinki, Vantaa and Espoo. Daily work includes medication, daily rehabilitation activities, basic care and clinical care such as daily vital signs measurement and monitoring, peg feeding, use of a suction device and ventilation support.",
+        "what_we_expect": [
+          "Shifts are carried out one client at a time.",
+          "In this work, in addition to quality care work, the emphasis is on urgency and good resources.",
+          "The work is a three-shift job and the clients are in Helsinki, Vantaa and Espoo.",
+          "We look forward to hearing from you!"
+        ],
+        "job_responsibilities": [
+          "Shifts are carried out one client at a time.",
+          "In this work, in addition to quality care work, the emphasis is on urgency and good resources.",
+          "The work is a three-shift job and the clients are in Helsinki, Vantaa and Espoo.",
+          "We look forward to hearing from you!"
+        ],
+        "what_we_offer": [
+          "Shifts are carried out one client at a time.",
+          "In this work, in addition to quality care work, the emphasis is on urgency and good resources.",
+          "The work is a three-shift job and the clients are in Helsinki, Vantaa and Espoo.",
+          "We look forward to hearing from you!"
+        ],
+        "search_keywords": "Permanent nanny for home care of children - evening and night emphasis Viisi Vuodenaikaa Oy, Espoo Kirkkonummi other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
