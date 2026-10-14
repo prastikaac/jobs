@@ -369333,5 +369333,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:05:05",
+    "jobs": [
+      {
+        "id": "ff6b5096",
+        "job_id": "telemarketer-kuopio-ja-1-muu-ff6b5096",
+        "processed": true,
+        "title": "Telemarketer",
+        "company": "FeelMakers Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Kuopio ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/feel-makers-telemyyja-tule-feelmakersille-sdsuu-20643222",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/feel-makers-telemyyja-tule-feelmakersille-sdsuu-20643222",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/telemarketer-kuopio-ja-1-muu-ff6b5096",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-13 22:05:05",
+        "open_positions": 1,
+        "salary_range": "💰 ANSAINTA NOIN 18–32 €/H",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a The telemarketer is coming to the feelmaker! job in Kuopio ja 1 muu? FeelMakers Oy is seeking motivated candidates—apply today.",
+        "description": "FeelMakers Oy is seeking telemarketers for its Helsinki and Kuopio offices. This is a permanent position offering full-time work with a competitive salary ranging from 18 to 32 euros per hour. The ideal candidate should be fluent in Finnish and be ready to work independently, as the role involves contacting customers and selling products. Assistance with finding accommodation is provided. A modern vehicle fleet is available for the job. The working day consists of calling customers and presenting products, with the opportunity to develop as a sales professional.",
+        "what_we_expect": [
+          "Sales experience.",
+          "Excellent communication skills.",
+          "The telemarketer is coming to the feelmaker!"
+        ],
+        "job_responsibilities": [
+          "Contacting customers and presenting and selling products.",
+          "Monitoring results and developing as a sales professional.",
+          "The telemarketer is coming to the feelmaker!"
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits such as health insurance and retirement plan.",
+          "The telemarketer is coming to the feelmaker!"
+        ],
+        "search_keywords": "telemarketer, feelmaker, sales, professional, job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
