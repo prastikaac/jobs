@@ -357772,6 +357772,1428 @@
         "search_keywords": "financial management, specialist, accountant, financial statements, experience, education, skills, salary, job, apply",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "b8326228",
+        "job_id": "home-care-worker-salla-b8326228",
+        "processed": true,
+        "title": "Home care worker",
+        "company": "Kotipalvelu Tukenasi Oy, Kemijärvi",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Salla"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:niina.lahtela@lahtelaoy.fi?subject=Application%20for%20the%20Job%20-%20Home%20care%20worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Home%20care%20worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8cf12d48-5eb9-4667-84e4-6371cbd0140d/en",
+        "job_employer_email": "niina.lahtela@lahtelaoy.fi",
+        "job_employer_name": "Niina Lahtela",
+        "job_employer_phone_no": "+358 45 1371584",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/home-care-worker-salla-b8326228",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-10-13 22:03:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Home care worker at Kotipalvelu Tukenasi Oy, Kemijärvi in Salla. Apply now and take the next step in your career.",
+        "description": "We are looking for a reliable, customer-focused home-service employee to reinforce our team. Tasks include cleaning and housekeeping, laundry and ironing, business assistance, light daily chores, and companionship for the elderly or those in need of assistance. We offer flexible working hours, a pleasant and supportive community, competitive pay, and meaningful work in support of clients' wellbeing. Send your application and tell us about yourself. Contact us at niina.lahtela@lahtelaoy.fi or by calling 0451371584.",
+        "what_we_expect": [
+          "Knowledge of the Finnish language.",
+          "Ability to work independently.",
+          "The work includes a wide range of routine customer support tasks such as."
+        ],
+        "job_responsibilities": [
+          "Clean and housekeeping.",
+          "Laundry and ironing.",
+          "Business assistance.",
+          "Light assistance with daily chores.",
+          "Companionship and presence for the elderly or those in need of assistance."
+        ],
+        "what_we_offer": [
+          "Competitive pay.",
+          "Meaningful work in support of clients' wellbeing.",
+          "Flexible working hours.",
+          "A pleasant and supportive working community.",
+          "Ability to influence one's own shifts."
+        ],
+        "search_keywords": "home care worker, home service, customer support, cleaning, housekeeping, laundry, business assistance, companionship, elderly care, nursing, domestic service, Finnish language, punctuality, reliability, independent work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "9cc949cd",
+        "job_id": "staff-engineer-espoo-9cc949cd",
+        "processed": true,
+        "title": "Staff Engineer",
+        "company": "Nordhealth",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://careers.nordhealth.com/jobs/8483103-staff-engineer/applications/new?promotion=2242092-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b87644a1-cc65-49cb-8154-92aff86babd9/en",
+        "job_employer_email": "pavlos.diamantopoulos@nordhealth.com",
+        "job_employer_name": "Pavlos Diamantopoulos",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/staff-engineer-espoo-9cc949cd",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-28",
+        "scraped_at": "2026-10-13 22:03:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Staff Engineer position available at Nordhealth in Espoo. Check requirements and submit your application today.",
+        "description": "Nordhealth is seeking a Staff Engineer for their veterinary unit to support the AI growth of their PMS, Provet. Key responsibilities include accuracy of AI scribe and fine tuning, developing internal models to predict trends, and helping with user actions. Ideal candidates have experience in fast-growing, global SaaS companies, with a focus on data warehouse infrastructure and AI feature development. Benefits include the chance to work in a meaningful industry, competitive compensation, and frequent company events. Nordhealth is a remote-first SaaS company with a strong commitment to continuous improvement, diverse teams, and autonomy.",
+        "what_we_expect": [
+          "Experience in a fast-growing, global SaaS company.",
+          "Previous experience building AI features in a PMS.",
+          "Your key responsibilities include."
+        ],
+        "job_responsibilities": [
+          "Developing internal models to predict trends.",
+          "Help with predictions what actions the user should take.",
+          "Your key responsibilities include."
+        ],
+        "what_we_offer": [
+          "Competitive compensation and benefits.",
+          "Learning and professional growth opportunities.",
+          "The tools you need, and enjoy using.",
+          "Frequent company events and talented colleagues from around the world."
+        ],
+        "search_keywords": "Staff Engineer, SaaS, PMS, veterinary, AI, healthcare",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:03:27",
+    "jobs": [
+      {
+        "id": "85c40ca2",
+        "job_id": "head-of-youth-services-post-raasepori-85c40ca2",
+        "processed": true,
+        "title": "Head of Youth Services, post",
+        "company": "Raaseporin kaupunki",
+        "job_category": "government-and-public-sector",
+        "jobLocation": [
+          "Raasepori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/744279/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/892d9204-7262-4269-99b4-b49398d24ab6/en",
+        "job_employer_email": "richard.silin@raseborg.fi",
+        "job_employer_name": "Richard Silin",
+        "job_employer_phone_no": "0404812109",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/government-and-public-sector/head-of-youth-services-post-raasepori-85c40ca2",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-26",
+        "scraped_at": "2026-10-13 22:03:27",
+        "open_positions": 1,
+        "salary_range": "Salary and allowance: EUR 4 330,18 per day",
+        "workTime": "Part-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Swedish",
+          "Finnish"
+        ],
+        "meta_description": "Raaseporin kaupunki is hiring a Head of Youth Services, post in Raasepori. Explore responsibilities, benefits, and apply today.",
+        "description": "Head of Youth Services, post We are looking for a substitute for the Head of Youth Services who would like to combine the present leadership with the development, planning and administration of activities. Raasepor's youth services provide a diverse and unrivalled range of activities for children and young people aged 9-17 and young adults aged 18-29.We work in a preventive and health-promoting way, and our aim is for all young people to be able to participate, influence and feel included. Activities include, inter alia, youth shelters, youth work for young people, special youth work and youth workshops, as well as steering and anchoring activities.",
+        "what_we_expect": [
+          "We are looking for you with - experience in youth work, e.g.",
+          "As an employee of the City of Raasepor, you have the opportunity to work part-time remotely if your work permits.",
+          "Application The application and the CV must be submitted through Kuntarekry by 26.10.2026 at 23.59.",
+          "We process applications at the time of application.",
+          "Recruitment is done anonymously.",
+          "We therefore ask that you also remove this information from your CV."
+        ],
+        "job_responsibilities": [
+          "We are looking for you with - experience in youth work, e.g.",
+          "As an employee of the City of Raasepor, you have the opportunity to work part-time remotely if your work permits.",
+          "Application The application and the CV must be submitted through Kuntarekry by 26.10.2026 at 23.59.",
+          "We process applications at the time of application.",
+          "Recruitment is done anonymously.",
+          "We therefore ask that you also remove this information from your CV."
+        ],
+        "what_we_offer": [
+          "We are looking for you with - experience in youth work, e.g.",
+          "As an employee of the City of Raasepor, you have the opportunity to work part-time remotely if your work permits.",
+          "Application The application and the CV must be submitted through Kuntarekry by 26.10.2026 at 23.59.",
+          "We process applications at the time of application.",
+          "Recruitment is done anonymously.",
+          "We therefore ask that you also remove this information from your CV."
+        ],
+        "search_keywords": "Head of Youth Services, post Raaseporin kaupunki Raasepori other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "bf6a9d77",
+        "job_id": "cattle-farmer-lapinjärvi-bf6a9d77",
+        "processed": true,
+        "title": "Cattle Farmer",
+        "company": "Malén Maatalous Oy, Lapinjärvi",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Lapinjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:mtymalen@gmail.com?subject=Application%20for%20the%20Job%20-%20Cattle%20Farmer&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Cattle%20Farmer.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/96812cd9-bcb6-4ee0-b12b-56e97f942248/en",
+        "job_employer_email": "mtymalen@gmail.com",
+        "job_employer_name": "Juha-Matti Malén",
+        "job_employer_phone_no": "0503313564",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/cattle-farmer-lapinjärvi-bf6a9d77",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-13 22:03:27",
+        "open_positions": 1,
+        "salary_range": "Salary according to contract",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Cattle farmer position available at Malén Maatalous Oy, Lapinjärvi in Lapinjärvi. Check requirements and submit your application today.",
+        "description": "We are looking for a dedicated cattle farmer to join our team in Lapinjärvi. This position involves milking cows at a 20-seat carousel station and caring for small calves. We are seeking someone with previous work experience to join our team. This is a permanent position with a salary determined by collective bargaining agreement. We offer assistance with finding accommodation and a modern vehicle fleet. If you have a strong economical driving style, we welcome your application.",
+        "what_we_expect": [
+          "Previous work experience.",
+          "Cattle farmer The main duties include milking the cows at a 20-seat carousel station and caring for small calves.",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Milking the cows at a 20-seat carousel station.",
+          "Caring for small calves.",
+          "Cattle farmer The main duties include milking the cows at a 20-seat carousel station and caring for small calves."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Cattle farmer The main duties include milking the cows at a 20-seat carousel station and caring for small calves."
+        ],
+        "search_keywords": "cattle farmer, milking, caring for calves",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "b91d3010",
+        "job_id": "plumber-truck-driver-evaporator-and-pump-installer-kirkkonummi-b91d3010",
+        "processed": true,
+        "title": "Plumber, Truck Driver, Evaporator and Pump Installer",
+        "company": "Suomen paineautot Oy, Kirkkonummi",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://Suomenpaineautot.fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0e7bd8a0-2c8d-49fc-a301-214d20339b0c/en",
+        "job_employer_email": "sami.perala@suomenpaineautot.fi",
+        "job_employer_name": "Sami Perälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/plumber-truck-driver-evaporator-and-pump-installer-kirkkonummi-b91d3010",
+        "date_posted": "2026-10-12",
+        "date_expires": "2027-02-28",
+        "scraped_at": "2026-10-13 22:03:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Plumber, truck driver, evaporator and pump installer at Suomen paineautot Oy, Kirkkonummi.",
+        "description": "We are looking for a Plumber, truck driver, evaporator and pump installer with experience in plumbing, truck driving, and water treatment. Finland Pressure Cars Oy, a Finnish company specializing in sewerage and water technology, serves housing companies, real estate, construction sites, and industrial plants primarily in the Uusimaa region. This role requires full-time work and a permanent position, offering assistance with finding accommodation. The salary is not specified, but it is likely competitive given the company's focus on water technology.",
+        "what_we_expect": [
+          "Proficiency in plumbing.",
+          "Experience with pumps and evaporators.",
+          "Knowledge of sewerage and water technology."
+        ],
+        "job_responsibilities": [
+          "Inspect and repair plumbing systems.",
+          "Install and maintain pumps and evaporators.",
+          "Transport and open lines for construction sites."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation."
+        ],
+        "search_keywords": "plumber truck driver evaporator pump installer",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "19854466",
+        "job_id": "chief-of-staff-uusikaupunki-19854466",
+        "processed": true,
+        "title": "Chief of Staff",
+        "company": "SB-Putki & Teräs Oy, Rauma",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Uusikaupunki",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:valtterilaurila@outlook.com?subject=Application%20for%20the%20Job%20-%20Chief%20of%20Staff&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chief%20of%20Staff.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b9610c29-7ffc-4d02-9a64-2d453ea80f74/en",
+        "job_employer_email": "valtterilaurila@outlook.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/chief-of-staff-uusikaupunki-19854466",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-10-13 22:03:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Take the next step in your career as a Chief of Staff at SB-Putki & Teräs Oy, Rauma, located in Uusikaupunki. Apply now and get started.",
+        "description": "We are looking for a hands-on and self-motivated project manager at SB-Putki & Teräs Oy, Rauma, Uusikaupunki, to lead the day-to-day operations of industrial and shipbuilding projects. The ideal candidate will manage workers and teams, coordinate insulation, coating, welding, air-conditioning, and plumbing installations, ensure work quality and safety, and communicate with customers and contractors. Prior experience in project management or strong industrial installation experience is required. Self-initiative, responsibility, and good collaborative skills are essential. The ability to read drawings and understand occupational safety is also crucial. This role offers a permanent position with a salary and the opportunity for continuous growth within the company.",
+        "what_we_expect": [
+          "Prior experience in project management or strong experience in industrial installations.",
+          "Initial knowledge of insulation, casting, welding, air-conditioning, and piping.",
+          "Ability to organize work and lead different working groups.",
+          "Self-initiative, responsible, and good collaborative skills.",
+          "Ability to read drawings and an understanding of occupational safety.",
+          "Ability to work in different locations and on shipyard and industrial sites where necessary."
+        ],
+        "job_responsibilities": [
+          "Day-to-day management and supervision of workers and work teams.",
+          "Coordination of insulation, coating, welding, air-conditioning and plumbing installations.",
+          "Supervision of work quality, safety, and compliance with work instructions.",
+          "Interpretation of drawings and work documents.",
+          "Anticipation of the need for materials and tools.",
+          "Communication with customers, contractors, and other contractors."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation.",
+          "Vehicle.",
+          "Equipment."
+        ],
+        "search_keywords": "Chief of Staff project management industrial installations",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "6e521dd3",
+        "job_id": "elfmaster-pelkosenniemi-6e521dd3",
+        "processed": true,
+        "title": "Elfmaster",
+        "company": "Northern Lights Village",
+        "job_category": "other",
+        "jobLocation": [
+          "Pelkosenniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://northernlightsvillage.teamtailor.com/jobs/3888296-elfmaster/applications/new?promotion=2242010-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/37e970bb-bf21-41fe-8471-7ba678897dd7/en",
+        "job_employer_email": "marjut@northernlightsvillage.com",
+        "job_employer_name": "Marjut Saarenoksa",
+        "job_employer_phone_no": "+358 10 2874809",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/other/elfmaster-pelkosenniemi-6e521dd3",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-10-13 22:03:27",
+        "open_positions": 1,
+        "salary_range": "* Shared accommodation, if needed, in a shared room for €300 per month",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a The Elfmaster at Northern Lights Village in Pelkosenniemi. Apply now and take the next step in your career.",
+        "description": "We are looking for a creative and charismatic Elfmaster to join our magical team at Northern Lights Village in Pelkosenniemi. The Elfmaster plays a crucial role in creating enchanting guest experiences, supervising elves and Santas, and ensuring that the resort remains a memorable destination. Key responsibilities include organizing and leading activities, training elves and Santas, ensuring safety and quality, collaborating with other staff, and preparing work schedules. Experience in entertainment, storytelling, and leadership are essential. A valid category B driving license, fluency in English, and knowledge of Lappish culture and folklore are also required. Monthly salaries based on experience, opportunities for professional development, and a positive working environment are offered.",
+        "what_we_expect": [
+          "Experience in entertainment.",
+          "Excellent storytelling and interactive performance skills.",
+          "A valid category B driving licence.",
+          "Fluent spoken and written English.",
+          "Strong leadership and time management skills.",
+          "Knowledge of Lappish culture and folklore."
+        ],
+        "job_responsibilities": [
+          "Organizing and leading enchanting activities for guests of all ages.",
+          "Training and supervising elves and Santas to ensure high-quality interactions and experiences.",
+          "Ensuring that all activities meet our safety and quality standards.",
+          "Collaborating with the Experiences Coordinator and Experiences Supervisor to improve guest satisfaction.",
+          "Working as an elf when needed.",
+          "Preparing work schedules."
+        ],
+        "what_we_offer": [
+          "Monthly salary based on experience.",
+          "Opportunities for professional development and training.",
+          "A positive and supportive working environment.",
+          "Comprehensive occupational healthcare.",
+          "Discounts across our properties and facilities.",
+          "Shared accommodation, if needed, in a shared room for €300 per month."
+        ],
+        "search_keywords": "Elfmaster, Elfmaster job, Elfmaster position, Elfmaster role, Elfmaster job description",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:03:28",
+    "jobs": [
+      {
+        "id": "132858f6",
+        "job_id": "financial-assistant-for-the-capital-region-espoo-132858f6",
+        "processed": true,
+        "title": "Financial Assistant for the Capital Region",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/Il-js2Rfj8ym6gN48eTyQg",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/20fc07bc-6a75-4a46-9384-0de420f96eb5/en",
+        "job_employer_email": "julia.kemppainen@eezy.fi",
+        "job_employer_name": "Julia Kemppainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/financial-assistant-for-the-capital-region-espoo-132858f6",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-10-13 22:03:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Financial assistant for the Capital Region role at Eezy Henkilöstöpalvelut Oy. Join a growing team and build your career in Espoo.",
+        "description": "We are looking for an administrative assistant with experience in financial management tasks and good IT skills to join our team in Espoo, Helsinki, and Vantaa. As a financial assistant, you will assist in a variety of tasks including sales and purchasing functions, maintenance of customer and reseller data, cooperation with internal and external stakeholders, and reporting and data collection. Our full-time position (37.5 hours/week) is under a permanent contract, and you will be provided with a competitive hourly wage based on Finnish collective agreements. We offer assistance with finding accommodation, a modern vehicle fleet, and a caring, self-initiative, and systematic work environment. If you are interested in this opportunity, please apply by clicking on the announcement link.",
+        "what_we_expect": [
+          "Experience in financial management tasks.",
+          "Good IT skills with Excel.",
+          "Ability to prioritize and manage tasks.",
+          "Careful, self-initiative, and systematic work."
+        ],
+        "job_responsibilities": [
+          "Assist in financial management tasks.",
+          "Support sales and purchasing functions.",
+          "Maintain and document customer and reseller data.",
+          "Cooperate with internal and external stakeholders.",
+          "Perform reporting and data collection tasks."
+        ],
+        "what_we_offer": [
+          "Full-time job (37.5 hours/week).",
+          "Contract under current force.",
+          "Salary and benefits.",
+          "Diversity and equal recruitment process."
+        ],
+        "search_keywords": "financial assistant, Capital Region, D.C. area, administrative assistant, sales and purchasing, customer data, Excel skills, prioritization, management tasks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "3fe34a60",
+        "job_id": "sales-representatives-for-christmas-dinner-ikaalinen-ikaalinen-3fe34a60",
+        "processed": true,
+        "title": "Sales Representatives for Christmas Dinner, Ikaalinen",
+        "company": "Tokmanni",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Ikaalinen"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/389494/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9a5ca6a3-9ba7-493f-9373-cda8897ea10d/en",
+        "job_employer_email": "satu.mustajarvi@tokmanni.fi",
+        "job_employer_name": "Myymäläpäällikkö Satu Mustajärvi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representatives-for-christmas-dinner-ikaalinen-ikaalinen-3fe34a60",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-13 22:03:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Tokmanni as a Sales representatives for Christmas dinner, Ikaalinen (limited to 15 hours a week) in Ikaalinen.",
+        "description": "We are looking for two enthusiastic and motivated sales representatives for Christmas dinners in Ikaalinen, working a limited 15-hour week. This role offers a competitive hourly wage based on Finnish collective agreements and the chance to work in a dynamic, fast-paced environment. Our team is diverse and fast-growing, with over 6,000 employees across 370 locations, including Tokmanni, Dollarstore, Biglar, Miny, Click Shoes, and Shoe House stores. We're committed to continuous improvement and environmental sustainability. Join us in the cheerful ranks of Ikaalisten Tokmann, where you'll be part of a community that values positive customer service, teamwork, and a commitment to excellence.",
+        "what_we_expect": [
+          "Happy customer service attitude.",
+          "Good interactive and collaborative skills.",
+          "Desire to work in a dynamic and fast-paced work environment.",
+          "Self-initiative and efficient working style.",
+          "Ability to work a variety of shifts on weekdays and weekends.",
+          "Desire to do your job well, pride in your own skills, and interest in developing your skills."
+        ],
+        "job_responsibilities": [
+          "Checkout and customer service at the checkout counter.",
+          "Receiving and stocking products.",
+          "Designing and implementing product pre-assembly.",
+          "Helping customers with various issues in the store."
+        ],
+        "what_we_offer": [
+          "Competitive pay and benefits.",
+          "Training and training opportunities.",
+          "New challenges and career paths.",
+          "Encouraging growth without fear of making mistakes.",
+          "Diverse and varied jobs.",
+          "Well-being and safety at work."
+        ],
+        "search_keywords": "Sales representatives Christmas dinner Ikaalinen, job responsibilities, what we expect, what we offer",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "c8d22fca",
+        "job_id": "databricks-developer-kuopio-c8d22fca",
+        "processed": true,
+        "title": "Databricks developer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26470965",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7444b749-c672-463c-9990-3893ec45015e/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/databricks-developer-kuopio-c8d22fca",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-10-13 22:03:28",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with Lokki Henkilöstöpalvelut Oy as a Databricks developer in Kuopio. Learn more about the role and apply now.",
+        "description": "We are looking for a Databricks developer for our client in Kuopio, Ylöjärvi, Kangasala, Lahti, Oulu, Espoo, Turku, Nokia, Helsinki, Vantaa, Tampere, and Vaasa. Key responsibilities include building production-grade AI applications, designing and implementing data and feature pipelines, developing and maintaining MLflow-based model training and inference systems, utilizing Hugging Face and foundation models, and contributing to application documentation. The role offers a competitive hourly wage based on Finnish collective agreements and continuous improvement of the production environment.",
+        "what_we_expect": [
+          "Databricks technical expertise: Spark (Python / PySpark / SQL), Delta Lake (optimization, schema evolution, time travel), Auto Loader and Structured Streaming, MLflow (tracking, registry, model serving), Databricks workflows / jobs, Git-based development (Repos).",
+          "AI Expertise: Experience in developing and deploying machine learning models to production, utilizing Hugging Face models, foundation models/LLMs, fine-tuning, RAG, or API-based inference.",
+          "Other Skills: Experience with Azure services."
+        ],
+        "job_responsibilities": [
+          "Build production-grade AI applications using Databricks capabilities.",
+          "Design and implement data and feature pipelines (Delta Lake, Auto Loader, Spark).",
+          "Develop and maintain MLflow-based model training and inference systems.",
+          "Utilize Hugging Face and foundation models, including fine-tuning when needed.",
+          "Build production processes using Databricks Workflows and Jobs.",
+          "Implement APIs and model serving solutions."
+        ],
+        "what_we_offer": [
+          "Salary and good employee benefits.",
+          "Competitive salary.",
+          "Good employee benefits."
+        ],
+        "search_keywords": "Databricks developer, Databricks, AI developer, machine learning developer, data engineer, data scientist, Azure services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "14b29dd7",
+        "job_id": "sales-representatives-tampere-14b29dd7",
+        "processed": true,
+        "title": "Sales Representatives",
+        "company": "Tokmanni",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/389484/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/63f04474-5af2-47ed-8532-820ee0886c88/en",
+        "job_employer_email": "satu.mustajarvi@tokmanni.fi",
+        "job_employer_name": "Myymäläpäällikkö Satu Mustajärvi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representatives-tampere-14b29dd7",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-13 22:03:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Tokmanni is hiring a Sales representatives, Häkmeenkyrö (fixed term of 25 hours per week) in Tampere. Explore responsibilities, benefits, and apply today.",
+        "description": "Tokmanni, a leading low-cost group in the Nordic region, is seeking motivated sales representatives for the Häkmeenkyrö position, offering a fixed term of 25 hours per week. Located in Tampere, this role is part of a team of over 6,000 employees in 370 locations, contributing to the company's turnover of EUR 122,397 million and investment in new contracts of EUR 98,8 million. The company's commitment to innovation and sustainability is evident in its focus on developing new and environmentally friendly products. This opportunity is for two positions, each lasting 6 months until April 30, 2027, and 3 months until January 31, 2027, with a total of 25 hours per week.",
+        "what_we_expect": [
+          "Happy customer service attitude, good interactive and collaborative skills, and a social atmosphere.",
+          "Desire to work in a dynamic and fast-paced work environment, self-initiative, and efficient working style.",
+          "Ability to work a variety of shifts on weekdays and weekends, pride in skills, and interest in developing skills.",
+          "Ability to serve customers in Finnish and good knowledge of English."
+        ],
+        "job_responsibilities": [
+          "Ensure a comfortable and uncomplicated shopping experience for customers at Tokmann's store.",
+          "Shelving products, designing and executing pre-launch and store amenities.",
+          "You can be the coworker we're looking for if you're of legal age and you have."
+        ],
+        "what_we_offer": [
+          "Competitive pay and benefits, training and training opportunities, new challenges and career paths, encouragement for growth without fear of making mistakes, diverse and varied jobs, well-being and safety at work.",
+          "You can be the coworker we're looking for if you're of legal age and you have.",
+          "Professional work environment."
+        ],
+        "search_keywords": "Sales Representatives, Häkmeenkyrö, fixed term of 25 hours per week",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "6239bec5",
+        "job_id": "p2p-it-project-support-specialist-kuopio-6239bec5",
+        "processed": true,
+        "title": "P2P IT Project Support Specialist",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26470924",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/58fdbe0f-eb4b-4c60-907f-130e7ce93161/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/p2p-it-project-support-specialist-kuopio-6239bec5",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-10-13 22:03:28",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting P2P IT Project Support Specialist position available at Lokki Henkilöstöpalvelut Oy in Kuopio. Check requirements and submit your application today.",
+        "description": "We are seeking a P2P IT Project Support Specialist for our client in Kuopio, Ylöjärvi, Kangasala, Lahti, Oulu, Espoo, Turku, Nokia, Helsinki, Vantaa, Tampere, and Vaasa. This role involves supporting multiple P2P-related projects, enhancements, and go-lives, coordinating and executing testing activities, investigating and resolving application and integration issues, managing project risks, and collaborating with stakeholders across IT workstreams, suppliers, and business users. The ideal candidate has hands-on experience with Finance and Purchase-to-Pay (P2P) processes, strong testing and defect management skills, and a proven ability to work independently and proactively.",
+        "what_we_expect": [
+          "Experience working with enterprise applications and IT projects.",
+          "Understanding of Finance and Purchase-to-Pay (P2P) processes.",
+          "Knowledge of Finance master data and experience with master data maintenance.",
+          "Experience with testing, defect management, and issue resolution.",
+          "Strong understanding of integrations, interfaces, and data flows.",
+          "Experience with planning and executing integration, end-to-end, regression, and/or UAT testing, including defect management."
+        ],
+        "job_responsibilities": [
+          "Support multiple P2P-related projects, enhancements, and go-live activities.",
+          "Plan, coordinate, and execute testing activities, including integration testing, end-to-end testing, regression testing, and user acceptance testing support.",
+          "Investigate application issues, process failures, data discrepancies, and integration errors, and drive resolution with relevant teams.",
+          "Analyze error logs, identify root causes, and coordinate corrective actions.",
+          "Follow up on open defects and ensure timely resolution before go-live.",
+          "Collaborate closely with other IT teams, application owners, developers, vendors, and project stakeholders."
+        ],
+        "what_we_offer": [
+          "Salary and good employee benefits.",
+          "Competitive salary.",
+          "Good employee benefits."
+        ],
+        "search_keywords": "P2P IT Project Support Specialist, IT Project Support Specialist, IT Support Specialist, IT Project Coordinator, IT Project Manager",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:03:29",
+    "jobs": [
+      {
+        "id": "e8e39c98",
+        "job_id": "appointment-officer-procurement-helsinki-helsinki-e8e39c98",
+        "processed": true,
+        "title": "Appointment officer, procurement, Helsinki",
+        "company": "Taloturva Group Oy, Vantaa",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/ajanvaraaja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/48a741d4-3294-4b9d-b2ad-543b90ba2f62/en",
+        "job_employer_email": "miikka.kilpelainen@taloturva.fi",
+        "job_employer_name": "Kilpeläinen Miikka",
+        "job_employer_phone_no": "0447334454",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/appointment-officer-procurement-helsinki-helsinki-e8e39c98",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "Salary: We offer a secure base salary, but the r",
+        "workTime": "Part-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Taloturva Group Oy, Vantaa as a Appointment officer, procurement, Helsinki and grow your career in Helsinki. Check details and apply now.",
+        "description": "We are looking for a 23 uncompromising and human-minded person in our team for the role of scheduler in the procurement department. This part-time position in Helsinki, with a focus on summer employment, offers a secure base salary and the potential for fair sales commissions and bonuses. The ideal candidate is a competitive and detail-oriented individual with strong social skills, capable of meeting residents naturally and booking appointments efficiently. The role requires fluency in Finnish and proficiency in new systems. Join our team and be part of an inspiring, fast-paced community that celebrates success and achievements. Apply now to join our growing and happy group.",
+        "what_we_expect": [
+          "Competitive person with a genuine eye for detail and are not discouraged by the first (or even second) no.",
+          "Eloquent, get along with different people and enjoy talking to people.",
+          "Hungry for development: You want to grow in your job, you are ambitious and eager to influence your own earnings.",
+          "Fluent in Finnish and fluent in new systems."
+        ],
+        "job_responsibilities": [
+          "Active telephony: You are in contact with private households and carry out important initial mapping work on the needs of LVI renovations.",
+          "Meetings and customer service: You are the voice of our company. You talk to the residents naturally on the phone, arouse their interest and leave a strong, positive impression.",
+          "Results: You book plumbing mapping visits to private houses, i.e. Appointments in the seller's calendars. You open the game, the seller finishes!"
+        ],
+        "what_we_offer": [
+          "Salary: We offer a secure base salary, but the real magic lies in fair sales commissions and bonuses.",
+          "The key to success: We provide you with a comprehensive start-up training. We don't assume you'll be a ready-made LVI expert; the right attitude and desire to learn are key.",
+          "Career Path: We offer a genuine career opportunity as your skills and results grow.",
+          "Office space and an inspiring, fast-paced community that celebrates success and achievements together."
+        ],
+        "search_keywords": "appointment officer procurement Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "68198c49",
+        "job_id": "employment-and-social-policy-vocational-training-vocational--helsinki-68198c49",
+        "processed": true,
+        "title": "Employment and social policy, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training",
+        "company": "Taloturva Group Oy, Vantaa",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/liikkuva-ajanvaraaja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f4453b2e-f46e-485c-9839-698b684aa8c7/en",
+        "job_employer_email": "miikka.kilpelainen@taloturva.fi",
+        "job_employer_name": "Kilpeläinen Miikka",
+        "job_employer_phone_no": "0447334454",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/employment-and-social-policy-vocational-training-vocational--helsinki-68198c49",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "salary cap?Do you want a job where your own act",
+        "workTime": "Part-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Employment and social policy, vocational training, vocational training, vocational training, vocational training, vocational training, vocational...",
+        "description": "Employment and social policy, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational...",
+        "what_we_expect": [
+          "You talk to the residents naturally and awaken their interest. - Results: You book plumbing mapping visits to residential areas, i.e.",
+          "Arrange appointments in the sellers' calendars.",
+          "You open the game, the seller finishes! Do you recognize yourself in this?",
+          "♪ - Salary: We offer a secure base salary, but the real magic lies in fair sales commissions and bonuses.",
+          "You decide how much you earn! - Choices for success: You will receive a comprehensive training from us.",
+          "We do not assume that you will be a ready LSI expert."
+        ],
+        "job_responsibilities": [
+          "You talk to the residents naturally and awaken their interest. - Results: You book plumbing mapping visits to residential areas, i.e.",
+          "Arrange appointments in the sellers' calendars.",
+          "You open the game, the seller finishes! Do you recognize yourself in this?",
+          "♪ - Salary: We offer a secure base salary, but the real magic lies in fair sales commissions and bonuses.",
+          "You decide how much you earn! - Choices for success: You will receive a comprehensive training from us.",
+          "We do not assume that you will be a ready LSI expert."
+        ],
+        "what_we_offer": [
+          "You talk to the residents naturally and awaken their interest. - Results: You book plumbing mapping visits to residential areas, i.e.",
+          "Arrange appointments in the sellers' calendars.",
+          "You open the game, the seller finishes! Do you recognize yourself in this?",
+          "♪ - Salary: We offer a secure base salary, but the real magic lies in fair sales commissions and bonuses.",
+          "You decide how much you earn! - Choices for success: You will receive a comprehensive training from us.",
+          "We do not assume that you will be a ready LSI expert."
+        ],
+        "search_keywords": "Employment and social policy, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training, vocational training Taloturva Group Oy, Vantaa Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "c6e38b29",
+        "job_id": "senior-application-carve-out-execution-specialist-kuopio-c6e38b29",
+        "processed": true,
+        "title": "Senior Application Carve-out Execution Specialist",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26470506",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/abf952a3-46fe-49f7-80f4-3a5c3e6f1856/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-application-carve-out-execution-specialist-kuopio-c6e38b29",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new opportunity as a Senior Application Carve-out Execution Specialist at Lokki Henkilöstöpalvelut Oy in Kuopio.",
+        "description": "We are seeking a Senior Application Carve-out Execution Specialist for Lokki Henkilöstöpalvelut Oy, based in Kuopio, Ylöjärvi, Kangasala, Lahti, Oulu, Espoo, Turku, Nokia, Helsinki, Vantaa, Tampere, and Vaasa. This role involves increasing practical execution capacity across multiple applications and workstreams. Key responsibilities include executing clearly defined application carve-out work packages, performing application and dependency analysis, coordinating with vendors and IT teams, and preparing documentation. The candidate should have hands-on experience with enterprise applications, practical understanding of dependencies, and strong problem-solving skills. Fluent English is required, and the position offers a competitive hourly wage and good benefits.",
+        "what_we_expect": [
+          "Experience in hands-on work with enterprise/business-critical applications.",
+          "Experience with application migrations, transformations, carve-outs, demergers, or similar separation projects.",
+          "Practical understanding of application dependencies such as integrations, data, environments, access, and infrastructure.",
+          "Experience with testing, deployment/cutover, and technical documentation for applications.",
+          "Ability to coordinate directly with application vendors and technical teams.",
+          "Strong problem-solving skills."
+        ],
+        "job_responsibilities": [
+          "Execute clearly defined application carve-out work packages independently.",
+          "Perform application and dependency analysis and collect required technical information.",
+          "Work with vendors and other IT teams to progress technical separation activities.",
+          "Support and coordinate application, integration, access and environment-related changes.",
+          "Prepare and execute testing, cutover and validation activities.",
+          "Follow up open technical actions and proactively drive them to completion."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Good employee benefits.",
+          "Continuous employment opportunities.",
+          "Flexible working conditions.",
+          "Supportive and reliable atmosphere.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "Senior Application Carve-out Execution Specialist, Application Carve-out Execution Specialist, Hands-on Experience, Enterprise Applications, Application Migrations, Technical Documentation, Problem-Solving Skills, IT Service Managers, TWIN360, TWIN8, GlobalTrade, 360T, Bloomberg, Oanda FX Rates, Nomentia Cash Management, SWIFT Alliance Lite2",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "befe37df",
+        "job_id": "home-care-for-families-with-children-kerava-befe37df",
+        "processed": true,
+        "title": "Home care for families with children",
+        "company": "Bene Terveyspalvelut Oy, Vantaa",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Kerava",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://www.benehoiva.fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ac1bb9d6-ab47-4274-8506-d24331e197d9/en",
+        "job_employer_email": "rekry@benehoiva.fi",
+        "job_employer_name": "Sari Isopahkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/home-care-for-families-with-children-kerava-befe37df",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "Tuntipalkan 15-17 € + 9% lomakorvaus eli (16,35-18,53€/h) +TES mukaiset ilta- ja viikonloppulisät.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Home care for families with children 15-17€/h position available at Bene Terveyspalvelut Oy, Vantaa in Kerava.",
+        "description": "We are seeking qualified midwives to work with families with children in the Vantaa and Kerava regions and in Helsinki. Our job is to facilitate and support the daily life of families, focusing on the well-being of children and helping parents cope with the daily challenges. We offer flexible work that can be adapted to your life situation, with shifts typically lasting 2-4 hours, available weekdays from 7 to 21 hours and Saturdays from 8 to 18 hours. Full-time work is also possible, and you can work in multiple families during the same day. We provide a competitive hourly wage of 15-17 € + 9% holiday allowance, plus evening and weekend allowances, making it one of the best salaries in the industry.",
+        "what_we_expect": [
+          "Experience working with children and families.",
+          "Degree in nursing or related social and health sciences.",
+          "Experience in working with families with children is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Support families with children in daily life.",
+          "Assist parents in coping with daily life.",
+          "Reduce the burden of daily life for families."
+        ],
+        "what_we_offer": [
+          "Flexible work that can be adapted to personal life.",
+          "Opportunity to focus on children in a relaxed atmosphere.",
+          "Pleasant and flexible work with families with children.",
+          "Best salary in the business: 15-17 €/h + 9% holiday allowance.",
+          "Growing domestic company with a focus on quality."
+        ],
+        "search_keywords": "home care for families with children, midwife, nursing, children, families, Vantaa, Kerava, Helsinki, flexible work, daily life, well-being, special children, emergency home services, quality, engaged employees, engaged customers",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "779058be",
+        "job_id": "early-childhood-nurses-lieksa-779058be",
+        "processed": true,
+        "title": "Early childhood nurses",
+        "company": "Lieksan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Lieksa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LIE-02-48-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/232a9f44-c97f-4b66-bc1e-1c7d4dc7370c/en",
+        "job_employer_email": "sanni.pulkkinen@lieksa.fi",
+        "job_employer_name": "Sanni Pulkkinen",
+        "job_employer_phone_no": "0401044144",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nurses-lieksa-779058be",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-26",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Lieksan kaupunki as a Early childhood nurses in Lieksa. Learn more about the role and apply now.",
+        "description": "Early childhood nurses The City of Lieksa is looking for two (2) early childhood nurses. Childcare provider for pre-schools from 2.11. to 13.6.2026 Childcare provider for children under 3 years of age from 2.11. to 31.7.2026 The vacancy can be filled before the end of the application period if the right person is found. The role requires knowledge of the Finnish language at a level of at least C1. Lieksas early childhood centre has 2 day care centres, one of which also has a satellite unit, 3 family day care centres and 4 home-based family day nurses. You will be an important part of quality early childhood education as a member of your team.",
+        "what_we_expect": [
+          "Early childhood nurses The City of Lieksa is looking for two (2) early childhood nurses.",
+          "Childcare provider for pre-schools from 2.11.",
+          "To 13.6.2026 Childcare provider for children under 3 years of age from 2.11.",
+          "To 31.7.2026 The vacancy can be filled before the end of the application period if the right person is found.",
+          "The role requires knowledge of the Finnish language at a level of at least C1.",
+          "You will be an important part of quality early childhood education as a member of your team."
+        ],
+        "job_responsibilities": [
+          "Early childhood nurses The City of Lieksa is looking for two (2) early childhood nurses.",
+          "Childcare provider for pre-schools from 2.11.",
+          "To 13.6.2026 Childcare provider for children under 3 years of age from 2.11.",
+          "To 31.7.2026 The vacancy can be filled before the end of the application period if the right person is found.",
+          "The role requires knowledge of the Finnish language at a level of at least C1.",
+          "You will be an important part of quality early childhood education as a member of your team."
+        ],
+        "what_we_offer": [
+          "Early childhood nurses The City of Lieksa is looking for two (2) early childhood nurses.",
+          "Childcare provider for pre-schools from 2.11.",
+          "To 13.6.2026 Childcare provider for children under 3 years of age from 2.11.",
+          "To 31.7.2026 The vacancy can be filled before the end of the application period if the right person is found.",
+          "The role requires knowledge of the Finnish language at a level of at least C1.",
+          "You will be an important part of quality early childhood education as a member of your team."
+        ],
+        "search_keywords": "Early childhood nurses Lieksan kaupunki Lieksa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "c6ca7aa9",
+        "job_id": "seller-at-luhta-brand-store-in-joensuu-joensuu-c6ca7aa9",
+        "processed": true,
+        "title": "Seller at Luhta Brand Store in Joensuu",
+        "company": "Luhta Sportswear Company",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://careers.luhta.com/jobs/8532955-myyja-10h-vko-luhta-brand-store-joensuu/applications/new?promotion=2241881-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5ba90f82-b987-4b12-a2e2-de66e886ff2c/en",
+        "job_employer_email": "tiia.auvinen@luhta.fi",
+        "job_employer_name": "Tiia Auvinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/seller-at-luhta-brand-store-in-joensuu-joensuu-c6ca7aa9",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-19",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "salary and employee benefits of the Commercial",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a The seller at 10 a.m. in the Luhta Brand Store in Joensuu. role at Luhta Sportswear Company.",
+        "description": "Luhta Sportswear Company is seeking a dedicated seller at their Joensuu Luhta Brand Store, offering a dynamic and versatile role in a modern and well-known brand store. This part-time position, available 10 hours a day, is ideal for energetic and responsible individuals who enjoy customer service and sales. With a competitive hourly wage based on Finnish collective agreements and a 26-week payback period, this opportunity aligns with the company's values of entrepreneurship, innovation, collaboration, and accountability. Applicants must be of full age and fluent in Finnish, with the flexibility to work shifts, including evenings and weekends.",
+        "what_we_expect": [
+          "Be flexible, unbiased, courageous, and hardworking team player.",
+          "Be a customer-friendly professional.",
+          "Be motivated by excellence.",
+          "Be willing to work for it.",
+          "Be of full age and fluent in Finnish.",
+          "Be flexible to work shifts even in the evenings and weekends."
+        ],
+        "job_responsibilities": [
+          "Act as a responsible salesperson in customer service, following the chain's guidelines of customer commitment and customer satisfaction.",
+          "Implement a sales model based on the chain concept.",
+          "Work with pleasant colleagues and customers, and high-quality, well-known and domestic brands.",
+          "Do customer service and sales work for both women's and men's clothing, as well as footwear and other shop-related tasks in the shop and at the cash register.",
+          "Maintain the shop's basic routines in daily work."
+        ],
+        "what_we_offer": [
+          "Good background and a versatile salesperson's job description in a professional work community.",
+          "High-quality, well-known and domestic brands.",
+          "Salary and employee benefits of the Commercial Collective Agreement (B)."
+        ],
+        "search_keywords": "Seller at Luhta Brand Store in Joensuu Luhta Sportswear Company Joensuu other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "d00be5a1",
+        "job_id": "advice-for-clients-hanko-d00be5a1",
+        "processed": true,
+        "title": "Advice for clients",
+        "company": "Västnyländska kultursamfundet r.f., Raasepori",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Hanko"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://raseborg.luckan.fi/kundradgivare-till-hango/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7611d7e8-8d16-4698-a8d4-d99ef0bdd28f/en",
+        "job_employer_email": "annette.strom@luckan.fi",
+        "job_employer_name": "Ström Annette",
+        "job_employer_phone_no": "0443390176",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/advice-for-clients-hanko-d00be5a1",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-26",
+        "scraped_at": "2026-10-13 22:03:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish",
+          "Swedish",
+          "English"
+        ],
+        "meta_description": "Start your next career step as a Advice for clients at Västnyländska kultursamfundet r.f., Raasepori. Great opportunity in Hanko—apply now.",
+        "description": "We are looking for a customer service consultant for our new Hango office. The employment relationship is full-time and fixed-term from 1.12.2026 to 30.4.2028. Responsibilities include customer service, ticket sales, marketing and communications related to the city's attractions and current affairs, event coordination, and other day-to-day tasks. You will serve local residents and visitors in the heart of Hango, in the premises of Hango Town Hall, which also houses the city's tourism office and cultural office. We expect a systematic, self-initiative, and problem-solving approach. Excellent Finnish, Swedish, and English language skills are required. Local knowledge and experience in similar jobs are considered an advantage.",
+        "what_we_expect": [
+          "Systematic.",
+          "Self-initiative.",
+          "Problem solver.",
+          "Professional.",
+          "Energetic.",
+          "Passionate about customer service."
+        ],
+        "job_responsibilities": [
+          "Customer service.",
+          "Ticket sales.",
+          "Marketing and communications related to attractions and current affairs.",
+          "Coordinating small-scale events with friendly team.",
+          "Event preparation."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation.",
+          "Vehicle.",
+          "Equipment."
+        ],
+        "search_keywords": "Advice for clients, customer service, ticket sales, marketing, events, customer satisfaction, Finnish, Swedish, English, local knowledge, similar jobs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:03:30",
+    "jobs": [
+      {
+        "id": "70e67dec",
+        "job_id": "cnc-machinery-for-the-hellman-connector-helsinki-70e67dec",
+        "processed": true,
+        "title": "CNC machinery for the Hellman Connector",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/zFw4pmimDz_Pph9HttmLUQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/39b67e93-e8f4-4fcc-93cc-982685ea6214/en",
+        "job_employer_email": "julia.kemppainen@eezy.fi",
+        "job_employer_name": "Julia Kemppainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinery-for-the-hellman-connector-helsinki-70e67dec",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-18",
+        "scraped_at": "2026-10-13 22:03:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Eezy Henkilöstöpalvelut Oy as a CNC machinery for the Hellman Connector and grow your career in Helsinki. Check details and apply now.",
+        "description": "We are looking for a skilled and self-employed CNC machinist for our client in Hellman Konepaja, Helsinki, for a permanent position. If you value the quality, variety, and versatility of your job, this role may be for you. In this role, you will be responsible for CNC machining and surfacing, as well as machine programming. The Hellman Machine Shop produces sub-series and individual parts, which are also programmed by the machinist. The work varies as the parts to be machined and production batches change constantly. We expect you to have experience with CNC machinery, the ability to program the machine and make necessary program changes, and good Finnish language skills for smooth handling of work tasks.",
+        "what_we_expect": [
+          "Experience with CNC machinery.",
+          "Ability to program the machine and make necessary program changes.",
+          "Independent and self-initiated workload and motivation for quality machinery work.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "CNC machining and surfacing.",
+          "Machine programming.",
+          "If you value the quality, variety and versatility of your job, this job may be for you."
+        ],
+        "what_we_offer": [
+          "Permanent full-time position (40 hours per week).",
+          "Modern machinery and high-quality tools.",
+          "Training.",
+          "Support from a skilled workforce."
+        ],
+        "search_keywords": "CNC machinery Hellman Connector CNC machining Hellman Connector CNC programming Hellman Connector",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "9cbafa83",
+        "job_id": "senior-application-carve-out-lead-specialist-kuopio-9cbafa83",
+        "processed": true,
+        "title": "Senior Application Carve-out Lead / Specialist",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kuopio",
+          "Ylöjärvi",
+          "Kangasala",
+          "Lahti",
+          "Oulu",
+          "Espoo",
+          "Turku",
+          "Nokia",
+          "Helsinki",
+          "Vantaa",
+          "Tampere",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/26470338",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/05991010-9e4d-45a4-895e-adb1b65005ad/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-application-carve-out-lead-specialist-kuopio-9cbafa83",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-14",
+        "scraped_at": "2026-10-13 22:03:30",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Exciting Senior Application Carve-out Lead / Specialist position available at Lokki Henkilöstöpalvelut Oy in Kuopio.",
+        "description": "Senior Application Carve-out Lead / Specialist For our client we were looking for 2 Senior Application Carve-out Lead / Specialists capable of independently driving assigned application separation activities from planning through execution and validation. The overall objective is to add independent execution capacity to the team and reduce the amount of day-to-day carve-out planning, coordination and hands-on execution currently performed by Service Managers. Scope: Dedicated demerger resources supporting application portfolios currently managed by IT Service Managers.",
+        "what_we_expect": [
+          "Scope: Dedicated demerger resources supporting application portfolios currently managed by IT Service Managers.",
+          "Explore Lokki, through our blog and website: https://www.lokki.fi/ <https://www.lokki.fi/> .",
+          "Positive attitude and reliability."
+        ],
+        "job_responsibilities": [
+          "Scope: Dedicated demerger resources supporting application portfolios currently managed by IT Service Managers.",
+          "Explore Lokki, through our blog and website: https://www.lokki.fi/ <https://www.lokki.fi/> .",
+          "Daily operational tasks."
+        ],
+        "what_we_offer": [
+          "Scope: Dedicated demerger resources supporting application portfolios currently managed by IT Service Managers.",
+          "Explore Lokki, through our blog and website: https://www.lokki.fi/ <https://www.lokki.fi/> .",
+          "Professional work environment."
+        ],
+        "search_keywords": "Senior Application Carve-out Lead / Specialist Lokki Henkilöstöpalvelut Oy Kuopio other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "099b0255",
+        "job_id": "cleaners-for-the-capital-region-espoo-099b0255",
+        "processed": true,
+        "title": "Cleaners for the Capital Region",
+        "company": "WorkPower Palvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.workpower.fi/likeit/likeit_form.php?id=205046021",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/46b25167-2b80-452e-9c20-3f53c64d4fcf/en",
+        "job_employer_email": "jenna.karki@medipower.fi",
+        "job_employer_name": "Jenna Kärki",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/cleaners-for-the-capital-region-espoo-099b0255",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-13 22:03:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Cleaners for the Capital Region at WorkPower Palvelut Oy, located in Espoo. Apply now and get started.",
+        "description": "We are looking for motivated and diligent cleaners for the Capital Region. Part-time opportunities are available, and the start time can be arranged to suit your needs. Gain valuable experience in a variety of settings while supporting a professional team. Apply today for a competitive hourly wage based on Finnish collective agreements. Assistance with finding accommodation is provided. A modern vehicle fleet is available. A good command of Finnish and a valid B driving license are required. A conscientious and hardworking person is expected.",
+        "what_we_expect": [
+          "Previous cleaning experience.",
+          "Good command of Finnish.",
+          "B driving licence.",
+          "Available car for duty."
+        ],
+        "job_responsibilities": [
+          "Clean surfaces.",
+          "Maintain sanitary facilities.",
+          "Manage waste management.",
+          "Perform daily maintenance tasks."
+        ],
+        "what_we_offer": [
+          "Job opportunities in different locations.",
+          "Supportive professional team.",
+          "Part-time or full-time work options.",
+          "Diligence and work record importance.",
+          "Conscientious and hardworking person.",
+          "Wide range of job opportunities."
+        ],
+        "search_keywords": "cleaners capital region, janitorial jobs, cleaning positions, capital region jobs, part-time cleaning jobs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "4fa668fa",
+        "job_id": "financial-accountant-espoo-4fa668fa",
+        "processed": true,
+        "title": "Financial Accountant",
+        "company": "Visio Professional Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://visiohr.likeit.fi/apply/72462811",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1dbc3af1-0e19-42e9-8350-220769ce380d/en",
+        "job_employer_email": "tarja.laakso@visiohr.fi",
+        "job_employer_name": "Tarja Laakso",
+        "job_employer_phone_no": "+358458588441",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/financial-accountant-espoo-4fa668fa",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-30",
+        "scraped_at": "2026-10-13 22:03:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Visio Professional Oy is hiring a Financial Accountant from Espoo in Espoo. Explore responsibilities, benefits, and apply today.",
+        "description": "We are seeking a Financial Accountant in Espoo for our client company Normet. As a Financial Accountant, you will contribute to Normet's external accounting team, handling tasks such as recording purchase and expense invoices, processing payment transactions, and assisting with end-of-month reporting. We offer competitive hourly wages based on Finnish collective agreements, modern workplaces in Espoo, and a pleasant working environment. Join an elite team where everyone dares to shine! Normet is a world-leading, innovative technology company, committed to safety, sustainability, and productivity in mining, tunnelling, and civil engineering projects.",
+        "what_we_expect": [
+          "Appropriate training in financial management (e.g., degree in business administration).",
+          "A few years' experience in equivalent positions in an international company.",
+          "Good knowledge of Excel.",
+          "Knowledge of D365 financial management software is considered an advantage.",
+          "Fluency in Finnish and English; English is the language of the team.",
+          "Accuracy and regularity."
+        ],
+        "job_responsibilities": [
+          "Recording Normet Oy's purchase and expense invoices.",
+          "Handling payment transactions.",
+          "Matching bank transactions.",
+          "Collecting and recording financial statements.",
+          "Contributing to end-of-month reporting and, if necessary, other financial administration tasks."
+        ],
+        "what_we_offer": [
+          "The opportunity to challenge yourself and develop professionally in your role.",
+          "A position in an international technology company.",
+          "Modern workplaces in Espoo Keilanen.",
+          "Competitive staffing benefits.",
+          "A pleasant working environment where you can make an impact with your own work and see the results of your work."
+        ],
+        "search_keywords": "Financial Accountant Espoo, Financial Accountant Normet, Financial Accountant job, Financial Accountant position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "b8642a1c",
+        "job_id": "automation-engineer-helsinki-b8642a1c",
+        "processed": true,
+        "title": "Automation engineer",
+        "company": "Academic Work Finland Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Kerava",
+          "Kauniainen",
+          "Kirkkonummi",
+          "Nurmijärvi",
+          "Espoo",
+          "Loviisa",
+          "Sipoo",
+          "Hyvinkää",
+          "Siuntio",
+          "Mäntsälä",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/J0A8PD",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8d140777-6c35-48f3-963a-6c7bdfb3c3a9/en",
+        "job_employer_email": "krs01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/automation-engineer-helsinki-b8642a1c",
+        "date_posted": "2026-10-12",
+        "date_expires": "2027-04-10",
+        "scraped_at": "2026-10-13 22:03:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Automation engineer from Espoo at Academic Work Finland Oy. Great opportunity in Helsinki—apply now.",
+        "description": "We are looking for an Automation engineer with experience in Siemens PLCs and TIA Portal, skilled in PLC programming, HMI/SCADA, and industrial communication networks, to join our collaborative and growing company in Espoo. This role offers the possibility to work on diverse and interesting projects, collaborate with a team of professionals, and develop your skills in a stable and growing environment. With a competitive hourly wage based on Finnish collective agreements, we provide a highly interesting role in a global setting, flexible working options, and assistance with finding accommodation.",
+        "what_we_expect": [
+          "Educational background in a relevant engineering field.",
+          "Strong experience with Siemens PLCs and TIA Portal.",
+          "Experience in PLC programming, HMI/SCADA and industrial communication networks.",
+          "Knowledge of EPLAN for electrical and control-system documentation.",
+          "Ability to read, understand, and create electrical schematics and control cabinet documentation.",
+          "Experience with testing, commissioning, troubleshooting, and system integration."
+        ],
+        "job_responsibilities": [
+          "Developing and programming automation software of industrial process applications.",
+          "Designing and configuring HMI/SCADA systems for industrial applications.",
+          "Creating and updating electrical schematics and control system documentation.",
+          "Performing testing, troubleshooting, and commissioning of automation systems.",
+          "Participating in occasional international commissioning work."
+        ],
+        "what_we_offer": [
+          "Possibility to work with varied and diverse tasks and projects.",
+          "Highly interesting role in a global setting.",
+          "Opportunity to work in a stable and growing company.",
+          "Possibility to work with a team full of professionals and develop your skills.",
+          "Flexible ways of working from the office and remotely."
+        ],
+        "search_keywords": "Automation engineer Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "e46700ed",
+        "job_id": "electrician-pirkanmaa-permanent-and-full-time-kangasala-e46700ed",
+        "processed": true,
+        "title": "Electrician Pirkanmaa, permanent and full-time",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Pirkkala",
+          "Lempäälä",
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/55qssANFI8pPw_WxqVIsHQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/065adc76-c45d-4dd7-95f3-77a15151b42c/en",
+        "job_employer_email": "aino-maria.malin@eezy.fi",
+        "job_employer_name": "Aino-Maria Malin",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-pirkanmaa-permanent-and-full-time-kangasala-e46700ed",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-13 22:03:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Electrician Pirkanmaa, permanent and full-time position available at Eezy Henkilöstöpalvelut Oy in Kangasala.",
+        "description": "We are looking for an experienced electrician to join our team in the Pirkanmaa region. This permanent and full-time position offers the opportunity to work on electrical installations, troubleshooting, and maintenance of various systems. The job involves variable work hours and the ability to work at multiple sites in the Pirkanmaa region. With at least 5 years of experience in electrical installations and appropriate training, you will be responsible for installing and maintaining systems, troubleshooting, and self-employment at changing customer sites. A valid electrical qualification and a B driving license are required. The ability to work independently and a customer service attitude are also expected.",
+        "what_we_expect": [
+          "At least 5 years' experience in electrical installations.",
+          "Appropriate electrical training.",
+          "Valid electrical qualifications.",
+          "Ability to work independently.",
+          "Customer service attitude.",
+          "B driving licence and the possibility of using your own car for work."
+        ],
+        "job_responsibilities": [
+          "Electrical installations at refurbishment and repair sites.",
+          "Troubleshooting and repair measures.",
+          "Installation and maintenance of various electrical systems.",
+          "Self-employment at changing customer sites."
+        ],
+        "what_we_offer": [
+          "Permanent and full-time work.",
+          "Working time of 40 hours per week.",
+          "Working shifts on weekdays from Monday to Friday from 7.00 to 16.00.",
+          "Varied and responsible jobs.",
+          "The opportunity to work for the leading Finnish building technology and real estate services company.",
+          "A clear path to permanent employment for ARE Oy."
+        ],
+        "search_keywords": "Electrician Pirkanmaa, permanent, full-time, electrician, renovation, repair, electrical, installations, troubleshooting, repair, electrical systems, self-employment, customer service, driving licence, work, employment, building technology, real estate, ARE Oy, Eezy Personnel Services, equal, diversity, recruitment, entrepreneurship, professional services, corporate culture, results",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
   }
