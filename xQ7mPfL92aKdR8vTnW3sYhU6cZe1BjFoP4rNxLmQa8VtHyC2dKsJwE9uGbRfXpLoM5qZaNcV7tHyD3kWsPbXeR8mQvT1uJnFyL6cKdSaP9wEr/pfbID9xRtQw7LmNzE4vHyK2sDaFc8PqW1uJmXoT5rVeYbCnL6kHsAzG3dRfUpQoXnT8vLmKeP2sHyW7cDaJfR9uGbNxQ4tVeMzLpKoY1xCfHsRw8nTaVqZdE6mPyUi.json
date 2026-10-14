@@ -370272,5 +370272,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:07:32",
+    "jobs": [
+      {
+        "id": "cc662753",
+        "job_id": "social-media-content-creator-helsinki-cc662753",
+        "processed": true,
+        "title": "Social media content creator",
+        "company": "Koho Sales Oy",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/koho-sales-social-media-content-creator-sdsuu-20634595",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/koho-sales-social-media-content-creator-sdsuu-20634595",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/social-media-content-creator-helsinki-cc662753",
+        "date_posted": "2026-10-08",
+        "date_expires": "2026-11-07",
+        "scraped_at": "2026-10-13 22:07:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Koho Sales Oy is looking for a skilled Social media content creator in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a Social Media Content Creator at Koho Sales Oy in Helsinki. This role involves taking existing content, particularly short videos, and turning them into engaging, original content. We value creativity, initiative, and the ability to produce high-quality, entertaining content. The ideal candidate will have a passion for social media and a knack for storytelling. This is a permanent position with the potential for growth within the company. Assistance with finding accommodation is provided. Modern vehicle fleet. Encourages economical driving style. Full-time work with a salary to be discussed.",
+        "what_we_expect": [
+          "Creative vision and ability to come up with original ideas.",
+          "Experience in video production and editing.",
+          "Good communication skills."
+        ],
+        "job_responsibilities": [
+          "Create engaging and entertaining short videos.",
+          "Edit and publish content.",
+          "Collaborate with the team to enhance the product."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "social media content creator, short video creator, social media influencer",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-13 22:07:37",
+    "jobs": [
+      {
+        "id": "77c3d932",
+        "job_id": "hr-specialist-helsinki-77c3d932",
+        "processed": true,
+        "title": "HR Specialist",
+        "company": "Kultakiertue Oy",
+        "job_category": "human-resources",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kultakiertue-hr-specialist-helsinki-sdsuu-20634666",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kultakiertue-hr-specialist-helsinki-sdsuu-20634666",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/human-resources/hr-specialist-helsinki-77c3d932",
+        "date_posted": "2026-10-08",
+        "date_expires": "2026-11-07",
+        "scraped_at": "2026-10-13 22:07:37",
+        "open_positions": 1,
+        "salary_range": "3 800–4 000 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Kultakiertue Oy is looking for a skilled HR Specialist in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "We are looking for an exceptional HR Specialist to join our growing team in Helsinki. This role is crucial for accelerating our next stage of growth. We offer a competitive salary range of 3,800–4,000 €/kk, and we provide assistance with finding accommodation. Our modern vehicle fleet ensures a comfortable and efficient work environment. If you have excellent communication skills, a passion for people, and a commitment to excellence, we want to hear from you.",
+        "what_we_expect": [
+          "Bachelor's degree in Human Resources.",
+          "2+ years of experience in HR.",
+          "Proficiency in Microsoft Office."
+        ],
+        "job_responsibilities": [
+          "Recruit and interview candidates.",
+          "Develop and implement HR policies.",
+          "Manage employee records and benefits."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "HR Specialist, Human Resources, HR Job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
