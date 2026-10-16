@@ -393636,5 +393636,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-15 22:10:32",
+    "jobs": [
+      {
+        "id": "415ed45e",
+        "job_id": "specialised-automation-and-ict-planner-for-power-stations-finland-415ed45e",
+        "processed": true,
+        "title": "Specialised automation and ICT planner for power stations",
+        "company": "Academic Work",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Finland"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/erikoistu-automaatio-ja-ict-suunnittelijaksi-sahkoasemille-2-viikon-koulutus-vakituinen-tyo-it-ammattilaiselle-sasca-20619234",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/erikoistu-automaatio-ja-ict-suunnittelijaksi-sahkoasemille-2-viikon-koulutus-vakituinen-tyo-it-ammattilaiselle-sasca-20619234",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/specialised-automation-and-ict-planner-for-power-stations-finland-415ed45e",
+        "date_posted": "2026-10-02",
+        "date_expires": "2026-11-01",
+        "scraped_at": "2026-10-15 22:10:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Build your future with Academic Work as a Specialised automation and ICT planner for power stations (2 weeks training & permanent job for IT or automation...",
+        "description": "We are looking for an IT or automation professional with a passion for learning and development. This role offers 2 weeks of paid training and a permanent position in power station automation and ICT planning. Ideal candidates are motivated to enhance their skills in precision work and are eager to start a career in the field of automation. The position includes a regular apprenticeship at Academic Work, where you will gain hands-on experience and knowledge in electronics. This is an excellent opportunity for professionals interested in a career in automation to start with a solid foundation.",
+        "what_we_expect": [
+          "Proficiency in automation and ICT technologies.",
+          "Experience in power station operations or related fields.",
+          "Strong problem-solving skills and ability to work independently."
+        ],
+        "job_responsibilities": [
+          "Assist in the design and implementation of automation systems for power stations.",
+          "Collaborate with IT and automation professionals to optimize power station operations.",
+          "Analyze power station data to identify areas for improvement and implement automation solutions."
+        ],
+        "what_we_offer": [
+          "Permanent job opportunity for IT or automation professionals.",
+          "2 weeks of paid training and apprenticeship at Academic Work.",
+          "Access to leading companies in the power station automation and ICT field."
+        ],
+        "search_keywords": "Specialised automation and ICT planner for power stations Academic Work Finland other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
   }
 ]
