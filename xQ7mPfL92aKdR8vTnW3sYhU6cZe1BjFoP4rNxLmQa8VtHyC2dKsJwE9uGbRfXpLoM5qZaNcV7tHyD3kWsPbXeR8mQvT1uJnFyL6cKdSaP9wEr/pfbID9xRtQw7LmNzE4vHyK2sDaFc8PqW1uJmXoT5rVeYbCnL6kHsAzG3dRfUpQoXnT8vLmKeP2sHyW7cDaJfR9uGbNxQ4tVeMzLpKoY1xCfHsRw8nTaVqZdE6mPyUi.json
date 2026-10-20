@@ -375782,5 +375782,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-19 22:12:03",
+    "jobs": [
+      {
+        "id": "f0ae4c94",
+        "job_id": "inspectors-and-civil-aviation-security-helsinki-f0ae4c94",
+        "processed": true,
+        "title": "Inspectors and Civil Aviation Security",
+        "company": "Liikenne- ja viestintävirasto Traficom",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/traficom-tarkastaja-siviili-ilmailun-turvaaminen-sdsuu-20656358",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/traficom-tarkastaja-siviili-ilmailun-turvaaminen-sdsuu-20656358",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/inspectors-and-civil-aviation-security-helsinki-f0ae4c94",
+        "date_posted": "2026-10-16",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-10-19 22:12:03",
+        "open_positions": 1,
+        "salary_range": "4 836–5 046 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new opportunity as a Inspectors and civil aviation security at Liikenne- ja viestintävirasto Traficom in Helsinki.",
+        "description": "We are looking for experienced inspectors and civil aviation security professionals to join our team in Helsinki. This role offers a permanent position with a competitive salary ranging from €4,836 to €5,046 per month. The ideal candidate will have a strong background in aviation security and a solid understanding of international and national aviation safety regulations. You will be responsible for conducting audits, inspections, and handling security tests across various locations in Finland. This is an opportunity to contribute to aviation safety and develop your career in the field. Assistance with finding accommodation is provided. Modern vehicle fleet is available. The role requires proficiency in English and Swedish.",
+        "what_we_expect": [
+          "Skills in aviation security and safety compliance.",
+          "Experience in aviation operations and regulations.",
+          "Your job will have a direct impact on aviation safety and compliance with international and national requirements."
+        ],
+        "job_responsibilities": [
+          "Inspect and audit civil aviation security operations.",
+          "Handle tests and inspections in different parts of Finland.",
+          "Your job will have a direct impact on aviation safety and compliance with international and national requirements."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Accommodation assistance for housing.",
+          "Your job will have a direct impact on aviation safety and compliance with international and national requirements."
+        ],
+        "search_keywords": "Inspectors Civil Aviation Security",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
   }
 ]
