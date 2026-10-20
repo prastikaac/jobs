@@ -374289,5 +374289,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-19 22:10:52",
+    "jobs": [
+      {
+        "id": "bca5cd62",
+        "job_id": "mechanical-engineer-vantaa-bca5cd62",
+        "processed": true,
+        "title": "Mechanical Engineer",
+        "company": "Škoda Brand Store",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/mekaanikko-sdsuu-20570454",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/mekaanikko-sdsuu-20570454",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/mechanical-engineer-vantaa-bca5cd62",
+        "date_posted": "2026-09-16",
+        "date_expires": "2026-10-16",
+        "scraped_at": "2026-10-19 22:10:52",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Škoda Brand Store is hiring a Mechanical engineer in Vantaa. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a Mechanical Engineer to join our team at Škoda Brand Store in Vantaa. This is a permanent position offering full-time work and a competitive salary. The ideal candidate will bring expertise in mechanical engineering and a passion for automotive technology. Our store is expanding and we are committed to providing a modern and digital shopping experience. We offer assistance with finding accommodation and a stable network of new electric car dealerships. If you are ready to take the next step in your career and contribute to a growing and innovative company, please apply.",
+        "what_we_expect": [
+          "Bachelor's degree in Mechanical Engineering.",
+          "Proficiency in CAD software.",
+          "Experience with mechanical design."
+        ],
+        "job_responsibilities": [
+          "Design and develop mechanical systems.",
+          "Perform engineering analysis and design.",
+          "Collaborate with other engineers and designers."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "mechanical engineer, mechanical engineer job, mechanical engineer position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-19 22:10:55",
+    "jobs": [
+      {
+        "id": "158bbae8",
+        "job_id": "responsible-for-the-spare-part-vantaa-158bbae8",
+        "processed": true,
+        "title": "Responsible for the spare part",
+        "company": "Škoda Brand Store",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/varaosavastaava-sdsuu-20570534",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/varaosavastaava-sdsuu-20570534",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/responsible-for-the-spare-part-vantaa-158bbae8",
+        "date_posted": "2026-09-16",
+        "date_expires": "2026-10-16",
+        "scraped_at": "2026-10-19 22:10:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Looking for a Responsible for the spare part job in Vantaa? Škoda Brand Store is seeking motivated candidates—apply today.",
+        "description": "We are looking for a dedicated and experienced individual to join our team at Škoda Brand Store in Vantaa. This role is responsible for managing and maintaining the inventory of spare parts, ensuring that the store remains fully equipped and operational. The ideal candidate will possess excellent organizational skills, a strong attention to detail, and the ability to work independently while contributing effectively to a dynamic and growing team. This is a permanent position with the potential for continuous growth and development within the company. We offer a competitive salary and a supportive work environment, with assistance in finding accommodation provided for the right candidate.",
+        "what_we_expect": [
+          "Proficiency in mechanics.",
+          "Knowledge of Škoda vehicles.",
+          "Good communication skills."
+        ],
+        "job_responsibilities": [
+          "Inspect and maintain spare parts.",
+          "Ensure parts are in good condition.",
+          "Handle inventory and replenishment."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "spare part, responsible, mechanics, Škoda vehicles",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
   }
 ]
