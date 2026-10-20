@@ -77,6 +77,8 @@ functions/
 
 # Second git directory for private backup repo
 .git-private/
+.git-ios/
+.git-rewrite/
 
 # ── Public repo exclusions (private repo only) ────────────────────────────────
 .github/

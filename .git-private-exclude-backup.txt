@@ -1,0 +1,32 @@
+# Auto-generated exclusions for private backup repo
+# Dependencies
+node_modules/
+**/node_modules/
+functions/node_modules/
+scraper/node_modules/
+App/node_modules/
+
+# Python environments & caches
+venv*/
+**/venv*/
+__pycache__/
+**/__pycache__/
+*.pyc
+**/.cache/
+
+# Git directories
+.git/
+.git-ios/
+.git-rewrite/
+
+# SECURITY: Never commit service account keys or secrets
+scraper/serviceAccountKey.json
+App/android/*.jks
+App/android/*.keystore
+
+# Large log files
+*.log
+**/*.log
+pipeline-errors.txt
+errors.txt
+
