@@ -385815,5 +385815,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-21 01:36:09",
+    "jobs": [
+      {
+        "id": "c89a7744",
+        "job_id": "the-seller-helsinki-ja-4-muuta-c89a7744",
+        "processed": true,
+        "title": "The seller",
+        "company": "Face2face Finland",
+        "job_category": "other",
+        "jobLocation": [
+          "Helsinki ja 4 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/face2face-finland-oy-myyja-sdsuu-20664700",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/face2face-finland-oy-myyja-sdsuu-20664700",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/other/the-seller-helsinki-ja-4-muuta-c89a7744",
+        "date_posted": "2026-10-20",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-10-21 01:36:09",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a The seller at Face2face Finland. Great opportunity in Helsinki ja 4 muuta—apply now.",
+        "description": "We are looking for a dynamic and motivated individual to join our team as a seller in Helsinki and beyond. This is a full-time, permanent position where you will be responsible for driving sales through various channels, including affiliates, magazines, photo fibers, and monthly donations to well-known charities. Our approach is hands-on, with opportunities to meet and engage with people in person, learn from experiences, and succeed or fail together. This is not just a job; it's a chance to grow and make a real impact. We offer assistance with finding accommodation, a modern vehicle fleet, and a supportive work environment. If you're ready to take on new challenges and thrive in a dynamic sales environment, we encourage you to apply.",
+        "what_we_expect": [
+          "Interest in people.",
+          "Interest in goals.",
+          "Interest in the opportunity to influence earnings."
+        ],
+        "job_responsibilities": [
+          "Meet the right people at stands, events, streets, and door-to-door.",
+          "Learn and succeed in sales.",
+          "Try again when you mess up."
+        ],
+        "what_we_offer": [
+          "Opportunity to influence earnings.",
+          "Meet the right people.",
+          "Learn and succeed in sales."
+        ],
+        "search_keywords": "seller, sales, face2face, Finland, job, opportunity",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
   }
 ]
