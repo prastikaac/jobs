@@ -385760,5 +385760,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-21 01:35:20",
+    "jobs": [
+      {
+        "id": "70377dd7",
+        "job_id": "nurse-pori-70377dd7",
+        "processed": true,
+        "title": "Nurse",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/390413/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e610595f-86af-4bc2-ad23-7230eaeb2d76/en",
+        "job_employer_email": "Sanna.Kurola@terveystalo.com",
+        "job_employer_name": "Sanna Kurola",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-pori-70377dd7",
+        "date_posted": "2026-10-19",
+        "date_expires": "2026-10-30",
+        "scraped_at": "2026-10-21 01:35:20",
+        "open_positions": 1,
+        "salary_range": "salary per post and a possible personal allowan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Terveystalo is looking for a skilled The nurse, Pori. in Pori. Don't miss this opportunity—apply today.",
+        "description": "We at Terveystalo are looking for a dedicated nurse to join our team in Pori. As a nurse at the Health Centre Pori, you will be part of a team of professionals dedicated to promoting and maintaining health, preventing and treating diseases. Your role will involve a wide range of nursing tasks and the development of skills in placement and support. The position offers a competitive salary and benefits, including assistance with finding accommodation. Our team values fluidity and caring for others, with a focus on human encounters and progressive care approaches. The job is based on a two-shift working week, with flexible hours, and you will be able to work in both private clinics and public sector partnerships.",
+        "what_we_expect": [
+          "Registered nurse qualification.",
+          "Brushing and scanning skills.",
+          "Good teamwork skills.",
+          "Good pressure sensitivity in the outpatient reception area."
+        ],
+        "job_responsibilities": [
+          "Promote and maintain health and prevent and treat diseases.",
+          "Run an independent reception in the Health Centre or work in the surgeries of our hospitals or as digital nurses in digital services.",
+          "The nurse, Pori."
+        ],
+        "what_we_offer": [
+          "Salary and benefits from the employment relationship.",
+          "Two-shift working week with flexible hours.",
+          "Smoking-free workplace promoting wellbeing."
+        ],
+        "search_keywords": "nurse, Pori, health centre, registered nurse, brushing and scanning skills, teamwork, pressure sensitivity",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
   }
 ]
