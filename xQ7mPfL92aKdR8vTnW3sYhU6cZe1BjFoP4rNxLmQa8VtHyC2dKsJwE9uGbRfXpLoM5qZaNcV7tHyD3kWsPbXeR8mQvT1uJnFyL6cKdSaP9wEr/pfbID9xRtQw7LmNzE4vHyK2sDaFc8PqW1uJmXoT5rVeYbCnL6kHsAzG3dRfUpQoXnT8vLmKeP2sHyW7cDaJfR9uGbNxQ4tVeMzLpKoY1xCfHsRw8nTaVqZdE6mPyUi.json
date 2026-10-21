@@ -385704,5 +385704,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-21 01:34:55",
+    "jobs": [
+      {
+        "id": "45313766",
+        "job_id": "manufacture-from-materials-of-any-heading-except-that-of-the-kaarina-45313766",
+        "processed": true,
+        "title": "Manufacture from materials of any heading, except that of the product",
+        "company": "Wulff Works Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kaarina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/7852631",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4a983c88-9260-4fa6-93df-118fc21386b9/en",
+        "job_employer_email": "tuomas.arjamaa@wulff.fi",
+        "job_employer_name": "Tuomas Arjamaa",
+        "job_employer_phone_no": "+358417325402",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/manufacture-from-materials-of-any-heading-except-that-of-the-kaarina-45313766",
+        "date_posted": "2026-10-19",
+        "date_expires": "2026-10-25",
+        "scraped_at": "2026-10-21 01:34:55",
+        "open_positions": 1,
+        "salary_range": "* Palkka 18 - 25 €/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Manufacture from materials of any heading, except that of the product role at Wulff Works Oy.",
+        "description": "We are looking for a CNC drill operator with experience in the use of the Heidenhain control system to work with us on a permanent basis. Your duties include machining metal parts with CNC drilling and adjusting machine settings and quality control. The workshop is located in Kaarina and the work is done in one shift. Success in this mission requires experience with CNC machinery, especially Heidenhain controls, programming skills, ability to interpret technical drawings and operate measuring instruments, and accuracy, independence, and good problem-solving skills. We offer permanent employment of 40 hours per week, a stable job in a growing company, and a wage of €18 - €25 per hour. Apply for the job immediately, as we process applications at the time of application.",
+        "what_we_expect": [
+          "Experience with CNC machinery.",
+          "Programming skills.",
+          "Ability to interpret technical drawings.",
+          "Operating measuring instruments.",
+          "Accuracy, independence, and good problem-solving skills."
+        ],
+        "job_responsibilities": [
+          "Machining metal parts with CNC drilling.",
+          "Adjusting machine settings and quality control.",
+          "Operating a beam drill and a manual drill."
+        ],
+        "what_we_offer": [
+          "Permanent employment of 40 hours per week.",
+          "Stable job in a growing company.",
+          "Wage € 18 - € 25 per hour."
+        ],
+        "search_keywords": "manufacture, materials, CNC, Heidenhain, experience, programming, technical drawings, measuring instruments, accuracy, independence, problem-solving",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
   }
 ]
