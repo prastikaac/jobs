@@ -385869,5 +385869,115 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-21 01:36:40",
+    "jobs": [
+      {
+        "id": "f96a95c2",
+        "job_id": "social-and-health-professionals-valkeakoski-ja-1-muu-f96a95c2",
+        "processed": true,
+        "title": "Social and Health Professionals",
+        "company": "Sospro Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Valkeakoski ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/sospro-sosiaali-ja-terveysalan-ammattilaisia-uusiin-lastensuojeluyksikoihin-sdsuu-20665192",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/sospro-sosiaali-ja-terveysalan-ammattilaisia-uusiin-lastensuojeluyksikoihin-sdsuu-20665192",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/social-and-health-professionals-valkeakoski-ja-1-muu-f96a95c2",
+        "date_posted": "2026-10-20",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-10-21 01:36:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Social and health professionals to new child protection units position available at Sospro Oy in Valkeakoski ja 1 muu.",
+        "description": "We are looking for social workers, night counsellors, midwives, nurses, and occupational therapists to join our team in launching new child protection units in Valkeakoski and Naantali. These units will open in January in two residential locations, providing specialized care for children with developmental disabilities, delays, or neurological issues. We are building purpose-built premises to ensure the best possible operation. This initiative is designed to meet the unique needs of these children. If you are passionate about child welfare and have experience in social work, night counseling, midwifery, nursing, or occupational therapy, we encourage you to apply. Our team is committed to providing the highest quality care and support. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Bachelor's degree in Social Work, Nursing, Midwifery, or Occupational Therapy.",
+          "Valid professional certifications in the field of child protection or child development.",
+          "Social and health professionals to new child protection units Join us in launching a new child protection activity!"
+        ],
+        "job_responsibilities": [
+          "Assist in the care and protection of children with developmental disabilities, delays, or neurological issues.",
+          "Collaborate with multidisciplinary teams to provide comprehensive support and interventions.",
+          "Social and health professionals to new child protection units Join us in launching a new child protection activity!"
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Health Insurance.",
+          "Professional Development Opportunities.",
+          "Flexible Working Hours.",
+          "Childcare Support."
+        ],
+        "search_keywords": "social workers child protection units child health professionals",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-21 01:36:43",
+    "jobs": [
+      {
+        "id": "f6452c11",
+        "job_id": "door-to-door-salesman-helsinki-ja-4-muuta-f6452c11",
+        "processed": true,
+        "title": "Door-to-Door Salesman",
+        "company": "Face2face Finland",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 4 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/face2face-finland-oy-myyja-ovelta-ovelle-myyja-sdsuu-20664955",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/face2face-finland-oy-myyja-ovelta-ovelle-myyja-sdsuu-20664955",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/door-to-door-salesman-helsinki-ja-4-muuta-f6452c11",
+        "date_posted": "2026-10-20",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-10-21 01:36:43",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a The salesman. The door-to-door salesman. at Face2face Finland. Great opportunity in Helsinki ja 4 muuta—apply now.",
+        "description": "At Face2face Finland, we're looking for enthusiastic door-to-door sales professionals who are ready to take on the challenge of building something meaningful. With a focus on courage, doing, and community, this role offers the opportunity to influence earnings, develop skills, and be part of a dynamic and supportive team. Join us in Helsinki and beyond, where personal growth is at the heart of everything we do.",
+        "what_we_expect": [
+          "Ability to work independently.",
+          "Good communication skills.",
+          "Positive attitude towards sales."
+        ],
+        "job_responsibilities": [
+          "Visit customers' homes to sell products.",
+          "Engage with customers to promote products.",
+          "Answer questions and provide information about products."
+        ],
+        "what_we_offer": [
+          "Commission-based salary.",
+          "Ongoing training and development opportunities.",
+          "Access to new products and technologies."
+        ],
+        "search_keywords": "door-to-door salesman, door-to-door sales, sales, door-to-door, door-to-door salesperson",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
   }
 ]
