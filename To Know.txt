@@ -21,23 +21,28 @@ Online : Go to https://findjobsinfinland.fi/jobs_table.html and copy the id of t
 Offline : Run .\venv313\Scripts\python.exe scraper/offline_manual_category_changer.py and then go to scraper\offline_manual_category_changer.html to update
 
 Job Scraping Daily Schedule (every day):
-Mon  → 22:00 (10:00 PM)
-Tue  → 22:00 (10:00 PM)
-Wed  → 22:00 (10:00 PM)
-Thu  → 22:00 (10:00 PM)
-Fri  → 22:00 (10:00 PM)
-Sat  → 22:00 (10:00 PM)
-Sun  → 22:00 (10:00 PM)
+Mon  → 10:00 (10:00 AM)
+Tue  → 10:00 (10:00 AM)
+Wed  → 10:00 (10:00 AM)
+Thu  → 10:00 (10:00 AM)
+Fri  → 10:00 (10:00 AM)
+Sat  → 10:00 (10:00 AM)
+Sun  → 10:00 (10:00 AM)
 
 
 Terminal Commands :
 
+- Main Automatic runner file from scraper to push that does all  Run in Cmd, Easiet one to start our system
+"C:\Users\achar\Documents\Programming\HTML CSS JS\JobsInFinland\scraper\run_all_jobs.bat"
+
+
+- Main Automatic runner file from scraper to push that does all :
+.\scraper\run_all_jobs.bat
+
+
 - Change Directory :
 cd /d "C:\Users\achar\Documents\Programming\HTML CSS JS\JobsInFinland" 
 
-
-- Automatic runner file :
-.\scraper\run_all_jobs.bat
 
 - Quick 1-click runner (GPU / venv313) :
 .\run_gpu.bat
@@ -78,4 +83,4 @@ Primary: Meta NLLB-200-1.3B via Transformers (Full fp32, Highest Accuracy on GPU
 - Speed: 5-10x faster than CPU translation with full precision accuracy.
 
 Fallback: Helsinki-NLP Opus-MT fi->en (GPU CUDA fallback)
---------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
