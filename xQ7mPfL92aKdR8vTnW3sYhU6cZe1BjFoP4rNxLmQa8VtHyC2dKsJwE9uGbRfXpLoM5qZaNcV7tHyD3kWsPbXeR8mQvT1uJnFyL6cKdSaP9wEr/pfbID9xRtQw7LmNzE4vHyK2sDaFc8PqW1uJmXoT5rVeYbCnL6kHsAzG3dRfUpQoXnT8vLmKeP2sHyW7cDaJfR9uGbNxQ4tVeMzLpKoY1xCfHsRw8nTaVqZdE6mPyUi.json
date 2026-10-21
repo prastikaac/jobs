@@ -386316,5 +386316,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-21 01:39:29",
+    "jobs": [
+      {
+        "id": "6a7ac751",
+        "job_id": "driver-of-a-road-haulage-vehicle-ce-cartridge-half-sme-espoo-ja-6-muuta-6a7ac751",
+        "processed": true,
+        "title": "Driver of a road haulage vehicle, CE (cartridge + half), SME",
+        "company": "PolarPro Henkilöstöratkaisut",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Espoo ja 6 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/maansiirtoauton-kuljettaja-ce-kasetti-puolikas-pk-seutu-spsol-20656875",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/maansiirtoauton-kuljettaja-ce-kasetti-puolikas-pk-seutu-spsol-20656875",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/driver-of-a-road-haulage-vehicle-ce-cartridge-half-sme-espoo-ja-6-muuta-6a7ac751",
+        "date_posted": "2026-10-16",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-10-21 01:39:29",
+        "open_positions": 1,
+        "salary_range": "17,13–18,17 €/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "PolarPro Henkilöstöratkaisut is looking for a skilled Driver of a road haulage vehicle, CE (cartridge + half), SME in Espoo ja 6 muuta.",
+        "description": "We are seeking a dedicated driver of a road haulage vehicle, specifically a cartridge and half, for our growing company based in Espoo and other locations. This position offers a permanent employment with a competitive salary ranging from 17,13 to 18,17 euros per hour. The ideal candidate should possess a valid CE driver's license for demanding ground transportation and enjoy working independently while being comfortable with teamwork. This role involves traditional expatriate transport, typically working 6 to 20 hours a day, and is a perfect fit for someone who thrives on initiative, common sense, and the ability to handle everyday road situations. Immediate availability and assistance with finding accommodation are provided.",
+        "what_we_expect": [
+          "Get a CE driver's license for demanding ground transportation.",
+          "The job is a traditional expatriate transport where you work mainly from 6 to 20 hours.",
+          "The job is suitable for a driver who likes to drive independently but is not afraid to cooperate with others on the job site."
+        ],
+        "job_responsibilities": [
+          "Pick up CE drivers on a cassette and half-time to the underground of the capital.",
+          "Work mainly from 6 to 20 hours.",
+          "Solve everyday situations on the road."
+        ],
+        "what_we_offer": [
+          "Permanent job.",
+          "Immediate availability.",
+          "Traditional expatriate transportation.",
+          "Suitable for drivers who like to drive independently but are not afraid to cooperate with others on the job site.",
+          "Value of initiative, common sense, and ability to solve everyday situations on the road."
+        ],
+        "search_keywords": "Driver, road haulage vehicle, CE, cartridge, half, SME, expatriate transportation, permanent job, immediate availability",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
   }
 ]
