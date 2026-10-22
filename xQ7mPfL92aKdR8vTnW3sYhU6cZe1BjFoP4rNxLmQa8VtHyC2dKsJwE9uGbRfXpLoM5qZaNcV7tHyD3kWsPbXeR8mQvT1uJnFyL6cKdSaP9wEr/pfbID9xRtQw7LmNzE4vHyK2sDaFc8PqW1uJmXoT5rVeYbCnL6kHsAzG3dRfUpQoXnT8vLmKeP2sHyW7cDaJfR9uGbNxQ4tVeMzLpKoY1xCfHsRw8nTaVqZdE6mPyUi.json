@@ -410398,5 +410398,77 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-22 10:04:48",
+    "jobs": [
+      {
+        "id": "ca3c4742",
+        "job_id": "ehs-expert-from-ramboll-helsinki-ca3c4742",
+        "processed": true,
+        "title": "EHS expert from Ramboll",
+        "company": "Academic Work Finland Oy",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Kerava",
+          "Kauniainen",
+          "Kirkkonummi",
+          "Nurmijärvi",
+          "Espoo",
+          "Loviisa",
+          "Sipoo",
+          "Hyvinkää",
+          "Siuntio",
+          "Mäntsälä",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/LU3K0R",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7d62b8da-fb2f-42ff-8de6-f3442a452114/en",
+        "job_employer_email": "krs01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/ehs-expert-from-ramboll-helsinki-ca3c4742",
+        "date_posted": "2026-10-21",
+        "date_expires": "2027-04-19",
+        "scraped_at": "2026-10-22 10:04:48",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Academic Work Finland Oy as a EHS expert from Ramboll (Espoo, Tampere or Lappeenranta) in Helsinki.",
+        "description": "We are looking for an EHS expert with experience in Ramboll's Espoo, Tampere, or Lappeenranta offices to join our dynamic team. This role involves overseeing the digital EHS Compass legal monitoring service, ensuring customer satisfaction and maintaining up-to-date legal information. You will collaborate with environmental and occupational safety experts, engage in marketing and communication tasks, and participate in light consultancy projects. Our flexible working environment, team-oriented culture, and commitment to sustainability make it an ideal opportunity for motivated professionals. Apply now for a career that aligns with your skills and interests.",
+        "what_we_expect": [
+          "Appropriate academic background (e.g., environmental, occupational safety, or the like).",
+          "Understanding and interest in EHS issues (such as environmental law, management systems ISO 14001, ISO 45001).",
+          "Good communication and collaboration skills, and an active and fearless approach to client meetings over the phone.",
+          "An enthusiastic and systematic way of working and a willingness to master the digital tool.",
+          "Excellent oral and written skills in Finnish and English."
+        ],
+        "job_responsibilities": [
+          "Ensure customers get the best benefit from the digital EHS Compass legal monitoring service.",
+          "Maintain and produce content for the EHS Compass legal register and create supporting material.",
+          "Participate in marketing and communication tasks for the service, such as updating the website.",
+          "Engage in lighter EHS consultancy projects according to your wishes and skills."
+        ],
+        "what_we_offer": [
+          "Exciting career development and learning opportunities: Opportunity to grow into roles such as product manager or customer service manager and a diverse perspective on projects in the industrial and energy sectors.",
+          "Flexibility and working environment: Hybrid work opportunity (e.g., 2 days at the office/international) and flexible working hours.",
+          "Team and culture: Relaxed, low-threshold work culture, knowledgeable and supportive colleagues, and an open atmosphere.",
+          "Responsibility and effectiveness: The opportunity to do meaningful work on sustainable development, environmental legislation, and safety."
+        ],
+        "search_keywords": "EHS expert Ramboll Espoo Tampere Lappeenranta",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
   }
 ]
