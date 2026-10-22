@@ -410180,5 +410180,223 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-22 10:03:56",
+    "jobs": [
+      {
+        "id": "1620cb64",
+        "job_id": "installer-of-plumbing-and-heating-equipment-tampere-1620cb64",
+        "processed": true,
+        "title": "Installer of plumbing and heating equipment",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/59621346",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/11a4da87-0998-4113-9c58-34adfb88a976/en",
+        "job_employer_email": "riku.paukku@wulff.fi",
+        "job_employer_name": "Riku Paukku",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/installer-of-plumbing-and-heating-equipment-tampere-1620cb64",
+        "date_posted": "2026-10-21",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-22 10:03:56",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä talotekniikan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,22-19,97 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Installer of plumbing and heating equipment at Wulff Works Oy, located in Tampere. Apply now and get started.",
+        "description": "We are looking for plumbers to serve our customers in the Tampere area. This role involves installing, maintaining, and repairing plumbing for various purposes. With a focus on practical assignments, you'll work independently and take responsibility for your tasks. Previous experience in pipeline installations is required, and fluency in Finnish is essential. Our team values practical technical expertise, initiative, and careful work methods. Good interaction skills and a valid occupational safety and fire card are also considered advantages. You'll receive high-quality work clothing and necessary equipment, and your salary will be determined based on your skills and experience. Apply now by clicking the link provided.",
+        "what_we_expect": [
+          "Practical technical expertise.",
+          "Initiative.",
+          "Careful working style.",
+          "Good interaction skills.",
+          "Fluency in Finnish."
+        ],
+        "job_responsibilities": [
+          "Install plumbing for various purposes.",
+          "Perform installation, maintenance, and repair of plumbing.",
+          "Work with other professionals and clients as needed."
+        ],
+        "what_we_offer": [
+          "High-quality work clothing.",
+          "Necessary equipment.",
+          "Variety of jobs for skill development.",
+          "Salary based on skills and experience.",
+          "Employee-owned company culture."
+        ],
+        "search_keywords": "Installer plumbing heating equipment, plumbers, Tampere area, installation, maintenance, repair, plumbing, technical drawings, pipeline installations, welding, occupational safety, fire cards, civil engineering, salary, Wulff Works, employee-owned company, publicly traded Wulff Group",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "7a8bb01c",
+        "job_id": "the-axe-man-tampere-7a8bb01c",
+        "processed": true,
+        "title": "The Axe Man",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/59619199",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/973c335e-a5d4-40d6-92ff-0d4d9072aaff/en",
+        "job_employer_email": "riku.paukku@wulff.fi",
+        "job_employer_name": "Riku Paukku",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/the-axe-man-tampere-7a8bb01c",
+        "date_posted": "2026-10-21",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-22 10:03:56",
+        "open_positions": 1,
+        "salary_range": "Vähintään TES:n mukainen palkka (17,12-19,93 €/h), kokemuksesi huomioiden.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a The Axe Man job in Tampere? Wulff Works Oy is seeking motivated candidates—apply today.",
+        "description": "The Axe Man Carpenters for Tampere and surrounding areas We are looking for skilled carpenters for our client companies for construction projects in Tampere and the surrounding areas. There are both new construction and renovation jobs available, and they vary depending on the subject and your skills. You will have the opportunity to do a wide range of construction and repair work. Previous experience as a carpenter and the ability to interpret construction drawings are required. The work is largely self-employed, so we expect you to take your own initiative and make careful choices. Good physical fitness is important because working days are active and working conditions can vary depending on the job. The occupational safety card is considered to be an advantage.",
+        "what_we_expect": [
+          "The salary.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "The salary.",
+          "Daily operational tasks.",
+          "Supporting the team."
+        ],
+        "what_we_offer": [
+          "The salary.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "The Axe Man Wulff Works Oy Tampere other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-22 10:03:58",
+    "jobs": [
+      {
+        "id": "b780d548",
+        "job_id": "electrician-tampere-b780d548",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/59622088",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c735d964-6479-43fd-8489-595611191534/en",
+        "job_employer_email": "riku.paukku@wulff.fi",
+        "job_employer_name": "Riku Paukku",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-tampere-b780d548",
+        "date_posted": "2026-10-21",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-22 10:03:58",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä sähköistys- ja sähköasennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,50-21,35 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is looking for a skilled Electrical engineer in Tampere. Don't miss this opportunity—apply today.",
+        "description": "We at Wulff Works Oy are looking for electricians to join our team in the Pirkanmaa area. This role involves working on a variety of projects, from new construction to renovations, and tasks are determined by the site and client needs. Full-time work is offered with a permanent contract, and the salary is based on the worker's skills and experience, ranging from €15.50 to €21.35 per hour. The ideal candidate should have electrical training and prior experience as an electrician, be able to work independently, and read electrical diagrams. They must also be able to locate and repair electrical faults, have good physical fitness, and be fluent in Finnish.",
+        "what_we_expect": [
+          "Electrical training and prior experience as an electrician.",
+          "Ability to work independently and read electrical diagrams.",
+          "Good physical fitness and preparedness for different work environments.",
+          "Fluent Finnish.",
+          "Good cooperation skills and a customer-oriented approach."
+        ],
+        "job_responsibilities": [
+          "Install and connect electrical outlets, lighting, switches, and substations.",
+          "Locate and repair electrical faults.",
+          "The salary."
+        ],
+        "what_we_offer": [
+          "Access to high-quality workwear and necessary protective equipment.",
+          "Opportunity to develop skills and advance in electrical jobs.",
+          "Variety of projects where you can use your existing skills and learn more.",
+          "Salary based on skills and experience.",
+          "Occupational safety and electrical safety cards must be valid."
+        ],
+        "search_keywords": "electrician, electrical engineer, Pirkanmaa, electrician job, electrical engineer job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-22 10:03:59",
+    "jobs": [
+      {
+        "id": "ce187b63",
+        "job_id": "personal-assistant-sastamala-ce187b63",
+        "processed": true,
+        "title": "Personal Assistant",
+        "company": "Syke Kotipalvelut Oy, Helsinki",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Sastamala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.sykekotipalvelut.fi/careers/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c378b5cb-0b76-4f8c-9402-d3c5ef0c6c68/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/personal-assistant-sastamala-ce187b63",
+        "date_posted": "2026-10-21",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-22 10:03:59",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Syke Kotipalvelut Oy, Helsinki as a Personal assistant in Sastamala. Learn more about the role and apply now.",
+        "description": "Syke Kotipalvelut Oy, a Finnish social services company, is seeking a reliable, responsible, and customer-oriented personal assistant to support clients in their daily lives. The ideal candidate will assist with household chores, ensure customer safety, and support clients' autonomy. Syke Kotipalvelut Oy offers a permanent position with full-time work and a modern vehicle fleet. The salary is not specified but is contingent on experience. The company provides assistance with finding accommodation and supports the right to self-determination. For more information, please visit our careers page at https://www.sykkotipalvelut.fi/careers/.",
+        "what_we_expect": [
+          "Good interaction skills and flexibility.",
+          "Reliable, responsible, and customer-oriented employees.",
+          "Please fill in the application form on our website: https://www.sykkotipalvelut.fi/careers/."
+        ],
+        "job_responsibilities": [
+          "Assist with daily life tasks such as washing, dressing, and toilet visits.",
+          "Support the client's autonomy and ensure safety in household chores and outdoor activities.",
+          "Please fill in the application form on our website: https://www.sykkotipalvelut.fi/careers/."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Personal assistance and support services in customers' homes and living environments.",
+          "Please fill in the application form on our website: https://www.sykkotipalvelut.fi/careers/."
+        ],
+        "search_keywords": "personal assistant, assistant, support, daily life, customer, home, living environment",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
