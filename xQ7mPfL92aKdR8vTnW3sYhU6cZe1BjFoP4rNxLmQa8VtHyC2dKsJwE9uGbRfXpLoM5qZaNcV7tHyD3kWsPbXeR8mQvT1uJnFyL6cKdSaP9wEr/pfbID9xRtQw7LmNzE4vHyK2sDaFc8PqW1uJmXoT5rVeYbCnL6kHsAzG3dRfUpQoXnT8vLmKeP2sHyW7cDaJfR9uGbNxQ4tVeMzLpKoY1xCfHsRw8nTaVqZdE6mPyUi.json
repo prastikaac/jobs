@@ -410941,5 +410941,67 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-22 10:12:03",
+    "jobs": [
+      {
+        "id": "5738d3ca",
+        "job_id": "maintenance-workers-for-the-well-sound-hyvinkää-5738d3ca",
+        "processed": true,
+        "title": "Maintenance workers for the Well Sound",
+        "company": "Syklo Plastics Recycling Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/dentsu-finland-kunnossapitohenkiloita-hyvinkaalle-sdsuu-20638328",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/dentsu-finland-kunnossapitohenkiloita-hyvinkaalle-sdsuu-20638328",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/maintenance-workers-for-the-well-sound-hyvinkää-5738d3ca",
+        "date_posted": "2026-10-12",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-22 10:12:03",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Exciting Maintenance workers for the Well Sound position available at Syklo Plastics Recycling Oy in Hyvinkää.",
+        "description": "We are looking for highly skilled maintenance personnel to join our team at Syklo Plastics Recycling Oy and Syklo Biocomposites Oy, located in Hyvinkää. This is a permanent, full-time position subject to the collective bargaining agreement of the plastics industry and the chemical industry. The selected candidates will initially work in day shifts but will gradually transition to continuous triple shifts as production increases. We expect you to have experience in process industry maintenance tasks, initiative, and the ability to work independently. You should also have fluency in Finnish and English, and be able to work effectively with customers. We value your ability to reflect on occupational safety and your passion for ambitious goals and innovative circular economy solutions.",
+        "what_we_expect": [
+          "Experience in process industry maintenance tasks.",
+          "Initiative and ability to work independently.",
+          "Fluency in Finnish language.",
+          "Customer service skills.",
+          "English language skills.",
+          "Occupational safety reflection."
+        ],
+        "job_responsibilities": [
+          "Support circular economy processes that bring materials back into circulation.",
+          "Maintain and service process equipment.",
+          "Report maintenance work to the operational management system.",
+          "Develop operations."
+        ],
+        "what_we_offer": [
+          "Annual income bonus model.",
+          "Travel benefits.",
+          "Lunch benefits.",
+          "Exercise benefits.",
+          "Cultural and wellness benefits.",
+          "Comprehensive occupational health care."
+        ],
+        "search_keywords": "maintenance workers, circular economy, plastics recycling, Syklo Plastics Recycling Oy, Syklo Biocomposites Oy, Hyvinkä circular economy alliance, process industry, Finnish pioneer, circular economy, Oulu Energia Group",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
   }
 ]
