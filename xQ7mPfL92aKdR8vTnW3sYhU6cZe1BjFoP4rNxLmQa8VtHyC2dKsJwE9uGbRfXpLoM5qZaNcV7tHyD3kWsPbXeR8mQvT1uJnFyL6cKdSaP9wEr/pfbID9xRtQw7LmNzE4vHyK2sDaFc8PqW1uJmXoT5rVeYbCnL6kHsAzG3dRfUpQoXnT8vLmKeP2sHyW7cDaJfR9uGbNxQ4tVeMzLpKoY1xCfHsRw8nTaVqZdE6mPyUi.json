@@ -410470,5 +410470,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-22 10:07:33",
+    "jobs": [
+      {
+        "id": "670598d1",
+        "job_id": "information-security-architect-helsinki-ja-1-muu-670598d1",
+        "processed": true,
+        "title": "Information security architect",
+        "company": "Pihlajalinna",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tietoturva-arkkitehti-spsih-20667690",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tietoturva-arkkitehti-spsih-20667690",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/information-security-architect-helsinki-ja-1-muu-670598d1",
+        "date_posted": "2026-10-21",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-10-22 10:07:33",
+        "open_positions": 1,
+        "salary_range": "salary for this post is EUR 5700 to EUR 6300 pe",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Pihlajalinna is hiring a Information security architect in Helsinki ja 1 muu. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for an experienced information security architect to join our team in Helsinki and Tampere. This role involves developing and managing technical information security, focusing on cloud security and an outsourced SOC service. You will work closely with other teams and suppliers, contributing to supplier security assessments and implementing ISO 27001 ISMS specifications. The position offers permanent employment, remote working possibilities, and flexible hours. We provide comprehensive health, wellbeing, and training support, including a learning environment and initial training. The salary is €5700 to €6300 per month, and we offer a dream job in a castle setting with a customer-centric approach. Apply now for a chance to be part of this exciting opportunity.",
+        "what_we_expect": [
+          "Strong understanding of technical security design.",
+          "Experience in cloud environments.",
+          "Knowledge of Microsoft security technologies.",
+          "Experience in SOC activities or operational security development."
+        ],
+        "job_responsibilities": [
+          "Develop and manage Pihlajalinn's technical information security suite.",
+          "Define information security requirements.",
+          "Monitor IT security providers.",
+          "Participate in information security service decision-making forums.",
+          "Work with other information management teams."
+        ],
+        "what_we_offer": [
+          "Salary range of EUR 5700 to EUR 6300 per month.",
+          "Permanent and full-time employment.",
+          "Extensive remote working possibilities.",
+          "Flexible working hours."
+        ],
+        "search_keywords": "information security architect, IT services, technical information security, cloud security, SOC service, ISO 27001 ISMS, supplier security assessments, GDPR, SCIS N-5002 Directive, Customer Data Act",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
