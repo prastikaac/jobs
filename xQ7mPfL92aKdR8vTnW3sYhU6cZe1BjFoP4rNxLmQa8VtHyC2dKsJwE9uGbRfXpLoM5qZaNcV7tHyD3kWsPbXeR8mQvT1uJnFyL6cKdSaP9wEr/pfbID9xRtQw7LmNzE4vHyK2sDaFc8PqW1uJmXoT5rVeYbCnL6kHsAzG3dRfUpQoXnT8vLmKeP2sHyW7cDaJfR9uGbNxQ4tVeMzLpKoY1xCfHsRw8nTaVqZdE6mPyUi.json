@@ -424000,5 +424000,66 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-23 12:18:07",
+    "jobs": [
+      {
+        "id": "2ecc81d4",
+        "job_id": "hr-or-cio-auditor-oulu-2ecc81d4",
+        "processed": true,
+        "title": "HR or CIO auditor",
+        "company": "Oy Tuokko Ltd",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/oy-tuokko-ltd-ht-tai-kht-tilintarkastaja-sdsuu-20626892",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/oy-tuokko-ltd-ht-tai-kht-tilintarkastaja-sdsuu-20626892",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/hr-or-cio-auditor-oulu-2ecc81d4",
+        "date_posted": "2026-10-06",
+        "date_expires": "2026-11-05",
+        "scraped_at": "2026-10-23 12:18:07",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Looking for a HR or CIO auditor job in Oulu? Oy Tuokko Ltd is seeking motivated candidates—apply today.",
+        "description": "Oy Tuokko Ltd is seeking an experienced HR or CIO auditor in Oulu, Finland, to join their skilled and experienced audit team. This role offers the opportunity to develop skills and work on diverse client assignments, with a focus on planning, implementing, reporting, and maintaining customer relations. The ideal candidate has gained experience in auditing tasks and will be able to carry out auditing tasks both as a member of the audit team and independently. Responsibilities include working closely with motivated colleagues, friendly customers, and various departments. Previous experience in auditing, knowledge of IFRS, and experience in manufacturing and industrial activities are required.",
+        "what_we_expect": [
+          "Completed HT/KHT qualification.",
+          "At least five years of auditing experience.",
+          "Knowledge of IFRS.",
+          "Understanding of manufacturing and industrial activities.",
+          "Motivation to supervise younger colleagues.",
+          "Fluency in Finnish and English."
+        ],
+        "job_responsibilities": [
+          "Plan and implement audit tasks.",
+          "Report on audit findings.",
+          "Maintain customer relations."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Modern work tools.",
+          "Excellent development and training opportunities.",
+          "Hybrid work model with flexible remote work.",
+          "Opportunity to work in Oulu offices.",
+          "Enabling work-life balance."
+        ],
+        "search_keywords": "HR auditor, CIO auditor, audit, HR, CIO, Oulu, skilled, experienced, audit team, diverse client assignments, planning, implementing, reporting, customer relations, motivated colleagues, large audit assignments, HT/KHT qualification, IFRS, manufacturing, industrial activities, motivation, supervision, fluency, Finnish, English, Swedish, low-level organisation, wide range of areas, competitive salary, modern work tools, excellent development and training opportunities, hybrid model, flexible remote work, work-life balance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
