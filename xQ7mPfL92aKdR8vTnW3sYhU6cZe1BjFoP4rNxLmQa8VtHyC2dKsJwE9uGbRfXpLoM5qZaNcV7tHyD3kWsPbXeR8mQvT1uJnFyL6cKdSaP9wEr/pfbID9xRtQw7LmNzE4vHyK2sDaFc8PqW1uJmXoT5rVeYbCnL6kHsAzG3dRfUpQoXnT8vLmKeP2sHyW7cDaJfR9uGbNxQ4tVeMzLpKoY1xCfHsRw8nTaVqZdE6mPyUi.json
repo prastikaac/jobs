@@ -422693,5 +422693,70 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-23 12:09:56",
+    "jobs": [
+      {
+        "id": "db6fd5e6",
+        "job_id": "president-of-the-aalto-university-espoo-db6fd5e6",
+        "processed": true,
+        "title": "President of the Aalto University",
+        "company": "Aalto-yliopisto",
+        "job_category": "education",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/president-aalto-university-sasal-20675303",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/president-aalto-university-sasal-20675303",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/president-of-the-aalto-university-espoo-db6fd5e6",
+        "date_posted": "2026-10-23",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-23 12:09:56",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new opportunity as a President of the Aalto University at Aalto-yliopisto in Espoo. Apply now and take the next step in your career.",
+        "description": "At Aalto University, curiosity moves across disciplines, roles and communities. We bring science, art, technology and business together to shape a sustainable future. Our work is rooted in responsibility, courage and collaboration. We ask new questions, challenge familiar thinking and turn ideas into impact. In this role, you will lead Aalto into its next chapter, turn long-term vision into clear priorities, focused action and measurable progress. You will, together with the entire community, move the university towards ever greater international distinction.",
+        "what_we_expect": [
+          "The ability to translate an ambitious long-term vision into clear priorities, effective execution and measurable progress, supported by sound institutional and financial judgment.",
+          "Significant leadership experience gained within a sizeable, complex and multicultural organisation, or compelling evidence of readiness to operate successfully at this level.",
+          "A consultative, decisive and empowering leadership style, grounded in high ethical standards and genuine enthusiasm for Aalto's purpose and its unique combination of disciplines.",
+          "A doctoral degree (PhD or equivalent) and a proven track record of excellence in academic research, combined with a clear understanding of what constitutes world-class research and education.",
+          "The credibility and communication skills to represent Aalto persuasively in Finland and internationally, and to build trusted relationships across government, academia, business and wider society.",
+          "An entrepreneurial mindset and the technological fluency to judge what matters and place technological change in its wider economic, societal and geopolitical context."
+        ],
+        "job_responsibilities": [
+          "Defining the vision and strategy to drive Aalto forward as a highly original, attractive and innovative academic institution shaping a sustainable future for Finland and the world.",
+          "Creating the conditions in which excellence in research, artistic work, education, societal impact and multidisciplinary collaboration can flourish.",
+          "Providing the institutional and operational leadership Aalto needs to fulfill its purpose, with accountability for the university's overall performance, organisational resilience, financial continuity and service to Finland.",
+          "Anticipating the forces shaping higher education, research and society, including artificial intelligence and emerging technologies, and articulating a positive and impactful role for Aalto within them.",
+          "Representing Aalto credibly in Finland and internationally, and strengthening its voice in higher education, research and innovation policy.",
+          "Deepening strategic corporate partnerships and co-created research, expanding private funding and philanthropy, and growing Aalto's foundation endowment."
+        ],
+        "what_we_offer": [
+          "The opportunity to lead a young, world-class university where science, art, technology and business meet, and to shape its next chapter.",
+          "Work with purpose in a community where research, education, creativity and services support meaningful change.",
+          "A multidisciplinary environment where collaboration, curiosity and new thinking are part of everyday work.",
+          "Work-life balance and well-being in all aspects of life are important to us at Aalto.",
+          "Curious to make a difference? Aalto University will be supported in this appointment process by the executive search firm Perrett Laver.",
+          "Informal enquiries can be made directly to Tiziano Sartor."
+        ],
+        "search_keywords": "President of the Aalto University Aalto-yliopisto Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
   }
 ]
