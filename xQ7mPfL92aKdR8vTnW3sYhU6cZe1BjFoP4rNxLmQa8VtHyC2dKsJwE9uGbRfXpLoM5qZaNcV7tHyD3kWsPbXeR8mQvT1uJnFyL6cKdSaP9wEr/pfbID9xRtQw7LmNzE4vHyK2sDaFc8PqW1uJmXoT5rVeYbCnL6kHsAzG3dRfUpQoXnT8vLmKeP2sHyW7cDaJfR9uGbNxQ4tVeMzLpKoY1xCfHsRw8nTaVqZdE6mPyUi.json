@@ -446806,5 +446806,66 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-25 09:38:48",
+    "jobs": [
+      {
+        "id": "0d56922c",
+        "job_id": "asbestos-remover-tampere-0d56922c",
+        "processed": true,
+        "title": "Asbestos Remover",
+        "company": "Wulff Works Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/47259878",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/04d3766a-cbff-41a7-9fb6-fca9cfc62714/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/asbestos-remover-tampere-0d56922c",
+        "date_posted": "2026-10-23",
+        "date_expires": "2026-10-30",
+        "scraped_at": "2026-10-25 09:38:48",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 14-18 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Machinery for making pulp of fibrous cellulosic material or of fibrous cellulosic material at Wulff Works Oy, located in.",
+        "description": "We are looking for a skilled asbestos remover to join our team for a variety of remediation and demolition projects. You will be able to carry out responsible demolition work in compliance with safety regulations and work in diverse locations as part of a skilled team. We appreciate a worker who has a careful workmanship, a good attitude toward work, and the ability to perform tasks with quality from start to finish. Your duties will include: Asbestos removal work at various sites Protection and preparation work at the demolition sites Cleanliness and final cleaning of the site Working in accordance with safety regulations Documentation and reporting of work stages.",
+        "what_we_expect": [
+          "Existing asbestos removal licence.",
+          "Previous experience of asbestos or demolition work.",
+          "Experience of independent and responsible work.",
+          "Good cooperation and communication skills.",
+          "Good physical condition.",
+          "Occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Asbestos removal work at various sites.",
+          "Protection and preparation work at the demolition sites.",
+          "Cleanliness and final cleaning of the site.",
+          "Working in accordance with safety regulations.",
+          "Documentation and reporting of work stages."
+        ],
+        "what_we_offer": [
+          "Long-term employment opportunity.",
+          "Various subjects and varied working hours.",
+          "Opportunity to develop skills in the field.",
+          "Safe working environment and appropriate tools.",
+          "Skilled team support."
+        ],
+        "search_keywords": "asbestos remover, demolition work, safety regulations, skilled team, long-term employment",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
