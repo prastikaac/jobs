@@ -447145,5 +447145,71 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-25 09:40:32",
+    "jobs": [
+      {
+        "id": "c104e055",
+        "job_id": "axe-for-the-raheen-liminka-c104e055",
+        "processed": true,
+        "title": "Axe for the Raheen",
+        "company": "Worker Pohjois-Suomi Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Liminka",
+          "Lumijoki",
+          "Raahe",
+          "Pyhäjoki",
+          "Siikajoki",
+          "Merijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://worker.likeit.fi/apply/126333554",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0808b483-a6c2-4960-8044-af7a5a250805/en",
+        "job_employer_email": "miika.peura@worker.fi",
+        "job_employer_name": "Miika Peura",
+        "job_employer_phone_no": "+358503317897",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/axe-for-the-raheen-liminka-c104e055",
+        "date_posted": "2026-10-23",
+        "date_expires": "2026-11-06",
+        "scraped_at": "2026-10-25 09:40:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Worker Pohjois-Suomi Oy is hiring a Axe for the Raheen in Liminka. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for experienced sharpshooters for our client enterprise. We are searching for skilled and self-employed carpenters with experience in a wide range of carpentry jobs, including moulding, wall framing, ironing, and concrete pouring. The work also requires drawing skills. We are primarily seeking local actors in the Rahe area. Employment starts as soon as a suitable worker is found, with a good worker being employed for a long time. The job requires several years' experience as a timpanist, the ability to read drawings, the ability to work independently and solve problems independently, a valid occupational safety card, fluent Finnish language skills, and the ability to drive a car. We offer a construction salary in accordance with the TES or better, always paid on time.",
+        "what_we_expect": [
+          "Several years' experience of working as a timpanist.",
+          "Ability to read drawings.",
+          "Ability to work independently and solve problems independently.",
+          "Valid occupational safety card.",
+          "Fluent Finnish language skills.",
+          "Ability to drive own car."
+        ],
+        "job_responsibilities": [
+          "Sharpshooters for client enterprise.",
+          "Skilled carpenters with experience in moulding, wall framing, ironing, and concrete pouring.",
+          "Drawings skills required.",
+          "Work independently and solve problems independently.",
+          "Valid occupational safety card.",
+          "Fluent Finnish language skills."
+        ],
+        "what_we_offer": [
+          "Construction salary in accordance with the TES or better, always paid on time.",
+          "Opportunity to develop skills in different projects.",
+          "Own Worker contact person to support throughout employment.",
+          "Trusted employer and continuing employment opportunities."
+        ],
+        "search_keywords": "sharpshooters, carpenters, moulding, wall framing, ironing, concrete pouring, drawings, occupational safety, Finnish language, driving",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
   }
 ]
