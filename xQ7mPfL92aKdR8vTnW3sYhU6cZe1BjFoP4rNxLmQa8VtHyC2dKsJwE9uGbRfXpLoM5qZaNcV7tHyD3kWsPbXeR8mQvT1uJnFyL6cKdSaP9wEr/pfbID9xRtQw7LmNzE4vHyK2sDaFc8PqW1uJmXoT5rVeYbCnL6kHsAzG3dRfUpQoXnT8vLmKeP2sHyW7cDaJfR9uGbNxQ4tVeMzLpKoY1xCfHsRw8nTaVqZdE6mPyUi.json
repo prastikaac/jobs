@@ -447270,5 +447270,71 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-25 09:44:40",
+    "jobs": [
+      {
+        "id": "4740e4e2",
+        "job_id": "technical-sales-and-business-development-manager-espoo-4740e4e2",
+        "processed": true,
+        "title": "Technical sales and business development manager",
+        "company": "Natural Dynamics Oy, Raasepori",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Espoo",
+          "Raasepori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.myardy.com",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e3ee0978-49e6-4380-bc87-7557fe840049/en",
+        "job_employer_email": "nick.d@naturaldynamics.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/technical-sales-and-business-development-manager-espoo-4740e4e2",
+        "date_posted": "2026-10-22",
+        "date_expires": "2026-12-23",
+        "scraped_at": "2026-10-25 09:44:40",
+        "open_positions": 1,
+        "salary_range": "salary and performance bonuses based on sales",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Technical sales and business development manager role at Natural Dynamics Oy, Raasepori. Join a growing team and build your career in Espoo.",
+        "description": "We are seeking a highly motivated Technical Sales and Business Development Manager at Natural Dynamics Oy, Raasepori, Espoo. This role is pivotal in expanding our market presence in Finland and the European region. The ideal candidate will be responsible for identifying and contacting potential B2B partners, building and expanding a distributor network, and driving commercial growth through strategic partnerships and presentations. They will also manage the business development process, including negotiations and contract maintenance. Fluency in Finnish and English, strong communication skills, and experience in technical product sales are essential.",
+        "what_we_expect": [
+          "Evidence of successful B2B sales or business development in technical products, e.g., in the field of equipment, technical systems, electronics, or automation.",
+          "Fluency in Finnish and English and the ability to conduct business negotiations in both languages.",
+          "Ability to understand the characteristics of technical products and to explain their benefits clearly to customers.",
+          "Experience in independent recruitment, negotiation with business decision-makers, and B2B or partnership agreements.",
+          "Strong interaction skills, initiative, and a drive to earn.",
+          "Ability to travel for work in Finland."
+        ],
+        "job_responsibilities": [
+          "Identification and contact with potential B2B partners, such as HVAC installation shops, ventilation system maintenance companies, and technical design companies.",
+          "Construction and expansion of a distributor and distribution network for the ARDY product in Finland.",
+          "Holding technical product presentations, conducting commercial negotiations, and negotiating dealer partnerships.",
+          "Development of cooperation relations with decision-makers in the field of installation, construction, and technical design.",
+          "Comprehensive management of the business development process, from identification of potential partners and first meetings to the conclusion of contracts and the maintenance of long-term partnerships.",
+          "Participation in the design of marketing performance plans, sales processes, and channel development strategies."
+        ],
+        "what_we_offer": [
+          "Opportunity to work in a Finnish technology company on an innovative product developed by it.",
+          "A chance to be a part of bringing a new technology to market.",
+          "Independence in organising their own work and developing sales.",
+          "Opportunities for professional development and career advancement.",
+          "A competitive salary, consisting of a basic salary and performance bonuses based on sales.",
+          "The opportunity to contribute to the development of international sales."
+        ],
+        "search_keywords": "Technical sales business development manager, B2B sales, technical product, HVAC, ventilation, construction, energy efficiency, building automation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
