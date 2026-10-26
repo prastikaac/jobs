@@ -447336,5 +447336,66 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-25 09:45:53",
+    "jobs": [
+      {
+        "id": "0c147256",
+        "job_id": "sales-representative-multiple-locations-oulu-ja-6-muuta-0c147256",
+        "processed": true,
+        "title": "Sales representative - Multiple locations",
+        "company": "Renoa",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Oulu ja 6 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myyntiedustaja-renoa-useita-paikkakuntia-srsen-20594492",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myyntiedustaja-renoa-useita-paikkakuntia-srsen-20594492",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-multiple-locations-oulu-ja-6-muuta-0c147256",
+        "date_posted": "2026-09-23",
+        "date_expires": "2026-10-23",
+        "scraped_at": "2026-10-25 09:45:53",
+        "open_positions": 1,
+        "salary_range": "Haluaisitko itsenäisen ja liikkuvan työn, jossa oma tekeminen ratkaisee? Renoalla myyntityö vaatii toistoja ja sitkeyttä, mutta palkitsee tekijänsä: perustekemisellä tienaat tyypillisesti 3 000-4 500 €/kk ja kovalla työllä enemmänkin, sillä palkkakattoa ei ole. Renoa on toiminut LVIS-alalla jo 20 vuotta ja toteuttanut yli 60 000 remonttia. Tule mukaan alan konkarin porukkaan!",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Renoa is hiring a Sales representative - Multiple locations in Oulu ja 6 muuta. Explore responsibilities, benefits, and apply today.",
+        "description": "Sales Representative Reno - Multiple locations Would you like a freelance, mobile job where doing your own thing matters? In Reno, sales work requires repetition and perseverance, but it rewards its creator: you typically earn €3 000 to €4 500 per day by starting a business, and even more with hard work, since there is no ceiling on wages. Why don't you join the gang? We are recruiting from the following locations: PK-sezione, Tampere, Oulu, Kuopio, Jyväskylä, Vaasa Reno, there is a lot of demand and sales are good - that's why we are now looking for sales representatives in several different locations to provide a quality service that is easy to stand behind. What's this job all about?",
+        "what_we_expect": [
+          "No specific skills or knowledge required for this role.",
+          "Desire to grow in sales and achieve results.",
+          "Enjoy being around people and willing to put personality at stake.",
+          "Not afraid of repetition or rejection.",
+          "Ambitious and positive attitude.",
+          "B driving licence and a car to drive."
+        ],
+        "job_responsibilities": [
+          "Specialize in one of the following services: plumbing, drainage, or electrical repairs.",
+          "Prevent damage and extend the life of your home by ensuring necessary plumbing, drainage, or electrical repairs are made.",
+          "Work independently and results require repetition, perseverance, and discipline.",
+          "Receive specific support for your work, including advice on the road and at customer visits."
+        ],
+        "what_we_offer": [
+          "Commission-paid sales structure.",
+          "Guaranteed salary of €1,600 per year for the first six months.",
+          "Tax-free allowances such as daily allowances and mileage allowance.",
+          "Occupational healthcare, dental care, ePASS sports, cultural and wellbeing benefit, and numerous discounts on products and services.",
+          "Opportunities for career advancement, including becoming a supervisor or trainer.",
+          "Opportunities to advance in sales and achieve results."
+        ],
+        "search_keywords": "Sales representative - Multiple locations Renoa Oulu ja 6 muuta other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
   }
 ]
