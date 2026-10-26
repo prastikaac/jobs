@@ -447211,5 +447211,64 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-25 09:44:13",
+    "jobs": [
+      {
+        "id": "343cb9b4",
+        "job_id": "metal-worker-tampere-343cb9b4",
+        "processed": true,
+        "title": "Metal worker",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8593907-metallityontekija/applications/new?promotion=2260751-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ceb5f35d-9fab-4fae-8ba1-01afce63ebf5/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/metal-worker-tampere-343cb9b4",
+        "date_posted": "2026-10-23",
+        "date_expires": "2026-10-30",
+        "scraped_at": "2026-10-25 09:44:13",
+        "open_positions": 1,
+        "salary_range": "* Palkkaus: tyypillisesti noin 12-13 € / h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Metal worker position available at Worknow Oy in Tampere. Check requirements and submit your application today.",
+        "description": "We are looking for a metal worker with experience and a keen attitude for a variety of jobs in an industrial production environment in Tampere. Ideal candidates will gain practical knowledge and develop into professionals in the metal industry. Duties include manufacturing and assembling metal parts, following drawings, and ensuring quality. Salary is typically around €12-13 per hour, with full-time employment (40 hours per week). We offer comprehensive training, a supportive community, and a modern production environment. Apply now for a chance to join a growing and evolving work environment.",
+        "what_we_expect": [
+          "Training in metallurgy or other technical competence.",
+          "Interest in the metal industry and practicing.",
+          "Careful and responsible work.",
+          "Ability to read drawings is considered an advantage.",
+          "Previous experience in metalworking is useful, but the main thing is the desire to learn and develop on the job."
+        ],
+        "job_responsibilities": [
+          "Manufacture and assembly of metal parts.",
+          "Working according to drawings.",
+          "Measurements and quality assurance.",
+          "Other diversified production tasks in the metals sector."
+        ],
+        "what_we_offer": [
+          "Salary: typically around €12-13 per hour.",
+          "Full-time employment (40 hours per week).",
+          "A comprehensive background and a wide range of tasks.",
+          "Opportunity to develop your skills in a modern production environment.",
+          "Support from a supportive and supportive working community."
+        ],
+        "search_keywords": "metal worker, industrial production, metal industry, job opening, employment opportunity",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
   }
 ]
