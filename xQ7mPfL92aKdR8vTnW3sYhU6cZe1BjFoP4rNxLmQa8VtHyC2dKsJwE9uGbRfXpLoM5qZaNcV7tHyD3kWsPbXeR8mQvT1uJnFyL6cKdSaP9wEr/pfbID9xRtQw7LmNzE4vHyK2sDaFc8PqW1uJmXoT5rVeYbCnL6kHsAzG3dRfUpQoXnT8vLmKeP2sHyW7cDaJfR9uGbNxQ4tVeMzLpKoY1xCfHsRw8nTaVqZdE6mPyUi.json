@@ -435557,5 +435557,68 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-26 11:50:48",
+    "jobs": [
+      {
+        "id": "2c3c585a",
+        "job_id": "technical-salesman-testing-of-electrical-equipment-helsinki-ja-1-muu-2c3c585a",
+        "processed": true,
+        "title": "Technical salesman (testing of electrical equipment)",
+        "company": "SGS Fimko Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/sgs-fimko-tekninen-myyja-sahkolaitteiden-testaus-sdsuu-20680025",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/sgs-fimko-tekninen-myyja-sahkolaitteiden-testaus-sdsuu-20680025",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/technical-salesman-testing-of-electrical-equipment-helsinki-ja-1-muu-2c3c585a",
+        "date_posted": "2026-10-26",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-10-26 11:50:48",
+        "open_positions": 1,
+        "salary_range": "salary requirements",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Join SGS Fimko Oy as a Technical salesman (testing of electrical equipment) and grow your career in Helsinki ja 1 muu. Check details and apply now.",
+        "description": "We are seeking two technical sales experts for SGS Fimko Oy in Helsinki and Espoo, Finland. This role focuses on testing and certification services, with a strong emphasis on customer-oriented sales. Responsibilities include identifying customer needs, developing technical solutions, and actively promoting offers to existing and new clients. The ideal candidate should have experience in technical sales, commercial thinking, and a proven track record in driving sales. The position offers comprehensive benefits, including extensive occupational healthcare, flexible working hours, and opportunities for career development. Interested parties should apply via the provided form by the 15th of this month.",
+        "what_we_expect": [
+          "Commercial thinking, technical expertise, and an interest in customer-oriented sales.",
+          "Appropriate technical training (e.g., electrical, electronic, telecommunications, or mechanical engineering) or commercial training and practical technical knowledge.",
+          "A few years of sales experience and the ability to structure customer needs into clear overall solutions.",
+          "Ability to evaluate the feasibility, costs, timelines, and risks of customer projects realistically.",
+          "Clear communication and excellent cooperation skills.",
+          "Initiative, systematicity, and a constant desire to learn new fluent written and oral skills in Finnish and English."
+        ],
+        "job_responsibilities": [
+          "Identify customer needs, including detailed product information, technical requirements, and target markets.",
+          "Develop a test plan based on the mapping and, where appropriate, develop a test plan.",
+          "Develop offers and ensure their technical scope, pricing starting points, feasibility, resources, risks, and timing and the profitability of the projects.",
+          "Promote open offers and negotiate next steps with the customer.",
+          "Sell services to existing and new customers, and identify cross-selling opportunities.",
+          "Keep the information up to date and contribute to the development of CRM best practices."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Extensive occupational healthcare.",
+          "Flexible working hours.",
+          "The possibility of part-time remote work.",
+          "The EPASS Lunch and Flex benefits.",
+          "Opportunities to be involved in building a new sales organisation and influencing role in its development."
+        ],
+        "search_keywords": "technical salesman, testing of electrical equipment, sales, testing, certification, SGS, Finland, Helsinki, Espoo, Pitäjänmäki, electronics, industry, health technology, telecommunications, defence, automotive, energy technology, customer-oriented sales, technical expertise, commercial thinking, customer needs, technical sales, test plan, feasibility, risks, customer projects, sales experience, communication skills, Finnish, English, driving licenses, travel requirements",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
