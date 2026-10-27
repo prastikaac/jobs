@@ -435500,5 +435500,62 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-26 11:45:19",
+    "jobs": [
+      {
+        "id": "0b445d94",
+        "job_id": "mechanic-pirkkala-0b445d94",
+        "processed": true,
+        "title": "Mechanic",
+        "company": "Wulff Works Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/31698090",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d201cc76-5ab9-4bdd-b0bd-28096232f5b4/en",
+        "job_employer_email": "tiikka.erkko@wulff.fi",
+        "job_employer_name": "Tiikka Erkko",
+        "job_employer_phone_no": "0504779092",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/mechanic-pirkkala-0b445d94",
+        "date_posted": "2026-10-24",
+        "date_expires": "2026-11-04",
+        "scraped_at": "2026-10-26 11:45:19",
+        "open_positions": 1,
+        "salary_range": "Palkkaus määräytyy osaamisesi mukaan, asettuen 14 - 19 €/h välille. Työsuhteessa noudatetaan Teknologiateollisuuden työehtosopimusta.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is looking for a skilled Manufacture from materials of any heading, except that of the product in Pirkkala.",
+        "description": "We are looking for a mechanic with a positive attitude and craftsmanship skills to join our client at Wulff Works Oy in Pirkkala. The tasks are arranged based on your skills, and you'll work with Fanuc-controlled machines and Wincam. CNC machining with variable series is involved, and programming skills (Fanuc, Wincam, Fagor, and Heidenhain) are considered an advantage. The materials are mainly soft metals, such as bronze, and the pieces vary in size from the size of a fist to larger ones. We offer varied job roles, the opportunity to influence your job description according to your skills, a pleasant working environment, and a salary based on your experience and collective bargaining agreement. Apply now for a job that fits your skills and interests.",
+        "what_we_expect": [
+          "Experience with CNC machinery (stepping or scraping).",
+          "Ability to use measuring instruments and work with precision.",
+          "Programming skills (Fanuc, Wincam, Fagor and Heidenhain).",
+          "Strong work ethic and willingness to learn new things."
+        ],
+        "job_responsibilities": [
+          "CNC machining with variable series.",
+          "Programming skills (Fanuc, Wincam, Fagor and Heidenhain).",
+          "Using measuring instruments and working with precision.",
+          "Strong work ethic and willingness to learn new things."
+        ],
+        "what_we_offer": [
+          "Varied job roles.",
+          "Opportunity to influence job description according to skills.",
+          "Pleasant working environment and clear work processes.",
+          "Salary according to experience and collective bargaining agreement."
+        ],
+        "search_keywords": "Mechanic, CNC, programming, experience, precision, work ethic",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
