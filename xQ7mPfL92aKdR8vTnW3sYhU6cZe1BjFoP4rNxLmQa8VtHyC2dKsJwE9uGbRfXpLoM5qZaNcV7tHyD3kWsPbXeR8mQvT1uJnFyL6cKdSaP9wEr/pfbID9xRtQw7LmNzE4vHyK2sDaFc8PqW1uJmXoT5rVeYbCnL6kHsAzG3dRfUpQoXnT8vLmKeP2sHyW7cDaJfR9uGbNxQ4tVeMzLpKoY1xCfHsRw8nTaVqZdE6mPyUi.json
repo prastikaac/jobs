@@ -436288,5 +436288,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-26 11:58:28",
+    "jobs": [
+      {
+        "id": "b78028a3",
+        "job_id": "organizing-assistant-tampere-b78028a3",
+        "processed": true,
+        "title": "Organizing assistant",
+        "company": "Kiinteistöliitto Pirkanmaa Ry",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kiinteistoliitto-pirkanmaa-jarjestoassistentti-sdsuu-20661495",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kiinteistoliitto-pirkanmaa-jarjestoassistentti-sdsuu-20661495",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/organizing-assistant-tampere-b78028a3",
+        "date_posted": "2026-10-21",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-10-26 11:58:28",
+        "open_positions": 1,
+        "salary_range": "2 600–3 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Organizing assistant position available at Kiinteistöliitto Pirkanmaa Ry in Tampere. Check requirements and submit your application today.",
+        "description": "We are looking for an organizing assistant for a fixed-term employment relationship with Kiinteistöliitto Pirkanmaa Ry, a 120-year-old regional trustee, influencer, and expert in housing and property management. The company, located in Tampere, offers a comprehensive role that combines member service, communication, and event coordination. The salary range is €2,600 to €3,200 per month, depending on experience and skills. The position is available from January 2027 or according to the contract, with a salary of €2,600 to €3,200 per month. The company values training, digital skills, and the ability to work both independently and in teams. The job offers access to a small specialist organization, collegial support in a national network, and comprehensive occupational health care services.",
+        "what_we_expect": [
+          "Good digital skills and proficiency with Microsoft 365, Meta Business Suite, and Canva.",
+          "Ability to use a variety of systems and tools effectively."
+        ],
+        "job_responsibilities": [
+          "Assist with member service, communication, and event coordination.",
+          "Manage tasks and prioritize them in changing situations."
+        ],
+        "what_we_offer": [
+          "Access to a small specialist organisation where work is visible and responsibilities are developed.",
+          "Collegial support in a national cooperation network.",
+          "Lunch and breakfast benefits.",
+          "Partial remote work option.",
+          "Comprehensive occupational health care services.",
+          "Free-time accident insurance."
+        ],
+        "search_keywords": "organizing assistant, real estate, assistant, job, position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
   }
 ]
