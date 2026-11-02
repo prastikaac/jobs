@@ -387383,5 +387383,242 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-27 13:30:26",
+    "jobs": [
+      {
+        "id": "b072c0c3",
+        "job_id": "accounting-officer-espoo-b072c0c3",
+        "processed": true,
+        "title": "Accounting officer",
+        "company": "Veolia Services Suomi Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/veolia-services-suomi-oy-kirjanpitaja-sdsuu-20682903",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/veolia-services-suomi-oy-kirjanpitaja-sdsuu-20682903",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/accounting-officer-espoo-b072c0c3",
+        "date_posted": "2026-10-27",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-10-27 13:30:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next career step as a Accounting officer at Veolia Services Suomi Oy. Great opportunity in Espoo—apply now.",
+        "description": "We are looking for a qualified Accounting Officer at Veolia Services Suomi Oy in Espoo, Finland. This permanent position offers a stable and evolving business environment, with a focus on financial roles. Responsibilities include handling purchase and sales invoices, managing purchase orders, and providing user training. The ideal candidate should have a background in accounting, preferably with experience in a similar role. Strong communication skills, proficiency in spreadsheets, and a positive attitude are essential. The role also offers a range of development opportunities and benefits such as earnings bonuses, health insurance, and the Veolia share scheme. The office is located in Espoo's Keilaranga, and the position is a hybrid role.",
+        "what_we_expect": [
+          "Appropriate training experience.",
+          "Knowledge of Reipää.",
+          "The main tasks are the handling of purchase and sales invoices, the management of purchase orders and user training/guidance."
+        ],
+        "job_responsibilities": [
+          "Handling purchase and sales invoices.",
+          "Managing purchase orders.",
+          "User training/guidance."
+        ],
+        "what_we_offer": [
+          "Stable and ever-evolving business environment.",
+          "Responsibility.",
+          "Development opportunities.",
+          "Health insurance.",
+          "Life insurance.",
+          "Benefits of Edenred boost."
+        ],
+        "search_keywords": "accounting officer, finance team, permanent job, Finland, Veolia",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-27 13:30:31",
+    "jobs": [
+      {
+        "id": "ba32905c",
+        "job_id": "machine-operators-and-process-managers-riihimäki-ja-1-muu-ba32905c",
+        "processed": true,
+        "title": "Machine operators and process managers",
+        "company": "Sako Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Riihimäki ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/sako-koneoperaattoreita-ja-prosessinhoitajia-sdsuu-20680203",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/sako-koneoperaattoreita-ja-prosessinhoitajia-sdsuu-20680203",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/machine-operators-and-process-managers-riihimäki-ja-1-muu-ba32905c",
+        "date_posted": "2026-10-26",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-10-27 13:30:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Machine operators and process managers position available at Sako Oy in Riihimäki ja 1 muu. Check requirements and submit your application today.",
+        "description": "Sako Oy is seeking experienced Machine Operators and Process Managers for its cartridge manufacturing business in Riihimäki and nearby locations. This role involves operating machinery and managing production processes. Ideal candidates should enjoy hands-on work, be familiar with automation equipment, and possess multi-skilling abilities. The company offers comprehensive training, a modern factory environment, and a growing international export company. Permanent employment with opportunities for growth is available. A security clearance and drug test are required, and some tasks will be performed on a temporary basis until 2027. Interested applicants should apply by 11th of October 2023.",
+        "what_we_expect": [
+          "Prior experience in automation equipment.",
+          "Series production experience.",
+          "Appropriate training."
+        ],
+        "job_responsibilities": [
+          "Operate machinery and equipment.",
+          "Manage production processes.",
+          "Ensure quality of products."
+        ],
+        "what_we_offer": [
+          "Comprehensive training.",
+          "Continuous team support.",
+          "Reliable and growing international export company."
+        ],
+        "search_keywords": "machine operators, process managers, cartridge manufacturing, cartridge components, automation equipment, series production, quality assurance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-27 13:30:34",
+    "jobs": [
+      {
+        "id": "a08758cb",
+        "job_id": "senior-pricing-analyst-b2b-helsinki-a08758cb",
+        "processed": true,
+        "title": "Senior Pricing Analyst, B2B",
+        "company": "Dna",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/senior-pricing-analyst-b2b-sdsna-20680319",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/senior-pricing-analyst-b2b-sdsna-20680319",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/senior-pricing-analyst-b2b-helsinki-a08758cb",
+        "date_posted": "2026-10-27",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-10-27 13:30:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Senior Pricing Analyst, B2B role at DNA. Join a growing team and build your career in Helsinki.",
+        "description": "Senior Pricing Analyst, B2B Would you like to combine economic analysis, computational models, data and AI tools in your work with practical pricing decisions? We're currently looking for a new senior-level analyst to join DNA's Communication and Customer Service Solutions team for pricing duties. The job is located in Helsinki, but you can also work remotely with us. What kind of assignments do you get to work on? As a Senior Pricing Analyst, you will be responsible for the analysis, decision-making and development of pricing for corporate products and services in collaboration with business, sales, wholesale and other key stakeholders.",
+        "what_we_expect": [
+          "We're currently looking for a new senior-level analyst to join DNA's Communication and Customer Service Solutions team for pricing duties.",
+          "The job is located in Helsinki, but you can also work remotely with us.",
+          "What kind of assignments do you get to work on?",
+          "What can we get you?",
+          "You will develop pricing models and build AI-enabled ways to analyse, report and prepare decisions.",
+          "In this role, you will be responsible for pricing decisions in your area and their business impact."
+        ],
+        "job_responsibilities": [
+          "We're currently looking for a new senior-level analyst to join DNA's Communication and Customer Service Solutions team for pricing duties.",
+          "The job is located in Helsinki, but you can also work remotely with us.",
+          "What kind of assignments do you get to work on?",
+          "What can we get you?",
+          "You will develop pricing models and build AI-enabled ways to analyse, report and prepare decisions.",
+          "In this role, you will be responsible for pricing decisions in your area and their business impact."
+        ],
+        "what_we_offer": [
+          "We're currently looking for a new senior-level analyst to join DNA's Communication and Customer Service Solutions team for pricing duties.",
+          "The job is located in Helsinki, but you can also work remotely with us.",
+          "What kind of assignments do you get to work on?",
+          "What can we get you?",
+          "You will develop pricing models and build AI-enabled ways to analyse, report and prepare decisions.",
+          "In this role, you will be responsible for pricing decisions in your area and their business impact."
+        ],
+        "search_keywords": "Senior Pricing Analyst, B2B DNA Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-27 13:30:37",
+    "jobs": [
+      {
+        "id": "e1ac1395",
+        "job_id": "product-test-engineer-turku-e1ac1395",
+        "processed": true,
+        "title": "Product test engineer",
+        "company": "Takomo Golf",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/takomo-golf-product-test-engineer-sdsuu-20680339",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/takomo-golf-product-test-engineer-sdsuu-20680339",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/product-test-engineer-turku-e1ac1395",
+        "date_posted": "2026-10-26",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-10-27 13:30:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Build your future with Takomo Golf as a Product test engineer in Turku. Learn more about the role and apply now.",
+        "description": "Join us as a Product Test Engineer at Takomo Golf in Turku, Finland! This is a new position focused on enhancing the testing process for our golf clubs. Reporting to the Head of Product, you'll design testing standards, run prototype and benchmark programs, and turn measurements into performance data for designers. Based at the office with a hybrid model, you'll need to be on-site for certain tasks. The role involves hands-on testing with equipment, so you'll need to be comfortable with equipment and have a good understanding of golf club performance. We're a collaborative team that values teamwork and a local community feel. Apply by November 23rd!",
+        "what_we_expect": [
+          "Hands-on testing experience.",
+          "Experience with testing equipment.",
+          "Strong communication skills.",
+          "Ability to work in a collaborative environment."
+        ],
+        "job_responsibilities": [
+          "Design test standards.",
+          "Run prototype test rounds.",
+          "Analyze and archive results.",
+          "Run robot and player testing.",
+          "Capture launch monitor data.",
+          "Test durability, fatigue, and cosmetic wear."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Hybrid work model.",
+          "On-site testing at the office.",
+          "Access to advanced testing equipment.",
+          "Opportunity to work with a fast-growing team.",
+          "Participation in company culture."
+        ],
+        "search_keywords": "product test engineer, testing engineer, product testing, Takomo, Finland, job opening",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
   }
 ]
