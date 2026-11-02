@@ -387620,5 +387620,69 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-27 13:36:57",
+    "jobs": [
+      {
+        "id": "da08a738",
+        "job_id": "regional-manager-building-surveying-services-surveying-group-turku-da08a738",
+        "processed": true,
+        "title": "Regional manager, building surveying services, surveying group.",
+        "company": "Rakennusalan Mittauspalvelut | Mittausgroup / Porkkana ja Keppi",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/aluejohtaja-mittausgroup-spsor-20644671",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/aluejohtaja-mittausgroup-spsor-20644671",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/regional-manager-building-surveying-services-surveying-group-turku-da08a738",
+        "date_posted": "2026-10-26",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-10-27 13:36:57",
+        "open_positions": 1,
+        "salary_range": "Salary commensurate with job responsibilities a",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Exciting Regional manager, building surveying services, surveying group. position available at Rakennusalan Mittauspalvelut | Mittausgroup / Porkkana ja...",
+        "description": "Regional manager, building surveying services, surveying group. MittausGroup Oy is Finland's largest company specialising in measurements. We operate throughout Finland and we also have operations in Sweden. Our projects include infrastructure, railways, construction, tunnelling and mining. The company was founded in 2021 as a result of the merger of several operators, and we employ around 85 professionals in the field of measurement. Our aim is to become a leading player in the sector and to expand into the Nordic countries. At the same time, we want to offer our employees the best workplace in the industry, where competence, responsibility and a good working environment go hand in hand. Do you want to build and lead the growth of the Measurement Group in the Turku region?",
+        "what_we_expect": [
+          "Regional manager, building surveying services, surveying group.",
+          "MittausGroup Oy is Finland's largest company specialising in measurements.",
+          "We operate throughout Finland and we also have operations in Sweden.",
+          "Our projects include infrastructure, railways, construction, tunnelling and mining.",
+          "Our aim is to become a leading player in the sector and to expand into the Nordic countries.",
+          "Do you want to build and lead the growth of the Measurement Group in the Turku region?"
+        ],
+        "job_responsibilities": [
+          "Regional manager, building surveying services, surveying group.",
+          "MittausGroup Oy is Finland's largest company specialising in measurements.",
+          "We operate throughout Finland and we also have operations in Sweden.",
+          "Our projects include infrastructure, railways, construction, tunnelling and mining.",
+          "Our aim is to become a leading player in the sector and to expand into the Nordic countries.",
+          "Do you want to build and lead the growth of the Measurement Group in the Turku region?"
+        ],
+        "what_we_offer": [
+          "Regional manager, building surveying services, surveying group.",
+          "MittausGroup Oy is Finland's largest company specialising in measurements.",
+          "We operate throughout Finland and we also have operations in Sweden.",
+          "Our projects include infrastructure, railways, construction, tunnelling and mining.",
+          "Our aim is to become a leading player in the sector and to expand into the Nordic countries.",
+          "Do you want to build and lead the growth of the Measurement Group in the Turku region?"
+        ],
+        "search_keywords": "Regional manager, building surveying services, surveying group. Rakennusalan Mittauspalvelut | Mittausgroup / Porkkana ja Keppi Turku other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
   }
 ]
