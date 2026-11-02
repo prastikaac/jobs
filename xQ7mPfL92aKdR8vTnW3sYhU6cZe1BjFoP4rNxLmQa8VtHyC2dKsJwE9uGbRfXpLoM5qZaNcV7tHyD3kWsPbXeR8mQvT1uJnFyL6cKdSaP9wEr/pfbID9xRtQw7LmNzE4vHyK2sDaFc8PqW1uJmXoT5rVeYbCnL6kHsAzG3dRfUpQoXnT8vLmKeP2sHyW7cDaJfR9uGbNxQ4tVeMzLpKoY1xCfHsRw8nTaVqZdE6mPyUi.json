@@ -410292,6 +410292,1316 @@
         "search_keywords": "snow remover bicycle truck downtown Salo winter season",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "d9adf1ba",
+        "job_id": "early-childhood-nurse-nurmijärvi-d9adf1ba",
+        "processed": true,
+        "title": "Early childhood nurse",
+        "company": "Touhula-päiväkodit",
+        "job_category": "education",
+        "jobLocation": [
+          "Nurmijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/varhaiskasvatuksen-lastenhoitaja/8R2p72",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e1694651-4952-4b41-ab70-a0360e596ef9/en",
+        "job_employer_email": "johanna.jarvela@touhula.fi",
+        "job_employer_name": "Johanna Järvelä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nurse-nurmijärvi-d9adf1ba",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-09",
+        "scraped_at": "2026-10-29 22:40:18",
+        "open_positions": 1,
+        "salary_range": "Tarjoamme varhaiskasvatuksen lastenhoitajalle palkan, joka kokoaikaisella työntekijällä sijoittuu välille 2449,58 - 2749,79€ /kk. Lopullinen palkka määräytyy työkokemusvuosien sekä mahdollisen tehtäväkohtaisen tai henkilökohtaisen palkanlisän mukaan.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a Early childhood nurses at Touhula-päiväkodit. Great opportunity in Nurmijärvi—apply now.",
+        "description": "We are looking for a dedicated early childhood nurse at Touhula-päiväkodit in Nurmijärvi. This position is part of a warm and supportive community dedicated to providing quality early childhood education. As an early childhood nurse, you will be part of a team that values children, families, and the well-being of children. Your duties include implementing pedagogy, ensuring a safe and stimulating learning environment, and fostering positive interactions with families. With a salary ranging from €2449.58 to €2749.79 per year, this role offers a comprehensive training course, individual guidance, and a community of motivated professionals. Join us in creating a nurturing environment for the future of children.",
+        "what_we_expect": [
+          "Qualification as an early childhood care provider under the Early Childhood Education Act.",
+          "Ability to build open and professional interaction with all stakeholders.",
+          "Responsible work and the courage to experiment with new ways of working, actively developing one's own professional skills."
+        ],
+        "job_responsibilities": [
+          "Implementing pedagogy: You will participate in the design and evaluation of quality early childhood education as part of a team, drawing on your own strengths. You'll conduct small-group and full-time pedagogy in accordance with Touhula Rhythm.",
+          "Responsibility for your own small group: you will be responsible for the activities of your own small group and will participate in the pedagogical documentation and the development of the early childhood plans together with the team.",
+          "Providing a learning environment: You will ensure that the learning environment of the children's group is diverse, safe and clean.",
+          "Positive customer experience: you build trust and open interaction with families. You create a positive emotional atmosphere that is transmitted through every encounter."
+        ],
+        "what_we_offer": [
+          "Occupational health and safety in Pihla Castle.",
+          "Non-passport allowance (EUR 200 a year).",
+          "Workers' allowance for joint recreational and non-working days (€80/year).",
+          "A thorough briefing.",
+          "High-quality teaching tools.",
+          "Various training opportunities and continuing training grants."
+        ],
+        "search_keywords": "early childhood nurse, childcare, early childhood education, childcare center, childcare professional",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:19",
+    "jobs": [
+      {
+        "id": "a0d9de28",
+        "job_id": "head-of-ict-development-artificial-intelligence-software-dev-lahti-a0d9de28",
+        "processed": true,
+        "title": "Head of ICT development, artificial intelligence software development",
+        "company": "Päijät-Hämeen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/PAIJATHA-14-36-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14cf1e5d-3b44-4175-81c2-a7bdaf552974/en",
+        "job_employer_email": "rekrytointi@paijatha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/head-of-ict-development-artificial-intelligence-software-dev-lahti-a0d9de28",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:19",
+        "open_positions": 1,
+        "salary_range": "5989,80 €/kk + HYVTES mukaiset lisät (yli 10 vuotta, 8 %)",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Head of ICT development, artificial intelligence software development job in Lahti?",
+        "description": "We are looking for a Lead AI Software Engineer to join our team in Lahti, Finland. This role involves building AI solutions that improve the daily lives of professionals in the Päijät-Hämeen welfare area. The ideal candidate will have strong experience in software development, AI software development, and cloud environments. They will be responsible for designing and building AI-based software solutions, making technology choices, and ensuring the solutions are secure, scalable, and maintainable. The successful candidate will also be involved in the early stages of AI capabilities and will influence the kind of solutions and expertise created around them. This is a permanent position with a competitive salary and benefits.",
+        "what_we_expect": [
+          "Strong recent experience in software development and in the independent design, implementation, and export to production of evidence-intensive software solutions.",
+          "Practical experience in the development of software solutions using generative artificial intelligence.",
+          "Strong Python knowledge and experience in API development, system integration, Git, and modern software development experience in technical responsibility and in making or preparing architectural and technological choices.",
+          "Experience in building and exporting to production of cloud software and willingness to work in the Microsoft Azure environment.",
+          "Understanding of the testability, security, performance, monitoring, and maintenance of production memory, taking on new technological challenges, and leading the way in creating the foundation for a highly integrated and cost-effective solution.",
+          "Experience with Azure AI Foundry and Azure OpenAI, experience with AI agents, RAG architectures, vector graphics, and MCP, experience with software development of applications using generative AI, AI agents, or multi-stage AI workflows, such as Semantic Kernel, LangGraph, or similar technologies, experience with CI/CD and DevOps practices, and experience with exporting and monitoring AI solutions into production management, experience with evaluating and measuring the quality of AI solutions, experience with Copilot Studio, Power Automation, Power Platform, or other AI automation and Microsoft technologies."
+        ],
+        "job_responsibilities": [
+          "Design and build demanding AI-based software solutions.",
+          "Lead by technical example, evaluate deployment solutions, and develop technical sparring and mentors.",
+          "ICT coordinator, HR officer Outi Julén: +358447297057 Outi. I'm sorry to bother you. Fi."
+        ],
+        "what_we_offer": [
+          "A significant technical role in building the AI capability of the Wellbeing Area and influencing technologies, development practices, solutions, and the expertise of the AI team.",
+          "Good work tools, skills development, and comprehensive work capacity support services.",
+          "A meaningful job at the forefront of the digitisation of the Finnish welfare sector, a skilled working community, and an atmosphere that encourages flexibility in reconciling work and other life, including policies under the Population Association's Family-Friendly Workplace programme."
+        ],
+        "search_keywords": "Head of ICT development, artificial intelligence software development, Lead AI Software Engineer, AI-based software solutions, software development, generative artificial intelligence, Python, Azure, Azure AI Foundry, Azure OpenAI, AI agents, RAG architectures, vector graphics, MCP, software development of applications, generative AI, AI agents, multi-stage AI workflows, Semantic Kernel, LangGraph, CI/CD, DevOps practices, exporting and monitoring AI solutions, evaluating and measuring the quality of AI solutions, Copilot Studio, Power Automation, Power Platform, AI automation, Microsoft technologies.",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:20",
+    "jobs": [
+      {
+        "id": "8eb96017",
+        "job_id": "head-of-ict-development-regulatory-certification-of-artifici-lahti-8eb96017",
+        "processed": true,
+        "title": "Head of ICT development, regulatory certification of artificial intelligence",
+        "company": "Päijät-Hämeen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/PAIJATHA-14-34-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/25adf262-89f7-453a-8df1-8fd556d4a2a0/en",
+        "job_employer_email": "rekrytointi@paijatha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/head-of-ict-development-regulatory-certification-of-artifici-lahti-8eb96017",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:20",
+        "open_positions": 1,
+        "salary_range": "5989,80 €/kk + mahdollinen työkokemuslisä (max. 8 % kun 10 vuotta relevanttia työkokemusta)",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Päijät-Hämeen hyvinvointialue as a Head of ICT development, regulatory certification of artificial intelligence and grow your career in Lahti.",
+        "description": "Head of ICT development, regulatory certification of artificial intelligence The security of AI arises when regulatory, regulatory, data protection and information security requirements are translated into practical actions. We're recruiting a head of ICT development for our Digital and Artificial Intelligence Innovation team to be responsible for regulatory certification of AI. You anticipate obligations and risks, turn them into actionable requirements and implement solutions together with experts. You don't stay to point out flaws, you help fix them and make sure the requirements are met. What do you get to do?",
+        "what_we_expect": [
+          "In your assignment.",
+          "We also value.",
+          "In your application, give an example.",
+          "ICT coordinator, HR officer Outi Julén: +358447297057 Outi. I'm sorry to bother you. Fi."
+        ],
+        "job_responsibilities": [
+          "In your assignment.",
+          "We also value.",
+          "In your application, give an example.",
+          "ICT coordinator, HR officer Outi Julén: +358447297057 Outi. I'm sorry to bother you. Fi."
+        ],
+        "what_we_offer": [
+          "In your assignment.",
+          "We also value.",
+          "In your application, give an example.",
+          "ICT coordinator, HR officer Outi Julén: +358447297057 Outi. I'm sorry to bother you. Fi."
+        ],
+        "search_keywords": "Head of ICT development, regulatory certification of artificial intelligence Päijät-Hämeen hyvinvointialue Lahti other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "544f1853",
+        "job_id": "head-of-ict-development-artificial-intelligence-procurement--lahti-544f1853",
+        "processed": true,
+        "title": "Head of ICT development, artificial intelligence procurement and partnerships",
+        "company": "Päijät-Hämeen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/PAIJATHA-14-35-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2d3b96f3-4b62-4794-948d-801413f710f2/en",
+        "job_employer_email": "rekrytointi@paijatha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/head-of-ict-development-artificial-intelligence-procurement--lahti-544f1853",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:20",
+        "open_positions": 1,
+        "salary_range": "5989,80 €/kk + HYVTES mukaiset lisät (yli 10 vuotta, 8 %)",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Päijät-Hämeen hyvinvointialue as a Head of ICT development, artificial intelligence procurement and partnerships and grow your career in Lahti.",
+        "description": "We are seeking a dedicated Head of ICT development, artificial intelligence procurement, and partnerships to join our dynamic team in Lahti. This role is pivotal in shaping how artificial intelligence is acquired and utilized within the Päijät-Hämeen welfare area. The AI market is evolving rapidly, and we need a permanent expert to build business models that integrate organizational needs, technology market opportunities, and sustainable partnerships. This role involves leading the preparation of AI procurement and partnerships, working closely with services, procurement, legal, and technical experts to develop and deploy AI solutions effectively.",
+        "what_we_expect": [
+          "Strong experience in managing procurement of technology, ICT, software and expert services requiring strong experience in contract negotiation and management of strategic supplier relationships/partnerships.",
+          "Understanding of the commercial, technical and contractual specificities of artificial intelligence, data, cloud or SaaS solutions.",
+          "Ability to link the needs of different stakeholders, evaluate alternatives and lead multidisciplinary entities in decision-making and implementation."
+        ],
+        "job_responsibilities": [
+          "Lead the preparation of AI procurement and partnerships together with services, procurement, legal and technical experts in the welfare area.",
+          "Gather needs, map the supplier market and evaluate alternatives; lead procurement from need identification to market dialogue, competition and contract negotiations.",
+          "Develop procurement, contract and partnership models for AI solutions; build and lead supplier cooperation from deployment to development during the contract period.",
+          "Monitor procurement objectives, benefits, costs and risks."
+        ],
+        "what_we_offer": [
+          "Comprehensive work ability support services.",
+          "Modern work tools.",
+          "Opportunity to develop skills as part of a skilled and supportive work community.",
+          "Proud working community and a supportive atmosphere for work-life balance.",
+          "Practical details of the task.",
+          "Access to the European Commission's report on the implementation of the programme."
+        ],
+        "search_keywords": "Head of ICT development, artificial intelligence procurement and partnerships",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "55e08f4d",
+        "job_id": "concrete-element-workers-for-uusimaa-factories-hyvinkää-55e08f4d",
+        "processed": true,
+        "title": "Concrete element workers for Uusimaa factories",
+        "company": "Amiko Vantaa Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Hyvinkää",
+          "Järvenpää",
+          "Kerava",
+          "Lohja",
+          "Nurmijärvi",
+          "Tuusula",
+          "Vantaa",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://amiko.likeit.fi/apply/117127187",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4ba73fa5-4353-4a32-a5c0-9d0d0bcffade/en",
+        "job_employer_email": "william.knoblock@amiko.fi",
+        "job_employer_name": "William Knoblock",
+        "job_employer_phone_no": "+358505815348",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/concrete-element-workers-for-uusimaa-factories-hyvinkää-55e08f4d",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-10-29 22:40:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Amiko Vantaa Oy as a Concrete element workers for Uusimaa factories in Hyvinkää. Learn more about the role and apply now.",
+        "description": "Concrete element workers for Uusimaa factories Are you ready to build Finland concretely? Our client company is one of Finland's largest concrete element manufacturers and we are now looking for skilled and motivated concrete element workers for them in several factories in Uusimaa. What does the job involve? Your job is to manufacture high-quality concrete elements in a modern factory environment. Manufacture from materials of any heading, except that of the product tiles and walls pit and deck tiles elevator shafts balcony elements pillars and beams other structural elements The work is varied and varied: mold preparation, ironing, concreting, finishing elements and quality control. You'll be working in a team where safety, quality and efficiency are paramount. Who's up for this?",
+        "what_we_expect": [
+          "We're looking for individuals who have.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "We're looking for individuals who have.",
+          "Daily operational tasks.",
+          "Supporting the team."
+        ],
+        "what_we_offer": [
+          "We're looking for individuals who have.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "Concrete element workers for Uusimaa factories Amiko Vantaa Oy Hyvinkää other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:24",
+    "jobs": [
+      {
+        "id": "fa592185",
+        "job_id": "the-tempest-duo-to-inari-inari-fa592185",
+        "processed": true,
+        "title": "The Tempest Duo to Inari",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Inari"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92077895",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8a3012e0-f70b-4cd8-8adf-2324e5a21cbd/en",
+        "job_employer_email": "janne.tauriainen@carrot.fi",
+        "job_employer_name": "Janne Tauriainen",
+        "job_employer_phone_no": "+358400406633",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/the-tempest-duo-to-inari-inari-fa592185",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-06",
+        "scraped_at": "2026-10-29 22:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a The Tempest Duo to Inari at Carrot Pohjanmaa Oy. Great opportunity in Inari—apply now.",
+        "description": "We are looking for a professional timpani duo to join our client in Inari. The position is for a full-time, permanent role, with work starting immediately and expected to last until early December. The client is seeking a traveling couple with a bachelor's degree in construction or previous experience in timber work. A valid occupational safety card is required. Applicants must have their own tools and be able to work independently. To apply, visit the link provided or log in with your existing Carrot account to update your previous application. For more information, contact Janne Tauriae at 0400 406 633, Monday to Friday, 8 a.m. to 4 p.m. For job inquiries, visit <http://www.carrot.com>.",
+        "what_we_expect": [
+          "Bachelor's degree in construction or previous experience in timber work.",
+          "Valid occupational safety card.",
+          "Applicants must have their own tools."
+        ],
+        "job_responsibilities": [
+          "Traveling couple required for a new project in Inari, focusing on wall plastering and other related tasks.",
+          "Applicants should have a bachelor's degree in construction or previous experience in timber work.",
+          "Valid occupational safety card required for work.",
+          "Applicants must have their own tools."
+        ],
+        "what_we_offer": [
+          "Traveling couple for the project.",
+          "Valid occupational safety card.",
+          "Applicants must have their own tools."
+        ],
+        "search_keywords": "The Tempest Duo, Inari, wall plastering, construction, timber work, occupational safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "dba3a6c6",
+        "job_id": "full-time-teacher-of-mathematics-and-chemistry-helsinki-dba3a6c6",
+        "processed": true,
+        "title": "Full-time teacher of mathematics and chemistry",
+        "company": "Lauttasaaren Yhteiskoulun Säätiö Sr, Peruskoulu",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:jouni.rasa@lauttasaarenyhteiskoulu.fi?subject=Application%20for%20the%20Job%20-%20Full-time%20teacher%20of%20mathematics%20and%20chemistry&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Full-time%20teacher%20of%20mathematics%20and%20chemistry.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2c6cbe09-e517-4dc6-913e-660bdc5298af/en",
+        "job_employer_email": "jouni.rasa@lauttasaarenyhteiskoulu.fi",
+        "job_employer_name": "Jouni Rasa",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/full-time-teacher-of-mathematics-and-chemistry-helsinki-dba3a6c6",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-10-29 22:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Full-time teacher of mathematics and chemistry, Swedish language bath job in Helsinki?",
+        "description": "Lauttasaaren Yhteiskoulun Säätiö Sr, Peruskoulu is seeking a full-time teacher of mathematics and chemistry, specifically for the years 7 to 9, located in the Lauttasaari district of Helsinki. The position requires a Swedish language course and is part of the High School of International Business. The school offers a comprehensive education including science, Swedish language, English language, and sports classes. The salary is based on the Finnish language education system, and the application process can be found at jouni.rasa@lauttasaarenyhteeskoulu.fi. The school is situated in the centre of the island.",
+        "what_we_expect": [
+          "Bachelor's degree in Mathematics and Chemistry.",
+          "Native fluency in Swedish language.",
+          "Experience teaching mathematics and chemistry to students."
+        ],
+        "job_responsibilities": [
+          "Teach mathematics and chemistry to students in grades 7 to 9.",
+          "Teach Swedish language to students in grades 7 to 9.",
+          "Organize the Swedish language course as part of the mathematics and chemistry curriculum."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits such as health insurance.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "full-time teacher mathematics chemistry swedish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "19d1581b",
+        "job_id": "installer-of-floor-coverings-lahti-19d1581b",
+        "processed": true,
+        "title": "Installer of floor coverings",
+        "company": "VN Project Oy, Lahti",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lahti",
+          "Hollola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/adda088b-5ab0-4ae4-b4a4-103def25d286/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/adda088b-5ab0-4ae4-b4a4-103def25d286/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/installer-of-floor-coverings-lahti-19d1581b",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-12",
+        "scraped_at": "2026-10-29 22:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with VN Project Oy, Lahti as a Installer of floor coverings in Lahti. Learn more about the role and apply now.",
+        "description": "We are looking for a skilled flooring technician to join our team at VN Project Oy in Lahti. This is a permanent position offering full-time work and a competitive salary. We expect you to be proficient in Finnish and able to work independently, as you will be responsible for installing various types of floor coverings across Lahti and the surrounding areas. Our modern vehicle fleet and modern tools will be at your disposal, and we offer assistance with finding accommodation to support your relocation. If you have a strong background in flooring installation and are looking for a career where you can make a difference, this could be the perfect opportunity for you.",
+        "what_we_expect": [
+          "Proficiency in using floor covering materials.",
+          "Knowledge of different types of floor coverings.",
+          "Good communication skills."
+        ],
+        "job_responsibilities": [
+          "Install various types of floor coverings.",
+          "Ensure proper installation techniques.",
+          "Maintain and repair floor coverings as needed."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Health insurance.",
+          "Paid vacation time."
+        ],
+        "search_keywords": "floor coverings installer flooring technician",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "2e16c0ef",
+        "job_id": "demolition-worker-for-the-streams-virrat-2e16c0ef",
+        "processed": true,
+        "title": "Demolition worker for the Streams",
+        "company": "Wulff Works Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Virrat"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/63107508",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/17351278-1314-47b2-b319-115e129568d4/en",
+        "job_employer_email": "riikka.pihlaja@wulff.fi",
+        "job_employer_name": "Riikka Pihlaja",
+        "job_employer_phone_no": "0444936079",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/demolition-worker-for-the-streams-virrat-2e16c0ef",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-04",
+        "scraped_at": "2026-10-29 22:40:24",
+        "open_positions": 1,
+        "salary_range": "Palkkaus: Palkka määräytyy infra-alan työehtosopimuksen sekä valittavan henkilön osaamisen mukaisesti. Tehtävän palkkahaitari on 13,00–16,00 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Wulff Works Oy as a Demolition worker for the Streams in Virrat. Learn more about the role and apply now.",
+        "description": "We are looking for a demolition worker for our client on a two-month, fixed-term project. The work will commence in early November. The tasks include supporting construction site work, dismantling, packaging material, sorting waste, and operating as a machine driver's partner. We offer a salary of €13,0016,00 per hour, determined according to the collective agreement and the selected candidate's competence. Previous experience in demolition or construction is advantageous, but motivation and a desire to work are most important. We provide assistance with finding accommodation. The position is permanent and the working environment is pleasant, with familiarity with the job.",
+        "what_we_expect": [
+          "Previous experience in demolition or construction.",
+          "Motivation and desire to work.",
+          "The work will begin in early November."
+        ],
+        "job_responsibilities": [
+          "Supporting work on the construction site.",
+          "Dismantling material.",
+          "Sorting waste.",
+          "Working as a machine driver's partner."
+        ],
+        "what_we_offer": [
+          "Approximately 2 months of work.",
+          "Opportunity to gain experience in the construction industry.",
+          "Pleasant working environment.",
+          "Familiarity with the job."
+        ],
+        "search_keywords": "Demolition worker, construction site, demolition, construction, job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "dcfc85fc",
+        "job_id": "telephone-and-weather-shield-installer-äänekoski-dcfc85fc",
+        "processed": true,
+        "title": "Telephone and Weather Shield Installer",
+        "company": "Kovamet toimisto",
+        "job_category": "construction",
+        "jobLocation": [
+          "Äänekoski",
+          "Rauma",
+          "Lahti",
+          "Tornio",
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f9421185-1a3e-4f09-be29-234d21683bef/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f9421185-1a3e-4f09-be29-234d21683bef/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/telephone-and-weather-shield-installer-äänekoski-dcfc85fc",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-10-29 22:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Other",
+          "No , you 're not ."
+        ],
+        "meta_description": "Start your next career step as a Manufacture in which the value of all the materials used does not exceed 30% of the ex-works price of the product at Kovamet...",
+        "description": "Manufacture in which the value of all materials used does not exceed 30% of the ex-works price of the product. We are seeking skilled and motivated workers for the installation and dismantling of racks and weatherproofing. Prior experience in racking is highly valued, and welding knowledge is considered an advantage. This role offers a permanent position with opportunities for growth and continuous work in various locations across Finland. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Previous work experience.",
+          "Prior experience in racking is considered an advantage.",
+          "Welding knowledge is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Install racks and weatherproofing.",
+          "Dismantle racks and weather barriers.",
+          "Install and dismantle racks and weather barriers.",
+          "Prior experience in racking is considered an advantage.",
+          "Welding knowledge is considered an advantage."
+        ],
+        "what_we_offer": [
+          "Workplaces located all over Finland.",
+          "Contact us and tell us briefly about your previous work experience.",
+          "Requests for installers of telephone and weather shields."
+        ],
+        "search_keywords": "telephone weather shield installer, telephone and weather shield installer, telephone and weather shield installer job, telephone and weather shield installer requirements, telephone and weather shield installer benefits",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:26",
+    "jobs": [
+      {
+        "id": "fbdeab1c",
+        "job_id": "a-personal-assistant-to-the-asikkala-väkseysä-asikkala-fbdeab1c",
+        "processed": true,
+        "title": "A personal assistant to the Asikkala Väkseysä",
+        "company": "Onni",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Asikkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.onnion.fi/jobs/8637604-henkilokohtainen-avustaja-asikkalan-vaaksyyn/applications/new?promotion=2271671-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f812954a-f5de-442a-8499-50e5db966c24/en",
+        "job_employer_email": "ritva.tuppurainen@onnion.fi",
+        "job_employer_name": "Ritva Tuppurainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/a-personal-assistant-to-the-asikkala-väkseysä-asikkala-fbdeab1c",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-10-29 22:40:26",
+        "open_positions": 1,
+        "salary_range": "Palkkaus yksityisen sosiaalipalvelualan työehtosopimuksen mukaisesti (G16A): 13,20 € – 14,51 €/h + mahdolliset vuorokohtaiset lisät.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a A personal assistant to the Asikkala Väkseysä role at Onni. Join a growing team and build your career in Asikkala.",
+        "description": "Onni is seeking a dedicated personal assistant for their Asikkala Väkseysä. This role involves assisting clients with daily chores and activities outside the home, tailored to their individual needs. With a driving licence and the ability to use your own car, you'll be part of a modern vehicle fleet. No prior experience is required, but a positive attitude and willingness to learn are essential. The job offers comprehensive training and ongoing support, ensuring you can seamlessly integrate into the team. Full-time work, permanent continuity, and a competitive salary are available. Finnish proficiency at level B2 is expected, and a driving licence is a plus. The role can be adjusted to suit your schedule, and you'll work in two shifts on weekdays and weekends.",
+        "what_we_expect": [
+          "Proficiency in Finnish at level B2.",
+          "A driving licence and the possibility of using your own car if necessary.",
+          "Age of majority."
+        ],
+        "job_responsibilities": [
+          "Help clients with daily chores and activities outside the home.",
+          "Assist clients with living their own lives, full lives.",
+          "Evaluate smoothness of cooperation and compatibility of personnel chemistry."
+        ],
+        "what_we_offer": [
+          "Salary under the collective agreement in the private social service sector (G16A): €13,20 €14,51/hour + possible additions per shift.",
+          "Comprehensive overview and career development opportunities.",
+          "Happy and professional team to support daily routines and work.",
+          "Tradeka sickness insurance fund, to which the employee joins after the probationary period, if the working time is at least 10 hours per week according to the contract of employment and the duration of the employment relationship is at least 6 months."
+        ],
+        "search_keywords": "personal assistant, Asikkala Väkseysä, assistant work, customer-oriented work, driving licence, own car, client needs, job duties, salary, benefits, career development, tradeka sickness insurance, public healthcare, daily life support",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "ebb7d438",
+        "job_id": "manufacture-from-materials-of-any-heading-except-that-of-the-tampere-ebb7d438",
+        "processed": true,
+        "title": "Manufacture from materials of any heading, except that of the product",
+        "company": "Apuvoima Pirkanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://apuvoima.likeit.fi/apply/13686697",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/61dd2036-5c7c-4879-aeb3-951dfb86640d/en",
+        "job_employer_email": "jani.raatikainen@apuvoima.com",
+        "job_employer_name": "Jani Raatikainen",
+        "job_employer_phone_no": "044 493 8210",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/manufacture-from-materials-of-any-heading-except-that-of-the-tampere-ebb7d438",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-08",
+        "scraped_at": "2026-10-29 22:40:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Manufacture from materials of any heading, except that of the product role at Apuvoima Pirkanmaa Oy.",
+        "description": "Apuvoima Pirkanmaa Oy is seeking a skilled CNC machinery operator for their reputable metal industry customer in Tampere. The ideal candidate with prior experience in Heidenhain-guided treasure hunts will work on heavier and medium-sized pieces, focusing on in-house subcontracting of individual pieces or small batches for various clients. The job offers competitive hourly wages based on Finnish collective agreements, extended occupational health care, and reliable pay. The work is carried out in two shifts of up to 40 hours per week. The company is committed to providing assistance with finding accommodation and offers a modern vehicle fleet. The role requires training and/or work experience as a machinist, care and initiative, and a willingness to learn new things.",
+        "what_we_expect": [
+          "Prior experience in CNC machinery.",
+          "Interest in metal industry.",
+          "Motivation to learn and grow."
+        ],
+        "job_responsibilities": [
+          "Manufacture from materials of any heading, except that of the product.",
+          "Prepare and assemble components for production.",
+          "We hope that applicants will."
+        ],
+        "what_we_offer": [
+          "Extended occupational health care.",
+          "Reliable and high-quality pay.",
+          "Contact person for employment affairs."
+        ],
+        "search_keywords": "manufacture, materials, metal industry, CNC machinery, metal industry customer, Tampere, CNC machinery, metal industry customer in Tampere",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "028c96fa",
+        "job_id": "traffic-controller-for-gigs-in-helsinki-helsinki-028c96fa",
+        "processed": true,
+        "title": "Traffic controller for gigs in Helsinki",
+        "company": "InStaff Henkilöstöpalvelut Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://infrafour.likeit.fi/apply/5577734",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cf4e0a09-2eaf-4586-aba0-6bf9a55d067c/en",
+        "job_employer_email": "info@instaff.fi",
+        "job_employer_name": "Arina Tirronen",
+        "job_employer_phone_no": "040 701 9306",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/traffic-controller-for-gigs-in-helsinki-helsinki-028c96fa",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-06",
+        "scraped_at": "2026-10-29 22:40:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Traffic controller for gigs in Helsinki job in Helsinki? InStaff Henkilöstöpalvelut Oy is seeking motivated candidates—apply today.",
+        "description": "Traffic controller for gigs in Helsinki We 're looking for traffic controllers in Helsinki . We're looking for traffic controllers for jobs in Helsinki. Tasks to be performed Your duties include ensuring smooth and safe traffic in the workplace environment, steering vehicles and pedestrians, and placing traffic signs and other necessary guidance. You will work closely with other staff in the workplace to maintain a safe working environment. We're waiting for you. Responsible and diligent work ethic Good interaction and cooperation skills Self-initiative and ability to follow instructions Ability to work outdoors in varied conditions Previous driving experience and a B driving licence are considered to be an advantage. Are you interested?",
+        "what_we_expect": [
+          "Further information on the work assignment can be obtained from.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "Further information on the work assignment can be obtained from.",
+          "Daily operational tasks.",
+          "Supporting the team."
+        ],
+        "what_we_offer": [
+          "Further information on the work assignment can be obtained from.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "Traffic controller for gigs in Helsinki InStaff Henkilöstöpalvelut Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "a4c1c420",
+        "job_id": "kitchen-assistant-närpiö-a4c1c420",
+        "processed": true,
+        "title": "Kitchen Assistant",
+        "company": "Närpes stad",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Närpiö"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/747819/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0be5f80f-3f78-4b5a-9b97-c71aae4197d4/en",
+        "job_employer_email": "maj-britt.gronberg@narpes.fi",
+        "job_employer_name": "Maj-Britt Grönberg",
+        "job_employer_phone_no": "0401600929",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/kitchen-assistant-närpiö-a4c1c420",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Join Närpes stad as a Kitchen assistant, primary school catering in Piolahti and grow your career in Närpiö. Check details and apply now.",
+        "description": "The Technical and Urban Development Department of the City of Närpiö is seeking a dedicated kitchen assistant for primary school catering in Piolahti. This part-time position, starting on April 1, 2027, offers 30 hours per week in a new and modern kitchen. The ideal candidate, with an undergraduate degree or equivalent in hotel, restaurant, and catering, must have a hygiene pass and proficiency in Swedish. A valid driver's license and access to a car are required. The kitchen assistant will work alongside the kitchen staff, fostering strong co-operation and contributing to the development of the catering services. The role is contingent on a 6-month probationary period and requires a strong work ethic, ability to work independently, and as part of a team.",
+        "what_we_expect": [
+          "Undergraduate degree or equivalent in hotel, restaurant, and catering sector.",
+          "Hygiene pass.",
+          "Swedish language skills.",
+          "Driving licence.",
+          "Car."
+        ],
+        "job_responsibilities": [
+          "Prepare and serve food to students.",
+          "Maintain kitchen cleanliness and hygiene.",
+          "Collaborate with kitchen staff and other staff members."
+        ],
+        "what_we_offer": [
+          "Part-time job.",
+          "Placement in a primary school kitchen.",
+          "Modern kitchen facilities.",
+          "Salary and benefits.",
+          "Flexible work hours."
+        ],
+        "search_keywords": "Kitchen Assistant, primary school catering, Piolahti, Nærpiö, City of Nærpiö, catering services, part-time job, primary school kitchen, driving licence, car",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "784d7acf",
+        "job_id": "nurse-to-the-urology-department-vantaa-784d7acf",
+        "processed": true,
+        "title": "Nurse to the Urology Department.",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=12087da6fdd9dd9184b78f7b4c86b288",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/61bb632c-4acc-4cb3-9962-9473a7506adf/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-to-the-urology-department-vantaa-784d7acf",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-12",
+        "scraped_at": "2026-10-29 22:40:26",
+        "open_positions": 1,
+        "salary_range": "Tehtäväkohtainen palkka 4283,10–4559,96 €/kk ja mahdolliset kokemus- ja muut lisät.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Exciting Nurse to the Urology Department. position available at HUS Helsingin yliopistollinen sairaala in Vantaa.",
+        "description": "Nurse to the Urology Department. Do you want to be a part of developing excellent nursing care and leading a skilled team? If you are inspired by leadership, quality of care and continuous improvement, this is the job for you! We're looking for a nurse for a permanent position in the urology department of the HUS Gastric Center at Peijas Hospital. The Department of Urology K1 is the largest 24/7 urology department in Finland, with 3900 treatment sessions per year, of which 65% are planned surgical patients and 35% emergency patients. The most common patient groups in this ward are those receiving treatment for prostate overgrowth and prostate cancer. The Director's duties include directing, motivating and encouraging staff.",
+        "what_we_expect": [
+          "Salary per job: €4283.104559.96 per day plus any experience and other allowances.",
+          "Positive attitude and reliability.",
+          "Ability to work effectively."
+        ],
+        "job_responsibilities": [
+          "Salary per job: €4283.104559.96 per day plus any experience and other allowances.",
+          "Daily operational tasks.",
+          "Supporting the team."
+        ],
+        "what_we_offer": [
+          "Salary per job: €4283.104559.96 per day plus any experience and other allowances.",
+          "Professional work environment.",
+          "Supportive team."
+        ],
+        "search_keywords": "Nurse to the Urology Department. HUS Helsingin yliopistollinen sairaala Vantaa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:27",
+    "jobs": [
+      {
+        "id": "b5f945e1",
+        "job_id": "cooking-assistant-at-the-yttermark-school-närpiö-b5f945e1",
+        "processed": true,
+        "title": "Cooking assistant at the Yttermark school",
+        "company": "Närpes stad",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Närpiö"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/748088/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a1b0f3db-6127-4755-a37b-730bc98e1ea9/en",
+        "job_employer_email": "maj-bitt.gronberg@narpes.fi",
+        "job_employer_name": "Maj-Britt Grönberg",
+        "job_employer_phone_no": "0401600929",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/cooking-assistant-at-the-yttermark-school-närpiö-b5f945e1",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Apply now for a Cooking assistant at the Yttermark school role at Närpes stad. Join a growing team and build your career in Närpiö.",
+        "description": "The Technical and Urban Development Department of the City of Närpiö is seeking a dedicated kitchen assistant for catering services at the Yttermark school. This four-year contract, starting in 2027 or as agreed, offers 10 hours of work per week in the school kitchen. The ideal candidate, with a degree or equivalent in hotel, restaurant, and catering, must possess a hygienic passport and be positive, responsible, and enjoy both freelancing and team work. The remuneration is in accordance with the SGEI, and employment is subject to a 6-month probationary period. The position requires assistance with finding accommodation, as assistance with finding accommodation is provided. The kitchen assistant will participate in daily kitchen tasks, including washing dishes.",
+        "what_we_expect": [
+          "Degree or equivalent in hotel, restaurant and catering.",
+          "Hygienic passport.",
+          "Positive attitude.",
+          "Responsibility."
+        ],
+        "job_responsibilities": [
+          "Washing dishes and other general kitchen tasks.",
+          "Participate in the daily work of the kitchen together with the rest of the staff.",
+          "For the time being, we're offering you a four-year contract."
+        ],
+        "what_we_offer": [
+          "Salary in accordance with SGEI.",
+          "Probationary period of 6 months.",
+          "Change of place of work within the catering area of Närpiö.",
+          "Employment subject to a 6-month probationary period.",
+          "Remuneration in accordance with the SGEI."
+        ],
+        "search_keywords": "Cooking assistant at the Yttermark school Närpes stad Närpiö other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:28",
+    "jobs": [
+      {
+        "id": "8c1a37bc",
+        "job_id": "tire-fitter-for-the-pirkanmaa-tampere-8c1a37bc",
+        "processed": true,
+        "title": "Tire fitter for the Pirkanmaa",
+        "company": "Rekrymesta Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://rekrymesta.likeit.fi/apply/10544796",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c02eb778-ba24-41c4-9f8c-9a8b0613e6d1/en",
+        "job_employer_email": "info@rekrymesta.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/tire-fitter-for-the-pirkanmaa-tampere-8c1a37bc",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-13",
+        "scraped_at": "2026-10-29 22:40:28",
+        "open_positions": 1,
+        "salary_range": "salary you want and when you would be available",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Rekrymesta Henkilöstöpalvelut Oy is hiring a Tire fitter for the Pirkanmaa in Tampere. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a tire fitter for our client's tire section in the Pirkanmaa area. This role offers a comfortable and laid-back work environment surrounded by a skilled crew. Working hours are Monday to Friday from 7am to 5pm, and the position is permanent. Success in this role requires a self-motivated attitude and experience as a tire fitter. Ownership of a car is considered an advantage. We offer competitive hourly wages based on Finnish collective agreements and provide assistance with finding accommodation. Our company is a responsible operator that complies with the general collective bargaining agreement and legislation. We are known for our reliability, speed, and reliability. As an employer, we support our employees throughout their working lives, from recruitment.",
+        "what_we_expect": [
+          "Self-motivated attitude.",
+          "Experience as a tire fitter.",
+          "Ownership of a car is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Fixing tires for clients.",
+          "Maintaining tire sections.",
+          "Assisting with tire-related tasks."
+        ],
+        "what_we_offer": [
+          "Growing company in the industry.",
+          "Comfortable and relaxed crew.",
+          "25 years of experience in various industries."
+        ],
+        "search_keywords": "Tire fitter Pirkanmaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "0acfb12f",
+        "job_id": "electrician-lapland-housing-engineering-war-village-sodankylä-0acfb12f",
+        "processed": true,
+        "title": "Electrician, Lapland Housing Engineering, War Village",
+        "company": "Nordic Career",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Sodankylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/sahkoasentaja-lapin-talotekniikka-sodankyla/D4v1b0",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1734cd40-56a1-4ed9-bb16-c5c5356268d3/en",
+        "job_employer_email": "minna.mantovaara@career.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "+358505482448",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-lapland-housing-engineering-war-village-sodankylä-0acfb12f",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-10-29 22:40:28",
+        "open_positions": 1,
+        "salary_range": "salary according to skills and experience - own",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Nordic Career is looking for a skilled Electrician, Lapland Housing Engineering, War Village in Sodankylä. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a dedicated electrician to join our team in Lapland, War Village. This permanent position offers the opportunity to work independently in various electrical installations and maintenance tasks in the Sodankylä area. With access to your own work car and tools, and surrounded by an experienced civil engineering community, you will be part of a company that has been operating in the field of civil engineering since 2011. Our diverse range of clients includes private clients, businesses, municipalities, government, and mining industries. We provide HVAC, electrical, and refrigeration services. We offer competitive hourly wages based on Finnish collective agreements, a contractual salary according to skills and experience, and a modern vehicle fleet.",
+        "what_we_expect": [
+          "Economical driving style.",
+          "Winter driving experience.",
+          "Licenses."
+        ],
+        "job_responsibilities": [
+          "Electrical installations, e.g. For HVAC and refrigeration work.",
+          "Maintenance and repair of electrical systems.",
+          "Electrical work at the Kevitsas mine."
+        ],
+        "what_we_offer": [
+          "The employment relationship currently in force.",
+          "Contractual salary according to skills and experience.",
+          "Own work car and necessary tools.",
+          "TES allowances for daily subsistence and meals.",
+          "Diverse and varied tasks."
+        ],
+        "search_keywords": "Electrician Lapland Housing Engineering War Village",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "597acfda",
+        "job_id": "im-a-cook-at-the-västra-närpes-school-närpiö-597acfda",
+        "processed": true,
+        "title": "I'm a cook at the Västra Närpes school.",
+        "company": "Närpes stad",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Närpiö"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/748095/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e2ba9e11-f81a-4687-9e1c-e02117a5dbc9/en",
+        "job_employer_email": "maj-britt.gronberg@narpes.fi",
+        "job_employer_name": "Maj-Britt Grönberg",
+        "job_employer_phone_no": "0401600929",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/im-a-cook-at-the-västra-närpes-school-närpiö-597acfda",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Start your next career step as a I'm a cook at the Västra Närpes school. at Närpes stad. Great opportunity in Närpiö—apply now.",
+        "description": "I'm a cook at the Västra Närpes school. I'm a cook at the Västra Närpes school. The Technical and Urban Development Department of the City of Nærpiö is looking for a kitchen assistant for catering services. For the time being, we're offering you a four-year contract. One, two, three, four. Starting in 2027 or as agreed. The working time is 10 hours per week and the place of work is the kitchen of a primary school in Norrnäs. As a kitchen assistant, you participate in the daily work of the kitchen together with the rest of the staff. The main duties include washing dishes and other general kitchen tasks. We are looking for a person with a degree or equivalent in hotel, restaurant and catering. The mission requires a hygienic passport.",
+        "what_we_expect": [
+          "I'm a cook at the Västra Närpes school.",
+          "The Technical and Urban Development Department of the City of Nærpiö is looking for a kitchen assistant for catering services.",
+          "For the time being, we're offering you a four-year contract.",
+          "One, two, three, four.",
+          "Starting in 2027 or as agreed.",
+          "The working time is 10 hours per week and the place of work is the kitchen of a primary school in Norrnäs."
+        ],
+        "job_responsibilities": [
+          "I'm a cook at the Västra Närpes school.",
+          "The Technical and Urban Development Department of the City of Nærpiö is looking for a kitchen assistant for catering services.",
+          "For the time being, we're offering you a four-year contract.",
+          "One, two, three, four.",
+          "Starting in 2027 or as agreed.",
+          "The working time is 10 hours per week and the place of work is the kitchen of a primary school in Norrnäs."
+        ],
+        "what_we_offer": [
+          "I'm a cook at the Västra Närpes school.",
+          "The Technical and Urban Development Department of the City of Nærpiö is looking for a kitchen assistant for catering services.",
+          "For the time being, we're offering you a four-year contract.",
+          "One, two, three, four.",
+          "Starting in 2027 or as agreed.",
+          "The working time is 10 hours per week and the place of work is the kitchen of a primary school in Norrnäs."
+        ],
+        "search_keywords": "I'm a cook at the Västra Närpes school. Närpes stad Närpiö other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "b18d52c2",
+        "job_id": "the-cook-trollebo-närpiö-b18d52c2",
+        "processed": true,
+        "title": "The cook, Trollebo",
+        "company": "Närpes stad",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Närpiö"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/747815/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d4a039ca-0735-4c38-9126-c2a831239c5d/en",
+        "job_employer_email": "maj-britt.gronberg@narpes.fi",
+        "job_employer_name": "Maj-Britt Grönberg",
+        "job_employer_phone_no": "0401600929",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/the-cook-trollebo-närpiö-b18d52c2",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-10-29 22:40:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Looking for a The cook, Trollebo. job in Närpiö? Närpes stad is seeking motivated candidates—apply today.",
+        "description": "The Technical and Urban Development Department of the City of Närpiö is seeking a kitchen assistant for catering services at Trollebo's daycare center. This position, starting on the 14th of 2026, offers 38.25 hours of full-time work. The candidate must have an undergraduate degree or equivalent in hotel, restaurant, and catering, with a hygiene pass requirement. They will be responsible for preparing breakfast, lunch, and snacks, and managing kitchen tasks independently. The ideal candidate is independent, able to work both independently and as part of a team, and is expected to collaborate well with others. The position offers a permanent contract, with a collective agreement remuneration according to the CPCTES, and a probationary period of six months.",
+        "what_we_expect": [
+          "Undergraduate degree or equivalent in hotel, restaurant and catering sector.",
+          "Hygiene pass.",
+          "The cook, Trollebo."
+        ],
+        "job_responsibilities": [
+          "Prepare breakfast.",
+          "Prepare lunch portions.",
+          "Prepare snacks.",
+          "Order kitchen chores."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "cook, Trollebo, kitchen assistant, catering services, daycare center",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-10-29 22:40:29",
+    "jobs": [
+      {
+        "id": "267f9c89",
+        "job_id": "lvi-installers-to-sweden-espoo-267f9c89",
+        "processed": true,
+        "title": "LVI installers to Sweden",
+        "company": "Maximus Oy",
+        "job_category": "research-and-development",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27861267",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e2c1b770-c3be-4a46-a057-2bfec012c58c/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/research-and-development/lvi-installers-to-sweden-espoo-267f9c89",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-02",
+        "scraped_at": "2026-10-29 22:40:29",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Maximus Oy is looking for a skilled LVI installers to Sweden in Espoo. Don't miss this opportunity—apply today.",
+        "description": "Maximus Oy is seeking skilled HVAC installers for a long-term contract in Sweden at the Nynäshamn oil refinery. This position offers a competitive salary ranging from 220-255 SEK/h (20-23.50€/h) and includes a Swedish daily allowance. The role involves working on new pipelines and construction projects, with accommodation assistance provided. The contract is permanent and lasts until at least summer 2027, with the possibility of a longer employment relationship. Applicants should have more than 2 years of experience in HVAC installation and proficiency in English or Swedish. The company offers a pathway for career development, quality tools and equipment, and occupational health services. The application process is simple, and candidates can find out more on their website.",
+        "what_we_expect": [
+          "2 years of HVAC installation experience.",
+          "Proficiency in English or Swedish.",
+          "Self-motivated and responsible."
+        ],
+        "job_responsibilities": [
+          "Install LVI systems.",
+          "Work on new pipelines.",
+          "Assist with construction projects."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Swedish daily allowance.",
+          "Accommodation.",
+          "Long-term employment.",
+          "Pathway to job opportunities."
+        ],
+        "search_keywords": "LVI installers, Sweden, HVAC, construction, Nynäshamn oil refinery",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "0c483996",
+        "job_id": "lvi-installers-for-the-swedish-data-centre-espoo-0c483996",
+        "processed": true,
+        "title": "LVI installers for the Swedish data centre",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27861560",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fbb72b38-3f73-4ded-acbf-98674e2c0721/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/lvi-installers-for-the-swedish-data-centre-espoo-0c483996",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-02",
+        "scraped_at": "2026-10-29 22:40:29",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a LVI installers for the Swedish data centre at Maximus Oy, located in Espoo. Apply now and get started.",
+        "description": "We are looking for a skilled LVI installer for a long-term contract in Sweden at the Borlänge data center. Are you a VET professional with experience in the HVAC sector and fluent in English or Swedish? This position offers a competitive salary of 220-255 SEK/h (20-23.50€/h) and Swedish daily allowance, along with paid home trips to Finland and accommodation arranged at the work place. With a strong attitude and willingness to work, you'll be part of a long-term project in an international environment. As an employee of Maximus, you'll receive a pathway to job opportunities based on your experience and wishes. Starting time: November 30, 2026. For more information, contact the customer service manager Kimmo Tiikkainen on 050 436 5556.",
+        "what_we_expect": [
+          "2 years of experience in HVAC installation work.",
+          "Proficiency in English or Swedish.",
+          "Self-motivated and responsible.",
+          "Positive attitude and willingness to work."
+        ],
+        "job_responsibilities": [
+          "Install LVI components for the Swedish data center.",
+          "Ensure the installation is done according to the specifications.",
+          "Tasks to be performed."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 220255 SEK/h (20-23.50€/h) depending on skills and experience.",
+          "Swedish daily allowance: about SEK 770/day (€70) in addition to salary.",
+          "Paid home trips to Finland once a month.",
+          "Accommodation arranged at the place of work.",
+          "Long-term employment until at least summer 2027, possibly longer.",
+          "Occupational health services at your disposal in Pihlajalinn."
+        ],
+        "search_keywords": "LVI installers Swedish data centre, HVAC installation, Swedish data center, long-term contract, Swedish data centre job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "374d519b",
+        "job_id": "accounting-officer-lahti-374d519b",
+        "processed": true,
+        "title": "Accounting officer",
+        "company": "CL-Yhtiöpalvelu Oy, Vantaa",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://app.helppocrm.fi/LoihdinApp/episteme2/production/wfgshowrecruimentorder1484?",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f7e226ac-ffb8-4fee-9220-8647a1395d3e/en",
+        "job_employer_email": "salla.vuoristo@cl-yhtiopalvelu.fi",
+        "job_employer_name": "Salla Vuoristo",
+        "job_employer_phone_no": "+358 45 125 8940",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/accounting-officer-lahti-374d519b",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-10-29 22:40:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Accounting officer Lahti at CL-Yhtiöpalvelu Oy, Vantaa in Lahti. Apply now and take the next step in your career.",
+        "description": "CL-Kompanienpalvelu Oy, based in Vantaa, is seeking a qualified accountant for a fixed-term contract in Lahti. The role will commence on the basis of the contract and initially involves approximately one month of work. The employment relationship may extend beyond this period. Key duties include performing multiple accounting tasks, managing day-to-day financial operations, utilizing HouseWise and Visma Vivald software, and contributing to the company's overall financial health. The position requires previous experience in accounting, proficiency with HouseWise and Visma Vivaldi software, the ability to work independently and accurately, and strong collaborative skills. The working hours are from 9:00 to 17:00 Monday through Thursday.",
+        "what_we_expect": [
+          "Previous experience in accounting.",
+          "Knowledge of HouseWise and Visma Vivaldi software.",
+          "Ability to work independently and accurately.",
+          "Good collaborative skills."
+        ],
+        "job_responsibilities": [
+          "Multiple accounting tasks.",
+          "Use of HouseWise and Visma Vivald.",
+          "Duties to be performed."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "accounting officer Lahti",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "814cc093",
+        "job_id": "warehouse-worker-parkano-814cc093",
+        "processed": true,
+        "title": "Warehouse Worker",
+        "company": "Bolt.Works Oy",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Parkano"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=2132644",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/444fac68-4c49-4f10-84eb-99c16ccebffc/en",
+        "job_employer_email": "oona.ansamaa@bolt.works",
+        "job_employer_name": "Oona Ansamaa",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/warehouse-worker-parkano-814cc093",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-08",
+        "scraped_at": "2026-10-29 22:40:29",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with your work experience a",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a I'm a warehouse worker from FennoSteel Oy. at Bolt.Works Oy in Parkano. Apply now and take the next step in your career.",
+        "description": "Bolt. Works Oy is seeking a FennoSteel warehouse worker in Parkano, Finland, for a permanent position. This role involves collecting, receiving, and sending products, driving trucks, and performing various warehouse tasks. Previous experience in truck driving and warehousing is preferred. A good attitude and willingness to learn are essential. The job is available on a daily basis (ma-pe) and can be worked in two or three shifts, with the aim of transitioning to the client company's books after six months. The employment relationship will initially be as a temporary position with Bolt. Works Oy for six months, after which the goal is to move to the client company's own books. The position is open to applicants who are active and engaged, with a focus on learning. Bolt.",
+        "what_we_expect": [
+          "Previous experience in truck driving.",
+          "I'm a warehouse worker from FennoSteel Oy."
+        ],
+        "job_responsibilities": [
+          "Collect products.",
+          "Receive products.",
+          "Send products.",
+          "Drive trucks.",
+          "Various warehouse tasks."
+        ],
+        "what_we_offer": [
+          "Salary commensurate with experience and skills.",
+          "Bonus for excellent performance.",
+          "Occupational health services.",
+          "Career options and paths.",
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "warehouse worker FennoSteel Oy FennoSteel",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "381f4bdf",
+        "job_id": "primary-occupation-in-education-and-guidance-teaching-hoursl-rovaniemi-381f4bdf",
+        "processed": true,
+        "title": "Primary occupation in education and guidance Teaching hours/Lapin Sports School Santasport",
+        "company": "Rovaniemen koulutuskuntayhtymä",
+        "job_category": "education",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/748378/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/59b3ab0e-23e6-41e4-8a1c-5b59fc2d86a3/en",
+        "job_employer_email": "carita.seikkula@santasport.fi",
+        "job_employer_name": "Carita Seikkula",
+        "job_employer_phone_no": "0401511729",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/primary-occupation-in-education-and-guidance-teaching-hoursl-rovaniemi-381f4bdf",
+        "date_posted": "2026-10-29",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-10-29 22:40:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Rovaniemen koulutuskuntayhtymä as a Primary occupation in education and guidance Teaching hours/Lapin Sports School Santasport and grow your career in...",
+        "description": "We are looking for a highly qualified teacher with a passion for education and guidance to join our team at Lapin Sports School Santasport in Rovaniemi. This full-time position offers a permanent contract and competitive remuneration under the OVTES + REDUn palkkausjärjestelmä. Essential requirements include a teacher qualification in vocational education, a higher education degree in social sciences or education, and at least three years of practical experience in vocational education. The ideal candidate should possess excellent cooperation, interaction, and organizational skills, be able to travel, and have a valid driving license. We offer a meaningful job in vocational training, excellent occupational health care, and a modern vehicle fleet.",
+        "what_we_expect": [
+          "Qualification as a teacher of vocational education in accordance with Regulation 986/1998.",
+          "Higher education qualification appropriate to the teaching task.",
+          "At least 60 ECTS credits or 35 academic weeks of teacher education.",
+          "At least three years of practical work experience in posts corresponding mainly to the content of the teaching assignment."
+        ],
+        "job_responsibilities": [
+          "Teaching, guidance, and evaluation of skills in basic education and guidance.",
+          "Personalisation and student guidance.",
+          "Training and teaching development.",
+          "Work-life cooperation.",
+          "Any other work provided by the supervisor."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "education, guidance, teaching, vocational, sports, school, Lapin, Santasport",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
   }
