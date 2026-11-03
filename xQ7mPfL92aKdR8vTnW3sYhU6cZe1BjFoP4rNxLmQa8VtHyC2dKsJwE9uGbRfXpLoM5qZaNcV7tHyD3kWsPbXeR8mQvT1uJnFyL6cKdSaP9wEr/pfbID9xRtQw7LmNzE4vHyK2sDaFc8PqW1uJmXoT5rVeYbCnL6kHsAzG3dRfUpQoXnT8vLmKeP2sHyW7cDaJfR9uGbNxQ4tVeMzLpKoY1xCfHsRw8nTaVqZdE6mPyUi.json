@@ -364206,5 +364206,1376 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:25",
+    "jobs": [
+      {
+        "id": "393f3002",
+        "job_id": "machinist-kajaani-393f3002",
+        "processed": true,
+        "title": "Machinist",
+        "company": "YES Your Excellent Staff Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/koneistaja-katera-steel-oy/ZY5plX",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/15e41a97-d4e3-433b-86be-c8d46e198ae7/en",
+        "job_employer_email": "laura@yeshr.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "+358 50 371 5847",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/machinist-kajaani-393f3002",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-03 00:23:25",
+        "open_positions": 1,
+        "salary_range": "salary based on your previous experience and a",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new opportunity as a Manufacturer of machinery, Katera Steel Oy at YES Your Excellent Staff Oy in Kajaani.",
+        "description": "At YES Your Excellent Staff Oy, we are seeking a skilled machinist for our customer Katera Steel Oy in Kajaani. This role involves working on machinery as part of a skilled work community that values precision, initiative, and the desire to develop. Applicants should have prior experience in the operation and programming of a Heidenhain-controlled treasure or long-range machine. A good attitude, motivation to learn new things, punctuality, and teamwork are essential. The salary is based on previous experience and a long-term employment relationship in a stable work environment. We offer a comprehensive background, practical work experience, and a competitive salary.",
+        "what_we_expect": [
+          "Prior experience in machinery and programming.",
+          "Interest in manufacturing and mechanical work.",
+          "Good attitude and motivation.",
+          "Willingness to work two shifts."
+        ],
+        "job_responsibilities": [
+          "Operate and program machinery.",
+          "Work on production tasks.",
+          "Develop skills in practical work."
+        ],
+        "what_we_offer": [
+          "Competitive salary.",
+          "Stable employment.",
+          "Friendly and knowledgeable work community."
+        ],
+        "search_keywords": "machinist, Katera Steel Oy, Kajaani, machinery, production tasks, skilled workforce",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "7bf1da58",
+        "job_id": "construction-worker-nivala-7bf1da58",
+        "processed": true,
+        "title": "Construction worker",
+        "company": "Nordic JobCentre Ylivieska",
+        "job_category": "construction",
+        "jobLocation": [
+          "Nivala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://njc.likeit.fi/apply/70330296",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c103a969-3fc6-49a5-8433-b237bd25fd20/en",
+        "job_employer_email": "mikko.myllyla@njc.fi",
+        "job_employer_name": "Mikko Myllylä",
+        "job_employer_phone_no": "+358503011530",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-nivala-7bf1da58",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-03 00:23:25",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Construction worker at Nordic JobCentre Ylivieska, located in Nivala. Apply now and get started.",
+        "description": "Nordic JobCentre Ylivieska is seeking a skilled construction worker for a permanent position in Nivala. This role involves a variety of tasks, including sewerage and plumbing work, laser use and rate measurement, and earthworks. The successful candidate should have previous experience in earthworks, knowledge of sewerage and laser work, self-initiative, and a responsible work ethic. The position offers competitive hourly wages based on Finnish collective agreements and assistance with finding accommodation. The company, based in Oulu, has been providing flexible and reliable human and workplace services for 30 years, employing approximately 1,000 construction and industrial professionals annually. For more information, contact Mikko at 050 3011 530.",
+        "what_we_expect": [
+          "Previous experience in earthworks.",
+          "Knowledge of sewerage and laser work.",
+          "Self-initiative and responsible work ethic.",
+          "Ability to work independently.",
+          "Reliability and good attitude to work."
+        ],
+        "job_responsibilities": [
+          "Sewerage and plumbing work.",
+          "Laser use and rate measurement.",
+          "Other diversified earthworks.",
+          "Working as part of a crew and independently responsible for work tasks."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "construction worker, skilled, self-motivated, earthworks, laser, sewerage, plumbing, reliability, good attitude",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "8c28b301",
+        "job_id": "welding-skilled-plumber-tampere-8c28b301",
+        "processed": true,
+        "title": "Welding skilled plumber",
+        "company": "proROSTERI henkilöstöratkaisut oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://prorosteri.likeit.fi/apply/17133651",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1b09d61e-2443-4f96-84e5-e5f3304c5e30/en",
+        "job_employer_email": "laura.arvonen@prorosteri.fi",
+        "job_employer_name": "Laura Arvonen",
+        "job_employer_phone_no": "+358405103512",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/welding-skilled-plumber-tampere-8c28b301",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-03 00:23:25",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "proROSTERI henkilöstöratkaisut oy is looking for a skilled Welding skilled plumber in Tampere. Don't miss this opportunity—apply today.",
+        "description": "We are seeking a welding skilled plumber for our client company in the Tampere area. This role involves a diverse range of plumbing projects, including commercial and office buildings, residential, and public structures. The ideal candidate should possess extensive experience in plumbing work, ensuring high-quality installations at each site. They must have welding skills (TIG, MIG), appropriate training, self-initiative, and a strong work ethic. The ability to use a vehicle for travel is preferred, as it simplifies commuting to various locations. The starting time will be negotiated based on the worker's availability and the schedules of the working areas. A valid occupational safety card is required. The remuneration is competitive and based on expertise and experience.",
+        "what_we_expect": [
+          "Several years of plumbing experience.",
+          "Welding skills (TIG, ROP).",
+          "Appropriate training for the job.",
+          "Self-motivation and work ethic.",
+          "Good work history."
+        ],
+        "job_responsibilities": [
+          "Install and repair plumbing systems.",
+          "Perform welding tasks on pipes and fittings.",
+          "Work on various plumbing projects.",
+          "Ensure quality work in different types of buildings."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Employment opportunities.",
+          "Professional development.",
+          "Health and safety services.",
+          "Quality workwear.",
+          "Sports tickets."
+        ],
+        "search_keywords": "plumbing, welding, plumber, welder, construction",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:26",
+    "jobs": [
+      {
+        "id": "5abdcf75",
+        "job_id": "teacher-of-early-childhood-education-helsinki-5abdcf75",
+        "processed": true,
+        "title": "Teacher of early childhood education",
+        "company": "Norlandia",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.norlandia.fi/jobs/8651120-varhaiskasvatuksen-opettaja-engel-viiskulma-helsinki/applications/new?promotion=2276101-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5f72dd04-130e-4d37-aede-448c63ee57c6/en",
+        "job_employer_email": "eva.jokela@pkengel.fi",
+        "job_employer_name": "Eva Jokela",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/teacher-of-early-childhood-education-helsinki-5abdcf75",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-03 00:23:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Norlandia is looking for a skilled Teacher of early childhood education, Engel from Viiskulma, Helsinki in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a dedicated and passionate early childhood education teacher to join our dynamic team at Engel, a private day care centre in Viiskulma, Helsinki. With a warm, supportive atmosphere and a professional community, we are committed to providing high-quality education and care. As a teacher, you will lead your team, implement quality pedagogy, and support children's development and learning. You will enjoy working with children and families, and your positive attitude and ability to handle challenging situations will make a significant difference. Fluency in Finnish and English is required, and we offer a competitive hourly wage based on Finnish collective agreements. Our flexible work schedule and modern vehicle fleet are just a few of the benefits you can look forward to.",
+        "what_we_expect": [
+          "Valid criminal record for working with children.",
+          "Fluency in Finnish and English.",
+          "Our daycare centers have a warm, supportive and supportive atmosphere and a professionally ambitious working community."
+        ],
+        "job_responsibilities": [
+          "Support and promote children's development, growth and learning.",
+          "Implement systematic early childhood education in cooperation with work teams and families.",
+          "Work with children and families every day with genuine concern."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Accommodation.",
+          "Equipment."
+        ],
+        "search_keywords": "early childhood education, teacher, childcare, nursery, Viiskulma, Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "2b2b61ef",
+        "job_id": "head-of-liaison-jyväskylä-2b2b61ef",
+        "processed": true,
+        "title": "Head of Liaison",
+        "company": "Rekrymesta Henkilöstöpalvelut Oy",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://rekrymesta.likeit.fi/apply/10667537",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a0047ecb-2858-41e7-90be-3e6e43dac8c2/en",
+        "job_employer_email": "info@rekrymesta.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/head-of-liaison-jyväskylä-2b2b61ef",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-03 00:23:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Head of liaison at Rekrymesta Henkilöstöpalvelut Oy, located in Jyväskylä. Apply now and get started.",
+        "description": "Rekrymesta Henkilöstöpalvelut Oy is seeking a Head of Liaison to join their growing team in Jyväskylä. This role requires a seasoned human resources professional with a passion for the field, focusing on recruitment and customer relations. The ideal candidate will work primarily from the office in Jyväskylä and will be responsible for identifying customer needs, developing recruitment solutions, and managing employee selection and labor relations. Experience with LikeIt and Pipedrive systems is preferred, and excellent oral and written knowledge of Finnish is essential. The position offers a permanent, growing company with a positive and relaxed work environment, providing a permanent position and tailored job descriptions.",
+        "what_we_expect": [
+          "Several years' experience in the human resources sector.",
+          "Well versed in the practices of the sector.",
+          "Motivated, self-motivated, and motivated to develop both yourself and your ways.",
+          "Excellent oral and written knowledge of the Finnish language.",
+          "Experience with LikeIt and Pipedrive systems preferred."
+        ],
+        "job_responsibilities": [
+          "Recruiting and developing customer relations in the HR sector.",
+          "Identifying customer needs and providing appropriate recruitment and staffing solutions.",
+          "Involved in recruitment processes, employee selection, and labour relations management.",
+          "Combines salesmanship and practical HR expertise as a trusted partner for the customer.",
+          "Ensure that the service runs smoothly from start to finish."
+        ],
+        "what_we_offer": [
+          "Permanent position in a growing company.",
+          "Diverse and tailored job description based on skills and interests.",
+          "Positive work environment with a focus on customer satisfaction.",
+          "Highly skilled personnel with 25 years of experience in various industries.",
+          "Responsible operator and compliance with collective bargaining agreements and legislation."
+        ],
+        "search_keywords": "head of liaison, recreation bureau, liaison officer, human resources, recruitment, customer relations, HR sector, recruitment processes, employee selection, labour relations management, LikeIt, Pipedrive, Finnish language, customer satisfaction, permanent position, growing company, positive work environment, customer satisfaction, collective bargaining agreements, legislation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:27",
+    "jobs": [
+      {
+        "id": "3a0fa55c",
+        "job_id": "concrete-worker-mäntsälä-mäntsälä-3a0fa55c",
+        "processed": true,
+        "title": "Concrete worker (Mäntsälä)",
+        "company": "proROSTERI henkilöstöratkaisut oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Mäntsälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://prorosteri.likeit.fi/apply/17133645",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6db7ae09-807a-4bdc-a9c1-1e1db8e77e66/en",
+        "job_employer_email": "laura.arvonen@prorosteri.fi",
+        "job_employer_name": "Laura Arvonen",
+        "job_employer_phone_no": "+358405103512",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/concrete-worker-mäntsälä-mäntsälä-3a0fa55c",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-03 00:23:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join proROSTERI henkilöstöratkaisut oy as a Concrete worker (Mäntsälä) and grow your career in Mäntsälä. Check details and apply now.",
+        "description": "Concrete worker (Mäntsälä) We're looking for a concrete builder for our client company on a construction site in Mäntsälä. The tasks include installing system moulds and ironworking. We expect the applicant to have previous experience in similar roles, a strong attitude, and a responsible work ethic. Other skills in concrete construction are also advantageous. Previous experience in moulding and/or ironworking, good physical condition and strong posture, a good work record, a valid occupational safety card, and fluent Finnish are required. The work will commence in November and last for an estimated two to three months. The remuneration will be determined by the skill and experience of the performer. Apply for the job at the link provided.",
+        "what_we_expect": [
+          "Previous experience in moulding and/or ironworking.",
+          "Good physical condition and strong posture.",
+          "Good work record.",
+          "Valid occupational safety card.",
+          "Fluent Finnish."
+        ],
+        "job_responsibilities": [
+          "Install system moulds.",
+          "Perform ironworking.",
+          "We hope that the applicant will."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Perks."
+        ],
+        "search_keywords": "Concrete worker Mäntsälä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "99460f4d",
+        "job_id": "lärare-inom-småbarnspedagogik-helsinki-99460f4d",
+        "processed": true,
+        "title": "Lärare inom småbarnspedagogik",
+        "company": "Oy Ankkalampi - Ankdammen Ab, Lauttasaaren Ankkalampi-Ankdammen",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:rekry@ankkalampi-ankdammen.fi?subject=Application%20for%20the%20Job%20-%20L%C3%A4rare%20inom%20sm%C3%A5barnspedagogik&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20L%C3%A4rare%20inom%20sm%C3%A5barnspedagogik.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fd182c2b-0978-4584-8bfa-1bfb8c0b11b3/en",
+        "job_employer_email": "rekry@ankkalampi-ankdammen.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/lärare-inom-småbarnspedagogik-helsinki-99460f4d",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-08",
+        "scraped_at": "2026-11-03 00:23:27",
+        "open_positions": 1,
+        "salary_range": "Lön enligt kollektivavtalets lönegrupp G.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Oy Ankkalampi - Ankdammen Ab, Lauttasaaren Ankkalampi-Ankdammen is hiring a Lärare inom småbarnspedagogik sökes till Ankdammen på Drumsö is located on the...",
+        "description": "We are looking for a Lärare in the field of preschool pedagogy for the Ankdammen daycare center on the island of Lärare. Are you ready for a new school year and eager to work with a curious 13-year-old? Join our warm and engaged team at Daghemmet Ankdammen, where we offer a fast employment opportunity and the chance to develop a bilingual business. With a focus on pedagogy, presence, and enjoyment of work, we provide a positive and supportive environment for both children and adults. Contact us today to reserve your place and start making a difference in the lives of young children.",
+        "what_we_expect": [
+          "Kapacitet för att förklara och utveckla småbarns förståelse för olika aktiviteter och sätt att lära sig.",
+          "Lärare inom småbarnspedagogik sökes till Ankdammen på Drumsö is located on the island of Lärare.",
+          "Are you ready for a new school year?"
+        ],
+        "job_responsibilities": [
+          "Förklarande och utveckling av småbarns förståelse för olika aktiviteter och sätt att lära sig.",
+          "Använda pedagogiska metoder för att stödja småbarns förståelse för olika aktiviteter och sätt att lära sig.",
+          "Använda olika material och metoder för att stödja småbarns förståelse för olika aktiviteter och sätt att lära sig.",
+          "Använda olika metoder för att stödja småbarns förståelse för olika aktiviteter och sätt att lära sig."
+        ],
+        "what_we_offer": [
+          "Baserad på job_content.",
+          "Lärare inom småbarnspedagogik sökes till Ankdammen på Drumsö is located on the island of Lärare.",
+          "Are you ready for a new school year?"
+        ],
+        "search_keywords": "småbarnspedagogik, småbarn, pedagogik, lärande, förståelse, småbarns förståelse, småbarns lärande",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "d58a2136",
+        "job_id": "emergency-medical-technician-pori-d58a2136",
+        "processed": true,
+        "title": "Emergency Medical Technician",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/344856/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7918f84e-61b9-4024-9284-1ae86297039e/en",
+        "job_employer_email": "natalia.aberg@terveystalo.com",
+        "job_employer_name": "Natalia Åberg",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/emergency-medical-technician-pori-d58a2136",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-03 00:23:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next career step as a I'm an emergency physician, public service, Pori. at Terveystalo. Great opportunity in Pori—apply now.",
+        "description": "We are looking for an Emergency Medical Technician with experience in General Practice and Pediatric Emergency Medicine at the Centers for Disease Control in Pori. This position offers a diverse and demanding environment in a team of experienced professionals, with 24-hour, weekday, and evening shifts in the Children's Emergency Room. The job responsibilities include examining and treating patients, answering medical calls, and preparing necessary certificates and statements. Applicants must have a medical license with at least one year of experience in emergency services in Finland. The position also offers assistance with finding accommodation and modern vehicle fleet. The salary is not specified in the raw job content provided.",
+        "what_we_expect": [
+          "Medical license holder with at least one year's experience in emergency services in Finland.",
+          "Economical driving style.",
+          "Winter driving experience.",
+          "Licenses."
+        ],
+        "job_responsibilities": [
+          "Examine and treat patients in a single session.",
+          "Answer medical calls.",
+          "Prepare necessary certificates, statements, and other written work as instructed by the client.",
+          "Work in a diverse and demanding environment in a team of experienced professionals.",
+          "Provide emergency medical services for the Rauma ER and Rauma Health Centre."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Healthcare services.",
+          "Wellbeing benefits.",
+          "Professional development opportunities.",
+          "Close management and pre-employment support."
+        ],
+        "search_keywords": "Emergency Medical Technician, Emergency Medical Technician, Emergency Medical Technician, Emergency Medical Technician, Emergency Medical Technician",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:33",
+    "jobs": [
+      {
+        "id": "d0dd77a5",
+        "job_id": "handyman-kajaani-d0dd77a5",
+        "processed": true,
+        "title": "Handyman",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/WAYv4Hs5VwlcZTR8xDIUNA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/461c9b57-9a3c-40b9-82b6-a1f220c2712d/en",
+        "job_employer_email": "joonas.karjalainen@eezy.fi",
+        "job_employer_name": "Joonas Karjalainen",
+        "job_employer_phone_no": "+358504714662",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/handyman-kajaani-d0dd77a5",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-03 00:23:33",
+        "open_positions": 1,
+        "salary_range": "TES",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is hiring a I'm a handyman on the weekends. in Kajaani. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a handyman to work weekend shifts in Kajaani. Are you seeking extra income or are you a student looking to balance studies with work? We're seeking flexible, committed workers for the upcoming winter season in the Kajaani region. Previous experience in manual work is preferred but not required. Applicants should have a good attitude, physical fitness, and a good work experience. Knowledge of Finnish is essential. A valid B driving license is also required. Contact us for more information.",
+        "what_we_expect": [
+          "Good attitude and physical fitness.",
+          "Work experience.",
+          "Knowledge of Finnish.",
+          "B driving licence."
+        ],
+        "job_responsibilities": [
+          "Assist with weekend tasks in Kajaani.",
+          "Perform manual work on weekends.",
+          "Other information."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Flexible working conditions."
+        ],
+        "search_keywords": "handyman weekend handyman weekend job handyman weekend job handyman weekend job handyman weekend job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "28a38fb7",
+        "job_id": "nurse-in-charge-of-medical-care-infirmary-jokipuisto-helsink-helsinki-28a38fb7",
+        "processed": true,
+        "title": "Nurse in charge of medical care, Infirmary Jokipuisto, Helsinki",
+        "company": "Mehiläinen Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mehilainen.wd103.myworkdayjobs.com/tyomarkkinatori_careers/job/Helsinki-Mikkolantie/Lkehoidosta-vastaava-sairaanhoitaja--Onnikoti-Jokipuisto--Helsinki_R0046222/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e34c24de-77c4-4546-8c00-9b76cfbc4974/en",
+        "job_employer_email": "jasmin.vahvaselka@onnikodit.fi",
+        "job_employer_name": "Jasmin Vahvaselkä",
+        "job_employer_phone_no": "+358407366318",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-in-charge-of-medical-care-infirmary-jokipuisto-helsink-helsinki-28a38fb7",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-03 00:23:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Nurse in charge of medical care, Infirmary Jokipuisto, Helsinki at Mehiläinen Oy, located in Helsinki.",
+        "description": "Nurse in charge of medical care, Infirmary Jokipuisto, Helsinki Nurse in charge of medical care, Infirmary Jokipuisto, Helsinki Come and do mentoring work for people with developmental disabilities in our unique group, Onnikoti, in the River Park, Helsinki. We're looking for a nurse in charge of pharmaceuticals for a permanent job in our comfortable home and a happy multi-professional team. Could you be exactly what we're looking for? A brilliant social and health worker, a brilliant team player, and an enthusiastic ideologue? Where are you coming to work? The Lucky River Park is located in the village of Oulunkylä in Helsinki.",
+        "what_we_expect": [
+          "We're looking for a nurse in charge of pharmaceuticals for a permanent job in our comfortable home and a happy multi-professional team.",
+          "Could you be exactly what we're looking for?",
+          "A brilliant social and health worker, a brilliant team player, and an enthusiastic ideologue?",
+          "Where are you coming to work?",
+          "The Lucky River Park is located in the village of Oulunkylä in Helsinki.",
+          "The individual service needs of the residents are taken into account in the operation."
+        ],
+        "job_responsibilities": [
+          "We're looking for a nurse in charge of pharmaceuticals for a permanent job in our comfortable home and a happy multi-professional team.",
+          "Could you be exactly what we're looking for?",
+          "A brilliant social and health worker, a brilliant team player, and an enthusiastic ideologue?",
+          "Where are you coming to work?",
+          "The Lucky River Park is located in the village of Oulunkylä in Helsinki.",
+          "The individual service needs of the residents are taken into account in the operation."
+        ],
+        "what_we_offer": [
+          "We're looking for a nurse in charge of pharmaceuticals for a permanent job in our comfortable home and a happy multi-professional team.",
+          "Could you be exactly what we're looking for?",
+          "A brilliant social and health worker, a brilliant team player, and an enthusiastic ideologue?",
+          "Where are you coming to work?",
+          "The Lucky River Park is located in the village of Oulunkylä in Helsinki.",
+          "The individual service needs of the residents are taken into account in the operation."
+        ],
+        "search_keywords": "Nurse in charge of medical care, Infirmary Jokipuisto, Helsinki Mehiläinen Oy Helsinki other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "f4a41bf5",
+        "job_id": "ce-driver-for-lidl-food-service-helsinki-f4a41bf5",
+        "processed": true,
+        "title": "CE driver for LIDL food service",
+        "company": "Maimed Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki",
+          "Vantaa",
+          "Järvenpää",
+          "Kerava",
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://maimed.rekrytointi.com/paikat/index.php?o=A_A&jid=176&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/93aca010-ebe2-4068-9f7f-f46b9312ba4d/en",
+        "job_employer_email": "mari@maimed.fi",
+        "job_employer_name": "Mari Mykkänen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/ce-driver-for-lidl-food-service-helsinki-f4a41bf5",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-12-30",
+        "scraped_at": "2026-11-03 00:23:33",
+        "open_positions": 1,
+        "salary_range": "Salary: according to the contract Use the search",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Maimed Oy is looking for a skilled CE driver for LIDL food service in Helsinki. Don't miss this opportunity—apply today.",
+        "description": "MaiMed Oy, a reliable human resources company, is seeking a skilled and motivated semi-trailer driver for LIDL food service. This permanent position offers a friendly and professional approach to customers, careful handling of equipment, and safe operation. The ideal candidate will start when a suitable driver is found according to the contract, ensuring a permanent employment opportunity. With a CE driving licence, existing professional qualifications, and on-the-job experience, the successful candidate will enjoy competitive pay, quality workwear, and a bonus system. The modern fleet and supportive employer environment create a pleasant working environment. For more information, visit maiMedoy.com.",
+        "what_we_expect": [
+          "CE driving licence.",
+          "Existing professional qualifications and digitised driving licence.",
+          "On-the-job and self-employed work experience and prior experience of driving Lidl food.",
+          "Good physical condition and handling skills.",
+          "Customer service and cooperation skills.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Driving semi-trailers and trucks from the Lidl terminal in Järvenpää.",
+          "Handling equipment and ensuring safe operation.",
+          "The task will involve driving both semi-trailers and trucks from the Lidl terminal in Järvenpää."
+        ],
+        "what_we_offer": [
+          "Support from a reliable employer.",
+          "Competitive pay.",
+          "Quality workwear.",
+          "Bonus system.",
+          "Opportunity for long-term employment for a good performer.",
+          "Pleasant working environment and modern equipment."
+        ],
+        "search_keywords": "CE driver LIDL food service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "13d7c419",
+        "job_id": "cooking-in-the-vaas-vaasa-13d7c419",
+        "processed": true,
+        "title": "Cooking in the Vaas",
+        "company": "Sodexo Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://fi.sodexo.com/toihin-meille/avoimet-tyopaikat?rmpage=job&rmjob=9228&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/22b0e907-2cd9-44c8-a184-fb0ba3d63a72/en",
+        "job_employer_email": "satu.seppanen@sodexo.com",
+        "job_employer_name": "Saru Seppänens",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/cooking-in-the-vaas-vaasa-13d7c419",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-03 00:23:33",
+        "open_positions": 1,
+        "salary_range": "Salary according to contract and start of work",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Looking for a Cooking in the Vaas job in Vaasa? Sodexo Oy is seeking motivated candidates—apply today.",
+        "description": "We are looking for a skilled chef to join our growing team at Antell in the Vaasa area. This is a permanent position offering competitive hourly wages based on Finnish collective agreements. The ideal candidate will be responsible for preparing high-quality meals, using professional kitchen equipment, and maintaining a clean and efficient kitchen. With a focus on customer service, you'll be part of a team dedicated to providing a warm and welcoming experience. Sodexo, a global leader in quality-of-life services, offers comprehensive benefits, development opportunities, and a modern workplace. Apply today to be part of something bigger and valued.",
+        "what_we_expect": [
+          "Experience in the preparation of delicious portion and lunch food.",
+          "Have an eye for detail and be skilled at displaying products beautifully.",
+          "Friendly and professional approach to teamwork and customer service.",
+          "Actively follow the latest trends in the restaurant and café industry.",
+          "Have good knowledge of Finnish and English.",
+          "Knowledge of Swedish is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Prepare high-quality hot and cold lunches and representative meals.",
+          "Use a wide range of professional kitchen equipment in cooking while respecting occupational safety.",
+          "Be actively involved in other kitchen tasks such as self-monitoring and kitchen cleanliness."
+        ],
+        "what_we_offer": [
+          "A flexible, dynamic working environment, friendly co-workers, and the support of a large organisation.",
+          "Opportunity for continuous development through a wide range of training courses.",
+          "Appropriate workwear.",
+          "Comprehensive and modern 24/7 occupational health services.",
+          "Opportunity for an annual paycheck, e-passport, anniversary, and reminder of service.",
+          "Unique Vita by Sodexo employee benefit programme including paid family leave."
+        ],
+        "search_keywords": "Cooking in the Vaas, Sodexo, job, opportunity, restaurant, kitchen, employee, benefits",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "3e8de91e",
+        "job_id": "finnair-aircraft-mechanics-for-cabin-maintenance-and-line-ma-vantaa-3e8de91e",
+        "processed": true,
+        "title": "Finnair Aircraft Mechanics for Cabin Maintenance and Line Maintenance (Summer 2027)",
+        "company": "Barona Teollisuus Oy",
+        "job_category": "aviation-and-airport-services",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/en/jobs/finnair-aircraft-mechanics-for-cabin-maintenance-and-line-maintenance-summer-2027-finnair-technical-services-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9f34585-6c6e-49af-8a9c-a60ac632956d/en",
+        "job_employer_email": "niko.timonen@barona.fi",
+        "job_employer_name": "Niko Timonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/aviation-and-airport-services/finnair-aircraft-mechanics-for-cabin-maintenance-and-line-ma-vantaa-3e8de91e",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-03 00:23:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Finnair Aircraft Mechanics for Cabin Maintenance and Line Maintenance (Summer 2027) at Barona Teollisuus Oy in Vantaa.",
+        "description": "We are seeking motivated Aircraft Mechanics for Cabin Maintenance and Line Maintenance at Finnair Technical Operations in Vantaa, Finland. Join us this summer for hands-on experience with one of the world's most modern fleets. As a summer employee, you'll learn from seasoned professionals, develop practical skills, and explore the dynamic world of aircraft maintenance. This fixed-term contract, starting May and lasting until October 2027, offers competitive hourly wages based on Finnish collective agreements. You'll work with Finnair's modern fleet and cutting-edge technology, learn from experienced professionals, and build a strong foundation for your future career as an aircraft mechanic.",
+        "what_we_expect": [
+          "A minimum of A-level aircraft mechanics vocational training.",
+          "Strong academic performance.",
+          "Good spoken and written English skills.",
+          "Ability to work in shifts.",
+          "Passed pre-employment medical examination.",
+          "Passed pre-employment security clearance."
+        ],
+        "job_responsibilities": [
+          "Assist in the maintenance of aircraft cabins and lines.",
+          "Work with modern aircraft fleets and cutting-edge technology.",
+          "Next steps."
+        ],
+        "what_we_offer": [
+          "Hands-on experience with one of the world's most modern fleets.",
+          "A dynamic environment for learning and development.",
+          "A possibility for employment to continue in the autumn.",
+          "A chance to kick-start your career in aviation."
+        ],
+        "search_keywords": "Finnair, Aircraft Mechanics, Cabin Maintenance, Line Maintenance, Summer 2027",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:35",
+    "jobs": [
+      {
+        "id": "177e86a9",
+        "job_id": "general-practitioner-in-the-emergency-room-public-services-r-rauma-177e86a9",
+        "processed": true,
+        "title": "General practitioner in the emergency room, public services, rheumatology",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/317384/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/05feaf85-bf7b-4f7e-bf03-cb550c08e7c5/en",
+        "job_employer_email": "natalia.aberg@terveystalo.com",
+        "job_employer_name": "Natalia Åberg",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/general-practitioner-in-the-emergency-room-public-services-r-rauma-177e86a9",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-03 00:23:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a General practitioner in the emergency room, public services, rheumatology. role at Terveystalo.",
+        "description": "We are looking for a General Practitioner in the Emergency Room at Terveystalo, Rauma. This role involves providing emergency care and support to the Rauma Health Centre, building on a strong foundation of previous cooperation. The office is located at 2 Steniusstraat, with functional and appropriate facilities. The emergency room is open every day from 08:00 to 20:00, and two experienced doctors work in the emergency room to meet the urgent needs of the area's 40,000 residents. The work is varied and requires rapid, independent, and patient-oriented tasks. The role offers clear operating models, support from a functioning organisation, and the opportunity to influence your own work.",
+        "what_we_expect": [
+          "Medical licence.",
+          "At least two years' work experience.",
+          "Sufficient experience in emergency work."
+        ],
+        "job_responsibilities": [
+          "Examine and treat patients in the emergency room.",
+          "Answer medical calls.",
+          "Renew prescriptions.",
+          "Prepare statements."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Opportunities for professional development.",
+          "Flexible working hours.",
+          "Close management and pre-employment support.",
+          "Competitive remuneration and benefits.",
+          "Wellbeing and mental health services."
+        ],
+        "search_keywords": "general practitioner emergency room public services rheumatology",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "4c24df59",
+        "job_id": "handwriting-worker-kajaani-4c24df59",
+        "processed": true,
+        "title": "Handwriting worker",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/Qm9GOBXj9BFRevJkV3z0Yw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/067eca8d-edbe-4372-b6c9-4fb59b996318/en",
+        "job_employer_email": "joonas.karjalainen@eezy.fi",
+        "job_employer_name": "Joonas Karjalainen",
+        "job_employer_phone_no": "+358504714662",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/handwriting-worker-kajaani-4c24df59",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-03 00:23:35",
+        "open_positions": 1,
+        "salary_range": "TES",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Eezy Henkilöstöpalvelut Oy as a Handwriting worker and grow your career in Kajaani. Check details and apply now.",
+        "description": "We are looking for handwriting workers in Kajaani. As autumn arrives, preparations for the winter season begin. We're seeking a part-time handyman for our client in the Kajaani region for the winter season. Shifts will be daily and weekends, with future employees expected to be committed and flexible. Shifts typically start early in the morning, but may begin as early as midnight in case of unexpected weather. This job offers an excellent opportunity for those who enjoy physical work and have ample time left at the end of the day. Previous experience in manual work is considered an advantage, but is not a requirement. Applicants should have a good attitude towards work, good physical fitness, a good work ethic, and know Finnish. Assistance with finding accommodation is provided.",
+        "what_we_expect": [
+          "Good attitude towards work.",
+          "Physical fitness.",
+          "Finnish language skills.",
+          "B driving licence."
+        ],
+        "job_responsibilities": [
+          "Write and correct handwritten documents.",
+          "Assist with administrative tasks related to handwriting.",
+          "Maintain and improve handwriting skills."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits such as housing and accommodation.",
+          "Professional development opportunities."
+        ],
+        "search_keywords": "handwriting worker handwriting job handwriting position",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "2a6cd129",
+        "job_id": "car-mechanic-jyväskylä-2a6cd129",
+        "processed": true,
+        "title": "Car mechanic",
+        "company": "Be happy Oy",
+        "job_category": "technical-services",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://behappy.likeit.fi/apply/938376",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/25c720f9-f099-4dd9-a9a9-6e0c5c313a63/en",
+        "job_employer_email": "",
+        "job_employer_name": "Reetta Utriainen",
+        "job_employer_phone_no": "050 554 7077",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/car-mechanic-jyväskylä-2a6cd129",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-03 00:23:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Build your future with Be happy Oy as a Car mechanic to Jyväskylä in Jyväskylä. Learn more about the role and apply now.",
+        "description": "We are looking for a trained auto mechanic with a variety of job experience to join our tire shop in Jyväskylä! This is a permanent position with competitive hourly wages based on Finnish collective agreements. We offer assistance with finding accommodation, modern vehicle fleet, and a positive work environment. The job involves maintenance and repair tasks for a wide range of cars, with opportunities to use and develop professional skills. The working time is 37.5 hours per week, and the location is in Jyväskylä. If you're interested in a varied job in the automotive industry, please submit your application via our system.",
+        "what_we_expect": [
+          "Trained as an auto mechanic.",
+          "Careful and responsible work ethic.",
+          "Self-motivated and willing to take on a variety of jobs.",
+          "Good cooperation skills and a positive attitude."
+        ],
+        "job_responsibilities": [
+          "Car maintenance and repair tasks.",
+          "Use of skills in a variety of jobs.",
+          "Further information on recruitment can be found at: Reetta Utriainen p. 050 554 7077."
+        ],
+        "what_we_offer": [
+          "Opportunity to use and develop professional skills.",
+          "Support from a staffing company during employment.",
+          "A variety of jobs in the automotive industry."
+        ],
+        "search_keywords": "car mechanic, tire shop, Jyväskylä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "5988a830",
+        "job_id": "general-practitioner-specialist-or-specialist-practitioner-p-rauma-5988a830",
+        "processed": true,
+        "title": "General practitioner, specialist or specialist practitioner, public service, rheumatoid arthritis",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/364212/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/09833cf3-20cf-4879-9407-a4fce6ffb197/en",
+        "job_employer_email": "natalia.aberg@terveystalo.com",
+        "job_employer_name": "Natalia Åberg",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/general-practitioner-specialist-or-specialist-practitioner-p-rauma-5988a830",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-03 00:23:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a General practitioner, specialist or specialist practitioner, public service, rheumatoid arthritis role at Terveystalo.",
+        "description": "We at HealthCare make our job the most important thing, health. Our work is of great importance, not only to our customers, but to society as a whole. One of our most important players, Terveisto, already has more than 14 000 employees in almost 400 locations across Finland. A place where people live freely and where our domestic work is needed. We're now looking for general practitioners, specialists and general practitioners for Rauma. The health centre has won the competition for the emergency reception services of the Rauma Health Centre in the Welfare Region of the Hundred, and we have started production of the service 3. Eight. It's 2026.",
+        "what_we_expect": [
+          "Skills in communication.",
+          "Experience in patient care.",
+          "Our work is of great importance, not only to our customers, but to society as a whole."
+        ],
+        "job_responsibilities": [
+          "Reception of an outpatient physician.",
+          "Sectoral work in maternity and paediatric care.",
+          "School health care."
+        ],
+        "what_we_offer": [
+          "Salary and benefits.",
+          "Healthcare services.",
+          "Employee benefits."
+        ],
+        "search_keywords": "general practitioner, specialist, public service, rheumatoid arthritis, health centre, emergency room, Rauma, Hundred, Welfare District, HealthStore, HealthCentre, Terveystalo, Finnish Labour Association",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "7c74de95",
+        "job_id": "finnair-component-mechanics-summer-2027-vantaa-7c74de95",
+        "processed": true,
+        "title": "Finnair Component Mechanics (summer 2027)",
+        "company": "Barona Teollisuus Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/en/jobs/finnair-component-mechanics-summer-2027-finnair-technical-services-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b7a5da17-eac0-4c75-98f2-16c1c611623a/en",
+        "job_employer_email": "niko.timonen@barona.fi",
+        "job_employer_name": "Niko Timonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/finnair-component-mechanics-summer-2027-vantaa-7c74de95",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-03 00:23:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Finnair Component Mechanics (summer 2027) at Barona Teollisuus Oy, located in Vantaa. Apply now and get started.",
+        "description": "We are now hiring motivated individuals for the summer of 2027 at Finnair Technical Operations, located at Helsinki-Vantaa airport. As a summer employee, you'll be gaining hands-on experience working with one of the world's most modern fleets. This fixed-term contract, starting between May-June 2027 and lasting until the end of October 2027, offers component mechanic work in the wheels & brakes, emergency equipment, and sheet metal shops. Join Finnair Technical Operations this summer and explore the dynamic world of aviation. We offer competitive hourly wages based on Finnish collective agreements and assistance with finding accommodation. Our modern vehicle fleet and cutting-edge technology await your hands-on experience.",
+        "what_we_expect": [
+          "Experience or strong interest in working in aviation and maintenance environment.",
+          "Relevant vocational training, you can be a student or a graduate.",
+          "Strong academic performance.",
+          "Good spoken and written English skills.",
+          "Fluency in Finnish is seen as an asset.",
+          "At least 18 years old or older."
+        ],
+        "job_responsibilities": [
+          "Manufacture in which the value of all the materials used does not exceed 20% of the ex-works price of the product.",
+          "Work with Finnair's modern fleet and cutting-edge technology.",
+          "Learn from experienced professionals in a dynamic environment.",
+          "Build a strong foundation for your possible future career as an aircraft mechanic.",
+          "A possibility for your employment to continue in the autumn, making this a potential long-term opportunity."
+        ],
+        "what_we_offer": [
+          "Component mechanic work in our wheels & brakes, emergency equipment and sheet metal shops.",
+          "Work with one of the world's most modern fleets.",
+          "A possibility for your employment to continue in the autumn, making this a potential long-term opportunity.",
+          "A hard-working, ambitious attitude.",
+          "Willingness to learn and develop yourself.",
+          "Strong teamwork and collaboration skills."
+        ],
+        "search_keywords": "Finnair Component Mechanics summer 2027, aviation, maintenance, aircraft mechanic, modern fleet, dynamic environment, hands-on experience, potential long-term career, pre-employment security clearance, pre-employment medical examination, drug test",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:37",
+    "jobs": [
+      {
+        "id": "217d1d0b",
+        "job_id": "cook-32-hours-a-week-hh-kitchen-muhos-muhos-217d1d0b",
+        "processed": true,
+        "title": "Cook 32 hours a week, HH Kitchen Muhos",
+        "company": "HalpaHalli Muhos",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Muhos"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/kokki-32h-vk-hhkeittio-muhos/mMNpWk",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dab2e53e-f0ac-4357-a270-01e7a8096757/en",
+        "job_employer_email": "hennariikka.hinttala@halpahalli.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "020-718 3561",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/cook-32-hours-a-week-hh-kitchen-muhos-muhos-217d1d0b",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-03 00:23:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Cook 32 hours a week, HH Kitchen Muhos at HalpaHalli Muhos in Muhos. Apply now and take the next step in your career.",
+        "description": "HalpaHalli Muhos is seeking a dedicated Cook for their HH Kitchen, located in Muhos. This position offers 32 hours of work per week, including a family leave of 31.5 hours, with a permanent contract starting as soon as possible. The role involves preparing and serving a variety of dishes, including home-cooked lunches, hamburgers, à la carte items, and coffee products. The salary is based on trade union agreement, with additional benefits including a modern vehicle fleet and assistance with finding accommodation. The ideal candidate should have previous experience and training in cooking, be responsible and cooperative, and possess a hygiene passport. Contact Hennariikka Hinttala at 020 718 3561 for more information.",
+        "what_we_expect": [
+          "Active and responsible approach to work.",
+          "Good cooperation skills.",
+          "Previous experience and/or training in cookery duties.",
+          "Hygiene passport."
+        ],
+        "job_responsibilities": [
+          "Prepare and pre-prepare lunch.",
+          "Prepare side dishes.",
+          "Unload.",
+          "Serve customers.",
+          "Clean dishes and kitchen."
+        ],
+        "what_we_offer": [
+          "Relaxed and comfortable work environment.",
+          "Part of the family.",
+          "Good knowledge and continuous support.",
+          "Staff reduction.",
+          "Occupational health services."
+        ],
+        "search_keywords": "Cook, HH Kitchen, 32 hours, kitchen, Muhos",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "2ca3d4b4",
+        "job_id": "substitute-physician-public-service-western-finland-pori-2ca3d4b4",
+        "processed": true,
+        "title": "Substitute physician, public service, Western Finland",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Pori",
+          "Rauma",
+          "Salo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/381794/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a0bdd22b-f6ca-49e4-9b29-05e6f2a86fee/en",
+        "job_employer_email": "natalia.aberg@terveystalo.com",
+        "job_employer_name": "Natalia Åberg",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/substitute-physician-public-service-western-finland-pori-2ca3d4b4",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-03 00:23:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Terveystalo is hiring a Substitute physician, public service, Western Finland in Pori. Explore responsibilities, benefits, and apply today.",
+        "description": "We at HealthCare make our job the most important thing, health. Our work is of great importance, not only to our customers, but to society as a whole. One of our most important players, Terveisto, already has more than 14 000 employees in almost 400 locations across Finland. A place where people live freely and where our domestic work is needed. We're currently looking for surgical assistants in the Western Finland area. What does being a paramedic involve? As a substitute doctor, you will work flexibly in our various offices as part of the network of doctors in the public health service. The work consists of standby shifts, during which you are available to receive shifts if necessary. Reservations are usually arranged for 24-hour periods and can be tailored to your life situation.",
+        "what_we_expect": [
+          "Medical licence.",
+          "At least one year's experience of working as an emergency receptionist in Finland.",
+          "Substitute physician, public service, Western Finland We at HealthCare make our job the most important thing, health."
+        ],
+        "job_responsibilities": [
+          "Standby shifts.",
+          "Emergency receptionist.",
+          "Primary healthcare tasks.",
+          "Reception and emergency services."
+        ],
+        "what_we_offer": [
+          "Competitive pay.",
+          "Compensation for temporary accommodation.",
+          "Active working hours and travel allowances.",
+          "Comprehensive tour of offices.",
+          "Professional development and training."
+        ],
+        "search_keywords": "substitute physician, public service, Western Finland, emergency receptionist, medical licence",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "38f984aa",
+        "job_id": "i-m-the-manager-of-the-restaurant-in-vaasa-vaasa-38f984aa",
+        "processed": true,
+        "title": "I 'm the manager of the restaurant in Vaasa .",
+        "company": "Sodexo Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://fi.sodexo.com/toihin-meille/avoimet-tyopaikat?rmpage=job&rmjob=9217&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4268d2ac-0c88-42df-acc8-abeeaf45579d/en",
+        "job_employer_email": "satuseppanen@sodexo.com",
+        "job_employer_name": "Satu Seppänen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/i-m-the-manager-of-the-restaurant-in-vaasa-vaasa-38f984aa",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-03 00:23:37",
+        "open_positions": 1,
+        "salary_range": "Salary according to contract and start of work",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a I 'm the manager of the restaurant in Vaasa . at Sodexo Oy in Vaasa. Apply now and take the next step in your career.",
+        "description": "I 'm the manager of the restaurant in Vaasa . Do you want to be a part of building something completely new? We're picking up a restaurant manager at the Vikby service center on Black Island to launch a new Antell restaurant. Antell restaurants are known for their tasty, homemade food and warm service. If you're excited about new challenges and want to make your mark, this is a great opportunity! You will be able to build the operation of a new restaurant and your own team from the ground up, as well as influence operating practices, the working community and the customer experience. As a restaurant manager, you are responsible for the smooth running of the day-to-day operations of the restaurant and for providing quality lunch, representation and cafeteria services.",
+        "what_we_expect": [
+          "I 'm the manager of the restaurant in Vaasa .",
+          "Do you want to be a part of building something completely new?",
+          "We're picking up a restaurant manager at the Vikby service center on Black Island to launch a new Antell restaurant.",
+          "Antell restaurants are known for their tasty, homemade food and warm service.",
+          "If you're excited about new challenges and want to make your mark, this is a great opportunity!",
+          "You lead by example and, together with your professional team, you create excellent customer experiences."
+        ],
+        "job_responsibilities": [
+          "I 'm the manager of the restaurant in Vaasa .",
+          "Do you want to be a part of building something completely new?",
+          "We're picking up a restaurant manager at the Vikby service center on Black Island to launch a new Antell restaurant.",
+          "Antell restaurants are known for their tasty, homemade food and warm service.",
+          "If you're excited about new challenges and want to make your mark, this is a great opportunity!",
+          "You lead by example and, together with your professional team, you create excellent customer experiences."
+        ],
+        "what_we_offer": [
+          "I 'm the manager of the restaurant in Vaasa .",
+          "Do you want to be a part of building something completely new?",
+          "We're picking up a restaurant manager at the Vikby service center on Black Island to launch a new Antell restaurant.",
+          "Antell restaurants are known for their tasty, homemade food and warm service.",
+          "If you're excited about new challenges and want to make your mark, this is a great opportunity!",
+          "You lead by example and, together with your professional team, you create excellent customer experiences."
+        ],
+        "search_keywords": "I 'm the manager of the restaurant in Vaasa . Sodexo Oy Vaasa other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "d70383cf",
+        "job_id": "insurance-salesman-järvenpää-d70383cf",
+        "processed": true,
+        "title": "Insurance salesman",
+        "company": "Pohjantähti Keskinäinen Vakuutusyhtiö",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.pohjantahti.fi/ura-pohjantahdessa/?rmpage=job&rmjob=410&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3cf0d810-9f56-4fe6-ab28-16fb02ffd66d/en",
+        "job_employer_email": "joakim.malassu@pohjantahti.fi",
+        "job_employer_name": "Joakim Malassu",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/insurance-salesman-järvenpää-d70383cf",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-03 00:23:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Take the next step in your career as a Insurance salesman at Pohjantähti Keskinäinen Vakuutusyhtiö, located in Järvenpää. Apply now and get started.",
+        "description": "Insurance salesman Lakehead, join us in building the renewable North Star and leave your mark on our success story. We're expanding our team and we're recruiting high-performers for the Lakehead area to be our insurance salespeople, which we call our own insurance guy. In this role, you work as a self-employed person, for example under a business name or as a limited company. Our insurance agent acts as an expert in identifying and securing the risks of our personal clients and is responsible for the development of the client base throughout the client base. You're committed to long-term customer relationships and excellent customer service. Experience in the insurance industry is an advantage, but the most important thing is the right attitude and motivation.",
+        "what_we_expect": [
+          "Insurance salesman Lakehead, join us in building the renewable North Star and leave your mark on our success story.",
+          "In this role, you work as a self-employed person, for example under a business name or as a limited company.",
+          "You're committed to long-term customer relationships and excellent customer service.",
+          "Experience in the insurance industry is an advantage, but the most important thing is the right attitude and motivation.",
+          "You'll meet with clients at our meeting point in Lakehead, online or in the client's home.",
+          "You'll be using the Lakehead office to meet and work with clients."
+        ],
+        "job_responsibilities": [
+          "Insurance salesman Lakehead, join us in building the renewable North Star and leave your mark on our success story.",
+          "In this role, you work as a self-employed person, for example under a business name or as a limited company.",
+          "You're committed to long-term customer relationships and excellent customer service.",
+          "Experience in the insurance industry is an advantage, but the most important thing is the right attitude and motivation.",
+          "You'll meet with clients at our meeting point in Lakehead, online or in the client's home.",
+          "You'll be using the Lakehead office to meet and work with clients."
+        ],
+        "what_we_offer": [
+          "Insurance salesman Lakehead, join us in building the renewable North Star and leave your mark on our success story.",
+          "In this role, you work as a self-employed person, for example under a business name or as a limited company.",
+          "You're committed to long-term customer relationships and excellent customer service.",
+          "Experience in the insurance industry is an advantage, but the most important thing is the right attitude and motivation.",
+          "You'll meet with clients at our meeting point in Lakehead, online or in the client's home.",
+          "You'll be using the Lakehead office to meet and work with clients."
+        ],
+        "search_keywords": "Insurance salesman Pohjantähti Keskinäinen Vakuutusyhtiö Järvenpää other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "466f174e",
+        "job_id": "norlandia-kurkihirsi-head-of-the-groups-day-care-centre-espo-espoo-466f174e",
+        "processed": true,
+        "title": "Norlandia Kurkihirsi, head of the group's day care centre, Espoo",
+        "company": "Norlandia",
+        "job_category": "education",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.norlandia.fi/jobs/8623144-ryhmassa-toimiva-paivakodin-johtaja-norlandia-kurkihirsi-espoo/applications/new?promotion=2276070-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2b1983e2-6653-4bd0-ae7f-6b161c98d966/en",
+        "job_employer_email": "minna.martikainen@norlandia.com",
+        "job_employer_name": "Minna Martikainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/norlandia-kurkihirsi-head-of-the-groups-day-care-centre-espo-espoo-466f174e",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-03 00:23:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Norlandia is hiring a Norlandia Kurkihirsi, head of the group's day care centre, Espoo in Espoo. Explore responsibilities, benefits, and apply today.",
+        "description": "Norlandia Kurkihirsi, head of the group's day care centre, Espoo We're looking for a daycare manager to work in our team. The following species are recognised as invasive species: Do you enjoy the company of children, but do you also have a heartfelt desire to develop activities and succeed together? We're looking for an early childhood teacher who enjoys working with children, who is excited about the little miracles of everyday life, and who wants to be a part of building an even better early childhood education. It is natural for you to pause at the children's insights, but at the same time your gaze is also directed forward: how can we, together with children, carers and the working community, make our lives even better?",
+        "what_we_expect": [
+          "We're looking for a daycare manager to work in our team. The following species are recognised as invasive species.",
+          "You have strong pre-employment confidence and the ability to lead the work community.",
+          "You are responsible for the pedagogy of your own group and direct the learning of the children.",
+          "You have a fluent command of the Finnish language.",
+          "Permanent employment, starting under contract.",
+          "Private occupational health care."
+        ],
+        "job_responsibilities": [
+          "We're looking for a daycare manager to work in our team. The following species are recognised as invasive species.",
+          "You have strong pre-employment confidence and the ability to lead the work community.",
+          "You are responsible for the pedagogy of your own group and direct the learning of the children.",
+          "You have a fluent command of the Finnish language.",
+          "Permanent employment, starting under contract.",
+          "Private occupational health care."
+        ],
+        "what_we_offer": [
+          "Physical, cultural and welfare benefits.",
+          "We're looking for a daycare manager to work in our team. The following species are recognised as invasive species.",
+          "You have strong pre-employment confidence and the ability to lead the work community.",
+          "You are responsible for the pedagogy of your own group and direct the learning of the children.",
+          "You have a fluent command of the Finnish language.",
+          "Permanent employment, starting under contract."
+        ],
+        "search_keywords": "Norlandia Kurkihirsi, head of the group's day care centre, Espoo Norlandia Espoo other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-03 00:23:39",
+    "jobs": [
+      {
+        "id": "8f02fae8",
+        "job_id": "regional-physician-civil-service-county-eura-8f02fae8",
+        "processed": true,
+        "title": "Regional physician, civil service, county",
+        "company": "Terveystalo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Eura",
+          "Harjavalta",
+          "Kankaanpää",
+          "Pori",
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/382104/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/47abae52-9498-4fdb-b090-de9f01a6b4ba/en",
+        "job_employer_email": "natalia.aberg@terveystalo.com",
+        "job_employer_name": "Natalia Åberg",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/regional-physician-civil-service-county-eura-8f02fae8",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-03 00:23:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new opportunity as a Regional physician, civil service, county. at Terveystalo in Eura. Apply now and take the next step in your career.",
+        "description": "We are looking for a regional physician to join our team at Terveystalo, the leading private healthcare company in Finland. As a district physician, you will work in primary health care assignments throughout the Hundred Kingdoms area, providing comprehensive services to those in need. This role offers the opportunity to develop skills in different areas of primary healthcare and work in a variety of environments. The work is flexible, with full-time hours negotiated, and includes a few evening and weekend shifts per month. We offer a temporary employment relationship and the chance to start flexibly. Our contact person, Natalia Åberg, can be reached at (natalia. Aberg@healthstalo.fi).",
+        "what_we_expect": [
+          "Doctorate in medicine.",
+          "At least two years of work experience after obtaining a medical license.",
+          "Experience in emergency and emergency services.",
+          "Interest in working in a variety of primary healthcare roles."
+        ],
+        "job_responsibilities": [
+          "Provide primary healthcare services in various locations.",
+          "Work in primary health care assignments throughout the Hundred Kingdoms area.",
+          "Assist with reception at health centres.",
+          "Engage in emergency and emergency room work.",
+          "Perform bed and board work.",
+          "Engage in sector work and other varied tasks of a doctor in the Hundred Towns area."
+        ],
+        "what_we_offer": [
+          "Temporary employment relationship.",
+          "Opportunity to start flexibly.",
+          "Thorough tour of various offices.",
+          "Opportunity to take turns before starting work.",
+          "Comprehensive occupational health care.",
+          "Competitive remuneration and benefits."
+        ],
+        "search_keywords": "regional physician civil service county, primary healthcare, emergency services, primary healthcare roles",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "418113ec",
+        "job_id": "quality-controller-oulu-418113ec",
+        "processed": true,
+        "title": "Quality controller",
+        "company": "Mectalent Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/laadunohjaaja/DPVpNW",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/35e92582-989b-42d5-8af2-bacd7a01e5cd/en",
+        "job_employer_email": "hr@coronaria.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/quality-controller-oulu-418113ec",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-11-14",
+        "scraped_at": "2026-11-03 00:23:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Mectalent Oy is hiring a Quality controller in Oulu. Explore responsibilities, benefits, and apply today.",
+        "description": "We are looking for a Quality Controller at Mectalent Oy in Oulu. This role involves ensuring that quality standards are met in production, working closely with production to identify and resolve quality issues. The successful candidate will have technical training or relevant experience, a background in manufacturing or quality, and a strong understanding of technical drawings and measuring instruments. This is a permanent position with competitive hourly wages based on Finnish collective agreements. The company offers a modern vehicle fleet, assistance with finding accommodation, and a wide range of benefits including occupational health services. The role requires technical acumen, accuracy, and the ability to identify and address quality issues.",
+        "what_we_expect": [
+          "Technical training or other relevant background.",
+          "Experience of working in manufacturing, production or quality.",
+          "Understanding of technical drawings.",
+          "Knowledge of measuring instruments and understanding of measurement.",
+          "Working carefully and systematically.",
+          "The ability to identify anomalies and put things into practice."
+        ],
+        "job_responsibilities": [
+          "Quality control and quality assurance of products and workmanship.",
+          "Making measurements and documenting the results of measurements.",
+          "Verification of material and other quality documents.",
+          "Dealing with and investigating quality abnormalities found in production in cooperation with production and other organisations.",
+          "Assisting in the investigation of customer and supplier discrepancies.",
+          "Participation in the preparation and maintenance of work guides, inspection guides and measurement protocols."
+        ],
+        "what_we_offer": [
+          "Meaningful work at the heart of quality and modern manufacturing.",
+          "Tangible impact on the quality of our products and operations.",
+          "Part of a nice, top-notch team.",
+          "Opportunity to develop skills and practices in a quality-conscious environment.",
+          "Close collaboration with production, the quality manager, and other experts.",
+          "Direct impact on everyday production."
+        ],
+        "search_keywords": "quality controller quality assurance manufacturing production quality",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
