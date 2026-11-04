@@ -440473,5 +440473,64 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-04 04:32:34",
+    "jobs": [
+      {
+        "id": "b702fbc0",
+        "job_id": "emirates-cabin-crew-dubai-b702fbc0",
+        "processed": true,
+        "title": "Emirates Cabin Crew",
+        "company": "Emirates",
+        "job_category": "aviation-and-airport-services",
+        "jobLocation": [
+          "Dubai"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/emirates-fin-emirates-cabin-crew-sdsuu-20608887",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/emirates-fin-emirates-cabin-crew-sdsuu-20608887",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/aviation-and-airport-services/emirates-cabin-crew-dubai-b702fbc0",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-11-04 04:32:34",
+        "open_positions": 1,
+        "salary_range": "1 195–2 864 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Emirates is hiring a Emirates Cabin Crew in Dubai. Explore responsibilities, benefits, and apply today.",
+        "description": "Emirates is a leading international airline with a fleet of modern aircraft, offering world-class service and safety standards. As a Cabin Crew member, you'll be the face of Emirates, ensuring the comfort and safety of passengers. Fluent in English, a natural team player, and able to meet UAE employment visa requirements, you'll be part of a team committed to providing the best customer experience. Salary is competitive, with a range of €1,195 to €2,864 per month, plus variable flying pay. Emirates offers career progression, free furnished accommodation, and comprehensive benefits including medical and dental coverage. Join us and be part of shaping the future of aviation.",
+        "what_we_expect": [
+          "Fluent in written and spoken English.",
+          "Natural team player.",
+          "At least 160cm tall and able to reach 212cm high.",
+          "Meet UAE employment visa requirements.",
+          "At least 21 years old."
+        ],
+        "job_responsibilities": [
+          "Ensure the safety and comfort of passengers.",
+          "Manage onboard service and maintain cabin cleanliness.",
+          "Respond to passenger requests.",
+          "Work collaboratively with colleagues."
+        ],
+        "what_we_offer": [
+          "Furnished accommodation free of charge.",
+          "Free company transport between accommodation and airport/training college.",
+          "30 calendar days of leave per year.",
+          "Comprehensive package for medical and dental services at Emirates Clinics.",
+          "Non-contributory end of service benefit."
+        ],
+        "search_keywords": "Emirates Cabin Crew Emirates Dubai other",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
   }
 ]
