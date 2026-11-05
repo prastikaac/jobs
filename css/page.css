@@ -9374,25 +9374,38 @@ img.goog-te-gadget-icon,
     }
 }
 
-/* ── Responsive header title: scale down on small mobile screens ── */
-@media screen and (max-width: 480px) {
+/* ── Responsive header title: scale on mobile & small devices ── */
+@media screen and (max-width: 768px) {
     .Header .headTtl,
     span.headTtl {
-        font-size: 16px !important;
+        font-size: 18px !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
     }
     .Header .headSub,
     span.headSub {
-        font-size: 12px !important;
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header .headTtl,
+    span.headTtl {
+        font-size: 18px !important;
+    }
+    .Header .headSub,
+    span.headSub {
+        font-size: 13px !important;
     }
 }
 
 @media screen and (max-width: 380px) {
     .Header .headTtl,
     span.headTtl {
-        font-size: 14px !important;
+        font-size: 18px !important;
     }
     .Header .headSub,
     span.headSub {
-        font-size: 10px !important;
+        font-size: 13px !important;
     }
 }

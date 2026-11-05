@@ -18,28 +18,15 @@ app lagging on first open after showing the splashscreen,  fix it
 
 app scroll smooth
 
-
-
-
 the fcm token is not being recorded from the app its blank it not coming along witht the user data that was signed from the app
 
 
-change the footer in all the pages after app published in both Google playstore and apple appstore
 
+
+
+change the footer as in the index page to all the pages after app published in both Google playstore and apple appstore
 
 modify landing page
-
-
-
-
-findjobsinfinland.fi title font small in devices, fix it
-
-fix date and apply button in pinned post
-
-notification cross and arrow design fix in pc 
-
-replace bell with image in notification
-
 
 another Option to speed up the translation could be but dont use it now: Optimize NLLB-1.3B (num_beams=1)
 Switching from 4 beams to greedy decoding cuts GPU workload and translation time by ~3× to 4×, while keeping the 1.3B model.
