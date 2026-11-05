@@ -38,6 +38,7 @@ Terminal Commands :
 
 - Main Automatic runner file from scraper to push that does all :
 .\scraper\run_all_jobs.bat
+.\scraper\run_all_jobs.bat --site "Työmarkkinatori" --limit 2
 
 
 - Change Directory :
