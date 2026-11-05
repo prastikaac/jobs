@@ -422999,5 +422999,858 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-05 19:38:18",
+    "jobs": [
+      {
+        "id": "086809b6",
+        "job_id": "b2b-sales-intern-helsinki-086809b6",
+        "processed": true,
+        "title": "B2B Sales Intern",
+        "company": "Intensive Sales Partners Oy, Helsinki",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki",
+          "Turku",
+          "Tampere",
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.intensive.fi/tyopaikat/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7e8cef11-b947-4215-bdcc-0a34978b75a9/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/b2b-sales-intern-helsinki-086809b6",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-05 19:38:18",
+        "open_positions": 1,
+        "salary_range": "Tehtävässä on provisiopalkka, jossa ahkeruus on tie menestykseen. Tavoiteansioiksi asetamme noin 1000-3000 €/kk, mutta vauhtiin päästyäsi ja koko myyntiputken ammattimaisesti hoitamalla sinulla on mahdollisuus tienata enemmänkin.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Intensive Sales Partners Oy, Helsinki as a B2B Sales Intern in Helsinki. Learn more about the role and apply now.",
+        "description": "We are looking for B2B Sales Interns for the winter of 2026 to combine theoretical knowledge with practical sales processes. Responsibilities include contacting customers by telephone, preparing for sales negotiations, creating clear and customer-oriented offers, and following up with customers to ensure smooth progress. Requirements are customer acquisition management experience, ability to manage sales meetings, proficiency in using CRM and bidding systems, and strong communication and documentation skills. The position offers a competitive salary with potential for growth and meaningful work in building sales pipelines. If you are a business student eager to take your career to the next level, apply now.",
+        "what_we_expect": [
+          "Customer acquisition management experience.",
+          "Ability to manage sales meetings.",
+          "Proficiency in using CRM and bidding systems.",
+          "Strong communication and documentation skills."
+        ],
+        "job_responsibilities": [
+          "Contact customers by telephone.",
+          "Prepare for sales negotiations.",
+          "Create clear and customer-oriented offers.",
+          "Follow up with customers to ensure smooth progress."
+        ],
+        "what_we_offer": [
+          "Opportunity to combine theory with practical sales processes.",
+          "Meaningful work in building sales pipelines.",
+          "Development and growth of sales processes.",
+          "Training in professional communication, pricing, and documentation."
+        ],
+        "search_keywords": "sales intern business student customer acquisition CRM",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "9de2ab13",
+        "job_id": "excavator-handler-kouvola-9de2ab13",
+        "processed": true,
+        "title": "Excavator Handler",
+        "company": "Staffmill Oy, Kuopio",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://staffmill-oy.breezy.hr/p/decc52f72101-kaivinkoneen-peramies-kouvola/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/19577cd5-976e-449d-b6b8-14ed0d1691ff/en",
+        "job_employer_email": "heikki.torronen@staffmill.fi",
+        "job_employer_name": "Heikki Törrönen",
+        "job_employer_phone_no": "044-323 7001",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/excavator-handler-kouvola-9de2ab13",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-05 19:38:18",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Excavator Handler at Staffmill Oy, Kuopio in Kouvola. Check the requirements and apply today.",
+        "description": "We are looking for two skilled excavator handlers for a full-time, one-year fixed-term contract in Kouvola and the Kymen Valley. As an excavator handler, you will use leveling lasers and measuring instruments, provide hand signals and control communications to the excavator operator, read drawings, elevation systems, and earthworks plans, use basic tools and groundwork, and position underground cables and pipes. Requirements include experience as an excavator's assistant, ability to read plans and manage basic tools, a current occupational safety card, a B driving license, and knowledge of the Finnish language. Good cooperation skills and active work output are also essential. The position offers support from StaffMill's trusted employer and quick telephone support throughout employment.",
+        "what_we_expect": [
+          "Experience as an excavator's assistant.",
+          "Ability to read plans and manage the use of basic tools.",
+          "Current occupational safety card.",
+          "B driving licence.",
+          "Knowledge of Finnish language.",
+          "Good cooperation skills and active work output."
+        ],
+        "job_responsibilities": [
+          "Use leveling lasers and measuring instruments.",
+          "Provide hand signals and control communications to the excavator operator.",
+          "Read drawings, elevation systems, and earthworks plans.",
+          "Use basic tools and groundwork.",
+          "Position underground cables and pipes."
+        ],
+        "what_we_offer": [
+          "Full-time, one-year fixed-term job.",
+          "Support of StaffMill's trusted employer.",
+          "Quick telephone support throughout employment."
+        ],
+        "search_keywords": "excavator handler construction industry Kouvola Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "da1a4e94",
+        "job_id": "excavator-driver-kouvola-da1a4e94",
+        "processed": true,
+        "title": "Excavator Driver",
+        "company": "Staffmill Oy, Kuopio",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://staffmill-oy.breezy.hr/p/55fde135185b-kaivinkoneenkuljettaja-kouvola/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0eac86d5-3133-4092-874b-b8db3c3e3b42/en",
+        "job_employer_email": "heikki.torronen@staffmill.fi",
+        "job_employer_name": "Heikki Törrönen",
+        "job_employer_phone_no": "044-323 7001",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/excavator-driver-kouvola-da1a4e94",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-05 19:38:18",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Staffmill Oy, Kuopio as a Excavator Driver and grow your career in Kouvola. Check the job details and apply now.",
+        "description": "We are looking for a skilled excavator driver for a full-time permanent position in Kouvola, Finland. The role involves controlling the excavator and its accessories for various tasks, using 3D machine control systems, and maintaining the machine on a daily basis. You should have strong skills as an excavator driver, the ability to read land use plans and drawings, basic tools and knowledge of civil engineering, and the ability to work independently. A valid occupational safety card and B driving licence are required, along with the ability to speak Finnish. Additional benefits include the opportunity to obtain a driving licence No 1, fireworks licence, tractor driving, CE driving licence, and the ability to drive one's own car. Applications can be submitted through the provided link.",
+        "what_we_expect": [
+          "Strong skills as an excavator driver.",
+          "Ability to read land use plans and drawings.",
+          "Basic tools and knowledge of civil engineering and different types of soil.",
+          "Ability to work independently and make decisions.",
+          "Valid occupational safety card and B driving licence.",
+          "Ability to speak Finnish."
+        ],
+        "job_responsibilities": [
+          "Control the excavator and its accessories for various tasks.",
+          "Use 3D machine control systems.",
+          "Maintain the machine on a daily basis."
+        ],
+        "what_we_offer": [
+          "Driving licence No 1.",
+          "Fireworks licence.",
+          "Tractor driving.",
+          "CE driving licence.",
+          "Ability to drive one's own car."
+        ],
+        "search_keywords": "excavator driver, 3D machine control, civil engineering, Finnish, maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "6821c30a",
+        "job_id": "warehousing-worker-rauma-6821c30a",
+        "processed": true,
+        "title": "Warehousing Worker",
+        "company": "Kreo Palvelut Oy, Turku",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://paikat.kreo.fi/jobs/8676061-varasto-logistiikkatyontekija-vakituinen",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/67488e28-105e-4445-9b49-7b89ffdaa755/en",
+        "job_employer_email": "joona.hagelberg@kreo.fi",
+        "job_employer_name": "Joona Hagelberg",
+        "job_employer_phone_no": "+358407726950",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/warehousing-worker-rauma-6821c30a",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-05 19:38:18",
+        "open_positions": 1,
+        "salary_range": "Osaamisesta ja kokemuksesta riippuen, alkaen 14 €/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Kreo Palvelut Oy, Turku as a Warehousing Worker in Rauma. Learn more about the role and apply now.",
+        "description": "We are looking for a warehousing worker for a permanent position with Kreo Palvelut Oy in Rauma. Responsibilities include handling incoming and outgoing goods, check-in and hold, pick-up and deliveries to customers, and driving a van for exporting goods. Applicants should have previous warehousing experience, reliability, diligence, knowledge of Finnish and English, and a B driver's license. Kreo Palvelut Oy is a Finnish private company specializing in staff hiring and recruitment. The position offers a permanent contract, and the salary is based on experience, starting at 14 €/h. Applications are welcome, and the job will begin as soon as a suitable person is found.",
+        "what_we_expect": [
+          "Reliability in task performance.",
+          "Diligence in work.",
+          "Knowledge of Finnish language.",
+          "Knowledge of English language.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [
+          "Handle incoming and outgoing goods.",
+          "Check-in and hold goods.",
+          "Perform pick-up and deliveries to customers.",
+          "Drive a van for exporting goods."
+        ],
+        "what_we_offer": [
+          "Permanent position.",
+          "Opportunity to work with a Finnish private company.",
+          "Potential for immediate employment.",
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "warehouse worker logistics experience driving license",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-05 19:38:20",
+    "jobs": [
+      {
+        "id": "fb45fcf3",
+        "job_id": "teamcenter-technical-lead-plm-technical-architect-espoo-fb45fcf3",
+        "processed": true,
+        "title": "Teamcenter Technical Lead / PLM Technical Architect",
+        "company": "Academic Work Finland Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Kauniainen",
+          "Hyvinkää",
+          "Kerava",
+          "Kirkkonummi",
+          "Loviisa",
+          "Mäntsälä",
+          "Nurmijärvi",
+          "Sipoo",
+          "Siuntio",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/OWA3NK",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6c85070a-df76-4436-87c5-de7e0601998d/en",
+        "job_employer_email": "krs01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/teamcenter-technical-lead-plm-technical-architect-espoo-fb45fcf3",
+        "date_posted": "2026-11-05",
+        "date_expires": "2027-05-04",
+        "scraped_at": "2026-11-05 19:38:20",
+        "open_positions": 1,
+        "salary_range": "- Salary: Indicative level of approximately 5,500 - 7,500 € / month, depending on experience and expertise",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Academic Work Finland Oy is hiring a Teamcenter Technical Lead / PLM Technical Architect in Espoo. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are looking for an experienced Teamcenter Technical Lead to take a key role in the development and technical direction of its Siemens Teamcenter Product Lifecycle Management (PLM) platform at a large international technology company operating in a complex industrial environment. Your mission is to develop a clear technical vision for the platform and turn that vision into concrete improvements, focusing particularly on system stability, performance, and observability during your first year. You will work closely with an international technical team, primarily based in India, including architects, developers, and DevOps specialists.",
+        "what_we_expect": [
+          "Extensive experience with Siemens Teamcenter PLM platform.",
+          "Strong technical expertise in enterprise-scale architecture, integrations, and customizations.",
+          "Proven ability to perform root cause analysis and optimize system performance.",
+          "Experience in developing and implementing technical roadmaps.",
+          "Excellent problem-solving and collaboration skills."
+        ],
+        "job_responsibilities": [
+          "Develop and own the technical architecture and roadmap of the Siemens Teamcenter PLM platform.",
+          "Analyze the current Teamcenter environment to identify performance bottlenecks, stability issues, and opportunities for improvement.",
+          "Investigate complex technical problems through application logs, system monitoring, troubleshooting, and root cause analysis.",
+          "Design and guide improvements to Teamcenter configurations, customizations, and integrations."
+        ],
+        "what_we_offer": [
+          "Salary of approximately 5,500 - 7,500 € / month, depending on experience and expertise.",
+          "A technically influential role in the direction and continuous improvement of a business-critical Siemens Teamcenter PLM platform.",
+          "Complex technical challenges involving enterprise-scale architecture, integrations, customizations, performance optimization, and platform reliability.",
+          "An opportunity to make a lasting impact by identifying improvement opportunities and establishing technical priorities.",
+          "Permanent employment with Academic Work as a key technical position within the client's organization.",
+          "International collaboration with experienced technical specialists and stakeholders across different locations and functions."
+        ],
+        "search_keywords": "Teamcenter Technical Lead PLM Technical Architect Engineering Design Technical Architecture Performance Optimization",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-05 19:38:21",
+    "jobs": [
+      {
+        "id": "d524dc0d",
+        "job_id": "team-leader-field-service-jomala-d524dc0d",
+        "processed": true,
+        "title": "Team Leader Field Service",
+        "company": "Ålands Telekommunikation Ab, Jomala",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Jomala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://jobs.hiring.heartpace.com/alcom/teamledare-faltservice/view-job?q=desc",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/53933d23-c6d6-4108-8041-b9137d53d5ce/en",
+        "job_employer_email": "robin.gestranius@alcom.ax",
+        "job_employer_name": "Robin Gestranius",
+        "job_employer_phone_no": "+358 18 27470",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/team-leader-field-service-jomala-d524dc0d",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-05 19:38:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Ålands Telekommunikation Ab, Jomala is looking for a Team Leader Field Service in Jomala. Don't miss this opportunity — apply today.",
+        "description": "We are looking for a Team Leader Field Service to lead, plan, and follow up the work of our alarm and installation technicians on a daily, weekly, and monthly basis. You will coordinate resources, manage the end of projects, and implement planning as a prerequisite for change. Your role will involve facilitating quality, self-control, and efficient use of time and resources, as well as being responsible for the running of the company and coordinating suppliers and purchasers. You will contribute to the commercial development of lock, alarm, and security services based on business and customer needs. We are seeking someone with experience in directing, coordinating, or facilitating work, who can plan, prioritize, and follow up effectively.",
+        "what_we_expect": [
+          "Experience of directing, coordinating or facilitating work.",
+          "Ability to plan, prioritize and follow up.",
+          "Capacity to make decisions and keep the peace as long as the conditions change.",
+          "Understanding of quality, decency and business acumen.",
+          "Experience in technical activities at sea."
+        ],
+        "job_responsibilities": [
+          "Lead, plan and follow up your team's work on a daily, weekly and monthly basis.",
+          "Coordinate the resource, manage the end of the project and implement the planning as a prerequisite for change.",
+          "Facilitate quality, self-control and efficient use of time and resources.",
+          "Responsible for the running of the company and for coordinating suppliers and purchasers.",
+          "Contribute to the commercial development of lock, alarm and security services based on business and customer needs."
+        ],
+        "what_we_offer": [
+          "Modern and flexible workplace.",
+          "Central role in the day-to-day operations.",
+          "Opportunity to work with a knowledgeable and engaged team.",
+          "Values of experiences, perspectives and backgrounds."
+        ],
+        "search_keywords": "team leader field service manufacturing production coordination planning quality management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "f2bcfdb7",
+        "job_id": "taxi-driver-evening-shift-espoo-f2bcfdb7",
+        "processed": true,
+        "title": "Taxi Driver, Evening Shift",
+        "company": "Nordlink Henkilöstövuokraus Oy, Helsinki",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1481255-5a77-4791-9e25-aa154ef63aa8/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1481255-5a77-4791-9e25-aa154ef63aa8/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-evening-shift-espoo-f2bcfdb7",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-11-05 19:38:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Start your next job as a Taxi Driver, Evening Shift at Nordlink Henkilöstövuokraus Oy, Helsinki. Great opportunity in Espoo — apply now.",
+        "description": "We are looking for a taxi driver to work evening shifts with Bolt and Uber services in Helsinki. The role involves driving customers from 16:00 to 01:00, with the option to continue until 05:00. You will use a clean, new Toyota Corolla Touring from the electric taxi fleet based in Espoo, Vantaa, and Helsinki. Remuneration is commission-based with a holiday allowance, and tips are paid in full. A valid taxi driver's license, sufficient knowledge of Finnish, and previous taxi experience are advantageous. Validity of the taxi driver's license and knowledge of English or other languages are required. You will ensure the vehicle is clean and in good condition, and follow company policies and procedures.",
+        "what_we_expect": [
+          "Valid taxi driver's license.",
+          "Sufficient knowledge of Finnish for customer service.",
+          "Previous taxi experience is advantageous.",
+          "Economical driving style."
+        ],
+        "job_responsibilities": [
+          "Drive customers using Bolt and Uber services.",
+          "Ensure vehicle is clean and in good condition.",
+          "Follow company policies and procedures."
+        ],
+        "what_we_offer": [
+          "Commission-based remuneration with holiday allowance.",
+          "Electric taxi fleet in Helsinki.",
+          "Opportunity to transfer to Taxi to Helsinki once card is validated.",
+          "Growing Finnish service company environment."
+        ],
+        "search_keywords": "taxi driver evening shift bolt uber finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "450d9a95",
+        "job_id": "taxi-driver-morning-shift-espoo-450d9a95",
+        "processed": true,
+        "title": "Taxi Driver, Morning Shift",
+        "company": "Nordlink Henkilöstövuokraus Oy, Helsinki",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:apply@nordlink.fi?subject=Application%20for%20the%20Job%20-%20Taxi%20Driver%2C%20Morning%20Shift&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Taxi%20Driver%2C%20Morning%20Shift.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/45a4faa6-80cc-4f53-a5ae-0a973d8b251e/en",
+        "job_employer_email": "apply@nordlink.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-morning-shift-espoo-450d9a95",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-11-05 19:38:21",
+        "open_positions": 1,
+        "salary_range": "Salary 40 per cent of the value added tax (VAT)",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "Swedish",
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Taxi Driver, Morning Shift at Nordlink Henkilöstövuokraus Oy, Helsinki in Espoo.",
+        "description": "We are looking for a taxi driver for the morning shift in the Helsinki area. The role involves driving a Tesla Model Y through Helsinki and handling calls from Kela and MPK during the morning. The position is full-time and seasonal, offering a salary of 40% of the value added tax (VAT) plus a monthly holiday allowance. A taxi driver's license, good knowledge of Finnish, and experience in the taxi industry are required. A Tesla Model Y vehicle is provided, and the starting point can be adjusted based on the candidate's situation. If you do not have a Taxi Helsinki driver card, you can start with us via Bolt and Uber and transfer to Taxi Helsinki once the card is validated. The entire tip left by the customer remains with the driver.",
+        "what_we_expect": [
+          "Taxi driver's license.",
+          "Good knowledge of Finnish.",
+          "Experience in the taxi industry is a plus.",
+          "Ability to drive a Tesla Model Y."
+        ],
+        "job_responsibilities": [
+          "Drive a taxi through Helsinki during the morning shift.",
+          "Handle calls from Kela and MPK during the morning shift.",
+          "Taxi driver, morning shift Taxi from Helsinki We're picking up a driver for the morning shift in the D.C."
+        ],
+        "what_we_offer": [
+          "Salary of 40% of the value added tax (VAT) + monthly holiday allowance.",
+          "A cool Tesla Model Y vehicle.",
+          "Flexible starting point based on the candidate's situation.",
+          "The entire tip left by the customer remains with the driver."
+        ],
+        "search_keywords": "taxi driver morning shift Helsinki Kela MPK",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "2d274d43",
+        "job_id": "senior-mechanical-designer-turku-2d274d43",
+        "processed": true,
+        "title": "Senior Mechanical Designer",
+        "company": "Creo Center",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Turku",
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://careers.creocenter.fi/jobs/8675798-senior-mekaniikkasuunnittelija-muovi-ja-elektroniikkatuotteet/applications/new?promotion=2283112-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0039b1cd-16f9-434c-a1a1-83885b983c7b/en",
+        "job_employer_email": "mikko.toivonen@creocenter.fi",
+        "job_employer_name": "Mikko Toivonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-mechanical-designer-turku-2d274d43",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-05 19:38:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Senior Mechanical Designer at Creo Center. Great opportunity in Turku — apply now.",
+        "description": "We are looking for a Senior Mechanical Designer with experience in the mechanical design of plastic and electronic products to join our multidisciplinary team at Creo Center in Turku or Espoo. Key responsibilities include creating technical solutions for product development projects, working closely with experts and customers, ensuring product quality and cost-effective manufacturability, and documenting projects. Requirements include experience in 3D software and a solution-oriented approach. Benefits include a competitive hourly wage, lunch allowance, telephone allowance, commuting allowance or employment bike, extended occupational health insurance, comprehensive accident insurance for leisure, and a People Bonus.",
+        "what_we_expect": [
+          "Experience in mechanical design of plastic and electronic products.",
+          "Ability to understand technical complexities.",
+          "Solution-oriented approach.",
+          "Proficiency in 3D software.",
+          "Good communication skills."
+        ],
+        "job_responsibilities": [
+          "Create technical solutions for mechanical design of plastic and electronic products.",
+          "Work closely with the team of experts and customers.",
+          "Ensure product quality and cost-effective manufacturability.",
+          "Document projects and communicate with customers."
+        ],
+        "what_we_offer": [
+          "Lunch allowance.",
+          "Telephone allowance.",
+          "Commuting allowance or employment bike.",
+          "Extended occupational health insurance in Aqaba.",
+          "Comprehensive accident insurance for leisure.",
+          "People Bonus distributed annually among employees."
+        ],
+        "search_keywords": "Senior Mechanical Designer mechanical design plastic electronic products multidisciplinary product development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "e40c876c",
+        "job_id": "fine-dining-chef-rovaniemi-e40c876c",
+        "processed": true,
+        "title": "Fine Dining Chef",
+        "company": "Apukka Resort",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/fine-dining-kokki-ravintola-olkka-apukka-resort-rovaniemi-lappi/8pqJbX",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/685d4fc3-d8f7-4641-81e8-631815d839f6/en",
+        "job_employer_email": "lappi@bondata.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/fine-dining-chef-rovaniemi-e40c876c",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-05 19:38:21",
+        "open_positions": 1,
+        "salary_range": "Salary based on experience and contract, please",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Fine Dining Chef role at Apukka Resort. Join the team and build your career in Rovaniemi.",
+        "description": "We are looking for an experienced Fine Dining Chef to join the team at Apukka Resort in Rovaniemi, Lapland. The role involves preparing and serving high-quality meals in accordance with the restaurant's dinner concept, assisting with other kitchen tasks, and working closely with the kitchen team to ensure each dinner is a carefully crafted experience. You will also occasionally work at a premium breakfast, serving both a buffet and individual orders. The position is full-time and permanent, starting at the end of November or the latest at the beginning of December, with a contract until March 2027. You should have strong experience in fine dining and/or à la carte cuisine, education in culinary arts, careful and quality workmanship, good teamwork skills, and a hygienic passport.",
+        "what_we_expect": [
+          "Strong experience in fine dining and/or à la carte cuisine.",
+          "Education in culinary arts.",
+          "Careful and quality workmanship.",
+          "Good teamwork skills.",
+          "Hygienic passport.",
+          "Knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Prepare and serve high-quality meals in accordance with the restaurant's dinner concept.",
+          "Assist with other kitchen tasks.",
+          "Work closely with the kitchen team to ensure each dinner is a carefully crafted experience.",
+          "Occasionally work at a premium breakfast, serving both a buffet and individual orders."
+        ],
+        "what_we_offer": [
+          "The opportunity to work in a high-end restaurant in a unique environment in Lapland.",
+          "Various tasks.",
+          "Support from a professional team.",
+          "Competitive pay based on experience.",
+          "Shared staff accommodation available, if necessary, for a reasonable fee.",
+          "Bondata support in employment matters during the employment relationship."
+        ],
+        "search_keywords": "fine dining chef, culinary arts, Lapland, restaurant kitchen, high-end cuisine",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-05 19:38:23",
+    "jobs": [
+      {
+        "id": "7f281a6f",
+        "job_id": "restaurant-worker-kuusamo-7f281a6f",
+        "processed": true,
+        "title": "Restaurant Worker",
+        "company": "Café & Pinseria Ruka",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/ravintolatyontekija-ravintola-talonpoyta-cafe-pinseria-ruka/ZnWN3o",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/19ea1c62-10af-4fb0-a612-bc0d9937206b/en",
+        "job_employer_email": "lappi@bondata.fi",
+        "job_employer_name": "Anna Rinnekallio",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/restaurant-worker-kuusamo-7f281a6f",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-14",
+        "scraped_at": "2026-11-05 19:38:23",
+        "open_positions": 1,
+        "salary_range": "salary requirements you might have",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Café & Pinseria Ruka is looking for a Restaurant Worker in Kuusamo. Don't miss this opportunity — apply today.",
+        "description": "We are looking for a Restaurant Worker to join Café & Pinseria Ruka in Kuusamo for the winter season of 2026-2027. Key responsibilities include preparing and serving dishes such as soup, hamburgers, and Pinsa Romano, serving tables, providing customer service, and keeping the restaurant clean and tidy. Previous experience in the fast-food business, excellent customer service skills, flexibility in work tasks, and knowledge of Finnish and English are required. The employment relationship starts in November and lasts for 11 months, with at least 90 hours of work per week. Various tasks will be performed at the central location in Ruku and, if necessary, at other company offices.",
+        "what_we_expect": [
+          "Previous experience in the fast-food business.",
+          "Excellent customer service skills.",
+          "Flexibility in work tasks.",
+          "Knowledge of Finnish and English.",
+          "Hygienic passport."
+        ],
+        "job_responsibilities": [
+          "Prepare and serve dishes such as soup, hamburgers, and Pinsa Romano.",
+          "Serve tables and provide customer service.",
+          "Keep the restaurant clean and tidy.",
+          "Prepare and serve specialty coffees."
+        ],
+        "what_we_offer": [
+          "Various tasks at the central location in the heart of Ruku and, if necessary, at other company offices.",
+          "Popular and high-quality products to be made and served.",
+          "Nice, knowledgeable coworkers.",
+          "Familiarization with work tasks.",
+          "Bondata's support in employment matters."
+        ],
+        "search_keywords": "restaurant worker, food preparation, customer service, Finnish, English",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "2ebe12b7",
+        "job_id": "cooks-and-coffee-shop-workers-akaa-2ebe12b7",
+        "processed": true,
+        "title": "Cooks and Coffee Shop Workers",
+        "company": "Arwo Rekry Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Akaa",
+          "Kangasala",
+          "Lempäälä",
+          "Nokia",
+          "Pirkkala",
+          "Tampere",
+          "Valkeakoski"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arwo.likeit.fi/apply/2217830",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/da962bbc-1fac-4603-9d3f-016062beb1ff/en",
+        "job_employer_email": "info@arworekry.fi",
+        "job_employer_name": "Miia Laitila",
+        "job_employer_phone_no": "0413280459",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/cooks-and-coffee-shop-workers-akaa-2ebe12b7",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-05 19:38:23",
+        "open_positions": 1,
+        "salary_range": "Salary: According to the agreement, taking into",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Arwo Rekry Oy is hiring a Cooks and Coffee Shop Workers in Akaa. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are looking for cooks and coffee shop workers for Ståhlberg Ideapark in various locations including Akaa, Kangasala, Lempäälä, Nokia, Pirkkala, Tampere, and Valkeakoski. Key responsibilities include preparing tasty home-cooked meals and keeping the kitchen running smoothly. We seek an enthusiastic and engaged individual with self-initiative, the ability to work both independently and in a team, a hygiene passport, previous experience as a lunchmaker, and the ability to work as a cashier. Working hours are 60 hours per week, mainly between 8am and 4pm, including weekends and holidays. The position is permanent and starts as soon as possible.",
+        "what_we_expect": [
+          "Self-initiative and quick work.",
+          "Ability to work both independently and in a team.",
+          "Hygiene passport.",
+          "Previous experience as a lunchmaker.",
+          "Ability to work as a cashier."
+        ],
+        "job_responsibilities": [
+          "Prepare tasty home-cooked meals.",
+          "Keep the kitchen running smoothly.",
+          "Inquiries relating to the application process and timetable: Miia Laitila, p. 041 328 0459."
+        ],
+        "what_we_offer": [
+          "Opportunity for a long-term employment relationship.",
+          "A pleasant staff.",
+          "Support throughout the employment relationship."
+        ],
+        "search_keywords": "cook coffee shop worker restaurant food service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "014c2e24",
+        "job_id": "mechanical-engineer-tampere-014c2e24",
+        "processed": true,
+        "title": "Mechanical Engineer",
+        "company": "Creo Center",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://careers.creocenter.fi/jobs/8670743-mekaniikkasuunnittelija-senior-mekaniikkasuunnittelija/applications/new?promotion=2283086-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5e819429-6ba5-4b24-a9bb-9a709cb5fac2/en",
+        "job_employer_email": "tomi.hanninen@creocenter.fi",
+        "job_employer_name": "Tomi Hänninen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/mechanical-engineer-tampere-014c2e24",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-05 19:38:23",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Creo Center is hiring a Mechanical Engineer in Tampere. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are looking for a solution-oriented mechanical engineer to join our growing team at Creo Center in Tampere. As a key member of our multidisciplinary product development group, you will design mechanical solutions for diverse projects, work on the development of production equipment and fine machinery, and collaborate with customers and design professionals from various sectors. You will ensure the quality and cost-effectiveness of products using modern design methods and 3D CAD software such as Creo, SolidWorks, or NX. The role offers the opportunity to take on wider project responsibility in a Senior role, where you will be independent in technical decision-making and contribute to the development of innovative product ideas.",
+        "what_we_expect": [
+          "Applicable technical degree in mechanical engineering.",
+          "Experience in mechanical design in a product development or industrial environment.",
+          "Strong knowledge of 3D CAD software such as Creo, SolidWorks, or NX.",
+          "Knowledge of materials and manufacturing methods.",
+          "Solution-oriented approach and passion for new technologies.",
+          "Ability to work independently in technical decision-making (Senior role)."
+        ],
+        "job_responsibilities": [
+          "Design mechanical solutions for product development projects.",
+          "Work on the design of steel structures, production equipment, and fine machinery.",
+          "Collaborate with customers and design professionals from different sectors.",
+          "Ensure the quality and cost-effectiveness of the product.",
+          "Use modern design methods and 3D CAD software for design tasks.",
+          "Manage product structures and documentation in the PDM system."
+        ],
+        "what_we_offer": [
+          "Opportunity to work on diverse product development projects.",
+          "Collaboration with a multidisciplinary team of experts.",
+          "Use of modern design tools and software.",
+          "Potential for wider project responsibility in a Senior role.",
+          "Contribution to the development of innovative product ideas."
+        ],
+        "search_keywords": "mechanical engineer mechanical design product development CAD software",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "6481f3fc",
+        "job_id": "breakfast-chef-kuusamo-6481f3fc",
+        "processed": true,
+        "title": "Breakfast Chef",
+        "company": "Lisäpalvelu Pohjois-Suomi Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lisapalvelu.likeit.fi/apply/113651305",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/50c83cc6-1b6e-4b64-9e88-e92f631535bf/en",
+        "job_employer_email": "ilari.kesti@lisapalvelu.net",
+        "job_employer_name": "Ilari Kesti",
+        "job_employer_phone_no": "+358401966174",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/breakfast-chef-kuusamo-6481f3fc",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-05 19:38:23",
+        "open_positions": 1,
+        "salary_range": "Palkkaus on osaamisesi mukaan arviolta 15-18€h + lisät. Sekä tarvittaessa sinulle järjestyy paikan päältä myös majoitus huokeaan hintaan!",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lisäpalvelu Pohjois-Suomi Oy is looking for a Breakfast Chef in Kuusamo. Don't miss this opportunity — apply today.",
+        "description": "We are looking for a Breakfast Chef to join the Big Feast at the Hilltop Restaurant in Kuusamo, a high-end, award-winning hotel located on the summit of Finland's southernmost hill. Responsibilities include preparing a high-quality breakfast buffet in a relaxed and friendly service environment. Requirements are training and/or work experience in food preparation, a good attitude toward work and a desire to learn, ability to adapt to changing circumstances, knowledge of Finnish, and a hygiene passport. The salary is estimated at 15 to 18 euros per hour plus extra, and accommodation is available for a nominal fee. Applications are being considered early, so apply soon.",
+        "what_we_expect": [
+          "Training and/or work experience in the field of food preparation.",
+          "A good attitude toward work and a desire to learn.",
+          "Ability to adapt to changing circumstances and to take others into account.",
+          "Knowledge of Finnish is required.",
+          "Situational awareness and pressure sensitivity in a seasonal environment.",
+          "Hygiene passport."
+        ],
+        "job_responsibilities": [
+          "Prepare a high-quality breakfast buffet.",
+          "Work in a high-end, award-winning hotel setting.",
+          "Here are a few more reasons why you should choose the Additional Service."
+        ],
+        "what_we_offer": [
+          "A competitive salary according to your skills, always at least in line with the collective agreement in the sector.",
+          "Accommodation is also available for a nominal fee.",
+          "Support and protection from the Supplementary Service throughout your journey."
+        ],
+        "search_keywords": "breakfast chef, restaurant, Finnish, hotel, culinary, experience, accommodation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-05 19:38:26",
+    "jobs": [
+      {
+        "id": "e9f7c9f0",
+        "job_id": "nurse-helsinki-e9f7c9f0",
+        "processed": true,
+        "title": "Nurse",
+        "company": "Esperi Hoivakoti Tuuletar",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/lahihoitaja-esperi-hoivakoti-tuuletar/ZnWJ45",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2617b8cc-0a7e-41d0-b5e4-02c0f9ed8253/en",
+        "job_employer_email": "jonna.nieminen@esperi.fi",
+        "job_employer_name": "Jonna Nieminen",
+        "job_employer_phone_no": "044 036 6151",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/nurse-helsinki-e9f7c9f0",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-05 19:38:26",
+        "open_positions": 1,
+        "salary_range": "Salary In hiring, we comply with the private co",
+        "workTime": "Part-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Esperi Hoivakoti Tuuletar as a Nurse in Helsinki. Learn more about the role and apply now.",
+        "description": "We are looking for a part-time nurse for temporary employment at Esperi Hoivakoti Tuuletar in Helsinki. The role involves providing basic care tailored to individual needs, supporting operational capacity, monitoring and recording health status, preparing RAI evaluations and implementation plans, administering medicinal products, and maintaining close cooperation with relatives and other stakeholders. Key requirements include a degree in midwifery or being a final student, a valid medical license, a professional card for social and health care, a hygiene passport, and vaccination protection. Fluency in Finnish is required, and previous experience working with the elderly is an advantage.",
+        "what_we_expect": [
+          "Kindness and a can-do attitude.",
+          "Teamwork skills.",
+          "A degree in midwifery or be a final student.",
+          "A valid medical license.",
+          "A professional card for social and health care.",
+          "A hygiene passport and vaccination protection in accordance with the Infectious Diseases Act."
+        ],
+        "job_responsibilities": [
+          "Provide basic care tailored to individual needs.",
+          "Support and reinforce operational capacity where possible.",
+          "Monitor and record health status.",
+          "Prepare RAI evaluations and implementation plans for services.",
+          "Administer medicinal products.",
+          "Maintain close cooperation with relatives and other stakeholders."
+        ],
+        "what_we_offer": [
+          "A peaceful and natural working environment.",
+          "Comprehensive employment benefits including commuting allowance.",
+          "Cityshopper discounts.",
+          "Top colleagues and executives."
+        ],
+        "search_keywords": "nurse elderly care social services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
