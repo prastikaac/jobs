@@ -441389,5 +441389,65 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-04 04:39:05",
+    "jobs": [
+      {
+        "id": "1875577c",
+        "job_id": "director-of-production-joensuu-1875577c",
+        "processed": true,
+        "title": "Director of Production",
+        "company": "Valio",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/director-of-production-joensuu-1875577c",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-11-04 04:39:05",
+        "open_positions": 1,
+        "salary_range": "salary claim, as soon as possible and no later",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Valio is looking for a skilled Director of Production, Joensuu in Joensuu. Don't miss this opportunity—apply today.",
+        "description": "We are looking for a production manager with a strong leadership background, excellent organizational skills, and proficiency in both Finnish and English to join our Joensuu factory. The ideal candidate will manage and develop the packaging unit's personnel, ensure the well-being of employees, and lead the operation of the packaging line to meet production and financial objectives. Reporting to the production manager, this role requires solid experience in food business and a solid understanding of Lean philosophy, quality management, and HACCP methods. The successful candidate will be familiarized with comprehensive support for a growing team, career opportunities within a large company, and the opportunity to apply for the open role.",
+        "what_we_expect": [
+          "MSc or university degree or equivalent in food industry.",
+          "Solid experience in food business.",
+          "Strong leadership background.",
+          "Good interaction and organizational skills.",
+          "Knowledge of Lean philosophy.",
+          "Application of quality management and HACCP methods."
+        ],
+        "job_responsibilities": [
+          "Manage and develop the packaging unit's personnel.",
+          "Ensure well-being at work.",
+          "Develop the operation of the packaging line.",
+          "Achieve production and financial objectives."
+        ],
+        "what_we_offer": [
+          "Salary.",
+          "Benefits.",
+          "Career opportunities.",
+          "Comprehensive support for a growing and developing team.",
+          "Personnel benefits."
+        ],
+        "search_keywords": "Director of Production, Joensuu, production manager, packaging unit, food industry, MSc, university degree, Lean philosophy, quality management, HACCP methods, Finnish, English",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
   }
 ]
