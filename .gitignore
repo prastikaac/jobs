@@ -83,6 +83,10 @@ functions/
 # ── Public repo exclusions (private repo only) ────────────────────────────────
 .github/
 __pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
 ARCHITECTURE.md
 push-private.bat
 push-public.bat
