@@ -415722,5 +415722,1324 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:05:54",
+    "jobs": [
+      {
+        "id": "1e33e66c",
+        "job_id": "full-time-teacher-in-tourism-and-restaurant-industry-kuopio-1e33e66c",
+        "processed": true,
+        "title": "Full-Time Teacher in Tourism and Restaurant Industry",
+        "company": "Savon koulutuskuntayhtymä",
+        "job_category": "education",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/SAKKY-00-71-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1d940848-3627-4dc3-951f-f826bf103c59/en",
+        "job_employer_email": "kimmo.pousi@sakky.fi",
+        "job_employer_name": "Kimmo Pousi",
+        "job_employer_phone_no": "0447854878",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/full-time-teacher-in-tourism-and-restaurant-industry-kuopio-1e33e66c",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-06 23:05:54",
+        "open_positions": 1,
+        "salary_range": "OVTES:n mukainen peruspalkka 3190,13-3923,25 €/kk koulutustason mukaan+176,48 €/kk palkanlisä+mahd. vuosisid. lisä",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Savon koulutuskuntayhtymä is looking for a Full-Time Teacher in Tourism and Restaurant Industry in Kuopio. Don't miss this opportunity — apply today.",
+        "description": "Savo vocational college is seeking a full-time, permanent teacher to instruct customer service in the tourism and restaurant and catering industries in Kuopio. Responsibilities include teaching, guiding and evaluating students, and supervising workplace training. Applicants must have a suitable university degree and experience in customer service tasks, as well as a developing work attitude and good cooperation and teamwork skills. Applications are submitted through the Kuntarekry system and must include copies of study and work experience certificates. The position is governed by OVTES and includes a 2-month trial period.",
+        "what_we_expect": [
+          "Good cooperation and teamwork skills.",
+          "A developing work attitude."
+        ],
+        "job_responsibilities": [
+          "Teaching customer service in the tourism industry and the restaurant and catering industry.",
+          "Guiding and evaluating students.",
+          "Supervising training organized in the workplace."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "full-time teacher, tourism, restaurant, customer service, vocational college",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "bcba6749",
+        "job_id": "wok-cook-helsinki-bcba6749",
+        "processed": true,
+        "title": "Wok Cook",
+        "company": "Avara Kustannus Oy, Helsinki",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b2beb120-64dc-4ebf-acba-c33c9fcd940c/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b2beb120-64dc-4ebf-acba-c33c9fcd940c/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/wok-cook-helsinki-bcba6749",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-06 23:05:54",
+        "open_positions": 1,
+        "salary_range": "Hourly wage according to the agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Wok Cook role at Avara Kustannus Oy, Helsinki. Join the team and build your career in Helsinki.",
+        "description": "Avara Kustannus Oy is seeking a Wok Cook for our new Asian fast food restaurant, China Boss, located in Vuosaari, Helsinki. The role involves preparing wok, noodle, and rice dishes to order, pre-preparing raw materials, packaging portions, and maintaining kitchen cleanliness. Previous experience in wok cooking or restaurant kitchen work is advantageous, and we value reliability, professionalism, teamwork, and a willingness to learn. If you share our passion for Asian cuisine and are eager to contribute to a dynamic kitchen environment, please contact us by email.",
+        "what_we_expect": [
+          "Previous experience in wok cooking or restaurant kitchen work is considered an advantage.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Prepare Asian wok, noodle and rice dishes to order.",
+          "Pre-preparation of raw materials.",
+          "Packaging of portions.",
+          "Taking care of the cleanliness of the kitchen."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "wok cook asian food kitchen preparation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "ae390e4c",
+        "job_id": "fast-food-cashier-helsinki-ae390e4c",
+        "processed": true,
+        "title": "Fast Food Cashier",
+        "company": "Avara Kustannus Oy, Helsinki",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9f4acfa-d552-418e-b7f7-2f26fdd095a5/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9f4acfa-d552-418e-b7f7-2f26fdd095a5/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/fast-food-cashier-helsinki-ae390e4c",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-06 23:05:54",
+        "open_positions": 1,
+        "salary_range": "12.21 + allowances and holiday pay",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Fast Food Cashier role at Avara Kustannus Oy, Helsinki. Join the team and build your career in Helsinki.",
+        "description": "Avara Kustannus Oy is seeking a dynamic, at least 16-year-old cashier for the exciting new China Boss fast food restaurant in Vuosaari, Helsinki. This permanent, full-time role involves serving customers, handling cash transactions, and contributing to a friendly, teamwork-oriented environment. Applicants should have a good attitude, be reliable, professional, and eager to learn. Fluency in Finnish is required. If you're passionate about fast-paced work and enjoy working in a vibrant restaurant setting, we'd love to hear from you. Contact us by email or phone for more information.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "cashier fast food restaurant Vuosaari China Boss",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "5dc08d50",
+        "job_id": "full-time-teacher-in-the-food-industry-and-restaurant-and-ca-kuopio-5dc08d50",
+        "processed": true,
+        "title": "Full-time teacher in the food industry and restaurant and catering industry",
+        "company": "Savon koulutuskuntayhtymä",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/SAKKY-00-72-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/543ea7cd-a2df-4da0-a9b3-595aaf056bb5/en",
+        "job_employer_email": "kimmo.pousi@sakky.fi",
+        "job_employer_name": "Kimmo Pousi",
+        "job_employer_phone_no": "0447854878",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/full-time-teacher-in-the-food-industry-and-restaurant-and-ca-kuopio-5dc08d50",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-06 23:05:54",
+        "open_positions": 1,
+        "salary_range": "OVTES:n mukainen peruspalkka 3190,13-3923,25 €/kk koulutustason mukaan+176,48 €/kk palkanlisä+mahd. vuosisid. lisä",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Full-time teacher in the food industry and restaurant and catering industry at Savon koulutuskuntayhtymä in Kuopio.",
+        "description": "Savo vocational college is seeking a full-time, permanent teacher to deliver vocational education in the food industry and restaurant and catering sector in Kuopio. Responsibilities include planning and implementing educational programs, guiding and evaluating students, and supporting workplace learning. Applicants should have a relevant university degree and experience in the food industry or restaurant and catering sector, as well as strong teamwork and a developing work attitude. The position offers a permanent contract with a salary based on OVTES, 3190,13-3923,25 €/month, plus additional allowances. Applicants must submit a criminal record extract and relevant certificates by the application deadline.",
+        "what_we_expect": [
+          "Good cooperation and teamwork skills.",
+          "A developing work attitude."
+        ],
+        "job_responsibilities": [
+          "Planning and implementation of vocational education in the food industry and the restaurant and catering industry.",
+          "Guiding and evaluating students.",
+          "Guiding learning that takes place in working life."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "teacher food industry restaurant catering vocational education Kuopio",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "87f87f58",
+        "job_id": "pizza-and-pasta-chef-helsinki-87f87f58",
+        "processed": true,
+        "title": "Pizza and Pasta Chef",
+        "company": "Mesifa Oy, Helsinki",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr.mesifa@gmail.com?subject=Application%20for%20the%20Job%20-%20Pizza%20and%20Pasta%20Chef&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Pizza%20and%20Pasta%20Chef.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/293c4cfa-8b9e-4881-b281-e37a9e265497/en",
+        "job_employer_email": "hr.mesifa@gmail.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/pizza-and-pasta-chef-helsinki-87f87f58",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-06 23:05:54",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join Mesifa Oy, Helsinki as a Pizza and Pasta Chef and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "We are seeking a passionate, skilled, and motivated chef to join our growing team at Mesifa Oy in Helsinki. This full-time, permanent position involves making pizza dough, pizza sauces, and pasta sauces from scratch, pre-preparing raw materials, and managing daily kitchen tasks. Responsibilities also include preparing different pasta dishes, having a good knowledge of pasta menus, and understanding Sri Lankan main dishes, short eats, and traditional desserts. You will be responsible for maintaining food quality, kitchen cleanliness, and hygiene standards, as well as understanding food allergies, allergens, and cross-contamination prevention. Fluency in English is essential, and knowledge of Finnish is mandatory. Knowledge of Sinhala is a significant advantage.",
+        "what_we_expect": [
+          "Fluent English is an absolute requirement.",
+          "Knowledge of the Finnish language is mandatory (everyday basic Finnish is accepted).",
+          "Knowledge of Sinhala language is a big advantage.",
+          "Experience in making pizza and pasta is an absolute requirement.",
+          "Knowledge of Sri Lankan cuisine is an absolute requirement.",
+          "A valid Finnish hygiene passport is required."
+        ],
+        "job_responsibilities": [
+          "Making pizza dough, pizza sauces and pasta sauces from scratch.",
+          "Pre-preparation of raw materials and management of the daily preliminary work in the kitchen.",
+          "Preparation of different pasta dishes and good knowledge of pasta menus.",
+          "Knowledge of Sri Lankan main dishes, short eats and traditional desserts.",
+          "Taking care of food quality, kitchen cleanliness and hygiene standards.",
+          "Understanding food allergies, allergens and cross contamination prevention."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "pizza chef pasta chef culinary chef food safety hygiene",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:05:55",
+    "jobs": [
+      {
+        "id": "cff49593",
+        "job_id": "sales-manager-lahti-cff49593",
+        "processed": true,
+        "title": "Sales Manager",
+        "company": "Taloturva Lahti",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/myyntipaallikko/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fa4b4cac-3e75-4051-be12-7bfec0a5aa9b/en",
+        "job_employer_email": "juho.kestila@taloturva.fi",
+        "job_employer_name": "Kestilä Juho",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-manager-lahti-cff49593",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-06 23:05:55",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Taloturva Lahti is looking for a Sales Manager in Lahti. Don't miss this opportunity — apply today.",
+        "description": "In Lahti, Taloturva Lahti is seeking a Sales Manager to lead and grow the sales of their plumbing repair services. As a key player, you will recruit, train, and support the sales team, develop and implement sales strategies, set and monitor clear goals, negotiate with key customers, and analyze results. This role offers a responsible and developing leadership position with full training and support, a motivated team, and excellent earning potential. You will enjoy freedom and independence in your work, along with full reimbursement of travel expenses. If you enjoy managing people, are ambitious, and thrive in negotiations, this is the opportunity for you. Submit your application today.",
+        "what_we_expect": [
+          "Enjoys managing people.",
+          "Knows how to motivate and move the team forward, is ambitious and goal-oriented.",
+          "Enjoys negotiations and wants to succeed in sales."
+        ],
+        "job_responsibilities": [
+          "Recruiting, training and sparring the sales team.",
+          "Sales strategy development and practical implementation.",
+          "Setting and monitoring clear goals.",
+          "Sales negotiations and managing key customers.",
+          "Analyzing and reporting the results."
+        ],
+        "what_we_offer": [
+          "A responsible and developing leadership role.",
+          "With full training and support, you won't be left alone.",
+          "A motivated team and a good team spirit.",
+          "Excellent earning potential (your result is reflected in the salary).",
+          "Freedom and independence in your work.",
+          "Full reimbursement of travel expenses."
+        ],
+        "search_keywords": "salesperson sales salesmanager salesjob salesrepresentative regionalrepresentative manager",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "ec617173",
+        "job_id": "sales-representative-jyväskylä-ec617173",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Taloturva Jyväskylä",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/Myyja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/81aa65d2-bd07-4e5c-af69-637dad2d096c/en",
+        "job_employer_email": "tuomo.kemppainen@taloturva.fi",
+        "job_employer_name": "Kemppainen Tuomo",
+        "job_employer_phone_no": "+358447334444",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-jyväskylä-ec617173",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-06 23:05:55",
+        "open_positions": 1,
+        "salary_range": "salary model consists of a **1500€** base salar",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Sales Representative role at Taloturva Jyväskylä. Join the team and build your career in Jyväskylä.",
+        "description": "Are you looking for a sales job where your calendar is already full and the product is one that the customers really appreciate? Taloturva Jyväskylä, a strong and reliable local pipe repair partner, is seeking a new goal-oriented salesperson for our team. As a Sales Representative, you will travel to pre-arranged meetings at customers' homes, map out their needs, listen sensitively, and present solutions clearly. You will find the best solution for the customer and complete the deal. We offer 15 ready visits per week directly in your calendar, a 1500€ base salary, and a clear bonus structure. Permanent employment is available, including an invoicing option, comprehensive orientation, and a gym membership.",
+        "what_we_expect": [
+          "Genuinely enjoy meeting people.",
+          "Natural conversationalist.",
+          "Goal-oriented.",
+          "Results-oriented.",
+          "Hunger to succeed.",
+          "Willing to develop into a top sales professional."
+        ],
+        "job_responsibilities": [
+          "Travel to pre-arranged meetings at customers' homes.",
+          "Map out customers' needs.",
+          "Listen sensitively.",
+          "Present solutions clearly.",
+          "Find the best solution for the customer and complete the deal."
+        ],
+        "what_we_offer": [
+          "15 ready visits per week directly in your calendar.",
+          "1500€ base salary.",
+          "Clear bonus structure.",
+          "Permanent employment (also invoicing option).",
+          "Comprehensive orientation.",
+          "Gym membership."
+        ],
+        "search_keywords": "sales representative pipe repair HVAC Jyväskylä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "8850104c",
+        "job_id": "appointment-scheduler-lahti-8850104c",
+        "processed": true,
+        "title": "Appointment Scheduler",
+        "company": "Taloturva Lahti",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/ajanvaraaja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5c5b70b2-1ddc-43d7-ab4e-5af8345c4108/en",
+        "job_employer_email": "juho.kestila@taloturva.fi",
+        "job_employer_name": "Kestilä Juho",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/appointment-scheduler-lahti-8850104c",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-06 23:05:55",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Part-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Appointment Scheduler role at Taloturva Lahti. Join the team and build your career in Lahti.",
+        "description": "Appointment Scheduler at Taloturva Lahti in Lahti seeks a determined and personable individual to contact customers, arrange meetings for renovation representatives, store customer data, and make calendar entries. This part-time, summer job offers an unparalleled work atmosphere, new equipment and furniture, shared breakfasts, and employee recreation events. Previous experience is not necessary, as comprehensive training will be provided. Taloturva is a national family business specializing in home plumbing repairs, offering opportunities for career development. If you are diligent, have a positive attitude, and enjoy working as part of a team, apply now!",
+        "what_we_expect": [
+          "Determination, perseverance and the desire to move forward in life.",
+          "Diligence and perseverance.",
+          "Attitude and appropriate humor.",
+          "Being a positive self and a great colleague as part of a successful team."
+        ],
+        "job_responsibilities": [
+          "Contacting customers.",
+          "Arranging meetings for renovation representatives.",
+          "Storing customer data in systems.",
+          "Making calendar entries."
+        ],
+        "what_we_offer": [
+          "Unparalleled work atmosphere.",
+          "New equipment and furniture.",
+          "Shared breakfasts.",
+          "Employee recreation events.",
+          "Networking activities."
+        ],
+        "search_keywords": "booker full-time job part-time job summer job sales jobs Lahti",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:05:57",
+    "jobs": [
+      {
+        "id": "71295b8d",
+        "job_id": "industrial-painters-sandblasters-rauma-71295b8d",
+        "processed": true,
+        "title": "Industrial Painters - Sandblasters",
+        "company": "BRIGAS INSDUSTRIES OY, Kokkola",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Rauma",
+          "Turku",
+          "Helsinki",
+          "Uusikaupunki",
+          "Hanko"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr@brigasindustries.fi?subject=Application%20for%20the%20Job%20-%20Industrial%20Painters%20-%20Sandblasters&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Industrial%20Painters%20-%20Sandblasters.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3f9e9662-81e0-431d-a08b-30d61032fd29/en",
+        "job_employer_email": "hr@brigasindustries.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/industrial-painters-sandblasters-rauma-71295b8d",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-06 23:05:57",
+        "open_positions": 1,
+        "salary_range": "11,10 euron tunti brutto",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Industrial Painters - Sandblasters at BRIGAS INSDUSTRIES OY, Kokkola in Rauma. Check the requirements and apply today.",
+        "description": "Industrial painters and sandblasters at BRIGAS INDUSTRIES OY in Rauma, Turku, Helsinki, Uusikaupunki, and Hanko are needed for full-time, permanent positions. Responsibilities include surface pretreatment according to ISO standards, surface cleaning by sanding, sandpaper sanding, and sandblasting, surface protection and covering before painting, applying paint with a roller and brush, and using high-pressure sprayers. Work involves ships, dry docks, and chambers. Applicants must have at least 5 years of relevant work experience. Send your resume to hr@brigasindustries.fi.",
+        "what_we_expect": [
+          "At least 5 years of relevant work experience."
+        ],
+        "job_responsibilities": [
+          "Surface pretreatment according to ISO standards.",
+          "Surface cleaning by sanding, sandpaper sanding and sandblasting.",
+          "Surface protection and covering before painting.",
+          "Applying paint with a paint roller and brush.",
+          "Applying the paint with high-pressure sprayers.",
+          "Works on ships, dry docks and chambers."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "industrial painters sandblasters surface pretreatment painting experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "50e4d073",
+        "job_id": "welder-rauma-50e4d073",
+        "processed": true,
+        "title": "Welder",
+        "company": "BRIGAS INSDUSTRIES OY, Kokkola",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Rauma",
+          "Turku",
+          "Helsinki",
+          "Hanko",
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr@brigasindustries.fi?subject=Application%20for%20the%20Job%20-%20Welder&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Welder.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1f58271a-bd28-4e45-9420-74a1de1fb72a/en",
+        "job_employer_email": "hr@brigasindustries.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-rauma-50e4d073",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-06 23:05:57",
+        "open_positions": 1,
+        "salary_range": "11,65 euroa tunti brutto",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join BRIGAS INSDUSTRIES OY, Kokkola as a Welder and grow your career in Rauma. Check the job details and apply now.",
+        "description": "BRIGAS INDUSTRIES OY in Rauma, Turku, Helsinki, Hanko, and Uusikaupunki is seeking a skilled Welder with at least 5 years of experience in the field. Applicants must possess knowledge of welding processes 135/136/138 or 141 and have experience in shipbuilding, petrochemical, or offshore industries. If you meet these requirements, please send your CV to hr@brigasindustries.fi.",
+        "what_we_expect": [
+          "At least 5 years of welding experience.",
+          "Knowledge of welding processes 135/136/138 or 141.",
+          "Experience in shipbuilding, petrochemical or offshore."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "welder welding experience shipbuilding petrochemical offshore",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:40:00",
+    "jobs": [
+      {
+        "id": "2f8dfa17",
+        "job_id": "pipe-fitter-rauma-2f8dfa17",
+        "processed": true,
+        "title": "Pipe Fitter",
+        "company": "BRIGAS INSDUSTRIES OY, Kokkola",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Rauma",
+          "Turku",
+          "Hanko",
+          "Helsinki",
+          "Raisio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr@brigasindustries.fi?subject=Application%20for%20the%20Job%20-%20Pipe%20Fitter&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Pipe%20Fitter.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5f41d155-26b2-4dda-b72a-0925acf19f14/en",
+        "job_employer_email": "hr@brigasindustries.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/pipe-fitter-rauma-2f8dfa17",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-06 23:40:00",
+        "open_positions": 1,
+        "salary_range": "11,10 euro hour Brutto",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "BRIGAS INSDUSTRIES OY, Kokkola is hiring a Pipe Fitter in Rauma. Explore the job responsibilities, benefits, and apply today.",
+        "description": "BRIGAS INDUSTRIES OY in Rauma, Turku, Hanko, Helsinki, and Raisio is seeking a Pipe Fitter with at least 5 years of pipe fitting experience, the ability to read ISO drawings, and the capability to assemble pipe spools according to drawings and tack weld them. Applicants must be fluent in English and able to work independently. Please send your CV to hr@brigasindustries.fi.",
+        "what_we_expect": [
+          "Must have at least 5 years of pipe fitting experience.",
+          "Must be able to read ISO drawings.",
+          "Must be able to work independently."
+        ],
+        "job_responsibilities": [
+          "Must be able to assemble pipe spools according to drawings.",
+          "Must be able to tack weld assembled pipe spools."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "pipe fitting experience ISO drawings welding",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "56dfae70",
+        "job_id": "assembling-metal-structures-tuusula-56dfae70",
+        "processed": true,
+        "title": "Assembling Metal Structures",
+        "company": "Raudsepp & Kruus Oy, Tuusula",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tuusula",
+          "Loviisa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:m.kruus@outlook.com?subject=Application%20for%20the%20Job%20-%20Assembling%20Metal%20Structures&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Assembling%20Metal%20Structures.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fd84b577-1b3e-41f5-a60a-5c965ea05446/en",
+        "job_employer_email": "m.kruus@outlook.com",
+        "job_employer_name": "Marek",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/assembling-metal-structures-tuusula-56dfae70",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-06 23:40:00",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Assembling Metal Structures at Raudsepp & Kruus Oy, Tuusula in Tuusula. Apply now and take the next step in your career.",
+        "description": "At Raudsepp & Kruus Oy in Tuusula, we are seeking a skilled Assembler of Metal Structures to join our team. This full-time, permanent position requires a good attitude, reliability, professionalism, teamwork, and a willingness to learn. Knowledge of various work types, including tiling, partition, and measurement work, is essential. Fluency in Finnish is required. If you are passionate about assembling metal structures and eager to contribute to our team, we would love to hear from you.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "metal structures assembly tiling partition measurement",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "96195d43",
+        "job_id": "salesperson-vaasa-96195d43",
+        "processed": true,
+        "title": "Salesperson",
+        "company": "Glitter",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://jobs.glitter.se/jobs/8684754-glitter-rewell-etsii-20h-myyjaa/applications/new?promotion=2285859-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3131179f-5dbf-4598-bdb9-10904fe9ae4c/en",
+        "job_employer_email": "reija.rintala@glitter.fi",
+        "job_employer_name": "Reija Rintala",
+        "job_employer_phone_no": "+358405185800",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/salesperson-vaasa-96195d43",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-06 23:40:00",
+        "open_positions": 1,
+        "salary_range": "salary is determined according to the trade ind",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Salesperson role at Glitter. Join the team and build your career in Vaasa.",
+        "description": "Glitter Rewell is seeking a 20-hour salesperson to join our team in Vaasa. As a committed salesperson with a passion for fashion and customer service, you will actively engage in sales, ensuring a welcoming and inspiring store environment, and helping customers find the perfect products. You will also handle daily operational tasks. Previous experience in sales or customer service is advantageous. This role offers a permanent, flexible position with a competitive hourly wage based on Finnish collective agreements. Join us to create a positive and stimulating workplace where your enthusiasm and dedication will thrive. Applications are submitted online; the deadline is 15 November 2026.",
+        "what_we_expect": [
+          "You are a committed salesperson who loves customer encounters and is motivated by achieving results.",
+          "You have passion and a strong interest in fashion and trends.",
+          "You promote a good atmosphere and create a good team spirit with your colleagues.",
+          "You are comfortable in a fast-moving work environment and in a wide variety of tasks.",
+          "You are responsible, flexible and have a positive attitude."
+        ],
+        "job_responsibilities": [
+          "Work actively in sales and offer the best customer experience on the market.",
+          "Ensure that the store is inspiring, well stocked and clean throughout the day.",
+          "Help customers find the right products.",
+          "Perform daily tasks related to the operation of the store."
+        ],
+        "what_we_offer": [
+          "An inspiring and stimulating workplace and nice colleagues.",
+          "A good introduction to work, challenging work and great opportunities to advance in your career."
+        ],
+        "search_keywords": "salesperson retail customer service retail sales retail job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "1f5588b8",
+        "job_id": "hull-fitter-rauma-1f5588b8",
+        "processed": true,
+        "title": "Hull Fitter",
+        "company": "BRIGAS INSDUSTRIES OY, Kokkola",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Rauma",
+          "Turku",
+          "Helsinki",
+          "Hanko"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr@brigasindustries.fi?subject=Application%20for%20the%20Job%20-%20Hull%20Fitter&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Hull%20Fitter.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/eb08de9d-41eb-494d-adc4-e546a0dc46d5/en",
+        "job_employer_email": "hr@brigasindustries.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/hull-fitter-rauma-1f5588b8",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-06 23:40:00",
+        "open_positions": 1,
+        "salary_range": "11,65 euro hour Brutto",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Hull Fitter at BRIGAS INSDUSTRIES OY, Kokkola. Great opportunity in Rauma — apply now.",
+        "description": "BRIGAS INDUSTRIES OY is seeking a Hull Fitter with at least 5 years of relevant experience to join our team in Rauma, Turku, Helsinki, or Hanko. The ideal candidate must be fluent in English, capable of reading and understanding drawings, and able to work independently. Proficiency in tack welding and flame cutting is essential. If you meet these requirements, please send your CV to hr@brigasindustries.fi.",
+        "what_we_expect": [
+          "Must have at least 5 years of relevant experience.",
+          "Must read and understand drawings.",
+          "Must work independently.",
+          "Must know how to tack weld.",
+          "Must know how to flame cut."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "hull fitter heavy plate worker experience drawings independence welding cutting",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "b6d95941",
+        "job_id": "santa-claus-kirkkonummi-b6d95941",
+        "processed": true,
+        "title": "Santa Claus",
+        "company": "Vinland Film Company Oy, Kauniainen",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Kirkkonummi",
+          "Nurmijärvi",
+          "Espoo",
+          "Sipoo",
+          "Hyvinkää",
+          "Helsinki",
+          "Vantaa",
+          "Mäntsälä",
+          "Porvoo",
+          "Tuusula",
+          "Vihti",
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tapani@joulusuomi.fi?subject=Application%20for%20the%20Job%20-%20Santa%20Claus&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Santa%20Claus.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/741d531b-108a-49be-8d92-fb0a31a8803d/en",
+        "job_employer_email": "tapani@joulusuomi.fi",
+        "job_employer_name": "Tapani Viikkilä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/santa-claus-kirkkonummi-b6d95941",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-06 23:40:00",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Santa Claus role at Vinland Film Company Oy, Kauniainen. Join the team and build your career in Kirkkonummi.",
+        "description": "The capital region and Uusimaa's Joulu Suomi, part of Vinland Film Company Oy, seeks child-friendly, articulate individuals to join the largest Christmas Eve Santa service in Finland. Fluent Finnish speakers are required, and the ability to use a car is a necessity. On December 24, 2026, Santas will visit families with children, talk to the kids, share stories of Korvatunturi, distribute gifts, and sing or listen to Christmas carols. Good compensation is based on the number of visits, and Santa training is provided. Well-maintained costumes and accessories, as well as a cared-for beard and wig, are available. Santas can earn rewarding and fun experiences while contributing to the joy of Christmas.",
+        "what_we_expect": [
+          "Speak Finnish fluently.",
+          "Possibility of using a car."
+        ],
+        "job_responsibilities": [
+          "Visit the homes of families with children.",
+          "Talk to the children.",
+          "Tell the stories of Korvatunturi.",
+          "Start to distribute gifts.",
+          "Sing or listen to Christmas carols."
+        ],
+        "what_we_offer": [
+          "Good compensation based on the number of Santa's visits.",
+          "Santa training.",
+          "Good Santa costumes with many different accessories.",
+          "Well-maintained and washed beard and wig.",
+          "Pension accrual through employer contributions and pension costs."
+        ],
+        "search_keywords": "Santa Claus Christmas Eve Finland Uusimaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:40:01",
+    "jobs": [
+      {
+        "id": "8ed01a43",
+        "job_id": "santa-claus-ylöjärvi-8ed01a43",
+        "processed": true,
+        "title": "Santa Claus",
+        "company": "Vinland Film Company Oy, Kauniainen",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Ylöjärvi",
+          "Nokia",
+          "Pirkkala",
+          "Lempäälä",
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tapani@joulusuomi.fi?subject=Application%20for%20the%20Job%20-%20Santa%20Claus&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Santa%20Claus.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7877b16c-7d4c-4dc0-b6fe-82e2413825c6/en",
+        "job_employer_email": "tapani@joulusuomi.fi",
+        "job_employer_name": "Tapani Viikkilä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/santa-claus-ylöjärvi-8ed01a43",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-06 23:40:01",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Vinland Film Company Oy, Kauniainen is looking for a Santa Claus in Ylöjärvi. Don't miss this opportunity — apply today.",
+        "description": "Joulu Suomi, part of Vinland Film Company Oy, is seeking Santa Clauses for Christmas Eve 2026 in the Tampere region. Ideal candidates should speak Finnish fluently and have a car available. Responsibilities include visiting families with children, engaging with the kids, sharing Korvatunturi stories, distributing gifts, and singing carols. Good compensation is based on the number of visits, and Santa training is provided. Apply with your CV to join a joyful tradition and earn rewarding experiences.",
+        "what_we_expect": [
+          "Speak Finnish fluently.",
+          "Possibility of using a car.",
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork."
+        ],
+        "job_responsibilities": [
+          "Visit the homes of families with children.",
+          "Talk to the children.",
+          "Tell the stories of Korvatunturi.",
+          "Start to distribute gifts.",
+          "Sing or listen to Christmas carols."
+        ],
+        "what_we_offer": [
+          "Good compensation based on the number of Santa's visits.",
+          "Santa training.",
+          "Good Santa costumes with many accessories.",
+          "Well-maintained and washed beard and wig.",
+          "Opportunity to earn better than private Santas without advertising costs and outfit acquisition costs.",
+          "Focus on playing the role of Santa himself."
+        ],
+        "search_keywords": "Santa Claus Christmas Finland Tampere region",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "043951db",
+        "job_id": "santa-claus-janakkala-043951db",
+        "processed": true,
+        "title": "Santa Claus",
+        "company": "Vinland Film Company Oy, Kauniainen",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Janakkala",
+          "Riihimäki",
+          "Lahti",
+          "Hämeenlinna",
+          "Hattula",
+          "Hausjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tapani@joulusuomi.fi?subject=Application%20for%20the%20Job%20-%20Santa%20Claus&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Santa%20Claus.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6a929cbb-5ea8-4c35-a154-8a4dbe91222d/en",
+        "job_employer_email": "tapani@joulusuomi.fi",
+        "job_employer_name": "Tapani Viikkilä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/santa-claus-janakkala-043951db",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-06 23:40:01",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Vinland Film Company Oy, Kauniainen is looking for a Santa Claus in Janakkala. Don't miss this opportunity — apply today.",
+        "description": "Santa Claus: Join the largest Christmas Eve Santa service in Finland and bring joy to families with children in Hämeenlinna, Riihimäki, and Lahti on December 24, 2026. Fluent Finnish speakers are needed to visit homes, talk to children, tell Korvatunturi stories, distribute gifts, and sing or listen to Christmas carols. A car is required, and Santa training and well-maintained costumes are provided. Compensation is based on the number of visits and offers the potential to earn more than private Santas. Apply with your CV.",
+        "what_we_expect": [
+          "Speak Finnish fluently.",
+          "Possibility of using a car."
+        ],
+        "job_responsibilities": [
+          "Visit the homes of families with children.",
+          "Talk to the children.",
+          "Tell the stories of Korvatunturi.",
+          "Start to distribute gifts.",
+          "Sing or listen to Christmas carols."
+        ],
+        "what_we_offer": [
+          "Good compensation based on the number of Santa's visits.",
+          "Santa training.",
+          "Good Santa costumes with many different accessories.",
+          "Well-maintained and washed beard and wig.",
+          "Opportunity to earn better than private Santas without advertising costs and outfit acquisition costs.",
+          "Focus on playing the role of Santa himself."
+        ],
+        "search_keywords": "Santa Claus Finland Christmas Eve Santas",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "e577ac11",
+        "job_id": "santa-claus-assistant-kaarina-e577ac11",
+        "processed": true,
+        "title": "Santa Claus Assistant",
+        "company": "Vinland Film Company Oy, Kauniainen",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kaarina",
+          "Lieto",
+          "Paimio",
+          "Parainen",
+          "Turku",
+          "Ulvila",
+          "Salo",
+          "Nousiainen",
+          "Naantali",
+          "Masku",
+          "Raisio",
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tapani@joulusuomi.fi?subject=Application%20for%20the%20Job%20-%20Santa%20Claus%20Assistant&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Santa%20Claus%20Assistant.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0b2038f8-699f-4962-9bdd-e616373c7e5a/en",
+        "job_employer_email": "tapani@joulusuomi.fi",
+        "job_employer_name": "Tapani Viikkilä",
+        "job_employer_phone_no": "+358451108020",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/santa-claus-assistant-kaarina-e577ac11",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-06 23:40:01",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Santa Claus Assistant at Vinland Film Company Oy, Kauniainen in Kaarina. Apply now and take the next step in your career.",
+        "description": "Santa Claus Assistants are needed for Christmas Eve 2026 in the Turku region, Salo, and Pori. This role involves visiting families with children, engaging with them, telling stories of Korvatunturi, distributing gifts, and singing Christmas carols. Fluency in Finnish is required; additional languages such as English or Swedish are a bonus. A car is needed for the job. Compensation is based on the number of visits and includes Santa training, good costumes, and the opportunity to earn more than private Santas. Applications should include a CV. Join us to bring joy to children and earn rewarding work.",
+        "what_we_expect": [
+          "Speak Finnish fluently.",
+          "Possibility of using a car."
+        ],
+        "job_responsibilities": [
+          "Visit the homes of families with children on Christmas Eve.",
+          "Talk to the children.",
+          "Tell the stories of Korvatunturi.",
+          "Start to distribute gifts.",
+          "Sing or listen to Christmas carols."
+        ],
+        "what_we_offer": [
+          "Good compensation based on the number of Santa's visits.",
+          "Santa training.",
+          "Good Santa costumes with many different accessories.",
+          "Well-maintained and washed beard and wig.",
+          "Opportunity to earn better than private Santas without advertising costs and outfit acquisition costs.",
+          "Focus on playing the role of Santa himself."
+        ],
+        "search_keywords": "Santa Claus, Finland, Christmas, Santas, Compensation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "d7e007ff",
+        "job_id": "santa-claus-tornio-d7e007ff",
+        "processed": true,
+        "title": "Santa Claus",
+        "company": "Vinland Film Company Oy, Helsinki",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Tornio",
+          "Rovaniemi",
+          "Kemi",
+          "Keminmaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tapani@joulusuomi.fi?subject=Application%20for%20the%20Job%20-%20Santa%20Claus&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Santa%20Claus.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8e8e9643-28c5-49ab-bde8-137435d40422/en",
+        "job_employer_email": "tapani@joulusuomi.fi",
+        "job_employer_name": "Tapani Viikkilä",
+        "job_employer_phone_no": "+358451108020",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/santa-claus-tornio-d7e007ff",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-06 23:40:01",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Santa Claus role at Vinland Film Company Oy, Helsinki. Join the team and build your career in Tornio.",
+        "description": "Santa Claus: Rovaniemi, Kemi, Keminmaa, and Tornio's Joulu Suomi, part of Vinland Film Company, seeks friendly, articulate individuals with singing skills to join the most important task of Christmas as Santa Claus on December 24, 2026. This role involves visiting homes of families with children, talking to the children, telling stories of Korvatunturi, distributing gifts, and singing or listening to Christmas carols. Fluency in Finnish is required; knowledge of English or Swedish is a bonus. A car is needed for the job. Good compensation is based on the number of visits, and Santa training, well-maintained costumes, and a pension are provided. Apply with your CV.",
+        "what_we_expect": [
+          "Speak Finnish fluently.",
+          "Possibly speak English or Swedish fluently.",
+          "Use a car."
+        ],
+        "job_responsibilities": [
+          "Visit the homes of families with children.",
+          "Talk to the children.",
+          "Tell the stories of Korvatunturi.",
+          "Start to distribute gifts.",
+          "Sing or listen to Christmas carols."
+        ],
+        "what_we_offer": [
+          "Good compensation based on the number of Santa's visits.",
+          "Santa training.",
+          "Good Santa costumes with many different accessories.",
+          "A well-maintained and washed beard and wig.",
+          "A pension."
+        ],
+        "search_keywords": "Santa Claus Rovaniemi Kemi Keminmaa Tornio Christmas Eve",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "d857d9f1",
+        "job_id": "santa-claus-kuopio-d857d9f1",
+        "processed": true,
+        "title": "Santa Claus",
+        "company": "Vinland Film Company Oy, Kauniainen",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Kuopio",
+          "Hamina",
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tapani@joulusuomi.fi?subject=Application%20for%20the%20Job%20-%20Santa%20Claus&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Santa%20Claus.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e7c9f901-ca5b-4619-801e-60632c9aa4bc/en",
+        "job_employer_email": "tapani@joulusuomi.fi",
+        "job_employer_name": "Tapani Viikkilä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/santa-claus-kuopio-d857d9f1",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-06 23:40:01",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Santa Claus at Vinland Film Company Oy, Kauniainen in Kuopio. Apply now and take the next step in your career.",
+        "description": "Santa Claus: Kuopio, Kotka, and Hamina Joulu Suomi, part of Vinland Film Company Oy, seeks child-friendly, articulate individuals with singing skills to join the largest Christmas Eve Santa service in Finland. Fluent Finnish speakers are required, and knowledge of English or Swedish is beneficial. Santa Clauses will visit homes, talk to children, share Korvatunturi stories, distribute gifts, and sing Christmas carols. A car is necessary for the role. Applications should indicate language proficiency and car availability. Compensation is based on the number of visits. Please submit your CV.",
+        "what_we_expect": [
+          "Speak Finnish fluently.",
+          "Possibly speak English or Swedish fluently.",
+          "Use a car."
+        ],
+        "job_responsibilities": [
+          "Visit the homes of families with children.",
+          "Talk to the children.",
+          "Tell the stories of Korvatunturi.",
+          "Start to distribute gifts.",
+          "Sing or listen to Christmas carols."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "Santa Claus Finland Christmas Eve job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:40:03",
+    "jobs": [
+      {
+        "id": "5eb97c98",
+        "job_id": "part-time-housekeeper-and-cleaner-kajaani-5eb97c98",
+        "processed": true,
+        "title": "Part-time Housekeeper and Cleaner",
+        "company": "Arctic Plant Services Oy, Kemijärvi",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9a63d873-720c-4c24-a19e-c8278f7298b7/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9a63d873-720c-4c24-a19e-c8278f7298b7/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/part-time-housekeeper-and-cleaner-kajaani-5eb97c98",
+        "date_posted": "2026-11-06",
+        "date_expires": "2027-04-30",
+        "scraped_at": "2026-11-06 23:40:03",
+        "open_positions": 1,
+        "salary_range": "Hourly wage or performance-based contract wage, according to the agreement",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "A new job opportunity is available at Arctic Plant Services Oy, Kemijärvi as a Part-time Housekeeper and Cleaner in Kajaani.",
+        "description": "Part-time Housekeeper and Cleaner needed at Arctic Plant Services Oy in Kajaani. Responsibilities include sweeping, vacuuming, and washing floors; cleaning and polishing furniture; making beds and cleaning bathrooms; managing towels, soaps, and supplies; cleaning kitchens; and collecting garbage. Previous real estate cleaning/maintenance experience required. Use of your own car and driver's license is beneficial but not mandatory. Apply with a free-form application highlighting your experience.",
+        "what_we_expect": [
+          "Previous real estate cleaning/maintenance experience."
+        ],
+        "job_responsibilities": [
+          "Sweeping, vacuuming and washing floors.",
+          "Cleaning and polishing furniture and other furnishings.",
+          "Making beds and cleaning bathrooms.",
+          "Taking care of towels, soaps and similar supplies.",
+          "Cleaning kitchens.",
+          "Collecting garbage, emptying garbage cans and taking waste to waste collection points."
+        ],
+        "what_we_offer": [
+          "Use of your own car and driver's license may help in the task, but is not mandatory."
+        ],
+        "search_keywords": "part-time housekeeper cleaner cleaning office sweeping vacuuming",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "f3989f58",
+        "job_id": "electrician-data-center-hamina-f3989f58",
+        "processed": true,
+        "title": "Electrician - Data Center",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Hamina",
+          "Kotka",
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/58409375",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1ee80ebe-3e85-47c4-9667-3e1fdc155929/en",
+        "job_employer_email": "matti.laaksonen@wulff.fi",
+        "job_employer_name": "Matti Laaksonen",
+        "job_employer_phone_no": "0405122583",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-data-center-hamina-f3989f58",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-06 23:40:03",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy sähköistys- ja sähköasennusalan työehtosopimuksen mukaisesti ja siihen vaikuttaa osaamisesi ja kokemuksesi. Palkka on arviolta 15,90€/h - 21,91€/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Wulff Works Oy as a Electrician - Data Center in Hamina. Learn more about the role and apply now.",
+        "description": "Wulff Works Oy seeks professional electricians for data center installations in Hamina, Kotka, and Kouvola. Ideal candidates will have electrical training, previous experience as an electrician, and the ability to read and interpret electrical plans. Fluency in both Finnish and English is required, with a focus on careful, independent, and responsible work. The role involves versatile electrical installation tasks, including cabling, cable trays, and equipment centers. The position offers a permanent, full-time employment opportunity with a salary determined by skills and experience, ranging from €15.90/h to €21.91/h. Apply now through the provided link or by contacting Matti Laaksonen.",
+        "what_we_expect": [
+          "Electrical training.",
+          "Previous work experience as an electrician.",
+          "Ability to read and interpret electrical plans.",
+          "Fluent oral and written English language skills.",
+          "Careful, independent and responsible approach to work.",
+          "Valid work safety and electrical work safety card."
+        ],
+        "job_responsibilities": [
+          "Electrical and cabling installations.",
+          "Installations of cable trays and conduits.",
+          "Centers and electrical equipment installations.",
+          "Connection and finishing works.",
+          "Other electrical installation tasks in the data center environment."
+        ],
+        "what_we_offer": [
+          "Long-term employment relationship."
+        ],
+        "search_keywords": "electrician data center installation maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-06 23:40:04",
+    "jobs": [
+      {
+        "id": "78a30ccd",
+        "job_id": "excavator-driver-with-3d-machine-control-hamina-78a30ccd",
+        "processed": true,
+        "title": "Excavator Driver with 3D Machine Control",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Hamina",
+          "Kotka",
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/63992522",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6864d6c8-3018-4d38-a718-3716492cd807/en",
+        "job_employer_email": "matti.laaksonen@wulff.fi",
+        "job_employer_name": "Matti Laaksonen",
+        "job_employer_phone_no": "0405122583",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/excavator-driver-with-3d-machine-control-hamina-78a30ccd",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-06 23:40:04",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy infra-alan työehtosopimuksen mukaisesti ja siihen vaikuttaa osaamisesi ja kokemuksesi. Palkka on arviolta 16,90€/h - 19,64€/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is hiring a Excavator Driver with 3D Machine Control in Hamina. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Wulff Works Oy is seeking a professional excavator driver with experience in 3D machine control to join our team in Hamina, Kotka, or Kouvola. Responsibilities include independent use of the excavator in various earthworks, excavations, filling and leveling, and utilizing 3D machine control. You will work according to plans and rates, consider other work stages and employees, and ensure the machine's daily condition and cleanliness. Requirements include previous experience as an excavator driver, good knowledge of 3D machine control, ability to read site plans, and a responsible work attitude. Competitive salary based on experience and skills is offered, along with versatile work with modern equipment and the opportunity to develop professional skills.",
+        "what_we_expect": [
+          "Previous experience as an excavator driver.",
+          "Good knowledge of 3D machine control.",
+          "Ability to read site plans and understand rates.",
+          "Independent and responsible work attitude.",
+          "Good working attitude and accuracy.",
+          "Willingness to work in varying earth construction sites."
+        ],
+        "job_responsibilities": [
+          "Independent use of the excavator in various earthworks.",
+          "Excavations, filling and leveling works.",
+          "Using 3D machine control in daily work.",
+          "Working according to plans and rates.",
+          "Consideration of other work stages and employees at the construction site.",
+          "Taking care of the machine's daily condition and cleanliness."
+        ],
+        "what_we_offer": [
+          "Versatile work with modern equipment.",
+          "The opportunity to utilize and develop your own professional skills.",
+          "A professional work community and a functioning work environment."
+        ],
+        "search_keywords": "excavator driver, 3D machine control, construction, earthworks, Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "d7892e0e",
+        "job_id": "production-worker-kouvola-d7892e0e",
+        "processed": true,
+        "title": "Production Worker",
+        "company": "Wulff Works Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/46017871",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ad6f5974-05ae-4ee7-85c9-3abf7273d919/en",
+        "job_employer_email": "matti.laaksonen@wulff.fi",
+        "job_employer_name": "Matti Laaksonen",
+        "job_employer_phone_no": "+358405122583",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-worker-kouvola-d7892e0e",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-06 23:40:04",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy rakennustuoteteollisuuden työehtosopimuksen mukaisesti ja siihen vaikuttaa osaamisesi ja kokemuksesi. Palkkaus on arviolta 12,75–15,10 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Wulff Works Oy as a Production Worker and grow your career in Kouvola. Check the job details and apply now.",
+        "description": "Wulff Works Oy is seeking a brisk and motivated production worker for a temporary full-time position at their concrete factory in Kouvola. The role involves manufacturing and finishing concrete elements, mold preparation, assembly and dismantling, processing and dosing of raw materials, maintaining work tools and the production environment, and ensuring cleanliness and safety. Previous experience in production, construction, or an industrial environment, good physical condition, a responsible approach to work, and the ability to work both independently and as part of a team are required. Fluency in Finnish is essential. The salary is determined by the collective agreement of the construction product industry and is approximately €12.75–€15.10/h.",
+        "what_we_expect": [
+          "Previous experience in production work, construction or other industrial environment.",
+          "Good physical condition and readiness for practical work.",
+          "A brisk, careful and responsible approach to work.",
+          "Ability to work both independently and as part of a team.",
+          "Desire to learn new tasks and develop at work.",
+          "Fluent Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Manufacturing and finishing of concrete elements.",
+          "Mold preparation, assembly and dismantling.",
+          "Processing and dosing of raw materials.",
+          "Maintenance of work tools and production environment.",
+          "Taking care of the cleanliness and safety of the work environment.",
+          "Other daily production support tasks."
+        ],
+        "what_we_offer": [
+          "Temporary full-time work in Kouvola.",
+          "The opportunity to become part of a professional and functional work community.",
+          "Versatile and practical work in an industrial environment.",
+          "The opportunity to develop your own skills in production and the concrete industry.",
+          "Personal support from Wulff Works throughout the employment relationship."
+        ],
+        "search_keywords": "production worker concrete factory Kouvola temporary full-time",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "81779452",
+        "job_id": "construction-assistant-kouvola-81779452",
+        "processed": true,
+        "title": "Construction Assistant",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/56855003",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d436e93e-146d-4d94-aca3-752e4d47c08e/en",
+        "job_employer_email": "matti.laaksonen@wulff.fi",
+        "job_employer_name": "Matti Laaksonen",
+        "job_employer_phone_no": "0405122583",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-assistant-kouvola-81779452",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-06 23:40:04",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy talonrakennusalan työehtosopimuksen mukaisesti ja siihen vaikuttaa osaamisesi ja kokemuksesi. Palkka on arviolta 12,59-14,19 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Construction Assistant at Wulff Works Oy in Kouvola. Check the requirements and apply today.",
+        "description": "We are seeking a brisk construction assistant for a full-time, permanent position in Kouvola at Wulff Works Oy. Responsibilities include site cleaning, clearing construction waste, assisting professionals, and other tasks as assigned. A self-motivated, physically fit individual with a valid work safety card or willingness to obtain one is ideal. Previous construction site experience is advantageous but not required. Enjoy varied tasks and a supportive work community. Competitive salary based on skills and experience. Apply now for a potential long-term employment opportunity.",
+        "what_we_expect": [
+          "A brisk and self-initiated approach to work.",
+          "Good physical condition.",
+          "Previous experience on construction sites is an advantage, but not necessary.",
+          "A valid work safety card or willingness to obtain one.",
+          "Ability to work both independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Site cleaning and maintenance of order.",
+          "Clearing construction waste and materials.",
+          "Assisting construction industry professionals in other tasks.",
+          "Other assisting tasks assigned by the management."
+        ],
+        "what_we_offer": [
+          "The possibility of employment through a reliable employer.",
+          "Varied tasks and a nice work community.",
+          "Appropriate work clothes and equipment."
+        ],
+        "search_keywords": "construction assistant site maintenance safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
   }
 ]
