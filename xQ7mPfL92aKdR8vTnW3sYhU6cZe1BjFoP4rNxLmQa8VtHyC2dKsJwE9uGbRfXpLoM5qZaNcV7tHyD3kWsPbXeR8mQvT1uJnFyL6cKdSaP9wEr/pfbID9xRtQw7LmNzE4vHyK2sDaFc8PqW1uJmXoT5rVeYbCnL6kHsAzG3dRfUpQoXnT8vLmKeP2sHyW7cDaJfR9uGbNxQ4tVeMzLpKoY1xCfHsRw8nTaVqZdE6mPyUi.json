@@ -397287,5 +397287,65 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:52:58",
+    "jobs": [
+      {
+        "id": "3bc7fad2",
+        "job_id": "sales-representative-lahti-3bc7fad2",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Taloturva Lahti",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/Myyja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3df89997-60bb-4076-afd9-d5e0519673a7/en",
+        "job_employer_email": "juho.kestila@taloturva.fi",
+        "job_employer_name": "Kestilä Juho",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-lahti-3bc7fad2",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-07 00:52:58",
+        "open_positions": 1,
+        "salary_range": "salary model consists of a base salary and a cl",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Sales Representative role at Taloturva Lahti. Join the team and build your career in Lahti.",
+        "description": "We are seeking a Sales Representative to join Taloturva Lahti in Lahti, where you will present the best solutions for HVAC renovations. As a member of our team, you will hold prearranged meetings at customers' homes, discuss their needs, and clearly present solutions. You will travel in your own area with travel allowances provided. Your day starts at the office with the team, followed by customer visits where you will measure your performance at the end of each day. Permanent employment, pre-arranged customer visits, a gym membership, functional tools and CRM system, comprehensive orientation, and training programs are offered. Suitable candidates enjoy meeting people, are goal-oriented, and want to develop as sales professionals. Send a short application to join our growing team.",
+        "what_we_expect": [
+          "Enjoy meeting people.",
+          "Be goal-oriented and results-oriented.",
+          "Want to develop as a sales professional.",
+          "Have a good attitude."
+        ],
+        "job_responsibilities": [
+          "Present the best solution for HVAC renovations.",
+          "Hold prearranged meetings at the customer's home.",
+          "Discuss the customer's situation and map out the needs.",
+          "Clearly present the solution.",
+          "Measure the day's performance and results."
+        ],
+        "what_we_offer": [
+          "Permanent employment.",
+          "Pre-arranged customer visits.",
+          "Gym membership.",
+          "Functional tools and CRM system.",
+          "Comprehensive orientation.",
+          "Training programs three times a year."
+        ],
+        "search_keywords": "sales representative HVAC renovations customer meetings goal-oriented",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
   }
 ]
