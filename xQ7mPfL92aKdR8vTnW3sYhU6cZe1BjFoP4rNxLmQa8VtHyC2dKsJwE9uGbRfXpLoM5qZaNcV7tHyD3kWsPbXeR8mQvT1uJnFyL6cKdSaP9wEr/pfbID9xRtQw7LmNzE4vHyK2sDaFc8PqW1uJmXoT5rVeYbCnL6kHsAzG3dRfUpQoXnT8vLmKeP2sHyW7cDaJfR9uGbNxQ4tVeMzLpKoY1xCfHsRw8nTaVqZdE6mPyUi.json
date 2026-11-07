@@ -434265,5 +434265,616 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:59:43",
+    "jobs": [
+      {
+        "id": "e4032902",
+        "job_id": "construction-worker-kokemäki-e4032902",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kokemäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/-9VLLnwIcCrMRxPA5pIMzw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d8f5b26f-f9ea-4b66-adc8-1784830dab1d/en",
+        "job_employer_email": "krista.sipolainen@eezy.fi",
+        "job_employer_name": "Krista Sipolainen",
+        "job_employer_phone_no": "+358447765175",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-kokemäki-e4032902",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-17",
+        "scraped_at": "2026-11-07 00:59:43",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Construction Worker at Eezy Henkilöstöpalvelut Oy. Great opportunity in Kokemäki — apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking experienced construction workers for project work in Kokemäki, with full-time permanent positions offering a competitive hourly wage based on Finnish collective agreements. Responsibilities include manufacturing building elements, various assembly works, paneling and painting exterior cladding, and possibly finishing work. Applicants should have previous experience in the construction industry or training, the ability to work independently and with partners, and a commitment to quality. The work schedule is weekdays from 7 am to 3 pm or 6 am to 2 pm, starting as soon as possible and continuing until Christmas, with potential for continuation. Submit your application through the provided link.",
+        "what_we_expect": [
+          "Previous experience in tasks in the construction industry and/or training in the field.",
+          "The ability to work both independently and with a partner.",
+          "Careful approach to work and the desire to make a quality impression."
+        ],
+        "job_responsibilities": [
+          "Manufacturing of building elements.",
+          "Various assembly works.",
+          "Paneling and painting of the exterior cladding.",
+          "Possibly finishing work, if you have the necessary skills."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "construction worker building elements assembly works paneling painting finishing work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "470ba698",
+        "job_id": "warehouse-worker-kaarina-470ba698",
+        "processed": true,
+        "title": "Warehouse Worker",
+        "company": "Legioona Oy",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Kaarina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://legioona.likeit.fi/apply/17455513",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3d5b98d8-41b5-468f-ae0e-e62155421531/en",
+        "job_employer_email": "taina.lehtola@legioona.fi",
+        "job_employer_name": "Taina Lehtola",
+        "job_employer_phone_no": "0405114903",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/warehouse-worker-kaarina-470ba698",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-11-07 00:59:43",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Warehouse Worker role at Legioona Oy. Join the team and build your career in Kaarina.",
+        "description": "Legioona Oy is seeking a brisk, energetic, and accurate warehouse worker for a permanent, part-time position (30 hours per week) at our client company in Kaarina, operating in the food industry. Responsibilities include product collection, goods reception, dispatch, and arrangement, with the use of forklifts and stacking machines. Basic computer skills are required, and a valid forklift card is a plus. Applicants should be in good physical condition, as the role involves lifting heavy boxes, and have good hand skills. Apply by filling out the application form or emailing os.taina.lehtola@legioona.fi by 11.11. Legiona Oy, established in 1986, is a Turku-based personnel company dedicated to providing quality employment solutions.",
+        "what_we_expect": [
+          "Brisk attitude.",
+          "Energetic nature.",
+          "Accuracy in work.",
+          "Hard worker.",
+          "Good physical condition.",
+          "Good hand skills."
+        ],
+        "job_responsibilities": [
+          "Product collection.",
+          "Reception of goods.",
+          "Dispatch of goods.",
+          "Arrangement of goods.",
+          "Use of forklift.",
+          "Use of stacking machine."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "warehouse worker forklift stacking machine computer skills physical fitness",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:59:45",
+    "jobs": [
+      {
+        "id": "4e7f7989",
+        "job_id": "experts-in-building-technology-electrical-engineering-jyväskylä-4e7f7989",
+        "processed": true,
+        "title": "Experts in Building Technology / Electrical Engineering",
+        "company": "Carrot Rakennus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Jyväskylä",
+          "Oulu",
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92178956",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2a581980-049a-4ba5-b1cd-81c875bcd742/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 199 6222",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/experts-in-building-technology-electrical-engineering-jyväskylä-4e7f7989",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-12",
+        "scraped_at": "2026-11-07 00:59:45",
+        "open_positions": 1,
+        "salary_range": "Salary is determined based on the industry's co",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Carrot Rakennus Oy is hiring a Experts in Building Technology / Electrical Engineering in Jyväskylä.",
+        "description": "Carrot Rakennus Oy is seeking competent and motivated HVAC and electrical professionals, as well as other experts in building technology, for ongoing and start-up projects in areas such as the capital region and Northern Finland. Ideal candidates will have experience in HVAC, electrical, or other building technology tasks, and be willing to work in various regions. A valid work safety card is required, and other qualifications such as a fire work card or water work card may be necessary depending on the task. Applications should include details of previous work sites, specific job interests, and preferred regions for work. The working language is primarily Finnish, but other languages are accepted. Salary is competitive and based on the industry's collective agreement.",
+        "what_we_expect": [
+          "Valid work safety card.",
+          "Willingness to work in various regions.",
+          "Willingness to work in ongoing and start-up projects.",
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism."
+        ],
+        "job_responsibilities": [
+          "What kind of experience do you have in HVAC, electrical or other building technology tasks."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "HVAC electrical installation maintenance building technology",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "35b7fab6",
+        "job_id": "hand-snow-worker-rovaniemi-35b7fab6",
+        "processed": true,
+        "title": "Hand Snow Worker",
+        "company": "Staffmill Oy, Kuopio",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://staffmill-oy.breezy.hr/p/adc37d0bdf1c-kasilumityontekija-rovaniemi/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dbec8ce4-5ba3-435b-b15a-626331cb6a7f/en",
+        "job_employer_email": "anniina.ahtonen@staffmill.fi",
+        "job_employer_name": "Anniina Ahtonen",
+        "job_employer_phone_no": "044-323 7009",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/hand-snow-worker-rovaniemi-35b7fab6",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-07 00:59:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Hand Snow Worker at Staffmill Oy, Kuopio in Rovaniemi. Apply now and take the next step in your career.",
+        "description": "StaffMill Oy is seeking hand snow workers for the winter season in Rovaniemi, offering gig work based on the snow situation. Responsibilities include manual snow removal tasks, requiring Finnish language skills, flexibility, and commitment to shifts. We provide a reliable employer, clear communication, and fast phone support for work and health situations. Applications can be submitted through the attached link, and we will process them promptly. Join us for flexible, seasonal work in the heart of Rovaniemi.",
+        "what_we_expect": [
+          "Finnish language skills.",
+          "Flexibility and commitment to shifts depending on the snow situation.",
+          "Accuracy and reliability."
+        ],
+        "job_responsibilities": [
+          "Your tasks include the tasks of a manual snow worker, depending on the snow situation and the need."
+        ],
+        "what_we_offer": [
+          "Reliable employer.",
+          "Clear communication.",
+          "Fast phone support in work and health situations.",
+          "Opportunity to find the next job."
+        ],
+        "search_keywords": "snow worker Rovaniemi gig work flexibility reliability",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "397d745f",
+        "job_id": "kiosk-worker-seinäjoki-397d745f",
+        "processed": true,
+        "title": "Kiosk Worker",
+        "company": "YES Your Excellent Staff Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/kioskityontekija-mankeliin-seinajoki/m6rp54",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c1415b67-fcdb-418e-b082-8321caf63953/en",
+        "job_employer_email": "roosa@yeshr.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/kiosk-worker-seinäjoki-397d745f",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-07 00:59:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Start your next job as a Kiosk Worker at YES Your Excellent Staff Oy. Great opportunity in Seinäjoki — apply now.",
+        "description": "Join Mankel's team as a kiosk worker in Seinäjoki, where you'll be part of the new Coca-Cola Ice Rink experience opening on November 21, 2026. Work in a unique environment in the heart of Seinäjoki Keskustori, offering weekday evenings and weekends, perfect for students or those seeking flexible evening and weekend work. Requirements include a hygiene passport, brisk self-initiative, and a good attitude towards practical tasks. Enjoy being involved in building a nice customer experience at Mankel. Apply now via the application form to start your new career with YES Your Excellent Staff Oy.",
+        "what_we_expect": [
+          "You enjoy customer service and working with people.",
+          "You are brisk and self-initiative.",
+          "You have a hygiene passport.",
+          "You approach practical tasks with a good attitude.",
+          "You can work weekday evenings and weekends.",
+          "You want to be involved in building a nice customer experience at Mankel."
+        ],
+        "job_responsibilities": [
+          "You approach practical tasks with a good attitude."
+        ],
+        "what_we_offer": [
+          "You get to participate in the activities of the new Coca-Cola Ice Rink, which opens on 21 November 2026, right from the start.",
+          "You work in a unique environment in the middle of the winter atmosphere of Seinäjoki Keskustori.",
+          "You get evening and weekend work, which can be arranged alongside, for example, studying or other everyday activities.",
+          "You have the opportunity to continue at Mankel even after the winter season.",
+          "During the summer season, more work shifts may be available at Mankeli."
+        ],
+        "search_keywords": "kiosk worker sales marketing winter cafe Seinäjoki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "a578d61d",
+        "job_id": "technical-property-caretaker-loviisa-a578d61d",
+        "processed": true,
+        "title": "Technical Property Caretaker",
+        "company": "Wulff Works Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Loviisa",
+          "Porvoo",
+          "Sipoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/63112455",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8fa31c48-6be3-47d2-8b8d-9b56eb5a8668/en",
+        "job_employer_email": "taru.oksanen@wulff.fi",
+        "job_employer_name": "Taru Oksanen",
+        "job_employer_phone_no": "0505625529",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/technical-property-caretaker-loviisa-a578d61d",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-07 00:59:45",
+        "open_positions": 1,
+        "salary_range": "Reilu palkkaus: 17€ - 18€/h Kiinteistö alan työehtosopimuksen mukaisesti.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Technical Property Caretaker at Wulff Works Oy in Loviisa. Check the requirements and apply today.",
+        "description": "Technical Property Caretaker positions available in Loviisa, Porvoo, and Sipoo. Ideal for those with a technical real estate custodian's degree or ongoing training, and experience in HVAC, electricity, or automation. Must hold valid occupational safety, electrical work safety, hot job, and B driver's license cards. Fluency in Finnish is required for customer service and work safety instructions. Self-initiated, solution-oriented, and reliable candidates are encouraged to apply. Flexible gig work, with weekdays from 7:00 a.m. to 3:30 p.m., offering a fair salary of €17 - €18/h. Apply now; positions will be filled as soon as a suitable candidate is found.",
+        "what_we_expect": [
+          "Technical real estate custodian's degree or ongoing training.",
+          "Training in HVAC, Electricity and/or Automation.",
+          "Valid cards: occupational safety card, electrical work safety card, hot job card, B driver's license.",
+          "Fluent Finnish language skills for customer service and work safety instructions.",
+          "Self-initiated, solution-oriented and reliable approach."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Jobs available flexibly according to the situation and need.",
+          "Work is done on weekdays from 7:00 a.m. To 3:30 p.m.",
+          "Fair salary: €17 - €18/h in accordance with the collective agreement in the real estate industry."
+        ],
+        "search_keywords": "technical property caretaker, gig work, real estate, HVAC, automation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "645b4822",
+        "job_id": "caregiver-for-home-based-disability-services-turku-645b4822",
+        "processed": true,
+        "title": "Caregiver for Home-Based Disability Services",
+        "company": "Mehiläinen Oy",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mehilainen.wd103.myworkdayjobs.com/tyomarkkinatori_careers/job/Turku-Sibeliuksenkatu/Lhihoitaja-kotiin-tuotettaviin-vammaispalveluihin--keikkaty---Varsinais-Suomi--Mehilinen-kotiin-tuotettavat-vammaispalvelut_R0046293/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/786757a4-c6b5-475a-9652-da85b8cf398d/en",
+        "job_employer_email": "rekrytointi@mehilainen.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/caregiver-for-home-based-disability-services-turku-645b4822",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 00:59:45",
+        "open_positions": 1,
+        "salary_range": "Palkkaus: Kotiin tuotettavissa vammaispalveluiden hoitoringeissämme on käytössä yksityisen sosiaalipalvelualan työehtosopimuksen palkkaluokka G22, lähihoitaja (muu Suomi). Tuntipalkka on kokemusvuosista riippuen 15,50 € - 17,55 €/h + tes:n mukaiset lisät.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Caregiver for Home-Based Disability Services at Mehiläinen Oy in Turku. Check the requirements and apply today.",
+        "description": "Caregiver needed for home-based disability services in Kaarina, Turku, Finland. Provide daily assistance to a respiratory support client, including drug treatment, wound care, and basic disease treatment. Must have a nursing degree, valid medication permit, and willingness to work morning and evening shifts. Good interaction and teamwork skills are required, along with fluency in Finnish. Salary is €15.50 - €17.55/hour, depending on experience. Join a meaningful, close care circle where you can make a difference in someone's life. Apply now for a gig employment relationship with comprehensive personnel benefits from the Oma Mehiläinen application.",
+        "what_we_expect": [
+          "Nursing degree (social and health field).",
+          "Willingness to work morning and evening shifts (shifts approx. 6 hours).",
+          "Valid medication permit.",
+          "Desire to commit to high-quality nursing work for several shifts per month.",
+          "Ability to anticipate availability and report for 6-week periods.",
+          "Good interaction and teamwork skills."
+        ],
+        "job_responsibilities": [
+          "Provide daily assistance to a respiratory support client.",
+          "Administer drug treatment.",
+          "Perform wound care.",
+          "Treat basic diseases.",
+          "Operate a ventilator."
+        ],
+        "what_we_offer": [
+          "We offer you.",
+          "Mehiläinen's comprehensive personnel benefits: In a gig employment relationship, you get versatile benefits from the Oma Mehiläinen application."
+        ],
+        "search_keywords": "caregiver disability services home-based nursing shifts benefits",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:59:47",
+    "jobs": [
+      {
+        "id": "80d0b124",
+        "job_id": "construction-professional-helsinki-80d0b124",
+        "processed": true,
+        "title": "Construction Professional",
+        "company": "Carrot Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92178926",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6ec78387-ebba-4ee2-92bb-f69132ca8380/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 199 6222",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-professional-helsinki-80d0b124",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-12",
+        "scraped_at": "2026-11-07 00:59:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Carrot Rakennus Oy is looking for a Construction Professional in Helsinki. Don't miss this opportunity — apply today.",
+        "description": "Carrot Rakennus Oy is seeking skilled construction professionals for positions as a moulder, rebar worker, or element installer at a job site in Jätkäsaari. Applicants should have previous experience, a strong work ethic, and the ability to work as part of a team. Professionalism, reliability, and a positive attitude are essential. Competitive hourly wages based on Finnish collective agreements will be offered. Applications can be submitted via the attached link or by contacting Juha Bergman at 040 199 6222. Carrot Rakennus Oy is a responsible working life partner, offering personnel rental, recruitment, and outsourcing services nationwide.",
+        "what_we_expect": [
+          "Previous experience in the job you are applying for.",
+          "Brisk work ethic.",
+          "Ability to work as part of a team.",
+          "Professionalism.",
+          "Reliability.",
+          "Good attitude."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "construction professional moulder rebar element installer Jätkäsaari",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "df1c318a",
+        "job_id": "salesperson-maarianhamina-df1c318a",
+        "processed": true,
+        "title": "Salesperson",
+        "company": "2193 Varuboden På Åland Ab",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Maarianhamina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://sok.wd502.myworkdayjobs.com/S-ryhman-avoimet-tyopaikat/job/VARUBODEN-CITY/Frsljare--Varuboden-City_R-39928",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3ec7ae4d-07a8-405a-a464-4394327d9f3c/en",
+        "job_employer_email": "ida.olsson@sok.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/salesperson-maarianhamina-df1c318a",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-07 00:59:47",
+        "open_positions": 1,
+        "salary_range": "salary of 10",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Salesperson at 2193 VARUBODEN PÅ ÅLAND AB in Maarianhamina. Check the requirements and apply today.",
+        "description": "2193 Varuboden-På Åland AB in Maarianhamina seeks a full-time, permanent salesperson for 15 hours a week. Ideal candidates will be of legal age, have good basic fitness, and a heart for customer service. Responsibilities include working at the till, in the warehouse, and between shelves, with a focus on evenings and weekends. A competitive hourly wage of 10.89-14.57 euros is offered, along with a performance bonus of up to 1.70 euros per hour. Staff discounts on S group products and services, and benefits via Friskvård.ax are also provided. Apply by Sunday, 22 November 2026. For more information, contact Ida Olsson at ida.olsson@sok.fi. Start of work according to agreement.",
+        "what_we_expect": [
+          "Be of legal age.",
+          "Have good basic fitness.",
+          "Serve the customer with your heart in the right place.",
+          "Be reliable.",
+          "Be a team player.",
+          "Be willing to learn."
+        ],
+        "job_responsibilities": [
+          "Work with people everywhere – at the till, in the warehouse and between the shelves.",
+          "Move around and lift a lot."
+        ],
+        "what_we_offer": [
+          "A salary of 10.89-14.57 euros per hour.",
+          "A performance bonus of up to 1.70 euros for every hour worked.",
+          "Staff discount on the S group's products and services.",
+          "Exercise, well-being and cultural benefits via Friskvård.ax."
+        ],
+        "search_keywords": "salesperson part-time retail customer service fitness",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "6c533590",
+        "job_id": "element-installer-kangasala-6c533590",
+        "processed": true,
+        "title": "Element Installer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kangasala",
+          "Lempäälä",
+          "Nokia",
+          "Pirkkala",
+          "Tampere",
+          "Ylöjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/23881319",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3c695750-de26-4fe1-87b5-9e544ff5965d/en",
+        "job_employer_email": "nea.lehtonen@lokki.fi",
+        "job_employer_name": "Nea Lehtonen",
+        "job_employer_phone_no": "050 3407170",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/element-installer-kangasala-6c533590",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-07 00:59:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is hiring a Element Installer in Kangasala. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking a professional element installer for versatile tasks in the Tampere area. As an element installer, you will be responsible for the installation of various concrete and steel elements on construction sites, as well as other frame work. The position offers a competitive hourly wage based on Finnish collective agreements, varied tasks, work clothes suitable for professional use, and necessary protective equipment. Requirements include experience with element installation, reinforcement, and formwork, reliability, initiative, diligence, and a valid occupational safety card. For a long-term, rewarding career, apply via the application form. Lokki Henkilöstöpalvelut Oy, operating since 2005, offers reliable and human-friendly service across Finland.",
+        "what_we_expect": [
+          "Experience with element installation, reinforcement and formwork.",
+          "Reliability.",
+          "Initiative.",
+          "Diligence.",
+          "Valid occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Responsible for the installation of various concrete and steel elements on the construction site as well as other frame work."
+        ],
+        "what_we_offer": [
+          "Varied tasks in the Tampere area.",
+          "Minimum salary according to TES, taking experience into account.",
+          "Work clothes suitable for professional use and the necessary protective equipment."
+        ],
+        "search_keywords": "element installer construction Tampere experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "44bd7f5d",
+        "job_id": "construction-worker-espoo-44bd7f5d",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Carrot Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92178917",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b570b756-c287-4097-b38f-dbeb5c3cc8fd/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 199 6222",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-espoo-44bd7f5d",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-12",
+        "scraped_at": "2026-11-07 00:59:47",
+        "open_positions": 1,
+        "salary_range": "Työkohteet sijaitsevat pääkaupunkiseudulla, ja työsuhteen kesto määräytyy työmaan projektin mukaan. Työt alkavat projektien käynnistyessä. Palkkaus määräytyy talonrakennusalan työehtosopimuksen sekä osaamisesi ja kokemuksesi perusteella, noin 14–20 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Construction Worker at Carrot Rakennus Oy. Great opportunity in Espoo — apply now.",
+        "description": "Carrot Rakennus Oy is seeking a construction worker for various work sites in the capital region, including Espoo, Helsinki, and Vantaa. Responsibilities include constructing ramps, walkways, and railings, loading goods, and performing cleaning and protection work on construction sites. The role requires at least a few years of experience in versatile tasks, practical knowledge, initiative, and a good attitude. A basic degree in building construction and the ability to use your own tools are advantageous. A valid work safety card can be completed through the employer if necessary. Salary is determined based on the building construction industry collective agreement and your skills and experience, approximately €14–20/h.",
+        "what_we_expect": [
+          "At least a few years of experience in versatile tasks in the construction industry.",
+          "Practical knowledge.",
+          "Initiative.",
+          "A good attitude.",
+          "A basic degree in building construction.",
+          "The ability to use your own tools."
+        ],
+        "job_responsibilities": [
+          "Construction of ramps, walkways and railings.",
+          "Loading of goods.",
+          "Cleaning and protection work on the construction site."
+        ],
+        "what_we_offer": [
+          "The opportunity to complete a valid work safety card through the employer if necessary."
+        ],
+        "search_keywords": "construction worker building construction safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "6c9ce9ae",
+        "job_id": "caregiver-pori-6c9ce9ae",
+        "processed": true,
+        "title": "Caregiver",
+        "company": "Mehiläinen Oy",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mehilainen.wd103.myworkdayjobs.com/tyomarkkinatori_careers/job/Pori-Repolankatu/Lhihoitaja--Mainiokoti-Luoto--Pori_R0046292/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c599cb35-c9e4-4a09-b629-c5864d67ec1f/en",
+        "job_employer_email": "rekrytointi@mehilainen.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/caregiver-pori-6c9ce9ae",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-07 00:59:47",
+        "open_positions": 1,
+        "salary_range": "Palkkaus on yksityisen sosiaalialan TES:n mukainen, lähihoitajilla palkkaluokka G20C. Palkkasi suuruuteen vaikuttaa työkokemuksesi määrä, palkkasi voi olla 2493,06 - 2719,93€ välillä.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Mehiläinen Oy as a Caregiver and grow your career in Pori. Check the job details and apply now.",
+        "description": "Join the family nurse team at Mainiokoti Luoto in Pori and contribute to creating a warm and supportive home environment for 56 elderly residents. As a permanent, full-time caregiver, you will support residents' well-being, assist in their daily lives, and promote community engagement. Fluency in Finnish (at least B1) is required, and you should have a genuine passion for working with the elderly. A SOTE card or readiness to obtain one is necessary. You will work in a modern, technology-equipped setting, where you can develop your skills and contribute to high-quality care. The role offers professional development opportunities and a supportive work community. Your salary will be in the range of €2493.06 to €2719.93, based on your experience.",
+        "what_we_expect": [
+          "A genuine desire to work with the elderly.",
+          "Previous and recent experience working with the elderly.",
+          "A SOTE card or readiness to get one.",
+          "Fluency in Finnish (at least B1)."
+        ],
+        "job_responsibilities": [
+          "Supporting the well-being of residents.",
+          "Helping residents in their everyday life.",
+          "Promoting community.",
+          "Providing medical treatment."
+        ],
+        "what_we_offer": [
+          "The opportunity to develop professionally.",
+          "An encouraging and supportive work community.",
+          "Versatile tasks where you can influence and develop nursing work using modern methods.",
+          "Access to good personnel benefits, such as exercise credit and occupational health care."
+        ],
+        "search_keywords": "caregiver elderly nursing social care services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
   }
 ]
