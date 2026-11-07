@@ -438819,67 +438819,6 @@
   },
 
   {
-    "scrape_timestamp": "2026-11-07 01:01:57",
-    "jobs": [
-      {
-        "id": "b702fbc0",
-        "job_id": "emirates-cabin-crew-dubai-b702fbc0",
-        "processed": true,
-        "title": "Emirates Cabin Crew",
-        "company": "Emirates",
-        "job_category": "aviation-and-airport-services",
-        "jobLocation": [
-          "Dubai"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/emirates-fin-emirates-cabin-crew-sdsuu-20608887",
-        "jobLink": "https://duunitori.fi/tyopaikat/tyo/emirates-fin-emirates-cabin-crew-sdsuu-20608887",
-        "job_employer_email": "",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/aviation-and-airport-services/emirates-cabin-crew-dubai-b702fbc0",
-        "date_posted": "2026-10-01",
-        "date_expires": "2026-10-31",
-        "scraped_at": "2026-11-07 01:01:57",
-        "open_positions": 1,
-        "salary_range": "1 195–2 864 €/kk",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "English"
-        ],
-        "meta_description": "Discover a new job opportunity as a Emirates Cabin Crew at Emirates in Dubai. Apply now and take the next step in your career.",
-        "description": "Emirates Cabin Crew are sought to deliver the Fly Better onboard experience to passengers across 140+ global destinations. As a member of the Cabin Crew team, you will ensure the safety and comfort of passengers, manage onboard service, and maintain cabin cleanliness. You will respond to passenger requests and work collaboratively with colleagues to ensure a smooth flight. Fluency in written and spoken English is required, and you must be at least 160cm tall and able to reach 212cm high. You should have at least 1 year of hospitality or customer service experience and be at least 21 years old.",
-        "what_we_expect": [
-          "Fluent in written and spoken English.",
-          "A natural team player with a personality that shines.",
-          "At least 160cm tall and able to reach 212cm high.",
-          "Able to meet the UAE’s employment visa requirements.",
-          "At least 21 years old.",
-          "At least 1 year of hospitality or customer service experience."
-        ],
-        "job_responsibilities": [
-          "Ensure the safety and comfort of our passengers.",
-          "Manage onboard service.",
-          "Maintain cabin cleanliness throughout each flight.",
-          "Respond to passenger requests.",
-          "Work collaboratively with fellow colleagues to ensure a smooth flight."
-        ],
-        "what_we_offer": [
-          "Career progression opportunities.",
-          "Furnished accommodation provided free of charge with utilities paid by the company.",
-          "Free company transport between accommodation and the airport/training college.",
-          "Variable flying pay that increases based on flying hours.",
-          "30 calendar days of leave per year for personal use."
-        ],
-        "search_keywords": "cabin crew, aviation, dubai, emirates, customer service",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
-      }
-    ]
-  },
-
-  {
     "scrape_timestamp": "2026-11-07 01:01:59",
     "jobs": [
       {
@@ -440577,119 +440516,6 @@
   },
 
   {
-    "scrape_timestamp": "2026-11-07 01:09:12",
-    "jobs": [
-      {
-        "id": "e0e7cb96",
-        "job_id": "head-of-aftermarket-helsinki-ja-1-muu-e0e7cb96",
-        "processed": true,
-        "title": "Head of Aftermarket",
-        "company": "Oikea Konekauppa Oy",
-        "job_category": "installation-and-maintenance",
-        "jobLocation": [
-          "Helsinki ja 1 muu"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/oikea-konekauppa-jalkimarkkinoinnin-vetaja-sdsuu-20626943",
-        "jobLink": "https://duunitori.fi/tyopaikat/tyo/oikea-konekauppa-jalkimarkkinoinnin-vetaja-sdsuu-20626943",
-        "job_employer_email": "",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/head-of-aftermarket-helsinki-ja-1-muu-e0e7cb96",
-        "date_posted": "2026-10-07",
-        "date_expires": "2026-11-06",
-        "scraped_at": "2026-11-07 01:09:12",
-        "open_positions": 1,
-        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "Finnish"
-        ],
-        "meta_description": "Join Oikea Konekauppa Oy as a Head of Aftermarket and grow your career in Helsinki ja 1 muu. Check the job details and apply now.",
-        "description": "Head of Aftermarket at Oikea Konekauppa Oy, a leading machine trade and services company in Helsinki and surrounding areas, seeks a reliable and professional leader to drive growth and innovation in our repair shops and aftermarket business. You will manage five repair shops, ensuring efficient operations, skill development, and customer satisfaction. Your role involves developing unified, efficient workshop models and integrating remote diagnostics and software updates into our service concept. As a key member of the team, you will contribute to the expansion and success of our service business. Reliability, professionalism, and a willingness to learn are essential. Join us in shaping the future of machine maintenance and aftermarket services.",
-        "what_we_expect": [
-          "Reliability.",
-          "Professionalism.",
-          "Teamwork.",
-          "Willingness to learn."
-        ],
-        "job_responsibilities": [
-          "Responsible for the business and results of five repair shops.",
-          "Manage the foremen and manage the weekly rhythm, throughput and invoicing of the hours worked in each workshop.",
-          "Develop the skills of mechanics and foremen, ensuring they are up to date with technological developments.",
-          "Develop and maintain operating models that ensure the realization of the agreed service level and smooth customer communication in all repair shops.",
-          "Conceptualize workshop operations into a unified, efficient and replicable model.",
-          "Make remote diagnostics, software updates and manufacturers' maintenance programs an integral part of the chain's service concept and workshop processes."
-        ],
-        "what_we_offer": [],
-        "search_keywords": "aftermarket manager maintenance repair shop",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
-      }
-    ]
-  },
-
-  {
-    "scrape_timestamp": "2026-11-07 01:09:18",
-    "jobs": [
-      {
-        "id": "1875577c",
-        "job_id": "production-manager-joensuu-1875577c",
-        "processed": true,
-        "title": "Production Manager",
-        "company": "Valio",
-        "job_category": "industry-manufacturing-and-production",
-        "jobLocation": [
-          "Joensuu"
-        ],
-        "jobRegions": [],
-        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
-        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
-        "job_employer_email": "",
-        "job_employer_name": "",
-        "job_employer_phone_no": "",
-        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-manager-joensuu-1875577c",
-        "date_posted": "2026-09-22",
-        "date_expires": "2026-10-22",
-        "scraped_at": "2026-11-07 01:09:18",
-        "open_positions": 1,
-        "salary_range": "salary expectations as soon as possible, no lat",
-        "workTime": "Full-time",
-        "continuityOfWork": "Permanent",
-        "language_requirements": [
-          "English"
-        ],
-        "meta_description": "Valio is hiring a Production Manager in Joensuu. Explore the job responsibilities, benefits, and apply today.",
-        "description": "Valio Oy in Joensuu is seeking a Production Manager to lead the packaging team and drive the development of operations, ensuring occupational well-being and the achievement of production and financial goals. The ideal candidate will have coaching leadership skills, strong interaction and organizational abilities, and experience applying Lean philosophy, quality management, and HACCP methods in the food industry. Fluency in both Finnish and English is required, along with an active and positive attitude. As part of a growing and developing team, you will receive comprehensive orientation and career opportunities within a large company. Applications, including a resume and salary expectations, should be submitted via the provided link by November 13, 2026.",
-        "what_we_expect": [
-          "Coaching leadership.",
-          "Good interaction and organization skills.",
-          "Knowing and applying the Lean philosophy.",
-          "Application of quality management and HACCP methods.",
-          "Good Finnish and English language skills.",
-          "Active and positive attitude."
-        ],
-        "job_responsibilities": [
-          "Management and development of the packaging team's personnel.",
-          "Occupational well-being of the packaging team.",
-          "Development of the packaging line's operations.",
-          "Achievement of production and financial goals."
-        ],
-        "what_we_offer": [
-          "A comprehensive orientation.",
-          "The support of a growing and developing team.",
-          "Personnel benefits.",
-          "Career opportunities of a large company."
-        ],
-        "search_keywords": "production manager cheese manufacturing Finland Valio Oy",
-        "display_mode": "fallback",
-        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
-      }
-    ]
-  },
-
-  {
     "scrape_timestamp": "2026-11-07 01:09:21",
     "jobs": [
       {
@@ -441771,6 +441597,1062 @@
         "search_keywords": "Treasury Specialist accounting finance financial risk management",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:21",
+    "jobs": [
+      {
+        "id": "225463a6",
+        "job_id": "trained-massage-therapist-oulu-225463a6",
+        "processed": true,
+        "title": "Trained Massage Therapist",
+        "company": "Heido Nordic Oy, Oulu",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:aukea.oulu@gmail.com?subject=Application%20for%20the%20Job%20-%20Trained%20Massage%20Therapist&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Trained%20Massage%20Therapist.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/82fbb394-d741-49d2-8617-21561b27135a/en",
+        "job_employer_email": "aukea.oulu@gmail.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/trained-massage-therapist-oulu-225463a6",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-07 20:40:21",
+        "open_positions": 1,
+        "salary_range": "Self employed",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Heido Nordic Oy, Oulu is looking for a Trained Massage Therapist in Oulu. Don't miss this opportunity — apply today.",
+        "description": "We are seeking trained massage therapists to join our new wellness center in Joutsensilla, Oulu. As a professional and inspiring colleague, you will be involved in building a high-quality wellness center, working in a comfortable and appreciative work community, and planning your working hours flexibly. You will be a self-employed professional, earning from the massage treatments you perform, with the majority of the revenue from each customer visit belonging to you. We actively invest in skills development and training to help you stay at the top of your field. If you are interested, send us a video application or an application and CV. We look forward to getting to know you!",
+        "what_we_expect": [
+          "Trained masseuse.",
+          "Professional and inspiring the customer's trust.",
+          "A good colleague."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Involved in building a high-quality wellness center.",
+          "To work in a comfortable and appreciative work community.",
+          "To plan your working hours flexibly.",
+          "To have the opportunity to develop and stay at the top of your field.",
+          "Active investment in skills development and training."
+        ],
+        "search_keywords": "massagetherapist wellness center professional training",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "0de03a3a",
+        "job_id": "buddhist-monk-kerava-0de03a3a",
+        "processed": true,
+        "title": "Buddhist Monk",
+        "company": "Sri Lankan Buddhalainen Keskus, Kerava",
+        "job_category": "education",
+        "jobLocation": [
+          "Kerava"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@srilankanbuddhistcentre.fi?subject=Application%20for%20the%20Job%20-%20Buddhist%20Monk&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Buddhist%20Monk.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8d802ca4-fefe-453f-92ab-fdcbf2e4b3ed/en",
+        "job_employer_email": "info@srilankanbuddhistcentre.fi",
+        "job_employer_name": "Madaganoya Anomadassi",
+        "job_employer_phone_no": "+358469397352",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/buddhist-monk-kerava-0de03a3a",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 20:40:21",
+        "open_positions": 1,
+        "salary_range": "salary is €1,700 gross per month",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "And"
+        ],
+        "meta_description": "Get started in a new job as a Buddhist Monk at Sri Lankan Buddhalainen Keskus, Kerava in Kerava. Check the requirements and apply today.",
+        "description": "Sri Lankan Buddhalainen Keskus in Kerava is seeking a dedicated ordained Buddhist monk to support the religious and spiritual activities of the community. The successful candidate will conduct Buddhist ceremonies, deliver Dhamma talks and meditation sessions, provide spiritual guidance to the Sri Lankan Buddhist community, and participate in religious and community programs. Must have appropriate Buddhist monastic training, good knowledge of Theravada Buddhism, experience in conducting religious ceremonies, and fluent Sinhala language skills. Strong communication and interpersonal skills are essential, as well as the ability to work independently and cooperate with volunteers. Fluency in English and Finnish is advantageous.",
+        "what_we_expect": [
+          "Must be an ordained Buddhist monk with appropriate Buddhist monastic training.",
+          "Good knowledge of Theravada Buddhism and Buddhist teachings.",
+          "Experience in conducting Buddhist religious ceremonies and Dhamma programs.",
+          "Fluent Sinhala language skills.",
+          "Good communication and interpersonal skills.",
+          "Ability to communicate respectfully with people of different ages and backgrounds."
+        ],
+        "job_responsibilities": [
+          "Conduct Buddhist religious ceremonies, blessings and traditional Buddhist rituals.",
+          "Conduct Dhamma programs and meditation sessions.",
+          "Deliver Dhamma talks and Buddhist teachings to community members.",
+          "Provide spiritual guidance and support to members of the Sri Lankan Buddhist community.",
+          "Conduct funerals, memorial services and other Buddhist religious observances.",
+          "Participate in Buddhist festivals, cultural events and community programs."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "Buddhist monk, monk, religious, community, Helsinki, Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:22",
+    "jobs": [
+      {
+        "id": "98fca9c2",
+        "job_id": "accountant-helsinki-98fca9c2",
+        "processed": true,
+        "title": "Accountant",
+        "company": "Estante Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:asiakaspalvelu@estante.fi?subject=Application%20for%20the%20Job%20-%20Accountant&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Accountant.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/34d4e53a-b133-4fe0-8b03-71c5a7e19737/en",
+        "job_employer_email": "asiakaspalvelu@estante.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/accountant-helsinki-98fca9c2",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-07 20:40:22",
+        "open_positions": 1,
+        "salary_range": "salary expectations to your application",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Accountant at Estante Oy in Helsinki. Apply now and take the next step in your career.",
+        "description": "Accountant, Estante Oy, Helsinki seeks a part-time, permanent position for a qualified accountant with a sense of responsibility. Ideal candidates will have a trade economics education and experience with Procountor, Netvisor, and Fennoa. You should be precise, independent, and able to work flexible hours, with the option to work remotely or visit the office as needed. Invoicing through your company is a requirement. Applications are reviewed during the application period, so apply by email to kaskapalvelu@estante.fi and include your salary expectations.",
+        "what_we_expect": [
+          "Precise work.",
+          "Ability to work independently.",
+          "Willingness to work flexible hours.",
+          "Ability to work remotely if agreed.",
+          "Ability to visit the office if needed.",
+          "Ability to invoice through the company."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Flexible working hours.",
+          "Option to work remotely."
+        ],
+        "search_keywords": "accountant part-time Helsinki Procountor Netvisor Fennoa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "f02859ef",
+        "job_id": "cleaner-housekeeper-lohja-f02859ef",
+        "processed": true,
+        "title": "Cleaner / Housekeeper",
+        "company": "",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:miranurmi@hotmail.com?subject=Application%20for%20the%20Job%20-%20Cleaner%20/%20Housekeeper&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Cleaner%20/%20Housekeeper.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/660599ee-ffcf-41ac-9f05-4efda489b0bc/en",
+        "job_employer_email": "miranurmi@hotmail.com",
+        "job_employer_name": "Mira Nurmi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/cleaner-housekeeper-lohja-f02859ef",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-07 20:40:22",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join the company as a Cleaner / Housekeeper and grow your career in Lohja. Check the job details and apply now.",
+        "description": "A careful and efficient cleaner is sought for a 300 m² detached house in Lohja, requiring twice-weekly maintenance. The ideal candidate will exhibit extraordinary care and precision, ensuring even the smallest details are clean. Self-initiative and organization are essential, as is fluent Finnish for clear communication. Experience and comfort around big dogs, particularly Dobermans, are also required. If you value cleanliness and a tidy home, we encourage you to apply. Please share your experience and hourly rate via private message.",
+        "what_we_expect": [
+          "Extraordinary care and precision.",
+          "Efficient and self-initiated working.",
+          "Organization.",
+          "Fluent Finnish language skills.",
+          "Experience and confidence with big dogs."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "cleaner housekeeper accuracy efficiency organization Finnish dogs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "41cd09d8",
+        "job_id": "commercial-vehicle-mechanic-iisalmi-41cd09d8",
+        "processed": true,
+        "title": "Commercial Vehicle Mechanic",
+        "company": "Dt Huolto Oy, Iisalmi",
+        "job_category": "technical-services",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:jori.nousiainen@dthuolto.fi?subject=Application%20for%20the%20Job%20-%20Commercial%20Vehicle%20Mechanic&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Commercial%20Vehicle%20Mechanic.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/35572a0a-2673-495c-861a-588643bbac19/en",
+        "job_employer_email": "jori.nousiainen@dthuolto.fi",
+        "job_employer_name": "Jori Nousiainen",
+        "job_employer_phone_no": "0504142883",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/commercial-vehicle-mechanic-iisalmi-41cd09d8",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 20:40:22",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Dt Huolto Oy, Iisalmi as a Commercial Vehicle Mechanic and grow your career in Iisalmi. Check the job details and apply now.",
+        "description": "We are seeking an experienced and motivated vehicle mechanic for a permanent position at Dt Huolto Oy in Iisalmi. Responsibilities include maintenance and repairs of trucks, trailers, vans, and superstructures, ranging from routine servicing to complex troubleshooting. The role demands reliability, professionalism, and a willingness to learn. As a smoke-free workplace, DT Huolto Oy offers a positive environment for its employees. Applications with CV should be sent to jori.nousiainen@dthuolto.fi.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Maintenance and repairs of trucks, trailers, vans and superstructures."
+        ],
+        "what_we_offer": [
+          "Smoke-free workplace."
+        ],
+        "search_keywords": "commercial vehicle mechanic maintenance repairs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:23",
+    "jobs": [
+      {
+        "id": "4d1988e9",
+        "job_id": "nail-technician-oulu-4d1988e9",
+        "processed": true,
+        "title": "Nail Technician",
+        "company": "Heido Nordic Oy, Oulu",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:aukea.oulu@gmail.com?subject=Application%20for%20the%20Job%20-%20Nail%20Technician&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Nail%20Technician.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/427e0516-19b9-46cc-940f-3f889a2cf882/en",
+        "job_employer_email": "aukea.oulu@gmail.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/nail-technician-oulu-4d1988e9",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-07 20:40:23",
+        "open_positions": 1,
+        "salary_range": "Self employed",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Nail Technician at Heido Nordic Oy, Oulu in Oulu. Check the requirements and apply today.",
+        "description": "Join Heido Nordic Oy in Oulu as a professional nail technician for our newly opened wellness center in Joutsensilla. As an experienced structure and gel nail artist, you will be part of building a high-quality wellness center in a comfortable and appreciative work community. You will have the flexibility to plan your working hours and the opportunity to develop and stay at the top of your field through active investment in skills development and training. Send us a video application or an application and CV to join our team. We look forward to getting to know you!",
+        "what_we_expect": [
+          "Professional and good at meeting people.",
+          "A good colleague."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Involved in building a high-quality wellness center.",
+          "To work in a comfortable and appreciative work community.",
+          "To plan your working hours flexibly.",
+          "To have the opportunity to develop and stay at the top of your field.",
+          "Active investment in skills development and training."
+        ],
+        "search_keywords": "nail technician wellness center beauty care professional",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "b2136da2",
+        "job_id": "customer-advisor-driver-kittilä-b2136da2",
+        "processed": true,
+        "title": "Customer Advisor / Driver",
+        "company": "Northern Lights Village Levi Oy, Majoitus",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://northernlightsvillage.teamtailor.com/jobs/3762571-guest-services-attendant-asiakaspalvelija-kuljettaja",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c0d3facc-fb38-4920-a77d-2c7307e11676/en",
+        "job_employer_email": "tiina.leino@nlv.fi",
+        "job_employer_name": "Tiina Leino",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/customer-advisor-driver-kittilä-b2136da2",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-07 20:40:23",
+        "open_positions": 1,
+        "salary_range": "salary Positive and supportive work environment",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Customer Advisor / Driver at Northern Lights Village Levi Oy, Majoitus in Kittilä. Check the requirements and apply today.",
+        "description": "Customer advisor / driver positions are available at Northern Lights Village Levi Oy in Kittilä. This permanent, full-time role involves greeting guests, transporting them to the airport and lodges, assisting with inquiries and luggage, and helping with winter gear. The ideal candidate will have experience in customer service, fluency in Finnish and English, a valid B driver's license, and strong teamwork and independent working skills. Competitive salary and a positive work environment are offered, along with accommodation in a shared room for €300/month. Applications are accepted via Teamtailor. Come join us and create unforgettable experiences for our guests!",
+        "what_we_expect": [
+          "Experience in customer service tasks or similar work.",
+          "Fluent spoken and written English.",
+          "Valid B driver's license.",
+          "Excellent customer service skills.",
+          "Ability to work effectively both independently and in a team."
+        ],
+        "job_responsibilities": [
+          "Greets guests on arrival.",
+          "Transports guests to the airport and lodges.",
+          "Assists guests with their inquiries.",
+          "Takes care of luggage to and from the lodges.",
+          "Assists guests with winter gear upon arrival.",
+          "Keeps the Safari House tidy."
+        ],
+        "what_we_offer": [
+          "Positive and supportive work environment.",
+          "NLV's employment benefits.",
+          "Competitive salary.",
+          "Accommodation in a shared room €300/month."
+        ],
+        "search_keywords": "customer service driver hospitality tourism",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "6351ea98",
+        "job_id": "cleaner-tampere-6351ea98",
+        "processed": true,
+        "title": "Cleaner",
+        "company": "K. Saarholm Oy, Tampere",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Tampere",
+          "Nokia",
+          "Kangasala",
+          "Ylöjärvi",
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://www.kotikomppis.fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fb44bd60-85d2-4628-b8f6-19b852042fae/en",
+        "job_employer_email": "info@kotikomppis.fi",
+        "job_employer_name": "Krista Saarholm",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/cleaner-tampere-6351ea98",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-07 20:40:23",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Cleaner at K. Saarholm Oy, Tampere in Tampere. Check the requirements and apply today.",
+        "description": "K. Saarholm Oy is seeking a part-time cleaner to join our growing family business in Tampere, Nokia, Kangasala, Ylöjärvi, and Pirkkala. The role offers the potential for full-time employment as the business expands, focusing on strong customer service and satisfaction. Previous cleaning or assistance experience is advantageous, and a driver's license is required for home-based work. Integrity, trust, a positive attitude, good physical performance, and strong Finnish language skills are essential. Social interaction skills are particularly valued due to our elderly clientele. Appreciation and growth opportunities await dedicated employees. TES is the starting point for the salary. For more information or to apply, please contact us at info@kotikomppis.fi.",
+        "what_we_expect": [
+          "Integrity and trust.",
+          "Positive attitude.",
+          "Good physical performance.",
+          "Social interaction skills.",
+          "Strong Finnish."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Appreciation.",
+          "Growth opportunities."
+        ],
+        "search_keywords": "cleaner part-time elderly customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:24",
+    "jobs": [
+      {
+        "id": "e26b78f6",
+        "job_id": "barber-hairdresser-contract-entrepreneur-hamina-e26b78f6",
+        "processed": true,
+        "title": "Barber-Hairdresser / Contract Entrepreneur",
+        "company": "Hanna Vuorela, Hamina",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Hamina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hanski_vuorela@hotmail.com?subject=Application%20for%20the%20Job%20-%20Barber-Hairdresser%20/%20Contract%20Entrepreneur&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Barber-Hairdresser%20/%20Contract%20Entrepreneur.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/481a6d60-cff4-4789-ad65-52fa1ac8ab43/en",
+        "job_employer_email": "hanski_vuorela@hotmail.com",
+        "job_employer_name": "Hanna Korjus",
+        "job_employer_phone_no": "0456346181",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/barber-hairdresser-contract-entrepreneur-hamina-e26b78f6",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-12-05",
+        "scraped_at": "2026-11-07 20:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Hanna Vuorela, Hamina is looking for a Barber-Hairdresser / Contract Entrepreneur in Hamina. Don't miss this opportunity — apply today.",
+        "description": "The Room Hamina is seeking a barber-hairdresser as a contract entrepreneur who is passionate about building a successful business and providing excellent customer service. We are looking for someone who is proud of their work, entrepreneurial, and eager to grow their customer base while staying updated with industry trends. This role offers freedom to influence, opportunities for growth, and the chance to take on more responsibility. We value a warm customer service attitude and the ability to take ownership of your actions. If you are interested in developing both your business and The Room, this could be the perfect opportunity for you.",
+        "what_we_expect": [
+          "The barber-hairdresser's professionalism and pride in your own work.",
+          "Good and warm customer service attitude.",
+          "An entrepreneurial and self-initiated approach.",
+          "Desire to grow your own customer base and business.",
+          "Interest in industry trends and developing one's own skills.",
+          "The ability to take responsibility for your own actions."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Freedom to influence.",
+          "Opportunity to grow.",
+          "Space to take responsibility.",
+          "The opportunity to influence more.",
+          "Take on more responsibility.",
+          "Be involved in developing The Room forward."
+        ],
+        "search_keywords": "barber hairdresser contract entrepreneurship customer service entrepreneurship development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "83c7d3e7",
+        "job_id": "property-manager-kokkola-83c7d3e7",
+        "processed": true,
+        "title": "Property Manager",
+        "company": "KIHA-Team Kokkola",
+        "job_category": "property-and-real-estate",
+        "jobLocation": [
+          "Kokkola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://www.kihteam.fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e4483dfa-c68e-4cac-9a26-38cf436f066a/en",
+        "job_employer_email": "simon.enkvist@kihateam.fi",
+        "job_employer_name": "Simon Enkvist",
+        "job_employer_phone_no": "+408323927",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/property-and-real-estate/property-manager-kokkola-83c7d3e7",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-12-15",
+        "scraped_at": "2026-11-07 20:40:24",
+        "open_positions": 1,
+        "salary_range": "Sovitaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Get started in a new job as a Property Manager at KIHA-Team Kokkola in Kokkola. Check the requirements and apply today.",
+        "description": "KIHA-Team Kokkola is seeking dedicated property managers for our expanding team in Kokkola. Ideal candidates should have satisfactory knowledge of Finnish and Swedish, experience in hosting or property management, a positive attitude, reliability, and a willingness to learn. We offer opportunities for professional development and support in obtaining the property manager's professional qualification (IAT). Join us if you are customer-oriented, capable of independent and responsible work, and share our values of reachability, transparency, and cost awareness. Get in touch to discuss various cooperation opportunities.",
+        "what_we_expect": [
+          "Satisfactory knowledge of the Finnish and Swedish languages.",
+          "Experience in hosting or other property management tasks.",
+          "A good attitude.",
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunities for professional development.",
+          "Support for completing the property manager's professional qualification (IAT)."
+        ],
+        "search_keywords": "property management real estate Finnish Swedish language experience development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:25",
+    "jobs": [
+      {
+        "id": "72974641",
+        "job_id": "sales-representative-turku-72974641",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Taloturva Turku",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/Myyja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dca6092c-78e2-456b-97e8-78cfd2a78c94/en",
+        "job_employer_email": "miikka.kilpelainen@taloturva.fi",
+        "job_employer_name": "Kilpeläinen Miikka",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-turku-72974641",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-07 20:40:25",
+        "open_positions": 1,
+        "salary_range": "salary + commissions - Average commission about",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Sales Representative at Taloturva Turku in Turku. Check the requirements and apply today.",
+        "description": "Taloturva Turku is seeking a Sales Representative for the Turku and Vassinais-Finland area to help owners of single-family houses find the best solutions for pipe and sewer renovations. As a representative, you will meet customers in their homes, map out renovation needs, present solutions, and do business. You will track your own results and development, with the opportunity to earn a base salary of €1,500 plus commissions, averaging around €800 per sold renovation. This role offers permanent employment or the chance to work as an invoicing entrepreneur, comprehensive orientation, continuous sales training, and the support of an experienced sales organization. Good earning potential is available, and you will work with high-quality products in a growing domestic family business.",
+        "what_we_expect": [
+          "Desire to develop into a top seller.",
+          "Naturally get along with different people.",
+          "Goal-oriented and want to earn well.",
+          "Dare to seize opportunities and see things through.",
+          "Ready to learn new things and develop sales skills.",
+          "Able to work independently and take responsibility for own results."
+        ],
+        "job_responsibilities": [
+          "Help owners of single-family houses find the best solutions for pipe and sewer renovations.",
+          "Meet customers in their homes, map out renovation needs, present solutions and do business.",
+          "Track your own results and development."
+        ],
+        "what_we_offer": [
+          "Permanent employment or the opportunity to work as an invoicing entrepreneur.",
+          "Comprehensive orientation and continuous sales training.",
+          "Gym membership and working tools.",
+          "The support of an experienced sales organization and a supportive work community.",
+          "The opportunity to develop and progress as a sales professional.",
+          "Good earning potential – €1,500 base salary + commissions."
+        ],
+        "search_keywords": "sales representative pipe sewer repairs Turku Vassinais-Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "029ce50b",
+        "job_id": "sewer-cleaner-tuusula-029ce50b",
+        "processed": true,
+        "title": "Sewer Cleaner",
+        "company": "Taloturva Tuusula",
+        "job_category": "energy-and-utilities",
+        "jobLocation": [
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/avoimet-tyopaikat/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/67b359a9-fb0d-47f1-b33e-a6cca5b86f06/en",
+        "job_employer_email": "info@taloturva.fi",
+        "job_employer_name": "Yhteyshenkilö Rekrytointi",
+        "job_employer_phone_no": "+358290075800",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/energy-and-utilities/sewer-cleaner-tuusula-029ce50b",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-07 20:40:25",
+        "open_positions": 1,
+        "salary_range": "salary model - A well-organized and clear insta",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Taloturva Tuusula is hiring a Sewer Cleaner in Tuusula. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a sewer cleaner to join our growing team in Uusimaa at Taloturva Tuusula. As a key member of our professional team, you will be responsible for maintaining and renovating drains at customers' sites using modern methods and high-quality workmanship. You will work both independently and as part of a team, ensuring projects are completed smoothly from start to finish. Requirements include experience in drain cleaning, self-initiative, the ability to complete tasks, good teamwork skills, and the willingness to work in Sweden and Norway if needed. We offer the best tools in the industry, continuous management support, a top-equipped work car, and an encouraging salary model. Apply today to join a well-organized and professional team at Taloturva Group Oy.",
+        "what_we_expect": [
+          "Experience in drain cleaning.",
+          "Self-initiative and responsible approach to work.",
+          "Ability to carry out tasks to completion.",
+          "Good teamwork skills and ability to work independently.",
+          "Willingness to work at home and, if necessary, in Sweden and Norway."
+        ],
+        "job_responsibilities": [
+          "Responsible for drains and related installation work at customers' sites.",
+          "Renovation of drains using modern methods and high-quality workmanship as part of a professional team."
+        ],
+        "what_we_offer": [
+          "The best tools in the industry.",
+          "Continuous support from management.",
+          "A top-equipped work car.",
+          "Introduction to our company's operating methods.",
+          "Professional and approachable colleagues.",
+          "An encouraging salary model."
+        ],
+        "search_keywords": "sewer draining drain drainer drain drainer HVAC installer drainer installation work construction industry plumber sewer drainer Helsinki drainer Vantaa drainer espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:26",
+    "jobs": [
+      {
+        "id": "6b097cde",
+        "job_id": "appointment-booker-tuusula-6b097cde",
+        "processed": true,
+        "title": "Appointment Booker",
+        "company": "Taloturva Tuusula",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Tuusula",
+          "Nurmijärvi",
+          "Järvenpää",
+          "Kerava",
+          "Sipoo",
+          "Lohja",
+          "Mäntsälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/ajanvaraaja/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/86647a92-7ae9-431c-be70-a55a2e4757aa/en",
+        "job_employer_email": "miikka.kilpelainen@taloturva.fi",
+        "job_employer_name": "Kilpeläinen Miikka",
+        "job_employer_phone_no": "0447334454",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/appointment-booker-tuusula-6b097cde",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-07 20:40:26",
+        "open_positions": 1,
+        "salary_range": "Sopimuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Appointment Booker role at Taloturva Tuusula. Join the team and build your career in Tuusula.",
+        "description": "Taloturva is seeking an appointment booker to join our customer acquisition team in Northern Uusimaa, covering areas such as Hyvinkä, Nurmijärvi, Mäntsälä, and beyond. As an appointment booker, you will call potential customers to inform them about our pipe and sewer repair services and arrange free mapping visits with our renovation representatives. You will track your successes, develop your skills, and work collaboratively with the team. This is a full-time, permanent position offering regular working hours, clear goals, and an encouraging work atmosphere. You should enjoy talking to people, be positive and self-initiative, and speak fluent Finnish. Previous experience is not required, and we will provide training. Join us in a supportive environment where you can grow and succeed.",
+        "what_we_expect": [
+          "You like to talk to people and get along with different personalities.",
+          "You are positive, brisk and self-initiative.",
+          "You don't get discouraged by small setbacks.",
+          "You want to learn new things and develop in your work.",
+          "You enjoy working together and succeeding.",
+          "You speak fluent Finnish."
+        ],
+        "job_responsibilities": [
+          "Call customers and tell them about the pipe and sewer repair services offered by Taloturva.",
+          "Arrange free mapping visits with our renovation representatives for interested customers.",
+          "Track your own successes, develop your skills and work together with the rest of the team."
+        ],
+        "what_we_offer": [
+          "Full-time and permanent employment.",
+          "Regular working hours on weekdays.",
+          "Clear tasks and goals.",
+          "The opportunity to work as part of the customer acquisition team in Northern Uusimaa.",
+          "An encouraging and relaxed work atmosphere.",
+          "Shared breakfasts and recreational events."
+        ],
+        "search_keywords": "appointment booker customer service sales support",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "35d900aa",
+        "job_id": "kitchen-assistant-helsinki-35d900aa",
+        "processed": true,
+        "title": "Kitchen Assistant",
+        "company": "Restaurant Aito Fresh (Aikatalo)",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr@aitofresh.fi?subject=Application%20for%20the%20Job%20-%20Kitchen%20Assistant&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Kitchen%20Assistant.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0b439985-27d4-488e-9d6a-e61645e340da/en",
+        "job_employer_email": "hr@aitofresh.fi",
+        "job_employer_name": "Siyun Gu",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/kitchen-assistant-helsinki-35d900aa",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 20:40:26",
+        "open_positions": 1,
+        "salary_range": "Salary & Benefits Pay: Competitive, based on ex",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Join Restaurant Aito Fresh (Aikatalo) as a Kitchen Assistant and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "A Kitchen Assistant is needed at Restaurant Aito Fresh (Aikatalo) in Helsinki to support the kitchen team by washing, peeling, and cutting vegetables, preparing salads and sauces, and assisting with daily food preparation. Responsibilities include refilling buffet items, keeping the dining area tidy, and washing dishes and kitchen tools. Ideal candidates are responsible, detail-oriented, hygienic, and cooperative, with the ability to work weekends and holidays and stand for extended periods. Previous kitchen or food-service experience is preferred. Training will be provided. Apply by sending your CV and a short application to hr@aitofresh.fi by 30.11.2026. Discover a new dining experience in the heart of Helsinki, where every dish is crafted to bring you both taste and balance.",
+        "what_we_expect": [
+          "Responsible.",
+          "Attentive to detail.",
+          "Hygienic.",
+          "Cooperative.",
+          "Available to work weekends and holidays.",
+          "Able to stand for extended periods."
+        ],
+        "job_responsibilities": [
+          "Wash, peel and cut vegetables and other ingredients.",
+          "Prepare salads and sauces.",
+          "Assist with daily food preparation.",
+          "Refill buffet items and help keep them fresh, presentable and well organised.",
+          "Clear and clean tables, dispose of waste properly and keep the dining area tidy.",
+          "Wash dishes, kitchen tools and equipment."
+        ],
+        "what_we_offer": [
+          "Employee discount.",
+          "Supportive team environment."
+        ],
+        "search_keywords": "kitchen assistance food prep",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:27",
+    "jobs": [
+      {
+        "id": "5331c7c4",
+        "job_id": "waiterwaitress-helsinki-5331c7c4",
+        "processed": true,
+        "title": "Waiter/Waitress",
+        "company": "Restaurant Aito Fresh (Aikatalo)",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:hr@aitofresh.fi?subject=Application%20for%20the%20Job%20-%20Waiter/Waitress&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Waiter/Waitress.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/233553d6-df0d-4ac0-a506-9e8525b3c875/en",
+        "job_employer_email": "hr@aitofresh.fi",
+        "job_employer_name": "Siyun Gu",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiterwaitress-helsinki-5331c7c4",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 20:40:27",
+        "open_positions": 1,
+        "salary_range": "Salary & Benefits Salary: Competitive, based on",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Waiter/Waitress at Restaurant Aito Fresh (Aikatalo) in Helsinki. Apply now and take the next step in your career.",
+        "description": "Welcome customers and explain menu options, take orders and process payments, provide friendly, attentive service, prepare poke bowls and keep ingredients fresh and presentable, follow food-safety and hygiene practices, and keep the service area clean. Work closely with the team during busy periods, including weekends and holidays. Good communication, attention to detail, and the ability to learn the point-of-sale system are essential. A focus on customer experience and an interest in improving daily work efficiency are valuable. Finnish is an advantage but not required. An employee discount and a supportive team environment are offered. Previous restaurant experience is advantageous, but training is provided. A Finnish Hygiene Passport is required for handling unpackaged perishable foods.",
+        "what_we_expect": [
+          "Good communication.",
+          "Attention to detail.",
+          "Ability to learn the point-of-sale system.",
+          "Focus on customer experience.",
+          "Interest in finding practical ways to improve daily work efficiency.",
+          "Ability to work at a steady pace."
+        ],
+        "job_responsibilities": [
+          "Welcome customers and explain menu options.",
+          "Take orders and process payments.",
+          "Provide friendly, attentive service and respond to customer requests.",
+          "Prepare poke bowls and keep ingredients fresh, well-stocked and presentable.",
+          "Follow the restaurant's food-safety and hygiene practices.",
+          "Keep the service area clean, restock supplies and help the restaurant run smoothly."
+        ],
+        "what_we_offer": [
+          "Employee discount.",
+          "Supportive team environment."
+        ],
+        "search_keywords": "waiter waitress restaurant food service customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:28",
+    "jobs": [
+      {
+        "id": "da0faac2",
+        "job_id": "sales-manager-helsinki-da0faac2",
+        "processed": true,
+        "title": "Sales Manager",
+        "company": "Taloturva Group Oy, Vantaa",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://parasduuni.fi/myyntipaallikko/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8921eb04-ec88-4818-a06a-89c4dbfbc74e/en",
+        "job_employer_email": "miikka.kilpelainen@taloturva.fi",
+        "job_employer_name": "Kilpeläinen Miikka",
+        "job_employer_phone_no": "0447334454",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-manager-helsinki-da0faac2",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-07 20:40:28",
+        "open_positions": 1,
+        "salary_range": "salary where success really shows Your salary c",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Sales Manager at Taloturva Group Oy, Vantaa in Helsinki. Apply now and take the next step in your career.",
+        "description": "Are you an experienced seller who knows how to do business and would like to help others succeed as well? Taloturva Group Oy in Vantaa is seeking a Sales Manager for Uusimaa, combining your sales expertise with leadership opportunities. As a Sales Manager, you will trade with customers, sell Taloturva's plumbing and sewer renovations, coach and support your team, and participate in the recruitment and training of new salespeople. You will set goals, monitor results, and develop activities together with your team. Key requirements include strong sales skills, the right attitude, and a desire to develop as a leader. You will receive a salary where success really shows, consisting of a fixed base salary, own sales commissions, and a performance bonus based on team sales.",
+        "what_we_expect": [
+          "Strong sales skills.",
+          "The right attitude.",
+          "The desire to develop as a leader."
+        ],
+        "job_responsibilities": [
+          "Trade with customers and sell Taloturva's plumbing and sewer renovations.",
+          "Coach, encourage, and support salespeople in the team.",
+          "Participate in the recruitment and training of new salespeople.",
+          "Set goals for the team, monitor results, and develop activities together with the team."
+        ],
+        "what_we_offer": [
+          "A salary where success really shows, consisting of a fixed base salary, own sales commissions, and a performance bonus based on team sales.",
+          "The opportunity to advance your career, including responsibility for your own sales team and comprehensive orientation and continuous support for management.",
+          "Working sales tools and customer acquisition support.",
+          "Freedom and responsibility for planning your own work.",
+          "Travel expenses are reimbursed in accordance with the agreed practices."
+        ],
+        "search_keywords": "sales manager, Uusimaa, sales, management, career advancement",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:29",
+    "jobs": [
+      {
+        "id": "97894098",
+        "job_id": "furniture-fitter-tampere-97894098",
+        "processed": true,
+        "title": "Furniture Fitter",
+        "company": "A.J.Peltokangas Oy, Alajärvi",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/eaa0089e-7d59-401e-b086-0127d5fbac9a/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/eaa0089e-7d59-401e-b086-0127d5fbac9a/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/furniture-fitter-tampere-97894098",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-07 20:40:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Furniture Fitter at A.J.Peltokangas Oy, Alajärvi in Tampere. Check the requirements and apply today.",
+        "description": "A.J.Peltokangas Oy in Tampere is seeking a reliable and professional Furniture Fitter to join their team on a permanent, full-time basis. Responsibilities include installing kitchen furniture, closets, wardrobes, and in some locations, bathrooms, in apartment buildings across the Tampere area. Applicants should possess strong teamwork skills and a willingness to learn. Fluency in both Finnish and English is required.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "furniture installation apartment buildings Tampere kitchens",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:30",
+    "jobs": [
+      {
+        "id": "d1b31a18",
+        "job_id": "cabin-cleaner-helsinki-d1b31a18",
+        "processed": true,
+        "title": "Cabin Cleaner",
+        "company": "Spicy HotPotato Oy, Helsinki",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Helsinki",
+          "Pelkosenniemi",
+          "Sodankylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:petri@shpo.fi?subject=Application%20for%20the%20Job%20-%20Cabin%20Cleaner&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Cabin%20Cleaner.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/39a55931-acdf-40b4-8cd7-ccdf61472b40/en",
+        "job_employer_email": "petri@shpo.fi",
+        "job_employer_name": "Alanen Petri",
+        "job_employer_phone_no": "+358452034001",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/cabin-cleaner-helsinki-d1b31a18",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 20:40:30",
+        "open_positions": 1,
+        "salary_range": "salary - Working hours are mainly from Monday t",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Cabin Cleaner at Spicy HotPotato Oy, Helsinki in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking a cabin cleaner for the Luosto and Pyhä area, responsible for cleaning premises, cabin cleaning, and various tasks at customers' locations. The role requires a B driving license and own car, a good customer service attitude, self-initiative, and the ability to work independently. Previous experience in the cleaning industry is advantageous. Compensation is paid for using your own car. Working hours are mainly Monday to Friday, with potential weekend work, and the length of days is variable. For more information, contact info@shpo.fi or visit www.shpo.fi.",
+        "what_we_expect": [
+          "B driving license and own car.",
+          "Good customer service attitude.",
+          "Self-initiative and reliability.",
+          "Ability to work independently.",
+          "Previous experience in the cleaning industry is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Cleaning of premises.",
+          "Cabin cleaning (change of linen, etc.).",
+          "Various tasks in the cleaning industry at customers' locations."
+        ],
+        "what_we_offer": [
+          "Compensation is paid for using your own car."
+        ],
+        "search_keywords": "cabin cleaner cleaning facility services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:40:31",
+    "jobs": [
+      {
+        "id": "4f89cfb3",
+        "job_id": "building-and-final-cleaner-kokkola-4f89cfb3",
+        "processed": true,
+        "title": "Building and Final Cleaner",
+        "company": "Sisu Siivous Oy, Kokkola",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kokkola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5670ee5c-cdb1-494f-8b1f-8fb0ae8b7043/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5670ee5c-cdb1-494f-8b1f-8fb0ae8b7043/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/building-and-final-cleaner-kokkola-4f89cfb3",
+        "date_posted": "2026-11-07",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-07 20:40:31",
+        "open_positions": 1,
+        "salary_range": "salary is hourly",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next job as a Building and Final Cleaner at Sisu Siivous Oy, Kokkola. Great opportunity in Kokkola — apply now.",
+        "description": "Sisu Siivous Oy, a growing cleaning company in Kokkola, is seeking a hard-working, self-initiated, and responsible Building and Final Cleaner for a permanent position. Responsibilities include cleaning during construction sites, construction and P1 final cleaning, basic floor cleaning and waxing, and window washing. The role offers comprehensive orientation, opportunities to develop professional skills, and the chance to grow with the company. Key requirements are care, flexibility, an independent approach to work, and the ability to take responsibility for one's own work track. Previous experience in construction and final cleaning is beneficial but not mandatory if you have the right attitude, motivation, and willingness to learn.",
+        "what_we_expect": [
+          "Care.",
+          "Flexibility.",
+          "Independent approach to work.",
+          "Ability to take responsibility for one's own work track.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Cleaning during construction sites.",
+          "Construction and P1 final cleaning.",
+          "Basic floor cleaning and waxing.",
+          "Window washing and other special cleaning."
+        ],
+        "what_we_offer": [
+          "Comprehensive orientation.",
+          "Opportunity to develop professional skills.",
+          "Opportunity to grow with the company."
+        ],
+        "search_keywords": "cleaning construction final_cleaning waxing window_washing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "83e17877",
+        "job_id": "metal-worker-nurmes-83e17877",
+        "processed": true,
+        "title": "Metal Worker",
+        "company": "Pielisen Metalli Oy, Nurmes",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Nurmes"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:kari.turunen@pielisenmetalli.fi?subject=Application%20for%20the%20Job%20-%20Metal%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Metal%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b5b87c55-dded-4f03-99ee-658a880bfbae/en",
+        "job_employer_email": "kari.turunen@pielisenmetalli.fi",
+        "job_employer_name": "Kari Turunen",
+        "job_employer_phone_no": "0400 276 699",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/metal-worker-nurmes-83e17877",
+        "date_posted": "2026-11-06",
+        "date_expires": "2027-01-01",
+        "scraped_at": "2026-11-07 20:40:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Metal Worker role at Pielisen Metalli Oy, Nurmes. Join the team and build your career in Nurmes.",
+        "description": "Pielisen Metalli Oy in Nurmes is seeking a reliable and professional Metal Worker for a permanent, full-time position. Responsibilities include performing metal work and surface treatments. Fluency in both Finnish and English is required, and a willingness to learn and work as part of a team is essential. Join our team and contribute to our operations in Nurmes.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Perform metal work, surface treatments."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "metal worker manufacturing production surface treatments",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       }
     ]
   }
