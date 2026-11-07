@@ -440522,5 +440522,57 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 01:05:31",
+    "jobs": [
+      {
+        "id": "f816de9e",
+        "job_id": "customer-service-guide-kittilä-f816de9e",
+        "processed": true,
+        "title": "Customer Service Guide",
+        "company": "Tundra Huskies",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tundra-huskies-opas-asiakaspalvelu-huskyfarmilla-sdsuu-20682883",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tundra-huskies-opas-asiakaspalvelu-huskyfarmilla-sdsuu-20682883",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/customer-service-guide-kittilä-f816de9e",
+        "date_posted": "2026-10-30",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-07 01:05:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Tundra Huskies is hiring a Customer Service Guide in Kittilä. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Guide and customer service roles are available at Huskyfarm Tundra Huskies in Kittilä, Finland, for a permanent, full-time position. This small, family-owned dog sled company offers rewarding work with happy customers, nature, and animals. Responsibilities include preparing programs in advance and guiding customers at the husky farm. We value motivation to learn new things, the ability to work outside, and problem-solving skills. Accommodation will be arranged if necessary, and a driver's license is required. The role is suitable for both locals and foreigners, with work starting as soon as the snow is guaranteed until April. Apply now for this exciting opportunity.",
+        "what_we_expect": [
+          "Motivation to learn new things.",
+          "Ability to work outside.",
+          "Problem-solving ability."
+        ],
+        "job_responsibilities": [
+          "Preparation of programs in advance.",
+          "Customer guidance at the husky farm."
+        ],
+        "what_we_offer": [
+          "Accommodation will be arranged if necessary.",
+          "Driver's license necessary."
+        ],
+        "search_keywords": "customer service seasonal work outdoors accommodation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
   }
 ]
