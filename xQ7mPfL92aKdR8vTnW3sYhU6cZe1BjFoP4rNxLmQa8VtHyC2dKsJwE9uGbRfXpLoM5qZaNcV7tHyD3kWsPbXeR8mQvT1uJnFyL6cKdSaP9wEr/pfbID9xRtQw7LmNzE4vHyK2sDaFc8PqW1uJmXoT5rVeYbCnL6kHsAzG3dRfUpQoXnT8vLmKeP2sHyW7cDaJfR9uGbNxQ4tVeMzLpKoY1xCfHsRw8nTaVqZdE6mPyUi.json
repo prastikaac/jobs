@@ -433694,6 +433694,575 @@
         "search_keywords": "dispatcher night work logistics distribution Kauhava",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "e3979933",
+        "job_id": "kubernetes-expert-kangasala-e3979933",
+        "processed": true,
+        "title": "Kubernetes Expert",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Lempäälä",
+          "Nokia",
+          "Pirkkala",
+          "Tampere",
+          "Ylöjärvi",
+          "Oulu",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Salo",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27118902",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6ddadcf4-5f37-4238-8457-bb9ebbf032de/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/kubernetes-expert-kangasala-e3979933",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-11-07 00:58:25",
+        "open_positions": 1,
+        "salary_range": "salary that matches your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is hiring a Kubernetes Expert in Kangasala. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking experienced Kubernetes experts for customer assignments. Candidates should have solid experience with Kubernetes and container systems, preferably with Azure Kubernetes Service (AKS). Certifications such as Certified Kubernetes Administrator (CKA) and Certified Kubernetes Application Developer (CKAD) are advantageous. Fluency in Finnish and English is required, and a willingness to pass a personal security clearance is necessary. Responsibilities include technical architecture design, AKS platform implementation, and operational reliability. The position is full-time, permanent, and offers a competitive hourly wage. Apply with an updated CV highlighting relevant skills and experience.",
+        "what_we_expect": [
+          "Solid experience with Kubernetes and container systems in general.",
+          "Experience with Kubernetes systems, preferably Azure Kubernetes Service (AKS).",
+          "Related Azure certifications as an advantage.",
+          "General Kubernetes certifications such as Certified Kubernetes Administrator (CKA) and Certified Kubernetes Application Developer (CKAD).",
+          "Fluency in Finnish and English (oral and written).",
+          "Willingness to pass a personal security clearance."
+        ],
+        "job_responsibilities": [
+          "Strong knowledge of Kubernetes and previous practical experience of implementing at least one Kubernetes platform.",
+          "Emphasis on the technical architecture design, construction and connection of the shared AKS platform to the Azure cloud foundation.",
+          "Willingness to act as a key technical expert for AKS implementation.",
+          "Previous practical experience in building and maintaining a Kubernetes platform.",
+          "Emphasis on operational reliability of the platform, life cycle management and problem solving."
+        ],
+        "what_we_offer": [
+          "A nice working relationship in a big company.",
+          "Versatile work where every day is different and interesting.",
+          "A competitive salary that matches your skills."
+        ],
+        "search_keywords": "Kubernetes expert, Azure, AKS, certification, security clearance, remote work, Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:58:28",
+    "jobs": [
+      {
+        "id": "224da45d",
+        "job_id": "senior-erp-transformation-lead-kangasala-224da45d",
+        "processed": true,
+        "title": "Senior ERP Transformation Lead",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi",
+          "Vaasa",
+          "Oulu",
+          "Kuopio",
+          "Lahti",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27117483",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/21969c3e-2679-4957-a5b1-e79279e7fdd0/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-erp-transformation-lead-kangasala-224da45d",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-11",
+        "scraped_at": "2026-11-07 00:58:28",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is hiring a Senior ERP Transformation Lead in Kangasala. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Our customer is seeking a highly experienced Senior ERP Transformation Lead to lead a large-scale business and ERP modernization initiative for a major Nordic enterprise. This role involves driving a complex transformation from legacy IFS environments to IFS Cloud, with direct exposure to executive stakeholders and responsibility for leading change across multiple countries and stakeholder groups. Key responsibilities include leading a strategic transformation program covering Finance, Human Resources, Procurement & Supplier Management, and enterprise-wide business processes. You will act as the bridge between business and technology teams, engage and influence senior stakeholders, establish governance, and lead change management activities.",
+        "what_we_expect": [
+          "Proven experience leading large-scale ERP transformation programs.",
+          "Strong IFS / IFS Cloud transformation experience.",
+          "Background in business transformation and organizational change.",
+          "Experience working directly with executive stakeholders.",
+          "Excellent communication, influencing, and stakeholder management skills.",
+          "Experience in multinational and complex business environments."
+        ],
+        "job_responsibilities": [
+          "Lead a complex ERP transformation program end-to-end.",
+          "Drive migration from legacy IFS to IFS Cloud.",
+          "Act as the bridge between business and technology teams.",
+          "Engage and influence senior stakeholders, including C-level executives.",
+          "Establish governance, alignment, and decision-making across the organization.",
+          "Lead change management and business transformation activities."
+        ],
+        "what_we_offer": [
+          "A very competitive salary.",
+          "Good employee benefits."
+        ],
+        "search_keywords": "ERP transformation, leadership, business processes, IFS Cloud, C-level stakeholders",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      },
+      {
+        "id": "4948b4e2",
+        "job_id": "site-assistant-espoo-4948b4e2",
+        "processed": true,
+        "title": "Site Assistant",
+        "company": "Academic Work Finland Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Kauniainen",
+          "Hyvinkää",
+          "Kerava",
+          "Kirkkonummi",
+          "Loviisa",
+          "Mäntsälä",
+          "Nurmijärvi",
+          "Sipoo",
+          "Siuntio",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/FSOOJ3",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/87ad84d2-5647-4660-94de-96df87627f52/en",
+        "job_employer_email": "krn10@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/site-assistant-espoo-4948b4e2",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-07 00:58:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Site Assistant role at Academic Work Finland Oy. Join the team and build your career in Espoo.",
+        "description": "As a Site Assistant at Academic Work Finland Oy, you will play a crucial role in ensuring the smooth operation of the construction site in Mäntsälä. Your responsibilities include maintaining supplies, coordinating equipment, organizing deliveries, and providing support to personnel. You will work closely with the site office manager, project managers, and other staff, handling a variety of tasks with initiative and a customer service-oriented approach. Fluency in both Finnish and English, experience with MS 365 programs, and the ability to work in a fast-paced environment are essential.",
+        "what_we_expect": [
+          "Fluent oral and written Finnish and English language skills.",
+          "Self-initiative and customer service oriented approach.",
+          "Management of MS 365 programs.",
+          "Ability to work in a rapidly changing and hectic environment.",
+          "Good communication skills and a cheerful attitude.",
+          "High stress tolerance."
+        ],
+        "job_responsibilities": [
+          "Responsible for the maintenance of the construction site supplies and the coordination of equipment.",
+          "Organize clothing orders, goods deliveries and other support services.",
+          "Take care of ordering office supplies and other necessary things.",
+          "Maintain close contact with various stakeholders on the construction site, such as project managers.",
+          "Fulfilling support needs, such as organizing food and physical chores.",
+          "Offer practical support to the personnel at the site in all situations that arise."
+        ],
+        "what_we_offer": [
+          "A versatile and responsible job description as part of a professional and pleasant team.",
+          "Development of skills in a dynamic environment where low hierarchy and team play are valued.",
+          "Lunch reduction (E-pass).",
+          "Comprehensive occupational health services."
+        ],
+        "search_keywords": "site assistant construction site management logistics administration",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:58:29",
+    "jobs": [
+      {
+        "id": "1cb942af",
+        "job_id": "bus-daily-custodiancleaner-vaasa-1cb942af",
+        "processed": true,
+        "title": "Bus Daily Custodian/Cleaner",
+        "company": "Tavco Oy, Tampere",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:rekry@tavco.fi?subject=Application%20for%20the%20Job%20-%20Bus%20Daily%20Custodian/Cleaner&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Bus%20Daily%20Custodian/Cleaner.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1a1eb57d-c6c0-44dc-b107-dfba39aa1f76/en",
+        "job_employer_email": "rekry@tavco.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/bus-daily-custodiancleaner-vaasa-1cb942af",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-07 00:58:29",
+        "open_positions": 1,
+        "salary_range": "Salary: Salary category 4 in the real estate ser",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Bus Daily Custodian/Cleaner role at Tavco Oy, Tampere. Join the team and build your career in Vaasa.",
+        "description": "We are seeking a bus daily custodian/cleaner for Vaasa Buses in Vaasa, Finland. This full-time, permanent position involves cleaning the inside of buses and washing the outside. A C driver's license is required as you will be moving a car during work. The work schedule is between 17:00 and 02:00, Monday to Friday, for approximately 7 hours per day, totaling 35 hours weekly. Fluency in Finnish, both oral and written, is essential, along with a self-motivated and independent attitude, as well as the ability to work in a team. Stable driving skills and technical knowledge of buses are advantageous but will be trained. Apply by sending a free-form application and CV to rekry@tavco.fi. We look forward to finding the right candidate to join our relaxed and growing team.",
+        "what_we_expect": [
+          "A brisk and self-initiated attitude.",
+          "Ability to work independently.",
+          "Ability to work in a team.",
+          "Fluent oral and written knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Cleaning the inside of buses.",
+          "Washing the outside of buses."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "bus cleaner custodian vaasa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:58:34",
+    "jobs": [
+      {
+        "id": "feffea00",
+        "job_id": "night-worker-tuusula-feffea00",
+        "processed": true,
+        "title": "Night Worker",
+        "company": "Terva Care Oy, Pienryhmäkoti Keltasirkku",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:ilpo.virtanen@tervacare.fi?subject=Application%20for%20the%20Job%20-%20Night%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Night%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/89884604-3f35-48ab-9fb9-cde5124a2d2b/en",
+        "job_employer_email": "ilpo.virtanen@tervacare.fi",
+        "job_employer_name": "Ilpo Virtanen",
+        "job_employer_phone_no": "0449027273",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/night-worker-tuusula-feffea00",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-07 00:58:34",
+        "open_positions": 1,
+        "salary_range": "Salary: Salary for the position in accordance wi",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Night Worker at Terva Care Oy, Pienryhmäkoti Keltasirkku. Great opportunity in Tuusula — apply now.",
+        "description": "Terva Care Oy, a family business in Tuusula, is seeking a Night Worker for a permanent, part-time position at the 6-place special child protection unit in Keltasirkku, Kellokoski. This role involves calming the house in the evenings, managing children's medication, preparing meals for the next day, and maintaining cleanliness. Ideal candidates will have a degree in social work or health, experience in foster care, and the ability to work well under pressure while maintaining a positive and dialogical approach. A strong team player who can adapt to changing situations and bring joy to the work environment is essential. Terva Care offers a supportive workplace with job guidance, occupational health care, and orientation. The employment relationship is indefinite with a 6-month trial period.",
+        "what_we_expect": [
+          "Knows how to play together as a team.",
+          "Can withstand pressure and changing situations well.",
+          "Works with his own personality.",
+          "Shows joy and enthusiasm.",
+          "Acts in a dialogical and relationship-based manner."
+        ],
+        "job_responsibilities": [
+          "Calm the house down in the evenings.",
+          "Take care of the children's medication.",
+          "Prepare the following days' meals.",
+          "Take care of the cleanliness of the house."
+        ],
+        "what_we_offer": [
+          "Strong expertise.",
+          "Humor.",
+          "A get-it-done attitude.",
+          "Job guidance.",
+          "Occupational health care.",
+          "Planned orientation."
+        ],
+        "search_keywords": "night_worker social_work foster_care child_protection neuro_spectrum trauma",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "c4085377",
+        "job_id": "property-maintenance-team-leader-kittilä-c4085377",
+        "processed": true,
+        "title": "Property Maintenance Team Leader",
+        "company": "Kero Services Levi Oy, Kittilä",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.keroservices.fi/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/126c6bbb-8bc5-41b5-84cf-cdfcdbbdfd23/en",
+        "job_employer_email": "rekry@keroservices.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/property-maintenance-team-leader-kittilä-c4085377",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-07 00:58:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join Kero Services Levi Oy, Kittilä as a Property Maintenance Team Leader and grow your career in Kittilä. Check the job details and apply now.",
+        "description": "Property maintenance team leader needed at Kero Services Levi Oy in Kittilä. Lead a team in daily operations, plan work, prepare shift lists, and handle urgent tasks. Perform maintenance rounds, fault repairs, and winter maintenance. Act as a contact person for building societies and property managers. Train new and seasonal employees, participate in emergency response, and manage contract jobs. Requirements include experience in property maintenance, team leadership, decision-making, clear Finnish communication, and a B driver's license. Apply by 20 November 2026 for a full-time, open-ended position.",
+        "what_we_expect": [
+          "Experience in property maintenance or similar technical work.",
+          "Experience in leading a team or managing work - or a strong desire to grow in it.",
+          "Self-initiative and the ability to make decisions even in a hurry and in emergency situations.",
+          "Clear and factual customer communication in Finnish; knowledge of the English language is considered an advantage.",
+          "Smooth use of mobile and information systems.",
+          "B driver's license, mandatory."
+        ],
+        "job_responsibilities": [
+          "Lead the property maintenance team in everyday life: plan and distribute work, prepare shift lists and prioritize urgent work.",
+          "Do property maintenance work yourself with the team: maintenance rounds, fault repairs, winter maintenance and snow work.",
+          "Act as a contact person for building societies, property managers, cottage owners and rental agents in matters of property maintenance.",
+          "Train new and seasonal employees and take care of job security.",
+          "Participate in the emergency room and prepare the on-call shift list for property maintenance.",
+          "Act as a foreman in possible contract jobs."
+        ],
+        "what_we_offer": [
+          "A full-time, open-ended employment relationship.",
+          "A responsible role in a growing company, where you can influence the construction of operations.",
+          "Orientation to the task and our systems.",
+          "Salary starting at €2,700/month plus allowances in accordance with the collective agreement in the real estate service industry."
+        ],
+        "search_keywords": "property maintenance team leader cleaning facility services Levi Kero Services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "a41a32ee",
+        "job_id": "masseuse-or-wellness-professional-salo-a41a32ee",
+        "processed": true,
+        "title": "Masseuse or Wellness Professional",
+        "company": "Tmi Kauneushuone Ametisti, Miia Asikainen, Salo",
+        "job_category": "wellness-and-beauty-care",
+        "jobLocation": [
+          "Salo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kauneushoitolasalo.fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9ff30a31-4f64-4f28-ae1d-14a8935257d1/en",
+        "job_employer_email": "liike@kauneushuoneametisti.fi",
+        "job_employer_name": "Miia Asikainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/wellness-and-beauty-care/masseuse-or-wellness-professional-salo-a41a32ee",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-07 00:58:34",
+        "open_positions": 1,
+        "salary_range": "Yrittäjä",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Tmi Kauneushuone Ametisti, Miia Asikainen, Salo as a Masseuse or Wellness Professional in Salo.",
+        "description": "I am seeking an independent wellness entrepreneur to share space with me in my eco-spirited beauty salon, Kauneushuone Ametisti, in the heart of Salo. The 65 m² space is fully furnished and includes an electrically adjustable treatment chair. You will have access to the entire space 1-2 weekdays and weekends, with agreed-upon weekdays. The fixed rent covers the use of the space, heating, water, electricity, and cleaning equipment. You will need to provide your own payment terminal, appointment system, and tools/products for your work. Suitable candidates include masseuses, lymphatic therapists, makeup artists, or other wellness professionals. This role is ideal for someone with an existing customer base and a commitment to honesty, reliability, and independent work.",
+        "what_we_expect": [
+          "Honest.",
+          "Reliable.",
+          "Serve customers wholeheartedly.",
+          "Work independently.",
+          "Take care of the space."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Use of the entire space on the agreed days.",
+          "Heating.",
+          "Water and electricity.",
+          "Equipment and materials needed to clean the nursing home."
+        ],
+        "search_keywords": "masseuse wellness entrepreneur beauty salon",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "122814e4",
+        "job_id": "car-washer-car-attendant-tuusula-122814e4",
+        "processed": true,
+        "title": "Car Washer / Car Attendant",
+        "company": "Rama detailing Oy, Tuusula",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:Ramaoy@outlook.com?subject=Application%20for%20the%20Job%20-%20Car%20Washer%20/%20Car%20Attendant&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Car%20Washer%20/%20Car%20Attendant.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8b82e855-f388-4c8d-989e-6b48073b28ef/en",
+        "job_employer_email": "Ramaoy@outlook.com",
+        "job_employer_name": "Naser Mohammadi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/car-washer-car-attendant-tuusula-122814e4",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-07 00:58:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Car Washer / Car Attendant at Rama detailing Oy, Tuusula in Tuusula. Apply now and take the next step in your career.",
+        "description": "Rama detailing Oy in Tuusula is seeking a motivated and careful employee for a full-time, permanent position. Responsibilities include exterior and interior car washing, thorough interior cleaning, polishing, waxing, and general car maintenance tasks. We value candidates with care and responsibility, a positive attitude, the ability to work independently and in a team, and a willingness to learn new tasks. Previous experience is advantageous but not required. Join our professional and growing car maintenance company in Tuusula.",
+        "what_we_expect": [
+          "Care and responsibility.",
+          "Good work motivation and positive attitude.",
+          "Ability to work independently and in a team.",
+          "Desire to learn new tasks."
+        ],
+        "job_responsibilities": [
+          "Exterior and interior washing of cars.",
+          "Thorough interior cleaning of cars, i.e. Deep cleaning of the interior.",
+          "Polishing cars and finishing paint surfaces.",
+          "Waxing and using car care products.",
+          "General cleaning and finishing of cars.",
+          "Other tasks related to car maintenance and detailing services."
+        ],
+        "what_we_offer": [
+          "Full-time job in a professional and developing car maintenance company."
+        ],
+        "search_keywords": "car washer car attendant detailing cleaning Tuusula",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "d0cd5a4d",
+        "job_id": "creative-autocad-designer-salo-d0cd5a4d",
+        "processed": true,
+        "title": "Creative AutoCAD Designer",
+        "company": "Rekryovi Oy, Turku",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Salo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.rekrykoulutus.com/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bc047d2d-b42b-4441-9251-7536ee3a5da7/en",
+        "job_employer_email": "anu.haveri@rekryovi.net",
+        "job_employer_name": "Yhteyshenkilö Rekrytointi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/creative-autocad-designer-salo-d0cd5a4d",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-07 00:58:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Creative AutoCAD Designer role at Rekryovi Oy, Turku. Join the team and build your career in Salo.",
+        "description": "Pelti-Saari Oy is seeking a creative AutoCAD designer to join our team in Salo. This full-time, permanent position offers the opportunity to work on the design and production of facade cladding systems and aluminum and honeycomb panel systems. Responsibilities include developing new design solutions, productizing and preparing technical documentation, and applying CAD software for production needs. We value a basic technical understanding, interest in design, willingness to learn new software, and a creative, solution-oriented approach. The role provides a path for growth and development, including orientation and training to deepen AutoCAD skills and understand practical manufacturing technology.",
+        "what_we_expect": [
+          "Basic technical understanding.",
+          "Interest in design.",
+          "Willingness to learn new software and ways of working.",
+          "Creative and solution-oriented way of thinking.",
+          "Initiative.",
+          "Diligence."
+        ],
+        "job_responsibilities": [
+          "Work on the design and production of facade cladding systems and aluminum and honeycomb panel systems.",
+          "Develop new design solutions.",
+          "Productize and prepare technical documentation.",
+          "Develop and apply the use of CAD software for production needs."
+        ],
+        "what_we_offer": [
+          "Opportunity to grow and develop into an expert in your field.",
+          "Orientation and training path designed for the task.",
+          "Deepen AutoCAD skills.",
+          "Learn to understand practical manufacturing technology.",
+          "Cooperation between design and production."
+        ],
+        "search_keywords": "AutoCAD designer design development technical engineering",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 00:58:36",
+    "jobs": [
+      {
+        "id": "f9bd52fe",
+        "job_id": "finisher-uusikaupunki-f9bd52fe",
+        "processed": true,
+        "title": "Finisher",
+        "company": "Kreo Palvelut Oy, Turku",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://paikat.kreo.fi/jobs/8516332-metallikappaleiden-viimeistelija",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1287021d-3f6d-4ad0-9102-0942d384bb6a/en",
+        "job_employer_email": "joona.hagelberg@kreo.fi",
+        "job_employer_name": "Joona Hagelberg",
+        "job_employer_phone_no": "+358407726950",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/finisher-uusikaupunki-f9bd52fe",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-07 00:58:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Kreo Palvelut Oy, Turku as a Finisher and grow your career in Uusikaupunki. Check the job details and apply now.",
+        "description": "A permanent full-time position as a Finisher is available at Kreo Palvelut Oy in Uusikaupunki, Finland. This role involves physical work in the manufacturing process of metal products, currently done in two shifts but potentially expanding to three shifts. The job requires a positive attitude, honesty, and the ability to work in a team. You will perform tasks such as using an angle grinder and metal shot blasting equipment, and the work environment can be demanding, with the potential for sweat and dirty overalls. If you are interested in a stable employment relationship and meet the requirements, please apply through our electronic form or call during business hours.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Honest work.",
+          "Willingness to work in a team."
+        ],
+        "job_responsibilities": [
+          "Perform physical work in the manufacturing process of metal products."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "metal manufacturing finisher shift work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
   }
