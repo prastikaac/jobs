@@ -442713,5 +442713,64 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:50:16",
+    "jobs": [
+      {
+        "id": "ffc2f3d0",
+        "job_id": "technical-support-specialist-kempele-ffc2f3d0",
+        "processed": true,
+        "title": "Technical Support Specialist",
+        "company": "Ouman Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kempele"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/ouman-oy-teknisen-tuen-asiantuntija-sdsuu-20707927",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/ouman-oy-teknisen-tuen-asiantuntija-sdsuu-20707927",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/technical-support-specialist-kempele-ffc2f3d0",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-12-05",
+        "scraped_at": "2026-11-07 20:50:16",
+        "open_positions": 1,
+        "salary_range": "3 000–3 500 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Ouman Oy is looking for a Technical Support Specialist in Kempele. Don't miss this opportunity — apply today.",
+        "description": "Join Ouman Oy's sales support team as a Technical Support Specialist in Kempele, where you'll solve customers' technical challenges and develop your skills in a flexible, expert work community. As a key member of the team, you will handle incoming contacts via phone and email, investigate fault situations, provide installation and operation advice, and handle customer complaints and warranty returns. You will also make fault diagnoses and maintain quality statistics, working closely with sales and product management. A technical background, understanding of automation and electrical technology, and the ability to quickly adopt new technology are essential. Fluency in Finnish and English is required, with other language skills being an advantage.",
+        "what_we_expect": [
+          "Technical background.",
+          "Understanding of automation and electrical technology.",
+          "Ability to quickly adopt new technology and the applications and software needed at work.",
+          "Finnish language skills.",
+          "English language skills.",
+          "Self-initiative."
+        ],
+        "job_responsibilities": [
+          "Handle incoming contacts via phone and e-mail regarding Ouman products and their possible defects and warranty issues.",
+          "Investigate fault situations.",
+          "Provide installation and operation advice for contractors and other customer groups.",
+          "Handle customer complaints and warranty returns.",
+          "Make fault diagnoses.",
+          "Maintain and report quality statistics."
+        ],
+        "what_we_offer": [
+          "Flexible working hours."
+        ],
+        "search_keywords": "technical support specialist information-technology Kempele OUMAN",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
   }
 ]
