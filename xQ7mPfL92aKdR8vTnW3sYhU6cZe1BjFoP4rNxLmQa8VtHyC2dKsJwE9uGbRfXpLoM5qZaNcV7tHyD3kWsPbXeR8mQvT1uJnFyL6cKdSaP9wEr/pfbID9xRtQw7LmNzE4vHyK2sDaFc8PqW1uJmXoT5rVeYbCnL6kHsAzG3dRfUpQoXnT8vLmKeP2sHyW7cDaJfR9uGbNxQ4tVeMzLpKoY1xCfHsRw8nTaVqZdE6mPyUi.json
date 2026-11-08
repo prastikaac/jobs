@@ -437360,5 +437360,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 15:56:17",
+    "jobs": [
+      {
+        "id": "09582212",
+        "job_id": "catering-manager-oulu-09582212",
+        "processed": true,
+        "title": "Catering Manager",
+        "company": "Sodexo Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://fi.sodexo.com/toihin-meille/avoimet-tyopaikat?rmpage=job&rmjob=9256&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d431a1c0-1471-4021-8998-9ca6a2f0e1da/en",
+        "job_employer_email": "marika.pekkola@sodexo.com",
+        "job_employer_name": "Marika Luokkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/catering-manager-oulu-09582212",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-08 15:56:17",
+        "open_positions": 1,
+        "salary_range": "salary and opportunity for performance bonus -",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Catering Manager at Sodexo Oy in Oulu. Check the requirements and apply today.",
+        "description": "Responsible for the operational management and development of food services in care facilities across Northern Finland, ensuring high service quality, customer satisfaction, and financial success. Lead and support site managers, develop operating methods and customer experiences, and build long-term relationships with customers. Travel to destinations in the Oulu area to support staff and participate in kitchen work when needed. A suitable university degree or equivalent skills, strong experience in managing food services, especially for elderly and special groups, and at least 3 years of front-line management experience required. Customer-oriented, goal-driven, and result-focused. Competitive hourly wage based on Finnish collective agreements.",
+        "what_we_expect": [
+          "A suitable university degree or similar skills.",
+          "Strong experience in managing food services and developing production kitchens and kitchen production processes, especially in food services for the elderly and other special groups.",
+          "Good knowledge of nutritional recommendations, special diets, food safety and food service processes.",
+          "Strong experience in managing service contracts, developing customer relationships and building long-term customer relationships.",
+          "At least 3 years of experience in front-line positions and the ability to manage a multi-location service business and build committed, high-performing teams.",
+          "Customer-oriented, goal-oriented and result-oriented approach."
+        ],
+        "job_responsibilities": [
+          "Responsible for the operational management and development of the food services of care facilities in Northern Finland.",
+          "Ensure the realization of service quality, customer satisfaction and service production according to contracts.",
+          "Lead and support the managers of the sites and ensure the well-being, competence and success of the personnel in their work.",
+          "Responsible for the financial results, profitability and implementation of budgets.",
+          "Develop operating methods, service processes and customer experience together with customers, supervisors and teams.",
+          "Build long-term customer relationships and work in close cooperation with customers."
+        ],
+        "what_we_offer": [
+          "In addition, we offer."
+        ],
+        "search_keywords": "catering manager, hospitality, management, food services, northern finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
   }
 ]
