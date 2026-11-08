@@ -442772,5 +442772,62 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:50:49",
+    "jobs": [
+      {
+        "id": "45590846",
+        "job_id": "business-controller-kuopio-ja-2-muuta-45590846",
+        "processed": true,
+        "title": "Business Controller",
+        "company": "Ponsse Oyj",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Kuopio ja 2 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/ponsse-business-controller-sdsuu-20712077",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/ponsse-business-controller-sdsuu-20712077",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/business-controller-kuopio-ja-2-muuta-45590846",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-07 20:50:49",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next job as a Business Controller at Ponsse Oyj. Great opportunity in Kuopio ja 2 muuta — apply now.",
+        "description": "Ponsse Oyj is seeking an experienced Business Controller to join our Group Business Finance team. As a trusted finance business partner, you will support global functions, working closely with management teams to drive financial planning, performance analysis, and decision-making. You will lead budgeting, forecasting, and long-term financial planning, and act as a key user for Anaplan, supporting its effective use and continuous development. Responsibilities include monitoring financial performance, developing financial models, and ensuring the accuracy of financial and operational data. Ideal candidates will have a relevant university degree, experience in business controlling or finance business partnering, a strong data-oriented mindset, and proficiency in Finnish and English.",
+        "what_we_expect": [
+          "A suitable university degree in Finance, Accounting, Analytics, or a related field.",
+          "Relevant experience in business controlling, finance business partnering, or a comparable role.",
+          "Strong understanding of financial planning, management reporting, performance analysis, and cost controlling.",
+          "A strong data-oriented mindset and the ability to translate complex financial and operational data into clear business insights.",
+          "Experience working in a global matrix organization and a good understanding of matrix ways of working.",
+          "Practical experience with Power BI. Previous experience with Anaplan is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Act as the finance business partner for designated functions and work closely with their management teams.",
+          "Support business leaders in financial decision-making by providing relevant analysis, insights, and recommendations.",
+          "Lead and coordinate budgeting, forecasting, and long-term financial planning for the supported functions.",
+          "Act as a key user for Anaplan, business planning and performance management platform, supporting its effective use and continuous development.",
+          "Monitor and analyze financial performance, costs, investments, headcount, projects, and key performance indicators.",
+          "Develop financial models, reporting solutions, and planning processes using Anaplan and Power BI."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "Business Controller Finance Accounting Analytics Anaplan Power BI",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
   }
 ]
