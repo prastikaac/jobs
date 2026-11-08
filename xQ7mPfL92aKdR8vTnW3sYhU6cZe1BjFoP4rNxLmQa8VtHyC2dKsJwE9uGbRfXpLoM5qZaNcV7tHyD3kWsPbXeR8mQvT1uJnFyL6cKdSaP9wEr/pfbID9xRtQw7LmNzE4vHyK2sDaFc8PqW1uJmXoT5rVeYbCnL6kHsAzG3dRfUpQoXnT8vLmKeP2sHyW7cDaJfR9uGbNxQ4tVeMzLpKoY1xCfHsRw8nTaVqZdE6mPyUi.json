@@ -442655,5 +442655,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-07 20:46:53",
+    "jobs": [
+      {
+        "id": "dbdd5116",
+        "job_id": "customer-acquisition-intern-lahti-dbdd5116",
+        "processed": true,
+        "title": "Customer Acquisition Intern",
+        "company": "Intensive Sales Partners Oy, Helsinki",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Lahti",
+          "Helsinki",
+          "Turku",
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.intensive.fi/tyopaikat/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f6aff461-05d6-4943-b265-2de9a9cacc4c/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/customer-acquisition-intern-lahti-dbdd5116",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-07 20:46:53",
+        "open_positions": 1,
+        "salary_range": "Salary and working hours** The position has a c",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Intensive Sales Partners Oy, Helsinki is looking for a Customer Acquisition Intern in Lahti. Don't miss this opportunity — apply today.",
+        "description": "Customer acquisition internships are available for the winter of 2026 at Intensive Sales Partners Oy, with opportunities in Lahti, Helsinki, Turku, and Tampere. This full-time, permanent role offers a results-based salary and extensive training and coaching from experienced professionals. Responsibilities include mapping customer needs, building long-term relationships, targeting communication across multiple channels, mastering the sales process, and developing negotiation skills. Ideal candidates are reliable, professional, and eager to learn. You will also gain valuable experience in marketing and analytics. Apply now to join a goal-oriented, entrepreneurial environment and potentially advance your career in sales and marketing.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Learn to map customer needs and build long-term customer relationships.",
+          "Develop the ability to target communication to different target groups on a multi-channel basis.",
+          "Master the different stages of the sales process and develop negotiation skills.",
+          "Map the market and identify leads to understand and analyze the business better."
+        ],
+        "what_we_offer": [
+          "Extensive training and coaching for the entire journey provided by experienced experts in the field.",
+          "Personal mentor responsible for development to spar on customer acquisition and marketing skills."
+        ],
+        "search_keywords": "customer acquisition sales marketing internship training coaching",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
