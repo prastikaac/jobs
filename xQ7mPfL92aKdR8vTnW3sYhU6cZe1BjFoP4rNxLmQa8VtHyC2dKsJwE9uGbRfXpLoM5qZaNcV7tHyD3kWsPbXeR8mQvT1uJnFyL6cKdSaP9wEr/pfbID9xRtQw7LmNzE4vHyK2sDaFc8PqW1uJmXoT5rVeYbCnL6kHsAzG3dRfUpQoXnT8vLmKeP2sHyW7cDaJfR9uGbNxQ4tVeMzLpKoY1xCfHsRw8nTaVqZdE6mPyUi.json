@@ -437594,5 +437594,511 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:11:15",
+    "jobs": [
+      {
+        "id": "1875577c",
+        "job_id": "production-manager-joensuu-1875577c",
+        "processed": true,
+        "title": "Production Manager",
+        "company": "Valio",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-manager-joensuu-1875577c",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-11-08 16:11:15",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, no lat",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Production Manager at Valio. Great opportunity in Joensuu — apply now.",
+        "description": "Valio Oy is seeking a Production Manager for its growing team in Joensuu, where the company produces a third of all Valio cheeses, including Valio Polar®, Valio Salaneuvos®, and Valio Viola®. The role involves managing and developing the packaging team, ensuring occupational well-being, optimizing packaging line operations, and achieving production and financial goals. Key requirements include coaching leadership, good interaction and organizational skills, knowledge of Lean philosophy, application of quality management and HACCP methods, and proficiency in Finnish and English. The ideal candidate will have a bachelor's or university-level degree relevant to the position and solid experience in the food industry.",
+        "what_we_expect": [
+          "Coaching leadership.",
+          "Good interaction and organization skills.",
+          "Knowing and applying the Lean philosophy.",
+          "Application of quality management and HACCP methods.",
+          "Good Finnish and English language skills.",
+          "Active and positive attitude."
+        ],
+        "job_responsibilities": [
+          "Management and development of the packaging team's personnel.",
+          "Occupational well-being of the packaging team.",
+          "Development of the packaging line's operations.",
+          "Achievement of production and financial goals."
+        ],
+        "what_we_offer": [
+          "A comprehensive orientation.",
+          "The support of a growing and developing team.",
+          "Personnel benefits.",
+          "Career opportunities of a large company."
+        ],
+        "search_keywords": "production manager cheese manufacturing Finland Valio Oy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:11:34",
+    "jobs": [
+      {
+        "id": "fa3096b8",
+        "job_id": "sales-manager-oulu-fa3096b8",
+        "processed": true,
+        "title": "Sales Manager",
+        "company": "Etra Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/etra-myyntipaallikko-etra-oy-pohjois-suomi-sdsuu-20716159",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/etra-myyntipaallikko-etra-oy-pohjois-suomi-sdsuu-20716159",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-manager-oulu-fa3096b8",
+        "date_posted": "2026-11-08",
+        "date_expires": "2026-12-08",
+        "scraped_at": "2026-11-08 16:11:34",
+        "open_positions": 1,
+        "salary_range": "salary expectations via the Apply for a job but",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Join Etra Oy as a Sales Manager and grow your career in Oulu. Check the job details and apply now.",
+        "description": "Etra Oy, a specialist in technical trade with a strong presence in Northern Finland, seeks a Sales Manager to join our growing team in Oulu. As a key player in our service warehouse initiatives, you will implement projects, develop service warehouse concepts, train staff and customers, and provide technical support. You will work closely with Etra Megacenters and our customers, requiring a practical technical approach, industry knowledge, and natural use of information systems. Customer service orientation and a self-initiated team spirit are essential. Experience in electronics, electrical work, or automation is a plus. Fluency in Finnish and English is required, with Swedish being advantageous.",
+        "what_we_expect": [
+          "Customer service-oriented.",
+          "Self-initiated team player.",
+          "Practical technical approach.",
+          "Knowledge of the operating environment of the industry.",
+          "Technical or commercial education.",
+          "Natural use of information systems in work."
+        ],
+        "job_responsibilities": [
+          "Implement projects of Etra's service warehouses.",
+          "Sales and development of service warehouse concepts.",
+          "Training of customers and Etra's staff.",
+          "Active participation in hardware implementations.",
+          "Technical support and solving the practical needs of customers."
+        ],
+        "what_we_offer": [
+          "Familiarization with the job.",
+          "Opportunity to develop and grow in career with competent colleagues.",
+          "Investment in continuous learning and personnel development.",
+          "Good working atmosphere and mutual appreciation."
+        ],
+        "search_keywords": "sales manager service warehouse development customer service technical trade",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:11:37",
+    "jobs": [
+      {
+        "id": "1cec5641",
+        "job_id": "product-manager-järvenpää-1cec5641",
+        "processed": true,
+        "title": "Product Manager",
+        "company": "Fiberwood Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/fiberwood-product-manager-sdsuu-20711988",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/fiberwood-product-manager-sdsuu-20711988",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/product-manager-järvenpää-1cec5641",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-08 16:11:37",
+        "open_positions": 1,
+        "salary_range": "4 800–5 500 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Product Manager at Fiberwood Oy in Järvenpää. Apply now and take the next step in your career.",
+        "description": "Fiberwood Oy is seeking a Product Manager to drive the development and commercialization of innovative, sustainable building materials. Based in Järvenpää, this permanent, full-time role offers the opportunity to shape the future of the company by ensuring that customer projects and product requirements align with performance, manufacturability, and cost goals. You will coordinate the development and optimization of product material solutions, manage IP and patent issues, and ensure clear communication and documentation. Strong self-initiative, the ability to handle multiple tasks, and excellent Finnish and English communication skills are essential.",
+        "what_we_expect": [
+          "Self-initiated approach to work and the ability to manage several parallel entities.",
+          "The ability to combine technical requirements, manufacturability, costs and customer needs.",
+          "Good cooperation and communication skills in Finnish and English."
+        ],
+        "job_responsibilities": [
+          "Ensure that customer projects related to products proceed as agreed.",
+          "Solve open technical and commercial questions.",
+          "Turn customer and market needs into clear product requirements and development tasks.",
+          "Coordinate the development and optimization of the material composition and properties of the products.",
+          "Ensure that products meet performance, manufacturability, cost and customer goals.",
+          "Coordinate product-related IP and patent issues together with internal and external experts."
+        ],
+        "what_we_offer": [
+          "We offer you."
+        ],
+        "search_keywords": "product manager material technology sustainable construction",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:11:40",
+    "jobs": [
+      {
+        "id": "e8d17d80",
+        "job_id": "senior-sustainability-communications-manager-espoo-e8d17d80",
+        "processed": true,
+        "title": "Senior Sustainability Communications Manager",
+        "company": "Fortum",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/senior-manager-sustainability-communications-sfsor-20715174",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/senior-manager-sustainability-communications-sfsor-20715174",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/senior-sustainability-communications-manager-espoo-e8d17d80",
+        "date_posted": "2026-11-08",
+        "date_expires": "2026-12-08",
+        "scraped_at": "2026-11-08 16:11:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Join Fortum as a Senior Sustainability Communications Manager and grow your career in Espoo. Check the job details and apply now.",
+        "description": "As a temporary Senior Sustainability Communications Manager at Fortum in Espoo, Finland, you will lead the development of Fortum's sustainability narrative, ensuring consistent use across relevant channels and touchpoints. You will bring Fortum's sustainability strategy to life through communications, campaigns, and engaging content for web and social media. Working closely with Corporate Relations and business teams across Finland, Sweden, and Norway, you will strengthen the impact of sustainability communications and develop and coordinate sustainability-related stakeholder relations. You will coach and support the Sustainability team in communications, reporting, and stakeholder dialogue.",
+        "what_we_expect": [
+          "A relevant university degree, for example in communications, sustainability, business, or another relevant field.",
+          "At least five years of relevant professional experience in sustainability communications, corporate communications, stakeholder engagement or a similar field, preferably working in a business environment.",
+          "Excellent storytelling and content creation skills, ideally combined with knowledge of sustainability topics.",
+          "Excellent written and verbal communication skills in English and Finnish. Swedish is considered an advantage.",
+          "Strong social media skills to reach priority audiences and deliver measurable impact, with confidence in using digital tools."
+        ],
+        "job_responsibilities": [
+          "Leading the development of Fortum's sustainability narrative and ensuring consistent use across relevant channels and touchpoints.",
+          "Bringing our sustainability strategy to life through communications, campaigns and engaging content for channels including web and social media.",
+          "Working closely with Corporate Relations and business teams across Finland, Sweden and Norway to strengthen the impact of our sustainability communications.",
+          "Developing and coordinating sustainability-related stakeholder relations in cooperation with our countries and businesses.",
+          "Coaching and supporting the Sustainability team in communications, reporting and stakeholder dialogue."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "sustainability communications manager, sustainability, communications, storytelling, stakeholder engagement",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:11:52",
+    "jobs": [
+      {
+        "id": "34be60b0",
+        "job_id": "car-salesman-kirkkonummi-34be60b0",
+        "processed": true,
+        "title": "Car Salesman",
+        "company": "Saka Finland Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/saka-automyyja-kirkkonummi-sdsuu-20711582",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/saka-automyyja-kirkkonummi-sdsuu-20711582",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/car-salesman-kirkkonummi-34be60b0",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-08 16:11:52",
+        "open_positions": 1,
+        "salary_range": "salary cap? As a future Sakai employee, you wil",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Saka Finland Oy is looking for a Car Salesman in Kirkkonummi. Don't miss this opportunity — apply today.",
+        "description": "Join Saka Finland Oy in Kirkkonummi as a permanent car salesman, where you'll thrive in a dynamic, growth-oriented environment. With a focus on attitude and development, you'll negotiate with customers, price trade-in cars, and close deals, all while offering tailored solutions and helping customers make significant choices. Saka's wide selection of cars across Finland ensures you always have the right vehicle for each customer. As a future Saka employee, you'll be part of a cheerful sales team, benefit from transparent condition checks, and have the flexibility to tailor your start and shifts. If you're driven to succeed and enjoy the independence of sales, this is your opportunity to excel.",
+        "what_we_expect": [
+          "Desire to succeed.",
+          "Willingness to develop.",
+          "Hunger to succeed in one's work.",
+          "Ability to read different customers.",
+          "Map out customers' needs.",
+          "Find one's own way of doing business."
+        ],
+        "job_responsibilities": [
+          "Negotiating with customers.",
+          "Pricing trade-in cars.",
+          "Closing deals.",
+          "Offering solutions that suit customers' needs.",
+          "Helping customers make big choices."
+        ],
+        "what_we_offer": [
+          "Opportunities to develop into the top of the field.",
+          "Wide selection of cars across Finland.",
+          "Transparency in condition checks.",
+          "A cheerful sales team for support.",
+          "Flexible start of work and work shifts."
+        ],
+        "search_keywords": "car salesman sales marketing transparency development opportunities",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:11:58",
+    "jobs": [
+      {
+        "id": "56ea46c2",
+        "job_id": "global-sales-director-lahti-56ea46c2",
+        "processed": true,
+        "title": "Global Sales Director",
+        "company": "Luhta Sportswear Company",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/l-fashion-group-global-sales-director-rukka-motorsport-lahti-sdsuu-20711586",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/l-fashion-group-global-sales-director-rukka-motorsport-lahti-sdsuu-20711586",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/global-sales-director-lahti-56ea46c2",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-08 16:11:58",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Luhta Sportswear Company is hiring a Global Sales Director in Lahti. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a visionary and results-oriented Global Sales Director to lead Rukka Motorsport's international sales and build the brand's next phase of profitable growth in the global market. As a key player, you will develop global sales, strengthen strategic customers and the distribution network, and identify new growth opportunities in different markets and sales channels. You will ensure that commercial activities support the brand's strategy, ambitious growth goals, and strong premium position. The position combines strategic commercial management, development of international partnerships, and effective sales management. You will have the opportunity to influence Rukka Motorsport's commercial direction and future international success.",
+        "what_we_expect": [
+          "Visionary and results-oriented.",
+          "Strong track record of building profitable growth.",
+          "Developing international customer relationships.",
+          "Successfully managing sales networks.",
+          "Strategic thinking.",
+          "Practical doing."
+        ],
+        "job_responsibilities": [
+          "Lead and develop global sales.",
+          "Strengthen strategic customers and the distribution network.",
+          "Identify and open new growth opportunities in different markets and sales channels.",
+          "Ensure that commercial activities support the brand's strategy, ambitious growth goals and strong premium position."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "global sales director motorcycling sales international growth brand management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:12:03",
+    "jobs": [
+      {
+        "id": "0d43f4d0",
+        "job_id": "application-engineer-bms-controls-helsinki-0d43f4d0",
+        "processed": true,
+        "title": "Application Engineer - BMS & Controls",
+        "company": "Daikin Europe N.V. Suomen Sivuliike",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/application-engineer-bms-controls-stshe-20711822",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/application-engineer-bms-controls-stshe-20711822",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/application-engineer-bms-controls-helsinki-0d43f4d0",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-08 16:12:03",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a Application Engineer - BMS & Controls role at Daikin Europe N.V. Suomen Sivuliike. Join the team and build your career in Helsinki.",
+        "description": "Supporting industrial-sector opportunities by translating customer requirements into appropriate Building Management System (BMS) and control solutions, providing technical input during design and execution, and supporting commissioning and troubleshooting related to control logic, communication, sensor setup, and system interlocks. Select and design BMS and control solutions for systems including AHUs, chillers, heat pumps, fan walls, and ancillary equipment, developing control strategies, sequences of operation, and protection functions based on equipment capabilities, component limitations, and the wider plant architecture.",
+        "what_we_expect": [
+          "Professional pride in control solutions that are technically sound, thoroughly considered, and reliable in operation.",
+          "Understanding of how equipment, sensors, communication, control logic, and protection functions interact within the wider plant.",
+          "Experience allowing you to form and defend your own technical judgement.",
+          "Value of the contribution of other specialists and willingness to share expertise, ask precise questions, and engage in technical discussions."
+        ],
+        "job_responsibilities": [
+          "Support industrial-sector opportunities by translating customer requirements into appropriate BMS and control solutions.",
+          "Provide technical input during design and execution, including validation of control principles and integration requirements.",
+          "Support commissioning and troubleshooting related to control logic, communication, sensor setup, and system interlocks.",
+          "Select and design BMS and control solutions for systems including AHUs, chillers, heat pumps, fan walls, and ancillary equipment.",
+          "Develop control strategies, sequences of operation, and protection functions based on equipment capabilities, component limitations, and the wider plant architecture.",
+          "Define communication interfaces, I/O, control wiring, sensors, power and signal routing, and network requirements."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "application engineer bms controls hvac datacenter clean rooms pharmaceutical facilities process cooling",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:12:06",
+    "jobs": [
+      {
+        "id": "6915452e",
+        "job_id": "application-engineer-air-side-helsinki-6915452e",
+        "processed": true,
+        "title": "Application Engineer - Air Side",
+        "company": "Daikin Europe N.V. Suomen Sivuliike",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/application-engineer-air-side-stshe-20711876",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/application-engineer-air-side-stshe-20711876",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/application-engineer-air-side-helsinki-6915452e",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-08 16:12:06",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a Application Engineer - Air Side role at Daikin Europe N.V. Suomen Sivuliike. Join the team and build your career in Helsinki.",
+        "description": "Application Engineer – Air Side at Daikin Europe N.V. Suomen Sivuliike in Helsinki offers a unique opportunity to apply your expertise in air-side solutions for datacenters, clean rooms, pharmaceutical facilities, and more. You will select and configure Air Handling Units, Fan Walls, Computer Room Air Handlers, fan coils, and related equipment, while analyzing customer requirements and developing tailored system concepts using Daikin products and technologies. Leveraging your knowledge of airflow, heat exchange, filtration classes, fan technology, and psychrometrics, you will advise consultants, customers, and internal Sales teams on air-side applications and contribute to new system and product concepts.",
+        "what_we_expect": [
+          "Have a degree in Mechanical Engineering or a related technical field."
+        ],
+        "job_responsibilities": [
+          "Select and configure Air Handling Units, Fan Walls, Computer Room Air Handlers, fan coils, and related equipment.",
+          "Analyse customer requirements and develop tailored system concepts using Daikin products and technologies.",
+          "Apply knowledge of airflow, heat exchange, filtration classes, fan technology, and psychrometrics to equipment selection and application design.",
+          "Advise consultants, customers, and internal Sales teams on air-side applications and technical choices.",
+          "Assess market requirements with Sales and contribute to new system and product concepts.",
+          "Prepare documentation, presentations, and proposals that communicate equipment selections, system concepts, and application principles clearly."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "application engineer air side mechanical engineering datacenter clean room pharmaceutical facilities process cooling",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-08 16:12:09",
+    "jobs": [
+      {
+        "id": "2fff35ba",
+        "job_id": "sales-manager-helsinki-ja-8-muuta-2fff35ba",
+        "processed": true,
+        "title": "Sales Manager",
+        "company": "Suomen Luontovarma Oy / Eezy Oyj",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 8 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myyntipaallikoksi-luontovarmalle-sesez-20711932",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myyntipaallikoksi-luontovarmalle-sesez-20711932",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-manager-helsinki-ja-8-muuta-2fff35ba",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-08 16:12:09",
+        "open_positions": 1,
+        "salary_range": "salary of 3,500-4,500 euros and a bonus system",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Suomen Luontovarma Oy / Eezy Oyj is looking for a Sales Manager in Helsinki ja 8 muuta. Don't miss this opportunity — apply today.",
+        "description": "Suomen Luontovarma Oy is seeking two experienced Sales Managers to join their growing team in Helsinki and surrounding areas. Ideal candidates will have a proven track record in B2B sales, the ability to manage large entities, and a systematic approach to work. Responsibilities include developing and acquiring new customer portfolios, building and maintaining customer relationships, identifying new cooperation opportunities, conducting customer contacts and meetings, preparing and negotiating offers, and closing sales processes. Applicants must have a B driver's license and be willing to use their own car for customer meetings. Suomen Luontovarma Oy offers a supportive environment with a focus on increasing earnings through personal success.",
+        "what_we_expect": [
+          "Evidence of successful B2B sales.",
+          "Ability to manage large entities and sales processes.",
+          "Independent and systematic approach to work.",
+          "Activity, perseverance, and a solution-seeking attitude.",
+          "Microsoft environment management.",
+          "B driver's license and the ability to use your own car."
+        ],
+        "job_responsibilities": [
+          "Developing and acquiring new customer portfolios.",
+          "Building and maintaining customer relationships.",
+          "Identifying new cooperation opportunities.",
+          "Conducting customer contacts and meetings.",
+          "Preparing and negotiating offers.",
+          "Closing sales processes."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "sales manager b2b sales customer relationships public tenders",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
