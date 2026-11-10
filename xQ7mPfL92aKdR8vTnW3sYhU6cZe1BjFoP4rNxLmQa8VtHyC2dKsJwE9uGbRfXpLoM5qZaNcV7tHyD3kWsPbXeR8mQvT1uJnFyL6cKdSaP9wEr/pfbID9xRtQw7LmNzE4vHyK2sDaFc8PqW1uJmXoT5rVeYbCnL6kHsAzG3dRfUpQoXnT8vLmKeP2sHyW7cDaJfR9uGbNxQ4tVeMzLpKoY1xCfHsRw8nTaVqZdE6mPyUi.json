@@ -421592,5 +421592,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-10 09:23:19",
+    "jobs": [
+      {
+        "id": "27320512",
+        "job_id": "care-business-entrepreneur-rauma-27320512",
+        "processed": true,
+        "title": "Care Business Entrepreneur",
+        "company": "Kotona Asuen Franchising Oy, Helsinki",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.omakotonaasuenyritykseni.fi/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ec6b2dc8-938d-42d2-a952-ee00830a0e53/en",
+        "job_employer_email": "franchising@kotonaasuen.fi",
+        "job_employer_name": "Mikko Seppinen",
+        "job_employer_phone_no": "0505543274",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/care-business-entrepreneur-rauma-27320512",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-10 09:23:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Kotona Asuen Franchising Oy, Helsinki as a Care Business Entrepreneur and grow your career in Rauma. Check the job details and apply now.",
+        "description": "Build your own care business and make a local impact in Rauma as a franchise entrepreneur for Kotona Asuen Franchising Oy. Join a respected and long-established chain dedicated to providing safe and meaningful care for the elderly while creating profitable business opportunities. Your role will involve building and managing a local company, recruiting and training caregivers, handling local sales and marketing, and managing customer relations. You will benefit from a tested concept, a well-known brand, thorough training, and ongoing support. Ideal candidates will have experience in sales, marketing, management, or business development, be motivated by responsibility and the results of their work, and be committed to building long-term business operations and financial capital.",
+        "what_we_expect": [
+          "Experience in sales, marketing, management, customer relations or business development, or at least a strong desire and ability to develop in these areas.",
+          "Motivation by responsibility, influence and the results of your own work.",
+          "Willingness to build business operations and financial capital in the long term.",
+          "Value for meaningful work, but also think about it from a business perspective.",
+          "Life situation and financial situation that make it possible to start a business."
+        ],
+        "job_responsibilities": [
+          "Builds, manages and develops a local company as part of a respected and long-established chain.",
+          "Recruitment and training of caregivers.",
+          "Local sales and marketing.",
+          "Making customer contracts and managing customer relations."
+        ],
+        "what_we_offer": [
+          "A functioning and tested concept.",
+          "A well-known and respected brand.",
+          "Thorough initial training and ongoing support.",
+          "Ready-made marketing and sales tools."
+        ],
+        "search_keywords": "care business entrepreneurship franchise sales marketing management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
   }
 ]
