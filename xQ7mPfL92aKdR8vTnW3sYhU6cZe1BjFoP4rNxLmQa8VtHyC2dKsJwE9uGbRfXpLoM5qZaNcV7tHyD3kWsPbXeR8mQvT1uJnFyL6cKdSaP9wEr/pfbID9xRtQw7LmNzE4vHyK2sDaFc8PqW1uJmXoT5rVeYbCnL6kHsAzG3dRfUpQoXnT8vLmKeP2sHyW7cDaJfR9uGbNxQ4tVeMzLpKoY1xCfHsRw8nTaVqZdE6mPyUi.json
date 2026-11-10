@@ -416117,5 +416117,173 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:10:17",
+    "jobs": [
+      {
+        "id": "12e0c0c2",
+        "job_id": "university-lecturer-in-special-pedagogy-jyväskylä-12e0c0c2",
+        "processed": true,
+        "title": "University Lecturer in Special Pedagogy",
+        "company": "Jyväskylän yliopisto",
+        "job_category": "education",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/jyvaskylan-yliopisto-yliopistonlehtori-erityispedagogiikka-sdsuu-20716722",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/jyvaskylan-yliopisto-yliopistonlehtori-erityispedagogiikka-sdsuu-20716722",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/university-lecturer-in-special-pedagogy-jyväskylä-12e0c0c2",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-09 12:10:17",
+        "open_positions": 1,
+        "salary_range": "4 300–5 800 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "A new job opportunity is available at Jyväskylän yliopisto as a University Lecturer in Special Pedagogy in Jyväskylä. Learn more about the role and apply now.",
+        "description": "The Department of Educational Sciences at Jyväskylän yliopisto is seeking a University Lecturer in Special Pedagogy to join our inspiring and warm-hearted community. This full-time, permanent position involves teaching and guiding tasks in special pedagogy, research-based pedagogical development work, and supervision of special education students' teaching practice. Applicants should hold a suitable doctoral degree, have expertise in special pedagogy, and be qualified as a special education teacher. A proven record of special pedagogical research linked to the Department's strengths is required, along with the ability to teach in both Finnish and English.",
+        "what_we_expect": [
+          "Suitable doctoral degree.",
+          "Expertise in the field of special pedagogy.",
+          "Qualification of a special education teacher.",
+          "Proof of special pedagogical research linked to the strengths of the Department of Educational Sciences.",
+          "Ability and readiness to teach in Finnish and English.",
+          "Good English language skills."
+        ],
+        "job_responsibilities": [
+          "Teaching and guiding tasks in special pedagogy.",
+          "Research-based pedagogical development work.",
+          "Participation in domestic and international research and development activities.",
+          "Supervision of special education students' teaching practice."
+        ],
+        "what_we_offer": [
+          "Become part of our inspiring and warm-hearted community.",
+          "Opportunity to influence international research and high-quality academic education.",
+          "Excellent framework for an active and healthy lifestyle on campus and in its vicinity."
+        ],
+        "search_keywords": "university lecturer special pedagogy education research development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:10:19",
+    "jobs": [
+      {
+        "id": "415b037b",
+        "job_id": "repair-shop-manager-tuusula-415b037b",
+        "processed": true,
+        "title": "Repair Shop Manager",
+        "company": "Raskone Oy",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/raskone-korjaamopaallikko-raskone-airport-tuusula-sdsuu-20716766",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/raskone-korjaamopaallikko-raskone-airport-tuusula-sdsuu-20716766",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/repair-shop-manager-tuusula-415b037b",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-09 12:10:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Raskone Oy is hiring a Repair Shop Manager in Tuusula. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Raskone Oy is seeking a Repair Shop Manager to lead Finland's largest heavy equipment repair center in Tuusula. This role involves effective business management, commercial development, customer management, personnel management, and operational control. Ideal candidates should possess strong professionalism, goal-oriented work ethic, and the ability to foster success among team members. The position offers a unique opportunity to shape the success of a significant business entity and contribute to the growth of Raskone Airport. If you have experience in heavy equipment repair shop operations and are ready to take on a challenging and rewarding role, we encourage you to apply.",
+        "what_we_expect": [
+          "Strong professionalism.",
+          "Goal-oriented work.",
+          "The ability to make people succeed together."
+        ],
+        "job_responsibilities": [
+          "Effective business management.",
+          "Commercial development and customer management.",
+          "Personnel management and development.",
+          "Controlling operational activities.",
+          "Continuous development of operations."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "repair shop manager, management, heavy equipment, business development, personnel management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:10:23",
+    "jobs": [
+      {
+        "id": "bbd64c60",
+        "job_id": "car-salesman-raisio-bbd64c60",
+        "processed": true,
+        "title": "Car Salesman",
+        "company": "Bilar99",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Raisio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/bilar99e-automyyjaksi-bilarille-raisio-sdsuu-20716765",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/bilar99e-automyyjaksi-bilarille-raisio-sdsuu-20716765",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/car-salesman-raisio-bbd64c60",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-09 12:10:23",
+        "open_positions": 1,
+        "salary_range": "Meillä onnistuminen näkyy myös palkkapussissa! Suurin osa ansioistasi muodostuu omista myyntituloksistasi eli provisioista. Niiden lisäksi palkkaasi kuuluu 700 euron kuukausittainen pohjapalkka sekä bonusjärjestelmä (0-900 €/kk).",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Car Salesman at Bilar99 in Raisio. Apply now and take the next step in your career.",
+        "description": "Join Bilar99 in Raisio as a car salesman where you can challenge yourself, develop your skills, and influence your earnings. Work in a goal-oriented, friendly environment where success is celebrated together. As part of our ambitious team, you'll meet customers in-store, by phone, and online, check and price trade-in cars, and collaborate with various partners. Success requires responsibility, initiative, and a positive attitude. Earn a monthly base salary of 700 euros and benefit from a bonus system (0-900 €/month) based on your sales performance. At Bilar99, we offer a versatile, fast-paced, and goal-oriented work environment where you can grow and advance in your career.",
+        "what_we_expect": [
+          "Responsibility.",
+          "Initiative.",
+          "Desire to move things forward.",
+          "Perseverance.",
+          "Positive attitude.",
+          "Ability to keep going even in challenging situations."
+        ],
+        "job_responsibilities": [
+          "Meet customers in the store, by phone and in digital channels.",
+          "Check and price trade-in cars.",
+          "Cooperate with various partners."
+        ],
+        "what_we_offer": [
+          "Opportunity to earn well.",
+          "Monthly base salary of 700 euros.",
+          "Bonus system (0-900 €/month)."
+        ],
+        "search_keywords": "car salesman sales marketing used cars electric hybrid",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
