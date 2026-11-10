@@ -416015,5 +416015,107 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:09:39",
+    "jobs": [
+      {
+        "id": "5479e979",
+        "job_id": "iam-project-manager-jyväskylä-5479e979",
+        "processed": true,
+        "title": "IAM Project Manager",
+        "company": "Jyväskylän yliopisto",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/projektipaallikko-sjsyv-20422827",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/projektipaallikko-sjsyv-20422827",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/iam-project-manager-jyväskylä-5479e979",
+        "date_posted": "2026-07-07",
+        "date_expires": "2026-08-06",
+        "scraped_at": "2026-11-09 12:09:39",
+        "open_positions": 1,
+        "salary_range": "3 700–4 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a IAM Project Manager role at Jyväskylän yliopisto. Join the team and build your career in Jyväskylä.",
+        "description": "The University of Jyväskylä is seeking a temporary IAM Project Manager for a role that will run until December 31, 2028. This position involves coordinating the development and implementation of an identity and access management (IAM) project, which will be a collaborative effort between the University of Jyväskylä and Jyväskylä University of Applied Sciences. Key responsibilities include preparing the project's structure, managing cooperation and decision-making, and ensuring the project aligns with schedules, dependencies, procurement, and implementation. Technical understanding is crucial for working with experts and architects, identifying and addressing technical issues, and managing the planning and progress of the project to meet goals and schedules.",
+        "what_we_expect": [
+          "Technical understanding to work smoothly with experts and architects.",
+          "Reliability, professionalism, and teamwork."
+        ],
+        "job_responsibilities": [
+          "Coordinate the progress of the IAM development and implementation project.",
+          "Prepare the project's structure, cooperation, decision-making, and dependency management.",
+          "Work with experts and architects to identify and address technical issues.",
+          "Ensure the project proceeds as planned and is linked to schedules, decision-making, dependencies, procurement, and implementation.",
+          "Act as the technical project manager for the IAM project.",
+          "Manage the planning and progress of the project and ensure progress according to goals, schedule, and decision-making."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "IAM project manager, technical project manager, identity and access management, coordination, technical understanding",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:09:41",
+    "jobs": [
+      {
+        "id": "1db5a78d",
+        "job_id": "web-designer-jyväskylä-1db5a78d",
+        "processed": true,
+        "title": "Web Designer",
+        "company": "Jyväskylän yliopisto",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/verkkosuunnittelija-sjsyv-20315065",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/verkkosuunnittelija-sjsyv-20315065",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/web-designer-jyväskylä-1db5a78d",
+        "date_posted": "2026-05-27",
+        "date_expires": "2026-06-26",
+        "scraped_at": "2026-11-09 12:09:41",
+        "open_positions": 1,
+        "salary_range": "3 700–4 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Web Designer at Jyväskylän yliopisto. Great opportunity in Jyväskylä — apply now.",
+        "description": "Join Jyväskylän yliopisto's Digital Services team as a Web Designer in a permanent, full-time role. This position involves architectural planning of the university's network, integration of network systems, and implementation and maintenance of network services, including the backbone network, SDN data center network, firewalls, load balancing, and WLAN systems. Strong knowledge of connection and routing technologies, network protocols, and scripting languages is required, along with at least 5 years of relevant experience. Fluency in both Finnish and English is essential. Be part of an inspiring and warm-hearted community!",
+        "what_we_expect": [
+          "A good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Become part of our inspiring and warm-hearted community."
+        ],
+        "search_keywords": "web designer network design IT services university",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
   }
 ]
