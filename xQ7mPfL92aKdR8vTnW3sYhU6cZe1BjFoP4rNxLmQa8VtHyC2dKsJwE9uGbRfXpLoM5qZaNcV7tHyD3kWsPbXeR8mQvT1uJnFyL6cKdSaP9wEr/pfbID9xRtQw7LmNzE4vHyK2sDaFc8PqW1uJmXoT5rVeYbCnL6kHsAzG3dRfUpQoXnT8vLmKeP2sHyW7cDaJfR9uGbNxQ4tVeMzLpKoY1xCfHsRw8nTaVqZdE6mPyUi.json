@@ -416620,5 +416620,118 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:18:06",
+    "jobs": [
+      {
+        "id": "99a62b97",
+        "job_id": "information-specialist-tampere-99a62b97",
+        "processed": true,
+        "title": "Information Specialist",
+        "company": "Tampereen yliopisto",
+        "job_category": "education",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tampereen-yliopisto-tietoasiantuntija-opetus-ja-neuvontapalvelut-tiimiin-sdsuu-20704595",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tampereen-yliopisto-tietoasiantuntija-opetus-ja-neuvontapalvelut-tiimiin-sdsuu-20704595",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/information-specialist-tampere-99a62b97",
+        "date_posted": "2026-11-04",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-09 12:18:06",
+        "open_positions": 1,
+        "salary_range": "salary for the position is determined of the un",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Information Specialist at Tampereen yliopisto. Great opportunity in Tampere — apply now.",
+        "description": "The University of Tampere seeks an Information Specialist to join its dynamic Teaching and Counseling Services team. This role involves teaching and guiding students in information acquisition skills, developing teaching proactively as part of the library's curriculum work, and managing teaching in education information systems. Responsibilities include planning and implementing knowledge acquisition skills teaching in designated fields, as well as active communication with degree programs and students. Suitable candidates should hold a higher education degree and Information Studies subject studies, along with pedagogical studies and teaching experience. Good communication and presentation skills are essential in this multicultural working environment.",
+        "what_we_expect": [
+          "Suitable higher education degree and Information Studies subject studies or equivalent.",
+          "Pedagogical studies.",
+          "Teaching experience.",
+          "Good communication and presentation skills.",
+          "Good oral skills in a multicultural working environment."
+        ],
+        "job_responsibilities": [
+          "Teaching and guidance tasks of the library's information acquisition skills.",
+          "Proactive development of teaching as part of the library's curriculum work.",
+          "Planning and implementation of knowledge acquisition skills teaching in designated fields.",
+          "Managing own teaching in education information systems.",
+          "Managing data materials related to the taught fields.",
+          "Active communication about teaching with both degree programs and students."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "information specialist library teaching counseling services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:18:10",
+    "jobs": [
+      {
+        "id": "2311596b",
+        "job_id": "mapper-jyväskylä-2311596b",
+        "processed": true,
+        "title": "Mapper",
+        "company": "Alva-yhtiöt Oy",
+        "job_category": "energy-and-utilities",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/alva-yhtiot-oy-kartoittaja-finland-sdsuu-20704636",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/alva-yhtiot-oy-kartoittaja-finland-sdsuu-20704636",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/energy-and-utilities/mapper-jyväskylä-2311596b",
+        "date_posted": "2026-11-04",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-09 12:18:10",
+        "open_positions": 1,
+        "salary_range": "salary expectations at Alva",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Mapper role at Alva-yhtiöt Oy. Join the team and build your career in Jyväskylä.",
+        "description": "Join Alva-yhtiöt Oy in Jyväskylä as a Mapper, where you'll map electricity, heating, and water networks, perform piling works, and ensure the safety and quality of construction sites. With a basic degree in land surveying, good Finnish language skills, and a B driver's license, you'll contribute to our goal of becoming carbon neutral by 2030. You'll work in a dynamic, future-oriented environment, developing your skills and collaborating with a team of 240 professionals. Apply by 6 December 2026 for an exciting, versatile role with wellness, culture, and exercise benefits.",
+        "what_we_expect": [
+          "A basic degree in land surveying.",
+          "Good written and spoken Finnish language skills.",
+          "A B driver's license.",
+          "Knowledge of the tasks related to infrastructure network mapping.",
+          "The ability to work independently.",
+          "A positive and development-friendly attitude."
+        ],
+        "job_responsibilities": [
+          "Mapping and cable screens of electricity, heating and water networks.",
+          "Piling works and other related work and inspections.",
+          "Inspection and control tasks related to the safety, quality and environment of construction sites."
+        ],
+        "what_we_offer": [
+          "An interesting and versatile task.",
+          "A vantage point in the energy sector.",
+          "The opportunity to develop your own skills.",
+          "Epass's wellness, culture and exercise benefits."
+        ],
+        "search_keywords": "mapper energy utilities land surveying Finnish language skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
   }
 ]
