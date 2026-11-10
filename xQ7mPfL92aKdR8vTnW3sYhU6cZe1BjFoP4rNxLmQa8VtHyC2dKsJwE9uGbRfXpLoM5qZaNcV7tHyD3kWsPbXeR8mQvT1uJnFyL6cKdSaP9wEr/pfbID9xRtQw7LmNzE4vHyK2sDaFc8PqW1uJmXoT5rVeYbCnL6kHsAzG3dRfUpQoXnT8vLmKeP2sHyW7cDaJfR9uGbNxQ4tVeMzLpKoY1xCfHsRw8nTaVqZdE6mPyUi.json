@@ -416285,5 +416285,119 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:16:18",
+    "jobs": [
+      {
+        "id": "ae99783a",
+        "job_id": "project-manager-helsinki-ae99783a",
+        "processed": true,
+        "title": "Project Manager",
+        "company": "Suomen Salibandyliitto Ry, Finlands Innebandyförbund Rf",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/suomen-salibandyliitto-ry-finlands-innebandyforbund-projektipaallikko-sdsuu-20711714",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/suomen-salibandyliitto-ry-finlands-innebandyforbund-projektipaallikko-sdsuu-20711714",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/project-manager-helsinki-ae99783a",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-09 12:16:18",
+        "open_positions": 1,
+        "salary_range": "salary category D of the collective agreement o",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Project Manager at SUOMEN SALIBANDYLIITTO RY, FINLANDS INNEBANDYFÖRBUND RF in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking a dynamic and skilled Project Manager to lead the day-to-day implementation of the ReCoSPORT project, ensuring schedules, work packages, and tasks progress smoothly. You will coordinate with an international partner network, prepare and organize joint meetings, workshops, and project activities related to the Women's Floorball World Cup 2027 in Turku, and manage daily communication with the Floorball Association. Strong project management and organizational skills, excellent Finnish and English language abilities, and the ability to work in an international environment are essential. Self-initiative, solution-oriented approach, and the ability to collaborate with diverse organizations are key. This is a full-time, temporary position.",
+        "what_we_expect": [
+          "Strong project management and organizational skills.",
+          "Very good English language skills and good Finnish language skills.",
+          "The ability to work naturally in an international environment - previous international experience is a plus, but also a strong desire to learn and work internationally means.",
+          "Good written and oral communication skills.",
+          "The ability to manage the project's everyday communication and make even complex things understandable.",
+          "Self-initiated and solution-oriented approach and the ability to cooperate with very different people and organizations."
+        ],
+        "job_responsibilities": [
+          "Lead the day-to-day implementation of the project and ensure that schedules, work packages and agreed tasks progress.",
+          "Coordinate cooperation with an international partner network.",
+          "Prepare and organize joint meetings, workshops, trainings and project activities implemented in connection with WFC2027.",
+          "Monitor the progress of the project's outputs and goals.",
+          "Manage the project's daily communication in cooperation with the communication of the Floorball Association.",
+          "Collect the material needed for reporting, monitoring and documentation."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "project management, international, coordination, communication, sports, events, EU, volunteer, inclusion",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-09 12:16:27",
+    "jobs": [
+      {
+        "id": "a7e39c08",
+        "job_id": "car-salesman-tuusula-a7e39c08",
+        "processed": true,
+        "title": "Car Salesman",
+        "company": "Bilar99",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tuusula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/bilar99e-automyyjaksi-bilarille-tuusula-sdsuu-20716764",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/bilar99e-automyyjaksi-bilarille-tuusula-sdsuu-20716764",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/car-salesman-tuusula-a7e39c08",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-09 12:16:27",
+        "open_positions": 1,
+        "salary_range": "Meillä onnistuminen näkyy myös palkkapussissa! Suurin osa ansioistasi muodostuu omista myyntituloksistasi eli provisioista. Niiden lisäksi palkkaasi kuuluu 700 euron kuukausittainen pohjapalkka sekä bonusjärjestelmä (0-900 €/kk).",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bilar99 is hiring a Car Salesman in Tuusula. Explore the job responsibilities, benefits, and apply today.",
+        "description": "At Bilar99 in Tuusula, you'll join a dynamic and supportive team where your efforts directly impact your earnings through commissions. As a car salesman, you'll engage with customers in-store, by phone, and online, price trade-in cars, and collaborate with partners. The role demands responsibility, initiative, and a forward-moving attitude. Success is celebrated together, and you'll benefit from a base salary of 700 euros per month and a flexible bonus system (0-900 €/month). If you're eager to challenge yourself and thrive in a goal-oriented environment, apply now to be part of our growing automotive family.",
+        "what_we_expect": [
+          "Responsibility.",
+          "Initiative.",
+          "Desire to move things forward.",
+          "Perseverance.",
+          "Positive attitude.",
+          "Ability to keep going even in challenging situations."
+        ],
+        "job_responsibilities": [
+          "Meet customers in the store, by phone and in digital channels.",
+          "Check and price trade-in cars.",
+          "Cooperate with various partners."
+        ],
+        "what_we_offer": [
+          "Opportunity to earn well.",
+          "Monthly base salary of 700 euros.",
+          "Bonus system (0-900 €/month)."
+        ],
+        "search_keywords": "car salesman sales used cars electric hybrid",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
