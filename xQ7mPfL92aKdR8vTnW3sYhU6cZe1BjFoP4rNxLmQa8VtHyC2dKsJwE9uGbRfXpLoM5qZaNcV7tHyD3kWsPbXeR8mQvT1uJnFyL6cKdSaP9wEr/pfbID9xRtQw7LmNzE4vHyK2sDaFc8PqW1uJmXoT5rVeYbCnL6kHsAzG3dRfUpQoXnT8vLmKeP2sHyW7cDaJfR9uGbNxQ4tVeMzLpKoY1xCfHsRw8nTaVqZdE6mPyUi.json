@@ -421536,5 +421536,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-10 09:22:50",
+    "jobs": [
+      {
+        "id": "5d6db9a1",
+        "job_id": "cnc-machinist-for-plastic-components-tampere-5d6db9a1",
+        "processed": true,
+        "title": "CNC Machinist for Plastic Components",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8677106-cnc-sorvaaja-muovikomponenttien-valmistukseen/applications/new?promotion=2286309-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/76a070aa-2b6e-48d8-b8c9-5271da69e80b/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-for-plastic-components-tampere-5d6db9a1",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-10 09:22:50",
+        "open_positions": 1,
+        "salary_range": "* Palkan 15–20 €/h osaamisen ja kokemuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Worknow Oy as a CNC Machinist for Plastic Components in Tampere. Learn more about the role and apply now.",
+        "description": "Worknow Oy is seeking an experienced CNC machinist to join our team in Tampere, Finland. The ideal candidate will have previous experience with CNC turning, the ability to set up the machine independently, technical know-how, and a careful working approach. Heidenhain or Fanuc programming skills and experience in CAM programming, particularly with SurfCAM software, are highly valued. Full-time, permanent employment is offered with a salary of 15–20 €/h based on skills and experience. The work environment is clean, new, and bright, and the position offers opportunities for skill development. Interested candidates should apply as soon as possible. For more information, contact hr@worknow.fi or 0401603159 (weekdays 14:00-16:00).",
+        "what_we_expect": [
+          "Previous experience with CNC turning.",
+          "Ability to set up the machine independently.",
+          "Technical know-how and a careful working approach.",
+          "Heidenhain or Fanuc programming skills.",
+          "Experience in CAM programming.",
+          "Knowledge of SurfCAM software."
+        ],
+        "job_responsibilities": [
+          "Using the CNC lathe to make various plastic components from plastic rods."
+        ],
+        "what_we_offer": [
+          "Full-time work, 40 h/week.",
+          "Salary 15–20 €/h depending on skills and experience.",
+          "Clean, new and bright production premises.",
+          "The opportunity to utilize and develop your machining skills."
+        ],
+        "search_keywords": "CNC Machinist Plastic Components Experience Programming Skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
   }
 ]
