@@ -421650,5 +421650,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-10 09:26:05",
+    "jobs": [
+      {
+        "id": "1026fa45",
+        "job_id": "hr-partner-tampere-1026fa45",
+        "processed": true,
+        "title": "HR Partner",
+        "company": "Tampereen yliopisto",
+        "job_category": "human-resources",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tampereen-yliopisto-hr-partner-sdsuu-20717054",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tampereen-yliopisto-hr-partner-sdsuu-20717054",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/human-resources/hr-partner-tampere-1026fa45",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-10 09:26:05",
+        "open_positions": 1,
+        "salary_range": "muun asiantuntija- ja tukihenkilöstön palkkausjärjestelmän mukaisesti. HR partnerin tehtävässä alustava vaativuustaso on 10. Lisäksi maksetaan henkilökohtaiseen työstä suoriutumiseen perustuvaa palkanosaa. Kokonaispalkka on noin 4 900–5 300 €/kk valittavan henkilön työkokemuksesta ja osaamisesta riippuen.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a HR Partner at Tampereen yliopisto in Tampere. Apply now and take the next step in your career.",
+        "description": "At the University of Tampere, you will join a forward-looking, multidisciplinary community where technology, health, and society intersect in innovative research. As an HR partner in the Faculty of Educational Sciences and Culture, you will support the faculty's management and supervisors, focusing on strategic personnel and career planning, and handling demanding employment relations issues. You will also be involved in the development of work well-being, skills, and working communities, and will support the comprehensive personnel management of the faculty. With approximately 300 personnel, the faculty includes the Department of Educational Sciences, the Tampere University Normal School, and the Tampere University Language Center.",
+        "what_we_expect": [
+          "Experience as an HR professional.",
+          "Good presentation skills."
+        ],
+        "job_responsibilities": [
+          "Act as a strategic partner to the faculty's management and supervisors.",
+          "Responsible for the implementation and monitoring of annual HR processes.",
+          "Support the personnel management of the faculty comprehensively.",
+          "Focus on strategic personnel and career planning.",
+          "Handle demanding employment relations issues.",
+          "Develop work well-being, skills, and working communities."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "HR partner, strategic partner, personnel management, negotiation, university, Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-10 09:26:08",
+    "jobs": [
+      {
+        "id": "a1a94aa0",
+        "job_id": "legal-counsel-helsinki-a1a94aa0",
+        "processed": true,
+        "title": "Legal Counsel",
+        "company": "Kpmg",
+        "job_category": "law-and-legal-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tax-and-legal-senior-manager-skspm-20711967",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tax-and-legal-senior-manager-skspm-20711967",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/law-and-legal-services/legal-counsel-helsinki-a1a94aa0",
+        "date_posted": "2026-11-06",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-10 09:26:08",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "KPMG is looking for a Legal Counsel in Helsinki. Don't miss this opportunity — apply today.",
+        "description": "At KPMG in Helsinki, we seek an experienced Legal Counsel to join our team and lead the planning and implementation of share-based and other incentive and reward systems. You will advise clients on their legal and tax issues, working with employee benefits, management incentive systems, option programs, and equity incentive solutions. You will prepare company law documents related to arrangements, shareholder agreements, and applications for preliminary rulings regarding taxation. Additionally, you will plan and implement international incentive systems, coordinating legal and fiscal issues with experts from different countries. You will also advise clients on other business and ownership arrangements and support M&A and other transactions on legal issues.",
+        "what_we_expect": [
+          "A suitable university degree in law (OTM/OTK).",
+          "At least 7 years of strong experience in corporate legal advice and in the planning and implementation of share-based incentive and commitment arrangements.",
+          "The ability to review share-based arrangements as a whole from both a legal and a tax point of view.",
+          "Experience with, for example, personnel issues, management incentive systems, stock option programs and other equity incentive solutions, as well as drafting the related company law documents and shareholder agreements.",
+          "Expertise in questions related to the tax treatment of arrangements.",
+          "Ability and interest in working with international arrangements and coordinating related legal and fiscal issues together with experts from different countries."
+        ],
+        "job_responsibilities": [
+          "Plan and implement share-based and other incentive and reward systems.",
+          "Advise clients on their legal and tax issues.",
+          "Work with employee benefits, management incentive systems, option programs and other equity incentive solutions.",
+          "Prepare company law documents related to arrangements, shareholder agreements and applications for preliminary rulings regarding taxation.",
+          "Plan and implement international incentive systems and coordinate legal and fiscal issues related to the solutions together with experts from different countries.",
+          "Advise clients on other business and ownership arrangements, corporate law issues and support M&A and other transactions on legal issues."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "legal counsel corporate law tax law share-based incentives business law M&A",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
   }
 ]
