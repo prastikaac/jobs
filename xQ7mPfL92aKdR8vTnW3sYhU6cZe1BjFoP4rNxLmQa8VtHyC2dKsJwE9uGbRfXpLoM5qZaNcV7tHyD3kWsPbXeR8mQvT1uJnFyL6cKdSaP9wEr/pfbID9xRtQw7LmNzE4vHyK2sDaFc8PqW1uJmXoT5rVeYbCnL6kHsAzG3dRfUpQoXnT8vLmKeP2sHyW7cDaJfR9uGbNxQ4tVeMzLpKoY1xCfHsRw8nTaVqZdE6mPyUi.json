@@ -422043,5 +422043,117 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-10 09:33:46",
+    "jobs": [
+      {
+        "id": "1875577c",
+        "job_id": "production-manager-joensuu-1875577c",
+        "processed": true,
+        "title": "Production Manager",
+        "company": "Valio",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-manager-joensuu-1875577c",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-11-10 09:33:46",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, no lat",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a Production Manager role at Valio. Join the team and build your career in Joensuu.",
+        "description": "Valio Oy in Joensuu is seeking a Production Manager to lead the packaging team and contribute to the growth of the factory, which produces a third of all Valio cheeses. Reporting to the production manager, you will manage and develop personnel, enhance operations, and achieve production and financial goals. This role requires coaching leadership skills, good interaction and organization, knowledge of Lean philosophy, quality management, and HACCP methods. Fluency in Finnish and English is essential, along with an active and positive attitude. As part of a growing team, you will have access to comprehensive orientation and career opportunities. Applications are accepted until November 13, 2026, and can be submitted via the provided link.",
+        "what_we_expect": [
+          "Coaching leadership.",
+          "Good interaction and organization skills.",
+          "Knowing and applying the Lean philosophy to management.",
+          "Application of quality management and HACCP methods in the production environment.",
+          "Good Finnish and English language skills.",
+          "Active and positive attitude."
+        ],
+        "job_responsibilities": [
+          "Managing and developing the personnel of the packaging team.",
+          "Working well-being.",
+          "Developing the operations of the packaging line.",
+          "Achieving production and financial goals."
+        ],
+        "what_we_offer": [
+          "A comprehensive orientation.",
+          "The support of a growing and developing team.",
+          "Personnel benefits.",
+          "Career opportunities of a large company."
+        ],
+        "search_keywords": "production manager cheese manufacturing Finland Valio Oy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-10 09:33:58",
+    "jobs": [
+      {
+        "id": "c3079983",
+        "job_id": "development-manager-payment-services-helsinki-c3079983",
+        "processed": true,
+        "title": "Development Manager, Payment Services",
+        "company": "Säästöpankki",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kehityspaallikko-maksamisen-palvelut-sssaa-20704207",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kehityspaallikko-maksamisen-palvelut-sssaa-20704207",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/development-manager-payment-services-helsinki-c3079983",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-10 09:33:58",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Säästöpankki as a Development Manager, Payment Services in Helsinki. Learn more about the role and apply now.",
+        "description": "Säästöpankki is seeking an experienced Development Manager to join our team in Helsinki and contribute to the renewal of our payment systems. This role involves developing interbank payment systems, the WS channel for business payments, and mobile and online bank payment solutions. You will work on SEPA and instant payments, business payment solutions, and digital service channels, ensuring seamless integration with our other systems. With several years of experience in payments, banking, or system development, you will be responsible for defining requirements, implementing changes, and collaborating with various teams. Strong system understanding and an independent, responsible approach are essential.",
+        "what_we_expect": [
+          "Several years of experience in payments, banking or financial systems, or demanding system and integration development.",
+          "Strong system understanding and the ability to perceive broad entities.",
+          "Experience in system development, integrations or interfaces.",
+          "Experience in defining requirements and taking changes to implementation, testing and implementation.",
+          "Independent and responsible approach to work and good cooperation skills.",
+          "Suitable university degree or similar competence acquired through experience."
+        ],
+        "job_responsibilities": [
+          "Develop interbank payment systems and their connections to the bank's other systems.",
+          "Develop the WS channel for business payments, API interfaces and their connections to payment systems.",
+          "Develop mobile and online bank payment solutions and their connections to the background payment systems."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "development manager payment services system integration banking financial",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
   }
 ]
