@@ -423393,5 +423393,1325 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:33",
+    "jobs": [
+      {
+        "id": "188145e6",
+        "job_id": "trainee-in-electrical-and-hvac-lappeenranta-188145e6",
+        "processed": true,
+        "title": "Trainee in Electrical and HVAC",
+        "company": "Academic Work Finland Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lappeenranta",
+          "Parikkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/UNGN9G",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ec5a7ae5-4bc9-44aa-a760-5bcd94183a43/en",
+        "job_employer_email": "krn10@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/trainee-in-electrical-and-hvac-lappeenranta-188145e6",
+        "date_posted": "2026-11-10",
+        "date_expires": "2027-05-09",
+        "scraped_at": "2026-11-11 03:58:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Trainee in Electrical and HVAC at Academic Work Finland Oy in Lappeenranta. Check the requirements and apply today.",
+        "description": "Academic Work Finland Oy is seeking enthusiastic trainees for a temporary, full-time position in the electrical and HVAC industry at our project team in Lappeenranta. This role involves documenting electrical, plumbing, and ventilation systems, assisting with inspection activities, and supporting more experienced colleagues. You will gain valuable experience in a modern data center project, with flexible working hours (0–37.5 hours per week) that can be adjusted to fit your study schedule. Fluency in both English and Finnish is required, along with a willingness to work in Lappeenranta and a change-oriented, stress-tolerant, and responsible attitude. High-class experience for your CV, professional support, and full flexibility with study conditions await you.",
+        "what_we_expect": [
+          "Knowledge in the field of electricity or HVAC through studies.",
+          "Fluent Finnish language skills.",
+          "Willingness to work in Lappeenranta.",
+          "Change oriented.",
+          "Stress tolerant.",
+          "Responsible."
+        ],
+        "job_responsibilities": [
+          "Documentation of electrical, plumbing and ventilation systems.",
+          "Assisting inspection activities.",
+          "Assisting and supporting more experienced colleagues in the field.",
+          "Maintenance of technical reports and documents."
+        ],
+        "what_we_offer": [
+          "High class experience for your CV.",
+          "Professional support and guidance.",
+          "Full flexibility with study conditions."
+        ],
+        "search_keywords": "trainee electrical HVAC Lappeenranta construction",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "61660497",
+        "job_id": "welder-iisalmi-61660497",
+        "processed": true,
+        "title": "Welder",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Iisalmi",
+          "Pyhäjärvi",
+          "Vieremä",
+          "Lapinlahti",
+          "Kiuruvesi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/ecVk_Mss3GxBwHTJPc5ldg",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/83ae44bd-1a68-47d8-a810-7b83298fc9a7/en",
+        "job_employer_email": "mari.svensk@eezy.fi",
+        "job_employer_name": "Mari Svensk",
+        "job_employer_phone_no": "+358406890229",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-iisalmi-61660497",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-11 03:58:33",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Welder role at Eezy Henkilöstöpalvelut Oy. Join the team and build your career in Iisalmi.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a professional Welder for a full-time, permanent position in Kiuruvesi. Applicants should have previous experience in welding and a motivated attitude towards work. Professional knowledge and systematicity are essential, along with an independent approach and self-initiative. The employment relationship will initially be through Eezy Personnel Services and is based on the valid collective agreement of the Technology Industry, with a salary starting from €12.85/hour, negotiable. Submit your application today; the recruitment experts at Eezy Personnel Services are handling applications.",
+        "what_we_expect": [
+          "Previous experience in welding.",
+          "Motivated attitude to work.",
+          "Professional knowledge for the job of a welder.",
+          "Systematicity.",
+          "Independent approach to work.",
+          "Self-initiative."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Temporary employment relationship.",
+          "Full-time day job.",
+          "Initially through Eezy Personnel Services.",
+          "Valid collective agreement of the Technology Industry.",
+          "Salary according to the table from €12.85/h/negotiable."
+        ],
+        "search_keywords": "welder welding experience employment temporary",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "ddf1c1d2",
+        "job_id": "family-caregiver-sastamala-ddf1c1d2",
+        "processed": true,
+        "title": "Family Caregiver",
+        "company": "Esperi Palvelukeskus Sastamalakoti",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Sastamala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/lahihoitaja-esperi-palvelukeskus-sastamalakoti/Dgd7PA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/df7621f1-8c82-4ece-9a57-f437e1060b93/en",
+        "job_employer_email": "milla.musakka@esperi.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "+358505052721",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-caregiver-sastamala-ddf1c1d2",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-11 03:58:33",
+        "open_positions": 1,
+        "salary_range": "Palkkauksessa noudatamme yksityistä sosiaalipalvelualan työehtosopimusta. Lähihoitajan pohjapalkka on kokemuslisistä riippuen palkkaluokan G20C mukaisesti 2 493,06-2 719,93 €/kk.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Esperi Palvelukeskus Sastamalakoti is hiring a Family Caregiver in Sastamala. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Family caregiver at Esperi Palvelukeskus Sastamalakoti in Sastamala seeks a dedicated professional with a nursing degree, valid medical licenses, and at least B1 Finnish language skills. Responsibilities include basic care, health monitoring, RAI evaluations, and service implementation planning. Permanent, full-time position with 2-shift work, including occasional night shifts. Salary follows the private collective agreement in the social services sector, ranging from €2,493.06 to €2,719.93 per month. Applicants should have experience in round-the-clock elderly care and RAI expertise. Join a team that values community and offers versatile employment benefits.",
+        "what_we_expect": [
+          "Nursing degree.",
+          "Valid medical licenses or readiness to complete the licenses immediately at the beginning of the employment relationship.",
+          "Hygiene passport, vaccination coverage according to the Infectious Diseases Act and social and healthcare professional card.",
+          "Experience in round-the-clock nursing work for the elderly.",
+          "At least functional basic Finnish language skills (B1).",
+          "RAI expertise, previous work experience as a personal caregiver and experience in preparing an implementation plan for services for the elderly."
+        ],
+        "job_responsibilities": [
+          "Basic care according to the resident's own needs.",
+          "Supporting and strengthening the ability to function as far as possible.",
+          "Health monitoring and recording.",
+          "Making RAI evaluations and the service implementation plan.",
+          "Medical treatment.",
+          "Close cooperation with relatives and possible other stakeholders."
+        ],
+        "what_we_offer": [
+          "Versatile employment benefits (e.g. Epass incentive benefit, commuting benefit, Cityshopper discounts)."
+        ],
+        "search_keywords": "caregiver social-care-services Sastamala nursing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:34",
+    "jobs": [
+      {
+        "id": "966ec9e6",
+        "job_id": "food-services-staff-kannus-966ec9e6",
+        "processed": true,
+        "title": "Food Services Staff",
+        "company": "Keski-Pohjanmaan hyvinvointialue SOITE",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kannus",
+          "Kokkola",
+          "Perho",
+          "Toholampi",
+          "Veteli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://soite.rekrytointi.com/paikat/index.php?o=A_A&jid=2929&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/83e07e77-7f59-4fa9-b3d3-bb9ced8a5de5/en",
+        "job_employer_email": "merja.ilomaki@soite.fi",
+        "job_employer_name": "Merja Ilomäki",
+        "job_employer_phone_no": "040 014 5519",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/food-services-staff-kannus-966ec9e6",
+        "date_posted": "2026-11-10",
+        "date_expires": "2027-05-07",
+        "scraped_at": "2026-11-11 03:58:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Keski-Pohjanmaan hyvinvointialue SOITE is looking for a Food Services Staff in Kannus. Don't miss this opportunity — apply today.",
+        "description": "Keski-Pohjanmaan hyvinvointialue SOITE is seeking self-initiated, customer service-minded, and flexible professionals with a professional degree in the food industry or ongoing studies for permanent, full-time positions in Kannus, Kokkola, Perho, Toholampi, and Veteli. Applicants must hold a valid hygiene passport and apply electronically, bringing diplomas and work certificates for possible interviews. For more information, contact Merja Ilomäki at merja.ilomaki@soite.fi or 040 014 5519.",
+        "what_we_expect": [
+          "Professional degree in the food industry.",
+          "Ongoing studies.",
+          "Self-initiated.",
+          "Customer service-minded.",
+          "Flexible.",
+          "Valid hygiene passport."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "food services staff food industry professional degree hygiene passport",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "9ee63cf6",
+        "job_id": "data-finance-trainee-helsinki-9ee63cf6",
+        "processed": true,
+        "title": "Data & Finance Trainee",
+        "company": "aTalent Recruiting Oy, Helsinki",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/396217/create/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/02c6b749-c0a5-447a-81c8-cd83ecb54179/en",
+        "job_employer_email": "roosa.lonnqvist@atalent.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/data-finance-trainee-helsinki-9ee63cf6",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-11 03:58:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "aTalent Recruiting Oy, Helsinki is hiring a Data & Finance Trainee in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "At Berner Oy, you will develop your skills in practical work, take responsibility, and learn from professionals in different fields within a Finnish family business. As a Data & Finance Trainee for the MedLab business area, you will collect and harmonize customer information, identify and correct data gaps, and ensure data quality. You will also manage and develop product data, participate in strategic development projects, and gain independent responsibility supported by experienced experts. This full-time, temporary (10 months) position in Helsinki/Viinikkala offers a competitive hourly wage based on Finnish collective agreements, and the application deadline is Sunday, 22 November 2026.",
+        "what_we_expect": [
+          "University studies or a recently completed degree suitable for the position, for example in a technical or commercial field, IT, economics or data analytics.",
+          "Interest in data, the development of information quality and business and economic processes.",
+          "Good Excel skills."
+        ],
+        "job_responsibilities": [
+          "Collect and harmonize customer information and build customer hierarchies between different countries and business lines.",
+          "Identify and correct data gaps and inconsistencies and take care of data quality.",
+          "Collect, supplement and maintain product data and ensure their quality.",
+          "Participate in the development of product information on the website and online store.",
+          "Participate in MedLab's strategic development projects by doing data and market mapping, current state analyzes and reports, as well as preparing project materials and monitoring the progress of the measures."
+        ],
+        "what_we_offer": [
+          "We offer you.",
+          "By 23 December 2026: Recruitment decisions and job offers.",
+          "Well-being and benefits for everyday life: Occupational health and personnel benefits, such as a 40% discount on Berner's own products in the Berner Shop."
+        ],
+        "search_keywords": "data finance trainee medlab accounting finance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "f9988958",
+        "job_id": "special-education-teacher-lieto-f9988958",
+        "processed": true,
+        "title": "Special Education Teacher",
+        "company": "Liedon kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Lieto"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/750255/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d1a004ce-773c-4b38-bb92-73ee20aeb8cd/en",
+        "job_employer_email": "pekka.teittinen@lieto.fi",
+        "job_employer_name": "Pekka Teittinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/special-education-teacher-lieto-f9988958",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-11 03:58:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Liedon kaupunki as a Special Education Teacher in Lieto. Learn more about the role and apply now.",
+        "description": "The task involves being responsible for the school's wide-ranging special education in grades 1-4, requiring a responsible approach to education and teaching, experience in teaching and supporting different learners, and good interaction and group management skills. Eligibility according to section 8 subsection 1 of the Decree on Eligibility for Teaching Personnel (986/98) is required, and the salary is determined in accordance with OVTES. A two-month trial period for selection will be followed. The language of instruction is Finnish. Lieto, a growing, enterprising, and close-to-nature city with approximately 21,000 inhabitants, offers professionally high-level and humane services to its residents.",
+        "what_we_expect": [
+          "A responsible approach to education and teaching.",
+          "Experience in teaching and supporting different learners.",
+          "Good interaction and group management skills."
+        ],
+        "job_responsibilities": [
+          "Being responsible for the school's wide-ranging special education in grades 1-4."
+        ],
+        "what_we_offer": [
+          "Eligibility according to section 8 subsection 1 of the Decree on Eligibility for Teaching Personnel (986/98) is required for the position.",
+          "Salary is determined in accordance with OVTES.",
+          "A two (2) month trial period for selection."
+        ],
+        "search_keywords": "special education teacher grades 1-4 Finnish language teaching methods",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:35",
+    "jobs": [
+      {
+        "id": "43cf76f4",
+        "job_id": "part-time-cleaner-keuruu-43cf76f4",
+        "processed": true,
+        "title": "Part-time Cleaner",
+        "company": "Inhouse Partners Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Keuruu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.ihp.fi/jobs/8696042-inhouse-partners-oy-osa-aikainen-siivooja-keuruu/applications/new?promotion=2288853-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ffbc3481-3ec0-465f-aec1-affac0bed685/en",
+        "job_employer_email": "heidi.katajamaki@ihp.fi",
+        "job_employer_name": "Heidi Katajamäki",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/part-time-cleaner-keuruu-43cf76f4",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-14",
+        "scraped_at": "2026-11-11 03:58:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Part-time Cleaner at Inhouse Partners Oy in Keuruu. Apply now and take the next step in your career.",
+        "description": "Inhouse Partners Oy is seeking a part-time cleaner to join our team in Keuruu, Central Finland. The role involves versatile cleaning and office service tasks, requiring a self-motivated and reliable approach. Previous experience in cleaning tasks is essential, and knowledge of Finnish or English is required. We offer the opportunity to develop your skills in a professional and supportive environment, with a competitive hourly wage based on Finnish collective agreements. The position includes 7-20 working hours per year, with shifts available in the morning and evening, making it suitable for those with study commitments. Applications are invited to join our team and contribute to providing high-quality cleaning and office services.",
+        "what_we_expect": [
+          "A brisk and self-initiated approach to work.",
+          "Reliability and commitment to tasks.",
+          "Previous experience in cleaning tasks.",
+          "Knowledge of Finnish or English."
+        ],
+        "job_responsibilities": [
+          "Versatile cleaning and office service tasks."
+        ],
+        "what_we_offer": [
+          "The opportunity to develop and grow as a professional in the cleaning and service industry.",
+          "Working as part of a professional and supportive team.",
+          "Salary according to TES.",
+          "Orientation to your tasks and continuous support during your career."
+        ],
+        "search_keywords": "cleaner part-time keuruu cleaning office services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "e224403f",
+        "job_id": "warehouse-worker-kaarina-e224403f",
+        "processed": true,
+        "title": "Warehouse Worker",
+        "company": "Legioona Oy",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Kaarina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://legioona.likeit.fi/apply/17455513",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9ea1ad25-3bac-4e05-bfed-4f360573ff12/en",
+        "job_employer_email": "taina.lehtola@legioona.fi",
+        "job_employer_name": "Taina Lehtola",
+        "job_employer_phone_no": "0405114903",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/warehouse-worker-kaarina-e224403f",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-11 03:58:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Legioona Oy as a Warehouse Worker in Kaarina. Learn more about the role and apply now.",
+        "description": "We are seeking a brisk, energetic, and accurate warehouse worker for a permanent position at Legioona Oy in Kaarina. The role involves collecting, receiving, sending, and arranging goods, with experience in using a forklift and stacking machine preferred. Basic computer skills are required, and the job includes lifting heavy boxes, so good physical condition and hand skills are essential. Apply by filling out the application form or emailing os.taina.lehtola@legioona.fi by November 16. Legioona Oy, established in 1986, offers a non-smoking workplace.",
+        "what_we_expect": [
+          "Brisk attitude.",
+          "Energetic.",
+          "Accuracy.",
+          "Hard worker.",
+          "Good physical condition.",
+          "Good hand skills."
+        ],
+        "job_responsibilities": [
+          "Collecting goods.",
+          "Receiving goods.",
+          "Sending goods.",
+          "Arranging goods.",
+          "Using a forklift.",
+          "Using a stacking machine."
+        ],
+        "what_we_offer": [
+          "Non-smoking workplace."
+        ],
+        "search_keywords": "warehouse worker forklift stacking machine computer skills physical fitness",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:36",
+    "jobs": [
+      {
+        "id": "7e8f2015",
+        "job_id": "district-nurse-finland-7e8f2015",
+        "processed": true,
+        "title": "District Nurse",
+        "company": "Övertorneå Kommun, Övertorneå",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Finland"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:ahti.vahakangas@overtornea.se?subject=Application%20for%20the%20Job%20-%20District%20Nurse&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20District%20Nurse.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9a131de4-f35c-4b46-a36d-563ca00cfe2c/en",
+        "job_employer_email": "ahti.vahakangas@overtornea.se",
+        "job_employer_name": "Ahti Vähäkangas",
+        "job_employer_phone_no": "+46(0)70 6280 139",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/district-nurse-finland-7e8f2015",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-11 03:58:36",
+        "open_positions": 1,
+        "salary_range": "Individuell lönesättning",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Övertorneå Kommun, Övertorneå is hiring a District Nurse in Finland. Explore the job responsibilities, benefits, and apply today.",
+        "description": "District nurse for Övertorneå municipality, do you want to make a difference every day and contribute to good and safe care for our residents? In municipal health care, you will be responsible for assessments, planning and follow-up of healthcare interventions, medicine management and medical treatments, coordination of healthcare efforts, supervision and support for nursing staff, and contacts with patients, relatives, and other healthcare providers. You should be a licensed nurse with further training to become a district nurse, have good ability to work independently and make your own decisions, be committed, responsible, and solution-oriented, and have good collaboration skills and a professional attitude.",
+        "what_we_expect": [
+          "Is a licensed nurse with further training to become a district nurse.",
+          "Has good ability to work independently and make own decisions.",
+          "Is committed, responsible and solution-oriented.",
+          "Has good collaboration skills and a professional attitude.",
+          "Has a B driver's license, as travel between businesses is included in the service."
+        ],
+        "job_responsibilities": [
+          "Assessments, planning and follow-up of healthcare interventions.",
+          "Medicine management and medical treatments.",
+          "Coordination of healthcare efforts.",
+          "Supervision and support for nursing staff.",
+          "Contacts with patients, relatives and other healthcare providers."
+        ],
+        "what_we_offer": [
+          "Healthcare allowance or wellness hour.",
+          "Paid leave for medical appointments.",
+          "Possibility to influence your work schedule.",
+          "Competence development and continuing education.",
+          "Competent and committed colleagues.",
+          "A meaningful job with great variety and personal responsibility."
+        ],
+        "search_keywords": "district nurse healthcare municipality responsibilities expectations benefits",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "6e84f448",
+        "job_id": "classroom-teacher-kauhava-6e84f448",
+        "processed": true,
+        "title": "Classroom Teacher",
+        "company": "Kauhavan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Kauhava"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/749868/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d6d269e9-838a-4a7d-9efb-73e1de7021c8/en",
+        "job_employer_email": "anne.sankelo@edukauhava.fi",
+        "job_employer_name": "Anne Sankelo",
+        "job_employer_phone_no": "0405629303",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/classroom-teacher-kauhava-6e84f448",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-11 03:58:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Kauhavan kaupunki is hiring a Classroom Teacher in Kauhava. Explore the job responsibilities, benefits, and apply today.",
+        "description": "The city of Kauhava is seeking a classroom teacher to join Kortesjärvi unified school for a permanent, full-time position starting on January 7, 2027. Responsibilities include teaching physical education, music, and textile work for various grade levels, as well as serving as a 6th grade class teacher. Applicants must meet the eligibility requirement of a classroom teacher according to § 4 of Decree 1998/986 and demonstrate reliability, professionalism, teamwork, and a willingness to learn. The position offers free fitness classes, extensive occupational health care, welfare benefits, sports benefits, and cultural benefits. Applications, including relevant diplomas, must be submitted electronically by December 2, 2026. Interviews will be held on-site or via Teams in week 50.",
+        "what_we_expect": [
+          "Eligibility requirement of a classroom teacher according to § 4 of Decree 1998/986.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Teach physical education, music and textile work for other grade levels.",
+          "Teach as a 6th grade class teacher."
+        ],
+        "what_we_offer": [
+          "Free fitness classes.",
+          "Extensive occupational health care services.",
+          "Welfare benefits.",
+          "Sports benefits.",
+          "Cultural benefits."
+        ],
+        "search_keywords": "classroom teacher physical education music textile work Kauhava unified school",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "eb5d7c9b",
+        "job_id": "nurse-helsinki-eb5d7c9b",
+        "processed": true,
+        "title": "Nurse",
+        "company": "Esperi Hoivakoti Pajulehto",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/sairaanhoitaja-esperi-hoivakoti-pajulehto/83NGLj",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5e3d75c4-50ac-4424-903b-690f821c345c/en",
+        "job_employer_email": "henna.englund@esperi.fi",
+        "job_employer_name": "Henna Englund",
+        "job_employer_phone_no": "046 920 5857",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-helsinki-eb5d7c9b",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-11 03:58:36",
+        "open_positions": 1,
+        "salary_range": "Salary When hiring, we follow the private colle",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Esperi Hoivakoti Pajulehto as a Nurse in Helsinki. Learn more about the role and apply now.",
+        "description": "Nurse, Esperi Hoivakoti Pajulehto, are you ready for a fulfilling role in a vibrant nursing home environment? Join us in Vihti, where our 24-hour care facility for 30 residents offers a unique blend of professional growth and community engagement. At Esperi Hoivakoti Pajulehto, you'll be part of a dedicated team that values heart and care for our residents. Your responsibilities include independent nursing duties, collaborating with doctors, and supporting family caregivers. The position is full-time and temporary until August 31, 2027, with flexible weekday morning shifts. Requirements include a nursing degree, valid medical licenses, a hygiene passport, and B1 Finnish language skills.",
+        "what_we_expect": [
+          "Nursing degree.",
+          "Valid medical licenses, hygiene passport, vaccination coverage according to the Infectious Diseases Act and social and healthcare professional card.",
+          "At least functional basic Finnish language skills (B1).",
+          "Interest in care work for the elderly.",
+          "Good teamwork skills.",
+          "Previous experience in similar tasks."
+        ],
+        "job_responsibilities": [
+          "You are independently responsible for your nursing responsibilities, such as matters related to medical treatment and health assessment.",
+          "You get to collaborate with doctors and you are also responsible for the overall medical treatment of our unit.",
+          "Your role includes being a support to the family caregivers in matters related to the resident's care."
+        ],
+        "what_we_offer": [
+          "High-quality training and support from the entire team - we want you to succeed!",
+          "An interesting work environment and the opportunity to develop your."
+        ],
+        "search_keywords": "nurse healthcare elderly care Pajulehto Nummela",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:37",
+    "jobs": [
+      {
+        "id": "6e4a7f59",
+        "job_id": "financial-expert-mikkeli-6e4a7f59",
+        "processed": true,
+        "title": "Financial Expert",
+        "company": "Etelä-Savon Maakuntaliitto, Mikkeli",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Mikkeli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/fi/tyopaikat/rahoitusasiantuntija-749423/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/778f957d-8fe9-4dea-a678-69b53c271071/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/financial-expert-mikkeli-6e4a7f59",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-11 03:58:37",
+        "open_positions": 1,
+        "salary_range": "Salary and terms of employment are determined i",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Etelä-Savon Maakuntaliitto, Mikkeli is looking for a Financial Expert in Mikkeli. Don't miss this opportunity — apply today.",
+        "description": "We are seeking a financial expert for our temporary position from January 4, 2027, to December 31, 2027, at Etelä-Savon Maakuntaliitto in Mikkeli. The role involves evaluating project applications, preparing financing decisions, supervising projects, and providing counseling and communication. Suitable higher education and knowledge of EU structural funds such as ERDF and JTF, along with regional development legislation, are required. Previous experience in financing tasks of a caring organization and a self-initiated approach to work are valued. Good Finnish language skills and the ability to handle pressure are essential. The position offers a versatile and responsible field of work, a stimulating and development-friendly environment, and comprehensive employee benefits.",
+        "what_we_expect": [
+          "Suitable higher education degree.",
+          "Knowledge of EU structural funds such as ERDF and JTF funds.",
+          "Knowledge of EU regional development legislation.",
+          "Previous experience in financing tasks of a caring organization.",
+          "Self-initiated approach to work.",
+          "Ability to withstand pressure."
+        ],
+        "job_responsibilities": [
+          "Evaluation of project applications.",
+          "Preparation of financing decisions.",
+          "Project supervision.",
+          "Project counseling and communication."
+        ],
+        "what_we_offer": [
+          "Versatile and responsible field of work.",
+          "A stimulating and development-friendly work community.",
+          "The opportunity to develop one's own skills and grow professionally.",
+          "Comprehensive employee benefits such as Epassi benefits."
+        ],
+        "search_keywords": "financial expert accounting finance project financing EU structural funds",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "2595da2c",
+        "job_id": "chef-middle-eastern-lahti-2595da2c",
+        "processed": true,
+        "title": "Chef - Middle Eastern",
+        "company": "La Casa Oy, Lahti",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:lawendebrahim@gmail.com?subject=Application%20for%20the%20Job%20-%20Chef%20-%20Middle%20Eastern&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chef%20-%20Middle%20Eastern.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fb44c119-60a6-49f0-b25b-1c60ed5df9d2/en",
+        "job_employer_email": "lawendebrahim@gmail.com",
+        "job_employer_name": "Lawand Ibrahim",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-middle-eastern-lahti-2595da2c",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-15",
+        "scraped_at": "2026-11-11 03:58:37",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "The",
+          "Kmr",
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at La Casa Oy, Lahti as a Chef - Middle Eastern in Lahti. Learn more about the role and apply now.",
+        "description": "La Casa Oy in Lahti is seeking a full-time, permanent Chef with extensive knowledge of Middle Eastern food culture to prepare a diverse buffet from raw ingredients. The ideal candidate should be reliable, professional, a team player, and willing to learn. Fluency in English, Kurdish, and Finnish is required. Applications can be submitted to lacasakeskusta@gmail.com.",
+        "what_we_expect": [
+          "Extensive knowledge of Middle Eastern food culture.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Prepare Middle Eastern buffet from raw ingredients."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "chef middle eastern food culture buffet",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:38",
+    "jobs": [
+      {
+        "id": "d6fa11f0",
+        "job_id": "hvac-insulator-helsinki-d6fa11f0",
+        "processed": true,
+        "title": "HVAC Insulator",
+        "company": "Vuosaaren Eristys Oy, Helsinki",
+        "job_category": "energy-and-utilities",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:mika.sormunen@netti.fi?subject=Application%20for%20the%20Job%20-%20HVAC%20Insulator&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20HVAC%20Insulator.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fdccec66-0a26-4da9-a09b-dbe1b3e3d1fa/en",
+        "job_employer_email": "mika.sormunen@netti.fi",
+        "job_employer_name": "Mika Sormunen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/energy-and-utilities/hvac-insulator-helsinki-d6fa11f0",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-11 03:58:38",
+        "open_positions": 1,
+        "salary_range": "salary based on experience - Permanent and vers",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a HVAC Insulator at Vuosaaren Eristys Oy, Helsinki in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking a professional HVAC insulator for a permanent position at Vuosaaren Eristys Oy in Helsinki. Responsibilities include insulation work for pipelines and ventilation ducts in various locations, such as new and renovated buildings, involving heat, sound, and fire insulation. Requirements are previous experience in HVAC insulation, good physical condition and initiative, a valid occupational safety card, and fluent Finnish language skills. We value industry training, an accurate and careful approach, and teamwork skills. Offered is a competitive salary based on experience, permanent and versatile work, a good working atmosphere, and the support of a professional team, along with opportunities for skill development. Start of work is according to the contract.",
+        "what_we_expect": [
+          "Previous experience in HVAC insulation work.",
+          "Good physical condition and initiative.",
+          "A valid occupational safety card.",
+          "Fluent Finnish language skills.",
+          "Industry training.",
+          "Accurate and careful approach."
+        ],
+        "job_responsibilities": [
+          "Insulation work for pipelines and ventilation ducts in various locations, such as new and renovated buildings."
+        ],
+        "what_we_offer": [
+          "Competitive salary based on experience.",
+          "Permanent and versatile work.",
+          "A good working atmosphere.",
+          "The support of a professional team.",
+          "The opportunity to develop your skills."
+        ],
+        "search_keywords": "HVAC insulator insulation work experience physical condition safety card Finnish language skills training working atmosphere team development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "de4c42c2",
+        "job_id": "nurse-uusikaupunki-de4c42c2",
+        "processed": true,
+        "title": "Nurse",
+        "company": "Esperi Hoivakoti Merivuokko",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/sairaanhoitaja-esperi-hoivakoti-merivuokko/ZlE0bN",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/552c645e-80b3-4f7e-bced-bd3062dc70e9/en",
+        "job_employer_email": "jenni.karkkola-hakosaari@esperi.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-uusikaupunki-de4c42c2",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-11 03:58:38",
+        "open_positions": 1,
+        "salary_range": "Palkkauksessa noudatamme yksityistä sosiaalipalvelualan työehtosopimusta. Sairaanhoitajan pohjapalkka on kokemuslisistä riippuen palkkaluokan G24D mukaisesti 2 811,09 - 3 071,09 €/kk.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Esperi Hoivakoti Merivuokko as a Nurse in Uusikaupunki. Learn more about the role and apply now.",
+        "description": "Nurse positions are available at Esperi Hoivakoti Merivuokko in Uusikaupunki, offering a permanent full-time role. As a nurse, you will be an integral part of a team, developing care work that considers residents' needs. You will independently handle nursing responsibilities, collaborate with doctors, and manage the overall medical treatment of the unit. Your role will also involve supporting family caregivers. Requirements include a nursing degree, valid medical licenses, a hygiene passport, and B1-level Finnish language skills. Previous experience and a criminal record extract are advantageous. The salary follows the private collective agreement in the social services sector, ranging from 2,811.09 to 3,071.09 €/month.",
+        "what_we_expect": [
+          "Nursing degree.",
+          "Valid medical licenses, hygiene passport, vaccination coverage according to the Infectious Diseases Act and social and healthcare professional card.",
+          "At least functional basic Finnish language skills (B1).",
+          "Previous experience in similar tasks.",
+          "A criminal record extract in accordance with the Criminal Records Act."
+        ],
+        "job_responsibilities": [
+          "You are an important expert in your team and you develop care work taking the residents' needs into account.",
+          "You are independently responsible for your nursing responsibilities, such as matters related to medical treatment and health assessment.",
+          "You get to collaborate with doctors and you are also responsible for the overall medical treatment of our unit.",
+          "Your role includes being a support to the family caregivers in matters related to the resident's care."
+        ],
+        "what_we_offer": [
+          "Versatile employment benefits, e.g. Epass stimulus benefit, Cityshopper discounts and commuting benefit."
+        ],
+        "search_keywords": "nurse healthcare permanent job Uussakaupunki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "018c711f",
+        "job_id": "excavator-co-driver-ii-018c711f",
+        "processed": true,
+        "title": "Excavator Co-Driver",
+        "company": "BassoHR Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Ii",
+          "Oulu",
+          "Siikalatva"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://bassohr.likeit.fi/apply/7552547",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/10076e27-a1a5-457a-85b8-66dd681f4906/en",
+        "job_employer_email": "jasmiina.kumpulainen@bassohr.fi",
+        "job_employer_name": "Jasmiina Kumpulainen",
+        "job_employer_phone_no": "0401805131",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/excavator-co-driver-ii-018c711f",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-11 03:58:38",
+        "open_positions": 1,
+        "salary_range": "salary is negotiable according to your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "BassoHR Oy is looking for a Excavator Co-Driver in Ii. Don't miss this opportunity — apply today.",
+        "description": "We are seeking a skilled excavator co-driver for Rantalatimber Oy's construction sites in Oulu, Ii, and Rantsila. Key responsibilities include operating a vibrator, performing shovel work, and taking interest measurements. Previous experience in similar tasks, the ability to read pictures, and a valid work safety card are required. Strong physical stamina and a self-initiative approach to work are essential, as you will be moving between different construction sites. Fluency in Finnish is necessary. Competitive hourly wages based on Finnish collective agreements will be negotiated according to your skills. Applications can be submitted at www.bassohr.fi. Interviews are conducted during the application period, and the position is filled as soon as a suitable candidate is found.",
+        "what_we_expect": [
+          "Previous experience in similar tasks.",
+          "Ability to read pictures.",
+          "Valid work safety card.",
+          "Comfortable with physical work.",
+          "Self-initiative approach to work.",
+          "Ability to move between different construction sites."
+        ],
+        "job_responsibilities": [
+          "Use of a vibrator.",
+          "Shovel work.",
+          "Interest measurements."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "excavator co-driver construction sites Oulu Ii Rantsila",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:39",
+    "jobs": [
+      {
+        "id": "bd63657c",
+        "job_id": "building-cleaner-oulu-bd63657c",
+        "processed": true,
+        "title": "Building Cleaner",
+        "company": "Nordic JobCentre Oy, Oulu",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://njc.likeit.fi/apply/70654429",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/47bba463-a880-4f6f-a52a-5122945d39ef/en",
+        "job_employer_email": "",
+        "job_employer_name": "Rekrytiimi",
+        "job_employer_phone_no": "044 7051 444",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/building-cleaner-oulu-bd63657c",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-14",
+        "scraped_at": "2026-11-11 03:58:39",
+        "open_positions": 1,
+        "salary_range": "salary according to the collective agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Nordic JobCentre Oy, Oulu is hiring a Building Cleaner in Oulu. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking builders for construction sites in the Oulu area to handle the collection and sorting of construction waste, sweeping, loading and vacuuming floors, removing dust and dirt from various surfaces, installing and removing protections, and moving goods and materials. Applicants should have a positive attitude, good physical condition, and fluent Finnish language skills, with at least 18 years of age. A valid occupational safety card is advantageous, but assistance is provided if needed. NJC offers professional employment handling, the possibility of a long-term relationship, versatile tasks, and appropriate work clothes and equipment. Competitive hourly wages based on Finnish collective agreements are provided, reflecting the necessary knowledge, skills, and experience.",
+        "what_we_expect": [
+          "A positive attitude to work.",
+          "Good physical condition.",
+          "Fluent Finnish language skills.",
+          "At least 18 years of age.",
+          "A valid occupational safety card, however, assistance is provided if necessary."
+        ],
+        "job_responsibilities": [
+          "Collection and sorting of construction waste.",
+          "Sweeping, loading and vacuuming the floors.",
+          "Removing dust and dirt from various surfaces.",
+          "Installing and removing protections.",
+          "Moving goods and materials."
+        ],
+        "what_we_offer": [
+          "Professional handling of employment matters.",
+          "The possibility of a long-term employment relationship.",
+          "Versatile tasks.",
+          "Appropriate work clothes and equipment."
+        ],
+        "search_keywords": "cleaner building maintenance construction waste",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "d9afeaa4",
+        "job_id": "mechanical-designer-vantaa-d9afeaa4",
+        "processed": true,
+        "title": "Mechanical Designer",
+        "company": "HR WorkForce Group Oy, Asikkala",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://hrworkforce-ura.teamtailor.com/jobs/8517630-mekaniikkasuunnittelija",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7f124859-41ca-447d-9b65-389dcd0d0086/en",
+        "job_employer_email": "melissa@hrworkforce.fi",
+        "job_employer_name": "Melissa Virtanen",
+        "job_employer_phone_no": "0443450864",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/mechanical-designer-vantaa-d9afeaa4",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-11 03:58:39",
+        "open_positions": 1,
+        "salary_range": "salary is approx",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join HR WorkForce Group Oy, Asikkala as a Mechanical Designer and grow your career in Vantaa. Check the job details and apply now.",
+        "description": "Join our team as a Mechanical Designer at HR WorkForce Group Oy in Vantaa, where you will be involved in developing machine and equipment solutions with a solution-oriented approach. You will work on mechanical equipment design and product development using 3D design programs, collaborate with other designers, and provide sales support through technical documents. Your role will involve close cooperation with manufacturing, purchasing, and suppliers. Requirements include appropriate education, experience in mechanical design, understanding of manufacturing technology, and strong knowledge of design software. Fluency in Finnish and English is essential. Enjoy a flexible hybrid work model, permanent employment, and comprehensive orientation.",
+        "what_we_expect": [
+          "Appropriate education (e.g. Engineer AMK, DI or similar) and several years of experience in mechanical design.",
+          "Understanding of manufacturing technology and the materials used.",
+          "Take into account the manufacturability of the products in the design work: The work requires the visualization of large entities.",
+          "Solution-oriented and systematic approach to work and self-initiative.",
+          "Strong knowledge of design software such as (SolidWorks, SolidWorks PDM, Vertex software).",
+          "Language skills: Finnish and English."
+        ],
+        "job_responsibilities": [
+          "Mechanical equipment design and product development with 3D design programs.",
+          "You are responsible for the design of the devices together with other designers, either as large entities or at the component level.",
+          "Sales support by producing necessary technical documents and solutions.",
+          "Close cooperation with manufacturing, purchasing and suppliers."
+        ],
+        "what_we_offer": [
+          "A fixed contractual salary. The salary is approx. 4500€/month.",
+          "Flexible hybrid work model: The work includes office work, remote work and occasional traveling in Finland.",
+          "Permanent employment in a solvent company.",
+          "Comprehensive orientation at work in order to succeed.",
+          "Professional colleagues, the team includes a mechanical designer and a design manager.",
+          "Versatile work and high-quality tools."
+        ],
+        "search_keywords": "mechanical designer engineering design 3D design software manufacturing technology",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:40",
+    "jobs": [
+      {
+        "id": "c6c51649",
+        "job_id": "electrical-designer-for-renovation-construction-helsinki-c6c51649",
+        "processed": true,
+        "title": "Electrical Designer for Renovation Construction",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/23138477",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a5635873-8c8c-45b7-a234-ed4ca96a78cf/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/electrical-designer-for-renovation-construction-helsinki-c6c51649",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-11-11 03:58:40",
+        "open_positions": 1,
+        "salary_range": "salary depending on your experience * comprehen",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Mestarit Henkilöstöpalvelut Oy as a Electrical Designer for Renovation Construction in Helsinki.",
+        "description": "We are seeking an experienced electrical designer to join our growing team for renovation construction projects in Helsinki. This permanent, full-time position offers the opportunity to specialize in the electrical design of renovation and repair projects, with a competitive salary based on your experience. Responsibilities include conducting surveys and condition assessments, documenting findings, planning repairs and changes, and adapting designs to current regulations. You will work closely with the project team and other design areas, leveraging your AMK degree and at least two years of experience in electrical design. Strong interest in renovation construction and a self-initiated, cooperative work ethic are essential.",
+        "what_we_expect": [
+          "Degree in electrical engineering (AMK) or other suitable education.",
+          "At least two years of experience in electrical design.",
+          "Interest in renovation construction and development of existing systems.",
+          "Self-initiated, careful and cooperative work ethic."
+        ],
+        "job_responsibilities": [
+          "From surveys and condition assessments of electrical systems.",
+          "Documentation and reporting of findings.",
+          "On repair and change planning in residential and business premises.",
+          "Cooperation with the project team and other design areas.",
+          "Adapting design solutions to current regulations and the initial situation of the sites."
+        ],
+        "what_we_offer": [
+          "Permanent and full-time employment in a stable company.",
+          "The opportunity to specialize in the electrical design of renovation construction.",
+          "Flexible working hours and a good balance between work and free time.",
+          "Competitive salary depending on your experience.",
+          "Comprehensive employment benefits and a competent and supportive work community."
+        ],
+        "search_keywords": "electrical designer renovation construction experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "7ad9c20f",
+        "job_id": "painters-for-shipyard-uusikaupunki-7ad9c20f",
+        "processed": true,
+        "title": "Painters for Shipyard",
+        "company": "Econia Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://econia.likeit.fi/apply/14100505",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/69cfbdad-addf-44cf-b6a9-a55f27cc4ffc/en",
+        "job_employer_email": "pekka.jokimutka@econia.com",
+        "job_employer_name": "Pekka Jokimutka",
+        "job_employer_phone_no": "+358405275577",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/painters-for-shipyard-uusikaupunki-7ad9c20f",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-11 03:58:40",
+        "open_positions": 1,
+        "salary_range": "salary is around €13-15/experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Econia Oy as a Painters for Shipyard in Uusikaupunki. Learn more about the role and apply now.",
+        "description": "We are seeking experienced painters for a permanent, full-time position at Econia Oy in Uusikaupunki. Responsibilities include painting ships and steel structures with a roller and brush, treating welding seams, edges, and corners with precision. A careful and precise approach, experience in painting, a good work attitude, and the ability to work in a team are essential. Security clearance is required before starting. Competitive hourly wages based on Finnish collective agreements are offered. For more information or to apply, contact Pekka Jokimutka at 040 527 5577 or pekka.jokimutka@econia.com.",
+        "what_we_expect": [
+          "Careful and precise approach to work.",
+          "Experience in painting or other applicable practical skills.",
+          "A good attitude towards work and a desire to commit to a long-term employment relationship.",
+          "Ability to work as part of a team.",
+          "Willingness to pass the Security Police's security clearance before starting the employment relationship."
+        ],
+        "job_responsibilities": [
+          "Painting work related to the surface treatment of ships and other steel structures using a roller and a brush.",
+          "Treatment of welding seams, edges, corners and other objects that require precision before the actual surface painting."
+        ],
+        "what_we_offer": [
+          "Security clearance before the start of the employment relationship."
+        ],
+        "search_keywords": "painter shipyard industrial painting precision",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "b04d4755",
+        "job_id": "maintenance-fitter-welder-espoo-b04d4755",
+        "processed": true,
+        "title": "Maintenance Fitter Welder",
+        "company": "Visio Henkilöstöratkaisut Päijät-Häme Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://visiohr.likeit.fi/apply/74704336",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e6fa3ae2-3016-4f68-a3b7-3903ceb5b4a9/en",
+        "job_employer_email": "lilli.mayra@visiohr.fi",
+        "job_employer_name": "Lilli Mäyrä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/maintenance-fitter-welder-espoo-b04d4755",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-11 03:58:40",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Maintenance Fitter Welder at Visio Henkilöstöratkaisut Päijät-Häme Oy in Espoo. Check the requirements and apply today.",
+        "description": "Visio Henkilöstöratkaisut Päijät-Häme Oy is seeking a Maintenance Fitter Welder for industrial maintenance and installation sites in Espoo, Päijät-Häme, and Southern Finland. This full-time, permanent position offers a competitive hourly wage based on Finnish collective agreements, long-term employment, and round-the-clock support. Key responsibilities include industrial maintenance, welding, and bolting. Applicants must have education in the metal industry, experience in industrial maintenance, valid professional cards (occupational safety card and fire work card), good knowledge of Finnish, a high work ethic, and good social skills. Driver's license B is preferred, but own transportation is an advantage.",
+        "what_we_expect": [
+          "Education in the metal industry (sheet metal welder).",
+          "Experience in industrial maintenance.",
+          "Valid professional cards (occupational safety card and fire work card).",
+          "Good knowledge of the Finnish language.",
+          "High work ethic.",
+          "Good social skills."
+        ],
+        "job_responsibilities": [
+          "Industrial maintenance and related tasks.",
+          "Welding.",
+          "Bolting."
+        ],
+        "what_we_offer": [
+          "Salary determined by your skills.",
+          "Long-term employment //40h/week.",
+          "Salary payment twice a month.",
+          "Work equipment suitable for each job.",
+          "Round-the-clock support in work matters.",
+          "The opportunity to develop your skills and advance to more demanding positions."
+        ],
+        "search_keywords": "maintenance fitter welder industrial construction",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "9f5d623f",
+        "job_id": "summer-cantor-kotka-9f5d623f",
+        "processed": true,
+        "title": "Summer Cantor",
+        "company": "Kotka-Kymin seurakunta",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5448/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/979677c0-852e-49ae-8cbf-61b643fc5c00/en",
+        "job_employer_email": "susanna.hauer@evl.fi",
+        "job_employer_name": "Susanna Hauer",
+        "job_employer_phone_no": "0447529496",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/summer-cantor-kotka-9f5d623f",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-11 03:58:40",
+        "open_positions": 1,
+        "salary_range": "- vähimmäispalkka 2792,03€/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Summer Cantor at Kotka-Kymin seurakunta in Kotka. Check the requirements and apply today.",
+        "description": "The Kotka-Kym congregation seeks two summer cantors for the summer of 2027, with positions available from June 7 to August 8. Responsibilities include leading church music, participating in religious school camps, and managing the summer choir. Requirements are smooth organ playing, good singing skills, and the ability to accompany on piano or another instrument. Strong interpersonal skills are essential. The role is ideal for a church music student. Applicants will receive support and can participate in their high school group's weekend camp in spring 2027. The position offers a permanent, full-time contract with a salary of €2,942.43 per month. Applications are due by December 2, 2026, and interviews will be held on December 10, 2026.",
+        "what_we_expect": [
+          "Smooth organ playing.",
+          "Good singing skills.",
+          "Control of free accompaniment on piano or other suitable instrument.",
+          "Good interaction and cooperation skills."
+        ],
+        "job_responsibilities": [
+          "Taking care of the music for church services, blessing the grave and consecration to marriage.",
+          "Religious school teaching and participation in a week-long religious school camp, where the employees stay overnight during the camp.",
+          "Other duties of the cantor, for example the summer choir."
+        ],
+        "what_we_offer": [
+          "The opportunity to participate in your own high school group's weekend camp in the spring of 2027.",
+          "The possibility of using your own car makes it easier to move between the different offices of the congregation."
+        ],
+        "search_keywords": "summer cantor church music singing organ playing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "560c02a8",
+        "job_id": "baker-järvenpää-560c02a8",
+        "processed": true,
+        "title": "Baker",
+        "company": "Fazer",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/396134/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/304db452-7335-491a-9ab9-5dc93d187ad1/en",
+        "job_employer_email": "emilia.turunen@fazer.com",
+        "job_employer_name": "Emilia Turunen",
+        "job_employer_phone_no": "+358505232770",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/baker-järvenpää-560c02a8",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-11 03:58:40",
+        "open_positions": 1,
+        "salary_range": "Tuoretta, käsin leivottua leipää arvostetaan yhä enemmän ja artesaanileipää leivotaan yli 140 Fazerin myymäläleipomossa ympäri Suomen. Etsimme nyt iloiseen joukkoomme leipuria (12 h/viikko) K-Citymarket Järvenpään myymäläleipomoomme. Tehtävä on määräaikainen sijaisuus 28.2.2027 saakka.Fazer Leipurit -myymäläleipomon leipurina työnkuvasi on monipuolinen ja tehtäviisi kuuluvat kaikki leivontaprosessin eri vaiheet taikinan teosta esille laittoon. Leipomomme sijaitsevat kaupan sisätiloissa lähellä asiakkaita, joten reipas asiakaspalveluasenne ja hyvä suomen kielen taito ovat tehtävässä tärkeitä. Työskentelet tiiviisti yhdessä myymäläleipomon muun tiimin kanssa ja työssäsi sinua tukee myymäläleipomoesihenkilö.Myymäläleipomossamme leivotaan viikon jokaisena päivänä aikaisesta aamusta alkaen. Työvuorot sijoittuvat noin kello 6–18 välille.PalkkausTehtävä kuuluu Suomen Elintarviketyöläisten Liiton (SEL) leipomoalan työntekijöitä koskevan työehtosopimuksen piiriin. Peruspalkkasi määräytyy alan koulutuksen ja aiemman leipomoalan kokemuksen mukaan. Aloituspalkka tehtävässä on 12,70 €/h - 15,71 €/h. Peruspalkan lisäksi maksamme erilaisia lisiä työehtosopimuksen mukaisesti, esimerkiksi iltavuorolisää 15 % ja yövuorolisää 100 %.Tehtävässä on lisäksi mahdollisuus liiketoimintakohtaiseen tuotannon tulospalkkioon, jonka tavoitetaso on 74 senttiä / h (rakenne ja ehdot määritellään vuosittain).Tarjoamme lisäksi monipuolisia etuja, kuten esimerkiksi alennuksia Fazerin tuotteista sekä etuja hyvinvointiin, kuten Epassin.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Fazer as a Baker in Järvenpää. Learn more about the role and apply now.",
+        "description": "Join Fazer's K-Citymarket Järvenpää team as a baker, working 12 hours a week until February 28, 2027. Your role involves all stages of the baking process, from dough preparation to display, in a store bakery that bakes daily from early morning. Experience in hand-baking and a strong Finnish language skill are essential. You'll work closely with the team and receive support from the supervisor. Flexible working hours between 6:00 and 18:00 are expected. Salary is based on the Finnish Food Workers' Union collective agreement, with a starting rate of €12.70 to €15.71 per hour, plus evening and night shift supplements. Additional benefits include discounts on Fazer products and welfare benefits like Epass.",
+        "what_we_expect": [
+          "Willing to work flexibly.",
+          "Can-do attitude.",
+          "Self-initiated approach to work.",
+          "Will to develop own skills.",
+          "Good attitude.",
+          "Reliability."
+        ],
+        "job_responsibilities": [
+          "Bake by hand.",
+          "Work all stages of the baking process from dough to display."
+        ],
+        "what_we_offer": [
+          "Discounts on Fazer products.",
+          "Welfare benefits such as Epass."
+        ],
+        "search_keywords": "baker bread bakery Fazer Järvenpää",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 03:58:47",
+    "jobs": [
+      {
+        "id": "2a5bd7dd",
+        "job_id": "final-cleaner-oulu-2a5bd7dd",
+        "processed": true,
+        "title": "Final Cleaner",
+        "company": "Nordic JobCentre Oy, Oulu",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://njc.likeit.fi/apply/70654245",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1b82003b-8bc2-414c-809a-d6ab5ba92222/en",
+        "job_employer_email": "",
+        "job_employer_name": "Rekrytiimi",
+        "job_employer_phone_no": "044 7051 444",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/final-cleaner-oulu-2a5bd7dd",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-14",
+        "scraped_at": "2026-11-11 03:58:47",
+        "open_positions": 1,
+        "salary_range": "salary according to the collective agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Nordic JobCentre Oy, Oulu is hiring a Final Cleaner in Oulu. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking enthusiastic final cleaners for our client companies' work sites in Oulu, Finland. Responsibilities include final cleaning of construction sites, floor and surface cleaning, window washing, dust wiping, and finishing premises before handover. Previous experience with personal lifts is advantageous but training will be provided. Fluency in Finnish, good physical condition, and being at least 18 years old are required. NJC offers professional employment handling, long-term potential, versatile tasks, and appropriate work clothes and equipment. Competitive hourly wages based on Finnish collective agreements are provided, reflecting the necessary skills and experience. For more information, contact the recruitment team on weekdays from 8 am to 4 pm at 044 7051 444.",
+        "what_we_expect": [
+          "Enthusiasm to take on different tasks.",
+          "Good physical condition.",
+          "Fluent Finnish language skills.",
+          "At least 18 years of age."
+        ],
+        "job_responsibilities": [
+          "Final cleaning of construction sites to be completed.",
+          "Cleaning of floors and other surfaces.",
+          "Window washing.",
+          "Wiping the top dust.",
+          "Finishing the premises before handing over the object."
+        ],
+        "what_we_offer": [
+          "Professional handling of employment matters.",
+          "The possibility of a long-term employment relationship.",
+          "Versatile tasks.",
+          "Appropriate work clothes and equipment."
+        ],
+        "search_keywords": "cleaner construction site cleaning final cleaning",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "0c3b14fe",
+        "job_id": "maintenance-fitter-welder-lahti-0c3b14fe",
+        "processed": true,
+        "title": "Maintenance Fitter / Welder",
+        "company": "Jobros Oy, Turku",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://avoimet-tyopaikat.jobros.fi/jobs/8695844-kunnossapitoasentaja-hitsaaja/applications/new?promotion=2288760-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3f88dc18-3689-4625-9dfc-470ddbe0b523/en",
+        "job_employer_email": "aki.taipale@jobros.fi",
+        "job_employer_name": "Aki Taipale",
+        "job_employer_phone_no": "+358405616219",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/maintenance-fitter-welder-lahti-0c3b14fe",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-11 03:58:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Jobros Oy, Turku is looking for a Maintenance Fitter / Welder in Lahti. Don't miss this opportunity — apply today.",
+        "description": "Jobros Oy, based in Lahti, is seeking experienced industrial maintenance fitters and welders for immediate full-time, permanent employment. Responsibilities include industrial welding and installation, industrial maintenance, and various metal and installation tasks. Applicants should have experience in stick and wire welding (MIG/MAG), hold valid occupational safety and firework cards, and demonstrate a proactive and mobile work attitude. Fluency in Finnish is required. Work locations are primarily in Päijät-Häme and Southern Finland. Jobros Oy, established in 2020 and operating since 2006, specializes in construction, metal, shipyard, infrastructure, storage, and logistics industries.",
+        "what_we_expect": [
+          "Experience in stick welding and wire welding (MIG/MAG).",
+          "A valid occupational safety card.",
+          "A valid firework card.",
+          "A brisk and self-initiated approach to work.",
+          "Readiness for mobile work.",
+          "Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Industrial welding and installation work.",
+          "Industrial maintenance work.",
+          "Various metal and installation work."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "welder maintenance fitter industrial welding installation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
   }
 ]
