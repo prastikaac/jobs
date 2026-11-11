@@ -436346,5 +436346,338 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 04:04:51",
+    "jobs": [
+      {
+        "id": "1db5a78d",
+        "job_id": "web-designer-jyväskylä-1db5a78d",
+        "processed": true,
+        "title": "Web Designer",
+        "company": "Jyväskylän yliopisto",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/verkkosuunnittelija-sjsyv-20315065",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/verkkosuunnittelija-sjsyv-20315065",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/web-designer-jyväskylä-1db5a78d",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-11 04:04:51",
+        "open_positions": 1,
+        "salary_range": "3 700–4 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Web Designer at Jyväskylän yliopisto. Great opportunity in Jyväskylä — apply now.",
+        "description": "Join Digiservices at the University of Jyväskylä as a Web Designer in our IT service unit, where you will contribute to the development and maintenance of the university's network infrastructure, including the backbone network, SDN data center network, firewalls, load balancing, and WLAN systems. This role requires a strong background in connection and routing technologies, network protocols, and data security, along with at least 5 years of relevant experience. Fluency in both Finnish and English is essential, and experience in MPLS/Ethernet technologies and network system integrations is a plus. As part of our warm-hearted community, you will work collaboratively and continuously develop your skills in a dynamic environment.",
+        "what_we_expect": [
+          "A good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Become part of our inspiring and warm-hearted community."
+        ],
+        "search_keywords": "web designer network design IT services university",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 04:04:54",
+    "jobs": [
+      {
+        "id": "5479e979",
+        "job_id": "iam-project-manager-jyväskylä-5479e979",
+        "processed": true,
+        "title": "IAM Project Manager",
+        "company": "Jyväskylän yliopisto",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/projektipaallikko-sjsyv-20422827",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/projektipaallikko-sjsyv-20422827",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/iam-project-manager-jyväskylä-5479e979",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-11 04:04:54",
+        "open_positions": 1,
+        "salary_range": "3 700–4 200 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a IAM Project Manager role at Jyväskylän yliopisto. Join the team and build your career in Jyväskylä.",
+        "description": "The University of Jyväskylä is seeking a temporary IAM Project Manager for a role that will run until December 31, 2028. This position involves coordinating the development and implementation of an identity and access management (IAM) project between the University of Jyväskylä and Jyväskylä University of Applied Sciences. Key responsibilities include preparing the project's structure, managing cooperation, decision-making, and dependency management, and working closely with experts and architects to address technical issues. The role requires a strong technical understanding to ensure smooth collaboration and to manage the planning and progress of the project, ensuring it aligns with goals, schedules, and decision-making. Fluency in Finnish is essential.",
+        "what_we_expect": [
+          "Technical understanding to work smoothly with experts and architects.",
+          "Reliability, professionalism, and teamwork."
+        ],
+        "job_responsibilities": [
+          "Coordinate the progress of the IAM development and implementation project.",
+          "Prepare the project's structure, cooperation, decision-making, and dependency management.",
+          "Work with experts and architects to identify and address technical issues.",
+          "Ensure the project proceeds as planned and is linked to schedules, decision-making, dependencies, procurement, and implementation.",
+          "Act as the technical project manager for the IAM project.",
+          "Manage the planning and progress of the project and ensure progress according to goals, schedule, and decision-making."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "IAM project manager, technical project manager, identity and access management, coordination, technical understanding",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 04:05:03",
+    "jobs": [
+      {
+        "id": "f077ccbd",
+        "job_id": "tech-lead-helsinki-f077ccbd",
+        "processed": true,
+        "title": "Tech Lead",
+        "company": "Saka Finland Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/saka-tech-lead-sdsuu-20720036",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/saka-tech-lead-sdsuu-20720036",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/tech-lead-helsinki-f077ccbd",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-11 04:05:03",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Saka Finland Oy as a Tech Lead in Helsinki. Learn more about the role and apply now.",
+        "description": "We are seeking a Tech Lead to take ownership of Saka's application development and build the team of the future in Helsinki. As a key figure, you will develop new modules and tools for Saka's core system (Odoo ERP), recruit and lead your own team, and act as a support pillar for the team. Your role involves defining technical direction and quality, building a controlled development pipeline, and ensuring secure, tested, and maintainable outputs. You will be responsible for the architectural design of Odoo ERP modules and translating business needs into clear technical tasks. With at least five years of experience in software development and a proven track record in leading teams, you will bring direction and systematically use artificial intelligence to increase team productivity.",
+        "what_we_expect": [
+          "Experience and vision in software development for at least five years.",
+          "Experience in leading a team.",
+          "Desire and fire to act as a leader.",
+          "Ability to justify technical choices in an understandable way for the business."
+        ],
+        "job_responsibilities": [
+          "Take technical direction and quality into own hands.",
+          "Develop new modules and tools for Saka's core system (Odoo ERP).",
+          "Recruit and gather a team around oneself.",
+          "Act as a support pillar and builder of the team.",
+          "Assemble and lead one's own team.",
+          "Clear obstacles in the way of developers."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "tech lead software development team lead ai erp",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 04:05:06",
+    "jobs": [
+      {
+        "id": "f0312ef6",
+        "job_id": "project-manager-for-water-production-2050-project-helsinki-f0312ef6",
+        "processed": true,
+        "title": "Project Manager for Water Production 2050 Project",
+        "company": "Helsingin seudun ympäristöpalvelut HSY",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/helsingin-seudun-ymparistopalvelut-hankepaallikko-vedentuotanto-2050-hankkeeseen-sdsuu-20720079",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/helsingin-seudun-ymparistopalvelut-hankepaallikko-vedentuotanto-2050-hankkeeseen-sdsuu-20720079",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/project-manager-for-water-production-2050-project-helsinki-f0312ef6",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-11 04:05:06",
+        "open_positions": 1,
+        "salary_range": "on käytössämme olevan palkkausjärjestelmän mukaan valittavan henkilön kokemuksesta riippuen 4 228,43–4 479,91 €/kk. Lisäksi on mahdollista saada aikaisemman työkokemuksen perusteella työehtosopimuksen mukainen ammattialalisä 4 % tai 8 %.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next job as a Project Manager for Water Production 2050 Project at Helsingin seudun ympäristöpalvelut HSY. Great opportunity in Helsinki — apply now.",
+        "description": "Project Manager for the Water Production 2050 project at HSY in Helsinki, you will ensure reliable, high-quality, and efficient domestic water production for over a million residents. Working closely with HSY's experts and stakeholders, you will manage the Water Production 2050 project, combining the enhancement of current production capacity with the investigation and implementation of new possibilities. Requirements include a suitable higher education degree, experience in water supply planning and implementation, excellent Finnish and English language skills, and the ability to guide and motivate a multidisciplinary team. Join us to contribute to a significant and long-term project for the future of the capital region.",
+        "what_we_expect": [
+          "A suitable higher education degree.",
+          "Evidence of running water supply planning and implementation projects.",
+          "Excellent oral and written Finnish language skills and good oral and written English skills.",
+          "Excellent cooperation and interaction skills.",
+          "The ability to guide and motivate a group of multidisciplinary experts.",
+          "The readiness to grow with the task as the project progresses."
+        ],
+        "job_responsibilities": [
+          "Take care of the progress of the entire project in accordance with the goals."
+        ],
+        "what_we_offer": [
+          "The opportunity to bring your own contribution to an exceptionally significant and long-term project package for the future of the capital region.",
+          "Support from a wide network of experts.",
+          "Uncomplicated, caring colleagues.",
+          "Investment in orientation.",
+          "Job security.",
+          "Skill development."
+        ],
+        "search_keywords": "project manager water production 2050 sustainability cooperation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 04:05:09",
+    "jobs": [
+      {
+        "id": "cd806644",
+        "job_id": "cnc-lathe-and-machinist-oulu-cd806644",
+        "processed": true,
+        "title": "CNC Lathe and Machinist",
+        "company": "KL Mechanics Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kl-mechanics-cnc-sorvaaja-ja-cnc-koneistaja-sdsuu-20720281",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kl-mechanics-cnc-sorvaaja-ja-cnc-koneistaja-sdsuu-20720281",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-lathe-and-machinist-oulu-cd806644",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-11 04:05:09",
+        "open_positions": 1,
+        "salary_range": "salary and good employment benefits The opportu",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at KL Mechanics Oy as a CNC Lathe and Machinist in Oulu. Learn more about the role and apply now.",
+        "description": "KL Mechanics Oy is seeking experienced CNC turners and CNC machinists for a permanent, full-time position in Oulu. Ideal candidates will have at least 5 years of experience in CNC turning and knowledge of Fanuc programming, along with at least 3 years of experience in CNC machining. Knowledge of material and measuring equipment, as well as programming skills, is required. The company offers a supportive work environment, modern machinery, and opportunities for professional development. Apply now for a chance to join Finland's leading fine mechanics service company.",
+        "what_we_expect": [
+          "Education suitable for the field.",
+          "At least 5 years of experience in CNC turning for a CNC turner.",
+          "At least 3 years of experience in CNC machining for a CNC machinist.",
+          "Knowledge of Fanuc programming.",
+          "Material and measuring equipment knowledge.",
+          "Programming skills."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "A position in a successful and steadily growing company.",
+          "The opportunity to work with modern machinery that has been heavily invested in.",
+          "A supportive work atmosphere.",
+          "Competitive salary and good employment benefits.",
+          "The opportunity to develop as a colleague of top professionals."
+        ],
+        "search_keywords": "CNC lathe CNC machinist manufacturing Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 04:05:33",
+    "jobs": [
+      {
+        "id": "df9bd012",
+        "job_id": "pulp-maker-janakkala-df9bd012",
+        "processed": true,
+        "title": "Pulp Maker",
+        "company": "Valio",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Janakkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/massanvalmistaja-turenki-svsal-20717333",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/massanvalmistaja-turenki-svsal-20717333",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/pulp-maker-janakkala-df9bd012",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-11 04:05:33",
+        "open_positions": 1,
+        "salary_range": "salary to be observed in the position is in acc",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Pulp Maker at Valio in Janakkala. Check the requirements and apply today.",
+        "description": "Valio is seeking a Pulp Maker for its permanent, full-time position at the Turenki factory in Janakkala. This role involves producing product masses, ensuring quality assurance, maintaining cleanliness, and supporting various tasks in the manufacturing area. You will also be responsible for situation reporting, system entries, and ensuring smooth operations while meeting delivery, quality, and safety criteria. Previous experience in the food industry and with forklifts, as well as good cooperation and a positive attitude, are required. The position offers a challenging and interesting task in a supportive environment with comprehensive training and development opportunities. Valio values its employees and provides personnel benefits.",
+        "what_we_expect": [
+          "Ability to make independent decisions and work.",
+          "Training in the food industry suitable for the task.",
+          "Previous experience in the food industry and working with a forklift.",
+          "Good cooperation and interaction skills as well as a positive attitude and desire to work in a team.",
+          "Self-initiative and a responsible approach to work tasks.",
+          "Strong attitude towards work and food safety."
+        ],
+        "job_responsibilities": [
+          "Responsibility for the production of product masses and the use of production and peripheral equipment, as well as the monitoring of operations.",
+          "Quality assurance of pulps and raw materials, surface and circular washing of the manufacturing area, cleanliness monitoring and supporting tasks.",
+          "Situation reporting and system entries for the area of responsibility.",
+          "Reacting and ensuring measures in disturbance/exception situations.",
+          "Ensuring the smoothness of the process while meeting delivery reliability, quality, food and occupational safety criteria.",
+          "Active and close cooperation with stakeholders."
+        ],
+        "what_we_offer": [
+          "In the preparation of a challenging and interesting task.",
+          "Competent and nice colleagues.",
+          "A comprehensive introduction to your role, where you will be supported by your supervisor and colleagues.",
+          "Active support for development, growth and training at work.",
+          "Personnel benefits of a large Finnish food industry company.",
+          "Personnel benefits and remuneration - Valio."
+        ],
+        "search_keywords": "pulp maker food industry production quality assurance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
