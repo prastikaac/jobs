@@ -455032,5 +455032,62 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 23:57:35",
+    "jobs": [
+      {
+        "id": "14584e26",
+        "job_id": "expert-in-standardization-helsinki-14584e26",
+        "processed": true,
+        "title": "Expert in Standardization",
+        "company": "SFS Suomen Standardit ry, SFS Finska Standarder rf",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/sfs-suomen-standardit-asiantuntija-standardointiin-sdsuu-20720127",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/sfs-suomen-standardit-asiantuntija-standardointiin-sdsuu-20720127",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/expert-in-standardization-helsinki-14584e26",
+        "date_posted": "2026-11-11",
+        "date_expires": "2026-12-11",
+        "scraped_at": "2026-11-11 23:57:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "SFS Suomen Standardit ry, SFS Finska Standarder rf is looking for a Expert in Standardization in Helsinki. Don't miss this opportunity — apply today.",
+        "description": "At SFS Suomen Standardit ry, we are seeking a visionary expert in standardization to contribute to the development of common rules that make Finland more competitive, safer, and sustainable. As an expert in this role, you will be responsible for preparing standards in areas such as IT industry and management standards, working closely with experts from various fields to coordinate international standardization projects important to Finns. Your tasks will include coordinating standardization groups and stakeholder cooperation, mapping Finnish perspectives, and supporting participation in international standardization. The position offers a unique opportunity to develop your skills, work in a supportive environment, and enjoy hybrid work in modern central Helsinki offices.",
+        "what_we_expect": [
+          "University degree or work experience suitable for the position.",
+          "Excellent interaction and cooperation skills.",
+          "The ability to quickly absorb new information and apply what has been learned in practice.",
+          "Fluent written and spoken Finnish and English.",
+          "Previous experience in coordinating expert groups or working in networks.",
+          "Understanding of international cooperation and the perspectives of different stakeholders."
+        ],
+        "job_responsibilities": [
+          "You are responsible for the preparation of standards in your assigned area of responsibility, which covers standardization in the IT industry, such as information management, programming languages and software production, as well as management standards, such as project management and innovation management.",
+          "You work closely with experts from different fields, coordinating international standardization projects that are important to Finns.",
+          "Your work includes coordination of standardization groups and stakeholder cooperation, through which you map the views of Finns and support participation in international standardization."
+        ],
+        "what_we_offer": [
+          "The opportunity to develop your own skills and grow in your role.",
+          "Helpful work atmosphere and the solid support of colleagues and your supervisor.",
+          "Hybrid work opportunity and modern workspaces in the center of Helsinki."
+        ],
+        "search_keywords": "standardization IT industry project management innovation management coordination international cooperation Finnish English",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
   }
 ]
