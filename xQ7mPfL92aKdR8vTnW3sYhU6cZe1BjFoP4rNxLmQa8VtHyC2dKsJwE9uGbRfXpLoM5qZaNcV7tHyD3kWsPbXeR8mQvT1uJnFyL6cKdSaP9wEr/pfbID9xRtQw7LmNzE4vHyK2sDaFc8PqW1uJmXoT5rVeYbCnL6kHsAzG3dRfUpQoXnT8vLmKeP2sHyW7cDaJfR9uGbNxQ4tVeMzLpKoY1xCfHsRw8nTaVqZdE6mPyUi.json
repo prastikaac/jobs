@@ -455089,5 +455089,119 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-12 00:03:34",
+    "jobs": [
+      {
+        "id": "1875577c",
+        "job_id": "production-manager-joensuu-1875577c",
+        "processed": true,
+        "title": "Production Manager",
+        "company": "Valio",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-manager-joensuu-1875577c",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-11-12 00:03:34",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, no lat",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Production Manager at Valio. Great opportunity in Joensuu — apply now.",
+        "description": "Valio Oy in Joensuu is seeking a Production Manager to lead the packaging team and enhance operations at our cheese production facility. Reporting to the production manager, you will manage personnel, ensure well-being, develop packaging line operations, and achieve production and financial goals. Ideal candidates will have a bachelor's or university-level degree, experience in the food industry, and strong leadership, organizational, and Lean philosophy application skills. Fluency in Finnish and English is required, along with a proactive and positive attitude. Apply by November 13, 2026, for a permanent, full-time position with comprehensive orientation and career opportunities.",
+        "what_we_expect": [
+          "Coaching leadership.",
+          "Good interaction and organization skills.",
+          "Knowing and applying the Lean philosophy to management.",
+          "Application of quality management and HACCP methods in the production environment.",
+          "Good Finnish and English language skills.",
+          "Active and positive attitude."
+        ],
+        "job_responsibilities": [
+          "Managing and developing the personnel of the packaging team.",
+          "Working well-being.",
+          "Developing the operations of the packaging line.",
+          "Achieving production and financial goals."
+        ],
+        "what_we_offer": [
+          "A comprehensive orientation.",
+          "The support of a growing and developing team.",
+          "Personnel benefits.",
+          "Career opportunities of a large company."
+        ],
+        "search_keywords": "production manager cheese manufacturing Finland Valio Oy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-12 00:03:46",
+    "jobs": [
+      {
+        "id": "a461daec",
+        "job_id": "assistant-store-manager-kajaani-a461daec",
+        "processed": true,
+        "title": "Assistant Store Manager",
+        "company": "Puuilo",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Kajaani"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/apulaismyymalapaallikko-kajaaniin-spsuu-20716994",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/apulaismyymalapaallikko-kajaaniin-spsuu-20716994",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/assistant-store-manager-kajaani-a461daec",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-12 00:03:46",
+        "open_positions": 1,
+        "salary_range": "2 354 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Puuilo is hiring a Assistant Store Manager in Kajaani. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking an Assistant Store Manager to join Puuilo in Kajaani. This role involves managing the store, staff well-being and training, sales, safety, cleanliness, and customer satisfaction. You will ensure the store is up-to-date and achieve the sales budget through effective goods and work management. Coaching and developing team members' skills is a key part of the job. Experience in front-line work or responsible positions in the trade industry is required, along with an understanding of the trade industry's operating environment. As part of a growth company, you will receive a comprehensive orientation, professional coaching, and opportunities for training and career advancement. Opportunities to develop into more demanding tasks are available.",
+        "what_we_expect": [
+          "Experience in front-line work or responsible positions in the trade industry.",
+          "Understands the operating environment of the trade industry.",
+          "Has the ability to successfully guide."
+        ],
+        "job_responsibilities": [
+          "Manages the store, staff well-being and training, sales, safety, cleanliness and customer satisfaction.",
+          "Ensures the up-to-dateness of the store and the achievement of the sales budget with the right and timely goods management, work management and the store's commerciality.",
+          "Coaches and develops the skills of team members."
+        ],
+        "what_we_offer": [
+          "Opportunities offered by the growth company.",
+          "A comprehensive orientation.",
+          "Professional coaching and the opportunity to train.",
+          "The possibility to develop into more demanding tasks."
+        ],
+        "search_keywords": "assistant store manager retail management sales supervision",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
   }
 ]
