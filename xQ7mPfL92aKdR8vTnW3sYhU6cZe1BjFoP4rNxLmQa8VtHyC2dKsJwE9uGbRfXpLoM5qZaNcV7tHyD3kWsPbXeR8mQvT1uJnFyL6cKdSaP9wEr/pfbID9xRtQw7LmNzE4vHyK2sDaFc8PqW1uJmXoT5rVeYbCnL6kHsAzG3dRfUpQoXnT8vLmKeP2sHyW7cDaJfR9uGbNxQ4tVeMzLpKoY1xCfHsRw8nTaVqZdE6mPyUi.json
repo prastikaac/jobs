@@ -454686,5 +454686,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 23:55:25",
+    "jobs": [
+      {
+        "id": "6e00702b",
+        "job_id": "lead-researcher-sustainable-business-kuopio-6e00702b",
+        "processed": true,
+        "title": "Lead Researcher - Sustainable Business",
+        "company": "Savonia-ammattikorkeakoulu oy",
+        "job_category": "research-and-development",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/savonia-ammattikorkeakoulu-savonia-amk-hakee-kolmea-johtavaa-tutkijaa-sdsuu-20723493",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/savonia-ammattikorkeakoulu-savonia-amk-hakee-kolmea-johtavaa-tutkijaa-sdsuu-20723493",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/research-and-development/lead-researcher-sustainable-business-kuopio-6e00702b",
+        "date_posted": "2026-11-11",
+        "date_expires": "2026-12-11",
+        "scraped_at": "2026-11-11 23:55:25",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Lead Researcher - Sustainable Business at Savonia-ammattikorkeakoulu oy in Kuopio.",
+        "description": "Savonia-ammattikorkeakoulu oy is seeking a Lead Researcher in Sustainable Business to drive research and development that supports the sustainable renewal of companies, cities, and regions. This role involves identifying the future needs of companies and society, leading and preparing national and international funding applications, and building research consortia and cooperation networks. You will work closely with companies to understand their business operations, investments, and renewal needs, and leverage research to support their competitiveness and the emergence of new business. Strong experience in RDI activities, particularly with Horizon Europe, Interreg, Business Finland, or the Academy of Finland, is essential.",
+        "what_we_expect": [
+          "Strong experience in RDI activities and applying for competitive research funding.",
+          "Experience in funding from Horizon Europe, Interreg, Business Finland or the Academy of Finland.",
+          "Ability to combine research, business development and social impact.",
+          "Business cooperation and building networks."
+        ],
+        "job_responsibilities": [
+          "Identify the development needs of companies and society and take them forward into research and development entities.",
+          "Lead and prepare national and international funding applications.",
+          "Build research consortia and cooperation networks.",
+          "Understand companies' business operations, investments and renewal needs, and see how research can support companies' renewal, the emergence of new business and know-how and the strengthening of competitiveness."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "researcher sustainable business development funding networks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 23:55:28",
+    "jobs": [
+      {
+        "id": "65828f9a",
+        "job_id": "fire-alarm-installer-trainee-vantaa-ja-5-muuta-65828f9a",
+        "processed": true,
+        "title": "Fire Alarm Installer Trainee",
+        "company": "Caverion Suomi Oy",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Vantaa ja 5 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/caverion-suomi-kouluttaudu-paloilmoitinasentajaksi-sdsuu-20723752",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/caverion-suomi-kouluttaudu-paloilmoitinasentajaksi-sdsuu-20723752",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/fire-alarm-installer-trainee-vantaa-ja-5-muuta-65828f9a",
+        "date_posted": "2026-11-11",
+        "date_expires": "2026-12-11",
+        "scraped_at": "2026-11-11 23:55:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Fire Alarm Installer Trainee at Caverion Suomi Oy. Great opportunity in Vantaa ja 5 muuta — apply now.",
+        "description": "Join Caverion as a fire alarm installer trainee and contribute to safe environments in Vantaa, Lahti, Hämeenlinna, Tampere, Mikkeli, and Rovaniemi. This seven-month training program, starting in February 2027, offers comprehensive on-the-job learning and practical experience under the guidance of experienced professionals. You will work in diverse customer locations, gaining skills in installation, service, maintenance, and repair of fire alarm systems. The training is free, with Caverion covering travel and accommodation costs. With a basic education in electricity or automation and some field experience, you will develop into a fire alarm systems expert, supported by extensive occupational health services and additional benefits. Are you ready to make a difference?",
+        "what_we_expect": [
+          "Basic education in the field of electricity or automation.",
+          "Experience in the field.",
+          "Motivation to learn new things.",
+          "Desire to develop into a professional in fire alarm systems.",
+          "Customer service spirit.",
+          "Cooperation skills."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Paid training program.",
+          "Opportunity to build a career with fire alarm systems.",
+          "Comprehensive training and support from experienced professionals.",
+          "Versatile customer sites and first-class tools.",
+          "Extensive occupational health services.",
+          "Sports, cultural and well-being benefits."
+        ],
+        "search_keywords": "fire alarm installer trainee security safety training program",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
