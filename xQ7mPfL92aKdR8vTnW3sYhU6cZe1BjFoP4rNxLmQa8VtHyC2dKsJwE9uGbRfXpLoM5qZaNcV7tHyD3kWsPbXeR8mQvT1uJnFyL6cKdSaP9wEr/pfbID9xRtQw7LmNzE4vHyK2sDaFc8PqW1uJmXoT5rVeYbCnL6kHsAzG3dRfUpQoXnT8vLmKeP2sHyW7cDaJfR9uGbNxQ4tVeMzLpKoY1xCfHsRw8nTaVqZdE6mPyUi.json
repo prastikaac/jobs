@@ -454634,5 +454634,57 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-11 23:52:33",
+    "jobs": [
+      {
+        "id": "5cbdc361",
+        "job_id": "class-teacher-espoo-5cbdc361",
+        "processed": true,
+        "title": "Class Teacher",
+        "company": "Esbo stad",
+        "job_category": "education",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/ESPOO-03-1429-26/sv_SE",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b9e482a0-0640-4039-acd7-ac219e12e37f/en",
+        "job_employer_email": ".@espoo.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/class-teacher-espoo-5cbdc361",
+        "date_posted": "2026-11-10",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-11 23:52:33",
+        "open_positions": 1,
+        "salary_range": "salary according to the salary point is determi",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "A new job opportunity is available at Esbo stad as a Class Teacher in Espoo. Learn more about the role and apply now.",
+        "description": "Class teacher position at Lagstads skola in Espoo, offering opportunities to combine work and private life flexibly and support for skills development. Requirements include a class teacher's degree, excellent language skills, criminal record clearance, reliability, professionalism, teamwork, and a willingness to learn. The employment relationship begins on January 7, 2027, and the salary is determined based on the person's education and the degree of difficulty of the work. Espoo values innovation and development, providing a supportive environment for personal and professional growth.",
+        "what_we_expect": [
+          "Excellent ability to use the school's language of instruction in speech and writing.",
+          "Criminal record clearance.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunities to flexibly combine work and private life.",
+          "Support for skills development."
+        ],
+        "search_keywords": "classroom teacher education Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
   }
 ]
