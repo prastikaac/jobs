@@ -483020,5 +483020,50 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-12 19:50:25",
+    "jobs": [
+      {
+        "id": "d1cbeb34",
+        "job_id": "early-childhood-nanny-loppi-d1cbeb34",
+        "processed": true,
+        "title": "Early Childhood Nanny",
+        "company": "Lopen kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Loppi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/750554/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/922a27ea-a150-4386-b183-8ab2b089d597/en",
+        "job_employer_email": "maija.maenpaa@loppi.fi",
+        "job_employer_name": "Maija Mäenpää",
+        "job_employer_phone_no": "0403306083",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nanny-loppi-d1cbeb34",
+        "date_posted": "2026-11-11",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-12 19:50:25",
+        "open_positions": 1,
+        "salary_range": "2556,64 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Early Childhood Nanny at Lopen kunta in Loppi. Check the requirements and apply today.",
+        "description": "We are seeking an early childhood nanny to join our team in Loppi, Finland, from January 7 to May 21, 2027. This role involves implementing and developing high-quality pedagogy in cooperation with other early childhood education personnel, focusing on attendance pedagogy and community spirit. You should have a flexible and positive attitude, as well as skills related to teamwork. The position requires good Finnish language skills and a valid medical license is advantageous. The standard salary is €2,556.64 per month, and the probationary period is two months. Applications should be submitted electronically by November 26, 2026, and interviews will be held on November 30, 2026.",
+        "what_we_expect": [
+          "A flexible and positive attitude to work.",
+          "Vision and skills related to teamwork."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "early childhood nanny municipality Lope pedagogy teamwork",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
   }
 ]
