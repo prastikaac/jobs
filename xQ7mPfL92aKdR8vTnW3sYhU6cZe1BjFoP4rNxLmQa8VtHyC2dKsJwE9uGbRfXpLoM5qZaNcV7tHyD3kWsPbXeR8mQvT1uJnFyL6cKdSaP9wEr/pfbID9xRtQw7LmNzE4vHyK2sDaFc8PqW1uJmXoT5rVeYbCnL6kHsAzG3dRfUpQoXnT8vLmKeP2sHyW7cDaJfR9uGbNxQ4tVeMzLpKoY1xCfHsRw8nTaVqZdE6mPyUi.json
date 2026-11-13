@@ -497747,5 +497747,1281 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:12",
+    "jobs": [
+      {
+        "id": "1e796a1a",
+        "job_id": "aluminum-welder-masku-1e796a1a",
+        "processed": true,
+        "title": "Aluminum Welder",
+        "company": "Hyra Works Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Masku",
+          "Mynämäki",
+          "Naantali",
+          "Raisio",
+          "Rusko",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://hyraworks.likeit.fi/apply/2459099",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/154e3f2a-4c34-40e6-9fb9-3a38154ff27c/en",
+        "job_employer_email": "jussi.lammi@hyraworks.fi",
+        "job_employer_name": "Jussi Lammi",
+        "job_employer_phone_no": "+358452063474",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/aluminum-welder-masku-1e796a1a",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:40:12",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Aluminum Welder at Hyra Works Oy in Masku. Check the requirements and apply today.",
+        "description": "Hyra Works Oy is seeking a skilled Aluminum Welder for a permanent, full-time position in the Raisio area. This role involves welding aluminum and black iron as part of a professional team, requiring experience with MIG welding and a valid occupational safety card. We value a self-motivated approach, the ability to work independently and collaboratively, and a commitment to producing high-quality work. Versatile tasks and the potential to become a permanent employee after six months make this an exciting opportunity. Good tools and working conditions, a professional and relaxed work environment, and a competitive salary based on your experience and skills are offered. If you are a professional welder or expert in the metal industry, please apply or contact Noora at 0503261985.",
+        "what_we_expect": [
+          "Experience with MIG welding.",
+          "Experience in aluminum and black iron welding.",
+          "A brisk and self-initiated approach to work.",
+          "Ability to work independently and as part of a team.",
+          "A valid occupational safety card.",
+          "Willingness to produce high-quality work."
+        ],
+        "job_responsibilities": [
+          "Weld aluminum and black iron as part of a professional work team."
+        ],
+        "what_we_offer": [
+          "Versatile tasks in the metal industry depending on your skills.",
+          "The possibility to become the customer's own permanent employee after six months.",
+          "Good tools and working conditions.",
+          "Professional and relaxed work team.",
+          "Salary according to TES or better, depending on your experience and skills.",
+          "The opportunity to build a long-term career at our client's service."
+        ],
+        "search_keywords": "aluminum welder mig welding metal industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "e05e9e4d",
+        "job_id": "construction-worker-turku-e05e9e4d",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Hyra Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://hyraworks.likeit.fi/apply/2459077",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3262423b-ae92-44c8-aded-d47613120d68/en",
+        "job_employer_email": "jussi.lammi@hyraworks.fi",
+        "job_employer_name": "Jussi Lammi",
+        "job_employer_phone_no": "+358452063474",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-turku-e05e9e4d",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:40:12",
+        "open_positions": 1,
+        "salary_range": "Palkkaus: 13-16€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Construction Worker at Hyra Works Oy. Great opportunity in Turku — apply now.",
+        "description": "We are seeking energetic construction workers for Hyra Works Oy in Turku. Responsibilities include moving and loading goods, security work, assisting professionals, and maintaining the cleanliness of the construction site. Previous experience is not required, but a valid occupational safety card, enthusiasm for the construction industry, a careful and responsible approach to work, the ability to work both independently and in a team, and good physical condition are essential. We offer a good work atmosphere, support from a competent team, and a competitive salary of €13-16/h. Send your application with salary expectations via the attached link.",
+        "what_we_expect": [
+          "A valid occupational safety card.",
+          "Enthusiasm for the construction industry.",
+          "Careful and responsible approach to work.",
+          "Ability to work in a team and independently.",
+          "A lively attitude.",
+          "Good physical condition."
+        ],
+        "job_responsibilities": [
+          "Moving and loading of goods.",
+          "Security work.",
+          "Assisting professionals.",
+          "Taking care of the cleanliness of the construction site."
+        ],
+        "what_we_offer": [
+          "A good work atmosphere.",
+          "The support of a competent team.",
+          "Versatile and varied items."
+        ],
+        "search_keywords": "construction worker Turku region moving loading security work cleanliness",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "46e34a54",
+        "job_id": "electrician-turku-46e34a54",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Hyra Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://hyraworks.likeit.fi/apply/2459086",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f9437361-ff99-49bd-99df-c773403b82c5/en",
+        "job_employer_email": "joni.rautajoki@hyraworks.fi",
+        "job_employer_name": "Joni Rautajoki",
+        "job_employer_phone_no": "044 997 7152",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-turku-46e34a54",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:40:12",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with professional skills -",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Electrician at Hyra Works Oy. Great opportunity in Turku — apply now.",
+        "description": "We are seeking competent electricians for ongoing and new projects in Turku and nearby municipalities at Hyra Works Oy. Responsibilities include electrical installations for both public and private clients. A degree in electrical and automation fitting, previous experience, and a valid work and electrical safety card are advantageous. Own car is not necessary but desirable. We offer a competitive hourly wage, appropriate work equipment, support from a competent team, and a positive employer environment. Apply by sending your CV and contact Joni Rautajoki at 044 9977 152 or joni.rautajoki@hyraworks.fi for more information. Immediate positions available for the right candidates.",
+        "what_we_expect": [
+          "Electrical and automation fitter degree.",
+          "Previous experience with electrical installations.",
+          "A valid work and electrical work safety card.",
+          "Genuine will and attitude towards work and self-development."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "The possibility to get a job in your own field.",
+          "Competitive salary commensurate with professional skills.",
+          "Appropriate work equipment.",
+          "The support of a competent team for your work.",
+          "A humane employer experience."
+        ],
+        "search_keywords": "electrician installation maintenance Turku",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "b35c0eb9",
+        "job_id": "asbestos-remover-turku-b35c0eb9",
+        "processed": true,
+        "title": "Asbestos Remover",
+        "company": "Hyra Works Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://hyraworks.likeit.fi/apply/2459027",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9d1eec91-9379-4510-aede-1d01be86b6f7/en",
+        "job_employer_email": "jussi.lammi@hyraworks.fi",
+        "job_employer_name": "Jussi Lammi",
+        "job_employer_phone_no": "+358452063474",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/asbestos-remover-turku-b35c0eb9",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:40:12",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyisen palkkauksen osaamistaidon mukaan (16-20€/h)",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Hyra Works Oy as a Asbestos Remover in Turku. Learn more about the role and apply now.",
+        "description": "Hyra Works Oy is seeking a skilled Asbestos Remover for full-time, permanent positions in Turku. Responsibilities include protections, making barriers, grinding, and demolition work. Applicants must hold a valid asbestos removal permit, an occupational safety card, and a valid medical certificate. Previous experience in demolition work and a careful, responsible approach to tasks are required, along with the ability to work both in a team and independently. Competitive hourly rates of €16-20 are offered based on skills, and a good work atmosphere with support from a competent team is provided. Versatile and varied tasks are available. Apply via the application form or call 045 206 3474. More information is available at Jussi Lammi, 045 206 3474, jussi.lammi@hyraworks.fi, or www.hyraworks.",
+        "what_we_expect": [
+          "Valid asbestos removal permit.",
+          "Occupational safety card.",
+          "Valid medical certificate.",
+          "Previous experience in demolition work.",
+          "Careful and responsible approach to work.",
+          "Ability to work in a team and independently."
+        ],
+        "job_responsibilities": [
+          "Protections, making barriers, grinding and demolition work."
+        ],
+        "what_we_offer": [
+          "Competitive salary depending on skills (€16-20/h).",
+          "A good work atmosphere.",
+          "The support of a competent team.",
+          "Versatile and varied items."
+        ],
+        "search_keywords": "asbestos removal demolition work safety certificate experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:13",
+    "jobs": [
+      {
+        "id": "3383fb78",
+        "job_id": "construction-site-logistics-assistant-espoo-3383fb78",
+        "processed": true,
+        "title": "Construction Site Logistics Assistant",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/1O-AIpGK2o9yAzqBr0EsVA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/24939e74-f9b2-4f2a-a664-ba2456602709/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-site-logistics-assistant-espoo-3383fb78",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:13",
+        "open_positions": 1,
+        "salary_range": "salary - Long-term job opportunities - A compre",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Eezy Henkilöstöpalvelut Oy as a Construction Site Logistics Assistant in Espoo. Learn more about the role and apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking motivated employees for full-time, permanent positions at data center sites in Espoo as Construction Site Logistics Assistants. Responsibilities include site cleaning, waste management, material distribution, warehouse maintenance, traffic control, and various site support tasks. Applicants should have a proactive approach, good physical condition, the ability to work in a team, a work safety card (or willingness to obtain one), and proficiency in Finnish or English. Previous construction site experience is advantageous but not required. Offered are opportunities to work at large data centers, a competitive hourly wage, long-term job prospects, comprehensive training, and ongoing support.",
+        "what_we_expect": [
+          "A brisk and self-initiated approach to work.",
+          "Good physical condition.",
+          "Ability to work as part of a work community.",
+          "Work safety card (or willingness to complete it).",
+          "Finnish or English language skills.",
+          "Previous experience on construction sites is considered an advantage, but is not necessary."
+        ],
+        "job_responsibilities": [
+          "Site cleaning and general maintenance of order.",
+          "Construction waste sorting and waste management.",
+          "Receiving goods and distributing materials at the site.",
+          "Site warehouse maintenance.",
+          "Traffic control and spotter tasks.",
+          "Assisting tasks related to site maintenance."
+        ],
+        "what_we_offer": [
+          "The possibility to work at large data center sites.",
+          "Long-term job opportunities.",
+          "A comprehensive introduction to work tasks.",
+          "Eezy's support throughout the employment relationship."
+        ],
+        "search_keywords": "construction logistics assistant data center site maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:14",
+    "jobs": [
+      {
+        "id": "d2e5608b",
+        "job_id": "hvac-project-manager-helsinki-d2e5608b",
+        "processed": true,
+        "title": "HVAC Project Manager",
+        "company": "Mestarit Henkilöstöpalvelut Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://mestarit.likeit.fi/apply/23172244",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dca43f27-affd-44d6-b7cf-2efcd04bdb4e/en",
+        "job_employer_email": "prorekrytointi@henkilostomestarit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/hvac-project-manager-helsinki-d2e5608b",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:14",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits * Continuous",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Mestarit Henkilöstöpalvelut Oy as a HVAC Project Manager and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "Mestarit Henkilöstöpalvelut Oy is seeking a dedicated HVAC Project Manager to join their professional team in Helsinki. This full-time, permanent position offers a competitive hourly wage based on Finnish collective agreements and the opportunity to work on new construction and renovation projects. As an HVAC project manager, you will be responsible for scheduling, quality control, and budget management of your projects, with the potential to act as an HVAC designer when needed. You should have a suitable educational background in HVAC or building technology engineering, previous experience in HVAC design tasks, and a proven track record in project management. Excellent project management and interaction skills, as well as proficiency in AutoCAD, MagiCAD, and Revit, are essential.",
+        "what_we_expect": [
+          "Suitable educational background (HVAC or building technology engineer AMK / DI).",
+          "Previous experience in HVAC design tasks.",
+          "Previous experience in managing projects.",
+          "Excellent project management and interaction skills.",
+          "Good IT skills (AutoCAD, MagiCAD, Revit).",
+          "A good attitude."
+        ],
+        "job_responsibilities": [
+          "You are responsible for the scheduling, quality control and budgets of your own projects."
+        ],
+        "what_we_offer": [
+          "The opportunity to work as part of an inspiring and professional team.",
+          "Competitive salary and good employee benefits.",
+          "Continuous training and development opportunities.",
+          "The opportunity to influence and develop the entire industry."
+        ],
+        "search_keywords": "HVAC project manager engineering design Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "76b6cabd",
+        "job_id": "electricians-for-trolley-project-vantaa-76b6cabd",
+        "processed": true,
+        "title": "Electricians for Trolley Project",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/mI9UwkHolX-6PLM5UzmALA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/92862fed-a583-4f65-a702-c28333e4734d/en",
+        "job_employer_email": "olivia.simula@eezy.fi",
+        "job_employer_name": "Olivia Simula",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electricians-for-trolley-project-vantaa-76b6cabd",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:14",
+        "open_positions": 1,
+        "salary_range": "TES",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Electricians for Trolley Project at Eezy Henkilöstöpalvelut Oy. Great opportunity in Vantaa — apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking experienced electricians for a permanent, full-time position at the Vantaa trolley depot, working on electrical works and infrastructure construction in a rail traffic environment. Ideal candidates will have electrical training, a valid Electrical Safety card, and experience in electrical installation. A B driver's license, good cooperation skills, and a self-initiated approach are required. Previous experience in rail transport maintenance and safety equipment qualifications are advantageous. The role involves working weekdays from 7:00 a.m. to 3:00 p.m., with the possibility of using your own car and bringing your own tools. Applications are encouraged as positions are filled based on suitability.",
+        "what_we_expect": [
+          "Electrical training and a valid Electrical Safety card.",
+          "Experience in the duties of an electrician.",
+          "A valid B driver's license.",
+          "Good cooperation skills and a self-initiated approach to work."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Previous experience in rail transport maintenance and installation work.",
+          "Safety equipment qualifications.",
+          "The possibility of using your own car.",
+          "Own hand tools."
+        ],
+        "search_keywords": "electrician installation rail transport Vantaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "d82773aa",
+        "job_id": "earth-builder-vantaa-d82773aa",
+        "processed": true,
+        "title": "Earth Builder",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/bwp2PQMrAG7x9nRjNlooYw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c92d4e0b-9ed6-4cac-a346-4acd1da60245/en",
+        "job_employer_email": "olivia.simula@eezy.fi",
+        "job_employer_name": "Olivia Simula",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-builder-vantaa-d82773aa",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:14",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Earth Builder at Eezy Henkilöstöpalvelut Oy in Vantaa. Check the requirements and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking experienced earth builders for a full-time, permanent position at the Vantaa truck depot site. Responsibilities include cutting land, making trenches, installing pipelines and cable routes, building drainage ditches, and measuring slopes. The ideal candidate will have experience in the construction industry, a valid Occupational Safety Card, and the ability to work independently and safely. Good work attitude and cooperation skills are essential. The project, starting in January, is long-term with potential continuation until summer 2028, and applications are encouraged. Eezy Henkilöstöpalvelut Oy values diversity and equal opportunities.",
+        "what_we_expect": [
+          "Experience in work in the construction industry.",
+          "Ability to work independently and safely at the site.",
+          "A valid Occupational Safety Card.",
+          "Good work attitude and cooperation skills."
+        ],
+        "job_responsibilities": [
+          "Cutting land and making trenches.",
+          "Installing pipelines and cable routes.",
+          "Building drainage ditches.",
+          "Building and sealing load-bearing structural layers.",
+          "Measuring slopes and installing wells."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "earth builder construction infrastructure trenches",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "0d32e7ff",
+        "job_id": "vehicle-fitter-helsinki-0d32e7ff",
+        "processed": true,
+        "title": "Vehicle Fitter",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "technical-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/UxRd-iNw5CMOzSujAbvehQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bdebf490-18b3-4ece-95c3-931869575927/en",
+        "job_employer_email": "milla.suhonen@eezy.fi",
+        "job_employer_name": "Milla Suhonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/vehicle-fitter-helsinki-0d32e7ff",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:14",
+        "open_positions": 1,
+        "salary_range": "salary according to your skills The employment",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Eezy Henkilöstöpalvelut Oy as a Vehicle Fitter and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking two professional vehicle fitters to join our team at the Roihupello and Suutarila locations in Helsinki. As a vehicle fitter, you will be responsible for periodic maintenance of passenger cars, fault diagnosis, repair and maintenance work, and other versatile workshop tasks. We value candidates with previous experience as a car mechanic or vehicle mechanic, the ability to work independently, a responsible approach to work, a customer service spirit, and good cooperation skills. A B driver's license is required. Experience in maintenance and repair of electric cars is advantageous but not necessary. You will have the opportunity to work with various vehicles and develop your skills, including those related to electric and hybrid vehicles.",
+        "what_we_expect": [
+          "Previous experience as a car mechanic or vehicle mechanic.",
+          "Ability to work independently.",
+          "Responsible approach to work.",
+          "Customer service spirit.",
+          "Good cooperation skills.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [
+          "Periodic maintenance of passenger cars.",
+          "Fault diagnosis.",
+          "Repair and maintenance work.",
+          "Other versatile workshop tasks."
+        ],
+        "what_we_offer": [
+          "A stable job in a professional work community.",
+          "Various and varied tasks.",
+          "Modern tools and good working conditions.",
+          "The opportunity to train and develop your skills also with electric and hybrid vehicles."
+        ],
+        "search_keywords": "vehicle fitter car mechanic maintenance repair",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:15",
+    "jobs": [
+      {
+        "id": "8e69f17b",
+        "job_id": "infrastructure-foreman-espoo-8e69f17b",
+        "processed": true,
+        "title": "Infrastructure Foreman",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/sp5MFIjHGoTnN2NDB61drw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/36924e7e-bdec-44da-8c31-51947e64e343/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/infrastructure-foreman-espoo-8e69f17b",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:15",
+        "open_positions": 1,
+        "salary_range": "salary according to your skills and experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Infrastructure Foreman at Eezy Henkilöstöpalvelut Oy. Great opportunity in Espoo — apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a practical and strong Infrastructure Foreman for versatile infrastructure construction sites in the Uusimaa area. The role involves managing daily operations of infrastructure sites safely, efficiently, and with high quality, overseeing personnel, subcontractors, and equipment, and ensuring work safety, quality, costs, and schedule adherence. You will lead a team, solve everyday situations, and collaborate with stakeholders. Suitable candidates will have a master builder or civil engineer education, experience in earthworks, municipal engineering, road construction, cabling, or pipeline sites, and strong organizational, problem-solving, and communication skills. Fluency in Finnish or English and a B driver's license are required.",
+        "what_we_expect": [
+          "Suitable education, e.g. Master builder or civil engineer (AMK).",
+          "Experience in earthworks, municipal engineering, road construction, cabling or pipeline sites or other infrastructure sites.",
+          "Ability to lead people clearly, fairly and effectively.",
+          "Good organizational, problem solving and communication skills.",
+          "Understanding of construction site safety, quality assurance and cost monitoring.",
+          "Fluent Finnish or English language skills and B driver's license."
+        ],
+        "job_responsibilities": [
+          "You manage the daily operations of infrastructure sites safely, efficiently and with high quality.",
+          "You manage your own personnel, subcontractors and the use of equipment in accordance with the goals of the site.",
+          "You supervise the quality of work, work safety, costs and staying on schedule.",
+          "You proactively solve everyday situations and take projects to the finish line together with the team."
+        ],
+        "what_we_offer": [
+          "Permanent employment.",
+          "Modern tools, clear operating models and a working culture that emphasizes safety."
+        ],
+        "search_keywords": "infrastructure foreman construction management safety quality assurance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:16",
+    "jobs": [
+      {
+        "id": "3b4fb680",
+        "job_id": "mold-carpenter-espoo-3b4fb680",
+        "processed": true,
+        "title": "Mold Carpenter",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/NcfNb6aLvQMRFx3bU-LrbQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fe8e84ca-4b35-45c9-b6c6-1e00f0898c67/en",
+        "job_employer_email": "olivia.simula@eezy.fi",
+        "job_employer_name": "Olivia Simula",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/mold-carpenter-espoo-3b4fb680",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:16",
+        "open_positions": 1,
+        "salary_range": "Salary in accordance with the collective agreem",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Mold Carpenter at Eezy Henkilöstöpalvelut Oy in Espoo. Check the requirements and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking skilled Mold Carpenters for various projects in the capital region, including short gigs and long-term assignments. Responsibilities include building and dismantling molds, preparing concrete castings, and working according to drawings, all while adhering to workplace safety instructions. Candidates should have previous experience as a mold carpenter, the ability to read construction drawings, and a valid occupational safety card. Fluency in Finnish is required. Competitive hourly wages based on Finnish collective agreements are offered. Previous reinforcement know-how and the ability to use your own car are considered advantages.",
+        "what_we_expect": [
+          "Previous experience as a mold carpenter.",
+          "Ability to read construction drawings.",
+          "Independent and responsible approach to work.",
+          "A valid occupational safety card.",
+          "Fluent Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Building and dismantling molds.",
+          "Preparation of concrete castings.",
+          "Mold work for on-site casting and element objects.",
+          "Working according to the drawings.",
+          "Complying with workplace safety instructions."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "mold carpenter construction carpentry infrastructure",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "da5e2586",
+        "job_id": "classroom-teacher-turku-da5e2586",
+        "processed": true,
+        "title": "Classroom Teacher",
+        "company": "Turun kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/TKU00-40-1589-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/181c04ba-9d12-4f40-a269-adca72502b7e/en",
+        "job_employer_email": "anna.uotinen@edu.turku.fi",
+        "job_employer_name": "Tiina Paappa",
+        "job_employer_phone_no": "0404827240",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/classroom-teacher-turku-da5e2586",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:16",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Turun kaupunki as a Classroom Teacher in Turku. Learn more about the role and apply now.",
+        "description": "We are seeking a classroom teacher for Wäinö Aaltonen school in Turku, focusing on the 1st-2nd grades of basic education. The position is temporary until June 5, 2027, and involves working closely with a team that teaches English through the CLIL method. Located on the island of Hirvensalo, the school has a strong tradition in skill and art subjects and is just 5 km from the city center. Eligibility is based on the decree on educational staff eligibility requirements (986/1998), and the role requires meeting students as individuals, considering their linguistic background, and having good cooperation and interaction skills. The school offers careful orientation, collegial support, and training opportunities, as well as a business travel card and Tyky wristband for city services.",
+        "what_we_expect": [
+          "You meet pupils/students as individuals and want to guide and support the growth of the child/youth.",
+          "You are linguistically aware and consider the students' linguistic background in teaching.",
+          "You have good cooperation and interaction skills.",
+          "You are an active and development-oriented team worker."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Careful orientation and collegial support.",
+          "Versatile training opportunities.",
+          "For cheaper bus journeys with Föl's business travel card.",
+          "Tyky wristband for the city's sports and cultural services."
+        ],
+        "search_keywords": "classroom teacher education primary grades 1-2 Wäinö Aaltonen school Turku Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "499d5bb3",
+        "job_id": "green-builders-espoo-499d5bb3",
+        "processed": true,
+        "title": "Green Builders",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/XgHEsTo7CYAirUkur8Egng",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c32dd806-f69d-490a-9199-84fa303a084e/en",
+        "job_employer_email": "olivia.simula@eezy.fi",
+        "job_employer_name": "Olivia Simula",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/green-builders-espoo-499d5bb3",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:16",
+        "open_positions": 1,
+        "salary_range": "Salary according to the contract",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Green Builders role at Eezy Henkilöstöpalvelut Oy. Join the team and build your career in Espoo.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking green builders for the spring 2027 season in Espoo, Helsinki, and Vantaa. Responsibilities include green and stone work, construction and maintenance of yards and park areas, installation of playground equipment, and various earthworks assistance tasks. Previous experience in green construction and fluency in Finnish are required, along with good physical condition; a valid work safety card is a plus. Versatile work in interesting positions, good work tools, decent work clothes, and a positive work community are offered. Salary is competitive and based on Finnish collective agreements. Apply through this announcement to join our recruitment process.",
+        "what_we_expect": [
+          "Previous experience in green construction.",
+          "Fluency in Finnish.",
+          "Good physical condition.",
+          "Valid work safety card (not mandatory)."
+        ],
+        "job_responsibilities": [
+          "Assist in green and stone work.",
+          "Construct and maintain yards and park areas.",
+          "Install playground equipment.",
+          "Perform various earthworks assistance tasks."
+        ],
+        "what_we_offer": [
+          "Versatile work in interesting positions.",
+          "Good work tools.",
+          "Decent work clothes.",
+          "Positive and encouraging work community support."
+        ],
+        "search_keywords": "green construction builder maintenance earthworks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "d5a4b0f6",
+        "job_id": "class-teacher-mathematics-turku-d5a4b0f6",
+        "processed": true,
+        "title": "Class Teacher, Mathematics",
+        "company": "Turun kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/TKU00-40-1592-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/29170398-93a2-45d4-aef7-efdb139d9285/en",
+        "job_employer_email": "etunimi.sukunimi@edu.turku.fi",
+        "job_employer_name": "Pekka Frantsi",
+        "job_employer_phone_no": "0405745631",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/class-teacher-mathematics-turku-d5a4b0f6",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:16",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Turun kaupunki as a Class Teacher, Mathematics in Turku. Learn more about the role and apply now.",
+        "description": "We are seeking a class teacher for mathematics subjects at Turku Vocational Institute, starting on 1 January 2027 or as agreed. The role involves teaching common mathematical subjects in vocational basic degrees and requires good IT skills. Versatile teaching and guidance methods are essential, with vocational training experience being advantageous. Eligibility is determined by the decree on educational staff eligibility requirements (986/1998), and the probationary period will be observed. The position is full-time and permanent, with a salary determined according to section C of OVTES. Tasks are varied, offering the opportunity to influence your work, and the environment is multicultural and open, valuing diversity.",
+        "what_we_expect": [
+          "A genuine desire to interact with students in secondary vocational education.",
+          "Interaction, guidance and teamwork skills.",
+          "A desire to develop and develop.",
+          "Language skills (Finnish, English, Swedish)."
+        ],
+        "job_responsibilities": [
+          "Teaching the mathematical subjects of the common parts of the degree included in vocational basic degrees."
+        ],
+        "what_we_offer": [
+          "Relevant in work training and teaching tasks.",
+          "Stability and certainty.",
+          "Versatile tasks and the opportunity to influence your own work.",
+          "A multicultural and open work community where diversity is valued.",
+          "Strong support and networks.",
+          "A pioneer with working life – involved in projects and development projects."
+        ],
+        "search_keywords": "class teacher mathematics education turku vocational institute",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:22",
+    "jobs": [
+      {
+        "id": "fc24dc1c",
+        "job_id": "childminder-in-early-childhood-education-helsinki-fc24dc1c",
+        "processed": true,
+        "title": "Childminder in Early Childhood Education",
+        "company": "Helsingfors stad",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-04-234-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a82ef1b8-cddc-4811-890f-e995007ba676/en",
+        "job_employer_email": "",
+        "job_employer_name": "Mirjaleena Enkenberg-Kuisma",
+        "job_employer_phone_no": "0931040914",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/childminder-in-early-childhood-education-helsinki-fc24dc1c",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:22",
+        "open_positions": 1,
+        "salary_range": "2645,56 euro/mån",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Get started in a new job as a Childminder in Early Childhood Education at Helsingfors stad in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking a dedicated childminder in early childhood education to join our team at the Fredriksberg daycare center in Vallgård, Helsinki. This full-time, permanent position offers a salary of 2645.56 euros per month and requires proficiency in Swedish. Ideal candidates will possess a positive attitude, reliability, professionalism, and a willingness to learn. As part of a multi-professional work community, you will contribute to the care, education, and teaching of children based on their age and developmental stage. You will receive the Epassi Flex benefit worth up to €550 and a premium of €2000 for newly hired regular childminders. A bachelor's degree in educational activities and supervision, social and health care, or a related field is required.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Epassi Flex benefit worth up to €550.",
+          "Premium of €2000 for newly hired regular childminders in early childhood education."
+        ],
+        "search_keywords": "childminder early childhood education nanny daycare center Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "fe39b062",
+        "job_id": "early-childhood-education-social-worker-vantaa-fe39b062",
+        "processed": true,
+        "title": "Early Childhood Education Social Worker",
+        "company": "Vantaan kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://vantaa.rekrytointi.com/paikat/index.php?o=A_A&jid=18779&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9d6ea0e4-397a-403d-9619-b659d12574d5/en",
+        "job_employer_email": "virve.huusko@vantaa.fi",
+        "job_employer_name": "Virve Huusko",
+        "job_employer_phone_no": "040-5097976",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-social-worker-vantaa-fe39b062",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:22",
+        "open_positions": 1,
+        "salary_range": "Salary: 3113-3218 eur/month",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Vantaan kaupunki as a Early Childhood Education Social Worker and grow your career in Vantaa. Check the job details and apply now.",
+        "description": "Join the Puutarhatie daycare center in Vantaa as an Early Childhood Education Social Worker. This permanent, part-time position at the newly operational Puutarhatie kindergarten, located in the green area of Koivuhaa, invites you to contribute to the development of a safe and pedagogical early childhood education culture. As part of the ProVaka operating model, you will support children's social skills and work closely with a team of educators to foster a sense of community. With 8 groups of children and a focus on nature education, this role requires a professional approach, strong interaction skills, and the ability to evaluate and develop your own work. Fluency in Finnish is essential.",
+        "what_we_expect": [
+          "Professional approach to work and the desire to develop and commit to building a new operating culture and sense of community.",
+          "Ability to be responsible for the group's well-being and the ability to participate in the planning, evaluation and development of pedagogical activities together with other team personnel.",
+          "Good interaction and cooperation skills.",
+          "Ability to work in strong and sensitive interaction with children, groups of children and families.",
+          "Ability to evaluate and develop your own work.",
+          "Understanding of multi-professionalism, diversity and multiculturalism."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "We offer you.",
+          "Versatile personnel benefits at your disposal, such as exercise, wellness and culture benefits, lunch benefits and commuting benefits."
+        ],
+        "search_keywords": "early childhood education social worker daycare center Vantaa Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "b5408771",
+        "job_id": "two-part-time-home-nurses-pietarsaari-b5408771",
+        "processed": true,
+        "title": "Two Part-Time Home Nurses",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Pietarsaari"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-11-272-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9035f90e-a398-47b2-b4e6-ba1195ae168e/en",
+        "job_employer_email": "etunimi.sukunimi@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/two-part-time-home-nurses-pietarsaari-b5408771",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:22",
+        "open_positions": 1,
+        "salary_range": "osa-aikapalkka 80 %, 2204€ (kokoaikapalkka 100 %, 2755€)",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Two Part-Time Home Nurses at Pohjanmaan hyvinvointialue in Pietarsaari. Apply now and take the next step in your career.",
+        "description": "Pohjanmaan hyvinvointialue seeks two part-time (80%) home nurses for Treklöver's housing service unit in Pietarsaari, Ostrobothnia welfare area. The role involves providing short-term care and round-the-clock housing for Swedish-speaking minors with developmental disabilities. Ideal candidates will have a genuine interest in child care, the ability to make independent decisions, and the capacity to work both independently and in a group. Strong Swedish language skills are required, and nursing qualifications or equivalent are necessary, with registration in the relevant professional registers. The position offers professional development opportunities and a positive work environment. For more information, contact service manager Camilla Hatt or Heidi Sjöberg at the provided email.",
+        "what_we_expect": [
+          "Genuine interest in children and their care.",
+          "Ability to make your own decisions.",
+          "Work both independently and in a group.",
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "nurse home care swedish speaking minors developmental disabilities",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "9ef0378c",
+        "job_id": "cnc-machinist-sastamala-9ef0378c",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Sastamala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8707852-cnc-koneistaja-mazakille/applications/new?promotion=2294175-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/322128c1-0fe4-48c5-89eb-cbde52f97157/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-sastamala-9ef0378c",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-17",
+        "scraped_at": "2026-11-13 15:40:22",
+        "open_positions": 1,
+        "salary_range": "salary according to your skills and experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a CNC Machinist at Worknow Oy in Sastamala. Check the requirements and apply today.",
+        "description": "Worknow Oy is seeking a CNC machinist for a permanent, full-time position at Mazak in Sastamala. Responsibilities include versatile CNC machining work with a range of machines such as lathes, milling machines, machining centers, and carousel machines, utilizing Mazak control systems. Ideal candidates will have previous experience in CNC machining and programming, the ability to read technical drawings, and a strong, responsible work ethic. A desire to learn and develop skills, as well as readiness for three-shift work, are also required. Offered is permanent employment in a well-known industrial company, versatile machining environments, modern machinery, and the opportunity to develop professionally. The position provides support and orientation from a competent work community.",
+        "what_we_expect": [
+          "Previous experience with CNC machining and programming skills.",
+          "Ability to read technical drawings.",
+          "Accurate and responsible approach to work.",
+          "Desire to learn new things and develop your own skills.",
+          "Readiness for three-shift work."
+        ],
+        "job_responsibilities": [
+          "Versatile CNC machining work."
+        ],
+        "what_we_offer": [
+          "Permanent and full-time employment in a well-known industrial company.",
+          "Versatile machining environments and modern machinery.",
+          "The opportunity to develop as a professional in demanding machining work.",
+          "The support and orientation of a competent work community."
+        ],
+        "search_keywords": "CNC machining programming technical drawings machining environments",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "d22aa923",
+        "job_id": "family-caregiver-pietarsaari-d22aa923",
+        "processed": true,
+        "title": "Family Caregiver",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Pietarsaari"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-11-274-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9f677337-20d2-4f26-9461-34ff9fdfb261/en",
+        "job_employer_email": "etunimi.sukunimi@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-caregiver-pietarsaari-d22aa923",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:22",
+        "open_positions": 1,
+        "salary_range": "osa-aikapalkka 80 %, 2268 € (kokoaikapalkka 100 %, 2835 €)",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Join Pohjanmaan hyvinvointialue as a Family Caregiver and grow your career in Pietarsaari. Check the job details and apply now.",
+        "description": "Pohjanmaan hyvinvointialue seeks a part-time (80%) family caregiver for the welfare region of Ostrobothnia, based in Klöveräng, Pietarsaari. This role involves round-the-clock housing and short-term care for Swedish-speaking minors with developmental disabilities. Ideal candidates will have a genuine interest in children and their care, the ability to make independent decisions, and the willingness to work both independently and in a group. Professional development, sharing of knowledge, and working with an experienced team are valued. Nursing degree or equivalent is required, along with satisfactory Swedish language skills. Valid vaccination protection and a clean criminal record are necessary.",
+        "what_we_expect": [
+          "Genuine interest in children and their care.",
+          "Ability to make your own decisions.",
+          "Work both independently and in a group.",
+          "Willingness to develop professionally.",
+          "Willingness to share know-how.",
+          "Willingness to work with an experienced team."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "caregiver social-care-services Ostrobothnia housing-unit",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:24",
+    "jobs": [
+      {
+        "id": "da65aca9",
+        "job_id": "bar-worker-helsinki-da65aca9",
+        "processed": true,
+        "title": "Bar Worker",
+        "company": "Arsenaali Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/6487472",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ff2deb63-47f2-47e1-b55d-dc429d8a4b98/en",
+        "job_employer_email": "rekry@arsenaali.fi",
+        "job_employer_name": "Iida Rantanen",
+        "job_employer_phone_no": "0503010731",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/bar-worker-helsinki-da65aca9",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-13 15:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Arsenaali Oy as a Bar Worker and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "Arsenaali Oy is seeking an experienced bar worker for gig-type work in the heart of Helsinki. This role involves fluently preparing basic drinks, counting tap products, and serving drinks to customers in glasses. Previous bar work experience, an independent approach to work, and excellent customer service skills are required. Cocktail knowledge is advantageous. Work shifts are primarily focused on weekend evenings and nights, allowing you to choose your shifts. The position is permanent and offers a competitive hourly wage based on Finnish collective agreements. The working language is Finnish. Apply via the link provided: <http://arsenaali.likeit.fi/apply/6487472> For more information, contact Iida at 050 301 0731 or Jokel at 050 356 3448, or email rekry@arsenaali.fi.",
+        "what_we_expect": [
+          "Previous work experience working in a bar.",
+          "Independent approach to work.",
+          "Excellent customer service skills.",
+          "Cocktail knowledge considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Fluently responsible for the preparation of basic drinks.",
+          "Counting of tap products.",
+          "Serving drinks to customers in a glass."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "bar worker Helsinki experience customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      },
+      {
+        "id": "941ed671",
+        "job_id": "early-childhood-nanny-nurmijärvi-941ed671",
+        "processed": true,
+        "title": "Early Childhood Nanny",
+        "company": "Nurmijärven kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Nurmijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://nurmijarvi.rekrytointi.com/paikat/index.php?o=A_A&jid=7418&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6e7fad80-8ee8-4de0-9af2-4707aeb7bedb/en",
+        "job_employer_email": "satu.hayrynen@nurmijarvi.fi",
+        "job_employer_name": "Satu Häyrynen",
+        "job_employer_phone_no": "0403172226",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nanny-nurmijärvi-941ed671",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:40:24",
+        "open_positions": 1,
+        "salary_range": "Salary and terms of employment are determined i",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Nurmijärven kunta as a Early Childhood Nanny in Nurmijärvi. Learn more about the role and apply now.",
+        "description": "We are seeking an early childhood nanny to join our enthusiastic and competent work community at the Perttula daycare center in Nurmijärvi. The position offers a permanent, full-time employment relationship until January 4, 2027, with a competitive hourly wage based on Finnish collective agreements. Key requirements include good interaction and cooperation skills, sensitivity, innovation, a communal approach to work, and a willingness to develop your own skills and team activities. The daycare center provides a warm and inspiring environment where children can grow and learn at their own pace. We offer good human resources, support in child support arrangements, working surrogate arrangements, and support of digital agents in work communities.",
+        "what_we_expect": [
+          "Good interaction and cooperation skills.",
+          "Sensitivity.",
+          "Innovation.",
+          "A communal approach to work.",
+          "Willingness to develop own skills and team activities."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Good human resources.",
+          "Good support in child support arrangements.",
+          "Working surrogate arrangements.",
+          "Support of digital agents in work communities.",
+          "Interaction expert support for work communities and teams.",
+          "Development of methods of community control."
+        ],
+        "search_keywords": "early childhood nanny daycare center nurmijärvi cooperation skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "66dce16f",
+        "job_id": "strategic-procurement-manager-liperi-66dce16f",
+        "processed": true,
+        "title": "Strategic Procurement Manager",
+        "company": "Mantsinen Group Ltd Oy, Liperi",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Liperi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:tarja.lehto@mantsinen.com?subject=Application%20for%20the%20Job%20-%20Strategic%20Procurement%20Manager&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Strategic%20Procurement%20Manager.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/30f9f039-fbf2-4761-a8fc-bbf1bb083bd9/en",
+        "job_employer_email": "tarja.lehto@mantsinen.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/strategic-procurement-manager-liperi-66dce16f",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:40:24",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, but no",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Strategic Procurement Manager role at Mantsinen Group Ltd Oy, Liperi. Join the team and build your career in Liperi.",
+        "description": "Strategic procurement manager position available at Mantsinen Group Ltd Oy in Liperi, Finland. As a full-time, permanent role, you will develop procurement categories and supplier networks, negotiate prices and contracts, implement tenders, manage supply chain risks, and monitor supplier performance. Fluency in Finnish and English is required, along with experience in strategic procurement and supplier cooperation. Join a Finnish family company serving global customers, where you can make a tangible impact on procurement and competitiveness.",
+        "what_we_expect": [
+          "Suitable technical and/or commercial education and experience in strategic procurement, category responsibilities and developing supplier cooperation.",
+          "Strong commercial vision, an analytical approach and the ability to make decisions based on information.",
+          "Ability to build long-term cooperation with various stakeholders and move things forward with determination.",
+          "Self-initiative and solution-oriented.",
+          "Fluency in both Finnish and English."
+        ],
+        "job_responsibilities": [
+          "Strategic development of procurement categories and supplier network.",
+          "Negotiating prices, commercial terms and delivery contracts.",
+          "Implementation of tenders and identification and implementation of cost savings.",
+          "Supply chain risk management and development of alternative supply sources.",
+          "Monitoring and development of suppliers' performance and procurement key figures."
+        ],
+        "what_we_offer": [
+          "Opportunity to have a tangible impact on the development of Mantsinen's procurement and the competitiveness of our international business.",
+          "Work in a Finnish family company whose solutions serve customers all over the world.",
+          "Responsible and independent task where you get to utilize your skills, develop operating methods and implement new solutions.",
+          "Support from a competent work community.",
+          "Close cooperation with various functions and domestic and international partners."
+        ],
+        "search_keywords": "strategic procurement manager international supplier network development cost competitiveness",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "a6593d2e",
+        "job_id": "à-la-carte-chef-helsinki-a6593d2e",
+        "processed": true,
+        "title": "À La Carte Chef",
+        "company": "Arsenaali Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://arsenaali.likeit.fi/apply/7915938",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ba4b00e5-c1b4-4ed2-a0b7-d4c977ededad/en",
+        "job_employer_email": "rekry@arsenaali.fi",
+        "job_employer_name": "Iida Rantanen",
+        "job_employer_phone_no": "050 301 0731",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/à-la-carte-chef-helsinki-a6593d2e",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-13 15:40:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a À La Carte Chef at Arsenaali Oy. Great opportunity in Helsinki — apply now.",
+        "description": "À la carte chefs are needed in various restaurants in Helsinki for gig work. Responsibilities include preparing and finishing dishes, ensuring consistent quality during busy service, and working effectively in a team. Previous experience in an à la carte kitchen is required, along with the ability to work independently, handle pressure, and maintain a quick work ethic. Competitive hourly wages based on Finnish collective agreements are offered. Apply via the link provided or contact Iida or Jokel for more information.",
+        "what_we_expect": [
+          "Previous experience in an à la carte kitchen.",
+          "Readiness to work independently.",
+          "Ability to withstand pressure.",
+          "Quick work ethic.",
+          "Good teamwork skills."
+        ],
+        "job_responsibilities": [
+          "Take care of sufficient preparations.",
+          "Keep the quality of the portions consistent even during busy service."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "chef à la carte Helsinki restaurant gig work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "45a47f99",
+        "job_id": "systems-expert-for-building-automation-helsinki-45a47f99",
+        "processed": true,
+        "title": "Systems Expert for Building Automation",
+        "company": "Worknow Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8707845-jarjestelmaasiantuntija-rakennusautomaatioon-helsinki/applications/new?promotion=2294173-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/20a1e146-8a9e-4216-a24c-fba21952d4e6/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/systems-expert-for-building-automation-helsinki-45a47f99",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:24",
+        "open_positions": 1,
+        "salary_range": "salary is determined according to your skills a",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Worknow Oy as a Systems Expert for Building Automation and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "We are seeking a Systems Expert for Building Automation in Helsinki to manage the design and programming of building automation systems with a focus on high-quality work. Responsibilities include preparing connection drawings, measuring devices and actuators, specifying valves, logic and user interface programming, system architecture planning, and system commissioning testing. Ideal candidates will have strong experience in building automation and technology, be meticulous and quality-conscious, and possess fluent Finnish language skills. Experience with Schneider EcoStruxure Building Operation or Siemens ABT/Desigo systems is beneficial. This is a full-time, permanent position offering a competitive hourly wage based on Finnish collective agreements.",
+        "what_we_expect": [
+          "Strong experience in building automation and building technology.",
+          "Meticulous and quality-conscious professional.",
+          "Ability to work independently.",
+          "Willingness to work as part of a team.",
+          "Fluent Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Prepare connection drawings of automation systems for automation centers.",
+          "Measure devices and actuators.",
+          "Specify valves for automation deliveries.",
+          "Logic and user interface programming.",
+          "System architecture planning.",
+          "System commissioning testing."
+        ],
+        "what_we_offer": [
+          "Versatile expert position.",
+          "Full-time, 40 hours a week job in Helsinki.",
+          "Indefinite employment relationship."
+        ],
+        "search_keywords": "building automation, systems expert, Helsinki, engineering, programming",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:26",
+    "jobs": [
+      {
+        "id": "8f47c174",
+        "job_id": "tig-welder-urjala-8f47c174",
+        "processed": true,
+        "title": "TIG Welder",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Urjala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8707796-tig-hitsaaja-urjalaan/applications/new?promotion=2294172-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8e31b525-5ee1-41b8-9792-3312f77e81cc/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/tig-welder-urjala-8f47c174",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-13 15:40:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a TIG Welder at Worknow Oy. Great opportunity in Urjala — apply now.",
+        "description": "A TIG Welder position is available at Worknow Oy in Urjala for a permanent, full-time role. Ideal candidates will have some experience in TIG welding, whether gained through studies, hobbies, or previous work. A keen interest in technical work and a desire to develop as a welder, along with a careful work ethic and a willingness to learn, are essential. Fluency in Finnish or English is required, and a driver's license and own car are necessary as public transport is not an option. This role offers the chance to develop welding skills and learn more demanding jobs, with the possibility of continued employment if the work progresses well. Apply if you are passionate about technical work and eager to grow in your welding career. For more information, contact HR at hr@worknow.",
+        "what_we_expect": [
+          "Some experience in TIG welding - the know-how can also be accumulated through studies or hobbies.",
+          "Interest in technical work and desire to develop as a welder.",
+          "Careful work ethic and desire to learn.",
+          "Finnish or English language skills.",
+          "Driver's license and own car, as you cannot get to the workplace by public transport."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Full-time day job (40 h/week).",
+          "The opportunity to develop your welding skills and also learn more demanding jobs.",
+          "Possibility of continuation if the work goes well."
+        ],
+        "search_keywords": "TIG welder Urjala welding job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
   }
 ]
