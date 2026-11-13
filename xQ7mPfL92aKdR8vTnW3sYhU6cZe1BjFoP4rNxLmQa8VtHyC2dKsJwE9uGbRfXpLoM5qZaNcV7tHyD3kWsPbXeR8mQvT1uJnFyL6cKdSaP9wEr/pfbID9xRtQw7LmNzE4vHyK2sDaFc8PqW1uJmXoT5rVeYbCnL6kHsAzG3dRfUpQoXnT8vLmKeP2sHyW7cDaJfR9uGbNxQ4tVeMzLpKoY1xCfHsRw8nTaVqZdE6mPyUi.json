@@ -493810,5 +493810,1335 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:34",
+    "jobs": [
+      {
+        "id": "5c990cbc",
+        "job_id": "summer-employee-for-youth-and-religious-school-work-saarijärvi-5c990cbc",
+        "processed": true,
+        "title": "Summer Employee for Youth and Religious School Work",
+        "company": "Saarijärven seurakunta",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Saarijärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5456/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ffe69de3-821f-446e-852a-f8c5365afd4e/en",
+        "job_employer_email": "heidi.pasanen@evl.fi",
+        "job_employer_name": "Heidi Pasanen",
+        "job_employer_phone_no": "0407603480",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/summer-employee-for-youth-and-religious-school-work-saarijärvi-5c990cbc",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-13 15:39:34",
+        "open_positions": 1,
+        "salary_range": "Palkkaus on KirVESTES mukainen vaatimusryhmässä 302 (vähimmäispalkka 1.2.27 alkaen 2185,50 €/kk + mahdolliset kokemuslisät).",
+        "workTime": "Full-time",
+        "continuityOfWork": "Summer job",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Summer Employee for Youth and Religious School Work at Saarijärven seurakunta. Great opportunity in Saarijärvi — apply now.",
+        "description": "We are seeking two ecclesiastical students to work as summer employees for youth and religious school work in the parish of Saarijärvi, Finland, from June 1 to August 15, 2027. Responsibilities include working with children and young people of different ages during week-long high school camps and one or two-night camps at our own, functional, and spacious camp center in Mellika. Motivation and enthusiasm to work with young people are essential, and applicants should be confirmed members of the Evangelical Lutheran Church, presenting an accessible criminal record before starting. The position offers a vantage point into the life of the rural congregation and possible accommodation in the parish's premises near the center of Saarijärvi.",
+        "what_we_expect": [
+          "Motivation and enthusiasm to work with children and young people of different ages.",
+          "Being a confirmed member of the Evangelical Lutheran Church.",
+          "Presenting an accessible criminal record before starting the job."
+        ],
+        "job_responsibilities": [
+          "Work with children and young people of different ages during week-long high school camps and one or two-night camps."
+        ],
+        "what_we_offer": [
+          "A vantage point into the life of the rural congregation.",
+          "Possible accommodation in the parish's premises for summer work near the center of Saarijärvi.",
+          "The exercise-culture-well-being benefit Epassi under certain conditions.",
+          "Two cars for work, one of which is an electric car."
+        ],
+        "search_keywords": "summer employee youth religious school work rural congregation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "a32a49bd",
+        "job_id": "electrician-kouvola-a32a49bd",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Ja-Mi Works",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://work.jamiworks.com/jobs/8724431-sahkoasentajia-kouvolaan/applications/new?promotion=2294195-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5580f345-05ba-475f-8787-001e3ab90bd8/en",
+        "job_employer_email": "jouni.kontunen@jamiworks.com",
+        "job_employer_name": "Jouni Kontunen",
+        "job_employer_phone_no": "+358442493350",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-kouvola-a32a49bd",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-13 15:39:34",
+        "open_positions": 1,
+        "salary_range": "salary * The opportunity to work in interesting",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Electrician at Ja-Mi Works in Kouvola. Apply now and take the next step in your career.",
+        "description": "We are seeking experienced electricians for the data center construction project in Kouvola, Finland. Ideal candidates will have previous experience in similar installation work, valid work and electrical safety cards, and first aid certification. A positive work attitude, willingness to start work quickly, and flexibility in working hours are essential. Knowledge of either English or Finnish is required. Join us to work on interesting industrial projects and benefit from the support of a professional and reliable employer. Housing is provided for the duration of the project for those from outside the area. Apply now if you are available and interested in this exciting opportunity.",
+        "what_we_expect": [
+          "Previous experience in similar installation work.",
+          "Valid work and electrical safety card and first aid card.",
+          "Good work attitude and initiative.",
+          "Willingness to start work on a fast schedule.",
+          "Willingness for flexible working hours.",
+          "Knowledge of English or Finnish."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "The opportunity to work in interesting industrial projects.",
+          "The support of a professional and reliable employer.",
+          "Housing for the duration of the project for people from outside the area."
+        ],
+        "search_keywords": "electrician installation maintenance Kouvola data center",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "69793c34",
+        "job_id": "infrastructure-installer-kokkola-69793c34",
+        "processed": true,
+        "title": "Infrastructure Installer",
+        "company": "Good Fellas",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kokkola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.goodfellasoy.fi/jobs/8724430-infra-asentaja-kokkolan-suurteollisuusalueelle/applications/new?promotion=2294194-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/29feadd0-117b-4182-b07f-1739d329894a/en",
+        "job_employer_email": "pauliina.hansen@gfoy.fi",
+        "job_employer_name": "Pauliina Hansen",
+        "job_employer_phone_no": "+358449010321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/infrastructure-installer-kokkola-69793c34",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:39:34",
+        "open_positions": 1,
+        "salary_range": "salary depending on experience * Site at least",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Good Fellas is hiring a Infrastructure Installer in Kokkola. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Good Fellas is seeking an Infrastructure Installer for our client in the Kokkola industrial area. This permanent, full-time position offers a competitive hourly wage based on Finnish collective agreements and a site commitment until at least the end of the year. Responsibilities include pipe installations, using a vibrator, and a plane laser, with a focus on independent work and occupational safety. We value a good attitude, reliability, professionalism, teamwork, and a willingness to learn. The position provides a quick start, the opportunity to continue on future projects, and a fair work atmosphere. Apply by 29 November 2026, as the position will be filled as soon as a suitable candidate is found.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Pipe installations.",
+          "Use of a vibrator.",
+          "Use of a plane laser."
+        ],
+        "what_we_offer": [
+          "Quick start.",
+          "Site at least until the end of the year.",
+          "Possibility to continue in the following projects.",
+          "Good work team and a fair atmosphere."
+        ],
+        "search_keywords": "infrastructure installer civil engineering pipe installations",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "9b5fe78b",
+        "job_id": "education-assistant-tampere-9b5fe78b",
+        "processed": true,
+        "title": "Education Assistant",
+        "company": "Tampereen korkeakoulusäätiö sr",
+        "job_category": "education",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tuni.rekrytointi.com/paikat/index.php?o=A_A&jid=3226&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c50428ec-6382-44c3-b3f6-4554bd114bca/en",
+        "job_employer_email": "marjo.ahlberg@tuni.fi",
+        "job_employer_name": "Marjo Ahlberg",
+        "job_employer_phone_no": "+358 40 8093510",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/education-assistant-tampere-9b5fe78b",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:39:34",
+        "open_positions": 1,
+        "salary_range": "salary component based on personal work perform",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Education Assistant at Tampereen korkeakoulusäätiö sr in Tampere. Apply now and take the next step in your career.",
+        "description": "The University of Tampere, a forward-looking and interdisciplinary institution, seeks a dedicated Education Assistant for the Education and Learning Service Unit, specifically within the Faculty of Medicine and Health Technology. This role involves supporting study administration, including student applications, thesis and graduation processes, and diploma handling. You will also provide counseling and guidance to students, manage and archive study matters, and participate in the development of the Education and Learning Service Unit and community service teams. Requirements include a lower university degree, experience in higher education or study administration, excellent Finnish and English language skills, good IT skills, and a self-initiated, cooperative working attitude.",
+        "what_we_expect": [
+          "Suitable education (e.g. Lower university degree).",
+          "Work experience in higher education or study administration tasks.",
+          "Excellent oral and written knowledge of Finnish and English.",
+          "Good IT skills.",
+          "Independent and self-initiated working attitude.",
+          "Strong cooperation and teamwork skills."
+        ],
+        "job_responsibilities": [
+          "Perform study administration support tasks related to student applications.",
+          "Support thesis and graduation processes including diploma handling.",
+          "Provide counseling and guidance to students.",
+          "Manage and archive study matters.",
+          "Participate in the development tasks of the Education and Learning Service Unit at the university level.",
+          "Participate in community service teams."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "education assistant study administration student support",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "fccd3bc1",
+        "job_id": "metal-worker-isokyrö-fccd3bc1",
+        "processed": true,
+        "title": "Metal Worker",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Isokyrö",
+          "Laihia",
+          "Mustasaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272396",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/53d4aa59-d358-4b51-8bbe-390259a8ca52/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/metal-worker-isokyrö-fccd3bc1",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:34",
+        "open_positions": 1,
+        "salary_range": "* Palkan teknologiateollisuuden TES:in mukaisesti, kokemuksesta riippuen noin 12,5-15€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Carrot Pohjanmaa Oy is hiring a Metal Worker in Isokyrö. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Carrot Pohjanmaa Oy is seeking a Metal Worker for our client in Vaasa. Responsibilities include assembling parts, connecting components, screwing boards, and performing other production tasks such as installation, forklift driving, and welding. A basic degree in the metal industry and previous experience in production work are required, along with a motivation to learn and develop. The position is permanent, with a starting salary of approximately €12.5-15/h based on experience. Initially a six-month employment relationship, with the possibility of permanent employment. Regular working hours are 40h/week, with evening shifts available later. Apply via the attached link or update your previous application form on the Carrot website.",
+        "what_we_expect": [
+          "Basic degree in the metal industry.",
+          "Previous experience in production work.",
+          "Motivation to learn and develop at work."
+        ],
+        "job_responsibilities": [
+          "Assembly of parts.",
+          "Connecting components to each other.",
+          "Screwing boards.",
+          "Other production work phases such as installation.",
+          "Driving a forklift.",
+          "Welding."
+        ],
+        "what_we_offer": [
+          "Salary according to the TES of the technology industry, depending on experience, around €12.5-15/h.",
+          "Initially a six-month employment relationship.",
+          "Possibility of permanent employment.",
+          "Regular working hours 40h/week.",
+          "Possibility of evening shifts."
+        ],
+        "search_keywords": "metal worker manufacturing assembly welding forklift",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:36",
+    "jobs": [
+      {
+        "id": "6215c035",
+        "job_id": "hydraulic-fitter-tampere-6215c035",
+        "processed": true,
+        "title": "Hydraulic Fitter",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8702248-hydrauliikka-asentaja-kasvavaan-teollisuusyritykseen/applications/new?promotion=2294191-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3dfca000-3a2a-43d5-93e3-cb89a3b05065/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/hydraulic-fitter-tampere-6215c035",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:36",
+        "open_positions": 1,
+        "salary_range": "Salary from €14/h, more depending on skills * M",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Worknow Oy is hiring a Hydraulic Fitter in Tampere. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Hydraulic fitter needed at Worknow Oy in Tampere for a growing industrial company in Hervanta. This permanent, full-time position involves installing hydraulic valves and assemblies, mechanical assembly work according to drawings, and subassembly construction and finishing. Responsibilities also include component inspection and quality assurance, as well as cooperation with other production professionals. Basic skills in mechanical installation or assembly, a self-initiated work ethic, and a desire to learn specialized hydraulics knowledge are required. Careful and responsible work is essential. Salary is competitive at €14/hour, with potential for increase based on skills. Modern production facilities and comprehensive orientation are provided. Submit your application to hr@worknow.",
+        "what_we_expect": [
+          "Basic skills in mechanical installation or assembly work.",
+          "Self-initiated and brisk work ethic.",
+          "Desire to learn specialized knowledge in the field of hydraulics.",
+          "Ability to use the most common hand tools.",
+          "Careful and responsible approach to work."
+        ],
+        "job_responsibilities": [
+          "Installing hydraulic valves and assemblies.",
+          "Mechanical assembly work according to drawings and work instructions.",
+          "Construction and finishing of subassemblies.",
+          "Inspection of components and quality assurance.",
+          "Cooperation with other production professionals."
+        ],
+        "what_we_offer": [
+          "Full-time day job (40 h/week).",
+          "Salary from €14/h, more depending on skills.",
+          "Modern production facilities and good working conditions.",
+          "Comprehensive orientation to the task."
+        ],
+        "search_keywords": "hydraulic fitter, mechanical assembly, industrial manufacturing, hydraulics, production",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "05c0fe2a",
+        "job_id": "electrician-vantaa-05c0fe2a",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Alrekry Oy, Helsinki",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://alrekry.fi/jobs/sahkoasentaja-vantaa-2026-11-12/?lang=fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/51fd5d12-8232-4dfc-9666-7d21865c8cb7/en",
+        "job_employer_email": "hr.alrekry@alrekry.fi",
+        "job_employer_name": "Anne Järvelä",
+        "job_employer_phone_no": "050 380 2656",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-vantaa-05c0fe2a",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:36",
+        "open_positions": 1,
+        "salary_range": "salary is affected by your skills and experienc",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Electrician at Alrekry Oy, Helsinki. Great opportunity in Vantaa — apply now.",
+        "description": "Alrekry Oy is seeking an experienced electrician to join their team in Vantaa. The role involves equipment installations in special locations such as motorhomes, boats, and ships within the Vantaa area and occasionally at customer sites in the capital region. Successful candidates should have experience in electrical and equipment installation, electrical training, and a B driver's license. The position is full-time and permanent, offering versatile tasks and varied work items. Fluency in Finnish is required. If interested, apply through the job application form at alrekry.fi.",
+        "what_we_expect": [
+          "Experience in electrical and equipment installation.",
+          "Electrical training.",
+          "B driver's license.",
+          "Readiness for mobile work."
+        ],
+        "job_responsibilities": [
+          "Equipment installations in special locations such as motorhomes, boats and ships."
+        ],
+        "what_we_offer": [
+          "The possibility of a long-term employment relationship.",
+          "Versatile tasks.",
+          "Varied work items."
+        ],
+        "search_keywords": "electrician installation maintenance Vantaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "501fd7bf",
+        "job_id": "sales-engineer-karkkila-501fd7bf",
+        "processed": true,
+        "title": "Sales Engineer",
+        "company": "SEW Industrial Gears Oy, Karkkila",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Karkkila"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:rekrytointi@sew.fi?subject=Application%20for%20the%20Job%20-%20Sales%20Engineer&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Sales%20Engineer.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/064983d4-9be2-49c2-9d2b-cbae086eb941/en",
+        "job_employer_email": "rekrytointi@sew.fi",
+        "job_employer_name": "Jukka Merimaa",
+        "job_employer_phone_no": "040 514 9203",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/sales-engineer-karkkila-501fd7bf",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-28",
+        "scraped_at": "2026-11-13 15:39:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at SEW Industrial Gears Oy, Karkkila as a Sales Engineer in Karkkila. Learn more about the role and apply now.",
+        "description": "SEW Industrial Gears Oy, a Finnish subsidiary of the international SEW-EURODRIVE Group, is seeking a customer-oriented Sales Engineer to join our team in Karkkila. As a Sales Engineer, you will be responsible for technical selection and provision of gears and related components to customers, preparing customer-specific power transmission solutions, maintaining price lists and sales tools, order tracking, and managing offer-order documentation. You should have at least an AMK-level degree in a technical or commercial field, experience in technical B2B sales or technical trade tasks, and a strong, customer-oriented approach. Fluency in Finnish and English is required, and a willingness to travel and work in an international environment is essential.",
+        "what_we_expect": [
+          "At least an AMK-level degree in a technical or commercial field.",
+          "Experience in technical B2B sales or technical trade tasks is an advantage.",
+          "An active, goal-oriented and customer-oriented approach to sales work.",
+          "Technical understanding and the desire to deepen your knowledge of products and their applications.",
+          "Fluent Finnish and English language skills.",
+          "Willingness to travel and work in an international operating environment."
+        ],
+        "job_responsibilities": [
+          "Technical selection of gears and related components and their provision to customers.",
+          "Preparing customer-specific power transmission solutions.",
+          "Maintenance of price lists and sales tools.",
+          "Order tracking.",
+          "Management of offer-order documentation."
+        ],
+        "what_we_offer": [
+          "A permanent job in an international and solvent family business.",
+          "The role of a versatile and independent sales engineer as part of a professional team."
+        ],
+        "search_keywords": "sales engineer technical sales industrial gears international company",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "3ce508ed",
+        "job_id": "construction-assistant-isokyrö-3ce508ed",
+        "processed": true,
+        "title": "Construction Assistant",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Isokyrö",
+          "Laihia",
+          "Mustasaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272386",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bb1c992e-ee8c-4b91-97d8-b66ba9d6bdeb/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-assistant-isokyrö-3ce508ed",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Construction Assistant at Carrot Pohjanmaa Oy. Great opportunity in Isokyrö — apply now.",
+        "description": "Carrot Pohjanmaa Oy is seeking a Construction Assistant for full-time, permanent positions in Isokyrö, Laihia, Mustasaari, and Vaasa. Responsibilities include carrying and moving construction materials, unloading and loading goods, tidying up the site, and organizing tools and materials. Applicants must have good physical condition, reliability, teamwork skills, and a willingness to learn. Previous experience and a valid occupational safety card are advantageous. Competitive hourly wages based on Finnish collective agreements are offered. Applications can be submitted via the attached link. Carrot Pohjanmaa Oy aims to create a good working life for everyone.",
+        "what_we_expect": [
+          "Good physical condition.",
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Carrying and moving construction materials and supplies.",
+          "Unloading and loading goods.",
+          "Tidying up the construction site.",
+          "Organizing tools and materials."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "construction assistant vaasa materials supplies",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "0b5f6827",
+        "job_id": "surface-finisher-laihia-0b5f6827",
+        "processed": true,
+        "title": "Surface Finisher",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Laihia",
+          "Uusikaarlepyy",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272391",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3f001312-1a6f-451e-a9da-83447e09d02d/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/surface-finisher-laihia-0b5f6827",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:36",
+        "open_positions": 1,
+        "salary_range": "Työt alkavat heti sopivan henkilön löydyttyä. Työsuhde solmitaan aluksi kuudeksi kuukaudeksi, mutta tehtävässä on mahdollisuus vakinaistua asiakkaan palvelukseen. Palkkaus määräytyy teknologiateollisuuden TES:in mukaisesti, kokemuksesta riippuen noin 14-16€/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Surface Finisher at Carrot Pohjanmaa Oy in Laihia. Check the requirements and apply today.",
+        "description": "Carrot Pohjanmaa Oy is seeking a Surface Finisher for our client in Oravai, focusing on versatile tasks in the metal industry. Ideal candidates will have previous experience in surface treatment or spray painting, a practical background in a machine shop environment, and a willingness to take on various work tasks. Responsibilities include cleaning and degreasing parts, sanding and surface pretreatment, spray painting metal parts, and checking the quality of the finished paint mark and surface. The role also involves blasting, handling and moving parts in production, and cleaning work tools and painting equipment. A valid occupational safety card is required, and previous forklift experience is advantageous.",
+        "what_we_expect": [
+          "Previous experience in surface treatment or spray painting.",
+          "Versatility and practical expertise in the metal industry.",
+          "A valid occupational safety card.",
+          "A willingness to learn new things.",
+          "A willingness to approach different work tasks without prejudice.",
+          "Good physical condition and a brisk work ethic."
+        ],
+        "job_responsibilities": [
+          "Cleaning and degreasing parts.",
+          "Sanding and surface pretreatment.",
+          "Spray painting metal parts.",
+          "Checking the quality of the finished paint mark and surface.",
+          "Blasting, handling and moving parts in production.",
+          "Cleaning work tools and painting equipment."
+        ],
+        "what_we_offer": [
+          "An employment relationship initially concluded for six months with the possibility of becoming permanent.",
+          "A salary determined according to the TES of the technology industry, depending on experience, around €14-16/h."
+        ],
+        "search_keywords": "surface finisher metal industry production painting",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:38",
+    "jobs": [
+      {
+        "id": "4d8dfca9",
+        "job_id": "electrician-kokkola-4d8dfca9",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Kokkola",
+          "Isokyrö",
+          "Laihia",
+          "Mustasaari",
+          "Pietarsaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272368",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/87ad6463-963b-43d3-8ebb-405d7fc774da/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-kokkola-4d8dfca9",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:38",
+        "open_positions": 1,
+        "salary_range": "Salary according to skills and experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Electrician at Carrot Pohjanmaa Oy in Kokkola. Apply now and take the next step in your career.",
+        "description": "Carrot Pohjanmaa Oy is seeking experienced electricians for permanent, full-time positions in Vaasa, Kokkola, and Pietarsaari. Responsibilities include wiring, pulling cables, installing sockets, lights, and cable shelves, as well as other electrical installation work on construction sites according to project needs. Applicants must hold a valid occupational safety card and be able to work independently, taking responsibility for their tasks. Competitive hourly wages based on Finnish collective agreements will be offered. Apply through the attached link or update your previous application on the Carrot platform. Carrot is a reliable recruitment and outsourcing service with a focus on creating a good working life for everyone.",
+        "what_we_expect": [
+          "Valid occupational safety card.",
+          "Ability to work independently.",
+          "Take responsibility for their own tasks."
+        ],
+        "job_responsibilities": [
+          "Wiring.",
+          "Pulling cables.",
+          "Installing sockets.",
+          "Lights and cable shelves.",
+          "Other electrical installation work on the construction site according to the needs of the site."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "electrician installation maintenance Vaasa Kokkola Pietarsaari",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:39",
+    "jobs": [
+      {
+        "id": "97b8aae6",
+        "job_id": "electrical-and-mechanical-installer-laihia-97b8aae6",
+        "processed": true,
+        "title": "Electrical and Mechanical Installer",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Laihia",
+          "Mustasaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272351",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/df3b338e-2194-4681-872a-4e96f7f2c3b9/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrical-and-mechanical-installer-laihia-97b8aae6",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:39",
+        "open_positions": 1,
+        "salary_range": "Salary according to the technology industry col",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Electrical and Mechanical Installer at Carrot Pohjanmaa Oy in Laihia. Check the requirements and apply today.",
+        "description": "Carrot Pohjanmaa Oy is seeking motivated installers for electrical and mechanical installations in Laihia, Mustasaari, and Vaasa. Responsibilities include performing electrical and mechanical installations, handling wiring and cabling, participating in the partial assembly of electrical cabinets and centers, and testing switchgear. We value a brisk and proactive attitude, willingness to learn, precise work ethic, and field experience. Join an energy specialist company with comprehensive training, supportive colleagues, and the opportunity to develop within the industry. Apply via the attached link or update your existing application. Salary is competitive based on Finnish collective agreements.",
+        "what_we_expect": [
+          "Brisk and proactive attitude to work.",
+          "Willingness to learn.",
+          "Precise work ethic.",
+          "Work experience in the field.",
+          "Ability to read drawings."
+        ],
+        "job_responsibilities": [
+          "Perform electrical and mechanical installations.",
+          "Handle wiring and cabling.",
+          "Participate in partial assembly of electrical cabinets and centers.",
+          "Test switchgear."
+        ],
+        "what_we_offer": [
+          "Interesting job in an energy specialist company.",
+          "Comprehensive introduction to the job.",
+          "Nice and helpful co-workers and supervisors.",
+          "Possibility to become established for the client company."
+        ],
+        "search_keywords": "installer electrical mechanical Vaasa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "78c3767d",
+        "job_id": "assembly-worker-sastamala-78c3767d",
+        "processed": true,
+        "title": "Assembly Worker",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Sastamala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8702221-kokoonpanija-sastamala/applications/new?promotion=2294188-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0575a30d-b95f-46f1-8368-efffd94740ee/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/assembly-worker-sastamala-78c3767d",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:39",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with your skills and experi",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Assembly Worker at Worknow Oy in Sastamala. Check the requirements and apply today.",
+        "description": "Worknow Oy is seeking a dedicated Assembly Worker for our client in Sastamala. Responsibilities include the mechanical assembly of large machines, with a focus on precision and efficiency. Previous experience in mechanical installation or assembly work is essential, along with a reliable and careful approach, and a proactive attitude. Full-time, permanent employment is offered in a stable and modern company, with a comprehensive orientation to the task and a 40-hour workweek from 7:00 a.m. to 3:30 p.m. A competitive hourly wage based on Finnish collective agreements will be provided, commensurate with your skills and experience. If you are interested, submit your application and CV through this announcement.",
+        "what_we_expect": [
+          "Previous experience in mechanical installation or assembly work.",
+          "Reliable and careful approach.",
+          "Initiative and a good attitude towards work."
+        ],
+        "job_responsibilities": [
+          "The mechanical assembly of large machines."
+        ],
+        "what_we_offer": [
+          "Full-time employment in a stable and modern company.",
+          "A comprehensive orientation to the task.",
+          "Full-time job 40h/week, 7:00 a.m. To 3:30 p.m.",
+          "A salary commensurate with your skills and experience."
+        ],
+        "search_keywords": "assembly worker mechanical installation manufacturing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "930379e9",
+        "job_id": "part-time-sales-representative-kirkkonummi-930379e9",
+        "processed": true,
+        "title": "Part-time Sales Representative",
+        "company": "Puuilo",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.puuilo.fi/jobs/8710615-osa-aikainen-myyja-kirkkonummelle/applications/new?promotion=2294187-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/06fbf9e5-41fd-4d9f-a9b3-1326868abd43/en",
+        "job_employer_email": "jenni.harle@puuilo.fi",
+        "job_employer_name": "Jenni Harle",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/part-time-sales-representative-kirkkonummi-930379e9",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:39:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Puuilo is hiring a Part-time Sales Representative in Kirkkonummi. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Puuilo in Kirkkonummi is seeking a part-time sales representative to join our team. As a salesperson, you will handle various customer encounters, perform cash and information work, including customer complaints and trailer rentals, ensure shelves are stocked and displays are set up, conduct e-commerce collection, cut carpet and meter goods, change gases, and assist with product-related questions. You will also maintain store cleanliness, including weekly cleaning days and daily upkeep. We offer permanent employment, a happy and inclusive work environment, high-quality work clothes, Sievi safety shoes with scanned insoles, personnel benefits, comprehensive orientation, and good advancement opportunities.",
+        "what_we_expect": [
+          "A self-initiated and brisk work ethic.",
+          "The ability to withstand pressure.",
+          "Moderate or good physical condition."
+        ],
+        "job_responsibilities": [
+          "Provide customer service and handle various customer encounters.",
+          "Perform cash and information work, including handling customer complaints and renting trailers.",
+          "Ensure shelves are stocked and displays are set up to make products visible and accessible.",
+          "Conduct e-commerce collection, cut carpet and meter goods, change gases, and assist with product-related questions.",
+          "Maintain store cleanliness, including weekly cleaning days and daily upkeep of customer and staff premises."
+        ],
+        "what_we_offer": [
+          "Permanent employment and part-time employment (20h/week).",
+          "A happy and inclusive work environment.",
+          "High-quality work clothes and Sievi safety shoes with scanned insoles.",
+          "Personnel benefits (ePassi and personnel benefits system).",
+          "Comprehensive orientation.",
+          "Good advancement opportunities."
+        ],
+        "search_keywords": "part-time sales representative retail wholesale customer service sales",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "7cd1a0e1",
+        "job_id": "product-developmentsoftware-engineer-kurikka-7cd1a0e1",
+        "processed": true,
+        "title": "Product Development/Software Engineer",
+        "company": "Biisoni Pohjanmaa Oy, Seinäjoki",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Kurikka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.biisoni.fi/jobs/8697726-tuotekehitys-ohjelmistoinsinoori-koja-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a378b686-cf54-4f8a-a65a-34c314abe2ed/en",
+        "job_employer_email": "johanna.paloneva@biisoni.fi",
+        "job_employer_name": "Johanna Paloneva",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/product-developmentsoftware-engineer-kurikka-7cd1a0e1",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:39:39",
+        "open_positions": 1,
+        "salary_range": "Salary is based on your skills and experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Product Development/Software Engineer at Biisoni Pohjanmaa Oy, Seinäjoki. Great opportunity in Kurikka — apply now.",
+        "description": "We are seeking a Product Development/Software Engineer to join Koja Oy in Jalasjärvi for a permanent full-time position. As a key member of our team, you will automate design work and develop product structures using software robotics, working closely with your team and production. Your responsibilities include creating new design automata, updating structures, importing plans into systems, and collecting feedback for further development. A background in mechanical engineering or mechanical design, experience with 3D design software and product management systems, and proficiency in Python are essential. Additionally, experience with ventilation devices, thin sheet design, or manufacturing is highly valued.",
+        "what_we_expect": [
+          "Background in mechanical engineering or mechanical design.",
+          "Experience with 3D design software.",
+          "Experience with product management systems.",
+          "Programming skills and experience in automating design software or product management systems.",
+          "Experience with ventilation devices or tasks in the HVAC industry.",
+          "Experience with thin sheet design or manufacturing."
+        ],
+        "job_responsibilities": [
+          "Create new design automata.",
+          "Update structures using software robotics.",
+          "Import plans into systems.",
+          "Collect feedback from production for further development."
+        ],
+        "what_we_offer": [
+          "Permanent full-time job.",
+          "Flexible working hours.",
+          "Remote work option available.",
+          "Workplace in Jalasjärvi."
+        ],
+        "search_keywords": "product development software engineer mechanical engineering automation Python HVAC",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:40",
+    "jobs": [
+      {
+        "id": "2dce4e50",
+        "job_id": "heavy-machinery-mechanic-vantaa-2dce4e50",
+        "processed": true,
+        "title": "Heavy Machinery Mechanic",
+        "company": "Worknow Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8702171-raskaskonemekaanikko-vantaa/applications/new?promotion=2294186-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c44a9b88-1a55-4c0c-b5f2-63e4664a5d55/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/heavy-machinery-mechanic-vantaa-2dce4e50",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Heavy Machinery Mechanic at Worknow Oy. Great opportunity in Vantaa — apply now.",
+        "description": "Heavy machinery mechanic, Vantaa, are you passionate about solving technical challenges and working with heavy equipment? Worknow Oy is seeking a skilled mechanic to maintain and repair heavy machinery and earth-moving equipment. Responsibilities include diagnosing faults, troubleshooting hydraulic, electrical, and mechanical systems, and equipping machines. You'll work both in the repair shop and at customer sites, utilizing your technical expertise to ensure quality and safety. Requirements include appropriate technical training, strong experience in heavy equipment maintenance, good Finnish language skills, and a solution-oriented attitude. Join a stable company where you can develop your professional skills and contribute to a team of experienced mechanics.",
+        "what_we_expect": [
+          "Appropriate technical training, for example heavy machinery, machine or vehicle mechanic training.",
+          "Strong experience in maintenance and repair tasks of heavy equipment, work machines or other similar equipment.",
+          "Good technical knowledge and the ability to solve even more challenging fault situations.",
+          "Experience with hydraulic, electrical and mechanical systems.",
+          "Independent, self-initiated and solution-oriented working attitude.",
+          "Desire to learn new things and develop your own professional skills."
+        ],
+        "job_responsibilities": [
+          "Maintenance, repair and equipment work for heavy equipment and earth-moving machinery.",
+          "Fault diagnosis and solving challenging technical problems.",
+          "Troubleshooting and repair of hydraulic, electrical and mechanical systems.",
+          "Equipping machines and putting them in working order.",
+          "Working both at the repair shop and at the customers' place."
+        ],
+        "what_we_offer": [
+          "Permanent job in a stable company."
+        ],
+        "search_keywords": "heavy machinery mechanic maintenance repair earth-moving machinery",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:41",
+    "jobs": [
+      {
+        "id": "8cf8b6b5",
+        "job_id": "cnc-turner-tampere-8cf8b6b5",
+        "processed": true,
+        "title": "CNC Turner",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8697236-cnc-sorvaaja-hervanta/applications/new?promotion=2294185-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2d5451ad-34ec-4336-b381-1fddec84a982/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-turner-tampere-8cf8b6b5",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:41",
+        "open_positions": 1,
+        "salary_range": "Palkkaus on osaamisesta ja aikaisemmasta kokemuksesta riippuen noin 15–19 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a CNC Turner at Worknow Oy. Great opportunity in Tampere — apply now.",
+        "description": "Worknow Oy is seeking a skilled CNC turner for a permanent, full-time position in Tampere. Responsibilities include CNC turning with Mazak and/or Fanuc machines, programming and editing programs, measuring pieces and ensuring quality, processing various materials, operating a forklift, and packaging finished products. Candidates should have experience in CNC turning, CNC programming, knowledge of Mazak and/or Fanuc controls, proficiency with measuring instruments, and an understanding of materials. Accurate and high-quality work is essential. Versatile CNC lathe work is offered with a salary of approximately €15–19/hour, depending on skills and experience. Apply soon as a skilled CNC lathe is needed immediately.",
+        "what_we_expect": [
+          "Experience in CNC turning.",
+          "CNC programming skills.",
+          "Knowledge of Mazak and/or Fanuc controls.",
+          "Good control of measuring instruments.",
+          "Knowledge of materials.",
+          "Accurate and high-quality working draft."
+        ],
+        "job_responsibilities": [
+          "CNC turning with Mazak and/or Fanuc controlled machines.",
+          "CNC programming and editing programs.",
+          "Measuring pieces and quality assurance.",
+          "Processing of various materials.",
+          "Picking up materials from the warehouse with a forklift.",
+          "Packaging of finished products."
+        ],
+        "what_we_offer": [
+          "Versatile CNC lathe work."
+        ],
+        "search_keywords": "CNC turning CNC programming measuring instruments materials",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "fe222f98",
+        "job_id": "industry-expert-ii-fe222f98",
+        "processed": true,
+        "title": "Industry Expert",
+        "company": "Worker Oulu Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Ii",
+          "Kempele",
+          "Liminka",
+          "Lumijoki",
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://worker.likeit.fi/apply/126663262",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a3c235c4-498e-43a2-916a-a27dbc451f1d/en",
+        "job_employer_email": "satu.takkula@worker.fi",
+        "job_employer_name": "Satu Takkula",
+        "job_employer_phone_no": "+358505567899",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/industry-expert-ii-fe222f98",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:41",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Worker Oulu Oy is looking for a Industry Expert in Ii. Don't miss this opportunity — apply today.",
+        "description": "Are you looking for exciting industrial or metal jobs in Oulu and its surrounding areas? Worker Oulu Oy is seeking energetic and fearless individuals for versatile roles such as maintenance fitters, industrial pipe welders, sheet metal welders, fire watchers, industrial painters, and electricians. With a competitive hourly wage between 11.50 and 22 euros based on your skills and experience, and the opportunity to develop your career in the industry, this is a great chance to grow and gain valuable work experience. Own Worker's contact person will support you in all employment-related matters. Apply now to join a company that values your potential and offers reliable and flexible employment opportunities.",
+        "what_we_expect": [
+          "Energetic and fearless attitude.",
+          "Ability to operate safely in a work environment."
+        ],
+        "job_responsibilities": [
+          "Energetic and fearless attitude: you take on tasks on your own initiative, you are not in a hurry and you see to the end of your tasks."
+        ],
+        "what_we_offer": [
+          "Salary according to TES or better, which is always paid on time.",
+          "The opportunity to develop yourself and gain work experience from working in industry/the metal sector.",
+          "Own Worker's contact person, who supports in all matters related to the employment relationship."
+        ],
+        "search_keywords": "industry expert manufacturing production metal jobs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "9349a73f",
+        "job_id": "renovation-carpenter-hämeenkyrö-9349a73f",
+        "processed": true,
+        "title": "Renovation Carpenter",
+        "company": "WorkPower Rakennus Otava Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Hämeenkyrö",
+          "Kangasala",
+          "Lempäälä",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.workpower.fi/likeit/likeit_form.php?id=213327694",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b3616634-4195-4d9d-9d29-54df84e2ee72/en",
+        "job_employer_email": "",
+        "job_employer_name": "Emma",
+        "job_employer_phone_no": "0406766383",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/renovation-carpenter-hämeenkyrö-9349a73f",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-13 15:39:41",
+        "open_positions": 1,
+        "salary_range": "Palkkaus määräytyy rakennusalan TES sekä osaamisesi ja kokemuksesi mukaan, noin 15,56–19,94 €/h + TES mukaiset lisät.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Renovation Carpenter at WorkPower Rakennus Otava Oy. Great opportunity in Hämeenkyrö — apply now.",
+        "description": "WorkPower Rakennus Otava Oy is seeking a professional renovation carpenter for an exciting opportunity in South Tampere. Your responsibilities will include constructing partition walls and sheeting, making false ceilings and casings, installing doors and frames, and performing various finishing and patching work. We are looking for someone with strong previous experience in renovation and repair construction, the ability to read construction drawings, and versatile carpentry skills. A meticulous work ethic, the ability to work independently, and a valid occupational safety card are essential. The position offers the opportunity for longer-term employment in other renovation sites and the possibility of using your own car.",
+        "what_we_expect": [
+          "Ability to read construction drawings.",
+          "Versatile carpentry skills.",
+          "Meticulous workmanship.",
+          "Ability to work independently.",
+          "Good attitude.",
+          "Reliability."
+        ],
+        "job_responsibilities": [
+          "Construction of partition walls and sheeting.",
+          "Making false ceilings and casings.",
+          "Installing doors and frames.",
+          "Listing and various finishing and patching work."
+        ],
+        "what_we_offer": [
+          "Valid occupational safety card.",
+          "Possibility of using own car.",
+          "Opportunity for longer-term employment in other renovation sites."
+        ],
+        "search_keywords": "renovation carpenter carpenter construction worker renovation worker renovation construction renovation partition work door installation listing interior work construction industry South Tampere Tampere Pirkanmaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "1e2e150c",
+        "job_id": "metal-edger-isokyrö-1e2e150c",
+        "processed": true,
+        "title": "Metal Edger",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Isokyrö",
+          "Laihia",
+          "Mustasaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272321",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/16458a88-d513-42d5-bb94-0f0b59228d1e/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/metal-edger-isokyrö-1e2e150c",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:41",
+        "open_positions": 1,
+        "salary_range": "salary is determined according to your skills a",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Metal Edger at Carrot Pohjanmaa Oy in Isokyrö. Apply now and take the next step in your career.",
+        "description": "Carrot Pohjanmaa Oy is seeking a Metal Edger for our client in Vaasa. This is a full-time, permanent position offering a competitive hourly wage based on Finnish collective agreements. Responsibilities include edging sheet metal products according to exact measurements and using an automatic bending machine to produce versatile pieces efficiently and precisely. Previous experience in the metal industry is preferred, along with the ability to read technical drawings and a willingness to learn. Shift work and the ability to take on new tasks are required. If you have previous experience in the metal industry, are ready for shift work, and are eager to learn, this could be the opportunity for you. Apply via the attached link or update your previous application form on the Carrot website.",
+        "what_we_expect": [
+          "Previous experience in the metal industry.",
+          "Readiness for shift work.",
+          "Courage to take on new tasks.",
+          "Precise and careful approach to work.",
+          "Ability to read technical drawings.",
+          "Brisk and eager to learn attitude."
+        ],
+        "job_responsibilities": [
+          "Edging sheet metal products according to exact measurements.",
+          "Using the automatic bending machine to produce versatile pieces efficiently and precisely with different bending radii."
+        ],
+        "what_we_offer": [
+          "Permanent employment relationship.",
+          "Opportunity to work directly for our customer."
+        ],
+        "search_keywords": "metal edger sheet metal production bending machine shift work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:42",
+    "jobs": [
+      {
+        "id": "3fb38e95",
+        "job_id": "sheet-metal-welder-keuruu-3fb38e95",
+        "processed": true,
+        "title": "Sheet Metal Welder",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Keuruu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8695422-levyseppahitsaaja-keuruu/applications/new?promotion=2294183-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6a9861f1-9f7c-4627-bbf7-ada6d4ccf706/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/sheet-metal-welder-keuruu-3fb38e95",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:42",
+        "open_positions": 1,
+        "salary_range": "salary according to your skills (about 15-17e/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Sheet Metal Welder at Worknow Oy in Keuruu. Check the requirements and apply today.",
+        "description": "Sheet metal welder positions are available at Worknow Oy in Keuruu, offering a permanent, full-time role with a competitive hourly wage based on Finnish collective agreements. Responsibilities include TIG and MIG welding in sheet metal structures, assembly welding and fitting of parts, reading and working independently based on technical drawings, and ensuring high-quality finishing and precise work. Ideal candidates will have experience with TIG and/or MIG welding, a background in sheet metal welding, and the ability to read technical drawings. A careful and precise approach to work and a desire to do versatile work and learn new things are essential.",
+        "what_we_expect": [
+          "Experience with TIG and/or MIG welding.",
+          "Background in sheet metal welding.",
+          "Ability to read technical drawings.",
+          "Careful and precise approach to work.",
+          "Desire to do versatile work and learn new things."
+        ],
+        "job_responsibilities": [
+          "TIG and MIG welding in sheet metal structures.",
+          "Assembly welding and fitting of parts.",
+          "Reading drawings and working independently based on them.",
+          "High-quality finishing and precise working."
+        ],
+        "what_we_offer": [
+          "Technology industry test / salary according to your skills (about 15-17e/h).",
+          "A versatile and varied job description.",
+          "Working time 40h/week, 2-shift work.",
+          "Permanent work in a stable working environment.",
+          "A work community where competence is valued and developed."
+        ],
+        "search_keywords": "sheet metal welding, TIG welding, MIG welding, assembly welding, technical drawings",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      },
+      {
+        "id": "3c3e2eeb",
+        "job_id": "welder-hollola-3c3e2eeb",
+        "processed": true,
+        "title": "Welder",
+        "company": "Alrekry Oy, Helsinki",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Hollola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://alrekry.fi/jobs/hitsaaja-hollola-2026-11-12/?lang=fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bcf7238d-5255-4081-ab78-df1a95c66929/en",
+        "job_employer_email": "hr.alrekry@alrekry.fi",
+        "job_employer_name": "Anne Järvelä",
+        "job_employer_phone_no": "050 380 2656",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-hollola-3c3e2eeb",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:39:42",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with your skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Alrekry Oy, Helsinki as a Welder and grow your career in Hollola. Check the job details and apply now.",
+        "description": "We are seeking a skilled welder for a permanent, full-time position at Alrekry Oy in Hollola. The role involves welding pipe structures using TIG and MIG methods in a metal workshop, focusing on aluminum tubes for composite products. Previous experience as a welder, valid occupational safety and fire work cards, and appropriate training are required. Alrekry offers a long-term employment relationship and a salary based on professional skills, with versatile welding tasks and opportunities for skill development. If you are fluent in Finnish and meet these requirements, apply now at alrekry.fi!",
+        "what_we_expect": [
+          "Previous experience as a welder.",
+          "Occupational safety and fire work card.",
+          "Appropriate training."
+        ],
+        "job_responsibilities": [
+          "Welding pipe structures using TIG and MIG methods in a metal workshop."
+        ],
+        "what_we_offer": [
+          "A long-term employment relationship.",
+          "Salary according to your professional skills.",
+          "Versatile welding jobs.",
+          "The opportunity to develop your own professional skills."
+        ],
+        "search_keywords": "welder aluminum tubes TIG MIG welding workshop",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:43",
+    "jobs": [
+      {
+        "id": "f6075330",
+        "job_id": "machine-fitter-automation-fitter-espoo-f6075330",
+        "processed": true,
+        "title": "Machine Fitter / Automation Fitter",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27884401",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0a860d93-0af0-4d22-ab13-ae4cfb15db7d/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/machine-fitter-automation-fitter-espoo-f6075330",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:39:43",
+        "open_positions": 1,
+        "salary_range": "* Palkka 16–20 €/h osaamisesi ja aikaisemman työkokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Machine Fitter / Automation Fitter at Maximus Oy in Espoo. Apply now and take the next step in your career.",
+        "description": "Machine fitter / Automation fitter positions are available at Maximus Oy in Espoo, Helsinki, and Vantaa. Ideal candidates will have more than 3 years of experience in mechanical maintenance, automation installations, and electrical work. Suitable education in electricity, automation, or building technology, as well as the ability to read technical drawings, is required. Fluency in Finnish and a proactive attitude are essential. Two job opportunities are available: fixed factory work with two-shift rotation or mobile maintenance work in various locations. Varied tasks and the chance to develop professional skills are offered, along with high-quality tools and occupational health services. Apply now to join a 25-year-old, reliable employer in the construction industry.",
+        "what_we_expect": [
+          "More than 3 years of experience in the above tasks.",
+          "Experience in industrial or power plant automation installations and maintenance.",
+          "Suitable education in the field of electricity, automation or building technology.",
+          "Ability to read technical drawings.",
+          "Finnish language skills.",
+          "A brisk attitude and a genuine mood to do things."
+        ],
+        "job_responsibilities": [
+          "Perform mechanical maintenance and repair work for industrial machines and equipment.",
+          "Carry out installations, maintenance and repairs of automation and control systems.",
+          "Handle electrical installations and solve electrical faults.",
+          "Troubleshoot, adjust, and tune automation systems.",
+          "Perform maintenance and installation work on industry and power plant equipment."
+        ],
+        "what_we_offer": [
+          "A salary of 16–20 €/h depending on your skills and previous work experience.",
+          "The possibility to choose between fixed factory work or mobile maintenance work.",
+          "Varied tasks and the opportunity to develop your professional skills.",
+          "The possibility of a long-term employment relationship and establishment.",
+          "High-quality tools and equipment.",
+          "Occupational health services at your disposal in Pihlajalinna."
+        ],
+        "search_keywords": "machine fitter automation fitter maintenance installation Uusimaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "53d9081d",
+        "job_id": "construction-worker-hanko-53d9081d",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Bolt.Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Hanko"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://q.bolt.works/application.html?advertId=2148754",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d2a8b5c0-0f49-4b9f-bb4a-0e6a7a3c9ce0/en",
+        "job_employer_email": "joonas.huovila@bolt.works",
+        "job_employer_name": "Joonas Huovila",
+        "job_employer_phone_no": "+358505929206",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-hanko-53d9081d",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-13 15:39:43",
+        "open_positions": 1,
+        "salary_range": "salary commensurate with the task, your work ex",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Construction Worker role at Bolt.Works Oy. Join the team and build your career in Hanko.",
+        "description": "Construction worker needed at Bolt.Works Oy in Hanko for permanent, full-time employment. Responsibilities include flashing and sheeting outer walls of the hall and installing floor concrete nets. Basic skills in woodworking and partition walls are required. Competitive hourly wage based on Finnish collective agreements, with a bonus for excellent work performance and access to occupational health services from day one. Join a fair employer with a great atmosphere and career opportunities in top Finnish industries.",
+        "what_we_expect": [
+          "Basic skills in woodworking.",
+          "Basic skills in partition walls."
+        ],
+        "job_responsibilities": [
+          "Flashing and sheeting the outer walls of the hall.",
+          "Installing floor concrete nets."
+        ],
+        "what_we_offer": [
+          "Salary commensurate with the task.",
+          "Bonus for excellent work performance.",
+          "Occupational health services from day one."
+        ],
+        "search_keywords": "construction worker flashing sheeting concrete nets woodworking partition walls salary bonus health services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "f84b7850",
+        "job_id": "food-service-employee-joensuu-f84b7850",
+        "processed": true,
+        "title": "Food Service Employee",
+        "company": "Polkka - Pohjois-Karjalan tukipalvelut oy, Joensuu",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://polkkaoy.teamtailor.com/jobs/6954462-avoin-haku-ateriapalvelujen-tehtavat/applications/new?promotion=2294181-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/47a9946b-7d29-4424-9f38-dfa0ba04189f/en",
+        "job_employer_email": "jonna.jolkkonen@polkkaoy.fi",
+        "job_employer_name": "Jonna Jolkkonen",
+        "job_employer_phone_no": "0505638364",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/food-service-employee-joensuu-f84b7850",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-13 15:39:43",
+        "open_positions": 1,
+        "salary_range": "Aloituspalkka muodostuu nimikkeen ja kokonaisarvioinnin mukaan. Kokoaikaisen työntekijän palkka sijoittuu pääsääntöisesti 2083,29 € - 2223,41 € välille. Osa-aikaisessa työssä palkka määräytyy työaikaprosentin mukaan. Lisäksi maksamme työkokemuslisää alan työkokemuksesta, viidestä vuodesta 5% ja kymmenestä vuodesta 10%.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Polkka - Pohjois-Karjalan tukipalvelut oy, Joensuu as a Food Service Employee and grow your career in Joensuu. Check the job details and apply now.",
+        "description": "Are you passionate about food service and eager to work in a dynamic environment? Polkka - Pohjois-Karjalan tukipalvelut oy in Joensuu is seeking a food service employee to join their team. Responsibilities include kitchen tasks such as dish maintenance, salad preparation, and hall work, as well as preparing special diets and operating the kitchen. The role is versatile, combining catering and cleaning tasks, and offers opportunities for growth. Requirements include a good attitude, reliability, and a willingness to learn. Permanent, part-time positions are available, and the salary is based on experience, ranging from 2083.29 € to 2223.41 €. Finnish language skills are essential. Polkka provides good orientation, comprehensive occupational health care, and an annual vacation policy.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Work in the kitchen in various tasks such as dish maintenance, salad preparation, hall work and other auxiliary kitchen tasks.",
+          "Prepare special diets in the diet chef team.",
+          "Complete cleaning tasks in addition to catering tasks as a combination worker.",
+          "Operate the kitchen and take orders as a food service manager."
+        ],
+        "what_we_offer": [
+          "Good orientation.",
+          "Comprehensive occupational health care.",
+          "Annual vacation policy of the municipal sector.",
+          "E-pass sports, culture and well-being benefit when the contract is valid for an indefinite period or has continued continuously for 6 months and the employment relationship."
+        ],
+        "search_keywords": "food service employee cook combination employee food service manager North Karelia region",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
   }
 ]
