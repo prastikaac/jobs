@@ -483065,5 +483065,56 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-12 19:51:56",
+    "jobs": [
+      {
+        "id": "dd90d482",
+        "job_id": "pizza-server-rovaniemi-dd90d482",
+        "processed": true,
+        "title": "Pizza Server",
+        "company": "Vesa Säkkinen Oy, Rovaniemi (Pohjolankatu 4-6, 96100 ROVANIEMI)",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:s.sakkinen@luukku.com?subject=Application%20for%20the%20Job%20-%20Pizza%20Server&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Pizza%20Server.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f4e429ef-88a8-4ad5-9598-d26504893162/en",
+        "job_employer_email": "s.sakkinen@luukku.com",
+        "job_employer_name": "Vesa Säkkinen",
+        "job_employer_phone_no": "0400692556",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/pizza-server-rovaniemi-dd90d482",
+        "date_posted": "2026-11-11",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-12 19:51:56",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Vesa Säkkinen Oy, Rovaniemi (Pohjolankatu 4-6, 96100 ROVANIEMI) is looking for a Pizza Server in Rovaniemi. Don't miss this opportunity — apply today.",
+        "description": "Home pizza worker Finland's largest Kotipizza at Rovaniemi Market Square seeks energetic, outgoing part-time employees to serve our vibrant customer base in a team-oriented environment. We are committed to responsible practices, minimizing our carbon footprint, and caring for our community while creating local jobs. Fluent Finnish language skills are essential, and a B driver's license is required. As you grow with us, you may progress to full-time employment and even learn to make pizza. Send your application to s.sakkinen@luukku.com or call 0400 692556 for more information. Join our team today!",
+        "what_we_expect": [
+          "Fluent Finnish language skills.",
+          "Energetic attitude.",
+          "Outgoing personality."
+        ],
+        "job_responsibilities": [
+          "Transporting pizzas."
+        ],
+        "what_we_offer": [
+          "Part-time employment.",
+          "Possibility to progress to full-time employment."
+        ],
+        "search_keywords": "pizza server part-time finland rovaniemi",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
