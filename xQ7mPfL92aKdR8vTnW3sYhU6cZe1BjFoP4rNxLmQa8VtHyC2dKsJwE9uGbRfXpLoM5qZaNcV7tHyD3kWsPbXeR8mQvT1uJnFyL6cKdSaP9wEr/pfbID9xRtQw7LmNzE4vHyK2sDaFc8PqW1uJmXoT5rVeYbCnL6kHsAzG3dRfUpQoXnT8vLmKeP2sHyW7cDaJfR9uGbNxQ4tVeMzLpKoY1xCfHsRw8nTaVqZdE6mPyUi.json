@@ -492457,5 +492457,1358 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:20",
+    "jobs": [
+      {
+        "id": "6d0b3c2a",
+        "job_id": "cnc-machinist-laitila-6d0b3c2a",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Täyttö Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Laitila",
+          "Pyhäranta",
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.taytto.fi/jobs/8724466-cnc-koneistaja-laitilaan/applications/new?promotion=2294211-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/400d618a-8267-4d8b-8e48-f0bf28b3d67b/en",
+        "job_employer_email": "karri@taytto.fi",
+        "job_employer_name": "Karri",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-laitila-6d0b3c2a",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:39:20",
+        "open_positions": 1,
+        "salary_range": "salary for the position is agreed upon accordin",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Täyttö Oy as a CNC Machinist in Laitila. Learn more about the role and apply now.",
+        "description": "Täyttö Oy is seeking a CNC Machinist for a permanent, full-time position in Laitila, Pyhäranta, or Uusikaupunki. Responsibilities include versatile machining and programming work with machining centers or lathes, depending on experience, using Fanuc and HAAS machines, and programming with Fusion360. Self-direction, initiative, and experience in programming are required, along with moderate Finnish language skills. CAM knowledge is advantageous. The salary is competitive at 13-19 euros per hour based on previous experience, and support is provided in employment matters. Interested candidates should apply through the provided link or contact Kari Järviäinen at 050 336 5005 or karri@täyttö.fi.",
+        "what_we_expect": [
+          "Self-direction.",
+          "Initiative.",
+          "Experience in programming.",
+          "Moderate Finnish language skills.",
+          "CAM knowledge is advantageous."
+        ],
+        "job_responsibilities": [
+          "Perform versatile machining and programming work with machining centers or lathes based on experience."
+        ],
+        "what_we_offer": [
+          "Fair salary of 13-19 euros per hour based on previous experience.",
+          "Support in employment matters."
+        ],
+        "search_keywords": "CNC Machinist machining programming Laitila",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "343ae2c1",
+        "job_id": "diamond-worker-tampere-343ae2c1",
+        "processed": true,
+        "title": "Diamond Worker",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/59508209",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/917aa099-26d1-48ba-8435-e81459e9dc04/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/diamond-worker-tampere-343ae2c1",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:20",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,55-19,93 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Wulff Works Oy as a Diamond Worker and grow your career in Tampere. Check the job details and apply now.",
+        "description": "Wulff Works Oy is seeking a professional diamond worker to join our team in Tampere. As a diamond worker, you will perform various drilling and sawing tasks in construction and renovation sites, including making through-holes and openings, and working according to plans and instructions. Previous experience in diamond drilling is essential, along with a careful and accurate work ethic, the ability to work independently, good physical condition, and a B driver's license. The role offers versatile tasks and the opportunity to develop your skills within a supportive team environment. Apply now if you meet the requirements and are ready for a long-term employment relationship.",
+        "what_we_expect": [
+          "Previous experience in diamond drilling.",
+          "Careful and accurate work sample.",
+          "Ability to work independently.",
+          "Good physical condition.",
+          "B driver's license.",
+          "Willingness to move around different job sites."
+        ],
+        "job_responsibilities": [
+          "Diamond drilling and sawing work in construction and renovation sites.",
+          "Making various through-holes and openings.",
+          "Drilling and sawing of concrete structures.",
+          "Working according to plans and work instructions.",
+          "Taking care of work tools and equipment."
+        ],
+        "what_we_offer": [
+          "Versatile tasks in various construction and renovation sites.",
+          "The possibility of a long-term employment relationship.",
+          "The opportunity to develop your own professional skills.",
+          "The support of a skilled team."
+        ],
+        "search_keywords": "diamond drilling, construction, renovation, drilling, sawing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "15eba816",
+        "job_id": "welder-mustasaari-15eba816",
+        "processed": true,
+        "title": "Welder",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Mustasaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272618",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1f272ee4-2d24-404f-9b6f-76c9d3baa036/en",
+        "job_employer_email": "aki-petteri.niemela@carrot.fi",
+        "job_employer_name": "Aki-Petteri Niemelä",
+        "job_employer_phone_no": "+358400216657",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-mustasaari-15eba816",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:20",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Welder role at Carrot Pohjanmaa Oy. Join the team and build your career in Mustasaari.",
+        "description": "Carrot Pohjanmaa Oy is seeking a skilled welder for versatile welding jobs in Mustasaari, Vaasa. Responsibilities include performing tasks using MIG and TIG methods on materials such as structural steel, weather-resistant steel, low-temperature steel, stainless steel, and acid-resistant steel. Applicants should have education in the metal industry, previous experience in similar welding work, a valid occupational safety card, and the ability to work independently. Competitive hourly wages based on Finnish collective agreements are offered. If interested, apply via the attached link or update your previous application. Carrot Pohjanmaa Oy is dedicated to creating a good working life for everyone.",
+        "what_we_expect": [
+          "Valid occupational safety card.",
+          "Education in the metal industry.",
+          "Previous experience in similar welding work.",
+          "Reliability.",
+          "Readiness to work independently."
+        ],
+        "job_responsibilities": [
+          "Perform versatile welding jobs using MIG and TIG methods."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "welder welding MIG TIG structural steel",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "a01a92c5",
+        "job_id": "asbestos-remover-tampere-a01a92c5",
+        "processed": true,
+        "title": "Asbestos Remover",
+        "company": "Wulff Works Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/47259878",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f42721c9-935b-4dc7-aa80-d539aec43afa/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/asbestos-remover-tampere-a01a92c5",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:20",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 14-18 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Asbestos Remover at Wulff Works Oy in Tampere. Check the requirements and apply today.",
+        "description": "Wulff Works Oy is seeking a professional asbestos remover to join our team for various renovation and demolition projects in Tampere. This full-time, permanent position offers a safe work environment and the opportunity to develop skills in diverse locations. Key responsibilities include asbestos demolition, site preparation, cleaning, and documentation, all in compliance with safety regulations. Requirements include a current asbestos removal permit, previous experience in asbestos or demolition work, an independent and responsible work attitude, good communication skills, and an occupational safety card. We offer a long-term job opportunity, varied working days, and support from a professional team.",
+        "what_we_expect": [
+          "Current asbestos removal permit.",
+          "Previous experience in asbestos or demolition work.",
+          "Independent and responsible working attitude.",
+          "Good cooperation and communication skills.",
+          "Good physical condition.",
+          "Occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Asbestos demolition work at various sites.",
+          "Protection of demolition areas and preparatory work.",
+          "Site cleaning and final cleaning.",
+          "Working in accordance with safety regulations.",
+          "Documentation and reporting of work steps."
+        ],
+        "what_we_offer": [
+          "Long-term job opportunity.",
+          "Varied destinations and varying working days.",
+          "The opportunity to develop your skills in tasks in the field.",
+          "A safe work environment and appropriate work tools.",
+          "A professional team to support you."
+        ],
+        "search_keywords": "asbestos remover demolition safety regulations",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "832705d0",
+        "job_id": "high-power-blower-operator-tampere-832705d0",
+        "processed": true,
+        "title": "High-Power Blower Operator",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/64313128",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7d0ae788-2810-4cdc-8ea0-160c92b07fe2/en",
+        "job_employer_email": "jan-henrik.hirvonen@wulff.fi",
+        "job_employer_name": "Jan-Henrik Hirvonen",
+        "job_employer_phone_no": "0417325355",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/high-power-blower-operator-tampere-832705d0",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-13 15:39:20",
+        "open_positions": 1,
+        "salary_range": "Palkkahaitari tehtävässä on kokemuksesta riippuen alkuun noin 14-16€/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is hiring a High-Power Blower Operator in Tampere. Explore the job responsibilities, benefits, and apply today.",
+        "description": "For our client, Wulff Works Oy, we are seeking a brisk and responsible high-power blower operator for versatile tasks in Tampere. The role involves using heavy equipment in various locations and working as part of a professional team. Responsibilities include high-power bricklaying and blasting work at industrial, construction, and other work sites, with tasks that include equipment maintenance and driving. Requirements include a valid C driver's license, a brisk and responsible approach to work, good physical condition, and the ability to work independently and as part of a team. Flexibility and readiness for varied tasks are essential. Previous experience in high-power masonry or blasting, using heavy equipment, or industrial/construction work is advantageous.",
+        "what_we_expect": [
+          "Valid C driver's license.",
+          "A brisk and responsible approach to work.",
+          "Good physical condition and readiness for practical work.",
+          "Ability to work independently and as part of a team.",
+          "Flexibility and readiness for varied tasks."
+        ],
+        "job_responsibilities": [
+          "Use heavy equipment in various locations.",
+          "Perform high-power bricklaying and blasting work at industrial, construction and other work sites.",
+          "Maintain and drive the equipment."
+        ],
+        "what_we_offer": [
+          "Varied tasks in different locations.",
+          "The opportunity to learn and develop your professional skills.",
+          "Orientation to work tasks and equipment use.",
+          "The support of a skilled work community."
+        ],
+        "search_keywords": "blower operator construction heavy equipment blasting",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:22",
+    "jobs": [
+      {
+        "id": "2fc91136",
+        "job_id": "electrician-tampere-2fc91136",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/55069975",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f30b0f3c-cada-47eb-a0c3-3015fded456a/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-tampere-2fc91136",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:22",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä sähköistys- ja sähköasennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,50-21,35 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Electrician at Wulff Works Oy in Tampere. Apply now and take the next step in your career.",
+        "description": "Wulff Works Oy is seeking a skilled and motivated electrician for full-time, permanent employment in Tampere. Responsibilities include electrical installations at construction sites, collaborating with the team to ensure project progress, and providing customer service and technical advice when needed. Requirements are industry training, the ability to read and interpret electrical plans, good physical condition, customer service skills, and valid work safety cards. We offer opportunities for professional development, a dynamic work environment, and long-term employment. Salary is determined by the TES of the electrification and electrical installation industry, ranging from €15.50-21.35/h based on the employee's skill level.",
+        "what_we_expect": [
+          "Industry training.",
+          "Ability to read and interpret electrical plans.",
+          "Good physical condition and readiness to work in different locations.",
+          "Customer service spirit and good interaction skills.",
+          "Valid work safety card and electrical work safety card."
+        ],
+        "job_responsibilities": [
+          "Electrical installations at construction sites.",
+          "Cooperation with the team in the smooth progress of projects.",
+          "Customer service and, if necessary, technical advice for customers."
+        ],
+        "what_we_offer": [
+          "Opportunity for professional development and training.",
+          "A changing work environment.",
+          "Possibility of a long-term employment relationship."
+        ],
+        "search_keywords": "electrician installation maintenance construction site",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:23",
+    "jobs": [
+      {
+        "id": "a93540dc",
+        "job_id": "international-student-recruitment-marketing-planner-kuopio-a93540dc",
+        "processed": true,
+        "title": "International Student Recruitment Marketing Planner",
+        "company": "Savonia-ammattikorkeakoulu Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/748389/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/81b2bf17-f101-4ee0-b5f2-156495b712de/en",
+        "job_employer_email": "antti.iire@savonia.fi",
+        "job_employer_name": "Antti Iire",
+        "job_employer_phone_no": "+35844785692",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/international-student-recruitment-marketing-planner-kuopio-a93540dc",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-13 15:39:23",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Savonia-ammattikorkeakoulu Oy is hiring a International Student Recruitment Marketing Planner in Kuopio.",
+        "description": "Are you passionate about international education and eager to shape the future of Savonia's student recruitment? As an International Student Recruitment Marketing Planner at Savonia University of Applied Sciences, you will plan and implement marketing strategies to attract students from diverse backgrounds, analyze target markets, manage digital channels, and optimize campaigns. You will collaborate with various teams, produce high-quality English content, and measure the success of your initiatives. With a relevant degree, strong digital marketing experience, and excellent English skills, you will play a crucial role in expanding Savonia's global reach and enhancing its international student programs. Join us in building the international future of Northern Savo and Finland.",
+        "what_we_expect": [
+          "A suitable university degree.",
+          "Strong practical experience in digital marketing.",
+          "Experience in the professional use of social media and other digital marketing channels.",
+          "Evidence of effective campaign planning and practical implementation of campaigns.",
+          "The ability to use analytics in marketing planning and optimization.",
+          "Excellent oral and written English skills."
+        ],
+        "job_responsibilities": [
+          "Planning and practical implementation of international student recruitment marketing.",
+          "Analysis of different target countries and applicant groups and selection of marketing channels and messages suitable for them.",
+          "Practical management and utilization of digital and social media channels used in target countries.",
+          "Planning, implementation, monitoring and continuous optimization of digital marketing campaigns.",
+          "Planning, producing and coordinating English-language marketing content for different channels and developing digital channels together with Savonia communications.",
+          "Measuring, analyzing and reporting the results of marketing measures."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "marketing planner international student recruitment digital marketing analytics",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "37d8dbed",
+        "job_id": "it-service-manager-asset-management-applications-espoo-37d8dbed",
+        "processed": true,
+        "title": "IT Service Manager - Asset Management Applications",
+        "company": "Academic Work Finland Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Kauniainen",
+          "Hyvinkää",
+          "Kerava",
+          "Kirkkonummi",
+          "Loviisa",
+          "Mäntsälä",
+          "Nurmijärvi",
+          "Sipoo",
+          "Siuntio",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/9K0P0O",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/36871d9e-b55e-4b49-b1f7-f7c3cef0b93f/en",
+        "job_employer_email": "krs01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/it-service-manager-asset-management-applications-espoo-37d8dbed",
+        "date_posted": "2026-11-13",
+        "date_expires": "2027-05-12",
+        "scraped_at": "2026-11-13 15:39:23",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Join Academic Work Finland Oy as a IT Service Manager - Asset Management Applications and grow your career in Espoo. Check the job details and apply now.",
+        "description": "In this full-time, permanent role as an IT Service Manager for Asset Management Applications at Academic Work Finland Oy, you will govern the AMS partner responsible for day-to-day application operations while owning the development backlog and service roadmap, prioritizing tasks in Jira, and managing continuous minor development. You will connect business needs, operational performance, technical lifecycle, and development investments, plan sprints, and coordinate releases to production. Collaborating closely with key users, AMS suppliers, and an offshore team, you will utilize and develop the ServiceNow environment. A strong background in coordinating roles, practical experience with Agile methods and ITSM processes, and evidence of managing large, time-critical systems are required.",
+        "what_we_expect": [
+          "A strong background in coordinating roles, such as working as a Project Manager, Scrum Master or Product Owner.",
+          "Practical experience with Agile methods (Jira) and ITSM processes (ServiceNow).",
+          "Evidence of managing large, time-critical systems and integrations (ERP/EAM, e.g., Maximo, IFS, or SAP).",
+          "Change oriented.",
+          "Trustful.",
+          "Social."
+        ],
+        "job_responsibilities": [
+          "Owning the development backlog and service roadmap, as well as prioritizing tasks in Jira.",
+          "Governing the AMS partner responsible for day-to-day application operations and remaining accountable for the overall service.",
+          "Connecting business needs, operational performance, technical lifecycle, and development investments.",
+          "Managing continuous minor development and developing the minor development pipeline further.",
+          "Planning sprints and coordinating releases to production.",
+          "Guiding and coordinating the offshore team during and after a team transition."
+        ],
+        "what_we_offer": [
+          "A role with real impact: You get to take ownership of developing and streamlining the continuous minor development pipeline for a business-critical system.",
+          "Strong support and collaboration: You won't be working alone – you will join an experienced, senior-level team and work closely with another Service Manager who focuses on the business analysis side.",
+          "Comprehensive onboarding: Even though a team transition is underway, you will receive thorough support and a dedicated handover period from the current holder of the position to get up to speed smoothly."
+        ],
+        "search_keywords": "IT Service Manager Asset Management Applications Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "23d9582c",
+        "job_id": "construction-worker-tampere-23d9582c",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/49600296",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6ebbd914-9f46-45b6-8db7-5fd59e8c7c73/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-tampere-23d9582c",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:23",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 14,19-17,12 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Wulff Works Oy as a Construction Worker in Tampere. Learn more about the role and apply now.",
+        "description": "Wulff Works Oy is seeking experienced construction workers to join our growing team in Tampere. Ideal candidates will have previous experience in the construction industry or relevant training, good physical condition, and the ability to work both outdoors and indoors. Self-directedness, accuracy, and diligence are essential, along with teamwork skills and a positive attitude. A valid occupational safety card is required. Responsibilities include handling materials and maintaining the cleanliness of the construction site. We offer a varied work environment, opportunities for professional development, and the possibility of long-term employment. High-quality work clothes and tools are provided. Salary is determined according to the TES of the construction industry, ranging from €14.19-17.",
+        "what_we_expect": [
+          "Previous experience in the construction industry or training in the field.",
+          "Good physical condition and willingness to work both outdoors and indoors.",
+          "Self-directedness, accuracy and diligence.",
+          "Teamwork skills and a positive attitude.",
+          "A valid occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Handling materials.",
+          "Maintaining the cleanliness of the construction site."
+        ],
+        "what_we_offer": [
+          "Varied work environment and interesting destinations.",
+          "The opportunity to develop as a professional in the field and expand your skills.",
+          "The possibility of a long-term employment relationship.",
+          "High-quality work clothes and tools."
+        ],
+        "search_keywords": "construction worker building materials safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "511beab9",
+        "job_id": "cleaner-for-service-home-cleaning-inkoo-511beab9",
+        "processed": true,
+        "title": "Cleaner for Service Home Cleaning",
+        "company": "SOL Palvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Inkoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/siivooja-palvelukodin-puhtaanapitoon-inkooseen/ZLnvbp",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/602b7db9-69e6-4bc9-9fd2-b92cb5ccdfae/en",
+        "job_employer_email": "etunimi.sukunimi@sol.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "020 570 0200",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/cleaner-for-service-home-cleaning-inkoo-511beab9",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:23",
+        "open_positions": 1,
+        "salary_range": "Palkka: 13,22 €/h. Palkkaus noudattaa kiinteistöpalvelualan työehtosopimusta palkkaryhmässä 3.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Cleaner for Service Home Cleaning at SOL Palvelut Oy in Inkoo. Apply now and take the next step in your career.",
+        "description": "We are seeking a morning cleaner to join our team at Palvelkoti Vaahteramäki in Inkoo. As a Cleaner for Service Home Cleaning, you will be responsible for maintaining high hygiene standards in customers' rooms, toilets, the sauna, corridors, offices, and break rooms. Additionally, you will ensure the general facilities of the canteen and departments are well-maintained using a combination machine. This is a permanent, full-time position with a 37.5-hour workweek, Monday to Friday from 6:00 a.m. to 2:00 p.m. Requirements include being of legal age, having customer service skills and a positive attitude, and proficiency in either Finnish or English.",
+        "what_we_expect": [
+          "Of legal age.",
+          "Customer service skills and a sunny attitude when working with different people.",
+          "Good knowledge of Finnish or English.",
+          "The possibility of using your own car or another way to travel to the destination.",
+          "Self-initiated, responsible and precise approach to work."
+        ],
+        "job_responsibilities": [
+          "Cleaning of customers' rooms and toilets.",
+          "Cleaning of the sauna, corridors, offices and break rooms.",
+          "Maintenance of the general facilities of the canteen and departments.",
+          "Cleaning work using a combination machine."
+        ],
+        "what_we_offer": [
+          "Comprehensive and customized induction for tasks.",
+          "Good and functional tools for your work.",
+          "The support of an encouraging team and supervisor, as well as a safe work environment.",
+          "The SOL Life program that supports occupational well-being.",
+          "Exercise and massage benefit after the trial period.",
+          "Occupational health care that is wider than the statutory provisions."
+        ],
+        "search_keywords": "cleaner home cleaning service manager hygiene elderly residents",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:24",
+    "jobs": [
+      {
+        "id": "a35632b0",
+        "job_id": "construction-assistant-nokia-a35632b0",
+        "processed": true,
+        "title": "Construction Assistant",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Nokia",
+          "Pirkkala",
+          "Tampere",
+          "Ylöjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/49599807",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c702f054-b34e-4337-a0db-9a3806f8c0c8/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-assistant-nokia-a35632b0",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:24",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 12,59-14,19 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Construction Assistant role at Wulff Works Oy. Join the team and build your career in Nokia.",
+        "description": "We are seeking brisk and motivated construction assistants for full-time, permanent positions at Wulff Works Oy in Nokia, Pirkkala, Tampere, and Ylöjärvi. Responsibilities include moving and storing construction materials, maintaining tools and machines, performing simple construction and demolition work, and cleaning the construction site. We value previous experience, good physical condition, social skills, initiative, a B driver's license (own car is a plus), and an occupational safety card. We offer necessary work equipment, growth opportunities, varied tasks, and a supportive work environment. Salary is determined by the TES of the construction industry, ranging from €12.59-14.19/h based on the employee's skill level. Apply now through our AI assistant at <http://wulffworks.likeit.",
+        "what_we_expect": [
+          "Previous experience in similar tasks.",
+          "Good physical condition.",
+          "Good social skills and initiative.",
+          "B driver's license (your own car is a plus).",
+          "An occupational safety card is an advantage."
+        ],
+        "job_responsibilities": [
+          "Moving and storing construction materials.",
+          "Maintaining tools and machines.",
+          "Simple construction and demolition work.",
+          "Cleaning the construction site."
+        ],
+        "what_we_offer": [
+          "Necessary work equipment.",
+          "The opportunity to grow into a professional in the construction industry.",
+          "Varied and versatile tasks.",
+          "A good work atmosphere and the support of a competent team."
+        ],
+        "search_keywords": "construction assistant construction industry physical work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "79ad77b2",
+        "job_id": "plumber-tampere-79ad77b2",
+        "processed": true,
+        "title": "Plumber",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/58378017",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7aea9df4-0c83-40bf-a6f5-6a6281a76bea/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/plumber-tampere-79ad77b2",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:24",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä talotekniikan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,22-19,97 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Plumber at Wulff Works Oy in Tampere. Check the requirements and apply today.",
+        "description": "We are seeking a professional and motivated plumber to join our team at Wulff Works Oy in Tampere. As a plumber, you will be responsible for installing various pipelines and furniture across diverse locations, from residential buildings to industrial premises. Requirements include a professional qualification as a plumber or equivalent education, some experience in similar tasks, strong technical skills, an independent and responsible working attitude, good customer service and interaction skills, and a B driver's license. We offer the opportunity to develop your skills and advance in your career, as well as a pleasant and encouraging work community. The salary is determined according to the TES for building technology, with a range of €15.22-19.97/h based on the employee's skills.",
+        "what_we_expect": [
+          "Professional qualification as a plumber or equivalent education.",
+          "Some experience in similar tasks.",
+          "Strong technical skills and ability to read blueprints.",
+          "Independent and responsible working attitude.",
+          "Good customer service and interaction skills.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [
+          "Install various pipelines and furniture."
+        ],
+        "what_we_offer": [
+          "Work clothes.",
+          "Opportunity to develop skills and advance in career.",
+          "Varied and varied tasks.",
+          "Pleasant and encouraging work community."
+        ],
+        "search_keywords": "plumber installation maintenance technical skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:25",
+    "jobs": [
+      {
+        "id": "2c45ae98",
+        "job_id": "air-conditioning-installer-tampere-2c45ae98",
+        "processed": true,
+        "title": "Air Conditioning Installer",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/51318276",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f12f1bdd-a9ff-4e4f-bda6-a1b7bd277259/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/air-conditioning-installer-tampere-2c45ae98",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:25",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä talotekniikan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,66-20,55 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Air Conditioning Installer at Wulff Works Oy in Tampere. Apply now and take the next step in your career.",
+        "description": "Wulff Works Oy is seeking a professional Air Conditioning Installer to join our team in Tampere. The role involves installation work of ventilation ducts and equipment, service and maintenance of ventilation machines, troubleshooting, and working at various construction and maintenance sites. Candidates should have previous experience in similar tasks, an understanding of ventilation systems, and a B driver's license. Independent and responsible work attitude, as well as good cooperation and customer service skills, are essential. The salary is determined in the position according to the TES for building technology, with a range of €15.66-20.55/h based on the employee's skills. If you are interested, apply directly through our AI assistant at <http://wulffworks.likeit.",
+        "what_we_expect": [
+          "Education in the HVAC field or similar skills.",
+          "Experience in IV installation or maintenance tasks.",
+          "Understanding of ventilation systems and equipment.",
+          "Independent and responsible work attitude.",
+          "Good cooperation and customer service skills.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [
+          "Installation work of ventilation ducts and equipment.",
+          "Service and maintenance of ventilation machines.",
+          "Troubleshooting and corrective measures.",
+          "Working at various construction and maintenance sites.",
+          "Taking care of work safety and work quality."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "installation maintenance ventilation HVAC",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "00864ccb",
+        "job_id": "senior-physician-lung-diseases-jyväskylä-00864ccb",
+        "processed": true,
+        "title": "Senior Physician, Lung Diseases",
+        "company": "Keski-Suomen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/750947/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0b4c4e80-a098-4289-8345-c805506d5312/en",
+        "job_employer_email": "minna.tommola@hyvaks.fi",
+        "job_employer_name": "Minna Tommola",
+        "job_employer_phone_no": "0504766185",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/senior-physician-lung-diseases-jyväskylä-00864ccb",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-11",
+        "scraped_at": "2026-11-13 15:39:25",
+        "open_positions": 1,
+        "salary_range": "alkaen 8 120,24 € /kk sekä mahdolliset lisät",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Keski-Suomen hyvinvointialue is hiring a Senior Physician, Lung Diseases in Jyväskylä. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a Senior Physician with expertise in lung diseases to join our permanent full-time team at the lung diseases unit in Jyväskylä, Finland. As a key member of our positive and open working environment, you will be responsible for managing the outpatient clinic and ward work, as well as driving operational development. With a collaborative and multiprofessional team, you will bring your positive attitude, reliability, and willingness to learn to our flexibly functioning unit. The salary starts at €8,120.24/month, with possible additional benefits. If you are passionate about lung diseases and eager to contribute to a supportive and innovative workplace, we would love to hear from you.",
+        "what_we_expect": [
+          "Positive attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Be responsible for lung disease outpatient clinic and ward work.",
+          "Be responsible for operational development."
+        ],
+        "what_we_offer": [
+          "Positive for workplace development.",
+          "Open to new ideas.",
+          "Flexibly functioning unit.",
+          "Nice colleagues.",
+          "Open and conversational working atmosphere.",
+          "Support of a collegial and multiprofessional team."
+        ],
+        "search_keywords": "senior physician lung diseases Jyväskylä healthcare",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "efc7137d",
+        "job_id": "carpenter-tampere-efc7137d",
+        "processed": true,
+        "title": "Carpenter",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/34302031",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/52cf57b0-994e-4a70-98f3-6ff05b399a02/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/carpenter-tampere-efc7137d",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:25",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä rakennusalan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 17,12-19,93 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Carpenter at Wulff Works Oy in Tampere. Apply now and take the next step in your career.",
+        "description": "Wulff Works Oy is seeking an experienced carpenter to join our dynamic team in Tampere. As a carpenter, you will work on diverse construction projects, including the construction of foundations, walls, and roofs, as well as the repair and renewal of roof structures, installation of windows and doors, and furniture installations. You will also engage in various carpentry tasks and the manufacturing of structures. We value candidates with experience in carpenter's tasks, education in the construction industry, or similar work experience, as well as the ability to read construction drawings. Good physical condition and readiness to work in different conditions, accuracy, initiative, problem-solving ability, teamwork skills, and a customer-oriented attitude are essential.",
+        "what_we_expect": [
+          "Experience in carpenter's tasks and education in the construction industry or similar work experience.",
+          "Ability to read construction drawings.",
+          "Good physical condition and readiness to work in different conditions.",
+          "Accuracy, initiative and problem solving ability.",
+          "Teamwork skills and a customer-oriented attitude.",
+          "A valid work safety card is an advantage."
+        ],
+        "job_responsibilities": [
+          "Construction of foundations, walls and roofs.",
+          "Repair and renewal of roof structures.",
+          "Installation of windows and doors.",
+          "Furniture installations and finishing works.",
+          "Different types of carpentry work and manufacturing of structures."
+        ],
+        "what_we_offer": [
+          "The opportunity to develop as a professional in versatile and interesting projects.",
+          "The support of a supportive and comfortable work community.",
+          "Necessary tools and work clothes."
+        ],
+        "search_keywords": "carpenter construction projects foundations roofs windows doors carpentry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:26",
+    "jobs": [
+      {
+        "id": "b9914a6e",
+        "job_id": "caregiver-for-take-home-services-lahti-b9914a6e",
+        "processed": true,
+        "title": "Caregiver for Take-Home Services",
+        "company": "ANNU Group Oy, Helsinki",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://form.hailer.com/c5a7c349f5b7892c7978add361a6a698",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ef67ef9f-4818-40d4-ae2a-7713b1570e32/en",
+        "job_employer_email": "piia@annu.fi",
+        "job_employer_name": "Toroskainen Piia",
+        "job_employer_phone_no": "0449019224",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/caregiver-for-take-home-services-lahti-b9914a6e",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:26",
+        "open_positions": 1,
+        "salary_range": "salary payment",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "ANNU Group Oy, Helsinki is hiring a Caregiver for Take-Home Services in Lahti. Explore the job responsibilities, benefits, and apply today.",
+        "description": "ANNU Group Oy, based in Helsinki and operating in Lahti, is seeking a dedicated caregiver for take-home services to support families with children and the elderly in substitute family care leave. This full-time, permanent position offers flexible working hours and the opportunity to influence your schedule. Key responsibilities include working with children in home services and supporting the elderly during family care leave. The ideal candidate is a cheerful, social individual who can work independently and professionally, demonstrating reliability and a willingness to learn. ANNU Group provides comprehensive orientation and supervisor support, with flexible working hours and a salary according to the collective agreement of the private social sector (salary category G20C).",
+        "what_we_expect": [
+          "A cheerful and social person.",
+          "Able to work independently and professionally in customer work.",
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Working with children in the home service for families with children.",
+          "Working with the elderly in substitute family care leave."
+        ],
+        "what_we_offer": [
+          "Flexible, meaningful paid work.",
+          "Influence over working hours and when and where you work.",
+          "Supervisor support for your work.",
+          "Comprehensive orientation before starting work tasks, paid with the first salary payment.",
+          "Salary according to the collective agreement of the private social sector (salary category G20C)."
+        ],
+        "search_keywords": "caregiver home services social care children elderly",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "91bba3d1",
+        "job_id": "dispatch-worker-äänekoski-91bba3d1",
+        "processed": true,
+        "title": "Dispatch Worker",
+        "company": "Suomen Henkilöstöasiantuntijat Oy",
+        "job_category": "warehousing-and-storage",
+        "jobLocation": [
+          "Äänekoski"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://henkilostoasiantuntijat.fi/tyopaikat/?rmpage=job&rmjob=909&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/92e3c36c-a0d9-4587-a7f3-50c3cdcb80d4/en",
+        "job_employer_email": "markus.hirsimaki@henkilostoasiantuntijat.fi",
+        "job_employer_name": "Markus Hirsimäki",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/warehousing-and-storage/dispatch-worker-äänekoski-91bba3d1",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-11-13 15:39:26",
+        "open_positions": 1,
+        "salary_range": "Tuntipalkka, 13-16 €/h, sovitaan erikseen kokemuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join Suomen Henkilöstöasiantuntijat Oy as a Dispatch Worker and grow your career in Äänekoski. Check the job details and apply now.",
+        "description": "Suomen Henkilöstöasiantuntijat Oy is seeking a Dispatch Worker for a full-time, permanent position in Äänekoski. Responsibilities include product packaging, loading and shipping, assisting in urgent production situations, shot blasting, bearing protection, hanging parts for painting, and sawing shafts and pins. Ideal candidates will have experience in a dispatch office, basic computer skills, and a self-starting, independent approach. Excellent Finnish and basic English skills are required, with knowledge of the warehouse industry and experience in dispatch work or the engineering/metal industry being advantageous. Salary is negotiable based on experience. Apply now for this exciting opportunity!",
+        "what_we_expect": [
+          "Work experience at a dispatch office.",
+          "Basic computer skills.",
+          "Independent approach to work and a brisk attitude.",
+          "Willingness and ability to learn new things.",
+          "Excellent knowledge of Finnish and basic English.",
+          "Education in the warehouse industry."
+        ],
+        "job_responsibilities": [
+          "Product packaging.",
+          "Loading and shipping.",
+          "Assisting in urgent production situations.",
+          "Shot blasting of welded parts.",
+          "Bearing protection and hanging of parts to be painted on the painting line.",
+          "Sawing of shafts and pins."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "dispatch worker packaging shipping engineering metal industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "9f280fce",
+        "job_id": "sheet-metal-welder-isokyrö-9f280fce",
+        "processed": true,
+        "title": "Sheet Metal Welder",
+        "company": "Carrot Pohjanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Isokyrö",
+          "Laihia",
+          "Mustasaari",
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://carrot.likeit.fi/apply/92272413",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e88112cc-a476-4850-be6e-652ffe9a20d3/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "040 6449410",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/sheet-metal-welder-isokyrö-9f280fce",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Carrot Pohjanmaa Oy as a Sheet Metal Welder in Isokyrö. Learn more about the role and apply now.",
+        "description": "We are seeking a sheet metal welder for a temporary full-time position in Vaasa, Finland. The role involves welding and assembly tasks, requiring a precise and careful approach, as well as the ability to read drawings. You should be willing to take responsibility, able to work independently or with a partner, and have a strong interest in the field. Competitive hourly wages based on Finnish collective agreements are offered, and the opportunity to settle on the client's own books after the initial temporary contract. Applications can be submitted via the attached link or by updating your previous application. For more information, contact Aki-Petteri Niemelä at 040 021 6657. Carrot Pohjanmaa Oy values initiative and is dedicated to creating a good working life for everyone.",
+        "what_we_expect": [
+          "Precise and careful work.",
+          "Ability to read drawings.",
+          "Good ability to read drawings.",
+          "Willingness to take responsibility.",
+          "Ability to work independently.",
+          "Ability to work with a partner."
+        ],
+        "job_responsibilities": [
+          "Welding and assembly tasks."
+        ],
+        "what_we_offer": [
+          "Opportunity to settle on the client's own books."
+        ],
+        "search_keywords": "sheet metal welder vaasa manufacturing production",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:27",
+    "jobs": [
+      {
+        "id": "47baae51",
+        "job_id": "gearbox-subassembly-fitter-tampere-47baae51",
+        "processed": true,
+        "title": "Gearbox Subassembly Fitter",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere",
+          "Lempäälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8702862-vaihteiden-osakokoonpanoasentaja-katsa-oy/applications/new?promotion=2294197-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/604e1180-140f-45e4-80dc-c893c9aaf1ac/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/gearbox-subassembly-fitter-tampere-47baae51",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:39:27",
+        "open_positions": 1,
+        "salary_range": "* Palkka: 14–16 €/h osaamisen ja kokemuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Worknow Oy is looking for a Gearbox Subassembly Fitter in Tampere. Don't miss this opportunity — apply today.",
+        "description": "Gear subassembly fitter positions are available at Worknow Oy in Tampere, supporting the growing production of Katsa Oy. As a subassembly fitter, you will assemble smaller units for gearboxes according to technical drawings and work instructions. Key requirements include the ability to read technical drawings, smooth and safe use of hand tools, and an accurate and self-initiated approach to work. Cooperation skills and a responsible attitude are essential, along with a willingness to learn and ask questions. The role offers a full-time, permanent employment relationship with good working conditions and a fun working community. Salary is €14–16/h depending on skills and experience, with a 40-hour workweek from 7:00 a.m. to 3:30 p.m. at the Sääksjärvi or Lakalaiva office.",
+        "what_we_expect": [
+          "Ability to read technical drawings.",
+          "Smooth and safe use of hand tools.",
+          "Accurate and self-initiated approach to work.",
+          "Cooperation skills and a responsible attitude to work.",
+          "Desire to learn and courage to ask questions if a work step or instruction remains unclear."
+        ],
+        "job_responsibilities": [
+          "Assemble smaller units for gearboxes according to technical drawings and work instructions."
+        ],
+        "what_we_offer": [
+          "Full-time, indefinite employment relationship.",
+          "Good working conditions.",
+          "Fun working community.",
+          "Salary: €14–16/h depending on skills and experience.",
+          "Working hours: 40 h/week, from 7:00 a.m. To 3:30 p.m.",
+          "Location: Sääksjärvi or Lakalaiva office."
+        ],
+        "search_keywords": "gearbox assembly, subassembly fitter, mechanical installation, technical drawings, hand tools",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "99087ef6",
+        "job_id": "family-caregiver-backup-staff-helsinki-99087ef6",
+        "processed": true,
+        "title": "Family Caregiver, Backup Staff",
+        "company": "Helsingin kaupunki",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-03-457-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/71b391ee-5076-44ae-913b-c317b9238da6/en",
+        "job_employer_email": "sotepe.seniorikeskusten.rekrytointi@hel.fi",
+        "job_employer_name": "Seniorikeskusten keskitetty rekrytointi",
+        "job_employer_phone_no": "0931001108",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-caregiver-backup-staff-helsinki-99087ef6",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Helsingin kaupunki as a Family Caregiver, Backup Staff and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "Family caregiver, backup staff at Helsingin kaupunki's senior centers in Helsinki are needed for a permanent, full-time role. This position involves mobile work across Kustaankartano, Koskela, Kivelä senior centers, and Madetoja, Puistola service centers. Duties include basic care, rehabilitative support, drug and wound treatments, and real-time recording in the Apotti system. You will collaborate with a multidisciplinary team and relatives. Requirements include excellent interaction skills, flexibility, and the ability to work under pressure. The role suits those who enjoy change and are willing to work in various environments, including weekends. Apply now to join the reserve staff experiment, which runs until November 2027.",
+        "what_we_expect": [
+          "Excellent interaction and cooperation skills.",
+          "Flexibility and ability to work under pressure.",
+          "Readiness for mobile work and working in different work environments.",
+          "Independent and self-initiated approach to work.",
+          "Desire to develop your own skills and learn new things."
+        ],
+        "job_responsibilities": [
+          "Basic care and assistance in everyday situations.",
+          "Supporting residents' ability to function and resources through rehabilitative care.",
+          "Drug and wound treatments.",
+          "Real-time recording in the Apotti customer information system.",
+          "Cooperation with a multidisciplinary team and relatives."
+        ],
+        "what_we_offer": [
+          "We offer you."
+        ],
+        "search_keywords": "nurse caregiver backup senior centers Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:28",
+    "jobs": [
+      {
+        "id": "c5d9f522",
+        "job_id": "early-childhood-education-teacher-leppävirta-c5d9f522",
+        "processed": true,
+        "title": "Early Childhood Education Teacher",
+        "company": "Leppävirran kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Leppävirta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LEP-02-13-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7d463a67-9d91-4413-8997-cb2059950edd/en",
+        "job_employer_email": "saara.nuutinen@leppavirta.fi",
+        "job_employer_name": "Saara Nuutinen",
+        "job_employer_phone_no": "0447906010",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-leppävirta-c5d9f522",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Early Childhood Education Teacher at Leppävirran kunta in Leppävirta. Check the requirements and apply today.",
+        "description": "We are seeking a temporary early childhood education teacher for the Kirkonkylä daycare center in Leppävirta, valid from January 1 to May 31, 2027, with potential extension. This role involves supporting children's growth and learning through various pedagogical activities and environments, requiring a positive and innovative work attitude, good communication, and teamwork skills. The position offers a strong supervisor, a supportive work community, and access to ePass and voluntary exercise shifts. Leppävirta municipality values a child-friendly approach and supports the well-being of its staff. Eligibility requires a bachelor's degree in education or relevant studies. A criminal background check is necessary. Leppävirta is a vibrant municipality with excellent living conditions.",
+        "what_we_expect": [
+          "A positive and developing work attitude.",
+          "Good communication skills.",
+          "Teamwork and interaction skills."
+        ],
+        "job_responsibilities": [
+          "Supporting children's growth and learning in various pedagogical activities and learning environments."
+        ],
+        "what_we_offer": [
+          "A strong supervisor.",
+          "A work community.",
+          "Support.",
+          "The entire early childhood education support.",
+          "EPass.",
+          "Early childhood educators' own voluntary exercise shift."
+        ],
+        "search_keywords": "early childhood education teacher daycare center Leppävirta municipality",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      },
+      {
+        "id": "2dfbfdb0",
+        "job_id": "nurse-home-care-helsinki-2dfbfdb0",
+        "processed": true,
+        "title": "Nurse, Home Care",
+        "company": "Helsingin kaupunki",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/SOTEPE-03-462-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ac3912d9-a274-433b-bde5-3e4d69e032c5/en",
+        "job_employer_email": "sotepe.kotihoidon.resurssipalvelu@hel.fi",
+        "job_employer_name": "Kotihoidon resurssipalvelu",
+        "job_employer_phone_no": "0931066330",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-home-care-helsinki-2dfbfdb0",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:39:28",
+        "open_positions": 1,
+        "salary_range": "3423,22 €/kk sekä mahd. kokemuslisä max. 8 %",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Nurse, Home Care at Helsingin kaupunki in Helsinki. Check the requirements and apply today.",
+        "description": "Nurse, Töölö 2 home care, Helsingin kaupunki invites you to join a bilingual team serving Finnish and Swedish speaking clients in Töölö, Kampi, Ruoholahti, Eira, and Kruununhaa. Work in a supportive, multi-professional environment where you can utilize your clinical skills to provide versatile and independent care. Responsibilities include planning, implementing, and evaluating clients' care, monitoring health, assessing treatment needs, and carrying out medical tasks. Shifts focus on weekday mornings, and you'll benefit from comprehensive orientation, competent colleagues, and opportunities for professional development. Apply if you have a good attitude, reliability, professionalism, teamwork, and a willingness to learn.",
+        "what_we_expect": [
+          "A good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Participate in the planning, implementation and evaluation of the clients' care.",
+          "Monitor the health of the clients and assess the treatment needs.",
+          "Carry out versatile medical tasks, such as wound and stoma care, catheterizations, injections and medical treatment.",
+          "Participate in withdrawals and receiving new customers.",
+          "Consult doctors when the clients' situations change and you cooperate with other professionals.",
+          "Guide and support nurses in medical questions."
+        ],
+        "what_we_offer": [
+          "Versatile and responsible job description.",
+          "A comprehensive orientation that takes into account your previous skills.",
+          "Competent and approachable colleagues.",
+          "A work community where help is always available when needed.",
+          "The opportunity to develop your professional skills.",
+          "Shifts that focus on weekday mornings."
+        ],
+        "search_keywords": "nurse home care healthcare bilingual finnish swedish",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "7a3598cf",
+        "job_id": "special-class-teacher-helsinki-7a3598cf",
+        "processed": true,
+        "title": "Special Class Teacher",
+        "company": "Helsingin kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-01-932-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bb313b56-4a02-4494-98fc-d23b17cc7546/en",
+        "job_employer_email": "esa.terava@hel.fi",
+        "job_employer_name": "Esa Terävä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/special-class-teacher-helsinki-7a3598cf",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Special Class Teacher at Helsingin kaupunki in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking a reliable and professional special class teacher to join Merilahti elementary school in Helsinki from January 7, 2027, to April 30, 2027. The role involves teaching in a 6th grade special class and providing student-specific support in small groups. Merilahti elementary school, a unified school with a strong neighborhood principle, offers a diverse and inclusive environment with approximately 750 students and 90 staff. The school emphasizes language awareness and intercultural dialogue, and is located near nature reserves and good transportation links. We value teamwork and are committed to developing our operations. As an employee, you will have access to the Epassi Flex benefit of up to 550 euros for business trips and cultural, sports, and wellness services.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Teach the special class of a nearby school at Merilahti elementary school for the period 7 January 2027 - 30 April 2027.",
+          "Teach as a student-specific support measure in small groups."
+        ],
+        "what_we_offer": [
+          "Epassi Flex benefit of up to 550 euros to be used for business trips and cultural, sports and wellness services."
+        ],
+        "search_keywords": "special class teacher elementary school Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "57bd68bb",
+        "job_id": "communication-designer-kuopio-57bd68bb",
+        "processed": true,
+        "title": "Communication Designer",
+        "company": "Savonia-ammattikorkeakoulu Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/748336/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d93fd80f-0643-4b42-a913-9fc1a782b492/en",
+        "job_employer_email": "anne.heikkinen@savonia.fi",
+        "job_employer_name": "Anne Heikkinen",
+        "job_employer_phone_no": "0447855008",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/communication-designer-kuopio-57bd68bb",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-13 15:39:28",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "A new job opportunity is available at Savonia-ammattikorkeakoulu Oy as a Communication Designer in Kuopio. Learn more about the role and apply now.",
+        "description": "Join Savonia University of Applied Sciences as a Communication Designer to make a meaningful impact in versatile communication and marketing tasks. As part of our dynamic team, you will plan and produce content for social media channels, participate in communication initiatives, develop social influencer and student ambassador activities, and support international education and business marketing. With a university-level education in communication and marketing, strong content production skills, and a good understanding of social media, you will thrive in this role. Fluent in both Finnish and English, you will collaborate closely with experts across Savonia to create engaging content and events.",
+        "what_we_expect": [
+          "University-level education suitable for communication and marketing tasks.",
+          "Experience in communication and marketing tasks.",
+          "Good content production and writing skills.",
+          "Good knowledge of social media channels and methods of operation.",
+          "The ability to plan, coordinate and move things forward independently.",
+          "Good cooperation, interaction and organization skills."
+        ],
+        "job_responsibilities": [
+          "Plan and produce content for Savonia's social media channels and participate in their development.",
+          "Participate in Savonia's current communication.",
+          "Develop and coordinate social influencer activities.",
+          "Develop and coordinate student ambassador activities.",
+          "Plan and implement events that are the responsibility of communication services, such as student recruitment events.",
+          "Support the communication and marketing of international education and business."
+        ],
+        "what_we_offer": [
+          "The opportunity to do meaningful communication work.",
+          "The opportunity to leave your mark on the visibility of Savonia.",
+          "Support by a competent communication team that encourages cooperation, where expertise is shared."
+        ],
+        "search_keywords": "communication designer social media content production marketing events planning",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:39:29",
+    "jobs": [
+      {
+        "id": "32312666",
+        "job_id": "dental-assistant-tampere-32312666",
+        "processed": true,
+        "title": "Dental Assistant",
+        "company": "Pirkanmaan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/Pirha-01-7009-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e8d1f56b-26bb-4e31-997a-acbb62dd51f4/en",
+        "job_employer_email": "etunimi.sukunimi@pirha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/dental-assistant-tampere-32312666",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:39:29",
+        "open_positions": 1,
+        "salary_range": "Tasopalkka: 2 715,00€ /kk.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Pirkanmaan hyvinvointialue is hiring a Dental Assistant in Tampere. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Pirkanmaan hyvinvointialue in Tampere is seeking two full-time, permanent dental assistants for a fixed-term employment relationship. The roles involve versatile work in basic oral care, primarily in Tampere, with some movement to Orivesi and Pirkkala. Ideal candidates will have a positive and active work attitude, a customer-oriented mindset, and good cooperation skills. A dental nurse's or oral health care-oriented nurse's degree and a Valvira certificate are required, along with excellent Finnish language skills. The work community offers interesting, multi-professional environments with opportunities for skill development through regular training. Applications can be submitted via Kuntarekry, and interviews will be held in November and December.",
+        "what_we_expect": [
+          "Positive and active work attitude.",
+          "Customer-oriented way of thinking.",
+          "Good cooperation skills.",
+          "Positive development.",
+          "Ability and desire to work as a member of a multi-professional team."
+        ],
+        "job_responsibilities": [
+          "More information about the tasks."
+        ],
+        "what_we_offer": [
+          "Interesting work in a skilled and multi-professional work community.",
+          "Opportunity to use your skills in a wide area and develop both yourself and your work.",
+          "Opportunity to continuously maintain and develop skills through regular internal training.",
+          "Support of an encouraging, professional and enthusiastic multi-professional team.",
+          "Working days include breaks during work holidays.",
+          "Lunch is served flexibly during work holidays."
+        ],
+        "search_keywords": "dental assistant healthcare Tampere Pirkanmaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
   }
 ]
