@@ -477358,5 +477358,1236 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:38",
+    "jobs": [
+      {
+        "id": "5b247461",
+        "job_id": "sheet-metal-welder-vieremä-5b247461",
+        "processed": true,
+        "title": "Sheet Metal Welder",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Vieremä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/44743884",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bf05d45c-42f9-4dfb-b2f7-eac3584d98d6/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "045269 6696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/sheet-metal-welder-vieremä-5b247461",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:38",
+        "open_positions": 1,
+        "salary_range": "salary for the position is negotiable based on",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Osuma Henkilöstöpalvelut Oy as a Sheet Metal Welder in Vieremä. Learn more about the role and apply now.",
+        "description": "Sheet Metal Welder / JetiTaso Oy We are seeking a sheet metal welder for an indefinite, full-time position in Vieremä. The role involves welding and assembly tasks for steel structural products. Ideal candidates will have professional training in the metal industry or substantial experience in installation work, as well as readiness to complete MAG welding classes. Reading machine shop drawings is essential. A positive, independent attitude and a quality-conscious approach to work are required. Success in this role demands motivation to produce high-quality work and a commitment to continuous improvement. For more information, contact Erno Randelin at 045 269 6696 or visit Osuma's website to apply.",
+        "what_we_expect": [
+          "Professional training in the metal industry or strong experience in installation work.",
+          "MAG welding classes or readiness to complete classes.",
+          "Ability to read machine shop drawings.",
+          "Positive and independent attitude.",
+          "Quality-conscious approach to work.",
+          "Motivation to produce high-quality work."
+        ],
+        "job_responsibilities": [
+          "Work in the welding and assembly tasks of steel structural products."
+        ],
+        "what_we_offer": [
+          "Comfortable work environment.",
+          "Competitive salary."
+        ],
+        "search_keywords": "sheet metal welder manufacturing production",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "57d50826",
+        "job_id": "steel-structure-installer-iisalmi-57d50826",
+        "processed": true,
+        "title": "Steel Structure Installer",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Iisalmi",
+          "Kiuruvesi",
+          "Vieremä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/44741147",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2f796420-9807-4dc5-abe3-10cfb05455bc/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "045269 6696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/steel-structure-installer-iisalmi-57d50826",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Steel Structure Installer at Osuma Henkilöstöpalvelut Oy in Iisalmi. Check the requirements and apply today.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking a steel structure installer for a permanent, full-time position with JetiTaso Oy in Vieremä, Finland. This role involves versatile construction and installation projects, both at the factory and at customer sites, requiring a positive and independent attitude, as well as a quality-conscious approach to work. The ideal candidate will have vocational training in the metal or construction industry or substantial experience in installation work, and the ability to read assembly drawings. Competitive hourly wages based on Finnish collective agreements are offered in a comfortable work environment. If you are interested and meet the requirements, please apply through our website.",
+        "what_we_expect": [
+          "Vocational training in the metal or construction industry or strong experience in installation work.",
+          "Ability to read assembly drawings.",
+          "Positive and independent attitude.",
+          "Quality-conscious approach to work.",
+          "Motivation to produce high-quality work.",
+          "Willingness to constantly improve in work."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Comfortable work environment.",
+          "Competitive salary."
+        ],
+        "search_keywords": "steel structure installer construction full-time Vieremä Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "33f65021",
+        "job_id": "welders-iisalmi-33f65021",
+        "processed": true,
+        "title": "Welders",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Iisalmi",
+          "Kiuruvesi",
+          "Lapinlahti",
+          "Pielavesi",
+          "Sonkajärvi",
+          "Vieremä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/31570945",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9bfcf17f-fdf7-4947-805b-3b36774bb3e4/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welders-iisalmi-33f65021",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Welders at Osuma Henkilöstöpalvelut Oy in Iisalmi. Apply now and take the next step in your career.",
+        "description": "Welders in Ylä-Savo, Osuma Henkilöstöpalvelut Oy is seeking experienced professionals for full-time, permanent positions in various locations including Iisalmi, Kiuruvesi, Lapinlahti, Pielavesi, Sonkajärvi, and Vieremä. This opportunity is ideal for those looking to advance their career or develop their welding skills. Applicants should have education in the metal industry, experience in various welding tasks, and other relevant metal industry experience. Please include details of your experience and any valid qualifications when applying. For more information, contact Erno Randelin at 045 269 6696 or erno.randelin@osuma.fi.",
+        "what_we_expect": [
+          "Education in the metal industry.",
+          "Experience in various welding tasks.",
+          "Other experience in the metal industry."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "welders metal industry experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "2e8ae300",
+        "job_id": "account-manager-oulu-2e8ae300",
+        "processed": true,
+        "title": "Account Manager",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/53045303",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5df3cfc4-b401-4151-aef3-b41949130c53/en",
+        "job_employer_email": "tommi.karsikas@osuma.fi",
+        "job_employer_name": "Tommi Karsikas",
+        "job_employer_phone_no": "0503412168",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/account-manager-oulu-2e8ae300",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-13 15:36:38",
+        "open_positions": 1,
+        "salary_range": "Salary that rewards results: your salary consis",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Osuma Henkilöstöpalvelut Oy as a Account Manager and grow your career in Oulu. Check the job details and apply now.",
+        "description": "Join Osuma Henkilöstöpalvelut Oy in Oulu as an Account Manager and contribute to our journey of growth. With a competitive hourly wage based on Finnish collective agreements, you will actively acquire new customers, map their needs, and offer suitable personnel solutions. Your role will involve making offers and contracts, conducting customer meetings, and developing your customer and sales entity. You will also manage recruitment processes and employee employment issues. We seek a goal-oriented and personable sales professional with B2B sales experience, strong interaction and negotiation skills, and the ability to take responsibility and move things forward independently. Commercial thinking and a willingness to engage with customers are essential.",
+        "what_we_expect": [
+          "Experience in B2B sales, customer service or a similar task.",
+          "Goal-oriented and active approach to work.",
+          "Good interaction and negotiation skills.",
+          "The ability to take responsibility for one's own actions and move things forward independently.",
+          "Commercial thinking and interest in business development.",
+          "Courage to pick up the phone, meet customers and open new doors."
+        ],
+        "job_responsibilities": [
+          "Active acquisition of new customers and sales work.",
+          "Mapping customer needs and offering suitable personnel solutions.",
+          "Making offers and contracts.",
+          "Customer meetings and active contact with customers.",
+          "Goal-oriented development of own customer and sales entity.",
+          "Carrying out recruitment processes and managing employee employment issues."
+        ],
+        "what_we_offer": [
+          "A responsible and independent role in a growing company: the work is versatile and no day is the same.",
+          "The opportunity to develop your own customer service and sales work.",
+          "An encouraging and uncomplicated work environment."
+        ],
+        "search_keywords": "account manager sales personnel services Oulu",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:39",
+    "jobs": [
+      {
+        "id": "33399b76",
+        "job_id": "mechanics-iisalmi-33399b76",
+        "processed": true,
+        "title": "Mechanics",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Iisalmi",
+          "Kiuruvesi",
+          "Vieremä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/31573485",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9c09e02f-c26e-44ae-b09a-135b5feaa473/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/mechanics-iisalmi-33399b76",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:39",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Osuma Henkilöstöpalvelut Oy is hiring a Mechanics in Iisalmi. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking experienced mechanics for full-time, permanent positions in Iisalmi, Kiuruvesi, and Vieremä. Ideal candidates will have an educational background in the field, experience in various machining tasks, and other experience in the metal industry. Valid qualifications such as an occupational safety card are required. Strong reliability and a commitment to teamwork are essential. Competitive hourly wages based on Finnish collective agreements are offered. If you are looking for the next step in your career or want to develop your skills as a machinist, please apply or contact Erno Randelin at 045 269 6696 or erno.randelin@osuma.fi to discuss potential opportunities.",
+        "what_we_expect": [
+          "Educational background in the field.",
+          "Experience in various machining tasks.",
+          "Experience in the metal industry.",
+          "Valid qualifications such as an occupational safety card.",
+          "Reliability.",
+          "Teamwork."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "mechanics machining metal industry qualifications",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:40",
+    "jobs": [
+      {
+        "id": "cfb1a28c",
+        "job_id": "welder-iisalmi-cfb1a28c",
+        "processed": true,
+        "title": "Welder",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/10671455",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/83626b23-2e63-4253-b8ba-302d09f0d1e0/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "045 269 6696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-iisalmi-cfb1a28c",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Osuma Henkilöstöpalvelut Oy as a Welder and grow your career in Iisalmi. Check the job details and apply now.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking a self-starter and cooperative welder for Metallityö Vainio in Iisalmi, offering a permanent, full-time position with a competitive hourly wage based on Finnish collective agreements. Ideal candidates will have experience in stainless steel, aluminum, pipe, or robot welding and should be ready to complete typical board class qualifications. Join a developing engineering group that provides high-quality services to renowned domestic manufacturers and the process and construction industry. Enjoy good employment benefits and the chance to become a top expert in the field. Apply soon as the position will be filled upon finding a suitable candidate. For more information, contact Erno Randelin at 045 269 6696 or erno.randelin@osuma.fi.",
+        "what_we_expect": [
+          "Self-starter.",
+          "Cooperative.",
+          "Willing to develop.",
+          "Good employment benefits."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunity to develop into a top expert in the field."
+        ],
+        "search_keywords": "welder stainless steel aluminum pipe robot welding engineering group",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "4d33fc3c",
+        "job_id": "sheet-metal-welder-seinäjoki-4d33fc3c",
+        "processed": true,
+        "title": "Sheet Metal Welder",
+        "company": "Staffgate",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://career.staffgate.fi/jobs/8741478-levyseppahitsaaja/applications/new?promotion=2295011-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d94d9186-a358-4ec7-ae87-af477cdeb90f/en",
+        "job_employer_email": "johanna.laaksonen@staffgate.fi",
+        "job_employer_name": "Johanna Laaksonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/sheet-metal-welder-seinäjoki-4d33fc3c",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:36:40",
+        "open_positions": 1,
+        "salary_range": "Salary commensurate with your skills * The poss",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Staffgate is looking for a Sheet Metal Welder in Seinäjoki. Don't miss this opportunity — apply today.",
+        "description": "Sheet metal welder needed for the manufacture of versatile steel structures in Seinäjoki, Finland. This full-time, permanent position offers the opportunity to work with various steel structures, from smaller parts to larger units, using MIG/MAG welding skills and drawing literacy. Requirements include education in the metal industry, previous experience as a sheet metal welder, and a valid firework card. Valid MIG/MAG welding classes, particularly for small and butt welding, are advantageous. Salary is competitive and commensurate with skills. Staffgate Oy, a Finnish staffing and recruitment company, offers a long-term employment relationship. Apply today for immediate or agreed start.",
+        "what_we_expect": [
+          "Education in the metal industry and/or previous work experience as a sheet metal welder.",
+          "Good MIG/MAG welding skills.",
+          "Drawing literacy.",
+          "Ability to work independently and carefully.",
+          "A valid firework card.",
+          "Valid MIG/MAG welding classes (small and butt welding) are considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Manufacturing various steel structures in a machine shop environment."
+        ],
+        "what_we_offer": [
+          "Versatile and varied steel structure manufacturing tasks.",
+          "Salary commensurate with your skills.",
+          "The possibility of a long-term employment relationship."
+        ],
+        "search_keywords": "sheet metal welder steel structures manufacturing MIG/MAG welding",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "415e1f5a",
+        "job_id": "assembly-worker-iisalmi-415e1f5a",
+        "processed": true,
+        "title": "Assembly Worker",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/17557798",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/13416447-6416-4a97-a15c-a61f57a461e0/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/assembly-worker-iisalmi-415e1f5a",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Assembly Worker at Osuma Henkilöstöpalvelut Oy in Iisalmi. Apply now and take the next step in your career.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking assembly workers for full-time, permanent positions at Metallityö Vainio Oy in Iisalmi. Ideal candidates will be self-initiated, independent, and willing to learn, with knowledge of the Finnish language and previous experience in machine installation and/or repair tasks. Responsibilities include a variety of assembly tasks such as electricity, hydraulics, and mechanics. The role offers opportunities for direct recruitment or temporary/permanent rental employment, as well as development into a top expert in the field within a comfortable working community and a growing engineering group. Competitive hourly wages are based on Finnish collective agreements. Apply through Osuma's website and contact Erno Randelin for more information.",
+        "what_we_expect": [
+          "Be self-initiated, independent, and willing to learn.",
+          "Have knowledge of the Finnish language.",
+          "Have previous experience in machine installation and/or repair tasks."
+        ],
+        "job_responsibilities": [
+          "Perform a variety of assembly tasks including electricity, hydraulics, mechanics, and other related tasks."
+        ],
+        "what_we_offer": [
+          "Opportunity for direct recruitment or temporary/permanent rental employment.",
+          "Development into a top expert in the field.",
+          "Work in a comfortable working community and a strongly developing engineering group."
+        ],
+        "search_keywords": "assembly worker manufacturing production Iisalmi",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "e999f7d5",
+        "job_id": "procurement-specialist-helsinki-e999f7d5",
+        "processed": true,
+        "title": "Procurement Specialist",
+        "company": "Pääkaupunkiseudun Kaupunkiliikenne Oy",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/hankinta-asiantuntija/8dRKbN",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dbb2586f-ffa6-4b3c-af5b-c3691a5b13b0/en",
+        "job_employer_email": "ura@kaupunkiliikenne.fi",
+        "job_employer_name": "Ulla Yli-Kullas",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/procurement-specialist-helsinki-e999f7d5",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-28",
+        "scraped_at": "2026-11-13 15:36:40",
+        "open_positions": 1,
+        "salary_range": "salary is supplemented by the good employee ben",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Procurement Specialist at Pääkaupunkiseudun Kaupunkiliikenne Oy in Helsinki.",
+        "description": "Join us as a Procurement Specialist at Pääkaupunkiseudun Kaupunkiliikenne Oy, where you'll contribute to sustainable mobility in Helsinki. This full-time, permanent role involves participating in high-quality and responsible tender implementations across various procurement stages. Requirements include experience in public procurement, a lower university degree, and excellent Finnish language skills, with English proficiency a plus. You'll work with electronic tendering systems and support diverse procurement processes. As part of our energetic team, you'll manage multiple tenders and negotiate effectively. Enjoy employee travel and lunch benefits, and apply by 29 November 2026.",
+        "what_we_expect": [
+          "Experience in the tasks of a procurement specialist, especially in public procurement.",
+          "Suitable, at least lower university degree.",
+          "Excellent knowledge of the Finnish language.",
+          "Experience in the use of an electronic tendering system.",
+          "Experience in procurement in special fields."
+        ],
+        "job_responsibilities": [
+          "Participate in the high-quality and responsible implementation of tenders assigned in all stages of the procurement process."
+        ],
+        "what_we_offer": [
+          "Employee travel ticket.",
+          "Lunch and recreation benefit."
+        ],
+        "search_keywords": "procurement specialist, urban transport, public procurement, tendering, Finnish language",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "64505ece",
+        "job_id": "sales-business-development-manager-hyvinkää-64505ece",
+        "processed": true,
+        "title": "Sales & Business Development Manager",
+        "company": "Affix Scaffolding Europe Oy, Hyvinkää",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:shakeb@affixscaffolding.com?subject=Application%20for%20the%20Job%20-%20Sales%20%26%20Business%20Development%20Manager&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Sales%20%26%20Business%20Development%20Manager.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f69047b5-1066-4c79-b25f-1a99c89dfbff/en",
+        "job_employer_email": "shakeb@affixscaffolding.com",
+        "job_employer_name": "Shakeb Ahsan",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-business-development-manager-hyvinkää-64505ece",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:40",
+        "open_positions": 1,
+        "salary_range": "salary plus performance-based commission or bon",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Sales & Business Development Manager at Affix Scaffolding Europe Oy, Hyvinkää in Hyvinkää. Check the requirements and apply today.",
+        "description": "Sales & Business Development Manager at Affix Scaffolding Europe Oy in Hyvinkää, Finland, seeks a proven B2B sales professional with experience in Ringlock and Tube & Fittings scaffolding systems to build and grow the company's commercial presence in Finland and selected European markets. Key responsibilities include identifying and developing new B2B customers, managing the full sales cycle, and negotiating and closing deals. The ideal candidate will have a strong background in direct sales and business development, with the ability to independently develop customer relationships and manage a structured sales pipeline. Negotiable salary based on experience, with potential for performance-based commission or bonus. Fluency in English and Finnish required.",
+        "what_we_expect": [
+          "Proven B2B sales and business-development experience.",
+          "Demonstrated experience in negotiating and successfully closing commercial deals.",
+          "Proven direct sales experience in Ringlock and Tube & Fittings scaffolding systems.",
+          "Ability to independently develop new customer relationships and manage the comp."
+        ],
+        "job_responsibilities": [
+          "Identifying and developing new B2B customers and business opportunities.",
+          "Building relationships with construction companies, scaffolding contractors, industrial companies, equipment-rental businesses and other relevant customers.",
+          "Managing the full sales cycle from prospecting and first contact through meetings, quotations, negotiations and deal closing.",
+          "Developing and maintaining a structured sales pipeline and sales forecast.",
+          "Preparing commercial offers and actively following opportunities through to a decision.",
+          "Understanding customer requirements and proposing suitable scaffolding systems, equipment and commercial solutions."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "sales business development manager scaffolding systems sales cycle customer relationships",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:42",
+    "jobs": [
+      {
+        "id": "911dd369",
+        "job_id": "vehicle-electrician-iisalmi-911dd369",
+        "processed": true,
+        "title": "Vehicle Electrician",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/23808513",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7af1669d-5c40-41c5-ba9e-323099cb109a/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/vehicle-electrician-iisalmi-911dd369",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:42",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Osuma Henkilöstöpalvelut Oy as a Vehicle Electrician in Iisalmi. Learn more about the role and apply now.",
+        "description": "For a full-time, permanent position as a vehicle electrician at Metallityö Vainio Oy in Iisalmi, Osuma Henkilöstöpalvelut Oy is seeking a conscientious and self-directed individual with a desire to work on versatile tasks. The role involves performing electrical installations of devices and machines, as well as other possible mechanical and electrical tasks. Electrical training is required, and previous experience in vehicle or power electrical installations is advantageous. Accuracy and care are essential in this role. If you are interested, submit your application through Osuma's website, and contact Erno Randelin at 045 269 6696 or erno.randelin@osuma.fi for more information.",
+        "what_we_expect": [
+          "Be conscientious and self-directed.",
+          "Have a desire to work on versatile tasks.",
+          "Possess electrical training.",
+          "Have previous experience in vehicle or power electrical installations (advantageous).",
+          "Be proud of your work and its impact.",
+          "Demonstrate accuracy and care in your work."
+        ],
+        "job_responsibilities": [
+          "Perform electrical installations of devices and machines.",
+          "Carry out other possible mechanical and electrical tasks."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "vehicle electrician installation maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      },
+      {
+        "id": "c0f40c43",
+        "job_id": "welder-ht-laser-vieremä-c0f40c43",
+        "processed": true,
+        "title": "Welder / HT Laser",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Vieremä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/36029203",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/29ca640a-e507-4e7b-9988-72ba69117653/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-ht-laser-vieremä-c0f40c43",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:42",
+        "open_positions": 1,
+        "salary_range": "salary for the position is based on the collect",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Osuma Henkilöstöpalvelut Oy is hiring a Welder / HT Laser in Vieremä. Explore the job responsibilities, benefits, and apply today.",
+        "description": "For an indefinite employment relationship in Vieremä, Osuma Human Resources Services Oy is seeking a skilled MIG/MAG welder for HT Laser Oy. The role involves working with various products and materials, with a focus on welding black iron with material thicknesses ranging from 3 to 40 mm. This is a full-time, 2-shift position with a competitive hourly wage based on the collective agreement of the technology industry, negotiable according to experience. As a self-initiated and professional individual, you will be an excellent fit for our team. HT Laser, established in 1989, offers comprehensive services including cutting, edging, welding, machining, 3D metal printing, surface treatment, assembly, and product development.",
+        "what_we_expect": [
+          "Experience in welding black iron with material thicknesses of 3-40 mm.",
+          "Be a self-initiated and professional type of person."
+        ],
+        "job_responsibilities": [
+          "Work with different products and materials."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "welder, HT Laser, MIG/MAG, black iron, manufacturing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "8e7a5f24",
+        "job_id": "early-childhood-special-education-teacher-espoo-8e7a5f24",
+        "processed": true,
+        "title": "Early Childhood Special Education Teacher",
+        "company": "Espoon kaupunki",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/ESPOO-03-1473-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/88c05ba0-ac4f-46d0-b2cc-f7eb0aa4c09b/en",
+        "job_employer_email": ".@espoo.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/early-childhood-special-education-teacher-espoo-8e7a5f24",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-13 15:36:42",
+        "open_positions": 1,
+        "salary_range": "Palkka: 3726,48 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Espoon kaupunki is looking for a Early Childhood Special Education Teacher in Espoo. Don't miss this opportunity — apply today.",
+        "description": "Join Kirsti's daycare center in Espoo as an early childhood special education teacher to support children's inclusion and participation in group activities. Work closely with a team of professionals, including group teachers and a support nanny, to implement a versatile and inspiring pedagogy that aligns with Espoo's and national early childhood education plans. As a leader of your team and the pedagogical partner of the head of the early childhood education unit, you will play a crucial role in the success of the daycare's operations. Reliability, professionalism, and a willingness to learn are essential. Applications are accepted on a rolling basis, and interviews will be conducted as soon as a suitable candidate is found.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Support the child's participation in the group's activities.",
+          "Experience successes and enable inclusion in the children's group.",
+          "Implement the team's pedagogy together with other professionals.",
+          "Act as the leader of the team and the pedagogical partner of the head of the early childhood education unit."
+        ],
+        "what_we_offer": [
+          "Temporary employment for the period 30.11.2026-30.06.2027."
+        ],
+        "search_keywords": "early childhood special education teacher daycare center Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:43",
+    "jobs": [
+      {
+        "id": "5b011ebb",
+        "job_id": "welder-ht-laser-tornio-5b011ebb",
+        "processed": true,
+        "title": "Welder / HT Laser",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tornio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/51363292",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3408338e-6c45-4350-a5cf-4328b4ca3b14/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-ht-laser-tornio-5b011ebb",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:43",
+        "open_positions": 1,
+        "salary_range": "salary for the position is based on the collect",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Welder / HT Laser role at Osuma Henkilöstöpalvelut Oy. Join the team and build your career in Tornio.",
+        "description": "For our customer company HT Laser Oy, Osuma Human Resources Services Oy is seeking a professional MIG/MAG welder for a permanent, full-time position in Tornio. The role involves working with various products and materials, including industrial welded steel structures, and requires experience in MAG welding and the ability to read drawings. This is a 2-shift position with a competitive hourly wage based on Finnish collective agreements, negotiable according to experience. Reliability, professionalism, and a willingness to learn are essential. HT Laser, established in 1989, offers comprehensive services in cutting, edging, welding, machining, 3D metal printing, surface treatment, assembly, and product development. Apply soon to join a team-oriented environment.",
+        "what_we_expect": [
+          "Experience in MAG welding.",
+          "Ability to read drawings.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "welder MAG welding drawings reliability professionalism teamwork willingness to learn",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "65a90705",
+        "job_id": "experienced-cleaner-seinäjoki-65a90705",
+        "processed": true,
+        "title": "Experienced Cleaner",
+        "company": "YES Your Excellent Staff Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/siivooja-jalasjarvelle/m6rj10",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a90a8b96-2d92-4c2e-9135-6923f29f3a6f/en",
+        "job_employer_email": "antti@yeshr.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/experienced-cleaner-seinäjoki-65a90705",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:36:43",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "YES Your Excellent Staff Oy is hiring a Experienced Cleaner in Seinäjoki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking an experienced cleaner for our client in Jalasjärvi, Seinäjoki, Finland. The role involves maintaining the cleanliness of common and public spaces. Ideal candidates will have previous experience in cleaning work, be meticulous and responsible, and possess the ability to work independently. Fluency in both English and Finnish is required. The position is permanent and full-time, offering independent and versatile cleaning tasks, comprehensive orientation, and support from experienced personnel. If you are a self-motivated individual with a driver's license and your own car, we encourage you to apply. Start your new career with YES Your Excellent Staff Oy today!",
+        "what_we_expect": [
+          "Previous experience in cleaning work.",
+          "Careful work.",
+          "Responsibility.",
+          "Ability to work independently.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Ensure that common and public spaces remain clean and comfortable."
+        ],
+        "what_we_offer": [
+          "Independent and responsible work.",
+          "Versatile cleaning tasks.",
+          "Comprehensive orientation to the task.",
+          "Support of encouraging and expert personnel."
+        ],
+        "search_keywords": "cleaner cleaning experience independent work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:45",
+    "jobs": [
+      {
+        "id": "811ef0e0",
+        "job_id": "cnc-machinist-hämeenkyrö-811ef0e0",
+        "processed": true,
+        "title": "CNC Machinist",
+        "company": "Visio Henkilöstöratkaisut Pirkanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Hämeenkyrö",
+          "Lempäälä",
+          "Nokia",
+          "Pirkkala",
+          "Tampere",
+          "Ylöjärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://visiohr.likeit.fi/apply/74914317",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/903f711a-664f-4c00-91af-aa12b0678a88/en",
+        "job_employer_email": "wilma.niskanen@visiohr.fi",
+        "job_employer_name": "Wilma Niskanen",
+        "job_employer_phone_no": "050 391 3188",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinist-hämeenkyrö-811ef0e0",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-17",
+        "scraped_at": "2026-11-13 15:36:45",
+        "open_positions": 1,
+        "salary_range": "Palkkaus työssä on kokemukseen perustuen 16-20€/h. Kyseessä on pitkäaikainen ja kokoaikainen työsuhde, jossa on mahdollista kehittää omaa osaamistaan monipuolisemmaksi.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a CNC Machinist at Visio Henkilöstöratkaisut Pirkanmaa Oy in Hämeenkyrö. Check the requirements and apply today.",
+        "description": "CNC Machinists are needed for Visio Henkilöstöratkaisut Pirkanmaa Oy in Hämeenkyrö, Lempäälä, Nokia, Pirkkala, Tampere, and Ylöjärvi. Responsibilities include programming and setting up CNC lathes, selecting and optimizing tools, producing individual pieces and small series according to technical drawings, measuring and ensuring quality, and collaborating with other production personnel. Good knowledge of CNC machining, ability to program and set up the machine, and experience in CAM programming are required. Salary is 16-20€/h based on experience, with a long-term and full-time employment relationship offering opportunities for skill development. Apply via the attached link and include a CV. For more information, contact Wilma Niskanen at 050 391 3188 on weekdays from 9 am to 3 pm.",
+        "what_we_expect": [
+          "Good knowledge of CNC machining.",
+          "Ability to program and set up the machine.",
+          "Enjoyment of variable machining.",
+          "Responsibility for machine adjustments and programming.",
+          "Ability to read technical drawings independently.",
+          "Experience in CAM programming."
+        ],
+        "job_responsibilities": [
+          "Programming and setting up the CNC lathe.",
+          "Selection, replacement and optimization of tools.",
+          "Production of individual pieces and small series according to technical drawings.",
+          "Measurement and quality assurance of pieces.",
+          "Cooperation with other production personnel."
+        ],
+        "what_we_offer": [
+          "Long-term and full-time employment relationship.",
+          "Opportunity to develop one's own skills in a more versatile way."
+        ],
+        "search_keywords": "CNC Machinist Tampere Production Programming",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "e13f4567",
+        "job_id": "nurse-substitution-rovaniemi-e13f4567",
+        "processed": true,
+        "title": "Nurse Substitution",
+        "company": "Validia Oy, Rovaniemen Validia-Talo",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.validia.fi/jobs/8698032-sairaanhoitajan-sijaisuus",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d124fedf-6e5b-4a55-b414-f2ae522a8ed7/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/nurse-substitution-rovaniemi-e13f4567",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-13 15:36:45",
+        "open_positions": 1,
+        "salary_range": "Salary G25E according to the collective agreeme",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Nurse Substitution at Validia Oy, Rovaniemen Validia-Talo in Rovaniemi. Apply now and take the next step in your career.",
+        "description": "Validia Oy, Rovaniemen Validia-Talo, is seeking a nurse to join our team in Rovaniemi on a permanent, full-time basis until the end of February. As a nurse at our 24-hour serviced housing unit, you will be responsible for assessing, monitoring, and documenting the health status of clients, drawing up treatment plans, and guiding staff in their implementation. You will also plan and develop medical treatment, ensuring its safe execution, and support the nursing staff. Your role will involve active participation in daily nursing work with clients and team meetings, contributing to the development of the unit.",
+        "what_we_expect": [
+          "A good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Assessing, monitoring and documenting the health status of clients.",
+          "Drawing up treatment plans and guiding the staff in their implementation.",
+          "Planning and development of medical treatment and ensuring its safe execution.",
+          "Supporting and familiarizing the nursing staff.",
+          "Actively participating in daily nursing work with clients.",
+          "Participating in team meetings and the development of the unit."
+        ],
+        "what_we_offer": [
+          "Planned orientation according to your skills.",
+          "The support of a professional work community spiced up with humor.",
+          "Salary G25E according to the collective agreement in the private social service sector + possible shift-specific supplements.",
+          "The opportunity to develop yourself and learn new things in the versatile work field of disability services."
+        ],
+        "search_keywords": "nurse substitution, healthcare, Rovaniemi, Validia, disability services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "b7927205",
+        "job_id": "machinist-and-turner-vieremä-b7927205",
+        "processed": true,
+        "title": "Machinist and Turner",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Vieremä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/13898494",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d970ddcb-09aa-4dd1-b8ec-2fafd4da3fc1/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "045 269 6696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/machinist-and-turner-vieremä-b7927205",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Machinist and Turner at Osuma Henkilöstöpalvelut Oy. Great opportunity in Vieremä — apply now.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking experienced Machinists and Turners for a permanent, full-time position in Vieremä. Responsibilities include manufacturing products from setting to completion on a Mazak HCN 6800 machine tool and working on Mazak lathes. Previous experience with Mazaki, good drawing reading skills, and Mazatrol programming knowledge are advantageous. Self-initiated and professional, with a willingness to work in a 2-shift or potentially 3-shift environment, you will fit well into our team. HT Laser, established in 1989, offers comprehensive services in cutting, edging, welding, machining, and more. Applications are encouraged, and interviews are conducted during the application period. For more information, contact Erno Randelin at 045 269 6696 or erno.randelin@osuma.",
+        "what_we_expect": [
+          "Previous experience with Mazaki.",
+          "Good ability to read drawings.",
+          "Programming skills (Mazatrol programming) are an advantage.",
+          "Self-initiated and professional.",
+          "Willingness to work in a 2-shift or potentially 3-shift environment."
+        ],
+        "job_responsibilities": [
+          "Manufacture products from setting to completion on a horizontal machine tool (Mazak HCN 6800, smoothG control).",
+          "Work on Mazak lathes."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "machinist turner manufacturing lathe Mazak HCN 6800",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "f2345ea9",
+        "job_id": "welder-ht-laser-kaarina-f2345ea9",
+        "processed": true,
+        "title": "Welder / HT Laser",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kaarina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/51363623",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/92f117cb-d4ea-4bc5-ba89-7063c0c5fdf5/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/welder-ht-laser-kaarina-f2345ea9",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:45",
+        "open_positions": 1,
+        "salary_range": "salary for the position is based on the collect",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Osuma Henkilöstöpalvelut Oy is looking for a Welder / HT Laser in Kaarina. Don't miss this opportunity — apply today.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking a skilled MIG/MAG welder for a permanent, full-time position at HT Laser Oy in Kaarina. This role involves working with various products and materials, including industrial welded steel structures, and requires experience in MAG welding. You must be able to read drawings and demonstrate reliability and professionalism. The competitive hourly wage is based on Finnish collective agreements and negotiable according to experience. If you have the required skills and are eager to join a dynamic team, apply soon as the position will be filled as soon as a suitable candidate is found.",
+        "what_we_expect": [
+          "Experience in MAG welding.",
+          "Ability to read drawings.",
+          "Reliability.",
+          "Professionalism.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "welder MAG welding drawings reliability professionalism willingness to learn",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      },
+      {
+        "id": "263fad6f",
+        "job_id": "part-time-receptionist-seinäjoki-263fad6f",
+        "processed": true,
+        "title": "Part-time Receptionist",
+        "company": "YES Your Excellent Staff Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/osa-aikainen-vastaanottovirkailija-seinajoelle/813Rgq",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b2544f69-f7cc-41e3-b461-a1e9f155e114/en",
+        "job_employer_email": "antti@yeshr.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/part-time-receptionist-seinäjoki-263fad6f",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:36:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "A new job opportunity is available at YES Your Excellent Staff Oy as a Part-time Receptionist in Seinäjoki. Learn more about the role and apply now.",
+        "description": "Join Seinäjoki as a part-time receptionist and be a key part of providing a smooth customer experience. This role suits service-minded individuals who enjoy working with people and are ready to work even on weekends. Fluency in Finnish is required, and knowledge of English is advantageous. Previous experience as a receptionist is preferred but not essential, as long as you have experience in customer service. Apply now via the application form to start your new career at YES Your Excellent Staff Oy in Seinäjoki.",
+        "what_we_expect": [
+          "Fluent Finnish language skills.",
+          "Knowledge of the English language is considered an advantage.",
+          "Service minded and get along naturally with different people.",
+          "Ready to work even on weekends.",
+          "Previous experience as a receptionist is considered an advantage.",
+          "Experience in customer service."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Versatile customer service role.",
+          "Opportunity to utilize and develop customer service skills."
+        ],
+        "search_keywords": "receptionist customer service part-time Seinäjoki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:36:47",
+    "jobs": [
+      {
+        "id": "abd9dce6",
+        "job_id": "learning-activity-planner-helsinki-abd9dce6",
+        "processed": true,
+        "title": "Learning Activity Planner",
+        "company": "Metropolia Ammattikorkeakoulu",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/suunnittelija-oppimistoiminta/Z93517",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d5165044-5feb-4ec5-a058-a8bdcea33d07/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "09 7424 5000",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/learning-activity-planner-helsinki-abd9dce6",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-13 15:36:47",
+        "open_positions": 1,
+        "salary_range": "Palkkaus ja muut työsuhteen ehdot määräytyvät Sivistysala ry:n Ammattikorkeakoulujen työehtosopimuksen mukaisesti. Suunnittelija kuuluu asiantuntija- ja tukipalveluhenkilöstöön. Palkkahaitari on osaamistaustan ja työkokemuksen mukaan 3032,71 - 3700 €/kk. Noudatamme 6 kk koeaikaa.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Learning Activity Planner at Metropolia Ammattikorkeakoulu in Helsinki. Apply now and take the next step in your career.",
+        "description": "At Metropolia Ammattikorkeakoulu in Helsinki, we are seeking a Learning Activity Planner to develop and coordinate communication in the field of Well-being, supporting central administrative processes. This full-time, permanent position involves working with the management team, degree supervisors, and other key stakeholders to enhance internal and external communication practices. You will identify and develop key communication meeting points from various perspectives, promote an open and inclusive culture, and support degree coordinators in planning and developing communication strategies. Responsibilities include coordinating content for degree websites, study paths, and applicant information, ensuring up-to-date and accessible information.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Develop internal communication practices and operating models in the field of Well-being in cooperation with the management team, degree supervisors and other actors.",
+          "Identify and develop key communication meeting points from the perspective of staff, students, customers, partners and other stakeholders.",
+          "Promote an open, dialogic and inclusive operating culture and support the building of a common understanding of the goals, decisions and changes of the area of expertise.",
+          "Support degree coordinators in the planning, coordination and development of degree program communication, marketing and applicant communication.",
+          "Coordinate the preparation, maintenance and development of degree website content, Study Path descriptions, eligibility information and other applicant information, and ensure that the information is up-to-date.",
+          "Develop the external communication of the area of expertise in cooperation with degree programs, education and business services and other cooperation bodies."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "communication, coordination, education, well-being, planning",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "035c3f89",
+        "job_id": "car-paintersurface-treatment-worker-iisalmi-035c3f89",
+        "processed": true,
+        "title": "Car Painter/Surface Treatment Worker",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/53109728",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0b6135f5-2035-4c29-9506-6c086f811656/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/car-paintersurface-treatment-worker-iisalmi-035c3f89",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Osuma Henkilöstöpalvelut Oy is hiring a Car Painter/Surface Treatment Worker in Iisalmi. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking a meticulous and self-driven car painter/surface treatment worker for a permanent, full-time position in Iisalmi. The role involves cleaning and sanding surfaces, applying primers and finishes, and ensuring high-quality, neat results while adhering to occupational safety requirements. Ideal candidates will have previous experience in car painting or similar tasks, along with a valid work safety card. If you are passionate about quality work and meet these criteria, apply now for this exciting opportunity at Profile Vehicles Oy, a leading international designer and manufacturer of special vehicles.",
+        "what_we_expect": [
+          "A meticulous, precise and self-initiated approach to work.",
+          "An interest in quality work.",
+          "Previous experience as a car painter, surface treatment or similar painting and surface treatment tasks.",
+          "Education in the field and/or practical experience specifically in painting vehicles.",
+          "A valid work safety card is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Cleaning and sanding of the surfaces to be painted.",
+          "Smoothing and primer painting.",
+          "Surface finishing and spray painting.",
+          "Taking care of the quality of the work and the neat end result.",
+          "Following occupational safety requirements."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "car painter surface treatment vehicle painting",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "ed7f4ffc",
+        "job_id": "marketing-coordinator-lappeenranta-ed7f4ffc",
+        "processed": true,
+        "title": "Marketing Coordinator",
+        "company": "Auto-Kilta Oy Lappeenranta",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/markkinointikoordinaattori/m6rOg0",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f3a51022-686d-4d3c-8cc0-adeaf4f4a6ad/en",
+        "job_employer_email": "janne.hulkkonen@autokilta.fi",
+        "job_employer_name": "Janne Hulkkonen",
+        "job_employer_phone_no": "020154582",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/marketing-coordinator-lappeenranta-ed7f4ffc",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-13 15:36:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Marketing Coordinator at Auto-Kilta Oy Lappeenranta in Lappeenranta. Check the requirements and apply today.",
+        "description": "At Auto-Kilta Oy in Lappeenranta, you will plan and implement marketing campaigns, maintain websites and social media, produce content for various channels, create videos and photos, organize events, and develop marketing plans. You will work with advertising subsidies and be a key contact for agencies and stakeholders. The role requires a proactive attitude, commercial thinking, and the ability to turn ideas into successful campaigns. Comprehensive employment benefits, including the ePassi well-being benefit, are offered. Apply now and join a dynamic team in the automotive industry.",
+        "what_we_expect": [
+          "An idea-rich and self-initiated person who gets things done and is able to take the campaign from idea to publication.",
+          "A good attitude.",
+          "Commercial thinking.",
+          "The desire to achieve visible results."
+        ],
+        "job_responsibilities": [
+          "Planning and coordination of marketing campaigns.",
+          "Maintenance of websites and social media channels.",
+          "Content production for different channels (e-mail newsletters, newsletters, campaign pages).",
+          "Producing and appearing in videos, short videos and pictures.",
+          "Producing different events during the year.",
+          "Making marketing plans and applying for advertising subsidies for implementation."
+        ],
+        "what_we_offer": [
+          "Comprehensive employment benefits, including the ePassi well-being benefit.",
+          "Occupational health services that are more extensive than legally required."
+        ],
+        "search_keywords": "marketing coordinator automotive content production events planning coordination",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "66b2d0bd",
+        "job_id": "metal-worker-iisalmi-66b2d0bd",
+        "processed": true,
+        "title": "Metal Worker",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/35502092",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/21da73d3-6ff8-4f01-9736-b707bce61b5c/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/metal-worker-iisalmi-66b2d0bd",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Osuma Henkilöstöpalvelut Oy is hiring a Metal Worker in Iisalmi. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Osuma Henkilöstöpalvelut Oy is seeking a metal worker for a full-time, permanent position in Iisalmi. The role involves participating in vehicle assembly work, primarily using TIG and MIG welding methods. Applicants should have self-initiated and careful work experience, as well as previous experience in TIG and MIG welding. Education and/or previous work experience in the metal industry, especially in sheet metal, are valued. A valid occupational safety card is required. Profile Vehicles Oy, known for high-quality and innovative special vehicles, offers an exciting opportunity in a growing international company. Apply through the company's website to be considered.",
+        "what_we_expect": [
+          "Self-initiated and careful work experience.",
+          "Previous work experience in TIG and MIG welding.",
+          "Education and/or previous work experience in the metal industry, especially in sheet metal.",
+          "A valid occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Participates in vehicle assembly work, mainly using TIG and MIG welding methods."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "metal worker welding vehicle assembly TIG MIG",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "7dd5ae44",
+        "job_id": "vehicle-electrician-iisalmi-7dd5ae44",
+        "processed": true,
+        "title": "Vehicle Electrician",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Iisalmi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/21041796",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/625969c5-660a-418b-b507-38841abf7fc7/en",
+        "job_employer_email": "erno.randelin@osuma.fi",
+        "job_employer_name": "Erno Randelin",
+        "job_employer_phone_no": "0452696696",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/vehicle-electrician-iisalmi-7dd5ae44",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-13 15:36:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Vehicle Electrician at Osuma Henkilöstöpalvelut Oy in Iisalmi. Apply now and take the next step in your career.",
+        "description": "For permanent full-time employment with Profile Vehicles Oy in Iisalmi, Osuma Henkilöstöpalvelut Oy is seeking vehicle electricians with a strong technical background and problem-solving skills. Ideal candidates will have education in electricity and automation, previous experience working with electrical systems, and preferably in the automotive industry. This role involves performing precise wiring installation and connection tasks. Join a professional and supportive team that values interaction and teamwork, offering opportunities for skill development. Apply through the company’s website to be considered for this exciting position.",
+        "what_we_expect": [
+          "Technical skill.",
+          "Problem-solving ability.",
+          "Good interaction and teamwork.",
+          "Education in electricity and automation.",
+          "Previous experience working with electrical systems.",
+          "Previous work experience in the automotive industry."
+        ],
+        "job_responsibilities": [
+          "Perform wiring installation and connection."
+        ],
+        "what_we_offer": [
+          "Opportunities to develop professional skills.",
+          "Work in a professional and supportive team environment."
+        ],
+        "search_keywords": "vehicle electrician wiring installation technical skills problem solving teamwork education experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
   }
 ]
