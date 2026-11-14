@@ -502427,5 +502427,123 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:53:49",
+    "jobs": [
+      {
+        "id": "1875577c",
+        "job_id": "production-manager-joensuu-1875577c",
+        "processed": true,
+        "title": "Production Manager",
+        "company": "Valio",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Joensuu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tuotantovastaava-joensuu-svsal-20591480",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-manager-joensuu-1875577c",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-11-13 15:53:49",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, no lat",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Valio is hiring a Production Manager in Joensuu. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Valio Oy is seeking a Production Manager to join its growing team in Joensuu, where the company produces a third of all Valio cheeses, including Valio Polar®, Valio Salaneuvos®, and Valio Viola®. The role involves managing and developing the packaging team, enhancing operations, and achieving production and financial goals. Reporting to the production manager, you will lead the slice team of Kuluttajapakkaamo, focusing on well-being, Lean philosophy, quality management, and HACCP methods. This is a permanent, full-time position requiring a bachelor's or university-level degree, solid food industry experience, and excellent Finnish and English language skills. Valio offers comprehensive orientation, support from a growing team, and career opportunities in a large company.",
+        "what_we_expect": [
+          "Coaching leadership.",
+          "Good interaction and organization skills.",
+          "Knowing and applying the Lean philosophy to management.",
+          "Application of quality management and HACCP methods in the production environment.",
+          "Good Finnish and English language skills.",
+          "Active and positive attitude."
+        ],
+        "job_responsibilities": [
+          "Managing and developing the personnel of the packaging team.",
+          "Working well-being.",
+          "Developing the operations of the packaging line.",
+          "Achieving production and financial goals."
+        ],
+        "what_we_offer": [
+          "A comprehensive orientation.",
+          "The support of a growing and developing team.",
+          "Personnel benefits.",
+          "Career opportunities of a large company."
+        ],
+        "search_keywords": "production manager cheese manufacturing Finland Valio Oy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:54:03",
+    "jobs": [
+      {
+        "id": "4c783d77",
+        "job_id": "technical-project-manager-tampere-4c783d77",
+        "processed": true,
+        "title": "Technical Project Manager",
+        "company": "Elenia Oy",
+        "job_category": "energy-and-utilities",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/elenia-sahkonjakeluautomaation-tekninen-projektipaallikko-elenia-it-sdsuu-20727072",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/elenia-sahkonjakeluautomaation-tekninen-projektipaallikko-elenia-it-sdsuu-20727072",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/energy-and-utilities/technical-project-manager-tampere-4c783d77",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-12",
+        "scraped_at": "2026-11-13 15:54:03",
+        "open_positions": 1,
+        "salary_range": "Tehtävässä noudatetaan Energiateollisuuden ylempien toimihenkilön työehtosopimusta ja Elenian yrityskohtaista ylempien toimihenkilöiden palkkausjärjestelmää, kokonaispalkka tulee olemaan 4500-5000 €/kk, riippuen valitun henkilön osaamisesta ja kokemuksesta. Tehtävä on toistaiseksi voimassa oleva ja kokoaikainen. Tarjoamme kattavan ja kilpailukykyisen henkilöstöetuuksien kokonaisuuden, joka tukee elämäsi eri osa-alueita. Etuihin kuuluvat muun muassa mahdollisuus käyttää yksi työtunti viikossa liikuntaan työtilanteen sen salliessa, lounasetu, hyvinvointi- ja virkistysetu, laaja vapaa-ajan tapaturmavakuutus sekä kattava työterveyshuolto täydennettynä yksityisellä sairauskuluvakuutuksella. Elenialla voit halutessasi rahastoida tulospalkkiotasi henkilöstörahastoon ja kasvattaa palkkiosi arvoa pitkäjänteisesti sijoittamalla.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Technical Project Manager at Elenia Oy. Great opportunity in Tampere — apply now.",
+        "description": "Elenia Oy is seeking a Technical Project Manager for its Automation and Network Management team in Tampere. This role involves managing the lifecycle of equipment, implementing systems, and procuring new technologies. Responsibilities include mapping needs, defining project planning, and overseeing ongoing projects. The ideal candidate will have experience in electricity distribution and related automation and systems, as well as project management skills. Good communication, an active approach to work, and the ability to collaborate with various parties are essential. Fluency in both Finnish and English is required. The position is permanent and full-time, with a competitive salary of 4500-5000 €/month, depending on the candidate's skills and experience.",
+        "what_we_expect": [
+          "Experience in electricity distribution and/or related automation and systems.",
+          "Experience working in projects and directing or leading them.",
+          "Good communication skills.",
+          "An active approach to work.",
+          "The ability to work smoothly with different parties and people.",
+          "Willingness to also participate in operational work if necessary."
+        ],
+        "job_responsibilities": [
+          "Manage the life cycle of equipment.",
+          "Implement systems.",
+          "Procure new technologies.",
+          "Map needs.",
+          "Define project planning.",
+          "Manage ongoing projects."
+        ],
+        "what_we_offer": [
+          "Comprehensive and competitive salary system for senior executives.",
+          "Full-time position."
+        ],
+        "search_keywords": "technical project manager electricity distribution automation systems",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
