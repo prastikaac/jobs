@@ -501624,6 +501624,113 @@
         "search_keywords": "excavator driver construction Uusimaa",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "d254fd41",
+        "job_id": "construction-assistants-helsinki-d254fd41",
+        "processed": true,
+        "title": "Construction Assistants",
+        "company": "Takework Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://takework.likeit.fi/apply/5061611",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/79eea1d3-6e69-4fa6-9211-a0e4e78c28d9/en",
+        "job_employer_email": "centti@takework.fi",
+        "job_employer_name": "Qendrim Kqiku",
+        "job_employer_phone_no": "+358400855439",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-assistants-helsinki-d254fd41",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-12",
+        "scraped_at": "2026-11-13 15:40:54",
+        "open_positions": 1,
+        "salary_range": "Salary based on experience and skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Construction Assistants at Takework Oy in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking 4 Finnish-speaking construction assistants for a permanent, approximately 7-month position in Helsinki. Responsibilities include moving and carrying building materials, maintaining the cleanliness of the construction site, assisting professionals, preparing tools and materials, and performing daily auxiliary tasks. We value candidates with previous construction site experience, an energetic and responsible attitude, good physical condition, teamwork skills, and a valid occupational safety card. Join our professional team for versatile construction site tasks and a long-term job opportunity.",
+        "what_we_expect": [
+          "Good Finnish language skills.",
+          "Previous experience on a construction site (considered an advantage).",
+          "Energetic, self-initiated and responsible approach to work.",
+          "Good physical condition.",
+          "Ability to work as part of a team.",
+          "A valid occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Moving and carrying building materials.",
+          "Maintaining the cleanliness of the construction site and order.",
+          "Assisting construction industry professionals.",
+          "Preparation of tools and materials.",
+          "Performing day-to-day auxiliary tasks at the construction site."
+        ],
+        "what_we_offer": [
+          "A long-term job opportunity of around 7 months.",
+          "The opportunity to work as part of a professional team.",
+          "Versatile construction site tasks."
+        ],
+        "search_keywords": "construction assistant finnish speaking long term job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:58",
+    "jobs": [
+      {
+        "id": "0285a992",
+        "job_id": "seasonal-salesperson-for-photography-shop-helsinki-0285a992",
+        "processed": true,
+        "title": "Seasonal Salesperson for Photography Shop",
+        "company": "Napapiiri Express Oy, Tunnin Kuva Hertsi",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tunninkuva.fi/tyopaikat/avoin-tyohakemus/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9c371469-781b-4be3-8eef-f775bbe85315/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0405899105",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/seasonal-salesperson-for-photography-shop-helsinki-0285a992",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-13 15:40:58",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Seasonal Salesperson for Photography Shop at Napapiiri Express Oy, Tunnin Kuva Hertsi in Helsinki.",
+        "description": "Seasonal Salesperson needed at Tunnin Kuva Hertsi in Helsinki. Responsibilities include customer service, cash register operations, photo taking with modern equipment, and recording incoming goods. Previous experience in cashiering and customer service is required, along with the ability to work independently and learn new tasks quickly. Accuracy and punctuality are essential. Basic computer skills and knowledge of image processing are beneficial. Apply now for morning, evening, Saturday, and Sunday shifts, ending temporarily on 04.01.2027.",
+        "what_we_expect": [
+          "Previous experience in cashiering.",
+          "Previous experience in customer service.",
+          "Ability to work independently.",
+          "Ability to internalize new things.",
+          "Accuracy.",
+          "Punctuality."
+        ],
+        "job_responsibilities": [
+          "Customer service.",
+          "Working at the cash register.",
+          "Making photos with modern equipment.",
+          "Recording incoming goods."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "salesperson photography shop customer service cashiering",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
   }
