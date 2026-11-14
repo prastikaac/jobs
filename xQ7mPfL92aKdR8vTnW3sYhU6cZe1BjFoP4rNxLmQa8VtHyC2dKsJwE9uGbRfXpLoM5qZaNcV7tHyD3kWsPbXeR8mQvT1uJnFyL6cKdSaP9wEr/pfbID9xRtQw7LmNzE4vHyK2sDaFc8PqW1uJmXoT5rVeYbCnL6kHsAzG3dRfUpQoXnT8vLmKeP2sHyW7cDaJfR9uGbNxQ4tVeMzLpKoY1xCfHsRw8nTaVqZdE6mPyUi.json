@@ -500348,6 +500348,1282 @@
         "search_keywords": "sales representative tourism industry salesperson Helsinki",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "35a5e490",
+        "job_id": "control-software-engineer-embedded-kangasala-35a5e490",
+        "processed": true,
+        "title": "Control Software Engineer (Embedded)",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi",
+          "Vaasa",
+          "Oulu",
+          "Kuopio",
+          "Lahti",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27306238",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1badd417-8ddc-4b04-bdcc-0f2e461e41d1/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/control-software-engineer-embedded-kangasala-35a5e490",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-19",
+        "scraped_at": "2026-11-13 15:40:40",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Control Software Engineer (Embedded) at Lokki Henkilöstöpalvelut Oy. Great opportunity in Kangasala — apply now.",
+        "description": "We are seeking a Control Software Engineer (Embedded) to develop advanced control solutions for electrical energy systems, power converters, and industrial drives. This role involves working at the intersection of embedded software development, power engineering, power electronics, and control systems. Candidates must have experience in C, C++, and Python, knowledge of Git version control, and a basic understanding of software testing methods. Practical experience in unit testing, HIL testing, and continuous integration is a plus. Essential knowledge includes power conversion, solar power systems, battery energy storage systems, wind power applications, microgrids, and smart grids.",
+        "what_we_expect": [
+          "Experience in C, C++, Python.",
+          "Knowledge of Git version control.",
+          "Basic understanding of SW testing methods.",
+          "Knowledge of some of the following application areas: Power conversion, Solar power systems, Battery energy storage systems, Wind power applications, Microgrids and smart grids.",
+          "Understanding concepts of inverters, rectifiers, DC/DC converters, switching power supplies.",
+          "Designing of control loops, stability and dynamic performance analysis, understanding feedback and feedforward control principles."
+        ],
+        "job_responsibilities": [
+          "Developing advanced control solutions for electrical energy systems, power converters, and industrial drives."
+        ],
+        "what_we_offer": [
+          "Hybrid work model with a minimum of 2 days per week onsite in Pitäjänmäki, Helsinki."
+        ],
+        "search_keywords": "Control Software Engineer Embedded Software Engineering Power Electronics Electrical Energy Systems",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "cdc1202c",
+        "job_id": "project-program-manager-kangasala-cdc1202c",
+        "processed": true,
+        "title": "Project / Program Manager",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi",
+          "Vaasa",
+          "Oulu",
+          "Kuopio",
+          "Lahti",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27306536",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/05fd9025-114f-41e7-8594-5e79bd6332fa/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/project-program-manager-kangasala-cdc1202c",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-13 15:40:40",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is hiring a Project / Program Manager in Kangasala. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking an experienced Project / Program Manager to join a carve-out program in the industrial technology sector. The role involves coordinating multiple workstreams, ensuring alignment across the program, and taking responsibility for selected sub-streams. Key responsibilities include leading the planning and execution of the separation, mapping dependencies between systems, and monitoring progress. This is a full-time, permanent position with a competitive hourly wage based on Finnish collective agreements. Applicants must have extensive experience as a Program Manager in carve-outs, demergers, or comparable separation programs, and experience with financial systems in a carve-out context.",
+        "what_we_expect": [
+          "Extensive, proven experience as a Program Manager in carve-outs, demergers or comparable separation programs, with clear evidence of similar programs you have delivered.",
+          "Experience in running a large program with multiple sub-streams and combining them into one whole.",
+          "Experience with financial systems and applications in a carve-out or separation context."
+        ],
+        "job_responsibilities": [
+          "Bring the program together across the sub-streams, including the finance applications carve-out, and keep them moving in step.",
+          "Take responsibility for selected sub-streams within the overall program.",
+          "Lead the planning and execution of the separation with a clear view of the whole, making sure decisions are made in the right order.",
+          "Map dependencies between systems, integrations and data, including finance applications, and turn them into a workable separation plan with timelines and phasing.",
+          "Monitor progress, manage risks and report to stakeholders."
+        ],
+        "what_we_offer": [
+          "A versatile assignment where every day is different and interesting.",
+          "A very competitive salary."
+        ],
+        "search_keywords": "project manager program manager carve-out finance applications separation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      },
+      {
+        "id": "74e80e67",
+        "job_id": "waiterhost-for-events-kuopio-74e80e67",
+        "processed": true,
+        "title": "Waiter/Host for Events",
+        "company": "Osuma Henkilöstöpalvelut Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://osuma.likeit.fi/apply/54625370",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b52bd226-045b-4cf4-abec-fccd922c25ce/en",
+        "job_employer_email": "jyri.soininen@osuma.fi",
+        "job_employer_name": "Jyri Soininen",
+        "job_employer_phone_no": "050 304 8650",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiterhost-for-events-kuopio-74e80e67",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:40:40",
+        "open_positions": 1,
+        "salary_range": "salary for the position is based on the collect",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Waiter/Host for Events at Osuma Henkilöstöpalvelut Oy in Kuopio. Check the requirements and apply today.",
+        "description": "We are seeking experienced waiters/hosts for events and private parties in Kuopio, offering versatile and varied work with competitive hourly wages based on Finnish collective agreements. Ideal candidates will have previous experience in serving tasks, especially à la carte serving, and events, along with active customer service attitudes and good communication skills. The role involves working independently and as part of a team, handling tasks such as customer service and catering at various events, including sports matches and private parties. For more information or to apply, please contact Jyri Soininen at 050 304 8650 or jyri.soininen@osuma.fi.",
+        "what_we_expect": [
+          "Previous experience in serving tasks, especially à la carte serving.",
+          "Experience with events and smooth organization.",
+          "Active customer service attitude and good communication skills.",
+          "Ability to work independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Provide versatile customer service and catering tasks for events and occasions."
+        ],
+        "what_we_offer": [
+          "Versatile and varied work with various events."
+        ],
+        "search_keywords": "waiter host events customer service catering",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "de3c109f",
+        "job_id": "local-nurse-for-home-care-lohja-de3c109f",
+        "processed": true,
+        "title": "Local Nurse for Home Care",
+        "company": "Sam's Care Oy, Lohja",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@samscare.fi?subject=Application%20for%20the%20Job%20-%20Local%20Nurse%20for%20Home%20Care&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Local%20Nurse%20for%20Home%20Care.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14313d4e-31fd-4727-b301-453508da6d52/en",
+        "job_employer_email": "info@samscare.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/local-nurse-for-home-care-lohja-de3c109f",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-13 15:40:40",
+        "open_positions": 1,
+        "salary_range": "salary and flexible working hours Varied traini",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Local Nurse for Home Care at Sam's Care Oy, Lohja. Great opportunity in Lohja — apply now.",
+        "description": "Local nurse needed for home care in Lohja, supporting customers in their daily activities, providing basic care, performing procedures and medication, and changing catheters. Must hold a nursing degree, good Finnish language skills, B driver's license, and LOP/LOVe medical license. Competitive basic salary, flexible working hours, varied trainings, and good orientation offered. Please attach degree certificate and medical licenses to your application and send to info@samscare.fi.",
+        "what_we_expect": [
+          "Nursing degree.",
+          "Good oral and written Finnish language skills.",
+          "B driver's license.",
+          "LOP/LOVe medical license."
+        ],
+        "job_responsibilities": [
+          "Helping customers in their daily activities.",
+          "Performing basic care.",
+          "Performing procedures and medication.",
+          "Changing the catheter."
+        ],
+        "what_we_offer": [
+          "Competitive basic salary.",
+          "Flexible working hours.",
+          "Varied trainings.",
+          "Good orientation."
+        ],
+        "search_keywords": "nurse home care Lohja Finland license training",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:42",
+    "jobs": [
+      {
+        "id": "1ae54e86",
+        "job_id": "part-time-home-care-nurse-raasepori-1ae54e86",
+        "processed": true,
+        "title": "Part-time Home Care Nurse",
+        "company": "Sam's Care Oy, Lohja",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Raasepori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@samscare.fi?subject=Application%20for%20the%20Job%20-%20Part-time%20Home%20Care%20Nurse&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Part-time%20Home%20Care%20Nurse.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2e66b646-c15f-4a53-9ea4-f7af7e8d9545/en",
+        "job_employer_email": "info@samscare.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/part-time-home-care-nurse-raasepori-1ae54e86",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-17",
+        "scraped_at": "2026-11-13 15:40:42",
+        "open_positions": 1,
+        "salary_range": "salary Varied trainings and good orientation A",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Sam's Care Oy, Lohja is hiring a Part-time Home Care Nurse in Raasepori. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a part-time home care nurse to join our team in Raasepori, Lohja. The role involves assisting customers with daily activities, providing basic care, performing procedures, and administering medication. A nursing degree, good oral and written skills in Finnish or Swedish, a LOP/LOVe drug license, and a B driver's license are required. As a personal caregiver, you will plan, implement, and evaluate care plans with clients, their relatives, and a multi-professional team. We offer a competitive base salary, varied trainings, and good orientation. Please attach a copy of your diploma and medical licenses to your application and send it to info@samscare.fi.",
+        "what_we_expect": [
+          "Nursing degree.",
+          "Good oral and written skills in Finnish/Swedish.",
+          "LOP/LOVe drug license.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [
+          "Helping customers in their daily activities.",
+          "Basic care.",
+          "Performing procedures.",
+          "Administering medication."
+        ],
+        "what_we_offer": [
+          "A competitive base salary.",
+          "Varied trainings.",
+          "Good orientation."
+        ],
+        "search_keywords": "part-time home care nurse healthcare nursing degree",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "ffcf1035",
+        "job_id": "chimney-sweep-kuhmo-ffcf1035",
+        "processed": true,
+        "title": "Chimney Sweep",
+        "company": "Hormitohtorit Oy, Sotkamo (Akkoniementie 12, 88600 SOTKAMO)",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Kuhmo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:juuso@hormitohtorit.fi?subject=Application%20for%20the%20Job%20-%20Chimney%20Sweep&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chimney%20Sweep.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1489ffae-814c-4866-8f46-76eee159df62/en",
+        "job_employer_email": "juuso@hormitohtorit.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0456640060",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/chimney-sweep-kuhmo-ffcf1035",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-11",
+        "scraped_at": "2026-11-13 15:40:42",
+        "open_positions": 1,
+        "salary_range": "Voimme kouluttaa nuohoojan ammattitutkintoon myös oppisopimuskoulutuksella, joka kestää (1,5 - 2 vuotta) riippuen oppilaasta. Oppisopimuskaudella kuukausipalkka 1900 € + lisät. Ammattitutkinnon suorittamisen jälkeen palkka neuvotellaan uudestaan. Mahdollisuus tutustua työhön ensin työkokeilun avulla.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Chimney Sweep at Hormitohtorit Oy, Sotkamo (Akkoniementie 12, 88600 SOTKAMO) in Kuhmo. Check the requirements and apply today.",
+        "description": "Hormitohtorit Oy in Kuhmo is seeking a chimney sweep to join our team. This full-time, permanent position offers the opportunity to gain a professional qualification through an apprenticeship lasting 1.5 to 2 years, with a monthly salary of €1,900 + allowances during the training period. After completing the qualification, the salary will be renegotiated. Good customer service skills, manual dexterity, and a B driver's license are required. The role involves various tasks such as air conditioning cleaning, small sheet metal work, masonry, and chimney renovation. Living in the Kuhmo area is advantageous. Contact us at juuso@hormitohtorit.fi or 045 6640060 for more information or to apply.",
+        "what_we_expect": [
+          "Good customer service skills.",
+          "Manual skills.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunity for professional qualification with apprenticeship.",
+          "Monthly salary during apprenticeship of €1,900 + allowances.",
+          "Salary renegotiation after completing professional qualification.",
+          "Work trial opportunity."
+        ],
+        "search_keywords": "chimney sweep Kuhmo manual labor",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "b2148b54",
+        "job_id": "local-part-time-nurse-for-home-care-lohja-b2148b54",
+        "processed": true,
+        "title": "Local Part-Time Nurse for Home Care",
+        "company": "Sam's Care Oy, Lohja",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@samscare.fi?subject=Application%20for%20the%20Job%20-%20Local%20Part-Time%20Nurse%20for%20Home%20Care&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Local%20Part-Time%20Nurse%20for%20Home%20Care.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c801b3ed-72a1-4378-a78c-ff2bb2a57ccb/en",
+        "job_employer_email": "info@samscare.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/local-part-time-nurse-for-home-care-lohja-b2148b54",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-16",
+        "scraped_at": "2026-11-13 15:40:42",
+        "open_positions": 1,
+        "salary_range": "salary and flexible working hours Varied traini",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Sam's Care Oy, Lohja is looking for a Local Part-Time Nurse for Home Care in Lohja. Don't miss this opportunity — apply today.",
+        "description": "Local nurse part-time to work for home care in Lohja. Due to our growing number of customers, we are seeking more care professionals to join our team. Responsibilities include helping customers with daily activities, basic care, procedures, and medication, as well as changing catheters. Requirements are a nursing degree, good Finnish language skills, B driver's license, and LOP/LOVe medical license. We offer a competitive basic salary, flexible working hours, varied trainings, and good orientation. Please attach your degree certificate and medical licenses to your application and send it to info@samscare.fi.",
+        "what_we_expect": [
+          "Nursing degree.",
+          "Good oral and written Finnish language skills.",
+          "B driver's license.",
+          "LOP/LOVe medical license."
+        ],
+        "job_responsibilities": [
+          "Helping customers in their daily activities.",
+          "Performing basic care.",
+          "Performing procedures and medication.",
+          "Changing the catheter."
+        ],
+        "what_we_offer": [
+          "Competitive basic salary.",
+          "Flexible working hours.",
+          "Varied trainings.",
+          "Good orientation."
+        ],
+        "search_keywords": "nurse home care Lohja healthcare",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "039444b9",
+        "job_id": "construction-worker-seinäjoki-039444b9",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Nordic JobCentre Oy, Seinäjoki",
+        "job_category": "construction",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://njc.likeit.fi/apply/70583468",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b6857eab-fcfd-4e6e-bc48-bd2b54475e66/en",
+        "job_employer_email": "",
+        "job_employer_name": "Rami Koivisto",
+        "job_employer_phone_no": "0444936162",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-seinäjoki-039444b9",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-13 15:40:42",
+        "open_positions": 1,
+        "salary_range": "salary according to the collective agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Construction Worker at Nordic JobCentre Oy, Seinäjoki in Seinäjoki. Check the requirements and apply today.",
+        "description": "Construction workers are needed in Seinäjoki for versatile construction tasks in new and renovation sites during the winter season. Responsibilities include sheeting, flashing, partition wall construction, demolition work, and general site maintenance. We seek candidates with a good work attitude, versatile skills, willingness to take on any task, and fluent Finnish language skills. An occupational safety card is preferred, and assistance in obtaining it is provided if necessary. NJC offers professional employment handling, a long-term employment relationship, versatile tasks, and practical work clothes and equipment. Applications should include previous work history and education, and a driver's license is an advantage.",
+        "what_we_expect": [
+          "Good attitude towards work.",
+          "Versatile skills.",
+          "Willingness to take on any task at the site.",
+          "Fluent Finnish language skills.",
+          "Occupational safety card (if necessary, assistance in obtaining the card)."
+        ],
+        "job_responsibilities": [
+          "Perform sheeting, flashing, construction of partition walls and demolition work.",
+          "Carry out general construction site maintenance work."
+        ],
+        "what_we_offer": [
+          "Professional handling of employment matters.",
+          "Possibility of a long-term employment relationship.",
+          "Versatile tasks.",
+          "Practical work clothes and equipment."
+        ],
+        "search_keywords": "construction worker site generalist Seinäjoki winter season",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "cd84f077",
+        "job_id": "multilingual-customer-service-representative-helsinki-cd84f077",
+        "processed": true,
+        "title": "Multilingual Customer Service Representative",
+        "company": "Akkad Group Oy, Espoo",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@akkad.fi?subject=Application%20for%20the%20Job%20-%20Multilingual%20Customer%20Service%20Representative&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Multilingual%20Customer%20Service%20Representative.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8645b2f7-b0fc-46b8-8a86-f6c3f7f43396/en",
+        "job_employer_email": "info@akkad.fi",
+        "job_employer_name": "Al-Boujasim Hassanein",
+        "job_employer_phone_no": "0504710884",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/multilingual-customer-service-representative-helsinki-cd84f077",
+        "date_posted": "2026-11-12",
+        "date_expires": "2027-01-31",
+        "scraped_at": "2026-11-13 15:40:42",
+        "open_positions": 1,
+        "salary_range": "Salary and form of cooperation The task is carr",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Multilingual Customer Service Representative role at Akkad Group Oy, Espoo. Join the team and build your career in Helsinki.",
+        "description": "Akkad Group Oy, based in Helsinki, seeks a multilingual customer service representative to join our growing educational services team. Ideal candidates will have excellent Finnish and English language skills, with Arabic proficiency being a significant advantage. Responsibilities include customer service via phone, WhatsApp, and email, processing training registrations and customer information, coordinating with trainers and partners, updating websites and social media, and contributing to content development. We value self-initiative, IT skills, organizational abilities, and clear communication. The role offers flexible, remote work and opportunities for professional development in a dynamic, international environment.",
+        "what_we_expect": [
+          "Excellent Finnish language skills and good English language skills.",
+          "Other language skills, for example Arabic, are considered a significant advantage.",
+          "Good customer service and interaction skills.",
+          "Good IT skills and control of digital tools.",
+          "Good organizational and coordination skills.",
+          "Ability to communicate clearly with customers, trainers and partners."
+        ],
+        "job_responsibilities": [
+          "Customer service by phone, WhatsApp and email, as well as customer advice.",
+          "Processing of training registrations, orders and customer information.",
+          "Communication with trainers and partners and coordination of training schedules and practical arrangements.",
+          "Updating and maintaining websites, online store and training information.",
+          "Writing blog texts and articles and developing website content.",
+          "Small-scale marketing and communication tasks, such as updating social media publications and marketing materials."
+        ],
+        "what_we_offer": [
+          "Versatile and varied work in a growing training company.",
+          "The possibility to work mainly remotely.",
+          "Flexibility to work.",
+          "The opportunity to develop your own expertise in customer service, coordination, communication and digital services.",
+          "An international and multilingual operating environment.",
+          "The opportunity to participate in the development of the company's operations and services."
+        ],
+        "search_keywords": "multilingual customer service representative, customer service, IT skills, remote work, digital services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:44",
+    "jobs": [
+      {
+        "id": "55a042fa",
+        "job_id": "chef-of-asian-cuisine-lahti-55a042fa",
+        "processed": true,
+        "title": "Chef of Asian Cuisine",
+        "company": "JX SUSHI OY, Lahti",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:liujun011789@hotmail.com?subject=Application%20for%20the%20Job%20-%20Chef%20of%20Asian%20Cuisine&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Chef%20of%20Asian%20Cuisine.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c285c56e-2b63-4e77-a122-96b72b25b9bf/en",
+        "job_employer_email": "liujun011789@hotmail.com",
+        "job_employer_name": "Jun Liu",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-of-asian-cuisine-lahti-55a042fa",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:40:44",
+        "open_positions": 1,
+        "salary_range": "salary and a nice working community",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join JX SUSHI OY, Lahti as a Chef of Asian Cuisine and grow your career in Lahti. Check the job details and apply now.",
+        "description": "We are seeking a professional Asian chef to join our team at JX SUSHI OY in Lahti. Responsibilities include preparing Asian and especially Chinese dishes, processing raw materials, handling daily kitchen tasks, and ensuring food hygiene. Experience in wok dish preparation, the ability to handle pressure, and the capability to work both independently and as part of a team are essential. A hygiene pass is advantageous. This is a permanent, full-time position with a competitive salary and a welcoming working environment.",
+        "what_we_expect": [
+          "Experience in the preparation of wok dishes.",
+          "Ability to withstand pressure.",
+          "Ability to work independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Preparation of Asian and especially Chinese dishes.",
+          "Processing of raw materials.",
+          "Daily tasks in the kitchen.",
+          "Taking care of food hygiene."
+        ],
+        "what_we_offer": [
+          "Permanent job.",
+          "Competitive salary.",
+          "Nice working community."
+        ],
+        "search_keywords": "chef asian cuisine chinese wok pressure",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "5130ba19",
+        "job_id": "industrial-insulator-porvoo-5130ba19",
+        "processed": true,
+        "title": "Industrial Insulator",
+        "company": "Salvelum Oü",
+        "job_category": "energy-and-utilities",
+        "jobLocation": [
+          "Porvoo",
+          "Helsinki",
+          "Kotka"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:info@salvelum.com?subject=Application%20for%20the%20Job%20-%20Industrial%20Insulator&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Industrial%20Insulator.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9fcfa5bb-15cc-4a22-8e81-e001de0fac90/en",
+        "job_employer_email": "info@salvelum.com",
+        "job_employer_name": "Andrei Rõžkov",
+        "job_employer_phone_no": "+372 5668 1300",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/energy-and-utilities/industrial-insulator-porvoo-5130ba19",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-11",
+        "scraped_at": "2026-11-13 15:40:44",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Salvelum Oü is hiring a Industrial Insulator in Porvoo. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Industrial Insulator at Salvelum Oü in Porvoo, Helsinki, or Kotka, Finland, seeks a reliable and professional individual for permanent, full-time employment. Responsibilities include installing and dismantling insulation materials in pipelines, equipment, and industrial structures, as well as performing simple sheet metal covering work related to insulation. Applicants must be fluent in Finnish and English, and proficiency in Russian is a plus. Reliability, professionalism, and a willingness to learn are essential. Send your CV by email to info@salvelum.com, and feel free to attach relevant certificates and documents. For inquiries, call +372 5668 1300 from Monday to Friday between 10:00 a.m. and 3:00 p.m.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Installation and dismantling of insulation materials in pipelines, equipment and other industrial structures.",
+          "Simple sheet metal covering work related to insulation work."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "industrial insulator insulation work energy utilities",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "5679676a",
+        "job_id": "early-dispatcher-savonlinna-5679676a",
+        "processed": true,
+        "title": "Early Dispatcher",
+        "company": "Mailia",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Savonlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://opero.mailia.fi/hae/8722f057-0a95-4acf-a5f0-adb61f31b08c/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8722f057-0a95-4acf-a5f0-adb61f31b08c/en",
+        "job_employer_email": "oscar.alanne@mailia.fi",
+        "job_employer_name": "Oscar Alanne",
+        "job_employer_phone_no": "0442377318",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/early-dispatcher-savonlinna-5679676a",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-13 15:40:44",
+        "open_positions": 1,
+        "salary_range": "Alkaen 12,07 €/h sisältäen yölisän, jakelun TES",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Mailia is hiring a Early Dispatcher in Savonlinna. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Join Mailia as an Early Dispatcher in the Savonlinna area, where you will independently distribute newspapers and addressed letter mail to households along your own route from Monday to Saturday, between 00:00 and 06:00. You will drive a company car and receive a salary from €12.07/h including night supplement, paid every two weeks. Work clothes and equipment are provided, and you will be introduced to your task and delivery route. Requirements include a B driver's license, being of legal age, a careful and responsible approach, the ability to work independently, and willingness to work in varying weather conditions. Previous experience is an advantage but not necessary. Apply to start making morning deliveries before others wake up.",
+        "what_we_expect": [
+          "B driver's license.",
+          "Of legal age, because the work is night work.",
+          "Careful and responsible approach to work.",
+          "Ability to work independently.",
+          "Willingness to move in varying weather conditions."
+        ],
+        "job_responsibilities": [
+          "Independently distribute newspapers and addressed letter mail to the households of your own distribution route."
+        ],
+        "what_we_offer": [
+          "Salary from €12.07/h including night supplement.",
+          "Salary according to the distribution collective agreement.",
+          "Salary payment every two weeks.",
+          "Company car for distribution.",
+          "Work clothes and equipment.",
+          "Introduction to the task and delivery route."
+        ],
+        "search_keywords": "dispatcher delivery night work Savonlinna",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "b2ce17a9",
+        "job_id": "sushi-chef-lahti-b2ce17a9",
+        "processed": true,
+        "title": "Sushi Chef",
+        "company": "JX SUSHI OY, Lahti",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:liujun011789@hotmail.com?subject=Application%20for%20the%20Job%20-%20Sushi%20Chef&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Sushi%20Chef.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0386ae86-7a5d-4baf-8bb9-9a3a00261660/en",
+        "job_employer_email": "liujun011789@hotmail.com",
+        "job_employer_name": "Jun Liu",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/sushi-chef-lahti-b2ce17a9",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:40:44",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join JX SUSHI OY, Lahti as a Sushi Chef and grow your career in Lahti. Check the job details and apply now.",
+        "description": "Sushi chef position at JX Sushi OY in Lahti, Finland, seeks a reliable and professional individual with a strong willingness to learn. Responsibilities include making sushi, pretreating raw materials, maintaining kitchen cleanliness and hygiene, and collaborating with other staff. Fluency in Finnish is required. Join our team in Lahti to bring your skills and dedication to our restaurant.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Making sushi.",
+          "Pretreatment of raw materials.",
+          "Cleanliness and hygiene of the kitchen.",
+          "Cooperation with other staff."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "sushi chef japanese dishes kitchen cleanliness cooperation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "e4396219",
+        "job_id": "physiotherapist-or-trained-massage-therapist-parainen-e4396219",
+        "processed": true,
+        "title": "Physiotherapist or Trained Massage Therapist",
+        "company": "SkärgårdsHälsan - Marika Melkko Ab, Parainen",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Parainen"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:marika.melkko@saaristoterveys.fi?subject=Application%20for%20the%20Job%20-%20Physiotherapist%20or%20Trained%20Massage%20Therapist&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Physiotherapist%20or%20Trained%20Massage%20Therapist.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/319dc73b-803e-40c5-9b26-33431691b344/en",
+        "job_employer_email": "marika.melkko@saaristoterveys.fi",
+        "job_employer_name": "Marika Melkko",
+        "job_employer_phone_no": "0409604236",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/physiotherapist-or-trained-massage-therapist-parainen-e4396219",
+        "date_posted": "2026-11-12",
+        "date_expires": "2027-01-04",
+        "scraped_at": "2026-11-13 15:40:44",
+        "open_positions": 1,
+        "salary_range": "Yrittäjä laskuttaa osuutensa asiakkaiden kuukausittain maksamista hoidoista porrastetun provisiomallin mukaan.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Join SkärgårdsHälsan - Marika Melkko Ab, Parainen as a Physiotherapist or Trained Massage Therapist and grow your career in Parainen.",
+        "description": "SkärgårdsHälsan, based in Parainen, is seeking a physiotherapist or trained massage therapist for a permanent, full-time position. This entrepreneurial collaboration offers a flexible schedule, starting from 1–2 days a week and the potential to increase workload. Applicants should have a physiotherapist or trained masseuse qualification, appropriate registration in the healthcare professional register, and at least five years of work experience. Versatile manual skills, the ability to plan individual and goal-oriented treatment, and the capacity to manage personal well-being are essential. Knowledge of Finnish and Swedish is advantageous. The role includes recording patient information in Diarium and Kanta systems, and acting as a healthcare service provider.",
+        "what_we_expect": [
+          "Physiotherapist or trained masseuse qualification and appropriate registration in the healthcare professional register (Terhikki).",
+          "At least five years of work experience in the field is considered an advantage.",
+          "Versatile manual skills and the ability to plan individual and goal-oriented treatment.",
+          "The ability to also take care of your own well-being and coping at work.",
+          "A valid occupational health and safety card or willingness to obtain one before starting the cooperation.",
+          "Willingness to record patient information in the Diarium patient information system and Kanta services appropriately."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "A flexible opportunity to work part-time or full-time throughout the year.",
+          "Cozy and peaceful reception facilities in the Turunmaa archipelago.",
+          "The opportunity to influence your own working hours and locations.",
+          "A diverse customer base and the opportunity for long-term customer relationships.",
+          "Collegial support and the opportunity to develop your own skills and our services together.",
+          "The opportunity to build a long-term working life that suits you."
+        ],
+        "search_keywords": "physiotherapist massage therapist healthcare Turku archipelago",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:45",
+    "jobs": [
+      {
+        "id": "3ab0fa5d",
+        "job_id": "waiter-pori-3ab0fa5d",
+        "processed": true,
+        "title": "Waiter",
+        "company": "Sairme Oy, Pori",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7fc90283-1efe-4102-8d9b-164cd1dd5be5/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7fc90283-1efe-4102-8d9b-164cd1dd5be5/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiter-pori-3ab0fa5d",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-17",
+        "scraped_at": "2026-11-13 15:40:45",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Waiter at Sairme Oy, Pori in Pori. Check the requirements and apply today.",
+        "description": "Ravintola Sairme, a Georgian restaurant in Pori, is seeking a motivated, friendly, and customer-oriented waiter to join our team. Responsibilities include receiving customers, handling food and drink orders, serving food and drinks, including alcoholic beverages, processing payments, and ensuring customer satisfaction. Applicants should have previous experience in the restaurant industry, a valid driving license, and excellent Finnish language skills. We are looking for individuals with a positive attitude, strong interaction and cooperation skills, and a sense of responsibility and punctuality. Join our encouraging work community and be part of a cozy and developing restaurant.",
+        "what_we_expect": [
+          "Previous experience as a waiter or in the restaurant industry.",
+          "Valid driving license (mandatory).",
+          "Good Finnish language skills.",
+          "Positive and customer-oriented attitude.",
+          "Good interaction and cooperation skills.",
+          "Responsibility, reliability and punctuality."
+        ],
+        "job_responsibilities": [
+          "Receiving customers and professional customer service.",
+          "Receiving food and drink orders.",
+          "Serving food and drinks.",
+          "Serving of alcoholic beverages.",
+          "Payment processing and use of the cash system.",
+          "Taking care of customer satisfaction."
+        ],
+        "what_we_offer": [
+          "A nice and encouraging work community.",
+          "The opportunity to work in a cozy and developing restaurant.",
+          "Varied tasks in Georgian food and hospitality.",
+          "The opportunity to develop as a professional in the restaurant industry."
+        ],
+        "search_keywords": "waiter restaurant hospitality customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "d2b06af0",
+        "job_id": "production-manager-kaustinen-d2b06af0",
+        "processed": true,
+        "title": "Production Manager",
+        "company": "Wild&Berg Oy, Kaustinen",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Kaustinen",
+          "Kruunupyy"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.wildandberg.fi/rekrytointi/?v=75778bf8fde7",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a5e44169-e94b-48ef-b26f-2a7f30ea6a4d/en",
+        "job_employer_email": "viktoria@wildandberg.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-manager-kaustinen-d2b06af0",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-13 15:40:45",
+        "open_positions": 1,
+        "salary_range": "salary expectations by email to **viktoria@wild",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Production Manager at Wild&Berg Oy, Kaustinen in Kaustinen. Apply now and take the next step in your career.",
+        "description": "Wild&Berg Oy, a growing Finnish food company in Kaustinen/Kruunupyy, seeks a Production Manager to join our dynamic team. As a key role in our ambitious growth company, you will be responsible for production planning, daily management, and the development of production efficiency, quality, and profitability. Your tasks include directing personnel, developing production processes, ensuring quality management and food safety, and managing raw material procurement and inventory. With experience in food production, development, and personnel management, and a passion for practical work, you will contribute to our continuous improvement and international expansion. Send your application, CV, and salary expectations to viktoria@wildandberg.fi by 6 December 2026.",
+        "what_we_expect": [
+          "Experience in food production.",
+          "Experience in production development.",
+          "Experience in personnel management.",
+          "Good organizational skills.",
+          "Understanding of the importance of production cost-effectiveness.",
+          "Self-initiated and solution-oriented."
+        ],
+        "job_responsibilities": [
+          "Production planning and daily management.",
+          "Improving production efficiency and productivity.",
+          "Directing the personnel and organizing the work.",
+          "Development of production processes and operating methods.",
+          "Quality management and food safety.",
+          "Raw material procurement, inventory management and cost monitoring."
+        ],
+        "what_we_offer": [
+          "A key role in an ambitious growth company.",
+          "The opportunity to truly influence the development of the company and production.",
+          "A versatile job description and a close working community.",
+          "The opportunity to grow with the company.",
+          "The opportunity to participate in development projects of new products and production methods."
+        ],
+        "search_keywords": "Production Manager food production management development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:46",
+    "jobs": [
+      {
+        "id": "e9027f12",
+        "job_id": "taxi-driver-morning-shift-espoo-e9027f12",
+        "processed": true,
+        "title": "Taxi Driver, Morning Shift",
+        "company": "Nordlink Henkilöstövuokraus Oy, Helsinki",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:apply@nordlink.fi?subject=Application%20for%20the%20Job%20-%20Taxi%20Driver%2C%20Morning%20Shift&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Taxi%20Driver%2C%20Morning%20Shift.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14f56e54-cf18-44b7-bf00-872e28b2149d/en",
+        "job_employer_email": "apply@nordlink.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-morning-shift-espoo-e9027f12",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-13 15:40:46",
+        "open_positions": 1,
+        "salary_range": "Salary 40% of the VAT 0 cash register for the s",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "Swedish",
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Taxi Driver, Morning Shift at Nordlink Henkilöstövuokraus Oy, Helsinki in Espoo.",
+        "description": "Taxi drivers are needed for the morning shift in the capital region, working with Taksi Helsinki, including routes to Kela and MPK. The role involves driving a neat Tesla Model Y from Leppävaara or Viikki, with flexible start times based on your schedule. You'll earn 40% of the VAT 0 cash register for the shift worked, plus a monthly holiday allowance, and the entire tip goes to the driver. A taxi driver's license, a Taksi Helsingin card, and everyday Finnish are required; other languages are a plus. Nordlink Henkilöstövuokraus Oy, a growing Finnish company, offers a direct employment relationship and its own fleet in Uusimaa. Contact us via WhatsApp +358 44 327 2222 or Messenger m.me/NordlinkCareers for more information.",
+        "what_we_expect": [
+          "A good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "A neat Tesla Model Y.",
+          "Monthly holiday allowance.",
+          "A taxi driver's license.",
+          "A Taksi Helsingin card.",
+          "Everyday Finnish.",
+          "A chance to start with Bolt and Uber brokerage."
+        ],
+        "search_keywords": "taxi driver morning shift Helsinki transportation logistics",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "991ee983",
+        "job_id": "taxi-driver-evening-shift-espoo-991ee983",
+        "processed": true,
+        "title": "Taxi Driver, Evening Shift",
+        "company": "Nordlink Henkilöstövuokraus Oy, Helsinki",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/648408d1-fa0f-43c0-8ed6-9806ed9d7c04/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/648408d1-fa0f-43c0-8ed6-9806ed9d7c04/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-evening-shift-espoo-991ee983",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-18",
+        "scraped_at": "2026-11-13 15:40:46",
+        "open_positions": 1,
+        "salary_range": "Salary is commission-based and is paid from the",
+        "workTime": "Full-time",
+        "continuityOfWork": "Seasonal work",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Get started in a new job as a Taxi Driver, Evening Shift at Nordlink Henkilöstövuokraus Oy, Helsinki in Espoo. Check the requirements and apply today.",
+        "description": "Join Nordlink Henkilöstövuokraus Oy as a taxi driver for the evening shift, serving customers with Bolt and Uber mediation. Your shift runs from 16:00 to 01:00, with the option to continue until 05:00. Drive a clean and new Toyota Corolla Touring (2022–2023) from fleet locations in Espoo, Vantaa, and Helsinki. Earn a commission-based salary paid from the VAT 0 cash register, plus holiday pay monthly. Valid taxi driver's license and sufficient Finnish language skills are required; previous taxi experience is advantageous. Enjoy an electric taxi fleet on the Helsinki side, and switch to Taksi Helsinki when your card is completed. Apply via WhatsApp +358 44 327 2222 or Messenger m.me/NordlinkCareers.",
+        "what_we_expect": [
+          "Valid taxi driver's license.",
+          "Sufficient Finnish language skills for customer service.",
+          "Previous taxi experience is an advantage."
+        ],
+        "job_responsibilities": [
+          "Serve customers with Bolt and Uber mediation."
+        ],
+        "what_we_offer": [
+          "Commission-based salary paid from the VAT 0 cash register of the shift worked + holiday pay every month.",
+          "Entire tip left by the customer remains with the driver.",
+          "Electric taxi fleet on the Helsinki side + Kela and MPK rides.",
+          "Ability to switch to Taksi Helsinki when the card is completed."
+        ],
+        "search_keywords": "taxi driver evening shift bolt uber finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "7e66c151",
+        "job_id": "tapertaping-assistant-nokia-7e66c151",
+        "processed": true,
+        "title": "Taper/Taping Assistant",
+        "company": "Zq-Teippi Oy, Nokia",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Nokia",
+          "Kerava",
+          "Lieto"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1e3d137b-d966-49a2-b1d2-e4a1d9046a79/en",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1e3d137b-d966-49a2-b1d2-e4a1d9046a79/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/tapertaping-assistant-nokia-7e66c151",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-24",
+        "scraped_at": "2026-11-13 15:40:46",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Taper/Taping Assistant at Zq-Teippi Oy, Nokia. Great opportunity in Nokia — apply now.",
+        "description": "Taper/Taping Assistant at Zq-Teippi Oy in Nokia, Kerava, and Lieto is seeking a reliable and teamwork-oriented individual willing to learn. Applicants should send a short form application by email.",
+        "what_we_expect": [
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "taper taping assistant general labor",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:47",
+    "jobs": [
+      {
+        "id": "d1e277ec",
+        "job_id": "all-rounder-savonlinna-d1e277ec",
+        "processed": true,
+        "title": "All-Rounder",
+        "company": "Rauhala ry, Savonlinna",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Savonlinna",
+          "Mikkeli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:rinkinenarto@gmail.com?subject=Application%20for%20the%20Job%20-%20All-Rounder&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20All-Rounder.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/73aa7124-e395-44ba-bcdf-81667c0cc477/en",
+        "job_employer_email": "rinkinenarto@gmail.com",
+        "job_employer_name": "Arto Rinkinen",
+        "job_employer_phone_no": "0503095054",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/all-rounder-savonlinna-d1e277ec",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-15",
+        "scraped_at": "2026-11-13 15:40:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Rauhala ry, Savonlinna as a All-Rounder and grow your career in Savonlinna. Check the job details and apply now.",
+        "description": "An all-rounder position is available at Rauhala ry in Savonlinna, offering a permanent, full-time role with wage support for the unemployed. This multidisciplinary position requires a good attitude, reliability, professionalism, teamwork, and a willingness to learn. Fluency in Finnish is essential. If you meet these requirements and are eager to contribute to a charity and peace organization, please contact us by email or phone to report your abilities and wishes.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "all-rounder charity administration multidisciplinary",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "ebd92120",
+        "job_id": "sound-master-seinäjoki-ebd92120",
+        "processed": true,
+        "title": "Sound Master",
+        "company": "Seinäjoen Kaupunginteatteri Oy, Seinäjoki",
+        "job_category": "culture-and-arts",
+        "jobLocation": [
+          "Seinäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://seinajoenkaupunginteatteri.fi/rekry/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a29408ce-8e26-435b-95eb-c77e0fb29543/en",
+        "job_employer_email": "riku.metsa-ketela@seinajoki.fi",
+        "job_employer_name": "Riku Metsä-Ketelä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/culture-and-arts/sound-master-seinäjoki-ebd92120",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-25",
+        "scraped_at": "2026-11-13 15:40:47",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Sound Master at Seinäjoen Kaupunginteatteri Oy, Seinäjoki in Seinäjoki. Check the requirements and apply today.",
+        "description": "The Sound Master position at Seinäjoki City Theatre involves sound design and implementation in theater productions, running rehearsals and performances, and maintaining and developing sound technical equipment. Eligibility requires an education suitable for the position or experience in similar work, with experience in theater sound design and strong technical skills. Key personal qualities include problem-solving ability, cooperation and interaction skills, pressure tolerance, self-initiative, and a developing attitude. Prior experience in musical theater sound design and studio work, knowledge of DiGiCo, d&b audiotechnik, OptoCore, and wireless microphone systems, as well as software like QLab, Logic Pro, and Dante, is advantageous.",
+        "what_we_expect": [
+          "Problem-solving ability.",
+          "Cooperation and interaction skills.",
+          "Pressure tolerance.",
+          "Self-initiative.",
+          "A developing attitude."
+        ],
+        "job_responsibilities": [
+          "Sound design and implementation in theater productions.",
+          "Running of rehearsals and performances.",
+          "Maintenance and development of sound technical equipment."
+        ],
+        "what_we_offer": [
+          "An interesting task and meaningful work as part of the theater's professional and ambitious group of actors."
+        ],
+        "search_keywords": "sound master theater design implementation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "08962608",
+        "job_id": "foreman-porvoo-08962608",
+        "processed": true,
+        "title": "Foreman",
+        "company": "Cronos Digital Safety Solutions Oy, Ylöjärvi",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Porvoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:jarkko.tiihonen@cronos.fi?subject=Application%20for%20the%20Job%20-%20Foreman&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Foreman.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/4cbbfe2a-6992-4772-8699-d437189c0339/en",
+        "job_employer_email": "jarkko.tiihonen@cronos.fi",
+        "job_employer_name": "Jarkko Tiihonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/foreman-porvoo-08962608",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-13 15:40:47",
+        "open_positions": 1,
+        "salary_range": "salary and the opportunity to develop your own",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Foreman at Cronos Digital Safety Solutions Oy, Ylöjärvi. Great opportunity in Porvoo — apply now.",
+        "description": "We are seeking an experienced and self-initiated foreman for our client's industrial services unit in Porvoo. As the foreman, you will be responsible for the operational management of process cleaning works, supervision of personnel and work safety, and customer cooperation. You will ensure the smoothness, quality, and schedules of the work. We expect you to have experience in work management and front-line duties, strong occupational safety knowledge, an independent and solution-oriented approach to work, and good interaction and organization skills. Experience in industrial process cleaning or sewage maintenance is considered an advantage. We offer a versatile and responsible position in an industrial environment, a competitive salary, and the opportunity to develop your own skills.",
+        "what_we_expect": [
+          "Experience in work management and front-line duties.",
+          "Strong occupational safety knowledge.",
+          "Independent and solution-oriented approach to work.",
+          "Good interaction and organization skills.",
+          "Experience in industrial process cleaning or sewage maintenance is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Responsible for the operational management of process cleaning works.",
+          "Supervision of personnel and work safety.",
+          "Customer cooperation."
+        ],
+        "what_we_offer": [
+          "A versatile and responsible position in an industrial environment.",
+          "A competitive salary.",
+          "The opportunity to develop your own skills."
+        ],
+        "search_keywords": "foreman process cleaning supervision safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:48",
+    "jobs": [
+      {
+        "id": "9b21bc4f",
+        "job_id": "communication-coordinator-espoo-9b21bc4f",
+        "processed": true,
+        "title": "Communication Coordinator",
+        "company": "Academic Work Finland Oy",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Kauniainen",
+          "Hyvinkää",
+          "Kerava",
+          "Kirkkonummi",
+          "Loviisa",
+          "Mäntsälä",
+          "Nurmijärvi",
+          "Sipoo",
+          "Siuntio",
+          "Tuusula",
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/MB1DVK",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/24954615-ed95-43a8-a7eb-0cd47a801aaa/en",
+        "job_employer_email": "krs01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/communication-coordinator-espoo-9b21bc4f",
+        "date_posted": "2026-11-12",
+        "date_expires": "2027-05-11",
+        "scraped_at": "2026-11-13 15:40:48",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Join Academic Work Finland Oy as a Communication Coordinator and grow your career in Espoo. Check the job details and apply now.",
+        "description": "As a Communication Coordinator at Academic Work Finland Oy, you will independently manage internal and external communications, working closely with a small team and committees to ensure up-to-date, effective communication across multiple channels. You will plan, implement, and develop member communications and newsletters, produce content for social media channels, and manage online communication. Responsibilities include planning and reporting communication campaigns, maintaining media relations, preparing press releases, and coordinating event communication. You will also handle image processing and visual material production using Adobe Illustrator.",
+        "what_we_expect": [
+          "Excellent ability to produce text quickly and smoothly.",
+          "Fluent written and oral skills in Finnish and English.",
+          "Experience using WordPress sites and newsletter systems.",
+          "Management of social media channels (LinkedIn, Facebook, Instagram).",
+          "Basic photography and image processing skills.",
+          "Good pressure tolerance, flexibility and ability to prioritize tasks."
+        ],
+        "job_responsibilities": [
+          "Planning, implementation and development of member communications and newsletters.",
+          "Content production of social media channels and maintenance of online communication.",
+          "Planning, implementation and reporting of communication campaigns.",
+          "Maintaining media relations, preparing press releases and communication with influencers.",
+          "Event communication coordination and content production.",
+          "Image processing and producing visual material with Adobe Illustrator."
+        ],
+        "what_we_offer": [
+          "A versatile role where you can truly influence the development of our communication and the future reform of electronic platforms.",
+          "Flexible working hours.",
+          "The possibility of partial remote work (approx. 2 remote days per week).",
+          "Close support of the work community."
+        ],
+        "search_keywords": "communications coordinator media journalism security national defense Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-13 15:40:54",
+    "jobs": [
+      {
+        "id": "969210d5",
+        "job_id": "excavator-driver-jyväskylä-969210d5",
+        "processed": true,
+        "title": "Excavator Driver",
+        "company": "Nordic Work Factory Ltd Oy, Jyväskylä",
+        "job_category": "construction",
+        "jobLocation": [
+          "Jyväskylä",
+          "Helsinki",
+          "Espoo",
+          "Vantaa",
+          "Nurmijärvi",
+          "Järvenpää",
+          "Lohja",
+          "Kerava"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:janne.aijanen@laaturekry.com?subject=Application%20for%20the%20Job%20-%20Excavator%20Driver&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Excavator%20Driver.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/22a54d9e-83e1-4ed9-ae82-464cbb6b4d6b/en",
+        "job_employer_email": "janne.aijanen@laaturekry.com",
+        "job_employer_name": "Janne Äijänen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/excavator-driver-jyväskylä-969210d5",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-13 15:40:54",
+        "open_positions": 1,
+        "salary_range": "salary according to your skills - A pleasant an",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "A new job opportunity is available at Nordic Work Factory Ltd Oy, Jyväskylä as a Excavator Driver in Jyväskylä. Learn more about the role and apply now.",
+        "description": "We are seeking motivated and skilled excavator drivers for versatile land construction projects in Uusimaa. This full-time, permanent position offers a long-term career in a growing and respected company. Responsibilities include working at various construction sites, where your days can be challenging and rewarding. Requirements include experience in driving an excavator, a valid occupational safety card, a self-initiated and responsible approach to work, and the ability to work both independently and in a team. We offer a competitive salary according to your skills and a pleasant and professional work community. If you are interested, please send your application to Janne Äijänen at janne.aijanen@laaturekry.com.",
+        "what_we_expect": [
+          "Experience in driving an excavator.",
+          "A valid occupational safety card.",
+          "Self-initiated and responsible approach to work.",
+          "Ability to work both independently and in a team."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Competitive salary according to your skills.",
+          "A pleasant and professional work community."
+        ],
+        "search_keywords": "excavator driver construction Uusimaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
   }
