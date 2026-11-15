@@ -489025,5 +489025,56 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-15 06:38:52",
+    "jobs": [
+      {
+        "id": "8dbd2899",
+        "job_id": "early-childhood-nanny-konnevesi-8dbd2899",
+        "processed": true,
+        "title": "Early Childhood Nanny",
+        "company": "Konneveden kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Konnevesi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/751097/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/78af41f4-bba3-4c04-a4b7-895d436ccf14/en",
+        "job_employer_email": "jenni.pasma@konnevesi.fi",
+        "job_employer_name": "Jenni Pasma",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nanny-konnevesi-8dbd2899",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-15 06:38:52",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Konneveden kunta as a Early Childhood Nanny and grow your career in Konnevesi. Check the job details and apply now.",
+        "description": "We are seeking a positive, approachable, and sensitive nanny for our early childhood education work community in Konnevesi, Finland, to support children's groups from January 1, 2027, to May 31, 2027. You should have excellent interaction skills with both children and the team, and be willing to work with children in need of support. A genuine interest in nature and exercise is beneficial, along with a good attitude and reliability. The position is full-time and permanent, with a salary as per KVtes’s guidelines. Good interaction skills with the team and guardians are essential, and you will work closely with the director of early childhood education, early childhood special education teachers, and other nannies.",
+        "what_we_expect": [
+          "Good interaction skills with children.",
+          "Good interaction skills with the team.",
+          "Willingness to work with children in need of support.",
+          "Interest in nature and exercise.",
+          "Good attitude.",
+          "Reliability."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "As an employer, we offer you good employment benefits."
+        ],
+        "search_keywords": "nanny early childhood education interaction nature exercise",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
   }
 ]
