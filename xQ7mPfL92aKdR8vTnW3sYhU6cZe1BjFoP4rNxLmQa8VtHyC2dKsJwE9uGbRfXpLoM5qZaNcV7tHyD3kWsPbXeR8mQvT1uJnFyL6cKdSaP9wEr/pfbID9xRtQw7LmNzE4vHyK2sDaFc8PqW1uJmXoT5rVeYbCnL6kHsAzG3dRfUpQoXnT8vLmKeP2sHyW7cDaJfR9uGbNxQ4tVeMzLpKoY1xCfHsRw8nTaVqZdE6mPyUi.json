@@ -494781,5 +494781,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:29:24",
+    "jobs": [
+      {
+        "id": "378254f1",
+        "job_id": "inspection-engineer-tampere-378254f1",
+        "processed": true,
+        "title": "Inspection Engineer",
+        "company": "Elenia Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/elenia-tarkastusinsinoori-sdsuu-20727074",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/elenia-tarkastusinsinoori-sdsuu-20727074",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/inspection-engineer-tampere-378254f1",
+        "date_posted": "2026-11-12",
+        "date_expires": "2026-12-12",
+        "scraped_at": "2026-11-14 11:29:24",
+        "open_positions": 1,
+        "salary_range": "Tehtävässä noudatetaan Energiateollisuuden toimihenkilön työehtosopimusta, kokonaispalkka tulee olemaan 3800-4400 €/kk, riippuen valitun henkilön osaamisesta ja kokemuksesta. Tarjoamme kattavan ja kilpailukykyisen henkilöstöetuuksien kokonaisuuden, joka tukee elämäsi eri osa-alueita. Etuihin kuuluvat muun muassa mahdollisuus käyttää yksi työtunti viikossa liikuntaan työtilanteen sen salliessa, lounasetu, hyvinvointi- ja virkistysetu, laaja vapaa-ajan tapaturmavakuutus sekä kattava työterveyshuolto täydennettynä yksityisellä sairauskuluvakuutuksella. Elenialla voit halutessasi rahastoida tulospalkkiotasi henkilöstörahastoon ja kasvattaa palkkiosi arvoa pitkäjänteisesti sijoittamalla.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Inspection Engineer at Elenia Oy. Great opportunity in Tampere — apply now.",
+        "description": "Elenia Oy is seeking an Inspection Engineer to join the Regional Partnerships team, managing approximately 40 million euros annually in work orders related to the construction, maintenance, and service of the electricity network. As an Inspection Engineer, you will place orders and their changes, check final documents of returned work, and ensure their correctness. You will also approve purchase proposals for materials, check and account for invoices, and handle customer invoicing. Monitoring the efficient execution and costs of the work, you will perform quality and safety level assessments, ensuring compliance with customer promises and quality and safety goals. You will participate in stakeholder cooperation, development of new operating models, and process and system development.",
+        "what_we_expect": [
+          "Determined, conscientious and efficient way of working.",
+          "Good system knowledge.",
+          "Ability to look at situations both from the point of view of the whole and the service provider.",
+          "Courage to present reasoned opinions and decision-making ability.",
+          "Motivation and the ability to develop your own skills.",
+          "Ability to cooperate and a team player's attitude."
+        ],
+        "job_responsibilities": [
+          "Place orders and their changes.",
+          "Check the final documents of returned work and ensure and report their correctness.",
+          "Check and approve purchase proposals for materials.",
+          "Check and account for invoices and handle possible invoicing from customers.",
+          "Monitor and report the efficient execution and costs of the work.",
+          "Perform work-related quality and safety level assessments."
+        ],
+        "what_we_offer": [
+          "We offer you."
+        ],
+        "search_keywords": "inspection engineer electrical engineering partnership management process development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
