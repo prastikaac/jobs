@@ -494343,5 +494343,113 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:19:31",
+    "jobs": [
+      {
+        "id": "6aa969fa",
+        "job_id": "senior-manager-technology-strategy-transformation-helsinki-6aa969fa",
+        "processed": true,
+        "title": "Senior Manager, Technology Strategy & Transformation",
+        "company": "Accenture",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/senior-manager-to-technology-strategy-transformation-team-sascc-20717199",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/senior-manager-to-technology-strategy-transformation-team-sascc-20717199",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/senior-manager-technology-strategy-transformation-helsinki-6aa969fa",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-14 11:19:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Accenture is looking for a Senior Manager, Technology Strategy & Transformation in Helsinki. Don't miss this opportunity — apply today.",
+        "description": "Are you a visionary leader eager to transform and innovate businesses in the Retail sector? As a Senior Manager in Technology Strategy & Transformation at Accenture in Helsinki, you will work with high-performance teams to address critical C-suite issues, driving digital transformation and leveraging AI to help Retail clients achieve sustainable growth. You will collaborate with young and enthusiastic colleagues to identify and capitalize on business growth opportunities, providing strategic insights and recommendations to clients. Join us in becoming a leading trusted advisor, harnessing technology and innovation to reinvent every business.",
+        "what_we_expect": [
+          "A good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "These promises are reflected through our excellent employee benefits, including."
+        ],
+        "search_keywords": "senior manager technology strategy transformation retail digitalization",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:19:57",
+    "jobs": [
+      {
+        "id": "e0eacca7",
+        "job_id": "senior-application-security-professional-helsinki-e0eacca7",
+        "processed": true,
+        "title": "Senior Application Security Professional",
+        "company": "Accenture",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/senior-application-security-professional-sascc-20708414",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/senior-application-security-professional-sascc-20708414",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-application-security-professional-helsinki-e0eacca7",
+        "date_posted": "2026-11-05",
+        "date_expires": "2026-12-05",
+        "scraped_at": "2026-11-14 11:19:57",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Join Accenture as a Senior Application Security Professional and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "At Accenture, you'll join a dynamic team where you can take your skills to the next level. As a Senior Application Security Professional, you'll work on securing applications (Web, API) through data security testing and automation, perform penetration testing, and contribute to threat modeling. You'll write application code and scripts, support development teams, and leverage artificial intelligence in security testing. With at least one year of experience in technical security testing, especially web applications and APIs, and proficiency in tools like Burp Suite Pro, you'll interpret and evaluate security findings effectively. Excellent communication skills in Finnish and English are essential, as is the ability to solve problems independently and work collaboratively.",
+        "what_we_expect": [
+          "At least one year of experience in technical security testing, especially web applications and APIs.",
+          "Ability to interpret and evaluate information security findings, including from static testing.",
+          "Familiarity with Burp as a testing tool and ability to use it effectively.",
+          "Excellent communication skills (Finnish, English).",
+          "Ability to see problems as challenges and solve them independently.",
+          "Experience working in the customer interface."
+        ],
+        "job_responsibilities": [
+          "Data security testing of applications (Web, API) and automation of related tools.",
+          "Penetration testing of larger entities.",
+          "Threat modeling and technical information security review.",
+          "Writing application code and scripts.",
+          "Supporting development teams and assisting in information security matters.",
+          "Use and development of artificial intelligence as part of information security testing."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "security testing application security automation tools communication skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
   }
 ]
