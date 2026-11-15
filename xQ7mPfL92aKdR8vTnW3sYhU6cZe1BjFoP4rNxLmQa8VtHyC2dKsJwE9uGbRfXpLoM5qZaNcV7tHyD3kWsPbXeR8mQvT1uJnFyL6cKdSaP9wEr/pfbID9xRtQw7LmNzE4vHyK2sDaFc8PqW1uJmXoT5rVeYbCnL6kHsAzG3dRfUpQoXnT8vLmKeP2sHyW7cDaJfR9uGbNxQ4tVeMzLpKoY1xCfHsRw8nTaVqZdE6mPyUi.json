@@ -488973,5 +488973,57 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-15 06:38:13",
+    "jobs": [
+      {
+        "id": "7ad085c1",
+        "job_id": "specialist-in-child-psychiatry-helsinki-7ad085c1",
+        "processed": true,
+        "title": "Specialist in Child Psychiatry",
+        "company": "HUS Helsingin yliopistollinen sairaala",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ars2.equest.com/?response_id=cbf5d42d24a97d7d1737f137fa37e020",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/00829f0d-6152-4d15-b0cc-878de9f74c07/en",
+        "job_employer_email": "noreply@noreply.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/specialist-in-child-psychiatry-helsinki-7ad085c1",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-15 06:38:13",
+        "open_positions": 1,
+        "salary_range": "salary is in accordance with LVES",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at HUS Helsingin yliopistollinen sairaala as a Specialist in Child Psychiatry in Helsinki.",
+        "description": "Join HUS Helsingin yliopistollinen sairaala as a Specialist in Child Psychiatry and contribute to the development of mental health care for children and families in Finland's largest child psychiatry specialized medical care unit. As a full-time, permanent position based in Helsinki, you will be responsible for planning stabilization treatment, necessary examinations, and follow-up care for children in urgent need of child psychiatric outpatient treatment. Work in a multidisciplinary team and engage in scientific research alongside clinical tasks. Your reliability, professionalism, and willingness to learn are key requirements. Good training and work supervision opportunities are available, and the position includes on-call activities.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Responsible for planning the stabilization treatment, necessary examinations and follow-up care for children who need urgent child psychiatric outpatient treatment."
+        ],
+        "what_we_offer": [
+          "Good opportunities for training and work supervision.",
+          "Scientific research work alongside clinical tasks."
+        ],
+        "search_keywords": "child psychiatry specialist treatment urgent care",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
