@@ -494667,5 +494667,65 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:22:04",
+    "jobs": [
+      {
+        "id": "68efa97b",
+        "job_id": "project-quality-manager-tampere-ja-2-muuta-68efa97b",
+        "processed": true,
+        "title": "Project Quality Manager",
+        "company": "Epec Oy",
+        "job_category": "quality-assurance-and-inspection",
+        "jobLocation": [
+          "Tampere ja 2 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/epec-manager-project-quality-sdsuu-20730205",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/epec-manager-project-quality-sdsuu-20730205",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/quality-assurance-and-inspection/project-quality-manager-tampere-ja-2-muuta-68efa97b",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-14 11:22:04",
+        "open_positions": 1,
+        "salary_range": "salary request before 6",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Epec Oy is hiring a Project Quality Manager in Tampere ja 2 muuta. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Epec Oy is seeking a Project Quality Manager to join our growing technology company in the areas of control systems, electromobility, and autonomous vehicles. As a core member of the project team, you will create and own the project quality plan, define quality criteria for each project gate, and lead APQP activities including DFMEA, DVP&R, special characteristics, control plans, PFMEA, PFD, and PPAP. You will act as the customer's quality contact, translating requirements and running quality reviews, ensuring functional safety, ASPICE, and cybersecurity work products are ready at the Epec E-gates. You will also ensure new components and suppliers are ready for launch and lead problem-solving efforts.",
+        "what_we_expect": [
+          "Relevant degree in electrical, electronics, mechanical, or industrial engineering.",
+          "Several years of experience in project quality or quality engineering in the development and industrialization of electronics, automotive, or off-highway products.",
+          "Hands-on command of the quality core tools (APQP, DVP&R, PFMEA, PFD, PPAP).",
+          "Good attitude, reliability, professionalism, teamwork, and willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Create and own the project quality plan for product development projects.",
+          "Define quality criteria for each project gate.",
+          "Lead APQP activities and deliverables including DFMEA, DVP&R collaboration definition, special characteristics, control plans, PFMEA and PFD for production, and PPAP activities.",
+          "Ensure functional safety, ASPICE and cybersecurity work products are ready at the Epec E-gates.",
+          "Act as the customer's quality contact throughout the project, translating internal and customer-specific requirements into project requirements, running quality reviews, and representing Epec in customer audits.",
+          "Ensure new components and suppliers are ready for launch."
+        ],
+        "what_we_offer": [
+          "Flexible working hours.",
+          "Hybrid work.",
+          "EPassi lunch/personal benefits.",
+          "Comprehensive occupational health care."
+        ],
+        "search_keywords": "Project Quality Manager quality assurance electromobility autonomous vehicles APQP DVP&R PFMEA PFD PPAP functional safety ASPICE cybersecurity",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
   }
 ]
