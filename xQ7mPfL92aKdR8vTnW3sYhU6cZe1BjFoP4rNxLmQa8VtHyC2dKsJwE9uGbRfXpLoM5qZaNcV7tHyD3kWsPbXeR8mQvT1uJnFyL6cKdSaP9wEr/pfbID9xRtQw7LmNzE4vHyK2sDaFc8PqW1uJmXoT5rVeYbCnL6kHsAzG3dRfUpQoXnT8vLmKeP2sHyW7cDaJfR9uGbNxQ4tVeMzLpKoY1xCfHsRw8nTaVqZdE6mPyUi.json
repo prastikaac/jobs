@@ -494727,5 +494727,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:25:53",
+    "jobs": [
+      {
+        "id": "dbf5c28c",
+        "job_id": "restaurant-employee-heinola-dbf5c28c",
+        "processed": true,
+        "title": "Restaurant Employee",
+        "company": "Osuuskauppa Hämeenmaa",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Heinola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/ravintolatyontekijoita-hesburger-prisma-heinola-osuuskauppa-hameenmaa-sss-r-20697317",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/ravintolatyontekijoita-hesburger-prisma-heinola-osuuskauppa-hameenmaa-sss-r-20697317",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/restaurant-employee-heinola-dbf5c28c",
+        "date_posted": "2026-11-02",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-14 11:25:53",
+        "open_positions": 1,
+        "salary_range": "salary in accordance with MaRa's collective agr",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join OSUUSKAUPPA HÄMEENMAA as a Restaurant Employee and grow your career in Heinola. Check the job details and apply now.",
+        "description": "Join Osuuskauppa Hämeenmaa as a restaurant employee at Hesburger Prisma Heinola, opening in spring 2027. This full-time, permanent position offers flexible hours between 15 to 90 hours over three weeks, adaptable to your life situation. We seek candidates with a positive attitude, willingness to learn, and a strong desire to serve customers well. Quick start and a good feeling even in busy times are essential. Enjoy a pleasant workplace, career development opportunities, and discounts on S group products. Applications close on 22/11/2026, and summer work is available for early 2027 shifts. Apply now for this versatile and rewarding role.",
+        "what_we_expect": [
+          "A good attitude towards doing work.",
+          "Learning new things.",
+          "The mood of doing things.",
+          "The desire to serve customers well.",
+          "Getting down to business quickly.",
+          "Creating a good feeling even in the midst of the rush."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "A workplace that is nice to come to and good to be at.",
+          "The opportunity to increase your experience, develop and build your own career path in a large cooperative store.",
+          "Discounts on S group products and services.",
+          "Payment in accordance with MaRa's collective agreement."
+        ],
+        "search_keywords": "restaurant employee food service job food-and-restaurant",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
