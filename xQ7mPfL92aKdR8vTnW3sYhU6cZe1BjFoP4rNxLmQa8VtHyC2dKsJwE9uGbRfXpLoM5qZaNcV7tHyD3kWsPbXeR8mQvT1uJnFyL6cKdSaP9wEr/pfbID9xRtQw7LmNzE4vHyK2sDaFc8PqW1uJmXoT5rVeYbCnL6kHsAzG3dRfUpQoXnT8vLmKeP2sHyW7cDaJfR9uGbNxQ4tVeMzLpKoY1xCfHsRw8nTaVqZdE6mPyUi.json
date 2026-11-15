@@ -494451,5 +494451,221 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:21:00",
+    "jobs": [
+      {
+        "id": "ff9a832f",
+        "job_id": "identity-access-management-consultant-helsinki-ff9a832f",
+        "processed": true,
+        "title": "Identity & Access Management Consultant",
+        "company": "Accenture",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/identity-access-management-consultant-sascc-20668675",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/identity-access-management-consultant-sascc-20668675",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/identity-access-management-consultant-helsinki-ff9a832f",
+        "date_posted": "2026-10-22",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-14 11:21:00",
+        "open_positions": 1,
+        "salary_range": "salary and comprehensive employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Accenture is hiring a Identity & Access Management Consultant in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Accenture is seeking an Identity & Access Management Consultant to join our team in Helsinki. As a consultant, you will help large organizations define and implement effective IAM strategies, working closely with clients to design practical solutions and develop robust IAM processes and architectures. You will support clients from various industries in understanding their current IAM state and guiding them through necessary development steps. Fluency in both Finnish and English is required, and experience with IAM technologies such as SailPoint, Saviynt, Okta, Ping Identity, Idira, or Microsoft Entra ID is a plus. This is a full-time, permanent position in a hybrid model. If you have a passion for information security and a background in IAM or related fields, we encourage you to apply.",
+        "what_we_expect": [
+          "An understanding of the principles of managing identities and access rights.",
+          "Strong knowledge of either the functional or technical side of IAM and the desire to develop in both.",
+          "Approximately 3+ years of experience in IAM or a related area.",
+          "Experience with at least one of the following technologies: SailPoint, Saviynt, Okta, Ping Identity, Idira or Microsoft Entra ID.",
+          "Fluent Finnish and English language skills.",
+          "Willingness to work in a hybrid model in Helsinki."
+        ],
+        "job_responsibilities": [
+          "Help customers define how the management of identities and access rights should work in their organization and design solutions that work in practice.",
+          "Develop processes and architectures that support the implementation of modern IAM concepts and technologies.",
+          "Implement plans by building new solutions or developing existing processes and systems into effective and reliable IAM capabilities.",
+          "Work closely with the clients' teams and act as their trusted expert throughout the project.",
+          "Participate in assessments and creating roadmaps so that customers understand their current IAM state and the necessary development steps."
+        ],
+        "what_we_offer": [
+          "We also offer."
+        ],
+        "search_keywords": "Identity Access Management IAM Consultant Helsinki Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:21:10",
+    "jobs": [
+      {
+        "id": "09d9c53c",
+        "job_id": "senior-finance-professional-helsinki-09d9c53c",
+        "processed": true,
+        "title": "Senior Finance Professional",
+        "company": "Accenture",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/senior-finance-professionals-sascc-20590408",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/senior-finance-professionals-sascc-20590408",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/senior-finance-professional-helsinki-09d9c53c",
+        "date_posted": "2026-09-22",
+        "date_expires": "2026-10-22",
+        "scraped_at": "2026-11-14 11:21:10",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Senior Finance Professional role at Accenture. Join the team and build your career in Helsinki.",
+        "description": "Senior finance professionals are invited to join Accenture in Helsinki, where you can leverage your finance expertise, commercial judgment, and leadership experience to create lasting client value. As a Senior Finance Professional, you will build the next generation of finance by protecting the business, improving performance, and helping leaders understand future challenges. This role requires strong finance and transformation experience in priority industries such as Consumer Goods and Services, Retail, Travel, Industrials, and Life Sciences, or deep expertise in areas like Value Creation and Resilience, including finance operating model design and M&A integration.",
+        "what_we_expect": [
+          "Strong finance and transformation experience in one or more priority industries.",
+          "Deep expertise in one or more Finance Reinvention capabilities.",
+          "Clear depth in an area that matters to CFOs and finance leaders.",
+          "Understanding of how organizations in their sector make money, invest, manage risk, and measure performance.",
+          "Ability to build trust with senior decision-makers.",
+          "Capacity to turn industry challenges into practical finance transformation opportunities."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "finance transformation industry expertise finance reinvention",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:21:31",
+    "jobs": [
+      {
+        "id": "2ecc89a2",
+        "job_id": "sales-representative-lahti-2ecc89a2",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Rusta Finland Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/rusta-finland-haemme-myyjia-ja-vastuumyyjia-lahden-renkomaen-uuteen-tavarataloon-sdsuu-20730498",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/rusta-finland-haemme-myyjia-ja-vastuumyyjia-lahden-renkomaen-uuteen-tavarataloon-sdsuu-20730498",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-lahti-2ecc89a2",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-14 11:21:31",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "A new job opportunity is available at Rusta Finland Oy as a Sales Representative in Lahti. Learn more about the role and apply now.",
+        "description": "Rusta Finland Oy is seeking committed, cheerful, and result-oriented sales representatives for its new department store in Renkomäki, Lahti. As a sales representative, you will help reach and exceed sales and profitability goals, work efficiently at the cash register, and handle display, pricing, and storage tasks. You will also ensure order and cleanliness in the store. Join a fast-paced, varied, and fun environment where every day brings new challenges. Apply now to be part of developing Rusta's future together.",
+        "what_we_expect": [
+          "Committed.",
+          "Cheerful.",
+          "Result-oriented."
+        ],
+        "job_responsibilities": [
+          "Help to reach and exceed the set sales and profitability goals.",
+          "Work efficiently at the cash register.",
+          "In display, pricing and storage tasks.",
+          "Actively maintain order and cleanliness."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "sales representative department store retail",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-14 11:21:34",
+    "jobs": [
+      {
+        "id": "95f8b1f1",
+        "job_id": "information-management-expert-espoo-95f8b1f1",
+        "processed": true,
+        "title": "Information Management Expert",
+        "company": "LähiTapiola",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tiedonhallinnan-asiantuntija-lahitapiola-henkiyhtio-slsah-20711718",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tiedonhallinnan-asiantuntija-lahitapiola-henkiyhtio-slsah-20711718",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/information-management-expert-espoo-95f8b1f1",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-14 11:21:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a Information Management Expert role at LähiTapiola. Join the team and build your career in Espoo.",
+        "description": "At LähiTapiola Henkihtiö, we are seeking an Information Management Expert to join our team as part of the AITO project. In this role, you will define business information needs, participate in data definition and modeling, ensure data quality, maintain data and reporting processes, and collaborate closely with business, project experts, and system suppliers. You will contribute to the development of the Life Company's information management and data capabilities, working in a dynamic and knowledgeable environment. Suitable for both experienced creators and junior experts, the ideal candidate will have a university or university of applied sciences degree, SQL and database knowledge, understanding of data warehouses and models, and fluency in English and Finnish.",
+        "what_we_expect": [
+          "A suitable university or university of applied sciences degree.",
+          "SQL and database knowledge.",
+          "Understanding of data warehouses, data flows and data models.",
+          "Understanding of the meaning and needs of reporting, analytics and data quality.",
+          "The ability to perceive wholes and solve problems.",
+          "Independent approach to work and good cooperation and interaction skills."
+        ],
+        "job_responsibilities": [
+          "Define business information needs as well as information storage and reporting requirements.",
+          "Participate in data definition and modeling as well as documentation.",
+          "Participate in testing and deployments and ensure data quality through validations and controls.",
+          "Maintain data and reporting processes and investigate information requests and data-related incidents.",
+          "Work closely with business, project experts and system suppliers."
+        ],
+        "what_we_offer": [
+          "Participation in a significant reform project and influence the development of the Life Company's information management, data warehouses and reporting solutions.",
+          "Surrounded by knowledgeable management experts.",
+          "Opportunity to develop your expertise in versatile cooperation."
+        ],
+        "search_keywords": "information management expert data management expert data warehouse data quality reporting",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
   }
 ]
