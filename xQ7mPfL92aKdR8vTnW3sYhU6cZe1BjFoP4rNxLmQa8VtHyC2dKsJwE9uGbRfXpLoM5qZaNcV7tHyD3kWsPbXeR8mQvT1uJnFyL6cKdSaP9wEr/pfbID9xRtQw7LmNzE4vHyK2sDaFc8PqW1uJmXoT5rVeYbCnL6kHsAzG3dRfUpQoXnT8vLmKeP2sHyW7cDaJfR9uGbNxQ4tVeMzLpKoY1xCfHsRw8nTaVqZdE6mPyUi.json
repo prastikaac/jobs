@@ -412803,5 +412803,1289 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:27",
+    "jobs": [
+      {
+        "id": "9aff5840",
+        "job_id": "machinist-pöytyä-9aff5840",
+        "processed": true,
+        "title": "Machinist",
+        "company": "Worker Varsinais-Suomi Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Pöytyä",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://worker.likeit.fi/apply/128384038",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bb1864b8-15b9-4089-adf0-6b243fde27ee/en",
+        "job_employer_email": "jouni.elonen@worker.fi",
+        "job_employer_name": "Jouni Elonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/machinist-pöytyä-9aff5840",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-17 09:00:27",
+        "open_positions": 1,
+        "salary_range": "Työtehtävät koostuvat pääsiassa koneistustyöstä, jossa hoonataan ja hiotaan männän varsia. Kyseessä on kaksivuorotyö. Palkka noin 15-18€/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Machinist at Worker Varsinais-Suomi Oy in Pöytyä. Check the requirements and apply today.",
+        "description": "Worker Varsinais-Suomi Oy is seeking a Machinist for a permanent, full-time position in Pöytyä, Turku. The role involves machining work, specifically honing and polishing piston rods, in a two-shift schedule. Salary is approximately €15-18 per hour. Applicants should have previous experience in similar tasks and a strong focus on quality and a positive, proactive attitude. A genuine desire to develop as a professional in the field is also essential. The company offers a supportive team environment and a dedicated Worker's contact person for employment-related matters. Apply now for immediate consideration.",
+        "what_we_expect": [
+          "Previous experience in similar tasks, either through work experience or education related to the field.",
+          "You are meticulous and understand the importance of quality in everyday work.",
+          "A positive and active attitude towards work, as well as a genuine desire to develop oneself as a professional in the field."
+        ],
+        "job_responsibilities": [
+          "Machining work, where piston rods are honed and polished."
+        ],
+        "what_we_offer": [
+          "A great team.",
+          "Own Worker's contact person, who supports in all matters related to the employment relationship."
+        ],
+        "search_keywords": "machinist piston rods honing polishing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "61f19407",
+        "job_id": "excavator-driver-turku-61f19407",
+        "processed": true,
+        "title": "Excavator Driver",
+        "company": "Worker Varsinais-Suomi Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://worker.likeit.fi/apply/128383986",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/82f087b7-ed77-44eb-b35d-e4c342754fba/en",
+        "job_employer_email": "jouni.elonen@worker.fi",
+        "job_employer_name": "Jouni Elonen",
+        "job_employer_phone_no": "+358503217968",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/excavator-driver-turku-61f19407",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-17 09:00:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Excavator Driver at Worker Varsinais-Suomi Oy in Turku. Check the requirements and apply today.",
+        "description": "Worker Varsinais-Suomi Oy is seeking an excavator driver for full-time, permanent positions in the Turku region. Applicants should have experience with wheeled and tracked excavators, 3D machine control skills, and at least one year of machine work experience. Valid professional cards for work safety and road safety are required, with renewal options available. A good work attitude and flexibility are essential, along with knowledge of the Finnish language. The role offers the opportunity to work in various locations and a competitive hourly wage based on TES or better, depending on skills and experience. A dedicated Worker's contact person supports all employment-related matters. APPLY FOR THIS JOB!",
+        "what_we_expect": [
+          "Experience working with wheeled and tracked excavators.",
+          "3D machine control skills.",
+          "At least one year of experience in machine work.",
+          "Valid professional cards (work safety and road safety).",
+          "Good work attitude and flexibility.",
+          "Knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "The opportunity to work in different workplaces.",
+          "Salary according to TES or better, depending on your skills and experience.",
+          "Own Worker's contact person, who supports in all matters related to the employment relationship."
+        ],
+        "search_keywords": "excavator driver construction Finland Turku",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "a1287165",
+        "job_id": "mig-welder-aura-a1287165",
+        "processed": true,
+        "title": "MIG Welder",
+        "company": "Worker Varsinais-Suomi Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Aura",
+          "Koski Tl",
+          "Loimaa",
+          "Marttila",
+          "Oripää",
+          "Pöytyä",
+          "Salo",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://worker.likeit.fi/apply/128383951",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/aaefcb91-01af-4eb9-a6d5-12ffb7809702/en",
+        "job_employer_email": "jouni.elonen@worker.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/mig-welder-aura-a1287165",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-17 09:00:27",
+        "open_positions": 1,
+        "salary_range": "Palkka: Noin 15-20€/h kokemuksen mukaan.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a MIG Welder at Worker Varsinais-Suomi Oy in Aura. Apply now and take the next step in your career.",
+        "description": "Worker Varsinais-Suomi Oy is seeking a MIG Welder for permanent full-time employment in Aura, Koski Tl, Loimaa, Marttila, Oripää, Pöytyä, Salo, and Turku. Responsibilities include performing MIG welding on black iron with material thicknesses ranging from 5 to 50 mm. Fluency in reading drawings, enthusiasm, and a willingness to learn are essential. The workplace offers a supportive team environment with opportunities for learning and development. A car is required for work trips. Salary is approximately €15-20/hour based on experience. Apply now by clicking the search button or sending an open application. Why work for Worker? We are a leading personnel service company in Finland, offering fair salaries and comprehensive support.",
+        "what_we_expect": [
+          "Fluent ability to read drawings.",
+          "Enthusiasm.",
+          "Willing-to-learn attitude."
+        ],
+        "job_responsibilities": [
+          "Perform mig welding on black iron with material thicknesses of 5-50 mm."
+        ],
+        "what_we_offer": [
+          "Nice work team where everyone is given the opportunity to learn and develop.",
+          "Car provided for work trips."
+        ],
+        "search_keywords": "MIG Welder, welding, black iron, drawings, work team",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "140d0f48",
+        "job_id": "early-childhood-education-teacher-mäntsälä-140d0f48",
+        "processed": true,
+        "title": "Early Childhood Education Teacher",
+        "company": "Mäntsälän kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Mäntsälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mantsala.rekrytointi.com/paikat/index.php?o=A_A&jid=2488&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8adc0eff-406a-47ed-b6ab-796d601e7fb3/en",
+        "job_employer_email": "mervi.karkkainen@mantsala.fi",
+        "job_employer_name": "Mervi Kärkkäinen",
+        "job_employer_phone_no": "040 314 5676",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-mäntsälä-140d0f48",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-17 09:00:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Early Childhood Education Teacher at Mäntsälän kunta in Mäntsälä. Apply now and take the next step in your career.",
+        "description": "Mäntsälä's early childhood education focuses on developing play and supporting young children's language development and reading abilities. As an early childhood education teacher, you will work as part of the kindergarten complex of six daycare center managers, supporting about 800 children. The primary placement of the task is the Kaunismäki daycare center at the start of the employment relationship. You will be the leader of your team, responsible for pedagogical planning and activities, implementing them together with other skilled staff. The eligibility requirements are determined according to § 26, § 27 or § 75 of the Early Childhood Education Act (540/2018). The position is a full-time, temporary employment for the period 4.1.-31.5.2027.",
+        "what_we_expect": [
+          "Professional skills as a collaborator.",
+          "Positive interlocutor with children, co-workers and guardians.",
+          "Understanding of the comprehensiveness of a child's everyday life."
+        ],
+        "job_responsibilities": [
+          "Implement pedagogical planning and activities of the group together with other staff."
+        ],
+        "what_we_offer": [
+          "Support from competent and motivated colleagues.",
+          "Interesting and versatile work in a multi-professional work community."
+        ],
+        "search_keywords": "early childhood education teacher kindergarten teacher social work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      },
+      {
+        "id": "33f8d2b8",
+        "job_id": "excavator-driver-for-travel-work-kajaani-33f8d2b8",
+        "processed": true,
+        "title": "Excavator Driver for Travel Work",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kajaani",
+          "Kittilä",
+          "Rovaniemi",
+          "Ii",
+          "Kempele",
+          "Liminka",
+          "Muhos",
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27408002",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9531e2c-697e-4492-a433-7292d4955ec3/en",
+        "job_employer_email": "tiia-maria.kurtti@lokki.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/excavator-driver-for-travel-work-kajaani-33f8d2b8",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-07",
+        "scraped_at": "2026-11-17 09:00:27",
+        "open_positions": 1,
+        "salary_range": "* Palkkahaarukka n. 16,00 - 20,00 €/h, kokemus huomioiden",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is looking for a Excavator Driver for Travel Work in Kajaani. Don't miss this opportunity — apply today.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking experienced excavator drivers for travel work in various locations across Finland, including Kajaani, Kittilä, Rovaniemi, Ii, Kempele, Liminka, Muhos, and Oulu. As a versatile earthworks and excavation worker, you will need previous experience, 3D skills, and a self-motivated, independent approach. Valid occupational safety card and willingness to travel are required. We offer a salary range of approximately 16.00 - 20.00 €/h, considering experience, and a permanent employment relationship with a personal personnel consultant. Apply or contact Tiia-Maria Kurtti at tiia-maria.kurtti@lokki.fi or 050 384 9760 for more information.",
+        "what_we_expect": [
+          "Previous experience as an excavator driver.",
+          "3D skills.",
+          "Independent, brisk and self-initiated approach to work.",
+          "Willingness to travel.",
+          "Valid occupational safety card."
+        ],
+        "job_responsibilities": [
+          "Versatile earthworks and excavation work."
+        ],
+        "what_we_offer": [
+          "Varied excavator driver duties.",
+          "Employment relationship with a personal personnel consultant.",
+          "Salary range approx. 16.00 - 20.00 €/h, taking experience into account."
+        ],
+        "search_keywords": "excavator driver, construction, travel work, earthworks, excavation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:29",
+    "jobs": [
+      {
+        "id": "77bf675f",
+        "job_id": "early-childhood-nanny-mäntsälä-77bf675f",
+        "processed": true,
+        "title": "Early Childhood Nanny",
+        "company": "Mäntsälän kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Mäntsälä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://mantsala.rekrytointi.com/paikat/index.php?o=A_A&jid=2486&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/46f81dd4-ca6d-467c-9165-589de1556ae0/en",
+        "job_employer_email": "mervi.karkkainen@mantsala.fi",
+        "job_employer_name": "Mervi Kärkkäinen",
+        "job_employer_phone_no": "040 314 5676",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-nanny-mäntsälä-77bf675f",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-17 09:00:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Mäntsälän kunta as a Early Childhood Nanny in Mäntsälä. Learn more about the role and apply now.",
+        "description": "Join Mäntsälä's early childhood education team as an early childhood nanny for a temporary position from January 4 to May 31, 2027. Work with about 800 children in a kindergarten complex led by six daycare center managers. As a warm and professionally skilled collaborator, you will interact with children, co-workers, and guardians, promoting a positive and innovative approach to early childhood education. The salary is 2575.94 euros per month, with potential additional payments based on experience. The probationary period is at most half the duration of the fixed-term. Mäntsälä values education and development, offering a supportive work environment with exercise, culture, and well-being benefits. Apply by December 1, 2026, at https://mantsala.rekrytointi.com/paikat/?o=A_LOJ&list=1.",
+        "what_we_expect": [
+          "A warm and professionally skilled collaborator.",
+          "Interact with children, co-workers and guardians.",
+          "Work sensitively and with a positive attitude.",
+          "Be innovative.",
+          "Dare to try, evaluate and develop new operating models.",
+          "Reflect on own work and operating methods."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Interesting and versatile work.",
+          "Work in a multi-professional work community.",
+          "Support at work with exercise, culture and well-being benefits."
+        ],
+        "search_keywords": "early childhood nanny education inclusion professional",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "d50a28e1",
+        "job_id": "health-center-physician-turku-d50a28e1",
+        "processed": true,
+        "title": "Health Center Physician",
+        "company": "Varsinais-Suomen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/VARHA-03-519-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/21b1e0a1-8dd3-4946-bc6f-59ce165469fd/en",
+        "job_employer_email": "heli.leino@varha.fi",
+        "job_employer_name": "Heli Leino",
+        "job_employer_phone_no": "0406175067",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/health-center-physician-turku-d50a28e1",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-17 09:00:29",
+        "open_positions": 1,
+        "salary_range": "LS mukainen",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Health Center Physician at Varsinais-Suomen hyvinvointialue in Turku. Apply now and take the next step in your career.",
+        "description": "As a Health Center Physician at Varsinais-Suomen hyvinvointialue in Turku, you will treat both non-urgent and urgent patients, participate in daytime emergency reception, and engage in sector work with a focus on preventive health care. You will be part of a multi-professional team, contributing to the start-up of the new Kaskenmäki social security center and influencing its operating methods. The role offers a versatile task combining reception work, preventive health care, and operational development, with opportunities for professional growth through a high-quality training program and external continuing education. You will work at the Kirkkotie health center and the new Kaskenmäki health center, serving the Swedish-speaking population of Turku.",
+        "what_we_expect": [
+          "Have a high level of motivation for the work of a general practitioner at a health center.",
+          "Possess good interaction and cooperation skills.",
+          "Show interest in the long-term work of a health center doctor and its development.",
+          "Have a general medicine specialist's degree or the right to specialize in general medicine.",
+          "Have completed a YEK degree.",
+          "Possess long experience in the reception work of a health center."
+        ],
+        "job_responsibilities": [
+          "Treat both non-urgent and urgent patients.",
+          "Participate in daytime emergency reception.",
+          "Engage in sector work with an emphasis on preventive health care."
+        ],
+        "what_we_offer": [
+          "Participation in the start-up of the new Kaskenmäki social security center.",
+          "Influence the formation of its operating methods.",
+          "A versatile task where you can combine reception work, preventive health care and operational development.",
+          "Support for your professional development through a high-quality training program.",
+          "Opportunities to participate in external continuing educations according to your interests within the framework of Varha's rules.",
+          "Use of Varha's employment benefits."
+        ],
+        "search_keywords": "physician healthcare general practitioner Turku",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "7fa3ab39",
+        "job_id": "assistant-jyväskylä-7fa3ab39",
+        "processed": true,
+        "title": "Assistant",
+        "company": "Rikosseuraamuslaitos",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://valtiolle.fi/tyoavain/26494/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/537415d3-f92b-43c9-bdbf-4119d80be76b/en",
+        "job_employer_email": "petteri.autio@om.fi",
+        "job_employer_name": "Petteri Autio",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/assistant-jyväskylä-7fa3ab39",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-03",
+        "scraped_at": "2026-11-17 09:00:29",
+        "open_positions": 1,
+        "salary_range": "2416 - 2668 eur /kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Rikosseuraamuslaitos as a Assistant in Jyväskylä. Learn more about the role and apply now.",
+        "description": "The Rikosseuraamuslaitos, based in Jyväskylä, seeks a reliable and professional Assistant to join the Central Finland Criminal Sanction Center, covering Jyväskylä, Vilppula, Vaasa, and Kuopio prisons and the Community Sanctions Office. This full-time, permanent position involves maintaining the archive, providing document information services, handling authorization issues, managing agency e-mail and postal services, using case management systems, and overseeing prisoners' payment cards. The role also includes financial and personnel management tasks, communication, and assisting with enforcement tasks related to community sanctions and prison sentences. Fluency in Finnish is required, and the position offers opportunities for learning and teamwork.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Maintain archive.",
+          "Provide information service for documents.",
+          "Handle authorization issues.",
+          "Manage agency e-mail and postal services.",
+          "Use case management systems.",
+          "Manage prisoners' payment cards."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "assistant archive maintenance information service authorization personnel management communication enforcement tasks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      },
+      {
+        "id": "d8b8f3f9",
+        "job_id": "teacher-in-early-childhood-education-helsinki-d8b8f3f9",
+        "processed": true,
+        "title": "Teacher in Early Childhood Education",
+        "company": "Helsingfors stad",
+        "job_category": "education",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.hel.fi/fi/avoimet-tyopaikat/avoimet-tyopaikat/KASKO-04-236-26",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/86f47228-5901-4647-a001-9a83f4f97d65/en",
+        "job_employer_email": "mia.julin-lumio@hel.fi",
+        "job_employer_name": "Mia Julin-Lumio",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/teacher-in-early-childhood-education-helsinki-d8b8f3f9",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-17 09:00:29",
+        "open_positions": 1,
+        "salary_range": "3298,06 euro/mån",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Get started in a new job as a Teacher in Early Childhood Education at Helsingfors stad in Helsinki. Check the requirements and apply today.",
+        "description": "We are seeking a passionate teacher in early childhood education to join our dynamic team at Humlan daycare center in Helsinki. Located in Månsas, our center offers 70 places for children aged 1-6, divided into four groups, and operates under the Helsinki Plan for early childhood education. As a teacher, you will be responsible for educational activities, evaluation, and development tailored to each child's age and development level. Our work environment values open communication, flexibility, and teamwork, providing versatile, creative, and varied tasks. We offer the Epassi Flex benefit worth up to €550, and newly hired full-time teachers receive a bonus of €2,000. Eligibility requires a pedagogy candidate or equivalent degree, and fluency in Swedish is preferred.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Epassi Flex benefit worth up to €550."
+        ],
+        "search_keywords": "teacher early childhood education daycare center Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:30",
+    "jobs": [
+      {
+        "id": "513076af",
+        "job_id": "caregiver-kruunupyy-513076af",
+        "processed": true,
+        "title": "Caregiver",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Kruunupyy"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-10-283-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dd6cd70f-2f9f-4c55-86f9-4de05ae6f5af/en",
+        "job_employer_email": "etunimi.sukukunimi@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0404892301",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/caregiver-kruunupyy-513076af",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-17 09:00:30",
+        "open_positions": 1,
+        "salary_range": "2755,00 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Pohjanmaan hyvinvointialue is looking for a Caregiver in Kruunupyy. Don't miss this opportunity — apply today.",
+        "description": "Pohjanmaan hyvinvointialue seeks a full-time, permanent caregiver for the 24-hour housing service in Heimbo, Teerijärvi, Kruunupyy. Applicants must hold a nursing degree or a relevant healthcare or social care professional degree, be proficient in both Finnish and Swedish, and have valid vaccination coverage. A background check is also required. This role is part of a region where over 8,000 professionals work to ensure high-quality social and health services. Join a supportive environment that values employee well-being and professional growth.",
+        "what_we_expect": [
+          "Nursing degree or a degree in accordance with the decree on healthcare professionals (564/1994) or the government decree on social care professionals (153/2016).",
+          "Satisfactory oral and written skills in both national languages of our country.",
+          "Valid vaccination cover according to Section 48 of the Infectious Diseases Act (1227/2016).",
+          "Submit an extract from the criminal record referred to in section 6, subsection 2 of the Criminal Records Act."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "caregiver nursing degree social care services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "2fbb5f4c",
+        "job_id": "audiologist-vaasa-2fbb5f4c",
+        "processed": true,
+        "title": "Audiologist",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-13-253-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9504e6c4-e00d-46c5-a9ff-b396954a301b/en",
+        "job_employer_email": "etunimi.sukunimi@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0405694380",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/audiologist-vaasa-2fbb5f4c",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-17 09:00:30",
+        "open_positions": 1,
+        "salary_range": "3444 e/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Pohjanmaan hyvinvointialue is hiring a Audiologist in Vaasa. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Pohjanmaan hyvinvointialue is seeking two licensed audiologists for the ear, nose and throat outpatient clinic at Vaasa Central Hospital in Vaasa, Finland. Applicants must hold a license as a healthcare professional under the Act on Healthcare Professionals (559/1994) and have completed a 60-credit specialization training. Fluency in both Finnish and Swedish is required, along with a valid vaccination cover according to the Infectious Diseases Act (1227/2016). This is a permanent, full-time position with a salary of 3444 e/kk. If you are passionate about providing high-quality care and are committed to professional development, apply now.",
+        "what_we_expect": [
+          "A licensed professional as referred to in the Act on Healthcare Professionals (559/1994) AND a 60-credit specialization training.",
+          "Good oral and satisfactory written skills in both national languages ​​of our country.",
+          "A valid vaccination cover according to Section 48 of the Infectious Diseases Act (1227/2016)."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "audiologist healthcare vaasa central hospital outpatient clinic",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "86521c4d",
+        "job_id": "substitute-health-nurse-mustasaari-86521c4d",
+        "processed": true,
+        "title": "Substitute Health Nurse",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Mustasaari",
+          "Vöyri"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-13-252-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bc9af84e-435c-4e14-82f4-f8c904559c38/en",
+        "job_employer_email": "annika.birgitta.eklund@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0447277334",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/substitute-health-nurse-mustasaari-86521c4d",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-17 09:00:30",
+        "open_positions": 1,
+        "salary_range": "3412,78 e/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Substitute Health Nurse at Pohjanmaan hyvinvointialue in Mustasaari. Apply now and take the next step in your career.",
+        "description": "Pohjanmaan hyvinvointialue seeks a substitute health nurse for the welfare region of Ostrobothnia, covering Mustasaari and Vöyri, from January 25, 2027, to January 12, 2028. The role involves working at Vöyr's children's clinic in Oravainen and potentially in other nearby units. Requirements include a license as a health nurse under the Act on Health Care Professionals (559/1994), good oral and satisfactory written skills in Finnish and Swedish, and valid vaccination cover according to Section 48 of the Infectious Diseases Act (1227/2016). The position is permanent, full-time, and offers opportunities for professional development and a supportive work environment.",
+        "what_we_expect": [
+          "In the Act on Health Care Professionals (559/1994) designated licensed health nurse.",
+          "Good oral and satisfactory written skills in both national languages of our country.",
+          "Valid vaccination cover according to Section 48 of the Infectious Diseases Act (1227/2016).",
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "substitute health nurse healthcare nursing Ostrobothnia",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "4e9df26c",
+        "job_id": "health-center-doctor-turku-4e9df26c",
+        "processed": true,
+        "title": "Health Center Doctor",
+        "company": "Varsinais-Suomen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/VARHA-03-721-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f2768d18-3152-4b96-8d51-8cc2f09e7c26/en",
+        "job_employer_email": "heli.leino@varha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/health-center-doctor-turku-4e9df26c",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-17 09:00:30",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Health Center Doctor role at Varsinais-Suomen hyvinvointialue. Join the team and build your career in Turku.",
+        "description": "As a Health Center Doctor at Mäntymäki health center in Turku, you will engage in versatile general practitioner duties, including both non-urgent and urgent reception and daytime emergency reception. You will collaborate with a multiprofessional team and participate in sector work such as preventive health care. The position offers meaningful and versatile work in a well-functioning work community, with support from a nice supervisor and access to a high-quality training program including weekly on-site trainings and opportunities for external continuing education. Varha's employment benefits and Mäntymäki's workplace canteen are available. You should have a high level of motivation for general practitioner work, good communication skills, and the ability to cooperate.",
+        "what_we_expect": [
+          "High level of motivation for the work of a general practitioner.",
+          "Good communication skills.",
+          "Ability to cooperate.",
+          "Desire to work as part of a multi-professional care team.",
+          "General medicine specialist's degree or the right to specialize in general medicine.",
+          "Completion of the YEK course."
+        ],
+        "job_responsibilities": [
+          "Work in versatile general practitioner duties.",
+          "Perform both non-urgent and urgent reception.",
+          "Participate in daytime emergency reception.",
+          "Engage in sector work such as preventive health care.",
+          "Collaborate with different professionals in a multiprofessional team."
+        ],
+        "what_we_offer": [
+          "Meaningful and versatile work in a well-liked and well-functioning work community.",
+          "Support of a nice supervisor and the work community.",
+          "High-quality training program with weekly on-site trainings and opportunities for external continuing education.",
+          "Access to Varha's employment benefits.",
+          "Use of Mäntymäki's workplace canteen and canteen."
+        ],
+        "search_keywords": "health center doctor general practitioner reception work sector work cooperation training benefits",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "54f4d3cd",
+        "job_id": "full-time-cleaner-rovaniemi-54f4d3cd",
+        "processed": true,
+        "title": "Full-Time Cleaner",
+        "company": "Luotea",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://lassila-tikanoja-oyj.contactrh.com/jobs/14225/44577863",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/abe2072f-c4d3-456f-9014-d2f85d7c3063/en",
+        "job_employer_email": "",
+        "job_employer_name": "Rekrytointi Luotea",
+        "job_employer_phone_no": "0105902000",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/full-time-cleaner-rovaniemi-54f4d3cd",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-17 09:00:30",
+        "open_positions": 1,
+        "salary_range": "Salary: Real estate services TES pl 3 (€13",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Full-Time Cleaner at Luotea in Rovaniemi. Check the requirements and apply today.",
+        "description": "Full-time cleaner position at Luotea in Rovaniemi, offering a permanent, competitive hourly wage based on Finnish collective agreements. Responsibilities include maintenance cleaning of various facilities, laundry maintenance, equipment maintenance, wet area cleaning, and camping area cleaning. Requirements are one year of previous professional cleaning experience, fluency in Finnish, and a facility or premises custodian qualification. Additional advantages include modern work equipment, support from a superior, opportunities for professional skill development, and occupational health care support. Apply now to join a team that values your well-being and professional growth.",
+        "what_we_expect": [
+          "Previous work experience in the field of professional cleaning for at least one year.",
+          "Fluent Finnish language skills.",
+          "A professional qualification in the field (facility or premises custodian).",
+          "An occupational safety card.",
+          "Pool and wet room training."
+        ],
+        "job_responsibilities": [
+          "Maintenance cleaning of educational, office, social, workshop and meeting facilities.",
+          "Laundry maintenance.",
+          "Maintenance of cleaning equipment.",
+          "Cleaning wet areas.",
+          "Cleaning camping areas."
+        ],
+        "what_we_offer": [
+          "Modern work equipment.",
+          "Support from a superior.",
+          "Opportunity to develop professional skills.",
+          "Occupational health care support."
+        ],
+        "search_keywords": "cleaner, full-time, cleaning, facility, maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:32",
+    "jobs": [
+      {
+        "id": "05bf1a30",
+        "job_id": "electrician-lahti-05bf1a30",
+        "processed": true,
+        "title": "Electrician",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27668092",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5a0e4978-98ca-48ee-b15f-3abaab4ba277/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-lahti-05bf1a30",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:32",
+        "open_positions": 1,
+        "salary_range": "* Palkkaus: 16–19 €/h osaamisen ja kokemuksen perusteella",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Maximus Oy as a Electrician in Lahti. Learn more about the role and apply now.",
+        "description": "Maximus Oy, a 25-year-established employer in Lahti, Finland, seeks a professional electrician for immediate or agreed start, with a duration of about 2–3 months. Responsibilities include electric cable pull, and the role requires at least one year of previous experience as an electrician, the ability to read electrical drawings, Finnish language skills, and the option to use your own car. We value your ability to work independently and as part of a team, along with a brisk work ethic, initiative, and a good attitude. The salary is €16–19/h based on skills and experience. As a Maximus employee, you will have access to high-quality tools and equipment, including Makita, and enjoy competitive compensation and the potential for long-term employment.",
+        "what_we_expect": [
+          "At least one year of previous experience as an electrician.",
+          "Ability to read electrical drawings.",
+          "Finnish language skills.",
+          "The possibility of using your own car.",
+          "Ability to work both independently and as part of a team.",
+          "A brisk work ethic, initiative and a good attitude."
+        ],
+        "job_responsibilities": [
+          "Electric cable pull."
+        ],
+        "what_we_offer": [
+          "The path to different job opportunities depends on your experience base and your wishes - you decide.",
+          "A simple application process - with one application, you are also included in other searches.",
+          "High-quality tools and equipment (e.g. Makita).",
+          "Occupational health services at your disposal in Pihlajalinna.",
+          "Competitive salary - we value your professionalism and contribution.",
+          "The possibility of establishment and the possibility of long-term employment."
+        ],
+        "search_keywords": "electrician construction Lahti experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "33f936de",
+        "job_id": "automation-installer-lahti-33f936de",
+        "processed": true,
+        "title": "Automation Installer",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27818518",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fd69536b-07f7-4b49-8546-300b63baf8a9/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/automation-installer-lahti-33f936de",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:32",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyisen palkan: 21–30 €/h, kokemuksesi ja osaamisesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Maximus Oy is hiring a Automation Installer in Lahti. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Automation installers are sought for a permanent, full-time position at Maximus Oy in Lahti, focusing on building automation systems, including VAK connections and cabling. Responsibilities involve reading construction drawings and independently implementing work phases, ensuring high-quality and safe installations according to site schedules. Requirements include at least one year of experience in VAK connections and automation installations, good reading skills in electrical and automation drawings, Finnish language skills, and valid professional qualifications. The role offers a competitive hourly rate of 21–30 €/h, the potential for long-term employment, and access to high-quality tools and equipment. Apply now to join a stable, experienced company in the construction industry.",
+        "what_we_expect": [
+          "At least one year of experience in VAK connections and automation installations.",
+          "Good reading skills in electrical and automation drawings.",
+          "Finnish language skills.",
+          "Valid professional qualifications and cards required for the job.",
+          "Energetic, self-initiated and responsible approach to work.",
+          "Ability to work both independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Installation and connection work for building automation systems, including VAK connections and cabling.",
+          "Reading construction drawings and independent implementation of work phases.",
+          "Carrying out installations in a high-quality and safe manner according to site schedules."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 21–30 €/h, depending on your experience and skills.",
+          "An employment relationship that is initially agreed on a month at a time basis. With a well-run job, the possibility of longer-term employment.",
+          "The opportunity to utilize and develop your skills in demanding automation installations.",
+          "High-quality tools and equipment (e.g. Makita).",
+          "Occupational health services at your disposal in Pihlajalinna."
+        ],
+        "search_keywords": "automation installer building construction VAK connections cabling",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "cd049601",
+        "job_id": "industrial-pipe-fitter-espoo-cd049601",
+        "processed": true,
+        "title": "Industrial Pipe Fitter",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27899420",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bebe1e42-70b1-4adc-87eb-dab4731baad7/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/industrial-pipe-fitter-espoo-cd049601",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:32",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Industrial Pipe Fitter role at Maximus Oy. Join the team and build your career in Espoo.",
+        "description": "Maximus Oy is seeking a professional Industrial Pipe Fitter for a permanent, full-time position at the Nynäshamn oil refinery in Sweden. Responsibilities include constructing new pipelines, welding and flanging seams, supervising the pipe fitter group, and participating in installation work. Requirements are over 2 years of experience as an industrial pipe fitter, proficiency in English or Swedish, and a proactive, responsible work attitude. The role offers a competitive salary of 220–255 SEK/h (20-23.50€/h) based on skills and experience, Swedish daily allowance, paid trips home to Finland once a month, accommodation at the workplace, and a long-term job opportunity until at least summer 2027. Apply by sending your CV, including your last two jobs, to Maximus Oy.",
+        "what_we_expect": [
+          "More than 2 years of previous experience as an industrial pipe fitter.",
+          "English or Swedish language skills, with which you can get by in the work environment.",
+          "Self-motivated and responsible working attitude.",
+          "A brisk attitude and willingness to get down to work."
+        ],
+        "job_responsibilities": [
+          "Construction of new pipelines.",
+          "Seams are made by welding and flanges.",
+          "Industrial pipe fitter group supervision.",
+          "Scheduling and participation in installation work."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 220–255 SEK/h (20-23.50€/h) depending on your skills and experience.",
+          "Swedish daily allowance.",
+          "Paid trips home to Finland once a month.",
+          "Accommodation arranged at the workplace.",
+          "Long-term job opportunity at least until summer 2027, possibly longer.",
+          "Taxes are paid to Sweden on the salary."
+        ],
+        "search_keywords": "industrial pipe fitter construction Sweden Nynäshamn",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:37",
+    "jobs": [
+      {
+        "id": "65e83361",
+        "job_id": "hvac-plumber-espoo-65e83361",
+        "processed": true,
+        "title": "HVAC Plumber",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27883049",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0d11cb61-40a3-492f-9bad-b7151209b34a/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/hvac-plumber-espoo-65e83361",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:37",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a HVAC Plumber at Maximus Oy in Espoo. Check the requirements and apply today.",
+        "description": "Maximus Oy, a 25-year-established employer in the construction industry, seeks a professional HVAC plumber for a permanent, full-time role in Espoo, Finland. Responsibilities include supervision, scheduling, and participation in HVAC plumbing installation, with a focus on stainless steel thin-walled pipe with groove connectors (Victauluc) installation. Requirements are more than 2 years of experience in HVAC installation, TIG welding skills, picture reading, and proficiency in English or Swedish. Offered is a competitive salary of 220–255 SEK/h (20-23.50€/h) based on skills and experience, Swedish daily allowance, paid trips home to Finland once a month, accommodation at the workplace, and a long-term job opportunity until at least summer 2027, possibly longer.",
+        "what_we_expect": [
+          "More than 2 years of previous experience in HVAC installation work.",
+          "TIG welding skills are an advantage.",
+          "Picture reading skills.",
+          "English or Swedish language skills, with which you can get by in the work environment.",
+          "Self-motivated and responsible working attitude.",
+          "A brisk attitude and willingness to get down to work."
+        ],
+        "job_responsibilities": [
+          "Supervision, scheduling and participation in the installation work of the HVAC plumbing team.",
+          "Stainless steel thin-walled pipe with groove connectors (Victauluc) installation."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 220–255 SEK/h (20-23.50€/h) depending on your skills and experience.",
+          "Swedish daily allowance.",
+          "Paid trips home to Finland once a month.",
+          "Accommodation arranged at the workplace.",
+          "Long-term job opportunity at least until summer 2027, possibly longer.",
+          "Taxes are paid to Sweden on the salary."
+        ],
+        "search_keywords": "HVAC plumber installation maintenance Borlänge Sweden",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "480aad37",
+        "job_id": "industrial-pipe-fitter-espoo-480aad37",
+        "processed": true,
+        "title": "Industrial Pipe Fitter",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27861267",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/02ca851c-c5d5-499b-864f-b85feeb35614/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/industrial-pipe-fitter-espoo-480aad37",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:37",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Industrial Pipe Fitter at Maximus Oy. Great opportunity in Espoo — apply now.",
+        "description": "Maximus Oy, with 25 years of experience in the construction industry, is seeking skilled industrial pipe fitters for a permanent, full-time position at the Nynäshamn oil refinery in Sweden. Responsibilities include constructing new pipelines and making seams by welding and flanges. Requirements are more than 2 years of experience as an industrial pipe fitter, proficiency in Finnish, and basic English or Swedish language skills. Offered is a competitive salary of 220–255 SEK/h (20-23.50€/h), Swedish daily allowance, paid trips home to Finland once a month, accommodation at the workplace, and a long-term job opportunity until at least summer 2027, possibly longer. Start date is 30 November 2026. Apply now to join a stable and experienced Finnish employer.",
+        "what_we_expect": [
+          "More than 2 years of previous experience as an industrial pipe fitter.",
+          "English or Swedish language skills, with which you can get by in the work environment.",
+          "Self-motivated and responsible working attitude.",
+          "A brisk attitude and willingness to get down to work."
+        ],
+        "job_responsibilities": [
+          "Construction of new pipelines.",
+          "Seams are made by welding and flanges."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 220–255 SEK/h (20-23.50€/h) depending on your skills and experience.",
+          "Swedish daily allowance.",
+          "Paid trips home to Finland once a month.",
+          "Accommodation arranged at the workplace.",
+          "Long-term job opportunity at least until summer 2027, possibly longer.",
+          "Taxes are paid to Sweden on the salary."
+        ],
+        "search_keywords": "industrial pipe fitter construction Sweden Nynäshamne",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:38",
+    "jobs": [
+      {
+        "id": "9d3787ec",
+        "job_id": "tig-class-welder-espoo-9d3787ec",
+        "processed": true,
+        "title": "TIG Class Welder",
+        "company": "Maximus Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27899384",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/deaa2275-f5c8-44fe-a603-025bbdeded34/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/tig-class-welder-espoo-9d3787ec",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:38",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Maximus Oy as a TIG Class Welder and grow your career in Espoo. Check the job details and apply now.",
+        "description": "Maximus Oy is seeking a professional TIG class welder for a permanent, full-time position at the Nynäshamn oil refinery in Sweden. This opportunity offers a competitive salary of 220–255 SEK/h (20-23.50€/h) based on your skills and experience, Swedish daily allowance, paid trips home to Finland once a month, and accommodation arranged at the workplace. The role involves TIG welding with protective gas, and requires more than 2 years of previous TIG welding experience, valid TIG welding classes, and proficiency in English or Swedish. You should be self-motivated, responsible, and eager to work in an international environment. The position is available starting on 30 November 2026, with a long-term commitment at least until summer 2027, possibly longer.",
+        "what_we_expect": [
+          "More than 2 years of previous experience as a TIG welder.",
+          "TIG welding classes valid.",
+          "English or Swedish language skills, with which you can get by in the work environment.",
+          "Self-motivated and responsible working attitude.",
+          "A brisk attitude and willingness to get down to work."
+        ],
+        "job_responsibilities": [
+          "TIG welding, with protective gas."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 220–255 SEK/h (20-23.50€/h) depending on your skills and experience.",
+          "Swedish daily allowance.",
+          "Paid trips home to Finland once a month.",
+          "Accommodation arranged at the workplace.",
+          "Long-term job opportunity at least until summer 2027, possibly longer.",
+          "Taxes are paid to Sweden on the salary."
+        ],
+        "search_keywords": "TIG welder, Sweden, Nynäshamn, HVAC, construction, manufacturing, welding, long-term, employment",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "92fcd6ab",
+        "job_id": "earthworks-worker-kajaani-92fcd6ab",
+        "processed": true,
+        "title": "Earthworks Worker",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Kajaani",
+          "Muonio",
+          "Rovaniemi",
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27407978",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/69a570ef-e63f-43df-b10e-16dcfc2bd91d/en",
+        "job_employer_email": "tiia-maria.kurtti@lokki.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/earthworks-worker-kajaani-92fcd6ab",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-07",
+        "scraped_at": "2026-11-17 09:00:38",
+        "open_positions": 1,
+        "salary_range": "* Palkkahaarukka infra-alan tes mukaan n. 14,00 - 18,00 €/h, kokemus huomioiden",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Lokki Henkilöstöpalvelut Oy is hiring a Earthworks Worker in Kajaani. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking experienced earthworks workers for varied travel jobs in Kajaani, Muonio, Rovaniemi, and Oulu. Ideal candidates will have previous experience in earthworks tasks, a self-initiated work attitude, good physical condition, and a valid road and work safety card. A brisk work pace and flexibility in working hours are essential. Salary ranges from approximately 14.00 to 18.00 €/h, depending on experience. Send your application through our website to explore other open positions and learn more about Lokki Henkilöstöpalvelut Oy's commitment to reliable and encouraging employment.",
+        "what_we_expect": [
+          "Previous experience in the tasks of an earthworks worker.",
+          "A brisk, self-initiated work attitude.",
+          "Good physical condition.",
+          "18 years of age.",
+          "Valid road and work safety card.",
+          "Flexibility in working hours."
+        ],
+        "job_responsibilities": [
+          "Previous experience in the tasks of an earthworks worker, training in the field is an advantage.",
+          "Varied earthworks worker tasks."
+        ],
+        "what_we_offer": [
+          "Varied earthworks worker tasks.",
+          "During the entire employment relationship of my personnel consultant.",
+          "Salary range depending on the infrastructure industry approx. 14.00 - 18.00 €/h, taking experience into account."
+        ],
+        "search_keywords": "earthworks worker construction site experience safety card",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      },
+      {
+        "id": "706e3ab8",
+        "job_id": "electrician-top-fitter-helsinki-706e3ab8",
+        "processed": true,
+        "title": "Electrician / Top Fitter",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27587889",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/379fffc9-f9a0-429a-a106-384bb30715fd/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-top-fitter-helsinki-706e3ab8",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:38",
+        "open_positions": 1,
+        "salary_range": "Palkka: 20–25 €/h osaamisen ja kokemuksen mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Electrician / Top Fitter role at Maximus Oy. Join the team and build your career in Helsinki.",
+        "description": "Maximus Oy, a 25-year-established employer in the construction industry, seeks a professional electrician/top fitter for versatile renovation projects in Helsinki and the capital region. This full-time, permanent position involves working as a top fitter on line and electrical renovations and alterations to business premises. The ideal candidate will have more than 3 years of experience in the electrical industry, versatile experience in maintenance, renovation, and installation work, and the ability to work independently in challenging situations. Good problem-solving skills and a strong understanding of electrical industry requirements and standards are essential. Finnish language skills and a B driver's license are required.",
+        "what_we_expect": [
+          "Electrician training.",
+          "More than 3 years of experience in similar tasks in the electrical industry.",
+          "Versatile experience in maintenance, renovation and installation work.",
+          "The ability to work independently even in challenging situations.",
+          "Initiative and good problem-solving skills.",
+          "Good knowledge of the requirements and standards of the electrical industry."
+        ],
+        "job_responsibilities": [
+          "More than 3 years of experience in similar tasks in the electrical industry."
+        ],
+        "what_we_offer": [
+          "The path to different job opportunities depends on your experience base and your wishes - you decide.",
+          "A simple application process - with one application, you are also included in other searches.",
+          "High-quality tools and equipment (e.g. Makita).",
+          "Occupational health services at your disposal in Pihlajalinna.",
+          "Competitive salary - we value your professionalism and contribution.",
+          "The possibility of establishment and the possibility of long-term employment."
+        ],
+        "search_keywords": "electrician top fitter Helsinki renovation maintenance installation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-17 09:00:39",
+    "jobs": [
+      {
+        "id": "bfc9e674",
+        "job_id": "personal-assistant-haapajärvi-bfc9e674",
+        "processed": true,
+        "title": "Personal Assistant",
+        "company": "Onni",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Haapajärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.onnion.fi/jobs/8751844-henkilokohtaisia-avustajia-puitesopimuksella-haapajarvelle/applications/new?promotion=2298431-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/72034cba-e0e2-4eb1-937e-1613bc30461a/en",
+        "job_employer_email": "ritva.tuppurainen@onnion.fi",
+        "job_employer_name": "Ritva Tuppurainen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/personal-assistant-haapajärvi-bfc9e674",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-17 09:00:39",
+        "open_positions": 1,
+        "salary_range": "Työehtosopimuksen mukaisen palkan (G16A): 13,20 € – 14,51 €/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Onni as a Personal Assistant in Haapajärvi. Learn more about the role and apply now.",
+        "description": "Join Onni in Haapajärvi as a personal assistant, supporting customers in everyday chores and leisure activities. This flexible, permanent role offers a brisk, responsible approach to work, independent working, and customer-centric tasks. Fluency in Finnish is essential, and a driver’s license is required. Shifts are available on weekdays and weekends, and you can choose the ones that suit you best through the DomaCare system. The salary is determined according to the collective agreement (G16A): €13.20 – €14.51/h. You will receive orientation and support for work shifts, and the opportunity to gain experience in various locations. Apply now for a chance to do meaningful and customer-oriented work. The application period ends on December 4, 2026.",
+        "what_we_expect": [
+          "A brisk, responsible and reliable approach to work.",
+          "Ability to work independently and taking the customer's needs into account.",
+          "Fluent Finnish language skills.",
+          "Desire to do customer-oriented and meaningful work."
+        ],
+        "job_responsibilities": [
+          "Support customers in everyday chores and leisure activities."
+        ],
+        "what_we_offer": [
+          "A flexible way to combine work with, for example, studies, another job or other everyday life.",
+          "Orientation and support for work shifts.",
+          "The opportunity to gain experience and work in various locations.",
+          "Salary according to the collective agreement (G16A): €13.20 – €14.51/h.",
+          "Vacation allowance in connection with each salary payment."
+        ],
+        "search_keywords": "personal assistant, customer service, flexible work, social services,芬兰语",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "60a89532",
+        "job_id": "hvac-installer-kouvola-60a89532",
+        "processed": true,
+        "title": "HVAC Installer",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27884572",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6e905fad-2097-4a9e-a2fb-e76fb8f45452/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/hvac-installer-kouvola-60a89532",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:39",
+        "open_positions": 1,
+        "salary_range": "* Palkka: 20 €/h + päiväraha",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a HVAC Installer at Maximus Oy in Kouvola. Check the requirements and apply today.",
+        "description": "Maximus Oy is seeking experienced HVAC installers for a long-term project in a data center in Kouvola, starting in November 2026 and lasting until March 2027. Responsibilities include installing stainless steel pipelines using the groove joint method and following installation drawings. Applicants should have at least 2 years of experience in HVAC installation in Finland, be fluent in Finnish or English, and possess image literacy. A self-initiated, work-oriented attitude and the ability to work both independently and as part of a team are required. The position offers a competitive salary of €20/hour plus daily allowance, accommodation possibilities, and the chance to be part of a modern industrial construction project. Apply now to join a stable and experienced Finnish employer.",
+        "what_we_expect": [
+          "At least 2 years of experience in HVAC installation work in Finland.",
+          "Image literacy.",
+          "Finnish or English language skills.",
+          "A brisk, self-initiated and work-oriented attitude.",
+          "Ability to work both independently and as part of a team."
+        ],
+        "job_responsibilities": [
+          "Installation of stainless steel pipelines using the groove joint method (Victaulic).",
+          "Reading installation drawings and working according to them."
+        ],
+        "what_we_offer": [
+          "A long-term project in an interesting data center environment.",
+          "20 €/h salary and daily allowance.",
+          "Possibility of accommodation near the construction site.",
+          "The opportunity to get involved in a demanding and modern industrial construction project."
+        ],
+        "search_keywords": "HVAC installer Kouvola installation maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "a44a7941",
+        "job_id": "hvac-installer-espoo-a44a7941",
+        "processed": true,
+        "title": "HVAC Installer",
+        "company": "Maximus Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://maximus.likeit.fi/apply/27863144",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d3d71b18-d193-487d-9f34-ee7d2e06b8e9/en",
+        "job_employer_email": "rekry@maximus.fi",
+        "job_employer_name": "Maximus Rekrytointi",
+        "job_employer_phone_no": "0108206900",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/hvac-installer-espoo-a44a7941",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-23",
+        "scraped_at": "2026-11-17 09:00:39",
+        "open_positions": 1,
+        "salary_range": "* Kilpailukykyinen palkka: 220–255 SEK/h (20-23,50€/h) osaamisesi ja kokemuksesi mukaan",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a HVAC Installer at Maximus Oy in Espoo. Check the requirements and apply today.",
+        "description": "Maximus Oy is seeking experienced HVAC installers for a permanent, full-time position in Espoo, Finland, focusing on stainless steel thin-walled pipe with groove connectors (Victauluc) installation. Ideal candidates will have more than 2 years of previous HVAC installation experience, proficiency in Finnish, and either English or Swedish language skills. The role offers a competitive salary of 220–255 SEK/h (20-23.50€/h) based on skills and experience, Swedish daily allowance, paid trips home to Finland once a month, and accommodation arranged at the workplace. The employment opportunity is long-term, at least until summer 2027, with the possibility of extending the contract.",
+        "what_we_expect": [
+          "More than 2 years of previous experience in HVAC installation work.",
+          "English or Swedish language skills, with which you can get by in the work environment.",
+          "Self-motivated and responsible working attitude.",
+          "A brisk attitude and willingness to get down to work."
+        ],
+        "job_responsibilities": [
+          "Stainless steel thin-walled pipe with groove connectors (Victauluc) installation."
+        ],
+        "what_we_offer": [
+          "Competitive salary: 220–255 SEK/h (20-23.50€/h) depending on your skills and experience.",
+          "Swedish daily allowance.",
+          "Paid trips home to Finland once a month.",
+          "Accommodation arranged at the workplace.",
+          "Long-term job opportunity at least until summer 2027, possibly longer.",
+          "Taxes are paid to Sweden on the salary."
+        ],
+        "search_keywords": "HVAC installer Sweden Borlänge installation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
   }
 ]
