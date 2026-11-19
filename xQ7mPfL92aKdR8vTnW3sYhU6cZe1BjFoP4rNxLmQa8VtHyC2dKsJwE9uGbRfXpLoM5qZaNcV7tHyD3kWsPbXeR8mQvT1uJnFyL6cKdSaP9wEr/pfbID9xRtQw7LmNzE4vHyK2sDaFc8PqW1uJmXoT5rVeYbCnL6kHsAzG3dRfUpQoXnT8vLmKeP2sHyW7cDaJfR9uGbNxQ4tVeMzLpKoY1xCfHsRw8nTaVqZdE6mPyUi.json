@@ -467260,5 +467260,1330 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:33:31",
+    "jobs": [
+      {
+        "id": "1f85404a",
+        "job_id": "ai-engineer-kangasala-1f85404a",
+        "processed": true,
+        "title": "AI Engineer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi",
+          "Vaasa",
+          "Oulu",
+          "Kuopio",
+          "Lahti",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27421631",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7e197baa-b249-4bd6-8286-1255dd31c38e/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/ai-engineer-kangasala-1f85404a",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-18 12:33:31",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "A new job opportunity is available at Lokki Henkilöstöpalvelut Oy as a AI Engineer in Kangasala. Learn more about the role and apply now.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking AI Engineers to establish Claude Enterprise adoption in the banking industry. Responsibilities include owning the technical design and engineering of the enterprise Claude platform, ensuring secure and reliable integration with internal systems, and continuously improving the platform and its integrations. Requirements are several years of IT experience, hands-on experience in Claude Enterprise platform engineering, enterprise integration and API engineering, enterprise AI architecture and operations, and platform reliability, security, and governance. Fluency in English is required. The position is full-time and permanent, with a competitive salary and good employee benefits.",
+        "what_we_expect": [
+          "Several years of experience within IT.",
+          "Hands-on experience in Claude Enterprise platform engineering.",
+          "Hands-on experience in Enterprise integration and API engineering.",
+          "Hands-on experience in Enterprise AI architecture and operations.",
+          "Hands-on experience in Claude Platform Engineering and Operations.",
+          "Hands-on experience in Enterprise Integration Engineering."
+        ],
+        "job_responsibilities": [
+          "Own the technical design and engineering of the enterprise Claude platform.",
+          "Ensure that Claude Enterprise capabilities can be introduced securely, integrated with internal systems through approved 1st Party and 3rd Party patterns, and operated reliably in production.",
+          "Design, implement, operate and continuously improve the Claude platform and its integrations within the enterprise environment.",
+          "Ensure Claude services are secure, reliable, scalable and compliant with enterprise standards, while enabling business teams to build and consume AI capabilities through approved 1st Party and 3rd Party integration patterns."
+        ],
+        "what_we_offer": [
+          "A very competitive salary.",
+          "Good employee benefits."
+        ],
+        "search_keywords": "AI Engineer, Claude, Enterprise, Platform, Security, Integration, Reliability, Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "d5cfdaa8",
+        "job_id": "diamond-drill-operator-lappeenranta-d5cfdaa8",
+        "processed": true,
+        "title": "Diamond Drill Operator",
+        "company": "Best Workers Suomi Oy, Lappeenranta",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:toimisto@bestworkers.fi?subject=Application%20for%20the%20Job%20-%20Diamond%20Drill%20Operator&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Diamond%20Drill%20Operator.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d4755c98-53a8-48fd-8c3b-75ffca07d50d/en",
+        "job_employer_email": "toimisto@bestworkers.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/diamond-drill-operator-lappeenranta-d5cfdaa8",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-18 12:33:31",
+        "open_positions": 1,
+        "salary_range": "salary expectations: toimisto@bestworkers",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Diamond Drill Operator role at Best Workers Suomi Oy, Lappeenranta. Join the team and build your career in Lappeenranta.",
+        "description": "Best Workers Suomi Oy is seeking a Diamond Drill Operator for permanent employment in Lappeenranta. Responsibilities include high-quality implementation of various drilling tasks at different customer sites, including diamond sawing, demolition work, and auxiliary construction tasks. The role requires fire job card training, a self-initiated attitude, physical readiness, pressure tolerance, accuracy, and willingness to travel. You will work with modern tools and enjoy varied tasks in different locations. Permanent employment is offered with professional colleagues and necessary initial orientation. If interested, please send your application including salary expectations to toimisto@bestworkers.fi.",
+        "what_we_expect": [
+          "Fire job card training.",
+          "A brisk and self-initiated attitude and readiness for physical work.",
+          "Pressure tolerance and accuracy.",
+          "Willingness to travel."
+        ],
+        "job_responsibilities": [
+          "High-quality implementation of various drilling tasks at different customer sites."
+        ],
+        "what_we_offer": [
+          "Permanent job.",
+          "Modern tools.",
+          "Professional colleagues.",
+          "The necessary initial orientation.",
+          "Varied tasks in different locations."
+        ],
+        "search_keywords": "diamond drill operator construction drilling tasks physical work travel",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "7a666bf6",
+        "job_id": "department-manager-tampere-7a666bf6",
+        "processed": true,
+        "title": "Department Manager",
+        "company": "Biltema Suomi Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://biltema.rekrytointi.com/paikat/index.php?o=A_A&jid=332&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/19306867-f759-43bd-813c-7cf498aa91f2/en",
+        "job_employer_email": "rekrytointi@biltema.com",
+        "job_employer_name": "Biltema rekrytointi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/department-manager-tampere-7a666bf6",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:33:31",
+        "open_positions": 1,
+        "salary_range": "Salary according to the trade collective agreem",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Department Manager role at Biltema Suomi Oy. Join the team and build your career in Tampere.",
+        "description": "Join Biltema Suomi Oy in Tampere as a Department Manager for a permanent, full-time position. As a key member of the extended management team, you will be responsible for the commercialization and sales development of your stand, ensuring its presentation, cleanliness, and a good occupancy rate. You will also oversee the entire department store's operations. We seek candidates with good interpersonal skills, the ability to work independently, self-initiative, and flexibility. Trade education is useful but not necessary. Enjoy a relaxed and encouraging work atmosphere, detailed training, and excellent career development opportunities. Apply by filling out the application form in our recruitment system by 1 December 2026.",
+        "what_we_expect": [
+          "Education in the field of trade is useful but not necessary.",
+          "Good interpersonal and interpersonal skills.",
+          "Willingness to work independently and the ability to bear responsibility.",
+          "Self-initiative and good organizational skills.",
+          "Flexibility and pressure tolerance.",
+          "The right attitude and ability to cooperate."
+        ],
+        "job_responsibilities": [
+          "Take care of the commercialization and sales development of your stand.",
+          "Ensure the presentation, cleanliness and a good occupancy rate of your stand.",
+          "Work as part of the department store's extended management team.",
+          "Be responsible for the entire department store's operations."
+        ],
+        "what_we_offer": [
+          "A responsible and versatile position in the positive pulse of the international department store chain.",
+          "A store in accordance with Biltema's concept and functional tools.",
+          "A relaxed and encouraging work atmosphere with gentle colleagues.",
+          "An exciting task where you can combine your interests with our wide range of products.",
+          "Excellent career development opportunities; our culture favors long-term working relationships and development.",
+          "Detailed training and guidance for the task."
+        ],
+        "search_keywords": "department manager sales marketing Tampere Biltema",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:33:32",
+    "jobs": [
+      {
+        "id": "c8ed757c",
+        "job_id": "digital-learning-expert-turku-c8ed757c",
+        "processed": true,
+        "title": "Digital Learning Expert",
+        "company": "UTU Excellence Oy, Turku",
+        "job_category": "education",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:julia.kokki@utuexce.fi?subject=Application%20for%20the%20Job%20-%20Digital%20Learning%20Expert&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Digital%20Learning%20Expert.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/550c3626-eec6-4b2c-bfd2-2aca2acfb027/en",
+        "job_employer_email": "julia.kokki@utuexce.fi",
+        "job_employer_name": "Julia Kokki",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/digital-learning-expert-turku-c8ed757c",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-18 12:33:32",
+        "open_positions": 1,
+        "salary_range": "3 400-4 900€ /kk määräytyen tehtävän painotuksen, osaamisen ja aikaisemman kokemuksen perusteella. Työaika on 36h 15min/vko",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next job as a Digital Learning Expert at UTU Excellence Oy, Turku. Great opportunity in Turku — apply now.",
+        "description": "UTU Excellence Oy is seeking three full-time and part-time digital learning experts to join our team for an international education export project starting on 1 January 2027. The project focuses on professional continuing education for teachers in Saudi Arabia, involving the technical implementation of online training modules, development of digital learning environments, and production of training content. Responsibilities include producing digital learning materials, videos, and multimedia elements, as well as artificial intelligence-assisted video and multimedia production. You will also support pedagogical experts in content production and build online training modules on the Moodle-based learning platform.",
+        "what_we_expect": [
+          "Experience in one or more of the following areas: video and multimedia production, learning platforms and online training modules."
+        ],
+        "job_responsibilities": [
+          "Production of digital learning materials, videos and multimedia elements.",
+          "Artificial intelligence-assisted video and multimedia production, such as generation, editing and finishing.",
+          "Technical implementation and development of training contents.",
+          "Supporting pedagogical experts in the content production of educational materials.",
+          "Building online training modules on the Moodle-based learning platform.",
+          "Technical implementation and quality assurance of learning environments."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "digital learning, multimedia production, online training, Moodle, pedagogical design",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "bc898491",
+        "job_id": "construction-worker-lappeenranta-bc898491",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Best Workers Suomi Oy, Lappeenranta",
+        "job_category": "construction",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:toimisto@bestworkers.fi?subject=Application%20for%20the%20Job%20-%20Construction%20Worker&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Construction%20Worker.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/340311f0-bf4c-4ea0-bc45-2b40a8487c49/en",
+        "job_employer_email": "toimisto@bestworkers.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-lappeenranta-bc898491",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-02",
+        "scraped_at": "2026-11-18 12:33:32",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible by emai",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Best Workers Suomi Oy, Lappeenranta as a Construction Worker and grow your career in Lappeenranta. Check the job details and apply now.",
+        "description": "We are seeking a Construction Worker for Best Workers Suomi Oy in Lappeenranta. This full-time, permanent position involves executing various construction tasks at different client sites. Key requirements include a fire job card, a proactive and physically capable attitude, the ability to handle pressure, and willingness to travel. You will work with modern tools and a professional team, receiving necessary orientation and tackling diverse tasks. Apply by email to toimisto@bestworkers.fi with your application and salary expectations; interviews will commence during the application period.",
+        "what_we_expect": [
+          "Fire job card training.",
+          "A brisk and self-initiated attitude and readiness for physical work.",
+          "Pressure tolerance and accuracy.",
+          "Willingness to travel."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Permanent job.",
+          "Modern tools.",
+          "Professional colleagues.",
+          "The necessary initial orientation.",
+          "Varied tasks in different locations."
+        ],
+        "search_keywords": "construction worker full-time permanent travel tools colleagues orientation tasks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "e82c73a1",
+        "job_id": "embedded-software-engineer-tampere-e82c73a1",
+        "processed": true,
+        "title": "Embedded Software Engineer",
+        "company": "Academic Work Finland Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Tampere",
+          "Pirkkala",
+          "Nokia",
+          "Ylöjärvi",
+          "Kangasala",
+          "Mänttä-Vilppula",
+          "Urjala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.academicwork.fi/avoimet-tyopaikat/p/tyomarkkinatori/IZCNXP",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6552c2a0-efc7-4cdc-a92c-053e52dda566/en",
+        "job_employer_email": "tre01@academicwork.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/embedded-software-engineer-tampere-e82c73a1",
+        "date_posted": "2026-11-17",
+        "date_expires": "2027-05-16",
+        "scraped_at": "2026-11-18 12:33:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Academic Work Finland Oy is looking for a Embedded Software Engineer in Tampere. Don't miss this opportunity — apply today.",
+        "description": "In this full-time, permanent role as an Embedded Software Engineer at Academic Work Finland Oy, you will design, develop, and verify embedded software for power electronics applications. You will collaborate with global teams to ensure software meets reliability, safety, and performance standards. Responsibilities include developing C/C++ software for real-time control systems, maintaining documentation, performing unit testing, and contributing to continuous improvement of development processes. A degree in Electronics, Electrical Engineering, Computer Science, or a related field, along with experience in embedded software development and familiarity with real-time operating systems, is required. Fluency in professional English is essential.",
+        "what_we_expect": [
+          "Education: Degree (M.Sc. Or B.Sc.) in Electronics, Electrical Engineering, Computer Science, or a related technical field.",
+          "Experience: Solid background in embedded software development (C/C++) for real-time systems.",
+          "Technical Skills: Familiarity with real-time operating systems (RTOS, e.g., VxWorks).",
+          "Technical Skills: Hands-on experience with embedded development tools and debuggers.",
+          "Technical Skills: Understanding of hardware-software interfaces and FPGA/microcontroller architectures.",
+          "Technical Skills: Experience with version control systems (Git) and defect tracking tools (JIRA)."
+        ],
+        "job_responsibilities": [
+          "Design & Implementation: Develop embedded C/C++ software for real-time control systems.",
+          "Architecture & Requirements: Maintain software requirement specifications and architecture documentation, ensuring full traceability in JIRA.",
+          "Quality & Reliability: Perform unit testing, code reviews, and static analysis to uphold internal safety and quality standards.",
+          "Testing & Validation: Support system-level validation and HIL testing activities.",
+          "Problem Solving: Analyze and debug complex runtime, timing, or integration issues in laboratory environments.",
+          "Continuous Improvement: Contribute to enhancing software development processes and tooling."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "embedded software engineer real-time control systems C/C++ real-time operating systems version control systems",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "978f7feb",
+        "job_id": "quality-assurancecontrol-engineer-espoo-978f7feb",
+        "processed": true,
+        "title": "Quality Assurance/Control Engineer",
+        "company": "ValueSource Partners",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://careers.values.fi/en-GB/jobs/8756047-quality-assurance-control-engineer-espoo/applications/new?promotion=2300074-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/811a6bef-39b5-4e6e-9a9d-96a820da1ff3/en",
+        "job_employer_email": "suvi.pekkinen@values.fi",
+        "job_employer_name": "Suvi Pekkinen",
+        "job_employer_phone_no": "0407677265",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/quality-assurancecontrol-engineer-espoo-978f7feb",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-08",
+        "scraped_at": "2026-11-18 12:33:32",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Quality Assurance/Control Engineer at ValueSource Partners. Great opportunity in Espoo — apply now.",
+        "description": "We are seeking a Quality Assurance/Control Engineer to join our team at ValueSource Partners in Espoo. As a Project Quality Assurance/Control Engineer, you will ensure the quality assurance and control of selected projects, create quality execution plans and specifications, and manage supplier quality documents. You will also coordinate quality inspections, assist in creating product-specific quality requirements, and perform root cause analysis. A Bachelor’s or Master’s degree in material or mechanical engineering, along with experience in quality assurance and control in a technical industry, is required. Strong problem-solving skills and the ability to work in a team are essential.",
+        "what_we_expect": [
+          "A Bachelor’s or Master’s degree in material or mechanical engineering or an equivalent education.",
+          "Earlier work experience in quality assurance and control in technical industry environment.",
+          "Profound knowledge on quality processes and practices.",
+          "Investigative capability into products and processes.",
+          "Strong ability in problem solving and performing root cause analysis.",
+          "Good planning and organizing skills."
+        ],
+        "job_responsibilities": [
+          "Act as Project Quality Assurance/Control Engineer on selected projects ensuring the quality assurance and quality control of the projects.",
+          "Create project quality execution plan, equipment QA/QC specification and manufacturing specifications based on the contract and deviation list.",
+          "Ensure that required customer’s quality procedures are suitable for the purpose and use for which they are intended.",
+          "Review and approve supplier’s inspection and test plans (ITP), QA/QC documents and manufacturing procedures such as, WPS/PQR, welder certificates, NDT procedures.",
+          "Follow that required documents has been received from supplier.",
+          "Follow the approval process, review and approve the supplier and sub-suppliers’ quality documents."
+        ],
+        "what_we_offer": [
+          "Full support of the customer Quality team and ValueSource team."
+        ],
+        "search_keywords": "quality assurance, control engineer, project management, technical industry, quality processes, root cause analysis, team working, English, welding, standards",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      },
+      {
+        "id": "1dbbcd59",
+        "job_id": "senior-project-manager-kangasala-1dbbcd59",
+        "processed": true,
+        "title": "Senior Project Manager",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi",
+          "Vaasa",
+          "Oulu",
+          "Kuopio",
+          "Lahti",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27421545",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2f353a5a-fc69-405b-aa37-ee6cd8864b12/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-project-manager-kangasala-1dbbcd59",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-18 12:33:32",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Senior Project Manager at Lokki Henkilöstöpalvelut Oy in Kangasala. Check the requirements and apply today.",
+        "description": "Lokki Henkilöstöpalvelut Oy is seeking a Senior Project Manager to lead complex initiatives and translate business strategy, regulatory requirements, and priorities into actionable deliveries. The role involves establishing and driving effective execution frameworks, governance structures, and delivery models, coordinating cross-functional stakeholders, managing programme governance, and fostering a culture of continuous improvement. Ideal candidates will have extensive experience in large-scale, cross-functional transformation programmes, strong stakeholder management and communication skills, and banking/financial related experience. This is a full-time, permanent position with a competitive hourly wage based on Finnish collective agreements.",
+        "what_we_expect": [
+          "Extensive experience as a Project Manager, Senior Project Manager, Programme Manager, or Lead Project Leader.",
+          "Proven track record delivering large-scale, cross-functional transformation programmes.",
+          "Strong programme governance, risk management, dependency management, and executive reporting experience.",
+          "Ability to coordinate multiple workstreams across diverse stakeholders and organisational units.",
+          "Strong banking/financial related experience.",
+          "Excellent stakeholder management and communication skills."
+        ],
+        "job_responsibilities": [
+          "Lead complex initiatives and translate business strategy, regulatory requirements, and priorities into actionable deliveries.",
+          "Establish and drive effective execution frameworks, governance structures, and delivery models.",
+          "Coordinate cross-functional stakeholders across business areas, legal entities, and technology teams.",
+          "Manage programme governance, reporting, risks, dependencies, escalations, and decision-making processes.",
+          "Drive change management activities and support organisational readiness.",
+          "Build and lead high-performing teams while fostering a culture of continuous improvement."
+        ],
+        "what_we_offer": [
+          "We offer you: We offer a versatile assignment where every day is different and interesting. We also offer a very competitive salary and good employee benefits."
+        ],
+        "search_keywords": "project manager senior project manager program manager banking financial services transformation governance risk management leadership",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:33:34",
+    "jobs": [
+      {
+        "id": "e4462995",
+        "job_id": "senior-verification-engineer-kangasala-e4462995",
+        "processed": true,
+        "title": "Senior Verification Engineer",
+        "company": "Lokki Henkilöstöpalvelut Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Kangasala",
+          "Nokia",
+          "Tampere",
+          "Ylöjärvi",
+          "Vaasa",
+          "Oulu",
+          "Kuopio",
+          "Lahti",
+          "Espoo",
+          "Helsinki",
+          "Vantaa",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://lokki.likeit.fi/apply/27421185",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7f668b7e-910c-41a7-9bb9-f39030caf03f/en",
+        "job_employer_email": "kimmo.karsama@lokki.fi",
+        "job_employer_name": "Kimmo Kärsämä",
+        "job_employer_phone_no": "+358504127500",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-verification-engineer-kangasala-e4462995",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-20",
+        "scraped_at": "2026-11-18 12:33:34",
+        "open_positions": 1,
+        "salary_range": "salary and good employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Discover a new job opportunity as a Senior Verification Engineer at Lokki Henkilöstöpalvelut Oy in Kangasala. Apply now and take the next step in your career.",
+        "description": "We are seeking a Senior Verification Engineer to support the development and validation of advanced power electronics solutions. This role involves executing verification, validation, R&D, and type testing activities for new power electronics products, building and configuring test environments, performing measurements, and documenting test results. You will participate in troubleshooting and root cause analysis, collaborate closely with engineering teams, certification specialists, and external stakeholders, and contribute to continuous improvement of testing methods and laboratory practices. Requirements include a B.Sc. or M.Sc.",
+        "what_we_expect": [
+          "B.Sc. Or M.Sc. In Electrical Engineering or a related field.",
+          "Experience in testing, commissioning, installation, or validation of frequency converters, industrial drives, power electronics, or automation systems.",
+          "Strong technical problem-solving skills and a hands-on approach to testing.",
+          "Ability to work effectively with multidisciplinary teams.",
+          "Fluent Finnish and English language skills.",
+          "Willingness to travel occasionally."
+        ],
+        "job_responsibilities": [
+          "Execute verification, validation, R&D, and type testing activities for new power electronics products.",
+          "Build and configure test environments, perform measurements, and document test results.",
+          "Participate in troubleshooting and root cause analysis related to hardware and software performance.",
+          "Collaborate closely with engineering teams, certification specialists, and external stakeholders.",
+          "Contribute to continuous improvement of testing methods and laboratory practices."
+        ],
+        "what_we_offer": [
+          "A versatile assignment where every day is different and interesting.",
+          "A very competitive salary."
+        ],
+        "search_keywords": "Senior Verification Engineer, Electrical Engineering, Power Electronics, Testing, Validation, Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "ecc4c85b",
+        "job_id": "electrician-device-assembly-nokia-ecc4c85b",
+        "processed": true,
+        "title": "Electrician (Device Assembly)",
+        "company": "Apuvoima Pirkanmaa Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Nokia"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://apuvoima.likeit.fi/apply/12919286",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7b381bac-d3ba-4724-97da-db34505baac6/en",
+        "job_employer_email": "roope.oksanen@apuvoima.com",
+        "job_employer_name": "Roope Oksanen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-device-assembly-nokia-ecc4c85b",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-18 12:33:34",
+        "open_positions": 1,
+        "salary_range": "salary payment * your own contact person to han",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Electrician (Device Assembly) at Apuvoima Pirkanmaa Oy in Nokia. Apply now and take the next step in your career.",
+        "description": "Looking for an electrician to join our team at Apuvoima Pirkanmaa Oy in Nokia, where you'll be part of assembling new, mobile work machines from start to finish. This full-time, permanent position offers a lively and team-oriented environment with a competitive hourly wage based on Finnish collective agreements. Applicants should have at least one year of work experience as an electrician and a positive attitude. Extended occupational health care and reliable salary payment are provided. Apply via the link <https://apuoima.likeit.fi/apply/12919286>, send a free-form application to roope.oksanen@apuvoima.com, or contact Roope by calling, messaging, or WhatsApp on 0400 740 818. APUVOIMA connects skilled workers and employers across Finland, offering versatile job opportunities.",
+        "what_we_expect": [
+          "Lively attitude and teamwork skills.",
+          "At least one year of work experience as an electrician.",
+          "The mood of doing."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Extended occupational health care.",
+          "Reliable and high-quality salary payment.",
+          "Your own contact person to handle your employment matters."
+        ],
+        "search_keywords": "electrician device assembly installation maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "6151e8d9",
+        "job_id": "sales-representative-kouvola-6151e8d9",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Biltema Suomi Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://biltema.rekrytointi.com/paikat/index.php?o=A_A&jid=330&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/eebf3010-c746-4fb6-8f8c-6bd150f112c3/en",
+        "job_employer_email": "rekrytointi@biltema.com",
+        "job_employer_name": "Biltema rekrytointi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-kouvola-6151e8d9",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:33:34",
+        "open_positions": 1,
+        "salary_range": "Noudatamme Kaupan työehtosopimusta, joten tuntipalkka määräytyy työkokemuksesi ja koulutuksesi mukaan (11,16 - 14,93 €/h). Lisäksi maksetaan ilta- ja viikonloppulisät tehtyjen tuntien mukaisesti. Työn aloitus sopimuksen mukaan.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Biltema Suomi Oy is looking for a Sales Representative in Kouvola. Don't miss this opportunity — apply today.",
+        "description": "Biltema Suomi Oy is seeking four energetic and customer service-minded part-time salespeople for our department store in Kouvola, operating the Biltema Cafe. Responsibilities include providing first-class customer service, working at the cash register, and preparing and presenting products attractively. You will also handle cashier work and maintain store cleanliness. We require a sales and customer service mentality, good interaction skills, and willingness to work all shifts, including evenings and weekends. A hygiene pass or the desire to complete it is necessary. Experience in retail customer service, particularly in cafes and cashier operations, is advantageous. Fluency in Finnish and/or Swedish is preferred.",
+        "what_we_expect": [
+          "Sales and customer service mentality and good interaction skills.",
+          "Coming of age because of the products we sell.",
+          "Willingness to work in all our shifts: morning, evening and weekend shifts.",
+          "Hygiene pass or desire to complete it.",
+          "Experience in customer service tasks in the retail sector and knowledge of working in a cafe and cashier operations."
+        ],
+        "job_responsibilities": [
+          "Take care of first-class customer service at Biltema Cafe.",
+          "Work at the cash register at Biltema Cafe.",
+          "Prepare and attractively present products sold in the cafe.",
+          "Provide customer service in the department store.",
+          "Perform cashier work in the department store.",
+          "Unload and shelve products in the department store."
+        ],
+        "what_we_offer": [
+          "A responsible and versatile position in the positive pulse of the international department store chain.",
+          "The coffee shop and store according to the Biltema concept, as well as the operating methods.",
+          "A relaxed and encouraging work atmosphere with nice colleagues.",
+          "Comprehensive orientation and guidance for the task.",
+          "The possibility of a long-term employment relationship and advancement in a big house."
+        ],
+        "search_keywords": "sales representative cafe customer service part-time",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "4282ea36",
+        "job_id": "itinerant-nurse-hämeenlinna-4282ea36",
+        "processed": true,
+        "title": "Itinerant Nurse",
+        "company": "Attendo Oy",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.attendo.fi/jobs/8756644-kiertava-lahihoitaja-attendo-oma-kanta-hame/applications/new?promotion=2300018-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f922cf26-8370-4d73-b5cd-8d36f7fb20e9/en",
+        "job_employer_email": "henna.suomela@attendo.fi",
+        "job_employer_name": "Henna Suomela",
+        "job_employer_phone_no": "0444941868",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/itinerant-nurse-hämeenlinna-4282ea36",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:33:34",
+        "open_positions": 1,
+        "salary_range": "salary until August 31, 2027 at Attendo Oma in",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Itinerant Nurse at Attendo Oy in Hämeenlinna. Check the requirements and apply today.",
+        "description": "Itinerant nurse positions are available at Attendo Oy in Hämeenlinna, offering a permanent, full-time role with a competitive hourly wage based on Finnish collective agreements. Responsibilities include filling in for caregiver absences at Attendo homes in the Kanta-Häme area. Requirements include a Bachelor's degree in social and health care (nurse), valid LOVe exams, a driver's license, and the ability to use your own car. Additionally, you must have Infectious Diseases Act Section 48 vaccination cover, a hygiene passport or be ready to complete it within three months, and fluent written and spoken Finnish. We offer support and development opportunities, as well as flexibility in your work schedule.",
+        "what_we_expect": [
+          "Bachelor's degree in social and health care (nurse).",
+          "Valid LOVe exams.",
+          "Driver's license and the possibility to use your own car.",
+          "Infectious Diseases Act Section 48 vaccination cover.",
+          "Hygiene passport or readiness to complete it within three months of starting employment.",
+          "Fluent written and spoken Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Fill in for the absences of caregivers at the Attendo homes in the Kanta-Häme area."
+        ],
+        "what_we_offer": [
+          "We walk by your side.",
+          "We support your development.",
+          "We are flexible with you."
+        ],
+        "search_keywords": "itinerant nurse healthcare Kanta-Häme Attendo Oma",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "d6a1e4f5",
+        "job_id": "hall-manager-kouvola-d6a1e4f5",
+        "processed": true,
+        "title": "Hall Manager",
+        "company": "Ravintola Huvilla",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:susanna.kurvinen@restauranteole.fi?subject=Application%20for%20the%20Job%20-%20Hall%20Manager&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Hall%20Manager.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7c517d4f-d9a7-4c6e-b84b-0671bffdb09e/en",
+        "job_employer_email": "susanna.kurvinen@restauranteole.fi",
+        "job_employer_name": "Susanna Kurvinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/hall-manager-kouvola-d6a1e4f5",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-18 12:33:34",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Ravintola Huvilla as a Hall Manager in Kouvola. Learn more about the role and apply now.",
+        "description": "At Ravintola Huvilla in Kouvola, we seek a Hall Manager passionate about exceptional customer service and the art of hospitality. Ideal candidates will have experience in the dynamic restaurant industry, a suitable educational background, and a cheerful, team-oriented attitude. A valid hygiene passport and drinking passport are required. If you share our enthusiasm for quality food and drinks and can maintain a fast, careful work pace even in a rush, we would love to meet you. Please apply via email with the subject line \"Saliamattilainen talvi 26 Huvila.",
+        "what_we_expect": [
+          "Experience in the whirlwinds of the restaurant industry.",
+          "Suitable educational background.",
+          "Happy and cheerful team worker.",
+          "Valid hygiene passport.",
+          "Valid drinking passport."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "customer service hospitality wine knowledge team worker",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:33:35",
+    "jobs": [
+      {
+        "id": "05f80c02",
+        "job_id": "foreman-manager-lappeenranta-05f80c02",
+        "processed": true,
+        "title": "Foreman Manager",
+        "company": "Best Workers Suomi Oy, Lappeenranta",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:toimisto@bestworkers.fi?subject=Application%20for%20the%20Job%20-%20Foreman%20Manager&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Foreman%20Manager.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e6bc45f7-e0ab-4755-8ce7-0e4a57420a13/en",
+        "job_employer_email": "toimisto@bestworkers.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/foreman-manager-lappeenranta-05f80c02",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-18 12:33:35",
+        "open_positions": 1,
+        "salary_range": "salary corresponding to the skill level \\- a cl",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Foreman Manager at Best Workers Suomi Oy, Lappeenranta in Lappeenranta. Apply now and take the next step in your career.",
+        "description": "Best Workers Suomi Oy is seeking a Foreman Manager for a permanent, full-time position in Lappeenranta. The ideal candidate will have a construction master's or engineer's training, at least three years of experience in the field, and excellent communication skills in both Finnish and English. You must be able to take responsibility, handle pressure, and ensure projects are completed on schedule. Join a close-knit, professional team with access to modern tools and interesting, varied projects. Apply with your salary expectations to toimisto@bestworkers.fi. More information available at toimisto@bestworkers.fi or 050 555 7737.",
+        "what_we_expect": [
+          "Construction master's or engineer's training.",
+          "Experience in the field for at least three years.",
+          "Good communication skills.",
+          "English language skills.",
+          "Courage to take responsibility.",
+          "Pressure tolerance."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "The initial orientation.",
+          "Permanent and full-time work.",
+          "Interesting, changing projects.",
+          "A salary corresponding to the skill level.",
+          "A close-knit and professional working community.",
+          "Good and modern tools to ensure smooth work."
+        ],
+        "search_keywords": "foreman manager manufacturing production construction skills communication",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "8f775908",
+        "job_id": "dish-custodian-helsinki-8f775908",
+        "processed": true,
+        "title": "Dish Custodian",
+        "company": "Be happy Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://behappy.likeit.fi/apply/1061198",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/12775561-40c4-418a-9eec-21986d1b2a40/en",
+        "job_employer_email": "",
+        "job_employer_name": "Reetta Utriainen",
+        "job_employer_phone_no": "050 554 7077",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/dish-custodian-helsinki-8f775908",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:33:35",
+        "open_positions": 1,
+        "salary_range": "* Palkkauksen kokemuksesi ja TES mukaan: 11,97-13,00€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Be happy Oy is hiring a Dish Custodian in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Dish custodians are needed for gig work in the capital region, specifically in Helsinki. Responsibilities include washing dishes, kitchen utensils, and other accessories, as well as maintaining cleanliness and order at the counter. Applicants should have previous experience in dish maintenance and washing, a proactive approach to work, the ability to work efficiently even in a rush, and flexibility for gig work. Opportunities are available in several locations, with a salary ranging from €11.97 to €13.00 per hour based on experience. The role offers a dynamic and international work environment, as well as the chance to gain valuable experience in the restaurant industry. For more information or to apply, contact Reetta Utriainen at 050 554 7077.",
+        "what_we_expect": [
+          "Previous experience in dish maintenance and washing up.",
+          "A brisk and self-initiated approach to work.",
+          "Ability to work efficiently even in a hurry.",
+          "Flexibility and readiness for gig work."
+        ],
+        "job_responsibilities": [
+          "Washing dishes, kitchen utensils and other accessories.",
+          "Taking care of the cleanliness and order of the counter."
+        ],
+        "what_we_offer": [
+          "Gig jobs in several different locations in the capital region (mostly in Helsinki!).",
+          "Opportunities to work a lot during the coming seasons.",
+          "A dynamic and international work environment.",
+          "The opportunity to gain valuable experience in the restaurant industry."
+        ],
+        "search_keywords": "dish custodian gig work capital region Helsinki restaurant kitchen maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "e7de2ae3",
+        "job_id": "family-worker-espoo-e7de2ae3",
+        "processed": true,
+        "title": "Family Worker",
+        "company": "ANNU Group Oy, Helsinki",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Espoo",
+          "Kirkkonummi",
+          "Lohja",
+          "Raasepori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://form.hailer.com/b16e30cd786c08864c524f1ae1d8ac9a",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/133cd4f5-1e32-4ccd-b9b1-a6a2924da70c/en",
+        "job_employer_email": "iida@annu.fi",
+        "job_employer_name": "Iida Laaksonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-worker-espoo-e7de2ae3",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:33:35",
+        "open_positions": 1,
+        "salary_range": "According to the collective agreement in the private social sector G26 (18.86e-21.29e)",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "ANNU Group Oy, Helsinki is hiring a Family Worker in Espoo. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking enthusiastic, development-oriented, and committed family workers for ANNU social services in Espoo, Kirkkonummi, Lohja, and Raasepori. Join a company founded on Valentine's Day 2023, led by professionals in the social welfare sector, offering versatile and rewarding social services for families with children, young people, and adults across Finland. We value responsibility, independence, and goal-oriented individuals with strong experience in family work. A social, health, or education degree is required, and a driver's license and personal car are recommended. Flexible work schedules allow you to combine work and free time as desired. Apply through the link or email iida@annu.fi soon, as the position will be filled as soon as suitable candidates are found.",
+        "what_we_expect": [
+          "Responsibility.",
+          "Ability to work independently.",
+          "Goal-oriented.",
+          "Strong experience in family work.",
+          "Areas of professional expertise."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Versatile and inspiring work.",
+          "Opportunity to influence work schedule.",
+          "Flexibility in combining work and free time.",
+          "Use of own car recommended.",
+          "Remote connection possible during recruitment."
+        ],
+        "search_keywords": "family worker social care services Espoo Kirkkonummi Lohja Raasepori",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "48bf962b",
+        "job_id": "personal-assistant-pori-48bf962b",
+        "processed": true,
+        "title": "Personal Assistant",
+        "company": "JAG Assistans Ab - Finland",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://emp.jobylon.com/applications/jobs/307386/create/?utm_source=molfi&utm_medium=promotionserializer",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0e0fb456-0687-4cb8-a128-9350435f883e/en",
+        "job_employer_email": "info@jagassistans.fi",
+        "job_employer_name": "Merja Hellbom",
+        "job_employer_phone_no": "+358405804051",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/personal-assistant-pori-48bf962b",
+        "date_posted": "2026-11-17",
+        "date_expires": "2027-05-15",
+        "scraped_at": "2026-11-18 12:33:35",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "JAG Assistans Ab - Finland is looking for a Personal Assistant in Pori. Don't miss this opportunity — apply today.",
+        "description": "JAG Assistans Ab in Pori is seeking a Finnish-speaking, lively, and positive personal assistant for a permanent, full-time position. The role involves assisting with transitions, hygiene, and cleaning the house, requiring good physical condition and social skills. Work hours are 9 hours per day, divided into four visits, from 5:30 to 7:30, 9:45 to 12:30, 13:45 to 16:30, and 19:15 to 20:45, totaling 0 to 20 hours per week. A valid criminal record extract is required. Interested candidates should apply immediately via the provided link. Your employer, JAG Assistans Oy, is a non-profit company dedicated to personal assistance for individuals with functional limitations, emphasizing equality and self-determination.",
+        "what_we_expect": [
+          "Good physical condition.",
+          "Talkativeness.",
+          "Social skills.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Help with transitions.",
+          "Assist with hygiene.",
+          "Clean the house."
+        ],
+        "what_we_offer": [
+          "Valid criminal record extract required."
+        ],
+        "search_keywords": "personal assistant, social care, assistance, hygiene, cleaning",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:33:40",
+    "jobs": [
+      {
+        "id": "95aa1057",
+        "job_id": "part-time-cleaner-mänttä-vilppula-95aa1057",
+        "processed": true,
+        "title": "Part-time Cleaner",
+        "company": "ISS Palvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Mänttä-Vilppula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://web103.reachmee.com/ext/I021/1907/main?site=9&validator=2f66ed9ad5d76e85e51c822409f63b1c&lang=FI&rmpage=apply&rmjob=6450&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c7d8d036-2765-4148-81f3-977c16e0283f/en",
+        "job_employer_email": "rekrytointi@iss.fi",
+        "job_employer_name": "ISS Palvelut",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/part-time-cleaner-mänttä-vilppula-95aa1057",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-18 12:33:40",
+        "open_positions": 1,
+        "salary_range": "salary will be paid correctly and on time",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join ISS Palvelut Oy as a Part-time Cleaner and grow your career in Mänttä-Vilppula. Check the job details and apply now.",
+        "description": "We are seeking a motivated part-time cleaner for an industrial site in Mänttä, Finland. The role involves maintenance cleaning at our industrial client, with a working schedule of weekdays from 6:00 a.m. to 6:00 p.m., totaling 3.5 hours per day. The employment is permanent and part-time (17.5 hours per week), with the possibility of additional hours based on need. The position is paid according to wage group 3 of the collective agreement of the Real Estate Service Industry (€13.22/hour). ISS offers a place where you can grow, a diverse and inclusive work community, a stable and reliable workplace, high-quality occupational health care, safe working conditions, and sports and cultural benefits.",
+        "what_we_expect": [
+          "Motivation and a good attitude towards the cleaning service industry!",
+          "At least moderate Finnish language skills.",
+          "Independent, accurate and self-initiated approach to work and good physical condition.",
+          "Excellent service attitude."
+        ],
+        "job_responsibilities": [
+          "Maintenance cleaning at our industrial client located in Mänttä."
+        ],
+        "what_we_offer": [
+          "A place where you can grow.",
+          "A work community where we value diversity.",
+          "A stable and reliable workplace.",
+          "High-quality occupational health care services and occupational well-being programs.",
+          "Safe working conditions.",
+          "Sports and cultural benefits for your free time."
+        ],
+        "search_keywords": "cleaner part-time industrial maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "147deed9",
+        "job_id": "business-controller-oulu-147deed9",
+        "processed": true,
+        "title": "Business Controller",
+        "company": "Suomen Kuntolat Oy, Oulu",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://xn--typaikat-o4a.kuntolat.fi/jobs/8753574-business-controller-oulu-kemi-tampere-tai-helsinki/applications/new?promotion=2299869-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/8b506397-b657-431a-a64b-5d05a0e7369b/en",
+        "job_employer_email": "mirva.saarela@kuntolat.fi",
+        "job_employer_name": "Mirva Saarela",
+        "job_employer_phone_no": "+358503251496",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/business-controller-oulu-147deed9",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:33:40",
+        "open_positions": 1,
+        "salary_range": "salary Additional information For more informat",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Business Controller at Suomen Kuntolat Oy, Oulu. Great opportunity in Oulu — apply now.",
+        "description": "We are seeking a Business Controller to join Suomen Kuntolat Oy in Oulu, Kemi, Tampere, or Helsinki. As a key member of our growing group, you will be responsible for budgeting and forecasts, financial statement reporting, and business profitability analysis. You will support management decision-making, prepare cash flow and investment calculations, and participate in business transactions and due diligence processes. A suitable university degree, experience in Business Controller tasks, and strong analytical skills are required. This role offers a versatile and responsible position, the opportunity to participate in business development, and competitive salary and personnel benefits. For more information, contact CEO Anu.",
+        "what_we_expect": [
+          "A suitable university degree, e.g. M.Sc., trade economics (AMK / YAMK) or DI (production economics).",
+          "Solid experience in Business Controller tasks or similar financial expert tasks.",
+          "Experience in budgeting, forecasting and financial monitoring of business operations.",
+          "Practical experience in business acquisitions, due diligence processes or other tasks related to business arrangements.",
+          "Analytical, solution-oriented and self-directed approach to work as well as good cooperation and interaction skills.",
+          "The ability to perceive broad entities and produce clear, decision-supporting information."
+        ],
+        "job_responsibilities": [
+          "Responsible for budgeting and forecasts in the entire group.",
+          "Analyzing monthly and financial statement reporting.",
+          "Monitoring and developing business profitability.",
+          "Supporting management decision-making by means of financial analyses.",
+          "Preparing cash flow and investment calculations.",
+          "Participating in possible business transactions, due diligence processes and integrations."
+        ],
+        "what_we_offer": [
+          "Versatile and responsible position in a growing group.",
+          "The opportunity to participate in business development and corporate restructuring.",
+          "A vantage point for managing the group's finances.",
+          "Good advancement opportunities.",
+          "The support of a competent work community and management.",
+          "Personnel benefits, such as ePass and comprehensive leisure accident insurance."
+        ],
+        "search_keywords": "business controller accounting finance budgeting forecasting financial analysis",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "f2106c15",
+        "job_id": "tool-maker-tampere-f2106c15",
+        "processed": true,
+        "title": "Tool Maker",
+        "company": "Apuvoima Pirkanmaa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://apuvoima.likeit.fi/apply/14611084",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7bfd7fa0-49ee-4e0a-9fed-60579be6a0af/en",
+        "job_employer_email": "roope.oksanen@apuvoima.com",
+        "job_employer_name": "Roope Oksanen",
+        "job_employer_phone_no": "0400 740 818",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/tool-maker-tampere-f2106c15",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:33:40",
+        "open_positions": 1,
+        "salary_range": "salary according to your experience and skills",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Tool Maker at Apuvoima Pirkanmaa Oy. Great opportunity in Tampere — apply now.",
+        "description": "We are seeking a tool maker for TT-Gaskets in Tampere for a permanent position. The role involves maintenance and manufacture of press tools, working with both manual and semi-automatic lathes and milling machines. Precise geometry and measurement are crucial, requiring an understanding of metal behavior and heat treatment. The task also includes the manufacture of production sets, with opportunities for developing and improving working methods. Applicants should have suitable education and work experience, good ability to read pictures and use measuring instruments, and the ability to work precisely within small tolerances. CNC knowledge is advantageous.",
+        "what_we_expect": [
+          "Suitable education and work experience.",
+          "Good ability to read pictures and use measuring instruments.",
+          "Desire to develop and improve working methods.",
+          "Ability to work very precisely within small tolerances.",
+          "Understanding of heat treatment, piercing tools and cutting clearances.",
+          "Strong technical reasoning ability."
+        ],
+        "job_responsibilities": [
+          "Maintenance and manufacture of press tools.",
+          "Work with both manual and semi-automatic lathes and milling machines.",
+          "Manufacture of production sets."
+        ],
+        "what_we_offer": [
+          "In the interesting tasks of a permanent employment relationship.",
+          "Modern offices and high-quality tools.",
+          "The opportunity to develop your own skills.",
+          "An inspiring work community in the value world of a family business."
+        ],
+        "search_keywords": "tool maker manufacturing press tools lathes milling machines",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "724093cd",
+        "job_id": "cafe-fast-food-worker-kokkola-724093cd",
+        "processed": true,
+        "title": "Cafe-Fast Food Worker",
+        "company": "Pohjanmaan Asemat Oy, St1 Vitsari Kahvio",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Kokkola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://helmisimpukka.fi/rekry",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d35def3f-ca10-4a83-a69b-8317759da384/en",
+        "job_employer_email": "hr@pohjanmaanasemat.fi",
+        "job_employer_name": "Jani Ukkonen",
+        "job_employer_phone_no": "0407557336",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/cafe-fast-food-worker-kokkola-724093cd",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:33:40",
+        "open_positions": 1,
+        "salary_range": "Riippuen työkokemuksesta alalla. Marava Tes Alkaen 12,21€/h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Pohjanmaan Asemat Oy, St1 Vitsari Kahvio as a Cafe-Fast Food Worker and grow your career in Kokkola. Check the job details and apply now.",
+        "description": "We are seeking enthusiastic and self-motivated individuals to join our team at St1 Vitsari Kahvio in Kokkola as cafe-fast food workers. Responsibilities include making pizzas, preparing fast food, handling cashier duties, maintaining cleanliness, and ensuring the adequacy of cafeteria products. Ideal candidates will have a sunny and flexible attitude, be willing to serve, and be fluent in Finnish. Previous experience in traffic station restaurants or customer service roles is advantageous but not required. If you are eager to learn and thrive in a brisk and cheerful environment, apply now for a permanent, full-time position starting at 12.21€/h.",
+        "what_we_expect": [
+          "Self-initiative.",
+          "Willing to serve.",
+          "Right attitude.",
+          "Sunny and flexible attitude.",
+          "Knowledge of the Finnish language.",
+          "Eagerness to learn new things."
+        ],
+        "job_responsibilities": [
+          "Making pizzas.",
+          "Preparing various fast food products.",
+          "Cashier work.",
+          "Taking care of cleanliness.",
+          "Taking care of the adequacy of cafeteria products."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "cafe fast food worker restaurant food service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "619ff5ca",
+        "job_id": "b2b-seller-for-housing-associations-jyväskylä-619ff5ca",
+        "processed": true,
+        "title": "B2B Seller for Housing Associations",
+        "company": "Rainmaker",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.rainmaker.fi/jobs/8756333-liity-osaksi-kasvavaa-b2b-tiimiamme-jyvaskylaan/applications/new?promotion=2299965-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5f17a543-0b6a-494c-9448-736f35c5b2b6/en",
+        "job_employer_email": "tanja.myllyla@rainmakercx.fi",
+        "job_employer_name": "Tanja Myllylä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/b2b-seller-for-housing-associations-jyväskylä-619ff5ca",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:33:40",
+        "open_positions": 1,
+        "salary_range": "Palkka 3465-4800 €/kk, toteutunut palkka muodostuu pohjatuntipalkasta 13,5 €/h + myyntiprovisiosta.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Rainmaker is looking for a B2B Seller for Housing Associations in Jyväskylä. Don't miss this opportunity — apply today.",
+        "description": "Join Rainmaker's dynamic B2B team in Jyväskylä as a B2B Seller for Housing Associations. This full-time, permanent position offers the chance to develop your sales skills in a growing company. Key responsibilities include field sales, phone and email communication, attending housing association meetings, and negotiating contracts. Requirements include strong sales motivation, previous sales experience, comfort with face-to-face interactions, and a positive, self-driven attitude. Enjoy a comprehensive orientation, continuous support, and a motivated team. Base salary is 13.5 €/h with an incentive commission, totaling an average of 22 €/h. Kilometer allowances and per diems are provided. Apply directly for this versatile sales role with opportunities for growth.",
+        "what_we_expect": [
+          "Strong motivation towards sales.",
+          "Previous goal-oriented sales experience is an advantage.",
+          "Comfortable with face-to-face sales.",
+          "Independent, self-initiated and responsible approach to work.",
+          "Positive can-do attitude.",
+          "Good interaction skills and readiness to perform."
+        ],
+        "job_responsibilities": [
+          "Finalize contracts."
+        ],
+        "what_we_offer": [
+          "A versatile sales job with the opportunity to develop and grow also in-house.",
+          "Base salary (13.5 €/h) and incentive commission salary - average hourly earnings for building company salespeople 22 €/h.",
+          "Comprehensive orientation and continuous support for success at work.",
+          "A motivated and great team.",
+          "Kilometer allowances and per diems.",
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "B2B seller housing associations sales Jyväskylä",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:33:42",
+    "jobs": [
+      {
+        "id": "68002264",
+        "job_id": "dentist-kaarina-68002264",
+        "processed": true,
+        "title": "Dentist",
+        "company": "Varsinais-Suomen hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Kaarina"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/VARHA-03-689-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/367f0d71-2696-49e5-8918-a35105dc1b1c/en",
+        "job_employer_email": "elena.norkonvuo@varha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/dentist-kaarina-68002264",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:33:42",
+        "open_positions": 1,
+        "salary_range": "Uraporraspalkkauksen mukaan. Alin tehtäväkohtainen uraporraspalkka 4848,62 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Varsinais-Suomen hyvinvointialue is hiring a Dentist in Kaarina. Explore the job responsibilities, benefits, and apply today.",
+        "description": "As a dentist at Varsinais-Suomen hyvinvointialue in Kaarina, you will provide versatile basic dental care for patients of all ages across three clinics in the area. Working in a multi-professional oral healthcare community, you will utilize your skills in various treatment situations. The main health center in Kaarina has 13 treatment rooms, while clinics in Piikkiö and Littoinen have five and four treatment rooms respectively. You will be part of a group of over 700 oral healthcare professionals, collaborating with different specialists and engaging in diverse tasks. The position requires an active and self-initiated approach, good communication skills, and a willingness to develop your skills and adapt to changing situations.",
+        "what_we_expect": [
+          "Have an active and self-initiated approach to work.",
+          "Good communication skills.",
+          "Interest in developing own skills and ways of working.",
+          "Comfortable around different people.",
+          "Approach changing situations flexibly.",
+          "Enthusiasm for learning new things."
+        ],
+        "job_responsibilities": [
+          "Provide versatile basic dental care for patients of all ages."
+        ],
+        "what_we_offer": [
+          "Participation in the activities and tasks of the entire Varha area in oral health care.",
+          "Collaboration with different professionals.",
+          "Versatile and varied work."
+        ],
+        "search_keywords": "dentist dental care oral health care Kaarina",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "bf3247fc",
+        "job_id": "network-manager-hyvinkää-bf3247fc",
+        "processed": true,
+        "title": "Network Manager",
+        "company": "Hyvinkään kaupunki",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Hyvinkää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/751402/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a4e94f5b-46c3-490d-9b19-59174f466adf/en",
+        "job_employer_email": "paivi.kopra@hyvinkaa.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/network-manager-hyvinkää-bf3247fc",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-14",
+        "scraped_at": "2026-11-18 12:33:42",
+        "open_positions": 1,
+        "salary_range": "salary expectations via www",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Network Manager at Hyvinkään kaupunki in Hyvinkää. Check the requirements and apply today.",
+        "description": "Network Manager at Hyvinkää Vesi seeks a professional with extensive knowledge of water supply networks and experience in project management and leakage management. Responsibilities include preparing the unit's budget and financial monitoring, personnel management, and developing maintenance, leakage management, and network modeling. Ideal candidates will have a suitable university degree, good leadership skills, and a proactive approach. Join a developing and encouraging work environment at Hyvinkää Vesi, where you can collaborate with competent professionals. Applications, resumes, and salary expectations can be submitted via www.kuntarekry.fi by 14.12.2026.",
+        "what_we_expect": [
+          "Extensive knowledge of water supply networks.",
+          "Experience in project management and network leakage management and understanding of network modeling.",
+          "Good leadership, teamwork and interaction skills.",
+          "A suitable university degree."
+        ],
+        "job_responsibilities": [
+          "Preparation of the unit's budget and financial monitoring.",
+          "Personnel management of the unit.",
+          "Development of maintenance and upkeep of water supply networks.",
+          "Development of leakage management and network modeling of water supply networks."
+        ],
+        "what_we_offer": [
+          "The opportunity to work with competent professionals in a developing and encouraging work environment."
+        ],
+        "search_keywords": "network manager water supply maintenance leakage management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "f72fc18c",
+        "job_id": "project-manager-turku-f72fc18c",
+        "processed": true,
+        "title": "Project Manager",
+        "company": "Eltel Networks Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://eltelnetworks.rekrytointi.com/paikat/index.php?o=A_A&jid=1672&jbid=15",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a713b358-9b7c-40c9-a791-0a8c71f2b5d5/en",
+        "job_employer_email": "teemu.kukkonen@eltelnetworks.com",
+        "job_employer_name": "Teemu Kukkonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/project-manager-turku-f72fc18c",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-18",
+        "scraped_at": "2026-11-18 12:33:42",
+        "open_positions": 1,
+        "salary_range": "salary expectations to the application",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Eltel Networks Oy as a Project Manager in Turku. Learn more about the role and apply now.",
+        "description": "Eltel Networks Oy is seeking a Project Manager for a permanent position in Turku, working within the distribution network team. The role involves work control, resourcing, documentation, scheduling, management, financial profitability, and cooperation with subcontractors and customers, while also addressing safety and environmental issues. Candidates should have an electrical engineering degree or equivalent experience, good IT skills, and excellent written and oral Finnish language skills. An active, positively strong individual with a customer-oriented mindset, interaction and negotiation skills, and result-responsible thinking is ideal.",
+        "what_we_expect": [
+          "Good IT skills.",
+          "Good written and oral Finnish language skills.",
+          "An active and positively strong person with a strong desire to achieve results in projects.",
+          "Interaction and negotiation skills.",
+          "The ability to see things through.",
+          "Result-responsible thinking."
+        ],
+        "job_responsibilities": [
+          "Responsible for work control, resourcing, documentation, schedules, management, financial profitability and cooperation with subcontractors and the customer.",
+          "Responsible for safety and environmental issues."
+        ],
+        "what_we_offer": [
+          "A versatile service offering with a large group of skilled colleagues.",
+          "Support for professional growth right from orientation.",
+          "Modern equipment, functional software and system support for work.",
+          "A work community where we care and work together stronger.",
+          "Personnel benefits including ePass lunch and Flex benefit."
+        ],
+        "search_keywords": "project manager electrical engineering distribution network construction maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
   }
 ]
