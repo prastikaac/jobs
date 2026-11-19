@@ -472453,6 +472453,1287 @@
         "search_keywords": "warehouse worker logistics Rauma",
         "display_mode": "fallback",
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      },
+      {
+        "id": "d5f8aa07",
+        "job_id": "industrial-painter-ilmajoki-d5f8aa07",
+        "processed": true,
+        "title": "Industrial Painter",
+        "company": "Henkilöstöpalvelut Duuri-tiimi Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Ilmajoki",
+          "Kauhava",
+          "Kuortane",
+          "Kurikka",
+          "Lapua",
+          "Seinäjoki",
+          "Isokyrö"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://duuritiimi.likeit.fi/apply/6410919",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5842793e-0c6e-4331-8c26-507199b56143/en",
+        "job_employer_email": "konttori@duuritiimi.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/industrial-painter-ilmajoki-d5f8aa07",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:34:16",
+        "open_positions": 1,
+        "salary_range": "Tässä tehtävässä pääset tekemään monipuolisesti töitä metallialan yrityksessä. Odotamme sinulta aikaisempaa kokemusta teollisuusmaalarin töistä, sekä reipasta ja oma-aloitteista otetta työntekoon. Palkka on 15-20 € / h, riippuen kokemuksestasi.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Industrial Painter at Henkilöstöpalvelut Duuri-tiimi Oy. Great opportunity in Ilmajoki — apply now.",
+        "description": "Industrial painter positions are available in Seinäjoki, offering full-time and permanent employment. You will work in a variety of ways in a metal industry company, requiring previous experience as an industrial painter and a proactive approach to work. Salaries range from 15-20 €/h, depending on your experience. Employees enjoy benefits such as Epass. Apply via the attached link or contact us at 0449093647 for a job interview. Join the Duuri team and bring more Duuri to working life.",
+        "what_we_expect": [
+          "Previous experience in the work of an industrial painter.",
+          "A brisk and self-initiated approach to work."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Epass."
+        ],
+        "search_keywords": "industrial painter manufacturing production permanent job",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      },
+      {
+        "id": "48a82404",
+        "job_id": "construction-assistant-askola-48a82404",
+        "processed": true,
+        "title": "Construction Assistant",
+        "company": "Wulff Works Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Askola",
+          "Loviisa",
+          "Porvoo",
+          "Sipoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/62874615",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9d84296a-f820-49ab-8ddd-f8c4ff6752ff/en",
+        "job_employer_email": "taru.oksanen@wulff.fi",
+        "job_employer_name": "Taru Oksanen",
+        "job_employer_phone_no": "0505625529",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-assistant-askola-48a82404",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-18 12:34:16",
+        "open_positions": 1,
+        "salary_range": "Palkkaus: 15,50€ - 17,50€ /h",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Construction Assistant at Wulff Works Oy in Askola. Apply now and take the next step in your career.",
+        "description": "Construction assistant positions are available in Porvoo for versatile roof maintenance, painting, and general work tasks. Responsibilities include performing roof inspections, cleaning gutters, washing and painting surfaces, and removing snow in winter. Ideal candidates are fluent in Finnish, possess a work safety card, and are comfortable working at heights. A self-starter attitude and a commitment to high-quality work are essential. Benefits include varied working days in different locations, opportunities to develop skills, a supportive work community, and a salary ranging from €15.50 to €17.50 per hour, aligned with the Construction Industry TES. Apply now to join a dynamic team where your efforts are visible and appreciated.",
+        "what_we_expect": [
+          "Fluent Finnish language.",
+          "Work safety card.",
+          "Self-starter attitude.",
+          "Ability to work safely at heights.",
+          "Willingness to work carefully and with high quality."
+        ],
+        "job_responsibilities": [
+          "Perform roof inspections.",
+          "Clean gutters.",
+          "Wash and paint work.",
+          "Remove snow in winter."
+        ],
+        "what_we_offer": [
+          "Varying working days in different locations.",
+          "Opportunity to develop skills alongside industry professionals.",
+          "Nice and encouraging work community.",
+          "Concrete results of work visible.",
+          "Salary in accordance with the Construction Industry TES and according to experience."
+        ],
+        "search_keywords": "construction assistant roof maintenance painting maintenance tasks",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:22",
+    "jobs": [
+      {
+        "id": "fd1c6bdc",
+        "job_id": "leading-water-management-expert-kouvola-fd1c6bdc",
+        "processed": true,
+        "title": "Leading Water Management Expert",
+        "company": "Kaakkois-Suomen elinvoimakeskus",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Kouvola",
+          "Lappeenranta",
+          "Lahti",
+          "Helsinki",
+          "Turku",
+          "Pori",
+          "Jyväskylä",
+          "Kuopio",
+          "Mikkeli",
+          "Joensuu",
+          "Seinäjoki",
+          "Vaasa",
+          "Kokkola",
+          "Oulu",
+          "Kajaani",
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://valtiolle.fi/tyoavain/26565/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/042d5e28-38a6-4616-afb5-4633a9f7389c/en",
+        "job_employer_email": "jyrki.lammila@elinvoimakeskus.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/leading-water-management-expert-kouvola-fd1c6bdc",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-18 12:34:22",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Kaakkois-Suomen elinvoimakeskus as a Leading Water Management Expert in Kouvola. Learn more about the role and apply now.",
+        "description": "In this full-time, permanent role as a Leading Water Management Expert at Kaakkois-Suomen elinvoimakeskus, you will act as a national responsibility expert for the development of control and control procedures for municipalities' water supply tasks. You will participate in the development of financial control of water supply and related operating models, and monitor and promote water supply in the roles of expert, solver, and presenter. The position offers a tehtäväkohtainen palkka of 4333,69 euroa/kk, with an additional 5-45% personal performance-based pay. Reliability, professionalism, teamwork, and a willingness to learn are essential.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Act as a national responsibility expert for the development of control and control procedures for municipalities' water supply tasks.",
+          "Participate in the development of financial control of water supply and related operating models.",
+          "Monitor and promote water supply in the roles of expert, solver and presenter."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "water management engineering Finland municipalities",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "57519276",
+        "job_id": "early-childhood-education-teacher-kuopio-57519276",
+        "processed": true,
+        "title": "Early Childhood Education Teacher",
+        "company": "Touhula Leinikki",
+        "job_category": "education",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/varhaiskasvatuksen-opettaja/ZY5W9r",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/87dd5487-ee61-4fee-b318-62cbc7e8471b/en",
+        "job_employer_email": "henna.lievonen@touhula.fi",
+        "job_employer_name": "Henna Lievonen",
+        "job_employer_phone_no": "+358103258861",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-kuopio-57519276",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:34:22",
+        "open_positions": 1,
+        "salary_range": "Tarjoamme varhaiskasvatuksen opettajalle kilpailukykyisen palkan, joka kokoaikaisella työntekijällä sijoittuu välille 2 792,02 – 3 293,23 €/kk. Lopullinen palkka määräytyy työkokemusvuosien sekä mahdollisen erityisosaamiseen perustuvan henkilökohtaisen palkanlisän mukaan. Voimme haastattelutilanteessa keskustella erityisosaamisesi huomioimisesta ja palkan tarkemmasta sijoittumisesta palkkahaitariin.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Touhula Leinikki as a Early Childhood Education Teacher in Kuopio. Learn more about the role and apply now.",
+        "description": "We are seeking an Early Childhood Education Teacher to join Touhula Leinikki in Kuopio, a daycare center committed to creating a happy childhood and a positive working environment. As a pedagogical leader, you will manage your team's everyday activities, plan and evaluate support measures for children, and foster a positive emotional atmosphere. With a focus on nature and environmental education, you will work closely with multiprofessional networks and be responsible for high-quality customer communication. Strong interaction skills, a sensitive approach, and the ability to work individually with children and families are essential. Excitement about nature and a willingness to contribute to high-quality early childhood education are key. Fluency in English and Finnish is required.",
+        "what_we_expect": [
+          "Strong interaction skills.",
+          "A sensitive work approach.",
+          "The ability to deal with children and families individually.",
+          "Excitement about nature and environmental education.",
+          "A willingness to participate in building high-quality early childhood education and lead pedagogical activities."
+        ],
+        "job_responsibilities": [
+          "Pedagogical management of the team's everyday pedagogy, small group activities and building versatile and safe learning environments.",
+          "Planning and evaluating support measures for children in cooperation with multiprofessional networks.",
+          "Responsibility for the team's high-quality customer communication and creating a positive emotional atmosphere."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "early childhood education teacher daycare center pedagogical management teamwork",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "591803e8",
+        "job_id": "production-employee-haapajärvi-591803e8",
+        "processed": true,
+        "title": "Production Employee",
+        "company": "Haapajärven Ha-Sa Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Haapajärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/tuotantotyontekija-haapajarven-ha-sa-oy/Dokqvr",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d9102a43-beb6-4901-b7fd-b90561484449/en",
+        "job_employer_email": "anita.haapoja@bondata.fi",
+        "job_employer_name": "Marjo Rautaoja",
+        "job_employer_phone_no": "0400182668",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/production-employee-haapajärvi-591803e8",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-12",
+        "scraped_at": "2026-11-18 12:34:22",
+        "open_positions": 1,
+        "salary_range": "Salary Local collective agreement HASA has seve",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Haapajärven Ha-Sa Oy as a Production Employee and grow your career in Haapajärvi. Check the job details and apply now.",
+        "description": "Production worker needed at Haapajärvi Ha-Sa Oy in Haapajärvi for a permanent, full-time position. Responsibilities include versatile tasks in manufacturing stages and sawn timber quality control. Required skills are a careful and precise work attitude, basic IT skills, good physical condition, willingness to work three shifts, and commitment to safety practices. The role offers a long-term employment relationship and incentive remuneration based on competence. Apply via the provided link.",
+        "what_we_expect": [
+          "Careful, precise and self-initiated approach to work.",
+          "Mastery of basic IT skills.",
+          "Good physical condition.",
+          "Willingness to work three shifts.",
+          "Commitment to safety practices and rules."
+        ],
+        "job_responsibilities": [
+          "Work in versatile tasks in different stages of manufacturing.",
+          "Perform sawn timber quality control."
+        ],
+        "what_we_offer": [
+          "The possibility of a long-term employment relationship.",
+          "Incentive remuneration commensurate with competence."
+        ],
+        "search_keywords": "production employee sawmill industry employment relationship",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "3f72f812",
+        "job_id": "early-childhood-education-teacher-tampere-3f72f812",
+        "processed": true,
+        "title": "Early Childhood Education Teacher",
+        "company": "Touhula Hervannan Kampus",
+        "job_category": "education",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/varhaiskasvatuksen-opettaja/m6rpN7",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/59885c0b-9c2c-4242-b440-c35dff82c6af/en",
+        "job_employer_email": "hilla.ollila@touhula.fi",
+        "job_employer_name": "Hilla Ollila",
+        "job_employer_phone_no": "+358103258605",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-tampere-3f72f812",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-18 12:34:22",
+        "open_positions": 1,
+        "salary_range": "Tarjoamme varhaiskasvatuksen opettajalle kilpailukykyisen palkan, joka kokoaikaisella työntekijällä sijoittuu välille 2792,02-3343,23 €/kk. Lopullinen palkka määräytyy työkokemusvuosien sekä mahdollisen erityisosaamiseen perustuvan henkilökohtaisen palkanlisän mukaan. Voimme haastattelutilanteessa keskustella erityisosaamisesi huomioimisesta ja palkan tarkemmasta sijoittumisesta palkkahaitariin.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Early Childhood Education Teacher at Touhula Hervannan Kampus. Great opportunity in Tampere — apply now.",
+        "description": "We are seeking an early childhood education teacher for Touhula Hervannan Kampus in Tampere, where warm encounters, strong pedagogy, and the joy of learning go hand in hand. As a pedagogical leader, you will plan activities and foster a high-quality construction process, with a focus on music and sports education, individual child support, and language development. You will collaborate with families and contribute to a community that values creativity, humor, and shared success. If you are passionate about early childhood education and eager to join a warm and professional environment, we would love to hear from you.",
+        "what_we_expect": [
+          "An interest in music and sports education.",
+          "Expertise in taking into account the needs of children's individual support.",
+          "An ability to support children's language development.",
+          "A willingness to make meaningful cooperation with different families."
+        ],
+        "job_responsibilities": [
+          "You are the pedagogical leader of your team and an inspiring enabler.",
+          "You are responsible for the planning of your group's activities and the high-quality construction process."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "early childhood education teacher daycare center pedagogy teamwork",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "8d687a17",
+        "job_id": "waiter-rovaniemi-8d687a17",
+        "processed": true,
+        "title": "Waiter",
+        "company": "Barona HoReCa Oy",
+        "job_category": "hospitality-and-tourism",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/tarjoilija-lapland-hotels-bear-s-lodge-rovaniemi-lapland-hotels-lappi-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/570b5420-c6a2-46dc-9330-4193ae9e48bb/en",
+        "job_employer_email": "susanna.pohjanen@barona.fi",
+        "job_employer_name": "Susanna Pohjanen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/hospitality-and-tourism/waiter-rovaniemi-8d687a17",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-18",
+        "scraped_at": "2026-11-18 12:34:22",
+        "open_positions": 1,
+        "salary_range": "salary according to your experience, at least i",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Waiter at Barona HoReCa Oy. Great opportunity in Rovaniemi — apply now.",
+        "description": "We are seeking a professional waiter for Lapland Hotels Bear's Lodge in Rovaniemi for the winter season 2026-2027. This role offers versatile and responsible work, the chance to develop skills in the hotel and restaurant industry, and a professional working community. The position starts on November 28, 2026, and lasts until March 15, 2027, with full hours of 112.5 hours over 3 weeks. Requirements include an excellent customer-oriented service attitude, good communication skills, education in the field, good pressure tolerance, fluent English, and a drinking pass. Apply to join the Lapland Hotels Bear's Lodge winter season team and spend the season in Rovaniemi!",
+        "what_we_expect": [
+          "Excellent and customer-oriented service attitude.",
+          "Good communication skills and situational awareness.",
+          "Education in the field and/or previous experience in similar tasks.",
+          "Good pressure tolerance and the ability to maintain a positive service attitude even in a hurry.",
+          "Fluent English language skills.",
+          "Drinking pass."
+        ],
+        "job_responsibilities": [
+          "Education in the field and/or previous experience in similar tasks."
+        ],
+        "what_we_offer": [
+          "Versatile and responsible work during the winter season.",
+          "The opportunity to develop your skills in the hotel and restaurant industry.",
+          "A professional working community.",
+          "Barona and Lapland Hotels staff benefits.",
+          "The possibility of accommodation in Rovaniemi.",
+          "Salary according to your experience, at least in accordance with MaRa TES."
+        ],
+        "search_keywords": "waiter winter season Rovaniemi hospitality",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:24",
+    "jobs": [
+      {
+        "id": "95b184f2",
+        "job_id": "chef-pieksämäki-95b184f2",
+        "processed": true,
+        "title": "Chef",
+        "company": "Leijona Catering Oy",
+        "job_category": "food-and-restaurant",
+        "jobLocation": [
+          "Pieksämäki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://staffpoint.talentadore.com/apply/kokki-leijona-catering-naarajarven-vankila-pieksamaki/ZN567L",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c610b033-1e78-480b-9a17-ba5b0d74f296/en",
+        "job_employer_email": "jaana.nikkanen@staffpoint.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0447866103",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/food-and-restaurant/chef-pieksämäki-95b184f2",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:34:24",
+        "open_positions": 1,
+        "salary_range": "Palkka on MaRa TES:n palkkaryhmän 3 mukaan (12,97-14,33 €/h). Huomioimme palkkauksessa aikaisemman kokemuksesi ja osaamisesi, joten palkka määräytyy henkilökohtaisen ammattitaitosi perusteella. Työ alkaa heti hyväksytyn turvallisuusselvityksen valmistuttua.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Chef at Leijona Catering Oy. Great opportunity in Pieksämäki — apply now.",
+        "description": "Chef position available at Leijona Catering Oy in Pieksämäki, preparing hot and cold foods, maintaining dishes, and ensuring kitchen cleanliness. Must have cook training, valid hygiene passport, and experience in kitchen work. A proactive, responsible, and cooperative attitude is essential. Fluent Finnish is required, and a security clearance is necessary. Work involves varied shifts from Monday to Sunday, 6:00 a.m. to 5:00 p.m., with a fixed-term employment relationship from December 1, 2026, to January 31, 2027. Salary is MaRa TES salary group 3 (€12.97-14.33/h), adjusted based on personal skills. Work starts after completing the security clearance. Apply via the attached link.",
+        "what_we_expect": [
+          "Cook training or similar skills.",
+          "Valid hygiene passport.",
+          "Experience in kitchen work and an enthusiastic attitude towards learning new things.",
+          "A brisk, responsible and cooperative work style.",
+          "Good Finnish language skills.",
+          "At least 18 years old and ready to do a security clearance."
+        ],
+        "job_responsibilities": [
+          "Preparing hot and cold foods.",
+          "Taking care of dish maintenance.",
+          "Taking care of the smooth operation and cleanliness of the kitchen together with the team."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "chef cooking prison kitchen work",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "869af6c0",
+        "job_id": "digital-growth-marketing-manager-tampere-869af6c0",
+        "processed": true,
+        "title": "Digital Growth Marketing Manager",
+        "company": "Fastems Oy Ab, Tampere",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:teemu.ahonen@fastems.com?subject=Application%20for%20the%20Job%20-%20Digital%20Growth%20Marketing%20Manager&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Digital%20Growth%20Marketing%20Manager.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d41f16dc-f7c5-4985-9523-5adcfc39a63b/en",
+        "job_employer_email": "teemu.ahonen@fastems.com",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/digital-growth-marketing-manager-tampere-869af6c0",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:34:24",
+        "open_positions": 1,
+        "salary_range": "salary request **by November 29th at the latest",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Fastems Oy Ab, Tampere is hiring a Digital Growth Marketing Manager in Tampere. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Digital Growth Marketing Manager at Fastems Oy Ab in Tampere, a global partner for machining manufacturers, seeks a proactive and creative individual to own and continuously develop our lead pipeline in Salesforce Sales Cloud, support localized prospecting activities and marketing automation, take ownership of our new WordPress website, drive demand generation through various digital channels, and lead the development of our marketing AI strategy. This role offers a unique opportunity to work with some of the brightest minds in the industry, contributing to our mission of helping metalworking manufacturers improve productivity and profitability. Requirements include a positive attitude, a collaborative mindset, and a good sense of humor.",
+        "what_we_expect": [
+          "A positive attitude.",
+          "A collaborative mindset.",
+          "A good sense of humour."
+        ],
+        "job_responsibilities": [
+          "Own and continuously develop our lead pipeline in Salesforce Sales Cloud.",
+          "Support localized prospecting activities and develop marketing automation, lead nurturing and customer engagement journeys across Marketing Cloud and Service Cloud.",
+          "Take ownership of our new website built on WordPress and develop it further with our web partner.",
+          "Develop SEO and GEO visibility, digital customer journeys, conversion and analytics.",
+          "Drive demand generation through LinkedIn, Meta, SEO/GEO, SEM, and other digital channels.",
+          "Create, run, measure and optimize campaigns based on collected data."
+        ],
+        "what_we_offer": [
+          "We can offer you.",
+          "Comprehensive employee benefits, such as culture and lunch benefit at the office."
+        ],
+        "search_keywords": "digital marketing, growth marketing, marketing automation, SEO, AI",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "0779b1c5",
+        "job_id": "administrative-assistant-eurajoki-0779b1c5",
+        "processed": true,
+        "title": "Administrative Assistant",
+        "company": "Wiiva Kaluste",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Eurajoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/hallinnon-assistentti/m7lbBr",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/763a9d9e-50d7-416d-aa81-13a99996c821/en",
+        "job_employer_email": "info@talentcenter.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/administrative-assistant-eurajoki-0779b1c5",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:34:24",
+        "open_positions": 1,
+        "salary_range": "salary materials, invoicing and the processing",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Wiiva Kaluste as a Administrative Assistant in Eurajoki. Learn more about the role and apply now.",
+        "description": "We are seeking an experienced administrative assistant to join Wiiva Kaluste in Eurajoki, handling HR and financial administration, internal communication, and company event organization. The ideal candidate will have previous experience in similar roles, be precise, self-motivated, and able to prioritize tasks under pressure. Fluency in Finnish is essential, and a fast learning ability, particularly with new systems like Procountor, Ecom, Kellokort, or Canvas, is advantageous. This versatile position offers the opportunity to influence the company's daily operations and develop administrative procedures in a supportive environment. Submit your application by 30 November 2026 for a competitive hourly wage based on Finnish collective agreements.",
+        "what_we_expect": [
+          "Previous experience in administration, HR or financial management tasks.",
+          "Accuracy.",
+          "Initiative and the ability to prioritize tasks.",
+          "Good pressure tolerance and the ability to keep several things under control at the same time.",
+          "Fast learning ability when it comes to new systems.",
+          "Good communication skills."
+        ],
+        "job_responsibilities": [
+          "Handle the practical matters of HR and financial administration, such as employment documents, salary materials, invoicing and the processing of purchase invoices.",
+          "Internal communication.",
+          "Produce content for the company's LinkedIn.",
+          "Organize company events."
+        ],
+        "what_we_offer": [
+          "A versatile task where you can influence the everyday life of the entire company.",
+          "An independent role and the opportunity to develop administrative procedures.",
+          "Management support.",
+          "A nice working community."
+        ],
+        "search_keywords": "administrative assistant, HR, financial administration, Finnish, Procountor, Ecom, Kellokort, Canvas",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "2a7bb886",
+        "job_id": "house-cleaner-tampere-2a7bb886",
+        "processed": true,
+        "title": "House Cleaner",
+        "company": "Onni",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://rekry.onnion.fi/jobs/8755399-siivoojia-kotisiivoukseen-pirkanmaalle/applications/new?promotion=2299624-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b4ffd2cc-a154-4308-ac52-ddbfbfe3ec08/en",
+        "job_employer_email": "maria.kortelahti@onnion.fi",
+        "job_employer_name": "Maria Kortelahti",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/house-cleaner-tampere-2a7bb886",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-18 12:34:24",
+        "open_positions": 1,
+        "salary_range": "Tarjoamme sinulle merkityksellistä työtä, jossa työn jälki on nähtävissä välittömästi. Onnilaisten mukava tiimi jakaa arjen kanssasi ja toimii tukenasi. Maksamme osaamisestasi ja koulutuksestasi riippuen 12,59–16,10 €/h (Kiinteistöpalvelualan TES).",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a House Cleaner at Onni in Tampere. Check the requirements and apply today.",
+        "description": "Onni is seeking part-time, permanent house cleaners to join our team in Tampere. As a cleaner at Onni, you will contribute to making our customers' lives easier through regular and one-time cleaning, window washing, and office cleaning. We value a friendly and customer-oriented approach, initiative, and responsibility, along with good Finnish language skills and a driver's license for using your own car at work. We offer a competitive hourly rate of €12.59–€16.10/h (Real Estate Services TES) and provide mileage allowance for using your own car. Additional benefits include sickness insurance after 6 months of employment, substantial discounts at Restel restaurants, and very affordable prices for massage. At Onni, we prioritize high-quality work and a positive customer experience.",
+        "what_we_expect": [
+          "Friendly and customer-oriented approach.",
+          "Initiative and responsibility.",
+          "Good Finnish language skills.",
+          "Driver's license and the possibility to use your own car at work."
+        ],
+        "job_responsibilities": [
+          "Regular house cleaning.",
+          "One-time cleaning.",
+          "Window washing.",
+          "Office cleaning."
+        ],
+        "what_we_offer": [
+          "Mileage allowance for using your own car.",
+          "Sickness insurance when you have min. 10 h/week employment contract with us for 6 months.",
+          "Substantial discounts at Restel restaurants.",
+          "Very affordable prices for massage.",
+          "Services at a contract price for an A inspection."
+        ],
+        "search_keywords": "house cleaner cleaning home office window washing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "12f33c2b",
+        "job_id": "simulation-engineer-loimaa-12f33c2b",
+        "processed": true,
+        "title": "Simulation Engineer",
+        "company": "Pemamek Oy, Loimaa",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Loimaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.recright.com/careers/fi/pemamek/simulointi-insinoori-simulation-engineer-6a4f477a40975cfd997ef4ca",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/39773224-e989-461f-8440-6d32177544e4/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/simulation-engineer-loimaa-12f33c2b",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-29",
+        "scraped_at": "2026-11-18 12:34:24",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Pemamek Oy, Loimaa is looking for a Simulation Engineer in Loimaa. Don't miss this opportunity — apply today.",
+        "description": "Pemamek Oy, a leading technology company in the welding automation field, seeks a Simulation Engineer to join our team in Loimaa. As a Simulation Engineer, you will perform 3D modeling and simulation with Visual Components software, conduct capacity calculations, particularly for robotics applications, and support projects in the sales and planning stages by visualizing our welding automation solutions. You will also prepare action descriptions. We are looking for someone with a suitable higher education or nearing the end of their studies, proficient in 3D modeling with Solidworks and the Visual Components environment, and with a basic understanding of programming/scripting and code reading (Python).",
+        "what_we_expect": [
+          "You have a suitable higher education or are in the final stages of your studies.",
+          "You master 3D modeling with Solidworks software and know the Visual Components simulation environment.",
+          "You have a basic understanding of programming/scripting and code reading (Python).",
+          "You understand the formation of costs, especially in connection with the definitions of technical issues.",
+          "You work smoothly both independently and in a team.",
+          "You have good communication skills in both Finnish and English."
+        ],
+        "job_responsibilities": [
+          "You do 3D modeling and simulation with Visual Components software as well as capacity calculations, especially for robotics applications.",
+          "You support projects in the sales and planning stages by visualizing our welding automation solutions.",
+          "You prepare action descriptions."
+        ],
+        "what_we_offer": [
+          "Permanent employment and interesting tasks at a leading technology company in its field.",
+          "A hybrid working model and you can use not only Pemamek's head office but also our offices in Turku and Tampere.",
+          "Work in an international environment surrounded by a nice and supportive team.",
+          "Versatile employment benefits, including Epassi Flex and extensive occupational health services and leisure accident insurance."
+        ],
+        "search_keywords": "simulation engineer 3D modeling robotics welding automation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:25",
+    "jobs": [
+      {
+        "id": "04ddba65",
+        "job_id": "heavy-equipment-installer-toivakka-04ddba65",
+        "processed": true,
+        "title": "Heavy Equipment Installer",
+        "company": "Staffmill Oy, Kuopio",
+        "job_category": "technical-services",
+        "jobLocation": [
+          "Toivakka",
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://staffmill-oy.breezy.hr/p/112048aa0430-raskaan-kaluston-asentaja-jyvaskyla/apply",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2aca88f6-9136-46ab-800e-f8cc3fca200e/en",
+        "job_employer_email": "eeva.ervamaa@staffmill.fi",
+        "job_employer_name": "Eeva Ervamaa",
+        "job_employer_phone_no": "050 336 1868",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/technical-services/heavy-equipment-installer-toivakka-04ddba65",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:34:25",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Staffmill Oy, Kuopio as a Heavy Equipment Installer and grow your career in Toivakka. Check the job details and apply now.",
+        "description": "Staffmill Oy is seeking a professional Heavy Equipment Installer for a full-time, temporary position in Toivakka, Jyväskylä. The role involves installation, maintenance, and repair work for trucks, wheel loaders, and excavators. Key requirements include experience in heavy equipment installations and maintenance, welding skills, valid occupational safety and fire work cards, and a B driver's license. Immediate start is expected, with the possibility of a longer-term employment relationship after a 3–4 month fixed term. Reliable employer and fast phone support are offered. Apply through the provided link as soon as possible.",
+        "what_we_expect": [
+          "Experience in heavy equipment installations and maintenance and renovation work.",
+          "Welding skills.",
+          "Valid occupational safety and fire work cards.",
+          "B driver's license.",
+          "Willingness to start work quickly."
+        ],
+        "job_responsibilities": [
+          "Installation, maintenance and repair work for trucks, wheel loaders and excavators."
+        ],
+        "what_we_offer": [
+          "Opportunity for a longer-term employment relationship after the fixed term.",
+          "Reliable employer.",
+          "Fast phone support in work and health situations."
+        ],
+        "search_keywords": "heavy equipment installer maintenance repair welding safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "5ea9959a",
+        "job_id": "tow-truck-driver-jyväskylä-5ea9959a",
+        "processed": true,
+        "title": "Tow Truck Driver",
+        "company": "Hinausautokeskus Jyväskylä",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.hinausautokeskus.fi/jobs/8755397-hinausautonkuljettaja/applications/new?promotion=2299619-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5077ebed-9185-40fb-9332-8b402c818bac/en",
+        "job_employer_email": "rekry@hinausautokeskus.fi",
+        "job_employer_name": "Rekrytiimi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/tow-truck-driver-jyväskylä-5ea9959a",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:34:25",
+        "open_positions": 1,
+        "salary_range": "salary * lunch allowance * leisure accident ins",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Tow Truck Driver at Hinausautokeskus Jyväskylä. Great opportunity in Jyväskylä — apply now.",
+        "description": "We are seeking a Tow Truck Driver for the Jyväskylä business area at Hinausautokeskus Jyväskylä. This full-time, permanent position offers a competitive hourly wage based on Finnish collective agreements and includes versatile towing and road service tasks. Key responsibilities involve working independently, handling different situations calmly, and providing excellent customer service. Applicants should have a class C driver's license, knowledge of the Jyväskylä area, and experience in automotive technology. On-call and standby work is required. The role offers comprehensive training, modern equipment, a youthful and relaxed work environment, and a competitive salary with lunch allowance. If you have a customer service spirit and are ready to help people in need, apply now.",
+        "what_we_expect": [
+          "Have at least a class C driver's license.",
+          "Know the Jyväskylä area well.",
+          "Have knowledge of automotive technology.",
+          "Have a customer service spirit.",
+          "Be able to work independently.",
+          "Be willing to do on-call and standby work."
+        ],
+        "job_responsibilities": [
+          "Perform towing and road service tasks in the Jyväskylä region."
+        ],
+        "what_we_offer": [
+          "Comprehensive introduction to towing and road service tasks.",
+          "Versatile and suitably challenging work.",
+          "Modern towing equipment.",
+          "A nice, youthful and relaxed work community.",
+          "Competitive salary.",
+          "Lunch allowance."
+        ],
+        "search_keywords": "tow truck driver Jyväskylä customer service driving",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/13.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:26",
+    "jobs": [
+      {
+        "id": "8a0d1515",
+        "job_id": "electrical-designer-oulu-8a0d1515",
+        "processed": true,
+        "title": "Electrical Designer",
+        "company": "Alten Finland Oy, Raahen Toimipiste",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Oulu",
+          "Raahe"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.alten.fi/jobs/2722-saehkoesuunnittelija/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e4ecad17-6d1f-468a-9106-7d4253e2dde3/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/electrical-designer-oulu-8a0d1515",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-18 12:34:26",
+        "open_positions": 1,
+        "salary_range": "salary expectations no later than 13 December 2",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Electrical Designer at Alten Finland Oy, Raahen Toimipiste. Great opportunity in Oulu — apply now.",
+        "description": "Alten Finland Oy is seeking a dedicated Electrical Designer to join our team in Raahe or Oulu. This permanent, full-time role offers the chance to work on diverse projects in industries such as process, energy, and technology, as well as public sector operations. You will participate in electrical design tasks, including system planning, documentation, and customer collaboration, using software like EPLAN or AutoCAD Electrical. Fluency in Finnish and English is required, and experience in industrial or building electrical design is preferred. Join a low-hierarchical, expert community where you can develop your skills and contribute to meaningful projects.",
+        "what_we_expect": [
+          "Appropriate education (e.g. Electrical engineering engineer or DI).",
+          "Experience in electrical design either in industry, construction or infrastructure projects.",
+          "Knowledge of, for example, electrical distribution, centers, cabling, lighting, building electrical systems or field equipment design.",
+          "Management of design software (e.g. EPLAN, AutoCAD Electrical, CADS, Cadmatic or Autodesk products).",
+          "Ability to work independently and as part of a project team.",
+          "Experience in project work and working in the customer interface."
+        ],
+        "job_responsibilities": [
+          "Participate in versatile electrical design projects according to your skills and interests."
+        ],
+        "what_we_offer": [
+          "Versatile project and planning tasks.",
+          "The opportunity to develop and expand your skills in different industries.",
+          "Flexible working models.",
+          "A low-hierarchical and expert work community.",
+          "Competitive personnel benefits."
+        ],
+        "search_keywords": "electrical designer engineering design industrial construction projects Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      },
+      {
+        "id": "04d2fd15",
+        "job_id": "family-caregiver-kouvola-04d2fd15",
+        "processed": true,
+        "title": "Family Caregiver",
+        "company": "Nuorten Väylä Oy, Kuusankosken Toimipaikka",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Kouvola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "mailto:mikko.myyra@nuortenvayla.fi?subject=Application%20for%20the%20Job%20-%20Family%20Caregiver&body=Dear%20Hiring%20Manager%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20am%20writing%20to%20express%20my%20interest%20in%20the%20Family%20Caregiver.%20I%20am%20motivated%2C%20reliable%2C%20and%20eager%20to%20contribute%20my%20skills%20and%20experience%20to%20your%20team.%0A%0AI%20have%20experience%20in%20relevant%20tasks%20and%20a%20strong%20ability%20to%20adapt%20quickly%20to%20new%20environments.%20I%20take%20pride%20in%20being%20hardworking%2C%20detail-oriented%2C%20and%20maintaining%20a%20positive%20attitude%20at%20work.%20I%20am%20confident%20that%20I%20can%20add%20value%20to%20your%20organization.%0A%0APlease%20find%20my%20CV%20%26%20Cover%20Letter%20attached%20for%20your%20review.%20I%20would%20welcome%20the%20opportunity%20to%20discuss%20how%20my%20skills%20and%20experience%20align%20with%20your%20needs.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%20I%20look%20forward%20to%20hearing%20from%20you.%0A%0AKind%20regards%2C%0AYOUR_NAME",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9aa6a593-8b07-4c12-aefc-d042f8fa47e7/en",
+        "job_employer_email": "mikko.myyra@nuortenvayla.fi",
+        "job_employer_name": "Mikko Myyrä",
+        "job_employer_phone_no": "0503668870",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-caregiver-kouvola-04d2fd15",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:34:26",
+        "open_positions": 1,
+        "salary_range": "Salary is agreed based on your experience and e",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Family Caregiver at Nuorten Väylä Oy, Kuusankosken Toimipaikka in Kouvola. Apply now and take the next step in your career.",
+        "description": "Family caregiver and educational and community counselor position at Nuorten Väylä Oy in Kouvola, offering a permanent full-time role with significant opportunities for personal and professional growth. We seek a genuine and courageous presence in the lives of young people, willing to bring creativity and new ideas to the table. Cooperation and team spirit are key, along with a commitment to continuous development. Shift work between 8 am and 10 pm, with 12-hour and 8-hour shifts, and the option to stay overnight at the workplace. Salary is based on experience and education, with shift allowances and special skills increasing the base salary significantly. Apply by sending a 1-2 minute video to Mikko Myyrä on WhatsApp at 050 366 8870. Be brave, be authentic - we're waiting for you!",
+        "what_we_expect": [
+          "The ability to face young people genuinely and courageously.",
+          "The desire to develop and develop - we move forward, and we hope that you will too."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Cooperation and team spirit.",
+          "Significance that goes a long way.",
+          "Shift allowances and special skills increase the base salary significantly."
+        ],
+        "search_keywords": "caregiver youth counselor shift work team spirit",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      },
+      {
+        "id": "b3c0001a",
+        "job_id": "tiivi-merchant-seinäjoki-b3c0001a",
+        "processed": true,
+        "title": "Tiivi Merchant",
+        "company": "Pihla Group Oy, Vantaa",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Seinäjoki",
+          "Lappeenranta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.tiivi.fi/meista/avoimet-tyopaikat/?jobid=321172",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/235d2275-5b62-4242-aa0b-150b79d3793d/en",
+        "job_employer_email": "keijo.heikkinen@tiivi.fi",
+        "job_employer_name": "Keijo Heikkinen",
+        "job_employer_phone_no": "+358406808569",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/tiivi-merchant-seinäjoki-b3c0001a",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:34:26",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Tiivi Merchant at Pihla Group Oy, Vantaa in Seinäjoki. Apply now and take the next step in your career.",
+        "description": "Tiivi merchants in Seinäjoki and Lappeenranta are needed to help households choose the best window and door solutions as a turnkey service, manage sales by acquiring and meeting customers, and build long-term customer relationships. High-quality customer meetings and comprehensive training are offered, along with a premium product selection and the freedom to build a successful business. Ideal candidates are communicative, friendly, persistent, and brave, with backgrounds in sales, customer service, teaching, or consulting. For more information, contact Regional sales managers Keijo Heikkinen (Lappeenranta) at +358406808569 or Mikko Runtti (Seinäjoki) at +358447294503.",
+        "what_we_expect": [
+          "You are communicative, friendly, persistent and brave, above all your attitude is diamond.",
+          "Your background can be, for example, in sales, customer service, teaching or consulting."
+        ],
+        "job_responsibilities": [
+          "You help households choose the best window and door solutions as a turnkey service.",
+          "You manage your own sales: you acquire and meet customers, make surveys and close deals.",
+          "You build long-term customer relationships and an excellent customer experience."
+        ],
+        "what_we_offer": [
+          "High-quality customer meetings and customer acquisition team support.",
+          "Comprehensive training for sales and products.",
+          "Premium product selection and precise supply chain as background support.",
+          "An independent, responsible merchant agreement and the freedom to build a successful business."
+        ],
+        "search_keywords": "sales merchant window door Seinäjoki Lappeenranta",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:27",
+    "jobs": [
+      {
+        "id": "57508971",
+        "job_id": "family-caregiver-maalahti-57508971",
+        "processed": true,
+        "title": "Family Caregiver",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Maalahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-10-275-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/dc276378-53c6-4db5-b6be-8932e9af3c8b/en",
+        "job_employer_email": "etunimi.sukunimi@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-caregiver-maalahti-57508971",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:34:27",
+        "open_positions": 1,
+        "salary_range": "part-time salary 78.43%, 2196.04 e/month (full-time salary 100%, 2800 e/month)",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Start your next job as a Family Caregiver at Pohjanmaan hyvinvointialue. Great opportunity in Maalahti — apply now.",
+        "description": "We are seeking a part-time (78.43%) family caregiver for Maalahti home care in the Ostrobothnia welfare area. Ideal candidates will have a nursing degree or equivalent and be registered in both professional registers of the Licensing and Supervision Agency, Terhikki and Suosikki. Fluency in Finnish and Swedish is required, along with a valid vaccination cover and a criminal record extract. This role involves supporting clients to maintain independent living through high-quality, customer-oriented care in a multiprofessional team setting. A driver's license and personal vehicle are necessary. Opportunities for training, networking, and research are available. Join a dedicated team committed to high-quality social and health services in Ostrobothnia.",
+        "what_we_expect": [
+          "Good cooperation and interaction skills.",
+          "Flexibility.",
+          "The desire to implement high-quality customer-oriented care.",
+          "A valid vaccination cover according to Section 48 of the Infectious Diseases Act.",
+          "An extract from the criminal record referred to in section 6, subsection 2 of the Criminal Records Act."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunity for training.",
+          "Networking.",
+          "Research."
+        ],
+        "search_keywords": "caregiver elderly home care nursing degree",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      },
+      {
+        "id": "563bb545",
+        "job_id": "store-cleaner-muurame-563bb545",
+        "processed": true,
+        "title": "Store Cleaner",
+        "company": "Sol",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Muurame"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.sol.fi/jobs/8753965-siivooja-myymalan-puhtaanapitoon-muurameen/applications/new?promotion=2299599-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d8c7347c-5158-41dd-87c3-54a8d20a1d9b/en",
+        "job_employer_email": "johanna.nurmela@sol.fi",
+        "job_employer_name": "Johanna N",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/store-cleaner-muurame-563bb545",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-11-24",
+        "scraped_at": "2026-11-18 12:34:27",
+        "open_positions": 1,
+        "salary_range": "Palkka: 12,59 €/h. Palkkausnoudattaa kiinteistöpalvelualan työehtosopimusta palkkaryhmässä 2.",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "SOL is hiring a Store Cleaner in Muurame. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a brisk and reliable cleaner to join our sunny group at SOL in Muurame, responsible for maintaining clean and presentable store premises and common areas. Tasks include sweeping, washing floors, wiping surfaces, cleaning sanitary facilities, using a combination machine, and reporting damages. Previous experience in store cleaning and using a combination machine is advantageous. A positive attitude and commitment to work tasks are essential. Employment is part-time, permanent, with shifts from Monday to Saturday between 6:00 a.m. and 12:30 p.m., totaling 20 hours per week. The working language is Finnish, with satisfactory knowledge of English or another language preferred. You will receive meaningful work, good tools, and a positive working atmosphere.",
+        "what_we_expect": [
+          "Previous experience in cleaning work, especially store cleaning experience is an advantage.",
+          "Previous experience in using a combination machine.",
+          "A sunny customer service attitude and willingness to commit to work tasks."
+        ],
+        "job_responsibilities": [
+          "Sweeping, washing and other maintenance of floors in store premises and common areas used by staff.",
+          "Wiping surfaces (e.g. Light switches and door handles).",
+          "Careful cleaning of toilet seats, basins and floors in sanitary facilities.",
+          "Using the combination machine in accordance with the instructions and safely.",
+          "Use of cleaning equipment, their maintenance and replenishment of cleaning agents.",
+          "Reporting of damages and maintenance needs in accordance with the instructions."
+        ],
+        "what_we_offer": [
+          "Meaningful work.",
+          "Good and functional tools for your work.",
+          "A place with a good working atmosphere, where you get the opportunity to create social relationships and be part of our community."
+        ],
+        "search_keywords": "store cleaner, cleaning, maintenance, Finnish, part-time",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "61785bc5",
+        "job_id": "service-secretary-hämeenlinna-61785bc5",
+        "processed": true,
+        "title": "Service Secretary",
+        "company": "Hämeenlinnan seurakuntayhtymä",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Hämeenlinna"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kirkkorekry.fi/tyoavain/5451/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7466f1b2-553b-4d26-be5c-76cbd3f9186e/en",
+        "job_employer_email": "piia.suonpaa@evl.fi",
+        "job_employer_name": "Piia Suonpää",
+        "job_employer_phone_no": "+358408049440",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/service-secretary-hämeenlinna-61785bc5",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-18 12:34:27",
+        "open_positions": 1,
+        "salary_range": "salary of a funeral service secretary is €2,583",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Hämeenlinnan seurakuntayhtymä as a Service Secretary and grow your career in Hämeenlinna. Check the job details and apply now.",
+        "description": "The Service Secretary position at Hämeenlinnan seurakuntayhtymä involves providing customer service for funeral services and the funeral fund, handling space and person reservations, managing cremation reservations, maintaining the grave database, and invoicing. Key responsibilities include adapting to new digital systems, excellent communication skills, care and responsibility, self-initiative, and a development-friendly approach. Good Finnish language skills are essential, and other language skills are a plus. The basic salary is €2,583.11 per month, with a possible experience bonus of €0-340. The position is full-time and permanent, starting on January 11, 2027, with a 5-month trial period.",
+        "what_we_expect": [
+          "The ability to quickly adopt new things and use different digital systems.",
+          "Excellent communication skills.",
+          "Care and responsibility.",
+          "Activity, self-initiative and ability to cooperate.",
+          "A development-friendly approach to work.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Customer service for the funeral service and funeral fund.",
+          "Space and person reservations.",
+          "Cremation reservations.",
+          "Maintenance of the grave database.",
+          "Invoicing."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "customer service funeral service reservations database invoicing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "ecce5bf4",
+        "job_id": "childminder-in-early-childhood-education-vihti-ecce5bf4",
+        "processed": true,
+        "title": "Childminder in Early Childhood Education",
+        "company": "Vihdin kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Vihti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/VIH-03-338-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/08e028a1-f3f2-44ff-9fd6-84ba3a36bdda/en",
+        "job_employer_email": "paivikki.juntunen@vihti.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0505661184",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/childminder-in-early-childhood-education-vihti-ecce5bf4",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-07",
+        "scraped_at": "2026-11-18 12:34:27",
+        "open_positions": 1,
+        "salary_range": "2643,38€",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Start your next job as a Childminder in Early Childhood Education at Vihdin kunta. Great opportunity in Vihti — apply now.",
+        "description": "Are you passionate about early childhood education and eager to work in a child-friendly municipality where a child's voice is heard? Vihdin kunta is seeking a childminder in early childhood education to join Daycare Aleksandra in Vihti. This full-time, permanent position offers methodological orientation, versatile tasks, and a supportive professional community. You will participate in planning, implementing, evaluating, and developing educational activities at the unit. Good cooperation skills and a positive attitude are essential. The monthly salary is €2643.38, and the position includes staff benefits such as ePassi, exercise, culture, and well-being services, as well as discounts from businesses in Vichtis.",
+        "what_we_expect": [
+          "Good cooperation skills.",
+          "Positive attitude to work."
+        ],
+        "job_responsibilities": [
+          "Participate in planning, implementation, evaluation and development of the educational activities at the unit."
+        ],
+        "what_we_offer": [
+          "Methodological orientation.",
+          "Versatile tasks.",
+          "Professional working community.",
+          "Support from your boss.",
+          "Training opportunities to develop your own skills.",
+          "Staff benefits include i.a. EPassi, exercise, culture and well-being services, BREAK PRO break gym program, discounts from businesses in Vichtis."
+        ],
+        "search_keywords": "childminder early_childhood_education municipality daycare education",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "8f12ca28",
+        "job_id": "early-childhood-education-teacher-hollola-8f12ca28",
+        "processed": true,
+        "title": "Early Childhood Education Teacher",
+        "company": "Hollolan kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Hollola"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/746490/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3eb0655a-aa00-401d-be85-df34a16ef437/en",
+        "job_employer_email": "etunimi.sukunimi@hollola.fi",
+        "job_employer_name": "www.hollola.fi www.hollola.fi",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/early-childhood-education-teacher-hollola-8f12ca28",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:34:27",
+        "open_positions": 1,
+        "salary_range": "2967,92€",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Hollolan kunta as a Early Childhood Education Teacher in Hollola. Learn more about the role and apply now.",
+        "description": "Join Hollola municipality as an Early Childhood Education Teacher and contribute to the well-being and development of young children. This permanent, full-time role at Koulrinne kindergarten, Satulinna kindergarten, or Nostana's daycare centers offers opportunities to work in a supportive, play-based environment. You will collaborate with a professional team to create a nurturing atmosphere where every child feels valued and engaged. Requirements include being playful, child-oriented, sensitive, and having excellent communication skills. You should also possess strong pedagogical skills in early childhood education and the ability to work effectively in a team. If you share our passion for community and the growth of young minds, apply now to join our dedicated team.",
+        "what_we_expect": [
+          "Playful.",
+          "Child-oriented.",
+          "Sensitive.",
+          "Good communication skills.",
+          "Present and enthusiastic approach.",
+          "Pedagogical skills in early childhood education."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "early childhood education teacher kindergarten daycare center Hollola municipality",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:28",
+    "jobs": [
+      {
+        "id": "f3213a05",
+        "job_id": "substitute-nurse-rovaniemi-f3213a05",
+        "processed": true,
+        "title": "Substitute Nurse",
+        "company": "Lapin hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Rovaniemi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/751349/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/983f72e6-2205-4633-80c0-806b8b9e1f13/en",
+        "job_employer_email": "katja.vayrynen@lapha.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/substitute-nurse-rovaniemi-f3213a05",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-07",
+        "scraped_at": "2026-11-18 12:34:28",
+        "open_positions": 1,
+        "salary_range": "3 142,71 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Substitute Nurse at Lapin hyvinvointialue in Rovaniemi. Check the requirements and apply today.",
+        "description": "Join the skilled work community of Lapland's welfare area as a substitute nurse at Osaajakeskus in Rovaniemi. Enjoy a versatile and varied job in emergency substitutions in outpatient healthcare reception, with the opportunity to develop your professional skills and expand your role in different units. Work primarily during morning shifts on weekdays, with predictable shifts that allow for flexible planning. The position offers a task-specific salary of €3,142.71/month, with skill expansion taken into account. You will have the chance to influence your work shifts and units, supported by a competent and supportive work community. A positive and development-friendly attitude, good cooperation skills, and a customer-oriented approach are essential.",
+        "what_we_expect": [
+          "A positive and development-friendly attitude and the desire to maintain and expand your own skills.",
+          "Good cooperation and interaction skills and the ability to work flexibly in varied work environments.",
+          "Customer-oriented approach and commitment to high-quality nursing work.",
+          "Ability to quickly adapt to changing situations and tackle new tasks without prejudice."
+        ],
+        "job_responsibilities": [
+          "Work in emergency substitutions in outpatient healthcare reception."
+        ],
+        "what_we_offer": [
+          "A versatile and varied job description in different operating environments.",
+          "The opportunity to develop your skills and expand your professional skills.",
+          "Task-specific salary from €3,142.71/month, the expansion of skills is taken into account in the salary.",
+          "The opportunity to influence your work shifts and the units you rotate.",
+          "The flexibility brought by communal work shift planning for combining work and free time.",
+          "The support of a supervisor and a competent and supportive work community."
+        ],
+        "search_keywords": "nurse substitute rovaniemi healthcare",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:34:29",
+    "jobs": [
+      {
+        "id": "3d343f60",
+        "job_id": "warden-akaa-3d343f60",
+        "processed": true,
+        "title": "Warden",
+        "company": "Rikosseuraamuslaitos",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Akaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://valtiolle.fi/tyoavain/26531/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b8cb2018-5924-40d7-9e6e-c7c5504f9b74/en",
+        "job_employer_email": "juha.eriksson@om.fi",
+        "job_employer_name": "Juha Eriksson",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/warden-akaa-3d343f60",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-18 12:34:29",
+        "open_positions": 1,
+        "salary_range": "VT3: 2213-2443 €/kk tai VT6: 2416-2668 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Rikosseuraamuslaitos is hiring a Warden in Akaa. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Warden (Kylmäkoski prison, several temporary posts) at Rikosseuraamuslaitos in Akaa, Finland seeks individuals with a cheerful attitude and strong safety work understanding. Responsibilities include managing daily prison operations, ensuring security, and guiding prisoners towards a crime-free life. Applicants should have good collaboration skills, pressure tolerance, and organizational abilities. A driver's license (B) and proficiency in using information systems are beneficial. The position is full-time and permanent, with a salary range of VT3: 2213-2443 €/kk or VT6: 2416-2668 €/kk. Fluency in Finnish is required. For more information, contact Juha Eriksson at juha.eriksson@om.fi or Katja Kirilov at katja.kirilov@om.fi.",
+        "what_we_expect": [
+          "Work with a cheerful attitude.",
+          "Understand the effectiveness of safety work well.",
+          "Have good collaboration skills.",
+          "Have a bold and positive approach to work.",
+          "Have good pressure tolerance.",
+          "Have organizational skills."
+        ],
+        "job_responsibilities": [
+          "Take care of the daily running of the prison.",
+          "Take care of security in the prison.",
+          "Ensure compliance with daily routines and rules.",
+          "Perform transportation and supervision tasks both inside and outside the prison.",
+          "Guide prisoners in a planned way towards a crime-free life."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "warden prison security safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      },
+      {
+        "id": "0d906ae8",
+        "job_id": "caregiver-for-the-elderly-hailuoto-0d906ae8",
+        "processed": true,
+        "title": "Caregiver for the Elderly",
+        "company": "Pohjois-Pohjanmaan hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Hailuoto",
+          "Kempele",
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/751013/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/fde98dbe-4915-4f59-8cc8-0b8e1f3f4f04/en",
+        "job_employer_email": "rekrytointi@pohde.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/caregiver-for-the-elderly-hailuoto-0d906ae8",
+        "date_posted": "2026-11-17",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-18 12:34:29",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Pohjois-Pohjanmaan hyvinvointialue is looking for a Caregiver for the Elderly in Hailuoto. Don't miss this opportunity — apply today.",
+        "description": "We are seeking two full-time, permanent caregivers to join our expanding specialist unit in services for the elderly in Hailuoto, Kempele, and Oulu. This role involves working in home and housing services, providing care in the Kempele, Oulunsalo, and Hailuoto areas. As a community nurse, you will rotate through units, replacing absent colleagues, and work in a two-shift system, offering versatility and professional development opportunities. Successful candidates should have experience in elderly care, good interaction and teamwork skills, self-direction, a motivated and flexible attitude, and the ability to handle changing situations. Home services experience is advantageous. Join a warm working community and grow professionally in this rewarding position.",
+        "what_we_expect": [
+          "Experience in services for the elderly.",
+          "Good interaction and teamwork skills.",
+          "Self-direction.",
+          "Motivated and flexible attitude.",
+          "Ability to act in changing situations."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "A warm working community.",
+          "Opportunity to grow professionally."
+        ],
+        "search_keywords": "caregiver elderly services nurse",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
       }
     ]
   }
