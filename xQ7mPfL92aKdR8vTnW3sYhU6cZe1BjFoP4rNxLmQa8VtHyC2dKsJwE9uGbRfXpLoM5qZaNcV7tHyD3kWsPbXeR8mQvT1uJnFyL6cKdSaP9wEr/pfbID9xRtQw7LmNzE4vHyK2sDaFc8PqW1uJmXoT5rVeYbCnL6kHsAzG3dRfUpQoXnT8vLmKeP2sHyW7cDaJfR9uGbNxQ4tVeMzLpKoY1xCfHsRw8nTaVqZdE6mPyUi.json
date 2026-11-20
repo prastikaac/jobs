@@ -496906,5 +496906,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-18 12:43:19",
+    "jobs": [
+      {
+        "id": "40c7044a",
+        "job_id": "sales-representative-pirkanmaa-ja-3-muuta-40c7044a",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Pihla Group Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Pirkanmaa ja 3 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/pihla-group-pihlan-jalleenmyyjia-eri-puolelle-suomea-sdsuu-20716689",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/pihla-group-pihlan-jalleenmyyjia-eri-puolelle-suomea-sdsuu-20716689",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-pirkanmaa-ja-3-muuta-40c7044a",
+        "date_posted": "2026-11-09",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-18 12:43:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Sales Representative at Pihla Group Oy. Great opportunity in Pirkanmaa ja 3 muuta — apply now.",
+        "description": "Join Pihla Group Oy as a Sales Representative in Pirkanmaa and other regions of Finland. As an entrepreneur, you will distribute Pihla's popular window and door products, focusing on private house renovators. With a professional sales background or prerequisites, experience in the construction industry, and a goal-oriented attitude, you will thrive in this role. Enjoy extensive training, a user-friendly sales program, and a wide product selection. Pihla is known for quality, durability, and energy efficiency, making it a great investment in home comfort and safety. Apply now and become part of Finland's leading window brand. Applications are open until 31 December 2026. For more information, contact regional sales managers Janne Hakonen, Ossi Hyvönen, or Jari Pasanen.",
+        "what_we_expect": [
+          "Entrepreneurship.",
+          "Professional sales background or prerequisites for sales work.",
+          "Experience in the construction industry.",
+          "Good attitude.",
+          "Goal orientation.",
+          "Initiative."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Finland's most popular window brand.",
+          "Ready-made sales and installation items.",
+          "Extensive and high-quality introduction to sales and installation work.",
+          "An easy sales program and good tools.",
+          "A versatile and wide product selection.",
+          "Delivery security."
+        ],
+        "search_keywords": "sales representative window door renovation entrepreneur",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
