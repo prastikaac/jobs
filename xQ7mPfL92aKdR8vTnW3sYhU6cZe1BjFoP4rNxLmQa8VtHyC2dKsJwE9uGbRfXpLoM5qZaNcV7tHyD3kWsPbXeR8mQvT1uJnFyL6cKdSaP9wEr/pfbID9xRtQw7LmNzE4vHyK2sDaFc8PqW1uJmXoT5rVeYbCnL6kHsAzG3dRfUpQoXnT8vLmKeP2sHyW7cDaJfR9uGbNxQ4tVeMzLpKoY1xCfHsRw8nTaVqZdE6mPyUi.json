@@ -513434,5 +513434,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-20 06:42:28",
+    "jobs": [
+      {
+        "id": "d42646d2",
+        "job_id": "door-to-door-salesman-helsinki-ja-4-muuta-d42646d2",
+        "processed": true,
+        "title": "Door-to-door Salesman",
+        "company": "Face2face Finland",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 4 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/face2face-finland-oy-myyja-ovelta-ovelle-myyja-sdsuu-20738911",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/face2face-finland-oy-myyja-ovelta-ovelle-myyja-sdsuu-20738911",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/door-to-door-salesman-helsinki-ja-4-muuta-d42646d2",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-20 06:42:28",
+        "open_positions": 1,
+        "salary_range": "salary model",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Face2face Finland is hiring a Door-to-door Salesman in Helsinki ja 4 muuta. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Join Face2face Finland as a Door-to-door Salesman in Helsinki and surrounding areas. As a full-time, permanent position, you will engage in active door-to-door sales to consumer customers, closing deals and seeing immediate results. Requirements include being at least 18 years old, fluent in Finnish, and having a sales and bold attitude. You must be motivated to develop and increase your earnings, committed to working weekdays from 13:00 to 20:00. Enjoy daily coaching, a clear career path, and the opportunity to influence your earnings without a commission ceiling. Be part of a supportive community that values courage and teamwork, with clear goals and regular social events.",
+        "what_we_expect": [
+          "At least 18 years of age.",
+          "Fluent Finnish language skills.",
+          "Sales and bold attitude.",
+          "Motivation to develop and increase one's own profit.",
+          "Commitment to working hours (weekdays from 13:00 to 20:00)."
+        ],
+        "job_responsibilities": [
+          "Do active door-to-door sales to consumer customers.",
+          "Close deals and see the results of your work immediately."
+        ],
+        "what_we_offer": [
+          "Daily coaching and continuous learning.",
+          "Clear career path from salesperson to team leader or field manager.",
+          "The opportunity to influence your own earnings - without a commission ceiling.",
+          "A community where courage and working together are visible every day.",
+          "Clear goals and support from your team, you won't be alone in any situation.",
+          "Lunch and refreshment benefit."
+        ],
+        "search_keywords": "door-to-door sales, salesperson, Finland, coaching, commission",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
   }
 ]
