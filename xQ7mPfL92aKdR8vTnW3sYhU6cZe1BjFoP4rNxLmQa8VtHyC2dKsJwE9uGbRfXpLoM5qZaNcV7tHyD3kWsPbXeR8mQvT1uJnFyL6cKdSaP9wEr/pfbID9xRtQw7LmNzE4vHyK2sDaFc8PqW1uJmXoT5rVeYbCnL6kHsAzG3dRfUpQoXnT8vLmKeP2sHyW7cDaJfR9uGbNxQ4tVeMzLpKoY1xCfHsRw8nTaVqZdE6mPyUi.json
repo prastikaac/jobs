@@ -525523,5 +525523,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:41:00",
+    "jobs": [
+      {
+        "id": "01942e7a",
+        "job_id": "foreman-housing-vantaa-01942e7a",
+        "processed": true,
+        "title": "Foreman, Housing",
+        "company": "Fira Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/fira-rakennus-tyonjohtaja-asuminen-sdsuu-20747883",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/fira-rakennus-tyonjohtaja-asuminen-sdsuu-20747883",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/foreman-housing-vantaa-01942e7a",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-21 20:41:00",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Foreman, Housing role at Fira Rakennus Oy. Join the team and build your career in Vantaa.",
+        "description": "Fira Rakennus Oy is seeking a Foreman to join our dynamic housing business unit in Vantaa, focusing on new, renovation, and conversion projects in the capital region. As a Foreman, you will plan, guide, and supervise work phases, coordinate subcontractors, ensure quality and safety, and participate in scheduling and production planning. Experience in management tasks or construction sites, understanding of construction phases, and strong schedule, quality, and safety skills are essential. A suitable education in the construction industry, such as a master's degree or civil engineer's degree, is preferred. If you are passionate about learning, taking responsibility, and actively moving things forward, we encourage you to apply. Join our innovative and transparent team at Fira.",
+        "what_we_expect": [
+          "Suitable education in the construction industry, for example a master's degree or a civil engineer's degree.",
+          "Previous experience in management tasks or working on a construction site.",
+          "Understanding of the different work phases of construction and their coordination.",
+          "Good schedule, quality and safety skills.",
+          "Ability to read and utilize plans in practical implementation."
+        ],
+        "job_responsibilities": [
+          "Plan, guide and supervise the implementation of work phases.",
+          "Coordinate the work of subcontractors and other partners working on the site.",
+          "Lead the work stages with the principles of paced production and monitor the fulfillment of schedules and the planned progress of the work.",
+          "Ensure the quality of work and occupational safety in your own area of responsibility.",
+          "Anticipate future work phases and take care of the prerequisites for their smooth implementation.",
+          "Participate in the scheduling and production planning of the site."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "foreman construction renovation project management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
