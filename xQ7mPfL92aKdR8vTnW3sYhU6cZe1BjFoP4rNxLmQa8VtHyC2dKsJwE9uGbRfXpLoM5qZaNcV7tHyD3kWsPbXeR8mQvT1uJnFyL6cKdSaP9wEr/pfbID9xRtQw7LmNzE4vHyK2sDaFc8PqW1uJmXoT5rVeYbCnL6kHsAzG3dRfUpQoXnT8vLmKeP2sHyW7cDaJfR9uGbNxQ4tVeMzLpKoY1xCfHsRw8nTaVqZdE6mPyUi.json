@@ -521479,5 +521479,1255 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:11",
+    "jobs": [
+      {
+        "id": "a159b7d5",
+        "job_id": "construction-workers-espoo-a159b7d5",
+        "processed": true,
+        "title": "Construction Workers",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/1MN15c8jQVfq3IfX6gZxqA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/2f965d43-9da5-41ed-aa00-860207de2e68/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-workers-espoo-a159b7d5",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Eezy Henkilöstöpalvelut Oy as a Construction Workers and grow your career in Espoo. Check the job details and apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking experienced construction workers for various sites in the capital region, including Espoo, Helsinki, and Vantaa. Responsibilities include a wide range of tasks such as demolition, supporting frame work, interior, and finishing work. Applicants should have a background in construction and at least two years of experience, be in good physical condition, and possess a valid work safety card or be willing to obtain one. A self-initiated and reliable work style is essential, along with the ability to commit to different tasks. The employment relationship and salary follow the building construction industry collective agreement (TES), with working hours from Monday to Friday from 7:00 a.m. to 3:30 p.m.",
+        "what_we_expect": [
+          "Education in construction and/or at least two years of experience as a construction worker.",
+          "Good physical condition and safe way of working.",
+          "A valid work safety card or willingness to obtain one before starting work.",
+          "Self-initiated and brisk work style.",
+          "Reliability and the desire to commit to different tasks."
+        ],
+        "job_responsibilities": [
+          "Perform a wide variety of construction work, from demolition to supporting frame, interior and finishing work."
+        ],
+        "what_we_offer": [
+          "Follow the building construction industry collective agreement (TES) for employment relationship and salary.",
+          "Working hours from Monday to Friday from 7:00 a.m. To 3:30 p.m."
+        ],
+        "search_keywords": "construction worker building demolition interior finishing work safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "9c85afcd",
+        "job_id": "carpenter-for-line-renovation-sites-espoo-9c85afcd",
+        "processed": true,
+        "title": "Carpenter for Line Renovation Sites",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/fLoRG2NGQpIbGfcTu1CdQw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/14ec7aca-f849-40f1-a0f0-ce9037b07a61/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/carpenter-for-line-renovation-sites-espoo-9c85afcd",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:11",
+        "open_positions": 1,
+        "salary_range": "Salary according to the collective agreement in",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is looking for a Carpenter for Line Renovation Sites in Espoo. Don't miss this opportunity — apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a skilled carpenter for line renovation projects in Espoo, Helsinki, and Vantaa. This full-time, permanent position involves performing versatile carpentry tasks such as plastering, casing, molding, and partition installations. Applicants should have previous experience as a carpenter, the ability to read construction drawings, and a valid occupational safety card. Fluency in Finnish is required, along with an independent and responsible working attitude. Competitive hourly wages based on Finnish collective agreements will be offered, taking into account previous experience and salary wishes. Apply with your CV to join our team and contribute to successful line renovation projects in the capital region.",
+        "what_we_expect": [
+          "Previous experience as a carpenter.",
+          "Ability to read construction drawings.",
+          "Independent and responsible working attitude.",
+          "A valid occupational safety card.",
+          "Fluent Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Perform versatile carpentry tasks such as plastering, casing, molding and partition installations."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "carpenter renovation construction experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "cf99f85d",
+        "job_id": "air-conditioning-installer-tampere-cf99f85d",
+        "processed": true,
+        "title": "Air Conditioning Installer",
+        "company": "Wulff Works Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://wulffworks.likeit.fi/apply/51318276",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/801b09d4-24cb-48d1-a8ef-f9dfbd07198d/en",
+        "job_employer_email": "jouko.harkala@wulff.fi",
+        "job_employer_name": "Jouko Härkälä",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/air-conditioning-installer-tampere-cf99f85d",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-27",
+        "scraped_at": "2026-11-21 20:35:11",
+        "open_positions": 1,
+        "salary_range": "Palkka määräytyy tehtävässä talotekniikan TES:n mukaan. Työntekijän osaamista vastaavasta palkkaryhmästä riippuen palkkahaitari tehtävässä on 15,66-20,55 €/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Wulff Works Oy is looking for a Air Conditioning Installer in Tampere. Don't miss this opportunity — apply today.",
+        "description": "Wulff Works Oy is seeking a professional Air Conditioning Installer to join our team in Tampere. This full-time, permanent position involves installation work of ventilation ducts and equipment, service and maintenance of ventilation machines, troubleshooting, and working at various construction and maintenance sites. Applicants should have education in the HVAC field or similar skills, experience in IV installation or maintenance tasks, and a solid understanding of ventilation systems and devices. Independence, responsibility, good cooperation, and customer service skills are essential. A B driver's license is required. Salary is determined according to the TES for building technology, ranging from €15.66-20.55/h based on the employee's skills. Apply now at <http://wulffworks.likeit.",
+        "what_we_expect": [
+          "Education in the HVAC field or similar skills.",
+          "Experience in IV installation or maintenance tasks.",
+          "Understanding of ventilation systems and devices.",
+          "Independent and responsible work attitude.",
+          "Good cooperation and customer service skills.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [
+          "Installation work of ventilation ducts and equipment.",
+          "Service and maintenance of ventilation machines.",
+          "Troubleshooting and corrective measures.",
+          "Working at various construction and maintenance sites.",
+          "Taking care of work safety and work quality."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "installation maintenance ventilation HVAC",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "1ff9c129",
+        "job_id": "timpuri-for-partition-and-suspended-ceiling-works-espoo-1ff9c129",
+        "processed": true,
+        "title": "Timpuri for Partition and Suspended Ceiling Works",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/foqwjiq3GymysJPUHBbwyg",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/c4f891ce-2d54-43b2-9751-7c9a85fcbe6b/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/timpuri-for-partition-and-suspended-ceiling-works-espoo-1ff9c129",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Eezy Henkilöstöpalvelut Oy as a Timpuri for Partition and Suspended Ceiling Works in Espoo.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a motivated timpuri for partition and suspended ceiling works to join our experienced team in Espoo, Helsinki, and Vantaa. This permanent, full-time position offers a competitive hourly wage based on Finnish collective agreements and requires previous experience as a carpenter, experience in partition and suspended ceiling works, a valid occupational safety card, and fluent Finnish language skills. Ideal candidates will have a self-initiated approach to work and a commitment to delivering high-quality results. If you are passionate about renovation projects and enjoy versatile interior construction tasks, we encourage you to apply. Applications should be submitted via the provided link.",
+        "what_we_expect": [
+          "Previous experience as a carpenter or carpenter.",
+          "Experience in partition and suspended ceiling works.",
+          "A valid occupational safety card.",
+          "Fluent Finnish language skills.",
+          "A self-initiated approach to work.",
+          "The desire to do work carefully without compromising on a high-quality end result."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "timpuri construction renovation partition suspended ceiling works",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "02201b35",
+        "job_id": "construction-assistant-helsinki-02201b35",
+        "processed": true,
+        "title": "Construction Assistant",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/-UKncU-oI-6w3DzlNtxhBA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7e8b0b2b-fb1a-425c-8b28-7d9926473f7f/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-assistant-helsinki-02201b35",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:11",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Construction Assistant role at Eezy Henkilöstöpalvelut Oy. Join the team and build your career in Helsinki.",
+        "description": "Construction assistants are needed for diverse sites in the building industry in Helsinki. Duties include moving materials, maintaining site cleanliness, performing protection and demolition work, and other tasks as assigned. We seek candidates with a proactive attitude, good physical fitness, and the ability to work both independently and as part of a team. An occupational safety card or willingness to obtain one is required. Versatile work sites and opportunities for skill development are offered by our reliable employer. Apply to join a dynamic team and contribute to the construction of the future.",
+        "what_we_expect": [
+          "A brisk and self-initiated approach to work.",
+          "Good physical condition.",
+          "Ability to work independently and as part of a team.",
+          "Occupational safety card or willingness to obtain it before starting work."
+        ],
+        "job_responsibilities": [
+          "Moving materials.",
+          "Taking care of the general cleanliness of the construction site.",
+          "Protection and demolition work.",
+          "Other auxiliary construction work assigned by the management."
+        ],
+        "what_we_offer": [
+          "The opportunity to work in versatile construction sites.",
+          "Support from a reliable employer throughout the employment relationship.",
+          "The opportunity to gain valuable experience and develop your skills."
+        ],
+        "search_keywords": "construction assistant building industry materials cleaning demolition experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:12",
+    "jobs": [
+      {
+        "id": "9e261119",
+        "job_id": "field-foreman-espoo-9e261119",
+        "processed": true,
+        "title": "Field Foreman",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/39Lp2VApmKct7coVczK3ew",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/40c0faad-8c06-4cb3-90b4-8fae1ca2e56e/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/field-foreman-espoo-9e261119",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:12",
+        "open_positions": 1,
+        "salary_range": "Salary according to the agreement",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is hiring a Field Foreman in Espoo. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking an experienced field foreman for Concrete Urakointi Oy to manage waterproofing and sheet metal roofing projects in the capital region. The role involves guiding and training employees, monitoring work quality and safety, resolving on-site issues, and participating in site meetings. You will need at least 4 years of experience in these projects, good reading skills in construction drawings, and the ability to assess work progress and schedules. Proficiency in Finnish and Russian, as well as a B driver's license and valid work safety and fire work cards, are required. The position offers a responsible and independent role, access to the company's van, work clothes, necessary equipment, and sports and cultural benefits.",
+        "what_we_expect": [
+          "At least 4 years of work experience in waterproofing and sheet metal roofing projects.",
+          "Previous experience in work management tasks.",
+          "Good reading skills in construction drawings.",
+          "Ability to independently assess the progress of the work, the amount of work and schedules.",
+          "Use of different systems, especially Excel.",
+          "Tough and solution-oriented, but with a positive attitude."
+        ],
+        "job_responsibilities": [
+          "Guide and train employees.",
+          "Monitor the quality of work, schedules and work safety.",
+          "Resolve situations that arise on the job sites.",
+          "Participate in site meetings.",
+          "Support calculations."
+        ],
+        "what_we_offer": [
+          "Responsible and independent position.",
+          "Access to the company's van.",
+          "Work clothes.",
+          "Necessary equipment for the job.",
+          "Sports and cultural benefits."
+        ],
+        "search_keywords": "field foreman construction waterproofing sheet metal roofing management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      },
+      {
+        "id": "51015339",
+        "job_id": "excavator-co-driver-espoo-51015339",
+        "processed": true,
+        "title": "Excavator Co-Driver",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/B9-rCPlBivLIDADoswmo4w",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/1f7c9057-1c4a-406d-85b3-7bcc97b8d769/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/excavator-co-driver-espoo-51015339",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:12",
+        "open_positions": 1,
+        "salary_range": "Salary according to the contract",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is looking for a Excavator Co-Driver in Espoo. Don't miss this opportunity — apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a skilled excavator co-driver for our client companies in the capital region, with a permanent full-time position offering a competitive hourly wage based on Finnish collective agreements. Ideal candidates will have previous experience in infrastructure construction, pipe installations, and the use of lasers, and should demonstrate self-initiative and strong team-working skills. The role involves versatile earth construction tasks at a long-term job site, with working hours from 7 a.m. to 3:30 p.m. on weekdays. Applications should highlight relevant experience, and interested candidates are encouraged to apply through the attached link.",
+        "what_we_expect": [
+          "Previous experience in infrastructure construction.",
+          "Previous experience in pipe installations.",
+          "Previous experience in the use of lasers.",
+          "Self-initiative.",
+          "Team-working professional."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Long-term job site.",
+          "Versatile earth construction tasks."
+        ],
+        "search_keywords": "excavator co-driver construction infrastructure pipe installations",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "e4cb2742",
+        "job_id": "manual-snow-workers-helsinki-e4cb2742",
+        "processed": true,
+        "title": "Manual Snow Workers",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/whtpiCcY-WAJ5OtxFG2OqA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/771ba9b6-0360-4c7a-ab50-afd5da356947/en",
+        "job_employer_email": "milla.suhonen@eezy.fi",
+        "job_employer_name": "Milla Suhonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/manual-snow-workers-helsinki-e4cb2742",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:12",
+        "open_positions": 1,
+        "salary_range": "Salary in accordance with the collective agreem",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Manual Snow Workers at Eezy Henkilöstöpalvelut Oy in Helsinki. Check the requirements and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking 5–10 manual snow workers for the Helsinki city center area during the upcoming snow season. Responsibilities include clearing snow from walkways, entrances, and other areas, as well as applying anti-slippery measures when needed. Candidates should demonstrate a brisk and self-initiated approach, willingness to work in variable weather conditions, reliability, professionalism, and a strong team spirit. Compensation is based on the collective agreement, and kilometers driven during working hours are compensated. Reflective vests and safety shoes will be provided if necessary. Applicants should have their own car and dress appropriately for winter conditions. The work schedule is mainly from 7 a.m. to 3 p.m.",
+        "what_we_expect": [
+          "Brisk and self-initiated approach to work.",
+          "Willingness to work in variable weather conditions.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Clearing snow from walkways, entrances and other areas as needed.",
+          "Applying anti-slippery measures as needed."
+        ],
+        "what_we_offer": [
+          "Compensation for kilometers resulting from working hours according to the actual number of drives.",
+          "Arrangement of a reflective vest and safety shoes if necessary."
+        ],
+        "search_keywords": "snow clearing manual worker winter Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "14872fb9",
+        "job_id": "excavator-driver-night-shift-espoo-14872fb9",
+        "processed": true,
+        "title": "Excavator Driver Night Shift",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/Hr0MxRwKR_zfnPSMYOUSfQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a1a673a6-72d9-42a0-87da-cec8c564a75b/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/excavator-driver-night-shift-espoo-14872fb9",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:12",
+        "open_positions": 1,
+        "salary_range": "Salary according to experience",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Eezy Henkilöstöpalvelut Oy as a Excavator Driver Night Shift in Espoo. Learn more about the role and apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking an experienced excavator driver for a permanent, full-time position on night shifts at a data center construction site in Espoo. Responsibilities include performing versatile earthworks and excavation tasks. Applicants should have previous experience as an excavator driver, a valid occupational safety card, and the ability to work independently and cooperatively. Competitive hourly wages based on Finnish collective agreements are offered, along with the opportunity for travel work and a long-term project. Eezy Henkilöstöpalvelut Oy values diversity and equal opportunities.",
+        "what_we_expect": [
+          "Previous experience as an excavator driver.",
+          "A valid occupational safety card.",
+          "Independent and responsible approach to work.",
+          "Ability to work night shifts.",
+          "Good cooperation and interaction skills."
+        ],
+        "job_responsibilities": [
+          "Perform versatile earthworks and excavation work in the construction area of the data center."
+        ],
+        "what_we_offer": [
+          "Long-term project.",
+          "Possibility of travel work."
+        ],
+        "search_keywords": "excavator driver night shift construction data center Espoo",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      },
+      {
+        "id": "b9016ef6",
+        "job_id": "hoiva-assistant-kittilä-b9016ef6",
+        "processed": true,
+        "title": "Hoiva Assistant",
+        "company": "Yhdessä Arvokkaasti Oy, Kittilä",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Kittilä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.arvokkaasti.fi/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/788dff19-ce89-428b-8015-ebc69828a335/en",
+        "job_employer_email": "johanna@arvokkaasti.fi",
+        "job_employer_name": "Johanna Paksuniemi",
+        "job_employer_phone_no": "0504776382",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/hoiva-assistant-kittilä-b9016ef6",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-21 20:35:12",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Yhdessä Arvokkaasti Oy, Kittilä is looking for a Hoiva Assistant in Kittilä. Don't miss this opportunity — apply today.",
+        "description": "We are seeking a permanent, full-time Hoiva Assistant for the community housing unit in Kittilä Pakatti. This role offers the opportunity to bring joy to the lives of the elderly while utilizing your care assistant degree and valid medical licenses. You will need to demonstrate self-reliance, a warm and caring approach, and excellent Finnish language skills. Responsibilities include providing gentle, heartwarming care, engaging in meaningful conversations, and preparing delicious home-cooked meals. Essential permits include First Aid 1, Hygiene Passport, and First Aid 2. A criminal record extract is also required. Salary is in accordance with the private social service sector collective agreement. Applications should include your education, work experience, and at least one recommender.",
+        "what_we_expect": [
+          "Care assistant degree and valid medical licenses.",
+          "Self-reliance and the ability to solve everyday situations smoothly.",
+          "Perfect Finnish language skills.",
+          "A warm encounter is a matter of the heart.",
+          "Talkativeness and a listening ear.",
+          "Good home cooking skills."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "First aid 1.",
+          "Hygiene passport.",
+          "First aid 2."
+        ],
+        "search_keywords": "care assistant medical license Finnish language elderly home cooking",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:14",
+    "jobs": [
+      {
+        "id": "181c60bc",
+        "job_id": "bitumen-insulator-espoo-181c60bc",
+        "processed": true,
+        "title": "Bitumen Insulator",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/S8zFszDIvj4gszjo3vmRtA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/831531d3-a8d4-4ce5-b92f-9be2baaef858/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/bitumen-insulator-espoo-181c60bc",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:14",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is looking for a Bitumen Insulator in Espoo. Don't miss this opportunity — apply today.",
+        "description": "We are seeking experienced bitumen insulators for permanent, full-time positions in the capital region, including Espoo, Helsinki, and Vantaa. Ideal candidates will have at least 5 years of experience in bitumen works, including waterproofing and eaves for water roofs. Applicants should demonstrate an independent and accurate approach to work, possess a B driver's license, and hold valid work safety and fire work cards. Competitive hourly wages based on Finnish collective agreements are offered, along with the use of a car and necessary tools from our client company. Apply now through the provided link to join a dynamic and interesting work environment.",
+        "what_we_expect": [
+          "Previous experience in bitumen works.",
+          "Experience in different stages of construction, e.g. Eaves for water roofs.",
+          "Independent and accurate approach to work.",
+          "Good physical condition.",
+          "B driver's license.",
+          "Valid work safety and fire work cards."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Use of the car.",
+          "Use of necessary tools from our customer company."
+        ],
+        "search_keywords": "bitumen insulator construction experience work safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      },
+      {
+        "id": "cb829afe",
+        "job_id": "earth-construction-machinery-inspector-pyhäjoki-cb829afe",
+        "processed": true,
+        "title": "Earth Construction Machinery Inspector",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Pyhäjoki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/fpi3RWdIefU_Hfp3oxK1Uw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/37e9324d-5f84-4223-964e-50d0fa54138b/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/earth-construction-machinery-inspector-pyhäjoki-cb829afe",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:14",
+        "open_positions": 1,
+        "salary_range": "Tarjoamme sinulle merkityksellisen roolin turvallisuuden ja osaamisen ylläpitämisessä. Saat mahdollisuuden koulutusprosessien ja työkäytäntöjen kehittämiseen. Palkkaus kokemuksesi mukaan, palkkahaitari sijoittuu 28-35€/h.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Eezy Henkilöstöpalvelut Oy is hiring a Earth Construction Machinery Inspector in Pyhäjoki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking an Earth Construction Machinery Inspector to join our team in Pyhäjoki, North Ostrobothnia. As a key member of our client's safety and competence assurance department, you will be responsible for maintaining drivers' training and qualification registers, planning and organizing professional trainings, evaluating drivers' skills, ensuring machine safety and employee suitability, developing monitoring processes, and preparing reports. With experience in the construction industry, technical education, and knowledge of permit requirements, you will contribute to a safe and efficient work environment. Fluency in Finnish is required, and knowledge of English is advantageous.",
+        "what_we_expect": [
+          "Previous experience in the construction industry, you are familiar with infrastructure machinery and their operating methods.",
+          "Appropriate technical education in the construction or infrastructure sector.",
+          "Knowledge of the permit requirements and regulations in the field.",
+          "Organizational and communication skills; ability to prepare clear reports and training materials.",
+          "Fluent written and spoken Finnish language skills; knowledge of the English language is an advantage.",
+          "Accuracy, sense of responsibility and ability to work independently and in a team."
+        ],
+        "job_responsibilities": [
+          "Check and maintain the drivers' training and qualification registers.",
+          "Plan and organize professional qualification trainings, refresher and orientation programs in cooperation with trainers.",
+          "Evaluate the skills of the drivers with field assessments, tests and follow-up visits and make development proposals.",
+          "Ensure compliance with the use and safety of machines and the suitability of employees for different work tasks.",
+          "Develop and maintain functioning processes for monitoring and renewing qualifications.",
+          "Prepare reports and statistics on the qualification situation and report to the management and authorities if necessary."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "construction machinery inspector qualification training safety",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      },
+      {
+        "id": "1c846678",
+        "job_id": "machine-drivers-helsinki-1c846678",
+        "processed": true,
+        "title": "Machine Drivers",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/3T-dH24tVVtiz-D-4Izdxw",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/32d51db2-4789-44d8-ac61-8677af68a75f/en",
+        "job_employer_email": "milla.suhonen@eezy.fi",
+        "job_employer_name": "Milla Suhonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/machine-drivers-helsinki-1c846678",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:14",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Eezy Henkilöstöpalvelut Oy as a Machine Drivers in Helsinki. Learn more about the role and apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking five machine drivers for snow season work in the Western Helsinki area. Responsibilities include snow plowing and sandblasting with machinery, as well as other winter maintenance tasks. Experience with Kramer loaders or similar equipment is advantageous. The role requires a careful and responsible work ethic, and the ability to work independently in varying weather conditions. Work is primarily from 7 a.m. to 3 p.m. on weekdays, with potential evening and weekend shifts during heavy snowfalls. Safety equipment such as safety shoes, an attention vest, and hearing protection can be provided. Applicants should dress appropriately for winter conditions, with warm layers, gloves, a beanie, and waterproof clothing.",
+        "what_we_expect": [
+          "Careful and responsible work ethic.",
+          "Ability to work independently in varying weather and climate conditions."
+        ],
+        "job_responsibilities": [
+          "Snow plowing and sandblasting with machinery.",
+          "Other tasks related to winter maintenance as needed."
+        ],
+        "what_we_offer": [
+          "Safety shoes can be arranged.",
+          "Attention vest can be arranged.",
+          "Hearing protection can be arranged."
+        ],
+        "search_keywords": "machine driver snow plowing winter maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "e2dc48ff",
+        "job_id": "rack-installer-vantaa-e2dc48ff",
+        "processed": true,
+        "title": "Rack Installer",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/AqoEqNEhyiSYK84jZ8ycxQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/e32c54a2-87f2-4a08-88fd-3970a32d0099/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/rack-installer-vantaa-e2dc48ff",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:14",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Rack Installer role at Eezy Henkilöstöpalvelut Oy. Join the team and build your career in Vantaa.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a Rack Installer for a permanent, full-time position in Vantaa. This role involves versatile practical work at construction sites in the Uusimaa region, requiring previous experience in rack installation, a flexible and proactive attitude, strong teamwork and interaction skills, a customer service mindset, and a B driver's license. The work schedule is 40 hours per week, from 7 a.m. to 3:30 p.m. on weekdays, with opportunities for development and learning in a diverse and inclusive environment. Apply quickly as positions start as soon as suitable candidates are found.",
+        "what_we_expect": [
+          "Previous experience in rack installation work.",
+          "Flexible and brisk attitude.",
+          "Good teamwork and interaction skills.",
+          "Customer service spirit.",
+          "B driver's license."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "rack installer construction scaffolding Uusimaa",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "237fa0e3",
+        "job_id": "painter-for-line-renovation-site-espoo-237fa0e3",
+        "processed": true,
+        "title": "Painter for Line Renovation Site",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Espoo",
+          "Helsinki",
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/UZC_W9QtpieTEjdXeb7RBQ",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/961386b2-7ccc-4844-8f23-5eeb7ebe7ea3/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/painter-for-line-renovation-site-espoo-237fa0e3",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:14",
+        "open_positions": 1,
+        "salary_range": "Salary is agreed according to skills and experi",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Painter for Line Renovation Site at Eezy Henkilöstöpalvelut Oy in Espoo. Check the requirements and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking experienced painters for a permanent, full-time position at a line renovation site in Espoo, Helsinki, or Vantaa. Responsibilities include smoothing and painting surfaces, and taping. Applicants must be fluent in Finnish, hold a valid work safety card, and demonstrate independent working capabilities. Competitive hourly wages are offered based on Finnish collective agreements. Please apply with your salary expectations through the provided link to secure a position starting as soon as a suitable candidate is found.",
+        "what_we_expect": [
+          "Experienced professional.",
+          "Capable of independent work.",
+          "Fluent Finnish language skills.",
+          "Valid work safety card.",
+          "Reliable.",
+          "Professional."
+        ],
+        "job_responsibilities": [
+          "Smoothing and painting surfaces.",
+          "Taping."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "painter renovation experience Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:19",
+    "jobs": [
+      {
+        "id": "7374906d",
+        "job_id": "platform-driver-helsinki-7374906d",
+        "processed": true,
+        "title": "Platform Driver",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/Utbqq7U2fpRXX2f6aNh95g",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/69f20de5-35d4-42ba-ab63-2be73660e296/en",
+        "job_employer_email": "milla.suhonen@eezy.fi",
+        "job_employer_name": "Milla Suhonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/platform-driver-helsinki-7374906d",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Platform Driver at Eezy Henkilöstöpalvelut Oy in Helsinki. Check the requirements and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a platform driver for permanent, full-time employment in Helsinki. Responsibilities include swap pallet transports, requiring previous experience with pallet trucks and hook devices. A valid C driver's license, self-motivation, and a reliable work ethic are essential. Opportunities for ongoing work are available for the right candidate. Eezy supports its clients by providing the best experts for various situations nationwide, offering a range of services including personnel leasing and recruitment. We welcome applications from diverse backgrounds and are committed to an equal and transparent recruitment process.",
+        "what_we_expect": [
+          "Valid C driver's license.",
+          "Experience in swap pallet transports and using a hook device.",
+          "Self-starter.",
+          "Reliable work ethic."
+        ],
+        "job_responsibilities": [
+          "Swap pallet transports."
+        ],
+        "what_we_offer": [
+          "Work available for a longer period of time."
+        ],
+        "search_keywords": "pallet truck driver swap transports experience reliable",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "decbd8ac",
+        "job_id": "electrician-for-long-project-espoo-decbd8ac",
+        "processed": true,
+        "title": "Electrician for Long Project",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo",
+          "Raasepori",
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/bCMHFiCjnZEhJ3FmZUJmWA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/63728d09-5339-4944-9c0f-335fefb56e10/en",
+        "job_employer_email": "iida.vauhkala@eezy.fi",
+        "job_employer_name": "Iida Vauhkala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/electrician-for-long-project-espoo-decbd8ac",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:19",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Electrician for Long Project at Eezy Henkilöstöpalvelut Oy in Espoo. Check the requirements and apply today.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking electricians for a long-term project in the Western Uusimaa area, specifically in Espoo, Raasepori, and Kirkkonummi. The role involves replacing, installing, and commissioning remotely readable electricity meters in customer properties. This mobile field work includes daily customer interactions, with 12-hour shifts, 7 days on followed by 7 days off. Applicants should have electrician training, at least one year of electrical field experience, the ability to work independently, good Finnish language skills, and a customer service-oriented approach. A valid B driver's license and electrical work safety qualifications are required. Previous experience with electricity meter installations is preferred.",
+        "what_we_expect": [
+          "Electrician training.",
+          "At least one year of work experience in the electrical field.",
+          "Ability to work independently.",
+          "Good Finnish language skills and customer service-oriented approach.",
+          "A valid B driver's license.",
+          "Valid or obtainable electrical work safety, occupational safety, road safety and emergency first aid qualifications."
+        ],
+        "job_responsibilities": [
+          "Replacement, installation and commissioning of remotely readable electricity meters in customer properties."
+        ],
+        "what_we_offer": [
+          "Long-term project.",
+          "Traveling to work locations in a car provided by the client company together with a work partner.",
+          "Option of accommodation if interested in traveling.",
+          "Personal production bonus.",
+          "Meal allowances.",
+          "Per diems."
+        ],
+        "search_keywords": "electrician installation maintenance meter replacement western uusimaa espoo kirkkonummi raasepor",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "69cd873e",
+        "job_id": "department-secretary-vaasa-69cd873e",
+        "processed": true,
+        "title": "Department Secretary",
+        "company": "Pohjanmaan hyvinvointialue",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/OVPH-15-255-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/46e54f5f-62b6-4447-b559-1c8840b3afbb/en",
+        "job_employer_email": "etunimi.sukunimi@ovph.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0406411920",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/department-secretary-vaasa-69cd873e",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-21 20:35:19",
+        "open_positions": 1,
+        "salary_range": "2684,30 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "Swedish"
+        ],
+        "meta_description": "Join Pohjanmaan hyvinvointialue as a Department Secretary and grow your career in Vaasa. Check the job details and apply now.",
+        "description": "We are seeking a dedicated department secretary to join the team at the department of internal medicine and neurology at Vaasa Central Hospital, part of the Pohjanmaan hyvinvointialue in Vaasa, Finland. This permanent, full-time position offers opportunities for training, networking, and research. Applicants must hold a suitable university degree or secondary vocational qualification and possess excellent oral and written skills in Finnish and Swedish, along with valid vaccination protection according to Section 48 of the Infectious Diseases Act (1227/2016). We value reliability, professionalism, and teamwork. Join us in a region where over 8,000 professionals work together to provide high-quality and humane services.",
+        "what_we_expect": [
+          "A suitable university degree or secondary vocational qualification.",
+          "Good oral and written skills in both national languages of our country.",
+          "Valid vaccination protection according to Section 48 of the Infectious Diseases Act (1227/2016).",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunities for training.",
+          "Networking opportunities.",
+          "Research opportunities."
+        ],
+        "search_keywords": "secretary medical hospital qualification language vaccination",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      },
+      {
+        "id": "bca8e7d8",
+        "job_id": "school-counselor-hattula-bca8e7d8",
+        "processed": true,
+        "title": "School Counselor",
+        "company": "Hattulan kunta",
+        "job_category": "education",
+        "jobLocation": [
+          "Hattula"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/HAT-01-27-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/024da338-a1c4-484c-b38c-718c6125b5e1/en",
+        "job_employer_email": "kyosti.ypya@hattula.fi",
+        "job_employer_name": "Kyösti Ypyä",
+        "job_employer_phone_no": "0503442026",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/school-counselor-hattula-bca8e7d8",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-09",
+        "scraped_at": "2026-11-21 20:35:19",
+        "open_positions": 1,
+        "salary_range": "According to KVTES and the municipality's flat salary system, basic salary 2437.53-2542.35. In addition to this, possible extras.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Hattulan kunta is hiring a School Counselor in Hattula. Explore the job responsibilities, benefits, and apply today.",
+        "description": "In Hattula, Parola Yhteiskoulu seeks a full-time, permanent school counselor to begin on January 7, 2027. The ideal candidate will have a professional degree suitable for the role, a brisk attitude, strong interaction and teamwork skills, initiative, and the ability to work effectively with middle school-aged youth. A criminal record extract is required, and a six-month probationary period will apply. For more information, contact Kyösti Ypyä at kyosti.ypya@hattula.fi or 050 344 2026.",
+        "what_we_expect": [
+          "A brisk attitude.",
+          "Good interaction and teamwork skills.",
+          "Initiative.",
+          "The ability to work with middle school-aged youth."
+        ],
+        "job_responsibilities": [
+          "All the duties of a school counselor in a middle school."
+        ],
+        "what_we_offer": [
+          "A criminal record extract required.",
+          "A probationary period of six months."
+        ],
+        "search_keywords": "school counselor middle school municipality Hattula",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      },
+      {
+        "id": "f596bf8d",
+        "job_id": "coxswain-for-fiber-optic-installations-helsinki-f596bf8d",
+        "processed": true,
+        "title": "Coxswain for Fiber Optic Installations",
+        "company": "Eezy Henkilöstöpalvelut Oy",
+        "job_category": "general-labor-and-manual-work",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://tyopaikat.eezy.fi/tyopaikat/qXw5a1aCXc_zxPVlEewMqA",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/bfcf985e-8c1e-488b-a7de-c34b86982bb7/en",
+        "job_employer_email": "milla.suhonen@eezy.fi",
+        "job_employer_name": "Milla Suhonen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/general-labor-and-manual-work/coxswain-for-fiber-optic-installations-helsinki-f596bf8d",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:19",
+        "open_positions": 1,
+        "salary_range": "salary based on your experience Versatile const",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Coxswain for Fiber Optic Installations at Eezy Henkilöstöpalvelut Oy. Great opportunity in Helsinki — apply now.",
+        "description": "Eezy Henkilöstöpalvelut Oy is seeking a skilled Coxswain for fiber optic installations in Helsinki. This full-time, permanent position involves assisting and performing independent tasks related to the construction of the fiber optic network as part of the installation team. Previous experience in fiber optic installations or telecom network construction, along with experience in coxswain's duties or similar field work, is required. You should be able to work both independently and as part of a team, possess a valid B driver's license, and have excellent Finnish language skills. The role offers a competitive salary based on experience and the opportunity to work at various sites in the capital region. Join a professional working community and develop your skills in this growing industry.",
+        "what_we_expect": [
+          "Previous experience in fiber optic installations or telecom network construction.",
+          "Experience of coxswain's duties or similar field work duties.",
+          "Ability to work independently and as part of a team.",
+          "Good attitude and responsible work ethic.",
+          "A valid B driver's license.",
+          "Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Assisting and performing independent tasks related to the construction of the fiber optic network as part of the installation team."
+        ],
+        "what_we_offer": [
+          "Competitive salary based on your experience.",
+          "Versatile construction sites in the capital region.",
+          "A professional working community and the opportunity to develop in the field."
+        ],
+        "search_keywords": "coxswain fiber optic installations construction telecom network",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:20",
+    "jobs": [
+      {
+        "id": "189650bd",
+        "job_id": "planning-architect-kuopio-189650bd",
+        "processed": true,
+        "title": "Planning Architect",
+        "company": "Kuopion kaupunki",
+        "job_category": "government-and-public-sector",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/746378/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b99e27e4-cec0-4da5-aa18-7bf1f80cc8ad/en",
+        "job_employer_email": "kuopiorekry@kuopio.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/government-and-public-sector/planning-architect-kuopio-189650bd",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-18",
+        "scraped_at": "2026-11-21 20:35:20",
+        "open_positions": 1,
+        "salary_range": "Tehtävän palkkaus on välillä 4527,51- 4907,31 €/kk.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Kuopion kaupunki as a Planning Architect in Kuopio. Learn more about the role and apply now.",
+        "description": "In Kuopio, Finland, the city is seeking a Planning Architect to join the team from February 1, 2027, or as per contract. This role involves strategic urban development projects in the Kuopio Plus area, working in a multidisciplinary team to enhance the city's vitality, sustainability, and aesthetics. Responsibilities include comprehensive planning, site plan preparation, coordination, and supervision of consulting work. The ideal candidate will hold an architect's degree, have urban planning experience, and possess strong Finnish and English communication skills. Creativity, enthusiasm for urban development, and a comprehensive understanding of land use planning are essential.",
+        "what_we_expect": [
+          "An architect's degree completed at a technical college or university or another applicable higher university degree.",
+          "Urban planning and zoning experience.",
+          "Good oral and written skills in Finnish and English.",
+          "Creative planning skills and urban design expertise.",
+          "Enthusiasm for developing the urban environment.",
+          "Comprehensive understanding of land use planning and management of large entities."
+        ],
+        "job_responsibilities": [
+          "Plan the strategic urban development projects of the Kuopio Plus area.",
+          "Work in a multidisciplinary team of experts on promoting the city's vitality, sustainable community structure and a good cityscape.",
+          "Comprehensive planning of regional entities and planning coordination.",
+          "Prepare site plans and deviation decisions.",
+          "Commissioning and supervision of consulting work.",
+          "Complete other tasks related to land use planning."
+        ],
+        "what_we_offer": [
+          "An interesting task field and meaningful work that offers the opportunity to develop as part of a large organization.",
+          "A good introduction to the task.",
+          "A mutually agreeable partial remote work opportunity.",
+          "The opportunity for continuous learning.",
+          "Benefits that support your coping and well-being, e.g.: ePassi, commuting support staff welfare card and occupational health care."
+        ],
+        "search_keywords": "planning architect urban development Kuopio Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      },
+      {
+        "id": "16fb9155",
+        "job_id": "geriatrics-specialist-pori-16fb9155",
+        "processed": true,
+        "title": "Geriatrics Specialist",
+        "company": "Satakunnan hyvinvointialue",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Pori"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/SAT-04-79-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/b2c3c120-69f1-4fb5-acbc-e3fb2dfee14b/en",
+        "job_employer_email": "terhi.holmstrom@sata.fi",
+        "job_employer_name": "Terhi Holmström",
+        "job_employer_phone_no": "0444503080",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/geriatrics-specialist-pori-16fb9155",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-15",
+        "scraped_at": "2026-11-21 20:35:20",
+        "open_positions": 1,
+        "salary_range": "Salary according to the career ladder salary in",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Satakunnan hyvinvointialue is looking for a Geriatrics Specialist in Pori. Don't miss this opportunity — apply today.",
+        "description": "We are seeking a Geriatrics Specialist to join our team in Pori, Finland, offering versatile tasks in memory clinics, short-term care, and home care. This permanent, part-time position provides an inspiring work environment, flexible hours, and opportunities for professional development. You will collaborate closely with various elderly services units and benefit from good written and oral Finnish language skills. A geriatric specialist degree is required, and we offer exercise, cultural, and wellness benefits, including a free gym in Rauma, Harjavalla, Pori, and Ulvila. Our team supports a diverse and inclusive atmosphere, with regular meetings and training opportunities. Applications are submitted electronically, and we follow a six-month trial period.",
+        "what_we_expect": [
+          "Good interaction and networking skills.",
+          "Close cooperation with the units of the area's elderly services domain.",
+          "Good written and oral Finnish language skills.",
+          "A geriatric specialist degree."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Flexible working hours.",
+          "Exercise, cultural and wellness benefits.",
+          "A free gym in Rauma, Harjavalla, Pori and Ulvila.",
+          "Occupational health care.",
+          "Internal training offer."
+        ],
+        "search_keywords": "geriatrics specialist healthcare elderly services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "dd7c168d",
+        "job_id": "procurement-specialist-helsinki-dd7c168d",
+        "processed": true,
+        "title": "Procurement Specialist",
+        "company": "Tulli",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://valtiolle.fi/tyoavain/26552/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/507473a4-a6f3-419b-b8b6-7aac2e695d91/en",
+        "job_employer_email": "etunimi.sukunimi@tulli.fi",
+        "job_employer_name": "Sirpa Reunanen-Alatalo",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/procurement-specialist-helsinki-dd7c168d",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-14",
+        "scraped_at": "2026-11-21 20:35:20",
+        "open_positions": 1,
+        "salary_range": "Tehtävän vaativuustaso 17 peruspalkka 3 866,14 €/kk, uuden henkilön aloittaessa yleensä 4 175,43 - 4 639,37 €/kk.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Procurement Specialist at Tulli. Great opportunity in Helsinki — apply now.",
+        "description": "The Procurement Specialist position at Tulli in Helsinki or Turku involves planning and implementing procurements in collaboration with various Customs departments, tendering processes in compliance with legislation, and managing contracts. Responsibilities include preparing procurement notices, comparing tenders, and drafting decisions, as well as negotiating contracts and ensuring supplier information is accurate. The role requires reliability, professionalism, teamwork, and a willingness to learn. Tulli, a results-driven agency of the Ministry of Finance, supports smooth trade and ensures customs duties are effectively collected. For more information, contact Sirpa Reunanen-Alatalo or Elina Riihimäki.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Planning procurements in his own area of responsibility together with the departments and services of the Customs.",
+          "Implementation and monitoring of procurements.",
+          "Tendering procurements in cooperation with Customs experts in accordance with procurement legislation, including preparing procurement notices and requests for tenders, using the Cloudia Kilpailitus service.",
+          "Comparing tenders and drafting procurement decisions.",
+          "Taking care of contract management measures such as contract negotiations and checking suppliers' information.",
+          "Drafting contracts if necessary in cooperation with the contract lawyer."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "procurement specialist Helsinki Turku customs",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/26.png"
+      },
+      {
+        "id": "de2078d6",
+        "job_id": "rebar-worker-tampere-de2078d6",
+        "processed": true,
+        "title": "Rebar Worker",
+        "company": "Rekrymesta Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Tampere"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://rekrymesta.likeit.fi/apply/11114280",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/d247e06d-6629-47ca-b049-d1d11e17b996/en",
+        "job_employer_email": "info@rekrymesta.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/rebar-worker-tampere-de2078d6",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-21 20:35:20",
+        "open_positions": 1,
+        "salary_range": "salary expectations and when you would be avail",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Rebar Worker role at Rekrymesta Henkilöstöpalvelut Oy. Join the team and build your career in Tampere.",
+        "description": "Join Rekrymesta Henkilöstöpalvelut Oy as a rebar worker in Tampere, working for a reputable construction company with a strong track record. This permanent, full-time role offers versatile tasks and a supportive work environment. Ideal candidates will have previous experience in rebar work, an independent work record, and a valid occupational safety card. A responsible attitude and a commitment to doing the job properly are essential. If you are looking for a long-term opportunity in a professional team, apply now with your CV and details of your availability.",
+        "what_we_expect": [
+          "Previous experience in rebar work.",
+          "Independent work record.",
+          "A valid occupational safety card.",
+          "Strong professionalism.",
+          "A responsible attitude.",
+          "The desire to do the job properly."
+        ],
+        "job_responsibilities": [
+          "Varied and varied tasks."
+        ],
+        "what_we_offer": [
+          "Varied and varied tasks.",
+          "A good and relaxed work team.",
+          "The possibility of a longer-term employment relationship."
+        ],
+        "search_keywords": "rebar worker construction Tampere experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/15.png"
+      },
+      {
+        "id": "1377557d",
+        "job_id": "family-caregiver-pöytyä-1377557d",
+        "processed": true,
+        "title": "Family Caregiver",
+        "company": "Varsinais-Suomen hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Pöytyä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/VARHA-03-746-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cd57f8c1-14a8-4c97-ad2f-3faff7d291ac/en",
+        "job_employer_email": "",
+        "job_employer_name": "Jyrki Heiskari",
+        "job_employer_phone_no": "0505440291",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/family-caregiver-pöytyä-1377557d",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-21 20:35:20",
+        "open_positions": 1,
+        "salary_range": "SOTE-sopimus",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Family Caregiver at Varsinais-Suomen hyvinvointialue. Great opportunity in Pöytyä — apply now.",
+        "description": "Family caregiver positions are available at Taitokoti in Pöytyä, where you will support the well-being and daily life of residents with intellectual disabilities. As a key member of our close-knit team, you will provide individual basic and medical care, plan leisure activities, and update treatment plans while working in a customer-oriented and cooperative environment. You will log daily activities in the LifeCare and Omni 360 systems and report regularly. We offer meaningful work, comprehensive orientation, training opportunities, and the chance to influence work shifts and operational methods. Customer orientation, good Finnish language skills, and interaction and cooperation skills are essential. Valid LOVe permits and previous experience are advantageous.",
+        "what_we_expect": [
+          "Customer-oriented approach.",
+          "Interest in supporting the well-being and inclusion of residents with intellectual disabilities.",
+          "Good interaction and cooperation skills.",
+          "Desire to work together with others.",
+          "Hygiene pass.",
+          "Good Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Take care of residents' individual basic and medical care in accordance with the treatment plans.",
+          "Support residents' well-being and participation in daily life.",
+          "Plan and implement residents' leisure activities.",
+          "Update treatment and service plans.",
+          "Daily logging in the LifeCare and Omni 360 customer information systems.",
+          "Reporting."
+        ],
+        "what_we_offer": [
+          "Versatile and meaningful work.",
+          "Comprehensive and individual orientation.",
+          "Early training opportunities for professional development.",
+          "Opportunities to strengthen skills.",
+          "Influence over work shifts.",
+          "Participation in the development of everyday work and operating methods."
+        ],
+        "search_keywords": "family caregiver disability services social care services",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/19.png"
+      }
+    ]
   }
 ]
