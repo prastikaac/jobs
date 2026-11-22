@@ -524029,5 +524029,466 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:34",
+    "jobs": [
+      {
+        "id": "e82ed341",
+        "job_id": "systems-expert-for-building-automation-helsinki-e82ed341",
+        "processed": true,
+        "title": "Systems Expert for Building Automation",
+        "company": "Worknow Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8765034-jarjestelmaasiantuntija-rakennusautomaatioon-helsinki/applications/new?promotion=2305236-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f16da0e9-cad8-40dc-9d0c-89dfa83f1f59/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/systems-expert-for-building-automation-helsinki-e82ed341",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:34",
+        "open_positions": 1,
+        "salary_range": "salary is determined according to your skills a",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Worknow Oy as a Systems Expert for Building Automation and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "Systems expert for building automation in Helsinki, Worknow Oy is seeking a meticulous and quality-conscious professional with strong experience in building automation and technology. Responsibilities include preparing connection drawings, measuring devices and actuators, specifying valves, programming logic and user interfaces, planning system architectures, and commissioning systems. Fluency in Finnish is required, and experience with Schneider EcoStruxure Building Operation or Siemens ABT/Desigo systems is beneficial. This full-time, permanent position offers a competitive hourly wage based on Finnish collective agreements and a versatile expert role in Helsinki. Submit your application to hr@worknow.fi or call 0401603159 for more information.",
+        "what_we_expect": [
+          "Strong experience in building automation and building technology.",
+          "Meticulous and quality-conscious professional.",
+          "Take responsibility for own work.",
+          "Ensure end result meets agreed requirements.",
+          "Ability to work independently.",
+          "Willingness to work as part of a team."
+        ],
+        "job_responsibilities": [
+          "Prepare connection drawings of automation systems for automation centers.",
+          "Measure devices and actuators.",
+          "Specify valves for automation deliveries.",
+          "Logic and user interface programming.",
+          "System architecture planning.",
+          "System commissioning testing."
+        ],
+        "what_we_offer": [
+          "Versatile expert position.",
+          "Full-time, 40 hours a week job in Helsinki.",
+          "Indefinite employment relationship.",
+          "Salary determined according to skills and experience."
+        ],
+        "search_keywords": "building automation systems expert Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      },
+      {
+        "id": "bcc5f823",
+        "job_id": "hoiva-assistant-lohja-bcc5f823",
+        "processed": true,
+        "title": "Hoiva Assistant",
+        "company": "Länsi-Uudenmaan hyvinvointialue",
+        "job_category": "social-care-services",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LUVN-07-352-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/f01b2958-be7c-40f0-96ca-ea414212bbb0/en",
+        "job_employer_email": "seija.erkkila@luvn.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/social-care-services/hoiva-assistant-lohja-bcc5f823",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-21 20:35:34",
+        "open_positions": 1,
+        "salary_range": "Tasopalkka: 1221,5 €/kk",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Hoiva Assistant at Länsi-Uudenmaan hyvinvointialue in Lohja. Apply now and take the next step in your career.",
+        "description": "As a Hoiva assistant at Pentinkulma in Lohja, you will support customers with their daily needs and help them engage in activities they enjoy. You will assist in organizing events and hobby activities, ensuring customers can participate in pastime interests. The role involves a positive, multi-professional, and multicultural team environment, with opportunities for professional development and versatile work experience. The position is part-time (50% working time) and permanent, with a salary of 1221.5 €/kk and a lunch allowance of €150 per year. Fluency in Finnish is required, along with a desire to enhance the quality of life for elderly customers. Applications are being reviewed during the application period, and the role begins according to agreement.",
+        "what_we_expect": [
+          "Desire to be involved in influencing the good life of our customers.",
+          "Orientation.",
+          "Professional development opportunities.",
+          "Versatile work experience opportunities."
+        ],
+        "job_responsibilities": [
+          "Help customers with everyday life and their basic needs.",
+          "Ensure customers can participate in the pastime that interests them on a daily basis.",
+          "Assist customers, take care of them, and enable hobbies that are important to them.",
+          "Organize events and hobby activities for customers by planning them together."
+        ],
+        "what_we_offer": [
+          "Lunch allowance of €150 per year.",
+          "Opportunities for professional development and acquiring versatile work experience."
+        ],
+        "search_keywords": "assistant social care elderly care part-time",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      },
+      {
+        "id": "00728417",
+        "job_id": "sheet-metal-welder-pirkkala-00728417",
+        "processed": true,
+        "title": "Sheet Metal Welder",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8764971-levyseppahitsaaja-pirkkalaan/applications/new?promotion=2305234-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/0680bae4-f0d0-43d8-8d00-35af182b238c/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/sheet-metal-welder-pirkkala-00728417",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:34",
+        "open_positions": 1,
+        "salary_range": "salary is determined according to your skills,",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Sheet Metal Welder at Worknow Oy in Pirkkala. Apply now and take the next step in your career.",
+        "description": "Sheet metal welder needed in Pirkkala for the manufacture of demanding industrial structures using MAG, TIG, and powder arc welding. Seeking skilled and motivated workers with experience in stainless and carbon steel, and a proactive approach to work. Competitive hourly wage based on Finnish collective agreements. Fluent Finnish required. Permanent, full-time position with a reliable employer offering a fast and smooth recruitment process and comprehensive occupational health. Apply now for immediate consideration.",
+        "what_we_expect": [
+          "Skilled and motivated worker with several years of experience in demanding sheet metal welder duties.",
+          "Experience in MAG and TIG welding.",
+          "Readiness to work also with powder arc welding.",
+          "Experience working with stainless and carbon steel.",
+          "Fluent Finnish language skills.",
+          "Self-initiated and proactive approach to work."
+        ],
+        "job_responsibilities": [
+          "Manufacture demanding welded structures for industry using various welding methods including MAG welding, TIG welding, and powder arc welding (SAW)."
+        ],
+        "what_we_offer": [
+          "Fast and smooth recruitment process.",
+          "We will keep you informed throughout the process.",
+          "Occupational health that is more comprehensive than the statutory provisions from the start.",
+          "A reliable employer - things are handled as agreed."
+        ],
+        "search_keywords": "sheet metal welder manufacturing demanding structures Pirkkala experience welding methods stainless steel carbon steel",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      },
+      {
+        "id": "a53af8a4",
+        "job_id": "chief-accountant-espoo-a53af8a4",
+        "processed": true,
+        "title": "Chief Accountant",
+        "company": "Barona Finance Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/paakirjanpitaja-chief-accountant-rsnje7",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/7ae0b191-4bfd-4d37-8dbf-9c1b3941fedb/en",
+        "job_employer_email": "julia.leppanen@barona.fi",
+        "job_employer_name": "Julia Leppänen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/chief-accountant-espoo-a53af8a4",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-21 20:35:34",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, but no",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Chief Accountant at Barona Finance Oy. Great opportunity in Espoo — apply now.",
+        "description": "Barona Finance Oy is seeking a Chief Accountant for a permanent, full-time position in Espoo. The ideal candidate will have at least five years of experience in similar roles, a suitable university degree, strong Excel skills, and proficiency in both Finnish and English. Responsibilities include monthly, quarterly, and annual accounting, preparing financial statements and tax returns, VAT reporting, and other financial management tasks. The role involves working closely with the Finnish accounting team and contributing to system and operating method changes. If you are self-initiative, cooperative, and solution-oriented, this position could be a great fit for you.",
+        "what_we_expect": [
+          "At least five years of work experience in similar positions, preferably in a general accounting or GL role.",
+          "A suitable university degree (AMK or university).",
+          "Strong Excel skills and an analytical and precise approach to work.",
+          "Ability to manage entities and work goal-oriented within strict reporting schedules.",
+          "Fluent Finnish and English language skills.",
+          "Self-initiative, cooperative and solution-oriented."
+        ],
+        "job_responsibilities": [
+          "Monthly, quarterly and annual accounting and related reporting.",
+          "Preparing financial statements and company tax returns.",
+          "VAT reporting.",
+          "Other accounting and financial management tasks related to the position."
+        ],
+        "what_we_offer": [
+          "Preparing financial statements and company tax returns."
+        ],
+        "search_keywords": "chief accountant accounting finance experience reporting",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "55f736b1",
+        "job_id": "cnc-machinistturner-pirkkala-55f736b1",
+        "processed": true,
+        "title": "CNC Machinist/Turner",
+        "company": "Worknow Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ura.worknow.fi/jobs/8765030-cnc-koneistaja-sorvaaja-pirkkala/applications/new?promotion=2305235-tyomarkkinatori",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/5271f8a3-7cf1-4def-aeea-b7d25a5ed366/en",
+        "job_employer_email": "anna.louhivaara@worknow.fi",
+        "job_employer_name": "Anna Louhivaara",
+        "job_employer_phone_no": "+358505358321",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/cnc-machinistturner-pirkkala-55f736b1",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-26",
+        "scraped_at": "2026-11-21 20:35:34",
+        "open_positions": 1,
+        "salary_range": "salary according to experience * versatile turn",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a CNC Machinist/Turner at Worknow Oy. Great opportunity in Pirkkala — apply now.",
+        "description": "CNC machinists and turners are needed for a permanent, full-time position at Worknow Oy in Pirkkala. Responsibilities include operating Fanuc-controlled CNC lathes, manufacturing industrial machine parts, ensuring dimensional accuracy, and working according to technical drawings. Requirements are experience in CNC turning, ability to read technical drawings, and Finnish language skills. Permanent employment offers a competitive hourly wage based on experience, and versatile turning jobs in a well-equipped machine shop. Submit your application as soon as possible. WORKNOW OY AS EMPLOYER offers a fast and smooth recruitment process, comprehensive occupational health, and reliable employer status.",
+        "what_we_expect": [
+          "Experience in CNC turning, preferably with Fanuc control.",
+          "Ability to read technical drawings.",
+          "Careful and accurate approach to work.",
+          "Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Operate lathes with Fanuc controlled CNC lathes.",
+          "Manufacture various industrial machine parts.",
+          "Make the settings and take care of the dimensional accuracy of the pieces.",
+          "Work according to technical drawings."
+        ],
+        "what_we_offer": [
+          "Permanent, full-time employment (40 h/week).",
+          "Work in two shifts.",
+          "Salary according to experience.",
+          "Versatile turning jobs in an established machine shop with a wide range of machines."
+        ],
+        "search_keywords": "CNC Machinist CNC Turner Pirkkala Manufacturing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-21 20:35:36",
+    "jobs": [
+      {
+        "id": "12cd6ff7",
+        "job_id": "project-manager-automation-helsinki-12cd6ff7",
+        "processed": true,
+        "title": "Project Manager Automation",
+        "company": "Bravida Finland Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://web103.reachmee.com/ext/I003/475/main?site=34&validator=e41c4b57d9bb3d61aa31c1f8639449fb&lang=FI&rmpage=job&rmjob=11899&ref=&utm_medium=talentech_publishing&utm_source=mol",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/a74ba50d-fdd1-4da1-8368-a3ed53819c2f/en",
+        "job_employer_email": "tapani.siltanen@bravida.fi",
+        "job_employer_name": "Tapani Siltanen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/project-manager-automation-helsinki-12cd6ff7",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-18",
+        "scraped_at": "2026-11-21 20:35:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Bravida Finland Oy is hiring a Project Manager Automation in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Project Manager Automation at Bravida Finland Oy in Helsinki offers a unique opportunity to combine technical expertise, practical problem-solving, and project management. Responsibilities include building automation contract management, schedule and cost control, supervision of installers and subcontractors, and collaboration with customers and designers. Key tasks involve programming, operational testing, and handovers. The role is ideal for those with an education in electrical, automation, or building technology, a genuine interest in building automation, and a willingness to learn and tackle challenges with courage. A B driver's license and the ability to complete work and electrical safety cards are required.",
+        "what_we_expect": [
+          "Education in electrical, automation or building technology.",
+          "Genuine interest in building automation.",
+          "Willingness to learn and tackle things with courage.",
+          "B driver's license.",
+          "Ability to complete the work safety card and electrical safety card.",
+          "Initiative and problem-solving skills."
+        ],
+        "job_responsibilities": [
+          "Programming.",
+          "Operational tests.",
+          "Handovers.",
+          "Supervision of installers and subcontractors.",
+          "Cooperation with the customer and designers."
+        ],
+        "what_we_offer": [
+          "Versatile work.",
+          "Opportunity to work with different systems and clients."
+        ],
+        "search_keywords": "project manager automation building technology electrical automation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      },
+      {
+        "id": "7b56315c",
+        "job_id": "project-researcher-or-laboratory-technician-turku-7b56315c",
+        "processed": true,
+        "title": "Project Researcher or Laboratory Technician",
+        "company": "Bioteknologian laitos",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://ats.talentadore.com/apply/rekrytointi-ilmoituspohja-fi-en-otsikoksi-tehtavanimike/Dw1W5q",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/55292dce-6315-46b6-b690-168073cb3de8/en",
+        "job_employer_email": "No-Reply-eRekry@utu.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/project-researcher-or-laboratory-technician-turku-7b56315c",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-07",
+        "scraped_at": "2026-11-21 20:35:36",
+        "open_positions": 1,
+        "salary_range": "salary will be updated accordingly",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Bioteknologian laitos as a Project Researcher or Laboratory Technician in Turku. Learn more about the role and apply now.",
+        "description": "Are you passionate about advancing health technology through innovative research? Bioteknologian laitos in Turku is seeking one to three project researchers or laboratory technicians to contribute to a cutting-edge health technology research project. This permanent, full-time role involves developing microfluidic test cassettes for rapid immunoassays, working in a networked research project with industry partners. Ideal candidates will have experience in sensitive and fast immunoassays, microfluidics, and lab-on-a-chip solutions, as well as a solid understanding of various solid supports, antibodies, and label technologies. Previous experience in designing channel structures, fluid control, and automation of liquid processing is essential. Fluency in English and Finnish is required.",
+        "what_we_expect": [
+          "Previous experience in sensitive and fast immunoassays.",
+          "Previous experience in microfluidics and lab-on-a-chip solutions.",
+          "Understanding and experience in the use of various solid supports, antibodies and label technologies.",
+          "Previous experience in the design of channel structures and active and passive fluid control using different valve solutions.",
+          "Understanding and experience in the automation of liquid processing.",
+          "Previous experience in experimental work."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Opportunity to work in a very topical and challenging health technology research project in cooperation with companies in the field."
+        ],
+        "search_keywords": "project researcher laboratory technician biotechnology microfluidics immunoassays",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      },
+      {
+        "id": "a56b6238",
+        "job_id": "snow-plow-driver-naantali-a56b6238",
+        "processed": true,
+        "title": "Snow Plow Driver",
+        "company": "Click Henkilöstöpalvelut Oy, Turku",
+        "job_category": "construction",
+        "jobLocation": [
+          "Naantali",
+          "Turku"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.click-hp.fi/hakemus/24470",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/37f44f79-df8f-4564-a071-60f762448cf2/en",
+        "job_employer_email": "",
+        "job_employer_name": "Artturi Ruuth",
+        "job_employer_phone_no": "0504110343",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/snow-plow-driver-naantali-a56b6238",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-21 20:35:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Click Henkilöstöpalvelut Oy, Turku as a Snow Plow Driver in Naantali. Learn more about the role and apply now.",
+        "description": "Several snow plow drivers are needed for the winter season in the Turku area, specifically in Naantali, starting in November-December and lasting until March. Duties include snow plowing and sandblasting using Kramer wheel loaders, with routes covering households, housing associations, and industrial areas. Reliable and self-directed individuals with experience in plowing and a valid road safety and occupational safety card are preferred. The ability to work flexible hours, including night shifts, is essential. The opportunity to use your own car and a T-card is available. Apply via the provided link for more information and to contact Artturi Ruuth at 050 4110343 on weekdays between 9am and 4pm.",
+        "what_we_expect": [
+          "Reliable and self-directed approach to work.",
+          "Flexibility according to the snow situation."
+        ],
+        "job_responsibilities": [
+          "Snow plowing and sandblasting."
+        ],
+        "what_we_offer": [
+          "Possibility of using your own car and a T-card."
+        ],
+        "search_keywords": "snow plow driver plowing sandblasting reliability flexibility",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      },
+      {
+        "id": "f408396a",
+        "job_id": "construction-worker-mikkeli-f408396a",
+        "processed": true,
+        "title": "Construction Worker",
+        "company": "Barona Rakennus Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Mikkeli"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.baronacareers.com/fi/fi/jobs/rakennusaputyontekija-mikkeli-barona-rakennus-oy",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/ac48d059-09f4-4060-95bb-52fa0dc03e19/en",
+        "job_employer_email": "janne.jaatinen@barona.fi",
+        "job_employer_name": "Janne Jaatinen",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/construction-worker-mikkeli-f408396a",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-10",
+        "scraped_at": "2026-11-21 20:35:36",
+        "open_positions": 1,
+        "salary_range": "salary payment and all the employer's obligatio",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Barona Rakennus Oy as a Construction Worker in Mikkeli. Learn more about the role and apply now.",
+        "description": "Barona Rakennus Oy is seeking enthusiastic construction workers for full-time, permanent positions in Mikkeli. Responsibilities include moving and hauling goods, directing traffic, installing site fences, and maintaining cleanliness. A cheerful attitude, good physical condition, and a willingness to learn are essential. Applicants must be of age, hold a valid occupational safety card, and have Finnish language skills. We offer long-term opportunities and career advancement on various sites across Finland. Apply through our application form to join our team.",
+        "what_we_expect": [
+          "A cheerful attitude.",
+          "Good physical condition.",
+          "Willingness and ability to learn new things.",
+          "Coming of age.",
+          "A valid occupational safety card.",
+          "Finnish language skills."
+        ],
+        "job_responsibilities": [
+          "Moving and hauling goods.",
+          "Directing traffic.",
+          "Installing the construction site fence.",
+          "Taking care of the general cleanliness of the construction site."
+        ],
+        "what_we_offer": [
+          "Long-term job opportunities for construction industry professionals all over Finland.",
+          "Opportunities on various sites.",
+          "Career advancement through various tasks."
+        ],
+        "search_keywords": "construction worker mikkeli job site",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
