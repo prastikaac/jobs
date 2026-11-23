@@ -481816,5 +481816,179 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:18:42",
+    "jobs": [
+      {
+        "id": "fe2c8b95",
+        "job_id": "sales-representative-home-security-solutions-helsinki-ja-4-muuta-fe2c8b95",
+        "processed": true,
+        "title": "Sales Representative (Home Security Solutions)",
+        "company": "Verisure Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 4 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myyntiedustaja-kodinturvaratkaisut-svser-20669804",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myyntiedustaja-kodinturvaratkaisut-svser-20669804",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-home-security-solutions-helsinki-ja-4-muuta-fe2c8b95",
+        "date_posted": "2026-10-22",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-23 03:18:42",
+        "open_positions": 1,
+        "salary_range": "salary of €1,500, an encouraging reward model,",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Verisure Oy as a Sales Representative (Home Security Solutions) and grow your career in Helsinki ja 4 muuta. Check the job details and apply now.",
+        "description": "Verisure Oy is seeking a Sales Representative for home security solutions in Helsinki and surrounding areas. This full-time, permanent position offers a guaranteed monthly salary of €1,500 and motivating commissions for new customers, with earnings ranging from €3,000 to €8,000 per month. Your role involves customer visits and contacting, maintenance, and installing systems. Key requirements include reliability, teamwork, and a willingness to learn. You will benefit from access to a car, comprehensive training, and the opportunity to build a career. Verisure is a Best Place to Work certified organization, and you can learn more about the experiences of our salespeople here.",
+        "what_we_expect": [
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Customer visits and contacting.",
+          "Maintenance and installing systems."
+        ],
+        "what_we_offer": [
+          "Guaranteed salary of €1,500/month.",
+          "Motivating commissions for new acquired customers.",
+          "Access to a car.",
+          "Training and orientation.",
+          "Opportunity to build a career forward.",
+          "Best Place to Work certified organization."
+        ],
+        "search_keywords": "sales representative home security solutions sales job guaranteed salary commissions",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:19:27",
+    "jobs": [
+      {
+        "id": "cebcb109",
+        "job_id": "technical-expert-heat-pumps-espoo-cebcb109",
+        "processed": true,
+        "title": "Technical Expert, Heat Pumps",
+        "company": "Thermia Finland Oy",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/thermia-finland-tekninen-asiantuntija-lampopumput-sdsuu-20747223",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/thermia-finland-tekninen-asiantuntija-lampopumput-sdsuu-20747223",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/technical-expert-heat-pumps-espoo-cebcb109",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-23 03:19:27",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Thermia Finland Oy is hiring a Technical Expert, Heat Pumps in Espoo. Explore the job responsibilities, benefits, and apply today.",
+        "description": "At Thermia Finland Oy in Espoo, we seek a Technical Expert, Heat Pumps to join our growing team in the developing and safe energy sector. You will provide technical support for geothermal, air-to-water, air-to-air, and real estate heat pumps, handle spare parts sales, and assist in maintenance and repair needs. Your role will also involve warranty reporting, technical bulletins, dealer training, and technical preparation for product launches, while maintaining communication with the Swedish factory. Reporting to the CEO, you will work closely with the Finnish organization in a small, united team. Fluency in Finnish and English, along with an enthusiastic, can-do attitude and experience in technical product tasks, is essential.",
+        "what_we_expect": [
+          "Have an enthusiastic, willing to learn and a can-do attitude.",
+          "Communicate fluently in Finnish and English.",
+          "Be accurate and service-oriented.",
+          "Enjoy interacting with others.",
+          "Have experience in technical product tasks, for example in the HVAC, electrical, refrigeration or automation fields.",
+          "Have knowledge of the Swedish language."
+        ],
+        "job_responsibilities": [
+          "Provide technical support for geothermal, air-to-water and air-to-air heat pumps as well as real estate heat pumps.",
+          "Handle spare parts sales and assist customers in finding the right solutions for maintenance and repair needs.",
+          "Handle warranty reporting, technical bulletins, dealer training and technical preparation for product launches.",
+          "Communicate with the Swedish factory in technical matters.",
+          "Report to the CEO and work closely with the Finnish organization."
+        ],
+        "what_we_offer": [
+          "Work in the developing and safe energy sector.",
+          "Opportunity to strengthen skills.",
+          "Influence customer relations in Finland.",
+          "Work in a small, united team.",
+          "Work at the office together with the team four days a week, with the option to work remotely one day a week."
+        ],
+        "search_keywords": "technical expert heat pumps installation maintenance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:19:39",
+    "jobs": [
+      {
+        "id": "ff9a832f",
+        "job_id": "identity-access-management-consultant-helsinki-ff9a832f",
+        "processed": true,
+        "title": "Identity & Access Management Consultant",
+        "company": "Accenture",
+        "job_category": "consulting-and-coaching",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/identity-access-management-consultant-sascc-20668675",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/identity-access-management-consultant-sascc-20668675",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/consulting-and-coaching/identity-access-management-consultant-helsinki-ff9a832f",
+        "date_posted": "2026-11-13",
+        "date_expires": "2026-12-13",
+        "scraped_at": "2026-11-23 03:19:39",
+        "open_positions": 1,
+        "salary_range": "salary and comprehensive employee benefits",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Identity & Access Management Consultant at Accenture in Helsinki. Check the requirements and apply today.",
+        "description": "Identity & Access Management Consultant at Accenture in Helsinki offers a unique opportunity to shape the future of information security for leading organizations. As a consultant, you will help customers define and implement effective IAM strategies, leveraging your expertise in technologies like SailPoint, Okta, and Microsoft Entra ID. You will work closely with clients, providing trusted guidance and support throughout projects, and participate in assessments to create actionable roadmaps. With a hybrid work model in Helsinki and a strong command of both Finnish and English, you will contribute to a global community of over 19,000 security experts dedicated to protecting critical business operations.",
+        "what_we_expect": [
+          "An understanding of the principles of managing identities and access rights.",
+          "Strong knowledge of either the functional or technical side of IAM and the desire to develop in both.",
+          "Approximately 3+ years of experience in IAM or a related area.",
+          "Experience with at least one of the following technologies: SailPoint, Saviynt, Okta, Ping Identity, Idira or Microsoft Entra ID.",
+          "Fluent Finnish and English language skills.",
+          "Willingness to work in a hybrid model in Helsinki."
+        ],
+        "job_responsibilities": [
+          "Help customers define how the management of identities and access rights should work in their organization and design solutions that work in practice.",
+          "Develop processes and architectures that support the implementation of modern IAM concepts and technologies.",
+          "Implement plans by building new solutions or developing existing processes and systems into effective and reliable IAM capabilities.",
+          "Work closely with clients' teams and act as their trusted expert throughout the project.",
+          "Participate in assessments and creating roadmaps so that customers understand their current IAM state and the necessary development steps."
+        ],
+        "what_we_offer": [
+          "We also offer."
+        ],
+        "search_keywords": "Identity Access Management IAM Consultant Helsinki Finland",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
