@@ -481707,5 +481707,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:12:02",
+    "jobs": [
+      {
+        "id": "b05f8935",
+        "job_id": "customer-meeting-arranger-bookkeeper-helsinki-b05f8935",
+        "processed": true,
+        "title": "Customer Meeting Arranger / Bookkeeper",
+        "company": "Intensive Sales Partners Oy, Helsinki",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Helsinki",
+          "Espoo",
+          "Vantaa",
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.intensive.fi/tyopaikat/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/223cabd5-bacb-4d93-a6a2-a8faabfc883a/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/customer-meeting-arranger-bookkeeper-helsinki-b05f8935",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-11-30",
+        "scraped_at": "2026-11-23 03:12:02",
+        "open_positions": 1,
+        "salary_range": "salary is **commission salary**",
+        "workTime": "Part-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Customer Meeting Arranger / Bookkeeper at Intensive Sales Partners Oy, Helsinki in Helsinki.",
+        "description": "Are you eager to develop your sales skills and influence your earnings in a part-time role? Intensive Sales Partners Oy is seeking customer meeting arrangers for winter projects, ideal for students, gap year travelers, or those looking for supplementary income. Responsibilities include arranging customer meetings and customer acquisition, focusing on the initial stages of sales. You'll receive orientation, continuous coaching, and the opportunity to develop valuable skills. Work hours are approximately 25 hours per week, with a commitment to 4-5 days a week. The salary is commission-based, with varying earning models depending on the project. If you have a positive attitude, courage to engage with people, and a willingness to learn, this role could be perfect for you.",
+        "what_we_expect": [
+          "Good attitude.",
+          "Courage to talk to people.",
+          "Desire to learn."
+        ],
+        "job_responsibilities": [
+          "Arranging customer meetings and customer acquisition."
+        ],
+        "what_we_offer": [
+          "Commission salary.",
+          "Orientation.",
+          "Continuous coaching."
+        ],
+        "search_keywords": "customer meetings bookkeeper part-time sales skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
+      }
+    ]
   }
 ]
