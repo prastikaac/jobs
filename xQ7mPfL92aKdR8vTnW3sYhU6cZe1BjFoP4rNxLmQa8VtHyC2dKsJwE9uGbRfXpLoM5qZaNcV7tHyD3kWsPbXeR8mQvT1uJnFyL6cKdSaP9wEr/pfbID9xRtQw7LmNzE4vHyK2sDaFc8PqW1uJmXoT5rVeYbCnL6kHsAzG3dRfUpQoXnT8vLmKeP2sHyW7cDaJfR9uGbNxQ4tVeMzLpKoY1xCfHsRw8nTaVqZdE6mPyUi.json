@@ -482209,5 +482209,746 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:40",
+    "jobs": [
+      {
+        "id": "049daadb",
+        "job_id": "rgm-analyst-helsinki-049daadb",
+        "processed": true,
+        "title": "RGM Analyst",
+        "company": "Valio",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/rgm-analyst-helsinki-svsal-20747820",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/rgm-analyst-helsinki-svsal-20747820",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/rgm-analyst-helsinki-049daadb",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-23 03:27:40",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a RGM Analyst at Valio. Great opportunity in Helsinki — apply now.",
+        "description": "At Valio in Helsinki, as an RGM Analyst, you will be part of a purpose-driven company with a focus on sustainable, profitable growth. You will work with experts across functions to identify and support growth opportunities using data and analytics. Your role involves analyzing pricing, price ladders, and price indices, developing alternative pricing scenarios, evaluating pack and price architecture, and assessing promotional effectiveness. You will also develop and maintain RGM dashboards, prepare clear decision-making materials, and collaborate with the Digital team on data updates and analytical tool development. Strong analytical skills, proficiency in Excel and Power BI, and the ability to communicate complex insights effectively are essential.",
+        "what_we_expect": [
+          "Strong analytical and quantitative skills.",
+          "Solid understanding of business and finance.",
+          "Comfortable working with large, complex datasets and automating analyses.",
+          "Proficiency in Excel and Power BI.",
+          "Ability to translate complex analyses into clear, actionable insights for the business.",
+          "Collaboration and communication skills to work effectively with experts across functions."
+        ],
+        "job_responsibilities": [
+          "Analyze pricing, price ladders and price indices, and develop alternative pricing scenarios.",
+          "Evaluate pack and price architecture and analyze how product portfolio, sales channel and customer mix affect growth and profitability.",
+          "Assess promotional effectiveness and return on promotional investment (ROI), and analyze discounts, rebates and commercial investments.",
+          "Develop and maintain RGM dashboards, quantify the impact of initiatives on sales and profitability, and track and validate realized results.",
+          "Prepare clear decision-making materials and provide a fact base for customer negotiations.",
+          "Collaborate with the Digital team on data updates and the development of analytical tools."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "RGM Analyst, data, analytics, pricing, growth, finance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:43",
+    "jobs": [
+      {
+        "id": "3ac1514b",
+        "job_id": "medical-adviser-espoo-3ac1514b",
+        "processed": true,
+        "title": "Medical Adviser",
+        "company": "Orion",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/medical-adviser-sosri-20735906",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/medical-adviser-sosri-20735906",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/medical-adviser-espoo-3ac1514b",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:27:43",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Orion is looking for a Medical Adviser in Espoo. Don't miss this opportunity — apply today.",
+        "description": "In this full-time, permanent position at Orion in Espoo, Finland, you will analyse safety data from clinical studies, assess serious adverse event reports, and prepare safety reports. You will present safety data in meetings, review adverse event reports and scientific literature, and contribute to process development. Orion offers a dynamic environment where you can build experience in pharmacovigilance and work with both new molecules and marketed products. Apply by 29.11.2026 for this role requiring a Medical Doctor degree, flexibility, and strong communication skills.",
+        "what_we_expect": [
+          "A Medical Doctor (MD) degree.",
+          "Flexibility and ability to work both independently and as a part of a team to achieve shared goals.",
+          "Ability to work effectively under pressure, and sound decision-making skills.",
+          "Good collaboration, communication and influencing skills."
+        ],
+        "job_responsibilities": [
+          "Analysing accumulating safety data from clinical studies, including the assessment of serious adverse event reports and planning actions needed based on the data.",
+          "Preparing various safety reports and other safety documentation during clinical development.",
+          "Presenting safety data in internal and external meetings.",
+          "Reviewing individual adverse event reports and scientific literature for marketed products.",
+          "Writing and reviewing periodic safety reports, risk management plans and other safety related documentation for regulatory submissions.",
+          "Contributing to process development."
+        ],
+        "what_we_offer": [
+          "We offer careers with a clear purpose: empowering people to live their lives to the fullest."
+        ],
+        "search_keywords": "medical adviser, pharmacovigilance, clinical studies, safety data, full-time",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/8.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:45",
+    "jobs": [
+      {
+        "id": "1026c521",
+        "job_id": "production-quality-engineer-welding-coordinator-järvenpää-1026c521",
+        "processed": true,
+        "title": "Production Quality Engineer, Welding Coordinator",
+        "company": "Logisnext Europe Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Järvenpää"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/logisnext-europe-oy-tuotannon-laatuinsinoori-hitsauskoordinaattori-sdsuu-20739320",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/logisnext-europe-oy-tuotannon-laatuinsinoori-hitsauskoordinaattori-sdsuu-20739320",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/production-quality-engineer-welding-coordinator-järvenpää-1026c521",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:27:45",
+        "open_positions": 1,
+        "salary_range": "salary expectations as soon as possible, at the",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Production Quality Engineer, Welding Coordinator at Logisnext Europe Oy in Järvenpää. Check the requirements and apply today.",
+        "description": "At Logisnext Europe Oy in Järvenpää, you will join as a Production Quality Engineer, Welding Coordinator, where you will monitor and analyze production quality, identify development targets, and work closely with factory operations, product development, and other stakeholders to solve quality issues. As a welding coordinator, you will run the welding shop, develop welding methods, and ensure quality control and inspection practices. You will contribute to the development of welding shop production processes and leverage your expertise in MAG welding technology and Lean Six Sigma. This role offers an opportunity to impact the quality and manufacturing processes of our forklift production and develop skills in modern welding technology, robotics, and automation.",
+        "what_we_expect": [
+          "Technical education suitable for the position (Engineer, DI), and IWE or IWT qualification.",
+          "Good knowledge of MAG welding technology and welding methods.",
+          "Experience in welding quality control, standards and requirements.",
+          "Lean Six Sigma expertise or other data-driven development experience.",
+          "Systematic, self-initiated and practical approach to work.",
+          "Good cooperation and interaction skills."
+        ],
+        "job_responsibilities": [
+          "Monitor and analyze production quality and identify development targets based on the data.",
+          "Find out the root causes of quality problems and implement corrective and preventive measures together with factory operations, product development, and other stakeholders.",
+          "Run a welding shop as welding coordinator and as an expert in welding technology.",
+          "Develop welding methods as well as quality control and inspection practices.",
+          "Participate in the development of the welding shop's production processes together with production development."
+        ],
+        "what_we_offer": [
+          "An interesting and independent specialist position in the international manufacturing industry, which combines welding technology and production quality.",
+          "The opportunity to have a tangible impact on the quality and manufacturing processes of our forklift production.",
+          "The opportunity to develop your skills in modern welding technology, robotics and automation in cooperation with a wide network of experts.",
+          "Comprehensive employment benefits, such as employee clubs, sports and cultural benefits, and extended occupational health care."
+        ],
+        "search_keywords": "quality engineer welding coordinator manufacturing forklift production welding technology",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/20.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:48",
+    "jobs": [
+      {
+        "id": "f032ca03",
+        "job_id": "site-engineer-hanko-f032ca03",
+        "processed": true,
+        "title": "Site Engineer",
+        "company": "Fermion",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Hanko"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/project-engineer-facility-management-sosri-20692816",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/project-engineer-facility-management-sosri-20692816",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/site-engineer-hanko-f032ca03",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:27:48",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Site Engineer role at Fermion. Join the team and build your career in Hanko.",
+        "description": "Fermion is seeking a self-driven and solution-oriented Site Engineer to join our permanent team at the Hanko factory. As a key member of our Technical Operations team, you will support the construction, renovation, and investment projects at our Hanko factory, focusing on site supervision, particularly HVAC systems, and the safe implementation of work. You will also be responsible for preparing and coordinating investment projects, procurement, and maintaining technical documentation. Working closely with project managers and stakeholders, you will act as a technical liaison, ensuring smooth project execution.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Site supervision and tasks related to HVAC systems.",
+          "Preparation and coordination of investment projects.",
+          "Procurement and ensuring the safe implementation of work on the site.",
+          "Updating and maintaining technical documentation related to Hanko factory properties and their technical systems."
+        ],
+        "what_we_offer": [
+          "A broad view of the production, planning and implementation of projects in the pharmaceutical industry.",
+          "Opportunities to work in a collaborative environment with experienced experts and external partners.",
+          "Support for continuous learning and opportunities for professional development at Orion and Fermion."
+        ],
+        "search_keywords": "site engineer engineering HVAC systems project coordination",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:50",
+    "jobs": [
+      {
+        "id": "c05ec231",
+        "job_id": "sales-representative-vantaa-c05ec231",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Sonepar Suomi Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/sonepar-suomi-myyja-sdsuu-20747638",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/sonepar-suomi-myyja-sdsuu-20747638",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-vantaa-c05ec231",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-23 03:27:50",
+        "open_positions": 1,
+        "salary_range": "salary request via our application form as soon",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Sales Representative role at Sonepar Suomi Oy. Join the team and build your career in Vantaa.",
+        "description": "Sonepar Suomi Oy is seeking a Sales Representative for their Porttipuisto store in Vantaa. As a full-time, permanent position, you will serve customers in-store, at the counter, and by phone; place and manage orders; handle goods receipt and unloading; and collect pick-up orders. You should have an electrical engineering education, strong knowledge of electrical accessories, and a genuine desire to serve business customers. Excellent Finnish and English language skills are required, along with a positive attitude and courage for active sales work. Join a professional and supportive team that offers an interesting and versatile role in the world's leading electrical goods sales company, with opportunities for growth and development.",
+        "what_we_expect": [
+          "Excellent attitude to work and courage for active sales work.",
+          "Electrical engineering education.",
+          "Commercial experience is beneficial.",
+          "Strong knowledge of electrical accessories.",
+          "A genuine desire to serve business customers in the best possible way.",
+          "Sufficient knowledge of the Finnish language."
+        ],
+        "job_responsibilities": [
+          "Serve customers in the store, at the counter and by phone.",
+          "Place orders in the systems and ensure their completion.",
+          "Handle the receipt and unloading of goods.",
+          "Collect pick-up orders."
+        ],
+        "what_we_offer": [
+          "Better than a collective agreement contract salary.",
+          "An interesting and versatile set of tasks in the world's leading electrical goods sales company.",
+          "An excellent opportunity to grow and develop.",
+          "Become part of an open, professional and close-knit work community that supports and encourages you to perform even better."
+        ],
+        "search_keywords": "sales representative electrical sales customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:56",
+    "jobs": [
+      {
+        "id": "5cfb3739",
+        "job_id": "store-manager-vantaa-5cfb3739",
+        "processed": true,
+        "title": "Store Manager",
+        "company": "HiFi Klubben Finland Oy",
+        "job_category": "retail-and-wholesale",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myymalapaallikko-uuteen-myymalaamme-tammisto-vantaa-stshe-20737860",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myymalapaallikko-uuteen-myymalaamme-tammisto-vantaa-stshe-20737860",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/retail-and-wholesale/store-manager-vantaa-5cfb3739",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:27:56",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "HiFi Klubben Finland Oy is hiring a Store Manager in Vantaa. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Store Manager for our new HiFi Klubben store in Tammisto, Vantaa. As a clear and inspiring leader, you will be responsible for establishing and opening a new store, building a committed team, and ensuring the professional and smooth operation of the store. You will create excellent customer experiences through expert advice and good service, monitor future customer contacts and online sales opportunities, and be accountable for the store's budget and financial results. Enjoy the challenge of actively participating in sales work and leading by example. You will also motivate and develop employees, set clear expectations, and build a culture based on responsibility, cooperation, and a good work atmosphere.",
+        "what_we_expect": [
+          "A clear and inspiring leader who knows how to create excellent customer experiences and achieve results together with your team.",
+          "Enjoy responsibility and be willing to actively participate in sales work.",
+          "Show in practice how to create excellent customer experiences and help customers find the right solution for their needs.",
+          "Be a supervisor who motivates and develops employees both as individuals and as a team.",
+          "Set clear expectations, monitor performance and build a culture based on responsibility, cooperation and a good work atmosphere."
+        ],
+        "job_responsibilities": [
+          "Participate in the establishment and opening of a new store.",
+          "Build a committed team and a strong culture from the start.",
+          "Ensure the professional, inspiring and smooth operation of the store.",
+          "Create excellent customer experiences with expert advice and good service.",
+          "Monitor future customer contacts and online sales opportunities through digital channels.",
+          "Be responsible for the store's budget and financial result, focusing on sales, costs, customer flow, conversion, average purchase and sales margin."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "store manager retail hi-fi audio home entertainment",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:27:58",
+    "jobs": [
+      {
+        "id": "c6efb5b5",
+        "job_id": "sales-representative-vantaa-c6efb5b5",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "HiFi Klubben Finland Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myyjia-uuteen-myymalaamme-tammisto-vantaa-stshe-20737975",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myyjia-uuteen-myymalaamme-tammisto-vantaa-stshe-20737975",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-vantaa-c6efb5b5",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:27:58",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "HiFi Klubben Finland Oy is hiring a Sales Representative in Vantaa. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Sales representatives are needed for a new HiFi Klubben store in Tammisto, Vantaa, Finland. As a sales representative, you will advise customers on audio and home entertainment solutions, present and demonstrate products, and ensure the store is clean and inspiring. You will work closely with the team to achieve sales goals and participate in campaigns and events. This is a full-time, permanent position where you will enjoy helping people and making every customer feel welcome. Requirements include a sales mindset, the ability to listen, and a desire to find long-lasting solutions for customers. If you are passionate about good sound and enjoy working with people, apply now to be part of a team that values individual customer needs.",
+        "what_we_expect": [
+          "Enjoy being around people.",
+          "Think with a sales mindset.",
+          "Get joy when a customer leaves the store satisfied.",
+          "Dare to make contact.",
+          "Know how to listen.",
+          "Want to find a solution for the customer that he will enjoy for a long time."
+        ],
+        "job_responsibilities": [
+          "Advise customers and sell audio and home entertainment solutions that suit their needs.",
+          "Present and demonstrate products so that the customer hears and understands their differences.",
+          "Take care of contacting customers and following up on agreed matters.",
+          "Work actively to achieve your own and the store's joint sales goals.",
+          "Participate in the implementation of campaigns, events and product presentations.",
+          "Together with the team, make sure that the store is clean, inspiring and ready for customers."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "sales representative audio home entertainment customer service retail",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/28.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:28:02",
+    "jobs": [
+      {
+        "id": "71f2f226",
+        "job_id": "financial-advisor-municipal-sector-helsinki-ja-3-muuta-71f2f226",
+        "processed": true,
+        "title": "Financial Advisor, Municipal Sector",
+        "company": "Azets Insight Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Helsinki ja 3 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/azets-insight-financial-advisor-kuntasektori-sdsuu-20738712",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/azets-insight-financial-advisor-kuntasektori-sdsuu-20738712",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/financial-advisor-municipal-sector-helsinki-ja-3-muuta-71f2f226",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:28:02",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Financial Advisor, Municipal Sector at Azets Insight Oy in Helsinki ja 3 muuta.",
+        "description": "Are you an experienced financial professional skilled in municipal finances, able to interpret economic figures and provide clear recommendations to support decision-making? Azets Insight Oy seeks a Financial Advisor to work in the municipal sector, supporting the preparation of budgets and financial plans, monitoring the economy, and preparing financial statements. You will also participate in economic development tasks and develop financial processes and reporting. Fluency in Swedish is required, and you should be able to communicate effectively with municipal management and trustees. This permanent, full-time role offers the opportunity to bring a strategic and external perspective to the financial function while managing both external and internal calculations.",
+        "what_we_expect": [
+          "Fluently interpret the key figures of the economy.",
+          "Make conclusions and recommendations based on economic figures.",
+          "Communicate clearly with the municipality's management and trustees.",
+          "Manage both external and internal calculations.",
+          "Act in an expert role in client assignments.",
+          "Bring a valuable external perspective with a developing and strategic approach."
+        ],
+        "job_responsibilities": [
+          "Support the preparation of the budget and financial plan.",
+          "Monitor and forecast the economy.",
+          "Prepare financial statements and activity reports.",
+          "Participate in economic development tasks.",
+          "Develop financial processes and reporting.",
+          "Balance the economy."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "financial advisor municipal sector experience budget financial plan",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:28:05",
+    "jobs": [
+      {
+        "id": "503200e1",
+        "job_id": "site-supervision-team-lead-vaasa-503200e1",
+        "processed": true,
+        "title": "Site Supervision Team Lead",
+        "company": "Veo",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/veo-site-supervision-team-lead-vaasa-sdsuu-20738903",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/veo-site-supervision-team-lead-vaasa-sdsuu-20738903",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/site-supervision-team-lead-vaasa-503200e1",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:28:05",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "VEO is looking for a Site Supervision Team Lead in Vaasa. Don't miss this opportunity — apply today.",
+        "description": "Lead and develop VEO's site supervision team, strengthening safe and efficient project delivery and contributing to sustainable energy solutions. As a Site Supervision Team Lead at VEO in Vaasa, Finland, you will lead and coach site supervisors, plan and coordinate team resources, set team objectives, and ensure safety certifications. You will support project managers and stakeholders, develop efficient processes, and promote a positive team culture. With a relevant technical education and experience in site supervision and team leadership, you will contribute to VEO's success in delivering high-quality projects. Join a company that values teamwork and innovation, where you can develop new insights and create solutions for customer success.",
+        "what_we_expect": [
+          "A relevant technical education, preferably in electrical engineering, automation or a related field.",
+          "Experience in site supervision, project execution, or similar technical operations.",
+          "Previous experience in leading teams or demonstrated potential and motivation to take on a leadership role.",
+          "Good understanding of site operations, safety requirements, and relevant industry standards.",
+          "Strong organizational, planning and problem-solving skills.",
+          "Excellent communication and collaboration skills."
+        ],
+        "job_responsibilities": [
+          "Leading, coaching, and supporting site supervisors in their daily work.",
+          "Planning and coordinating team resources to meet project needs and schedules.",
+          "Setting team objectives and ensuring that team members have the required competencies, qualifications, and safety certifications.",
+          "Supporting the successful execution of site activities in cooperation with project managers and other stakeholders.",
+          "Developing and standardizing team processes, tools, and working methods to improve efficiency and quality.",
+          "Promoting a positive team spirit, employee wellbeing and a strong safety culture."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "site supervision team lead, project management, leadership, technical expertise, safety culture",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:28:07",
+    "jobs": [
+      {
+        "id": "4422f67d",
+        "job_id": "sales-manager-electrical-project-sales-oulu-4422f67d",
+        "processed": true,
+        "title": "Sales Manager, Electrical Project Sales",
+        "company": "Bilfinger Finland Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Oulu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/bilfinger-finland-myyntipaallikko-sahkoprojektimyynti-sdsuu-20739063",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/bilfinger-finland-myyntipaallikko-sahkoprojektimyynti-sdsuu-20739063",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-manager-electrical-project-sales-oulu-4422f67d",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:28:07",
+        "open_positions": 1,
+        "salary_range": "salary and comprehensive employee benefits A wo",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Join Bilfinger Finland Oy as a Sales Manager, Electrical Project Sales and grow your career in Oulu. Check the job details and apply now.",
+        "description": "Bilfinger Finland Oy is seeking a Sales Manager for Electrical Project Sales to drive business growth and strategic customer relationships in the industrial, energy, battery, and data center markets. As a key player, you will identify new business opportunities, lead the bid calculation team, and work closely with project organizations and technical experts to deliver high-quality solutions. This full-time, permanent position offers the opportunity to develop commercial and technical expertise, utilizing sales systems and preparing forecasts. Fluency in English and Swedish is required, with strong negotiation, networking, and collaboration skills. Travel to clients in Finland and Central Europe may be necessary.",
+        "what_we_expect": [
+          "Experience in industrial electrical projects or electrical contracting.",
+          "Experience in tender calculations and management of tender processes.",
+          "Ability to understand the technical and commercial aspects of electrical projects.",
+          "Experience in B2B sales, new customer acquisition and strategic customer development.",
+          "Ability to identify new business opportunities.",
+          "Experience in utilizing sales systems, preparing sales forecasts and goal-oriented sales work."
+        ],
+        "job_responsibilities": [
+          "Identify new business opportunities.",
+          "Develop strategic customer relationships.",
+          "Strengthen long-term customer partnerships.",
+          "Lead the bid calculation team.",
+          "Work closely with the project organization and technical experts."
+        ],
+        "what_we_offer": [
+          "In addition, we offer you."
+        ],
+        "search_keywords": "sales manager electrical projects industrial sales management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:28:10",
+    "jobs": [
+      {
+        "id": "d9089f0c",
+        "job_id": "digital-analyst-helsinki-d9089f0c",
+        "processed": true,
+        "title": "Digital Analyst",
+        "company": "Yliopiston Apteekki",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/yliopiston-apteekki-digital-analyst-sdsuu-20739067",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/yliopiston-apteekki-digital-analyst-sdsuu-20739067",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/digital-analyst-helsinki-d9089f0c",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:28:10",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Yliopiston Apteekki is hiring a Digital Analyst in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "At Yliopiston Apteekki, the University Pharmacy, you'll have the opportunity to work in the health and well-being industry with Finland's largest online pharmacy, ya.fi. As a Digital Analyst, you'll develop e-commerce analytics and commercial business reporting, contributing to the growth of a pioneering and responsible pharmacy company. Your role involves monitoring and developing Piwik PRO and Cookiebot, implementing measurements, and ensuring data quality. You'll also build A/B testing processes, analyze customer behavior, and provide actionable insights using SQL. With at least 2-4 years of experience in web analytics, you'll utilize AI and automation to enhance your work. Join a dynamic team where your skills will help improve the customer experience and drive sales.",
+        "what_we_expect": [
+          "At least 2-4 years of experience in web analytics, preferably in consumer e-commerce or digital services.",
+          "SQL knowledge and experience in building reporting.",
+          "Practical experience with analytics tools, tag management and implementing event tracking.",
+          "Familiar with, for example, Piwik PRO or Google Analytics and understand the importance of cookies, consent and data protection in measuring.",
+          "Ability to build operating procedures."
+        ],
+        "job_responsibilities": [
+          "Responsible for the functionality of the website monitoring of the online store and the development of common operating methods of the analytics.",
+          "Maintain and develop Piwik PRO monitoring, tag management and Cookiebot cookie management.",
+          "Implement and test measurements and solve data quality problems together with developers.",
+          "Build the A/B testing process with the e-commerce team and partners and coordinate the testing from planning to processing the results, ensuring clear responsibilities, schedules and follow-up actions.",
+          "Analyze customer and purchasing behavior as well as the results of campaigns and products, produce action recommendations to support decision-making and develop reliable reporting using SQL.",
+          "Utilize artificial intelligence and automation to support analyses, reporting and repetitive work steps."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "digital analyst web analytics e-commerce reporting data analysis",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:28:12",
+    "jobs": [
+      {
+        "id": "c0f371dd",
+        "job_id": "technical-sales-representative-vaasa-c0f371dd",
+        "processed": true,
+        "title": "Technical Sales Representative",
+        "company": "Etra Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Vaasa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/etra-tekninen-myyja-etra-oy-vaasa-sdsuu-20739161",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/etra-tekninen-myyja-etra-oy-vaasa-sdsuu-20739161",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/technical-sales-representative-vaasa-c0f371dd",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:28:12",
+        "open_positions": 1,
+        "salary_range": "salary expectations via the Apply for a job but",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Swedish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Technical Sales Representative at Etra Oy in Vaasa. Apply now and take the next step in your career.",
+        "description": "Etra Oy is seeking a Technical Sales Representative for our store in Vaasa. As a team player, you will engage in sales work, customer service, and technical advice, ensuring product presentation and handling logistics tasks in the store's warehouse. You will also be responsible for supplementing and maintaining warehouses at our customers' premises. We are looking for an active, customer service-oriented individual with a passion for sales and a strong interest in finding the best solutions for customer needs. Knowledge of industry and technical trade, along with training in the technical/commercial field, is required. Accuracy and flexibility are essential. Fluency in Swedish and Finnish is necessary. Join our growing company and develop your career with us.",
+        "what_we_expect": [
+          "Active and customer service-oriented person.",
+          "Interest in sales work.",
+          "Passion to find the best solutions for the customer's needs and create lasting customer relationships.",
+          "Knowledge of industry and technical trade.",
+          "Training in the technical/commercial field.",
+          "Accuracy and flexibility."
+        ],
+        "job_responsibilities": [
+          "Sales work.",
+          "Customer service tasks.",
+          "Technical advice in the store.",
+          "Taking care of product presentation.",
+          "Logistics tasks in the store's warehouse.",
+          "Supplementing and maintaining warehouses managed by Etra at customers' premises."
+        ],
+        "what_we_offer": [
+          "Opportunity to develop and grow in your career with competent colleagues.",
+          "Investment in continuous learning and personnel development.",
+          "Good working atmosphere and mutual appreciation."
+        ],
+        "search_keywords": "technical sales representative sales marketing customer service warehouse management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/3.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:28:15",
+    "jobs": [
+      {
+        "id": "702aebc4",
+        "job_id": "category-manager-jyväskylä-ja-7-muuta-702aebc4",
+        "processed": true,
+        "title": "Category Manager",
+        "company": "Componenta",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Jyväskylä ja 7 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/componenta-category-manager-vantaa-sdsuu-20737584",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/componenta-category-manager-vantaa-sdsuu-20737584",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/category-manager-jyväskylä-ja-7-muuta-702aebc4",
+        "date_posted": "2026-11-18",
+        "date_expires": "2026-12-18",
+        "scraped_at": "2026-11-23 03:28:15",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Category Manager at Componenta. Great opportunity in Jyväskylä ja 7 muuta — apply now.",
+        "description": "Componenta is seeking a Category Manager to lead the development and implementation of procurement strategies for designated categories, ensuring alignment with business goals and operational efficiency. Responsibilities include managing product and service ranges, negotiating contracts, and fostering supplier relationships. This role requires strategic thinking, strong analytical skills, and the ability to collaborate across departments. Fluency in English and Finnish is essential, along with digital proficiency and a willingness to travel. If you are a commercially oriented developer with experience in category work and strategic procurement, this is an excellent opportunity to influence profitable growth and support business objectives.",
+        "what_we_expect": [
+          "Applicable commercial or technical training and understanding of industrial production.",
+          "Experience in category work and strategic procurement or commercial tasks.",
+          "Understanding of business and profitability.",
+          "Good cross-organizational leadership and cooperation skills.",
+          "Good analysis and negotiation skills and the ability to base decision-making on information.",
+          "Self-initiated, systematic, and goal-oriented way of working."
+        ],
+        "job_responsibilities": [
+          "Preparing and implementing the strategy, goals, and development plans for the designated procurement categories.",
+          "Managing and developing the range of products and services as well as evaluating and supporting the implementation of new options.",
+          "Planning, implementation, and monitoring of procurement, pricing, and profitability goals.",
+          "Development and maintenance of supplier cooperation.",
+          "Negotiating procurement contracts.",
+          "Cooperation with sales, production experts, operational purchasing, and other internal and external stakeholders."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "category manager procurement strategy supplier management negotiation",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
   }
 ]
