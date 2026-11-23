@@ -481646,5 +481646,66 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:11:28",
+    "jobs": [
+      {
+        "id": "ebba5131",
+        "job_id": "sales-oriented-service-advisor-kirkkonummi-ebba5131",
+        "processed": true,
+        "title": "Sales-oriented Service Advisor",
+        "company": "Carhelp Korjaamot Oy, Kirkkonummi",
+        "job_category": "customer-support-and-service",
+        "jobLocation": [
+          "Kirkkonummi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://carhelp.fi/tule-meille-toihin/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/71e7462e-1a5e-406e-8cf5-753088b7f6ff/en",
+        "job_employer_email": "rekry@carhelp.fi",
+        "job_employer_name": "Tauri Ojala",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/customer-support-and-service/sales-oriented-service-advisor-kirkkonummi-ebba5131",
+        "date_posted": "2026-11-22",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-23 03:11:28",
+        "open_positions": 1,
+        "salary_range": "salary based on skills and experience - The sup",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next job as a Sales-oriented Service Advisor at Carhelp Korjaamot Oy, Kirkkonummi. Great opportunity in Kirkkonummi — apply now.",
+        "description": "We are seeking a sales-oriented service advisor with a proactive and customer-focused approach to join our growing CarHelp Kirkkonummi branch. As a key member of our team, you will handle customer reception and scheduling, manage daily operations, and actively engage in sales and customer service. Your role will involve preparing and monitoring offers, acquiring new customers, and building long-term relationships. With experience in car repair shop management or a strong background in mechanical work, you will bring a courageous and self-initiated mindset to the role. Strong organizational skills, the ability to make independent decisions, and a practical approach to problem-solving are essential.",
+        "what_we_expect": [
+          "Experience in car repair shop management or a strong background in mechanical car repair shop work.",
+          "Courageous, self-initiated and sales-oriented approach to customer work.",
+          "Good interaction and organization skills and the ability to manage daily tasks.",
+          "Ability to make independent decisions and take responsibility.",
+          "Good overall management and pressure tolerance.",
+          "A practical attitude and the ability to find solutions in everyday situations."
+        ],
+        "job_responsibilities": [
+          "Reception and scheduling of mechanical work (maintenance, repairs and diagnostics).",
+          "Daily work management, support and organization of work for mechanics.",
+          "Monitoring schedules, work quality and efficiency.",
+          "Active customer service and sales work.",
+          "Calculating, preparing and monitoring offers.",
+          "Acquiring new customers and building long-term customer relationships."
+        ],
+        "what_we_offer": [
+          "We offer you.",
+          "CarHelp is a growing multifaceted service company in the automotive industry. We offer maintenance, workshop, tire and windshield services for all brands of cars.",
+          "Calculating, preparing and monitoring offers."
+        ],
+        "search_keywords": "sales service advisor car repair management customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
   }
 ]
