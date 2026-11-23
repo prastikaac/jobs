@@ -481990,5 +481990,63 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:21:57",
+    "jobs": [
+      {
+        "id": "029adf1d",
+        "job_id": "platform-owner-helsinki-029adf1d",
+        "processed": true,
+        "title": "Platform Owner",
+        "company": "HSL Helsingin seudun liikenne -kuntayhtymä",
+        "job_category": "security-and-safety",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/hsl-helsingin-seudun-liikenne-kuntayhtyma-alustaomistaja-tietoturva-alusta-sdsuu-20738850",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/hsl-helsingin-seudun-liikenne-kuntayhtyma-alustaomistaja-tietoturva-alusta-sdsuu-20738850",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/security-and-safety/platform-owner-helsinki-029adf1d",
+        "date_posted": "2026-11-19",
+        "date_expires": "2026-12-19",
+        "scraped_at": "2026-11-23 03:21:57",
+        "open_positions": 1,
+        "salary_range": "Tehtävän palkka on työsuhteen alkaessa noin 5 700 - 6 200 €/kk riippuen aiemmasta kokemuksestasi.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "HSL Helsingin seudun liikenne -kuntayhtymä is hiring a Platform Owner in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a Platform Owner to lead the development and direction of HSL's information security platform, combining technical vision with service management and effective collaboration with experts, architects, and partners. Responsibilities include managing identity and access management capabilities, developing network security solutions, promoting Zero Trust and security by default principles, ensuring information security monitoring, and controlling the management of secrets, keys, and certificates. The role requires a strong technical understanding of information security solutions, the ability to manage large entities from a service perspective, and experience in owning and developing technical platforms.",
+        "what_we_expect": [
+          "Strong technical understanding of information security solutions.",
+          "Ability to manage a large entity from a service perspective.",
+          "Experience in owning and developing a technical platform, service package or similar area of responsibility.",
+          "Understanding of IAM and access control solutions and network security.",
+          "Knowledge of information security standards and frameworks.",
+          "Understanding of threat modeling, vulnerability management and security breach handling."
+        ],
+        "job_responsibilities": [
+          "Own the development direction and productization of the information security platform.",
+          "Manage identity and access management capabilities such as IAM, SSO, MFA and PAM solutions.",
+          "Develop network security solutions as part of a unified information security architecture.",
+          "Promote Zero Trust and security by default principles.",
+          "Ensure information security monitoring and continuous development of information security services.",
+          "Control the entire management of secrets, keys and certificates."
+        ],
+        "what_we_offer": [
+          "Good employee benefits."
+        ],
+        "search_keywords": "platform owner information security technical management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
   }
 ]
