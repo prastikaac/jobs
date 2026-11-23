@@ -481762,5 +481762,59 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/23.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 03:16:23",
+    "jobs": [
+      {
+        "id": "7b9db8dd",
+        "job_id": "multi-service-worker-pirkkala-7b9db8dd",
+        "processed": true,
+        "title": "Multi-Service Worker",
+        "company": "Pirkkalan kunta",
+        "job_category": "cleaning-and-facility-services",
+        "jobLocation": [
+          "Pirkkala"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/751085/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/9317defe-dcf0-48a8-aa79-7c68bb8ba3f9/en",
+        "job_employer_email": "anu.maenpaa@pirkkala.fi",
+        "job_employer_name": "Anu Mäenpää",
+        "job_employer_phone_no": "+35850345772",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/cleaning-and-facility-services/multi-service-worker-pirkkala-7b9db8dd",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-04",
+        "scraped_at": "2026-11-23 03:16:23",
+        "open_positions": 1,
+        "salary_range": "Kunnalla on käytössä tasopalkkausjärjestelmä. Tehtävän palkkaryhmä ja -taso on 499999D1 ja tasopalkka 2468,81 €/kk. Lisäksi maksetaan mahdollista työkokemuslisää soveltuvan työkokemuksen perusteella. Palvelussuhteen ehdot määräytyvät kunta-alan yleisen virka- ja työehtosopimuksen mukaisesti.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Multi-Service Worker at Pirkkalan kunta. Great opportunity in Pirkkala — apply now.",
+        "description": "We are seeking two rotating multi-service workers to support food and cleaning services in Pirkkala municipality, covering schools, kindergartens, and various offices. Tasks include maintenance and basic cleaning, as well as basic food service tasks, with the exception of chef duties. The role involves working in different areas of Pirkkala municipality, with shifts mainly from Monday to Friday between 6 a.m. and 9 p.m., including both morning and evening shifts. Good customer service skills, a positive attitude, effective teamwork, and basic IT capabilities are required. A valid hygiene passport and a fitness statement are necessary, along with a criminal record certificate and a tuberculosis report. The positions are permanent, with a probationary period.",
+        "what_we_expect": [
+          "Good customer service skills.",
+          "Positive attitude.",
+          "Effective teamwork skills.",
+          "Basic IT capabilities.",
+          "Motivation to learn and develop in work."
+        ],
+        "job_responsibilities": [
+          "Maintain and perform basic cleaning tasks.",
+          "Perform basic food service tasks."
+        ],
+        "what_we_offer": [
+          "Good and up-to-date framework and tools for work.",
+          "Belong to a good, cohesive work community."
+        ],
+        "search_keywords": "multi-service worker cleaning food service Pirkkala municipality",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
   }
 ]
