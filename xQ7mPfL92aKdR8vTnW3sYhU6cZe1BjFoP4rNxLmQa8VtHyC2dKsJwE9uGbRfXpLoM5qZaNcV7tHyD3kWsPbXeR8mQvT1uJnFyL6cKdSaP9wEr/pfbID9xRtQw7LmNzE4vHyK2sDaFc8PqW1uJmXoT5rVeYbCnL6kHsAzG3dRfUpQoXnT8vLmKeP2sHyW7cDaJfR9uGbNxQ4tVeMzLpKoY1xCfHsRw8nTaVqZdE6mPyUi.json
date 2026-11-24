@@ -525410,5 +525410,173 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:51:38",
+    "jobs": [
+      {
+        "id": "28dcccda",
+        "job_id": "senior-full-stack-developer-technical-lead-espoo-28dcccda",
+        "processed": true,
+        "title": "Senior Full-Stack Developer / Technical Lead",
+        "company": "NG Nordic Finland Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/ng-nordic-finland-senior-full-stack-developer-technical-lead-react-java-espoo-sdsuu-20753408",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/ng-nordic-finland-senior-full-stack-developer-technical-lead-react-java-espoo-sdsuu-20753408",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/senior-full-stack-developer-technical-lead-espoo-28dcccda",
+        "date_posted": "2026-11-23",
+        "date_expires": "2026-12-23",
+        "scraped_at": "2026-11-23 21:51:38",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Start your next job as a Senior Full-Stack Developer / Technical Lead at NG Nordic Finland Oy. Great opportunity in Espoo — apply now.",
+        "description": "NG Nordic Finland Oy is seeking a Senior Full-Stack Developer / Technical Lead to play a pivotal role in developing TOPi 2.0, with a primary focus on frontend development using React, while contributing to backend development and maintenance when needed. You will perform code reviews, ensure high standards for code quality, testing, security, and maintainability, and facilitate meetings and workshops for gathering and refining requirements. Translate business requirements into clear technical specifications and contribute to technical design and implementation decisions. Maintain and develop CI/CD pipelines and development workflows.",
+        "what_we_expect": [
+          "An experienced software developer with strong hands-on development skills, a collaborative mindset and the ability to take technical ownership."
+        ],
+        "job_responsibilities": [
+          "Develop TOPi 2.0, with a primary focus on frontend development using React, while contributing to backend development and maintenance when needed.",
+          "Perform code reviews and help ensure high standards for code quality, testing, security and maintainability.",
+          "Facilitate meetings and workshops for gathering and refining TOPi 2.0 requirements and specifications.",
+          "Translate business requirements into clear technical specifications for development.",
+          "Contribute to technical design and implementation decisions together with the development team.",
+          "Maintain and develop CI/CD pipelines and development workflows."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "Senior Full-Stack Developer React Java Technical Lead",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:51:41",
+    "jobs": [
+      {
+        "id": "10ca2992",
+        "job_id": "system-architect-ulvila-10ca2992",
+        "processed": true,
+        "title": "System Architect",
+        "company": "Cimcorp Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Ulvila"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/cimcorp-system-architect-sdsuu-20753693",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/cimcorp-system-architect-sdsuu-20753693",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/system-architect-ulvila-10ca2992",
+        "date_posted": "2026-11-23",
+        "date_expires": "2026-12-23",
+        "scraped_at": "2026-11-23 21:51:41",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a System Architect role at Cimcorp Oy. Join the team and build your career in Ulvila.",
+        "description": "Are you passionate about ensuring technical coherence in complex customer solutions? Join Cimcorp Oy in Ulvila, Finland, as a System Architect and help develop our System Planning capability. You will ensure that customer solutions are clearly defined and successfully carried through the entire project lifecycle, from concept to delivery and customer acceptance. Connect expertise from various specialist functions into one integrated solution and participate in developing system planning processes and tools. With several years of experience in complex technical solutions and a relevant engineering degree, you will make system-level decisions, document them, and communicate them effectively.",
+        "what_we_expect": [
+          "Several years of experience working with complex technical solutions.",
+          "A relevant engineering degree or equivalent practical experience.",
+          "Strong system-level thinking and structured analytical skills.",
+          "The ability to understand how different technical domains, interfaces and dependencies affect one another.",
+          "Confidence in making, documenting and communicating technical decisions.",
+          "Experience facilitating discussions across functions and organizational boundaries."
+        ],
+        "job_responsibilities": [
+          "Help ensure that customer solutions are technically coherent, clearly defined and successfully carried through the entire project lifecycle, from concept and technical approval to delivery, verification, customer acceptance and Service handover.",
+          "Connect expertise from Software, Physical Engineering, Product Management, Service, Simulation, Delivery and other specialist functions into one integrated customer solution.",
+          "Participate in developing system planning processes, the planning and development of tools and work guides."
+        ],
+        "what_we_offer": [
+          "A hybrid working model.",
+          "Work with experienced specialists across the organization.",
+          "A visible impact on solution quality and technical integrity.",
+          "A visible impact on delivery readiness and customer acceptance.",
+          "A visible impact on clearer technical decision-making.",
+          "A visible impact on cross-functional collaboration."
+        ],
+        "search_keywords": "system architect technical solutions complex systems project lifecycle communication skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/18.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:51:43",
+    "jobs": [
+      {
+        "id": "8b77bd9c",
+        "job_id": "sales-representative-kuopio-8b77bd9c",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "Netin Turva Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Kuopio"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/netin-turva-oy-myyntiedustajaksi-kuopioon-netin-turvalle-sdsuu-20734733",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/netin-turva-oy-myyntiedustajaksi-kuopioon-netin-turvalle-sdsuu-20734733",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-kuopio-8b77bd9c",
+        "date_posted": "2026-11-23",
+        "date_expires": "2026-12-23",
+        "scraped_at": "2026-11-23 21:51:43",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Sales Representative role at Netin Turva Oy. Join the team and build your career in Kuopio.",
+        "description": "Netin Turva Oy is seeking a Sales Representative for their Kuopio team, starting in January. This role involves meeting customers at the information security desk in grocery stores and shopping centers, offering Netin Turva's security solutions, and maintaining high-quality customer service. Ideal candidates should have a positive attitude, reliability, professionalism, and a willingness to learn. Thorough training and significant career opportunities are offered, with a guaranteed monthly fee of €2,000 and the potential to earn up to €5,000. Join a fast-growing company that values honesty, teamwork, and personal development. Apply now if you are ready to make a meaningful difference in the lives of families and individuals.",
+        "what_we_expect": [
+          "Good attitude and reliability.",
+          "Professionalism and teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Meeting customers at the information security desk, mainly in grocery stores and shopping centers, and offering Netin Turva's information security solutions.",
+          "Maintaining customer relations and taking care of high service quality."
+        ],
+        "what_we_offer": [
+          "Thorough training and introduction to the job from the best sellers in Finland.",
+          "Significant career opportunities - fast growing company.",
+          "€2,000/month guarantee fee, but we teach you how to earn €5,000/month.",
+          "Sales competitions.",
+          "Team trips.",
+          "Refreshment parties."
+        ],
+        "search_keywords": "sales representative information security Kuopio Netin Turva",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/12.png"
+      }
+    ]
   }
 ]
