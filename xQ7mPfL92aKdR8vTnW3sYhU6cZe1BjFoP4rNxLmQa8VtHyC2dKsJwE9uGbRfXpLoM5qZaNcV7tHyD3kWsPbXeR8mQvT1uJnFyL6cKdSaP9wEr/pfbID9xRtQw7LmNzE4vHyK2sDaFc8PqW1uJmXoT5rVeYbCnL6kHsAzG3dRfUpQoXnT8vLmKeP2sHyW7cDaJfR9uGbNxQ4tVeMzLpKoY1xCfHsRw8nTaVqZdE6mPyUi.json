@@ -526053,5 +526053,179 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:53:44",
+    "jobs": [
+      {
+        "id": "5bdf21dd",
+        "job_id": "property-manager-kuusamo-5bdf21dd",
+        "processed": true,
+        "title": "Property Manager",
+        "company": "Kuusamon Seurakunta",
+        "job_category": "installation-and-maintenance",
+        "jobLocation": [
+          "Kuusamo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/kuusamon-seurakunta-kiinteistonhoitaja-sdsuu-20747197",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/kuusamon-seurakunta-kiinteistonhoitaja-sdsuu-20747197",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/installation-and-maintenance/property-manager-kuusamo-5bdf21dd",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-23 21:53:44",
+        "open_positions": 1,
+        "salary_range": "2 434–2 583 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Apply now for a Property Manager role at Kuusamon Seurakunta. Join the team and build your career in Kuusamo.",
+        "description": "Kuusamon Seurakunta is seeking a full-time, permanent property manager to oversee the maintenance and upkeep of churches, parish center, residential and service buildings, and other properties in Kuusamo. Responsibilities include various repair and construction works, maintenance of machines and equipment, and ensuring cleanliness and winter maintenance of outdoor areas. A suitable professional degree in real estate or HVAC, practical work experience, skills in using maintenance equipment and software, knowledge of modern property automation, and a good service attitude are required. Fluency in Finnish is essential. An experience bonus and possible working time allowances are offered. Applications are accepted electronically through the KirkkoRekry service until December 9, 2026, at 12:00.",
+        "what_we_expect": [
+          "A suitable professional degree in the field of real estate or HVAC.",
+          "Real estate expertise acquired in practical work.",
+          "Skills in using machines and equipment used in property maintenance.",
+          "Skills in using software and IT systems used in property maintenance.",
+          "Knowledge and use of modern property automation.",
+          "A good service attitude and cooperation skills."
+        ],
+        "job_responsibilities": [
+          "Responsible for the planned maintenance and upkeep of the parish's churches, parish center, residential and service buildings and other properties.",
+          "Involves various repair and construction works, maintenance and repair of machines and equipment.",
+          "Takes care of the cleanliness and winter maintenance of the outdoor areas."
+        ],
+        "what_we_offer": [
+          "Experience bonus depending on previous work experience, a maximum of 311.50 euros per month.",
+          "Possible working time allowances.",
+          "Option of a performance bonus based on work performance."
+        ],
+        "search_keywords": "property manager maintenance repair construction",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:53:56",
+    "jobs": [
+      {
+        "id": "903d5b2b",
+        "job_id": "case-management-manager-lohja-903d5b2b",
+        "processed": true,
+        "title": "Case Management Manager",
+        "company": "Lohjan kaupunki",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Lohja"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/lohjan-kaupunki-asianhallintapaallikko-sdsuu-20747827",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/lohjan-kaupunki-asianhallintapaallikko-sdsuu-20747827",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/case-management-manager-lohja-903d5b2b",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-23 21:53:56",
+        "open_positions": 1,
+        "salary_range": "5 158–5 570 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Case Management Manager at Lohjan kaupunki in Lohja. Check the requirements and apply today.",
+        "description": "Join Lohja as a Case Management Manager in a vibrant, sustainably growing city nestled in the heart of Finland. As a development-oriented professional, you will play a crucial role in shaping modern case and information management practices within our organization. Your responsibilities will include developing and monitoring processes, coordinating system deployments, and training staff. With a comfortable work environment and the option for flexible remote working, this permanent position offers the chance to grow professionally while contributing to the strategic operations of Lohja. Fluency in Finnish is required, and experience in case and document management, along with a solid understanding of relevant legislation, is essential.",
+        "what_we_expect": [
+          "Experience in case management, document management and information management tasks.",
+          "Good knowledge of the Information Management Act, the Publicity Act, archive legislation and data protection legislation.",
+          "A development-oriented approach to work.",
+          "The ability to manage change.",
+          "Excellent interaction and cooperation skills.",
+          "The ability to grasp broad concepts and take things to a practical level."
+        ],
+        "job_responsibilities": [
+          "Development of case management and document management processes.",
+          "Development, guidance and monitoring of procedures in accordance with the Data Management Act and the Publicity Act.",
+          "Coordination of case management system development and deployments.",
+          "Maintenance of information management model and information control plans.",
+          "Development of information management documentation.",
+          "Directing and training personnel in case management practices."
+        ],
+        "what_we_offer": [
+          "A comfortable and cozy work environment in the middle of Lohja.",
+          "The possibility of flexible remote working.",
+          "The opportunity to develop your own professional skills."
+        ],
+        "search_keywords": "case management, document management, information management, development, coordination",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/16.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:54:01",
+    "jobs": [
+      {
+        "id": "7264a62b",
+        "job_id": "project-manager-kauhava-7264a62b",
+        "processed": true,
+        "title": "Project Manager",
+        "company": "Arnon",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Kauhava"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/arnon-project-manager-kauhava-sdsuu-20747881",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/arnon-project-manager-kauhava-sdsuu-20747881",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/project-manager-kauhava-7264a62b",
+        "date_posted": "2026-11-20",
+        "date_expires": "2026-12-20",
+        "scraped_at": "2026-11-23 21:54:01",
+        "open_positions": 1,
+        "salary_range": "Aloituspalkka 4800–5600 €/kk kokemuksestasi ja osaamisestasi riippuen",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Get started in a new job as a Project Manager at Arnon in Kauhava. Check the requirements and apply today.",
+        "description": "We are seeking a technically strong Project Manager to join Arnon's team in Kauhava, responsible for the comprehensive implementation of customer projects related to frequency converter solutions. The role involves managing projects from order to delivery, ensuring project schedule, cost, quality, technical scope, and risk management, while coordinating with internal and external stakeholders. You will also participate in technical sales and tender calculations, develop electrotechnical solutions, and contribute to continuous improvement. Key requirements include an electrical engineering degree, experience in industrial electrical engineering, and proficiency in English and Swedish.",
+        "what_we_expect": [
+          "An electrical engineer's or master's degree in electrical engineering or other education suitable for the position.",
+          "At least a few years of experience in industrial electrical engineering.",
+          "Understanding the principles of industrial electrical systems.",
+          "Mastering the basics of electrical sizing, such as understanding currents, powers, cabling and loadability.",
+          "Knowledge of the basics of short circuit and protection requirements.",
+          "Understanding the basics of selecting electrical appliances and components."
+        ],
+        "job_responsibilities": [
+          "Managing customer projects from order to delivery.",
+          "Project schedule, cost, quality, technical scope and risk management.",
+          "Customer cooperation and coordination of internal and external stakeholders.",
+          "Proactive management of changes, deviations and project-specific risks.",
+          "Utilization and development of agreed project management methods.",
+          "Development of electrotechnical solutions, instructions and methods of operation."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "project manager electrical engineering industrial electrical systems",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
+      }
+    ]
   }
 ]
