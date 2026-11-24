@@ -525306,5 +525306,109 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:50:48",
+    "jobs": [
+      {
+        "id": "db6fd5e6",
+        "job_id": "president-espoo-db6fd5e6",
+        "processed": true,
+        "title": "President",
+        "company": "Aalto-yliopisto",
+        "job_category": "education",
+        "jobLocation": [
+          "Espoo"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/president-aalto-university-sasal-20675303",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/president-aalto-university-sasal-20675303",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/president-espoo-db6fd5e6",
+        "date_posted": "2026-10-23",
+        "date_expires": "2026-11-22",
+        "scraped_at": "2026-11-23 21:50:48",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Join Aalto-yliopisto as a President and grow your career in Espoo. Check the job details and apply now.",
+        "description": "At Aalto University, curiosity moves across disciplines, roles, and communities, bringing science, art, technology, and business together to shape a sustainable future. As President, you will lead Aalto into its next chapter, defining the vision and strategy to drive the university forward as a highly original, attractive, and innovative academic institution. You will create the conditions for excellence in research, artistic work, education, societal impact, and multidisciplinary collaboration to flourish. With accountability for the university's overall performance, organizational resilience, financial continuity, and service to Finland, you will provide institutional and operational leadership.",
+        "what_we_expect": [
+          "Reliability.",
+          "Courage.",
+          "Collaboration.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Define the vision and strategy to drive Aalto forward as a highly original, attractive and innovative academic institution shaping a sustainable future for Finland and the world.",
+          "Create the conditions in which excellence in research, artistic work, education, societal impact and multidisciplinary collaboration can flourish.",
+          "Provide the institutional and operational leadership Aalto needs to fulfil its purpose, with accountability for the university's overall performance, organisational resilience, financial continuity and service to Finland.",
+          "Anticipate the forces shaping higher education, research and society, including artificial intelligence and emerging technologies, and articulate a positive and impactful role for Aalto within them.",
+          "Represent Aalto credibly in Finland and internationally, and strengthen its voice in higher education, research and innovation policy.",
+          "Deepen strategic corporate partnerships and co-created research, expand private funding and philanthropy, and grow Aalto's foundation endowment."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "president education aalto university leadership strategy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-23 21:50:53",
+    "jobs": [
+      {
+        "id": "5f06ee81",
+        "job_id": "salesperson-appointment-booker-helsinki-ja-2-muuta-5f06ee81",
+        "processed": true,
+        "title": "Salesperson / Appointment Booker",
+        "company": "Arvotähti Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 2 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myyja-ajanvaraaja-arvotahdelle-sdsuu-20753724",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myyja-ajanvaraaja-arvotahdelle-sdsuu-20753724",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/salesperson-appointment-booker-helsinki-ja-2-muuta-5f06ee81",
+        "date_posted": "2026-11-23",
+        "date_expires": "2026-12-23",
+        "scraped_at": "2026-11-23 21:50:53",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Arvotähti Oy is looking for a Salesperson / Appointment Booker in Helsinki ja 2 muuta. Don't miss this opportunity — apply today.",
+        "description": "Arvotähti Oy is seeking passionate salespeople/appointment bookers for stands in Helsinki and two other locations. This full-time, permanent role involves opening conversations with customers, arousing their interest, and booking appointments for free valuations of gold, silver, watches, and other valuables. Commission-based earnings, potential advancement to gold buyer or team leader, and international expansion opportunities await. Previous sales experience is a plus but not required. Send your message to 040 845 1413 or arvotahtisuomi@gmail.com to apply.",
+        "what_we_expect": [
+          "Dare to approach people, stick to the things agreed upon and keep trying, even if every customer doesn't stop."
+        ],
+        "job_responsibilities": [
+          "Open a conversation with the customer, arouse interest and book an appointment for a free assessment of valuables."
+        ],
+        "what_we_offer": [
+          "Commission-based earnings, potential to advance to become a gold buyer or team leader, international expansion opportunities."
+        ],
+        "search_keywords": "sales appointment booking gold buyer commission entrepreneur",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
