@@ -534627,5 +534627,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-24 16:17:05",
+    "jobs": [
+      {
+        "id": "fe2c8b95",
+        "job_id": "sales-representative-home-security-solutions-helsinki-ja-4-muuta-fe2c8b95",
+        "processed": true,
+        "title": "Sales Representative (Home Security Solutions)",
+        "company": "Verisure Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 4 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/myyntiedustaja-kodinturvaratkaisut-svser-20669804",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/myyntiedustaja-kodinturvaratkaisut-svser-20669804",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-home-security-solutions-helsinki-ja-4-muuta-fe2c8b95",
+        "date_posted": "2026-10-22",
+        "date_expires": "2026-11-21",
+        "scraped_at": "2026-11-24 16:17:05",
+        "open_positions": 1,
+        "salary_range": "salary of €1,500, an encouraging reward model,",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Sales Representative (Home Security Solutions) at Verisure Oy in Helsinki ja 4 muuta. Check the requirements and apply today.",
+        "description": "Sales representatives at Verisure in Helsinki and surrounding areas are needed to help customers protect their homes and businesses with Verisure's trusted security solutions. This role involves customer visits and contacting, with a focus on creating successful sales encounters. You'll enjoy a guaranteed monthly salary of €1,500 and motivating commissions of 300-400€ per new customer. You'll have access to a company car and receive training and support to succeed. As a Verisure sales representative, you'll have the opportunity for career progression and work in a Best Place to Work certified organization. Your day will include customer visits, system maintenance, and installations, all while enjoying warm customer encounters and a rewarding commission model.",
+        "what_we_expect": [
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Customer visits and contacting.",
+          "Maintenance and installing systems."
+        ],
+        "what_we_offer": [
+          "Guaranteed salary of €1,500/month.",
+          "Motivating commissions of 300-400€ per new customer.",
+          "Access to a car.",
+          "Training and support.",
+          "Opportunity for career progression.",
+          "Work in a Best Place to Work certified organization."
+        ],
+        "search_keywords": "sales representative home security solutions sales opportunities customer visits maintenance installations",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
+      }
+    ]
   }
 ]
