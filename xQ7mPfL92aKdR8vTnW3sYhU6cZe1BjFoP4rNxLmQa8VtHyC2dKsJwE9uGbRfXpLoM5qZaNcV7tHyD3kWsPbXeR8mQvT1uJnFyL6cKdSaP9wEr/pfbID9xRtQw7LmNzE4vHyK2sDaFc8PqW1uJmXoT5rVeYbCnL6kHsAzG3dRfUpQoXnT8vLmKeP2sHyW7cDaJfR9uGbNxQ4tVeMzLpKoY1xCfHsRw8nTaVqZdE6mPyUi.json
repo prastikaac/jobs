@@ -534568,5 +534568,64 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/9.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-24 16:14:36",
+    "jobs": [
+      {
+        "id": "602c21e0",
+        "job_id": "carpenters-in-northern-ostrobothnia-kempele-602c21e0",
+        "processed": true,
+        "title": "Carpenters in Northern Ostrobothnia",
+        "company": "Tehoa Henkilöstöpalvelut Oy",
+        "job_category": "construction",
+        "jobLocation": [
+          "Kempele",
+          "Liminka",
+          "Oulu",
+          "Pyhäntä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://tehoa.likeit.fi/apply/4383027",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/6dd3f767-d613-492e-90ab-eb1c124c20fa/en",
+        "job_employer_email": "arto.oksman@tehoahp.fi",
+        "job_employer_name": "Arto Oksman",
+        "job_employer_phone_no": "0447335974",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/construction/carpenters-in-northern-ostrobothnia-kempele-602c21e0",
+        "date_posted": "2026-11-23",
+        "date_expires": "2026-12-06",
+        "scraped_at": "2026-11-24 16:14:36",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Tehoa Henkilöstöpalvelut Oy is hiring a Carpenters in Northern Ostrobothnia in Kempele. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Carpenters are needed in Northern Ostrobothnia for long-term projects in Kempele, Liminka, Oulu, and Pyhäntä. Tehoa Henkilöstöpalvelut Oy offers permanent, full-time positions with a competitive hourly wage based on Finnish collective agreements. Key responsibilities include frame and mold work, reinforcement and concrete castings, interior manufacturing phase works, and carpenter's work. Requirements include a good attitude and the desire to work, with a valid occupational safety card and driving license being a plus. Benefits include long-term work, a fair salary, all necessary tools and equipment, support for acquiring cards and training, and a clear working relationship. Apply now for long-term opportunities in the construction industry.",
+        "what_we_expect": [
+          "A good attitude.",
+          "The desire to work."
+        ],
+        "job_responsibilities": [
+          "Frame and mold work.",
+          "Reinforcement and concrete castings.",
+          "Interior manufacturing phase works.",
+          "Carpenter's work."
+        ],
+        "what_we_offer": [
+          "Long-term work.",
+          "Fair salary.",
+          "All tools and equipment - including work clothes.",
+          "Support for acquiring cards and training.",
+          "Clear working relationship."
+        ],
+        "search_keywords": "carpenters construction Northern Ostrobothnia Oulu",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/24.png"
+      }
+    ]
   }
 ]
