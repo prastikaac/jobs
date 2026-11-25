@@ -534875,5 +534875,60 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/7.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-25 11:19:31",
+    "jobs": [
+      {
+        "id": "f53135c1",
+        "job_id": "special-class-teacher-lahti-f53135c1",
+        "processed": true,
+        "title": "Special Class Teacher",
+        "company": "Lahden kaupunki",
+        "job_category": "education",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://kuntarekry.fi/tyoavain/LAHTI-02-774-26/fi_FI",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/3e5230a1-8905-4108-b226-3628f6e9c9a7/en",
+        "job_employer_email": "",
+        "job_employer_name": "Susanna Kulonen",
+        "job_employer_phone_no": "0408349330",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/education/special-class-teacher-lahti-f53135c1",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-01",
+        "scraped_at": "2026-11-25 11:19:31",
+        "open_positions": 1,
+        "salary_range": "Palkka 2555,21 - 3316,89 €/kk + Lahti-lisä 28,85 - 112,06 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Special Class Teacher at Lahden kaupunki. Great opportunity in Lahti — apply now.",
+        "description": "We are seeking a special class teacher to join our dedicated team at Rakokivi elementary school in Lahti. The role involves teaching grades 2-3 in the regional special class at Rakokivi, a school of about 430 students located in the Rakokivi business center. Applicants must meet the eligibility requirements for a special class teacher and demonstrate cooperation skills, a desire to develop teaching, and the ability to work in flexible learning environments. Interaction skills, flexibility, and adaptability to the work community are also valued. The position is permanent, full-time, and subject to a 3-month trial period. Criminal background checks and drug tests may be required. Applications are accepted through the Kuntarekry.fi system by 1 December 2026 at 1:00 p.m.",
+        "what_we_expect": [
+          "Eligibility requirement as a special class teacher.",
+          "Cooperation skills.",
+          "Desire and ability to develop teaching.",
+          "Work in flexible learning environments.",
+          "Interaction skills.",
+          "Flexibility and adaptability to the work community."
+        ],
+        "job_responsibilities": [
+          "Work as a special class teacher in grades 2-3.-class in the regional special class."
+        ],
+        "what_we_offer": [
+          "Criminal background check required by law 504/2002 before accepting the position.",
+          "Drug test certificate may be requested from the applicant for the position.",
+          "3-month trial period."
+        ],
+        "search_keywords": "special class teacher education nurse eligibility requirements",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
   }
 ]
