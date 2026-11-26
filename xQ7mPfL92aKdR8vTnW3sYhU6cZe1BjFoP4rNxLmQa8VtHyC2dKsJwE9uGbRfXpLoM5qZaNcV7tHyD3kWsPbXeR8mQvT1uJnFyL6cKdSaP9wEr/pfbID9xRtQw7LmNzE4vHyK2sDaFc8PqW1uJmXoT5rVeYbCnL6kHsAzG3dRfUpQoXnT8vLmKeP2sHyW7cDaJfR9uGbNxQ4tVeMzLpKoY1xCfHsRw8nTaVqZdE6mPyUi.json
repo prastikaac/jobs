@@ -536724,5 +536724,124 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:19:16",
+    "jobs": [
+      {
+        "id": "c8bba74f",
+        "job_id": "factory-manager-ilomantsi-c8bba74f",
+        "processed": true,
+        "title": "Factory Manager",
+        "company": "Neova Oy",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Ilomantsi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tehdaspaallikko-sesez-20758552",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tehdaspaallikko-sesez-20758552",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/factory-manager-ilomantsi-c8bba74f",
+        "date_posted": "2026-11-25",
+        "date_expires": "2026-12-25",
+        "scraped_at": "2026-11-26 06:19:16",
+        "open_positions": 1,
+        "salary_range": "salary and performance bonus model comprehensiv",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Start your next job as a Factory Manager at Neova Oy. Great opportunity in Ilomantsi — apply now.",
+        "description": "Neova Oy, a Finnish company with roots dating back to 1940, seeks a Factory Manager to oversee the operational management and development of its activated carbon plant, pellet plant, and district heating production in Ilomantsi. As part of the international Neova group, you will be responsible for ensuring safe, efficient, and cost-conscious operation of the activated carbon production processes, maintaining high product quality and delivery reliability, and continuously developing production performance and profitability. You will lead a team of about 16 people, including process operators and maintenance experts, focusing on safety, personnel management, and environmental responsibility.",
+        "what_we_expect": [
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Management of production, maintenance and facility availability.",
+          "Safe, efficient and cost-conscious operation of activated carbon production.",
+          "Ensuring product quality and delivery reliability.",
+          "Development of production performance, utilization rate and operational reliability.",
+          "Monitoring and development of production profitability and cost efficiency.",
+          "Work, process and fire safety management."
+        ],
+        "what_we_offer": [
+          "We also offer."
+        ],
+        "search_keywords": "factory manager activated carbon production management",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:19:21",
+    "jobs": [
+      {
+        "id": "27d2487e",
+        "job_id": "team-leader-uusikaupunki-27d2487e",
+        "processed": true,
+        "title": "Team Leader",
+        "company": "Vahterus Oy",
+        "job_category": "management-and-leadership",
+        "jobLocation": [
+          "Uusikaupunki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/vahterus-tiiminvetaja-uusikaupunki-sdsuu-20758444",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/vahterus-tiiminvetaja-uusikaupunki-sdsuu-20758444",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/management-and-leadership/team-leader-uusikaupunki-27d2487e",
+        "date_posted": "2026-11-25",
+        "date_expires": "2026-12-25",
+        "scraped_at": "2026-11-26 06:19:21",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Vahterus Oy as a Team Leader in Uusikaupunki. Learn more about the role and apply now.",
+        "description": "We are seeking a Team Leader to support the production foreman and ensure the smooth operation of the daily work in our production teams. As a key member of our growing family business, you will be responsible for maintaining schedules, fostering a positive work environment, and coordinating daily production activities. Your role will involve solving everyday challenges, acting as a bridge between employees and management, and mentoring new team members. We value strong interaction and cooperation skills, as well as a willingness to learn and contribute to a supportive work atmosphere. Join us in Uusikaupunki, where you can develop your skills and be part of a team that cares about your well-being and success. Apply by 13 December 2026.",
+        "what_we_expect": [
+          "Excellent interaction and cooperation skills.",
+          "Ability to create good cooperation.",
+          "Willingness to learn.",
+          "Reliability.",
+          "Professionalism.",
+          "Teamwork."
+        ],
+        "job_responsibilities": [
+          "Ensure that the work proceeds according to plans.",
+          "Production stays on schedule.",
+          "Ensure that your team has the best possible conditions to succeed in their work.",
+          "Daily production coordination.",
+          "Work organization.",
+          "Reporting."
+        ],
+        "what_we_offer": [
+          "Permanent job.",
+          "Opportunity to develop skills.",
+          "Support in learning new things through work and training.",
+          "Strong sense of belonging.",
+          "Support towards common goals.",
+          "Interest in the well-being and success in work."
+        ],
+        "search_keywords": "team leader production coordination management cooperation skills",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
   }
 ]
