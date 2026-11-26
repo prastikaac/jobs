@@ -536843,5 +536843,121 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:20:31",
+    "jobs": [
+      {
+        "id": "d077d6e1",
+        "job_id": "test-automation-ai-developer-vantaa-d077d6e1",
+        "processed": true,
+        "title": "Test Automation & AI Developer",
+        "company": "Pharmac Finland Oy",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/pharmac-finland-testiautomaation-ja-ai-avusteisen-testauksen-asiantuntija-sdsuu-20747859",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/pharmac-finland-testiautomaation-ja-ai-avusteisen-testauksen-asiantuntija-sdsuu-20747859",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/test-automation-ai-developer-vantaa-d077d6e1",
+        "date_posted": "2026-11-25",
+        "date_expires": "2026-12-25",
+        "scraped_at": "2026-11-26 06:20:31",
+        "open_positions": 1,
+        "salary_range": "salary and comprehensive employment benefits, s",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "A new job opportunity is available at Pharmac Finland Oy as a Test Automation & AI Developer in Vantaa. Learn more about the role and apply now.",
+        "description": "At Pharmac Finland Oy, you will have the opportunity to develop test automation and explore the integration of AI in software testing. As a Test Automation & AI Developer, you will design and implement E2E test/browser automation for web applications, automate regression, API, and database testing, and build and document test automation architecture. You will integrate test automation into CI/CD processes, manage test data, and utilize AI in generating test cases. This role offers the chance to collaborate with testing, development, and business teams, introduce and train other testers, and develop new solutions and operating models. The position is temporary, covering family leave from February 1, 2027, to February 28, 2028, with the potential for extension.",
+        "what_we_expect": [
+          "Practical experience in test automation and the ability to develop solutions independently together with software development and the rest of the organization.",
+          "Knowledge of, for example, Robot Framework, Browser Library or other browser automation technologies, Azure DevOps, Git, API testing, SQL and CI/CD.",
+          "Curiosity and insight into how artificial intelligence can be used in testing in a truly useful way, without forgetting human communication and the importance of humans in quality assurance.",
+          "Experience coordinating or directing a testing team is considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Design and implementation of E2E test/browser automation of web applications.",
+          "Automation of regression, API and database testing.",
+          "Building, documenting and deploying test automation architecture and developing reusable test libraries.",
+          "Integration of test automation into CI/CD processes.",
+          "Utilization and management of test data in automation tests.",
+          "Utilization of AI in generating test cases and test automation."
+        ],
+        "what_we_offer": [
+          "Comprehensive employment benefits, such as lunch, cultural and exercise benefits, as well as comprehensive occupational health care.",
+          "Possibility to do hybrid work depending on the situation.",
+          "A relaxed and low-hierarchy work community where your ideas and views are taken into account.",
+          "The opportunity to develop and learn new skills as part of a multidisciplinary team."
+        ],
+        "search_keywords": "test automation AI developer software testing automation architecture CI/CD",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/11.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:20:44",
+    "jobs": [
+      {
+        "id": "bb4006cc",
+        "job_id": "communication-specialist-helsinki-bb4006cc",
+        "processed": true,
+        "title": "Communication Specialist",
+        "company": "Helsingin kaupungin asunnot Oy",
+        "job_category": "media-and-journalism",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/helsingin-kaupungin-asunnot-viestintaasiantuntija-markkinointi-ja-sosiaalinen-media-sdsuu-20756131",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/helsingin-kaupungin-asunnot-viestintaasiantuntija-markkinointi-ja-sosiaalinen-media-sdsuu-20756131",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/media-and-journalism/communication-specialist-helsinki-bb4006cc",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-24",
+        "scraped_at": "2026-11-26 06:20:44",
+        "open_positions": 1,
+        "salary_range": "4 023 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "A new job opportunity is available at Helsingin kaupungin asunnot Oy as a Communication Specialist in Helsinki. Learn more about the role and apply now.",
+        "description": "Helsingin kaupungin asunnot Oy is seeking a Communication Specialist to join its marketing and communications team in Helsinki. This permanent, full-time role involves planning, implementing, and developing marketing and multi-channel campaigns, optimizing paid social media advertising, and enhancing Heka's social media presence. Responsibilities include analyzing marketing effectiveness, supporting other departments, and contributing to team tasks. Ideal candidates will have a relevant university degree, at least five years of experience in marketing, strong knowledge of multi-channel marketing and campaign planning, practical experience in paid social media advertising, and good collaboration and project management skills. Fluency in English and Swedish is required.",
+        "what_we_expect": [
+          "A suitable university degree and at least five years of experience in demanding marketing or marketing communication tasks.",
+          "Strong knowledge of multi-channel marketing and campaign planning.",
+          "Practical experience in paid social media advertising, especially Meta advertising and campaign optimization.",
+          "Good knowledge of digital channels and tools and social media.",
+          "Knowledge of marketing measurement and analytics.",
+          "Good collaboration and project management skills as well as a self-initiated, prompt and productive approach to work."
+        ],
+        "job_responsibilities": [
+          "Planning, implementation and optimization of paid social media advertising and development of other digital advertising.",
+          "Development of Heka's social media as a whole and coordination of contents and methods of operation.",
+          "Monitoring and analyzing the effectiveness of marketing and utilizing customer understanding in operational development.",
+          "Participating in the team's joint tasks and supporting other departments in various communication tasks."
+        ],
+        "what_we_offer": [
+          "Assistance with finding accommodation is provided."
+        ],
+        "search_keywords": "communication specialist marketing social media real estate",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
   }
 ]
