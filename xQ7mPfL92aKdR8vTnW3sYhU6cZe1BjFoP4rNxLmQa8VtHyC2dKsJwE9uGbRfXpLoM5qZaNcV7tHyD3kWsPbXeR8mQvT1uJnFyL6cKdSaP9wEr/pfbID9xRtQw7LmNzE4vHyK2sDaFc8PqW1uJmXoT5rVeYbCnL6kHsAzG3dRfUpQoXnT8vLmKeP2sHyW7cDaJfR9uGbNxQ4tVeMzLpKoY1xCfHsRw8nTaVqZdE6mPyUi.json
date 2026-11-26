@@ -536515,5 +536515,103 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:14:57",
+    "jobs": [
+      {
+        "id": "9b093516",
+        "job_id": "sales-agent-hämeenlinna-9b093516",
+        "processed": true,
+        "title": "Sales Agent",
+        "company": "Doony.fi Oy, Kuopio",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Hämeenlinna",
+          "Hämeenkyrö",
+          "Iisalmi",
+          "Imatra",
+          "Joensuu",
+          "Juuka",
+          "Juva",
+          "Jyväskylä",
+          "Jämsä",
+          "Kaavi",
+          "Kaarina",
+          "Järvenpää",
+          "Kajaani",
+          "Kalajoki",
+          "Jämijärvi",
+          "Juupajoki",
+          "Joutsa",
+          "Joroinen",
+          "Jomala",
+          "Jokioinen",
+          "Janakkala",
+          "Isojoki",
+          "Isokyrö",
+          "Inkoo",
+          "Inari",
+          "Ilomantsi",
+          "Ilmajoki",
+          "Ikaalinen",
+          "Hyvinkää",
+          "Hyrynsalmi",
+          "Humppila",
+          "Huittinen",
+          "Hollola",
+          "Hirvensalmi",
+          "Heinävesi",
+          "Heinola",
+          "Hausjärvi",
+          "Hattula",
+          "Hartola",
+          "Harjavalta",
+          "Hanko",
+          "Hankasalmi",
+          "Hammarland",
+          "Hamina",
+          "Halsua"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "http://doony.fi",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/cb6dfd8f-3b82-42a8-8ec0-08532d2ab7b5/en",
+        "job_employer_email": "rekrytointi@doony.fi",
+        "job_employer_name": "",
+        "job_employer_phone_no": "0505183268",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-agent-hämeenlinna-9b093516",
+        "date_posted": "2026-11-25",
+        "date_expires": "2026-12-18",
+        "scraped_at": "2026-11-26 06:14:57",
+        "open_positions": 1,
+        "salary_range": "Salary based on the monthly remuneration table. Average earnings around 500-5000e/month.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Start your next job as a Sales Agent at Doony.fi Oy, Kuopio. Great opportunity in Hämeenlinna — apply now.",
+        "description": "Doony.fi Oy is seeking a Sales Agent to join their remote team in Hämeenlinna and surrounding areas. Ideal candidates will have a positive attitude, basic interaction skills, a commitment to quality, and a desire to earn well. Comprehensive training and ongoing support will be provided for this full-time, permanent position. You will market and sell a product that supports sports opportunities for children and young people in Finland. The role offers exciting career development, a competitive reward model, and a pleasant working atmosphere. Working hours are flexible, with morning shifts from 08:45-16:00 or evening shifts as agreed. Apply now by sending your free-form application to rekrytointi@doony.fi or contacting the recruiter on WhatsApp at 0505183268.",
+        "what_we_expect": [
+          "You have a good attitude and ambition to develop yourself.",
+          "Your basic interaction skills.",
+          "You commit to the agreed matters.",
+          "You do your best for the quality of the work.",
+          "You want to earn well."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Comprehensive training and orientation for work.",
+          "Continuous support and coaching at work to develop.",
+          "Good opportunities to develop your career path.",
+          "An exciting and competitive reward model based on sales and bonuses.",
+          "A pleasant working atmosphere."
+        ],
+        "search_keywords": "sales agent remote work training marketing",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
