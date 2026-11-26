@@ -535391,5 +535391,123 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-25 11:30:17",
+    "jobs": [
+      {
+        "id": "18b602ca",
+        "job_id": "crm-loyalty-manager-helsinki-ja-1-muu-18b602ca",
+        "processed": true,
+        "title": "CRM & Loyalty Manager",
+        "company": "Veke",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Helsinki ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/veke-home-crm-loyalty-manager-sdsuu-20756753",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/veke-home-crm-loyalty-manager-sdsuu-20756753",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/crm-loyalty-manager-helsinki-ja-1-muu-18b602ca",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-24",
+        "scraped_at": "2026-11-25 11:30:17",
+        "open_positions": 1,
+        "salary_range": "salary and the opportunity to increase earnings",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Veke is hiring a CRM & Loyalty Manager in Helsinki ja 1 muu. Explore the job responsibilities, benefits, and apply today.",
+        "description": "We are seeking a CRM & Loyalty Manager to lead Veke's customer strategy and implementation, focusing on enhancing customer retention and value through the development and optimization of the Veke Kotiklubi program. This role involves analyzing customer data, creating automated customer paths, and collaborating with various teams to drive sales and customer lifetime value. Reporting to the marketing and brand director, you will join an agile, results-oriented team in Helsinki or Ranua, Finland, where you will have the opportunity to shape your role. Requirements include at least 5 years of experience in CRM and loyalty programs, proven success in increasing customer retention, strong analytical skills, and proficiency in Finnish and English.",
+        "what_we_expect": [
+          "About 5 years of experience in using customer data, CRM and loyalty programs, preferably in retail or online shopping.",
+          "Evidence that you have measurably increased customer retention or customer value.",
+          "The ability to combine strategic thinking and practical work.",
+          "Strong analytical grasp: familiar with segmentation, cohort analysis and A/B testing.",
+          "Experience with marketing automation and CRM systems.",
+          "First-person experience or readiness to take on first-person responsibility."
+        ],
+        "job_responsibilities": [
+          "Prepare Veke's customer strategy, road map and annual plan and implement it.",
+          "Develop the benefits, functionalities and communication of the Veke Kotiklubi program to increase purchase frequency and customer value.",
+          "Deeply analyze Veke's customer data for segmentation, personalization and decision-making using RFM and life cycle models.",
+          "Lead the development of automated customer paths and CRM campaigns.",
+          "Build a continuous testing model and report the results.",
+          "Work closely with other experts in the marketing team, as well as the online store, stores, customer service and the ICT team."
+        ],
+        "what_we_offer": [
+          "Your success is measured by how much value returning customers bring. As the most important metrics.",
+          ": you develop the benefits, functionalities and communication of the Veke Kotiklubi program so that they increase the frequency of purchases and the value of the customer."
+        ],
+        "search_keywords": "CRM Loyalty Manager Sales Marketing Customer Strategy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-25 11:30:23",
+    "jobs": [
+      {
+        "id": "74bd541d",
+        "job_id": "customer-service-representative-helsinki-74bd541d",
+        "processed": true,
+        "title": "Customer Service Representative",
+        "company": "Finnlines Oyj",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/finnlines-liikenteenhoitaja-customer-service-representative-helsinki-sdsuu-20756912",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/finnlines-liikenteenhoitaja-customer-service-representative-helsinki-sdsuu-20756912",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/customer-service-representative-helsinki-74bd541d",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-24",
+        "scraped_at": "2026-11-25 11:30:23",
+        "open_positions": 1,
+        "salary_range": "salary range for this position is 2,900–3,800 e",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Finnlines Oyj is hiring a Customer Service Representative in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Join Finland's largest cargo shipping company, Finnlines Oyj, as a Customer Service Representative in Helsinki. As part of a dynamic team managing North Sea transport, you will handle cargo space reservations, maintain transport data, and communicate with various stakeholders. This role offers a unique opportunity to develop in the field of sea freight transport and work in a hybrid environment combining office and remote work. Located in the port of Vuosaari, you will enjoy comprehensive insurance, wellness benefits, and a competitive salary range of 2,900–3,800 euros/month. If you are passionate about international logistics and customer cooperation, apply now to become a key player in Finland's maritime industry.",
+        "what_we_expect": [
+          "An interest in international logistics and smooth customer cooperation."
+        ],
+        "job_responsibilities": [
+          "Processing cargo space reservations and ship space management.",
+          "Maintenance of transport data, manifestation and cargo.",
+          "Invoicing and related statements.",
+          "Advising customers and partners.",
+          "Daily communication with different stakeholders in Finland and internationally.",
+          "Rotating standby shift for North Sea traffic."
+        ],
+        "what_we_offer": [
+          "An opportunity to develop as a sea freight transport professional.",
+          "Extensive occupational health care and comprehensive insurance.",
+          "Lunch, exercise, cultural and wellness benefits.",
+          "Mobile phone benefit.",
+          "A hybrid work model, where we work on average about half of the time in the office and half remotely.",
+          "Own workplace in the port of Vuosaari in a maritime work environment."
+        ],
+        "search_keywords": "customer service representative, logistics, transportation, freight, international, Helsinki",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/21.png"
+      }
+    ]
   }
 ]
