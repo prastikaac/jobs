@@ -536673,5 +536673,56 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:18:32",
+    "jobs": [
+      {
+        "id": "ac64fe75",
+        "job_id": "accountant-vantaa-ac64fe75",
+        "processed": true,
+        "title": "Accountant",
+        "company": "Economer Oy",
+        "job_category": "accounting-and-finance",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/economer-kirjanpitaja-sdsuu-20758507",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/economer-kirjanpitaja-sdsuu-20758507",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/accounting-and-finance/accountant-vantaa-ac64fe75",
+        "date_posted": "2026-11-25",
+        "date_expires": "2026-12-25",
+        "scraped_at": "2026-11-26 06:18:32",
+        "open_positions": 1,
+        "salary_range": "Palkka 4 000–4 500 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Economer Oy as a Accountant and grow your career in Vantaa. Check the job details and apply now.",
+        "description": "Economer Oy is seeking a skilled Accountant to join our expanding team in Vantaa, focusing on the SME region. We are looking for an experienced professional with at least 5 years in accounting, particularly those with diverse industry client experience, the ability to handle independent accounting up to financial statements and tax returns, and proficiency in Netvisor/Procountor. Self-reliance, a willingness to learn and develop, and a customer-centric approach are highly valued. If you meet these requirements and are eager to contribute to our growth, please apply. Salary ranges from 4,000 to 4,500 €/month. Mehiläinen's extensive occupational life insurance and phone benefit are offered. Apply now to be part of our dynamic team!",
+        "what_we_expect": [
+          "At least 5 years of experience in accounting.",
+          "Experience with clients from several different industries.",
+          "Independent accounting up to financial statements and tax returns.",
+          "Netvisor/Procountor skills.",
+          "Self-reliance.",
+          "Want to learn new things and develop yourself."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "We offer: 🎁."
+        ],
+        "search_keywords": "accountant experience accounting finance",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/17.png"
+      }
+    ]
   }
 ]
