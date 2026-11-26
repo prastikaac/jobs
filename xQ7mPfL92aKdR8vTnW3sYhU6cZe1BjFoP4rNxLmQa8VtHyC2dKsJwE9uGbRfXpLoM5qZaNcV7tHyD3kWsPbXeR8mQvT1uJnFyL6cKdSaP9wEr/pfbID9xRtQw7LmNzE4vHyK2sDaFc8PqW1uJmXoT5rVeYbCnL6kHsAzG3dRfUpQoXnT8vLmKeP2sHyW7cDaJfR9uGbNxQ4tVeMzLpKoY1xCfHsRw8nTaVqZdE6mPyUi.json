@@ -536613,5 +536613,65 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-26 06:15:47",
+    "jobs": [
+      {
+        "id": "09b0f877",
+        "job_id": "customer-prospector-jyväskylä-09b0f877",
+        "processed": true,
+        "title": "Customer Prospector",
+        "company": "M&j Dynastia Oy, Jyväskylä",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Jyväskylä"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://www.mjdynastia.fi/rekry/",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/82b02f8a-28ce-41df-baf2-07c8604f31ea/en",
+        "job_employer_email": "janiina.kekkonen@mjdynastia.fi",
+        "job_employer_name": "Janiina Kekkonen",
+        "job_employer_phone_no": "0445264462",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/customer-prospector-jyväskylä-09b0f877",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-08",
+        "scraped_at": "2026-11-26 06:15:47",
+        "open_positions": 1,
+        "salary_range": "Takuupalkka toimii turvanasi. Provisioiden ja bonusten ansiosta voit kuitenkin odottaa ensimmäisen kuukauden jälkeen palkkasi olevan noin 2 000 €/kk ja kehityksen kautta 3 000-4 000 €/kk. Lisäksi meillä on jatkuvasti kisoja mm. ulkomaanmatkoista tapahtumista, bonuksista ja lahjakorteista. Palkkakertymän opit laskemaan onnistumisista itse, mutta tarkastelemme sitä viikoittain myös yhdessä.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Customer Prospector at M&j Dynastia Oy, Jyväskylä in Jyväskylä. Apply now and take the next step in your career.",
+        "description": "M&j Dynastia Oy is seeking a Customer Prospector to join our dynamic team in Jyväskylä. As a Customer Prospector, you will focus on acquiring new and retaining previous customers for our selected partners, acting as the voice of our represented company's brand. You will tailor campaign benefits to previous customers, ensuring targeted and meaningful interactions. We offer high-quality education, continuous coaching, and opportunities for advancement to sales supervisor. Our work environment values a good attitude, enthusiasm, and a customer service/sales background. Basic computer skills and fluent Finnish are required, with a willingness to learn new things quickly.",
+        "what_we_expect": [
+          "Have a good attitude and heart.",
+          "Have enough enthusiasm and motivation to develop.",
+          "Have a customer service/sales background.",
+          "Have basic use of a computer.",
+          "Have fluent Finnish language skills.",
+          "Be willing to quickly learn new things."
+        ],
+        "job_responsibilities": [
+          "Carefully focus on new and previous customers of our selected partners.",
+          "Act as the voice of the represented company's brand in new customer acquisition.",
+          "Consider previous customers with campaign benefits tailored to them."
+        ],
+        "what_we_offer": [
+          "High-quality education and continuous coaching.",
+          "Competitions, e.g. Events, bonuses and gift cards for foreign trips.",
+          "A good attitude and like-mindedness in the team.",
+          "Openness, flexibility and understanding of others in the office environment.",
+          "Close involvement of supervisors in everyday life.",
+          "Weekly review of salary accrual from successes together with the company."
+        ],
+        "search_keywords": "customer prospector sales marketing acquisition",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/14.png"
+      }
+    ]
   }
 ]
