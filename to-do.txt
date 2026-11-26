@@ -10,7 +10,17 @@ app asks for notification permission with user and gets its own FCM token
     ↓
 app sends fcmToken accroding to the user's uid, and also logged in platform name to firebase
     ↓
-firebase sends notification to the app also
+firebase sends  in app notification to the app 
+
+
+
+so now check our project files project structure how notification sending is being handled and than make my above logic work, there might me some code in android app folder but the logic is not working
+
+
+
+
+
+
 
 change app open color to this 
 
@@ -24,9 +34,8 @@ the fcm token is not being recorded from the app its blank it not coming along w
 
 
 
+
+
 change the footer as in the index page to all the pages after app published in both Google playstore and apple appstore
 
 modify landing page
-
-another Option to speed up the translation could be but dont use it now: Optimize NLLB-1.3B (num_beams=1)
-Switching from 4 beams to greedy decoding cuts GPU workload and translation time by ~3× to 4×, while keeping the 1.3B model.

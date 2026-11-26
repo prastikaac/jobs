@@ -60,6 +60,7 @@ echo [2/5] Initialising fresh .git-private...
 git init --bare "%PRIV%"
 git --git-dir="%PRIV%" remote add private "%REMOTE_URL%"
 git --git-dir="%PRIV%" config core.compression 9
+git --git-dir="%PRIV%" config gc.pruneExpire now
 git --git-dir="%PRIV%" config http.postBuffer 524288000
 git --git-dir="%PRIV%" config http.lowSpeedLimit 1000
 git --git-dir="%PRIV%" config http.lowSpeedTime 300
@@ -94,7 +95,8 @@ echo       Done.
 :: ── 6. Stage and commit current state (no logs, no secrets) ──────────────────
 echo [4/5] Staging current files for fresh commit...
 %GIT% add -A
-%GIT% add -f scraper/ functions/
+%GIT% add -f -- scraper/ ":(exclude)scraper/*.log" ":(exclude)scraper/**/*.log" ":(exclude)scraper/serviceAccountKey.json" ":(exclude)scraper/__pycache__" ":(exclude)scraper/**/__pycache__" ":(exclude)scraper/*.pyc" ":(exclude)scraper/**/*.pyc" ":(exclude)scraper/node_modules"
+%GIT% add -f functions\index.js functions\package.json functions\package-lock.json functions\all_jobs_loc.json functions\.gitignore 2>nul
 
 :: In a fresh repo, 'reset HEAD' doesn't work (no prior commit).
 :: Use 'rm --cached' instead to un-stage unwanted files from the index.

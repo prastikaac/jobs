@@ -32,3 +32,4 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo.
 echo [DONE] Scraper and Pipeline completed successfully.
+exit 0

@@ -1,8 +1,12 @@
 """
-job_translator.py — Phase 2: Offline GPU Translation (FI/SV→EN).
+job_translator.py — Phase 2: Translation (FI/SV->EN).
 
-Translates raw Finnish or Swedish job content to English using local GPU models
-(Meta NLLB-200-1.3B primary, Helsinki-NLP Opus-MT fallback).
+Translates raw Finnish or Swedish job content to English.
+Priority:
+  1. Primary: Free Google Translate Web API (0 MB GPU VRAM)
+  2. Secondary (Backup 1): Meta NLLB-200-1.3B on GPU (fp32)
+  3. Tertiary (Backup 2): Helsinki-NLP Opus-MT fi->en on GPU
+
 Saves:
 - rawjobs.json (raw jobs with translated_content cache)
 - translated_jobs.json (Phase 2 output only — pure English)
@@ -23,10 +27,9 @@ import translator
 
 logger = logging.getLogger("job_translator")
 
-# Number of jobs to translate in parallel on GPU.
-# Set to 1 to dedicate GPU VRAM and compute without thread contention.
+# Number of jobs to translate in parallel via Free Google Translate HTTP API.
 def _get_workers() -> int:
-    return 1
+    return 3
 
 
 
@@ -88,20 +91,11 @@ def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] |
         title = raw.get("title", raw.get("id", ""))
         jobcontent = _clean_multiline_text(raw.get("jobcontent") or "")
 
-        # ── FIX: translate title and body SEPARATELY ────────────────────────────
-        # Previously the title was concatenated with the body as one string:
-        #   raw_text = f"{title}\n\n{jobcontent}"
-        # The NLLB tokenizer truncates at 400 tokens, so a long job body would
-        # push the title into a corrupted/truncated context, causing the model to
-        # hallucinate mistranslations of compound Finnish words (e.g. "bittiviidakon"
-        # → "the Bitch" instead of "digital jungle").
-        # Translating them separately gives the model clean, unambiguous context
-        # for each piece, and lets us sanitize the title independently.
-        trans_title = translator.translate_fi_to_en(title) if title else ""
-        trans_title = translator.post_process_translation(trans_title)  # sanitize immediately
+        # Translate title and body sentences in a single batched GPU pass
+        # while keeping title strictly isolated as its own sentence unit.
+        trans_title, trans_body = translator.translate_title_and_body(title, jobcontent)
         backend = translator.get_last_backend()
 
-        trans_body = translator.translate_fi_to_en(jobcontent) if jobcontent else ""
         # Reassemble in the same format _split_translated_title_and_content expects
         translated = f"{trans_title}\n\n{trans_body}".strip() if trans_body else trans_title
         raw_text = f"{title}\n\n{jobcontent}".strip()  # keep for logging only
@@ -135,6 +129,49 @@ def translate_raw_jobs(raw_jobs: list[dict], processing_state: dict[str, dict] |
 
     logger.info("Translation complete. %d jobs translated.", len(untranslated))
     return raw_jobs
+
+
+# Instant dictionary lookup for common Finnish/Swedish job metadata values (0ms, no GPU call needed)
+_FAST_METADATA_MAP: dict[str, str] = {
+    "kokoaikatyö": "Full-time",
+    "kokoaikainen": "Full-time",
+    "osa-aikatyö": "Part-time",
+    "osa-aikainen": "Part-time",
+    "vakituinen": "Permanent",
+    "toistaiseksi voimassa oleva": "Permanent",
+    "määräaikainen": "Fixed-term",
+    "kesätyö": "Summer job",
+    "kausityö": "Seasonal work",
+    "keikkatyö": "Gig work",
+    "harjoittelu": "Internship",
+    "oppisopimus": "Apprenticeship",
+    "vuorotyö": "Shift work",
+    "päivätyö": "Day work",
+    "iltatyö": "Evening work",
+    "yötyö": "Night work",
+    "viikonlopputyö": "Weekend work",
+    "etätyö": "Remote work",
+    "hybridityö": "Hybrid work",
+    "suomi": "Finnish",
+    "suomen kieli": "Finnish",
+    "englanti": "English",
+    "englannin kieli": "English",
+    "ruotsi": "Swedish",
+    "ruotsin kieli": "Swedish",
+    "venäjä": "Russian",
+    "viro": "Estonian",
+    "saksa": "German",
+    "ranska": "French",
+    "espanja": "Spanish",
+    "full-time": "Full-time",
+    "part-time": "Part-time",
+    "permanent": "Permanent",
+    "fixed-term": "Fixed-term",
+    "temporary": "Temporary",
+    "finnish": "Finnish",
+    "english": "English",
+    "swedish": "Swedish",
+}
 
 
 def _build_translated_raw_output(
@@ -186,38 +223,50 @@ def _build_translated_raw_output(
 
         # ── Slow path: bulk-translate supplementary fields ─────────────────────
         texts_to_translate = []
-        map_back = []  # (field, is_list)
+        map_back = []  # (field, is_list, list_index)
+        parsed = {}
 
         for field in ["what_we_expect", "job_responsibilities", "what_we_offer", "language_requirements"]:
             val = raw.get(field)
             if val and isinstance(val, list):
+                parsed[field] = []
                 for v in val:
                     s_val = str(v).strip()
-                    if s_val:
+                    if not s_val:
+                        continue
+                    fast_hit = _FAST_METADATA_MAP.get(s_val.lower())
+                    if fast_hit is not None:
+                        parsed[field].append(fast_hit)
+                    else:
+                        idx_in_list = len(parsed[field])
+                        parsed[field].append(s_val)
                         texts_to_translate.append(s_val)
-                        map_back.append((field, True))
+                        map_back.append((field, True, idx_in_list))
 
         for field in ["workTime", "continuityOfWork"]:
             val = raw.get(field)
             if val and isinstance(val, str) and val.strip():
-                texts_to_translate.append(val.strip())
-                map_back.append((field, False))
+                s_val = val.strip()
+                fast_hit = _FAST_METADATA_MAP.get(s_val.lower())
+                if fast_hit is not None:
+                    parsed[field] = fast_hit
+                else:
+                    texts_to_translate.append(s_val)
+                    map_back.append((field, False, 0))
 
         n_calls = 0
         if texts_to_translate:
-            # Use translate_batch: all texts in ONE batch call
+            # Use translate_batch: all remaining unknown texts in ONE batch call
             translated_parts = translator.translate_batch(texts_to_translate)
             n_calls = 1
-            parsed = {}
-            for txt_translated, (field, is_list) in zip(translated_parts, map_back):
-                if field not in parsed:
-                    parsed[field] = [] if is_list else ""
+            for txt_translated, (field, is_list, list_idx) in zip(translated_parts, map_back):
                 if is_list:
-                    parsed[field].append(txt_translated)
+                    parsed[field][list_idx] = txt_translated
                 else:
                     parsed[field] = txt_translated
-            for field, val in parsed.items():
-                out_job[field] = val
+
+        for field, val in parsed.items():
+            out_job[field] = val
 
         translated_text = raw.get("translated_content", "")
         if translated_text:
