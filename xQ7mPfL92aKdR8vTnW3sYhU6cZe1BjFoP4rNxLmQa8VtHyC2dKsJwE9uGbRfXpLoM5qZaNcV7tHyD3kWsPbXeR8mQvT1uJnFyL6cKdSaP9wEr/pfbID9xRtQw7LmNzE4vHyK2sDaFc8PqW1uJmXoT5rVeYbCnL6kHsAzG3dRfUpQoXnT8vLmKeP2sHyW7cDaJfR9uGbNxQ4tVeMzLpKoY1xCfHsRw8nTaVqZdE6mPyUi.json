@@ -547302,5 +547302,119 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/1.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 01:30:05",
+    "jobs": [
+      {
+        "id": "9451f563",
+        "job_id": "laboratory-manager-helsinki-9451f563",
+        "processed": true,
+        "title": "Laboratory Manager",
+        "company": "Yliopiston Apteekki",
+        "job_category": "research-and-development",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/yliopiston-apteekki-laboratoriopaallikko-sdsuu-20756819",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/yliopiston-apteekki-laboratoriopaallikko-sdsuu-20756819",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/research-and-development/laboratory-manager-helsinki-9451f563",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-24",
+        "scraped_at": "2026-11-27 01:30:05",
+        "open_positions": 1,
+        "salary_range": "salary expectations through our recruitment pag",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Yliopiston Apteekki is hiring a Laboratory Manager in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Do you have a passion for leading and developing analytical laboratory operations in a healthcare setting? As the Laboratory Manager at Yliopiston Apteekki in Helsinki, you will lead the analytical laboratory team in Pitäjänmäki, supporting pharmaceutical product development and quality control. With several years of experience in managing an analytical laboratory, particularly in the pharmaceutical or food industries, and at least 5-10 years of front-line work, you will bring a vision for the future and the ability to make independent decisions. You will manage large entities with a systematic approach, working with plans and numbers, and have strong knowledge of chemistry, medicinal raw materials, and GMP requirements.",
+        "what_we_expect": [
+          "Strong evidence and several years of work experience in managing an analytical laboratory, e.g. In the pharmaceutical, food or similar operating environments.",
+          "At least 5-10 years of experience in front-line work.",
+          "Experience in implementing changes and a vision of the laboratory of the future.",
+          "The ability to make independent decisions.",
+          "The ability to manage large entities and a systematic approach.",
+          "Used to working with plans and numbers."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Good employee benefits, such as a staff discount and comprehensive occupational health services.",
+          "Lunch, culture, wellness and exercise benefit.",
+          "Trainings that support professional competence and development.",
+          "Support for independent study."
+        ],
+        "search_keywords": "laboratory manager pharmaceutical analytical laboratory management experience chemistry pharmacy",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 01:30:08",
+    "jobs": [
+      {
+        "id": "0fedbdbd",
+        "job_id": "clean-room-production-manager-helsinki-0fedbdbd",
+        "processed": true,
+        "title": "Clean Room Production Manager",
+        "company": "Yliopiston Apteekki",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/yliopiston-apteekki-puhdastilatuotannon-esihenkilo-laakevalmistukseen-sdsuu-20756826",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/yliopiston-apteekki-puhdastilatuotannon-esihenkilo-laakevalmistukseen-sdsuu-20756826",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/clean-room-production-manager-helsinki-0fedbdbd",
+        "date_posted": "2026-11-24",
+        "date_expires": "2026-12-24",
+        "scraped_at": "2026-11-27 01:30:08",
+        "open_positions": 1,
+        "salary_range": "salary expectations through our recruitment pag",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Join Yliopiston Apteekki as a Clean Room Production Manager and grow your career in Helsinki. Check the job details and apply now.",
+        "description": "Lead the operation and team of sterile pharmaceutical manufacturing in Helsinki's Pitäjänmäki at Yliopiston Apteekki, responsible for cleanroom production operations and development, supervising employees in cleanroom production. You will bring strong credentials and experience in pharmaceutical manufacturing, ideally in a pharmaceutical factory or hospital pharmacy, with knowledge in the manufacture of nutritional supplements or medical devices. At least 3-5 years of front-line work experience in an organization of 10-20 people, and experience in implementing changes and future drug manufacturing are required. A pharmacist's degree or equivalent higher university degree is necessary.",
+        "what_we_expect": [
+          "Strong credentials and several years of work experience in pharmaceutical manufacturing.",
+          "Knowledge of the manufacture of nutritional supplements or medical devices.",
+          "At least 3-5 years of experience in front-line work in an organization of 10-20 people.",
+          "Experience in implementing changes and insight into future drug manufacturing.",
+          "The ability to make independent decisions.",
+          "A pharmacist's degree or another applicable higher university degree."
+        ],
+        "job_responsibilities": [
+          "Lead the operation and team of sterile pharmaceutical manufacturing in Helsinki's Pitäjänmäki.",
+          "Be responsible for the operation of cleanroom productions.",
+          "Develop cleanroom productions.",
+          "Supervise employees working in cleanroom production."
+        ],
+        "what_we_offer": [
+          "Influence over the production of rare medicines at Finland's largest pharmacy.",
+          "Good employee benefits, such as a staff discount and comprehensive occupational health services.",
+          "Lunch, culture, wellness and exercise benefit.",
+          "Trainings that support professional competence and development.",
+          "Support for independent study."
+        ],
+        "search_keywords": "clean room production manager pharmaceutical manufacturing sterile production experience",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/30.png"
+      }
+    ]
   }
 ]
