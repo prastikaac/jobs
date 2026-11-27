@@ -546534,5 +546534,50 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 01:19:51",
+    "jobs": [
+      {
+        "id": "cf9ccde5",
+        "job_id": "taxi-driver-haapajärvi-cf9ccde5",
+        "processed": true,
+        "title": "Taxi Driver",
+        "company": "Taxivirpi Oy, Oulu",
+        "job_category": "transportation-and-logistics",
+        "jobLocation": [
+          "Haapajärvi"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://docs.google.com/forms/d/e/1FAIpQLScxYffr2xUnUKxv1lfxi80RG_XD-kroCtk4KSnunLwI4stkxw/viewform",
+        "jobLink": "https://tyomarkkinatori.fi/en/personal-customers/vacancies/229d3695-2646-4a8f-8f7f-252aa1714c1d/en",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/transportation-and-logistics/taxi-driver-haapajärvi-cf9ccde5",
+        "date_posted": "2026-11-25",
+        "date_expires": "2026-12-31",
+        "scraped_at": "2026-11-27 01:19:51",
+        "open_positions": 1,
+        "salary_range": "salary per shift",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Taxivirpi Oy, Oulu is looking for a Taxi Driver in Haapajärvi. Don't miss this opportunity — apply today.",
+        "description": "Taxivirpi Oy, a family business in Oulu, seeks a taxi driver to join our team in Haapajärvi. You will drive elderly and disabled passengers on weekdays, with weekend shifts available if desired. No taxi license is required as we provide training and support. Good customer service skills and a positive attitude are essential. Join a company committed to flexibility, people-oriented service, and professional development in the taxi industry. Apply through the provided form and we will be in touch soon.",
+        "what_we_expect": [
+          "Good customer service skills.",
+          "Learning and good attitude towards work."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "taxi driver transport elderly disabled",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/27.png"
+      }
+    ]
   }
 ]
