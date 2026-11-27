@@ -546739,5 +546739,66 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 01:23:02",
+    "jobs": [
+      {
+        "id": "b702fbc0",
+        "job_id": "emirates-cabin-crew-dubai-b702fbc0",
+        "processed": true,
+        "title": "Emirates Cabin Crew",
+        "company": "Emirates",
+        "job_category": "aviation-and-airport-services",
+        "jobLocation": [
+          "Dubai"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/emirates-fin-emirates-cabin-crew-sdsuu-20608887",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/emirates-fin-emirates-cabin-crew-sdsuu-20608887",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/aviation-and-airport-services/emirates-cabin-crew-dubai-b702fbc0",
+        "date_posted": "2026-10-01",
+        "date_expires": "2026-10-31",
+        "scraped_at": "2026-11-27 01:23:02",
+        "open_positions": 1,
+        "salary_range": "1 195–2 864 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Get started in a new job as a Emirates Cabin Crew at Emirates in Dubai. Check the requirements and apply today.",
+        "description": "Emirates Cabin Crew are sought to deliver the Fly Better onboard experience to passengers across 140+ global destinations. Based in Dubai, this full-time, permanent role involves ensuring passenger safety and comfort, managing onboard service, maintaining cabin cleanliness, and responding to requests. You must be fluent in written and spoken English, at least 160cm tall, and have at least 1 year of hospitality or customer service experience. Additional languages and a natural team spirit are advantageous. Salaries range from 1,195–2,864 €/kk, with variable flying pay based on hours flown. Career progression opportunities and benefits include free furnished accommodation, company transport, and 30 calendar days of leave. Join Emirates and shape the passenger flight experience.",
+        "what_we_expect": [
+          "Fluent in written and spoken English.",
+          "A natural team player with a personality that shines.",
+          "At least 160cm tall and able to reach 212cm high.",
+          "Able to meet the UAE’s employment visa requirements.",
+          "At least 21 years old.",
+          "At least 1 year of hospitality or customer service experience."
+        ],
+        "job_responsibilities": [
+          "Ensure the safety and comfort of our passengers.",
+          "Manage onboard service.",
+          "Maintain cabin cleanliness throughout each flight.",
+          "Respond to passenger requests.",
+          "Work collaboratively with fellow colleagues to ensure a smooth flight."
+        ],
+        "what_we_offer": [
+          "Career progression opportunities.",
+          "Furnished accommodation provided free of charge with utilities paid by the company.",
+          "Free company transport between accommodation and the airport/training college.",
+          "Variable flying pay that increases based on flying hours.",
+          "30 calendar days of leave per year for personal use."
+        ],
+        "search_keywords": "cabin crew, aviation, dubai, emirates, customer service",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/4.png"
+      }
+    ]
   }
 ]
