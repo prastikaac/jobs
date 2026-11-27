@@ -546637,5 +546637,107 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/29.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 01:21:52",
+    "jobs": [
+      {
+        "id": "3fad05ae",
+        "job_id": "experienced-it-auditor-helsinki-3fad05ae",
+        "processed": true,
+        "title": "Experienced IT Auditor",
+        "company": "Deloitte Oy",
+        "job_category": "business-and-administration",
+        "jobLocation": [
+          "Helsinki"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/deloitte-experienced-it-auditor-finland-sdsuu-20760851",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/deloitte-experienced-it-auditor-finland-sdsuu-20760851",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/business-and-administration/experienced-it-auditor-helsinki-3fad05ae",
+        "date_posted": "2026-11-26",
+        "date_expires": "2026-12-26",
+        "scraped_at": "2026-11-27 01:21:52",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Deloitte Oy is hiring a Experienced IT Auditor in Helsinki. Explore the job responsibilities, benefits, and apply today.",
+        "description": "Deloitte Oy is seeking an Experienced IT Auditor to join our dynamic and engaging IT, Data & Analytics (IDA) team in Helsinki. This role involves evaluating and reporting on the procedures and control environment surrounding an organization's IT systems, with a focus on identifying risks and weaknesses to improve risk management. You will work on assignments that provide assurance or advice, supporting financial auditing tasks and clients in compliance with IT and cyber regulations. Ideal candidates will have a relevant degree, 1-4 years of full-time professional experience in auditing IT systems, and the ability to identify and assess IT risks and controls. Strong teamwork skills, enthusiasm for leveraging AI and emerging technologies, and fluency in English are essential.",
+        "what_we_expect": [
+          "Have graduated in relevant study field (e.g., audit, risk management, business, IT, accounting).",
+          "Have 1-4 years of full-time professional work experience, preferably with auditing information technology systems or any related field (IT controls, internal controls, GITC management, IT management & administration) gained from another consulting firm or large organization (private or public).",
+          "Have knowledge to identify and assess IT risks and controls to relate them to business processes and to express opinions in a clear manner.",
+          "Have solid teamwork skill and enthusiastic attitude to work with others, both with colleagues and customers.",
+          "Have a keen interest in leveraging AI and emerging technologies to improve IT audit processes and ways of working.",
+          "Are fluent in spoken and written English. Proficiency in Finnish is considered an advantage."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [],
+        "search_keywords": "IT Auditor audit risk management business IT accounting experience teamwork AI SAP ERP",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/2.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 01:21:57",
+    "jobs": [
+      {
+        "id": "75093619",
+        "job_id": "mechanical-maintenance-engineer-foreman-rauma-75093619",
+        "processed": true,
+        "title": "Mechanical Maintenance Engineer Foreman",
+        "company": "Upm",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Rauma"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/upm-kymmene-mekaaninen-kunnossapitoinsinoori-tyonjohtaja-sdsuu-20762251",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/upm-kymmene-mekaaninen-kunnossapitoinsinoori-tyonjohtaja-sdsuu-20762251",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/mechanical-maintenance-engineer-foreman-rauma-75093619",
+        "date_posted": "2026-11-26",
+        "date_expires": "2026-12-26",
+        "scraped_at": "2026-11-27 01:21:57",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Get started in a new job as a Mechanical Maintenance Engineer Foreman at UPM in Rauma. Check the requirements and apply today.",
+        "description": "At UPM's Rauma paper mill, you will oversee maintenance installers, ensuring work safety and goal-oriented attitudes. You will handle procurement and maintenance of service, equipment, and spare parts, prepare and carry out cost-effective maintenance, installation, and repair work, and participate in work planning and contractor cooperation. You will work alongside maintenance engineers from other departments, sharing knowledge and resources. Technical training, experience in paper manufacturing, mechanical maintenance, energy, and water sectors, and front-line work experience are required. Join us in renewing everyday life towards a future independent of fossil raw materials.",
+        "what_we_expect": [
+          "Technical training suitable for the position.",
+          "Experience in the paper manufacturing process and mechanical maintenance.",
+          "Experience in the energy and water sector as well as power plant processes and mechanical maintenance."
+        ],
+        "job_responsibilities": [
+          "Supervise maintenance installers in the work group and ensure work safety, goal-oriented attitude, skills, and work tools.",
+          "Handle procurement and maintenance of service, equipment, and spare parts in the area.",
+          "Prepare and carry out maintenance, installation, and repair work in a cost-effective manner.",
+          "Participate in work planning and cooperate with contractors, providing instructions and supervision.",
+          "Work in cooperation with maintenance engineers from other departments and share know-how and resources."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "mechanical maintenance engineer foreman engineering sustainability",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
   }
 ]
