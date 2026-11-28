@@ -580146,5 +580146,228 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/5.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 20:33:13",
+    "jobs": [
+      {
+        "id": "6a01b74f",
+        "job_id": "sales-representative-tampere-ja-8-muuta-6a01b74f",
+        "processed": true,
+        "title": "Sales Representative",
+        "company": "LLK Sales Oy",
+        "job_category": "sales-and-marketing",
+        "jobLocation": [
+          "Tampere ja 8 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/llk-sales-oy-myyntiedustaja-sdsuu-20765878",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/llk-sales-oy-myyntiedustaja-sdsuu-20765878",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/sales-and-marketing/sales-representative-tampere-ja-8-muuta-6a01b74f",
+        "date_posted": "2026-11-27",
+        "date_expires": "2026-12-27",
+        "scraped_at": "2026-11-27 20:33:13",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements and other company and links",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish"
+        ],
+        "meta_description": "Discover a new job opportunity as a Sales Representative at LLK Sales Oy in Tampere ja 8 muuta. Apply now and take the next step in your career.",
+        "description": "LLK Sales Oy is seeking goal-oriented sales representatives to join our growing team in Tampere and surrounding areas. As a sales representative, you will meet consumer customers in shopping centers, fairs, events, and grocery stores, selling well-known brands such as Sanoma products and Elisa subscription services. You will map customers' needs and perform goal-oriented sales work, all while maintaining a positive attitude and willingness to learn. We offer support and care from the team, as well as the opportunity to build new friendships and social connections. If you are passionate about sales and want to earn well, this is the role for you.",
+        "what_we_expect": [
+          "Goal-oriented.",
+          "Right attitude.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [
+          "Meet consumer customers in shopping centers, fairs, events and grocery stores.",
+          "Sell well-known and respected brands such as Sanoma products and subscription services (Elisa).",
+          "Map customers' needs and perform goal-oriented sales work."
+        ],
+        "what_we_offer": [
+          "Support and care from the team.",
+          "New friends and social connections with the team."
+        ],
+        "search_keywords": "sales representative, sales, marketing, customer, support",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 20:33:30",
+    "jobs": [
+      {
+        "id": "e6113fe0",
+        "job_id": "general-practitioner-for-student-healthcare-joensuu-ja-6-muuta-e6113fe0",
+        "processed": true,
+        "title": "General Practitioner for Student Healthcare",
+        "company": "Ylioppilaiden terveydenhoitosäätiö (YTHS)",
+        "job_category": "healthcare",
+        "jobLocation": [
+          "Joensuu ja 6 muuta"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/ylioppilaiden-terveydenhoitosaatio-yleislaakariksi-opiskeluterveydenhuoltoon-sdsuu-20766100",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/ylioppilaiden-terveydenhoitosaatio-yleislaakariksi-opiskeluterveydenhuoltoon-sdsuu-20766100",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/healthcare/general-practitioner-for-student-healthcare-joensuu-ja-6-muuta-e6113fe0",
+        "date_posted": "2026-11-27",
+        "date_expires": "2026-12-27",
+        "scraped_at": "2026-11-27 20:33:30",
+        "open_positions": 1,
+        "salary_range": "salary regarding this, we comply with the agree",
+        "workTime": "Full-time",
+        "continuityOfWork": "Temporary",
+        "language_requirements": [
+          "Finnish",
+          "English",
+          "Swedish"
+        ],
+        "meta_description": "Apply now for a General Practitioner for Student Healthcare role at Ylioppilaiden terveydenhoitosäätiö (YTHS).",
+        "description": "We are seeking a General Practitioner for student healthcare to join Ylioppilaiden terveydenhoitosäätiö (YTHS) at service points in Joensuu and six other locations, including Hämeenlinna, Rauma, Mikkeli, Rovaniemi, Kajaani, and Vaasa, with the option for digital centralized services for remote work. This role offers a comprehensive orientation, support from colleagues and superiors, good consultation opportunities, training for skill development, and the flexibility to customize the job description. The position is full-time and temporary, with a hybrid work model combining local and remote reception work.",
+        "what_we_expect": [
+          "A licentiate degree in medicine or a specialist doctor's degree and the right to work as a healthcare professional legalized by the Licensing and Supervision Agency.",
+          "Good communication skills.",
+          "Good attitude.",
+          "Reliability.",
+          "Teamwork.",
+          "Willingness to learn."
+        ],
+        "job_responsibilities": [],
+        "what_we_offer": [
+          "Comprehensive orientation.",
+          "The support of colleagues and superiors.",
+          "Good consultation opportunities.",
+          "Training to support the development of your skills.",
+          "The possibility to customize the job description.",
+          "Day job without on-call duty."
+        ],
+        "search_keywords": "general practitioner healthcare student healthcare employment",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/10.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 20:33:32",
+    "jobs": [
+      {
+        "id": "e2367c11",
+        "job_id": "senior-process-engineer-waste-management-systems-espoo-ja-1-muu-e2367c11",
+        "processed": true,
+        "title": "Senior Process Engineer – Waste Management Systems",
+        "company": "Steady Energy Oy",
+        "job_category": "engineering-and-design",
+        "jobLocation": [
+          "Espoo ja 1 muu"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/steady-energy-senior-process-engineer-waste-management-systems-sdsuu-20765929",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/steady-energy-senior-process-engineer-waste-management-systems-sdsuu-20765929",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/engineering-and-design/senior-process-engineer-waste-management-systems-espoo-ja-1-muu-e2367c11",
+        "date_posted": "2026-11-27",
+        "date_expires": "2026-12-27",
+        "scraped_at": "2026-11-27 20:33:32",
+        "open_positions": 1,
+        "salary_range": "5 500–6 800 €/kk",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "Finnish",
+          "English"
+        ],
+        "meta_description": "Apply now for a Senior Process Engineer – Waste Management Systems role at Steady Energy Oy. Join the team and build your career in Espoo ja 1 muu.",
+        "description": "Steady Energy Oy, a Finnish nuclear technology company, is seeking a Senior Process Engineer to lead the design of waste management systems for its LDR-50 small modular reactor. Building on Finland's world-leading nuclear expertise, you will develop and evaluate process solutions for liquid waste, gaseous effluent, and solid waste management, collaborating with experts in radiation protection, nuclear safety, and mechanical engineering. This role involves assessing waste streams, comparing alternatives, and ensuring designs meet safety, environmental, and regulatory standards.",
+        "what_we_expect": [
+          "Minimum 5 years of relevant experience in process design, equipment design for process systems, p."
+        ],
+        "job_responsibilities": [
+          "Build on previous studies to develop the waste management concept, compare alternatives and guide the selection of suitable solutions.",
+          "Assess waste streams and translate waste management needs into process design requirements.",
+          "Develop and evaluate process solutions for liquid waste and gaseous effluent management.",
+          "Develop and evaluate solutions for solid waste management and coordinate interfaces with other plant systems.",
+          "Work with suppliers and other design teams to evaluate and refine proposed solutions, coordinate interfaces and integrate their work into the overall system design.",
+          "Develop and review the supporting process flow diagrams, piping and instrumentation diagrams (P&IDs), system descriptions and equipment specifications."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "Senior Process Engineer Waste Management Systems Engineering Design",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/22.png"
+      }
+    ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 20:34:13",
+    "jobs": [
+      {
+        "id": "9591ba8c",
+        "job_id": "product-manager-lahti-9591ba8c",
+        "processed": true,
+        "title": "Product Manager",
+        "company": "Oy Lunawood Ltd",
+        "job_category": "information-technology",
+        "jobLocation": [
+          "Lahti"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/oy-lunawood-ltd-tuotepaallikko-sdsuu-20766205",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/oy-lunawood-ltd-tuotepaallikko-sdsuu-20766205",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/information-technology/product-manager-lahti-9591ba8c",
+        "date_posted": "2026-11-27",
+        "date_expires": "2026-12-27",
+        "scraped_at": "2026-11-27 20:34:13",
+        "open_positions": 1,
+        "salary_range": "Competitive hourly wage based on Finnish collective agreements.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "Apply now for a Product Manager role at Oy Lunawood Ltd. Join the team and build your career in Lahti.",
+        "description": "Product Manager at Oy Lunawood Ltd in Lahti, Finland, seeks a skilled professional with a strong technical background in wood properties, processing, and production methods. The role involves educating customers and stakeholders, supporting sales, developing new products, managing projects, and creating product management documents. You will also contribute to investment and strategy planning. Fluency in Finnish and English is required, with other language skills being advantageous. Join a growing, international company where you can develop your skills and contribute to the success of a market leader in heat-treated wood solutions. Apply by 13.12.",
+        "what_we_expect": [
+          "Strong technical understanding of wood properties, processing and production methods.",
+          "Technical university degree or similar skills suitable for the task.",
+          "Experience and insight in managing product development projects from idea to commercialization.",
+          "Knowledge of quality and certification.",
+          "Fluent Finnish and English skills.",
+          "Other language skills are considered an advantage."
+        ],
+        "job_responsibilities": [
+          "Educating customers and other stakeholders on products and product solutions.",
+          "Supporting sales in matters related to products.",
+          "Development of new products and solutions and project management of product development projects.",
+          "Technical expertise in projects.",
+          "Development of product management documents and their ownership.",
+          "Participation in the planning of investments and strategy related to product management or product development."
+        ],
+        "what_we_offer": [
+          "Opportunity to develop skills in a growing and international company.",
+          "Good introduction to the tasks.",
+          "Support for the development of skills through external training."
+        ],
+        "search_keywords": "product manager wood technical management development",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
+      }
+    ]
   }
 ]
