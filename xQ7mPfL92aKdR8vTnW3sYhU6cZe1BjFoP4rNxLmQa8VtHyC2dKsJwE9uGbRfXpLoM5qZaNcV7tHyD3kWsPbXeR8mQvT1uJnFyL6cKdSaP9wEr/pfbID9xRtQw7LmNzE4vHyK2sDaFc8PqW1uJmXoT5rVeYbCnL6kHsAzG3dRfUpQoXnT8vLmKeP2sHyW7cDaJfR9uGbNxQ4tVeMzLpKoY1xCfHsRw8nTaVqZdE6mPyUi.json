@@ -580369,5 +580369,61 @@
         "image_url": "https://findjobsinfinland.fi/images/jobs/other/25.png"
       }
     ]
+  },
+
+  {
+    "scrape_timestamp": "2026-11-27 20:35:30",
+    "jobs": [
+      {
+        "id": "5b325c62",
+        "job_id": "chief-technical-officer-vantaa-5b325c62",
+        "processed": true,
+        "title": "Chief Technical Officer",
+        "company": "HKFoods",
+        "job_category": "industry-manufacturing-and-production",
+        "jobLocation": [
+          "Vantaa"
+        ],
+        "jobRegions": [],
+        "jobapply_link": "https://duunitori.fi/tyopaikat/tyo/tekninen-paallikko-shsks-20758421",
+        "jobLink": "https://duunitori.fi/tyopaikat/tyo/tekninen-paallikko-shsks-20758421",
+        "job_employer_email": "",
+        "job_employer_name": "",
+        "job_employer_phone_no": "",
+        "jobUrl": "https://findjobsinfinland.fi/jobs/industry-manufacturing-and-production/chief-technical-officer-vantaa-5b325c62",
+        "date_posted": "2026-11-26",
+        "date_expires": "2026-12-26",
+        "scraped_at": "2026-11-27 20:35:30",
+        "open_positions": 1,
+        "salary_range": "Työskentelet Vantaan tuotantoyksikössä ja raportoit HKFoodsin tekniselle johtajalle. Tehtäväkohtainen palkka on 5 800-6 600 €/kk. Lopullinen palkka määräytyy kokemuksesi ja osaamisesi perusteella. Työsuhde on toistaiseksi voimassa oleva.",
+        "workTime": "Full-time",
+        "continuityOfWork": "Permanent",
+        "language_requirements": [
+          "English"
+        ],
+        "meta_description": "A new job opportunity is available at HKFoods as a Chief Technical Officer in Vantaa. Learn more about the role and apply now.",
+        "description": "Join HKFoods as the Chief Technical Officer and lead the technical operations of our Vantaa unit, managing an organization of about 38 people. Your role involves developing operations based on safety, cost efficiency, and production needs, ensuring the safety of the technical organization and fostering a safety culture. You will be responsible for the factory's technical usability, planned and advance maintenance, and the realization of the cost budget. With a strong background in systematic maintenance management, automation, energy, and investment planning, you will manage external service partners and oversee the technical implementation of investments. Fluency in English and Finnish is required.",
+        "what_we_expect": [
+          "Applicable technical university degree (AMK/DI).",
+          "At least five years of experience in management and front-line positions in an industrial operating environment.",
+          "Strong experience in systematic maintenance management and utilization of maintenance systems.",
+          "Understanding of automation and the ability to lead automation experts.",
+          "Understanding of energy, energy efficiency and consumer goods.",
+          "Experience in investment planning and technical implementation."
+        ],
+        "job_responsibilities": [
+          "Manage the technical operations of the Vantaa unit and an organization of about 38 people.",
+          "Develop operations in the long term based on safety, cost efficiency and production needs.",
+          "Responsible for the safety of the technical organization and develop a safety culture.",
+          "Lead and help the organization to ensure the smooth running of everyday life.",
+          "Responsible for the realization of the cost budget.",
+          "Take care of the factory's technical usability, planned maintenance and advance maintenance."
+        ],
+        "what_we_offer": [],
+        "search_keywords": "technical operations, safety, maintenance, automation, industrial, management, Finnish, English, leadership, food industry",
+        "display_mode": "fallback",
+        "image_url": "https://findjobsinfinland.fi/images/jobs/other/6.png"
+      }
+    ]
   }
 ]
